@@ -26,7 +26,7 @@ items:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - Excel.Interfaces.ChartAxisData
   - uid: excel.Excel.Interfaces.ChartAxesData.seriesAxis
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only.
@@ -41,7 +41,7 @@ items:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - Excel.Interfaces.ChartAxisData
   - uid: excel.Excel.Interfaces.ChartAxesData.valueAxis
     summary: |-
       Represents the value axis in an axis. Read-only.
@@ -56,4 +56,4 @@ items:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - Excel.Interfaces.ChartAxisData

@@ -50,13 +50,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
+            - OneNote.Interfaces.InkAnalysisLineLoadOptions
     remarks: |
 
 
@@ -103,7 +103,7 @@ items:
       content: 'readonly paragraph: OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraph
+          - OneNote.InkAnalysisParagraph
   - uid: onenote.OneNote.InkAnalysisLine.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -145,7 +145,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisLineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLineData
+          - OneNote.Interfaces.InkAnalysisLineData
         description: ''
   - uid: onenote.OneNote.InkAnalysisLine.track
     summary: >-
@@ -163,7 +163,7 @@ items:
       content: 'track(): OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
         description: ''
   - uid: onenote.OneNote.InkAnalysisLine.untrack
     summary: >-
@@ -180,7 +180,7 @@ items:
       content: 'untrack(): OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
         description: ''
   - uid: onenote.OneNote.InkAnalysisLine.words
     summary: |-
@@ -196,4 +196,4 @@ items:
       content: 'readonly words: OneNote.InkAnalysisWordCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWordCollection
+          - OneNote.InkAnalysisWordCollection

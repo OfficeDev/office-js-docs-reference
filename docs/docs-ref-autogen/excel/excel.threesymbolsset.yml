@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'greenCheckSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeSymbolsSet.redCrossSymbol
     name: redCrossSymbol
     fullName: excel.Excel.ThreeSymbolsSet.redCrossSymbol
@@ -50,7 +50,7 @@ items:
       content: 'redCrossSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeSymbolsSet.yellowExclamationSymbol
     name: yellowExclamationSymbol
     fullName: excel.Excel.ThreeSymbolsSet.yellowExclamationSymbol
@@ -61,4 +61,4 @@ items:
       content: 'yellowExclamationSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

@@ -68,7 +68,7 @@ items:
       content: 'readonly line: OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
   - uid: onenote.OneNote.InkAnalysisWord.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -82,13 +82,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - OneNote.InkAnalysisWord
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions
+            - OneNote.Interfaces.InkAnalysisWordLoadOptions
     remarks: |
 
 
@@ -186,7 +186,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisWordData
+          - OneNote.Interfaces.InkAnalysisWordData
         description: ''
   - uid: onenote.OneNote.InkAnalysisWord.track
     summary: >-
@@ -204,7 +204,7 @@ items:
       content: 'track(): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - OneNote.InkAnalysisWord
         description: ''
   - uid: onenote.OneNote.InkAnalysisWord.untrack
     summary: >-
@@ -221,7 +221,7 @@ items:
       content: 'untrack(): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - OneNote.InkAnalysisWord
         description: ''
   - uid: onenote.OneNote.InkAnalysisWord.wordAlternates
     summary: |-

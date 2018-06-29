@@ -81,7 +81,7 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - Excel.RangeBorderCollection
   - uid: excel.Excel.RangeFormat.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
@@ -113,7 +113,7 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
+          - Excel.RangeFill
   - uid: excel.Excel.RangeFormat.font
     summary: |-
       Returns the font object defined on the overall range. Read-only.
@@ -128,7 +128,7 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
+          - Excel.RangeFont
   - uid: excel.Excel.RangeFormat.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
@@ -156,16 +156,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
+      \`load(option?: string \| string\[\]): Excel.RangeFormat\` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.RangeFormat\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat\` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -254,13 +254,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
       return:
         type:
-          - excel.Excel.RangeFormat
+          - Excel.RangeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeFormatLoadOptions
+            - Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel.Excel.RangeFormat.protection
     summary: |-
       Returns the format protection object for a range. Read-only.
@@ -275,7 +275,7 @@ items:
       content: 'readonly protection: Excel.FormatProtection;'
       return:
         type:
-          - excel.Excel.FormatProtection
+          - Excel.FormatProtection
   - uid: excel.Excel.RangeFormat.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
@@ -298,7 +298,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.RangeFormat): void`
+      \`set(properties: Excel.RangeFormat): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.RangeFormat.set
     langs:
@@ -320,7 +320,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFormat.textOrientation
     summary: >-
       Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
@@ -366,7 +366,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatData
+          - Excel.Interfaces.RangeFormatData
         description: ''
   - uid: excel.Excel.RangeFormat.useStandardHeight
     summary: >-

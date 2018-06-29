@@ -104,7 +104,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -133,7 +133,7 @@ items:
       content: 'appendRichText(paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - OneNote.RichText
         description: ''
       parameters:
         - id: paragraphText
@@ -265,13 +265,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - OneNote.TableCell
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.TableCellLoadOptions
+            - OneNote.Interfaces.TableCellLoadOptions
     remarks: |
 
 
@@ -374,7 +374,7 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - OneNote.ParagraphCollection
   - uid: onenote.OneNote.TableCell.parentRow
     summary: |-
       Gets the parent row of the cell. Read-only.
@@ -461,7 +461,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableCellData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellData
+          - OneNote.Interfaces.TableCellData
         description: ''
   - uid: onenote.OneNote.TableCell.track
     summary: >-
@@ -479,7 +479,7 @@ items:
       content: 'track(): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - OneNote.TableCell
         description: ''
   - uid: onenote.OneNote.TableCell.untrack
     summary: >-
@@ -496,5 +496,5 @@ items:
       content: 'untrack(): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - OneNote.TableCell
         description: ''

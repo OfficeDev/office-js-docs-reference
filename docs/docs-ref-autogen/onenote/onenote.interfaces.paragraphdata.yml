@@ -50,7 +50,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageData
+          - OneNote.Interfaces.ImageData
   - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
@@ -80,7 +80,7 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineData
+          - OneNote.Interfaces.OutlineData
   - uid: onenote.OneNote.Interfaces.ParagraphData.paragraphs
     summary: |-
       The collection of paragraphs under this paragraph. Read only
@@ -110,7 +110,7 @@ items:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
@@ -125,7 +125,7 @@ items:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCell
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
@@ -142,7 +142,7 @@ items:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellData
+          - OneNote.Interfaces.TableCellData
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
@@ -159,7 +159,7 @@ items:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellData
+          - OneNote.Interfaces.TableCellData
   - uid: onenote.OneNote.Interfaces.ParagraphData.richText
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
@@ -174,7 +174,7 @@ items:
       content: 'richText?: OneNote.Interfaces.RichTextData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.RichTextData
+          - OneNote.Interfaces.RichTextData
   - uid: onenote.OneNote.Interfaces.ParagraphData.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.

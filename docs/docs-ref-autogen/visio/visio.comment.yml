@@ -63,13 +63,13 @@ items:
       content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
       return:
         type:
-          - visio.Visio.Comment
+          - Visio.Comment
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.CommentLoadOptions
+            - Visio.Interfaces.CommentLoadOptions
     remarks: |
 
 
@@ -154,5 +154,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentData;'
       return:
         type:
-          - visio.Visio.Interfaces.CommentData
+          - Visio.Interfaces.CommentData
         description: ''

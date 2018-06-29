@@ -103,8 +103,8 @@ items:
       and hosted document.
 
 
-      The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value
-      that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
+      The reason parameter of the initialize event listener function returns an \`InitializationReason\` enumeration
+      value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
 
 
       - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of
@@ -114,18 +114,26 @@ items:
       - The user opened a document that already contains the add-in.
 
 
-      *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
+      \*Note\*: The reason parameter of the initialize event listener function only returns an \`InitializationReason\`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       // You can use the value of the InitializationEnumeration to implement different logic for
+
       // when the add-in is first inserted versus when it is already part of the document.
+
       // The following example shows some simple logic that uses the value of the reason parameter
+
       // to display how the task pane or content add-in was initialized.
+
       Office.initialize = function (reason) {
           // Checks for the DOM to load using the jQuery ready function.
           $(document).ready(function () {
@@ -139,10 +147,13 @@ items:
           });
       }
 
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: initialize(reason)
     fullName: office.Office.initialize
@@ -159,7 +170,7 @@ items:
         - id: reason
           description: Indicates how the app was initialized.
           type:
-            - office.Office.InitializationReason
+            - InitializationReason
   - uid: office.Office.onReady
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized
@@ -228,13 +239,17 @@ items:
       }
       ```
   - uid: office.Office.useShortNamespace
-    summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    summary: Toggles on and off the \`Office\` alias for the full \`Microsoft.Office.WebExtension\` namespace.
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       function startUsingShortNamespace() {
           if (typeof Office === 'undefined') {
               Microsoft.Office.WebExtension.useShortNamespace(true);
@@ -244,6 +259,7 @@ items:
           }
           write('Office alias is now ' + typeof Office);
       }
+
 
       function stopUsingShortNamespace() {
           if (typeof Office === 'undefined') {
@@ -255,10 +271,13 @@ items:
           write('Office alias is now ' + typeof Office);
       }
 
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: useShortNamespace(useShortNamespace)
     fullName: office.Office.useShortNamespace

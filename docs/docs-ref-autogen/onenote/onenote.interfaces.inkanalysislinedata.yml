@@ -41,7 +41,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphData
+          - OneNote.Interfaces.InkAnalysisParagraphData
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineData.words
     summary: |-
       Gets the ink analysis words in this ink analysis line. Read-only.

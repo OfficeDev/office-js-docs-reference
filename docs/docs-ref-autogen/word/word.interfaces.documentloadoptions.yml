@@ -51,7 +51,7 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.DocumentLoadOptions.properties
     summary: |-
       Gets the properties of the document.

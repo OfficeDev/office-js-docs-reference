@@ -44,7 +44,7 @@ items:
       content: 'page?: OneNote.Interfaces.PageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageLoadOptions
+          - OneNote.Interfaces.PageLoadOptions
   - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.paragraphs
     summary: |-
       Gets the ink analysis paragraphs in this page.
@@ -59,4 +59,4 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+          - OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions

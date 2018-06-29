@@ -51,7 +51,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageLoadOptions
+          - OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.ink
     summary: >-
       For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is
@@ -68,7 +68,7 @@ items:
       content: 'ink?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+          - OneNote.Interfaces.FloatingInkLoadOptions
   - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.left
     summary: |-
       For EACH ITEM in the collection: Gets or sets the left (X-axis) position of the PageContent object.
@@ -100,7 +100,7 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineLoadOptions
+          - OneNote.Interfaces.OutlineLoadOptions
   - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage
     summary: |-
       For EACH ITEM in the collection: Gets the page that contains the PageContent object.
@@ -115,7 +115,7 @@ items:
       content: 'parentPage?: OneNote.Interfaces.PageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageLoadOptions
+          - OneNote.Interfaces.PageLoadOptions
   - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.top
     summary: |-
       For EACH ITEM in the collection: Gets or sets the top (Y-axis) position of the PageContent object.

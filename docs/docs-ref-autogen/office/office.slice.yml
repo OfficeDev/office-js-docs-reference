@@ -3,9 +3,9 @@ items:
   - uid: office.Office.Slice
     summary: Represents a slice of a document file.
     remarks: |-
-      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>File</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;File&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       The Slice object is accessed with the File.getSliceAsync method.
     name: Office.Slice
@@ -20,13 +20,13 @@ items:
       - office.Office.Slice.size
   - uid: office.Office.Slice.data
     summary: >-
-      Gets the raw data of the file slice in `Office.FileType.Text` ("text") or `Office.FileType.Compressed`
+      Gets the raw data of the file slice in \`Office.FileType.Text\` ("text") or \`Office.FileType.Compressed\`
       ("compressed") format as specified by the fileType parameter of the call to the Document.getFileAsync method.
     remarks: >-
-      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>File</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;File&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if
@@ -44,9 +44,9 @@ items:
   - uid: office.Office.Slice.index
     summary: Gets the zero-based index of the file slice.
     remarks: |-
-      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>File</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;File&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: index
     fullName: office.Office.Slice.index
     langs:
@@ -60,9 +60,9 @@ items:
   - uid: office.Office.Slice.size
     summary: Gets the size of the slice in bytes.
     remarks: |-
-      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>File</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;File&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: size
     fullName: office.Office.Slice.size
     langs:

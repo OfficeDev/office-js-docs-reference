@@ -30,7 +30,7 @@ items:
       content: 'bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+          - Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
     name: items
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
@@ -56,7 +56,7 @@ items:
       content: 'left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+          - Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
     summary: |-
       Gets the right border.
@@ -71,7 +71,7 @@ items:
       content: 'right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+          - Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
     summary: |-
       Gets the top border.
@@ -86,4 +86,4 @@ items:
       content: 'top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+          - Excel.Interfaces.ConditionalRangeBorderUpdateData

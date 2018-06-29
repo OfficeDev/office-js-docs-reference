@@ -23,7 +23,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -40,7 +40,7 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRedToBlackSet.grayCircle
     name: grayCircle
     fullName: excel.Excel.FourRedToBlackSet.grayCircle
@@ -51,7 +51,7 @@ items:
       content: 'grayCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRedToBlackSet.pinkCircle
     name: pinkCircle
     fullName: excel.Excel.FourRedToBlackSet.pinkCircle
@@ -62,7 +62,7 @@ items:
       content: 'pinkCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRedToBlackSet.redCircle
     name: redCircle
     fullName: excel.Excel.FourRedToBlackSet.redCircle
@@ -73,4 +73,4 @@ items:
       content: 'redCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

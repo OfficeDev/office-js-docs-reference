@@ -41,7 +41,7 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
   - uid: visio.Visio.Shape.getBounds
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
@@ -72,7 +72,7 @@ items:
       content: 'readonly hyperlinks: Visio.HyperlinkCollection;'
       return:
         type:
-          - visio.Visio.HyperlinkCollection
+          - Visio.HyperlinkCollection
   - uid: visio.Visio.Shape.id
     summary: |-
       Shape's Identifier.
@@ -101,13 +101,13 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
+          - Visio.Shape
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.ShapeLoadOptions
+            - Visio.Interfaces.ShapeLoadOptions
     remarks: |
 
 
@@ -221,7 +221,7 @@ items:
       content: 'readonly shapeDataItems: Visio.ShapeDataItemCollection;'
       return:
         type:
-          - visio.Visio.ShapeDataItemCollection
+          - Visio.ShapeDataItemCollection
   - uid: visio.Visio.Shape.subShapes
     summary: |-
       Gets SubShape Collection.
@@ -236,7 +236,7 @@ items:
       content: 'readonly subShapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Shape.text
     summary: |-
       Shape's Text.
@@ -262,7 +262,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeData
+          - Visio.Interfaces.ShapeData
         description: ''
   - uid: visio.Visio.Shape.view
     summary: |-
@@ -278,4 +278,4 @@ items:
       content: 'readonly view: Visio.ShapeView;'
       return:
         type:
-          - visio.Visio.ShapeView
+          - Visio.ShapeView

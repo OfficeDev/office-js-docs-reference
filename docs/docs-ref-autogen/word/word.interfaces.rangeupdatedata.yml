@@ -27,7 +27,7 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
+          - Word.Interfaces.FontUpdateData
   - uid: word.Word.Interfaces.RangeUpdateData.hyperlink
     summary: >-
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted

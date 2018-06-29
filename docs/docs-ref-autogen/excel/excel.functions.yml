@@ -4210,7 +4210,7 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fact
     summary: |-
-      Returns the factorial of a number, equal to 1*2*3*...* Number.
+      Returns the factorial of a number, equal to 1\*2\*3\*...\* Number.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fact(number)
@@ -9263,7 +9263,7 @@ items:
         description: ''
       parameters:
         - id: number
-          description: Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
+          description: Is the angle in radians for which you want the sine. Degrees \* PI()/180 = radians.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sinh
@@ -9425,7 +9425,7 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sqrtPi
     summary: |-
-      Returns the square root of (number * Pi).
+      Returns the square root of (number \* Pi).
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: sqrtPi(number)
@@ -9992,7 +9992,7 @@ items:
         description: ''
       parameters:
         - id: number
-          description: Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
+          description: Is the angle in radians for which you want the tangent. Degrees \* PI()/180 = radians.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tanh

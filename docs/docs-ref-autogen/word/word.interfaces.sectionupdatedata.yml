@@ -24,4 +24,4 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.BodyUpdateData
+          - Word.Interfaces.BodyUpdateData

@@ -113,7 +113,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.ContentControlLoadOptions.id
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
@@ -143,7 +143,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.ContentControlLoadOptions.parentContentControl
     summary: |-
       Gets the content control that contains the content control. Throws if there isn't a parent content control.
@@ -158,7 +158,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
@@ -175,7 +175,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ContentControlLoadOptions.parentTable
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table.

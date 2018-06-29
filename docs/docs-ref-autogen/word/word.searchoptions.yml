@@ -73,13 +73,13 @@ items:
       content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - Word.SearchOptions
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.SearchOptionsLoadOptions
+            - Word.Interfaces.SearchOptionsLoadOptions
     remarks: |
 
 
@@ -336,13 +336,13 @@ items:
       content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - Word.SearchOptions
         description: ''
       parameters:
         - id: context
           description: ''
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - OfficeExtension.ClientRequestContext
   - uid: word.Word.SearchOptions.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -364,7 +364,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
     fullName: word.Word.SearchOptions.toJSON
@@ -375,5 +375,5 @@ items:
       content: 'toJSON(): Word.Interfaces.SearchOptionsData;'
       return:
         type:
-          - word.Word.Interfaces.SearchOptionsData
+          - Word.Interfaces.SearchOptionsData
         description: ''

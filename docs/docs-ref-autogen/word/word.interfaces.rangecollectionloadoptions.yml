@@ -41,7 +41,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.RangeCollectionLoadOptions.hyperlink
     summary: >-
       For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All
@@ -89,7 +89,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent
@@ -106,7 +106,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there
@@ -123,7 +123,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentTable
     summary: |-
       For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.

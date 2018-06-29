@@ -34,7 +34,7 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationData;'
       return:
         type:
-          - excel.Excel.Interfaces.ApplicationData
+          - Excel.Interfaces.ApplicationData
   - uid: excel.Excel.Interfaces.WorkbookData.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -124,7 +124,7 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesData
+          - Excel.Interfaces.DocumentPropertiesData
   - uid: excel.Excel.Interfaces.WorkbookData.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.

@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraph
+          - OneNote.InkAnalysisParagraph
         description: ''
       parameters:
         - id: index
@@ -74,7 +74,7 @@ items:
       content: 'getItemAt(index: number): OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraph
+          - OneNote.InkAnalysisParagraph
         description: ''
       parameters:
         - id: index
@@ -108,7 +108,7 @@ items:
         OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraphCollection
+          - OneNote.InkAnalysisParagraphCollection
         description: ''
       parameters:
         - id: option
@@ -125,7 +125,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisParagraphCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData
+          - OneNote.Interfaces.InkAnalysisParagraphCollectionData
         description: ''
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.track
     summary: >-
@@ -143,7 +143,7 @@ items:
       content: 'track(): OneNote.InkAnalysisParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraphCollection
+          - OneNote.InkAnalysisParagraphCollection
         description: ''
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.untrack
     summary: >-
@@ -160,5 +160,5 @@ items:
       content: 'untrack(): OneNote.InkAnalysisParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisParagraphCollection
+          - OneNote.InkAnalysisParagraphCollection
         description: ''

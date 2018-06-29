@@ -38,7 +38,7 @@ items:
       content: 'fiveArrows: FiveArrowsSet;'
       return:
         type:
-          - excel.Excel.FiveArrowsSet
+          - FiveArrowsSet
   - uid: excel.Excel.IconCollections.fiveArrowsGray
     name: fiveArrowsGray
     fullName: excel.Excel.IconCollections.fiveArrowsGray
@@ -49,7 +49,7 @@ items:
       content: 'fiveArrowsGray: FiveArrowsGraySet;'
       return:
         type:
-          - excel.Excel.FiveArrowsGraySet
+          - FiveArrowsGraySet
   - uid: excel.Excel.IconCollections.fiveBoxes
     name: fiveBoxes
     fullName: excel.Excel.IconCollections.fiveBoxes
@@ -60,7 +60,7 @@ items:
       content: 'fiveBoxes: FiveBoxesSet;'
       return:
         type:
-          - excel.Excel.FiveBoxesSet
+          - FiveBoxesSet
   - uid: excel.Excel.IconCollections.fiveQuarters
     name: fiveQuarters
     fullName: excel.Excel.IconCollections.fiveQuarters
@@ -71,7 +71,7 @@ items:
       content: 'fiveQuarters: FiveQuartersSet;'
       return:
         type:
-          - excel.Excel.FiveQuartersSet
+          - FiveQuartersSet
   - uid: excel.Excel.IconCollections.fiveRating
     name: fiveRating
     fullName: excel.Excel.IconCollections.fiveRating
@@ -82,7 +82,7 @@ items:
       content: 'fiveRating: FiveRatingSet;'
       return:
         type:
-          - excel.Excel.FiveRatingSet
+          - FiveRatingSet
   - uid: excel.Excel.IconCollections.fourArrows
     name: fourArrows
     fullName: excel.Excel.IconCollections.fourArrows
@@ -93,7 +93,7 @@ items:
       content: 'fourArrows: FourArrowsSet;'
       return:
         type:
-          - excel.Excel.FourArrowsSet
+          - FourArrowsSet
   - uid: excel.Excel.IconCollections.fourArrowsGray
     name: fourArrowsGray
     fullName: excel.Excel.IconCollections.fourArrowsGray
@@ -104,7 +104,7 @@ items:
       content: 'fourArrowsGray: FourArrowsGraySet;'
       return:
         type:
-          - excel.Excel.FourArrowsGraySet
+          - FourArrowsGraySet
   - uid: excel.Excel.IconCollections.fourRating
     name: fourRating
     fullName: excel.Excel.IconCollections.fourRating
@@ -115,7 +115,7 @@ items:
       content: 'fourRating: FourRatingSet;'
       return:
         type:
-          - excel.Excel.FourRatingSet
+          - FourRatingSet
   - uid: excel.Excel.IconCollections.fourRedToBlack
     name: fourRedToBlack
     fullName: excel.Excel.IconCollections.fourRedToBlack
@@ -126,7 +126,7 @@ items:
       content: 'fourRedToBlack: FourRedToBlackSet;'
       return:
         type:
-          - excel.Excel.FourRedToBlackSet
+          - FourRedToBlackSet
   - uid: excel.Excel.IconCollections.fourTrafficLights
     name: fourTrafficLights
     fullName: excel.Excel.IconCollections.fourTrafficLights
@@ -137,7 +137,7 @@ items:
       content: 'fourTrafficLights: FourTrafficLightsSet;'
       return:
         type:
-          - excel.Excel.FourTrafficLightsSet
+          - FourTrafficLightsSet
   - uid: excel.Excel.IconCollections.threeArrows
     name: threeArrows
     fullName: excel.Excel.IconCollections.threeArrows
@@ -148,7 +148,7 @@ items:
       content: 'threeArrows: ThreeArrowsSet;'
       return:
         type:
-          - excel.Excel.ThreeArrowsSet
+          - ThreeArrowsSet
   - uid: excel.Excel.IconCollections.threeArrowsGray
     name: threeArrowsGray
     fullName: excel.Excel.IconCollections.threeArrowsGray
@@ -159,7 +159,7 @@ items:
       content: 'threeArrowsGray: ThreeArrowsGraySet;'
       return:
         type:
-          - excel.Excel.ThreeArrowsGraySet
+          - ThreeArrowsGraySet
   - uid: excel.Excel.IconCollections.threeFlags
     name: threeFlags
     fullName: excel.Excel.IconCollections.threeFlags
@@ -170,7 +170,7 @@ items:
       content: 'threeFlags: ThreeFlagsSet;'
       return:
         type:
-          - excel.Excel.ThreeFlagsSet
+          - ThreeFlagsSet
   - uid: excel.Excel.IconCollections.threeSigns
     name: threeSigns
     fullName: excel.Excel.IconCollections.threeSigns
@@ -181,7 +181,7 @@ items:
       content: 'threeSigns: ThreeSignsSet;'
       return:
         type:
-          - excel.Excel.ThreeSignsSet
+          - ThreeSignsSet
   - uid: excel.Excel.IconCollections.threeStars
     name: threeStars
     fullName: excel.Excel.IconCollections.threeStars
@@ -192,7 +192,7 @@ items:
       content: 'threeStars: ThreeStarsSet;'
       return:
         type:
-          - excel.Excel.ThreeStarsSet
+          - ThreeStarsSet
   - uid: excel.Excel.IconCollections.threeSymbols
     name: threeSymbols
     fullName: excel.Excel.IconCollections.threeSymbols
@@ -203,7 +203,7 @@ items:
       content: 'threeSymbols: ThreeSymbolsSet;'
       return:
         type:
-          - excel.Excel.ThreeSymbolsSet
+          - ThreeSymbolsSet
   - uid: excel.Excel.IconCollections.threeSymbols2
     name: threeSymbols2
     fullName: excel.Excel.IconCollections.threeSymbols2
@@ -214,7 +214,7 @@ items:
       content: 'threeSymbols2: ThreeSymbols2Set;'
       return:
         type:
-          - excel.Excel.ThreeSymbols2Set
+          - ThreeSymbols2Set
   - uid: excel.Excel.IconCollections.threeTrafficLights1
     name: threeTrafficLights1
     fullName: excel.Excel.IconCollections.threeTrafficLights1
@@ -225,7 +225,7 @@ items:
       content: 'threeTrafficLights1: ThreeTrafficLights1Set;'
       return:
         type:
-          - excel.Excel.ThreeTrafficLights1Set
+          - ThreeTrafficLights1Set
   - uid: excel.Excel.IconCollections.threeTrafficLights2
     name: threeTrafficLights2
     fullName: excel.Excel.IconCollections.threeTrafficLights2
@@ -236,7 +236,7 @@ items:
       content: 'threeTrafficLights2: ThreeTrafficLights2Set;'
       return:
         type:
-          - excel.Excel.ThreeTrafficLights2Set
+          - ThreeTrafficLights2Set
   - uid: excel.Excel.IconCollections.threeTriangles
     name: threeTriangles
     fullName: excel.Excel.IconCollections.threeTriangles
@@ -247,4 +247,4 @@ items:
       content: 'threeTriangles: ThreeTrianglesSet;'
       return:
         type:
-          - excel.Excel.ThreeTrianglesSet
+          - ThreeTrianglesSet

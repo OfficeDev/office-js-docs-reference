@@ -165,7 +165,7 @@ items:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
+          - Excel.ChartAxisFormat
   - uid: excel.Excel.ChartAxis.height
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
@@ -206,16 +206,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of
+      \`load(option?: string \| string\[\]): Excel.ChartAxis\` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
+      \`load(option?: { select?: string; expand?: string; }): Excel.ChartAxis\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis\` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -276,13 +276,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - Excel.ChartAxis
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisLoadOptions
+            - Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel.Excel.ChartAxis.logBase
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
@@ -312,7 +312,7 @@ items:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
+          - Excel.ChartGridlines
   - uid: excel.Excel.ChartAxis.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -410,7 +410,7 @@ items:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
+          - Excel.ChartGridlines
   - uid: excel.Excel.ChartAxis.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -497,7 +497,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.ChartAxis): void`
+      \`set(properties: Excel.ChartAxis): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.ChartAxis.set
     langs:
@@ -519,7 +519,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxis.setCategoryNames
     summary: |-
       Sets all the category names for the specified axis.
@@ -658,7 +658,7 @@ items:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - Excel.ChartAxisTitle
   - uid: excel.Excel.ChartAxis.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAxis.toJSON
@@ -669,7 +669,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - Excel.Interfaces.ChartAxisData
         description: ''
   - uid: excel.Excel.ChartAxis.top
     summary: >-

@@ -105,7 +105,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
   - uid: onenote.OneNote.PageContent.ink
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
@@ -120,7 +120,7 @@ items:
       content: 'readonly ink: OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
+          - OneNote.FloatingInk
   - uid: onenote.OneNote.PageContent.left
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
@@ -149,13 +149,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - OneNote.PageContent
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.PageContentLoadOptions
+            - OneNote.Interfaces.PageContentLoadOptions
   - uid: onenote.OneNote.PageContent.outline
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
@@ -170,7 +170,7 @@ items:
       content: 'readonly outline: OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - OneNote.Outline
   - uid: onenote.OneNote.PageContent.parentPage
     summary: |-
       Gets the page that contains the PageContent object. Read-only.
@@ -185,7 +185,7 @@ items:
       content: 'readonly parentPage: OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - OneNote.Page
   - uid: onenote.OneNote.PageContent.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -227,7 +227,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageContentData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentData
+          - OneNote.Interfaces.PageContentData
         description: ''
   - uid: onenote.OneNote.PageContent.top
     summary: |-
@@ -260,7 +260,7 @@ items:
       content: 'track(): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - OneNote.PageContent
         description: ''
   - uid: onenote.OneNote.PageContent.type
     summary: |-
@@ -292,5 +292,5 @@ items:
       content: 'untrack(): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - OneNote.PageContent
         description: ''

@@ -26,7 +26,7 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
+          - Word.Interfaces.FontUpdateData
   - uid: word.Word.Interfaces.BodyUpdateData.style
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use

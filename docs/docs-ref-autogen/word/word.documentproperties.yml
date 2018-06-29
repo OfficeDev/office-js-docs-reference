@@ -303,7 +303,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the document.

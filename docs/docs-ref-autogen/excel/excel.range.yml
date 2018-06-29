@@ -159,7 +159,7 @@ items:
         - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
-            - excel.Excel.ClearApplyTo
+            - Excel.ClearApplyTo
     remarks: |
 
 
@@ -239,7 +239,7 @@ items:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
         type:
-          - excel.Excel.ConditionalFormatCollection
+          - Excel.ConditionalFormatCollection
   - uid: excel.Excel.Range.delete
     summary: |-
       Deletes the cells associated with the range.
@@ -260,7 +260,7 @@ items:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
-            - excel.Excel.DeleteShiftDirection
+            - Excel.DeleteShiftDirection
     remarks: |
 
 
@@ -296,7 +296,7 @@ items:
       content: 'readonly format: Excel.RangeFormat;'
       return:
         type:
-          - excel.Excel.RangeFormat
+          - Excel.RangeFormat
   - uid: excel.Excel.Range.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -368,7 +368,7 @@ items:
       content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: numRows
@@ -395,7 +395,7 @@ items:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: anotherRange
@@ -441,7 +441,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: row
@@ -489,7 +489,7 @@ items:
       content: 'getColumn(column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: column
@@ -531,7 +531,7 @@ items:
       content: 'getColumnsAfter(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: count
@@ -555,7 +555,7 @@ items:
       content: 'getColumnsBefore(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: count
@@ -568,7 +568,7 @@ items:
   - uid: excel.Excel.Range.getEntireColumn
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
-      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
+      "B4:E11", its \`getEntireColumn\` is a range that represents columns "B:E").
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -581,7 +581,7 @@ items:
       content: 'getEntireColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: >
 
@@ -614,7 +614,7 @@ items:
   - uid: excel.Excel.Range.getEntireRow
     summary: >-
       Gets an object that represents the entire row of the range (for example, if the current range represents cells
-      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
+      "B4:E11", its \`GetEntireRow\` is a range that represents rows "4:11").
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -627,7 +627,7 @@ items:
       content: 'getEntireRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: >
 
@@ -687,7 +687,7 @@ items:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: anotherRange
@@ -731,7 +731,7 @@ items:
       content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: anotherRange
@@ -802,7 +802,7 @@ items:
       content: 'getLastCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -839,7 +839,7 @@ items:
       content: 'getLastColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -876,7 +876,7 @@ items:
       content: 'getLastRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -916,7 +916,7 @@ items:
       content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: rowOffset
@@ -968,7 +968,7 @@ items:
       content: 'getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: deltaRows
@@ -997,7 +997,7 @@ items:
       content: 'getRow(row: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: row
@@ -1039,7 +1039,7 @@ items:
       content: 'getRowsAbove(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: count
@@ -1063,7 +1063,7 @@ items:
       content: 'getRowsBelow(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: count
@@ -1089,7 +1089,7 @@ items:
       content: 'getSurroundingRegion(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
   - uid: excel.Excel.Range.getUsedRange
     summary: >-
@@ -1107,7 +1107,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: valuesOnly
@@ -1198,7 +1198,7 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: valuesOnly
@@ -1252,7 +1252,7 @@ items:
       content: 'getVisibleView(): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - Excel.RangeView
         description: ''
   - uid: excel.Excel.Range.hidden
     summary: |-
@@ -1283,7 +1283,7 @@ items:
       content: 'hyperlink: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
+          - Excel.RangeHyperlink
     remarks: |
 
 
@@ -1333,13 +1333,13 @@ items:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
-            - excel.Excel.InsertShiftDirection
+            - Excel.InsertShiftDirection
     remarks: |
 
 
@@ -1398,16 +1398,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.Range` - Where option is a comma-delimited string or an array of
+      \`load(option?: string \| string\[\]): Excel.Range\` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited
+      \`load(option?: { select?: string; expand?: string; }): Excel.Range\` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range\` - Only available
       on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -1496,13 +1496,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeLoadOptions
+            - Excel.Interfaces.RangeLoadOptions
   - uid: excel.Excel.Range.merge
     summary: |-
       Merge the range cells into one region in the worksheet.
@@ -1685,7 +1685,7 @@ items:
     remarks: |
       This method has the following additional signature:
 
-      `set(properties: Excel.Range): void`
+      \`set(properties: Excel.Range): void\`
 
       #### Examples
 
@@ -1747,7 +1747,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -1778,7 +1778,7 @@ items:
       content: 'readonly sort: Excel.RangeSort;'
       return:
         type:
-          - excel.Excel.RangeSort
+          - Excel.RangeSort
   - uid: excel.Excel.Range.style
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
@@ -1842,7 +1842,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeData
+          - Excel.Interfaces.RangeData
         description: ''
   - uid: excel.Excel.Range.track
     summary: >-
@@ -1860,7 +1860,7 @@ items:
       content: 'track(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
   - uid: excel.Excel.Range.unmerge
     summary: |-
@@ -1912,7 +1912,7 @@ items:
       content: 'untrack(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
   - uid: excel.Excel.Range.values
     summary: >-
@@ -1962,4 +1962,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - Excel.Worksheet

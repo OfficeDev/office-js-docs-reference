@@ -3,16 +3,18 @@ items:
   - uid: Outlook_1_6.Office.Item
     summary: >-
       The item namespace is used to access the currently selected message, meeting request, or appointment. You can
-      determine the type of the item by using the `itemType` property.
+      determine the type of the item by using the \`itemType\` property.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.Item
     fullName: Outlook_1_6.Office.Item
     langs:
@@ -32,11 +34,13 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: body
     fullName: Outlook_1_6.Office.Item.body
     langs:
@@ -46,18 +50,19 @@ items:
       content: 'body: Office.Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Office.Body
   - uid: Outlook_1_6.Office.Item.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: dateTimeCreated
     fullName: Outlook_1_6.Office.Item.dateTimeCreated
     langs:
@@ -74,11 +79,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -103,11 +109,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: itemType
     fullName: Outlook_1_6.Office.Item.itemType
     langs:
@@ -117,7 +125,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - Office.MailboxEnums.ItemType
   - uid: Outlook_1_6.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -136,11 +144,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: Outlook_1_6.Office.Item.loadCustomPropertiesAsync
     langs:
@@ -171,11 +181,13 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: notificationMessages
     fullName: Outlook_1_6.Office.Item.notificationMessages
     langs:
@@ -185,4 +197,4 @@ items:
       content: 'notificationMessages: Office.NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - Office.NotificationMessages

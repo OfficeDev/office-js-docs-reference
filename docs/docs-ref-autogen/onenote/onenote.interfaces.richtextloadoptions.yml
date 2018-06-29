@@ -60,7 +60,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+          - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.text
     summary: |-
       Gets the text content of the RichText object. Read-only.

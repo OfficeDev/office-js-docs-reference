@@ -6,11 +6,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
+      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.EmailAddressDetails
     fullName: Outlook_1_1.Office.EmailAddressDetails
     langs:
@@ -36,7 +38,7 @@ items:
       content: 'appointmentResponse: Office.MailboxEnums.ResponseType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ResponseType
+          - Office.MailboxEnums.ResponseType
   - uid: Outlook_1_1.Office.EmailAddressDetails.displayName
     summary: Gets the display name associated with an email address.
     name: displayName
@@ -72,4 +74,4 @@ items:
       content: 'recipientType: Office.MailboxEnums.RecipientType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecipientType
+          - Office.MailboxEnums.RecipientType

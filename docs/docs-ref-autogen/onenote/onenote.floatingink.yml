@@ -50,7 +50,7 @@ items:
       content: 'readonly inkStrokes: OneNote.InkStrokeCollection;'
       return:
         type:
-          - onenote.OneNote.InkStrokeCollection
+          - OneNote.InkStrokeCollection
   - uid: onenote.OneNote.FloatingInk.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -64,13 +64,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
+          - OneNote.FloatingInk
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+            - OneNote.Interfaces.FloatingInkLoadOptions
     remarks: |
 
 
@@ -129,7 +129,7 @@ items:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - OneNote.PageContent
   - uid: onenote.OneNote.FloatingInk.toJSON
     name: toJSON()
     fullName: onenote.OneNote.FloatingInk.toJSON
@@ -140,7 +140,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.FloatingInkData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkData
+          - OneNote.Interfaces.FloatingInkData
         description: ''
   - uid: onenote.OneNote.FloatingInk.track
     summary: >-
@@ -158,7 +158,7 @@ items:
       content: 'track(): OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
+          - OneNote.FloatingInk
         description: ''
   - uid: onenote.OneNote.FloatingInk.untrack
     summary: >-
@@ -175,5 +175,5 @@ items:
       content: 'untrack(): OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
+          - OneNote.FloatingInk
         description: ''

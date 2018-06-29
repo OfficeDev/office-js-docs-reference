@@ -5,7 +5,8 @@ items:
       Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their
       formatting applied.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date

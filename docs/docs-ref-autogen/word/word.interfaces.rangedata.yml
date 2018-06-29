@@ -58,7 +58,7 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
+          - Word.Interfaces.FontData
   - uid: word.Word.Interfaces.RangeData.hyperlink
     summary: >-
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
@@ -151,7 +151,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyData;'
       return:
         type:
-          - word.Word.Interfaces.BodyData
+          - Word.Interfaces.BodyData
   - uid: word.Word.Interfaces.RangeData.parentContentControl
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
@@ -166,7 +166,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlData
+          - Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.RangeData.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
@@ -183,7 +183,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlData
+          - Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.RangeData.parentTable
     summary: |-
       Gets the table that contains the range. Throws if it is not contained in a table. Read-only.

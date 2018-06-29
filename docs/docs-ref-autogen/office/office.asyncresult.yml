@@ -5,11 +5,12 @@ items:
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
-      When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult
-      object that you can access from the `callback` function's only parameter.
+      When the function you pass to the \`callback\` parameter of an "Async" method executes, it receives an AsyncResult
+      object that you can access from the \`callback\` function's only parameter.
 
 
       #### Examples
@@ -66,28 +67,36 @@ items:
       - office.Office.AsyncResult.value
   - uid: office.Office.AsyncResult.asyncContext
     summary: >-
-      Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state
-      as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean,
-      Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns
-      Undefined, if you didn't pass anything to the asyncContext parameter.
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+      Gets the user-defined item passed to the optional \`asyncContext\` parameter of the invoked method in the same
+      state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number,
+      Boolean, Object, Array, Null, or Undefined) passed to the optional \`asyncContext\` parameter of the invoked
+      method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       function getDataWithContext() {
           var format = "Your data: ";
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
       }
 
+
       function showDataWithContext(asyncResult) {
           write(asyncResult.asyncContext + asyncResult.value);
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: asyncContext
     fullName: office.Office.AsyncResult.asyncContext
@@ -103,12 +112,16 @@ items:
     summary: >-
       Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
       occurred.
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -119,10 +132,13 @@ items:
               }
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: error
     fullName: office.Office.AsyncResult.error
@@ -130,18 +146,22 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'error: Office.Error;'
+      content: 'error: Error;'
       return:
         type:
-          - office.Office.Error
+          - Error
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -152,10 +172,13 @@ items:
               }
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: status
     fullName: office.Office.AsyncResult.status
@@ -166,15 +189,16 @@ items:
       content: 'status: AsyncResultStatus;'
       return:
         type:
-          - office.Office.AsyncResultStatus
+          - AsyncResultStatus
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
-      method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object.
+      method, such as the \`getSelectedDataAsync\` and \`setSelectedDataAsync\` methods of the Document object.
 
 
       Note: What the value property returns for a particular "Async" method varies depending on the purpose and context

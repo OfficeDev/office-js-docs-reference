@@ -141,13 +141,13 @@ items:
       content: 'load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;'
       return:
         type:
-          - word.Word.ListItem
+          - Word.ListItem
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ListItemLoadOptions
+            - Word.Interfaces.ListItemLoadOptions
   - uid: word.Word.ListItem.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -169,7 +169,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.ListItem.siblingIndex
     summary: |-
       Gets the list item order number in relation to its siblings. Read-only.
@@ -195,7 +195,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ListItemData;'
       return:
         type:
-          - word.Word.Interfaces.ListItemData
+          - Word.Interfaces.ListItemData
         description: ''
   - uid: word.Word.ListItem.track
     summary: >-
@@ -213,7 +213,7 @@ items:
       content: 'track(): Word.ListItem;'
       return:
         type:
-          - word.Word.ListItem
+          - Word.ListItem
         description: ''
   - uid: word.Word.ListItem.untrack
     summary: >-
@@ -230,5 +230,5 @@ items:
       content: 'untrack(): Word.ListItem;'
       return:
         type:
-          - word.Word.ListItem
+          - Word.ListItem
         description: ''

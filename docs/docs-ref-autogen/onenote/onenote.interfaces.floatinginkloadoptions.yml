@@ -44,7 +44,7 @@ items:
       content: 'inkStrokes?: OneNote.Interfaces.InkStrokeCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+          - OneNote.Interfaces.InkStrokeCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
     summary: |-
       Gets the PageContent parent of the FloatingInk object.
@@ -59,4 +59,4 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentLoadOptions
+          - OneNote.Interfaces.PageContentLoadOptions

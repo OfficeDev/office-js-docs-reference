@@ -78,13 +78,13 @@ items:
       content: 'load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;'
       return:
         type:
-          - visio.Visio.Hyperlink
+          - Visio.Hyperlink
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.HyperlinkLoadOptions
+            - Visio.Interfaces.HyperlinkLoadOptions
     remarks: |
 
 
@@ -134,5 +134,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.HyperlinkData;'
       return:
         type:
-          - visio.Visio.Interfaces.HyperlinkData
+          - Visio.Interfaces.HyperlinkData
         description: ''

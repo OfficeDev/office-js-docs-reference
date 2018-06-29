@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
+          - Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
     summary: |-
       The rule of the conditional format.
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalPresetCriteriaRule;'
       return:
         type:
-          - excel.Excel.ConditionalPresetCriteriaRule
+          - Excel.ConditionalPresetCriteriaRule

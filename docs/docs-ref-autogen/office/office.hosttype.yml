@@ -2,7 +2,9 @@
 items:
   - uid: office.Office.HostType
     summary: Specifies the host Office application in which the add-in is running.
-    remarks: '<table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook, OneNote, Project, Access</td></tr></table>'
+    remarks: >-
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word, PowerPoint, Outlook, OneNote, Project,
+      Access&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.HostType
     fullName: office.Office.HostType
     langs:

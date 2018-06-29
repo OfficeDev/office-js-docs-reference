@@ -60,7 +60,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+          - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.

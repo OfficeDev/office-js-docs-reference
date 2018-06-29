@@ -30,7 +30,7 @@ items:
       content: 'load(option?: string | string[]): Visio.Selection;'
       return:
         type:
-          - visio.Visio.Selection
+          - Visio.Selection
         description: ''
       parameters:
         - id: option
@@ -51,7 +51,7 @@ items:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Selection.toJSON
     name: toJSON()
     fullName: visio.Visio.Selection.toJSON
@@ -62,5 +62,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.SelectionData;'
       return:
         type:
-          - visio.Visio.Interfaces.SelectionData
+          - Visio.Interfaces.SelectionData
         description: ''

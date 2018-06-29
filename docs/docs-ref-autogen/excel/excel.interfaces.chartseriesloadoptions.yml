@@ -88,7 +88,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+          - Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
@@ -225,7 +225,7 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
+          - Excel.Interfaces.ChartPointsCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
     summary: |-
       Boolean value representing if the series has a shadow or not.

@@ -47,7 +47,7 @@ items:
       content: 'getById(id: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - Word.ContentControl
         description: ''
       parameters:
         - id: id
@@ -126,7 +126,7 @@ items:
       content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - Word.ContentControl
         description: ''
       parameters:
         - id: id
@@ -179,7 +179,7 @@ items:
       content: 'getByTag(tag: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''
       parameters:
         - id: tag
@@ -250,7 +250,7 @@ items:
       content: 'getByTitle(title: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''
       parameters:
         - id: title
@@ -306,7 +306,7 @@ items:
       content: 'getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''
       parameters:
         - id: types
@@ -327,7 +327,7 @@ items:
       content: 'getFirst(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - Word.ContentControl
         description: ''
     remarks: |
 
@@ -375,7 +375,7 @@ items:
       content: 'getFirstOrNullObject(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - Word.ContentControl
         description: ''
   - uid: word.Word.ContentControlCollection.getItem
     summary: |-
@@ -391,7 +391,7 @@ items:
       content: 'getItem(index: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - Word.ContentControl
         description: ''
       parameters:
         - id: index
@@ -425,7 +425,7 @@ items:
         Word.ContentControlCollection;
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''
       parameters:
         - id: option
@@ -521,7 +521,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlCollectionData
+          - Word.Interfaces.ContentControlCollectionData
         description: ''
   - uid: word.Word.ContentControlCollection.track
     summary: >-
@@ -539,7 +539,7 @@ items:
       content: 'track(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''
   - uid: word.Word.ContentControlCollection.untrack
     summary: >-
@@ -556,5 +556,5 @@ items:
       content: 'untrack(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
         description: ''

@@ -111,7 +111,7 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentLoadOptions
+          - OneNote.Interfaces.PageContentLoadOptions
   - uid: onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
     summary: |-
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
@@ -126,7 +126,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+          - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.ImageLoadOptions.width
     summary: |-
       Gets or sets the width of the Image layout.

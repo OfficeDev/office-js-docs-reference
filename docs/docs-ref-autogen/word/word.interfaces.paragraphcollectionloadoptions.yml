@@ -90,7 +90,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.isLastParagraph
     summary: |-
       For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
@@ -199,7 +199,7 @@ items:
       content: 'list?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
+          - Word.Interfaces.ListLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItem
     summary: >-
       For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a
@@ -216,7 +216,7 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
+          - Word.Interfaces.ListItemLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is
@@ -233,7 +233,7 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
+          - Word.Interfaces.ListItemLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the
@@ -250,7 +250,7 @@ items:
       content: 'listOrNullObject?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
+          - Word.Interfaces.ListLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
     summary: |-
       For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
@@ -280,7 +280,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a
@@ -297,7 +297,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if
@@ -314,7 +314,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a

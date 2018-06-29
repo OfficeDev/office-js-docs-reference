@@ -38,7 +38,7 @@ items:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
+          - Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemCollectionLoadOptions.comment
     summary: |-
       For EACH ITEM in the collection: Represents the comment associated with this name.
@@ -169,7 +169,7 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject
     summary: >-
       For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object
@@ -186,4 +186,4 @@ items:
       content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - Excel.Interfaces.WorksheetLoadOptions

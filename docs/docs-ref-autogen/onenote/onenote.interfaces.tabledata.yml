@@ -74,7 +74,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.TableData.rowCount
     summary: |-
       Gets the number of rows in the table.

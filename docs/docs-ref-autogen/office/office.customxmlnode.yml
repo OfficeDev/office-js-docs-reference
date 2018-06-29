@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlNode
     summary: Represents an XML node in a tree in a document.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -26,9 +26,9 @@ items:
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -62,9 +62,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -93,9 +93,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -108,7 +106,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -116,9 +114,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -147,7 +145,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getNodeValueAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -156,7 +154,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -164,10 +162,10 @@ items:
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       #### Examples
@@ -211,7 +209,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getTextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -220,7 +218,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -228,9 +226,9 @@ items:
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -259,7 +257,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -268,7 +266,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -276,9 +274,9 @@ items:
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -312,9 +310,9 @@ items:
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -348,9 +346,9 @@ items:
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -378,9 +376,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+      content: 'setNodeValueAsync(value: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -393,7 +389,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -401,10 +397,10 @@ items:
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       #### Examples
@@ -451,9 +447,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'setTextAsync(text: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -466,7 +460,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -474,9 +468,9 @@ items:
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -499,7 +493,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'setXmlAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -512,7 +506,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

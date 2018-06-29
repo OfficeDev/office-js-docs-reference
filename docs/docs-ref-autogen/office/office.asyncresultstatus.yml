@@ -2,8 +2,10 @@
 items:
   - uid: office.Office.AsyncResultStatus
     summary: Specifies the result of an asynchronous call.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >-
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       Returned by the status property of the AsyncResult object.
     name: Office.AsyncResultStatus

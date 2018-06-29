@@ -75,7 +75,7 @@ items:
       content: 'readonly filter: Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - Excel.Filter
   - uid: excel.Excel.TableColumn.getDataBodyRange
     summary: |-
       Gets the range object associated with the data body of the column.
@@ -90,7 +90,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -126,7 +126,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -163,7 +163,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -200,7 +200,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - Excel.Range
         description: ''
     remarks: |
 
@@ -261,16 +261,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.TableColumn` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
+      \`load(option?: string \| string\[\]): Excel.TableColumn\` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.TableColumn\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn` - Only
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn\` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -328,13 +328,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - Excel.TableColumn
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableColumnLoadOptions
+            - Excel.Interfaces.TableColumnLoadOptions
   - uid: excel.Excel.TableColumn.name
     summary: >-
       Represents the name of the table column.
@@ -359,7 +359,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.TableColumn): void`
+      \`set(properties: Excel.TableColumn): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.TableColumn.set
     langs:
@@ -381,7 +381,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.TableColumn.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumn.toJSON
@@ -392,7 +392,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnData
+          - Excel.Interfaces.TableColumnData
         description: ''
   - uid: excel.Excel.TableColumn.values
     summary: >-

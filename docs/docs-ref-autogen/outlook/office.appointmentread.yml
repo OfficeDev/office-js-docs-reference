@@ -58,17 +58,19 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentRead.addHandlerAsync
@@ -77,8 +79,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) =>
-        void): void;
+        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -87,7 +89,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -112,11 +114,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -129,42 +133,46 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: Office.AttachmentDetails[];'
+      content: 'attachments: AttachmentDetails[];'
       return:
         type:
-          - 'Office.AttachmentDetails[]'
+          - 'AttachmentDetails[]'
   - uid: outlook.Office.AppointmentRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: body
     fullName: outlook.Office.AppointmentRead.body
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentRead.dateTimeCreated
     langs:
@@ -181,11 +189,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -222,11 +232,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyAllForm
     langs:
@@ -269,11 +281,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: displayReplyForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyForm
     langs:
@@ -308,11 +322,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: end
     fullName: outlook.Office.AppointmentRead.end
     langs:
@@ -331,11 +347,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getEntities()
     fullName: outlook.Office.AppointmentRead.getEntities
     langs:
@@ -355,23 +373,29 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
       as specified in the following table.
 
 
-      <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-      Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
-      <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr>
-      <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
-      <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
-      <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value of entityType&lt;/th&gt; &lt;th&gt;Type of objects in returned
+      array&lt;/th&gt; &lt;th&gt;Required Permission Leve&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Address&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Contact&lt;/td&gt;
+      &lt;td&gt;Contact&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;EmailAddress&lt;/td&gt; &lt;td&gt;String&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;PhoneNumber&lt;/td&gt; &lt;td&gt;PhoneNumber&lt;/td&gt;
+      &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;TaskSuggestion&lt;/td&gt;
+      &lt;td&gt;TaskSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;URL&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
     name: getEntitiesByType(entityType)
     fullName: outlook.Office.AppointmentRead.getEntitiesByType
     langs:
@@ -393,7 +417,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - outlook.Office.MailboxEnums.EntityType
+            - Office.MailboxEnums.EntityType
   - uid: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -408,11 +432,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     langs:
@@ -446,17 +472,19 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;`
+      \`getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.AppointmentRead.getInitializationContextAsync
@@ -464,9 +492,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -477,7 +503,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -500,7 +526,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
       use the Body.getAsync method to retrieve the entire body.
 
 
@@ -509,11 +535,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getRegExMatches()
     fullName: outlook.Office.AppointmentRead.getRegExMatches
     langs:
@@ -540,7 +568,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results.
+      expression such as .\* to obtain the entire body of an item does not always return the expected results.
 
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
@@ -548,11 +576,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.AppointmentRead.getRegExMatchesByName
     langs:
@@ -580,11 +610,13 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getSelectedEntities()
     fullName: outlook.Office.AppointmentRead.getSelectedEntities
     langs:
@@ -610,7 +642,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
       use the Body.getAsync method to retrieve the entire body.
 
 
@@ -619,11 +651,13 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: getSelectedRegExMatches()
     fullName: outlook.Office.AppointmentRead.getSelectedRegExMatches
     langs:
@@ -649,24 +683,27 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
       classes for the message or appointment item.
 
 
-      <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
-      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
-      <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email
-      messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
-      use IPM.Schedule.Meeting as the base message class.</td>
-      <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
-      </tr> </table>
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Type&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;th&gt;Item
+      Class&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment items&lt;/td&gt; &lt;td&gt;These are calendar items
+      of the item class IPM.Appointment or IPM.Appointment.Occurence.&lt;/td&gt;
+      &lt;td&gt;IPM.Appointment,IPM.Appointment.Occurence&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Message
+      items&lt;/td&gt; &lt;td&gt;These include email messages that have the default message class IPM.Note, and meeting
+      requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.&lt;/td&gt;
+      &lt;td&gt;IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled&lt;/td&gt;
+      &lt;/tr&gt; &lt;/table&gt;
     name: itemClass
     fullName: outlook.Office.AppointmentRead.itemClass
     langs:
@@ -695,11 +732,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: itemId
     fullName: outlook.Office.AppointmentRead.itemId
     langs:
@@ -721,11 +760,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: itemType
     fullName: outlook.Office.AppointmentRead.itemType
     langs:
@@ -735,7 +776,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - Office.MailboxEnums.ItemType
   - uid: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -754,11 +795,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     langs:
@@ -791,11 +834,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: location
     fullName: outlook.Office.AppointmentRead.location
     langs:
@@ -817,11 +862,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: normalizedSubject
     fullName: outlook.Office.AppointmentRead.normalizedSubject
     langs:
@@ -838,21 +885,23 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: notificationMessages
     fullName: outlook.Office.AppointmentRead.notificationMessages
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -866,11 +915,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: optionalAttendees
     fullName: outlook.Office.AppointmentRead.optionalAttendees
     langs:
@@ -887,11 +938,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: organizer
     fullName: outlook.Office.AppointmentRead.organizer
     langs:
@@ -921,11 +974,13 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     isPreview: true
     name: recurrence
     fullName: outlook.Office.AppointmentRead.recurrence
@@ -936,7 +991,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.
@@ -948,17 +1003,19 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentRead.removeHandlerAsync
@@ -1009,11 +1066,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: requiredAttendees
     fullName: outlook.Office.AppointmentRead.requiredAttendees
     langs:
@@ -1046,11 +1105,13 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     isPreview: true
     name: seriesId
     fullName: outlook.Office.AppointmentRead.seriesId
@@ -1073,11 +1134,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: start
     fullName: outlook.Office.AppointmentRead.start
     langs:
@@ -1102,11 +1165,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Attendee&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: subject
     fullName: outlook.Office.AppointmentRead.subject
     langs:

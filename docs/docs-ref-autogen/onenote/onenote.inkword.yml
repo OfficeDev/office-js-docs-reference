@@ -65,13 +65,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - OneNote.InkWord
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkWordLoadOptions
+            - OneNote.Interfaces.InkWordLoadOptions
   - uid: onenote.OneNote.InkWord.paragraph
     summary: |-
       The parent paragraph containing the ink word. Read-only.
@@ -86,7 +86,7 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - OneNote.Paragraph
   - uid: onenote.OneNote.InkWord.toJSON
     name: toJSON()
     fullName: onenote.OneNote.InkWord.toJSON
@@ -97,7 +97,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkWordData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkWordData
+          - OneNote.Interfaces.InkWordData
         description: ''
   - uid: onenote.OneNote.InkWord.track
     summary: >-
@@ -115,7 +115,7 @@ items:
       content: 'track(): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - OneNote.InkWord
         description: ''
   - uid: onenote.OneNote.InkWord.untrack
     summary: >-
@@ -132,7 +132,7 @@ items:
       content: 'untrack(): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - OneNote.InkWord
         description: ''
   - uid: onenote.OneNote.InkWord.wordAlternates
     summary: |-

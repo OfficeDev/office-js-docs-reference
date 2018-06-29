@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlPart
     summary: 'Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office.Office.CustomXmlParts) collection.'
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.CustomXmlPart
     fullName: office.Office.CustomXmlPart
     langs:
@@ -24,7 +24,7 @@ items:
   - uid: office.Office.CustomXmlPart.addHandlerAsync
     summary: Adds an event handler to the object using the specified event type.
     remarks: >
-      <table><tr><td>Hosts</td><td>Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -105,8 +105,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -115,9 +115,9 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
-            `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+            \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and \`Office.EventType.NodeReplaced\`.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of
@@ -129,7 +129,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -137,9 +137,9 @@ items:
   - uid: office.Office.CustomXmlPart.builtIn
     summary: 'True, if the custom XML part is built in; otherwise false.'
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -169,9 +169,9 @@ items:
   - uid: office.Office.CustomXmlPart.deleteAsync
     summary: Deletes the Custom XML Part.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -195,7 +195,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'deleteAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -204,7 +204,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -212,9 +212,9 @@ items:
   - uid: office.Office.CustomXmlPart.getNodesAsync
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -241,9 +241,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -256,7 +254,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -264,9 +262,9 @@ items:
   - uid: office.Office.CustomXmlPart.getXmlAsync
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -290,7 +288,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -299,7 +297,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -307,9 +305,9 @@ items:
   - uid: office.Office.CustomXmlPart.id
     summary: Gets the GUID of the CustomXMLPart.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -341,9 +339,9 @@ items:
       ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
       CustomXMLPart.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -364,13 +362,13 @@ items:
       content: 'namespaceManager: CustomXmlPrefixMappings;'
       return:
         type:
-          - office.Office.CustomXmlPrefixMappings
+          - CustomXmlPrefixMappings
   - uid: office.Office.CustomXmlPart.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
     remarks: |
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -390,7 +388,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
+        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
         callback?: (result: AsyncResult) => void): void;
       return:
         type:
@@ -400,9 +398,10 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
-            as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+            as \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and
+            \`Office.EventType.NodeReplaced\`.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: The name of the handler to remove.
           type:
@@ -410,7 +409,7 @@ items:
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - office.Office.RemoveHandlerOptions
+            - RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

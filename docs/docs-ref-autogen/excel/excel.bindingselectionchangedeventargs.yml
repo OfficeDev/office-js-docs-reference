@@ -31,7 +31,7 @@ items:
       content: 'binding: Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
   - uid: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     summary: |-
       Gets the number of columns selected.

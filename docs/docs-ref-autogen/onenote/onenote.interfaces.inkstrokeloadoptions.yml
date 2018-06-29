@@ -28,7 +28,7 @@ items:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+          - OneNote.Interfaces.FloatingInkLoadOptions
   - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.id
     summary: |-
       Gets the ID of the InkStroke object. Read-only.

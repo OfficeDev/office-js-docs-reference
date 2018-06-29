@@ -36,7 +36,7 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionLoadOptions
+          - Excel.Interfaces.ChartCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.id
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
@@ -98,7 +98,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+          - Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.standardHeight
     summary: >-
       For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in
@@ -167,7 +167,7 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
+          - Excel.Interfaces.TableCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
     summary: >-
       For EACH ITEM in the collection: The Visibility of the worksheet.

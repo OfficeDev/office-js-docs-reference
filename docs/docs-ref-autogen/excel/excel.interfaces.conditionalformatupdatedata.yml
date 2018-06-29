@@ -43,7 +43,7 @@ items:
       content: 'cellValue?: Excel.Interfaces.CellValueConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+          - Excel.Interfaces.CellValueConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.cellValueOrNullObject
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
@@ -60,7 +60,7 @@ items:
       content: 'cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+          - Excel.Interfaces.CellValueConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.colorScale
     summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -75,7 +75,7 @@ items:
       content: 'colorScale?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+          - Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject
     summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -90,7 +90,7 @@ items:
       content: 'colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+          - Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.custom
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type.
@@ -105,7 +105,7 @@ items:
       content: 'custom?: Excel.Interfaces.CustomConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+          - Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.customOrNullObject
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type.
@@ -120,7 +120,7 @@ items:
       content: 'customOrNullObject?: Excel.Interfaces.CustomConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+          - Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.dataBar
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar.
@@ -135,7 +135,7 @@ items:
       content: 'dataBar?: Excel.Interfaces.DataBarConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+          - Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar.
@@ -150,7 +150,7 @@ items:
       content: 'dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+          - Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.iconSet
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
@@ -165,7 +165,7 @@ items:
       content: 'iconSet?: Excel.Interfaces.IconSetConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+          - Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
@@ -180,7 +180,7 @@ items:
       content: 'iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+          - Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.preset
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -195,7 +195,7 @@ items:
       content: 'preset?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+          - Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.presetOrNullObject
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -210,7 +210,7 @@ items:
       content: 'presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+          - Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.priority
     summary: >-
       The priority (or index) within the conditional format collection that this conditional format currently exists in.
@@ -264,7 +264,7 @@ items:
       content: 'textComparison?: Excel.Interfaces.TextConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.TextConditionalFormatUpdateData
+          - Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
@@ -281,7 +281,7 @@ items:
       content: 'textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.TextConditionalFormatUpdateData
+          - Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.topBottom
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
@@ -298,7 +298,7 @@ items:
       content: 'topBottom?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+          - Excel.Interfaces.TopBottomConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData.topBottomOrNullObject
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
@@ -315,4 +315,4 @@ items:
       content: 'topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+          - Excel.Interfaces.TopBottomConditionalFormatUpdateData

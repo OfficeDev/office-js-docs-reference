@@ -24,7 +24,7 @@ items:
       This method also has the following signature:
 
 
-      `add(objects: ClientObject\[\]): void;` Where objects is an array of objects to be tracked.
+      \`add(objects: ClientObject\[\]): void;\` Where objects is an array of objects to be tracked.
     name: add(object)
     fullName: office.OfficeExtension.TrackedObjects.add
     langs:
@@ -40,18 +40,18 @@ items:
         - id: object
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
+            - ClientObject
   - uid: office.OfficeExtension.TrackedObjects.remove
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
       objects slows down the host application, so please remember to free any objects you add, once you're done using
-      them. You will need to call `context.sync()` before the memory release takes effect.
+      them. You will need to call \`context.sync()\` before the memory release takes effect.
 
 
       This method also has the following signature:
 
 
-      `remove(objects: ClientObject\[\]): void;` Where objects is an array of objects to be removed.
+      \`remove(objects: ClientObject\[\]): void;\` Where objects is an array of objects to be removed.
     name: remove(object)
     fullName: office.OfficeExtension.TrackedObjects.remove
     langs:
@@ -67,4 +67,4 @@ items:
         - id: object
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
+            - ClientObject

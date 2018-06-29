@@ -61,7 +61,7 @@ items:
         - id: type
           description: 'Required. The type of footer to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
           type:
-            - word.Word.HeaderFooterType
+            - Word.HeaderFooterType
     remarks: |
 
 
@@ -134,7 +134,7 @@ items:
         - id: type
           description: 'Required. The type of header to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
           type:
-            - word.Word.HeaderFooterType
+            - Word.HeaderFooterType
     remarks: |
 
 
@@ -260,7 +260,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.Section.toJSON
     name: toJSON()
     fullName: word.Word.Section.toJSON

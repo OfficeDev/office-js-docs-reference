@@ -65,7 +65,7 @@ items:
       content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
+          - OneNote.Interfaces.PageContentCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the page. Read-only.
@@ -97,7 +97,7 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
+          - OneNote.Interfaces.InkAnalysisLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.pageLevel
     summary: |-
       For EACH ITEM in the collection: Gets or sets the indentation level of the page.
@@ -127,7 +127,7 @@ items:
       content: 'parentSection?: OneNote.Interfaces.SectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionLoadOptions
+          - OneNote.Interfaces.SectionLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
     summary: |-
       For EACH ITEM in the collection: Gets or sets the title of the page.

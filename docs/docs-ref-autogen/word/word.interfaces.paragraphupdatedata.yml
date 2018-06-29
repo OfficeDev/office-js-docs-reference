@@ -70,7 +70,7 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
+          - Word.Interfaces.FontUpdateData
   - uid: word.Word.Interfaces.ParagraphUpdateData.leftIndent
     summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
@@ -147,7 +147,7 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.ListItemUpdateData
+          - Word.Interfaces.ListItemUpdateData
   - uid: word.Word.Interfaces.ParagraphUpdateData.listItemOrNullObject
     summary: |-
       Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
@@ -162,7 +162,7 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.ListItemUpdateData
+          - Word.Interfaces.ListItemUpdateData
   - uid: word.Word.Interfaces.ParagraphUpdateData.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.

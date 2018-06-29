@@ -3,9 +3,9 @@ items:
   - uid: office.Office.TableData
     summary: 'Represents the data in a table or a [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
     remarks: |-
-      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: Office.TableData
     fullName: office.Office.TableData
     langs:
@@ -37,10 +37,10 @@ items:
   - uid: office.Office.TableData.headers
     summary: Gets or sets the headers of the table.
     remarks: >
-      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For
@@ -86,12 +86,12 @@ items:
   - uid: office.Office.TableData.rows
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
-      empty array ``, if there are no rows.
+      empty array \`\`, if there are no rows.
     remarks: >
-      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example,

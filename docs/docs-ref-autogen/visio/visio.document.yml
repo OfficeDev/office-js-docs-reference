@@ -99,7 +99,7 @@ items:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.DocumentLoadOptions
+            - Visio.Interfaces.DocumentLoadOptions
     remarks: |
 
 
@@ -363,7 +363,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.DocumentData;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentData
+          - Visio.Interfaces.DocumentData
         description: ''
   - uid: visio.Visio.Document.view
     summary: |-
@@ -379,4 +379,4 @@ items:
       content: 'readonly view: Visio.DocumentView;'
       return:
         type:
-          - visio.Visio.DocumentView
+          - Visio.DocumentView

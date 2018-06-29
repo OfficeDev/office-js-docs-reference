@@ -39,7 +39,7 @@ items:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
+          - Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemLoadOptions.comment
     summary: |-
       Represents the comment associated with this name.
@@ -165,7 +165,7 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject
     summary: >-
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
@@ -182,4 +182,4 @@ items:
       content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - Excel.Interfaces.WorksheetLoadOptions

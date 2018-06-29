@@ -23,7 +23,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -40,7 +40,7 @@ items:
       content: 'fourBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRatingSet.oneBar
     name: oneBar
     fullName: excel.Excel.FourRatingSet.oneBar
@@ -51,7 +51,7 @@ items:
       content: 'oneBar: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRatingSet.threeBars
     name: threeBars
     fullName: excel.Excel.FourRatingSet.threeBars
@@ -62,7 +62,7 @@ items:
       content: 'threeBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FourRatingSet.twoBars
     name: twoBars
     fullName: excel.Excel.FourRatingSet.twoBars
@@ -73,4 +73,4 @@ items:
       content: 'twoBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

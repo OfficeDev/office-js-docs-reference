@@ -88,7 +88,7 @@ items:
           - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
   - uid: excel.Excel.Interfaces.ChartAxisData.crosses
     summary: >-
-      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `Position` instead.
+      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use \`Position\` instead.
       Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
 
 
@@ -105,7 +105,7 @@ items:
           - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
   - uid: excel.Excel.Interfaces.ChartAxisData.crossesAt
     summary: >-
-      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `PositionAt` instead.
+      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use \`PositionAt\` instead.
       Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use
       SetCrossesAt(double) method.
 
@@ -171,7 +171,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisFormatData
+          - Excel.Interfaces.ChartAxisFormatData
   - uid: excel.Excel.Interfaces.ChartAxisData.height
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
@@ -233,7 +233,7 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesData
+          - Excel.Interfaces.ChartGridlinesData
   - uid: excel.Excel.Interfaces.ChartAxisData.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -331,7 +331,7 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesData
+          - Excel.Interfaces.ChartGridlinesData
   - uid: excel.Excel.Interfaces.ChartAxisData.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -489,7 +489,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleData
+          - Excel.Interfaces.ChartAxisTitleData
   - uid: excel.Excel.Interfaces.ChartAxisData.top
     summary: >-
       Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is

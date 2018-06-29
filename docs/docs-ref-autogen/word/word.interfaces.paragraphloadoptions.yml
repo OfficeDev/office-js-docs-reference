@@ -86,7 +86,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.isLastParagraph
     summary: |-
       Indicates the paragraph is the last one inside its parent body. Read-only.
@@ -193,7 +193,7 @@ items:
       content: 'list?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
+          - Word.Interfaces.ListLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.listItem
     summary: |-
       Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
@@ -208,7 +208,7 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
+          - Word.Interfaces.ListItemLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.listItemOrNullObject
     summary: |-
       Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
@@ -223,7 +223,7 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
+          - Word.Interfaces.ListItemLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.listOrNullObject
     summary: |-
       Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
@@ -238,7 +238,7 @@ items:
       content: 'listOrNullObject?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
+          - Word.Interfaces.ListLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.
@@ -268,7 +268,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentContentControl
     summary: |-
       Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
@@ -283,7 +283,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
@@ -300,7 +300,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentTable
     summary: |-
       Gets the table that contains the paragraph. Throws if it is not contained in a table.

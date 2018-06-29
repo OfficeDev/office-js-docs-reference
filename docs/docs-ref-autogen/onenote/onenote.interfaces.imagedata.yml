@@ -91,7 +91,7 @@ items:
       content: 'ocrData?: OneNote.ImageOcrData;'
       return:
         type:
-          - onenote.OneNote.ImageOcrData
+          - OneNote.ImageOcrData
   - uid: onenote.OneNote.Interfaces.ImageData.pageContent
     summary: >-
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
@@ -108,7 +108,7 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentData
+          - OneNote.Interfaces.PageContentData
   - uid: onenote.OneNote.Interfaces.ImageData.paragraph
     summary: >-
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
@@ -125,7 +125,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ImageData.width
     summary: |-
       Gets or sets the width of the Image layout.

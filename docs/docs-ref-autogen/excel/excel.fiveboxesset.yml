@@ -24,7 +24,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -41,7 +41,7 @@ items:
       content: 'fourFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FiveBoxesSet.noFilledBoxes
     name: noFilledBoxes
     fullName: excel.Excel.FiveBoxesSet.noFilledBoxes
@@ -52,7 +52,7 @@ items:
       content: 'noFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FiveBoxesSet.oneFilledBox
     name: oneFilledBox
     fullName: excel.Excel.FiveBoxesSet.oneFilledBox
@@ -63,7 +63,7 @@ items:
       content: 'oneFilledBox: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FiveBoxesSet.threeFilledBoxes
     name: threeFilledBoxes
     fullName: excel.Excel.FiveBoxesSet.threeFilledBoxes
@@ -74,7 +74,7 @@ items:
       content: 'threeFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.FiveBoxesSet.twoFilledBoxes
     name: twoFilledBoxes
     fullName: excel.Excel.FiveBoxesSet.twoFilledBoxes
@@ -85,4 +85,4 @@ items:
       content: 'twoFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

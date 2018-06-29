@@ -38,7 +38,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesData
+          - Excel.Interfaces.ChartAxesData
   - uid: excel.Excel.Interfaces.ChartData.chartType
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
@@ -95,7 +95,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsData
+          - Excel.Interfaces.ChartDataLabelsData
   - uid: excel.Excel.Interfaces.ChartData.format
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
@@ -110,7 +110,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatData
+          - Excel.Interfaces.ChartAreaFormatData
   - uid: excel.Excel.Interfaces.ChartData.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -170,7 +170,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendData
+          - Excel.Interfaces.ChartLegendData
   - uid: excel.Excel.Interfaces.ChartData.name
     summary: |-
       Represents the name of a chart object.
@@ -232,7 +232,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleData
+          - Excel.Interfaces.ChartTitleData
   - uid: excel.Excel.Interfaces.ChartData.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
@@ -279,4 +279,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - Excel.Interfaces.WorksheetData

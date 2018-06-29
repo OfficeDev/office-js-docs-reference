@@ -24,4 +24,4 @@ items:
       content: 'highlight?: Visio.Highlight;'
       return:
         type:
-          - visio.Visio.Highlight
+          - Visio.Highlight

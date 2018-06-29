@@ -86,18 +86,18 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.Setting` - Where option is a comma-delimited string or an array of
+      \`load(option?: string \| string\[\]): Excel.Setting\` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited
+      \`load(option?: { select?: string; expand?: string; }): Excel.Setting\` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Setting` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Setting\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
@@ -109,13 +109,13 @@ items:
       content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
+          - Excel.Setting
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.SettingLoadOptions
+            - Excel.Interfaces.SettingLoadOptions
   - uid: excel.Excel.Setting.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -123,7 +123,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.Setting): void`
+      \`set(properties: Excel.Setting): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.Setting.set
     langs:
@@ -145,7 +145,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Setting.toJSON
     name: toJSON()
     fullName: excel.Excel.Setting.toJSON
@@ -156,7 +156,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingData;'
       return:
         type:
-          - excel.Excel.Interfaces.SettingData
+          - Excel.Interfaces.SettingData
         description: ''
   - uid: excel.Excel.Setting.value
     summary: |-

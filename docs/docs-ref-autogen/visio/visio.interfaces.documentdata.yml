@@ -56,4 +56,4 @@ items:
       content: 'view?: Visio.Interfaces.DocumentViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentViewData
+          - Visio.Interfaces.DocumentViewData

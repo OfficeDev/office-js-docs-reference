@@ -39,7 +39,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.hyperlink
     summary: >-
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
@@ -87,7 +87,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentContentControl
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control.
@@ -102,7 +102,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject
     summary: |-
       Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
@@ -117,7 +117,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
+          - Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentTable
     summary: |-
       Gets the table that contains the range. Throws if it is not contained in a table.

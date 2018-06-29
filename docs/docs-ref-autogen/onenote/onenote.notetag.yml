@@ -49,13 +49,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - OneNote.NoteTag
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.NoteTagLoadOptions
+            - OneNote.Interfaces.NoteTagLoadOptions
   - uid: onenote.OneNote.NoteTag.status
     summary: |-
       Gets the status of the NoteTag object. Read-only.
@@ -81,7 +81,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.NoteTagData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.NoteTagData
+          - OneNote.Interfaces.NoteTagData
         description: ''
   - uid: onenote.OneNote.NoteTag.track
     summary: >-
@@ -99,7 +99,7 @@ items:
       content: 'track(): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - OneNote.NoteTag
         description: ''
   - uid: onenote.OneNote.NoteTag.type
     summary: |-
@@ -131,5 +131,5 @@ items:
       content: 'untrack(): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - OneNote.NoteTag
         description: ''

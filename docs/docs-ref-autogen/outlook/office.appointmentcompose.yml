@@ -6,7 +6,7 @@ items:
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+      this as a mode of \`Office.context.mailbox.item\`. Refer to the Object Model pages for more information.
     name: Office.AppointmentCompose
     fullName: outlook.Office.AppointmentCompose
     langs:
@@ -55,29 +55,31 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment Organizer&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
-      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
-      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
-      attachments.</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;AttachmentSizeExceeded - The attachment is larger than
+      allowed.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;FileTypeNotSupported - The attachment has
+      an extension that is not
+      allowed.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NumberOfAttachmentsExceeded - The message
+      or appointment has too many attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
+      \`addFileAttachmentAsync(uri: string, attachmentName: string): void;\`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      \`addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;\`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      \`addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addFileAttachmentAsync
     langs:
@@ -85,8 +87,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -110,7 +112,7 @@ items:
             can provide any object they wish to access in the callback method. inInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -130,17 +132,19 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addHandlerAsync
@@ -199,27 +203,28 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment Organizer&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
-      attachments.</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;NumberOfAttachmentsExceeded - The message or appointment has too
+      many attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to the main signature, this method also has these signatures:
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string): void;\`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;\`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addItemAttachmentAsync
     langs:
@@ -227,8 +232,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -249,7 +254,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -264,21 +269,23 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: body
     fullName: outlook.Office.AppointmentCompose.body
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentCompose.close
     summary: >-
       Closes the current item that is being composed
@@ -297,11 +304,13 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: close()
     fullName: outlook.Office.AppointmentCompose.close
     langs:
@@ -319,11 +328,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentCompose.dateTimeCreated
     langs:
@@ -340,11 +351,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -374,11 +387,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: end
     fullName: outlook.Office.AppointmentCompose.end
     langs:
@@ -400,11 +415,13 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       More information on [actionable
@@ -416,9 +433,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -429,7 +444,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -453,35 +468,39 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
-    name: 'getSelectedDataAsync(coerciontype, options, callback)'
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: outlook.Office.AppointmentCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
-        AsyncResult) => void): void;
+        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - office.Office.CoercionType
+            - CoercionType
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -499,11 +518,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: itemType
     fullName: outlook.Office.AppointmentCompose.itemType
     langs:
@@ -513,7 +534,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - Office.MailboxEnums.ItemType
   - uid: outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -532,11 +553,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
     langs:
@@ -569,11 +592,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: location
     fullName: outlook.Office.AppointmentCompose.location
     langs:
@@ -590,21 +615,23 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: notificationMessages
     fullName: outlook.Office.AppointmentCompose.notificationMessages
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -614,11 +641,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: optionalAttendees
     fullName: outlook.Office.AppointmentCompose.optionalAttendees
     langs:
@@ -648,11 +677,13 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     isPreview: true
     name: recurrence
     fullName: outlook.Office.AppointmentCompose.recurrence
@@ -663,7 +694,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -678,26 +709,28 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment Organizer&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
+      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      `removeAttachmentAsync(attachmentIndex: string): void;`
+      \`removeAttachmentAsync(attachmentIndex: string): void;\`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+      \`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;\`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
+      \`removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeAttachmentAsync
     langs:
@@ -705,8 +738,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -721,7 +754,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -740,17 +773,19 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeHandlerAsync
@@ -797,11 +832,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: requiredAttendees
     fullName: outlook.Office.AppointmentCompose.requiredAttendees
     langs:
@@ -845,33 +882,35 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment Organizer&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
+      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      `saveAsync(): void;`
+      \`saveAsync(): void;\`
 
 
-      `saveAsync(options: Office.AsyncContextOptions): void;`
+      \`saveAsync(options: AsyncContextOptions): void;\`
 
 
-      `saveAsync(callback: (result: AsyncResult) => void): void;`
+      \`saveAsync(callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.AppointmentCompose.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -882,7 +921,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -912,11 +951,13 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     isPreview: true
     name: seriesId
     fullName: outlook.Office.AppointmentCompose.seriesId
@@ -940,26 +981,28 @@ items:
 
       \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment Organizer&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
+      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      `setSelectedDataAsync(data: string): void;`
+      \`setSelectedDataAsync(data: string): void;\`
 
 
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      \`setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      \`setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.AppointmentCompose.setSelectedDataAsync
     langs:
@@ -967,8 +1010,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -990,7 +1033,7 @@ items:
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -1014,11 +1057,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: start
     fullName: outlook.Office.AppointmentCompose.start
     langs:
@@ -1039,11 +1084,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Appointment
+      Organizer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     name: subject
     fullName: outlook.Office.AppointmentCompose.subject
     langs:

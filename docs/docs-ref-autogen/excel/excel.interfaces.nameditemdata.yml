@@ -33,7 +33,7 @@ items:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemArrayValuesData
+          - Excel.Interfaces.NamedItemArrayValuesData
   - uid: excel.Excel.Interfaces.NamedItemData.comment
     summary: |-
       Represents the comment associated with this name.
@@ -159,7 +159,7 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - Excel.Interfaces.WorksheetData
   - uid: excel.Excel.Interfaces.NamedItemData.worksheetOrNullObject
     summary: >-
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
@@ -176,4 +176,4 @@ items:
       content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - Excel.Interfaces.WorksheetData

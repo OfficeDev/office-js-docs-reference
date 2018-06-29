@@ -39,7 +39,7 @@ items:
       content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: range
@@ -51,7 +51,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -72,7 +72,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: name
@@ -82,7 +82,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -103,13 +103,13 @@ items:
       content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -159,7 +159,7 @@ items:
       content: 'getItem(id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: id
@@ -253,7 +253,7 @@ items:
       content: 'getItemAt(index: number): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: index
@@ -294,7 +294,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - Excel.Binding
         description: ''
       parameters:
         - id: id
@@ -321,20 +321,20 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.BindingCollection` - Where option is a comma-delimited string or an
+      \`load(option?: string \| string\[\]): Excel.BindingCollection\` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.BindingCollection\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection\` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
 
 
       #### Examples
@@ -390,7 +390,7 @@ items:
         Excel.BindingCollection;
       return:
         type:
-          - excel.Excel.BindingCollection
+          - Excel.BindingCollection
         description: ''
       parameters:
         - id: option
@@ -407,5 +407,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionData
+          - Excel.Interfaces.BindingCollectionData
         description: ''

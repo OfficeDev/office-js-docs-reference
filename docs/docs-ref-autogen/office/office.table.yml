@@ -4,7 +4,7 @@ items:
     summary: >-
       Specifies enumerated values for the cells: property in the cellFormat parameter of [table formatting
       methods](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
-    remarks: <table><tr><td>Hosts</td><td>Excel</td></tr></table>
+    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
     name: Office.Table
     fullName: office.Office.Table
     langs:

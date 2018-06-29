@@ -137,7 +137,7 @@ items:
       content: 'view?: Visio.Interfaces.PageViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewData
+          - Visio.Interfaces.PageViewData
   - uid: visio.Visio.Interfaces.PageData.width
     summary: |-
       Returns the width of the page. Read-only.

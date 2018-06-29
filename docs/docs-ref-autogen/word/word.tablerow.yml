@@ -116,7 +116,7 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - Word.Font
   - uid: word.Word.TableRow.getBorder
     summary: |-
       Gets the border style of the cells in the row.
@@ -131,13 +131,13 @@ items:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - Word.TableBorder
         description: ''
       parameters:
         - id: borderLocation
           description: Required. The border location.
           type:
-            - word.Word.BorderLocation
+            - Word.BorderLocation
   - uid: word.Word.TableRow.getCellPadding
     summary: |-
       Gets cell padding in points.
@@ -158,7 +158,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
+            - Word.CellPaddingLocation
   - uid: word.Word.TableRow.getNext
     summary: |-
       Gets the next row. Throws if this row is the last one.
@@ -228,7 +228,7 @@ items:
         - id: insertLocation
           description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add
           type:
@@ -346,7 +346,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -408,7 +408,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.TableRow.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -429,7 +429,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
+            - Word.CellPaddingLocation
         - id: cellPadding
           description: Required. The cell padding.
           type:

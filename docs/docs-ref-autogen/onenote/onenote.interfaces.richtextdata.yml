@@ -57,7 +57,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.RichTextData.text
     summary: |-
       Gets the text content of the RichText object. Read-only.

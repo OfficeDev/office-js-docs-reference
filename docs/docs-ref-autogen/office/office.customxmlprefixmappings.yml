@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.CustomXmlPrefixMappings
     summary: Represents a collection of CustomXmlPart objects.
-    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
+    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
     name: Office.CustomXmlPrefixMappings
     fullName: office.Office.CustomXmlPrefixMappings
     langs:
@@ -16,9 +16,9 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
@@ -28,8 +28,8 @@ items:
     type: method
     syntax:
       content: >-
-        addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        addNamespaceAsync(prefix: string, ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -46,7 +46,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -54,10 +54,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
@@ -69,8 +69,8 @@ items:
     type: method
     syntax:
       content: >-
-        getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        getNamespaceAsync(prefix: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -83,7 +83,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -91,10 +91,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
@@ -106,9 +106,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getPrefixAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -121,7 +119,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

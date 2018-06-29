@@ -5,10 +5,10 @@ items:
       Represents custom settings for a task pane or content add-in that are stored in the host document as name/value
       pairs.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       The settings created by using the methods of the Settings object are saved per add-in and per document. That is,
@@ -45,10 +45,10 @@ items:
       Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
       settingsChanged event is supported only in Excel Online in co-authoring scenarios.
     remarks: >
-      <table><tr><td>Hosts</td><td>Excel</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -85,8 +85,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -95,7 +95,7 @@ items:
         - id: eventType
           description: Specifies the type of event to add. Required.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: The event handler function to add. Required.
           type:
@@ -103,7 +103,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
@@ -122,9 +122,9 @@ items:
   - uid: office.Office.Settings.get
     summary: Retrieves the specified setting.
     remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
       #### Examples
 
@@ -158,10 +158,10 @@ items:
       Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those
       settings held in memory.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are
@@ -180,11 +180,13 @@ items:
       to return the following information.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access a Settings
-      object with the refreshed values.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure
-      of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error
-      information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of
-      any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Access a Settings object with the refreshed values.&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the success or failure of the
+      operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error
+      object that provides error information if the operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A user-defined item of any type that is returned in the
+      AsyncResult object without being altered.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       #### Examples
@@ -233,10 +235,10 @@ items:
       To persist the removal of the specified setting in the document, at some point after calling the Settings.remove
       method and before the add-in is closed, you must call the Settings.saveAsync method.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
@@ -307,8 +309,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -317,11 +319,11 @@ items:
         - id: eventType
           description: Specifies the type of event to remove. Required.
           type:
-            - Office.EventType
+            - EventType
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - office.Office.RemoveHandlerOptions
+            - RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -329,7 +331,8 @@ items:
   - uid: office.Office.Settings.saveAsync
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint,
+      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
@@ -345,12 +348,13 @@ items:
       to all instances.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
-      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
-      Error object that provides error information if the operation failed.</td> </tr> <tr>
-      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
-      without being altered.</td> </tr> </table>
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no object or data to
+      retrieve.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the
+      success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt;
+      &lt;td&gt;Access an Error object that provides error information if the operation failed.&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A user-defined item of any type that is
+      returned in the AsyncResult object without being altered.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       #### Examples
@@ -386,7 +390,7 @@ items:
         - id: options
           description: Provides options for saving settings.
           type:
-            - office.Office.SaveSettingsOptions
+            - SaveSettingsOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
@@ -404,10 +408,10 @@ items:
       opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the
       Settings.saveAsync method to persist settings in the document.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Settings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       The set method creates a new setting of the specified name if it does not already exist, or sets an existing

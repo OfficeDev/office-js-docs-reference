@@ -53,7 +53,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
+          - Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be

@@ -46,7 +46,7 @@ items:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
+          - OneNote.Interfaces.TableCellCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.TableRowCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the row. Read-only.

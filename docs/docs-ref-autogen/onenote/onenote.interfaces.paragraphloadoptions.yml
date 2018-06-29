@@ -53,7 +53,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageLoadOptions
+          - OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
@@ -68,7 +68,7 @@ items:
       content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
+          - OneNote.Interfaces.InkWordCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.outline
     summary: |-
       Gets the Outline object that contains the Paragraph.
@@ -83,7 +83,7 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineLoadOptions
+          - OneNote.Interfaces.OutlineLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.paragraphs
     summary: |-
       The collection of paragraphs under this paragraph. Read only
@@ -98,7 +98,7 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+          - OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraph
     summary: |-
       Gets the parent paragraph object. Throws if a parent paragraph does not exist.
@@ -113,7 +113,7 @@ items:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+          - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
@@ -128,7 +128,7 @@ items:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+          - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCell
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
@@ -145,7 +145,7 @@ items:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellLoadOptions
+          - OneNote.Interfaces.TableCellLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull
     summary: |-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
@@ -160,7 +160,7 @@ items:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellLoadOptions
+          - OneNote.Interfaces.TableCellLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.richText
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
@@ -175,7 +175,7 @@ items:
       content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.RichTextLoadOptions
+          - OneNote.Interfaces.RichTextLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.

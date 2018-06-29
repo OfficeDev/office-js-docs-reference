@@ -38,7 +38,7 @@ items:
       content: 'newNode: CustomXmlNode;'
       return:
         type:
-          - office.Office.CustomXmlNode
+          - CustomXmlNode
   - uid: office.Office.NodeReplacedEventArgs.oldNode
     summary: >-
       Gets the node which was just deleted (replaced) from the CustomXmlPart object.
@@ -56,4 +56,4 @@ items:
       content: 'oldNode: CustomXmlNode;'
       return:
         type:
-          - office.Office.CustomXmlNode
+          - CustomXmlNode

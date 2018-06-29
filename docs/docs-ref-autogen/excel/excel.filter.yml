@@ -49,7 +49,7 @@ items:
         - id: criteria
           description: The criteria to apply.
           type:
-            - excel.Excel.FilterCriteria
+            - Excel.FilterCriteria
   - uid: excel.Excel.Filter.applyBottomItemsFilter
     summary: |-
       Apply a "Bottom Item" filter to the column for the given number of elements.
@@ -141,7 +141,7 @@ items:
         - id: oper
           description: Optional. The operator that describes how the two criteria are joined.
           type:
-            - excel.Excel.FilterOperator
+            - Excel.FilterOperator
   - uid: excel.Excel.Filter.applyDynamicFilter
     summary: |-
       Apply a "Dynamic" filter to the column.
@@ -162,7 +162,7 @@ items:
         - id: criteria
           description: The dynamic criteria to apply.
           type:
-            - excel.Excel.DynamicFilterCriteria
+            - Excel.DynamicFilterCriteria
   - uid: excel.Excel.Filter.applyFontColorFilter
     summary: |-
       Apply a "Font Color" filter to the column for the given color.
@@ -204,7 +204,7 @@ items:
         - id: icon
           description: The icons of the cells to show.
           type:
-            - excel.Excel.Icon
+            - Excel.Icon
   - uid: excel.Excel.Filter.applyTopItemsFilter
     summary: |-
       Apply a "Top Item" filter to the column for the given number of elements.
@@ -298,7 +298,7 @@ items:
       content: 'readonly criteria: Excel.FilterCriteria;'
       return:
         type:
-          - excel.Excel.FilterCriteria
+          - Excel.FilterCriteria
   - uid: excel.Excel.Filter.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -307,18 +307,18 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.Filter` - Where option is a comma-delimited string or an array of
+      \`load(option?: string \| string\[\]): Excel.Filter\` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited
+      \`load(option?: { select?: string; expand?: string; }): Excel.Filter\` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
@@ -330,13 +330,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - Excel.Filter
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.FilterLoadOptions
+            - Excel.Interfaces.FilterLoadOptions
   - uid: excel.Excel.Filter.toJSON
     name: toJSON()
     fullName: excel.Excel.Filter.toJSON
@@ -347,5 +347,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
         type:
-          - excel.Excel.Interfaces.FilterData
+          - Excel.Interfaces.FilterData
         description: ''

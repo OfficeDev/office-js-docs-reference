@@ -74,7 +74,7 @@ items:
         Excel.TableRow;
       return:
         type:
-          - excel.Excel.TableRow
+          - Excel.TableRow
         description: ''
       parameters:
         - id: index
@@ -159,7 +159,7 @@ items:
       content: 'getItemAt(index: number): Excel.TableRow;'
       return:
         type:
-          - excel.Excel.TableRow
+          - Excel.TableRow
         description: ''
       parameters:
         - id: index
@@ -205,16 +205,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.TableRowCollection` - Where option is a comma-delimited string or an
+      \`load(option?: string \| string\[\]): Excel.TableRowCollection\` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection` -
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection\` -
       Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
@@ -255,7 +255,7 @@ items:
         Excel.TableRowCollection;
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - Excel.TableRowCollection
         description: ''
       parameters:
         - id: option
@@ -272,5 +272,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionData
+          - Excel.Interfaces.TableRowCollectionData
         description: ''

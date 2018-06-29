@@ -28,7 +28,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+          - Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.Interfaces.TextConditionalFormatLoadOptions.rule
     summary: |-
       The rule of the conditional format.

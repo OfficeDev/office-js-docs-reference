@@ -43,7 +43,7 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentData
+          - OneNote.Interfaces.PageContentData
   - uid: onenote.OneNote.Interfaces.OutlineData.paragraphs
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.

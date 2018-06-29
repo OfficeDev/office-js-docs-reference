@@ -45,7 +45,7 @@ items:
       content: 'addPage(title: string): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - OneNote.Page
         description: ''
       parameters:
         - id: title
@@ -113,13 +113,13 @@ items:
       content: 'copyToNotebook(destinationNotebook: OneNote.Notebook): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
       parameters:
         - id: destinationNotebook
           description: The notebook to copy this section to.
           type:
-            - onenote.OneNote.Notebook
+            - OneNote.Notebook
     remarks: |
 
 
@@ -168,13 +168,13 @@ items:
       content: 'copyToSectionGroup(destinationSectionGroup: OneNote.SectionGroup): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
       parameters:
         - id: destinationSectionGroup
           description: The section group to copy this section to.
           type:
-            - onenote.OneNote.SectionGroup
+            - OneNote.SectionGroup
     remarks: |
 
 
@@ -274,7 +274,7 @@ items:
       content: 'insertSectionAsSibling(location: string, title: string): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
       parameters:
         - id: location
@@ -329,13 +329,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.SectionLoadOptions
+            - OneNote.Interfaces.SectionLoadOptions
     remarks: |
 
 
@@ -443,7 +443,7 @@ items:
       content: 'readonly notebook: OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - OneNote.Notebook
   - uid: onenote.OneNote.Section.pages
     summary: |-
       The collection of pages in the section. Read only
@@ -458,7 +458,7 @@ items:
       content: 'readonly pages: OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - OneNote.PageCollection
   - uid: onenote.OneNote.Section.parentSectionGroup
     summary: >-
       Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the
@@ -475,7 +475,7 @@ items:
       content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - OneNote.SectionGroup
   - uid: onenote.OneNote.Section.parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
@@ -492,7 +492,7 @@ items:
       content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - OneNote.SectionGroup
   - uid: onenote.OneNote.Section.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Section.toJSON
@@ -503,7 +503,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.SectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionData
+          - OneNote.Interfaces.SectionData
         description: ''
   - uid: onenote.OneNote.Section.track
     summary: >-
@@ -521,7 +521,7 @@ items:
       content: 'track(): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
   - uid: onenote.OneNote.Section.untrack
     summary: >-
@@ -538,7 +538,7 @@ items:
       content: 'untrack(): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - OneNote.Section
         description: ''
   - uid: onenote.OneNote.Section.webUrl
     summary: |-

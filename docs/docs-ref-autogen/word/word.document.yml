@@ -61,7 +61,7 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - Word.ContentControlCollection
   - uid: word.Word.Document.getSelection
     summary: |-
       Gets the current selection of the document. Multiple selections are not supported.
@@ -308,7 +308,7 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.Document.toJSON
     name: toJSON()
     fullName: word.Word.Document.toJSON

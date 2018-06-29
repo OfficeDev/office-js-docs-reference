@@ -38,7 +38,7 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
+          - Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
@@ -70,7 +70,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
+          - Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.font
     summary: |-
       Returns the font object defined on the overall range.
@@ -85,7 +85,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
+          - Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
@@ -115,7 +115,7 @@ items:
       content: 'protection?: Excel.Interfaces.FormatProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.FormatProtectionLoadOptions
+          - Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.

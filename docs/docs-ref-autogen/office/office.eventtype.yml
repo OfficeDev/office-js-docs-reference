@@ -1,14 +1,15 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.EventType
-    summary: Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+    summary: Specifies the kind of event that was raised. Returned by the \`type\` property of an \*EventArgs object.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr> <tr><td>Hosts (BindingDataChanged
-      and BindingSelectionChanged)</td><td>Access, Excel, Word</td></tr></table>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Project,
+      Word&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Hosts (BindingDataChanged and
+      BindingSelectionChanged)&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
-      Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`,
-      `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.
+      Add-ins for Project support the \`Office.EventType.ResourceSelectionChanged\`,
+      \`Office.EventType.TaskSelectionChanged\`, and \`Office.EventType.ViewSelectionChanged\` event types.
     name: Office.EventType
     fullName: office.Office.EventType
     langs:

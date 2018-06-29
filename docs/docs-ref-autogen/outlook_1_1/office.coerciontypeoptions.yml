@@ -19,4 +19,4 @@ items:
       content: 'coercionType?: CoercionType;'
       return:
         type:
-          - office.Office.CoercionType
+          - CoercionType

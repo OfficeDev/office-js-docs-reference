@@ -39,7 +39,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartTitleFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
+          - Excel.Interfaces.ChartTitleFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.height
     summary: |-
       Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.

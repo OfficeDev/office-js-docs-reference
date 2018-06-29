@@ -44,7 +44,7 @@ items:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+          - OneNote.Interfaces.InkAnalysisParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.words
     summary: |-
       Gets the ink analysis words in this ink analysis line.
@@ -59,4 +59,4 @@ items:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+          - OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions

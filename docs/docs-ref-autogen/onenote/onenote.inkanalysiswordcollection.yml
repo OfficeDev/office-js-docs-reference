@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - OneNote.InkAnalysisWord
         description: ''
       parameters:
         - id: index
@@ -72,7 +72,7 @@ items:
       content: 'getItemAt(index: number): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - OneNote.InkAnalysisWord
         description: ''
       parameters:
         - id: index
@@ -106,7 +106,7 @@ items:
         OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
       return:
         type:
-          - onenote.OneNote.InkAnalysisWordCollection
+          - OneNote.InkAnalysisWordCollection
         description: ''
       parameters:
         - id: option
@@ -123,7 +123,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisWordCollectionData
+          - OneNote.Interfaces.InkAnalysisWordCollectionData
         description: ''
   - uid: onenote.OneNote.InkAnalysisWordCollection.track
     summary: >-
@@ -141,7 +141,7 @@ items:
       content: 'track(): OneNote.InkAnalysisWordCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWordCollection
+          - OneNote.InkAnalysisWordCollection
         description: ''
   - uid: onenote.OneNote.InkAnalysisWordCollection.untrack
     summary: >-
@@ -158,5 +158,5 @@ items:
       content: 'untrack(): OneNote.InkAnalysisWordCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWordCollection
+          - OneNote.InkAnalysisWordCollection
         description: ''

@@ -6,18 +6,18 @@ items:
       The behavior caused by the [options.selectionMode](xref:office.Office.SelectionMode) option varies by host:
 
 
-      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
-      `Office.SelectionMode.None` for text bindings, selects the cell; for matrix bindings, table bindings, and named
+      In Excel: \`Office.SelectionMode.Selected\` selects all content in the binding, or named item.
+      \`Office.SelectionMode.None\` for text bindings, selects the cell; for matrix bindings, table bindings, and named
       items, selects the first data cell (not first cell in header row for tables).
 
 
-      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
-      `Office.SelectionMode.None` Doesn't select anything.
+      In PowerPoint: \`Office.SelectionMode.Selected\` selects the slide title or first textbox on the slide.
+      \`Office.SelectionMode.None\` Doesn't select anything.
 
 
-      In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text
-      bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
-      data cell (not first cell in header row for tables).
+      In Word: \`Office.SelectionMode.Selected\` selects all content in the binding. \`Office.SelectionMode.None\` for
+      text bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the
+      first data cell (not first cell in header row for tables).
     name: Office.GoToByIdOptions
     fullName: office.Office.GoToByIdOptions
     langs:

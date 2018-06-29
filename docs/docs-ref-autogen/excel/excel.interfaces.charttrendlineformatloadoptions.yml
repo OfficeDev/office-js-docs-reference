@@ -27,4 +27,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - Excel.Interfaces.ChartLineFormatLoadOptions

@@ -43,4 +43,4 @@ items:
       content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentViewLoadOptions
+          - Visio.Interfaces.DocumentViewLoadOptions

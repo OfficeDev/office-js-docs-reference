@@ -14,7 +14,7 @@ items:
       - office.Office.RangeCoordinates.column
       - office.Office.RangeCoordinates.row
   - uid: office.Office.RangeCoordinates.column
-    summary: 'The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.'
+    summary: 'The zero-based column of the range. If not specified, all cells, in the row specified by \`row\` are included.'
     name: column
     fullName: office.Office.RangeCoordinates.column
     langs:
@@ -26,7 +26,7 @@ items:
         type:
           - number
   - uid: office.Office.RangeCoordinates.row
-    summary: 'The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.'
+    summary: 'The zero-based row of the range. If not specified, all cells, in the column specified by \`column\` are included.'
     name: row
     fullName: office.Office.RangeCoordinates.row
     langs:

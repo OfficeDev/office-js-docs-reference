@@ -27,4 +27,4 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderLoadOptions
+          - Excel.Interfaces.ChartBorderLoadOptions

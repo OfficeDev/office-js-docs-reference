@@ -24,4 +24,4 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesUpdateData
+          - Excel.Interfaces.DocumentPropertiesUpdateData

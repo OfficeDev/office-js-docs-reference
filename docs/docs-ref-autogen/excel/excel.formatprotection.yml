@@ -44,20 +44,20 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.FormatProtection` - Where option is a comma-delimited string or an
+      \`load(option?: string \| string\[\]): Excel.FormatProtection\` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.FormatProtection\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection\` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
     name: load(option)
     fullName: excel.Excel.FormatProtection.load
     langs:
@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;'
       return:
         type:
-          - excel.Excel.FormatProtection
+          - Excel.FormatProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.FormatProtectionLoadOptions
+            - Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel.Excel.FormatProtection.locked
     summary: >-
       Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
@@ -98,7 +98,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.FormatProtection): void`
+      \`set(properties: Excel.FormatProtection): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.FormatProtection.set
     langs:
@@ -120,7 +120,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.FormatProtection.toJSON
     name: toJSON()
     fullName: excel.Excel.FormatProtection.toJSON
@@ -131,5 +131,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FormatProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.FormatProtectionData
+          - Excel.Interfaces.FormatProtectionData
         description: ''

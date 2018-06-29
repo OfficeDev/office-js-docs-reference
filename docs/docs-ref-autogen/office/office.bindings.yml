@@ -20,10 +20,11 @@ items:
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;MatrixBindings, TableBindings,
+      TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       For Excel, the itemName parameter can refer to a named range or a table.
@@ -153,7 +154,7 @@ items:
         - id: options
           description: Provides options for configuring the binding that is created.
           type:
-            - office.Office.AddBindingFromNamedItemOptions
+            - AddBindingFromNamedItemOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -161,10 +162,10 @@ items:
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Not in a set&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
@@ -212,7 +213,7 @@ items:
         - id: options
           description: Provides options for configuring the prompt and identifying the binding that is created.
           type:
-            - office.Office.AddBindingFromPromptOptions
+            - AddBindingFromPromptOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -220,10 +221,11 @@ items:
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
     remarks: >
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;MatrixBindings, TableBindings,
+      TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 
       Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
@@ -280,7 +282,7 @@ items:
         - id: options
           description: Provides options for configuring the prompt and identifying the binding that is created.
           type:
-            - office.Office.AddBindingFromSelectionOptions
+            - AddBindingFromSelectionOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -289,7 +291,7 @@ items:
     summary: >-
       Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
       set of bindings.
-    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
+    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
     name: document
     fullName: office.Office.Bindings.document
     langs:
@@ -302,14 +304,19 @@ items:
           - Document
   - uid: office.Office.Bindings.getAllAsync
     summary: Gets all bindings that were previously created.
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;MatrixBindings, TableBindings,
+      TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       #### Examples
 
+
       ```javascript
+
       function displayAllBindingNames() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
               var bindingString = '';
@@ -319,10 +326,13 @@ items:
               write('Existing bindings: ' + bindingString);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: 'getAllAsync(options, callback)'
     fullName: office.Office.Bindings.getAllAsync
@@ -330,7 +340,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -339,32 +349,41 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts, MatrixBindings, TableBindings,
+      TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       Fails if the specified id does not exist.
 
+
       #### Examples
 
+
       ```javascript
+
       function displayBindingType() {
           Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
               write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: 'getByIdAsync(id, options, callback)'
     fullName: office.Office.Bindings.getByIdAsync
@@ -372,7 +391,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -385,30 +404,39 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
-    remarks: |
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
+    remarks: >
+      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;MatrixBindings, TableBindings,
+      TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
 
       Fails if the specified id does not exist.
 
+
       #### Examples
 
+
       ```javascript
+
       Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
           write("Released MyBinding!"); 
       }); 
+
       // Function that writes to a div with id='message' on the page. 
+
       function write(message){ 
           document.getElementById('message').innerText += message;  
       }
+
       ```
     name: 'releaseByIdAsync(id, options, callback)'
     fullName: office.Office.Bindings.releaseByIdAsync
@@ -416,9 +444,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'releaseByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -431,7 +457,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

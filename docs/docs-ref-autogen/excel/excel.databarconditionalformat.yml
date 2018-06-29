@@ -96,20 +96,20 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string
+      \`load(option?: string \| string\[\]): Excel.DataBarConditionalFormat\` - Where option is a comma-delimited string
       or an array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat\` - Where option.select is
+      a comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataBarConditionalFormat`
-      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.DataBarConditionalFormat\` - Only available on collection types. It is similar to the preceding signature.
+      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
+      the result set will start after skipping the specified number of items.
     name: load(option)
     fullName: excel.Excel.DataBarConditionalFormat.load
     langs:
@@ -119,13 +119,13 @@ items:
       content: 'load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel.Excel.DataBarConditionalFormat
+          - Excel.DataBarConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
+            - Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
@@ -140,7 +140,7 @@ items:
       content: 'lowerBoundRule: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarRule
+          - Excel.ConditionalDataBarRule
   - uid: excel.Excel.DataBarConditionalFormat.negativeFormat
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar. Read-only.
@@ -155,7 +155,7 @@ items:
       content: 'readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarNegativeFormat
+          - Excel.ConditionalDataBarNegativeFormat
   - uid: excel.Excel.DataBarConditionalFormat.positiveFormat
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar. Read-only.
@@ -170,7 +170,7 @@ items:
       content: 'readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarPositiveFormat
+          - Excel.ConditionalDataBarPositiveFormat
   - uid: excel.Excel.DataBarConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -178,7 +178,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.DataBarConditionalFormat): void`
+      \`set(properties: Excel.DataBarConditionalFormat): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.DataBarConditionalFormat.set
     langs:
@@ -200,7 +200,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.DataBarConditionalFormat.showDataBarOnly
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
@@ -226,7 +226,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataBarConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataBarConditionalFormatData
+          - Excel.Interfaces.DataBarConditionalFormatData
         description: ''
   - uid: excel.Excel.DataBarConditionalFormat.upperBoundRule
     summary: |-
@@ -242,4 +242,4 @@ items:
       content: 'upperBoundRule: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarRule
+          - Excel.ConditionalDataBarRule

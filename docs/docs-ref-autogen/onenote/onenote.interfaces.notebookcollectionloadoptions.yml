@@ -92,7 +92,7 @@ items:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
+          - OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sections
     summary: |-
       For EACH ITEM in the collection: The the sections of the notebook. Read only
@@ -107,4 +107,4 @@ items:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionCollectionLoadOptions
+          - OneNote.Interfaces.SectionCollectionLoadOptions

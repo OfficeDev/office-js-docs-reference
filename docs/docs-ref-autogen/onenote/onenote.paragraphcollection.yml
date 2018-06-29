@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - OneNote.Paragraph
         description: ''
       parameters:
         - id: index
@@ -72,7 +72,7 @@ items:
       content: 'getItemAt(index: number): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - OneNote.Paragraph
         description: ''
       parameters:
         - id: index
@@ -141,7 +141,7 @@ items:
         OneNote.ParagraphCollection;
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - OneNote.ParagraphCollection
         description: ''
       parameters:
         - id: option
@@ -249,7 +249,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ParagraphCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionData
+          - OneNote.Interfaces.ParagraphCollectionData
         description: ''
   - uid: onenote.OneNote.ParagraphCollection.track
     summary: >-
@@ -267,7 +267,7 @@ items:
       content: 'track(): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - OneNote.ParagraphCollection
         description: ''
   - uid: onenote.OneNote.ParagraphCollection.untrack
     summary: >-
@@ -284,5 +284,5 @@ items:
       content: 'untrack(): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - OneNote.ParagraphCollection
         description: ''

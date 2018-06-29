@@ -26,7 +26,7 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisUpdateData
+          - OneNote.Interfaces.InkAnalysisUpdateData
   - uid: onenote.OneNote.Interfaces.PageUpdateData.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.

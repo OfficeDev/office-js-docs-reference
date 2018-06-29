@@ -50,11 +50,11 @@ items:
         - id: orientation
           description: Optional. Whether the operation is sorting rows or columns.
           type:
-            - excel.Excel.SortOrientation
+            - Excel.SortOrientation
         - id: method
           description: Optional. The ordering method used for Chinese characters.
           type:
-            - excel.Excel.SortMethod
+            - Excel.SortMethod
   - uid: excel.Excel.RangeSort.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeSort.toJSON

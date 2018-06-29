@@ -113,7 +113,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatData
+          - Excel.Interfaces.ChartSeriesFormatData
   - uid: excel.Excel.Interfaces.ChartSeriesData.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of

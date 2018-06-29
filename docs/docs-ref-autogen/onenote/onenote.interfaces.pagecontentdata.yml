@@ -46,7 +46,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageData
+          - OneNote.Interfaces.ImageData
   - uid: onenote.OneNote.Interfaces.PageContentData.ink
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
@@ -61,7 +61,7 @@ items:
       content: 'ink?: OneNote.Interfaces.FloatingInkData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkData
+          - OneNote.Interfaces.FloatingInkData
   - uid: onenote.OneNote.Interfaces.PageContentData.left
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
@@ -91,7 +91,7 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineData
+          - OneNote.Interfaces.OutlineData
   - uid: onenote.OneNote.Interfaces.PageContentData.parentPage
     summary: |-
       Gets the page that contains the PageContent object. Read-only.
@@ -106,7 +106,7 @@ items:
       content: 'parentPage?: OneNote.Interfaces.PageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageData
+          - OneNote.Interfaces.PageData
   - uid: onenote.OneNote.Interfaces.PageContentData.top
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.

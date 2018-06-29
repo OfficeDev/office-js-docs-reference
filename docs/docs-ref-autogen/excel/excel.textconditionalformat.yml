@@ -35,7 +35,7 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - Excel.ConditionalRangeFormat
     remarks: |
 
 
@@ -61,17 +61,17 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.TextConditionalFormat` - Where option is a comma-delimited string or
+      \`load(option?: string \| string\[\]): Excel.TextConditionalFormat\` - Where option is a comma-delimited string or
       an array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a
+      \`load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat\` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextConditionalFormat` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextConditionalFormat\`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
@@ -84,13 +84,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;'
       return:
         type:
-          - excel.Excel.TextConditionalFormat
+          - Excel.TextConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TextConditionalFormatLoadOptions
+            - Excel.Interfaces.TextConditionalFormatLoadOptions
   - uid: excel.Excel.TextConditionalFormat.rule
     summary: |-
       The rule of the conditional format.
@@ -105,7 +105,7 @@ items:
       content: 'rule: Excel.ConditionalTextComparisonRule;'
       return:
         type:
-          - excel.Excel.ConditionalTextComparisonRule
+          - Excel.ConditionalTextComparisonRule
     remarks: |
 
 
@@ -130,7 +130,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.TextConditionalFormat): void`
+      \`set(properties: Excel.TextConditionalFormat): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.TextConditionalFormat.set
     langs:
@@ -152,7 +152,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.TextConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.TextConditionalFormat.toJSON
@@ -163,5 +163,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TextConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.TextConditionalFormatData
+          - Excel.Interfaces.TextConditionalFormatData
         description: ''

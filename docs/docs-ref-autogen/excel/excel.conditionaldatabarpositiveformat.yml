@@ -77,17 +77,17 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.ConditionalDataBarPositiveFormat` - Where option is a comma-delimited
-      string or an array of strings that specify the properties/relationships to load.
+      \`load(option?: string \| string\[\]): Excel.ConditionalDataBarPositiveFormat\` - Where option is a
+      comma-delimited string or an array of strings that specify the properties/relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where
+      \`load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat\` - Where
       option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
       is a comma-delimited string that specifies the relationships to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
-      Excel.ConditionalDataBarPositiveFormat` - Only available on collection types. It is similar to the preceding
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.ConditionalDataBarPositiveFormat\` - Only available on collection types. It is similar to the preceding
       signature. Option.top specifies the maximum number of collection items that can be included in the result.
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
@@ -102,13 +102,13 @@ items:
         Excel.ConditionalDataBarPositiveFormat;
       return:
         type:
-          - excel.Excel.ConditionalDataBarPositiveFormat
+          - Excel.ConditionalDataBarPositiveFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+            - Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -116,7 +116,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      `set(properties: Excel.ConditionalDataBarPositiveFormat): void`
+      \`set(properties: Excel.ConditionalDataBarPositiveFormat): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.set
     langs:
@@ -140,7 +140,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
@@ -151,5 +151,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+          - Excel.Interfaces.ConditionalDataBarPositiveFormatData
         description: ''

@@ -25,7 +25,7 @@ items:
       content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
       return:
         type:
-          - excel.Excel.ConditionalColorScaleCriteria
+          - Excel.ConditionalColorScaleCriteria
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatData.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,

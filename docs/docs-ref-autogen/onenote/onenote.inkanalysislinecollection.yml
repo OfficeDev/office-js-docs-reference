@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
         description: ''
       parameters:
         - id: index
@@ -72,7 +72,7 @@ items:
       content: 'getItemAt(index: number): OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
+          - OneNote.InkAnalysisLine
         description: ''
       parameters:
         - id: index
@@ -106,7 +106,7 @@ items:
         OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
       return:
         type:
-          - onenote.OneNote.InkAnalysisLineCollection
+          - OneNote.InkAnalysisLineCollection
         description: ''
       parameters:
         - id: option
@@ -123,7 +123,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisLineCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
+          - OneNote.Interfaces.InkAnalysisLineCollectionData
         description: ''
   - uid: onenote.OneNote.InkAnalysisLineCollection.track
     summary: >-
@@ -141,7 +141,7 @@ items:
       content: 'track(): OneNote.InkAnalysisLineCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLineCollection
+          - OneNote.InkAnalysisLineCollection
         description: ''
   - uid: onenote.OneNote.InkAnalysisLineCollection.untrack
     summary: >-
@@ -158,5 +158,5 @@ items:
       content: 'untrack(): OneNote.InkAnalysisLineCollection;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLineCollection
+          - OneNote.InkAnalysisLineCollection
         description: ''

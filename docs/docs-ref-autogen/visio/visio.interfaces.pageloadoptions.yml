@@ -92,7 +92,7 @@ items:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewLoadOptions
+          - Visio.Interfaces.PageViewLoadOptions
   - uid: visio.Visio.Interfaces.PageLoadOptions.width
     summary: |-
       Returns the width of the page. Read-only.

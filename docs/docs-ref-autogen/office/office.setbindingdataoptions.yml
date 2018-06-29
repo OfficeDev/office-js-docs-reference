@@ -39,8 +39,8 @@ items:
       that range.
 
 
-      Example: `\[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
-      {borderColor: "white", fontStyle: "bold"}}\]`
+      Example: \`\[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
+      {borderColor: "white", fontStyle: "bold"}}\]\`
     name: cellFormat
     fullName: office.Office.SetBindingDataOptions.cellFormat
     langs:
@@ -120,7 +120,7 @@ items:
   - uid: office.Office.SetBindingDataOptions.tableOptions
     summary: >-
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
-      row, and banded rows. Example: `{bandedRows: true, filterButton: false}`
+      row, and banded rows. Example: \`{bandedRows: true, filterButton: false}\`
     name: tableOptions
     fullName: office.Office.SetBindingDataOptions.tableOptions
     langs:
