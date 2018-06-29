@@ -903,11 +903,11 @@
             },
             "error": {
               "kind": "property",
-              "signature": "error: Error;",
+              "signature": "error: Office.Error;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Error",
+              "type": "Office.Error",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1628,7 +1628,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1647,7 +1647,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -1709,7 +1709,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -2037,7 +2037,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2056,7 +2056,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -4242,7 +4242,7 @@
             },
             "getAllAsync": {
               "kind": "method",
-              "signature": "getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4261,7 +4261,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -4375,7 +4375,7 @@
             },
             "getByIdAsync": {
               "kind": "method",
-              "signature": "getByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4406,7 +4406,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -4523,7 +4523,7 @@
             },
             "releaseByIdAsync": {
               "kind": "method",
-              "signature": "releaseByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4554,7 +4554,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -5484,7 +5484,7 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When using in Outlook,the applicable modes are Compose or read."
+                  "text": "When using in Outlook, the applicable modes are Compose or read."
                 }
               ],
               "isBeta": false,
@@ -6212,7 +6212,7 @@
             },
             "getNodesAsync": {
               "kind": "method",
-              "signature": "getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6243,7 +6243,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -6357,7 +6357,7 @@
             },
             "getNodeValueAsync": {
               "kind": "method",
-              "signature": "getNodeValueAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6376,7 +6376,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -6490,7 +6490,7 @@
             },
             "getTextAsync": {
               "kind": "method",
-              "signature": "getTextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6509,7 +6509,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -6623,7 +6623,7 @@
             },
             "getXmlAsync": {
               "kind": "method",
-              "signature": "getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6642,7 +6642,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -6964,7 +6964,7 @@
             },
             "setNodeValueAsync": {
               "kind": "method",
-              "signature": "setNodeValueAsync(value: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6995,7 +6995,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -7109,7 +7109,7 @@
             },
             "setTextAsync": {
               "kind": "method",
-              "signature": "setTextAsync(text: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7140,7 +7140,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -7254,7 +7254,7 @@
             },
             "setXmlAsync": {
               "kind": "method",
-              "signature": "setXmlAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7285,7 +7285,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -7709,7 +7709,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7728,7 +7728,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -7805,7 +7805,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -7991,7 +7991,7 @@
             },
             "deleteAsync": {
               "kind": "method",
-              "signature": "deleteAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8010,7 +8010,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -8124,7 +8124,7 @@
             },
             "getNodesAsync": {
               "kind": "method",
-              "signature": "getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8155,7 +8155,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -8269,7 +8269,7 @@
             },
             "getXmlAsync": {
               "kind": "method",
-              "signature": "getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8288,7 +8288,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -8629,7 +8629,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8648,7 +8648,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -8888,7 +8888,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8919,7 +8919,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -9033,7 +9033,7 @@
             },
             "getByIdAsync": {
               "kind": "method",
-              "signature": "getByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9064,7 +9064,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -9178,7 +9178,7 @@
             },
             "getByNamespaceAsync": {
               "kind": "method",
-              "signature": "getByNamespaceAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9209,7 +9209,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -9390,7 +9390,7 @@
           "members": {
             "addNamespaceAsync": {
               "kind": "method",
-              "signature": "addNamespaceAsync(prefix: string, ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9433,7 +9433,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -9550,7 +9550,7 @@
             },
             "getNamespaceAsync": {
               "kind": "method",
-              "signature": "getNamespaceAsync(prefix: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9581,7 +9581,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -9698,7 +9698,7 @@
             },
             "getPrefixAsync": {
               "kind": "method",
-              "signature": "getPrefixAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9729,7 +9729,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10138,7 +10138,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10157,7 +10157,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -10200,7 +10200,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10458,7 +10458,7 @@
             },
             "getActiveViewAsync": {
               "kind": "method",
-              "signature": "getActiveViewAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10477,7 +10477,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10796,7 +10796,7 @@
             },
             "getFilePropertiesAsync": {
               "kind": "method",
-              "signature": "getFilePropertiesAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10815,7 +10815,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10932,7 +10932,7 @@
             },
             "getProjectFieldAsync": {
               "kind": "method",
-              "signature": "getProjectFieldAsync(fieldId: number, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10963,7 +10963,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10993,7 +10993,7 @@
             },
             "getResourceFieldAsync": {
               "kind": "method",
-              "signature": "getResourceFieldAsync(resourceId: string, fieldId: number, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11036,7 +11036,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11066,7 +11066,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coercionType: CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11075,78 +11075,12 @@
                 "description": []
               },
               "parameters": {
-                "coercionType": {
-                  "name": "coercionType",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The type of data structure to return. The possible values for the"
-                    },
-                    {
-                      "kind": "api-link",
-                      "elements": [
-                        {
-                          "kind": "text",
-                          "text": "Office.CoercionType"
-                        }
-                      ],
-                      "target": {
-                        "scopeName": "",
-                        "packageName": "office",
-                        "exportName": "Office",
-                        "memberName": "CoercionType"
-                      }
-                    },
-                    {
-                      "kind": "text",
-                      "text": " parameter vary by the host:"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text` (string)"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- Word only: `Office.CoercionType.Html`"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "- PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`"
-                    }
-                  ],
+                "coerciontype": {
+                  "name": "coerciontype",
+                  "description": [],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "CoercionType"
+                  "type": "Office.CoercionType"
                 },
                 "options": {
                   "name": "options",
@@ -11534,7 +11468,7 @@
             },
             "getSelectedResourceAsync": {
               "kind": "method",
-              "signature": "getSelectedResourceAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11553,7 +11487,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11583,7 +11517,7 @@
             },
             "getSelectedTaskAsync": {
               "kind": "method",
-              "signature": "getSelectedTaskAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11602,7 +11536,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11632,7 +11566,7 @@
             },
             "getSelectedViewAsync": {
               "kind": "method",
-              "signature": "getSelectedViewAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11651,7 +11585,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11681,7 +11615,7 @@
             },
             "getTaskAsync": {
               "kind": "method",
-              "signature": "getTaskAsync(taskId: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11712,7 +11646,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11742,7 +11676,7 @@
             },
             "getTaskFieldAsync": {
               "kind": "method",
-              "signature": "getTaskFieldAsync(taskId: string, fieldId: number, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11785,7 +11719,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11815,7 +11749,7 @@
             },
             "getWSSUrlAsync": {
               "kind": "method",
-              "signature": "getWSSUrlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11834,7 +11768,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -12121,7 +12055,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12140,7 +12074,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -25370,7 +25304,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25389,7 +25323,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -25413,7 +25347,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -26173,7 +26107,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26192,7 +26126,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -27392,7 +27326,7 @@
           "members": {
             "addColumnsAsync": {
               "kind": "method",
-              "signature": "addColumnsAsync(tableData: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27423,7 +27357,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -27575,7 +27509,7 @@
             },
             "addRowsAsync": {
               "kind": "method",
-              "signature": "addRowsAsync(rows: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27606,7 +27540,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -27758,7 +27692,7 @@
             },
             "clearFormatsAsync": {
               "kind": "method",
-              "signature": "clearFormatsAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27777,7 +27711,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -28012,7 +27946,7 @@
             },
             "deleteAllDataValuesAsync": {
               "kind": "method",
-              "signature": "deleteAllDataValuesAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -28031,7 +27965,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -28148,7 +28082,7 @@
             },
             "getFormatsAsync": {
               "kind": "method",
-              "signature": "getFormatsAsync(cellReference?: any, formats?: any[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -28191,7 +28125,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -28460,7 +28394,7 @@
             },
             "setFormatsAsync": {
               "kind": "method",
-              "signature": "setFormatsAsync(cellFormat?: any[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setFormatsAsync(cellFormat?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -28491,7 +28425,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -29407,7 +29341,7 @@
             },
             "setTableOptionsAsync": {
               "kind": "method",
-              "signature": "setTableOptionsAsync(tableOptions: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29438,7 +29372,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",

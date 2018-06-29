@@ -44,23 +44,17 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors:
-
-
-      AttachmentSizeExceeded - The attachment is larger than allowed.
-
-
-      FileTypeNotSupported - The attachment has an extension that is not allowed.
-
-
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -135,17 +129,15 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors:
-
-
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -154,7 +146,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
@@ -165,8 +157,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -204,11 +196,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: bcc
     fullName: Outlook_1_1.Office.MessageCompose.bcc
     langs:
@@ -225,21 +217,21 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: body
     fullName: Outlook_1_1.Office.MessageCompose.body
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'body: Body;'
+      content: 'body: Office.Body;'
       return:
         type:
-          - Body
+          - outlook.Office.Body
   - uid: Outlook_1_1.Office.MessageCompose.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -252,11 +244,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: cc
     fullName: Outlook_1_1.Office.MessageCompose.cc
     langs:
@@ -273,11 +265,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: dateTimeCreated
     fullName: Outlook_1_1.Office.MessageCompose.dateTimeCreated
     langs:
@@ -294,14 +286,14 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+
+
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-
-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
-
-
-      Applicable Outlook mode: Message Compose
     name: dateTimeModifed
     fullName: Outlook_1_1.Office.MessageCompose.dateTimeModifed
     langs:
@@ -327,27 +319,25 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
-    name: 'getSelectedDataAsync(coercionType, callback)'
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+    name: 'getSelectedDataAsync(coerciontype, callback)'
     fullName: Outlook_1_1.Office.MessageCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
+      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coercionType
-          description: >-
-            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
-            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+        - id: coerciontype
+          description: ''
           type:
             - office.Office.CoercionType
         - id: callback
@@ -367,11 +357,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: itemType
     fullName: Outlook_1_1.Office.MessageCompose.itemType
     langs:
@@ -400,11 +390,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: Outlook_1_1.Office.MessageCompose.loadCustomPropertiesAsync
     langs:
@@ -443,14 +433,14 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors: InvalidAttachmentId - The attachment identifier does not exist.
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -459,7 +449,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
+      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
 
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
@@ -470,8 +460,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -504,11 +494,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: subject
     fullName: Outlook_1_1.Office.MessageCompose.subject
     langs:
@@ -531,11 +521,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Message Compose
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: to
     fullName: Outlook_1_1.Office.MessageCompose.to
     langs:

@@ -36,27 +36,27 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+
+
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
-
-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
-
-
-      Applicable Outlook mode: Read
     name: attachments
     fullName: Outlook_1_6.Office.ItemRead.attachments
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: AttachmentDetails[];'
+      content: 'attachments: Office.AttachmentDetails[];'
       return:
         type:
-          - 'AttachmentDetails[]'
+          - 'Office.AttachmentDetails[]'
   - uid: Outlook_1_6.Office.ItemRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -80,11 +80,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: Outlook_1_6.Office.ItemRead.displayReplyAllForm
     langs:
@@ -127,11 +127,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: Outlook_1_6.Office.ItemRead.displayReplyForm
     langs:
@@ -159,11 +159,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getEntities()
     fullName: Outlook_1_6.Office.ItemRead.getEntities
     langs:
@@ -183,11 +183,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -236,11 +236,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: Outlook_1_6.Office.ItemRead.getFilteredEntitiesByName
     langs:
@@ -284,11 +284,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getRegExMatches()
     fullName: Outlook_1_6.Office.ItemRead.getRegExMatches
     langs:
@@ -323,11 +323,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: Outlook_1_6.Office.ItemRead.getRegExMatchesByName
     langs:
@@ -355,11 +355,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getSelectedEntities()
     fullName: Outlook_1_6.Office.ItemRead.getSelectedEntities
     langs:
@@ -394,11 +394,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: Outlook_1_6.Office.ItemRead.getSelectedRegExMatches
     langs:
@@ -424,11 +424,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -470,11 +470,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: itemId
     fullName: Outlook_1_6.Office.ItemRead.itemId
     langs:
@@ -496,11 +496,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: normalizedSubject
     fullName: Outlook_1_6.Office.ItemRead.normalizedSubject
     langs:
@@ -525,11 +525,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: Outlook_1_6.Office.ItemRead.subject
     langs:

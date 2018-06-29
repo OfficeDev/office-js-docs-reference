@@ -32,31 +32,31 @@ cd ..\api-extractor-inputs-outlook
 
 call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_6
+cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_6
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_5
+cd ..\Outlook_1_5
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_4
+cd ..\Outlook_1_4
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_3
+cd ..\Outlook_1_3
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_2
+cd ..\Outlook_1_2
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_1
+cd ..\Outlook_1_1
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..
+cd ..
 
 cd ..
 

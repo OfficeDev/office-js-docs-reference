@@ -405,8 +405,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -418,7 +418,7 @@ items:
             `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`, or the
             corresponding text value of this enumeration.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of
@@ -536,7 +536,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getActiveViewAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -751,7 +751,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getFilePropertiesAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -774,8 +774,8 @@ items:
     type: method
     syntax:
       content: >-
-        getProjectFieldAsync(fieldId: number, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -881,8 +881,8 @@ items:
     type: method
     syntax:
       content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -1121,43 +1121,22 @@ items:
       })();
 
       ```
-    name: 'getSelectedDataAsync(coercionType, options, callback)'
+    name: 'getSelectedDataAsync(coerciontype, options, callback)'
     fullName: office.Office.Document.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: CoercionType, options?: GetSelectedDataOptions, callback?: (result:
+        getSelectedDataAsync(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
         AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: coercionType
-          description: >-
-            The type of data structure to return. The possible values for
-            the[Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host:
-
-
-            - Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text`
-            (string)
-
-
-            - Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)
-
-
-            - Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)
-
-
-            - Word only: `Office.CoercionType.Html`
-
-
-            - Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)
-
-
-            - PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`
+        - id: coerciontype
+          description: ''
           type:
             - office.Office.CoercionType
         - id: options
@@ -1176,7 +1155,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedResourceAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -1300,7 +1279,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedTaskAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -1396,7 +1375,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedViewAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -1467,7 +1446,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTaskAsync(taskId: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -1569,7 +1550,7 @@ items:
     type: method
     syntax:
       content: >-
-        getTaskFieldAsync(taskId: string, fieldId: number, options?: AsyncContextOptions, callback?: (result:
+        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult) => void): void;
       return:
         type:
@@ -1691,7 +1672,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getWSSUrlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -2011,8 +1992,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -2021,7 +2002,7 @@ items:
         - id: eventType
           description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type:
-            - EventType
+            - Office.EventType
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
