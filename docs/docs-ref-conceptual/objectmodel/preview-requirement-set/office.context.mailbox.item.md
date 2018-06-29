@@ -20,7 +20,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [attachments](#attachments-arrayattachmentdetailsjavascriptapiofficeofficeattachmentdetails) | Member |
 | [bcc](#bcc-recipientsjavascriptapioutlookofficerecipientsmdmd) | Member |
 | [body](#body-bodyjavascriptapioutlookofficebodymd) | Member |
-| [cc](#cc-arrayemailaddressdetailsrecipients) | Member |
+| [cc](#cc-arrayemailaddressdetailsjavascriptapiofficeofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipientsmd) | Member |
 | [conversationId](#nullable-conversationid-string) | Member |
 | [dateTimeCreated](#datetimecreated-date) | Member |
 | [dateTimeModified](#datetimemodified-date) | Member |
@@ -50,8 +50,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [displayReplyForm](#displayreplyformformdata) | Method |
 | [getEntities](#getentities--entitiesjavascriptapiofficeofficeentities) | Method |
 | [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapiofficeofficecontactmeetingsuggestionjavascriptapiofficeofficemeetingsuggestionphonenumberjavascriptapiofficeofficephonenumbertasksuggestionjavascriptapiofficeofficetasksuggestion) | Method |
-| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
-| [getInitializationContextAsync](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapiofficeofficecontactmeetingsuggestionjavascriptapiofficeofficemeetingsuggestionphonenumberjavascriptapiofficeofficephonenumbertasksuggestionjavascriptapiofficeofficetasksuggestion) | Method |
+| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapiofficeofficecontactmeetingsuggestionjavascriptapiofficeofficemeetingsuggestionphonenumberjavascriptapiofficeofficephonenumbertasksuggestionjavascriptapiofficeofficetasksuggestion) | Method |
 | [getRegExMatches](#getregexmatches--object) | Method |
 | [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array-string-) | Method |
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
