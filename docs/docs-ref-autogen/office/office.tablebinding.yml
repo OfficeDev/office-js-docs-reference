@@ -483,7 +483,7 @@ items:
       <td>Specifies the single cell that is the ith row and jth column of the table.</td> </tr> <tr>
       <td>Office.Table.All</td> <td>Specifies the entire table, including column headers, data, and totals (if
       any).</td> </tr> <tr> <td>Office.Table.Data</td> <td>Specifies only the data in the table (no headers and
-      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>&lt;Specifies only the header row./td&gt; </tr> <table>
+      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
