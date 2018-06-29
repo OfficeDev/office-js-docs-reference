@@ -2174,7 +2174,7 @@ Word.Range.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.RequestContext.load:
+Word.RequestContext:
   - |-
     // The following example shows how the request context is used to load the text property on a paragraph collection.
     // Run a batch operation against the Word object model.
@@ -2207,7 +2207,6 @@ Word.RequestContext.load:
         }
     });
     // Note: You must call load() after adding tracked objects.    
-Word.RequestContext.sync:
   - |-
     // The following example shows the sync method used twice: 
     //   1) load the content controls collection with the text property for each content control, and
