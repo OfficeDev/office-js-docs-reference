@@ -51,7 +51,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;`
+      `getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -77,22 +77,22 @@ items:
       }
 
       ```
-    name: 'getAsync(coerciontype, options, callback)'
+    name: 'getAsync(coercionType, options, callback)'
     fullName: outlook.Office.Body.getAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        getAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: The format for the returned body.
           type:
             - office.Office.CoercionType
         - id: options
@@ -125,7 +125,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -173,7 +173,7 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `prependAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `prependAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
       `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
@@ -203,8 +203,8 @@ items:
     type: method
     syntax:
       content: >-
-        prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult) => void): void;
+        prependAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -220,7 +220,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -259,7 +259,7 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
       `setAsync(data: string, callback: (result: AsyncResult) => void): void;`
@@ -305,8 +305,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult) => void): void;
+        setAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -322,7 +322,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -361,7 +361,7 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
@@ -391,8 +391,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -408,7 +408,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

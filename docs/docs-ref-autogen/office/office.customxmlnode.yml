@@ -93,9 +93,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -147,7 +145,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getNodeValueAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -211,7 +209,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getTextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -259,7 +257,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -378,9 +376,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+      content: 'setNodeValueAsync(value: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -451,9 +447,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'setTextAsync(text: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -499,7 +493,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'setXmlAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void

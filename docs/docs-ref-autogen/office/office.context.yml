@@ -103,7 +103,7 @@ items:
   - uid: office.Office.Context.displayLanguage
     summary: Gets the locale (language) specified by the user for the UI of the Office host application.
     remarks: |
-      When using in Outlook, the applicable modes are Compose or read.
+      When using in Outlook,the applicable modes are Compose or read.
 
       #### Examples
 

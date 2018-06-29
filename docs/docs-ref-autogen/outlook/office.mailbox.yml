@@ -67,8 +67,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: (type: EventType) => void, options?: AsyncContextOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -77,7 +77,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -286,10 +286,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'diagnostics: Office.Diagnostics;'
+      content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - outlook.Office.Diagnostics
+          - Diagnostics
   - uid: outlook.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -586,7 +586,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getCallbackTokenAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -789,7 +789,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'userProfile: Office.UserProfile;'
+      content: 'userProfile: UserProfile;'
       return:
         type:
-          - outlook.Office.UserProfile
+          - UserProfile

@@ -49,7 +49,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -99,7 +99,7 @@ items:
       `setAsync(dateTime: Date): void;`
 
 
-      `setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;`
+      `setAsync(dateTime: Date, options: AsyncContextOptions): void;`
 
 
       `setAsync(dateTime: Date, callback: (result: AsyncResult) => void): void;`
@@ -134,7 +134,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'setAsync(dateTime: Date, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void

@@ -43,7 +43,7 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
 
 
-      `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;`
@@ -81,7 +81,7 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?:
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?:
         (result: AsyncResult) => void): void;
       return:
         type:
@@ -156,7 +156,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -193,7 +193,7 @@ items:
       `removeAsync(key: string): void;`
 
 
-      `removeAsync(key: string, options: Office.AsyncContextOptions): void;`
+      `removeAsync(key: string, options: AsyncContextOptions): void;`
 
 
       `removeAsync(key: string, callback: (result: AsyncResult) => void): void;`
@@ -215,7 +215,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'removeAsync(key: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -258,7 +258,7 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
 
 
-      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void):
@@ -287,8 +287,8 @@ items:
     type: method
     syntax:
       content: >-
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void

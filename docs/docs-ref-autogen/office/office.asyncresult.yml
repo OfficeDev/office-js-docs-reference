@@ -130,10 +130,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'error: Office.Error;'
+      content: 'error: Error;'
       return:
         type:
-          - office.Office.Error
+          - Error
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
     remarks: |

@@ -74,7 +74,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
@@ -85,8 +85,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -216,7 +216,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
@@ -227,8 +227,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -275,10 +275,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentCompose.close
     summary: >-
       Closes the current item that is being composed
@@ -416,9 +416,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -458,22 +456,24 @@ items:
 
 
       <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
-    name: 'getSelectedDataAsync(coerciontype, options, callback)'
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: outlook.Office.AppointmentCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
-        AsyncResult) => void): void;
+        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - office.Office.CoercionType
         - id: options
@@ -601,10 +601,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -694,7 +694,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+      `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
 
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
@@ -705,8 +705,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -861,7 +861,7 @@ items:
       `saveAsync(): void;`
 
 
-      `saveAsync(options: Office.AsyncContextOptions): void;`
+      `saveAsync(options: AsyncContextOptions): void;`
 
 
       `saveAsync(callback: (result: AsyncResult) => void): void;`
@@ -871,7 +871,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -956,7 +956,7 @@ items:
       `setSelectedDataAsync(data: string): void;`
 
 
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
@@ -967,8 +967,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -990,7 +990,7 @@ items:
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

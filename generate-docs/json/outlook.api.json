@@ -97,7 +97,7 @@
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
-              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -140,7 +140,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -379,7 +379,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -579,7 +579,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -622,7 +622,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -812,7 +812,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -829,11 +829,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1455,7 +1455,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1474,7 +1474,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -1621,7 +1621,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1635,12 +1635,17 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.CoercionType"
+                  "type": "CoercionType"
                 },
                 "options": {
                   "name": "options",
@@ -1652,7 +1657,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -2197,11 +2202,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -2576,7 +2581,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2607,7 +2612,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -2779,7 +2784,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -3111,7 +3116,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3130,7 +3135,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -3337,7 +3342,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`saveAsync(options: Office.AsyncContextOptions): void;`"
+                  "text": "`saveAsync(options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -3502,7 +3507,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3533,7 +3538,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -3705,7 +3710,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -5164,7 +5169,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5183,7 +5188,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.EventType"
+                  "type": "EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -5337,7 +5342,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
+                  "text": "`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
                 }
               ],
               "isBeta": true,
@@ -5347,11 +5352,11 @@
             },
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -5477,11 +5482,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -7257,7 +7262,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7276,7 +7281,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -8969,11 +8974,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -10542,7 +10547,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10551,12 +10556,17 @@
                 "description": []
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The format for the returned body."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.CoercionType"
+                  "type": "CoercionType"
                 },
                 "options": {
                   "name": "options",
@@ -10568,7 +10578,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10709,7 +10719,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;`"
+                  "text": "`getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;`"
                 }
               ],
               "isBeta": false,
@@ -10719,7 +10729,7 @@
             },
             "getTypeAsync": {
               "kind": "method",
-              "signature": "getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10738,7 +10748,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -10865,7 +10875,7 @@
             },
             "prependAsync": {
               "kind": "method",
-              "signature": "prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "prependAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10896,7 +10906,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11080,7 +11090,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`prependAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -11104,7 +11114,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11135,7 +11145,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11347,7 +11357,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`setAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -11371,7 +11381,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11402,7 +11412,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -11614,7 +11624,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -13919,7 +13929,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -13938,7 +13948,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -14223,7 +14233,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14242,7 +14252,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.EventType"
+                  "type": "EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -14396,7 +14406,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
+                  "text": "`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
                 }
               ],
               "isBeta": true,
@@ -14406,11 +14416,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -15024,11 +15034,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -15137,11 +15147,11 @@
             },
             "recurrence": {
               "kind": "property",
-              "signature": "recurrence: Office.Recurrence;",
+              "signature": "recurrence: Recurrence;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Recurrence",
+              "type": "Recurrence",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -15271,7 +15281,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15290,7 +15300,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.EventType"
+                  "type": "EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -15444,7 +15454,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
+                  "text": "`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
                 }
               ],
               "isBeta": true,
@@ -15646,7 +15656,7 @@
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
-              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15689,7 +15699,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -15920,7 +15930,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -15937,7 +15947,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15980,7 +15990,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -16170,7 +16180,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -16325,7 +16335,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16344,7 +16354,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -16491,7 +16501,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16505,12 +16515,17 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.CoercionType"
+                  "type": "CoercionType"
                 },
                 "callback": {
                   "name": "callback",
@@ -16647,7 +16662,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16678,7 +16693,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -16850,7 +16865,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -16867,7 +16882,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16886,7 +16901,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -17093,7 +17108,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`saveAsync(options: Office.AsyncContextOptions): void;`"
+                  "text": "`saveAsync(options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -17110,7 +17125,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17141,7 +17156,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -17313,7 +17328,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -17501,11 +17516,11 @@
           "members": {
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -18946,7 +18961,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18965,7 +18980,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -20779,7 +20794,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20798,7 +20813,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -20935,7 +20950,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(location: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20966,7 +20981,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -21135,7 +21150,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setAsync(location: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`setAsync(location: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -21295,7 +21310,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: EventType, handler: (type: EventType) => void, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21314,7 +21329,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.EventType"
+                  "type": "EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -21338,7 +21353,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -22090,11 +22105,11 @@
             },
             "diagnostics": {
               "kind": "property",
-              "signature": "diagnostics: Office.Diagnostics;",
+              "signature": "diagnostics: Diagnostics;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Diagnostics",
+              "type": "Diagnostics",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -23108,7 +23123,7 @@
             },
             "getCallbackTokenAsync": {
               "kind": "method",
-              "signature": "getCallbackTokenAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getCallbackTokenAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23127,7 +23142,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -23891,11 +23906,11 @@
             },
             "userProfile": {
               "kind": "property",
-              "signature": "userProfile: Office.UserProfile;",
+              "signature": "userProfile: UserProfile;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.UserProfile",
+              "type": "UserProfile",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -27739,7 +27754,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27782,7 +27797,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -27972,7 +27987,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -28102,11 +28117,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -28721,11 +28736,11 @@
             },
             "from": {
               "kind": "property",
-              "signature": "from: Office.From;",
+              "signature": "from: From;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.From",
+              "type": "From",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -28848,7 +28863,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -28867,7 +28882,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -29014,7 +29029,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29028,12 +29043,17 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.CoercionType"
+                  "type": "CoercionType"
                 },
                 "callback": {
                   "name": "callback",
@@ -29446,11 +29466,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -29693,7 +29713,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29724,7 +29744,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -29896,7 +29916,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -30096,7 +30116,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30115,7 +30135,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -30322,7 +30342,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`saveAsync(options: Office.AsyncContextOptions): void;`"
+                  "text": "`saveAsync(options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -30487,7 +30507,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30518,7 +30538,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions & CoercionTypeOptions"
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -30690,7 +30710,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`"
+                  "text": "`setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -31181,11 +31201,11 @@
             },
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -31311,11 +31331,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -33214,7 +33234,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -33233,7 +33253,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -34919,11 +34939,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -36201,7 +36221,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36244,7 +36264,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -36378,7 +36398,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`"
+                  "text": "`addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -36395,7 +36415,7 @@
             },
             "getAllAsync": {
               "kind": "method",
-              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36414,7 +36434,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -36551,7 +36571,7 @@
             },
             "removeAsync": {
               "kind": "method",
-              "signature": "removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeAsync(key: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36582,7 +36602,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -36716,7 +36736,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`removeAsync(key: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`removeAsync(key: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -36733,7 +36753,7 @@
             },
             "replaceAsync": {
               "kind": "method",
-              "signature": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36776,7 +36796,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -36917,7 +36937,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`"
+                  "text": "`replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -37224,7 +37244,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37255,7 +37275,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -37452,7 +37472,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`"
+                  "text": "`addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -37469,7 +37489,7 @@
             },
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37488,7 +37508,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -37651,7 +37671,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37682,7 +37702,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -37924,7 +37944,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`"
+                  "text": "`setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -38522,7 +38542,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38541,7 +38561,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -38794,11 +38814,11 @@
             },
             "recurrenceTimeZone": {
               "kind": "property",
-              "signature": "recurrenceTimeZone: Office.MailboxEnums.RecurrenceTimeZone;",
+              "signature": "recurrenceTimeZone: MailboxEnums.RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "type": "MailboxEnums.RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -38907,11 +38927,11 @@
             },
             "recurrenceType": {
               "kind": "property",
-              "signature": "recurrenceType: Office.MailboxEnums.RecurrenceType;",
+              "signature": "recurrenceType: MailboxEnums.RecurrenceType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceType",
+              "type": "MailboxEnums.RecurrenceType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39020,11 +39040,11 @@
             },
             "seriesTime": {
               "kind": "property",
-              "signature": "seriesTime: Office.SeriesTime;",
+              "signature": "seriesTime: SeriesTime;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.SeriesTime",
+              "type": "SeriesTime",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39152,7 +39172,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(recurrencePattern: Recurrence, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -39183,7 +39203,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -39489,11 +39509,11 @@
             },
             "dayOfWeek": {
               "kind": "property",
-              "signature": "dayOfWeek: Office.MailboxEnums.Days;",
+              "signature": "dayOfWeek: MailboxEnums.Days;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days",
+              "type": "MailboxEnums.Days",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39509,11 +39529,11 @@
             },
             "days": {
               "kind": "property",
-              "signature": "days: Office.MailboxEnums.Days[];",
+              "signature": "days: MailboxEnums.Days[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days[]",
+              "type": "MailboxEnums.Days[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39529,11 +39549,11 @@
             },
             "firstDayOfWeek": {
               "kind": "property",
-              "signature": "firstDayOfWeek: Office.MailboxEnums.Days;",
+              "signature": "firstDayOfWeek: MailboxEnums.Days;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days",
+              "type": "MailboxEnums.Days",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39569,11 +39589,11 @@
             },
             "month": {
               "kind": "property",
-              "signature": "month: Office.MailboxEnums.Month;",
+              "signature": "month: MailboxEnums.Month;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Month",
+              "type": "MailboxEnums.Month",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -39589,11 +39609,11 @@
             },
             "weekNumber": {
               "kind": "property",
-              "signature": "weekNumber: Office.MailboxEnums.WeekNumber;",
+              "signature": "weekNumber: MailboxEnums.WeekNumber;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.WeekNumber",
+              "type": "MailboxEnums.WeekNumber",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -42233,7 +42253,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42252,7 +42272,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -42396,7 +42416,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(subject: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42427,7 +42447,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -42603,7 +42623,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setAsync(subject: string, options: Office.AsyncContextOptions): void;`"
+                  "text": "`setAsync(subject: string, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"
@@ -42897,7 +42917,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42916,7 +42936,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -43060,7 +43080,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setAsync(dateTime: Date, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -43091,7 +43111,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -43274,7 +43294,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;`"
+                  "text": "`setAsync(dateTime: Date, options: AsyncContextOptions): void;`"
                 },
                 {
                   "kind": "paragraph"

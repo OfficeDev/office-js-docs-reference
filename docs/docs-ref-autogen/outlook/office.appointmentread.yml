@@ -68,7 +68,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentRead.addHandlerAsync
@@ -77,8 +77,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) =>
-        void): void;
+        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -87,7 +87,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -129,10 +129,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: Office.AttachmentDetails[];'
+      content: 'attachments: AttachmentDetails[];'
       return:
         type:
-          - 'Office.AttachmentDetails[]'
+          - 'AttachmentDetails[]'
   - uid: outlook.Office.AppointmentRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -150,10 +150,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -464,9 +464,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -849,10 +847,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode

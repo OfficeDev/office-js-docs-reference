@@ -49,8 +49,7 @@ items:
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
@@ -94,8 +93,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -168,7 +167,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -219,8 +218,7 @@ items:
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
@@ -264,8 +262,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void

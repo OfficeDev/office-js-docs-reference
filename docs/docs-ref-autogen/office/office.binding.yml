@@ -101,8 +101,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -113,7 +113,7 @@ items:
             The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of
@@ -312,8 +312,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -324,7 +324,7 @@ items:
             The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
             `Office.EventType.BindingSelectionChanged`.
           type:
-            - Office.EventType
+            - EventType
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
