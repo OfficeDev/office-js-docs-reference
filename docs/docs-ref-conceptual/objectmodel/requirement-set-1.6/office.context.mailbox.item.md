@@ -17,42 +17,41 @@ The `item` namespace is used to access the currently selected message, meeting r
 
 | Member | Type |
 |--------|------|
-| [attachments](#attachments-arrayattachmentdetails) | Member |
-| [bcc](#bcc-recipients) | Member |
-| [body](#body-body) | Member |
-| [cc](#cc-arrayemailaddressdetailsrecipients) | Member |
+| [attachments](#attachments-arrayattachmentdetailsjavascriptapiofficeoffice16attachmentdetails) | Member |
+| [bcc](#bcc-recipientsjavascriptapioutlook16officerecipientsmd) | Member |
+| [body](#body-bodyjavascriptapioutlook16officebodymd) | Member |
+| [cc](#cc-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
 | [conversationId](#nullable-conversationid-string) | Member |
 | [dateTimeCreated](#datetimecreated-date) | Member |
 | [dateTimeModified](#datetimemodified-date) | Member |
-| [end](#end-datetime) | Member |
-| [from](#from-emailaddressdetails) | Member |
+| [end](#end-datetimejavascriptapioutlook16officetimemd) | Member |
+| [from](#from-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
 | [internetMessageId](#internetmessageid-string) | Member |
 | [itemClass](#itemclass-string) | Member |
 | [itemId](#nullable-itemid-string) | Member |
-| [itemType](#itemtype-officemailboxenumsitemtype) | Member |
-| [location](#location-stringlocation) | Member |
+| [itemType](#itemtype-officemailboxenumsitemtypejavascriptapioutlook16officemailboxenumsitemtype) | Member |
+| [location](#location-stringlocationjavascriptapioutlook16officelocationmd) | Member |
 | [normalizedSubject](#normalizedsubject-string) | Member |
-| [notificationMessages](#notificationmessages-notificationmessages) | Member |
-| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsrecipients) | Member |
-| [organizer](#organizer-emailaddressdetails) | Member |
-| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsrecipients) | Member |
-| [sender](#sender-emailaddressdetails) | Member |
-| [start](#start-datetime) | Member |
-| [subject](#subject-stringsubject) | Member |
-| [to](#to-arrayemailaddressdetailsrecipients) | Member |
+| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlook16officenotificationmessagesmd) | Member |
+| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
+| [organizer](#organizer-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
+| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
+| [sender](#sender-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
+| [start](#start-datetimejavascriptapioutlook16officetimemd) | Member |
+| [subject](#subject-stringsubjectjavascriptapioutlook16officesubjectmd) | Member |
+| [to](#to-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
 | [addFileAttachmentAsync](#addfileattachmentasyncuri-attachmentname-options-callback) | Method |
 | [addItemAttachmentAsync](#additemattachmentasyncitemid-attachmentname-options-callback) | Method |
 | [close](#close) | Method |
 | [displayReplyAllForm](#displayreplyallformformdata) | Method |
 | [displayReplyForm](#displayreplyformformdata) | Method |
-| [getEntities](#getentities--entities) | Method |
-| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
-| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
+| [getEntities](#getentities--entitiesjavascriptapiofficeoffice16entities) | Method |
+| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapiofficeoffice16contactmeetingsuggestionjavascriptapiofficeoffice16meetingsuggestionphonenumberjavascriptapiofficeoffice16phonenumbertasksuggestionjavascriptapiofficeoffice16tasksuggestion) | Method |
+| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapiofficeoffice16contactmeetingsuggestionjavascriptapiofficeoffice16meetingsuggestionphonenumberjavascriptapiofficeoffice16phonenumbertasksuggestionjavascriptapiofficeoffice16tasksuggestion) | Method |
 | [getRegExMatches](#getregexmatches--object) | Method |
-| [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array) | Method |
+| [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array-string-) | Method |
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
-| [getSelectedEntities](#getselectedentities--entities) | Method |
-| [getSelectedRegExMatches](#getselectedregexmatches--object) | Method |
+| [getSelectedEntities](#getselectedentities--entitiesjavascriptapiofficeoffice16entities) | Method |
 | [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
 | [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
 | [saveAsync](#saveasyncoptions-callback) | Method |
@@ -163,6 +162,7 @@ Gets an object that provides methods for manipulating the body of an item.
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
+
 ####  cc :Array.<[EmailAddressDetails](/javascript/api/office/office_1_6.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_6/office.Recipients.md)
 
 Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
