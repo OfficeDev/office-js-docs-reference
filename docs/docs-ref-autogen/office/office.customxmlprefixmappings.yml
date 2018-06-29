@@ -28,8 +28,8 @@ items:
     type: method
     syntax:
       content: >-
-        addNamespaceAsync(prefix: string, ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -69,8 +69,8 @@ items:
     type: method
     syntax:
       content: >-
-        getNamespaceAsync(prefix: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -106,7 +106,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getPrefixAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void

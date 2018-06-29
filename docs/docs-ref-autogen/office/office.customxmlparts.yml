@@ -52,7 +52,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -143,7 +143,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByNamespaceAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void

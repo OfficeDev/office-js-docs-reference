@@ -128,10 +128,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: AttachmentDetails[];'
+      content: 'attachments: Office.AttachmentDetails[];'
       return:
         type:
-          - 'AttachmentDetails[]'
+          - 'Office.AttachmentDetails[]'
   - uid: outlook.Office.MessageRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -149,10 +149,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Body;'
+      content: 'body: Office.Body;'
       return:
         type:
-          - Body
+          - outlook.Office.Body
   - uid: outlook.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -492,7 +492,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -873,10 +875,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: NotificationMessages;'
+      content: 'notificationMessages: Office.NotificationMessages;'
       return:
         type:
-          - NotificationMessages
+          - outlook.Office.NotificationMessages
   - uid: outlook.Office.MessageRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose

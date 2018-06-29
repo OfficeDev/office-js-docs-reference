@@ -3,11 +3,11 @@ items:
   - uid: Outlook_1_6.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Recipients
     fullName: Outlook_1_6.Office.Recipients
     langs:
@@ -32,14 +32,15 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -48,7 +49,8 @@ items:
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
@@ -60,8 +62,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -95,11 +97,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -112,7 +114,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -146,14 +148,15 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -162,7 +165,8 @@ items:
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
@@ -174,8 +178,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void

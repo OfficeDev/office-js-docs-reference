@@ -54,10 +54,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: AttachmentDetails[];'
+      content: 'attachments: Office.AttachmentDetails[];'
       return:
         type:
-          - 'AttachmentDetails[]'
+          - 'Office.AttachmentDetails[]'
   - uid: outlook.Office.ItemRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -293,7 +293,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void

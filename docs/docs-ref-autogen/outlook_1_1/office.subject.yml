@@ -6,11 +6,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Subject
     fullName: Outlook_1_1.Office.Subject
     langs:
@@ -31,11 +31,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -48,7 +48,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -78,14 +78,15 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255
+      characters.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -94,7 +95,7 @@ items:
       `setAsync(subject: string): void;`
 
 
-      `setAsync(subject: string, options: AsyncContextOptions): void;`
+      `setAsync(subject: string, options: Office.AsyncContextOptions): void;`
 
 
       `setAsync(subject: string, callback: (result: AsyncResult) => void): void;`
@@ -104,7 +105,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(subject: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void

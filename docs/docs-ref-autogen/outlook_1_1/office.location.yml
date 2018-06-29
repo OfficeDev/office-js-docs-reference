@@ -6,11 +6,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Location
     fullName: Outlook_1_1.Office.Location
     langs:
@@ -28,11 +28,11 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -45,7 +45,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -71,14 +71,15 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
+      characters.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -87,7 +88,7 @@ items:
       `setAsync(location: string): void;`
 
 
-      `setAsync(location: string, options: AsyncContextOptions): void;`
+      `setAsync(location: string, options: Office.AsyncContextOptions): void;`
 
 
       `setAsync(location: string, callback: (result: AsyncResult) => void): void;`
@@ -97,7 +98,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(location: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
