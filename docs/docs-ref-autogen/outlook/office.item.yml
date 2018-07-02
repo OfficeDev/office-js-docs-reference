@@ -51,7 +51,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.addHandlerAsync
@@ -60,8 +60,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -70,7 +70,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -106,10 +106,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Body;'
+      content: 'body: Office.Body;'
       return:
         type:
-          - Body
+          - outlook.Office.Body
   - uid: outlook.Office.Item.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -245,10 +245,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: NotificationMessages;'
+      content: 'notificationMessages: Office.NotificationMessages;'
       return:
         type:
-          - NotificationMessages
+          - outlook.Office.NotificationMessages
   - uid: outlook.Office.Item.recurrence
     summary: >-
       Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
@@ -281,7 +281,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrence: Recurrence;'
+      content: 'recurrence: Office.Recurrence;'
       return:
         type:
           - outlook.Office.Recurrence
@@ -306,7 +306,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      `removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.removeHandlerAsync
@@ -315,8 +315,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        removeHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -325,7 +325,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.

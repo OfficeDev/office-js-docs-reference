@@ -119,8 +119,8 @@ items:
     type: method
     syntax:
       content: >-
-        addColumnsAsync(tableData: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -195,8 +195,8 @@ items:
     type: method
     syntax:
       content: >-
-        addRowsAsync(rows: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -254,7 +254,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'clearFormatsAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -316,7 +316,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAllDataValuesAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -339,7 +339,7 @@ items:
     type: method
     syntax:
       content: >-
-        getFormatsAsync(cellReference?: any, formats?: any[], options?: AsyncContextOptions, callback?: (result:
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult) => void): void;
       return:
         type:
@@ -612,8 +612,8 @@ items:
     type: method
     syntax:
       content: >-
-        setFormatsAsync(cellFormat?: any[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        setFormatsAsync(cellFormat?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -680,8 +680,8 @@ items:
     type: method
     syntax:
       content: >-
-        setTableOptionsAsync(tableOptions: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
