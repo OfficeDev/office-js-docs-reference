@@ -59,7 +59,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
@@ -70,8 +70,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -142,7 +142,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
@@ -153,8 +153,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -245,7 +245,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -285,22 +287,20 @@ items:
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
-    name: 'getSelectedDataAsync(coercionType, callback)'
+    name: 'getSelectedDataAsync(coerciontype, callback)'
     fullName: outlook.Office.ItemCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
+      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coercionType
-          description: >-
-            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
-            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+        - id: coerciontype
+          description: ''
           type:
             - office.Office.CoercionType
         - id: callback
@@ -339,7 +339,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
+      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
 
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
@@ -350,8 +350,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -423,7 +423,7 @@ items:
       `saveAsync(): void;`
 
 
-      `saveAsync(options: AsyncContextOptions): void;`
+      `saveAsync(options: Office.AsyncContextOptions): void;`
 
 
       `saveAsync(callback: (result: AsyncResult) => void): void;`
@@ -433,7 +433,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -480,7 +480,7 @@ items:
       `setSelectedDataAsync(data: string): void;`
 
 
-      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
@@ -491,8 +491,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult) => void): void;
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -514,7 +514,7 @@ items:
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

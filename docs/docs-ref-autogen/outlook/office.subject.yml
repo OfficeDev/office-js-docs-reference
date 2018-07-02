@@ -48,7 +48,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -95,7 +95,7 @@ items:
       `setAsync(subject: string): void;`
 
 
-      `setAsync(subject: string, options: AsyncContextOptions): void;`
+      `setAsync(subject: string, options: Office.AsyncContextOptions): void;`
 
 
       `setAsync(subject: string, callback: (result: AsyncResult) => void): void;`
@@ -105,7 +105,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(subject: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void

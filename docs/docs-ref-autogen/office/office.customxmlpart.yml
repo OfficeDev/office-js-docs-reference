@@ -105,8 +105,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -117,7 +117,7 @@ items:
             Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
             `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of
@@ -195,7 +195,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -241,7 +241,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -288,7 +290,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -388,7 +390,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
+        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
         callback?: (result: AsyncResult) => void): void;
       return:
         type:
@@ -400,7 +402,7 @@ items:
             Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
             as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: The name of the handler to remove.
           type:
