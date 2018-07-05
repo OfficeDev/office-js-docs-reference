@@ -55,7 +55,6 @@ Office.AddinCommands.Event.source:
         // Signal to the host app that processing is complete.
         event.completed();
     }
-Office.AddinCommands.Event.source:
   - |-
     // Function is used by two buttons:
     // button1 and button2
@@ -1574,8 +1573,6 @@ Office.Document.mode:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-  - |-
-Office.Document.mode:
   - |-
     // The following example initializes the add-in and then gets properties of the
     // Document object that are available in the context of a Project document.

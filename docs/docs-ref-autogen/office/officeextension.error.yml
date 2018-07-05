@@ -10,32 +10,6 @@ items:
       - typeScript
     type: class
     package: office
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a proxy object for the document body.
-          var body = context.document.body;
-
-          // Queue a commmand to insert text in to the beginning of the body.
-          // This will cause an OfficeExtension.Error.
-          body.insertText(0);
-
-          // Synchronize the document state by executing the queued-up commands,
-          // and return a promise to indicate task completion.
-          return context.sync();
-      })
-      .catch(function (error) {
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Error code and message: ' + error.toString());
-          }
-      });
-      ```
     children:
       - office.OfficeExtension.Error.code
       - office.OfficeExtension.Error.debugInfo
