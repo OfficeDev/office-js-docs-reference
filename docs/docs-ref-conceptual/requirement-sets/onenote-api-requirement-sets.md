@@ -21,7 +21,7 @@ OneNote JavaScript API 1.1 is the first version of the API. For details about th
 During the runtime, add-ins can check if a particular host supports an API requirement set by doing the following-check: 
 
 ```js
-if (Office.context.requirements.isSetSupported('OneNoteApi', 1.3) === true) {
+if (Office.context.requirements.isSetSupported('OneNoteApi', 1.1) === true) {
   /// perform actions
 }
 else {
