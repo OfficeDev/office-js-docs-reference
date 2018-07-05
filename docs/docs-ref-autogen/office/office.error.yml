@@ -2,40 +2,12 @@
 items:
   - uid: office.Office.Error
     summary: Provides specific information about an error that occurred during an asynchronous data operation.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
 
       The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback
       argument of an asynchronous data operation, such as the setSelectedDataAsync method of the Document object.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example uses the setSelectedDataAsync method to set the selected text to "Hello World!",
-
-      // and if that fails, displays the values of the name and message properties of the Error object.
-
-      function setText() {
-          Office.context.document.setSelectedDataAsync("Hello World!", {},
-              function (asyncResult) {
-                  if (asyncResult.status === "failed")
-                  var err = asyncResult.error; 
-                      write(err.name + ": " + err.message);
-              });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: Office.Error
     fullName: office.Office.Error
     langs:
