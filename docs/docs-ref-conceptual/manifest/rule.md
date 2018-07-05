@@ -112,7 +112,7 @@ Defines a collection of rules and the logical operator to use when evaluating th
 </Rule>
 ```
 
-## Additional resources
+## See also
 
 - [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) 
 - [Activation rules for Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/activation-rules)

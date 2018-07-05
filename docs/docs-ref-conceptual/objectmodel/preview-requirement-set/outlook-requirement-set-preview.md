@@ -27,7 +27,7 @@ The following features are in preview.
 - [Office.MailboxEnums.RecurrenceType](/javascript/api/office/office.mailboxenums.recurrencetype) - Added a new enum that specifies the type of recurrence. 
 - [Office.MailboxEnums.WeekNumber](/javascript/api/office/office.mailboxenums.weeknumber) - Added a new enum that specifies the week of the month.
 
-## Additional resources
+## See also
 
 - [Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)

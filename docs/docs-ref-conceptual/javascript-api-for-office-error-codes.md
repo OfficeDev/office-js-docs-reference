@@ -119,7 +119,7 @@ The following table summarizes binding behavior in Word.
 |Text|Multiple selection|The last selection will be wrapped with a content control and a binding to that control. A content control of type  _text_ is created.|
 |Text|Invalid selection (for example, multiple, invalid objects, etc.)|The binding cannot be created.|
 
-## Additional resources
+## See also
    
 - [Office Add-ins development lifecycle](https://docs.microsoft.com/office/dev/add-ins/concepts/add-in-development-lifecycle)
     

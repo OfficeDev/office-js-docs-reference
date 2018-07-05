@@ -608,6 +608,9 @@ declare namespace Office {
         * <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
         *
         * <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr></table>
+        * 
+        * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 for Outlook. 
+        * For more on how to specify a requirement set in your manifest, see {@link https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
         *
         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to other domains.
         *
@@ -2608,7 +2611,7 @@ declare namespace Office {
          */
         getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
-         * Project documents only. Set resource field for specified resource Id. (Ex.ResourceName)
+         * Project documents only. Set resource field for specified resource Id.
          * 
          * Important: This API works only in Project 2016 on Windows desktop.
          * 
@@ -2620,12 +2623,12 @@ declare namespace Office {
          */
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
-         * Project documents only. Set task field for specified task Id. (Ex.ResourceName)
+         * Project documents only. Set task field for specified task Id.
          * 
          * Important: This API works only in Project 2016 on Windows desktop.
          * 
          * @param taskId Either a string or value of the Task Id.
-         * @param fieldId Resource Fields.
+         * @param fieldId Task Fields.
          * @param fieldValue Value of the target field.
          * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.

@@ -14,7 +14,7 @@ Requirement set 1.4 includes all of the features of [Requirement set 1.3](../req
 - Added [Office.context.ui.messageParent](/javascript/api/office/office.officeui): Delivers a message from the dialog box to its parent/opener page.
 - Added [Dialog](/javascript/api/office/office.officeui) object: The object that is returned when the `displayDialogAsync` method is called.
 
-## Additional resources
+## See also
 
 - [Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)

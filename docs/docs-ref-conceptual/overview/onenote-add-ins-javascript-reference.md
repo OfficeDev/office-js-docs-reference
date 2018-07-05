@@ -42,7 +42,7 @@ The following links show the high level OneNote objects available in the API. Ea
 
 For detailed information about OneNote JavaScript API, see the [OneNote JavaScript API reference documentation](../../api/onenote).
 
-## Additional resources
+## See also
 
 - [OneNote JavaScript API programming overview](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-programming-overview)
 - [Build your first OneNote add-in](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-getting-started)
