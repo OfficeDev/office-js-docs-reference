@@ -51,33 +51,6 @@ Office.Body.setSelectedDataAsync:
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
-Office.CustomProperties:
-  - |-
-    // The following example shows how to use the loadCustomPropertiesAsync method
-    // to asynchronously load custom properties that are specific to the current item.
-    // The example also shows how to use the saveAsync method to save these properties
-    // back to the server. After loading the custom properties, the example uses the
-    // get method to read the custom property myProp, the set method to write the
-    // custom property otherProp, and then finally calls the saveAsync method to save
-    // the custom properties.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, add-in-specific code can run.
-            var mailbox = Office.context.mailbox;
-            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-        });
-    }
-    function customPropsCallback(asyncResult) {
-        var customProps = asyncResult.value;
-        var myProp = customProps.get("myProp");
-
-        customProps.set("otherProp", "value");
-        customProps.saveAsync(saveCallback);
-    }
-
-    function saveCallback(asyncResult) {
-    }
 Office.CustomProperties.saveAsync:
   - |-
     // The following JavaScript code sample shows how to asynchronously use
@@ -119,79 +92,32 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.AddinCommands.Event:
+Office.Item.loadCustomPropertiesAsync:
   - |-
-    // In this example, consider a button defined in an add-in manifest as follows:
-    <Control xsi:type="Button" id="eventTestButton">
-        <Label resid="eventButtonLabel" />
-        <Tooltip resid="eventButtonTooltip" />
-        <Supertip>
-            <Title resid="eventSuperTipTitle" />
-            <Description resid="eventSuperTipDescription" />
-        </Supertip>
-        <Icon>
-            <bt:Image size="16" resid="blue-icon-16" />
-            <bt:Image size="32" resid="blue-icon-32" />
-            <bt:Image size="80" resid="blue-icon-80" />
-        </Icon>
-        <Action xsi:type="ExecuteFunction">
-            <FunctionName>testEventObject</FunctionName>
-        </Action>
-    </Control>
-    // The button has an id attribute set to eventTestButton, and will invoke
-    // the testEventObject function defined in the add-in.
-    // That function looks like this:
-    function testEventObject(event) {
-        // The event object implements the Event interface
-
-        // This value will be "eventTestButton"
-        var buttonId = event.source.id;
-
-        // Signal to the host app that processing is complete.
-        event.completed();
-    }
-Office.AddinCommands.Event.source:
-  - |-
-    // Function is used by two buttons:
-    // button1 and button2
-    function multiButton (event) {
-        // Check which button was clicked
-        var buttonId = event.source.id;
-
-        if (buttonId === 'button1') {
-            doButton1Action();
-        }
-        else {
-            doButton2Action();
-        }
-
-        event.completed();
-    }
-Office.AddinCommands.Event.completed:
-  - |-
-    function processItem (event) {
-        // Do some processing
-
-        event.completed();
-    }
-
-    // In the following example, the checkMessage function has
-    // been registered as an event handler for ItemSend.
-    function checkMessage(event) {
-        // Get the item being sent
-        var outgoingMsg = Office.context.mailbox.item;
-
-        // Check if subject contains "BLOCK"
-        outgoingMsg.subject.getAsync(function (result) {
-            // Subject is in result.value
-            if (result.value.indexOf('BLOCK') != -1) {
-                // Value is found, stop send
-                event.completed({allowEvent = false});
-            } else {
-                // Value wasn't found, allow send
-                event.completed({allowEvent = true});
-            }
+    // The following example shows how to use the loadCustomPropertiesAsync method
+    // to asynchronously load custom properties that are specific to the current item.
+    // The example also shows how to use the saveAsync method to save these properties
+    // back to the server. After loading the custom properties, the example uses the
+    // get method to read the custom property myProp, the set method to write the
+    // custom property otherProp, and then finally calls the saveAsync method to save
+    // the custom properties.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
         });
+    }
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+    function saveCallback(asyncResult) {
     }
 Office.NotificationMessages.addAsync:
   - |-

@@ -1,3 +1,77 @@
+Office.AddinCommands.Event.completed:
+  - |-
+    function processItem (event) {
+        // Do some processing
+
+        event.completed();
+    }
+
+    // In the following example, the checkMessage function has
+    // been registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent
+        var outgoingMsg = Office.context.mailbox.item;
+
+        // Check if subject contains "BLOCK"
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in result.value
+            if (result.value.indexOf('BLOCK') != -1) {
+                // Value is found, stop send
+                event.completed({allowEvent = false});
+            } else {
+                // Value wasn't found, allow send
+                event.completed({allowEvent = true});
+            }
+        });
+    }
+Office.AddinCommands.Event.source:
+  - |-
+    // In this example, consider a button defined in an add-in manifest as follows:
+    <Control xsi:type="Button" id="eventTestButton">
+        <Label resid="eventButtonLabel" />
+        <Tooltip resid="eventButtonTooltip" />
+        <Supertip>
+            <Title resid="eventSuperTipTitle" />
+            <Description resid="eventSuperTipDescription" />
+        </Supertip>
+        <Icon>
+            <bt:Image size="16" resid="blue-icon-16" />
+            <bt:Image size="32" resid="blue-icon-32" />
+            <bt:Image size="80" resid="blue-icon-80" />
+        </Icon>
+        <Action xsi:type="ExecuteFunction">
+            <FunctionName>testEventObject</FunctionName>
+        </Action>
+    </Control>
+    // The button has an id attribute set to eventTestButton, and will invoke
+    // the testEventObject function defined in the add-in.
+    // That function looks like this:
+    function testEventObject(event) {
+        // The event object implements the Event interface
+
+        // This value will be "eventTestButton"
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
+Office.AddinCommands.Event.source:
+  - |-
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked
+        var buttonId = event.source.id;
+
+        if (buttonId === 'button1') {
+            doButton1Action();
+        }
+        else {
+            doButton2Action();
+        }
+
+        event.completed();
+    }
 Office.AsyncResult:
   - |-
     // The following is an example applicable to content and task pane add-ins.
@@ -934,58 +1008,6 @@ Office.CustomXmlParts.getByNamespaceAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document:
-  - |-
-    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
-    // user's current selection as text, and then display it in the add-in's page.
-
-    // Display the user's current selection.
-    function showSelection() {
-        Office.context.document.getSelectedDataAsync(
-            "text",                        // coercionType
-            {valueFormat: "unformatted",   // valueFormat
-            filterType: "all"},            // filterType
-            function (result) {            // callback
-                var dataValue; 
-                dataValue = result.value;
-                write('Selected data is: ' + dataValue);
-            });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-  - |-
-    // The following example initializes the add-in and then gets properties of the
-    // Document object that are available in the context of a Project document.
-    // A Project document is the opened, active project. To access members of the
-    // ProjectDocument object, use the Office.context.document object as shown in
-    // the code examples for ProjectDocument methods and events.
-    // The example assumes your add-in has a reference to the jQuery library and
-    // that the following page control is defined in the content div in the page body:
-    <span id="message"></span>
-
-    (function () {
-        "use strict";
-
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // Get information about the document.
-                showDocumentProperties();
-            });
-        };
-
-        // Get the document mode and the URL of the active project.
-        function showDocumentProperties() {
-            var output = String.format(
-                'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                Office.context.document.mode,
-                Office.context.document.url);
-            $('#message').html(output);
-        }
-    })();
 Office.Document.addHandlerAsync:
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
@@ -1359,6 +1381,26 @@ Office.Document.getFilePropertiesAsync:
     }
 Office.Document.getSelectedDataAsync:
   - |-
+    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
+    // user's current selection as text, and then display it in the add-in's page.
+
+    // Display the user's current selection.
+    function showSelection() {
+        Office.context.document.getSelectedDataAsync(
+            "text",                        // coercionType
+            {valueFormat: "unformatted",   // valueFormat
+            filterType: "all"},            // filterType
+            function (result) {            // callback
+                var dataValue; 
+                dataValue = result.value;
+                write('Selected data is: ' + dataValue);
+            });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - |-
     // To read the value of the current selection, you need to write a callback function that reads the selection.
     // The following example shows how to:
     // 1. Pass an anonymous callback function that reads the value of the current selection to the callback parameter of the getSelectedDataAsync method.
@@ -1532,6 +1574,39 @@ Office.Document.mode:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+  - |-
+Office.Document.mode:
+  - |-
+    // The following example initializes the add-in and then gets properties of the
+    // Document object that are available in the context of a Project document.
+    // A Project document is the opened, active project. To access members of the
+    // ProjectDocument object, use the Office.context.document object as shown in
+    // the code examples for ProjectDocument methods and events.
+    // The example assumes your add-in has a reference to the jQuery library and
+    // that the following page control is defined in the content div in the page body:
+    <span id="message"></span>
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // Get information about the document.
+                showDocumentProperties();
+            });
+        };
+
+        // Get the document mode and the URL of the active project.
+        function showDocumentProperties() {
+            var output = String.format(
+                'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                Office.context.document.mode,
+                Office.context.document.url);
+            $('#message').html(output);
+        }
+    })();
 Office.Document.removeHandlerAsync:
   - |-
     // The following example removes the event handler named 'MyHandler'.
@@ -1699,23 +1774,6 @@ Office.Document.url:
   - |-
     function displayDocumentUrl() {
         write(Office.context.document.url);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.Error:
-  - |-
-    // The following example uses the setSelectedDataAsync method to set the selected text to "Hello World!",
-    // and if that fails, displays the values of the name and message properties of the Error object.
-    function setText() {
-        Office.context.document.setSelectedDataAsync("Hello World!", {},
-            function (asyncResult) {
-                if (asyncResult.status === "failed")
-                var err = asyncResult.error; 
-                    write(err.name + ": " + err.message);
-            });
     }
 
     // Function that writes to a div with id='message' on the page.
