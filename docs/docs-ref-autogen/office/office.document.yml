@@ -2483,7 +2483,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setResourceFieldAsync
     summary: |-
-      Project documents only. Set resource field for specified resource Id. (Ex.ResourceName)
+      Project documents only. Set resource field for specified resource Id.
 
       Important: This API works only in Project 2016 on Windows desktop.
     name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
@@ -2874,7 +2874,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setTaskFieldAsync
     summary: |-
-      Project documents only. Set task field for specified task Id. (Ex.ResourceName)
+      Project documents only. Set task field for specified task Id.
 
       Important: This API works only in Project 2016 on Windows desktop.
     name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
@@ -2896,7 +2896,7 @@ items:
           type:
             - string
         - id: fieldId
-          description: Resource Fields.
+          description: Task Fields.
           type:
             - number
         - id: fieldValue

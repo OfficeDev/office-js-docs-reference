@@ -30,7 +30,7 @@ Requirement set 1.3 includes all of the features of [Requirement set 1.2](../req
 - Added [NotificationMessages](/javascript/api/office_1_3/office.NotificationMessages) object: Provides methods for accessing notification messages in an Outlook add-in.
 - Added [NotificationMessageDetails](/javascript/api/office_1_3/office.notificationmessagedetails) type: Returned by the `NotificationMessages.getAllAsync` method.
 
-## Additional resources
+## See also
 
 - [Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)

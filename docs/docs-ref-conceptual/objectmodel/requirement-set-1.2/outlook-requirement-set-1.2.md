@@ -14,7 +14,7 @@ Requirement set 1.2 includes all of the features of [Requirement set 1.1](../req
 - Modified [Office.context.mailbox.item.displayReplyAllForm](/Office-item.md#displayreplyallformformdata): Added `attachments` property to the `formData` parameter.
 - Modified [Office.context.mailbox.item.displayReplyForm](/Office-item.md#displayreplyformformdata): Added `attachments` property to the `formData` parameter.
 
-## Additional resources
+## See also
 
 - [Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)

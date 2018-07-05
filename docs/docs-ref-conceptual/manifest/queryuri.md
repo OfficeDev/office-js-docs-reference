@@ -14,7 +14,7 @@ Specifies the URL of the endpoint for the dictionary query service.
 
 [Dictionary](dictionary.md)
 
-## Additional resources
+## See also
 
 - [Create a dictionary task pane add-in](https://docs.microsoft.com/office/dev/add-ins/word/dictionary-task-pane-add-ins)
     

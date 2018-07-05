@@ -12522,7 +12522,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Project documents only. Set resource field for specified resource Id. (Ex.ResourceName)"
+                  "text": "Project documents only. Set resource field for specified resource Id."
                 },
                 {
                   "kind": "paragraph"
@@ -13573,7 +13573,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Resource Fields."
+                      "text": "Task Fields."
                     }
                   ],
                   "isOptional": false,
@@ -13621,7 +13621,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Project documents only. Set task field for specified task Id. (Ex.ResourceName)"
+                  "text": "Project documents only. Set task field for specified task Id."
                 },
                 {
                   "kind": "paragraph"
@@ -31013,6 +31013,27 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Specify Office hosts and API requirements"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"

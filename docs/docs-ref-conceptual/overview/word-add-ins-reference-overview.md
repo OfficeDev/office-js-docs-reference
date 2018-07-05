@@ -118,7 +118,7 @@ As we design and develop new APIs for Word add-ins, we'll make them available fo
 
 For detailed information about the Word JavaScript API, see the [Word JavaScript API reference documentation](../../api/word).
 
-## Additional resources
+## See also
 
 * [Word add-ins overview](https://docs.microsoft.com/office/dev/add-ins/word/word-add-ins-programming-overview)
 * [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)

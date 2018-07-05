@@ -43,7 +43,7 @@ As we design and develop new APIs for Excel add-ins, we'll make them available f
 
 For detailed information about Excel JavaScript API, see the [Excel JavaScript API reference documentation](../../api/excel).
 
-## Additional resources
+## See also
 
 - [Excel add-ins overview](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-overview)
 - [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)

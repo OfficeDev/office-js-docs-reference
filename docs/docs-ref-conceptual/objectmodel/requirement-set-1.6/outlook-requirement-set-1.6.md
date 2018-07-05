@@ -17,7 +17,7 @@ Requirement set 1.6 includes all of the features of [Requirement set 1.5](../req
 - Added [Office.context.mailbox.displayNewMessageForm](/Office-item.md#displaynewmessageformparameters): Adds a new function that opens a new message form.
 - Added [Office.context.mailbox.userProfile.accountType](/Office-item.md#accounttype-string): Adds a new member to the user profile that indicates the type of the user's account.
 
-## Additional resources
+## See also
 
 - [Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
