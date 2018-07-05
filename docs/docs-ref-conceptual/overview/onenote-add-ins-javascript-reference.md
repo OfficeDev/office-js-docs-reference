@@ -13,7 +13,7 @@ The following links show the high level OneNote objects available in the API. Ea
     - [SectionGroupCollection](../../docs-ref-autogen/onenote/onenote.sectiongroupcollection.yml): A collection of section groups.
 
 - [Section](../../docs-ref-autogen/onenote/onenote.section.yml): A section. Sections contain pages.
-    - [SectionCollection](../../docs-ref-autogen/onenote/onenote.sectioncollection): A collection of sections.
+    - [SectionCollection](../../docs-ref-autogen/onenote/onenote.sectioncollection.yml): A collection of sections.
 
 - [Page](../../docs-ref-autogen/onenote/onenote.page.yml): A page. Pages contain PageContent objects.
     - [PageCollection](../../docs-ref-autogen/onenote/onenote.pagecollection.yml): A collection of pages.

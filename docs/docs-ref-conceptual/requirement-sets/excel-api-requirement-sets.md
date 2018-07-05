@@ -218,7 +218,6 @@ In addition:
 |[documentProperties](../../docs-ref-autogen/excel/excel.documentproperties.yml)|_Property_ > title|Gets or sets the title of the workbook.|1.7|
 |[documentProperties](../../docs-ref-autogen/excel/excel.documentproperties.yml)|_Relationship_ > creationDate|Gets the creation date of the workbook. Read only. Read-only.|1.7|
 |[documentProperties](../../docs-ref-autogen/excel/excel.documentproperties.yml)|_Relationship_ > custom|Gets the collection of custom properties of the workbook. Read only. Read-only.|1.7|
-|[listDataValidation](../../docs-ref-autogen/excel/excel.listdatavalidation.yml)|_Property_ > source|Source of the list for data validation|1.8|
 |[namedItem](../../docs-ref-autogen/excel/excel.nameditem.yml)|_Property_ > formula|Gets or sets the formula of the named item.  Formula always starts with a '=' sign.|1.7|
 |[namedItem](../../docs-ref-autogen/excel/excel.nameditem.yml)|_Relationship_ > arrayValues|Returns an object containing values and types of the named item. Read-only.|1.7|
 |[namedItemArrayValues](../../docs-ref-autogen/excel/excel.nameditemarrayvalues.yml)|_Property_ > types|Represents the types for each item in the named item array Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.|1.7|
