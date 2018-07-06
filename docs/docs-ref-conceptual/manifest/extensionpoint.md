@@ -57,7 +57,7 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
         </ExtensionPoint>
 ```
 
-## Child elements
+#### Child elements
  
 |**Element**|**Description**|
 |:-----|:-----|
@@ -72,7 +72,7 @@ The following examples show how to use the  **ExtensionPoint** element with **Pr
 |**Script**|Links to the JavaScript file with the custom function definition and registration code. This element is not used in the Developer Preview. Instead, the HTML page is responsible for loading all JavaScript files.|
 |**Page**|Links to the HTML page for your custom functions.|
 
-## Extension points for Outlook add-in commands
+## Extension points for Outlook
 
 - [MessageReadCommandSurface](#messagereadcommandsurface) 
 - [MessageComposeCommandSurface](#messagecomposecommandsurface) 
