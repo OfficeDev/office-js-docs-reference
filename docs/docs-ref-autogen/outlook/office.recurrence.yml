@@ -13,7 +13,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
 
 
       **States**
@@ -53,7 +54,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -120,7 +122,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
@@ -142,7 +145,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
@@ -164,7 +168,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
@@ -190,7 +195,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
@@ -214,7 +220,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>

@@ -9,13 +9,14 @@
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Members
 
 ####  accountType :String
 
-> **Note:** This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+> [!NOTE]
+> This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
 Gets the account type of the user associated with the mailbox. The possible values are listed in the following table.
 
@@ -36,7 +37,7 @@ Gets the account type of the user associated with the mailbox. The possible valu
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.6 |
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -58,7 +59,7 @@ Gets the user's display name.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -81,7 +82,7 @@ Gets the user's SMTP email address.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -104,7 +105,7 @@ Gets the user's default time zone.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 

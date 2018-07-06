@@ -12,7 +12,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     name: Office.Body
     fullName: outlook.Office.Body
     langs:
@@ -45,7 +46,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -118,7 +120,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: 'getTypeAsync(options, callback)'
     fullName: outlook.Office.Body.getTypeAsync
     langs:
@@ -163,7 +166,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
@@ -248,7 +252,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
@@ -350,7 +355,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000

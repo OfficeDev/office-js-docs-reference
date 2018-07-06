@@ -11,7 +11,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Namespaces
 
@@ -27,7 +27,8 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
 
-> **Note:** This member is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This member is not supported in Outlook for iOS or Outlook for Android.
 
 The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
 
@@ -45,7 +46,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 #### restUrl :String
 
@@ -67,7 +68,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Methods
 
@@ -93,7 +94,7 @@ Currently the only supported event type is `Office.EventType.ItemChanged`, which
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -118,7 +119,8 @@ function loadNewItem(eventArgs) {
 
 Converts an item ID formatted for REST into EWS format.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 Item IDs retrieved via a REST API (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the [Microsoft Graph](http://graph.microsoft.io/)) use a different format than the format used by Exchange Web Services (EWS). The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
 
@@ -135,7 +137,7 @@ Item IDs retrieved via a REST API (such as the [Outlook Mail API](https://msdn.m
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
 
@@ -173,7 +175,7 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
 
@@ -184,7 +186,8 @@ Type:
 
 Converts an item ID formatted for EWS into REST format.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the [Microsoft Graph](http://graph.microsoft.io/)). The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
 
@@ -201,7 +204,7 @@ Item IDs retrieved via EWS or via the `itemId` property use a different format t
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
 
@@ -237,7 +240,7 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
 
@@ -255,7 +258,8 @@ A Date object with the time expressed in UTC.
 
 Displays an existing calendar appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on mobile devices.
 
@@ -277,7 +281,7 @@ If the specified item identifier does not identify an existing appointment, a bl
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -289,7 +293,8 @@ Office.context.mailbox.displayAppointmentForm(appointmentId);
 
 Displays an existing message.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
 
@@ -311,7 +316,7 @@ Do not use the `displayMessageForm` with an `itemId` that represents an appointm
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -323,7 +328,8 @@ Office.context.mailbox.displayMessageForm(messageId);
 
 Displays a form for creating a new calendar appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayNewAppointmentForm` method opens a form that enables the user to create a new appointment or meeting. If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
 
@@ -335,7 +341,8 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 ##### Parameters:
 
-> **Note:** All parameters are optional.
+> [!NOTE]
+> All parameters are optional.
 
 |Name| Type| Description|
 |---|---|---|
@@ -355,7 +362,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -387,7 +394,8 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 ##### Parameters:
 
-> **Note:** All parameters are optional.
+> [!NOTE]
+> All parameters are optional.
 
 |Name| Type| Description|
 |---|---|---|
@@ -411,7 +419,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.6 |
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -439,7 +447,8 @@ Gets a string that contains a token used to call REST APIs or Exchange Web Servi
 
 The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
 
-> **Note:** It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible. 
+> [!NOTE]
+> It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible. 
 
 **REST Tokens**
 
@@ -468,7 +477,7 @@ The add-in should use the `ewsUrl` property to determine the correct URL to use 
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose and read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose and read|
 
 ##### Example
 
@@ -512,7 +521,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose and read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose and read|
 
 ##### Example
 
@@ -547,7 +556,7 @@ The token is provided as a string in the `asyncResult.value` property.|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -565,13 +574,14 @@ function cb(asyncResult) {
 
 Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user’s mailbox.
 
-> **Note:** This method is not supported in the following scenarios.
+> [!NOTE]
+> This method is not supported in the following scenarios.
 > - In Outlook for iOS or Outlook for Android
 > - When the add-in is loaded in a Gmail mailbox
 > 
 > In these cases, add-ins should [use REST APIs](https://docs.microsoft.com/outlook/add-ins/use-rest-api) to access the user's mailbox instead.
 
-The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange.
+The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange. See [Call web services from an Outlook Add-in](https://docs.microsoft.com/outlook/add-ins/web-services#ews-operations-that-add-ins-support) for a list of the supported EWS operations.
 
 You cannot request Folder Associated Items with the `makeEwsRequestAsync` method.
 
@@ -583,7 +593,8 @@ The XML request must specify UTF-8 encoding.
 
 Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](/outlook/add-ins/understanding-outlook-add-in-permissions).
 
-**NOTE**: The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
+> [!NOTE]
+> The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
 #### Version differences
 
@@ -611,7 +622,7 @@ The XML result of the EWS call is provided as a string in the `asyncResult.value
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteMailbox|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 

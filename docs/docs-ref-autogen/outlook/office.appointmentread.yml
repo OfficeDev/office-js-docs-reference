@@ -62,7 +62,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -116,7 +117,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -143,7 +145,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: body
     fullName: outlook.Office.AppointmentRead.body
     langs:
@@ -164,7 +167,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentRead.dateTimeCreated
     langs:
@@ -185,7 +189,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -226,7 +231,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyAllForm
     langs:
@@ -273,7 +279,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: displayReplyForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyForm
     langs:
@@ -312,7 +319,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: end
     fullName: outlook.Office.AppointmentRead.end
     langs:
@@ -335,7 +343,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getEntities()
     fullName: outlook.Office.AppointmentRead.getEntities
     langs:
@@ -359,7 +368,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -412,7 +422,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     langs:
@@ -450,7 +461,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -513,7 +525,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getRegExMatches()
     fullName: outlook.Office.AppointmentRead.getRegExMatches
     langs:
@@ -552,7 +565,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.AppointmentRead.getRegExMatchesByName
     langs:
@@ -584,7 +598,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getSelectedEntities()
     fullName: outlook.Office.AppointmentRead.getSelectedEntities
     langs:
@@ -623,7 +638,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: outlook.Office.AppointmentRead.getSelectedRegExMatches
     langs:
@@ -653,7 +669,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -699,7 +716,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: itemId
     fullName: outlook.Office.AppointmentRead.itemId
     langs:
@@ -725,7 +743,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: itemType
     fullName: outlook.Office.AppointmentRead.itemType
     langs:
@@ -758,7 +777,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     langs:
@@ -795,7 +815,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: location
     fullName: outlook.Office.AppointmentRead.location
     langs:
@@ -821,7 +842,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: normalizedSubject
     fullName: outlook.Office.AppointmentRead.normalizedSubject
     langs:
@@ -842,7 +864,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.AppointmentRead.notificationMessages
     langs:
@@ -870,7 +893,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: optionalAttendees
     fullName: outlook.Office.AppointmentRead.optionalAttendees
     langs:
@@ -891,7 +915,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: organizer
     fullName: outlook.Office.AppointmentRead.organizer
     langs:
@@ -925,7 +950,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.AppointmentRead.recurrence
@@ -952,7 +978,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -1013,7 +1040,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: requiredAttendees
     fullName: outlook.Office.AppointmentRead.requiredAttendees
     langs:
@@ -1050,7 +1078,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.AppointmentRead.seriesId
@@ -1077,7 +1106,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: start
     fullName: outlook.Office.AppointmentRead.start
     langs:
@@ -1106,7 +1136,8 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
     name: subject
     fullName: outlook.Office.AppointmentRead.subject
     langs:

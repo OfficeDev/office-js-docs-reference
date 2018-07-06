@@ -11,7 +11,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Example
 
@@ -37,7 +37,8 @@ Office.initialize = function () {
 
 Gets an array of attachments for the item. Read mode only.
 
-> **Note:** Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
+> [!NOTE]
+> Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
 
 ##### Type:
 
@@ -49,7 +50,7 @@ Gets an array of attachments for the item. Read mode only.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -89,7 +90,7 @@ Gets an object that provides methods to get or update the recipients on the Bcc 
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
 
@@ -117,7 +118,7 @@ Gets an object that provides methods for manipulating the body of an item.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 ####  cc :Array.<[EmailAddressDetails](/javascript/api/office/office_1_1.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_1/office.Recipients.md)
 
 Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
@@ -140,7 +141,7 @@ The `cc` property returns a `Recipients` object that provides methods to get or 
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -172,7 +173,7 @@ You get null for this property for a new item in a compose form. If the user set
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 #### dateTimeCreated :Date
 
 Gets the date and time that an item was created. Read mode only.
@@ -187,7 +188,7 @@ Gets the date and time that an item was created. Read mode only.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -199,7 +200,8 @@ var created = Office.context.mailbox.item.dateTimeCreated;
 
 Gets the date and time that an item was last modified. Read mode only.
 
-> **Note:** This member is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This member is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Type:
 
@@ -211,7 +213,7 @@ Gets the date and time that an item was last modified. Read mode only.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -245,7 +247,7 @@ When you use the [`Time.setAsync`](/javascript/api/outlook_1_1/office.Time.md#se
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -274,7 +276,8 @@ Gets the email address of the sender of a message. Read mode only.
 
 The `from` and [`sender`](Office.context.mailbox.item.md#sender) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
-> **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
+> [!NOTE]
+> The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
 ##### Type:
 
@@ -286,7 +289,7 @@ The `from` and [`sender`](Office.context.mailbox.item.md#sender) properties repr
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 #### internetMessageId :String
 
 Gets the Internet message identifier for an email message. Read mode only.
@@ -301,7 +304,7 @@ Gets the Internet message identifier for an email message. Read mode only.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -332,7 +335,7 @@ You can create custom message classes that extends a default message class, for 
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -344,7 +347,8 @@ var itemClass = Office.context.mailbox.item.itemClass;
 
 Gets the Exchange Web Services item identifier for the current item. Read mode only.
 
-> **Note:** The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`, which is available starting in requirement set 1.3. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
+> [!NOTE]
+> The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`, which is available starting in requirement set 1.3. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
 
 The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_1.asyncresult) parameter in the callback function.
 
@@ -358,7 +362,7 @@ The `itemId` property is not available in compose mode. If an item identifier is
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -389,7 +393,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -422,7 +426,7 @@ The `location` property returns a `Location` object that provides methods that a
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -452,7 +456,7 @@ The normalizedSubject property gets the subject of the item, with any standard p
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -482,7 +486,7 @@ The `optionalAttendees` property returns a `Recipients` object that provides met
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -510,7 +514,7 @@ Gets the email address of the meeting organizer for a specified meeting. Read mo
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -541,7 +545,7 @@ The `requiredAttendees` property returns a `Recipients` object that provides met
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -561,7 +565,8 @@ Gets the email address of the sender of an email message. Read mode only.
 
 The [`from`](Office.context.mailbox.item.md#from) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
-> **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
+> [!NOTE]
+> The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
 ##### Type:
 
@@ -573,7 +578,7 @@ The [`from`](Office.context.mailbox.item.md#from) and `sender` properties repres
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
 
@@ -608,7 +613,7 @@ When you use the [`Time.setAsync`](/javascript/api/outlook_1_1/office.Time.md#se
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -667,7 +672,7 @@ function callback(asyncResult) {
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ####  to :Array.<[EmailAddressDetails](/javascript/api/office/office_1_1.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_1/office.Recipients.md)
 
@@ -691,7 +696,7 @@ The `to` property returns a `Recipients` object that provides methods to get or 
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -739,7 +744,7 @@ You can subsequently use the identifier with the [`removeAttachmentAsync`](Offic
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
-|Applicable Outlook mode| Compose|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
 
@@ -793,7 +798,7 @@ If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
-|Applicable Outlook mode| Compose|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
 
@@ -824,13 +829,15 @@ function addAttachment() {
 
 Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
 
 If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
-> **NOTE:** The ability to include attachments in the call to `displayReplyAllForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyAllForm` in requirement set 1.2 and above.
+> [!NOTE]
+> The ability to include attachments in the call to `displayReplyAllForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyAllForm` in requirement set 1.2 and above.
 
 ##### Parameters:
 
@@ -846,7 +853,7 @@ If any of the string parameters exceed their limits, `displayReplyAllForm` throw
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Examples
 
@@ -889,13 +896,15 @@ Office.context.mailbox.item.displayReplyAllForm(
 
 Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
 
 If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
 
-> **NOTE:** The ability to include attachments in the call to `displayReplyForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyForm` in requirement set 1.2 and above.
+> [!NOTE]
+> The ability to include attachments in the call to `displayReplyForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyForm` in requirement set 1.2 and above.
 
 ##### Parameters:
 
@@ -911,7 +920,7 @@ If any of the string parameters exceed their limits, `displayReplyForm` throws a
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Examples
 
@@ -954,7 +963,8 @@ Office.context.mailbox.item.displayReplyForm(
 
 Gets the entities found in the selected item.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Requirements
 
@@ -962,7 +972,7 @@ Gets the entities found in the selected item.
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
 
@@ -981,7 +991,8 @@ var contacts = Office.context.mailbox.item.getEntities().contacts;
 
 Gets an array of all the entities of the specified entity type found in the selected item.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Parameters:
 
@@ -995,7 +1006,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
 
@@ -1038,7 +1049,8 @@ Office.initialize = function () {
 
 Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the [ItemHasKnownEntity](https://msdn.microsoft.com/library/office/fp161166.aspx) rule element in the manifest XML file with the specified `FilterName` element value.
 
@@ -1054,7 +1066,7 @@ The `getFilteredEntitiesByName` method returns the entities that match the regul
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
 
@@ -1068,7 +1080,8 @@ Type: Array.<(String|[Contact](/javascript/api/office/office_1_1.contact)|[Meeti
 
 Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
 
@@ -1101,7 +1114,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
 
@@ -1129,7 +1142,8 @@ var veges = allMatches.veggies;
 
 Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element value.
 
@@ -1147,7 +1161,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
 
@@ -1191,7 +1205,7 @@ To access the selected data from the callback method, call `asyncResult.value.da
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
-|Applicable Outlook mode| Compose|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Returns:
 
@@ -1240,7 +1254,7 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
 
@@ -1296,7 +1310,7 @@ The `removeAttachmentAsync` method removes the attachment with the specified ide
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
-|Applicable Outlook mode| Compose|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
 

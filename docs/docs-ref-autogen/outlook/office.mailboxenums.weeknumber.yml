@@ -5,7 +5,9 @@ items:
       Specifies the week of the month.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: 'Applicable Outlook mode: Compose or read'
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
     isPreview: true
     name: Office.MailboxEnums.WeekNumber
     fullName: outlook.Office.MailboxEnums.WeekNumber
