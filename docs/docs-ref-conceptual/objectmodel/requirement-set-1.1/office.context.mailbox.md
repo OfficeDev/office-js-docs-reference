@@ -27,7 +27,8 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
 
-> **Note:** This member is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This member is not supported in Outlook for iOS or Outlook for Android.
 
 The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
 
@@ -108,7 +109,8 @@ A Date object with the time expressed in UTC.
 
 Displays an existing calendar appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on mobile devices.
 
@@ -142,7 +144,8 @@ Office.context.mailbox.displayAppointmentForm(appointmentId);
 
 Displays an existing message.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
 
@@ -176,7 +179,8 @@ Office.context.mailbox.displayMessageForm(messageId);
 
 Displays a form for creating a new calendar appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `displayNewAppointmentForm` method opens a form that enables the user to create a new appointment or meeting. If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
 
@@ -306,7 +310,8 @@ function cb(asyncResult) {
 
 Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user’s mailbox.
 
-> **Note:** This method is not supported in the following scenarios.
+> [!NOTE]
+> This method is not supported in the following scenarios.
 > - In Outlook for iOS or Outlook for Android
 > - When the add-in is loaded in a Gmail mailbox
 > 
@@ -324,7 +329,8 @@ The XML request must specify UTF-8 encoding.
 
 Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](/outlook/add-ins/understanding-outlook-add-in-permissions).
 
-**NOTE**: The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
+> [!NOTE]
+> The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
 #### Version differences
 

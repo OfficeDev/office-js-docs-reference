@@ -37,7 +37,8 @@ Office.initialize = function () {
 
 Gets an array of attachments for the item. Read mode only.
 
-> **Note:** Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
+> [!NOTE]
+> Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
 
 ##### Type:
 
@@ -199,7 +200,8 @@ var created = Office.context.mailbox.item.dateTimeCreated;
 
 Gets the date and time that an item was last modified. Read mode only.
 
-> **Note:** This member is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This member is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Type:
 
@@ -274,7 +276,8 @@ Gets the email address of the sender of a message. Read mode only.
 
 The `from` and [`sender`](Office.context.mailbox.item.md#sender) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
-> **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
+> [!NOTE]
+> The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
 ##### Type:
 
@@ -344,7 +347,8 @@ var itemClass = Office.context.mailbox.item.itemClass;
 
 Gets the Exchange Web Services item identifier for the current item. Read mode only.
 
-> **Note:** The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`, which is available starting in requirement set 1.3. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
+> [!NOTE]
+> The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`, which is available starting in requirement set 1.3. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
 
 The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_1.asyncresult) parameter in the callback function.
 
@@ -561,7 +565,8 @@ Gets the email address of the sender of an email message. Read mode only.
 
 The [`from`](Office.context.mailbox.item.md#from) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
-> **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
+> [!NOTE]
+> The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
 ##### Type:
 
@@ -824,13 +829,15 @@ function addAttachment() {
 
 Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
 
 If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
-> **NOTE:** The ability to include attachments in the call to `displayReplyAllForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyAllForm` in requirement set 1.2 and above.
+> [!NOTE]
+> The ability to include attachments in the call to `displayReplyAllForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyAllForm` in requirement set 1.2 and above.
 
 ##### Parameters:
 
@@ -889,13 +896,15 @@ Office.context.mailbox.item.displayReplyAllForm(
 
 Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
 
 If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
 
-> **NOTE:** The ability to include attachments in the call to `displayReplyForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyForm` in requirement set 1.2 and above.
+> [!NOTE]
+> The ability to include attachments in the call to `displayReplyForm` is not supported in requirement set 1.1. Attachment support was added to `displayReplyForm` in requirement set 1.2 and above.
 
 ##### Parameters:
 
@@ -954,7 +963,8 @@ Office.context.mailbox.item.displayReplyForm(
 
 Gets the entities found in the selected item.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Requirements
 
@@ -981,7 +991,8 @@ var contacts = Office.context.mailbox.item.getEntities().contacts;
 
 Gets an array of all the entities of the specified entity type found in the selected item.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 ##### Parameters:
 
@@ -1038,7 +1049,8 @@ Office.initialize = function () {
 
 Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the [ItemHasKnownEntity](https://msdn.microsoft.com/library/office/fp161166.aspx) rule element in the manifest XML file with the specified `FilterName` element value.
 
@@ -1068,7 +1080,8 @@ Type: Array.<(String|[Contact](/javascript/api/office/office_1_1.contact)|[Meeti
 
 Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
 
@@ -1129,7 +1142,8 @@ var veges = allMatches.veggies;
 
 Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
 
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
+> [!NOTE]
+> This method is not supported in Outlook for iOS or Outlook for Android.
 
 The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element value.
 

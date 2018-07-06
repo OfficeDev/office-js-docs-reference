@@ -15,7 +15,8 @@
 
 ####  accountType :String
 
-> **Note:** This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+> [!NOTE]
+> This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
 Gets the account type of the user associated with the mailbox. The possible values are listed in the following table.
 
