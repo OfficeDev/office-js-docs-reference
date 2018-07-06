@@ -611,9 +611,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object.
-
-The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object.<br/><br/>The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
