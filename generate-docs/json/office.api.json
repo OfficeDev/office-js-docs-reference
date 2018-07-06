@@ -485,8 +485,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -627,8 +633,14 @@
                       "token": "<td>"
                     },
                     {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
+                      "kind": "web-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Applicable Outlook mode"
+                        }
+                      ],
+                      "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                     },
                     {
                       "kind": "html-tag",
@@ -5660,8 +5672,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -5844,8 +5862,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
