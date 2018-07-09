@@ -253,38 +253,8 @@ items:
             uid: excel.Excel.FilterOn
           - name: FilterOperator
             uid: excel.Excel.FilterOperator
-          - &ref_0
-            name: FiveArrowsGraySet
-            uid: excel.Excel.FiveArrowsGraySet
-          - &ref_1
-            name: FiveArrowsSet
-            uid: excel.Excel.FiveArrowsSet
-          - &ref_2
-            name: FiveBoxesSet
-            uid: excel.Excel.FiveBoxesSet
-          - &ref_3
-            name: FiveQuartersSet
-            uid: excel.Excel.FiveQuartersSet
-          - &ref_4
-            name: FiveRatingSet
-            uid: excel.Excel.FiveRatingSet
           - name: FormatProtection
             uid: excel.Excel.FormatProtection
-          - &ref_5
-            name: FourArrowsGraySet
-            uid: excel.Excel.FourArrowsGraySet
-          - &ref_6
-            name: FourArrowsSet
-            uid: excel.Excel.FourArrowsSet
-          - &ref_7
-            name: FourRatingSet
-            uid: excel.Excel.FourRatingSet
-          - &ref_8
-            name: FourRedToBlackSet
-            uid: excel.Excel.FourRedToBlackSet
-          - &ref_9
-            name: FourTrafficLightsSet
-            uid: excel.Excel.FourTrafficLightsSet
           - name: FunctionResult
             uid: excel.Excel.FunctionResult
           - name: Functions
@@ -293,9 +263,6 @@ items:
             uid: excel.Excel.HorizontalAlignment
           - name: Icon
             uid: excel.Excel.Icon
-          - &ref_10
-            name: IconCollections
-            uid: excel.Excel.IconCollections
           - name: IconSet
             uid: excel.Excel.IconSet
           - name: IconSetConditionalFormat
@@ -943,36 +910,6 @@ items:
             uid: excel.Excel.TableSort
           - name: TextConditionalFormat
             uid: excel.Excel.TextConditionalFormat
-          - &ref_11
-            name: ThreeArrowsGraySet
-            uid: excel.Excel.ThreeArrowsGraySet
-          - &ref_12
-            name: ThreeArrowsSet
-            uid: excel.Excel.ThreeArrowsSet
-          - &ref_13
-            name: ThreeFlagsSet
-            uid: excel.Excel.ThreeFlagsSet
-          - &ref_14
-            name: ThreeSignsSet
-            uid: excel.Excel.ThreeSignsSet
-          - &ref_15
-            name: ThreeStarsSet
-            uid: excel.Excel.ThreeStarsSet
-          - &ref_16
-            name: ThreeSymbols2Set
-            uid: excel.Excel.ThreeSymbols2Set
-          - &ref_17
-            name: ThreeSymbolsSet
-            uid: excel.Excel.ThreeSymbolsSet
-          - &ref_18
-            name: ThreeTrafficLights1Set
-            uid: excel.Excel.ThreeTrafficLights1Set
-          - &ref_19
-            name: ThreeTrafficLights2Set
-            uid: excel.Excel.ThreeTrafficLights2Set
-          - &ref_20
-            name: ThreeTrianglesSet
-            uid: excel.Excel.ThreeTrianglesSet
           - name: TopBottomConditionalFormat
             uid: excel.Excel.TopBottomConditionalFormat
           - name: VerticalAlignment
@@ -1008,27 +945,48 @@ items:
           - name: Icon Sets
             uid: excel.IconSets
             items:
-              - *ref_0
-              - *ref_1
-              - *ref_2
-              - *ref_3
-              - *ref_4
-              - *ref_5
-              - *ref_6
-              - *ref_7
-              - *ref_8
-              - *ref_9
-              - *ref_10
-              - *ref_11
-              - *ref_12
-              - *ref_13
-              - *ref_14
-              - *ref_15
-              - *ref_16
-              - *ref_17
-              - *ref_18
-              - *ref_19
-              - *ref_20
+              - name: FiveArrowsGraySet
+                uid: excel.Excel.FiveArrowsGraySet
+              - name: FiveArrowsSet
+                uid: excel.Excel.FiveArrowsSet
+              - name: FiveBoxesSet
+                uid: excel.Excel.FiveBoxesSet
+              - name: FiveQuartersSet
+                uid: excel.Excel.FiveQuartersSet
+              - name: FiveRatingSet
+                uid: excel.Excel.FiveRatingSet
+              - name: FourArrowsGraySet
+                uid: excel.Excel.FourArrowsGraySet
+              - name: FourArrowsSet
+                uid: excel.Excel.FourArrowsSet
+              - name: FourRatingSet
+                uid: excel.Excel.FourRatingSet
+              - name: FourRedToBlackSet
+                uid: excel.Excel.FourRedToBlackSet
+              - name: FourTrafficLightsSet
+                uid: excel.Excel.FourTrafficLightsSet
+              - name: IconCollections
+                uid: excel.Excel.IconCollections
+              - name: ThreeArrowsGraySet
+                uid: excel.Excel.ThreeArrowsGraySet
+              - name: ThreeArrowsSet
+                uid: excel.Excel.ThreeArrowsSet
+              - name: ThreeFlagsSet
+                uid: excel.Excel.ThreeFlagsSet
+              - name: ThreeSignsSet
+                uid: excel.Excel.ThreeSignsSet
+              - name: ThreeStarsSet
+                uid: excel.Excel.ThreeStarsSet
+              - name: ThreeSymbols2Set
+                uid: excel.Excel.ThreeSymbols2Set
+              - name: ThreeSymbolsSet
+                uid: excel.Excel.ThreeSymbolsSet
+              - name: ThreeTrafficLights1Set
+                uid: excel.Excel.ThreeTrafficLights1Set
+              - name: ThreeTrafficLights2Set
+                uid: excel.Excel.ThreeTrafficLights2Set
+              - name: ThreeTrianglesSet
+                uid: excel.Excel.ThreeTrianglesSet
       - name: OneNote
         uid: onenote
         items:
