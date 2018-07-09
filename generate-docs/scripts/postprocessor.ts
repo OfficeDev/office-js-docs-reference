@@ -143,7 +143,7 @@ tryCatch(async () => {
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
-                            "items":  membersToMove.items
+                            "items":  notIconSetList as any
                         });
                         if (!iconSetRootPushed) {
                             newToc.items[0].items[0].items.push(iconSetRoot);
