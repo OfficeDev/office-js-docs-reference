@@ -92,13 +92,23 @@ tryCatch(async () => {
     // create a root for all the Outlook versions
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
-    // create a filter list for Outlook types we shouldn't expose
-    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
 
     // create a folder for Excel icon sets
-    let iconSetRoot = {"name": "Icon Sets", "uid": "excel.IconSets", "items": [] as any};
-    let iconSetRootPushed = false;
+    let excelIconSetRoot = {"name": "Icon Sets", "uid": "excel.IconSets", "items": [] as any};
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
+
+    // create a folder for Excel icon sets
+    let excelEnumRoot = {"name": "Icon Sets", "uid": "excel.Enums", "items": [] as any};
+    let excelEnumFilter : string [] = ["BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartDataLabelPosition", "ChartLegendPosition", "ChartLineStyle", "ChartMarkerStyle", "ChartSeriesBy", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "DataChangeType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "NamedItemScope", "NamedItemType", "PageOrientation", "ProtectionSelectionMode", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SheetVisibility", "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "VerticalAlignment", "WorksheetPositionType"];
+
+    // create a folder for Excel eventArgs
+    let excelEventArgsRoot = {"name": "Event Args", "uid": "excel.EventArgs", "items": [] as any};
+    let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
+
+
+    // create filter lists for types we shouldn't expose
+    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    let excelFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -140,16 +150,32 @@ tryCatch(async () => {
                         let notIconSetList = membersToMove.items.filter(item => {
                             return excelIconSetFilter.indexOf(item.name) < 0;
                         });
+                        let enumList = membersToMove.items.filter(item => {
+                            return excelEnumFilter.indexOf(item.name) >= 0;
+                        });
+                        let notEnumSetList = notIconSetList.filter(item => {
+                            return excelEnumFilter.indexOf(item.name) < 0;
+                        });
+                        let eventArgsList = membersToMove.items.filter(item => {
+                            return excelEventArgsFilter.indexOf(item.name) >= 0;
+                        });
+                        let notEventArgsList = notEnumSetList.filter(item => {
+                            return excelEventArgsFilter.indexOf(item.name) < 0;
+                        });
+                        let primaryList = notEventArgsList.filter(item => {
+                            return excelFilter.indexOf(item.name) < 0;
+                        });
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
-                            "items":  notIconSetList as any
+                            "items":  primaryList as any
                         });
-                        if (!iconSetRootPushed) {
-                            newToc.items[0].items[0].items.push(iconSetRoot);
-                            iconSetRootPushed = true;
-                        }
-                        iconSetRoot.items = iconSetList;
+                        newToc.items[0].items[0].items.push(excelIconSetRoot);
+                        excelIconSetRoot.items = iconSetList;
+                        newToc.items[0].items[0].items.push(excelEnumRoot);
+                        excelEnumRoot.items = enumList;
+                        newToc.items[0].items[0].items.push(excelEventArgsRoot);
+                        excelEventArgsRoot.items = eventArgsList;
                     } else {
                         newToc.items[0].items.push({
                             "name": packageName,
