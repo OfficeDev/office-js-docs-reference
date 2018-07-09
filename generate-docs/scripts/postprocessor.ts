@@ -134,22 +134,23 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        if (!iconSetRootPushed) {
-                            newToc.items[0].items.push(iconSetRoot);
-                            iconSetRootPushed = true;
-                        }
                         let iconSetList = membersToMove.items.filter(item => {
                             return excelIconSetFilter.indexOf(item.name) >= 0;
                         });
-                        iconSetRoot.items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": iconSetList
+                        let notIconSetList = membersToMove.items.filter(item => {
+                            return excelIconSetFilter.indexOf(item.name) < 0;
                         });
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
-                            "items": membersToMove.items
+                            "items":  membersToMove.items
+                        });
+                        if (!iconSetRootPushed) {
+                            newToc.items[0].items[0].items.push(iconSetRoot);
+                            iconSetRootPushed = true;
+                        }
+                        iconSetRoot.items.push({
+                            "items": iconSetList
                         });
                     } else {
                         newToc.items[0].items.push({
