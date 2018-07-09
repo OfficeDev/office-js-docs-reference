@@ -235,78 +235,6 @@ items:
             uid: excel.Excel.WorksheetProtection
           - name: WorksheetProtectionOptions
             uid: excel.Excel.WorksheetProtectionOptions
-          - name: Icon Sets
-            uid: excel.IconSets
-            items:
-              - name: FiveArrowsGraySet
-                uid: excel.Excel.FiveArrowsGraySet
-              - name: FiveArrowsSet
-                uid: excel.Excel.FiveArrowsSet
-              - name: FiveBoxesSet
-                uid: excel.Excel.FiveBoxesSet
-              - name: FiveQuartersSet
-                uid: excel.Excel.FiveQuartersSet
-              - name: FiveRatingSet
-                uid: excel.Excel.FiveRatingSet
-              - name: FourArrowsGraySet
-                uid: excel.Excel.FourArrowsGraySet
-              - name: FourArrowsSet
-                uid: excel.Excel.FourArrowsSet
-              - name: FourRatingSet
-                uid: excel.Excel.FourRatingSet
-              - name: FourRedToBlackSet
-                uid: excel.Excel.FourRedToBlackSet
-              - name: FourTrafficLightsSet
-                uid: excel.Excel.FourTrafficLightsSet
-              - name: IconCollections
-                uid: excel.Excel.IconCollections
-              - name: ThreeArrowsGraySet
-                uid: excel.Excel.ThreeArrowsGraySet
-              - name: ThreeArrowsSet
-                uid: excel.Excel.ThreeArrowsSet
-              - name: ThreeFlagsSet
-                uid: excel.Excel.ThreeFlagsSet
-              - name: ThreeSignsSet
-                uid: excel.Excel.ThreeSignsSet
-              - name: ThreeStarsSet
-                uid: excel.Excel.ThreeStarsSet
-              - name: ThreeSymbols2Set
-                uid: excel.Excel.ThreeSymbols2Set
-              - name: ThreeSymbolsSet
-                uid: excel.Excel.ThreeSymbolsSet
-              - name: ThreeTrafficLights1Set
-                uid: excel.Excel.ThreeTrafficLights1Set
-              - name: ThreeTrafficLights2Set
-                uid: excel.Excel.ThreeTrafficLights2Set
-              - name: ThreeTrianglesSet
-                uid: excel.Excel.ThreeTrianglesSet
-          - name: Event Args
-            uid: excel.EventArgs
-            items:
-              - name: BindingDataChangedEventArgs
-                uid: excel.Excel.BindingDataChangedEventArgs
-              - name: BindingSelectionChangedEventArgs
-                uid: excel.Excel.BindingSelectionChangedEventArgs
-              - name: SelectionChangedEventArgs
-                uid: excel.Excel.SelectionChangedEventArgs
-              - name: SettingsChangedEventArgs
-                uid: excel.Excel.SettingsChangedEventArgs
-              - name: TableChangedEventArgs
-                uid: excel.Excel.TableChangedEventArgs
-              - name: TableSelectionChangedEventArgs
-                uid: excel.Excel.TableSelectionChangedEventArgs
-              - name: WorksheetActivatedEventArgs
-                uid: excel.Excel.WorksheetActivatedEventArgs
-              - name: WorksheetAddedEventArgs
-                uid: excel.Excel.WorksheetAddedEventArgs
-              - name: WorksheetChangedEventArgs
-                uid: excel.Excel.WorksheetChangedEventArgs
-              - name: WorksheetDeactivatedEventArgs
-                uid: excel.Excel.WorksheetDeactivatedEventArgs
-              - name: WorksheetDeletedEventArgs
-                uid: excel.Excel.WorksheetDeletedEventArgs
-              - name: WorksheetSelectionChangedEventArgs
-                uid: excel.Excel.WorksheetSelectionChangedEventArgs
           - name: Enums
             uid: excel.Enums
             items:
@@ -454,6 +382,78 @@ items:
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
+          - name: Event Args
+            uid: excel.EventArgs
+            items:
+              - name: BindingDataChangedEventArgs
+                uid: excel.Excel.BindingDataChangedEventArgs
+              - name: BindingSelectionChangedEventArgs
+                uid: excel.Excel.BindingSelectionChangedEventArgs
+              - name: SelectionChangedEventArgs
+                uid: excel.Excel.SelectionChangedEventArgs
+              - name: SettingsChangedEventArgs
+                uid: excel.Excel.SettingsChangedEventArgs
+              - name: TableChangedEventArgs
+                uid: excel.Excel.TableChangedEventArgs
+              - name: TableSelectionChangedEventArgs
+                uid: excel.Excel.TableSelectionChangedEventArgs
+              - name: WorksheetActivatedEventArgs
+                uid: excel.Excel.WorksheetActivatedEventArgs
+              - name: WorksheetAddedEventArgs
+                uid: excel.Excel.WorksheetAddedEventArgs
+              - name: WorksheetChangedEventArgs
+                uid: excel.Excel.WorksheetChangedEventArgs
+              - name: WorksheetDeactivatedEventArgs
+                uid: excel.Excel.WorksheetDeactivatedEventArgs
+              - name: WorksheetDeletedEventArgs
+                uid: excel.Excel.WorksheetDeletedEventArgs
+              - name: WorksheetSelectionChangedEventArgs
+                uid: excel.Excel.WorksheetSelectionChangedEventArgs
+          - name: Icon Sets
+            uid: excel.IconSets
+            items:
+              - name: FiveArrowsGraySet
+                uid: excel.Excel.FiveArrowsGraySet
+              - name: FiveArrowsSet
+                uid: excel.Excel.FiveArrowsSet
+              - name: FiveBoxesSet
+                uid: excel.Excel.FiveBoxesSet
+              - name: FiveQuartersSet
+                uid: excel.Excel.FiveQuartersSet
+              - name: FiveRatingSet
+                uid: excel.Excel.FiveRatingSet
+              - name: FourArrowsGraySet
+                uid: excel.Excel.FourArrowsGraySet
+              - name: FourArrowsSet
+                uid: excel.Excel.FourArrowsSet
+              - name: FourRatingSet
+                uid: excel.Excel.FourRatingSet
+              - name: FourRedToBlackSet
+                uid: excel.Excel.FourRedToBlackSet
+              - name: FourTrafficLightsSet
+                uid: excel.Excel.FourTrafficLightsSet
+              - name: IconCollections
+                uid: excel.Excel.IconCollections
+              - name: ThreeArrowsGraySet
+                uid: excel.Excel.ThreeArrowsGraySet
+              - name: ThreeArrowsSet
+                uid: excel.Excel.ThreeArrowsSet
+              - name: ThreeFlagsSet
+                uid: excel.Excel.ThreeFlagsSet
+              - name: ThreeSignsSet
+                uid: excel.Excel.ThreeSignsSet
+              - name: ThreeStarsSet
+                uid: excel.Excel.ThreeStarsSet
+              - name: ThreeSymbols2Set
+                uid: excel.Excel.ThreeSymbols2Set
+              - name: ThreeSymbolsSet
+                uid: excel.Excel.ThreeSymbolsSet
+              - name: ThreeTrafficLights1Set
+                uid: excel.Excel.ThreeTrafficLights1Set
+              - name: ThreeTrafficLights2Set
+                uid: excel.Excel.ThreeTrafficLights2Set
+              - name: ThreeTrianglesSet
+                uid: excel.Excel.ThreeTrianglesSet
       - name: OneNote
         uid: onenote
         items:
