@@ -96,7 +96,7 @@ tryCatch(async () => {
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
 
     // create a folder for Excel icon sets
-    let iconSetRoot = {"name": "Icon Sets", "uid": "", "items": [] as any};
+    let iconSetRoot = {"name": "Icon Sets", "uid": "excel.IconSets", "items": [] as any};
     let iconSetRootPushed = false;
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
 
@@ -149,9 +149,7 @@ tryCatch(async () => {
                             newToc.items[0].items[0].items.push(iconSetRoot);
                             iconSetRootPushed = true;
                         }
-                        iconSetRoot.items.push({
-                            "items": iconSetList
-                        });
+                        iconSetRoot.items = iconSetList;
                     } else {
                         newToc.items[0].items.push({
                             "name": packageName,

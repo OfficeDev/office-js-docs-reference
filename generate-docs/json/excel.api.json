@@ -95273,30 +95273,30 @@
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;",
+          "signature": "export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;",
           "returnValue": {
             "type": "Promise<T>",
             "description": []
           },
           "parameters": {
-            "options": {
-              "name": "options",
+            "contextObject": {
+              "name": "contextObject",
               "description": [
                 {
                   "kind": "text",
-                  "text": "The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc."
+                  "text": "A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\"."
                 }
               ],
               "isOptional": false,
               "isSpread": false,
-              "type": "Excel.RunOptions"
+              "type": "OfficeExtension.ClientRequestContext"
             },
             "batch": {
               "name": "batch",
               "description": [
                 {
                   "kind": "text",
-                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in."
+                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in."
                 }
               ],
               "isOptional": false,
@@ -95308,10 +95308,139 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released."
+              "text": "Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released."
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "In addition to this signature, the method also has the following signatures:"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(batch: (context: Excel.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            }
+          ],
           "isBeta": false
         },
         "RunOptions": {

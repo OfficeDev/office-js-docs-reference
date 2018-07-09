@@ -1006,30 +1006,29 @@ items:
           - name: WorksheetSelectionChangedEventArgs
             uid: excel.Excel.WorksheetSelectionChangedEventArgs
           - name: Icon Sets
-            uid: ''
+            uid: excel.IconSets
             items:
-              - items:
-                  - *ref_0
-                  - *ref_1
-                  - *ref_2
-                  - *ref_3
-                  - *ref_4
-                  - *ref_5
-                  - *ref_6
-                  - *ref_7
-                  - *ref_8
-                  - *ref_9
-                  - *ref_10
-                  - *ref_11
-                  - *ref_12
-                  - *ref_13
-                  - *ref_14
-                  - *ref_15
-                  - *ref_16
-                  - *ref_17
-                  - *ref_18
-                  - *ref_19
-                  - *ref_20
+              - *ref_0
+              - *ref_1
+              - *ref_2
+              - *ref_3
+              - *ref_4
+              - *ref_5
+              - *ref_6
+              - *ref_7
+              - *ref_8
+              - *ref_9
+              - *ref_10
+              - *ref_11
+              - *ref_12
+              - *ref_13
+              - *ref_14
+              - *ref_15
+              - *ref_16
+              - *ref_17
+              - *ref_18
+              - *ref_19
+              - *ref_20
       - name: OneNote
         uid: onenote
         items:
