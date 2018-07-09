@@ -454,56 +454,6 @@ items:
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
-          - &ref_0
-            name: Enums
-            uid: word.Enums
-            items:
-              - name: BodyType
-                uid: word.Word.BodyType
-              - name: BorderLocation
-                uid: word.Word.BorderLocation
-              - name: BorderType
-                uid: word.Word.BorderType
-              - name: BreakType
-                uid: word.Word.BreakType
-              - name: CellPaddingLocation
-                uid: word.Word.CellPaddingLocation
-              - name: ContentControlAppearance
-                uid: word.Word.ContentControlAppearance
-              - name: ContentControlType
-                uid: word.Word.ContentControlType
-              - name: DocumentPropertyType
-                uid: word.Word.DocumentPropertyType
-              - name: ErrorCodes
-                uid: word.Word.ErrorCodes
-              - name: FileContentFormat
-                uid: word.Word.FileContentFormat
-              - name: HeaderFooterType
-                uid: word.Word.HeaderFooterType
-              - name: ImageFormat
-                uid: word.Word.ImageFormat
-              - name: InsertLocation
-                uid: word.Word.InsertLocation
-              - name: ListBullet
-                uid: word.Word.ListBullet
-              - name: ListLevelType
-                uid: word.Word.ListLevelType
-              - name: ListNumbering
-                uid: word.Word.ListNumbering
-              - name: LocationRelation
-                uid: word.Word.LocationRelation
-              - name: RangeLocation
-                uid: word.Word.RangeLocation
-              - name: SelectionMode
-                uid: word.Word.SelectionMode
-              - name: Style
-                uid: word.Word.Style
-              - name: TapObjectType
-                uid: word.Word.TapObjectType
-              - name: UnderlineType
-                uid: word.Word.UnderlineType
-              - name: VerticalAlignment
-                uid: word.Word.VerticalAlignment
       - name: OneNote
         uid: onenote
         items:
@@ -1239,7 +1189,55 @@ items:
             uid: word.Word.TableRow
           - name: TableRowCollection
             uid: word.Word.TableRowCollection
-          - *ref_0
+          - name: Enums
+            uid: word.Enums
+            items:
+              - name: BodyType
+                uid: word.Word.BodyType
+              - name: BorderLocation
+                uid: word.Word.BorderLocation
+              - name: BorderType
+                uid: word.Word.BorderType
+              - name: BreakType
+                uid: word.Word.BreakType
+              - name: CellPaddingLocation
+                uid: word.Word.CellPaddingLocation
+              - name: ContentControlAppearance
+                uid: word.Word.ContentControlAppearance
+              - name: ContentControlType
+                uid: word.Word.ContentControlType
+              - name: DocumentPropertyType
+                uid: word.Word.DocumentPropertyType
+              - name: ErrorCodes
+                uid: word.Word.ErrorCodes
+              - name: FileContentFormat
+                uid: word.Word.FileContentFormat
+              - name: HeaderFooterType
+                uid: word.Word.HeaderFooterType
+              - name: ImageFormat
+                uid: word.Word.ImageFormat
+              - name: InsertLocation
+                uid: word.Word.InsertLocation
+              - name: ListBullet
+                uid: word.Word.ListBullet
+              - name: ListLevelType
+                uid: word.Word.ListLevelType
+              - name: ListNumbering
+                uid: word.Word.ListNumbering
+              - name: LocationRelation
+                uid: word.Word.LocationRelation
+              - name: RangeLocation
+                uid: word.Word.RangeLocation
+              - name: SelectionMode
+                uid: word.Word.SelectionMode
+              - name: Style
+                uid: word.Word.Style
+              - name: TapObjectType
+                uid: word.Word.TapObjectType
+              - name: UnderlineType
+                uid: word.Word.UnderlineType
+              - name: VerticalAlignment
+                uid: word.Word.VerticalAlignment
       - name: Shared API
         uid: office
         items:

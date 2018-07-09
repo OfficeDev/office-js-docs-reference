@@ -163,9 +163,9 @@ tryCatch(async () => {
                         excelEnumRoot.items = enumList;
                         excelEventArgsRoot.items = eventArgsList;
                         excelIconSetRoot.items = iconSetList;
-                        primaryList.push(excelIconSetRoot);
-                        primaryList.push(excelEventArgsRoot);
                         primaryList.push(excelEnumRoot);
+                        primaryList.push(excelEventArgsRoot);
+                        primaryList.push(excelIconSetRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -185,7 +185,6 @@ tryCatch(async () => {
                             "uid": packageItem.uid,
                             "items":  primaryList as any
                         });
-                        newToc.items[0].items[0].items.push(wordEnumRoot);
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
