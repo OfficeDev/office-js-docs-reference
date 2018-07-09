@@ -102,7 +102,7 @@ tryCatch(async () => {
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
 
     // create folders for word subcategories
-    let wordEnumRoot = {"name": "Enums", "uid": "word.IconSets", "items": [] as any};
+    let wordEnumRoot = {"name": "Enums", "uid": "word.Enums", "items": [] as any};
     let wordEnumFilter : string [] = ["Word.Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
 
     // create filter lists for types we shouldn't expose
@@ -160,17 +160,17 @@ tryCatch(async () => {
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
+                        excelEnumRoot.items = enumList;
+                        excelEventArgsRoot.items = eventArgsList;
+                        excelIconSetRoot.items = iconSetList;
+                        primaryList.push(excelIconSetRoot);
+                        primaryList.push(excelEventArgsRoot);
+                        primaryList.push(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items":  primaryList as any
                         });
-                        newToc.items[0].items[0].items.push(excelIconSetRoot);
-                        excelIconSetRoot.items = iconSetList;
-                        newToc.items[0].items[0].items.push(excelEnumRoot);
-                        excelEnumRoot.items = enumList;
-                        newToc.items[0].items[0].items.push(excelEventArgsRoot);
-                        excelEventArgsRoot.items = eventArgsList;
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
@@ -178,13 +178,14 @@ tryCatch(async () => {
                         let primaryList = membersToMove.items.filter(item => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
+                        wordEnumRoot.items = enumList;
+                        primaryList.push(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items":  primaryList as any
                         });
                         newToc.items[0].items[0].items.push(wordEnumRoot);
-                        excelEnumRoot.items = enumList;
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
