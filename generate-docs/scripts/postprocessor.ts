@@ -95,6 +95,11 @@ tryCatch(async () => {
     // create a filter list for Outlook types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
 
+    // create a folder for Excel icon sets
+    let iconSetRoot = {"name": "Icon Sets", "uid": "", "items": [] as any};
+    let iconSetRootPushed = false;
+    let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
+
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
@@ -128,8 +133,25 @@ tryCatch(async () => {
                                 "items": filterToCContent
                             });
                         }
-                    }
-                    else {
+                    } else if (packageName.toLocaleLowerCase().includes('excel')) {
+                        if (!iconSetRootPushed) {
+                            newToc.items[0].items.push(iconSetRoot);
+                            iconSetRootPushed = true;
+                        }
+                        let iconSetList = membersToMove.items.filter(item => {
+                            return excelIconSetFilter.indexOf(item.name) >= 0;
+                        });
+                        iconSetRoot.items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": iconSetList
+                        });
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": membersToMove.items
+                        });
+                    } else {
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
