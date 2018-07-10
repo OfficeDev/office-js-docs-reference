@@ -152,7 +152,7 @@ items:
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
-          - name: Event Args
+          - name: EventArgs
             uid: ''
             items:
               - name: BindingDataChangedEventArgs
@@ -179,7 +179,7 @@ items:
                 uid: excel.Excel.WorksheetDeletedEventArgs
               - name: WorksheetSelectionChangedEventArgs
                 uid: excel.Excel.WorksheetSelectionChangedEventArgs
-          - name: Icon Sets
+          - name: Icon sets
             uid: ''
             items:
               - name: FiveArrowsGraySet
