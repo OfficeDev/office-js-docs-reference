@@ -92,8 +92,27 @@ tryCatch(async () => {
     // create a root for all the Outlook versions
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
-    // create a filter list for Outlook types we shouldn't expose
+
+    // create folders for Excel subcategories
+    let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": [] as any};
+    let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
+    let excelEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let excelEnumFilter : string [] = ["BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartDataLabelPosition", "ChartLegendPosition", "ChartLineStyle", "ChartMarkerStyle", "ChartSeriesBy", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "DataChangeType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "NamedItemScope", "NamedItemType", "PageOrientation", "ProtectionSelectionMode", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SheetVisibility", "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "VerticalAlignment", "WorksheetPositionType"];
+    let excelEventArgsRoot = {"name": "Event Args", "uid": "", "items": [] as any};
+    let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
+
+    // create folders for word subcategories
+    let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let wordEnumFilter : string [] = ["Word.Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
+
+    // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    let excelFilter: string[] = ["Interfaces"];
+    excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter);
+    let wordFilter: string[] = ["Interfaces"];
+    wordFilter = wordFilter.concat(wordEnumFilter);
+    let oneNoteFilter: string[] = ["Interfaces"];
+    let visioFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -128,8 +147,63 @@ tryCatch(async () => {
                                 "items": filterToCContent
                             });
                         }
-                    }
-                    else {
+                    } else if (packageName.toLocaleLowerCase().includes('excel')) {
+                        let iconSetList = membersToMove.items.filter(item => {
+                            return excelIconSetFilter.indexOf(item.name) >= 0;
+                        });
+                        let enumList = membersToMove.items.filter(item => {
+                            return excelEnumFilter.indexOf(item.name) >= 0;
+                        });
+                        let eventArgsList = membersToMove.items.filter(item => {
+                            return excelEventArgsFilter.indexOf(item.name) >= 0;
+                        });
+                        let primaryList = membersToMove.items.filter(item => {
+                            return excelFilter.indexOf(item.name) < 0;
+                        });
+                        excelEnumRoot.items = enumList;
+                        excelEventArgsRoot.items = eventArgsList;
+                        excelIconSetRoot.items = iconSetList;
+                        primaryList.push(excelEnumRoot);
+                        primaryList.push(excelEventArgsRoot);
+                        primaryList.push(excelIconSetRoot);
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
+                    } else if (packageName.toLocaleLowerCase().includes('word')) {
+                        let enumList = membersToMove.items.filter(item => {
+                            return wordEnumFilter.indexOf(item.name) >= 0;
+                        });
+                        let primaryList = membersToMove.items.filter(item => {
+                            return wordFilter.indexOf(item.name) < 0;
+                        });
+                        wordEnumRoot.items = enumList;
+                        primaryList.push(wordEnumRoot);
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
+                    } else if (packageName.toLocaleLowerCase().includes('visio')) {
+                        let primaryList = membersToMove.items.filter(item => {
+                            return visioFilter.indexOf(item.name) < 0;
+                        });
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
+                    } else if (packageName.toLocaleLowerCase().includes('onenote')) {
+                        let primaryList = membersToMove.items.filter(item => {
+                            return oneNoteFilter.indexOf(item.name) < 0;
+                        });
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
+                    } else {
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
