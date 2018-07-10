@@ -3747,9 +3747,9 @@ Office.Document.addHandlerAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page control is defined in the content div in the page body.
+    // following page control is defined in the content div in the page body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -3808,9 +3808,9 @@ Office.Document.addHandlerAsync:
     that
 
     // the following page control is defined in the content div in the page
-    body.
+    body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -3856,9 +3856,9 @@ Office.Document.addHandlerAsync:
     that
 
     // the following page control is defined in the content div in the page
-    body.
+    body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -3924,12 +3924,12 @@ Office.Document.addHandlerAsync:
     // The example assumes that your add-in has a reference to the jQuery
     library and that the following page controls
 
-    // are defined in the content div in the page body.
+    // are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" disabled="disabled"
+    // <input id="get-info" type="button" value="Get info" disabled="disabled"
     /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4239,11 +4239,11 @@ Office.Document.getSelectedDataAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page controls are defined in the content div in the page body.
+    // following page controls are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4440,7 +4440,7 @@ Office.Document.mode:
     // that the following page control is defined in the content div in the page
     body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4489,11 +4489,11 @@ Office.Document.removeHandlerAsync:
     library and
 
     // that the following page control is defined in the content div in the page
-    body.
+    body:
 
-    <input id="remove-handler" type="button" value="Remove handler" /><br />
+    // <input id="remove-handler" type="button" value="Remove handler" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4806,11 +4806,11 @@ Office.Document.getMaxResourceIndexAsync:
     // The example assumes that your add-in has a reference to the jQuery
     library and that the following page controls are
 
-    // defined in the content div in the page body.
+    // defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4894,11 +4894,11 @@ Office.Document.getMaxTaskIndexAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page controls are defined in the content div in the page body.
+    // following page controls are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -4983,9 +4983,9 @@ Office.Document.getProjectFieldAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the following page control is defined
 
-    // in the content div in the page body.
+    // in the content div in the page body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5050,11 +5050,11 @@ Office.Document.getResourceByIndexAsync:
     // The example assumes that your add-in has a reference to the jQuery
     library and that the following page controls are
 
-    // defined in the content div in the page body.
+    // defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5136,11 +5136,11 @@ Office.Document.getResourceFieldAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the following page controls are
 
-    // defined in the content div in the page body.
+    // defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5232,11 +5232,11 @@ Office.Document.getSelectedResourceAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the following page controls are
 
-    // defined in the content div in the page body.
+    // defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5328,11 +5328,11 @@ Office.Document.getSelectedTaskAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the following page
 
-    // controls are defined in the content div in the page body.
+    // controls are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5407,9 +5407,9 @@ Office.Document.getSelectedViewAsync:
     that
 
     // the following page control is defined in the content div in the page
-    body.
+    body:
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5461,11 +5461,11 @@ Office.Document.getTaskAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page controls are defined in the content div in the page body.
+    // following page controls are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5535,9 +5535,9 @@ Office.Document.getTaskByIndexAsync:
     // calls getTaskByIndexAsync to get the GUID for each task.
     // The example assumes that your add-in has a reference to the
     // jQuery library and that the following page controls are defined
-    // in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -5617,11 +5617,11 @@ Office.Document.getTaskFieldAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the following page
 
-    // controls are defined in the content div in the page body.
+    // controls are defined in the content div in the page body:
 
-    <input id="get-info" type="button" value="Get info" /><br />
+    // <input id="get-info" type="button" value="Get info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5723,11 +5723,11 @@ Office.Document.setResourceFieldAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page controls are defined in the content div in the page body.
+    // following page controls are defined in the content div in the page body:
 
-    <input id="set-info" type="button" value="Set info" /><br />
+    // <input id="set-info" type="button" value="Set info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {
@@ -5818,11 +5818,11 @@ Office.Document.setTaskFieldAsync:
     // The example assumes your add-in has a reference to the jQuery library and
     that the
 
-    // following page controls are defined in the content div in the page body.
+    // following page controls are defined in the content div in the page body:
 
-    <input id="set-info" type="button" value="Set info" /><br />
+    // <input id="set-info" type="button" value="Set info" /><br />
 
-    <span id="message"></span>
+    // <span id="message"></span>
 
 
     (function () {

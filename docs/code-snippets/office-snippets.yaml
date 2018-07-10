@@ -1027,8 +1027,8 @@ Office.Document.addHandlerAsync:
     // The following code example adds a handler for the ResourceSelectionChanged event.
     // When the resource selection changes in the document, it gets the GUID of the selected resource.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page control is defined in the content div in the page body.
-    <span id="message"></span>
+    // following page control is defined in the content div in the page body:
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1072,8 +1072,8 @@ Office.Document.addHandlerAsync:
     // When the task selection changes in the document, it gets the GUID of the
     // selected task.
     // The example assumes your add-in has a reference to the jQuery library and that
-    // the following page control is defined in the content div in the page body.
-    <span id="message"></span>
+    // the following page control is defined in the content div in the page body:
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1112,8 +1112,8 @@ Office.Document.addHandlerAsync:
     // The following code example adds a handler for the ViewSelectionChanged
     // event. When the active view changes, it gets the name and type of the active view.
     // The example assumes your add-in has a reference to the jQuery library and that
-    // the following page control is defined in the content div in the page body.
-    <span id="message"></span>
+    // the following page control is defined in the content div in the page body:
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1162,9 +1162,9 @@ Office.Document.addHandlerAsync:
     // view and disables the button if it isn't a resource view. Choosing the button gets the GUID of the selected
     // resource and displays it in the add-in.
     // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
-    // are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
-    <span id="message"></span>
+    // are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1429,9 +1429,9 @@ Office.Document.getSelectedDataAsync:
     // The following code example gets the values of the selected cells. It uses the optional
     // asyncContext parameter to pass some text to the callback function.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // following page controls are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1581,7 +1581,7 @@ Office.Document.mode:
     // the code examples for ProjectDocument methods and events.
     // The example assumes your add-in has a reference to the jQuery library and
     // that the following page control is defined in the content div in the page body:
-    <span id="message"></span>
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1620,9 +1620,9 @@ Office.Document.removeHandlerAsync:
     // When a resource is selected in a resource view, the handler displays the
     // resource GUID. When the handler is removed, the GUID is not displayed.
     // The example assumes that your add-in has a reference to the jQuery library and
-    // that the following page control is defined in the content div in the page body.
-    <input id="remove-handler" type="button" value="Remove handler" /><br />
-    <span id="message"></span>
+    // that the following page control is defined in the content div in the page body:
+    // <input id="remove-handler" type="button" value="Remove handler" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1875,9 +1875,9 @@ Office.Document.getMaxResourceIndexAsync:
     // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection of resources
     // in the current project. Then it uses the returned value and the getResourceByIndexAsync method to get each resource GUID.
     // The example assumes that your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -1953,9 +1953,9 @@ Office.Document.getMaxTaskIndexAsync:
     // of the collection of tasks in the current project. Then it uses the returned value
     // with the getTaskByIndexAsync method to get each task GUID.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // following page controls are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2031,8 +2031,8 @@ Office.Document.getProjectFieldAsync:
     // The example calls getProjectFieldAsync recursively, after the previous call returns successfully. It also tracks
     // the calls to determine when all calls are sent.
     // The example assumes your add-in has a reference to the jQuery library and that the following page control is defined
-    // in the content div in the page body.
-    <span id="message"></span>
+    // in the content div in the page body:
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2091,9 +2091,9 @@ Office.Document.getResourceByIndexAsync:
     // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource collection,
     // and then calls getResourceByIndexAsync to get the GUID for each resource.
     // The example assumes that your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2168,9 +2168,9 @@ Office.Document.getResourceFieldAsync:
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently selected
     // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
     // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2255,9 +2255,9 @@ Office.Document.getSelectedResourceAsync:
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently selected
     // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
     // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2342,9 +2342,9 @@ Office.Document.getSelectedTaskAsync:
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets task properties by calling getTaskAsync.
     // The example assumes your add-in has a reference to the jQuery library and that the following page
-    // controls are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // controls are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2411,8 +2411,8 @@ Office.Document.getSelectedViewAsync:
     // The following code example calls adds a ViewSelectionChanged event handler that
     // calls getSelectedViewAsync to get the name and type of the active view in the document.
     // The example assumes your add-in has a reference to the jQuery library and that
-    // the following page control is defined in the content div in the page body.
-    <span id="message"></span>
+    // the following page control is defined in the content div in the page body:
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2456,9 +2456,9 @@ Office.Document.getTaskAsync:
     // selected task. Then it calls getTaskAsync to get the properties for the task that are
     // available from the JavaScript API for Office.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // following page controls are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2527,9 +2527,9 @@ Office.Document.getTaskByIndexAsync:
     // calls getTaskByIndexAsync to get the GUID for each task.
     // The example assumes that your add-in has a reference to the
     // jQuery library and that the following page controls are defined
-    // in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2603,9 +2603,9 @@ Office.Document.getTaskFieldAsync:
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
     // The example assumes your add-in has a reference to the jQuery library and that the following page
-    // controls are defined in the content div in the page body.
-    <input id="get-info" type="button" value="Get info" /><br />
-    <span id="message"></span>
+    // controls are defined in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2693,9 +2693,9 @@ Office.Document.setResourceFieldAsync:
     // (for example, Task Usage) is the active view and that a task is selected. See the addHandlerAsync
     // method for an example that activates a button based on the active view type.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body.
-    <input id="set-info" type="button" value="Set info" /><br />
-    <span id="message"></span>
+    // following page controls are defined in the content div in the page body:
+    // <input id="set-info" type="button" value="Set info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";
@@ -2772,9 +2772,9 @@ Office.Document.setTaskFieldAsync:
     // (for example, Task Usage) is the active view and that a task is selected. See the
     // addHandlerAsync method for an example that activates a button based on the active view type.
     // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body.
-    <input id="set-info" type="button" value="Set info" /><br />
-    <span id="message"></span>
+    // following page controls are defined in the content div in the page body:
+    // <input id="set-info" type="button" value="Set info" /><br />
+    // <span id="message"></span>
 
     (function () {
         "use strict";

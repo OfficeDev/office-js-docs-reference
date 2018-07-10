@@ -85,9 +85,9 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that the
 
-      // following page control is defined in the content div in the page body.
+      // following page control is defined in the content div in the page body:
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -146,9 +146,9 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that
 
-      // the following page control is defined in the content div in the page body.
+      // the following page control is defined in the content div in the page body:
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -196,9 +196,9 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that
 
-      // the following page control is defined in the content div in the page body.
+      // the following page control is defined in the content div in the page body:
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -263,11 +263,11 @@ items:
 
       // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
 
-      // are defined in the content div in the page body.
+      // are defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
+      // <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -755,11 +755,11 @@ items:
       // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
       are
 
-      // defined in the content div in the page body.
+      // defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" /><br />
+      // <input id="get-info" type="button" value="Get info" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -867,9 +867,9 @@ items:
       // of the collection of tasks in the current project. Then it uses the returned value
       // with the getTaskByIndexAsync method to get each task GUID.
       // The example assumes your add-in has a reference to the jQuery library and that the
-      // following page controls are defined in the content div in the page body.
-      <input id="get-info" type="button" value="Get info" /><br />
-      <span id="message"></span>
+      // following page controls are defined in the content div in the page body:
+      // <input id="get-info" type="button" value="Get info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -987,9 +987,9 @@ items:
       // The example assumes your add-in has a reference to the jQuery library and that the following page control is
       defined
 
-      // in the content div in the page body.
+      // in the content div in the page body:
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -1093,11 +1093,11 @@ items:
       // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
       are
 
-      // defined in the content div in the page body.
+      // defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" /><br />
+      // <input id="get-info" type="button" value="Get info" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -1217,11 +1217,11 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
 
-      // defined in the content div in the page body.
+      // defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" /><br />
+      // <input id="get-info" type="button" value="Get info" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -1405,11 +1405,11 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that the
 
-      // following page controls are defined in the content div in the page body.
+      // following page controls are defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" /><br />
+      // <input id="get-info" type="button" value="Get info" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -1512,11 +1512,11 @@ items:
 
       // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
 
-      // defined in the content div in the page body.
+      // defined in the content div in the page body:
 
-      <input id="get-info" type="button" value="Get info" /><br />
+      // <input id="get-info" type="button" value="Get info" /><br />
 
-      <span id="message"></span>
+      // <span id="message"></span>
 
 
       (function () {
@@ -1630,9 +1630,9 @@ items:
       // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
       // selected in a task view. Then it gets task properties by calling getTaskAsync.
       // The example assumes your add-in has a reference to the jQuery library and that the following page
-      // controls are defined in the content div in the page body.
-      <input id="get-info" type="button" value="Get info" /><br />
-      <span id="message"></span>
+      // controls are defined in the content div in the page body:
+      // <input id="get-info" type="button" value="Get info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -1726,8 +1726,8 @@ items:
       // The following code example calls adds a ViewSelectionChanged event handler that
       // calls getSelectedViewAsync to get the name and type of the active view in the document.
       // The example assumes your add-in has a reference to the jQuery library and that
-      // the following page control is defined in the content div in the page body.
-      <span id="message"></span>
+      // the following page control is defined in the content div in the page body:
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -1804,9 +1804,9 @@ items:
       // selected task. Then it calls getTaskAsync to get the properties for the task that are
       // available from the JavaScript API for Office.
       // The example assumes your add-in has a reference to the jQuery library and that the
-      // following page controls are defined in the content div in the page body.
-      <input id="get-info" type="button" value="Get info" /><br />
-      <span id="message"></span>
+      // following page controls are defined in the content div in the page body:
+      // <input id="get-info" type="button" value="Get info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -1911,9 +1911,9 @@ items:
       // calls getTaskByIndexAsync to get the GUID for each task.
       // The example assumes that your add-in has a reference to the
       // jQuery library and that the following page controls are defined
-      // in the content div in the page body.
-      <input id="get-info" type="button" value="Get info" /><br />
-      <span id="message"></span>
+      // in the content div in the page body:
+      // <input id="get-info" type="button" value="Get info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -2024,9 +2024,9 @@ items:
       // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
       // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
       // The example assumes your add-in has a reference to the jQuery library and that the following page
-      // controls are defined in the content div in the page body.
-      <input id="get-info" type="button" value="Get info" /><br />
-      <span id="message"></span>
+      // controls are defined in the content div in the page body:
+      // <input id="get-info" type="button" value="Get info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -2344,7 +2344,7 @@ items:
       // the code examples for ProjectDocument methods and events.
       // The example assumes your add-in has a reference to the jQuery library and
       // that the following page control is defined in the content div in the page body:
-      <span id="message"></span>
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -2404,9 +2404,9 @@ items:
       // When a resource is selected in a resource view, the handler displays the
       // resource GUID. When the handler is removed, the GUID is not displayed.
       // The example assumes that your add-in has a reference to the jQuery library and
-      // that the following page control is defined in the content div in the page body.
-      <input id="remove-handler" type="button" value="Remove handler" /><br />
-      <span id="message"></span>
+      // that the following page control is defined in the content div in the page body:
+      // <input id="remove-handler" type="button" value="Remove handler" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -2538,9 +2538,9 @@ items:
       // (for example, Task Usage) is the active view and that a task is selected. See the addHandlerAsync
       // method for an example that activates a button based on the active view type.
       // The example assumes your add-in has a reference to the jQuery library and that the
-      // following page controls are defined in the content div in the page body.
-      <input id="set-info" type="button" value="Set info" /><br />
-      <span id="message"></span>
+      // following page controls are defined in the content div in the page body:
+      // <input id="set-info" type="button" value="Set info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
@@ -2929,9 +2929,9 @@ items:
       // (for example, Task Usage) is the active view and that a task is selected. See the
       // addHandlerAsync method for an example that activates a button based on the active view type.
       // The example assumes your add-in has a reference to the jQuery library and that the
-      // following page controls are defined in the content div in the page body.
-      <input id="set-info" type="button" value="Set info" /><br />
-      <span id="message"></span>
+      // following page controls are defined in the content div in the page body:
+      // <input id="set-info" type="button" value="Set info" /><br />
+      // <span id="message"></span>
 
       (function () {
           "use strict";
