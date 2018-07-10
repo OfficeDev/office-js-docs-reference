@@ -114,6 +114,9 @@ tryCatch(async () => {
     let oneNoteFilter: string[] = ["Interfaces"];
     let visioFilter: string[] = ["Interfaces"];
 
+    // look for existing folders to move
+    let outlookFolders : string[] = ["MailboxEnums"];
+
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
@@ -133,6 +136,15 @@ tryCatch(async () => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
                         if (packageName === 'Outlook') { // The version without a suffix is the preview version
+                            let folderIndex: number = 0;
+                            while (folderIndex >= 0) {
+                                folderIndex = membersToMove.items.findIndex(item => {
+                                    return outlookFolders.indexOf(item.name) >= 0;
+                                });
+                                if (folderIndex >= 0) {
+                                    filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
+                                }
+                            }
                             outlookRoot.items.push({
                                 "name": packageName + " - Preview",
                                 "uid": packageItem.uid,
@@ -163,9 +175,9 @@ tryCatch(async () => {
                         excelEnumRoot.items = enumList;
                         excelEventArgsRoot.items = eventArgsList;
                         excelIconSetRoot.items = iconSetList;
-                        primaryList.push(excelEnumRoot);
-                        primaryList.push(excelEventArgsRoot);
-                        primaryList.push(excelIconSetRoot);
+                        primaryList.unshift(excelIconSetRoot);
+                        primaryList.unshift(excelEventArgsRoot);
+                        primaryList.unshift(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -179,7 +191,7 @@ tryCatch(async () => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
                         wordEnumRoot.items = enumList;
-                        primaryList.push(wordEnumRoot);
+                        primaryList.unshift(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,

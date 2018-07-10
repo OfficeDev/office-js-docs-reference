@@ -5,6 +5,225 @@ items:
       - name: Excel
         uid: excel
         items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: BindingType
+                uid: excel.Excel.BindingType
+              - name: BorderIndex
+                uid: excel.Excel.BorderIndex
+              - name: BorderLineStyle
+                uid: excel.Excel.BorderLineStyle
+              - name: BorderWeight
+                uid: excel.Excel.BorderWeight
+              - name: BuiltInStyle
+                uid: excel.Excel.BuiltInStyle
+              - name: CalculationMode
+                uid: excel.Excel.CalculationMode
+              - name: CalculationType
+                uid: excel.Excel.CalculationType
+              - name: ChartAxisCategoryType
+                uid: excel.Excel.ChartAxisCategoryType
+              - name: ChartAxisDisplayUnit
+                uid: excel.Excel.ChartAxisDisplayUnit
+              - name: ChartAxisGroup
+                uid: excel.Excel.ChartAxisGroup
+              - name: ChartAxisPosition
+                uid: excel.Excel.ChartAxisPosition
+              - name: ChartAxisScaleType
+                uid: excel.Excel.ChartAxisScaleType
+              - name: ChartAxisTickLabelPosition
+                uid: excel.Excel.ChartAxisTickLabelPosition
+              - name: ChartAxisTickMark
+                uid: excel.Excel.ChartAxisTickMark
+              - name: ChartAxisTimeUnit
+                uid: excel.Excel.ChartAxisTimeUnit
+              - name: ChartAxisType
+                uid: excel.Excel.ChartAxisType
+              - name: ChartDataLabelPosition
+                uid: excel.Excel.ChartDataLabelPosition
+              - name: ChartLegendPosition
+                uid: excel.Excel.ChartLegendPosition
+              - name: ChartLineStyle
+                uid: excel.Excel.ChartLineStyle
+              - name: ChartMarkerStyle
+                uid: excel.Excel.ChartMarkerStyle
+              - name: ChartSeriesBy
+                uid: excel.Excel.ChartSeriesBy
+              - name: ChartTextHorizontalAlignment
+                uid: excel.Excel.ChartTextHorizontalAlignment
+              - name: ChartTextVerticalAlignment
+                uid: excel.Excel.ChartTextVerticalAlignment
+              - name: ChartTitlePosition
+                uid: excel.Excel.ChartTitlePosition
+              - name: ChartTrendlineType
+                uid: excel.Excel.ChartTrendlineType
+              - name: ChartType
+                uid: excel.Excel.ChartType
+              - name: ChartUnderlineStyle
+                uid: excel.Excel.ChartUnderlineStyle
+              - name: ClearApplyTo
+                uid: excel.Excel.ClearApplyTo
+              - name: ConditionalCellValueOperator
+                uid: excel.Excel.ConditionalCellValueOperator
+              - name: ConditionalDataBarAxisFormat
+                uid: excel.Excel.ConditionalDataBarAxisFormat
+              - name: ConditionalDataBarDirection
+                uid: excel.Excel.ConditionalDataBarDirection
+              - name: ConditionalFormatColorCriterionType
+                uid: excel.Excel.ConditionalFormatColorCriterionType
+              - name: ConditionalFormatDirection
+                uid: excel.Excel.ConditionalFormatDirection
+              - name: ConditionalFormatIconRuleType
+                uid: excel.Excel.ConditionalFormatIconRuleType
+              - name: ConditionalFormatPresetCriterion
+                uid: excel.Excel.ConditionalFormatPresetCriterion
+              - name: ConditionalFormatRuleType
+                uid: excel.Excel.ConditionalFormatRuleType
+              - name: ConditionalFormatType
+                uid: excel.Excel.ConditionalFormatType
+              - name: ConditionalIconCriterionOperator
+                uid: excel.Excel.ConditionalIconCriterionOperator
+              - name: ConditionalRangeBorderIndex
+                uid: excel.Excel.ConditionalRangeBorderIndex
+              - name: ConditionalRangeBorderLineStyle
+                uid: excel.Excel.ConditionalRangeBorderLineStyle
+              - name: ConditionalRangeFontUnderlineStyle
+                uid: excel.Excel.ConditionalRangeFontUnderlineStyle
+              - name: ConditionalTextOperator
+                uid: excel.Excel.ConditionalTextOperator
+              - name: ConditionalTopBottomCriterionType
+                uid: excel.Excel.ConditionalTopBottomCriterionType
+              - name: DataChangeType
+                uid: excel.Excel.DataChangeType
+              - name: DeleteShiftDirection
+                uid: excel.Excel.DeleteShiftDirection
+              - name: DocumentPropertyItem
+                uid: excel.Excel.DocumentPropertyItem
+              - name: DocumentPropertyType
+                uid: excel.Excel.DocumentPropertyType
+              - name: DynamicFilterCriteria
+                uid: excel.Excel.DynamicFilterCriteria
+              - name: ErrorCodes
+                uid: excel.Excel.ErrorCodes
+              - name: EventSource
+                uid: excel.Excel.EventSource
+              - name: EventType
+                uid: excel.Excel.EventType
+              - name: FilterDatetimeSpecificity
+                uid: excel.Excel.FilterDatetimeSpecificity
+              - name: FilterOn
+                uid: excel.Excel.FilterOn
+              - name: FilterOperator
+                uid: excel.Excel.FilterOperator
+              - name: HorizontalAlignment
+                uid: excel.Excel.HorizontalAlignment
+              - name: IconSet
+                uid: excel.Excel.IconSet
+              - name: ImageFittingMode
+                uid: excel.Excel.ImageFittingMode
+              - name: InsertShiftDirection
+                uid: excel.Excel.InsertShiftDirection
+              - name: NamedItemScope
+                uid: excel.Excel.NamedItemScope
+              - name: NamedItemType
+                uid: excel.Excel.NamedItemType
+              - name: PageOrientation
+                uid: excel.Excel.PageOrientation
+              - name: ProtectionSelectionMode
+                uid: excel.Excel.ProtectionSelectionMode
+              - name: RangeUnderlineStyle
+                uid: excel.Excel.RangeUnderlineStyle
+              - name: RangeValueType
+                uid: excel.Excel.RangeValueType
+              - name: ReadingOrder
+                uid: excel.Excel.ReadingOrder
+              - name: SheetVisibility
+                uid: excel.Excel.SheetVisibility
+              - name: SortDataOption
+                uid: excel.Excel.SortDataOption
+              - name: SortMethod
+                uid: excel.Excel.SortMethod
+              - name: SortOn
+                uid: excel.Excel.SortOn
+              - name: SortOrientation
+                uid: excel.Excel.SortOrientation
+              - name: VerticalAlignment
+                uid: excel.Excel.VerticalAlignment
+              - name: WorksheetPositionType
+                uid: excel.Excel.WorksheetPositionType
+          - name: Event Args
+            uid: ''
+            items:
+              - name: BindingDataChangedEventArgs
+                uid: excel.Excel.BindingDataChangedEventArgs
+              - name: BindingSelectionChangedEventArgs
+                uid: excel.Excel.BindingSelectionChangedEventArgs
+              - name: SelectionChangedEventArgs
+                uid: excel.Excel.SelectionChangedEventArgs
+              - name: SettingsChangedEventArgs
+                uid: excel.Excel.SettingsChangedEventArgs
+              - name: TableChangedEventArgs
+                uid: excel.Excel.TableChangedEventArgs
+              - name: TableSelectionChangedEventArgs
+                uid: excel.Excel.TableSelectionChangedEventArgs
+              - name: WorksheetActivatedEventArgs
+                uid: excel.Excel.WorksheetActivatedEventArgs
+              - name: WorksheetAddedEventArgs
+                uid: excel.Excel.WorksheetAddedEventArgs
+              - name: WorksheetChangedEventArgs
+                uid: excel.Excel.WorksheetChangedEventArgs
+              - name: WorksheetDeactivatedEventArgs
+                uid: excel.Excel.WorksheetDeactivatedEventArgs
+              - name: WorksheetDeletedEventArgs
+                uid: excel.Excel.WorksheetDeletedEventArgs
+              - name: WorksheetSelectionChangedEventArgs
+                uid: excel.Excel.WorksheetSelectionChangedEventArgs
+          - name: Icon Sets
+            uid: ''
+            items:
+              - name: FiveArrowsGraySet
+                uid: excel.Excel.FiveArrowsGraySet
+              - name: FiveArrowsSet
+                uid: excel.Excel.FiveArrowsSet
+              - name: FiveBoxesSet
+                uid: excel.Excel.FiveBoxesSet
+              - name: FiveQuartersSet
+                uid: excel.Excel.FiveQuartersSet
+              - name: FiveRatingSet
+                uid: excel.Excel.FiveRatingSet
+              - name: FourArrowsGraySet
+                uid: excel.Excel.FourArrowsGraySet
+              - name: FourArrowsSet
+                uid: excel.Excel.FourArrowsSet
+              - name: FourRatingSet
+                uid: excel.Excel.FourRatingSet
+              - name: FourRedToBlackSet
+                uid: excel.Excel.FourRedToBlackSet
+              - name: FourTrafficLightsSet
+                uid: excel.Excel.FourTrafficLightsSet
+              - name: IconCollections
+                uid: excel.Excel.IconCollections
+              - name: ThreeArrowsGraySet
+                uid: excel.Excel.ThreeArrowsGraySet
+              - name: ThreeArrowsSet
+                uid: excel.Excel.ThreeArrowsSet
+              - name: ThreeFlagsSet
+                uid: excel.Excel.ThreeFlagsSet
+              - name: ThreeSignsSet
+                uid: excel.Excel.ThreeSignsSet
+              - name: ThreeStarsSet
+                uid: excel.Excel.ThreeStarsSet
+              - name: ThreeSymbols2Set
+                uid: excel.Excel.ThreeSymbols2Set
+              - name: ThreeSymbolsSet
+                uid: excel.Excel.ThreeSymbolsSet
+              - name: ThreeTrafficLights1Set
+                uid: excel.Excel.ThreeTrafficLights1Set
+              - name: ThreeTrafficLights2Set
+                uid: excel.Excel.ThreeTrafficLights2Set
+              - name: ThreeTrianglesSet
+                uid: excel.Excel.ThreeTrianglesSet
           - name: Application
             uid: excel.Excel.Application
           - name: Binding
@@ -235,225 +454,6 @@ items:
             uid: excel.Excel.WorksheetProtection
           - name: WorksheetProtectionOptions
             uid: excel.Excel.WorksheetProtectionOptions
-          - name: Enums
-            uid: ''
-            items:
-              - name: BindingType
-                uid: excel.Excel.BindingType
-              - name: BorderIndex
-                uid: excel.Excel.BorderIndex
-              - name: BorderLineStyle
-                uid: excel.Excel.BorderLineStyle
-              - name: BorderWeight
-                uid: excel.Excel.BorderWeight
-              - name: BuiltInStyle
-                uid: excel.Excel.BuiltInStyle
-              - name: CalculationMode
-                uid: excel.Excel.CalculationMode
-              - name: CalculationType
-                uid: excel.Excel.CalculationType
-              - name: ChartAxisCategoryType
-                uid: excel.Excel.ChartAxisCategoryType
-              - name: ChartAxisDisplayUnit
-                uid: excel.Excel.ChartAxisDisplayUnit
-              - name: ChartAxisGroup
-                uid: excel.Excel.ChartAxisGroup
-              - name: ChartAxisPosition
-                uid: excel.Excel.ChartAxisPosition
-              - name: ChartAxisScaleType
-                uid: excel.Excel.ChartAxisScaleType
-              - name: ChartAxisTickLabelPosition
-                uid: excel.Excel.ChartAxisTickLabelPosition
-              - name: ChartAxisTickMark
-                uid: excel.Excel.ChartAxisTickMark
-              - name: ChartAxisTimeUnit
-                uid: excel.Excel.ChartAxisTimeUnit
-              - name: ChartAxisType
-                uid: excel.Excel.ChartAxisType
-              - name: ChartDataLabelPosition
-                uid: excel.Excel.ChartDataLabelPosition
-              - name: ChartLegendPosition
-                uid: excel.Excel.ChartLegendPosition
-              - name: ChartLineStyle
-                uid: excel.Excel.ChartLineStyle
-              - name: ChartMarkerStyle
-                uid: excel.Excel.ChartMarkerStyle
-              - name: ChartSeriesBy
-                uid: excel.Excel.ChartSeriesBy
-              - name: ChartTextHorizontalAlignment
-                uid: excel.Excel.ChartTextHorizontalAlignment
-              - name: ChartTextVerticalAlignment
-                uid: excel.Excel.ChartTextVerticalAlignment
-              - name: ChartTitlePosition
-                uid: excel.Excel.ChartTitlePosition
-              - name: ChartTrendlineType
-                uid: excel.Excel.ChartTrendlineType
-              - name: ChartType
-                uid: excel.Excel.ChartType
-              - name: ChartUnderlineStyle
-                uid: excel.Excel.ChartUnderlineStyle
-              - name: ClearApplyTo
-                uid: excel.Excel.ClearApplyTo
-              - name: ConditionalCellValueOperator
-                uid: excel.Excel.ConditionalCellValueOperator
-              - name: ConditionalDataBarAxisFormat
-                uid: excel.Excel.ConditionalDataBarAxisFormat
-              - name: ConditionalDataBarDirection
-                uid: excel.Excel.ConditionalDataBarDirection
-              - name: ConditionalFormatColorCriterionType
-                uid: excel.Excel.ConditionalFormatColorCriterionType
-              - name: ConditionalFormatDirection
-                uid: excel.Excel.ConditionalFormatDirection
-              - name: ConditionalFormatIconRuleType
-                uid: excel.Excel.ConditionalFormatIconRuleType
-              - name: ConditionalFormatPresetCriterion
-                uid: excel.Excel.ConditionalFormatPresetCriterion
-              - name: ConditionalFormatRuleType
-                uid: excel.Excel.ConditionalFormatRuleType
-              - name: ConditionalFormatType
-                uid: excel.Excel.ConditionalFormatType
-              - name: ConditionalIconCriterionOperator
-                uid: excel.Excel.ConditionalIconCriterionOperator
-              - name: ConditionalRangeBorderIndex
-                uid: excel.Excel.ConditionalRangeBorderIndex
-              - name: ConditionalRangeBorderLineStyle
-                uid: excel.Excel.ConditionalRangeBorderLineStyle
-              - name: ConditionalRangeFontUnderlineStyle
-                uid: excel.Excel.ConditionalRangeFontUnderlineStyle
-              - name: ConditionalTextOperator
-                uid: excel.Excel.ConditionalTextOperator
-              - name: ConditionalTopBottomCriterionType
-                uid: excel.Excel.ConditionalTopBottomCriterionType
-              - name: DataChangeType
-                uid: excel.Excel.DataChangeType
-              - name: DeleteShiftDirection
-                uid: excel.Excel.DeleteShiftDirection
-              - name: DocumentPropertyItem
-                uid: excel.Excel.DocumentPropertyItem
-              - name: DocumentPropertyType
-                uid: excel.Excel.DocumentPropertyType
-              - name: DynamicFilterCriteria
-                uid: excel.Excel.DynamicFilterCriteria
-              - name: ErrorCodes
-                uid: excel.Excel.ErrorCodes
-              - name: EventSource
-                uid: excel.Excel.EventSource
-              - name: EventType
-                uid: excel.Excel.EventType
-              - name: FilterDatetimeSpecificity
-                uid: excel.Excel.FilterDatetimeSpecificity
-              - name: FilterOn
-                uid: excel.Excel.FilterOn
-              - name: FilterOperator
-                uid: excel.Excel.FilterOperator
-              - name: HorizontalAlignment
-                uid: excel.Excel.HorizontalAlignment
-              - name: IconSet
-                uid: excel.Excel.IconSet
-              - name: ImageFittingMode
-                uid: excel.Excel.ImageFittingMode
-              - name: InsertShiftDirection
-                uid: excel.Excel.InsertShiftDirection
-              - name: NamedItemScope
-                uid: excel.Excel.NamedItemScope
-              - name: NamedItemType
-                uid: excel.Excel.NamedItemType
-              - name: PageOrientation
-                uid: excel.Excel.PageOrientation
-              - name: ProtectionSelectionMode
-                uid: excel.Excel.ProtectionSelectionMode
-              - name: RangeUnderlineStyle
-                uid: excel.Excel.RangeUnderlineStyle
-              - name: RangeValueType
-                uid: excel.Excel.RangeValueType
-              - name: ReadingOrder
-                uid: excel.Excel.ReadingOrder
-              - name: SheetVisibility
-                uid: excel.Excel.SheetVisibility
-              - name: SortDataOption
-                uid: excel.Excel.SortDataOption
-              - name: SortMethod
-                uid: excel.Excel.SortMethod
-              - name: SortOn
-                uid: excel.Excel.SortOn
-              - name: SortOrientation
-                uid: excel.Excel.SortOrientation
-              - name: VerticalAlignment
-                uid: excel.Excel.VerticalAlignment
-              - name: WorksheetPositionType
-                uid: excel.Excel.WorksheetPositionType
-          - name: Event Args
-            uid: ''
-            items:
-              - name: BindingDataChangedEventArgs
-                uid: excel.Excel.BindingDataChangedEventArgs
-              - name: BindingSelectionChangedEventArgs
-                uid: excel.Excel.BindingSelectionChangedEventArgs
-              - name: SelectionChangedEventArgs
-                uid: excel.Excel.SelectionChangedEventArgs
-              - name: SettingsChangedEventArgs
-                uid: excel.Excel.SettingsChangedEventArgs
-              - name: TableChangedEventArgs
-                uid: excel.Excel.TableChangedEventArgs
-              - name: TableSelectionChangedEventArgs
-                uid: excel.Excel.TableSelectionChangedEventArgs
-              - name: WorksheetActivatedEventArgs
-                uid: excel.Excel.WorksheetActivatedEventArgs
-              - name: WorksheetAddedEventArgs
-                uid: excel.Excel.WorksheetAddedEventArgs
-              - name: WorksheetChangedEventArgs
-                uid: excel.Excel.WorksheetChangedEventArgs
-              - name: WorksheetDeactivatedEventArgs
-                uid: excel.Excel.WorksheetDeactivatedEventArgs
-              - name: WorksheetDeletedEventArgs
-                uid: excel.Excel.WorksheetDeletedEventArgs
-              - name: WorksheetSelectionChangedEventArgs
-                uid: excel.Excel.WorksheetSelectionChangedEventArgs
-          - name: Icon Sets
-            uid: ''
-            items:
-              - name: FiveArrowsGraySet
-                uid: excel.Excel.FiveArrowsGraySet
-              - name: FiveArrowsSet
-                uid: excel.Excel.FiveArrowsSet
-              - name: FiveBoxesSet
-                uid: excel.Excel.FiveBoxesSet
-              - name: FiveQuartersSet
-                uid: excel.Excel.FiveQuartersSet
-              - name: FiveRatingSet
-                uid: excel.Excel.FiveRatingSet
-              - name: FourArrowsGraySet
-                uid: excel.Excel.FourArrowsGraySet
-              - name: FourArrowsSet
-                uid: excel.Excel.FourArrowsSet
-              - name: FourRatingSet
-                uid: excel.Excel.FourRatingSet
-              - name: FourRedToBlackSet
-                uid: excel.Excel.FourRedToBlackSet
-              - name: FourTrafficLightsSet
-                uid: excel.Excel.FourTrafficLightsSet
-              - name: IconCollections
-                uid: excel.Excel.IconCollections
-              - name: ThreeArrowsGraySet
-                uid: excel.Excel.ThreeArrowsGraySet
-              - name: ThreeArrowsSet
-                uid: excel.Excel.ThreeArrowsSet
-              - name: ThreeFlagsSet
-                uid: excel.Excel.ThreeFlagsSet
-              - name: ThreeSignsSet
-                uid: excel.Excel.ThreeSignsSet
-              - name: ThreeStarsSet
-                uid: excel.Excel.ThreeStarsSet
-              - name: ThreeSymbols2Set
-                uid: excel.Excel.ThreeSymbols2Set
-              - name: ThreeSymbolsSet
-                uid: excel.Excel.ThreeSymbolsSet
-              - name: ThreeTrafficLights1Set
-                uid: excel.Excel.ThreeTrafficLights1Set
-              - name: ThreeTrafficLights2Set
-                uid: excel.Excel.ThreeTrafficLights2Set
-              - name: ThreeTrianglesSet
-                uid: excel.Excel.ThreeTrianglesSet
       - name: OneNote
         uid: onenote
         items:
@@ -564,6 +564,33 @@ items:
           - name: Outlook - Preview
             uid: outlook
             items:
+              - &ref_0
+                name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: outlook.Office.MailboxEnums.AttachmentType
+                  - name: Days
+                    uid: outlook.Office.MailboxEnums.Days
+                  - name: EntityType
+                    uid: outlook.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: outlook.Office.MailboxEnums.ItemType
+                  - name: Month
+                    uid: outlook.Office.MailboxEnums.Month
+                  - name: RecipientType
+                    uid: outlook.Office.MailboxEnums.RecipientType
+                  - name: RecurrenceTimeZone
+                    uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
+                  - name: RecurrenceType
+                    uid: outlook.Office.MailboxEnums.RecurrenceType
+                  - name: ResponseType
+                    uid: outlook.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: outlook.Office.MailboxEnums.RestVersion
+                  - name: WeekNumber
+                    uid: outlook.Office.MailboxEnums.WeekNumber
               - name: AppointmentCompose
                 uid: outlook.Office.AppointmentCompose
               - name: AppointmentRead
@@ -592,32 +619,7 @@ items:
                 uid: outlook.Office.Location
               - name: Mailbox
                 uid: outlook.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: outlook.Office.MailboxEnums.AttachmentType
-                  - name: Days
-                    uid: outlook.Office.MailboxEnums.Days
-                  - name: EntityType
-                    uid: outlook.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: outlook.Office.MailboxEnums.ItemType
-                  - name: Month
-                    uid: outlook.Office.MailboxEnums.Month
-                  - name: RecipientType
-                    uid: outlook.Office.MailboxEnums.RecipientType
-                  - name: RecurrenceTimeZone
-                    uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
-                  - name: RecurrenceType
-                    uid: outlook.Office.MailboxEnums.RecurrenceType
-                  - name: ResponseType
-                    uid: outlook.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: outlook.Office.MailboxEnums.RestVersion
-                  - name: WeekNumber
-                    uid: outlook.Office.MailboxEnums.WeekNumber
+              - *ref_0
               - name: MeetingSuggestion
                 uid: outlook.Office.MeetingSuggestion
               - name: MessageCompose
@@ -1127,6 +1129,55 @@ items:
       - name: Word
         uid: word
         items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: BodyType
+                uid: word.Word.BodyType
+              - name: BorderLocation
+                uid: word.Word.BorderLocation
+              - name: BorderType
+                uid: word.Word.BorderType
+              - name: BreakType
+                uid: word.Word.BreakType
+              - name: CellPaddingLocation
+                uid: word.Word.CellPaddingLocation
+              - name: ContentControlAppearance
+                uid: word.Word.ContentControlAppearance
+              - name: ContentControlType
+                uid: word.Word.ContentControlType
+              - name: DocumentPropertyType
+                uid: word.Word.DocumentPropertyType
+              - name: ErrorCodes
+                uid: word.Word.ErrorCodes
+              - name: FileContentFormat
+                uid: word.Word.FileContentFormat
+              - name: HeaderFooterType
+                uid: word.Word.HeaderFooterType
+              - name: ImageFormat
+                uid: word.Word.ImageFormat
+              - name: InsertLocation
+                uid: word.Word.InsertLocation
+              - name: ListBullet
+                uid: word.Word.ListBullet
+              - name: ListLevelType
+                uid: word.Word.ListLevelType
+              - name: ListNumbering
+                uid: word.Word.ListNumbering
+              - name: LocationRelation
+                uid: word.Word.LocationRelation
+              - name: RangeLocation
+                uid: word.Word.RangeLocation
+              - name: SelectionMode
+                uid: word.Word.SelectionMode
+              - name: Style
+                uid: word.Word.Style
+              - name: TapObjectType
+                uid: word.Word.TapObjectType
+              - name: UnderlineType
+                uid: word.Word.UnderlineType
+              - name: VerticalAlignment
+                uid: word.Word.VerticalAlignment
           - name: Alignment
             uid: word.Word.Alignment
           - name: Application
@@ -1189,55 +1240,6 @@ items:
             uid: word.Word.TableRow
           - name: TableRowCollection
             uid: word.Word.TableRowCollection
-          - name: Enums
-            uid: ''
-            items:
-              - name: BodyType
-                uid: word.Word.BodyType
-              - name: BorderLocation
-                uid: word.Word.BorderLocation
-              - name: BorderType
-                uid: word.Word.BorderType
-              - name: BreakType
-                uid: word.Word.BreakType
-              - name: CellPaddingLocation
-                uid: word.Word.CellPaddingLocation
-              - name: ContentControlAppearance
-                uid: word.Word.ContentControlAppearance
-              - name: ContentControlType
-                uid: word.Word.ContentControlType
-              - name: DocumentPropertyType
-                uid: word.Word.DocumentPropertyType
-              - name: ErrorCodes
-                uid: word.Word.ErrorCodes
-              - name: FileContentFormat
-                uid: word.Word.FileContentFormat
-              - name: HeaderFooterType
-                uid: word.Word.HeaderFooterType
-              - name: ImageFormat
-                uid: word.Word.ImageFormat
-              - name: InsertLocation
-                uid: word.Word.InsertLocation
-              - name: ListBullet
-                uid: word.Word.ListBullet
-              - name: ListLevelType
-                uid: word.Word.ListLevelType
-              - name: ListNumbering
-                uid: word.Word.ListNumbering
-              - name: LocationRelation
-                uid: word.Word.LocationRelation
-              - name: RangeLocation
-                uid: word.Word.RangeLocation
-              - name: SelectionMode
-                uid: word.Word.SelectionMode
-              - name: Style
-                uid: word.Word.Style
-              - name: TapObjectType
-                uid: word.Word.TapObjectType
-              - name: UnderlineType
-                uid: word.Word.UnderlineType
-              - name: VerticalAlignment
-                uid: word.Word.VerticalAlignment
       - name: Shared API
         uid: office
         items:
