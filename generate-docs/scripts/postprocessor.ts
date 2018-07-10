@@ -93,6 +93,9 @@ tryCatch(async () => {
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
 
+    // look for existing folders to move
+    let outlookFolders : string[] = ["MailboxEnums"];
+
     // create folders for Excel subcategories
     let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": [] as any};
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
@@ -107,15 +110,13 @@ tryCatch(async () => {
 
     // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    outlookFilter = outlookFilter.concat(outlookFolders);
     let excelFilter: string[] = ["Interfaces"];
     excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter);
     let wordFilter: string[] = ["Interfaces"];
     wordFilter = wordFilter.concat(wordEnumFilter);
     let oneNoteFilter: string[] = ["Interfaces"];
     let visioFilter: string[] = ["Interfaces"];
-
-    // look for existing folders to move
-    let outlookFolders : string[] = ["MailboxEnums"];
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -135,8 +136,7 @@ tryCatch(async () => {
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
-                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
-                            let folderIndex: number = 0;
+                        let folderIndex: number = 0;
                             while (folderIndex >= 0) {
                                 folderIndex = membersToMove.items.findIndex(item => {
                                     return outlookFolders.indexOf(item.name) >= 0;
@@ -145,6 +145,7 @@ tryCatch(async () => {
                                     filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
                                 }
                             }
+                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
                             outlookRoot.items.push({
                                 "name": packageName + " - Preview",
                                 "uid": packageItem.uid,

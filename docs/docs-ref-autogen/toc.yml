@@ -564,8 +564,7 @@ items:
           - name: Outlook - Preview
             uid: outlook
             items:
-              - &ref_0
-                name: MailboxEnums
+              - name: MailboxEnums
                 items:
                   - name: AttachmentType
                     uid: outlook.Office.MailboxEnums.AttachmentType
@@ -619,7 +618,6 @@ items:
                 uid: outlook.Office.Location
               - name: Mailbox
                 uid: outlook.Office.Mailbox
-              - *ref_0
               - name: MeetingSuggestion
                 uid: outlook.Office.MeetingSuggestion
               - name: MessageCompose
@@ -655,6 +653,23 @@ items:
           - name: Outlook 1.6
             uid: Outlook_1_6
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_6.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_6.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_6.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_6.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_6.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_6.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_6.Office.MailboxEnums.RestVersion
               - name: AppointmentCompose
                 uid: Outlook_1_6.Office.AppointmentCompose
               - name: AppointmentRead
@@ -681,23 +696,6 @@ items:
                 uid: Outlook_1_6.Office.Location
               - name: Mailbox
                 uid: Outlook_1_6.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_6.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_6.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: >-
-                      Outlook_1_6.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: Outlook_1_6.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_6.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_6.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook_1_6.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_6.Office.MeetingSuggestion
               - name: MessageCompose
@@ -727,6 +725,23 @@ items:
           - name: Outlook 1.5
             uid: Outlook_1_5
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_5.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_5.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_5.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_5.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_5.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_5.Office.MailboxEnums.RestVersion
               - name: AppointmentCompose
                 uid: Outlook_1_5.Office.AppointmentCompose
               - name: AppointmentRead
@@ -753,23 +768,6 @@ items:
                 uid: Outlook_1_5.Office.Location
               - name: Mailbox
                 uid: Outlook_1_5.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_5.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_5.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: >-
-                      Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: Outlook_1_5.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_5.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_5.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook_1_5.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_5.Office.MeetingSuggestion
               - name: MessageCompose
@@ -799,6 +797,23 @@ items:
           - name: Outlook 1.4
             uid: Outlook_1_4
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_4.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_4.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_4.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_4.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_4.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_4.Office.MailboxEnums.RestVersion
               - name: AppointmentCompose
                 uid: Outlook_1_4.Office.AppointmentCompose
               - name: AppointmentRead
@@ -825,23 +840,6 @@ items:
                 uid: Outlook_1_4.Office.Location
               - name: Mailbox
                 uid: Outlook_1_4.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_4.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_4.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: >-
-                      Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: Outlook_1_4.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_4.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_4.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook_1_4.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_4.Office.MeetingSuggestion
               - name: MessageCompose
@@ -871,6 +869,23 @@ items:
           - name: Outlook 1.3
             uid: Outlook_1_3
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_3.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_3.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_3.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_3.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_3.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_3.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_3.Office.MailboxEnums.RestVersion
               - name: AppointmentCompose
                 uid: Outlook_1_3.Office.AppointmentCompose
               - name: AppointmentRead
@@ -897,23 +912,6 @@ items:
                 uid: Outlook_1_3.Office.Location
               - name: Mailbox
                 uid: Outlook_1_3.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_3.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_3.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: >-
-                      Outlook_1_3.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: Outlook_1_3.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_3.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_3.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook_1_3.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_3.Office.MeetingSuggestion
               - name: MessageCompose
@@ -943,6 +941,18 @@ items:
           - name: Outlook 1.2
             uid: Outlook_1_2
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_2.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_2.Office.MailboxEnums.EntityType
+                  - name: ItemType
+                    uid: Outlook_1_2.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_2.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_2.Office.MailboxEnums.ResponseType
               - name: AppointmentCompose
                 uid: Outlook_1_2.Office.AppointmentCompose
               - name: AppointmentRead
@@ -969,18 +979,6 @@ items:
                 uid: Outlook_1_2.Office.Location
               - name: Mailbox
                 uid: Outlook_1_2.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_2.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_2.Office.MailboxEnums.EntityType
-                  - name: ItemType
-                    uid: Outlook_1_2.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_2.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_2.Office.MailboxEnums.ResponseType
               - name: MeetingSuggestion
                 uid: Outlook_1_2.Office.MeetingSuggestion
               - name: MessageCompose
@@ -1006,6 +1004,18 @@ items:
           - name: Outlook 1.1
             uid: Outlook_1_1
             items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_1.Office.MailboxEnums.EntityType
+                  - name: ItemType
+                    uid: Outlook_1_1.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_1.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_1.Office.MailboxEnums.ResponseType
               - name: AppointmentCompose
                 uid: Outlook_1_1.Office.AppointmentCompose
               - name: AppointmentRead
@@ -1032,18 +1042,6 @@ items:
                 uid: Outlook_1_1.Office.Location
               - name: Mailbox
                 uid: Outlook_1_1.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: Outlook_1_1.Office.MailboxEnums.EntityType
-                  - name: ItemType
-                    uid: Outlook_1_1.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: Outlook_1_1.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: Outlook_1_1.Office.MailboxEnums.ResponseType
               - name: MeetingSuggestion
                 uid: Outlook_1_1.Office.MeetingSuggestion
               - name: MessageCompose
