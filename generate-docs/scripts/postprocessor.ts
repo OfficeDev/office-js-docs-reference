@@ -93,6 +93,9 @@ tryCatch(async () => {
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
 
+    // look for existing folders to move
+    let outlookFolders : string[] = ["MailboxEnums"];
+
     // create folders for Excel subcategories
     let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": [] as any};
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
@@ -107,6 +110,7 @@ tryCatch(async () => {
 
     // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    outlookFilter = outlookFilter.concat(outlookFolders);
     let excelFilter: string[] = ["Interfaces"];
     excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter);
     let wordFilter: string[] = ["Interfaces"];
@@ -132,6 +136,15 @@ tryCatch(async () => {
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
+                        let folderIndex: number = 0;
+                            while (folderIndex >= 0) {
+                                folderIndex = membersToMove.items.findIndex(item => {
+                                    return outlookFolders.indexOf(item.name) >= 0;
+                                });
+                                if (folderIndex >= 0) {
+                                    filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
+                                }
+                            }
                         if (packageName === 'Outlook') { // The version without a suffix is the preview version
                             outlookRoot.items.push({
                                 "name": packageName + " - Preview",
@@ -163,9 +176,9 @@ tryCatch(async () => {
                         excelEnumRoot.items = enumList;
                         excelEventArgsRoot.items = eventArgsList;
                         excelIconSetRoot.items = iconSetList;
-                        primaryList.push(excelEnumRoot);
-                        primaryList.push(excelEventArgsRoot);
-                        primaryList.push(excelIconSetRoot);
+                        primaryList.unshift(excelIconSetRoot);
+                        primaryList.unshift(excelEventArgsRoot);
+                        primaryList.unshift(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -179,7 +192,7 @@ tryCatch(async () => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
                         wordEnumRoot.items = enumList;
-                        primaryList.push(wordEnumRoot);
+                        primaryList.unshift(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
