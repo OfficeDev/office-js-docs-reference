@@ -1,6 +1,6 @@
 items:
   - name: Quick Starts, Tutorials, and Advanced Programming Guides for Office Add-ins
-    href: ../../office/dev/add-ins/overview/office-add-ins
+    href: /office/dev/add-ins/overview/office-add-ins
   - name: JavaScript API for Office
     href: javascript-api-for-office.md
     items:
