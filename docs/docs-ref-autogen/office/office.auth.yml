@@ -20,6 +20,9 @@ items:
       application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
+
+
+      Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: >
       <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
 

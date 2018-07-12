@@ -184,7 +184,7 @@ items:
       OneNote.run(function(ctx){
           // Get the current notebook.         
           var notebook = ctx.application.getActiveNotebook();
-          var restAPIId = notebook.getRestApiId();
+          var restApiId = notebook.getRestApiId();
 
           return ctx.sync().
               then(function(){

@@ -276,8 +276,8 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.Chart` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
+      `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited

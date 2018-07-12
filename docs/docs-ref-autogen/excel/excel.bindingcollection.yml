@@ -321,8 +321,8 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.BindingCollection` - Where option is a comma-delimited string or an
-      array of strings that specify the properties/relationships to load.
+      `load(option?: string | string[]): Excel.BindingCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a

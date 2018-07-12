@@ -467,7 +467,7 @@ items:
       them.
 
 
-      Each JavaScript object in the cellFormat array has this form: `{cells:{ cell\_range }, format:{ format\_definition
+      Each JavaScript object in the cellFormat array has this form: `{cells:{ cell_range }, format:{ format_definition
       }}`
 
 

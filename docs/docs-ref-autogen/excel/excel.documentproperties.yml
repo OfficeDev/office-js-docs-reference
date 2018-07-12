@@ -157,7 +157,7 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.DocumentProperties` - Where option is a comma-delimited string or an
+      `load(option?: string | string[]): Excel.DocumentProperties` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 

@@ -129,7 +129,7 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of
+      `load(option?: string | string[]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 

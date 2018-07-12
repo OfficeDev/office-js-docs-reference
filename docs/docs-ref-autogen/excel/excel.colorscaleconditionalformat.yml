@@ -63,8 +63,8 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string \| string\[\]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited
-      string or an array of strings that specify the properties/relationships to load.
+      `load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string
+      or an array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is

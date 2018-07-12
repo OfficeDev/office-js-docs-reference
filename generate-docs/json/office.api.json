@@ -1333,6 +1333,13 @@
                 {
                   "kind": "text",
                   "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox."
                 }
               ],
               "remarks": [

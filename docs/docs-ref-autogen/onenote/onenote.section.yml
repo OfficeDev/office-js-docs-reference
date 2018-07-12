@@ -235,7 +235,7 @@ items:
       OneNote.run(function(ctx){
           // Get the current section.         
           var section = ctx.application.getActiveSection();
-          var restAPIId = section.getRestApiId();
+          var restApiId = section.getRestApiId();
 
           return ctx.sync().
               then(function(){

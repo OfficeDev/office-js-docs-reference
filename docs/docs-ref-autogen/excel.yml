@@ -504,7 +504,7 @@ items:
       `run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
 
 
-      `run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Excel.RequestContext) => Promise<T>):
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>):
       Promise<T>;`
 
 
