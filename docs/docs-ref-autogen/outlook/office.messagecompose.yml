@@ -23,6 +23,7 @@ items:
       - outlook.Office.MessageCompose.body
       - outlook.Office.MessageCompose.cc
       - outlook.Office.MessageCompose.close
+      - outlook.Office.MessageCompose.conversationId
       - outlook.Office.MessageCompose.dateTimeCreated
       - outlook.Office.MessageCompose.dateTimeModifed
       - outlook.Office.MessageCompose.from
@@ -369,6 +370,38 @@ items:
         type:
           - void
         description: ''
+  - uid: outlook.Office.MessageCompose.conversationId
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular message.
+
+
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
+
+
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the conversationId property will return a value.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+    name: conversationId
+    fullName: outlook.Office.MessageCompose.conversationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type:
+          - string
   - uid: outlook.Office.MessageCompose.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.

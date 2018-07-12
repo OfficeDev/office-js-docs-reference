@@ -298,7 +298,7 @@ items:
       OneNote.run(function(ctx){
           // Get the current page.         
           var page = ctx.application.getActivePage();
-          var restAPIId = page.getRestApiId();
+          var restApiId = page.getRestApiId();
 
           return ctx.sync().
               then(function(){

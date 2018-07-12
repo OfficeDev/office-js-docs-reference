@@ -158,7 +158,7 @@ items:
       `run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;`
 
 
-      `run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Word.RequestContext) => Promise<T>):
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>):
       Promise<T>;`
     name: 'run(object, batch)'
     fullName: word.Word.run

@@ -91,11 +91,11 @@ items:
       `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
 
 
-      `run<T>(object: OfficeExtension.ClientObject \| OfficeExtension.EmbeddedSession, batch: (context:
+      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
       Visio.RequestContext) => Promise<T>): Promise<T>;`
 
 
-      `run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Visio.RequestContext) => Promise<T>):
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
       Promise<T>;`
     name: 'run(contextObject, batch)'
     fullName: visio.Visio.run

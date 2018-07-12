@@ -46,14 +46,13 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
       void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: Outlook_1_3.Office.Recipients.addAsync
@@ -162,14 +161,13 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
       void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: Outlook_1_3.Office.Recipients.setAsync

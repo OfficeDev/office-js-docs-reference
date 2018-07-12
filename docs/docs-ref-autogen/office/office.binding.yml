@@ -349,8 +349,8 @@ items:
       <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything
       that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td>
       <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can
-      pass an array like this: `\[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\]`. To write a single
-      column of three rows, pass an array like this: `\[\["R1C1"\], \["R2C1"\], \["R3C1"\]\]`.</td> </tr> <tr> <td>An
+      pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of
+      three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`.</td> </tr> <tr> <td>An
       [Office.TableData](xref:office.Office.TableData) object</td> <td>A table with headers will be written.</td> </tr>
       </table>
 
@@ -378,16 +378,16 @@ items:
       method can return only the data displayed in the cell (the formula's result).</td> </tr> <tr> <td>An array of
       arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td> <td>The set of rows and
       columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound
-      cells. For example, setting data to `\[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\]` will add those two formulas to a
-      binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added
-      formulas (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only
-      the data displayed in the bound cells.</td> </tr> <tr> <td>An [Office.TableData](xref:office.Office.TableData)
-      object, and the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are
-      written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData
-      object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
-      feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a
-      TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
+      cells. For example, setting data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding
+      that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas
+      (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data
+      displayed in the bound cells.</td> </tr> <tr> <td>An [Office.TableData](xref:office.Office.TableData) object, and
+      the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are written, if
+      no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you
+      pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of
+      Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data*
+      that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData
+      object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
 
 
       For Excel Online:
