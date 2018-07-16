@@ -10,7 +10,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Members and methods
@@ -64,7 +64,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 #### restUrl :String
@@ -89,7 +89,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Methods
@@ -115,7 +115,7 @@ Currently the only supported event type is `Office.EventType.ItemChanged`, which
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -158,7 +158,7 @@ Item IDs retrieved via a REST API (such as the [Outlook Mail API](https://msdn.m
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
@@ -196,7 +196,7 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
@@ -225,7 +225,7 @@ Item IDs retrieved via EWS or via the `itemId` property use a different format t
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
@@ -261,7 +261,7 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Returns:
@@ -302,7 +302,7 @@ If the specified item identifier does not identify an existing appointment, a bl
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -337,7 +337,7 @@ Do not use the `displayMessageForm` with an `itemId` that represents an appointm
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -380,7 +380,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -414,7 +414,7 @@ The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque t
 
 **REST Tokens**
 
-When a REST token is requested (`options.isRest = true`), the resulting token will not work to authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the [`ReadWriteMailbox`](/outlook/add-ins/understanding-outlook-add-in-permissions#readwritemailbox-permission) permission in its manifest. If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts, including the ability to send mail.
+When a REST token is requested (`options.isRest = true`), the resulting token will not work to authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the [`ReadWriteMailbox`](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions#readwritemailbox-permission) permission in its manifest. If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts, including the ability to send mail.
 
 The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
 
@@ -438,7 +438,7 @@ The add-in should use the `ewsUrl` property to determine the correct URL to use 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.5 |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose and read|
 
 ##### Example
@@ -482,7 +482,7 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#s
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose and read|
 
 ##### Example
@@ -515,7 +515,7 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -551,7 +551,7 @@ The XML request must specify UTF-8 encoding.
 <?xml version="1.0" encoding="utf-8"?>
 ```
 
-Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](/outlook/add-ins/understanding-outlook-add-in-permissions).
+Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions).
 
 > [!NOTE]
 > The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
@@ -579,7 +579,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteMailbox|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteMailbox|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example

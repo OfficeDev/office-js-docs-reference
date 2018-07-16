@@ -10,7 +10,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ### Example
@@ -49,7 +49,7 @@ Gets an array of attachments for the item. Read mode only.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -89,7 +89,7 @@ Gets an object that provides methods to get or update the recipients on the Bcc 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
@@ -117,7 +117,7 @@ Gets an object that provides methods for manipulating the body of an item.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 ####  cc :Array.<[EmailAddressDetails](/javascript/api/office/office_1_3.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_3/office.Recipients.md)
 
@@ -140,7 +140,7 @@ The `cc` property returns a `Recipients` object that provides methods to get or 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -172,7 +172,7 @@ You get null for this property for a new item in a compose form. If the user set
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 #### dateTimeCreated :Date
 
@@ -187,7 +187,7 @@ Gets the date and time that an item was created. Read mode only.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -212,7 +212,7 @@ Gets the date and time that an item was last modified. Read mode only.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -246,7 +246,7 @@ When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#se
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -288,7 +288,7 @@ The `from` and [`sender`](Office.context.mailbox.item.md#sender-emailaddressdeta
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 #### internetMessageId :String
 
@@ -303,7 +303,7 @@ Gets the Internet message identifier for an email message. Read mode only.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -334,7 +334,7 @@ You can create custom message classes that extends a default message class, for 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -361,7 +361,7 @@ The `itemId` property is not available in compose mode. If an item identifier is
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -392,7 +392,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -425,7 +425,7 @@ The `location` property returns a `Location` object that provides methods that a
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -455,7 +455,7 @@ The normalizedSubject property gets the subject of the item, with any standard p
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -477,7 +477,7 @@ Gets the notification messages for an item.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ####  optionalAttendees :Array.<[EmailAddressDetails](/javascript/api/office/office_1_3.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_3/office.Recipients.md)
@@ -501,7 +501,7 @@ The `optionalAttendees` property returns a `Recipients` object that provides met
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -529,7 +529,7 @@ Gets the email address of the meeting organizer for a specified meeting. Read mo
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -560,7 +560,7 @@ The `requiredAttendees` property returns a `Recipients` object that provides met
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -593,7 +593,7 @@ The [`from`](Office.context.mailbox.item.md#from-emailaddressdetails) and `sende
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Example
@@ -628,7 +628,7 @@ When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#se
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -687,7 +687,7 @@ function callback(asyncResult) {
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ####  to :Array.<[EmailAddressDetails](/javascript/api/office/office_1_3.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_3/office.Recipients.md)
@@ -711,7 +711,7 @@ The `to` property returns a `Recipients` object that provides methods to get or 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -758,7 +758,7 @@ You can subsequently use the identifier with the [`removeAttachmentAsync`](Offic
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
@@ -812,7 +812,7 @@ If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
@@ -856,7 +856,7 @@ In the Outlook desktop client, if the message is an inline reply, the `close` me
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 #### displayReplyAllForm(formData)
 
@@ -889,7 +889,7 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Examples
@@ -1007,7 +1007,7 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Examples
@@ -1106,7 +1106,7 @@ Gets the entities found in the selected item.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
@@ -1140,7 +1140,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
@@ -1199,7 +1199,7 @@ The `getFilteredEntitiesByName` method returns the entities that match the regul
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
@@ -1246,7 +1246,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
@@ -1293,7 +1293,7 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Read|
 
 ##### Returns:
@@ -1337,7 +1337,7 @@ To access the selected data from the callback method, call `asyncResult.value.da
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Returns:
@@ -1390,7 +1390,7 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
 ##### Example
@@ -1446,7 +1446,7 @@ The `removeAttachmentAsync` method removes the attachment with the specified ide
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.1|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example
@@ -1496,7 +1496,7 @@ On success, the item identifier is provided in the `asyncResult.value` property.
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Examples
@@ -1538,7 +1538,7 @@ The `setSelectedDataAsync` method inserts the specified string at the cursor loc
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.2|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
 
 ##### Example

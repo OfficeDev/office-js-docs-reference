@@ -949,7 +949,7 @@ Currently the only supported event type is `Office.EventType.RecurrencePatternCh
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
 
 ##### Example
@@ -1809,7 +1809,7 @@ Currently the only supported event type is `Office.EventType.RecurrencePatternCh
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
 
 ##### Example
