@@ -3,7 +3,7 @@
 
 ### [Office](office.md)[.context](office.context.md)[.mailbox](office.context.mailbox.md).item
 
-The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](#itemtype-officemailboxenumsitemtype) property.
+The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](#itemtype-officemailboxenumsitemtypejavascriptapioutlook16officemailboxenumsitemtype) property.
 
 ##### Requirements
 
@@ -17,41 +17,42 @@ The `item` namespace is used to access the currently selected message, meeting r
 
 | Member | Type |
 |--------|------|
-| [attachments](#attachments-arrayattachmentdetailsjavascriptapiofficeoffice16attachmentdetails) | Member |
-| [bcc](#bcc-recipientsjavascriptapioutlook16officerecipientsmd) | Member |
-| [body](#body-bodyjavascriptapioutlook16officebodymd) | Member |
-| [cc](#cc-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
+| [attachments](#attachments-arrayattachmentdetailsjavascriptapioutlook16officeattachmentdetails) | Member |
+| [bcc](#bcc-recipientsjavascriptapioutlook16officerecipients) | Member |
+| [body](#body-bodyjavascriptapioutlook16officebody) | Member |
+| [cc](#cc-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
 | [conversationId](#nullable-conversationid-string) | Member |
 | [dateTimeCreated](#datetimecreated-date) | Member |
 | [dateTimeModified](#datetimemodified-date) | Member |
-| [end](#end-datetimejavascriptapioutlook16officetimemd) | Member |
-| [from](#from-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
+| [end](#end-datetimejavascriptapioutlook16officetime) | Member |
+| [from](#from-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) | Member |
 | [internetMessageId](#internetmessageid-string) | Member |
 | [itemClass](#itemclass-string) | Member |
 | [itemId](#nullable-itemid-string) | Member |
 | [itemType](#itemtype-officemailboxenumsitemtypejavascriptapioutlook16officemailboxenumsitemtype) | Member |
-| [location](#location-stringlocationjavascriptapioutlook16officelocationmd) | Member |
+| [location](#location-stringlocationjavascriptapioutlook16officelocation) | Member |
 | [normalizedSubject](#normalizedsubject-string) | Member |
-| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlook16officenotificationmessagesmd) | Member |
-| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
-| [organizer](#organizer-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
-| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
-| [sender](#sender-emailaddressdetailsjavascriptapiofficeoffice16emailaddressdetails) | Member |
-| [start](#start-datetimejavascriptapioutlook16officetimemd) | Member |
-| [subject](#subject-stringsubjectjavascriptapioutlook16officesubjectmd) | Member |
-| [to](#to-arrayemailaddressdetailsjavascriptapiofficeoffice16emailaddressdetailsrecipientsjavascriptapioutlook16officerecipientsmd) | Member |
+| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlook16officenotificatiommessages) | Member |
+| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
+| [organizer](#organizer-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) | Member |
+| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
+| [sender](#sender-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) | Member |
+| [start](#start-datetimejavascriptapioutlook16officetime) | Member |
+| [subject](#subject-stringsubjectjavascriptapioutlook16officesubject) | Member |
+| [to](#to-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
 | [addFileAttachmentAsync](#addfileattachmentasyncuri-attachmentname-options-callback) | Method |
 | [addItemAttachmentAsync](#additemattachmentasyncitemid-attachmentname-options-callback) | Method |
 | [close](#close) | Method |
 | [displayReplyAllForm](#displayreplyallformformdata) | Method |
 | [displayReplyForm](#displayreplyformformdata) | Method |
-| [getEntities](#getentities--entitiesjavascriptapiofficeoffice16entities) | Method |
-| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapiofficeoffice16contactmeetingsuggestionjavascriptapiofficeoffice16meetingsuggestionphonenumberjavascriptapiofficeoffice16phonenumbertasksuggestionjavascriptapiofficeoffice16tasksuggestion) | Method |
-| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapiofficeoffice16contactmeetingsuggestionjavascriptapiofficeoffice16meetingsuggestionphonenumberjavascriptapiofficeoffice16phonenumbertasksuggestionjavascriptapiofficeoffice16tasksuggestion) | Method |
+| [getEntities](#getentities--entitiesjavascriptapioutlook16officeentities) | Method |
+| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapioutlook16officecontactmeetingsuggestionjavascriptapioutlook16officemeetingsuggestionphonenumberjavascriptapioutlook16officephonenumbertasksuggestionjavascriptapioutlook16officetasksuggestion) | Method |
+| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapioutlook16officecontactmeetingsuggestionjavascriptapioutlook16officemeetingsuggestionphonenumberjavascriptapioutlook16officephonenumbertasksuggestionjavascriptapioutlook16officetasksuggestion) | Method |
 | [getRegExMatches](#getregexmatches--object) | Method |
 | [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array-string-) | Method |
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
-| [getSelectedEntities](#getselectedentities--entitiesjavascriptapiofficeoffice16entities) | Method |
+| [getSelectedEntities](#getselectedentities--entitiesjavascriptapioutlook16officeentities) | Method |
+| [getSelectedRegExMatches](#getselectedregexmatches--object) | Method |
 | [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
 | [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
 | [saveAsync](#saveasyncoptions-callback) | Method |
@@ -319,7 +320,7 @@ Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
 
 Gets the email address of the sender of a message. Read mode only.
 
-The `from` and [`sender`](#sender-emailaddressdetails) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The `from` and [`sender`](#sender-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 > [!NOTE]
 > The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
@@ -393,9 +394,9 @@ var itemClass = Office.context.mailbox.item.itemClass;
 Gets the Exchange Web Services item identifier for the current item. Read mode only.
 
 > [!NOTE]
-> The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](office.context.mailbox.md). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
+> The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](office.context.mailbox.md#converttorestiditemid-restversion--string). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
 
-The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](#saveasyncoptions-callbackoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office.asyncresult) parameter in the callback function.
+The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](#saveasyncoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office.asyncresult) parameter in the callback function.
 
 ##### Type:
 
@@ -422,7 +423,7 @@ if (itemId === null || itemId == undefined) {
 }
 ```
 
-####  itemType :[Office.MailboxEnums.ItemType](/javascript/api/outlook_1_6/office.MailboxEnums.itemtype)
+####  itemType :[Office.MailboxEnums.ItemType](/javascript/api/outlook_1_6/office.mailboxenums.itemtype)
 
 Gets the type of item that an instance represents.
 
@@ -430,7 +431,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Type:
 
-*   [Office.MailboxEnums.ItemType](/javascript/api/outlook_1_6/office.MailboxEnums.itemtype)
+*   [Office.MailboxEnums.ItemType](/javascript/api/outlook_1_6/office.mailboxenums.itemtype)
 
 ##### Requirements
 
@@ -489,7 +490,7 @@ function callback(asyncResult) {
 
 Gets the subject of an item, with all prefixes removed (including `RE:` and `FWD:`). Read mode only.
 
-The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](#subject-stringsubject) property.
+The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](#subject-stringsubjectjavascriptapioutlook16officesubject) property.
 
 ##### Type:
 
@@ -624,7 +625,7 @@ function callback(asyncResult) {
 
 Gets the email address of the sender of an email message. Read mode only.
 
-The [`from`](#from-emailaddressdetails) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The [`from`](#from-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 > [!NOTE]
 > The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is `undefined`.
@@ -1206,7 +1207,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 |Name| Type| Description|
 |---|---|---|
-|`entityType`| [Office.MailboxEnums.EntityType](/javascript/api/outlook_1_6/office.MailboxEnums.entitytype)|One of the EntityType enumeration values.|
+|`entityType`| [Office.MailboxEnums.EntityType](/javascript/api/outlook_1_6/office.mailboxenums.entitytype)|One of the EntityType enumeration values.|
 
 ##### Requirements
 
@@ -1259,7 +1260,7 @@ Returns well-known entities in the selected item that pass the named filter defi
 > [!NOTE]
 > This method is not supported in Outlook for iOS or Outlook for Android.
 
-The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the [ItemHasKnownEntity](https://msdn.microsoft.com/library/office/fp161166.aspx) rule element in the manifest XML file with the specified `FilterName` element value.
+The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the [ItemHasKnownEntity](/javascript/office/manifest/rule#itemhasknownentity-rule) rule element in the manifest XML file with the specified `FilterName` element value.
 
 ##### Parameters:
 
@@ -1377,7 +1378,7 @@ An array that contains the strings that match the regular expression defined in 
 
 <dt>Type</dt>
 
-<dd>Array.&ltString&gt</dd>
+<dd>Array.< String ></dd>
 
 </dl>
 
