@@ -17,8 +17,8 @@ Requirement set 1.3 includes all of the features of [Requirement set 1.2](../req
 
 ### Change log
 
-- Added [Body.getAsync](/javascript/api/office_1_3/office.Body#getasynccoerciontype-options-callback): Returns the current body in a specified format.
-- Added [Body.setAsync](/javascript/api/office_1_3/office.Body#setasyncdata-options-callback): Replaces the entire body with the specified text.
+- Added [Body.getAsync](/javascript/api/outlook_1_3/office.body#getasynccoerciontype-options-callback): Returns the current body in a specified format.
+- Added [Body.setAsync](/javascript/api/outlook_1_3/office.body#setasyncdata-options-callback): Replaces the entire body with the specified text.
 - Added [Office.context.officeTheme](/Office-context.md#officetheme-object): Provides access to the Office theme colors.
 - Added [Event](/javascript/api/office/office.event) object: Passed as a parameter to UI-less command functions in an Outlook add-in. Used to signal completion of processing.
 - Added [Office.context.mailbox.item.close](/Office-item.md#close): Closes the current item that is being composed.
@@ -26,10 +26,10 @@ Requirement set 1.3 includes all of the features of [Requirement set 1.2](../req
 - Added [Office.context.mailbox.item.notificationMessages](/Office-item.md#notificationmessages-notificationmessages): Gets the notification messages for an item.
 - Added [Office.context.mailbox.convertToEwsId](/Office-mailbox.md#converttoewsiditemid-restversion--string): Converts an item ID formatted for REST into EWS format.
 - Added [Office.context.mailbox.convertToRestId](/Office-mailbox.md#converttorestiditemid-restversion--string): Converts an item ID formatted for EWS into REST format.
-- Added [Office.MailboxEnums.ItemNotificationMessageType](/javascript/api/office_1_3/office.mailboxenums.itemnotificationmessagetype): Specifies the notification message type for an appointment or message.
-- Added [Office.MailboxEnums.RestVersion](/javascript/api/office_1_3/office.mailboxenums.restversion): Specifies the version of the REST API that corresponds to a REST-formatted item ID.
-- Added [NotificationMessages](/javascript/api/office_1_3/office.NotificationMessages) object: Provides methods for accessing notification messages in an Outlook add-in.
-- Added [NotificationMessageDetails](/javascript/api/office_1_3/office.notificationmessagedetails) type: Returned by the `NotificationMessages.getAllAsync` method.
+- Added [Office.MailboxEnums.ItemNotificationMessageType](/javascript/api/outlook_1_3/office.mailboxenums.itemnotificationmessagetype): Specifies the notification message type for an appointment or message.
+- Added [Office.MailboxEnums.RestVersion](/javascript/api/outlook_1_3/office.mailboxenums.restversion): Specifies the version of the REST API that corresponds to a REST-formatted item ID.
+- Added [NotificationMessages](/javascript/api/outlook_1_3/office.notificationmessages) object: Provides methods for accessing notification messages in an Outlook add-in.
+- Added [NotificationMessageDetails](/javascript/api/outlook_1_3/office.notificationmessagedetails) type: Returned by the `NotificationMessages.getAllAsync` method.
 
 ## See also
 
