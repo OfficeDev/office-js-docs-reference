@@ -17,7 +17,7 @@ Requirement set 1.3 includes all of the features of [Requirement set 1.2](../req
 
 ### Change log
 
-- Added [Body.getAsync](/javascript/api/outlook_1_3/office.body#getasynccoerciontype-options-callback): Returns the current body in a specified format.
+- Added [Body.getAsync](/javascript/api/outlook_1_3/office.body#getasync-coerciontype--options--callback-): Returns the current body in a specified format.
 - Added [Body.setAsync](/javascript/api/outlook_1_3/office.body#setasyncdata-options-callback): Replaces the entire body with the specified text.
 - Added [Office.context.officeTheme](/Office-context.md#officetheme-object): Provides access to the Office theme colors.
 - Added [Event](/javascript/api/office/office.event) object: Passed as a parameter to UI-less command functions in an Outlook add-in. Used to signal completion of processing.
