@@ -97,12 +97,11 @@ tryCatch(async () => {
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-    let excelIconSetRoot = {"name": "Icon sets", "uid": "", "items": [] as any};
-    let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     let excelEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let excelEnumFilter : string [] = ["BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartDataLabelPosition", "ChartLegendPosition", "ChartLineStyle", "ChartMarkerStyle", "ChartSeriesBy", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "DataChangeType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "NamedItemScope", "NamedItemType", "PageOrientation", "ProtectionSelectionMode", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SheetVisibility", "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "VerticalAlignment", "WorksheetPositionType"];
-    let excelEventArgsRoot = {"name": "EventArgs", "uid": "", "items": [] as any};
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
+    let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
+    let excelInterfaceFilter : string [] = ["ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
     // create folders for word subcategories
     let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -112,7 +111,7 @@ tryCatch(async () => {
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
     outlookFilter = outlookFilter.concat(outlookFolders);
     let excelFilter: string[] = ["Interfaces"];
-    excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter);
+    excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter).concat(excelInterfaceFilter);
     let wordFilter: string[] = ["Interfaces"];
     wordFilter = wordFilter.concat(wordEnumFilter);
     let oneNoteFilter: string[] = ["Interfaces"];
@@ -161,23 +160,20 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        let iconSetList = membersToMove.items.filter(item => {
+                        membersToMove.items.filter(item => {
                             return excelIconSetFilter.indexOf(item.name) >= 0;
+                        });
+                        membersToMove.items.filter(item => {
+                            return excelEventArgsFilter.indexOf(item.name) >= 0;
                         });
                         let enumList = membersToMove.items.filter(item => {
                             return excelEnumFilter.indexOf(item.name) >= 0;
-                        });
-                        let eventArgsList = membersToMove.items.filter(item => {
-                            return excelEventArgsFilter.indexOf(item.name) >= 0;
                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
                         excelEnumRoot.items = enumList;
-                        excelEventArgsRoot.items = eventArgsList;
-                        excelIconSetRoot.items = iconSetList;
-                        primaryList.unshift(excelIconSetRoot);
-                        primaryList.unshift(excelEventArgsRoot);
+
                         primaryList.unshift(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
