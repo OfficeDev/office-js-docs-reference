@@ -32,7 +32,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [itemType](#itemtype-officemailboxenumsitemtypejavascriptapioutlook16officemailboxenumsitemtype) | Member |
 | [location](#location-stringlocationjavascriptapioutlook16officelocation) | Member |
 | [normalizedSubject](#normalizedsubject-string) | Member |
-| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlook16officenotificatiommessages) | Member |
+| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlook16officenotificationmessages) | Member |
 | [optionalAttendees](#optionalattendees-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
 | [organizer](#organizer-emailaddressdetailsjavascriptapioutlook16officeemailaddressdetails) | Member |
 | [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapioutlook16officeemailaddressdetailsrecipientsjavascriptapioutlook16officerecipients) | Member |
@@ -512,13 +512,13 @@ The normalizedSubject property gets the subject of the item, with any standard p
 var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
 ```
 
-####  notificationMessages :[NotificationMessages](/javascript/api/outlook_1_6/office.notificatiomMessages)
+####  notificationMessages :[NotificationMessages](/javascript/api/outlook_1_6/office.notificationmessages)
 
 Gets the notification messages for an item.
 
 ##### Type:
 
-*   [NotificationMessages](/javascript/api/outlook_1_6/office.notificatiomMessages)
+*   [NotificationMessages](/javascript/api/outlook_1_6/office.notificationmessages)
 
 ##### Requirements
 
