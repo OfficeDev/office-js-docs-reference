@@ -39,6 +39,7 @@ A string that can be one of the following values: `Outlook`, `OutlookIOS`, or `O
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
+
 ####  hostVersion :String
 
 Gets a string that represents the version of either the host application or the Exchange Server.
@@ -56,6 +57,7 @@ If the mail add-in is running on the Outlook desktop client or Outlook for iOS, 
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
+
 ####  OWAView :String
 
 Gets a string that represents the current view of Outlook Web App.

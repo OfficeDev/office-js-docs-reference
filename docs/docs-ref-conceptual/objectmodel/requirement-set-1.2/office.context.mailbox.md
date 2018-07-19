@@ -328,7 +328,7 @@ Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsReq
 > [!NOTE]
 > The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
-#### Version differences
+##### Version differences
 
 When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to `ISO-8859-1`.
 

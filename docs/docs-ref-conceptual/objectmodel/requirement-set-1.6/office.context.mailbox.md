@@ -13,13 +13,33 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
+##### Members and methods
+
+| Member | Type |
+|--------|------|
+| [ewsUrl](#ewsurl-string) | Member |
+| [restUrl](#resturl-string) | Member |
+| [addHandlerAsync](#addhandlerasynceventtype-handler-options-callback) | Method |
+| [convertToEwsId](#converttoewsiditemid-restversion--string) | Method |
+| [convertToLocalClientTime](#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook16officelocalclienttime) | Method |
+| [convertToRestId](#converttorestiditemid-restversion--string) | Method |
+| [convertToUtcClientTime](#converttoutcclienttimeinput--date) | Method |
+| [displayAppointmentForm](#displayappointmentformitemid) | Method |
+| [displayMessageForm](#displaymessageformitemid) | Method |
+| [displayNewAppointmentForm](#displaynewappointmentformparameters) | Method |
+| [displayNewMessageForm](#displaynewmessageformparameters) | Method |
+| [getCallbackTokenAsync](#getcallbacktokenasyncoptions-callback) | Method |
+| [getCallbackTokenAsync](#getcallbacktokenasynccallback-usercontext) | Method |
+| [getUserIdentityTokenAsync](#getuseridentitytokenasynccallback-usercontext) | Method |
+| [makeEwsRequestAsync](#makeewsrequestasyncdata-callback-usercontext) | Method |
+
 ### Namespaces
 
 [diagnostics](Office.context.mailbox.diagnostics.md): Provides diagnostic information to an Outlook add-in.
 
 [item](Office.context.mailbox.item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
-[userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.</dd>
+[userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.
 
 ### Members
 
@@ -594,7 +614,7 @@ Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsReq
 > [!NOTE]
 > The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
-#### Version differences
+##### Version differences
 
 When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to `ISO-8859-1`.
 
