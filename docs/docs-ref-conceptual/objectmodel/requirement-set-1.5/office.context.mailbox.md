@@ -104,7 +104,7 @@ Currently the only supported event type is `Office.EventType.ItemChanged`, which
 
 | Name | Type | Attributes | Description |
 |---|---|---|---|
-| `eventType` | [Office.EventType](/javascript/api/outlook_1_6/office.EventType) || The event that should invoke the handler. |
+| `eventType` | [Office.EventType](office.md#eventtype-string) || The event that should invoke the handler. |
 | `handler` | Function || The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`. |
 | `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
 | `options.asyncContext` | Object | &lt;optional&gt; | Developers can provide any object they wish to access in the callback method. |
