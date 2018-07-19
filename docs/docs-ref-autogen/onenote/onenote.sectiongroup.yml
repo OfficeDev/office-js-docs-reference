@@ -44,47 +44,46 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the section groups that are direct children of the current notebook.
+              var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+              
+              // Queue a command to load the section groups.
+              // For best performance, request specific properties.
+              sectionGroups.load("id");
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function() {
+                      
+                      // Add a section to each section group.
+                      $.each(sectionGroups.items, function(index, sectionGroup) {
+                          sectionGroup.addSection("Agenda");
+                      });
+                      
+                      // Run the queued commands.
+                      return context.sync();
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: title
           description: The name of the new section.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Get the section groups that are direct children of the current notebook.
-          var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-          
-          // Queue a command to load the section groups.
-          // For best performance, request specific properties.
-          sectionGroups.load("id");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  
-                  // Add a section to each section group.
-                  $.each(sectionGroups.items, function(index, sectionGroup) {
-                      sectionGroup.addSection("Agenda");
-                  });
-                  
-                  // Run the queued commands.
-                  return context.sync();
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.SectionGroup.addSectionGroup
     summary: |-
       Adds a new section group to the end of this sectionGroup.
@@ -100,54 +99,53 @@ items:
       return:
         type:
           - onenote.OneNote.SectionGroup
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+              var sectionGroup;
+              var nestedSectionGroup;
+
+              // Gets the active notebook.
+              var notebook = context.application.getActiveNotebook();
+
+              // Queue a command to add a new section group.
+              var sectionGroups = notebook.sectionGroups;
+
+              // Queue a command to load the new section group.
+              sectionGroups.load();
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function(){
+                      sectionGroup = sectionGroups.items[0];
+                      sectionGroup.load();
+                      return context.sync();
+                  })
+                  .then(function(){
+                      nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
+                      nestedSectionGroup.load();
+                      return context.sync();
+                  })
+                  .then(function() {
+                      console.log("New nested section group name is " + nestedSectionGroup.name);
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
       parameters:
         - id: name
           description: The name of the new section.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-          var sectionGroup;
-          var nestedSectionGroup;
-
-          // Gets the active notebook.
-          var notebook = context.application.getActiveNotebook();
-
-          // Queue a command to add a new section group.
-          var sectionGroups = notebook.sectionGroups;
-
-          // Queue a command to load the new section group.
-          sectionGroups.load();
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function(){
-                  sectionGroup = sectionGroups.items[0];
-                  sectionGroup.load();
-                  return context.sync();
-              })
-              .then(function(){
-                  nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
-                  nestedSectionGroup.load();
-                  return context.sync();
-              })
-              .then(function() {
-                  console.log("New nested section group name is " + nestedSectionGroup.name);
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-      ```
   - uid: onenote.OneNote.SectionGroup.clientUrl
     summary: |-
       The client url of the section group. Read only
@@ -167,7 +165,7 @@ items:
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: onenote.OneNote.SectionGroup.getRestApiId
     langs:
@@ -198,28 +196,31 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: onenote.OneNote.SectionGroup.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
-      return:
-        type:
-          - onenote.OneNote.SectionGroup
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - onenote.OneNote.Interfaces.SectionGroupLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       OneNote.run(function (context) {
               
           // Get the parent section group that contains the current section.
@@ -239,15 +240,19 @@ items:
                   
               });
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       OneNote.run(function (context) {
               
           // Get the parent section group that contains the current section.
@@ -265,15 +270,19 @@ items:
                   console.log("Parent notebook name: " + sectionGroup.notebook.name);
               });
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       OneNote.run(function (context) {
 
           // Get the section groups that are direct children of the current notebook.
@@ -300,15 +309,19 @@ items:
                   });
               });
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       OneNote.run(function (context) {
 
           // Get the sections that are siblings of the current section.
@@ -329,13 +342,31 @@ items:
                   });
               });
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: onenote.OneNote.SectionGroup.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
+      return:
+        type:
+          - onenote.OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.SectionGroup.name
     summary: |-
       Gets the name of the section group. Read-only.

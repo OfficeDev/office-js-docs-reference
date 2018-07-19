@@ -13,6 +13,7 @@ items:
       - word.Word.HeaderFooterType.firstPage
       - word.Word.HeaderFooterType.primary
   - uid: word.Word.HeaderFooterType.evenPages
+    summary: Returns all headers or footers on even-numbered pages of a section.
     name: evenPages
     fullName: word.Word.HeaderFooterType.evenPages
     langs:
@@ -20,6 +21,7 @@ items:
     type: field
     numericValue: '"EvenPages"'
   - uid: word.Word.HeaderFooterType.firstPage
+    summary: Returns the header or footer on the first page of a section.
     name: firstPage
     fullName: word.Word.HeaderFooterType.firstPage
     langs:
@@ -27,6 +29,9 @@ items:
     type: field
     numericValue: '"FirstPage"'
   - uid: word.Word.HeaderFooterType.primary
+    summary: >-
+      Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are
+      different.
     name: primary
     fullName: word.Word.HeaderFooterType.primary
     langs:

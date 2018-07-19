@@ -45,7 +45,7 @@ items:
         description: ''
   - uid: visio.Visio.Page.allShapes
     summary: |-
-      All shapes in the page. Read-only.
+      All shapes in the Page, including subshapes. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: allShapes
@@ -60,7 +60,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Page.comments
     summary: |-
-      Returns the Comments Collection
+      Returns the Comments Collection. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
@@ -90,7 +90,7 @@ items:
           - number
   - uid: visio.Visio.Page.index
     summary: |-
-      Index of the Page.
+      Index of the Page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index
@@ -122,6 +122,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
     name: load(option)
     fullName: visio.Visio.Page.load
     langs:
@@ -154,39 +172,38 @@ items:
         type:
           - string
   - uid: visio.Visio.Page.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Page): void`
     name: 'set(properties, options)'
     fullName: visio.Visio.Page.set
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.PageUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.PageUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.Page.shapes
     summary: |-
-      Shapes at root level, in the page. Read-only.
+      All top-level shapes in the Page.Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapes

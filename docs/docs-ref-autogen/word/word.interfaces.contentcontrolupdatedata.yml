@@ -22,7 +22,7 @@ items:
       - word.Word.Interfaces.ContentControlUpdateData.title
   - uid: word.Word.Interfaces.ContentControlUpdateData.appearance
     summary: |-
-      Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+      Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: appearance

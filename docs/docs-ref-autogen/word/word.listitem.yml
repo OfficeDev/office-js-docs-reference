@@ -28,7 +28,7 @@ items:
   - uid: word.Word.ListItem.getAncestor
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no
-      ancester.
+      ancestor.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -46,14 +46,14 @@ items:
       parameters:
         - id: parentOnly
           description: >-
-            Optional. Specified only the list item's parent will be returned. The default is false that specifies to get
+            Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get
             the lowest ancestor.
           type:
             - boolean
   - uid: word.Word.ListItem.getAncestorOrNullObject
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list
-      item has no ancester.
+      item has no ancestor.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -71,7 +71,7 @@ items:
       parameters:
         - id: parentOnly
           description: >-
-            Optional. Specified only the list item's parent will be returned. The default is false that specifies to get
+            Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get
             the lowest ancestor.
           type:
             - boolean
@@ -94,7 +94,7 @@ items:
       parameters:
         - id: directChildrenOnly
           description: >-
-            Optional. Specified only the list item's direct children will be returned. The default is false that
+            Optional. Specifies only the list item's direct children will be returned. The default is false that
             indicates to get all descendant items.
           type:
             - boolean
@@ -115,7 +115,7 @@ items:
           - number
   - uid: word.Word.ListItem.listString
     summary: |-
-      Gets the list item bullet, number or picture as a string. Read-only.
+      Gets the list item bullet, number, or picture as a string. Read-only.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: listString

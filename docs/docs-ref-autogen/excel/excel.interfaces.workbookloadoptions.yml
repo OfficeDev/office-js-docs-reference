@@ -16,6 +16,7 @@ items:
       - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
       - excel.Excel.Interfaces.WorkbookLoadOptions.name
       - excel.Excel.Interfaces.WorkbookLoadOptions.properties
+      - excel.Excel.Interfaces.WorkbookLoadOptions.protection
       - excel.Excel.Interfaces.WorkbookLoadOptions.tables
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
     summary: |-
@@ -77,6 +78,21 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.protection
+    summary: |-
+      Returns workbook protection object for a workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
     summary: |-
       Represents a collection of tables associated with the workbook.

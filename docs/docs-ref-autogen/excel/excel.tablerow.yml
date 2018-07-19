@@ -42,25 +42,24 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
-          row.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+              row.delete();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel.Excel.TableRow.getRange
     summary: |-
       Returns the range object associated with the entire row.
@@ -76,28 +75,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(0);
-          var rowRange = row.getRange();
-          rowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(rowRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(0);
+              var rowRange = row.getRange();
+              rowRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(rowRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.TableRow.index
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.

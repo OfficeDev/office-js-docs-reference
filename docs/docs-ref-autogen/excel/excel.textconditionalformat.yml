@@ -36,23 +36,23 @@ items:
       return:
         type:
           - excel.Excel.ConditionalRangeFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B16:D18");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.containsText);
-          conditionalFormat.textComparison.format.font.color = "red";
-          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B16:D18");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.TextConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -106,23 +106,23 @@ items:
       return:
         type:
           - excel.Excel.ConditionalTextComparisonRule
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B16:D18");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.containsText);
-          conditionalFormat.textComparison.format.font.color = "red";
-          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B16:D18");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.TextConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

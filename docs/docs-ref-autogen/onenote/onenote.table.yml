@@ -45,53 +45,52 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'appendColumn(values?: Array<string>): void;'
+      content: 'appendColumn(values?: string[]): void;'
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, append a column.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          table.appendColumn(["cell0", "cell1"]);
+                      }
+                  }
+                  return ctx.sync();
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: values
           description: >-
             Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
             the table.
           type:
-            - Array<string>
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, append a column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      table.appendColumn(["cell0", "cell1"]);
-                  }
-              }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+            - 'string[]'
   - uid: onenote.OneNote.Table.appendRow
     summary: |-
       Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
@@ -103,53 +102,52 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'appendRow(values?: Array<string>): OneNote.TableRow;'
+      content: 'appendRow(values?: string[]): OneNote.TableRow;'
       return:
         type:
           - OneNote.TableRow
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, append a column.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          var row = table.appendRow(["cell0", "cell1"]);
+                      }
+                  }
+                  return ctx.sync();
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: values
           description: >-
             Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
             the table.
           type:
-            - Array<string>
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, append a column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var row = table.appendRow(["cell0", "cell1"]);
-                  }
-              }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+            - 'string[]'
   - uid: onenote.OneNote.Table.borderVisible
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
@@ -211,7 +209,41 @@ items:
       return:
         type:
           - onenote.OneNote.TableCell
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, get a cell in the second row and third column.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
+                      }
+                  }
+                  return ctx.sync();
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: rowIndex
           description: The index of the row.
@@ -221,41 +253,6 @@ items:
           description: The index of the cell in the row.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, get a cell in the second row and third column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
-                  }
-              }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.Table.id
     summary: |-
       Gets the ID of the table. Read-only.
@@ -284,11 +281,45 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertColumn(index: number, values?: Array<string>): void;'
+      content: 'insertColumn(index: number, values?: string[]): void;'
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, insert a column at index two.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          table.insertColumn(2, ["cell0", "cell1"]);
+                      }
+                  }
+                  return ctx.sync();
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index where the column will be inserted in the table.
@@ -299,42 +330,7 @@ items:
             Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
             the table.
           type:
-            - Array<string>
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, insert a column at index two.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      table.insertColumn(2, ["cell0", "cell1"]);
-                  }
-              }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+            - 'string[]'
   - uid: onenote.OneNote.Table.insertRow
     summary: >-
       Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is
@@ -348,11 +344,45 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertRow(index: number, values?: Array<string>): OneNote.TableRow;'
+      content: 'insertRow(index: number, values?: string[]): OneNote.TableRow;'
       return:
         type:
           - OneNote.TableRow
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, insert a row at index two.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          var row = table.insertRow(2, ["cell0", "cell1"]);
+                      }
+                  }
+                  return ctx.sync();
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index where the row will be inserted in the table.
@@ -363,68 +393,36 @@ items:
             Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
             the table.
           type:
-            - Array<string>
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, insert a row at index two.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var row = table.insertRow(2, ["cell0", "cell1"]);
-                  }
-              }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+            - 'string[]'
   - uid: onenote.OneNote.Table.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: onenote.OneNote.Table.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
-      return:
-        type:
-          - OneNote.Table
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - OneNote.Interfaces.TableLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -452,15 +450,19 @@ items:
               }
           });
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -492,13 +494,31 @@ items:
               }
           })
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: onenote.OneNote.Table.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
@@ -545,37 +565,40 @@ items:
         type:
           - OneNote.TableRowCollection
   - uid: onenote.OneNote.Table.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.Table): void`
     name: 'set(properties, options)'
     fullName: onenote.OneNote.Table.set
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.TableUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.TableUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.Table.setShadingColor
+    summary: |-
+      Sets the shading color of all cells in the table. The color code to set the cells to.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
     fullName: onenote.OneNote.Table.setShadingColor
     langs:

@@ -156,7 +156,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
   - uid: word.Word.TableRow.getNext
@@ -193,8 +193,8 @@ items:
         description: ''
   - uid: word.Word.TableRow.horizontalAlignment
     summary: >-
-      Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or
-      'justified'.
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -228,7 +228,7 @@ items:
         - id: insertLocation
           description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add
           type:
@@ -323,7 +323,7 @@ items:
           - number
   - uid: word.Word.TableRow.search
     summary: >-
-      Performs a search with the specified searchOptions on the scope of the row. The search results are a collection of
+      Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of
       range objects.
 
 
@@ -384,7 +384,7 @@ items:
         description: ''
       parameters:
         - id: selectionMode
-          description: 'Optional. The selection mode can be ''Select'', ''Start'' or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
   - uid: word.Word.TableRow.set
@@ -427,7 +427,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
         - id: cellPadding
@@ -436,7 +436,7 @@ items:
             - number
   - uid: word.Word.TableRow.shadingColor
     summary: |-
-      Gets and sets the shading color.
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
@@ -513,7 +513,7 @@ items:
           - 'string[][]'
   - uid: word.Word.TableRow.verticalAlignment
     summary: |-
-      Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment

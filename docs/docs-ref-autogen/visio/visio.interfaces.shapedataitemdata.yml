@@ -15,7 +15,7 @@ items:
       - visio.Visio.Interfaces.ShapeDataItemData.value
   - uid: visio.Visio.Interfaces.ShapeDataItemData.format
     summary: |-
-      A string that specifies the format of the shape data item.
+      A string that specifies the format of the shape data item. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: format
@@ -30,7 +30,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
     summary: |-
-      A string that specifies the formatted value of the shape data item.
+      A string that specifies the formatted value of the shape data item. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: formattedValue
@@ -45,7 +45,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.label
     summary: |-
-      A string that specifies the label of the shape data item.
+      A string that specifies the label of the shape data item. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: label
@@ -60,7 +60,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.value
     summary: |-
-      A string that specifies the value of the shape data item.
+      A string that specifies the value of the shape data item. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: value

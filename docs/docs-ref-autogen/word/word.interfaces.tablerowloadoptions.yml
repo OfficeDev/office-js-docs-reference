@@ -54,8 +54,8 @@ items:
           - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.TableRowLoadOptions.horizontalAlignment
     summary: >-
-      Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or
-      'justified'.
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -133,7 +133,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.TableRowLoadOptions.shadingColor
     summary: |-
-      Gets and sets the shading color.
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
@@ -163,7 +163,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.TableRowLoadOptions.verticalAlignment
     summary: |-
-      Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment

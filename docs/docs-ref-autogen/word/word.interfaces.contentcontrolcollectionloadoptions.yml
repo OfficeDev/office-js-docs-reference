@@ -2,10 +2,10 @@
 items:
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions
     summary: >-
-      Contains a collection of \[contentControl\](contentControl.md) objects. Content controls are bounded and
-      potentially labeled regions in a document that serve as containers for specific types of content. Individual
-      content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only
-      rich text content controls are supported.
+      Contains a collection of [Word.ContentControl](xref:word.Word.ContentControl) objects. Content controls are
+      bounded and potentially labeled regions in a document that serve as containers for specific types of content.
+      Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
+      Currently, only rich text content controls are supported.
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -41,7 +41,7 @@ items:
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
     summary: >-
       For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be
-      'boundingBox', 'tags' or 'hidden'.
+      'BoundingBox', 'Tags', or 'Hidden'.
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]

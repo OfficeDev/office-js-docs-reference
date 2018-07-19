@@ -124,24 +124,23 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
+          ```typescript
+          await Excel.run(async (context) => {
 
-          let myWorkbook = context.workbook;
-          let activeCell = myWorkbook.getActiveCell();
-          activeCell.load("address");
+              let myWorkbook = context.workbook;
+              let activeCell = myWorkbook.getActiveCell();
+              activeCell.load("address");
 
-          await context.sync();
-          
-          console.log("The active cell is " + activeCell.address);
-      });
-      ```
+              await context.sync();
+              
+              console.log("The active cell is " + activeCell.address);
+          });
+          ```
   - uid: excel.Excel.Workbook.getSelectedRange
     summary: |-
       Gets the currently selected range from the workbook.
@@ -157,26 +156,25 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var selectedRange = ctx.workbook.getSelectedRange();
-          selectedRange.load('address');
-          return ctx.sync().then(function() {
-                  console.log(selectedRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var selectedRange = ctx.workbook.getSelectedRange();
+              selectedRange.load('address');
+              return ctx.sync().then(function() {
+                      console.log(selectedRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.Workbook.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -254,7 +252,7 @@ items:
     fullName: excel.Excel.Workbook.onSelectionChanged
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
@@ -290,37 +288,37 @@ items:
       return:
         type:
           - excel.Excel.DocumentProperties
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let titleValue = "Excel document properties API";
-          let subjectValue = "Set and get document properties";
-          let keywordsValue = "Set and get operations";
-          let commentsValue = "This is an Excel document properties API code sample";
-          let categoryValue = "Office Add-ins";
-          let managerValue = "John";
-          let companyValue = "Microsoft";
+          ```typescript
+          await Excel.run(async (context) => {
+              let titleValue = "Excel document properties API";
+              let subjectValue = "Set and get document properties";
+              let keywordsValue = "Set and get operations";
+              let commentsValue = "This is an Excel document properties API code sample";
+              let categoryValue = "Office Add-ins";
+              let managerValue = "John";
+              let companyValue = "Microsoft";
 
-          let docProperties = context.workbook.properties;
+              let docProperties = context.workbook.properties;
 
-          // Set the writeable document properties.
-          docProperties.title = titleValue;
-          docProperties.subject = subjectValue;
-          docProperties.keywords = keywordsValue;
-          docProperties.comments = commentsValue;
-          docProperties.category = categoryValue;
-          docProperties.manager = managerValue;
-          docProperties.company = companyValue;
+              // Set the writeable document properties.
+              docProperties.title = titleValue;
+              docProperties.subject = subjectValue;
+              docProperties.keywords = keywordsValue;
+              docProperties.comments = commentsValue;
+              docProperties.category = categoryValue;
+              docProperties.manager = managerValue;
+              docProperties.company = companyValue;
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
-      });
-      ```
+              OfficeHelpers.UI.notify("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+          });
+          ```
   - uid: excel.Excel.Workbook.protection
     summary: |-
       Returns workbook protection object for a workbook. Read-only.

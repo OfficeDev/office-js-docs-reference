@@ -103,6 +103,11 @@ tryCatch(async () => {
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     let excelInterfaceFilter : string [] = ["ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
+    // create folders for OneNote subcategories
+    let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let oneNoteEnumFilter : string [] = ["EntityType", "ErrorCodes", "InsertLocation", "ListType", "NoteTagStatus", "NoteTagType", "NumberType", "PageContentType", "ParagraphType"];
+    let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
+
     // create folders for word subcategories
     let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let wordEnumFilter : string [] = ["Word.Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
@@ -115,6 +120,7 @@ tryCatch(async () => {
     let wordFilter: string[] = ["Interfaces"];
     wordFilter = wordFilter.concat(wordEnumFilter);
     let oneNoteFilter: string[] = ["Interfaces"];
+    oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter).concat(oneNoteInterfaceFilter);
     let visioFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Shared API)
@@ -204,9 +210,14 @@ tryCatch(async () => {
                             "items":  primaryList as any
                         });
                     } else if (packageName.toLocaleLowerCase().includes('onenote')) {
+                        let enumList = membersToMove.items.filter(item => {
+                            return oneNoteEnumFilter.indexOf(item.name) >= 0;
+                        });
                         let primaryList = membersToMove.items.filter(item => {
                             return oneNoteFilter.indexOf(item.name) < 0;
                         });
+                        oneNoteEnumRoot.items = enumList;
+                        primaryList.unshift(oneNoteEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,

@@ -160,85 +160,84 @@ items:
       return:
         type:
           - excel.Excel.Binding
-        description: ''
+        description: >
+
+
+          #### Examples
+
+
+          ```javascript
+
+          // Create a table binding to monitor data changes in the table. When data is changed, the background color of
+          the table will be changed to orange.
+
+          function addEventHandler() {
+              //Create Table1
+          Excel.run(function (ctx) { 
+              ctx.workbook.tables.add("Sheet1!A1:C4", true);
+              return ctx.sync().then(function() {
+                       console.log("My Diet Data Inserted!");
+              })
+              .catch(function (error) {
+                       console.log(JSON.stringify(error));
+              });
+          });
+              //Create a new table binding for Table1
+          Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding"
+          }, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  console.log("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  // If succeeded, then add event handler to the table binding.
+                  Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+              }
+          });
+
+          }
+              
+          // when data in the table is changed, this event will be triggered.
+
+          function onBindingDataChanged(eventArgs) {
+
+          Excel.run(function (ctx) { 
+              // highlight the table in orange to indicate data has been changed.
+              ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+              return ctx.sync().then(function() {
+                      console.log("The value in this table got changed!");
+              })
+              .catch(function (error) {
+                      console.log(JSON.stringify(error));
+              });
+          });
+
+          }
+
+          ```
+
+
+          ```javascript
+
+          Excel.run(function (ctx) { 
+              var lastPosition = ctx.workbook.bindings.count - 1;
+              var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+              binding.load('type')
+              return ctx.sync().then(function() {
+                      console.log(binding.type); 
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          ```
       parameters:
         - id: id
           description: Id of the binding object to be retrieved.
           type:
             - string
-    remarks: >
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Create a table binding to monitor data changes in the table. When data is changed, the background color of the
-      table will be changed to orange.
-
-      function addEventHandler() {
-          //Create Table1
-      Excel.run(function (ctx) { 
-          ctx.workbook.tables.add("Sheet1!A1:C4", true);
-          return ctx.sync().then(function() {
-                   console.log("My Diet Data Inserted!");
-          })
-          .catch(function (error) {
-                   console.log(JSON.stringify(error));
-          });
-      });
-          //Create a new table binding for Table1
-      Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" },
-      function (asyncResult) {
-          if (asyncResult.status == "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          }
-          else {
-              // If succeeded, then add event handler to the table binding.
-              Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
-          }
-      });
-
-      }
-          
-      // when data in the table is changed, this event will be triggered.
-
-      function onBindingDataChanged(eventArgs) {
-
-      Excel.run(function (ctx) { 
-          // highlight the table in orange to indicate data has been changed.
-          ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-          return ctx.sync().then(function() {
-                  console.log("The value in this table got changed!");
-          })
-          .catch(function (error) {
-                  console.log(JSON.stringify(error));
-          });
-      });
-
-      }
-
-      ```
-
-
-      ```javascript
-
-      Excel.run(function (ctx) { 
-          var lastPosition = ctx.workbook.bindings.count - 1;
-          var binding = ctx.workbook.bindings.getItemAt(lastPosition);
-          binding.load('type')
-          return ctx.sync().then(function() {
-                  console.log(binding.type); 
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
   - uid: excel.Excel.BindingCollection.getItemAt
     summary: |-
       Gets a binding object based on its position in the items array.
@@ -254,32 +253,31 @@ items:
       return:
         type:
           - excel.Excel.Binding
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var lastPosition = ctx.workbook.bindings.count - 1;
+              var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+              binding.load('type')
+              return ctx.sync().then(function() {
+                      console.log(binding.type); 
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var lastPosition = ctx.workbook.bindings.count - 1;
-          var binding = ctx.workbook.bindings.getItemAt(lastPosition);
-          binding.load('type')
-          return ctx.sync().then(function() {
-                  console.log(binding.type); 
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.BindingCollection.getItemOrNullObject
     summary: |-
       Gets a binding object by ID. If the binding object does not exist, will return a null object.

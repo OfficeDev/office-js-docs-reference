@@ -77,41 +77,40 @@ items:
       return:
         type:
           - Word.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          var textSample = 'This is an example of the insert text method. This is a method ' + 
-              'which allows users to insert text into a selection. It can insert text into a ' +
-              'relative location or it can overwrite the current selection. Since the ' +
-              'getSelection method returns a range object, look up the range object documentation ' +
-              'for everything you can do with a selection.';
-          
-          // Create a range proxy object for the current selection.
-          var range = context.document.getSelection();
-          
-          // Queue a commmand to insert text at the end of the selection.
-          range.insertText(textSample, Word.InsertLocation.end);
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Inserted the text at the end of the selection.');
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              var textSample = 'This is an example of the insert text method. This is a method ' + 
+                  'which allows users to insert text into a selection. It can insert text into a ' +
+                  'relative location or it can overwrite the current selection. Since the ' +
+                  'getSelection method returns a range object, look up the range object documentation ' +
+                  'for everything you can do with a selection.';
+              
+              // Create a range proxy object for the current selection.
+              var range = context.document.getSelection();
+              
+              // Queue a commmand to insert text at the end of the selection.
+              range.insertText(textSample, Word.InsertLocation.end);
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Inserted the text at the end of the selection.');
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: word.Word.Document.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -126,48 +125,47 @@ items:
       return:
         type:
           - Word.Document
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Create a proxy object for the document.
+              var thisDocument = context.document;
+              
+              // Queue a command to load content control properties.
+              context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  if (thisDocument.contentControls.items.length !== 0) {
+                      for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
+                          console.log(thisDocument.contentControls.items[i].id);
+                          console.log(thisDocument.contentControls.items[i].text);
+                          console.log(thisDocument.contentControls.items[i].tag);
+                      }
+                  } else {
+                      console.log('No content controls in this document.');
+                  }
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.DocumentLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          // Create a proxy object for the document.
-          var thisDocument = context.document;
-          
-          // Queue a command to load content control properties.
-          context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (thisDocument.contentControls.items.length !== 0) {
-                  for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
-                      console.log(thisDocument.contentControls.items[i].id);
-                      console.log(thisDocument.contentControls.items[i].text);
-                      console.log(thisDocument.contentControls.items[i].tag);
-                  }
-              } else {
-                  console.log('No content controls in this document.');
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: word.Word.Document.properties
     summary: |-
       Gets the properties of the document. Read-only.
@@ -183,20 +181,20 @@ items:
       return:
         type:
           - Word.DocumentProperties
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Word.run(async (context) => {
-          let builtInProperties = context.document.properties;
-          builtInProperties.load("*"); // Let's get all!
+          ```typescript
+          await Word.run(async (context) => {
+              let builtInProperties = context.document.properties;
+              builtInProperties.load("*"); // Let's get all!
 
-          await context.sync();
-          console.log(JSON.stringify(builtInProperties, null, 4));
-      });
-      ```
+              await context.sync();
+              console.log(JSON.stringify(builtInProperties, null, 4));
+          });
+          ```
   - uid: word.Word.Document.save
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
@@ -214,47 +212,46 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          // Create a proxy object for the document.
-          var thisDocument = context.document;
-
-          // Queue a commmand to load the document save state (on the saved property).
-          context.load(thisDocument, 'saved');    
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
               
-              if (thisDocument.saved === false) {
-                  // Queue a command to save this document.
-                  thisDocument.save();
+              // Create a proxy object for the document.
+              var thisDocument = context.document;
+
+              // Queue a commmand to load the document save state (on the saved property).
+              context.load(thisDocument, 'saved');    
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
                   
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log('Saved the document');
-                  });
-              } else {
-                  console.log('The document has not changed since the last save.');
+                  if (thisDocument.saved === false) {
+                      // Queue a command to save this document.
+                      thisDocument.save();
+                      
+                      // Synchronize the document state by executing the queued commands, 
+                      // and return a promise to indicate task completion.
+                      return context.sync().then(function () {
+                          console.log('Saved the document');
+                      });
+                  } else {
+                      console.log('The document has not changed since the last save.');
+                  }
+              });  
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
-          });  
-      })
-      .catch(function (error) {
-          console.log("Error: " + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          });
+          ```
   - uid: word.Word.Document.saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't

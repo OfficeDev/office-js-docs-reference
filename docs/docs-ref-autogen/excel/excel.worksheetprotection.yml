@@ -90,7 +90,58 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function(ctx) {
+            // get a reference to Sheet1
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+            // Protect inserting or deleting rows in Sheet1
+            sheet.protection.protect({
+              allowInsertRows: false,
+              allowDeleteRows: false
+            });
+
+            return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect();
+              }
+          });
+          ```
+
+          ```typescript
+          let password = await passwordHandler();
+          passwordHelper(password);
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect(null, password);
+              }
+          });
+          ```
       parameters:
         - id: options
           description: Optional. Sheet protection options.
@@ -100,58 +151,6 @@ items:
           description: Optional. Sheet protection password.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function(ctx) {
-        // get a reference to Sheet1
-        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-
-        // Protect inserting or deleting rows in Sheet1
-        sheet.protection.protect({
-          allowInsertRows: false,
-          allowDeleteRows: false
-        });
-
-        return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```typescript
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.load("protection/protected");
-
-          await context.sync();
-
-          if (!activeSheet.protection.protected) {
-              activeSheet.protection.protect();
-          }
-      });
-      ```
-
-      ```typescript
-      let password = await passwordHandler();
-      passwordHelper(password);
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.load("protection/protected");
-
-          await context.sync();
-
-          if (!activeSheet.protection.protected) {
-              activeSheet.protection.protect(null, password);
-          }
-      });
-      ```
   - uid: excel.Excel.WorksheetProtection.protected
     summary: |-
       Indicates if the worksheet is protected. Read-only.
@@ -194,76 +193,75 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: >
+
+
+          #### Examples
+
+
+          ```javascript
+
+          Excel.run(function(ctx) {
+            // get a reference to Sheet1
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+            // Remove all protects applied to Sheet1
+            sheet.protection.unprotect();
+
+            return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          ```
+
+
+          ```javascript
+
+          // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a
+          worksheet.
+
+          // To remove only a subset of WorksheetProtectionOptions use the protect() method and set the options you wish
+          to remove to true.
+
+          Excel.run(function(ctx) {
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+            sheet.protection.protect({
+              allowInsertRows: false, // Protect row insertion
+              allowDeleteRows: true // Unprotect row deletion
+            });
+          });
+
+          ```
+
+
+          ```typescript
+
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect();
+          });
+
+          ```
+
+
+          ```typescript
+
+          let password = await passwordHandler();
+
+          passwordHelper(password);
+
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect(password);
+          });
+
+          ```
       parameters:
         - id: password
           description: sheet protection password.
           type:
             - string
-    remarks: >
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Excel.run(function(ctx) {
-        // get a reference to Sheet1
-        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-
-        // Remove all protects applied to Sheet1
-        sheet.protection.unprotect();
-
-        return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-
-      ```javascript
-
-      // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a
-      worksheet.
-
-      // To remove only a subset of WorksheetProtectionOptions use the protect() method and set the options you wish to
-      remove to true.
-
-      Excel.run(function(ctx) {
-        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-        sheet.protection.protect({
-          allowInsertRows: false, // Protect row insertion
-          allowDeleteRows: true // Unprotect row deletion
-        });
-      });
-
-      ```
-
-
-      ```typescript
-
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.protection.unprotect();
-      });
-
-      ```
-
-
-      ```typescript
-
-      let password = await passwordHandler();
-
-      passwordHelper(password);
-
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.protection.unprotect(password);
-      });
-
-      ```

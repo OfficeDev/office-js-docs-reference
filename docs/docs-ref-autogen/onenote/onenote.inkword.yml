@@ -56,6 +56,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.InkWord` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: onenote.OneNote.InkWord.load
     langs:
@@ -138,14 +156,14 @@ items:
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
-      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
     fullName: onenote.OneNote.InkWord.wordAlternates
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly wordAlternates: Array<string>;'
+      content: 'readonly wordAlternates: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'

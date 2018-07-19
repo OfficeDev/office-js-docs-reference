@@ -60,7 +60,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -68,7 +94,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ApplicationUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -79,27 +105,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.ApplicationUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.Application): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -116,7 +164,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Show/Hide the application borders."
+                  "text": "Show or hide the iFrame application borders."
                 },
                 {
                   "kind": "paragraph"
@@ -130,11 +178,12 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "showToolbar": {
               "kind": "method",
-              "signature": "showToolbar(id: string, show: boolean): void;",
+              "signature": "showToolbar(id: Visio.ToolBarType, show: boolean): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -145,14 +194,24 @@
               "parameters": {
                 "id": {
                   "name": "id",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The type of the Toolbar"
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string"
+                  "type": "Visio.ToolBarType"
                 },
                 "show": {
                   "name": "show",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Whether the toolbar is visibile or not."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "boolean"
@@ -162,7 +221,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Show or Hide a particular toolbar."
+                  "text": "Sets the visibility of a specific toolbar in the application."
                 },
                 {
                   "kind": "paragraph"
@@ -189,7 +248,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Show or Hide the standard toolbars."
+                  "text": "Show or hide the standard toolbars."
                 },
                 {
                   "kind": "paragraph"
@@ -203,7 +262,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -274,7 +334,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "width": {
               "kind": "property",
@@ -301,7 +362,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "x": {
               "kind": "property",
@@ -328,7 +390,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "y": {
               "kind": "property",
@@ -355,7 +418,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -393,7 +457,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the label of the shape data item."
+                  "text": "A string that specifies the name of the author of the comment."
                 },
                 {
                   "kind": "paragraph"
@@ -407,7 +471,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "date": {
               "kind": "property",
@@ -420,7 +485,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the format of the shape data item."
+                  "text": "A string that specifies the date when the comment was created."
                 },
                 {
                   "kind": "paragraph"
@@ -434,7 +499,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -462,7 +528,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -470,7 +562,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CommentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -481,27 +573,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.CommentUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.Comment): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -518,7 +632,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the value of the shape data item."
+                  "text": "A string that contains the comment text."
                 },
                 {
                   "kind": "paragraph"
@@ -532,7 +646,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -593,7 +708,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of Shape Data Items."
+                  "text": "Gets the number of Comments."
                 },
                 {
                   "kind": "paragraph"
@@ -655,11 +770,11 @@
             },
             "items": {
               "kind": "property",
-              "signature": "readonly items: Array<Visio.Comment>;",
+              "signature": "readonly items: Visio.Comment[];",
               "isOptional": false,
               "isReadOnly": true,
               "isStatic": false,
-              "type": "Array<Visio.Comment>",
+              "type": "Visio.Comment[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -671,7 +786,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -699,7 +815,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -774,7 +916,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "success": {
               "kind": "property",
@@ -787,7 +930,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success/failure of the DataRefreshComplete event."
+                  "text": "Gets the success or failure of the DataRefreshComplete event."
                 },
                 {
                   "kind": "paragraph"
@@ -801,7 +944,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -853,7 +997,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getActivePage": {
               "kind": "method",
@@ -912,7 +1057,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -943,7 +1114,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "onDocumentLoadComplete": {
               "kind": "property",
@@ -970,7 +1142,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "onPageLoadComplete": {
               "kind": "property",
@@ -997,7 +1170,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "onSelectionChanged": {
               "kind": "property",
@@ -1024,7 +1198,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "onShapeMouseEnter": {
               "kind": "property",
@@ -1051,7 +1226,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "onShapeMouseLeave": {
               "kind": "property",
@@ -1078,7 +1254,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "pages": {
               "kind": "property",
@@ -1105,11 +1282,12 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1120,27 +1298,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.DocumentUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.Document): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1251,7 +1451,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the DocumentView object."
+                  "text": "Returns the DocumentView object. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -1265,7 +1465,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -1278,7 +1479,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the drawing that raised the DiagramLoadComplete event."
+              "text": "Provides information about the success or failure of the DocumentLoadComplete event."
             },
             {
               "kind": "paragraph"
@@ -1303,7 +1504,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success/failure of the DocumentLoadComplete event."
+                  "text": "Gets the success or failure of the DocumentLoadComplete event."
                 },
                 {
                   "kind": "paragraph"
@@ -1317,7 +1518,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -1369,7 +1571,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "disablePan": {
               "kind": "property",
@@ -1396,7 +1599,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "disableZoom": {
               "kind": "property",
@@ -1423,7 +1627,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "hideDiagramBoundary": {
               "kind": "property",
@@ -1436,7 +1641,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Disable Hyperlinks."
+                  "text": "Hide Diagram Boundary."
                 },
                 {
                   "kind": "paragraph"
@@ -1450,7 +1655,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -1478,7 +1684,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1486,7 +1718,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1497,27 +1729,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.DocumentViewUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.DocumentView): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1545,12 +1799,61 @@
           }
         },
         "ErrorCodes": {
-          "kind": "namespace",
+          "kind": "enum",
+          "values": {
+            "accessDenied": {
+              "kind": "enum value",
+              "value": "\"AccessDenied\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "generalException": {
+              "kind": "enum value",
+              "value": "\"GeneralException\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "invalidArgument": {
+              "kind": "enum value",
+              "value": "\"InvalidArgument\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "itemNotFound": {
+              "kind": "enum value",
+              "value": "\"ItemNotFound\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "notImplemented": {
+              "kind": "enum value",
+              "value": "\"NotImplemented\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "unsupportedOperation": {
+              "kind": "enum value",
+              "value": "\"UnsupportedOperation\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
           "deprecatedMessage": [],
           "summary": [],
           "remarks": [],
-          "isBeta": false,
-          "exports": {}
+          "isBeta": false
         },
         "Highlight": {
           "kind": "interface",
@@ -1600,7 +1903,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "width": {
               "kind": "property",
@@ -1627,7 +1931,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -1665,7 +1970,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the address of the Hyperlink object."
+                  "text": "Gets the address of the Hyperlink object. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -1679,7 +1984,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "description": {
               "kind": "property",
@@ -1692,7 +1998,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the description of a hyperlink."
+                  "text": "Gets the description of a hyperlink. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -1706,7 +2012,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "extraInfo": {
               "kind": "property",
@@ -1719,7 +2026,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the extra info of a hyperlink."
+                  "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -1733,7 +2040,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -1761,7 +2069,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1778,7 +2112,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the sub-address of the Hyperlink object."
+                  "text": "Gets the sub-address of the Hyperlink object. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -1792,7 +2126,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -1915,11 +2250,11 @@
             },
             "items": {
               "kind": "property",
-              "signature": "readonly items: Array<Visio.Hyperlink>;",
+              "signature": "readonly items: Visio.Hyperlink[];",
               "isOptional": false,
               "isReadOnly": true,
               "isStatic": false,
-              "type": "Array<Visio.Hyperlink>",
+              "type": "Visio.Hyperlink[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1931,7 +2266,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -1959,7 +2295,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -2020,7 +2382,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show/Hide the application borders."
+                      "text": "Show or hide the iFrame application borders."
                     },
                     {
                       "kind": "paragraph"
@@ -2034,7 +2396,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "showToolbars": {
                   "kind": "property",
@@ -2047,7 +2410,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or Hide the standard toolbars."
+                      "text": "Show or hide the standard toolbars."
                     },
                     {
                       "kind": "paragraph"
@@ -2061,7 +2424,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2099,7 +2463,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show/Hide the application borders."
+                      "text": "Show or hide the iFrame application borders."
                     },
                     {
                       "kind": "paragraph"
@@ -2113,7 +2477,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "showToolbars": {
                   "kind": "property",
@@ -2126,7 +2491,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or Hide the standard toolbars."
+                      "text": "Show or hide the standard toolbars."
                     },
                     {
                       "kind": "paragraph"
@@ -2140,7 +2505,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2171,7 +2537,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show/Hide the application borders."
+                      "text": "Show or hide the iFrame application borders."
                     },
                     {
                       "kind": "paragraph"
@@ -2185,7 +2551,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "showToolbars": {
                   "kind": "property",
@@ -2198,7 +2565,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or Hide the standard toolbars."
+                      "text": "Show or hide the standard toolbars."
                     },
                     {
                       "kind": "paragraph"
@@ -2212,7 +2579,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2222,7 +2590,12 @@
               "implements": "",
               "typeParameters": [],
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Provides ways to load properties of only a subset of members of a collection."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -2257,7 +2630,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2295,7 +2669,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the name of the author of the comment."
                     },
                     {
                       "kind": "paragraph"
@@ -2309,7 +2683,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "date": {
                   "kind": "property",
@@ -2322,7 +2697,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the date when the comment was created."
                     },
                     {
                       "kind": "paragraph"
@@ -2336,7 +2711,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -2349,7 +2725,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that contains the comment text."
                     },
                     {
                       "kind": "paragraph"
@@ -2363,7 +2739,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2396,7 +2773,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2427,7 +2805,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item."
+                      "text": "A string that specifies the name of the author of the comment."
                     },
                     {
                       "kind": "paragraph"
@@ -2441,7 +2819,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "date": {
                   "kind": "property",
@@ -2454,7 +2833,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item."
+                      "text": "A string that specifies the date when the comment was created."
                     },
                     {
                       "kind": "paragraph"
@@ -2468,7 +2847,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -2481,7 +2861,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item."
+                      "text": "A string that contains the comment text."
                     },
                     {
                       "kind": "paragraph"
@@ -2495,7 +2875,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2533,7 +2914,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item."
+                      "text": "A string that specifies the name of the author of the comment."
                     },
                     {
                       "kind": "paragraph"
@@ -2547,7 +2928,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "date": {
                   "kind": "property",
@@ -2560,7 +2942,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item."
+                      "text": "A string that specifies the date when the comment was created."
                     },
                     {
                       "kind": "paragraph"
@@ -2574,7 +2956,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -2587,7 +2970,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item."
+                      "text": "A string that contains the comment text."
                     },
                     {
                       "kind": "paragraph"
@@ -2601,7 +2984,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2632,7 +3016,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item."
+                      "text": "A string that specifies the name of the author of the comment."
                     },
                     {
                       "kind": "paragraph"
@@ -2646,7 +3030,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "date": {
                   "kind": "property",
@@ -2659,7 +3044,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item."
+                      "text": "A string that specifies the date when the comment was created."
                     },
                     {
                       "kind": "paragraph"
@@ -2673,7 +3058,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -2686,7 +3072,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item."
+                      "text": "A string that contains the comment text."
                     },
                     {
                       "kind": "paragraph"
@@ -2700,7 +3086,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2745,7 +3132,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "pages": {
                   "kind": "property",
@@ -2772,7 +3160,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -2785,7 +3174,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the DocumentView object."
+                      "text": "Returns the DocumentView object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -2799,7 +3188,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2851,7 +3241,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -2878,7 +3269,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2923,7 +3315,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -2950,7 +3343,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -2995,7 +3389,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disablePan": {
                   "kind": "property",
@@ -3022,7 +3417,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disableZoom": {
                   "kind": "property",
@@ -3049,7 +3445,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "hideDiagramBoundary": {
                   "kind": "property",
@@ -3062,7 +3459,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Hyperlinks."
+                      "text": "Hide Diagram Boundary."
                     },
                     {
                       "kind": "paragraph"
@@ -3076,7 +3473,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3128,7 +3526,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disablePan": {
                   "kind": "property",
@@ -3155,7 +3554,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disableZoom": {
                   "kind": "property",
@@ -3182,7 +3582,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "hideDiagramBoundary": {
                   "kind": "property",
@@ -3195,7 +3596,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Hyperlinks."
+                      "text": "Hide Diagram Boundary."
                     },
                     {
                       "kind": "paragraph"
@@ -3209,7 +3610,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3254,7 +3656,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disablePan": {
                   "kind": "property",
@@ -3281,7 +3684,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "disableZoom": {
                   "kind": "property",
@@ -3308,7 +3712,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "hideDiagramBoundary": {
                   "kind": "property",
@@ -3321,7 +3726,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Hyperlinks."
+                      "text": "Hide Diagram Boundary."
                     },
                     {
                       "kind": "paragraph"
@@ -3335,7 +3740,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3368,7 +3774,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3406,7 +3813,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Gets the address of the Hyperlink object."
+                      "text": "For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3420,7 +3827,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "description": {
                   "kind": "property",
@@ -3433,7 +3841,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Gets the description of a hyperlink."
+                      "text": "For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3447,7 +3855,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "extraInfo": {
                   "kind": "property",
@@ -3460,7 +3869,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Gets the extra info of a hyperlink."
+                      "text": "For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3474,7 +3883,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "subAddress": {
                   "kind": "property",
@@ -3487,7 +3897,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object."
+                      "text": "For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3501,7 +3911,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3534,7 +3945,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3565,7 +3977,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the address of the Hyperlink object."
+                      "text": "Gets the address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3579,7 +3991,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "description": {
                   "kind": "property",
@@ -3592,7 +4005,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the description of a hyperlink."
+                      "text": "Gets the description of a hyperlink. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3606,7 +4019,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "extraInfo": {
                   "kind": "property",
@@ -3619,7 +4033,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the extra info of a hyperlink."
+                      "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3633,7 +4047,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "subAddress": {
                   "kind": "property",
@@ -3646,7 +4061,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the sub-address of the Hyperlink object."
+                      "text": "Gets the sub-address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3660,7 +4075,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3698,7 +4114,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the address of the Hyperlink object."
+                      "text": "Gets the address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3712,7 +4128,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "description": {
                   "kind": "property",
@@ -3725,7 +4142,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the description of a hyperlink."
+                      "text": "Gets the description of a hyperlink. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3739,7 +4156,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "extraInfo": {
                   "kind": "property",
@@ -3752,7 +4170,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the extra info of a hyperlink."
+                      "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3766,7 +4184,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "subAddress": {
                   "kind": "property",
@@ -3779,7 +4198,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the sub-address of the Hyperlink object."
+                      "text": "Gets the sub-address of the Hyperlink object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3793,7 +4212,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3826,7 +4246,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -3878,7 +4299,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "index": {
                   "kind": "property",
@@ -3891,7 +4313,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Index of the Page."
+                      "text": "For EACH ITEM in the collection: Index of the Page. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -3905,7 +4327,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "isBackground": {
                   "kind": "property",
@@ -3932,7 +4355,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -3959,7 +4383,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -3986,7 +4411,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "width": {
                   "kind": "property",
@@ -4013,7 +4439,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4046,7 +4473,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4077,7 +4505,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "All shapes in the page. Read-only."
+                      "text": "All shapes in the Page, including subshapes. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4091,7 +4519,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "comments": {
                   "kind": "property",
@@ -4104,7 +4533,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Comments Collection"
+                      "text": "Returns the Comments Collection. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4118,7 +4547,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "height": {
                   "kind": "property",
@@ -4145,7 +4575,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "index": {
                   "kind": "property",
@@ -4158,7 +4589,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Index of the Page."
+                      "text": "Index of the Page. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4172,7 +4603,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "isBackground": {
                   "kind": "property",
@@ -4199,7 +4631,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -4226,7 +4659,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "shapes": {
                   "kind": "property",
@@ -4239,7 +4673,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shapes at root level, in the page. Read-only."
+                      "text": "All top-level shapes in the Page.Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4253,7 +4687,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -4280,7 +4715,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "width": {
                   "kind": "property",
@@ -4307,7 +4743,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4359,7 +4796,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "index": {
                   "kind": "property",
@@ -4372,7 +4810,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Index of the Page."
+                      "text": "Index of the Page. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4386,7 +4824,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "isBackground": {
                   "kind": "property",
@@ -4413,7 +4852,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -4440,7 +4880,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -4467,7 +4908,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "width": {
                   "kind": "property",
@@ -4494,7 +4936,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4539,7 +4982,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4570,7 +5014,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
                     },
                     {
                       "kind": "paragraph"
@@ -4584,7 +5028,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4622,7 +5067,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
                     },
                     {
                       "kind": "paragraph"
@@ -4636,7 +5081,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4667,7 +5113,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
                     },
                     {
                       "kind": "paragraph"
@@ -4681,7 +5127,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4712,7 +5159,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the Shapes of the Selection"
+                      "text": "Gets the Shapes of the Selection. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4726,7 +5173,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4759,7 +5207,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4797,7 +5246,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Shape's Identifier."
+                      "text": "For EACH ITEM in the collection: Shape's identifier. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4811,7 +5260,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -4824,7 +5274,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Shape's name."
+                      "text": "For EACH ITEM in the collection: Shape's name. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4838,7 +5288,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "select": {
                   "kind": "property",
@@ -4865,7 +5316,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -4878,7 +5330,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: Shape's Text."
+                      "text": "For EACH ITEM in the collection: Shape's text. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4892,7 +5344,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -4919,7 +5372,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4952,7 +5406,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -4983,7 +5438,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Comments Collection"
+                      "text": "Returns the Comments Collection. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -4997,7 +5452,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "hyperlinks": {
                   "kind": "property",
@@ -5024,7 +5480,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "id": {
                   "kind": "property",
@@ -5037,7 +5494,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's Identifier."
+                      "text": "Shape's identifier. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5051,7 +5508,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -5064,7 +5522,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's name."
+                      "text": "Shape's name. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5078,7 +5536,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "select": {
                   "kind": "property",
@@ -5105,7 +5564,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "shapeDataItems": {
                   "kind": "property",
@@ -5132,7 +5592,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "subShapes": {
                   "kind": "property",
@@ -5145,7 +5606,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets SubShape Collection."
+                      "text": "Gets SubShape Collection. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5159,7 +5620,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -5172,7 +5634,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's Text."
+                      "text": "Shape's text. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5186,7 +5648,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -5213,7 +5676,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5246,7 +5710,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5284,7 +5749,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5298,7 +5763,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "formattedValue": {
                   "kind": "property",
@@ -5311,7 +5777,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5325,7 +5791,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "label": {
                   "kind": "property",
@@ -5338,7 +5805,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5352,7 +5819,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "value": {
                   "kind": "property",
@@ -5365,7 +5833,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item."
+                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5379,7 +5847,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5412,7 +5881,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5443,7 +5913,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item."
+                      "text": "A string that specifies the format of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5457,7 +5927,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "formattedValue": {
                   "kind": "property",
@@ -5470,7 +5941,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the formatted value of the shape data item."
+                      "text": "A string that specifies the formatted value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5484,7 +5955,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "label": {
                   "kind": "property",
@@ -5497,7 +5969,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item."
+                      "text": "A string that specifies the label of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5511,7 +5983,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "value": {
                   "kind": "property",
@@ -5524,7 +5997,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item."
+                      "text": "A string that specifies the value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5538,7 +6011,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5576,7 +6050,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item."
+                      "text": "A string that specifies the format of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5590,7 +6064,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "formattedValue": {
                   "kind": "property",
@@ -5603,7 +6078,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the formatted value of the shape data item."
+                      "text": "A string that specifies the formatted value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5617,7 +6092,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "label": {
                   "kind": "property",
@@ -5630,7 +6106,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item."
+                      "text": "A string that specifies the label of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5644,7 +6120,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "value": {
                   "kind": "property",
@@ -5657,7 +6134,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item."
+                      "text": "A string that specifies the value of the shape data item. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5671,7 +6148,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5709,7 +6187,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's Identifier."
+                      "text": "Shape's identifier. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5723,7 +6201,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "name": {
                   "kind": "property",
@@ -5736,7 +6215,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's name."
+                      "text": "Shape's name. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5750,7 +6229,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "select": {
                   "kind": "property",
@@ -5777,7 +6257,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "text": {
                   "kind": "property",
@@ -5790,7 +6271,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's Text."
+                      "text": "Shape's text. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5804,7 +6285,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -5831,7 +6313,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5876,7 +6359,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 },
                 "view": {
                   "kind": "property",
@@ -5903,7 +6387,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -5948,7 +6433,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -6000,7 +6486,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -6045,14 +6532,56 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             }
           }
         },
         "OverlayHorizontalAlignment": {
-          "kind": "namespace",
+          "kind": "enum",
+          "values": {
+            "center": {
+              "kind": "enum value",
+              "value": "\"Center\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "center"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "left": {
+              "kind": "enum value",
+              "value": "\"Left\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "left"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "right": {
+              "kind": "enum value",
+              "value": "\"Right\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "right"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
           "deprecatedMessage": [],
           "summary": [
             {
@@ -6068,11 +6597,38 @@
             }
           ],
           "remarks": [],
-          "isBeta": false,
-          "exports": {}
+          "isBeta": false
         },
         "OverlayType": {
-          "kind": "namespace",
+          "kind": "enum",
+          "values": {
+            "image": {
+              "kind": "enum value",
+              "value": "\"Image\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "image"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "text": {
+              "kind": "enum value",
+              "value": "\"Text\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "text"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
           "deprecatedMessage": [],
           "summary": [
             {
@@ -6088,11 +6644,51 @@
             }
           ],
           "remarks": [],
-          "isBeta": false,
-          "exports": {}
+          "isBeta": false
         },
         "OverlayVerticalAlignment": {
-          "kind": "namespace",
+          "kind": "enum",
+          "values": {
+            "bottom": {
+              "kind": "enum value",
+              "value": "\"Bottom\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "bottom"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "middle": {
+              "kind": "enum value",
+              "value": "\"Middle\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "middle"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "top": {
+              "kind": "enum value",
+              "value": "\"Top\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "top"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
           "deprecatedMessage": [],
           "summary": [
             {
@@ -6108,8 +6704,7 @@
             }
           ],
           "remarks": [],
-          "isBeta": false,
-          "exports": {}
+          "isBeta": false
         },
         "Page": {
           "kind": "class",
@@ -6176,7 +6771,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "All shapes in the page. Read-only."
+                  "text": "All shapes in the Page, including subshapes. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -6190,7 +6785,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "comments": {
               "kind": "property",
@@ -6203,7 +6799,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Comments Collection"
+                  "text": "Returns the Comments Collection. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -6217,7 +6813,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "height": {
               "kind": "property",
@@ -6244,7 +6841,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "index": {
               "kind": "property",
@@ -6257,7 +6855,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Index of the Page."
+                  "text": "Index of the Page. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -6271,7 +6869,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "isBackground": {
               "kind": "property",
@@ -6298,7 +6897,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -6326,7 +6926,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -6357,11 +6983,12 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6372,27 +6999,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.PageUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.Page): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -6409,7 +7058,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shapes at root level, in the page. Read-only."
+                  "text": "All top-level shapes in the Page.Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -6423,7 +7072,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -6469,7 +7119,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "width": {
               "kind": "property",
@@ -6496,7 +7147,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -6600,11 +7252,11 @@
             },
             "items": {
               "kind": "property",
-              "signature": "readonly items: Array<Visio.Page>;",
+              "signature": "readonly items: Visio.Page[];",
               "isOptional": false,
               "isReadOnly": true,
               "isStatic": false,
-              "type": "Array<Visio.Page>",
+              "type": "Visio.Page[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -6616,7 +7268,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -6644,7 +7297,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -6719,7 +7398,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "success": {
               "kind": "property",
@@ -6732,7 +7412,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success/failure of the PageLoadComplete event."
+                  "text": "Gets the success or failure of the PageLoadComplete event."
                 },
                 {
                   "kind": "paragraph"
@@ -6746,7 +7426,89 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "PageRenderCompleteEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the page that raised the PageRenderComplete event."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "pageName": {
+              "kind": "property",
+              "signature": "pageName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the name of the page that raised the PageLoad event."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "success": {
+              "kind": "property",
+              "signature": "success: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the success/failure of the PageRender event."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -6980,7 +7742,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -6988,7 +7776,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6999,27 +7787,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.PageViewUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.PageView): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -7099,7 +7909,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                  "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
                 },
                 {
                   "kind": "paragraph"
@@ -7113,7 +7923,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -7165,7 +7976,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "y": {
               "kind": "property",
@@ -7192,7 +8004,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -7265,36 +8078,37 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
           "returnValue": {
             "type": "Promise<T>",
             "description": []
           },
           "parameters": {
-            "contextObject": {
-              "name": "contextObject",
+            "objects": {
+              "name": "objects",
               "description": [
                 {
                   "kind": "text",
-                  "text": "A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context."
+                  "text": "An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by \"context.sync()\"."
                 }
               ],
               "isOptional": false,
               "isSpread": false,
-              "type": "OfficeExtension.ClientRequestContext"
+              "type": "OfficeExtension.ClientObject[]"
             },
             "batch": {
               "name": "batch",
               "description": [
                 {
                   "kind": "text",
-                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in."
+                  "text": "A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released."
                 }
               ],
               "isOptional": false,
@@ -7306,108 +8120,10 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released."
+              "text": "Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects."
             }
           ],
-          "remarks": [
-            {
-              "kind": "text",
-              "text": "In addition to this signature, the method also has the following signatures:"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
-            }
-          ],
+          "remarks": [],
           "isBeta": false
         },
         "Selection": {
@@ -7459,7 +8175,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Selection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Selection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -7476,7 +8218,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Shapes of the Selection"
+                  "text": "Gets the Shapes of the Selection. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7490,7 +8232,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -7561,20 +8304,21 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "shapeNames": {
               "kind": "property",
-              "signature": "shapeNames: Array<string>;",
+              "signature": "shapeNames: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the ShapeCollection object that raised the SelectionChanged event."
+                  "text": "Gets the array of shape names that raised the SelectionChanged event."
                 },
                 {
                   "kind": "paragraph"
@@ -7588,7 +8332,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -7626,7 +8371,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Comments Collection"
+                  "text": "Returns the Comments Collection. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7640,7 +8385,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getBounds": {
               "kind": "method",
@@ -7698,7 +8444,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -7711,7 +8458,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's Identifier."
+                  "text": "Shape's identifier. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7725,7 +8472,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -7753,7 +8501,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -7770,7 +8544,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's name."
+                  "text": "Shape's name. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7784,7 +8558,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "select": {
               "kind": "property",
@@ -7811,11 +8586,12 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ShapeUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7826,27 +8602,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.ShapeUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.Shape): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -7877,7 +8675,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subShapes": {
               "kind": "property",
@@ -7890,7 +8689,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets SubShape Collection."
+                  "text": "Gets SubShape Collection. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7904,7 +8703,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "text": {
               "kind": "property",
@@ -7917,7 +8717,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's Text."
+                  "text": "Shape's text. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -7931,7 +8731,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "toJSON": {
               "kind": "method",
@@ -7977,7 +8778,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8081,11 +8883,11 @@
             },
             "items": {
               "kind": "property",
-              "signature": "readonly items: Array<Visio.Shape>;",
+              "signature": "readonly items: Visio.Shape[];",
               "isOptional": false,
               "isReadOnly": true,
               "isStatic": false,
-              "type": "Array<Visio.Shape>",
+              "type": "Visio.Shape[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -8097,7 +8899,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -8125,7 +8928,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -8186,7 +9015,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the format of the shape data item."
+                  "text": "A string that specifies the format of the shape data item. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -8200,7 +9029,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "formattedValue": {
               "kind": "property",
@@ -8213,7 +9043,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the formatted value of the shape data item."
+                  "text": "A string that specifies the formatted value of the shape data item. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -8227,7 +9057,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "label": {
               "kind": "property",
@@ -8240,7 +9071,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the label of the shape data item."
+                  "text": "A string that specifies the label of the shape data item. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -8254,7 +9085,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -8282,7 +9114,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -8318,7 +9176,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the value of the shape data item."
+                  "text": "A string that specifies the value of the shape data item. Read-only."
                 },
                 {
                   "kind": "paragraph"
@@ -8332,7 +9190,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8436,11 +9295,11 @@
             },
             "items": {
               "kind": "property",
-              "signature": "readonly items: Array<Visio.ShapeDataItem>;",
+              "signature": "readonly items: Visio.ShapeDataItem[];",
               "isOptional": false,
               "isReadOnly": true,
               "isStatic": false,
-              "type": "Array<Visio.ShapeDataItem>",
+              "type": "Visio.ShapeDataItem[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -8452,7 +9311,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -8480,7 +9340,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -8555,7 +9441,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "shapeName": {
               "kind": "property",
@@ -8568,7 +9455,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the shape object that raised the ShapeMouseEnter event."
+                  "text": "Gets the name of the shape object that raised the ShapeMouseEnter event."
                 },
                 {
                   "kind": "paragraph"
@@ -8582,7 +9469,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8634,7 +9522,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "shapeName": {
               "kind": "property",
@@ -8647,7 +9536,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the shape object that raised the ShapeMouseLeave event."
+                  "text": "Gets the name of the shape object that raised the ShapeMouseLeave event."
                 },
                 {
                   "kind": "paragraph"
@@ -8661,7 +9550,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8690,7 +9580,7 @@
           "members": {
             "addOverlay": {
               "kind": "method",
-              "signature": "addOverlay(OverlayType: string, Content: string, OverlayHorizontalAlignment: string, OverlayVerticalAlignment: string, Width: number, Height: number): OfficeExtension.ClientResult<number>;",
+              "signature": "addOverlay(OverlayType: Visio.OverlayType, Content: string, OverlayHorizontalAlignment: Visio.OverlayHorizontalAlignment, OverlayVerticalAlignment: Visio.OverlayVerticalAlignment, Width: number, Height: number): OfficeExtension.ClientResult<number>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8704,12 +9594,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "An Overlay Type -Text, Image."
+                      "text": "An Overlay Type. Can be 'Text' or 'Image'."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string"
+                  "type": "Visio.OverlayType"
                 },
                 "Content": {
                   "name": "Content",
@@ -8728,24 +9618,24 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Horizontal Alignment of Overlay - Left, Center, Right"
+                      "text": "Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string"
+                  "type": "Visio.OverlayHorizontalAlignment"
                 },
                 "OverlayVerticalAlignment": {
                   "name": "OverlayVerticalAlignment",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Vertical Alignment of Overlay - Top, Middle, Bottom"
+                      "text": "Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string"
+                  "type": "Visio.OverlayVerticalAlignment"
                 },
                 "Width": {
                   "name": "Width",
@@ -8817,7 +9707,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -8845,7 +9736,33 @@
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -8897,7 +9814,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ShapeViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ShapeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8908,27 +9825,49 @@
               "parameters": {
                 "properties": {
                   "name": "properties",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Interfaces.ShapeViewUpdateData"
                 },
                 "options": {
                   "name": "options",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "OfficeExtension.UpdateOptions"
                 }
               },
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`set(properties: Visio.ShapeView): void`"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -8956,7 +9895,48 @@
           }
         },
         "ToolBarType": {
-          "kind": "namespace",
+          "kind": "enum",
+          "values": {
+            "commandBar": {
+              "kind": "enum value",
+              "value": "\"CommandBar\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "CommandBar"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "pageNavigationBar": {
+              "kind": "enum value",
+              "value": "\"PageNavigationBar\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "PageNavigationBar"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "statusBar": {
+              "kind": "enum value",
+              "value": "\"StatusBar\"",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "StatusBar"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
           "deprecatedMessage": [],
           "summary": [
             {
@@ -8972,8 +9952,7 @@
             }
           ],
           "remarks": [],
-          "isBeta": false,
-          "exports": {}
+          "isBeta": false
         }
       }
     }

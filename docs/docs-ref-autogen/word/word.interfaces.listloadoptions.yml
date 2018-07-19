@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.Interfaces.ListLoadOptions
     summary: |-
-      Contains a collection of \[paragraph\](paragraph.md) objects.
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.ListLoadOptions
@@ -49,7 +49,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.ListLoadOptions.levelTypes
     summary: |-
-      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
+      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: levelTypes

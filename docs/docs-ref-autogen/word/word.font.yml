@@ -66,7 +66,7 @@ items:
           - string
   - uid: word.Word.Font.doubleStrikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as
+      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
 
 
@@ -84,7 +84,7 @@ items:
   - uid: word.Word.Font.highlightColor
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
-      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, or an empty
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
       string for mixed highlight colors, or null for no highlight color.
 
 
@@ -130,191 +130,190 @@ items:
       return:
         type:
           - word.Word.Font
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          // Change the font name
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to change the current selection's font name.
+              selection.font.name = 'Arial';
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The font name has changed.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Change the font color
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to change the font color of the current selection.
+              selection.font.color = 'blue';
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The font color of the selection has been changed.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Change the font size
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to change the current selection's font size.
+              selection.font.size = 20;
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The font size has changed.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Highlight selected text
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to highlight the current selection.
+              selection.font.highlightColor = '#FFFF00'; // Yellow
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The selection has been highlighted.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Bold format text
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to make the current selection bold.
+              selection.font.bold = true;
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The selection is now bold.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Underline format text
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to underline the current selection.
+              selection.font.underline = Word.UnderlineType.single;
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The selection now has an underline style.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Strike format text
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a range proxy object for the current selection.
+              var selection = context.document.getSelection();
+
+              // Queue a commmand to strikethrough the font of the current selection.
+              selection.font.strikeThrough = true;
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('The selection now has a strikethrough.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: option
           description: ''
           type:
             - word.Word.Interfaces.FontLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Change the font name
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to change the current selection's font name.
-          selection.font.name = 'Arial';
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font name has changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Change the font color
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to change the font color of the current selection.
-          selection.font.color = 'blue';
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font color of the selection has been changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Change the font size
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to change the current selection's font size.
-          selection.font.size = 20;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font size has changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Highlight selected text
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to highlight the current selection.
-          selection.font.highlightColor = '#FFFF00'; // Yellow
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection has been highlighted.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Bold format text
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to make the current selection bold.
-          selection.font.bold = true;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection is now bold.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Underline format text
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to underline the current selection.
-          selection.font.underline = Word.UnderlineType.single;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection now has an underline style.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Strike format text
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
-
-          // Queue a commmand to strikethrough the font of the current selection.
-          selection.font.strikeThrough = true;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection now has a strikethrough.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: word.Word.Font.name
     summary: |-
       Gets or sets a value that represents the name of the font.
@@ -369,7 +368,7 @@ items:
           - number
   - uid: word.Word.Font.strikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as
+      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
 
 

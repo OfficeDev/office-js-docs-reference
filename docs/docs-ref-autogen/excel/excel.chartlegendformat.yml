@@ -49,30 +49,30 @@ items:
       return:
         type:
           - excel.Excel.ChartFont
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
 
-          let chart = sheet.charts.getItemAt(0);
-          chart.legend.visible = true;
+              let chart = sheet.charts.getItemAt(0);
+              chart.legend.visible = true;
 
-          // Format the legend font.
-          let font = chart.legend.format.font;
-          font.bold = true;
-          font.color = "red";
-          font.italic = true;
-          font.size = 15;
-          font.name = "Calibri";
-          font.underline = "Single";
+              // Format the legend font.
+              let font = chart.legend.format.font;
+              font.bold = true;
+              font.color = "red";
+              font.italic = true;
+              font.size = 15;
+              font.name = "Calibri";
+              font.underline = "Single";
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartLegendFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

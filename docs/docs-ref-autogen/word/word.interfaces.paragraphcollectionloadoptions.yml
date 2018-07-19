@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions
     summary: |-
-      Contains a collection of \[paragraph\](paragraph.md) objects.
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.ParagraphCollectionLoadOptions
@@ -155,7 +155,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
     summary: |-
-      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines. after the paragraph.
+      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitAfter

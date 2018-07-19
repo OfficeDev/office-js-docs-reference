@@ -50,6 +50,7 @@ items:
       - excel.Excel.ChartType.cylinderColStacked100
       - excel.Excel.ChartType.doughnut
       - excel.Excel.ChartType.doughnutExploded
+      - excel.Excel.ChartType.histogram
       - excel.Excel.ChartType.invalid
       - excel.Excel.ChartType.line
       - excel.Excel.ChartType.lineMarkers
@@ -57,6 +58,7 @@ items:
       - excel.Excel.ChartType.lineMarkersStacked100
       - excel.Excel.ChartType.lineStacked
       - excel.Excel.ChartType.lineStacked100
+      - excel.Excel.ChartType.pareto
       - excel.Excel.ChartType.pie
       - excel.Excel.ChartType.pieExploded
       - excel.Excel.ChartType.pieOfPie
@@ -70,6 +72,7 @@ items:
       - excel.Excel.ChartType.radar
       - excel.Excel.ChartType.radarFilled
       - excel.Excel.ChartType.radarMarkers
+      - excel.Excel.ChartType.regionMap
       - excel.Excel.ChartType.stockHLC
       - excel.Excel.ChartType.stockOHLC
       - excel.Excel.ChartType.stockVHLC
@@ -370,6 +373,13 @@ items:
       - typeScript
     type: field
     numericValue: '"DoughnutExploded"'
+  - uid: excel.Excel.ChartType.histogram
+    name: histogram
+    fullName: excel.Excel.ChartType.histogram
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Histogram"'
   - uid: excel.Excel.ChartType.invalid
     name: invalid
     fullName: excel.Excel.ChartType.invalid
@@ -419,6 +429,13 @@ items:
       - typeScript
     type: field
     numericValue: '"LineStacked100"'
+  - uid: excel.Excel.ChartType.pareto
+    name: pareto
+    fullName: excel.Excel.ChartType.pareto
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pareto"'
   - uid: excel.Excel.ChartType.pie
     name: pie
     fullName: excel.Excel.ChartType.pie
@@ -510,6 +527,13 @@ items:
       - typeScript
     type: field
     numericValue: '"RadarMarkers"'
+  - uid: excel.Excel.ChartType.regionMap
+    name: regionMap
+    fullName: excel.Excel.ChartType.regionMap
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RegionMap"'
   - uid: excel.Excel.ChartType.stockHLC
     name: stockHLC
     fullName: excel.Excel.ChartType.stockHLC

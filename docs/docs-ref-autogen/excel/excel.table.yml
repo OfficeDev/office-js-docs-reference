@@ -87,25 +87,24 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.convertToRange();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.convertToRange();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel.Excel.Table.delete
     summary: |-
       Deletes the table.
@@ -121,25 +120,24 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.delete();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel.Excel.Table.getDataBodyRange
     summary: |-
       Gets the range object associated with the data body of the table.
@@ -155,28 +153,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          var tableDataRange = table.getDataBodyRange();
-          tableDataRange.load('address')
-          return ctx.sync().then(function() {
-                  console.log(tableDataRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableDataRange = table.getDataBodyRange();
+              tableDataRange.load('address')
+              return ctx.sync().then(function() {
+                      console.log(tableDataRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.Table.getHeaderRowRange
     summary: |-
       Gets the range object associated with header row of the table.
@@ -192,28 +189,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          var tableHeaderRange = table.getHeaderRowRange();
-          tableHeaderRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(tableHeaderRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableHeaderRange = table.getHeaderRowRange();
+              tableHeaderRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(tableHeaderRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.Table.getRange
     summary: |-
       Gets the range object associated with the entire table.
@@ -229,28 +225,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          var tableRange = table.getRange();
-          tableRange.load('address');    
-          return ctx.sync().then(function() {
-                  console.log(tableRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableRange = table.getRange();
+              tableRange.load('address');    
+              return ctx.sync().then(function() {
+                      console.log(tableRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.Table.getTotalRowRange
     summary: |-
       Gets the range object associated with totals row of the table.
@@ -266,28 +261,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          var tableTotalsRange = table.getTotalRowRange();
-          tableTotalsRange.load('address');    
-          return ctx.sync().then(function() {
-                  console.log(tableTotalsRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableTotalsRange = table.getTotalRowRange();
+              tableTotalsRange.load('address');    
+              return ctx.sync().then(function() {
+                      console.log(tableTotalsRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.Table.highlightFirstColumn
     summary: |-
       Indicates whether the first column contains special formatting.
@@ -466,28 +460,28 @@ items:
     fullName: excel.Excel.Table.onChanged
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let table = context.workbook.tables.getItemAt(0);
-          table.onChanged.add(onChange);
+          ```typescript
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onChanged.add(onChange);
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("A handler has been registered for the onChanged event",
-              "Try changing a cell value in the table, and watch the console output.");
-      });
-      ```
+              OfficeHelpers.UI.notify("A handler has been registered for the onChanged event",
+                  "Try changing a cell value in the table, and watch the console output.");
+          });
+          ```
   - uid: excel.Excel.Table.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific table.
@@ -497,28 +491,28 @@ items:
     fullName: excel.Excel.Table.onSelectionChanged
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let table = context.workbook.tables.getItemAt(0);
-          table.onSelectionChanged.add(onSelectionChange);
+          ```typescript
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onSelectionChanged.add(onSelectionChange);
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("A handler has been registered for table onSelectionChanged event",
-              "Try changing a range selection in the table, and watch the console output.");
-      });
-      ```
+              OfficeHelpers.UI.notify("A handler has been registered for table onSelectionChanged event",
+                  "Try changing a range selection in the table, and watch the console output.");
+          });
+          ```
   - uid: excel.Excel.Table.reapplyFilters
     summary: |-
       Reapplies all the filters currently on the table.

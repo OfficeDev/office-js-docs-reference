@@ -339,23 +339,23 @@ items:
       return:
         type:
           - number
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:E2");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:E2");
 
-          // Set textOrientation to either an integer between -90 and 90
-          // or to 180 for vertically-oriented text.
-          range.format.textOrientation = 90;
+              // Set textOrientation to either an integer between -90 and 90
+              // or to 180 for vertically-oriented text.
+              range.format.textOrientation = 90;
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.RangeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeFormat.toJSON

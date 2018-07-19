@@ -14,9 +14,49 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.WorkbookProtection.load
       - excel.Excel.WorkbookProtection.protect
+      - excel.Excel.WorkbookProtection.protected
       - excel.Excel.WorkbookProtection.toJSON
       - excel.Excel.WorkbookProtection.unprotect
+  - uid: excel.Excel.WorkbookProtection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.WorkbookProtection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookProtection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    name: load(option)
+    fullName: excel.Excel.WorkbookProtection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;'
+      return:
+        type:
+          - excel.Excel.WorkbookProtection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.WorkbookProtection.protect
     summary: |-
       Protects a workbook. Fails if the workbook has been protected.
@@ -32,44 +72,58 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let workbook = context.workbook;
+              workbook.load("protection/protected");
+
+              await context.sync();
+
+              if (!workbook.protection.protected) {
+                  workbook.protection.protect();
+              }
+          });
+          ```
+
+          ```typescript
+          let password = await passwordHandler();
+          passwordHelper(password);
+          await Excel.run(async (context) => {
+              let workbook = context.workbook;
+              workbook.load("protection/protected");
+
+              await context.sync();
+
+              if (!workbook.protection.protected) {
+                  workbook.protection.protect(password);
+              }
+          });
+          ```
       parameters:
         - id: password
           description: workbook protection password.
           type:
             - string
-    remarks: |
+  - uid: excel.Excel.WorkbookProtection.protected
+    summary: |-
+      Indicates if the workbook is protected. Read-Only.
 
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.load("protection/protected");
-
-          await context.sync();
-
-          if (!workbook.protection.protected) {
-              workbook.protection.protect();
-          }
-      });
-      ```
-
-      ```typescript
-      let password = await passwordHandler();
-      passwordHelper(password);
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.load("protection/protected");
-
-          await context.sync();
-
-          if (!workbook.protection.protected) {
-              workbook.protection.protect(password);
-          }
-      });
-      ```
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: protected
+    fullName: excel.Excel.WorkbookProtection.protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.WorkbookProtection.toJSON
     name: toJSON()
     fullName: excel.Excel.WorkbookProtection.toJSON
@@ -77,13 +131,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.WorkbookProtectionData;'
       return:
         type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+          - excel.Excel.Interfaces.WorkbookProtectionData
         description: ''
   - uid: excel.Excel.WorkbookProtection.unprotect
     summary: |-
@@ -100,29 +151,28 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let workbook = context.workbook;
+              workbook.protection.unprotect();
+          });
+          ```
+
+          ```typescript
+          let password = await passwordHandler();
+          passwordHelper(password);
+          await Excel.run(async (context) => {
+              let workbook = context.workbook;
+              workbook.protection.unprotect(password);
+          });
+          ```
       parameters:
         - id: password
           description: workbook protection password.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.protection.unprotect();
-      });
-      ```
-
-      ```typescript
-      let password = await passwordHandler();
-      passwordHelper(password);
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.protection.unprotect(password);
-      });
-      ```
