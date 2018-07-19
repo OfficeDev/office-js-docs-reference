@@ -5,14 +5,14 @@
 export declare namespace Word {
     /**
      *
-     * The Application object.
+     * Represents the application object.
      *
      * [Api set: WordApi 1.3]
      */
     export class Application extends OfficeExtension.ClientObject {
         /**
          *
-         * Creates a new hidden document by using an optional base64 encoded .docx file.
+         * Creates a new document by using an optional base64 encoded .docx file.
          *
          * [Api set: WordApi 1.3]
          *
@@ -50,7 +50,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of inlinePicture objects in the body. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -177,7 +177,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -186,7 +186,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -218,42 +218,42 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -278,22 +278,22 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -342,27 +342,27 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the body object. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.1]
          *
@@ -384,7 +384,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -393,7 +393,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -515,7 +515,7 @@ export declare namespace Word {
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+         * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
          *
          * [Api set: WordApi 1.1]
          */
@@ -651,7 +651,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -660,7 +660,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -670,176 +670,176 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before' or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          *
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. Type of break.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before' or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          *
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. Type of break.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText - Required. The paragrph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText - Required. The paragrph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the content control object. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.1]
          *
@@ -861,7 +861,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -870,7 +870,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -882,7 +882,7 @@ export declare namespace Word {
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
          * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -906,7 +906,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [contentControl](contentControl.md) objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
      *
      * [Api set: WordApi 1.1]
      */
@@ -1057,7 +1057,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of [customProperty](customProperty.md) objects.
+     * Contains the collection of {@link Word.CustomProperty} objects.
      *
      * [Api set: WordApi 1.3]
      */
@@ -1249,7 +1249,7 @@ export declare namespace Word {
         set(properties: DocumentCreated): void;
         /**
          *
-         * Open the document.
+         * Opens the document.
          *
          * [Api set: WordApi 1.3]
          */
@@ -1459,14 +1459,14 @@ export declare namespace Word {
         color: string;
         /**
          *
-         * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
+         * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
          *
          * [Api set: WordApi 1.1]
          */
         doubleStrikeThrough: boolean;
         /**
          *
-         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
+         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1494,7 +1494,7 @@ export declare namespace Word {
         size: number;
         /**
          *
-         * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
+         * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1601,7 +1601,7 @@ export declare namespace Word {
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets or sets a string that represents the alternative text associated with the inline image
+         * Gets or sets a string that represents the alternative text associated with the inline image.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1679,7 +1679,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start' or 'End'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -1688,7 +1688,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start' or 'End'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -1760,22 +1760,22 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or 'After'.
+         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or 'After'.
+         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -1844,7 +1844,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -1853,7 +1853,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -1877,7 +1877,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [inlinePicture](inlinePicture.md) objects.
+     * Contains a collection of {@link Word.InlinePicture} objects.
      *
      * [Api set: WordApi 1.1]
      */
@@ -1916,7 +1916,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [paragraph](paragraph.md) objects.
+     * Contains a collection of {@link Word.Paragraph} objects.
      *
      * [Api set: WordApi 1.3]
      */
@@ -1944,7 +1944,7 @@ export declare namespace Word {
         readonly levelExistences: boolean[];
         /**
          *
-         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
+         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
@@ -1969,22 +1969,22 @@ export declare namespace Word {
         getLevelString(level: number): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -1994,7 +1994,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignment - Required. The level alignment that can be 'left', 'centered' or 'right'.
+         * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
          */
         setLevelAlignment(level: number, alignment: Word.Alignment): void;
         /**
@@ -2004,7 +2004,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignment - Required. The level alignment that can be 'left', 'centered' or 'right'.
+         * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
          */
         setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
@@ -2095,7 +2095,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [list](list.md) objects.
+     * Contains a collection of {@link Word.List} objects.
      *
      * [Api set: WordApi 1.3]
      */
@@ -2175,7 +2175,7 @@ export declare namespace Word {
         level: number;
         /**
          *
-         * Gets the list item bullet, number or picture as a string. Read-only.
+         * Gets the list item bullet, number, or picture as a string. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
@@ -2193,20 +2193,20 @@ export declare namespace Word {
         set(properties: ListItem): void;
         /**
          *
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancester.
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.
          *
          * [Api set: WordApi 1.3]
          *
-         * @param parentOnly - Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
+         * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestor(parentOnly?: boolean): Word.Paragraph;
         /**
          *
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancester.
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancestor.
          *
          * [Api set: WordApi 1.3]
          *
-         * @param parentOnly - Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
+         * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestorOrNullObject(parentOnly?: boolean): Word.Paragraph;
         /**
@@ -2215,7 +2215,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param directChildrenOnly - Optional. Specified only the list item's direct children will be returned. The default is false that indicates to get all descendant items.
+         * @param directChildrenOnly - Optional. Specifies only the list item's direct children will be returned. The default is false that indicates to get all descendant items.
          */
         getDescendants(directChildrenOnly?: boolean): Word.ParagraphCollection;
         /**
@@ -2260,7 +2260,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -2386,7 +2386,7 @@ export declare namespace Word {
         lineSpacing: number;
         /**
          *
-         * Gets or sets the amount of spacing, in grid lines. after the paragraph.
+         * Gets or sets the amount of spacing, in grid lines, after the paragraph.
          *
          * [Api set: WordApi 1.1]
          */
@@ -2537,7 +2537,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -2546,7 +2546,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -2556,7 +2556,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -2588,82 +2588,82 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2712,27 +2712,27 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.
+         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the paragraph object. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2754,7 +2754,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -2763,7 +2763,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -2774,7 +2774,7 @@ export declare namespace Word {
          *
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: string[], trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -2805,7 +2805,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [paragraph](paragraph.md) objects.
+     * Contains a collection of {@link Word.Paragraph} objects.
      *
      * [Api set: WordApi 1.1]
      */
@@ -3055,7 +3055,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
          */
         getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;
         /**
@@ -3065,7 +3065,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
          */
         getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean): Word.Range;
         /**
@@ -3081,7 +3081,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -3090,7 +3090,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -3100,7 +3100,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -3132,82 +3132,82 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3256,22 +3256,22 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3294,7 +3294,7 @@ export declare namespace Word {
         intersectWithOrNullObject(range: Word.Range): Word.Range;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the range object. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.1]
          *
@@ -3316,7 +3316,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -3325,7 +3325,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -3337,7 +3337,7 @@ export declare namespace Word {
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
          * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -3361,7 +3361,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of [range](range.md) objects.
+     * Contains a collection of {@link Word.Range} objects.
      *
      * [Api set: WordApi 1.1]
      */
@@ -3422,7 +3422,7 @@ export declare namespace Word {
         ignoreSpace: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
+         * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
          *
          * [Api set: WordApi 1.1]
          */
@@ -3498,7 +3498,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of footer to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(type: Word.HeaderFooterType): Word.Body;
         /**
@@ -3507,7 +3507,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of footer to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
@@ -3516,7 +3516,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of header to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(type: Word.HeaderFooterType): Word.Body;
         /**
@@ -3525,7 +3525,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of header to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
@@ -3563,7 +3563,7 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of the document's [section](section.md) objects.
+     * Contains the collection of the document's {@link Word.Section} objects.
      *
      * [Api set: WordApi 1.1]
      */
@@ -3679,7 +3679,7 @@ export declare namespace Word {
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+         * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -3693,7 +3693,7 @@ export declare namespace Word {
         headerRowCount: number;
         /**
          *
-         * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
+         * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -3721,7 +3721,7 @@ export declare namespace Word {
         readonly rowCount: number;
         /**
          *
-         * Gets and sets the shading color.
+         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
          *
          * [Api set: WordApi 1.3]
          */
@@ -3784,7 +3784,7 @@ export declare namespace Word {
         values: string[][];
         /**
          *
-         * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+         * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -3936,7 +3936,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -3945,7 +3945,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -3996,7 +3996,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End' or 'After'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -4005,7 +4005,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End' or 'After'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -4061,7 +4061,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the table object. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4083,7 +4083,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -4092,7 +4092,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -4101,7 +4101,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -4111,7 +4111,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -4210,7 +4210,7 @@ export declare namespace Word {
         readonly cellCount: number;
         /**
          *
-         * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
+         * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4238,7 +4238,7 @@ export declare namespace Word {
         readonly rowIndex: number;
         /**
          *
-         * Gets and sets the shading color.
+         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4252,7 +4252,7 @@ export declare namespace Word {
         values: string[][];
         /**
          *
-         * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+         * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4299,7 +4299,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -4308,7 +4308,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -4349,7 +4349,7 @@ export declare namespace Word {
         insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Performs a search with the specified searchOptions on the scope of the row. The search results are a collection of range objects.
+         * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4371,7 +4371,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -4380,7 +4380,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
@@ -4389,7 +4389,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -4399,7 +4399,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -4505,7 +4505,7 @@ export declare namespace Word {
         columnWidth: number;
         /**
          *
-         * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+         * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4533,7 +4533,7 @@ export declare namespace Word {
         value: string;
         /**
          *
-         * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+         * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4587,7 +4587,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -4596,7 +4596,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -4620,7 +4620,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
-         * @param columnCount - Required. Number of columns to add
+         * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;
@@ -4631,7 +4631,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
-         * @param columnCount - Required. Number of columns to add
+         * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
@@ -4663,7 +4663,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -4673,7 +4673,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -4737,14 +4737,14 @@ export declare namespace Word {
     }
     /**
      *
-     * Specifies the border style
+     * Specifies the border style.
      *
      * [Api set: WordApi 1.3]
      */
     export class TableBorder extends OfficeExtension.ClientObject {
         /**
          *
-         * Gets or sets the table border color, as a hex value or name.
+         * Gets or sets the table border color.
          *
          * [Api set: WordApi 1.3]
          */
@@ -4796,8 +4796,23 @@ export declare namespace Word {
         unknown = "Unknown",
         richTextInline = "RichTextInline",
         richTextParagraphs = "RichTextParagraphs",
+        /**
+         *
+         * Contains a whole cell.
+         *
+         */
         richTextTableCell = "RichTextTableCell",
+        /**
+         *
+         * Contains a whole row.
+         *
+         */
         richTextTableRow = "RichTextTableRow",
+        /**
+         *
+         * Contains a whole table.
+         *
+         */
         richTextTable = "RichTextTable",
         plainTextInline = "PlainTextInline",
         plainTextParagraph = "PlainTextParagraph",
@@ -4808,6 +4823,11 @@ export declare namespace Word {
         dropDownList = "DropDownList",
         datePicker = "DatePicker",
         repeatingSection = "RepeatingSection",
+        /**
+         *
+         * Identifies a rich text content control.
+         *
+         */
         richText = "RichText",
         plainText = "PlainText",
     }
@@ -4818,8 +4838,23 @@ export declare namespace Word {
      * [Api set: WordApi]
      */
     enum ContentControlAppearance {
+        /**
+         *
+         * Represents a content control shown as a shaded rectangle or bounding box (with optional title).
+         *
+         */
         boundingBox = "BoundingBox",
+        /**
+         *
+         * Represents a content control shown as start and end markers.
+         *
+         */
         tags = "Tags",
+        /**
+         *
+         * Represents a content control that is not shown.
+         *
+         */
         hidden = "Hidden",
     }
     /**
@@ -4830,6 +4865,11 @@ export declare namespace Word {
      */
     enum UnderlineType {
         mixed = "Mixed",
+        /**
+         *
+         * No underline.
+         *
+         */
         none = "None",
         /**
          *
@@ -4841,34 +4881,79 @@ export declare namespace Word {
          * @deprecated DotLine is no longer supported.
          */
         dotLine = "DotLine",
+        /**
+         *
+         * A single underline. This is the default value.
+         *
+         */
         single = "Single",
+        /**
+         *
+         * Only underline individual words.
+         *
+         */
         word = "Word",
+        /**
+         *
+         * A double underline.
+         *
+         */
         double = "Double",
+        /**
+         *
+         * A single thick underline.
+         *
+         */
         thick = "Thick",
+        /**
+         *
+         * A dotted underline.
+         *
+         */
         dotted = "Dotted",
         dottedHeavy = "DottedHeavy",
+        /**
+         *
+         * A single dash underline.
+         *
+         */
         dashLine = "DashLine",
         dashLineHeavy = "DashLineHeavy",
         dashLineLong = "DashLineLong",
         dashLineLongHeavy = "DashLineLongHeavy",
+        /**
+         *
+         * An alternating dot-dash underline.
+         *
+         */
         dotDashLine = "DotDashLine",
         dotDashLineHeavy = "DotDashLineHeavy",
+        /**
+         *
+         * An alternating dot-dot-dash underline.
+         *
+         */
         twoDotDashLine = "TwoDotDashLine",
         twoDotDashLineHeavy = "TwoDotDashLineHeavy",
+        /**
+         *
+         * A single wavy underline.
+         *
+         */
         wave = "Wave",
         waveHeavy = "WaveHeavy",
         waveDouble = "WaveDouble",
     }
     /**
      *
-     * Page break, line break, and four section breaks
+     * Specifies the form of a break.
      *
      * [Api set: WordApi]
      */
     enum BreakType {
         /**
          *
-         * Page break.
+         * Page break at the insertion point.
          *
          */
         page = "Page",
@@ -4879,25 +4964,25 @@ export declare namespace Word {
         next = "Next",
         /**
          *
-         * Section break, with the new section starting on the next page.
+         * Section break on next page.
          *
          */
         sectionNext = "SectionNext",
         /**
          *
-         * Section break, with the new section starting on the same page.
+         * New section without a corresponding page break.
          *
          */
         sectionContinuous = "SectionContinuous",
         /**
          *
-         * Section break, with the new section starting on the next even-numbered page.
+         * Section break with the next section beginning on the next even-numbered page. If the section break falls on an even-numbered page, Word leaves the next odd-numbered page blank.
          *
          */
         sectionEven = "SectionEven",
         /**
          *
-         * Section break, with the new section starting on the next odd-numbered page.
+         * Section break with the next section beginning on the next odd-numbered page. If the section break falls on an odd-numbered page, Word leaves the next even-numbered page blank.
          *
          */
         sectionOdd = "SectionOdd",
@@ -4915,10 +5000,35 @@ export declare namespace Word {
      * [Api set: WordApi]
      */
     enum InsertLocation {
+        /**
+         *
+         * Add content before the contents of the calling object.
+         *
+         */
         before = "Before",
+        /**
+         *
+         * Add content after the contents of the calling object.
+         *
+         */
         after = "After",
+        /**
+         *
+         * Prepend content to the contents of the calling object.
+         *
+         */
         start = "Start",
+        /**
+         *
+         * Append content to the contents of the calling object.
+         *
+         */
         end = "End",
+        /**
+         *
+         * Replace the contents of the current object.
+         *
+         */
         replace = "Replace",
     }
     /**
@@ -4926,18 +5036,58 @@ export declare namespace Word {
      */
     enum Alignment {
         mixed = "Mixed",
+        /**
+         *
+         * Unknown alignment.
+         *
+         */
         unknown = "Unknown",
+        /**
+         *
+         * Alignment to the left.
+         *
+         */
         left = "Left",
+        /**
+         *
+         * Alignment to the center.
+         *
+         */
         centered = "Centered",
+        /**
+         *
+         * Alignment to the right.
+         *
+         */
         right = "Right",
+        /**
+         *
+         * Fully justified alignment.
+         *
+         */
         justified = "Justified",
     }
     /**
      * [Api set: WordApi]
      */
     enum HeaderFooterType {
+        /**
+         *
+         * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.
+         *
+         */
         primary = "Primary",
+        /**
+         *
+         * Returns the header or footer on the first page of a section.
+         *
+         */
         firstPage = "FirstPage",
+        /**
+         *
+         * Returns all headers or footers on even-numbered pages of a section.
+         *
+         */
         evenPages = "EvenPages",
     }
     /**
@@ -4982,30 +5132,130 @@ export declare namespace Word {
      * [Api set: WordApi]
      */
     enum RangeLocation {
+        /**
+         *
+         * The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table characters after the content control are also included.
+         *
+         */
         whole = "Whole",
+        /**
+         *
+         * The starting point of the object. For content control, it is the point after the opening tag.
+         *
+         */
         start = "Start",
+        /**
+         *
+         * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
+         *
+         */
         end = "End",
+        /**
+         *
+         * For content control only. It is the point before the opening tag.
+         *
+         */
         before = "Before",
+        /**
+         *
+         * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
+         *
+         */
         after = "After",
+        /**
+         *
+         * The range between 'Start' and 'End'.
+         *
+         */
         content = "Content",
     }
     /**
      * [Api set: WordApi]
      */
     enum LocationRelation {
+        /**
+         *
+         * Indicates that this instance and the range are in different sub-documents.
+         *
+         */
         unrelated = "Unrelated",
+        /**
+         *
+         * Indicates that this instance and the range represent the same range.
+         *
+         */
         equal = "Equal",
+        /**
+         *
+         * Indicates that this instance contains the range and that it shares the same start character. The range does not share the same end character as this instance.
+         *
+         */
         containsStart = "ContainsStart",
+        /**
+         *
+         * Indicates that this instance contains the range and that it shares the same end character. The range does not share the same start character as this instance.
+         *
+         */
         containsEnd = "ContainsEnd",
+        /**
+         *
+         * Indicates that this instance contains the range, with the exception of the start and end character of this instance.
+         *
+         */
         contains = "Contains",
+        /**
+         *
+         * Indicates that this instance is inside the range and that it shares the same start character. The range does not share the same end character as this instance.
+         *
+         */
         insideStart = "InsideStart",
+        /**
+         *
+         * Indicates that this instance is inside the range and that it shares the same end character. The range does not share the same start character as this instance.
+         *
+         */
         insideEnd = "InsideEnd",
+        /**
+         *
+         * Indicates that this instance is inside the range. The range does not share the same start and end characters as this instance.
+         *
+         */
         inside = "Inside",
+        /**
+         *
+         * Indicates that this instance occurs before, and is adjacent to, the range.
+         *
+         */
         adjacentBefore = "AdjacentBefore",
+        /**
+         *
+         * Indicates that this instance starts before the range and overlaps the range’s first character.
+         *
+         */
         overlapsBefore = "OverlapsBefore",
+        /**
+         *
+         * Indicates that this instance occurs before the range.
+         *
+         */
         before = "Before",
+        /**
+         *
+         * Indicates that this instance occurs after, and is adjacent to, the range.
+         *
+         */
         adjacentAfter = "AdjacentAfter",
+        /**
+         *
+         * Indicates that this instance starts inside the range and overlaps the range’s last character.
+         *
+         */
         overlapsAfter = "OverlapsAfter",
+        /**
+         *
+         * Indicates that this instance occurs after the range.
+         *
+         */
         after = "After",
     }
     /**
@@ -5349,7 +5599,7 @@ export declare namespace Word {
         itemNotFound = "ItemNotFound",
         notImplemented = "NotImplemented",
     }
-    export namespace Interfaces {
+    export module Interfaces {
         export interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -5389,7 +5639,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5601,14 +5851,14 @@ export declare namespace Word {
             color?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5636,7 +5886,7 @@ export declare namespace Word {
             size?: number;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5667,7 +5917,7 @@ export declare namespace Word {
         export interface InlinePictureUpdateData {
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image
+             * Gets or sets a string that represents the alternative text associated with the inline image.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5779,7 +6029,7 @@ export declare namespace Word {
             lineSpacing?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines. after the paragraph.
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5891,7 +6141,7 @@ export declare namespace Word {
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * [Api set: WordApi 1.1]
              */
@@ -5950,7 +6200,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -5964,14 +6214,14 @@ export declare namespace Word {
             headerRowCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6034,7 +6284,7 @@ export declare namespace Word {
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6062,7 +6312,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6076,7 +6326,7 @@ export declare namespace Word {
             preferredHeight?: number;
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6090,7 +6340,7 @@ export declare namespace Word {
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6118,7 +6368,7 @@ export declare namespace Word {
             columnWidth?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6139,7 +6389,7 @@ export declare namespace Word {
             value?: string;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6153,7 +6403,7 @@ export declare namespace Word {
         export interface TableBorderUpdateData {
             /**
              *
-             * Gets or sets the table border color, as a hex value or name.
+             * Gets or sets the table border color.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6191,7 +6441,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of inlinePicture objects in the body. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
             *
             * [Api set: WordApi 1.1]
             */
@@ -6383,7 +6633,7 @@ export declare namespace Word {
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * [Api set: WordApi 1.1]
              */
@@ -6742,14 +6992,14 @@ export declare namespace Word {
             color?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
              * [Api set: WordApi 1.1]
              */
@@ -6777,7 +7027,7 @@ export declare namespace Word {
             size?: number;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
@@ -6857,7 +7107,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image
+             * Gets or sets a string that represents the alternative text associated with the inline image.
              *
              * [Api set: WordApi 1.1]
              */
@@ -6927,7 +7177,7 @@ export declare namespace Word {
             levelExistences?: boolean[];
             /**
              *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6948,7 +7198,7 @@ export declare namespace Word {
             level?: number;
             /**
              *
-             * Gets the list item bullet, number or picture as a string. Read-only.
+             * Gets the list item bullet, number, or picture as a string. Read-only.
              *
              * [Api set: WordApi 1.3]
              */
@@ -6979,7 +7229,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
             *
             * [Api set: WordApi 1.1]
             */
@@ -7105,7 +7355,7 @@ export declare namespace Word {
             lineSpacing?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines. after the paragraph.
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
              *
              * [Api set: WordApi 1.1]
              */
@@ -7329,7 +7579,7 @@ export declare namespace Word {
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * [Api set: WordApi 1.1]
              */
@@ -7451,7 +7701,7 @@ export declare namespace Word {
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7465,7 +7715,7 @@ export declare namespace Word {
             headerRowCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7493,7 +7743,7 @@ export declare namespace Word {
             rowCount?: number;
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7556,7 +7806,7 @@ export declare namespace Word {
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7605,7 +7855,7 @@ export declare namespace Word {
             cellCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7633,7 +7883,7 @@ export declare namespace Word {
             rowIndex?: number;
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7647,7 +7897,7 @@ export declare namespace Word {
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7696,7 +7946,7 @@ export declare namespace Word {
             columnWidth?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7724,7 +7974,7 @@ export declare namespace Word {
             value?: string;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7745,7 +7995,7 @@ export declare namespace Word {
         export interface TableBorderData {
             /**
              *
-             * Gets or sets the table border color, as a hex value or name.
+             * Gets or sets the table border color.
              *
              * [Api set: WordApi 1.3]
              */
@@ -7917,7 +8167,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8016,7 +8266,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [contentControl](contentControl.md) objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
          *
          * [Api set: WordApi 1.1]
          */
@@ -8080,7 +8330,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
+             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8209,7 +8459,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains the collection of [customProperty](customProperty.md) objects.
+         * Contains the collection of {@link Word.CustomProperty} objects.
          *
          * [Api set: WordApi 1.3]
          */
@@ -8456,14 +8706,14 @@ export declare namespace Word {
             color?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8491,7 +8741,7 @@ export declare namespace Word {
             size?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8577,7 +8827,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image
+             * Gets or sets a string that represents the alternative text associated with the inline image.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8620,7 +8870,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [inlinePicture](inlinePicture.md) objects.
+         * Contains a collection of {@link Word.InlinePicture} objects.
          *
          * [Api set: WordApi 1.1]
          */
@@ -8677,7 +8927,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image
+             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
              *
              * [Api set: WordApi 1.1]
              */
@@ -8720,7 +8970,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [paragraph](paragraph.md) objects.
+         * Contains a collection of {@link Word.Paragraph} objects.
          *
          * [Api set: WordApi 1.3]
          */
@@ -8742,7 +8992,7 @@ export declare namespace Word {
             levelExistences?: boolean;
             /**
              *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
              *
              * [Api set: WordApi 1.3]
              */
@@ -8750,7 +9000,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [list](list.md) objects.
+         * Contains a collection of {@link Word.List} objects.
          *
          * [Api set: WordApi 1.3]
          */
@@ -8772,7 +9022,7 @@ export declare namespace Word {
             levelExistences?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
+             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
              *
              * [Api set: WordApi 1.3]
              */
@@ -8795,7 +9045,7 @@ export declare namespace Word {
             level?: boolean;
             /**
              *
-             * Gets the list item bullet, number or picture as a string. Read-only.
+             * Gets the list item bullet, number, or picture as a string. Read-only.
              *
              * [Api set: WordApi 1.3]
              */
@@ -8944,7 +9194,7 @@ export declare namespace Word {
             lineSpacing?: boolean;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines. after the paragraph.
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
              *
              * [Api set: WordApi 1.1]
              */
@@ -9015,7 +9265,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [paragraph](paragraph.md) objects.
+         * Contains a collection of {@link Word.Paragraph} objects.
          *
          * [Api set: WordApi 1.1]
          */
@@ -9149,7 +9399,7 @@ export declare namespace Word {
             lineSpacing?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines. after the paragraph.
+             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
              *
              * [Api set: WordApi 1.1]
              */
@@ -9320,7 +9570,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains a collection of [range](range.md) objects.
+         * Contains a collection of {@link Word.Range} objects.
          *
          * [Api set: WordApi 1.1]
          */
@@ -9442,7 +9692,7 @@ export declare namespace Word {
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * [Api set: WordApi 1.1]
              */
@@ -9494,7 +9744,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Contains the collection of the document's [section](section.md) objects.
+         * Contains the collection of the document's {@link Word.Section} objects.
          *
          * [Api set: WordApi 1.1]
          */
@@ -9574,7 +9824,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9588,7 +9838,7 @@ export declare namespace Word {
             headerRowCount?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9616,7 +9866,7 @@ export declare namespace Word {
             rowCount?: boolean;
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9679,7 +9929,7 @@ export declare namespace Word {
             values?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9758,7 +10008,7 @@ export declare namespace Word {
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9772,7 +10022,7 @@ export declare namespace Word {
             headerRowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9800,7 +10050,7 @@ export declare namespace Word {
             rowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the shading color.
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9863,7 +10113,7 @@ export declare namespace Word {
             values?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9907,7 +10157,7 @@ export declare namespace Word {
             cellCount?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9935,7 +10185,7 @@ export declare namespace Word {
             rowIndex?: boolean;
             /**
              *
-             * Gets and sets the shading color.
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9949,7 +10199,7 @@ export declare namespace Word {
             values?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -9986,7 +10236,7 @@ export declare namespace Word {
             cellCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10014,7 +10264,7 @@ export declare namespace Word {
             rowIndex?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the shading color.
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10028,7 +10278,7 @@ export declare namespace Word {
             values?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10079,7 +10329,7 @@ export declare namespace Word {
             columnWidth?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10107,7 +10357,7 @@ export declare namespace Word {
             value?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10165,7 +10415,7 @@ export declare namespace Word {
             columnWidth?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10193,7 +10443,7 @@ export declare namespace Word {
             value?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10208,7 +10458,7 @@ export declare namespace Word {
         }
         /**
          *
-         * Specifies the border style
+         * Specifies the border style.
          *
          * [Api set: WordApi 1.3]
          */
@@ -10216,7 +10466,7 @@ export declare namespace Word {
             $all?: boolean;
             /**
              *
-             * Gets or sets the table border color, as a hex value or name.
+             * Gets or sets the table border color.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10253,23 +10503,17 @@ export declare namespace Word {
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
+     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     */
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
-    /**
-     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
-     * @remarks
-     * In addition to this signature, the method also has the following signatures:
-     * 
-     * `run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;`
-     * 
-     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;`
-     */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

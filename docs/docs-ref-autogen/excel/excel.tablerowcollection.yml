@@ -51,7 +51,27 @@ items:
       return:
         type:
           - excel.Excel.TableRow
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tables = ctx.workbook.tables;
+              var values = [["Sample", "Values", "For", "New", "Row"]];
+              var row = tables.getItem("Table1").rows.add(null, values);
+              row.load('index');
+              return ctx.sync().then(function() {
+                  console.log(row.index);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: >-
@@ -63,27 +83,6 @@ items:
           description: Optional. A 2-dimensional array of unformatted values of the table row.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tables = ctx.workbook.tables;
-          var values = [["Sample", "Values", "For", "New", "Row"]];
-          var row = tables.getItem("Table1").rows.add(null, values);
-          row.load('index');
-          return ctx.sync().then(function() {
-              console.log(row.index);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.
@@ -136,31 +135,30 @@ items:
       return:
         type:
           - excel.Excel.TableRow
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
+              tablerow.load('name');
+              return ctx.sync().then(function() {
+                      console.log(tablerow.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-          tablerow.load('name');
-          return ctx.sync().then(function() {
-                  console.log(tablerow.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableRowCollection.items
     summary: Gets the loaded child items in this collection.
     name: items

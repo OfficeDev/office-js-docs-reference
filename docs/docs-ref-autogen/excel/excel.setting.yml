@@ -39,30 +39,29 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          let needsReview = settings.getItem("NeedsReview");
-          needsReview.delete();
-          needsReview = settings.getItemOrNullObject("NeedsReview");
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
 
-          await context.sync();
+              await context.sync();
 
-          if (needsReview.isNullObject) {
-              OfficeHelpers.UI.notify("The setting has been deleted");
-          } else {
-              OfficeHelpers.UI.notify("The setting was not deleted");
-          }
+              if (needsReview.isNullObject) {
+                  OfficeHelpers.UI.notify("The setting has been deleted");
+              } else {
+                  OfficeHelpers.UI.notify("The setting was not deleted");
+              }
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Setting.key
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.

@@ -12,7 +12,7 @@ items:
       - visio.Visio.Interfaces.SelectionData.shapes
   - uid: visio.Visio.Interfaces.SelectionData.shapes
     summary: |-
-      Gets the Shapes of the Selection
+      Gets the Shapes of the Selection. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapes

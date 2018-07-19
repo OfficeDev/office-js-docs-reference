@@ -63,7 +63,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
     summary: |-
-      Disable Hyperlinks.
+      Hide Diagram Boundary.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: hideDiagramBoundary

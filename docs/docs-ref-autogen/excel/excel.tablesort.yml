@@ -37,7 +37,29 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.sort.apply([ 
+                      {
+                          key: 2,
+                          ascending: true
+                      },
+                  ], true);
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -51,29 +73,6 @@ items:
           description: Optional. The ordering method used for Chinese characters.
           type:
             - excel.Excel.SortMethod
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.sort.apply([ 
-                  {
-                      key: 2,
-                      ascending: true
-                  },
-              ], true);
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableSort.clear
     summary: >-
       Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the

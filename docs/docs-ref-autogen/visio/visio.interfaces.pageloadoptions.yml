@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.PageLoadOptions.index
     summary: |-
-      Index of the Page.
+      Index of the Page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index

@@ -72,8 +72,8 @@ items:
           - boolean
   - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
     summary: >-
-      For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'left',
-      'centered', 'right', or 'justified'.
+      For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left',
+      'Centered', 'Right', or 'Justified'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -166,8 +166,8 @@ items:
           - boolean
   - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
     summary: >-
-      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'top',
-      'center' or 'bottom'.
+      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top',
+      'Center', or 'Bottom'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]

@@ -108,6 +108,7 @@ items:
       - excel.Excel.ConditionalTextOperator
       - excel.Excel.ConditionalTopBottomCriterionType
       - excel.Excel.ConditionalTopBottomRule
+      - excel.Excel.createWorkbook
       - excel.Excel.CustomConditionalFormat
       - excel.Excel.CustomProperty
       - excel.Excel.CustomPropertyCollection
@@ -406,6 +407,8 @@ items:
       - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
       - excel.Excel.Interfaces.WorkbookData
       - excel.Excel.Interfaces.WorkbookLoadOptions
+      - excel.Excel.Interfaces.WorkbookProtectionData
+      - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
       - excel.Excel.Interfaces.WorkbookUpdateData
       - excel.Excel.Interfaces.WorksheetCollectionData
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions
@@ -492,6 +495,23 @@ items:
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
       - excel.Excel.WorksheetSelectionChangedEventArgs
+  - uid: excel.Excel.createWorkbook
+    name: createWorkbook(base64)
+    fullName: excel.Excel.createWorkbook
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function createWorkbook(base64?: string): Promise<object>;'
+      return:
+        type:
+          - Promise<object>
+        description: ''
+      parameters:
+        - id: base64
+          description: ''
+          type:
+            - string
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -512,21 +532,21 @@ items:
 
 
       `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-    name: 'run(contextObject, batch)'
+    name: 'run(context, batch)'
     fullName: excel.Excel.run
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context:
-        Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       return:
         type:
           - Promise<T>
         description: ''
       parameters:
-        - id: contextObject
+        - id: context
           description: >-
             A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
             that any changes applied to the object will be picked up by "context.sync()".
@@ -1339,6 +1359,10 @@ references:
     name: Excel.Interfaces.WorkbookData
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions
     name: Excel.Interfaces.WorkbookLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookProtectionData
+    name: Excel.Interfaces.WorkbookProtectionData
+  - uid: excel.Excel.Interfaces.WorkbookProtectionLoadOptions
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookUpdateData
     name: Excel.Interfaces.WorkbookUpdateData
   - uid: excel.Excel.Interfaces.WorksheetCollectionData

@@ -66,32 +66,31 @@ items:
       return:
         type:
           - excel.Excel.ChartPoint
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          // Set the border color for the first points in the points collection
+          Excel.run(function (ctx) { 
+              var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+              points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
+              return ctx.sync().then(function() {
+                  console.log("Point Border Color Changed");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Set the border color for the first points in the points collection
-      Excel.run(function (ctx) { 
-          var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
-          points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
-          return ctx.sync().then(function() {
-              console.log("Point Border Color Changed");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.ChartPointsCollection.items
     summary: Gets the loaded child items in this collection.
     name: items

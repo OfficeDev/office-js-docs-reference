@@ -74,165 +74,164 @@ items:
       return:
         type:
           - word.Word.SearchOptions
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          // Ignore punctuation search
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Queue a command to search the document and ignore punctuation.
+              var searchResults = context.document.body.search('video you', {ignorePunct: true});
+
+              // Queue a command to load the search results and get the font property values.
+              context.load(searchResults, 'font');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Found count: ' + searchResults.items.length);
+
+                  // Queue a set of commands to change the font for each found item.
+                  for (var i = 0; i < searchResults.items.length; i++) {
+                      searchResults.items[i].font.color = 'purple';
+                      searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+                      searchResults.items[i].font.bold = true;
+                  }
+                  
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync();
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Search based on a prefix
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Queue a command to search the document based on a prefix.
+              var searchResults = context.document.body.search('vid', {matchPrefix: true});
+
+              // Queue a command to load the search results and get the font property values.
+              context.load(searchResults, 'font');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Found count: ' + searchResults.items.length);
+
+                  // Queue a set of commands to change the font for each found item.
+                  for (var i = 0; i < searchResults.items.length; i++) {
+                      searchResults.items[i].font.color = 'purple';
+                      searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+                      searchResults.items[i].font.bold = true;
+                  }
+                  
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync();
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Search based on a suffix
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Queue a command to search the document for any string of characters after 'ly'.
+              var searchResults = context.document.body.search('ly', {matchSuffix: true});
+
+              // Queue a command to load the search results and get the font property values.
+              context.load(searchResults, 'font');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Found count: ' + searchResults.items.length);
+
+                  // Queue a set of commands to change the font for each found item.
+                  for (var i = 0; i < searchResults.items.length; i++) {
+                      searchResults.items[i].font.color = 'orange';
+                      searchResults.items[i].font.highlightColor = 'black';
+                      searchResults.items[i].font.bold = true;
+                  }
+                  
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync();
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          // Search using a wildcard
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Queue a command to search the document with a wildcard
+              // for any string of characters that starts with 'to' and ends with 'n'.
+              var searchResults = context.document.body.search('to*n', {matchWildCards: true});
+
+              // Queue a command to load the search results and get the font property values.
+              context.load(searchResults, 'font');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Found count: ' + searchResults.items.length);
+
+                  // Queue a set of commands to change the font for each found item.
+                  for (var i = 0; i < searchResults.items.length; i++) {
+                      searchResults.items[i].font.color = 'purple';
+                      searchResults.items[i].font.highlightColor = 'pink';
+                      searchResults.items[i].font.bold = true;
+                  }
+                  
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync();
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: option
           description: ''
           type:
             - word.Word.Interfaces.SearchOptionsLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Ignore punctuation search
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          // Queue a command to search the document and ignore punctuation.
-          var searchResults = context.document.body.search('video you', {ignorePunct: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Search based on a prefix
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          // Queue a command to search the document based on a prefix.
-          var searchResults = context.document.body.search('vid', {matchPrefix: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Search based on a suffix
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-
-          // Queue a command to search the document for any string of characters after 'ly'.
-          var searchResults = context.document.body.search('ly', {matchSuffix: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'orange';
-                  searchResults.items[i].font.highlightColor = 'black';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Search using a wildcard
-      // Run a batch operation against the Word object model.
-      Word.run(function (context) {
-          
-          // Queue a command to search the document with a wildcard
-          // for any string of characters that starts with 'to' and ends with 'n'.
-          var searchResults = context.document.body.search('to*n', {matchWildCards: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = 'pink';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box (Edit menu).
+      check box in the Find and Replace dialog box.
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]

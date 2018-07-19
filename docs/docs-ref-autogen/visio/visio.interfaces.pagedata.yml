@@ -20,7 +20,7 @@ items:
       - visio.Visio.Interfaces.PageData.width
   - uid: visio.Visio.Interfaces.PageData.allShapes
     summary: |-
-      All shapes in the page. Read-only.
+      All shapes in the Page, including subshapes. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: allShapes
@@ -35,7 +35,7 @@ items:
           - 'Visio.Interfaces.ShapeData[]'
   - uid: visio.Visio.Interfaces.PageData.comments
     summary: |-
-      Returns the Comments Collection
+      Returns the Comments Collection. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
@@ -65,7 +65,7 @@ items:
           - number
   - uid: visio.Visio.Interfaces.PageData.index
     summary: |-
-      Index of the Page.
+      Index of the Page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index
@@ -110,7 +110,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.PageData.shapes
     summary: |-
-      Shapes at root level, in the page. Read-only.
+      All top-level shapes in the Page.Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapes

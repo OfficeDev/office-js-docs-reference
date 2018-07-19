@@ -57,23 +57,23 @@ items:
       return:
         type:
           - excel.Excel.CellValueConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B21:E23");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.cellValue);
-          conditionalFormat.cellValue.format.font.color = "red";
-          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B21:E23");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.cellValue);
+              conditionalFormat.cellValue.format.font.color = "red";
+              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.cellValueOrNullObject
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
@@ -108,27 +108,27 @@ items:
       return:
         type:
           - excel.Excel.ColorScaleConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:M5");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.colorScale);
-          const criteria = {
-              minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
-              midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
-              maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
-          };
-          conditionalFormat.colorScale.criteria = criteria;
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:M5");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              const criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.colorScaleOrNullObject
     summary: >-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -161,22 +161,22 @@ items:
       return:
         type:
           - excel.Excel.CustomConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B8:E13");
-          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-          conditionalFormat.custom.format.font.color = "green";
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+              conditionalFormat.custom.format.font.color = "green";
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.customOrNullObject
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
@@ -207,22 +207,22 @@ items:
       return:
         type:
           - excel.Excel.DataBarConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B8:E13");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.dataBar);
-          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.dataBar);
+              conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.dataBarOrNullObject
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar. Read-only.
@@ -269,46 +269,45 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const worksheetRange = sheet.getRange();
-          worksheetRange.conditionalFormats.load("type");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const worksheetRange = sheet.getRange();
+              worksheetRange.conditionalFormats.load("type");
 
-          await context.sync();
+              await context.sync();
 
-          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
-          worksheetRange.conditionalFormats.items.forEach(item => {
-              cfRangePairs.push({
-                  cf: item,
-                  range: item.getRange().load("address")
+              let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+              worksheetRange.conditionalFormats.items.forEach(item => {
+                  cfRangePairs.push({
+                      cf: item,
+                      range: item.getRange().load("address")
+                  });
               });
+
+              await context.sync();
+
+              $("#conditional-formats li").remove();
+              if (cfRangePairs.length > 0) {
+                  cfRangePairs.forEach(item => {
+                      let $p = $("<p></p>").text(
+                          `${item.cf.type}`)
+                      let $li = $(`<li></li>`);
+                      $li.append($p);
+                      $("#conditional-formats").append($li);
+                      $(".conditional-formats").show()[0].scrollIntoView();
+                  })
+              }
+              else {
+                  OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
+              }
           });
-
-          await context.sync();
-
-          $("#conditional-formats li").remove();
-          if (cfRangePairs.length > 0) {
-              cfRangePairs.forEach(item => {
-                  let $p = $("<p></p>").text(
-                      `${item.cf.type}`)
-                  let $li = $(`<li></li>`);
-                  $li.append($p);
-                  $("#conditional-formats").append($li);
-                  $(".conditional-formats").show()[0].scrollIntoView();
-              })
-          }
-          else {
-              OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.ConditionalFormat.getRangeOrNullObject
     summary: |-
       Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
@@ -340,51 +339,51 @@ items:
       return:
         type:
           - excel.Excel.IconSetConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B8:E13");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.iconSet);
-          const iconSetCF = conditionalFormat.iconSet;
-          iconSetCF.style = Excel.IconSet.threeTriangles;
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.iconSet);
+              const iconSetCF = conditionalFormat.iconSet;
+              iconSetCF.style = Excel.IconSet.threeTriangles;
 
-          /*
-              The iconSetCF.criteria array is automatically prepopulated with
-              criterion elements whose properties have been given default settings.
-              You can't write to each property of a criterion directly. Instead,
-              replace the whole criteria object.
+              /*
+                  The iconSetCF.criteria array is automatically prepopulated with
+                  criterion elements whose properties have been given default settings.
+                  You can't write to each property of a criterion directly. Instead,
+                  replace the whole criteria object.
 
-              With a "three*" icon set style, such as "threeTriangles", the third
-              element in the criteria array (criteria[2]) defines the "top" icon;
-              e.g., a green triangle. The second (criteria[1]) defines the "middle"
-              icon, The first (criteria[0]) defines the "low" icon, but it
-              can often be left empty as this method does below, because every
-              cell that does not match the other two criteria always gets the low
-              icon.            
-          */
-          iconSetCF.criteria = [
-              {} as any,
-              {
-                  type: Excel.ConditionalFormatIconRuleType.number,
-                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                  formula: "=700"
-              },
-              {
-                  type: Excel.ConditionalFormatIconRuleType.number,
-                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                  formula: "=1000",
-              }
-          ];
+                  With a "three*" icon set style, such as "threeTriangles", the third
+                  element in the criteria array (criteria[2]) defines the "top" icon;
+                  e.g., a green triangle. The second (criteria[1]) defines the "middle"
+                  icon, The first (criteria[0]) defines the "low" icon, but it
+                  can often be left empty as this method does below, because every
+                  cell that does not match the other two criteria always gets the low
+                  icon.            
+              */
+              iconSetCF.criteria = [
+                  {} as any,
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=700"
+                  },
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=1000",
+                  }
+              ];
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.iconSetOrNullObject
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
@@ -468,23 +467,23 @@ items:
       return:
         type:
           - excel.Excel.PresetCriteriaConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:M5");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.presetCriteria);
-          conditionalFormat.preset.format.font.color = "white";
-          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:M5");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.presetCriteria);
+              conditionalFormat.preset.format.font.color = "white";
+              conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.presetOrNullObject
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -584,23 +583,23 @@ items:
       return:
         type:
           - excel.Excel.TextConditionalFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B16:D18");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.containsText);
-          conditionalFormat.textComparison.format.font.color = "red";
-          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B16:D18");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ConditionalFormat.textComparisonOrNullObject
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
@@ -683,42 +682,42 @@ items:
           - >-
             Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
             "PresetCriteria" | "ContainsText" | "CellValue"
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const worksheetRange = sheet.getRange();
-          worksheetRange.conditionalFormats.load("type");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const worksheetRange = sheet.getRange();
+              worksheetRange.conditionalFormats.load("type");
 
-          await context.sync();
+              await context.sync();
 
-          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
-          worksheetRange.conditionalFormats.items.forEach(item => {
-              cfRangePairs.push({
-                  cf: item,
-                  range: item.getRange().load("address")
+              let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+              worksheetRange.conditionalFormats.items.forEach(item => {
+                  cfRangePairs.push({
+                      cf: item,
+                      range: item.getRange().load("address")
+                  });
               });
+
+              await context.sync();
+
+              $("#conditional-formats li").remove();
+              if (cfRangePairs.length > 0) {
+                  cfRangePairs.forEach(item => {
+                      let $p = $("<p></p>").text(
+                          `${item.cf.type}`)
+                      let $li = $(`<li></li>`);
+                      $li.append($p);
+                      $("#conditional-formats").append($li);
+                      $(".conditional-formats").show()[0].scrollIntoView();
+                  })
+              }
+              else {
+                  OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
+              }
           });
-
-          await context.sync();
-
-          $("#conditional-formats li").remove();
-          if (cfRangePairs.length > 0) {
-              cfRangePairs.forEach(item => {
-                  let $p = $("<p></p>").text(
-                      `${item.cf.type}`)
-                  let $li = $(`<li></li>`);
-                  $li.append($p);
-                  $("#conditional-formats").append($li);
-                  $(".conditional-formats").show()[0].scrollIntoView();
-              })
-          }
-          else {
-              OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
-          }
-      });
-      ```
+          ```

@@ -155,7 +155,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
   - uid: word.Word.TableCell.getNext
@@ -192,7 +192,7 @@ items:
         description: ''
   - uid: word.Word.TableCell.horizontalAlignment
     summary: |-
-      Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+      Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
@@ -227,9 +227,9 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: columnCount
-          description: Required. Number of columns to add
+          description: Required. Number of columns to add.
           type:
             - number
         - id: values
@@ -258,7 +258,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -372,7 +372,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
         - id: cellPadding
@@ -458,7 +458,7 @@ items:
           - string
   - uid: word.Word.TableCell.verticalAlignment
     summary: |-
-      Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment

@@ -11,6 +11,8 @@ items:
     children:
       - onenote.OneNote.Interfaces.SectionData.clientUrl
       - onenote.OneNote.Interfaces.SectionData.id
+      - onenote.OneNote.Interfaces.SectionData.isEncrypted
+      - onenote.OneNote.Interfaces.SectionData.isLocked
       - onenote.OneNote.Interfaces.SectionData.name
       - onenote.OneNote.Interfaces.SectionData.notebook
       - onenote.OneNote.Interfaces.SectionData.pages
@@ -47,6 +49,36 @@ items:
       return:
         type:
           - string
+  - uid: onenote.OneNote.Interfaces.SectionData.isEncrypted
+    summary: |-
+      True if this section is encrypted with a password. Read only
+
+      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: isEncrypted
+    fullName: onenote.OneNote.Interfaces.SectionData.isEncrypted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEncrypted?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionData.isLocked
+    summary: |-
+      True if this section is locked. Read only
+
+      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: isLocked
+    fullName: onenote.OneNote.Interfaces.SectionData.isLocked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLocked?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.SectionData.name
     summary: |-
       Gets the name of the section. Read-only.

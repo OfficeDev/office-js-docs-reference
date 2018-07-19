@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.RangeCollection
     summary: |-
-      Contains a collection of \[range\](range.md) objects.
+      Contains a collection of [Word.Range](xref:word.Word.Range) objects.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.RangeCollection

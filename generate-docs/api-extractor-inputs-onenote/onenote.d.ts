@@ -63,14 +63,14 @@ export declare namespace OneNote {
          *
          * Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getActiveParagraph(): OneNote.Paragraph;
         /**
          *
          * Gets the active Paragraph if one exists, otherwise returns null.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getActiveParagraphOrNull(): OneNote.Paragraph;
         /**
@@ -87,15 +87,9 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         getActiveSectionOrNull(): OneNote.Section;
-        /**
-         *
-         * The collection of pages in the section. Read only
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        getSelectedPages(): OneNote.PageCollection;
-        getWindowSize(): OfficeExtension.ClientResult<Array<number>>;
+        getWindowSize(): OfficeExtension.ClientResult<number[]>;
         insertHtmlAtCurrentPosition(html: string): void;
+        isViewingDeletedNotes(): OfficeExtension.ClientResult<boolean>;
         /**
          *
          * Opens the specified page in the application instance.
@@ -116,6 +110,18 @@ export declare namespace OneNote {
         navigateToPageWithClientUrl(url: string): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;
         load(option?: string | string[]): OneNote.Application;
@@ -141,29 +147,39 @@ export declare namespace OneNote {
         readonly page: OneNote.Page;
         /**
          *
-         * Gets the ink analysis paragraphs in this page. Read-only.
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        readonly paragraphs: OneNote.InkAnalysisParagraphCollection;
-        /**
-         *
          * Gets the ID of the InkAnalysis object. Read-only.
          *
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.InkAnalysisUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.InkAnalysis): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.InkAnalysisUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: InkAnalysis): void;
+        set(properties: OneNote.InkAnalysis): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysis` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;
         load(option?: string | string[]): OneNote.InkAnalysis;
@@ -209,17 +225,34 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.InkAnalysisParagraph): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: InkAnalysisParagraph): void;
+        set(properties: OneNote.InkAnalysisParagraph): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;
         load(option?: string | string[]): OneNote.InkAnalysisParagraph;
@@ -245,7 +278,7 @@ export declare namespace OneNote {
      */
     export class InkAnalysisParagraphCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.InkAnalysisParagraph>;
+        readonly items: OneNote.InkAnalysisParagraph[];
         /**
          *
          * Returns the number of InkAnalysisParagraphs in the page. Read-only.
@@ -273,6 +306,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.InkAnalysisParagraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
         load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection;
@@ -315,17 +360,34 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.InkAnalysisLineUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.InkAnalysisLine): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.InkAnalysisLineUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: InkAnalysisLine): void;
+        set(properties: OneNote.InkAnalysisLine): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisLine` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLine` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;
         load(option?: string | string[]): OneNote.InkAnalysisLine;
@@ -351,7 +413,7 @@ export declare namespace OneNote {
      */
     export class InkAnalysisLineCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.InkAnalysisLine>;
+        readonly items: OneNote.InkAnalysisLine[];
         /**
          *
          * Returns the number of InkAnalysisLines in the page. Read-only.
@@ -379,6 +441,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.InkAnalysisLine;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisLineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
         load(option?: string | string[]): OneNote.InkAnalysisLineCollection;
@@ -427,25 +501,42 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly strokePointers: Array<OneNote.InkStrokePointer>;
+        readonly strokePointers: OneNote.InkStrokePointer[];
         /**
          *
          * The words that were recognized in this ink word, in order of likelihood. Read-only.
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly wordAlternates: Array<string>;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.InkAnalysisWordUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        readonly wordAlternates: string[];
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.InkAnalysisWord): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.InkAnalysisWordUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: InkAnalysisWord): void;
+        set(properties: OneNote.InkAnalysisWord): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;
         load(option?: string | string[]): OneNote.InkAnalysisWord;
@@ -471,7 +562,7 @@ export declare namespace OneNote {
      */
     export class InkAnalysisWordCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.InkAnalysisWord>;
+        readonly items: OneNote.InkAnalysisWord[];
         /**
          *
          * Returns the number of InkAnalysisWords in the page. Read-only.
@@ -499,6 +590,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.InkAnalysisWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkAnalysisWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
         load(option?: string | string[]): OneNote.InkAnalysisWordCollection;
@@ -543,6 +646,18 @@ export declare namespace OneNote {
         readonly id: string;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;
         load(option?: string | string[]): OneNote.FloatingInk;
@@ -583,6 +698,18 @@ export declare namespace OneNote {
         readonly id: string;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStroke` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;
         load(option?: string | string[]): OneNote.InkStroke;
@@ -608,7 +735,7 @@ export declare namespace OneNote {
      */
     export class InkStrokeCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.InkStroke>;
+        readonly items: OneNote.InkStroke[];
         /**
          *
          * Returns the number of InkStrokes in the page. Read-only.
@@ -636,6 +763,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.InkStroke;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
         load(option?: string | string[]): OneNote.InkStrokeCollection;
@@ -682,11 +821,23 @@ export declare namespace OneNote {
          *
          * The words that were recognized in this ink word, in order of likelihood. Read-only.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
-        readonly wordAlternates: Array<string>;
+        readonly wordAlternates: string[];
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;
         load(option?: string | string[]): OneNote.InkWord;
@@ -712,7 +863,7 @@ export declare namespace OneNote {
      */
     export class InkWordCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.InkWord>;
+        readonly items: OneNote.InkWord[];
         /**
          *
          * Returns the number of InkWords in the page. Read-only.
@@ -740,6 +891,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.InkWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
         load(option?: string | string[]): OneNote.InkWordCollection;
@@ -798,6 +961,13 @@ export declare namespace OneNote {
         readonly id: string;
         /**
          *
+         * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        readonly isVirtual: boolean;
+        /**
+         *
          * Gets the name of the notebook. Read-only.
          *
          * [Api set: OneNoteApi 1.1]
@@ -825,11 +995,23 @@ export declare namespace OneNote {
          *
          * Gets the REST API ID.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getRestApiId(): OfficeExtension.ClientResult<string>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;
         load(option?: string | string[]): OneNote.Notebook;
@@ -855,7 +1037,7 @@ export declare namespace OneNote {
      */
     export class NotebookCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.Notebook>;
+        readonly items: OneNote.Notebook[];
         /**
          *
          * Returns the number of notebooks in the collection. Read-only.
@@ -892,6 +1074,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.Notebook;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.NotebookCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.NotebookCollection;
         load(option?: string | string[]): OneNote.NotebookCollection;
@@ -991,11 +1185,23 @@ export declare namespace OneNote {
          *
          * Gets the REST API ID.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getRestApiId(): OfficeExtension.ClientResult<string>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;
         load(option?: string | string[]): OneNote.SectionGroup;
@@ -1021,7 +1227,7 @@ export declare namespace OneNote {
      */
     export class SectionGroupCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.SectionGroup>;
+        readonly items: OneNote.SectionGroup[];
         /**
          *
          * Returns the number of section groups in the collection. Read-only.
@@ -1058,6 +1264,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.SectionGroup;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.SectionGroupCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroupCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionGroupCollection;
         load(option?: string | string[]): OneNote.SectionGroupCollection;
@@ -1123,6 +1341,20 @@ export declare namespace OneNote {
         readonly id: string;
         /**
          *
+         * True if this section is encrypted with a password. Read only
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        readonly isEncrypted: boolean;
+        /**
+         *
+         * True if this section is locked. Read only
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        readonly isLocked: boolean;
+        /**
+         *
          * Gets the name of the section. Read-only.
          *
          * [Api set: OneNoteApi 1.1]
@@ -1166,7 +1398,7 @@ export declare namespace OneNote {
          *
          * Gets the REST API ID.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getRestApiId(): OfficeExtension.ClientResult<string>;
         /**
@@ -1178,9 +1410,31 @@ export declare namespace OneNote {
          * @param location - The location of the new section relative to the current section.
          * @param title - The name of the new section.
          */
-        insertSectionAsSibling(location: string, title: string): OneNote.Section;
+        insertSectionAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Section;
+        /**
+         *
+         * Inserts a new section before or after the current section.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param location - The location of the new section relative to the current section.
+         * @param title - The name of the new section.
+         */
+        insertSectionAsSibling(location: "Before" | "After", title: string): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;
         load(option?: string | string[]): OneNote.Section;
@@ -1206,7 +1460,7 @@ export declare namespace OneNote {
      */
     export class SectionCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.Section>;
+        readonly items: OneNote.Section[];
         /**
          *
          * Returns the number of sections in the collection. Read-only.
@@ -1243,6 +1497,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionCollection;
         load(option?: string | string[]): OneNote.SectionCollection;
@@ -1327,15 +1593,20 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly webUrl: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.PageUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.Page): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Page): void;
+        set(properties: OneNote.Page): void;
         /**
          *
          * Adds an Outline to the page at the specified position.
@@ -1344,14 +1615,14 @@ export declare namespace OneNote {
          *
          * @param left - The left position of the top, left corner of the Outline.
          * @param top - The top position of the top, left corner of the Outline.
-         * @param html - An HTML string that describes the visual presentation of the Outline. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         addOutline(left: number, top: number, html: string): OneNote.Outline;
         /**
          *
          * Return a json string with node id and content in html format.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         analyzePage(): OfficeExtension.ClientResult<string>;
         /**
@@ -1383,14 +1654,14 @@ export declare namespace OneNote {
          *
          * Gets the REST API ID.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         getRestApiId(): OfficeExtension.ClientResult<string>;
         /**
          *
          * Does the page has content title.
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          */
         hasTitleContent(): OfficeExtension.ClientResult<boolean>;
         /**
@@ -1402,9 +1673,31 @@ export declare namespace OneNote {
          * @param location - The location of the new page relative to the current page.
          * @param title - The title of the new page.
          */
-        insertPageAsSibling(location: string, title: string): OneNote.Page;
+        insertPageAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Page;
+        /**
+         *
+         * Inserts a new page before or after the current page.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param location - The location of the new page relative to the current page.
+         * @param title - The title of the new page.
+         */
+        insertPageAsSibling(location: "Before" | "After", title: string): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;
         load(option?: string | string[]): OneNote.Page;
@@ -1430,7 +1723,7 @@ export declare namespace OneNote {
      */
     export class PageCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.Page>;
+        readonly items: OneNote.Page[];
         /**
          *
          * Returns the number of pages in the collection. Read-only.
@@ -1467,6 +1760,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageCollection;
         load(option?: string | string[]): OneNote.PageCollection;
@@ -1543,16 +1848,21 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly type: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.PageContentUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        readonly type: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.PageContent): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageContentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: PageContent): void;
+        set(properties: OneNote.PageContent): void;
         /**
          *
          * Deletes the PageContent object.
@@ -1562,6 +1872,18 @@ export declare namespace OneNote {
         delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.PageContent` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;
         load(option?: string | string[]): OneNote.PageContent;
@@ -1587,7 +1909,7 @@ export declare namespace OneNote {
      */
     export class PageContentCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.PageContent>;
+        readonly items: OneNote.PageContent[];
         /**
          *
          * Returns the number of page contents in the collection. Read-only.
@@ -1615,6 +1937,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.PageContent;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.PageContentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageContentCollection;
         load(option?: string | string[]): OneNote.PageContentCollection;
@@ -1663,7 +1997,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -1696,7 +2030,7 @@ export declare namespace OneNote {
          * @param columnCount - Required. The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        appendTable(rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;
+        appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
         /**
          *
          * Check if the outline is title outline.
@@ -1706,6 +2040,18 @@ export declare namespace OneNote {
         isTitle(): OfficeExtension.ClientResult<boolean>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;
         load(option?: string | string[]): OneNote.Outline;
@@ -1813,16 +2159,21 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly type: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ParagraphUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        readonly type: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.Paragraph): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Paragraph): void;
+        set(properties: OneNote.Paragraph): void;
         /**
          *
          * Add NoteTag to the paragraph.
@@ -1832,7 +2183,17 @@ export declare namespace OneNote {
          * @param type - The type of the NoteTag.
          * @param status - The status of the NoteTag.
          */
-        addNoteTag(type: string, status: string): OneNote.NoteTag;
+        addNoteTag(type: OneNote.NoteTagType, status: OneNote.NoteTagStatus): OneNote.NoteTag;
+        /**
+         *
+         * Add NoteTag to the paragraph.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param type - The type of the NoteTag.
+         * @param status - The status of the NoteTag.
+         */
+        addNoteTag(type: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
         /**
          *
          * Deletes the paragraph
@@ -1854,9 +2215,19 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
-        insertHtmlAsSibling(insertLocation: string, html: string): void;
+        insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;
+        /**
+         *
+         * Inserts the specified HTML content
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param insertLocation - The location of new contents relative to the current Paragraph.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         */
+        insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
         /**
          *
          * Inserts the image at the specified insert location..
@@ -1868,7 +2239,19 @@ export declare namespace OneNote {
          * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
          * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          */
-        insertImageAsSibling(insertLocation: string, base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        /**
+         *
+         * Inserts the image at the specified insert location..
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param base64EncodedImage - HTML string to append.
+         * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
+         * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
+         */
+        insertImageAsSibling(insertLocation: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
         /**
          *
          * Inserts the paragraph text at the specifiec insert location.
@@ -1878,7 +2261,17 @@ export declare namespace OneNote {
          * @param insertLocation - The location of the table relative to the current Paragraph.
          * @param paragraphText - HTML string to append.
          */
-        insertRichTextAsSibling(insertLocation: string, paragraphText: string): OneNote.RichText;
+        insertRichTextAsSibling(insertLocation: OneNote.InsertLocation, paragraphText: string): OneNote.RichText;
+        /**
+         *
+         * Inserts the paragraph text at the specifiec insert location.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param paragraphText - HTML string to append.
+         */
+        insertRichTextAsSibling(insertLocation: "Before" | "After", paragraphText: string): OneNote.RichText;
         /**
          *
          * Adds a table with the specified number of rows and columns before or after the current paragraph.
@@ -1890,9 +2283,33 @@ export declare namespace OneNote {
          * @param columnCount - The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTableAsSibling(insertLocation: string, rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;
+        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
+        /**
+         *
+         * Adds a table with the specified number of rows and columns before or after the current paragraph.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param rowCount - The number of rows in the table.
+         * @param columnCount - The number of columns in the table.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         */
+        insertTableAsSibling(insertLocation: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;
         load(option?: string | string[]): OneNote.Paragraph;
@@ -1918,7 +2335,7 @@ export declare namespace OneNote {
      */
     export class ParagraphCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.Paragraph>;
+        readonly items: OneNote.Paragraph[];
         /**
          *
          * Returns the number of paragraphs in the page. Read-only.
@@ -1946,6 +2363,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.ParagraphCollection;
         load(option?: string | string[]): OneNote.ParagraphCollection;
@@ -1980,16 +2409,28 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly status: string;
+        readonly status: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
         /**
          *
          * Gets the type of the NoteTag object. Read-only.
          *
          * [Api set: OneNoteApi 1.1]
          */
-        readonly type: string;
+        readonly type: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;
         load(option?: string | string[]): OneNote.NoteTag;
@@ -2046,12 +2487,24 @@ export declare namespace OneNote {
          *
          * Get the HTML of the rich text
          *
-         * [Api set: OneNoteApi]
+         * [Api set: OneNoteApi 1.1]
          * @returns The html of the rich text
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.RichText` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;
         load(option?: string | string[]): OneNote.RichText;
@@ -2132,15 +2585,20 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ImageUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.Image): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Image): void;
+        set(properties: OneNote.Image): void;
         /**
          *
          * Gets the base64-encoded binary representation of the Image.
@@ -2151,6 +2609,18 @@ export declare namespace OneNote {
         getBase64Image(): OfficeExtension.ClientResult<string>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;
         load(option?: string | string[]): OneNote.Image;
@@ -2217,15 +2687,20 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly rowCount: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.Table): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Table): void;
+        set(properties: OneNote.Table): void;
         /**
          *
          * Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is empty.
@@ -2234,7 +2709,7 @@ export declare namespace OneNote {
          *
          * @param values - Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
          */
-        appendColumn(values?: Array<string>): void;
+        appendColumn(values?: string[]): void;
         /**
          *
          * Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
@@ -2243,7 +2718,7 @@ export declare namespace OneNote {
          *
          * @param values - Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
          */
-        appendRow(values?: Array<string>): OneNote.TableRow;
+        appendRow(values?: string[]): OneNote.TableRow;
         /**
          *
          * Clears the contents of the table.
@@ -2270,7 +2745,7 @@ export declare namespace OneNote {
          * @param index - Index where the column will be inserted in the table.
          * @param values - Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
          */
-        insertColumn(index: number, values?: Array<string>): void;
+        insertColumn(index: number, values?: string[]): void;
         /**
          *
          * Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is empty.
@@ -2280,10 +2755,29 @@ export declare namespace OneNote {
          * @param index - Index where the row will be inserted in the table.
          * @param values - Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
          */
-        insertRow(index: number, values?: Array<string>): OneNote.TableRow;
+        insertRow(index: number, values?: string[]): OneNote.TableRow;
+        /**
+         *
+         * Sets the shading color of all cells in the table.
+            The color code to set the cells to.
+         *
+         * [Api set: OneNoteApi 1.1]
+         */
         setShadingColor(colorCode: string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;
         load(option?: string | string[]): OneNote.Table;
@@ -2359,10 +2853,39 @@ export declare namespace OneNote {
          * @param insertLocation - Where the new rows should be inserted relative to the current row.
          * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
          */
-        insertRowAsSibling(insertLocation: string, values?: Array<string>): OneNote.TableRow;
+        insertRowAsSibling(insertLocation: OneNote.InsertLocation, values?: string[]): OneNote.TableRow;
+        /**
+         *
+         * Inserts a row before or after the current row.
+         *
+         * [Api set: OneNoteApi 1.1]
+         *
+         * @param insertLocation - Where the new rows should be inserted relative to the current row.
+         * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
+         */
+        insertRowAsSibling(insertLocation: "Before" | "After", values?: string[]): OneNote.TableRow;
+        /**
+         *
+         * Sets the shading color of all cells in the row.
+            The color code to set the cells to.
+         *
+         * [Api set: OneNoteApi 1.1]
+         */
         setShadingColor(colorCode: string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;
         load(option?: string | string[]): OneNote.TableRow;
@@ -2388,7 +2911,7 @@ export declare namespace OneNote {
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.TableRow>;
+        readonly items: OneNote.TableRow[];
         /**
          *
          * Returns the number of table rows in this collection. Read-only.
@@ -2416,6 +2939,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableRowCollection;
         load(option?: string | string[]): OneNote.TableRowCollection;
@@ -2479,22 +3014,27 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         shadingColor: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableCellUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: OneNote.TableCell): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: TableCell): void;
+        set(properties: OneNote.TableCell): void;
         /**
          *
          * Adds the specified HTML to the bottom of the TableCell.
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -2527,7 +3067,7 @@ export declare namespace OneNote {
          * @param columnCount - Required. The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        appendTable(rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;
+        appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
         /**
          *
          * Clears the contents of the cell.
@@ -2537,6 +3077,18 @@ export declare namespace OneNote {
         clear(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;
         load(option?: string | string[]): OneNote.TableCell;
@@ -2562,7 +3114,7 @@ export declare namespace OneNote {
      */
     export class TableCellCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<OneNote.TableCell>;
+        readonly items: OneNote.TableCell[];
         /**
          *
          * Returns the number of tablecells in this collection. Read-only.
@@ -2590,6 +3142,18 @@ export declare namespace OneNote {
         getItemAt(index: number): OneNote.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
         load(option?: string | string[]): OneNote.TableCellCollection;
@@ -2650,66 +3214,6 @@ export declare namespace OneNote {
     }
     /**
      *
-     * Service token for Application::_GetServiceToken.
-     *
-     * [Api set: OneNoteApi 1.1]
-     */
-    export interface ServiceToken {
-        /**
-         *
-         * Account type
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        accountType: string;
-        /**
-         *
-         * //
-            Header name of the service token
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        headerName: string;
-        /**
-         *
-         * Header value of the service token
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        headerValue: string;
-    }
-    /**
-     *
-     * Account information.
-     *
-     * [Api set: OneNoteApi 1.1]
-     */
-    export interface AccountInfo {
-        /**
-         *
-         * Account type
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        accountType: string;
-        /**
-         *
-         * Account email
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        email: string;
-        /**
-         *
-         * //
-            Account user name
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        userName: string;
-    }
-    /**
-     *
      * List information for paragraph.
      *
      * [Api set: OneNoteApi 1.1]
@@ -2738,7 +3242,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        listType: string;
+        listType: OneNote.ListType | "None" | "Number" | "Bullet";
         /**
          *
          * //
@@ -2746,338 +3250,162 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          */
-        numberType: string;
+        numberType: OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom";
     }
     /**
-     *
-     * Account information.
-     *
      * [Api set: OneNoteApi 1.1]
      */
-    export interface LoggingInfo {
-        /**
-         *
-         * //
-            Correlation Id
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        correlationId: string;
-        /**
-         *
-         * //
-            UI Language
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        market: string;
-        /**
-         *
-         * //
-            Session Id
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        sessionId: string;
-        /**
-         *
-         * //
-            UI Language
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        uiLanguage: string;
-        /**
-         *
-         * //
-            User Id
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        userId: string;
+    enum EntityType {
+        notebook = "Notebook",
+        sectionGroup = "SectionGroup",
+        section = "Section",
+        page = "Page",
     }
     /**
-     *
-     * Account information.
-     *
      * [Api set: OneNoteApi 1.1]
      */
-    export interface LogData {
+    enum InsertLocation {
+        before = "Before",
+        after = "After",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum PageContentType {
+        outline = "Outline",
+        image = "Image",
+        ink = "Ink",
+        other = "Other",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum ParagraphType {
+        richText = "RichText",
+        image = "Image",
+        table = "Table",
+        ink = "Ink",
+        other = "Other",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum NoteTagType {
+        unknown = "Unknown",
+        toDo = "ToDo",
+        important = "Important",
+        question = "Question",
+        contact = "Contact",
+        address = "Address",
+        phoneNumber = "PhoneNumber",
+        website = "Website",
+        idea = "Idea",
+        critical = "Critical",
+        toDoPriority1 = "ToDoPriority1",
+        toDoPriority2 = "ToDoPriority2",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum NoteTagStatus {
+        unknown = "Unknown",
+        normal = "Normal",
+        completed = "Completed",
+        disabled = "Disabled",
+        outlookTask = "OutlookTask",
+        taskNotSyncedYet = "TaskNotSyncedYet",
+        taskRemoved = "TaskRemoved",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum ListType {
+        none = "None",
+        number = "Number",
+        bullet = "Bullet",
+    }
+    /**
+     * [Api set: OneNoteApi 1.1]
+     */
+    enum NumberType {
+        none = "None",
+        arabic = "Arabic",
+        ucroman = "UCRoman",
+        lcroman = "LCRoman",
+        ucletter = "UCLetter",
+        lcletter = "LCLetter",
+        ordinal = "Ordinal",
+        cardtext = "Cardtext",
+        ordtext = "Ordtext",
+        hex = "Hex",
+        chiManSty = "ChiManSty",
+        dbNum1 = "DbNum1",
+        dbNum2 = "DbNum2",
+        aiueo = "Aiueo",
+        iroha = "Iroha",
+        dbChar = "DbChar",
+        sbChar = "SbChar",
+        dbNum3 = "DbNum3",
+        dbNum4 = "DbNum4",
+        circlenum = "Circlenum",
+        darabic = "DArabic",
+        daiueo = "DAiueo",
+        diroha = "DIroha",
+        arabicLZ = "ArabicLZ",
+        bullet = "Bullet",
+        ganada = "Ganada",
+        chosung = "Chosung",
+        gb1 = "GB1",
+        gb2 = "GB2",
+        gb3 = "GB3",
+        gb4 = "GB4",
+        zodiac1 = "Zodiac1",
+        zodiac2 = "Zodiac2",
+        zodiac3 = "Zodiac3",
+        tpeDbNum1 = "TpeDbNum1",
+        tpeDbNum2 = "TpeDbNum2",
+        tpeDbNum3 = "TpeDbNum3",
+        tpeDbNum4 = "TpeDbNum4",
+        chnDbNum1 = "ChnDbNum1",
+        chnDbNum2 = "ChnDbNum2",
+        chnDbNum3 = "ChnDbNum3",
+        chnDbNum4 = "ChnDbNum4",
+        korDbNum1 = "KorDbNum1",
+        korDbNum2 = "KorDbNum2",
+        korDbNum3 = "KorDbNum3",
+        korDbNum4 = "KorDbNum4",
+        hebrew1 = "Hebrew1",
+        arabic1 = "Arabic1",
+        hebrew2 = "Hebrew2",
+        arabic2 = "Arabic2",
+        hindi1 = "Hindi1",
+        hindi2 = "Hindi2",
+        hindi3 = "Hindi3",
+        thai1 = "Thai1",
+        thai2 = "Thai2",
+        numInDash = "NumInDash",
+        lcrus = "LCRus",
+        ucrus = "UCRus",
+        lcgreek = "LCGreek",
+        ucgreek = "UCGreek",
+        lim = "Lim",
+        custom = "Custom",
+    }
+    enum ErrorCodes {
+        generalException = "GeneralException",
+    }
+    export module Interfaces {
         /**
-         *
-         * //
-            None PII
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        isNonPII: boolean;
-        /**
-         *
-         * //
-            data tag
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        tag: string;
-        /**
-         *
-         * //
-            data value
-         *
-         * [Api set: OneNoteApi 1.1]
-         */
-        value: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace InsertLocation {
-        var before: string;
-        var after: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace Platform {
-        var other: string;
-        var web: string;
-        var uwp: string;
-        var win32: string;
-        var mac: string;
-        var ios: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace Alignment {
-        var left: string;
-        var centered: string;
-        var right: string;
-        var justified: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace Selected {
-        var notSelected: string;
-        var partialSelected: string;
-        var selected: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace PageContentType {
-        var outline: string;
-        var image: string;
-        var ink: string;
-        var other: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace ParagraphType {
-        var richText: string;
-        var image: string;
-        var table: string;
-        var ink: string;
-        var other: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace NoteTagType {
-        var unknown: string;
-        var toDo: string;
-        var important: string;
-        var question: string;
-        var contact: string;
-        var address: string;
-        var phoneNumber: string;
-        var website: string;
-        var idea: string;
-        var critical: string;
-        var toDoPriority1: string;
-        var toDoPriority2: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace NoteTagStatus {
-        var unknown: string;
-        var normal: string;
-        var completed: string;
-        var disabled: string;
-        var outlookTask: string;
-        var taskNotSyncedYet: string;
-        var taskRemoved: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace ServiceId {
-        var form: string;
-        var entity: string;
-        var graph: string;
-        var oneService: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace IdentityFilter {
-        var selection: string;
-        var activeProfile: string;
-        var liveId: string;
-        var orgId: string;
-        var adal: string;
-        var notebook: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace ListType {
-        var none: string;
-        var number: string;
-        var bullet: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace AccountType {
-        var other: string;
-        var liveId: string;
-        var orgId: string;
-        var adal: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace LogLevel {
-        var trace: string;
-        var data: string;
-        var exception: string;
-        var warning: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace EventFlag {
-        /**
-         *
-         * DefaultEventFlags
-         *
-         */
-        var defaultFlag: string;
-        /**
-         *
-         * CriticalDataEventFlags
-         *
-         */
-        var criticalFlag: string;
-        /**
-         *
-         * MeasureDataEventFlags
-         *
-         */
-        var measureFlag: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace NumberType {
-        var none: string;
-        var arabic: string;
-        var ucroman: string;
-        var lcroman: string;
-        var ucletter: string;
-        var lcletter: string;
-        var ordinal: string;
-        var cardtext: string;
-        var ordtext: string;
-        var hex: string;
-        var chiManSty: string;
-        var dbNum1: string;
-        var dbNum2: string;
-        var aiueo: string;
-        var iroha: string;
-        var dbChar: string;
-        var sbChar: string;
-        var dbNum3: string;
-        var dbNum4: string;
-        var circlenum: string;
-        var darabic: string;
-        var daiueo: string;
-        var diroha: string;
-        var arabicLZ: string;
-        var bullet: string;
-        var ganada: string;
-        var chosung: string;
-        var gb1: string;
-        var gb2: string;
-        var gb3: string;
-        var gb4: string;
-        var zodiac1: string;
-        var zodiac2: string;
-        var zodiac3: string;
-        var tpeDbNum1: string;
-        var tpeDbNum2: string;
-        var tpeDbNum3: string;
-        var tpeDbNum4: string;
-        var chnDbNum1: string;
-        var chnDbNum2: string;
-        var chnDbNum3: string;
-        var chnDbNum4: string;
-        var korDbNum1: string;
-        var korDbNum2: string;
-        var korDbNum3: string;
-        var korDbNum4: string;
-        var hebrew1: string;
-        var arabic1: string;
-        var hebrew2: string;
-        var arabic2: string;
-        var hindi1: string;
-        var hindi2: string;
-        var hindi3: string;
-        var thai1: string;
-        var thai2: string;
-        var numInDash: string;
-        var lcrus: string;
-        var ucrus: string;
-        var lcgreek: string;
-        var ucgreek: string;
-        var lim: string;
-        var custom: string;
-    }
-    /**
-     * [Api set: OneNoteApi]
-     */
-    export namespace ControlId {
-        var preinstallClassNotebook: string;
-        var distributePageId: string;
-        var distributeSection: string;
-        var reviewStudentWork: string;
-        var openTabForCreateClassNotebook: string;
-        var openTabForManageStudent: string;
-        var openTabForManageTeacher: string;
-        var openTabForGetNotebookLink: string;
-        var openTabForTeacherTraining: string;
-        var openTabForAddinGuide: string;
-        var openTabForEducationBlog: string;
-        var openTabForEducatorCommunity: string;
-        var openTabToSendFeedback: string;
-        var openTabForViewKnowledgeBase: string;
-        var openTabForSuggestingFeature: string;
-        var createAssignment: string;
-        var connections: string;
-        var mapClassNotebooks: string;
-        var mapStudents: string;
-        var manageClasses: string;
-    }
-    export namespace ErrorCodes {
-        var generalException: string;
-    }
-    export namespace Interfaces {
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
         export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
             $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
             $skip?: number;
         }
         /** An interface for updating data on the InkAnalysis object, for use in "inkAnalysis.set({ ... })". */
@@ -3407,14 +3735,14 @@ export declare namespace OneNote {
              *
              * [Api set: OneNoteApi 1.1]
              */
-            strokePointers?: Array<OneNote.InkStrokePointer>;
+            strokePointers?: OneNote.InkStrokePointer[];
             /**
              *
              * The words that were recognized in this ink word, in order of likelihood. Read-only.
              *
              * [Api set: OneNoteApi 1.1]
              */
-            wordAlternates?: Array<string>;
+            wordAlternates?: string[];
         }
         /** An interface describing the data returned by calling "inkAnalysisWordCollection.toJSON()". */
         export interface InkAnalysisWordCollectionData {
@@ -3492,9 +3820,9 @@ export declare namespace OneNote {
              *
              * The words that were recognized in this ink word, in order of likelihood. Read-only.
              *
-             * [Api set: OneNoteApi]
+             * [Api set: OneNoteApi 1.1]
              */
-            wordAlternates?: Array<string>;
+            wordAlternates?: string[];
         }
         /** An interface describing the data returned by calling "inkWordCollection.toJSON()". */
         export interface InkWordCollectionData {
@@ -3537,6 +3865,13 @@ export declare namespace OneNote {
              * [Api set: OneNoteApi 1.1]
              */
             id?: string;
+            /**
+             *
+             * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isVirtual?: boolean;
             /**
              *
              * Gets the name of the notebook. Read-only.
@@ -3656,6 +3991,20 @@ export declare namespace OneNote {
              * [Api set: OneNoteApi 1.1]
              */
             id?: string;
+            /**
+             *
+             * True if this section is encrypted with a password. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isEncrypted?: boolean;
+            /**
+             *
+             * True if this section is locked. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isLocked?: boolean;
             /**
              *
              * Gets the name of the section. Read-only.
@@ -3802,7 +4151,7 @@ export declare namespace OneNote {
              *
              * [Api set: OneNoteApi 1.1]
              */
-            type?: string;
+            type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";
         }
         /** An interface describing the data returned by calling "pageContentCollection.toJSON()". */
         export interface PageContentCollectionData {
@@ -3917,7 +4266,7 @@ export declare namespace OneNote {
              *
              * [Api set: OneNoteApi 1.1]
              */
-            type?: string;
+            type?: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";
         }
         /** An interface describing the data returned by calling "paragraphCollection.toJSON()". */
         export interface ParagraphCollectionData {
@@ -3938,14 +4287,14 @@ export declare namespace OneNote {
              *
              * [Api set: OneNoteApi 1.1]
              */
-            status?: string;
+            status?: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved";
             /**
              *
              * Gets the type of the NoteTag object. Read-only.
              *
              * [Api set: OneNoteApi 1.1]
              */
-            type?: string;
+            type?: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
         }
         /** An interface describing the data returned by calling "richText.toJSON()". */
         export interface RichTextData {
@@ -4536,7 +4885,7 @@ export declare namespace OneNote {
              *
              * The words that were recognized in this ink word, in order of likelihood. Read-only.
              *
-             * [Api set: OneNoteApi]
+             * [Api set: OneNoteApi 1.1]
              */
             wordAlternates?: boolean;
         }
@@ -4573,7 +4922,7 @@ export declare namespace OneNote {
              *
              * For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood. Read-only.
              *
-             * [Api set: OneNoteApi]
+             * [Api set: OneNoteApi 1.1]
              */
             wordAlternates?: boolean;
         }
@@ -4620,6 +4969,13 @@ export declare namespace OneNote {
              * [Api set: OneNoteApi 1.1]
              */
             id?: boolean;
+            /**
+             *
+             * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isVirtual?: boolean;
             /**
              *
              * Gets the name of the notebook. Read-only.
@@ -4671,6 +5027,13 @@ export declare namespace OneNote {
              * [Api set: OneNoteApi 1.1]
              */
             id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isVirtual?: boolean;
             /**
              *
              * For EACH ITEM in the collection: Gets the name of the notebook. Read-only.
@@ -4861,6 +5224,20 @@ export declare namespace OneNote {
             id?: boolean;
             /**
              *
+             * True if this section is encrypted with a password. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isEncrypted?: boolean;
+            /**
+             *
+             * True if this section is locked. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isLocked?: boolean;
+            /**
+             *
              * Gets the name of the section. Read-only.
              *
              * [Api set: OneNoteApi 1.1]
@@ -4924,6 +5301,20 @@ export declare namespace OneNote {
              * [Api set: OneNoteApi 1.1]
              */
             id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if this section is encrypted with a password. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isEncrypted?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if this section is locked. Read only
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            isLocked?: boolean;
             /**
              *
              * For EACH ITEM in the collection: Gets the name of the section. Read-only.
@@ -5802,6 +6193,182 @@ export declare namespace OneNote {
              */
             shadingColor?: boolean;
         }
+        /**
+         *
+         * Represents a OneNote accessibility violation.
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        export interface AccessibilityViolationLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the ID of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets the location of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            location?: boolean;
+            /**
+             *
+             * Gets the name of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            name?: boolean;
+            /**
+             *
+             * Gets the type of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            type?: boolean;
+        }
+        /**
+         *
+         * Represents the collection of AccessibilityViolations
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        export interface AccessibilityViolationCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the ID of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the location of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            location?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the name of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the type of the accessibility violation. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            type?: boolean;
+        }
+        /**
+         *
+         * A OneNote structure that stores metadata about accessibility violations for an entity.
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        export interface AccessibilityViolationsByEntityLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the parent section section group (if any) of the entity.
+            *
+            * [Api set: OneNoteApi 1.2]
+            */
+            parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
+            /**
+            *
+            * Gets the parent section (if any) of the entity.
+            *
+            * [Api set: OneNoteApi 1.2]
+            */
+            parentSectionOrNull?: OneNote.Interfaces.SectionLoadOptions;
+            /**
+             *
+             * Gets the name of the entity for which this structure holds metadata. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            entityName?: boolean;
+            /**
+             *
+             * Gets the type of the entity for which this structure holds metadata. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            entityType?: boolean;
+            /**
+             *
+             * Gets the ID of the AccessibilityViolationsByEntity. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets the count of accessibility violations for the entity. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            violationsCount?: boolean;
+        }
+        /**
+         *
+         * Represents the collection of AccessibilityViolationsByEntity
+         *
+         * [Api set: OneNoteApi 1.2]
+         */
+        export interface AccessibilityViolationsByEntityCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent section section group (if any) of the entity.
+            *
+            * [Api set: OneNoteApi 1.2]
+            */
+            parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent section (if any) of the entity.
+            *
+            * [Api set: OneNoteApi 1.2]
+            */
+            parentSectionOrNull?: OneNote.Interfaces.SectionLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the name of the entity for which this structure holds metadata. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            entityName?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the type of the entity for which this structure holds metadata. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            entityType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the ID of the AccessibilityViolationsByEntity. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the count of accessibility violations for the entity. Read-only.
+             *
+             * [Api set: OneNoteApi 1.2]
+             */
+            violationsCount?: boolean;
+        }
     }
 }
 export declare namespace OneNote {
@@ -5815,23 +6382,17 @@ export declare namespace OneNote {
      */
     export function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**
+     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
+     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     */
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
+    /**
      * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
      * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
-    /**
-     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
-     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @remarks
-     * In addition to this signature, the method also has the following signatures:
-     * 
-     * `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
-     * 
-     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
-     */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

@@ -44,7 +44,7 @@ items:
           - 'Visio.Interfaces.PageData[]'
   - uid: visio.Visio.Interfaces.DocumentData.view
     summary: |-
-      Returns the DocumentView object.
+      Returns the DocumentView object. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: view

@@ -16,6 +16,7 @@ items:
       - excel.Excel.Interfaces.WorkbookData.names
       - excel.Excel.Interfaces.WorkbookData.pivotTables
       - excel.Excel.Interfaces.WorkbookData.properties
+      - excel.Excel.Interfaces.WorkbookData.protection
       - excel.Excel.Interfaces.WorkbookData.settings
       - excel.Excel.Interfaces.WorkbookData.styles
       - excel.Excel.Interfaces.WorkbookData.tables
@@ -125,6 +126,21 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.DocumentPropertiesData
+  - uid: excel.Excel.Interfaces.WorkbookData.protection
+    summary: |-
+      Returns workbook protection object for a workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: excel.Excel.Interfaces.WorkbookData.protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookProtectionData
   - uid: excel.Excel.Interfaces.WorkbookData.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.

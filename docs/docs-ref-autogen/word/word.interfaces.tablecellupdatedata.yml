@@ -47,7 +47,7 @@ items:
           - number
   - uid: word.Word.Interfaces.TableCellUpdateData.horizontalAlignment
     summary: |-
-      Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+      Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
@@ -92,7 +92,7 @@ items:
           - string
   - uid: word.Word.Interfaces.TableCellUpdateData.verticalAlignment
     summary: |-
-      Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment

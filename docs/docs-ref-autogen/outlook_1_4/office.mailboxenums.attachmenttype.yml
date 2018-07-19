@@ -5,7 +5,9 @@ items:
       Specifies an attachment's type.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: 'Applicable Outlook mode: Compose or read'
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.AttachmentType
     fullName: Outlook_1_4.Office.MailboxEnums.AttachmentType
     langs:

@@ -16,6 +16,9 @@ items:
       - word.Word.RangeLocation.start
       - word.Word.RangeLocation.whole
   - uid: word.Word.RangeLocation.after
+    summary: >-
+      The point after the object. If the object is a paragraph content control or table content control, it is the point
+      after the EOP or Table characters.
     name: after
     fullName: word.Word.RangeLocation.after
     langs:
@@ -23,6 +26,7 @@ items:
     type: field
     numericValue: '"After"'
   - uid: word.Word.RangeLocation.before
+    summary: For content control only. It is the point before the opening tag.
     name: before
     fullName: word.Word.RangeLocation.before
     langs:
@@ -30,6 +34,7 @@ items:
     type: field
     numericValue: '"Before"'
   - uid: word.Word.RangeLocation.content
+    summary: The range between 'Start' and 'End'.
     name: content
     fullName: word.Word.RangeLocation.content
     langs:
@@ -37,6 +42,9 @@ items:
     type: field
     numericValue: '"Content"'
   - uid: word.Word.RangeLocation.end
+    summary: >-
+      The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the
+      point before the closing tag.
     name: end
     fullName: word.Word.RangeLocation.end
     langs:
@@ -44,6 +52,7 @@ items:
     type: field
     numericValue: '"End"'
   - uid: word.Word.RangeLocation.start
+    summary: 'The starting point of the object. For content control, it is the point after the opening tag.'
     name: start
     fullName: word.Word.RangeLocation.start
     langs:
@@ -51,6 +60,9 @@ items:
     type: field
     numericValue: '"Start"'
   - uid: word.Word.RangeLocation.whole
+    summary: >-
+      The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table
+      characters after the content control are also included.
     name: whole
     fullName: word.Word.RangeLocation.whole
     langs:

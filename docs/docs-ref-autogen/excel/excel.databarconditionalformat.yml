@@ -72,22 +72,22 @@ items:
       return:
         type:
           - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B8:E13");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.dataBar);
-          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.dataBar);
+              conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.DataBarConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

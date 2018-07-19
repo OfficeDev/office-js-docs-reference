@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.CollectionLoadOptions
+    summary: Provides ways to load properties of only a subset of members of a collection.
     name: OneNote.Interfaces.CollectionLoadOptions
     fullName: onenote.OneNote.Interfaces.CollectionLoadOptions
     langs:

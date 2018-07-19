@@ -43,7 +43,27 @@ items:
       return:
         type:
           - excel.Excel.TableColumn
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tables = ctx.workbook.tables;
+              var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
+              var column = tables.getItem("Table1").columns.add(null, values);
+              column.load('name');
+              return ctx.sync().then(function() {
+                  console.log(column.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: >-
@@ -59,27 +79,6 @@ items:
           description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tables = ctx.workbook.tables;
-          var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
-          var column = tables.getItem("Table1").columns.add(null, values);
-          column.load('name');
-          return ctx.sync().then(function() {
-              console.log(column.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableColumnCollection.count
     summary: |-
       Returns the number of columns in the table. Read-only.
@@ -126,46 +125,45 @@ items:
       return:
         type:
           - excel.Excel.TableColumn
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
+              tablecolumn.load('name');
+              return ctx.sync().then(function() {
+                      console.log(tablecolumn.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+              tablecolumn.load('name');
+              return ctx.sync().then(function() {
+                      console.log(tablecolumn.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: key
           description: Column Name or ID.
           type:
             - number | string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
-          tablecolumn.load('name');
-          return ctx.sync().then(function() {
-                  console.log(tablecolumn.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-          tablecolumn.load('name');
-          return ctx.sync().then(function() {
-                  console.log(tablecolumn.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableColumnCollection.getItemAt
     summary: |-
       Gets a column based on its position in the collection.
@@ -181,31 +179,30 @@ items:
       return:
         type:
           - excel.Excel.TableColumn
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+              tablecolumn.load('name');
+              return ctx.sync().then(function() {
+                      console.log(tablecolumn.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-          tablecolumn.load('name');
-          return ctx.sync().then(function() {
-                  console.log(tablecolumn.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableColumnCollection.getItemOrNullObject
     summary: |-
       Gets a column object by Name or ID. If the column does not exist, will return a null object.

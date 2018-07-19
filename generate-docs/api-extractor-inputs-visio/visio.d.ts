@@ -19,7 +19,7 @@ export declare namespace Visio {
         pageName: string;
         /**
          *
-         * Gets the shape object that raised the ShapeMouseEnter event.
+         * Gets the name of the shape object that raised the ShapeMouseEnter event.
          *
          * [Api set:  1.1]
          */
@@ -41,7 +41,7 @@ export declare namespace Visio {
         pageName: string;
         /**
          *
-         * Gets the shape object that raised the ShapeMouseLeave event.
+         * Gets the name of the shape object that raised the ShapeMouseLeave event.
          *
          * [Api set:  1.1]
          */
@@ -63,7 +63,7 @@ export declare namespace Visio {
         pageName: string;
         /**
          *
-         * Gets the success/failure of the PageLoadComplete event.
+         * Gets the success or failure of the PageLoadComplete event.
          *
          * [Api set:  1.1]
          */
@@ -85,7 +85,7 @@ export declare namespace Visio {
         document: Visio.Document;
         /**
          *
-         * Gets the success/failure of the DataRefreshComplete event.
+         * Gets the success or failure of the DataRefreshComplete event.
          *
          * [Api set:  1.1]
          */
@@ -107,22 +107,44 @@ export declare namespace Visio {
         pageName: string;
         /**
          *
-         * Gets the ShapeCollection object that raised the SelectionChanged event.
+         * Gets the array of shape names that raised the SelectionChanged event.
          *
          * [Api set:  1.1]
          */
-        shapeNames: Array<string>;
+        shapeNames: string[];
     }
     /**
      *
-     * Provides information about the drawing that raised the DiagramLoadComplete event.
+     * Provides information about the success or failure of the DocumentLoadComplete event.
      *
      * [Api set:  1.1]
      */
     export interface DocumentLoadCompleteEventArgs {
         /**
          *
-         * Gets the success/failure of the DocumentLoadComplete event.
+         * Gets the success or failure of the DocumentLoadComplete event.
+         *
+         * [Api set:  1.1]
+         */
+        success: boolean;
+    }
+    /**
+     *
+     * Provides information about the page that raised the PageRenderComplete event.
+     *
+     * [Api set:  1.1]
+     */
+    export interface PageRenderCompleteEventArgs {
+        /**
+         *
+         * Gets the name of the page that raised the PageLoad event.
+         *
+         * [Api set:  1.1]
+         */
+        pageName: string;
+        /**
+         *
+         * Gets the success/failure of the PageRender event.
          *
          * [Api set:  1.1]
          */
@@ -137,36 +159,66 @@ export declare namespace Visio {
     export class Application extends OfficeExtension.ClientObject {
         /**
          *
-         * Show/Hide the application borders.
+         * Show or hide the iFrame application borders.
          *
          * [Api set:  1.1]
          */
         showBorders: boolean;
         /**
          *
-         * Show or Hide the standard toolbars.
+         * Show or hide the standard toolbars.
          *
          * [Api set:  1.1]
          */
         showToolbars: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ApplicationUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Application): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Application): void;
+        set(properties: Visio.Application): void;
         /**
          *
-         * Show or Hide a particular toolbar.
+         * Sets the visibility of a specific toolbar in the application.
          *
          * [Api set:  1.1]
+         *
+         * @param id - The type of the Toolbar
+         * @param show - Whether the toolbar is visibile or not.
          */
-        showToolbar(id: string, show: boolean): void;
+        showToolbar(id: Visio.ToolBarType, show: boolean): void;
+        /**
+         *
+         * Sets the visibility of a specific toolbar in the application.
+         *
+         * [Api set:  1.1]
+         *
+         * @param id - The type of the Toolbar
+         * @param show - Whether the toolbar is visibile or not.
+         */
+        showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;
         load(option?: string | string[]): Visio.Application;
@@ -199,20 +251,25 @@ export declare namespace Visio {
         readonly pages: Visio.PageCollection;
         /**
          *
-         * Returns the DocumentView object.
+         * Returns the DocumentView object. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly view: Visio.DocumentView;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Document): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Document): void;
+        set(properties: Visio.Document): void;
         /**
          *
          * Returns the Active Page of the document.
@@ -238,6 +295,18 @@ export declare namespace Visio {
         startDataRefresh(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;
         load(option?: string | string[]): Visio.Document;
@@ -319,22 +388,39 @@ export declare namespace Visio {
         disableZoom: boolean;
         /**
          *
-         * Disable Hyperlinks.
+         * Hide Diagram Boundary.
          *
          * [Api set:  1.1]
          */
         hideDiagramBoundary: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentViewUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.DocumentView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: DocumentView): void;
+        set(properties: Visio.DocumentView): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;
         load(option?: string | string[]): Visio.DocumentView;
@@ -353,21 +439,21 @@ export declare namespace Visio {
     export class Page extends OfficeExtension.ClientObject {
         /**
          *
-         * All shapes in the page. Read-only.
+         * All shapes in the Page, including subshapes. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly allShapes: Visio.ShapeCollection;
         /**
          *
-         * Returns the Comments Collection
+         * Returns the Comments Collection.  Read-only.
          *
          * [Api set:  1.1]
          */
         readonly comments: Visio.CommentCollection;
         /**
          *
-         * Shapes at root level, in the page. Read-only.
+         * All top-level shapes in the Page.Read-only.
          *
          * [Api set:  1.1]
          */
@@ -388,7 +474,7 @@ export declare namespace Visio {
         readonly height: number;
         /**
          *
-         * Index of the Page.
+         * Index of the Page. Read-only.
          *
          * [Api set:  1.1]
          */
@@ -414,15 +500,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         readonly width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.PageUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Page): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Page): void;
+        set(properties: Visio.Page): void;
         /**
          *
          * Set the page as Active Page of the document.
@@ -432,6 +523,18 @@ export declare namespace Visio {
         activate(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;
         load(option?: string | string[]): Visio.Page;
@@ -450,20 +553,25 @@ export declare namespace Visio {
     export class PageView extends OfficeExtension.ClientObject {
         /**
          *
-         * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+         * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
          *
          * [Api set:  1.1]
          */
         zoom: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.PageViewUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.PageView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: PageView): void;
+        set(properties: Visio.PageView): void;
         /**
          *
          * Pans the Visio drawing to place the specified shape in the center of the view.
@@ -514,6 +622,18 @@ export declare namespace Visio {
         setPosition(Position: Visio.Position): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;
         load(option?: string | string[]): Visio.PageView;
@@ -531,7 +651,7 @@ export declare namespace Visio {
      */
     export class PageCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Visio.Page>;
+        readonly items: Visio.Page[];
         /**
          *
          * Gets the number of pages in the collection.
@@ -550,6 +670,18 @@ export declare namespace Visio {
         getItem(key: number | string): Visio.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
         load(option?: string | string[]): Visio.PageCollection;
@@ -564,7 +696,7 @@ export declare namespace Visio {
      */
     export class ShapeCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Visio.Shape>;
+        readonly items: Visio.Shape[];
         /**
          *
          * Gets the number of Shapes in the collection.
@@ -583,6 +715,18 @@ export declare namespace Visio {
         getItem(key: number | string): Visio.Shape;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
         load(option?: string | string[]): Visio.ShapeCollection;
@@ -598,7 +742,7 @@ export declare namespace Visio {
     export class Shape extends OfficeExtension.ClientObject {
         /**
          *
-         * Returns the Comments Collection
+         * Returns the Comments Collection. Read-only.
          *
          * [Api set:  1.1]
          */
@@ -619,7 +763,7 @@ export declare namespace Visio {
         readonly shapeDataItems: Visio.ShapeDataItemCollection;
         /**
          *
-         * Gets SubShape Collection.
+         * Gets SubShape Collection. Read-only.
          *
          * [Api set:  1.1]
          */
@@ -633,14 +777,14 @@ export declare namespace Visio {
         readonly view: Visio.ShapeView;
         /**
          *
-         * Shape's Identifier.
+         * Shape's identifier. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly id: number;
         /**
          *
-         * Shape's name.
+         * Shape's name. Read-only.
          *
          * [Api set:  1.1]
          */
@@ -654,20 +798,25 @@ export declare namespace Visio {
         select: boolean;
         /**
          *
-         * Shape's Text.
+         * Shape's text. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly text: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ShapeUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Shape): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Shape): void;
+        set(properties: Visio.Shape): void;
         /**
          *
          * Returns the BoundingBox object that specifies bounding box of the shape.
@@ -677,6 +826,18 @@ export declare namespace Visio {
         getBounds(): OfficeExtension.ClientResult<Visio.BoundingBox>;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;
         load(option?: string | string[]): Visio.Shape;
@@ -700,29 +861,48 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         highlight: Visio.Highlight;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ShapeViewUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.ShapeView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: ShapeView): void;
+        set(properties: Visio.ShapeView): void;
         /**
          *
          * Adds an overlay on top of the shape.
          *
          * [Api set:  1.1]
          *
-         * @param OverlayType - An Overlay Type -Text, Image.
+         * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.
          * @param Content - Content of Overlay.
-         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay - Left, Center, Right
-         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay - Top, Middle, Bottom
+         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
+         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayType: string, Content: string, OverlayHorizontalAlignment: string, OverlayVerticalAlignment: string, Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayType: Visio.OverlayType, Content: string, OverlayHorizontalAlignment: Visio.OverlayHorizontalAlignment, OverlayVerticalAlignment: Visio.OverlayVerticalAlignment, Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Adds an overlay on top of the shape.
+         *
+         * [Api set:  1.1]
+         *
+         * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.
+         * @param Content - Content of Overlay.
+         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
+         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
+         * @param Width - Overlay Width.
+         * @param Height - Overlay Height.
+         */
+        addOverlay(OverlayType: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          *
          * Removes particular overlay or all overlays on the Shape.
@@ -734,6 +914,18 @@ export declare namespace Visio {
         removeOverlay(OverlayId: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;
         load(option?: string | string[]): Visio.ShapeView;
@@ -831,7 +1023,7 @@ export declare namespace Visio {
      */
     export class ShapeDataItemCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Visio.ShapeDataItem>;
+        readonly items: Visio.ShapeDataItem[];
         /**
          *
          * Gets the number of Shape Data Items.
@@ -850,6 +1042,18 @@ export declare namespace Visio {
         getItem(key: string): Visio.ShapeDataItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
         load(option?: string | string[]): Visio.ShapeDataItemCollection;
@@ -865,34 +1069,46 @@ export declare namespace Visio {
     export class ShapeDataItem extends OfficeExtension.ClientObject {
         /**
          *
-         * A string that specifies the format of the shape data item.
+         * A string that specifies the format of the shape data item. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly format: string;
         /**
          *
-         * A string that specifies the formatted value of the shape data item.
+         * A string that specifies the formatted value of the shape data item. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly formattedValue: string;
         /**
          *
-         * A string that specifies the label of the shape data item.
+         * A string that specifies the label of the shape data item. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly label: string;
         /**
          *
-         * A string that specifies the value of the shape data item.
+         * A string that specifies the value of the shape data item. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly value: string;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;
         load(option?: string | string[]): Visio.ShapeDataItem;
@@ -910,7 +1126,7 @@ export declare namespace Visio {
      */
     export class HyperlinkCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Visio.Hyperlink>;
+        readonly items: Visio.Hyperlink[];
         /**
          *
          * Gets the number of hyperlinks.
@@ -929,6 +1145,18 @@ export declare namespace Visio {
         getItem(Key: number | string): Visio.Hyperlink;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
         load(option?: string | string[]): Visio.HyperlinkCollection;
@@ -944,34 +1172,46 @@ export declare namespace Visio {
     export class Hyperlink extends OfficeExtension.ClientObject {
         /**
          *
-         * Gets the address of the Hyperlink object.
+         * Gets the address of the Hyperlink object. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly address: string;
         /**
          *
-         * Gets the description of a hyperlink.
+         * Gets the description of a hyperlink. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly description: string;
         /**
          *
-         * Gets the extra info of a hyperlink.
+         * Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly extraInfo: string;
         /**
          *
-         * Gets the sub-address of the Hyperlink object.
+         * Gets the sub-address of the Hyperlink object. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly subAddress: string;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;
         load(option?: string | string[]): Visio.Hyperlink;
@@ -989,10 +1229,10 @@ export declare namespace Visio {
      */
     export class CommentCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Visio.Comment>;
+        readonly items: Visio.Comment[];
         /**
          *
-         * Gets the number of Shape Data Items.
+         * Gets the number of Comments.
          *
          * [Api set:  1.1]
          */
@@ -1008,6 +1248,18 @@ export declare namespace Visio {
         getItem(key: string): Visio.Comment;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
         load(option?: string | string[]): Visio.CommentCollection;
@@ -1023,36 +1275,53 @@ export declare namespace Visio {
     export class Comment extends OfficeExtension.ClientObject {
         /**
          *
-         * A string that specifies the label of the shape data item.
+         * A string that specifies the name of the author of the comment.
          *
          * [Api set:  1.1]
          */
         author: string;
         /**
          *
-         * A string that specifies the format of the shape data item.
+         * A string that specifies the date when the comment was created.
          *
          * [Api set:  1.1]
          */
         date: string;
         /**
          *
-         * A string that specifies the value of the shape data item.
+         * A string that contains the comment text.
          *
          * [Api set:  1.1]
          */
         text: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.CommentUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Comment): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Comment): void;
+        set(properties: Visio.Comment): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;
         load(option?: string | string[]): Visio.Comment;
@@ -1071,13 +1340,25 @@ export declare namespace Visio {
     export class Selection extends OfficeExtension.ClientObject {
         /**
          *
-         * Gets the Shapes of the Selection
+         * Gets the Shapes of the Selection. Read-only.
          *
          * [Api set:  1.1]
          */
         readonly shapes: Visio.ShapeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Visio.Selection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Selection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: string | string[]): Visio.Selection;
         load(option?: {
@@ -1092,25 +1373,25 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    export namespace OverlayHorizontalAlignment {
+    enum OverlayHorizontalAlignment {
         /**
          *
          * left
          *
          */
-        var left: string;
+        left = "Left",
         /**
          *
          * center
          *
          */
-        var center: string;
+        center = "Center",
         /**
          *
          * right
          *
          */
-        var right: string;
+        right = "Right",
     }
     /**
      *
@@ -1118,25 +1399,25 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    export namespace OverlayVerticalAlignment {
+    enum OverlayVerticalAlignment {
         /**
          *
          * top
          *
          */
-        var top: string;
+        top = "Top",
         /**
          *
          * middle
          *
          */
-        var middle: string;
+        middle = "Middle",
         /**
          *
          * bottom
          *
          */
-        var bottom: string;
+        bottom = "Bottom",
     }
     /**
      *
@@ -1144,19 +1425,19 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    export namespace OverlayType {
+    enum OverlayType {
         /**
          *
          * text
          *
          */
-        var text: string;
+        text = "Text",
         /**
          *
          * image
          *
          */
-        var image: string;
+        image = "Image",
     }
     /**
      *
@@ -1164,51 +1445,60 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    export namespace ToolBarType {
+    enum ToolBarType {
         /**
          *
          * CommandBar
          *
          */
-        var commandBar: string;
+        commandBar = "CommandBar",
         /**
          *
          * PageNavigationBar
          *
          */
-        var pageNavigationBar: string;
+        pageNavigationBar = "PageNavigationBar",
         /**
          *
          * StatusBar
          *
          */
-        var statusBar: string;
+        statusBar = "StatusBar",
     }
-    export namespace ErrorCodes {
-        var accessDenied: string;
-        var generalException: string;
-        var invalidArgument: string;
-        var itemNotFound: string;
-        var notImplemented: string;
-        var unsupportedOperation: string;
+    enum ErrorCodes {
+        accessDenied = "AccessDenied",
+        generalException = "GeneralException",
+        invalidArgument = "InvalidArgument",
+        itemNotFound = "ItemNotFound",
+        notImplemented = "NotImplemented",
+        unsupportedOperation = "UnsupportedOperation",
     }
-    export namespace Interfaces {
+    export module Interfaces {
+        /**
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
         export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
             $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
             $skip?: number;
         }
         /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
         export interface ApplicationUpdateData {
             /**
              *
-             * Show/Hide the application borders.
+             * Show or hide the iFrame application borders.
              *
              * [Api set:  1.1]
              */
             showBorders?: boolean;
             /**
              *
-             * Show or Hide the standard toolbars.
+             * Show or hide the standard toolbars.
              *
              * [Api set:  1.1]
              */
@@ -1256,7 +1546,7 @@ export declare namespace Visio {
             disableZoom?: boolean;
             /**
              *
-             * Disable Hyperlinks.
+             * Hide Diagram Boundary.
              *
              * [Api set:  1.1]
              */
@@ -1276,7 +1566,7 @@ export declare namespace Visio {
         export interface PageViewUpdateData {
             /**
              *
-             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
              *
              * [Api set:  1.1]
              */
@@ -1333,21 +1623,21 @@ export declare namespace Visio {
         export interface CommentUpdateData {
             /**
              *
-             * A string that specifies the label of the shape data item.
+             * A string that specifies the name of the author of the comment.
              *
              * [Api set:  1.1]
              */
             author?: string;
             /**
              *
-             * A string that specifies the format of the shape data item.
+             * A string that specifies the date when the comment was created.
              *
              * [Api set:  1.1]
              */
             date?: string;
             /**
              *
-             * A string that specifies the value of the shape data item.
+             * A string that contains the comment text.
              *
              * [Api set:  1.1]
              */
@@ -1357,14 +1647,14 @@ export declare namespace Visio {
         export interface ApplicationData {
             /**
              *
-             * Show/Hide the application borders.
+             * Show or hide the iFrame application borders.
              *
              * [Api set:  1.1]
              */
             showBorders?: boolean;
             /**
              *
-             * Show or Hide the standard toolbars.
+             * Show or hide the standard toolbars.
              *
              * [Api set:  1.1]
              */
@@ -1388,7 +1678,7 @@ export declare namespace Visio {
             pages?: Visio.Interfaces.PageData[];
             /**
             *
-            * Returns the DocumentView object.
+            * Returns the DocumentView object. Read-only.
             *
             * [Api set:  1.1]
             */
@@ -1419,7 +1709,7 @@ export declare namespace Visio {
             disableZoom?: boolean;
             /**
              *
-             * Disable Hyperlinks.
+             * Hide Diagram Boundary.
              *
              * [Api set:  1.1]
              */
@@ -1429,21 +1719,21 @@ export declare namespace Visio {
         export interface PageData {
             /**
             *
-            * All shapes in the page. Read-only.
+            * All shapes in the Page, including subshapes. Read-only.
             *
             * [Api set:  1.1]
             */
             allShapes?: Visio.Interfaces.ShapeData[];
             /**
             *
-            * Returns the Comments Collection
+            * Returns the Comments Collection.  Read-only.
             *
             * [Api set:  1.1]
             */
             comments?: Visio.Interfaces.CommentData[];
             /**
             *
-            * Shapes at root level, in the page. Read-only.
+            * All top-level shapes in the Page.Read-only.
             *
             * [Api set:  1.1]
             */
@@ -1464,7 +1754,7 @@ export declare namespace Visio {
             height?: number;
             /**
              *
-             * Index of the Page.
+             * Index of the Page. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1495,7 +1785,7 @@ export declare namespace Visio {
         export interface PageViewData {
             /**
              *
-             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
              *
              * [Api set:  1.1]
              */
@@ -1513,7 +1803,7 @@ export declare namespace Visio {
         export interface ShapeData {
             /**
             *
-            * Returns the Comments Collection
+            * Returns the Comments Collection. Read-only.
             *
             * [Api set:  1.1]
             */
@@ -1534,7 +1824,7 @@ export declare namespace Visio {
             shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];
             /**
             *
-            * Gets SubShape Collection.
+            * Gets SubShape Collection. Read-only.
             *
             * [Api set:  1.1]
             */
@@ -1548,14 +1838,14 @@ export declare namespace Visio {
             view?: Visio.Interfaces.ShapeViewData;
             /**
              *
-             * Shape's Identifier.
+             * Shape's identifier. Read-only.
              *
              * [Api set:  1.1]
              */
             id?: number;
             /**
              *
-             * Shape's name.
+             * Shape's name. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1569,7 +1859,7 @@ export declare namespace Visio {
             select?: boolean;
             /**
              *
-             * Shape's Text.
+             * Shape's text. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1593,28 +1883,28 @@ export declare namespace Visio {
         export interface ShapeDataItemData {
             /**
              *
-             * A string that specifies the format of the shape data item.
+             * A string that specifies the format of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             format?: string;
             /**
              *
-             * A string that specifies the formatted value of the shape data item.
+             * A string that specifies the formatted value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             formattedValue?: string;
             /**
              *
-             * A string that specifies the label of the shape data item.
+             * A string that specifies the label of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             label?: string;
             /**
              *
-             * A string that specifies the value of the shape data item.
+             * A string that specifies the value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1628,28 +1918,28 @@ export declare namespace Visio {
         export interface HyperlinkData {
             /**
              *
-             * Gets the address of the Hyperlink object.
+             * Gets the address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
             address?: string;
             /**
              *
-             * Gets the description of a hyperlink.
+             * Gets the description of a hyperlink. Read-only.
              *
              * [Api set:  1.1]
              */
             description?: string;
             /**
              *
-             * Gets the extra info of a hyperlink.
+             * Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
              *
              * [Api set:  1.1]
              */
             extraInfo?: string;
             /**
              *
-             * Gets the sub-address of the Hyperlink object.
+             * Gets the sub-address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1663,21 +1953,21 @@ export declare namespace Visio {
         export interface CommentData {
             /**
              *
-             * A string that specifies the label of the shape data item.
+             * A string that specifies the name of the author of the comment.
              *
              * [Api set:  1.1]
              */
             author?: string;
             /**
              *
-             * A string that specifies the format of the shape data item.
+             * A string that specifies the date when the comment was created.
              *
              * [Api set:  1.1]
              */
             date?: string;
             /**
              *
-             * A string that specifies the value of the shape data item.
+             * A string that contains the comment text.
              *
              * [Api set:  1.1]
              */
@@ -1687,7 +1977,7 @@ export declare namespace Visio {
         export interface SelectionData {
             /**
             *
-            * Gets the Shapes of the Selection
+            * Gets the Shapes of the Selection. Read-only.
             *
             * [Api set:  1.1]
             */
@@ -1703,14 +1993,14 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * Show/Hide the application borders.
+             * Show or hide the iFrame application borders.
              *
              * [Api set:  1.1]
              */
             showBorders?: boolean;
             /**
              *
-             * Show or Hide the standard toolbars.
+             * Show or hide the standard toolbars.
              *
              * [Api set:  1.1]
              */
@@ -1770,7 +2060,7 @@ export declare namespace Visio {
             disableZoom?: boolean;
             /**
              *
-             * Disable Hyperlinks.
+             * Hide Diagram Boundary.
              *
              * [Api set:  1.1]
              */
@@ -1800,7 +2090,7 @@ export declare namespace Visio {
             height?: boolean;
             /**
              *
-             * Index of the Page.
+             * Index of the Page. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1837,7 +2127,7 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
              *
              * [Api set:  1.1]
              */
@@ -1867,7 +2157,7 @@ export declare namespace Visio {
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Index of the Page.
+             * For EACH ITEM in the collection: Index of the Page. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1911,14 +2201,14 @@ export declare namespace Visio {
             view?: Visio.Interfaces.ShapeViewLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Shape's Identifier.
+             * For EACH ITEM in the collection: Shape's identifier. Read-only.
              *
              * [Api set:  1.1]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Shape's name.
+             * For EACH ITEM in the collection: Shape's name. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1932,7 +2222,7 @@ export declare namespace Visio {
             select?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Shape's Text.
+             * For EACH ITEM in the collection: Shape's text. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1955,14 +2245,14 @@ export declare namespace Visio {
             view?: Visio.Interfaces.ShapeViewLoadOptions;
             /**
              *
-             * Shape's Identifier.
+             * Shape's identifier. Read-only.
              *
              * [Api set:  1.1]
              */
             id?: boolean;
             /**
              *
-             * Shape's name.
+             * Shape's name. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -1976,7 +2266,7 @@ export declare namespace Visio {
             select?: boolean;
             /**
              *
-             * Shape's Text.
+             * Shape's text. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -2008,28 +2298,28 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the format of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             format?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             formattedValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the label of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             label?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the value of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -2045,28 +2335,28 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * A string that specifies the format of the shape data item.
+             * A string that specifies the format of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             format?: boolean;
             /**
              *
-             * A string that specifies the formatted value of the shape data item.
+             * A string that specifies the formatted value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             formattedValue?: boolean;
             /**
              *
-             * A string that specifies the label of the shape data item.
+             * A string that specifies the label of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
             label?: boolean;
             /**
              *
-             * A string that specifies the value of the shape data item.
+             * A string that specifies the value of the shape data item. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -2082,28 +2372,28 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the address of the Hyperlink object.
+             * For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
             address?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the description of a hyperlink.
+             * For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only.
              *
              * [Api set:  1.1]
              */
             description?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the extra info of a hyperlink.
+             * For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
              *
              * [Api set:  1.1]
              */
             extraInfo?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object.
+             * For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -2119,28 +2409,28 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * Gets the address of the Hyperlink object.
+             * Gets the address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
             address?: boolean;
             /**
              *
-             * Gets the description of a hyperlink.
+             * Gets the description of a hyperlink. Read-only.
              *
              * [Api set:  1.1]
              */
             description?: boolean;
             /**
              *
-             * Gets the extra info of a hyperlink.
+             * Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
              *
              * [Api set:  1.1]
              */
             extraInfo?: boolean;
             /**
              *
-             * Gets the sub-address of the Hyperlink object.
+             * Gets the sub-address of the Hyperlink object. Read-only.
              *
              * [Api set:  1.1]
              */
@@ -2156,21 +2446,21 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the label of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
              *
              * [Api set:  1.1]
              */
             author?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the format of the shape data item.
+             * For EACH ITEM in the collection: A string that specifies the date when the comment was created.
              *
              * [Api set:  1.1]
              */
             date?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A string that specifies the value of the shape data item.
+             * For EACH ITEM in the collection: A string that contains the comment text.
              *
              * [Api set:  1.1]
              */
@@ -2186,21 +2476,21 @@ export declare namespace Visio {
             $all?: boolean;
             /**
              *
-             * A string that specifies the label of the shape data item.
+             * A string that specifies the name of the author of the comment.
              *
              * [Api set:  1.1]
              */
             author?: boolean;
             /**
              *
-             * A string that specifies the format of the shape data item.
+             * A string that specifies the date when the comment was created.
              *
              * [Api set:  1.1]
              */
             date?: boolean;
             /**
              *
-             * A string that specifies the value of the shape data item.
+             * A string that contains the comment text.
              *
              * [Api set:  1.1]
              */
@@ -2227,27 +2517,18 @@ export declare namespace Visio {
      * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
     export function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
-
+    /**
+     * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
+     */
+    export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
-    /**
-     * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
-     * @remarks
-     * In addition to this signature, the method also has the following signatures:
-     * 
-     * `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-     * 
-     * `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-     * 
-     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-     */
-    export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

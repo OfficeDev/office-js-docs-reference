@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.ParagraphCollection
     summary: |-
-      Contains a collection of \[paragraph\](paragraph.md) objects.
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.ParagraphCollection
@@ -115,53 +115,52 @@ items:
       return:
         type:
           - Word.ParagraphCollection
-        description: ''
+        description: >
+
+
+          #### Examples
+
+
+          ```javascript
+
+          // This example shows how to get the paragraphs in the Word document along with their text and font size
+          properties.
+
+          // 
+
+          // Run a batch operation against the Word object model.
+
+          Word.run(function (context) {
+
+              // Create a proxy object for the paragraphs collection.
+              var paragraphs = context.document.body.paragraphs;
+
+              // Queue a commmand to load the text and font properties.
+              // It is best practice to always specify the property set. Otherwise, all properties are
+              // returned in on the object.
+              context.load(paragraphs, 'text, font/size');
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+
+              // Insert code that works with the paragraphs loaded by context.load().
+              })
+          })
+
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          ```
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-    remarks: >
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example shows how to get the paragraphs in the Word document along with their text and font size
-      properties.
-
-      // 
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
-
-          // Queue a commmand to load the text and font properties.
-          // It is best practice to always specify the property set. Otherwise, all properties are
-          // returned in on the object.
-          context.load(paragraphs, 'text, font/size');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-
-          // Insert code that works with the paragraphs loaded by context.load().
-          })
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
   - uid: word.Word.ParagraphCollection.toJSON
     name: toJSON()
     fullName: word.Word.ParagraphCollection.toJSON

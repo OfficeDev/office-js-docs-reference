@@ -133,7 +133,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type?: string;'
+      content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
         type:
-          - string
+          - OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"

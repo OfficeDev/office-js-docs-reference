@@ -19,7 +19,7 @@ items:
       - visio.Visio.Interfaces.ShapeCollectionLoadOptions.view
   - uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions.id
     summary: |-
-      For EACH ITEM in the collection: Shape's Identifier.
+      For EACH ITEM in the collection: Shape's identifier. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: id
@@ -34,7 +34,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions.name
     summary: |-
-      For EACH ITEM in the collection: Shape's name.
+      For EACH ITEM in the collection: Shape's name. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
@@ -66,7 +66,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions.text
     summary: |-
-      For EACH ITEM in the collection: Shape's Text.
+      For EACH ITEM in the collection: Shape's text. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

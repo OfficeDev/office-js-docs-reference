@@ -93,7 +93,7 @@ items:
         - id: insertLocation
           description: 'Required. It can be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: columnCount
           description: Required. Number of columns to add.
           type:
@@ -124,7 +124,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -135,7 +135,7 @@ items:
             - 'string[][]'
   - uid: word.Word.Table.alignment
     summary: |-
-      Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
+      Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: alignment
@@ -313,7 +313,20 @@ items:
       return:
         type:
           - Word.TableCell
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+              let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+              firstCell.load("text");
+
+              await context.sync();
+              console.log("First cell text is " + firstCell.text);
+          });
+          ```
       parameters:
         - id: rowIndex
           description: Required. The index of the row.
@@ -323,20 +336,6 @@ items:
           description: Required. The index of the cell in the row.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Word.run(async (context) => {
-          let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
-          firstCell.load("text");
-
-          await context.sync();
-          console.log("First cell text is " + firstCell.text);
-      });
-      ```
   - uid: word.Word.Table.getCellOrNullObject
     summary: >-
       Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not
@@ -382,7 +381,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
   - uid: word.Word.Table.getNext
@@ -499,7 +498,7 @@ items:
         description: ''
       parameters:
         - id: rangeLocation
-          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'' or ''After''.'
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', or ''After''.'
           type:
             - word.Word.RangeLocation
   - uid: word.Word.Table.headerRowCount
@@ -519,8 +518,8 @@ items:
           - number
   - uid: word.Word.Table.horizontalAlignment
     summary: >-
-      Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right',
-      or 'justified'.
+      Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
+      or 'Justified'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -574,7 +573,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Table.insertTable
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
@@ -607,7 +606,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -803,7 +802,7 @@ items:
           - Word.TableRowCollection
   - uid: word.Word.Table.search
     summary: >-
-      Performs a search with the specified searchOptions on the scope of the table object. The search results are a
+      Performs a search with the specified SearchOptions on the scope of the table object. The search results are a
       collection of range objects.
 
 
@@ -864,7 +863,7 @@ items:
         description: ''
       parameters:
         - id: selectionMode
-          description: 'Optional. The selection mode can be ''Select'', ''Start'' or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
   - uid: word.Word.Table.set
@@ -907,7 +906,7 @@ items:
         description: ''
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
         - id: cellPadding
@@ -916,7 +915,7 @@ items:
             - number
   - uid: word.Word.Table.shadingColor
     summary: |-
-      Gets and sets the shading color.
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
@@ -1181,7 +1180,7 @@ items:
           - 'string[][]'
   - uid: word.Word.Table.verticalAlignment
     summary: |-
-      Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
+      Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment

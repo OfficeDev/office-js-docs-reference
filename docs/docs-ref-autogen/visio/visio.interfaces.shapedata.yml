@@ -20,7 +20,7 @@ items:
       - visio.Visio.Interfaces.ShapeData.view
   - uid: visio.Visio.Interfaces.ShapeData.comments
     summary: |-
-      Returns the Comments Collection
+      Returns the Comments Collection. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
@@ -50,7 +50,7 @@ items:
           - 'Visio.Interfaces.HyperlinkData[]'
   - uid: visio.Visio.Interfaces.ShapeData.id
     summary: |-
-      Shape's Identifier.
+      Shape's identifier. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: id
@@ -65,7 +65,7 @@ items:
           - number
   - uid: visio.Visio.Interfaces.ShapeData.name
     summary: |-
-      Shape's name.
+      Shape's name. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
@@ -110,7 +110,7 @@ items:
           - 'Visio.Interfaces.ShapeDataItemData[]'
   - uid: visio.Visio.Interfaces.ShapeData.subShapes
     summary: |-
-      Gets SubShape Collection.
+      Gets SubShape Collection. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: subShapes
@@ -125,7 +125,7 @@ items:
           - 'Visio.Interfaces.ShapeData[]'
   - uid: visio.Visio.Interfaces.ShapeData.text
     summary: |-
-      Shape's Text.
+      Shape's text. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text
