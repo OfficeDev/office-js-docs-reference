@@ -18,7 +18,7 @@ Requirement set 1.5 includes all of the features of [Requirement set 1.4](../req
 
 - Added [Office.context.mailbox.addHandlerAsync](office.context.mailbox.md#addhandlerasynceventtype-handler-options-callback): Adds an event handler for a supported event.
 - Added [Office.EventType](/javascript/api/office/office.eventtype): Specifies the event associated with an event handler.
-- Added [Office.context.mailbox.restUrl](office.context.mailbox#resturl-string): Gets the URL of the REST endpoint for this email account.
+- Added [Office.context.mailbox.restUrl](office.context.mailbox.md#resturl-string): Gets the URL of the REST endpoint for this email account.
 - Modified [Office.context.mailbox.getCallbackTokenAsync](office.context.mailbox.md#getcallbacktokenasyncoptions-callback): A new version of this method with a new signature (`getCallbackTokenAsync([options], callback)`) has been added. The original version is still available and is unchanged.
 - Added [Office.context.ui.closeContainer](/javascript/api/office/office.officeui): 
 - Modified [Office.context.mailbox.item.addFileAttachmentAsync](office.context.mailbox.item.md#addfileattachmentasyncuri-attachmentname-options-callback): A new value in the `options` dictionary called `isInline`, used to specify that an image is used inline in the message body.
