@@ -21,7 +21,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 | [restUrl](#resturl-string) | Member |
 | [addHandlerAsync](#addhandlerasynceventtype-handler-options-callback) | Method |
 | [convertToEwsId](#converttoewsiditemid-restversion--string) | Method |
-| [convertToLocalClientTime](#converttolocalclienttimetimevalue--localclienttime) | Method |
+| [convertToLocalClientTime](#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook15officelocalclienttime) | Method |
 | [convertToRestId](#converttorestiditemid-restversion--string) | Method |
 | [convertToUtcClientTime](#converttoutcclienttimeinput--date) | Method |
 | [displayAppointmentForm](#displayappointmentformitemid) | Method |
