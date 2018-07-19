@@ -11,9 +11,9 @@ Requirement set 1.2 includes all of the features of [Requirement set 1.1](../req
 
 ### Change log
 
-- Added [Office.context.mailbox.item.setSelectedDataAsync](/Office-item.md#setselecteddataasyncdata-options-callback): Asynchronously inserts data into the body or subject of a message.
-- Modified [Office.context.mailbox.item.displayReplyAllForm](/Office-item.md#displayreplyallformformdata): Added `attachments` property to the `formData` parameter.
-- Modified [Office.context.mailbox.item.displayReplyForm](/Office-item.md#displayreplyformformdata): Added `attachments` property to the `formData` parameter.
+- Added [Office.context.mailbox.item.setSelectedDataAsync](office.context.mailbox.item.md#setselecteddataasyncdata-options-callback): Asynchronously inserts data into the body or subject of a message.
+- Modified [Office.context.mailbox.item.displayReplyAllForm](office.context.mailbox.item.md#displayreplyallformformdata): Added `attachments` property to the `formData` parameter.
+- Modified [Office.context.mailbox.item.displayReplyForm](office.context.mailbox.item.md#displayreplyformformdata): Added `attachments` property to the `formData` parameter.
 
 ## See also
 
