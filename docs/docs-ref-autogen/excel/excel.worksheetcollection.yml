@@ -45,7 +45,26 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var wSheetName = 'Sample Name';
+              var worksheet = ctx.workbook.worksheets.add(wSheetName);
+              worksheet.load('name');
+              return ctx.sync().then(function() {
+                  console.log(worksheet.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: name
           description: >-
@@ -53,26 +72,6 @@ items:
             Excel determines the name of the new worksheet.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var wSheetName = 'Sample Name';
-          var worksheet = ctx.workbook.worksheets.add(wSheetName);
-          worksheet.load('name');
-          return ctx.sync().then(function() {
-              console.log(worksheet.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.
@@ -88,26 +87,25 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) {  
-          var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
-          activeWorksheet.load('name');
-          return ctx.sync().then(function() {
-                  console.log(activeWorksheet.name);
+          ```javascript
+          Excel.run(function (ctx) {  
+              var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+              activeWorksheet.load('name');
+              return ctx.sync().then(function() {
+                      console.log(activeWorksheet.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.WorksheetCollection.getCount
     summary: |-
       Gets the number of worksheets in the collection.
@@ -144,43 +142,42 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              const firstSheet = sheets.getFirst().getNext();
+              const lastSheet = sheets.getLast();
+              const firstTaxRateRange = firstSheet.getRange("B2");
+              const lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheets = context.workbook.worksheets;
-
-          // We don't want to include the default worksheet that was created
-          // when the workbook was created, so our "firstSheet" will be the one
-          // after the literal first. Note chaining of navigation methods.
-          const firstSheet = sheets.getFirst().getNext();
-          const lastSheet = sheets.getLast();
-          const firstTaxRateRange = firstSheet.getRange("B2");
-          const lastTaxRateRange = lastSheet.getRange("B2");
-
-          firstSheet.load("name");
-          lastSheet.load("name");
-          firstTaxRateRange.load("text");
-          lastTaxRateRange.load("text");
-
-          await context.sync();
-
-          let firstYear = firstSheet.name.substr(5, 4);
-          let lastYear = lastSheet.name.substr(5, 4);
-          OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.WorksheetCollection.getItem
     summary: |-
       Gets a worksheet object using its Name or ID.
@@ -238,43 +235,42 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              const firstSheet = sheets.getFirst().getNext();
+              const lastSheet = sheets.getLast();
+              const firstTaxRateRange = firstSheet.getRange("B2");
+              const lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheets = context.workbook.worksheets;
-
-          // We don't want to include the default worksheet that was created
-          // when the workbook was created, so our "firstSheet" will be the one
-          // after the literal first. Note chaining of navigation methods.
-          const firstSheet = sheets.getFirst().getNext();
-          const lastSheet = sheets.getLast();
-          const firstTaxRateRange = firstSheet.getRange("B2");
-          const lastTaxRateRange = lastSheet.getRange("B2");
-
-          firstSheet.load("name");
-          lastSheet.load("name");
-          firstTaxRateRange.load("text");
-          lastTaxRateRange.load("text");
-
-          await context.sync();
-
-          let firstYear = firstSheet.name.substr(5, 4);
-          let lastYear = lastSheet.name.substr(5, 4);
-          OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.WorksheetCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -361,28 +357,28 @@ items:
     fullName: excel.Excel.WorksheetCollection.onActivated
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let sheets = context.workbook.worksheets;
-          sheets.onActivated.add(onActivate);
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onActivated.add(onActivate);
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("A handler has been registered for the OnActivate event",
-              "Try selecting a different worksheet, and watch the console output.");   
-      });
-      ```
+              OfficeHelpers.UI.notify("A handler has been registered for the OnActivate event",
+                  "Try selecting a different worksheet, and watch the console output.");   
+          });
+          ```
   - uid: excel.Excel.WorksheetCollection.onAdded
     summary: |-
       Occurs when a new worksheet is added to the workbook.
@@ -392,28 +388,28 @@ items:
     fullName: excel.Excel.WorksheetCollection.onAdded
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets;
-          sheet.onAdded.add(onWorksheetAdd);
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets;
+              sheet.onAdded.add(onWorksheetAdd);
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("A handler has been registered for the OnAdded event",
-              "Try adding a worksheet, and watch the console output.");
-      });
-      ```
+              OfficeHelpers.UI.notify("A handler has been registered for the OnAdded event",
+                  "Try adding a worksheet, and watch the console output.");
+          });
+          ```
   - uid: excel.Excel.WorksheetCollection.onDeactivated
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.
@@ -423,28 +419,28 @@ items:
     fullName: excel.Excel.WorksheetCollection.onDeactivated
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let sheets = context.workbook.worksheets;
-          sheets.onDeactivated.add(onDeactivate);
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onDeactivated.add(onDeactivate);
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("A handler has been registered for the OnDeactivate event",
-              "Try selecting a different worksheet, and watch the console output.");   
-      });
-      ```
+              OfficeHelpers.UI.notify("A handler has been registered for the OnDeactivate event",
+                  "Try selecting a different worksheet, and watch the console output.");   
+          });
+          ```
   - uid: excel.Excel.WorksheetCollection.onDeleted
     summary: |-
       Occurs when a worksheet is deleted from the workbook.
@@ -454,7 +450,7 @@ items:
     fullName: excel.Excel.WorksheetCollection.onDeleted
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
       return:

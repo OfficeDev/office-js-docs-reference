@@ -242,8 +242,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -548,8 +554,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -720,8 +732,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -755,7 +773,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "close": {
               "kind": "method",
@@ -858,8 +877,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -971,8 +996,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1006,7 +1037,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -1084,8 +1116,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1122,7 +1160,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "end": {
               "kind": "property",
@@ -1233,8 +1272,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1268,7 +1313,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getSelectedDataAsync": {
               "kind": "method",
@@ -1401,8 +1447,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1521,8 +1573,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1556,7 +1614,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -1677,8 +1736,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1809,8 +1874,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1844,7 +1915,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "notificationMessages": {
               "kind": "property",
@@ -1922,8 +1994,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -1957,7 +2035,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -2054,8 +2133,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -2089,7 +2174,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "removeAttachmentAsync": {
               "kind": "method",
@@ -2215,8 +2301,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -2406,8 +2498,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -2441,7 +2539,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "saveAsync": {
               "kind": "method",
@@ -2590,8 +2689,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -2810,8 +2915,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3015,8 +3126,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3050,7 +3167,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -3142,8 +3260,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3177,7 +3301,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -3259,8 +3384,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -3370,8 +3501,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3405,7 +3542,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "end": {
               "kind": "property",
@@ -3525,8 +3663,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3560,7 +3704,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "location": {
               "kind": "property",
@@ -3667,8 +3812,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3702,7 +3853,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -3808,8 +3960,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3843,7 +4001,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -3949,8 +4108,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -3984,7 +4149,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "resources": {
               "kind": "property",
@@ -3999,7 +4165,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "start": {
               "kind": "property",
@@ -4119,8 +4286,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4154,7 +4327,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -4267,8 +4441,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4302,7 +4482,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -4424,8 +4605,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4476,7 +4663,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "body": {
               "kind": "property",
@@ -4554,8 +4742,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4589,7 +4783,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -4667,8 +4862,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4702,7 +4903,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -4780,8 +4982,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -4818,7 +5026,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayReplyAllForm": {
               "kind": "method",
@@ -4964,8 +5173,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -5141,8 +5356,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -5268,8 +5489,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -5303,7 +5530,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getEntities": {
               "kind": "method",
@@ -5392,8 +5620,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -5538,8 +5772,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -6221,8 +6461,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -6364,8 +6610,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -6520,8 +6772,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -6640,8 +6898,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -6885,7 +7149,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemId": {
               "kind": "property",
@@ -6977,8 +7242,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7012,7 +7283,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemType": {
               "kind": "property",
@@ -7097,8 +7369,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7132,7 +7410,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -7253,8 +7532,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7373,8 +7658,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7408,7 +7699,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "normalizedSubject": {
               "kind": "property",
@@ -7493,8 +7785,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7528,7 +7826,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "notificationMessages": {
               "kind": "property",
@@ -7606,8 +7905,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7641,7 +7946,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -7745,8 +8051,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7780,7 +8092,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "organizer": {
               "kind": "property",
@@ -7858,8 +8171,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -7893,7 +8212,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -7997,8 +8317,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -8032,7 +8358,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "start": {
               "kind": "property",
@@ -8117,8 +8444,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -8152,7 +8485,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -8244,8 +8578,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -8279,7 +8619,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8368,8 +8709,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -8421,7 +8768,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "contentType": {
               "kind": "property",
@@ -8441,7 +8789,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -8461,7 +8810,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "isInline": {
               "kind": "property",
@@ -8481,7 +8831,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "name": {
               "kind": "property",
@@ -8501,7 +8852,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "size": {
               "kind": "property",
@@ -8521,7 +8873,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -8603,8 +8956,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -8768,8 +9127,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -8924,8 +9289,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -9104,8 +9475,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -9343,8 +9720,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -9610,8 +9993,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -9760,7 +10149,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -9868,8 +10258,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -9921,7 +10317,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "businessName": {
               "kind": "property",
@@ -9941,7 +10338,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -9961,7 +10359,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "personName": {
               "kind": "property",
@@ -9981,7 +10380,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -10001,7 +10401,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "urls": {
               "kind": "property",
@@ -10021,7 +10422,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -10110,8 +10512,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -10247,8 +10655,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -10381,8 +10795,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -10534,8 +10954,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -10694,8 +11120,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -10811,8 +11243,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -10933,8 +11371,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -10968,7 +11412,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "hostVersion": {
               "kind": "property",
@@ -11057,8 +11502,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -11092,7 +11543,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "OWAView": {
               "kind": "property",
@@ -11216,8 +11668,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -11251,7 +11709,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -11333,8 +11792,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -11386,7 +11851,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayName": {
               "kind": "property",
@@ -11406,7 +11872,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "emailAddress": {
               "kind": "property",
@@ -11426,7 +11893,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "recipientType": {
               "kind": "property",
@@ -11446,7 +11914,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -11528,8 +11997,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -11581,7 +12056,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "emailAddress": {
               "kind": "property",
@@ -11601,7 +12077,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -11725,8 +12202,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -11778,7 +12261,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "contacts": {
               "kind": "property",
@@ -11798,7 +12282,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -11818,7 +12303,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "meetingSuggestions": {
               "kind": "property",
@@ -11838,7 +12324,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -11858,7 +12345,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "taskSuggestions": {
               "kind": "property",
@@ -11878,7 +12366,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "urls": {
               "kind": "property",
@@ -11898,7 +12387,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -11980,8 +12470,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -12091,8 +12587,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12126,7 +12628,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -12204,8 +12707,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12239,7 +12748,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -12317,8 +12827,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12355,7 +12871,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemType": {
               "kind": "property",
@@ -12440,8 +12957,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12475,7 +12998,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -12596,8 +13120,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12709,8 +13239,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -12744,7 +13280,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -12937,8 +13474,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -13235,8 +13778,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -13432,8 +13981,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -13588,8 +14143,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -13749,8 +14310,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -13992,8 +14559,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -14212,8 +14785,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -14398,8 +14977,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -14433,7 +15018,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -14559,8 +15145,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -14611,7 +15203,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayReplyAllForm": {
               "kind": "method",
@@ -14757,8 +15350,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -14934,8 +15533,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -15058,8 +15663,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -15204,8 +15815,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -15887,8 +16504,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16030,8 +16653,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16186,8 +16815,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16306,8 +16941,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16555,7 +17196,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemId": {
               "kind": "property",
@@ -16647,8 +17289,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16682,7 +17330,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "normalizedSubject": {
               "kind": "property",
@@ -16767,8 +17416,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16802,7 +17457,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -16894,8 +17550,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -16929,7 +17591,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17007,8 +17670,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -17060,7 +17729,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "hours": {
               "kind": "property",
@@ -17080,7 +17750,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "milliseconds": {
               "kind": "property",
@@ -17100,7 +17771,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "minutes": {
               "kind": "property",
@@ -17120,7 +17792,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "month": {
               "kind": "property",
@@ -17140,7 +17813,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "seconds": {
               "kind": "property",
@@ -17160,7 +17834,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "timezoneOffset": {
               "kind": "property",
@@ -17180,7 +17855,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "year": {
               "kind": "property",
@@ -17200,7 +17876,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17282,8 +17959,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -17426,8 +18109,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -17594,8 +18283,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -17798,8 +18493,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -17969,8 +18670,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18125,8 +18832,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18269,8 +18982,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18418,8 +19137,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18591,8 +19316,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18762,8 +19493,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -18797,7 +19534,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayAppointmentForm": {
               "kind": "method",
@@ -18927,8 +19665,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19092,8 +19836,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19257,8 +20007,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19384,8 +20140,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19443,7 +20205,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getCallbackTokenAsync": {
               "kind": "method",
@@ -19606,8 +20369,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19772,8 +20541,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -19844,7 +20619,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "makeEwsRequestAsync": {
               "kind": "method",
@@ -20047,8 +20823,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -20174,8 +20956,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -20226,7 +21014,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "userProfile": {
               "kind": "property",
@@ -20272,7 +21061,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -20343,7 +21133,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20460,7 +21308,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20525,7 +21431,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20577,7 +21541,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20655,7 +21677,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20746,7 +21826,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20811,7 +21949,65 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
                 }
               ],
               "isBeta": false
@@ -20910,8 +22106,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -20963,7 +22165,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "end": {
               "kind": "property",
@@ -20983,7 +22186,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "location": {
               "kind": "property",
@@ -21003,7 +22207,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "meetingstring": {
               "kind": "property",
@@ -21023,7 +22228,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "start": {
               "kind": "property",
@@ -21043,7 +22249,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -21063,7 +22270,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -21199,8 +22407,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -21234,7 +22448,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -21427,8 +22642,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -21733,8 +22954,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -21905,8 +23132,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -21940,7 +23173,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "body": {
               "kind": "property",
@@ -22018,8 +23252,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22053,7 +23293,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "cc": {
               "kind": "property",
@@ -22157,8 +23398,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22192,7 +23439,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "close": {
               "kind": "method",
@@ -22295,8 +23543,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22331,6 +23585,140 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "conversationId": {
+              "kind": "property",
+              "signature": "conversationId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an identifier for the email conversation that contains a particular message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You can get an integer for this property if your mail app is activated in read forms or responses in compose forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change and that value you obtained earlier will no longer apply."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Message Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -22408,8 +23796,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22443,7 +23837,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -22521,8 +23916,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22559,7 +23960,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getSelectedDataAsync": {
               "kind": "method",
@@ -22680,8 +24082,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22800,8 +24208,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -22835,7 +24249,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -22956,8 +24371,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23069,8 +24490,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23104,7 +24531,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "removeAttachmentAsync": {
               "kind": "method",
@@ -23230,8 +24658,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23473,8 +24907,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23693,8 +25133,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23879,8 +25325,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -23914,7 +25366,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "to": {
               "kind": "property",
@@ -23999,8 +25452,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24034,7 +25493,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -24156,8 +25616,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24208,7 +25674,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "body": {
               "kind": "property",
@@ -24286,8 +25753,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24321,7 +25794,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "cc": {
               "kind": "property",
@@ -24406,8 +25880,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24441,7 +25921,142 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "conversationId": {
+              "kind": "property",
+              "signature": "conversationId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an identifier for the email conversation that contains a particular message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You can get an integer for this property if your mail app is activated in read forms or responses in compose forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change and that value you obtained earlier will no longer apply."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Message Read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -24519,8 +26134,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24554,7 +26175,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -24632,8 +26254,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24670,7 +26298,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayReplyAllForm": {
               "kind": "method",
@@ -24816,8 +26445,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -24993,8 +26628,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -25127,8 +26768,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -25162,7 +26809,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getEntities": {
               "kind": "method",
@@ -25251,8 +26899,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -25393,8 +27047,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26076,8 +27736,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26219,8 +27885,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26375,8 +28047,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26488,8 +28166,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26523,7 +28207,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemClass": {
               "kind": "property",
@@ -26608,8 +28293,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26853,7 +28544,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemId": {
               "kind": "property",
@@ -26945,8 +28637,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -26980,7 +28678,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemType": {
               "kind": "property",
@@ -27065,8 +28764,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27100,7 +28805,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -27221,8 +28927,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27341,8 +29053,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27376,7 +29094,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "notificationMessages": {
               "kind": "property",
@@ -27454,8 +29173,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27489,7 +29214,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sender": {
               "kind": "property",
@@ -27581,8 +29307,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27616,7 +29348,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "subject": {
               "kind": "property",
@@ -27708,8 +29441,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27743,7 +29482,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "to": {
               "kind": "property",
@@ -27828,8 +29568,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -27863,7 +29609,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -27945,8 +29692,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -27998,7 +29751,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "key": {
               "kind": "property",
@@ -28018,7 +29772,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "message": {
               "kind": "property",
@@ -28038,7 +29793,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "persistent": {
               "kind": "property",
@@ -28058,7 +29814,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -28078,7 +29835,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -28160,8 +29918,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -28328,8 +30092,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -28498,8 +30268,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -28666,8 +30442,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -28867,8 +30649,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -29015,8 +30803,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -29068,7 +30862,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "phoneString": {
               "kind": "property",
@@ -29088,7 +30883,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -29108,7 +30904,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -29183,8 +30980,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -29367,8 +31170,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -29598,8 +31407,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -29839,8 +31654,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -29971,7 +31792,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "itemId": {
               "kind": "property",
@@ -29991,7 +31813,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "name": {
               "kind": "property",
@@ -30011,7 +31834,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -30031,7 +31855,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "url": {
               "kind": "property",
@@ -30051,7 +31876,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -30108,7 +31934,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "callback": {
               "kind": "property",
@@ -30128,7 +31955,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "htmlBody": {
               "kind": "property",
@@ -30148,7 +31976,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -30258,8 +32087,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -30395,8 +32230,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -30529,8 +32370,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -30670,8 +32517,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -30837,8 +32690,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -30989,8 +32848,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -31140,8 +33005,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -31315,8 +33186,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -31498,8 +33375,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -31551,7 +33434,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "taskString": {
               "kind": "property",
@@ -31571,7 +33455,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -31653,8 +33538,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -31804,8 +33695,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -31986,8 +33883,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -32162,8 +34065,14 @@
               "token": "<td>"
             },
             {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
             },
             {
               "kind": "html-tag",
@@ -32277,8 +34186,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -32312,7 +34227,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "emailAddress": {
               "kind": "property",
@@ -32394,8 +34310,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -32429,7 +34351,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "timeZone": {
               "kind": "property",
@@ -32511,8 +34434,14 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
                 },
                 {
                   "kind": "html-tag",
@@ -32546,7 +34475,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         }

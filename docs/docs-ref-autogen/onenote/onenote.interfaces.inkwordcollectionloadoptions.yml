@@ -67,7 +67,7 @@ items:
       Read-only.
 
 
-      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
     fullName: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
     langs:

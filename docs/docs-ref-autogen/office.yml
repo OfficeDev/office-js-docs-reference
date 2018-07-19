@@ -199,7 +199,22 @@ items:
       return:
         type:
           - Binding
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          // The following code example uses the select method to retrieve a binding with the id "cities" from
+          // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+          // dataChanged event of the binding.
+          function addBindingDataChangedEventHandler() {
+              Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+              function (eventArgs) {
+                  doSomethingWithBinding(eventArgs.binding);
+              });
+          }
+          ```
       parameters:
         - id: expression
           description: >-
@@ -211,22 +226,6 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // The following code example uses the select method to retrieve a binding with the id "cities" from
-      // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
-      // dataChanged event of the binding.
-      function addBindingDataChangedEventHandler() {
-          Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
-          function (eventArgs) {
-              doSomethingWithBinding(eventArgs.binding);
-          });
-      }
-      ```
   - uid: office.Office.useShortNamespace
     summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: |

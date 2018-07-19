@@ -33,45 +33,45 @@ items:
       return:
         type:
           - excel.Excel.ChartLineFormat
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
 
-          let seriesCollection = sheet.charts.getItemAt(0).series; 
+              let seriesCollection = sheet.charts.getItemAt(0).series; 
 
-          // Get the color of the chart trendline. 
-          // In this example, it's #4472c4 which is blue.
-          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-          let line = trendline.format.line;
-          line.load("color");
+              // Get the color of the chart trendline. 
+              // In this example, it's #4472c4 which is blue.
+              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+              let line = trendline.format.line;
+              line.load("color");
 
-          await context.sync();
+              await context.sync();
 
-          console.log("The trendline color is:" + line.color);
-      });
-      ```
+              console.log("The trendline color is:" + line.color);
+          });
+          ```
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
 
-          let seriesCollection = sheet.charts.getItemAt(0).series; 
-          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+              let seriesCollection = sheet.charts.getItemAt(0).series; 
+              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
 
-          // Set format of the trendline to a solid, red line.
-          let line = trendline.format.line;
-          line.color = '#FF0000';
+              // Set format of the trendline to a solid, red line.
+              let line = trendline.format.line;
+              line.color = '#FF0000';
 
-          await context.sync();
+              await context.sync();
 
-          console.log("The trendline color has been set to:" + line.color);
-      });
-      ```
+              console.log("The trendline color has been set to:" + line.color);
+          });
+          ```
   - uid: excel.Excel.ChartTrendlineFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

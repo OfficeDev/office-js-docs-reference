@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.index
     summary: |-
-      For EACH ITEM in the collection: Index of the Page.
+      For EACH ITEM in the collection: Index of the Page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index

@@ -14,7 +14,7 @@ items:
       - visio.Visio.Interfaces.CommentUpdateData.text
   - uid: visio.Visio.Interfaces.CommentUpdateData.author
     summary: |-
-      A string that specifies the label of the shape data item.
+      A string that specifies the name of the author of the comment.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: author
@@ -29,7 +29,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.CommentUpdateData.date
     summary: |-
-      A string that specifies the format of the shape data item.
+      A string that specifies the date when the comment was created.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: date
@@ -44,7 +44,7 @@ items:
           - string
   - uid: visio.Visio.Interfaces.CommentUpdateData.text
     summary: |-
-      A string that specifies the value of the shape data item.
+      A string that contains the comment text.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

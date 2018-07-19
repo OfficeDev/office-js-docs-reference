@@ -34,6 +34,7 @@ items:
       - word.Word.UnderlineType.waveHeavy
       - word.Word.UnderlineType.word
   - uid: word.Word.UnderlineType.dashLine
+    summary: A single dash underline.
     name: dashLine
     fullName: word.Word.UnderlineType.dashLine
     langs:
@@ -62,6 +63,7 @@ items:
     type: field
     numericValue: '"DashLineLongHeavy"'
   - uid: word.Word.UnderlineType.dotDashLine
+    summary: An alternating dot-dash underline.
     name: dotDashLine
     fullName: word.Word.UnderlineType.dotDashLine
     langs:
@@ -85,6 +87,7 @@ items:
     type: field
     numericValue: '"DotLine"'
   - uid: word.Word.UnderlineType.dotted
+    summary: A dotted underline.
     name: dotted
     fullName: word.Word.UnderlineType.dotted
     langs:
@@ -99,6 +102,7 @@ items:
     type: field
     numericValue: '"DottedHeavy"'
   - uid: word.Word.UnderlineType.double
+    summary: A double underline.
     name: double
     fullName: word.Word.UnderlineType.double
     langs:
@@ -122,6 +126,7 @@ items:
     type: field
     numericValue: '"Mixed"'
   - uid: word.Word.UnderlineType.none
+    summary: No underline.
     name: none
     fullName: word.Word.UnderlineType.none
     langs:
@@ -129,6 +134,7 @@ items:
     type: field
     numericValue: '"None"'
   - uid: word.Word.UnderlineType.single
+    summary: A single underline. This is the default value.
     name: single
     fullName: word.Word.UnderlineType.single
     langs:
@@ -136,6 +142,7 @@ items:
     type: field
     numericValue: '"Single"'
   - uid: word.Word.UnderlineType.thick
+    summary: A single thick underline.
     name: thick
     fullName: word.Word.UnderlineType.thick
     langs:
@@ -143,6 +150,7 @@ items:
     type: field
     numericValue: '"Thick"'
   - uid: word.Word.UnderlineType.twoDotDashLine
+    summary: An alternating dot-dot-dash underline.
     name: twoDotDashLine
     fullName: word.Word.UnderlineType.twoDotDashLine
     langs:
@@ -157,6 +165,7 @@ items:
     type: field
     numericValue: '"TwoDotDashLineHeavy"'
   - uid: word.Word.UnderlineType.wave
+    summary: A single wavy underline.
     name: wave
     fullName: word.Word.UnderlineType.wave
     langs:
@@ -178,6 +187,7 @@ items:
     type: field
     numericValue: '"WaveHeavy"'
   - uid: word.Word.UnderlineType.word
+    summary: Only underline individual words.
     name: word
     fullName: word.Word.UnderlineType.word
     langs:

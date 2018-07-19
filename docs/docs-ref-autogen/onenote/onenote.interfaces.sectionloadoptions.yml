@@ -14,6 +14,8 @@ items:
     children:
       - onenote.OneNote.Interfaces.SectionLoadOptions.clientUrl
       - onenote.OneNote.Interfaces.SectionLoadOptions.id
+      - onenote.OneNote.Interfaces.SectionLoadOptions.isEncrypted
+      - onenote.OneNote.Interfaces.SectionLoadOptions.isLocked
       - onenote.OneNote.Interfaces.SectionLoadOptions.name
       - onenote.OneNote.Interfaces.SectionLoadOptions.notebook
       - onenote.OneNote.Interfaces.SectionLoadOptions.pages
@@ -47,6 +49,36 @@ items:
     type: property
     syntax:
       content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.isEncrypted
+    summary: |-
+      True if this section is encrypted with a password. Read only
+
+      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: isEncrypted
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.isEncrypted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEncrypted?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.isLocked
+    summary: |-
+      True if this section is locked. Read only
+
+      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: isLocked
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.isLocked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLocked?: boolean;'
       return:
         type:
           - boolean

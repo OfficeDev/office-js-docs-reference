@@ -151,7 +151,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.ParagraphLoadOptions.lineUnitAfter
     summary: |-
-      Gets or sets the amount of spacing, in grid lines. after the paragraph.
+      Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitAfter

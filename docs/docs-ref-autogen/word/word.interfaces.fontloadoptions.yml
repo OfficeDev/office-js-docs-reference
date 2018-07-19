@@ -59,7 +59,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as
+      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
 
 
@@ -77,7 +77,7 @@ items:
   - uid: word.Word.Interfaces.FontLoadOptions.highlightColor
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
-      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, or an empty
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
       string for mixed highlight colors, or null for no highlight color.
 
 
@@ -141,7 +141,7 @@ items:
           - boolean
   - uid: word.Word.Interfaces.FontLoadOptions.strikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as
+      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
 
 

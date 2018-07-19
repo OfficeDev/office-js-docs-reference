@@ -19,7 +19,7 @@ items:
       - visio.Visio.Interfaces.ShapeLoadOptions.view
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.id
     summary: |-
-      Shape's Identifier.
+      Shape's identifier. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: id
@@ -34,7 +34,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.name
     summary: |-
-      Shape's name.
+      Shape's name. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
@@ -64,7 +64,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.text
     summary: |-
-      Shape's Text.
+      Shape's text. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

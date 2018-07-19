@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.EntityType
+    summary: '\[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.EntityType
+    fullName: onenote.OneNote.EntityType
+    langs:
+      - typeScript
+    type: enum
+    package: onenote
+    children:
+      - onenote.OneNote.EntityType.notebook
+      - onenote.OneNote.EntityType.page
+      - onenote.OneNote.EntityType.section
+      - onenote.OneNote.EntityType.sectionGroup
+  - uid: onenote.OneNote.EntityType.notebook
+    name: notebook
+    fullName: onenote.OneNote.EntityType.notebook
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Notebook"'
+  - uid: onenote.OneNote.EntityType.page
+    name: page
+    fullName: onenote.OneNote.EntityType.page
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Page"'
+  - uid: onenote.OneNote.EntityType.section
+    name: section
+    fullName: onenote.OneNote.EntityType.section
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Section"'
+  - uid: onenote.OneNote.EntityType.sectionGroup
+    name: sectionGroup
+    fullName: onenote.OneNote.EntityType.sectionGroup
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SectionGroup"'

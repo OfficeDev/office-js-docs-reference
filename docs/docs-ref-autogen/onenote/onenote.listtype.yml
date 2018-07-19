@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.ListType
+    summary: '\[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.ListType
+    fullName: onenote.OneNote.ListType
+    langs:
+      - typeScript
+    type: enum
+    package: onenote
+    children:
+      - onenote.OneNote.ListType.bullet
+      - onenote.OneNote.ListType.none
+      - onenote.OneNote.ListType.number
+  - uid: onenote.OneNote.ListType.bullet
+    name: bullet
+    fullName: onenote.OneNote.ListType.bullet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bullet"'
+  - uid: onenote.OneNote.ListType.none
+    name: none
+    fullName: onenote.OneNote.ListType.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: onenote.OneNote.ListType.number
+    name: number
+    fullName: onenote.OneNote.ListType.number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'

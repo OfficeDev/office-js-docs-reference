@@ -17,7 +17,7 @@ items:
       - visio.Visio.Interfaces.CommentLoadOptions.text
   - uid: visio.Visio.Interfaces.CommentLoadOptions.author
     summary: |-
-      A string that specifies the label of the shape data item.
+      A string that specifies the name of the author of the comment.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: author
@@ -32,7 +32,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.CommentLoadOptions.date
     summary: |-
-      A string that specifies the format of the shape data item.
+      A string that specifies the date when the comment was created.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: date
@@ -47,7 +47,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.CommentLoadOptions.text
     summary: |-
-      A string that specifies the value of the shape data item.
+      A string that contains the comment text.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

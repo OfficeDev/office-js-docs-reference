@@ -78,32 +78,31 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      try {
-          await Excel.run(async (context) => {
+          ```typescript
+          try {
+              await Excel.run(async (context) => {
 
-              const sheet = context.workbook.worksheets.getItem("Sample");
+                  const sheet = context.workbook.worksheets.getItem("Sample");
 
-              sheet.names.getItem("TotalAmount").delete();
+                  sheet.names.getItem("TotalAmount").delete();
 
-              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
-              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+                  // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+                  sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
 
-              await context.sync();
+                  await context.sync();
 
-          });
-      }
-      catch (error) {
-          OfficeHelpers.UI.notify(error);
-          OfficeHelpers.Utilities.log(error);
-      }
-      ```
+              });
+          }
+          catch (error) {
+              OfficeHelpers.UI.notify(error);
+              OfficeHelpers.Utilities.log(error);
+          }
+          ```
   - uid: excel.Excel.NamedItem.formula
     summary: |-
       Gets or sets the formula of the named item. Formula always starts with a '=' sign.
@@ -119,36 +118,36 @@ items:
       return:
         type:
           - any
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
 
-          // Get the named item
-          const myNamedItem = sheet.names.getItemOrNullObject("MyRange");
-          myNamedItem.load("name, formula");
-
-          await context.sync();
-
-          if (myNamedItem.isNullObject) {
-              OfficeHelpers.UI.notify(`There is no named item with the name "MyRange".`);
-          } else {
-              
-              // Update named item to point to the second range
-              myNamedItem.formula = "=Sample!$B$10:$D$14";
-
-              sheet.getRange("B10:D14").select();
+              // Get the named item
+              const myNamedItem = sheet.names.getItemOrNullObject("MyRange");
+              myNamedItem.load("name, formula");
 
               await context.sync();
 
-              OfficeHelpers.UI.notify(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
-          }
-      });
-      ```
+              if (myNamedItem.isNullObject) {
+                  OfficeHelpers.UI.notify(`There is no named item with the name "MyRange".`);
+              } else {
+                  
+                  // Update named item to point to the second range
+                  myNamedItem.formula = "=Sample!$B$10:$D$14";
+
+                  sheet.getRange("B10:D14").select();
+
+                  await context.sync();
+
+                  OfficeHelpers.UI.notify(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
+              }
+          });
+          ```
   - uid: excel.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
@@ -166,29 +165,28 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      // Returns the Range object that is associated with the name. null if the name is not of the type Range.
-      // Note: This API currently supports only the Workbook scoped items.
-      Excel.run(function (ctx) { 
-          var names = ctx.workbook.names;
-          var range = names.getItem('MyRange').getRange();
-          range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address);
+          ```javascript
+          // Returns the Range object that is associated with the name. null if the name is not of the type Range.
+          // Note: This API currently supports only the Workbook scoped items.
+          Excel.run(function (ctx) { 
+              var names = ctx.workbook.names;
+              var range = names.getItem('MyRange').getRange();
+              range.load('address');
+              return ctx.sync().then(function() {
+                  console.log(range.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.NamedItem.getRangeOrNullObject
     summary: >-
       Returns the range object that is associated with the name. Returns a null object if the named item's type is not a

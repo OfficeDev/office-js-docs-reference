@@ -2,7 +2,7 @@
 items:
   - uid: visio.Visio.DocumentLoadCompleteEventArgs
     summary: |-
-      Provides information about the drawing that raised the DiagramLoadComplete event.
+      Provides information about the success or failure of the DocumentLoadComplete event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.DocumentLoadCompleteEventArgs
@@ -15,7 +15,7 @@ items:
       - visio.Visio.DocumentLoadCompleteEventArgs.success
   - uid: visio.Visio.DocumentLoadCompleteEventArgs.success
     summary: |-
-      Gets the success/failure of the DocumentLoadComplete event.
+      Gets the success or failure of the DocumentLoadComplete event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: success

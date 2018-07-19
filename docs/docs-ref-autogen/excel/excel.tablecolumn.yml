@@ -42,25 +42,24 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-          column.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+              column.delete();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel.Excel.TableColumn.filter
     summary: |-
       Retrieve the filter applied to the column. Read-only.
@@ -91,27 +90,26 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var dataBodyRange = column.getDataBodyRange();
-          dataBodyRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(dataBodyRange.address);
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+              var dataBodyRange = column.getDataBodyRange();
+              dataBodyRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(dataBodyRange.address);
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel.Excel.TableColumn.getHeaderRowRange
     summary: |-
       Gets the range object associated with the header row of the column.
@@ -127,28 +125,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var headerRowRange = columns.getHeaderRowRange();
-          headerRowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(headerRowRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+              var headerRowRange = columns.getHeaderRowRange();
+              headerRowRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(headerRowRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.TableColumn.getRange
     summary: |-
       Gets the range object associated with the entire column.
@@ -164,28 +161,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var columnRange = columns.getRange();
-          columnRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(columnRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+              var columnRange = columns.getRange();
+              columnRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(columnRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.TableColumn.getTotalRowRange
     summary: |-
       Gets the range object associated with the totals row of the column.
@@ -201,28 +197,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var totalRowRange = columns.getTotalRowRange();
-          totalRowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(totalRowRange.address);
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+              var totalRowRange = columns.getTotalRowRange();
+              totalRowRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(totalRowRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
           });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+          ```
   - uid: excel.Excel.TableColumn.id
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.

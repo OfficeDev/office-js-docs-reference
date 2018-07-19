@@ -16,7 +16,7 @@ items:
       - visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
     summary: |-
-      Show/Hide the application borders.
+      Show or hide the iFrame application borders.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showBorders
@@ -31,7 +31,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
     summary: |-
-      Show or Hide the standard toolbars.
+      Show or hide the standard toolbars.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showToolbars

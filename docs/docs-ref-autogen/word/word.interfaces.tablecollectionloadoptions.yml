@@ -40,7 +40,7 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.alignment
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be
-      'left', 'centered' or 'right'.
+      'Left', 'Centered', or 'Right'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -89,7 +89,7 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can
-      be 'left', 'centered', 'right', or 'justified'.
+      be 'Left', 'Centered', 'Right', or 'Justified'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -266,8 +266,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.shadingColor
-    summary: |-
-      For EACH ITEM in the collection: Gets and sets the shading color.
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by
+      using the color name.
+
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
@@ -409,7 +411,7 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.verticalAlignment
     summary: >-
       For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be
-      'top', 'center' or 'bottom'.
+      'Top', 'Center', or 'Bottom'.
 
 
       \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]

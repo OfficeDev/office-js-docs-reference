@@ -18,7 +18,7 @@ items:
       - visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
   - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.address
     summary: |-
-      Gets the address of the Hyperlink object.
+      Gets the address of the Hyperlink object. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: address
@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.description
     summary: |-
-      Gets the description of a hyperlink.
+      Gets the description of a hyperlink. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: description
@@ -48,7 +48,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
     summary: |-
-      Gets the extra info of a hyperlink.
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: extraInfo
@@ -63,7 +63,7 @@ items:
           - boolean
   - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
     summary: |-
-      Gets the sub-address of the Hyperlink object.
+      Gets the sub-address of the Hyperlink object. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: subAddress

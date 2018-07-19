@@ -32,18 +32,18 @@ items:
       return:
         type:
           - string
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      async function onSelectionChange(args) {
-          await Excel.run(async (context) => {
-              console.log("Handler for table onSelectionChanged event has been triggered.  The new selection is : " + args.address);
-          });
-      }
-      ```
+          ```typescript
+          async function onSelectionChange(args) {
+              await Excel.run(async (context) => {
+                  console.log("Handler for table onSelectionChanged event has been triggered.  The new selection is : " + args.address);
+              });
+          }
+          ```
   - uid: excel.Excel.TableSelectionChangedEventArgs.isInsideTable
     summary: |-
       Indicates if the selection is inside a table, address will be useless if IsInsideTable is false.

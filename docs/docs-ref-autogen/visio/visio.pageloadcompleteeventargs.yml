@@ -31,7 +31,7 @@ items:
           - string
   - uid: visio.Visio.PageLoadCompleteEventArgs.success
     summary: |-
-      Gets the success/failure of the PageLoadComplete event.
+      Gets the success or failure of the PageLoadComplete event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: success

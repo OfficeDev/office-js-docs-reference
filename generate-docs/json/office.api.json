@@ -134,7 +134,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -154,7 +155,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -192,7 +194,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -212,7 +215,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "promptText": {
               "kind": "property",
@@ -232,7 +236,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sampleData": {
               "kind": "property",
@@ -252,7 +257,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -290,7 +296,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "columns": {
               "kind": "property",
@@ -310,7 +317,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -330,7 +338,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -694,7 +703,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             },
@@ -732,7 +742,8 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false
+                  "isOverride": false,
+                  "isEventProperty": false
                 }
               }
             }
@@ -772,7 +783,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -911,7 +923,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "error": {
               "kind": "property",
@@ -999,7 +1012,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "status": {
               "kind": "property",
@@ -1087,7 +1101,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "value": {
               "kind": "property",
@@ -1166,7 +1181,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -1471,7 +1487,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "authChallenge": {
               "kind": "property",
@@ -1491,7 +1508,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "forceAddAccount": {
               "kind": "property",
@@ -1511,7 +1529,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "forceConsent": {
               "kind": "property",
@@ -1531,7 +1550,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -1847,7 +1867,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getDataAsync": {
               "kind": "method",
@@ -2052,7 +2073,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -3484,7 +3506,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -3590,7 +3613,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -3629,7 +3653,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -4257,7 +4282,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getAllAsync": {
               "kind": "method",
@@ -4792,7 +4818,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "columnCount": {
               "kind": "property",
@@ -4845,7 +4872,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rowCount": {
               "kind": "property",
@@ -4898,7 +4926,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startColumn": {
               "kind": "property",
@@ -4951,7 +4980,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startRow": {
               "kind": "property",
@@ -5004,7 +5034,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -5043,7 +5074,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -5419,7 +5451,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "commerceAllowed": {
               "kind": "property",
@@ -5444,7 +5477,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "contentLanguage": {
               "kind": "property",
@@ -5464,7 +5498,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "diagnostics": {
               "kind": "property",
@@ -5484,7 +5519,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayLanguage": {
               "kind": "property",
@@ -5509,7 +5545,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "document": {
               "kind": "property",
@@ -5529,7 +5566,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "host": {
               "kind": "property",
@@ -5549,7 +5587,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "license": {
               "kind": "property",
@@ -5569,7 +5608,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "mailbox": {
               "kind": "property",
@@ -5720,7 +5760,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "officeTheme": {
               "kind": "property",
@@ -5740,7 +5781,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "platform": {
               "kind": "property",
@@ -5760,7 +5802,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "requirements": {
               "kind": "property",
@@ -5780,7 +5823,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "roamingSettings": {
               "kind": "property",
@@ -5910,7 +5954,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "touchEnabled": {
               "kind": "property",
@@ -5935,7 +5980,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "ui": {
               "kind": "property",
@@ -5955,7 +6001,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -5993,7 +6040,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "platform": {
               "kind": "property",
@@ -6013,7 +6061,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "version": {
               "kind": "property",
@@ -6033,7 +6082,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -6239,7 +6289,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getNodesAsync": {
               "kind": "method",
@@ -6887,7 +6938,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "nodeType": {
               "kind": "property",
@@ -6991,7 +7043,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "setNodeValueAsync": {
               "kind": "method",
@@ -8018,7 +8071,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "deleteAsync": {
               "kind": "method",
@@ -8533,7 +8587,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "namespaceManager": {
               "kind": "property",
@@ -8656,7 +8711,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -10038,7 +10094,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "displayInIframe": {
               "kind": "property",
@@ -10058,7 +10115,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "height": {
               "kind": "property",
@@ -10078,7 +10136,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "width": {
               "kind": "property",
@@ -10098,7 +10157,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -10416,7 +10476,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "customXmlParts": {
               "kind": "property",
@@ -10485,7 +10546,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "getActiveViewAsync": {
               "kind": "method",
@@ -12330,7 +12392,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -13735,7 +13798,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "url": {
               "kind": "property",
@@ -13804,7 +13868,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -13953,7 +14018,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "type": {
               "kind": "property",
@@ -13992,7 +14058,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -14082,7 +14149,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "message": {
               "kind": "property",
@@ -14102,7 +14170,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "name": {
               "kind": "property",
@@ -14122,7 +14191,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -15412,7 +15482,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sliceCount": {
               "kind": "property",
@@ -15481,7 +15552,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -15514,7 +15586,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -15748,7 +15821,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "coercionType": {
               "kind": "property",
@@ -15787,7 +15861,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "columnCount": {
               "kind": "property",
@@ -15807,7 +15882,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "filterType": {
               "kind": "property",
@@ -15827,7 +15903,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rowCount": {
               "kind": "property",
@@ -15847,7 +15924,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rows": {
               "kind": "property",
@@ -15867,7 +15945,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startColumn": {
               "kind": "property",
@@ -15887,7 +15966,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startRow": {
               "kind": "property",
@@ -15907,7 +15987,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "valueFormat": {
               "kind": "property",
@@ -15927,7 +16008,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -15965,7 +16047,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sliceSize": {
               "kind": "property",
@@ -15985,7 +16068,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -16023,7 +16107,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "filterType": {
               "kind": "property",
@@ -16062,7 +16147,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "valueFormat": {
               "kind": "property",
@@ -16082,7 +16168,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -16165,7 +16252,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "selectionMode": {
               "kind": "property",
@@ -16204,7 +16292,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -16782,7 +16871,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "race": {
               "kind": "method",
@@ -17117,7 +17207,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rowCount": {
               "kind": "property",
@@ -17221,7 +17312,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17308,7 +17400,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "oldNextSibling": {
               "kind": "property",
@@ -17347,7 +17440,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "oldNode": {
               "kind": "property",
@@ -17393,7 +17487,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17480,7 +17575,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "newNode": {
               "kind": "property",
@@ -17507,7 +17603,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17545,7 +17642,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "newNode": {
               "kind": "property",
@@ -17572,7 +17670,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "oldNode": {
               "kind": "property",
@@ -17599,7 +17698,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -17693,7 +17793,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "bodyForegroundColor": {
               "kind": "property",
@@ -17713,7 +17814,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "controlBackgroundColor": {
               "kind": "property",
@@ -17733,7 +17835,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "controlForegroundColor": {
               "kind": "property",
@@ -17753,7 +17856,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -24868,7 +24972,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "row": {
               "kind": "property",
@@ -24888,7 +24993,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -24926,7 +25032,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "format": {
               "kind": "property",
@@ -24946,7 +25053,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -24984,7 +25092,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "handler": {
               "kind": "property",
@@ -25004,7 +25113,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -25109,7 +25219,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "overwriteIfStale": {
               "kind": "property",
@@ -25129,7 +25240,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -25312,7 +25424,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "cellFormat": {
               "kind": "property",
@@ -25339,7 +25452,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "coercionType": {
               "kind": "property",
@@ -25359,7 +25473,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "columns": {
               "kind": "property",
@@ -25379,7 +25494,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rows": {
               "kind": "property",
@@ -25399,7 +25515,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startColumn": {
               "kind": "property",
@@ -25419,7 +25536,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "startRow": {
               "kind": "property",
@@ -25439,7 +25557,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "tableOptions": {
               "kind": "property",
@@ -25459,7 +25578,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -25497,7 +25617,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "cellFormat": {
               "kind": "property",
@@ -25524,7 +25645,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "coercionType": {
               "kind": "property",
@@ -25544,7 +25666,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "imageHeight": {
               "kind": "property",
@@ -25564,7 +25687,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "imageLeft": {
               "kind": "property",
@@ -25584,7 +25708,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "imageTop": {
               "kind": "property",
@@ -25604,7 +25729,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "imageWidth": {
               "kind": "property",
@@ -25624,7 +25750,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "tableOptions": {
               "kind": "property",
@@ -25644,7 +25771,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -27349,7 +27477,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "index": {
               "kind": "property",
@@ -27453,7 +27582,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "size": {
               "kind": "property",
@@ -27557,7 +27687,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -28405,7 +28536,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "deleteAllDataValuesAsync": {
               "kind": "method",
@@ -28718,7 +28850,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rowCount": {
               "kind": "property",
@@ -28853,7 +28986,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "setFormatsAsync": {
               "kind": "method",
@@ -30503,7 +30637,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "rows": {
               "kind": "property",
@@ -30631,7 +30766,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -31926,7 +32062,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "isNullObject": {
               "kind": "property",
@@ -31946,7 +32083,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32024,7 +32162,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "load": {
               "kind": "method",
@@ -32180,7 +32319,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sync": {
               "kind": "method",
@@ -32264,7 +32404,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32304,7 +32445,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32342,7 +32484,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "errorLocation": {
               "kind": "property",
@@ -32362,7 +32505,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "fullStatements": {
               "kind": "property",
@@ -32389,7 +32533,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "innerError": {
               "kind": "property",
@@ -32409,7 +32554,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "message": {
               "kind": "property",
@@ -32429,7 +32575,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "statements": {
               "kind": "property",
@@ -32456,7 +32603,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "surroundingStatements": {
               "kind": "property",
@@ -32483,7 +32631,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32511,7 +32660,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "height": {
               "kind": "property",
@@ -32526,7 +32676,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -32541,7 +32692,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "sessionKey": {
               "kind": "property",
@@ -32556,7 +32708,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "timeoutInMilliseconds": {
               "kind": "property",
@@ -32571,7 +32724,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "width": {
               "kind": "property",
@@ -32586,7 +32740,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32703,7 +32858,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "debugInfo": {
               "kind": "property",
@@ -32723,7 +32879,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "innerError": {
               "kind": "property",
@@ -32743,7 +32900,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "message": {
               "kind": "property",
@@ -32763,7 +32921,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "name": {
               "kind": "property",
@@ -32783,7 +32942,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "stack": {
               "kind": "property",
@@ -32803,7 +32963,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "traceMessages": {
               "kind": "property",
@@ -32823,7 +32984,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -32851,7 +33013,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "activityLimitReached": {
               "kind": "property",
@@ -32866,7 +33029,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "apiNotFound": {
               "kind": "property",
@@ -32881,7 +33045,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "cannotRegisterEvent": {
               "kind": "property",
@@ -32896,7 +33061,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "connectionFailure": {
               "kind": "property",
@@ -32911,7 +33077,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "generalException": {
               "kind": "property",
@@ -32926,7 +33093,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "invalidArgument": {
               "kind": "property",
@@ -32941,7 +33109,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "invalidObjectPath": {
               "kind": "property",
@@ -32956,7 +33125,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "invalidRequestContext": {
               "kind": "property",
@@ -32971,7 +33141,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "propertyNotLoaded": {
               "kind": "property",
@@ -32986,7 +33157,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "runMustReturnPromise": {
               "kind": "property",
@@ -33001,7 +33173,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "valueNotLoaded": {
               "kind": "property",
@@ -33016,7 +33189,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33105,7 +33279,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "remove": {
               "kind": "method",
@@ -33284,7 +33459,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "registerFunc": {
               "kind": "property",
@@ -33299,7 +33475,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "unregisterFunc": {
               "kind": "property",
@@ -33314,7 +33491,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33399,7 +33577,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "select": {
               "kind": "property",
@@ -33419,7 +33598,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "skip": {
               "kind": "property",
@@ -33439,7 +33619,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "top": {
               "kind": "property",
@@ -33459,7 +33640,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33504,7 +33686,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33542,7 +33725,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "url": {
               "kind": "property",
@@ -33562,7 +33746,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33602,7 +33787,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             },
             "session": {
               "kind": "property",
@@ -33622,7 +33808,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -33770,7 +33957,8 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         }

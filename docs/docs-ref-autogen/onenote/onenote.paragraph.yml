@@ -49,7 +49,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addNoteTag(type: string, status: string): OneNote.NoteTag;'
+      content: 'addNoteTag(type: OneNote.NoteTagType, status: OneNote.NoteTagStatus): OneNote.NoteTag;'
       return:
         type:
           - onenote.OneNote.NoteTag
@@ -58,11 +58,11 @@ items:
         - id: type
           description: The type of the NoteTag.
           type:
-            - string
+            - onenote.OneNote.NoteTagType
         - id: status
           description: The status of the NoteTag.
           type:
-            - string
+            - onenote.OneNote.NoteTagStatus
   - uid: onenote.OneNote.Paragraph.delete
     summary: |-
       Deletes the paragraph
@@ -78,47 +78,46 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+          ```javascript
+          OneNote.run(function (context) {
 
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
 
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
-          var pageContent = pageContents.getItemAt(0);
-          
-          var paragraphs = pageContent.outline.paragraphs;
-          
-          var firstParagraph = paragraphs.getItemAt(0);
-          
-          // Queue a command to load the id and type of the first paragraph
-          firstParagraph.load("id,type");
+              // Get the first PageContent on the page
+              // Assuming its an outline, get the outline's paragraphs.
+              var pageContent = pageContents.getItemAt(0);
+              
+              var paragraphs = pageContent.outline.paragraphs;
+              
+              var firstParagraph = paragraphs.getItemAt(0);
+              
+              // Queue a command to load the id and type of the first paragraph
+              firstParagraph.load("id,type");
 
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  
-                  // Queue a command to delete the first paragraph                 
-                  firstParagraph.delete();
-                  
-                  // Run the command to delete it
-                  return context.sync();
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      
+                      // Queue a command to delete the first paragraph                 
+                      firstParagraph.delete();
+                      
+                      // Run the command to delete it
+                      return context.sync();
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: onenote.OneNote.Paragraph.getParagraphInfo
     summary: |-
       Get list information of paragraph
@@ -191,62 +190,61 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertHtmlAsSibling(insertLocation: string, html: string): void;'
+      content: 'insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;'
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
+
+              // Get the first PageContent on the page
+              // Assuming its an outline, get the outline's paragraphs.
+              var pageContent = pageContents.getItemAt(0);
+              var paragraphs = pageContent.outline.paragraphs;
+              var firstParagraph = paragraphs.getItemAt(0);
+
+              // Queue a command to load the id and type of the first paragraph
+              firstParagraph.load("id,type");
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+
+                      // Queue commands to insert before and after the first paragraph
+                      firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
+                      firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
+                      
+                      // Run the command to run inserts
+                      return context.sync();
+                  });
+          ))
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
           type:
-            - string
+            - onenote.OneNote.InsertLocation
         - id: html
           description: >-
-            An HTML string that describes the visual presentation of the content. See \[supported
-            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
-            JavaScript API.
+            An HTML string that describes the visual presentation of the content. See[Supported
+            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            for the OneNote add-ins JavaScript API.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
-
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
-          var pageContent = pageContents.getItemAt(0);
-          var paragraphs = pageContent.outline.paragraphs;
-          var firstParagraph = paragraphs.getItemAt(0);
-
-          // Queue a command to load the id and type of the first paragraph
-          firstParagraph.load("id,type");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-
-                  // Queue commands to insert before and after the first paragraph
-                  firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
-                  firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
-                  
-                  // Run the command to run inserts
-                  return context.sync();
-              });
-      ))
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.Paragraph.insertImageAsSibling
     summary: |-
       Inserts the image at the specified insert location..
@@ -259,17 +257,55 @@ items:
     type: method
     syntax:
       content: >-
-        insertImageAsSibling(insertLocation: string, base64EncodedImage: string, width: number, height: number):
-        OneNote.Image;
+        insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height:
+        number): OneNote.Image;
       return:
         type:
           - onenote.OneNote.Image
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
+
+              // Get the first PageContent on the page
+              // Assuming its an outline, get the outline's paragraphs.
+              var pageContent = pageContents.getItemAt(0);
+              var paragraphs = pageContent.outline.paragraphs;
+              var firstParagraph = paragraphs.getItemAt(0);
+
+              // Queue a command to load the id and type of the first paragraph
+              firstParagraph.load("id,type");
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+
+                      // Queue commands to insert before and after the first paragraph
+                      firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+                      firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+                      
+                      // Run the command to insert images
+                      return context.sync();
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - string
+            - onenote.OneNote.InsertLocation
         - id: base64EncodedImage
           description: HTML string to append.
           type:
@@ -282,45 +318,6 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
-
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
-          var pageContent = pageContents.getItemAt(0);
-          var paragraphs = pageContent.outline.paragraphs;
-          var firstParagraph = paragraphs.getItemAt(0);
-
-          // Queue a command to load the id and type of the first paragraph
-          firstParagraph.load("id,type");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-
-                  // Queue commands to insert before and after the first paragraph
-                  firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                  firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                  
-                  // Run the command to insert images
-                  return context.sync();
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
     summary: |-
       Inserts the paragraph text at the specifiec insert location.
@@ -332,59 +329,58 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertRichTextAsSibling(insertLocation: string, paragraphText: string): OneNote.RichText;'
+      content: 'insertRichTextAsSibling(insertLocation: OneNote.InsertLocation, paragraphText: string): OneNote.RichText;'
       return:
         type:
           - onenote.OneNote.RichText
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
+
+              // Get the first PageContent on the page
+              // Assuming its an outline, get the outline's paragraphs.
+              var pageContent = pageContents.getItemAt(0);
+              var paragraphs = pageContent.outline.paragraphs;
+              var firstParagraph = paragraphs.getItemAt(0);
+
+              // Queue a command to load the id and type of the first paragraph
+              firstParagraph.load("id,type");
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+
+                      // Queue commands to insert before and after the first paragraph
+                      firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
+                      firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
+                      
+                      // Run the command to insert text contents
+                      return context.sync();
+                  });
+          })    
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - string
+            - onenote.OneNote.InsertLocation
         - id: paragraphText
           description: HTML string to append.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
-
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
-          var pageContent = pageContents.getItemAt(0);
-          var paragraphs = pageContent.outline.paragraphs;
-          var firstParagraph = paragraphs.getItemAt(0);
-
-          // Queue a command to load the id and type of the first paragraph
-          firstParagraph.load("id,type");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-
-                  // Queue commands to insert before and after the first paragraph
-                  firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
-                  firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
-                  
-                  // Run the command to insert text contents
-                  return context.sync();
-              });
-      })    
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-      ```
   - uid: onenote.OneNote.Paragraph.insertTableAsSibling
     summary: |-
       Adds a table with the specified number of rows and columns before or after the current paragraph.
@@ -397,8 +393,8 @@ items:
     type: method
     syntax:
       content: >-
-        insertTableAsSibling(insertLocation: string, rowCount: number, columnCount: number, values?:
-        Array<Array<string>>): OneNote.Table;
+        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount: number, columnCount: number, values?:
+        string[][]): OneNote.Table;
       return:
         type:
           - OneNote.Table
@@ -407,7 +403,7 @@ items:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - string
+            - onenote.OneNote.InsertLocation
         - id: rowCount
           description: The number of rows in the table.
           type:
@@ -419,33 +415,36 @@ items:
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - Array<Array<string>>
+            - 'string[][]'
   - uid: onenote.OneNote.Paragraph.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: onenote.OneNote.Paragraph.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
-      return:
-        type:
-          - onenote.OneNote.Paragraph
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - onenote.OneNote.Interfaces.ParagraphLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       OneNote.run(function (context) {
 
           // Get the collection of pageContent items from the page.
@@ -472,15 +471,19 @@ items:
                   });
               });
       })        
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       }); 
+
       ```
 
+
       ```javascript
+
       OneNote.run(function(context) {
           var app = context.application;
           
@@ -507,13 +510,31 @@ items:
               return promise;
           })
       })
+
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: onenote.OneNote.Paragraph.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
+      return:
+        type:
+          - onenote.OneNote.Paragraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Paragraph.outline
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
@@ -624,36 +645,35 @@ items:
         type:
           - onenote.OneNote.RichText
   - uid: onenote.OneNote.Paragraph.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.Paragraph): void`
     name: 'set(properties, options)'
     fullName: onenote.OneNote.Paragraph.set
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ParagraphUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.ParagraphUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.Paragraph.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
@@ -710,10 +730,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: string;'
+      content: 'readonly type: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";'
       return:
         type:
-          - string
+          - OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
   - uid: onenote.OneNote.Paragraph.untrack
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for

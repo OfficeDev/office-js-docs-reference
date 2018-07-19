@@ -41,55 +41,54 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Gets the active page.
+              var activePage = context.application.getActivePage();
+
+              // Get pageContents of the activePage. 
+              var pageContents = activePage.contents;
+
+              // Queue a command to load the pageContents to access its data.
+              context.load(pageContents);
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function() {
+                      if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
+                      {
+                          // First item is an outline.
+                          outline = pageContents.items[0].outline;
+
+                          // Queue a command to append a paragraph to the outline.
+                          outline.appendHtml("<p>new paragraph</p>");
+
+                          // Run the queued commands.
+                          return context.sync();
+                      }
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: html
           description: >-
-            The HTML string to append. See \[supported
-            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
-            JavaScript API.
+            The HTML string to append. See[Supported
+            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            for the OneNote add-ins JavaScript API.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Gets the active page.
-          var activePage = context.application.getActivePage();
-
-          // Get pageContents of the activePage. 
-          var pageContents = activePage.contents;
-
-          // Queue a command to load the pageContents to access its data.
-          context.load(pageContents);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
-                  {
-                      // First item is an outline.
-                      outline = pageContents.items[0].outline;
-
-                      // Queue a command to append a paragraph to the outline.
-                      outline.appendHtml("<p>new paragraph</p>");
-
-                      // Run the queued commands.
-                      return context.sync();
-                  }
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.Outline.appendImage
     summary: |-
       Adds the specified image to the bottom of the Outline.
@@ -151,11 +150,49 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'appendTable(rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;'
+      content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
       return:
         type:
           - OneNote.Table
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Gets the active page.
+              var activePage = context.application.getActivePage();
+
+              // Get pageContents of the activePage. 
+              var pageContents = activePage.contents;
+
+              // Queue a command to load the pageContents to access its data.
+              context.load(pageContents);
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function() {
+                      if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
+                          // First item is an outline.
+                          var outline = pageContents.items[0].outline;
+
+                          // Queue a command to append a paragraph to the outline.
+                          outline.appendTable(2, 2, [[1, 2],[3, 4]]);
+
+                          // Run the queued commands.
+                          return context.sync();
+                      }
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: rowCount
           description: Required. The number of rows in the table.
@@ -168,46 +205,7 @@ items:
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - Array<Array<string>>
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Gets the active page.
-          var activePage = context.application.getActivePage();
-
-          // Get pageContents of the activePage. 
-          var pageContents = activePage.contents;
-
-          // Queue a command to load the pageContents to access its data.
-          context.load(pageContents);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
-                      // First item is an outline.
-                      var outline = pageContents.items[0].outline;
-
-                      // Queue a command to append a paragraph to the outline.
-                      outline.appendTable(2, 2, [[1, 2],[3, 4]]);
-
-                      // Run the queued commands.
-                      return context.sync();
-                  }
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+            - 'string[][]'
   - uid: onenote.OneNote.Outline.id
     summary: |-
       Gets the ID of the Outline object. Read-only.
@@ -243,6 +241,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: onenote.OneNote.Outline.load
     langs:

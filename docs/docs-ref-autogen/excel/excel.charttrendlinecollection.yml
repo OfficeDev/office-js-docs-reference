@@ -35,29 +35,28 @@ items:
       return:
         type:
           - excel.Excel.ChartTrendline
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+               // Add a trendline.  
+              seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: type
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
             - excel.Excel.ChartTrendlineType
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          let seriesCollection = sheet.charts.getItemAt(0).series;
-
-           // Add a trendline.  
-          seriesCollection.getItemAt(0).trendlines.add("Linear");
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.ChartTrendlineCollection.getCount
     summary: |-
       Returns the number of trendlines in the collection.

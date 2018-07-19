@@ -39,7 +39,20 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings; 
+              settings.onSettingsChanged.add(onChangedSetting);
+              OfficeHelpers.UI.notify("Handler registered", "");
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: key
           description: The Key of the new setting.
@@ -49,20 +62,6 @@ items:
           description: The Value for the new setting.
           type:
             - string | number | boolean | Date | Array<any> | any
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-          OfficeHelpers.UI.notify("Handler registered", "");
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -115,35 +114,34 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: ''
+        description: |
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  OfficeHelpers.UI.notify("The setting has been deleted");
+              } else {
+                  OfficeHelpers.UI.notify("The setting was not deleted");
+              }
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: key
           description: The key of the setting.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          let needsReview = settings.getItem("NeedsReview");
-          needsReview.delete();
-          needsReview = settings.getItemOrNullObject("NeedsReview");
-
-          await context.sync();
-
-          if (needsReview.isNullObject) {
-              OfficeHelpers.UI.notify("The setting has been deleted");
-          } else {
-              OfficeHelpers.UI.notify("The setting was not deleted");
-          }
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.SettingCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -205,26 +203,26 @@ items:
     fullName: excel.Excel.SettingCollection.onSettingsChanged
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-          OfficeHelpers.UI.notify("Handler registered", "");
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings; 
+              settings.onSettingsChanged.add(onChangedSetting);
+              OfficeHelpers.UI.notify("Handler registered", "");
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.SettingCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.SettingCollection.toJSON

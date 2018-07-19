@@ -84,25 +84,24 @@ items:
       return:
         type:
           - void
-        description: ''
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+          ```typescript
+          await Excel.run(async (context) => {
+              let style = context.workbook.styles.getItem("Diagonal Orientation Style");
 
-          // Delete the diagonal orientation style from the style collection.
-          // Styles are in the Home tab ribbon.
-          style.delete();
+              // Delete the diagonal orientation style from the style collection.
+              // Styles are in the Home tab ribbon.
+              style.delete();
 
-          await context.sync();
+              await context.sync();
 
-          OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
-      });
-      ```
+              OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+          });
+          ```
   - uid: excel.Excel.Style.fill
     summary: |-
       The Fill of the style.
@@ -133,27 +132,27 @@ items:
       return:
         type:
           - excel.Excel.RangeFont
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let style = context.workbook.styles.getItem("Normal");
-          style.font.load("bold, color, italic, name, size");
-          style.fill.load("color");
+          ```typescript
+          await Excel.run(async (context) => {
+              let style = context.workbook.styles.getItem("Normal");
+              style.font.load("bold, color, italic, name, size");
+              style.fill.load("color");
 
-          await context.sync();
+              await context.sync();
 
-          console.log("Bold: " + style.font.bold);
-          console.log("Font color: " + style.font.color);
-          console.log("Italic: " + style.font.italic);
-          console.log("Name: " + style.font.name);
-          console.log("Size: " + style.font.size);
-          console.log("Fill color: " + style.fill.color);
-      });
-      ```
+              console.log("Bold: " + style.font.bold);
+              console.log("Font color: " + style.font.color);
+              console.log("Italic: " + style.font.italic);
+              console.log("Name: " + style.font.name);
+              console.log("Size: " + style.font.size);
+              console.log("Fill color: " + style.fill.color);
+          });
+          ```
   - uid: excel.Excel.Style.formulaHidden
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
@@ -188,24 +187,24 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
-    remarks: |
+        description: |
 
 
-      #### Examples
+          #### Examples
 
-      ```typescript
-      await Excel.run(async (context) => {
-          let worksheet = context.workbook.worksheets.getItem("Sample");
-          let range = worksheet.getRange("A1:E1");
+          ```typescript
+          await Excel.run(async (context) => {
+              let worksheet = context.workbook.worksheets.getItem("Sample");
+              let range = worksheet.getRange("A1:E1");
 
-          // Apply built-in style. 
-          // Styles are in the Home tab ribbon.
-          range.style = Excel.BuiltInStyle.neutral;
-          range.format.horizontalAlignment = "Right";
+              // Apply built-in style. 
+              // Styles are in the Home tab ribbon.
+              range.style = Excel.BuiltInStyle.neutral;
+              range.format.horizontalAlignment = "Right";
 
-          await context.sync();
-      });
-      ```
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Style.includeAlignment
     summary: >-
       Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
