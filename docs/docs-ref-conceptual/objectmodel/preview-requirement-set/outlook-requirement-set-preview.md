@@ -22,7 +22,7 @@ The following features are in preview.
 - [Office.context.mailbox.item.removeHandlerAsync](office.context.mailbox.item.md#removehandlerasynceventtype-handler-options-callback) - Added a new method that removes an event handler.
 - [Office.context.mailbox.item.seriesId](office.context.mailbox.item.md#nullable-seriesid-string) - Added a new property that gets the id of the series an occurrence belongs to.
 - [Office.context.auth.getAccessTokenAsync](/javascript/api/office/office.auth#getaccesstokenasync-options--callback-) - Added access to `getAccessTokenAsync`, which allows add-ins to [get an access token](https://docs.microsoft.com/outlook/add-ins/authenticate-a-user-with-an-sso-token) for the Microsoft Graph API.
-- [Office.MailboxEnums.Days](/javascript/api/office/outlook.mailboxenums.days) - Added a new enum that specifies the day of week or type of day. 
+- [Office.MailboxEnums.Days](/javascript/api/outlook/office.mailboxenums.days) - Added a new enum that specifies the day of week or type of day. 
 - [Office.MailboxEnums.Month](/javascript/api/outlook/office.mailboxenums.month) - Added a new enum that specifies the month.
 - [Office.MailboxEnums.RecurrenceTimeZone](/javascript/api/outlook/office.mailboxenums.recurrencetimezone) - Added a new enum that specifies the time zone applied to the recurrence.
 - [Office.MailboxEnums.RecurrenceType](/javascript/api/outlook/office.mailboxenums.recurrencetype) - Added a new enum that specifies the type of recurrence. 
