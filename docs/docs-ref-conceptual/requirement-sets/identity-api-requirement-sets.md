@@ -23,7 +23,7 @@ For information about common API requirement sets, see [Office common API requir
 
 ## IdentityAPI 1.1 
 
-The Single Sign On IdentityAPI 1.1 is the first version of the API. For details about the API, see the `getAccessTokenAsync` method in th [Office.Auth](../../docs-ref-autogen/office/office.auth.yml) reference topic.
+The Single Sign On IdentityAPI 1.1 is the first version of the API. For details about the API, see the `getAccessTokenAsync` method in th [Office.Auth](/javascript/api/office/office.auth) reference topic.
 
 ## See also
 

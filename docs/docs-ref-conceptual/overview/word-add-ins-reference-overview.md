@@ -26,7 +26,7 @@ If you use TypeScript and have npm, you can get the the TypeScript definitions b
 
 To run your add-in, use an Office.initialize event handler. For more information about add-in initialization, see [Understanding the API](https://docs.microsoft.com/office/dev/add-ins/develop/understanding-the-javascript-api-for-office) .
 
-Add-ins that target Word 2016 execute by passing a function into the **Word.run()** method. The function passed into the **run** method must have a context argument. This [context object](../../docs-ref-autogen/word/word.requestcontext.yml) is different than the context object you get from the Office object, but it is also used to interact with the Word runtime environment. The context object provides access to the Word JavaScript API object model. The following example shows how to initialize and execute a Word add-in by using the **Word.run()** method.
+Add-ins that target Word 2016 execute by passing a function into the **Word.run()** method. The function passed into the **run** method must have a context argument. This [context object](/javascript/api/word/word.requestcontext) is different than the context object you get from the Office object, but it is also used to interact with the Word runtime environment. The context object provides access to the Word JavaScript API object model. The following example shows how to initialize and execute a Word add-in by using the **Word.run()** method.
 
 ```js
 (function () {
@@ -116,7 +116,7 @@ As we design and develop new APIs for Word add-ins, we'll make them available fo
 
 ## Word JavaScript API reference
 
-For detailed information about the Word JavaScript API, see the [Word JavaScript API reference documentation](../../docs-ref-autogen/word.yml).
+For detailed information about the Word JavaScript API, see the [Word JavaScript API reference documentation](/javascript/api/word).
 
 ## See also
 

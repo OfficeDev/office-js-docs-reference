@@ -6,34 +6,34 @@ Note that the relationships section within the document lists the properties tha
 
 Some of the core Excel objects are listed below for convenience: 
 
-- [Workbook](../../docs-ref-autogen/excel/excel.workbook.yml): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
+- [Workbook](/javascript/api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
 
-- [Worksheet](../../docs-ref-autogen/excel/excel.worksheet.yml): Represents a worksheet in a workbook. 
-    - [WorksheetCollection](../../docs-ref-autogen/excel/excel.worksheetcollection.yml): A collection of the **Worksheet** objects in a workbook.
+- [Worksheet](/javascript/api/excel/excel.worksheet): Represents a worksheet in a workbook. 
+    - [WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): A collection of the **Worksheet** objects in a workbook.
 
-- [Range](../../docs-ref-autogen/excel/excel.range.yml): Represents a cell, a row, a column, or a selection of cells containing one or more contiguous blocks of cells.
+- [Range](/javascript/api/excel/excel.range): Represents a cell, a row, a column, or a selection of cells containing one or more contiguous blocks of cells.
 
-- [Table](../../docs-ref-autogen/excel/excel.table.yml): Represents a collection of organized cells designed to make management of the data easy.
-    - [TableCollection](../../docs-ref-autogen/excel/excel.tablecollection.yml): A collection of tables in a workbook or worksheet.
-    - [TableColumnCollection](../../docs-ref-autogen/excel/excel.tablecolumncollection.yml): A collection of all the columns in a table.
-    - [TableRowCollection](../../docs-ref-autogen/excel/excel.tablerowcollection.yml): A collection of all the rows in a table.
+- [Table](/javascript/api/excel/excel.table): Represents a collection of organized cells designed to make management of the data easy.
+    - [TableCollection](/javascript/api/excel/excel.tablecollection): A collection of tables in a workbook or worksheet.
+    - [TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): A collection of all the columns in a table.
+    - [TableRowCollection](/javascript/api/excel/excel.tablerowcollection): A collection of all the rows in a table.
 
-- [Chart](../../docs-ref-autogen/excel/excel.chart.yml): Represents a chart object in a worksheet, which is a visual representation of underlying data.
-    - [ChartCollection](../../docs-ref-autogen/excel/excel.chartcollection.yml): A collection of charts in a worksheet.
+- [Chart](/javascript/api/excel/excel.chart): Represents a chart object in a worksheet, which is a visual representation of underlying data.
+    - [ChartCollection](/javascript/api/excel/excel.chartcollection): A collection of charts in a worksheet.
 
-- [TableSort](../../docs-ref-autogen/excel/excel.tablesort.yml): Represents an object that manages sorting operations on **Table** objects.
+- [TableSort](/javascript/api/excel/excel.tablesort): Represents an object that manages sorting operations on **Table** objects.
 
-- [RangeSort](../../docs-ref-autogen/excel/excel.rangesort.yml): Represents a object that manages sorting operations on **Range** objects.
+- [RangeSort](/javascript/api/excel/excel.rangesort): Represents a object that manages sorting operations on **Range** objects.
 
-- [Filter](../../docs-ref-autogen/excel/excel.filter.yml): Represents an object that manages the filtering of a table's column.
+- [Filter](/javascript/api/excel/excel.filter): Represents an object that manages the filtering of a table's column.
 
-- [WorksheetProtection](../../docs-ref-autogen/excel/excel.worksheetprotection.yml): Represents the protection of a **Worksheet** object.
+- [WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): Represents the protection of a **Worksheet** object.
 
-- [NamedItem](../../docs-ref-autogen/excel/excel.nameditem.yml): Represents a defined name for a range of cells or a value. 
-    - [NamedItemCollection](../../docs-ref-autogen/excel/excel.nameditemcollection.yml): A collection of the **NamedItem** objects in a workbook.
+- [NamedItem](/javascript/api/excel/excel.nameditem): Represents a defined name for a range of cells or a value. 
+    - [NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): A collection of the **NamedItem** objects in a workbook.
 
-- [Binding](../../docs-ref-autogen/excel/excel.binding.yml): An abstract class that represents a binding to a section of the workbook.
-    - [BindingCollection](../../docs-ref-autogen/excel/excel.bindingcollection.yml): A collection of the **Binding** objects in a workbook.
+- [Binding](/javascript/api/excel/excel.binding): An abstract class that represents a binding to a section of the workbook.
+    - [BindingCollection](/javascript/api/excel/excel.bindingcollection): A collection of the **Binding** objects in a workbook.
 
 ## Excel JavaScript API open specifications
 
@@ -41,7 +41,7 @@ As we design and develop new APIs for Excel add-ins, we'll make them available f
 
 ## Excel JavaScript API reference
 
-For detailed information about Excel JavaScript API, see the [Excel JavaScript API reference documentation](../../docs-ref-autogen/excel.yml).
+For detailed information about Excel JavaScript API, see the [Excel JavaScript API reference documentation](/javascript/api/excel).
 
 ## See also
 
