@@ -11,9 +11,18 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
+##### Members and methods
+
+| Member | Type |
+|--------|------|
+| [AsyncResultStatus](#asyncresultstatus-string) | Member |
+| [CoercionType](#coerciontype-string) | Member |
+| [EventType](#eventtype-string) | Member |
+| [SourceProperty](#sourceproperty-string) | Member |
+
 ### Namespaces
 
-[context](/javascript/office/objectmodel/preview-requirement-set/office-context): Provides shared interfaces from the Office add-ins API's context namespace for use in the Outlook add-in API.
+[context](office.context.md): Provides shared interfaces from the Office add-ins API's context namespace for use in the Outlook add-in API.
 
 [MailboxEnums](/javascript/api/outlook/office.mailboxenums.attachmenttype): Includes the ItemType, EntityType, AttachmentType, RecipientType, ResponseType, and ItemNotificationMessageType enumerations.
 

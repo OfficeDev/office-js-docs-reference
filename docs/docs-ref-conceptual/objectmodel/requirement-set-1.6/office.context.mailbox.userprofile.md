@@ -11,6 +11,15 @@
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
+##### Members and methods
+
+| Member | Type |
+|--------|------|
+| [accountType](#accounttype-string) | Member |
+| [displayName](#displayname-string) | Member |
+| [emailAddress](#emailaddress-string) | Member |
+| [timeZone](#timezone-string) | Member |
+
 ### Members
 
 ####  accountType :String

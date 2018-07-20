@@ -2,7 +2,7 @@
 
 ### [Office](Office.md).context
 
-The Office.context namespace provides shared interfaces that are used by add-ins in all of the Office apps. This listing documents only those interfaces that are used by Outlook add-ins. For a full listing of the Office.context namespace, see the [Office.context reference in the Shared API](/javascript/api/office_1_5/office.context).
+The Office.context namespace provides shared interfaces that are used by add-ins in all of the Office apps. This listing documents only those interfaces that are used by Outlook add-ins. For a full listing of the Office.context namespace, see the [Office.context reference in the Shared API](/javascript/api/office/office.context).
 
 ##### Requirements
 
@@ -17,11 +17,11 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 |--------|------|
 | [displayLanguage](#displaylanguage-string) | Member |
 | [officeTheme](#officetheme-object) | Member |
-| [roamingSettings](#roamingsettings-roamingsettings) | Member |
+| [roamingSettings](#roamingsettings-roamingsettingsjavascriptapioutlook15officeroamingsettings) | Member |
 
 ### Namespaces
 
-[mailbox](/javascript/office/objectmodel/requirement-set-1.5/office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+[mailbox](office.context.mailbox.md): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ### Members
 

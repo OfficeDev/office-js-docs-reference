@@ -16,14 +16,14 @@ Requirement set 1.5 includes all of the features of [Requirement set 1.4](../req
 
 ### Change log
 
-- Added [Office.context.mailbox.addHandlerAsync](/Office-mailbox.md#addhandlerasynceventtype-handler-options-callback): Adds an event handler for a supported event.
-- Added [Office.EventType](/javascript/api/office/office.eventtype): Specifies the event associated with an event handler.
-- Added [Office.context.mailbox.restUrl](https://dev.office.com/reference/add-ins/outlook/1.5/Office.context.mailbox?product=outlook&version=v1.5#resturl-string): Gets the URL of the REST endpoint for this email account.
-- Modified [Office.context.mailbox.getCallbackTokenAsync](/Office-mailbox.md#getcallbacktokenasyncoptions-callback): A new version of this method with a new signature (`getCallbackTokenAsync([options], callback)`) has been added. The original version is still available and is unchanged.
-- Added [Office.context.ui.closeContainer](/javascript/api/office/office.officeui): 
-- Modified [Office.context.mailbox.item.addFileAttachmentAsync](/Office-item.md#addfileattachmentasyncuri-attachmentname-options-callback): A new value in the `options` dictionary called `isInline`, used to specify that an image is used inline in the message body.
-- Modified [Office.context.mailbox.item.displayReplyAllForm](/Office-item.md#displayreplyallformformdata): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
-- Modified [Office.context.mailbox.item.displayReplyForm](/Office-item.md#displayreplyformformdata): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
+- Added [Office.context.mailbox.addHandlerAsync](office.context.mailbox.md#addhandlerasynceventtype-handler-options-callback): Adds an event handler for a supported event.
+- Added [Office.EventType](office.md#eventtype-string): Specifies the event associated with an event handler.
+- Added [Office.context.mailbox.restUrl](office.context.mailbox.md#resturl-string): Gets the URL of the REST endpoint for this email account.
+- Modified [Office.context.mailbox.getCallbackTokenAsync](office.context.mailbox.md#getcallbacktokenasyncoptions-callback): A new version of this method with a new signature (`getCallbackTokenAsync([options], callback)`) has been added. The original version is still available and is unchanged.
+- Added [Office.context.ui.closeContainer](/javascript/api/office/office.ui#closecontainer--).
+- Modified [Office.context.mailbox.item.addFileAttachmentAsync](office.context.mailbox.item.md#addfileattachmentasyncuri-attachmentname-options-callback): A new value in the `options` dictionary called `isInline`, used to specify that an image is used inline in the message body.
+- Modified [Office.context.mailbox.item.displayReplyAllForm](office.context.mailbox.item.md#displayreplyallformformdata): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
+- Modified [Office.context.mailbox.item.displayReplyForm](office.context.mailbox.item.md#displayreplyformformdata): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
 
 ## See also
 

@@ -195,8 +195,8 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 |Name| Type| Description|
 |---|---|---|
 | `parameters` | Object | A dictionary of parameters describing the new appointment. |
-| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_2/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
-| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_2/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_2/office.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_2/office.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
 | `parameters.start` | Date | A `Date` object specifying the start date and time of the appointment. |
 | `parameters.end` | Date | A `Date` object specifying the end date and time of the appointment. |
 | `parameters.location` | String | A string containing the location of the appointment. The string is limited to a maximum of 255 characters. |
@@ -246,9 +246,7 @@ Your app must have the **ReadItem** permission specified in its manifest to call
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_2/office.mailboxenums.asyncresult) object.
-
-The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object.<br/><br/>The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
@@ -281,9 +279,7 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_2/office.mailboxenums.asyncresult) object.
-
-The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object.<br/><br/>The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
@@ -332,7 +328,7 @@ Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsReq
 > [!NOTE]
 > The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
-#### Version differences
+##### Version differences
 
 When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to `ISO-8859-1`.
 
@@ -347,7 +343,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_2/office.mailboxenums.asyncresult) object.<br/><br/>The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object.<br/><br/>The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements

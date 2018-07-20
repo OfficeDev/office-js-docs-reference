@@ -12,9 +12,17 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read|
 
+##### Members and methods
+
+| Member | Type |
+|--------|------|
+| [displayLanguage](#displaylanguage-string) | Member |
+| [officeTheme](#officetheme-object) | Member |
+| [roamingSettings](#roamingsettings-roamingsettingsjavascriptapioutlookofficeroamingsettings) | Member |
+
 ### Namespaces
 
-[mailbox](/javascript/office/objectmodel/preview-requirement-set/office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+[mailbox](office.context.mailbox.md): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ### Members
 
