@@ -122,4 +122,4 @@ For detailed information about the Word JavaScript API, see the [Word JavaScript
 
 * [Word add-ins overview](https://docs.microsoft.com/office/dev/add-ins/word/word-add-ins-programming-overview)
 * [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
-* [Word add-in samples on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=Word)
+* [Word add-in samples on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&q=Word)

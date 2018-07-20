@@ -47,4 +47,4 @@ For detailed information about Excel JavaScript API, see the [Excel JavaScript A
 
 - [Excel add-ins overview](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-overview)
 - [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
-- [Word add-in samples on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&query=Excel)
+- [Excel add-in samples on GitHub](https://github.com/OfficeDev?utf8=%E2%9C%93&q=Excel)
