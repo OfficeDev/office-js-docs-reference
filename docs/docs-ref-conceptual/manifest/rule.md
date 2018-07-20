@@ -20,7 +20,7 @@ The type of rule can be one of the following.
 - [ItemIs](#itemis-rule)
 - [ItemHasAttachment](#itemhasattachment-rule)
 - [ItemHasKnownEntity](#itemhasknownentity-rule)
-- [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch)
+- [ItemHasRegularExpressionMatch](#itemhasregularexpressionmatch-rule)
 - [RuleCollection](#rulecollection)
 
 ## ItemIs rule
@@ -114,7 +114,6 @@ Defines a collection of rules and the logical operator to use when evaluating th
 
 ## See also
 
-- [Activate a mail add-in in Outlook for a specific message class](http://msdn.microsoft.com/library/f464a152-2dff-4fb3-bf98-c1a3639c3e80%28Office.15%29.aspx) 
 - [Activation rules for Outlook add-ins](https://docs.microsoft.com/outlook/add-ins/activation-rules)
 - [Match strings in an Outlook item as well-known entities](https://docs.microsoft.com/outlook/add-ins/match-strings-in-an-item-as-well-known-entities)    
 - [Use regular expression activation rules to show an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-regular-expressions-to-show-an-outlook-add-in)
