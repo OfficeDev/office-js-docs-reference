@@ -6,7 +6,7 @@ Defines a group of UI controls in a tab.  On custom tabs, the add-in can create 
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
-|  [id](#xsitype)  |  Yes  | A unique ID for the group.|
+|  [id](#id-attribute)  |  Yes  | A unique ID for the group.|
 
 ### id attribute
 

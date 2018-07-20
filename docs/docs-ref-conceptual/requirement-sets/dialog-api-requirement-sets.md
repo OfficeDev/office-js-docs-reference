@@ -22,7 +22,7 @@ For information about common API requirement sets, see [Office common API requir
 ## Dialog API 1.1 
 
 The Dialog API 1.1 is the first version of the API. For details about the API, see the [Dialog API
-](../../docs-ref-autogen/office/office.ui.yml) reference topic.
+](/javascript/api/office/office.ui) reference topic.
 
 ## See also
 

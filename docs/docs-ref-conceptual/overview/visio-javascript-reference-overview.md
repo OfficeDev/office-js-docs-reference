@@ -74,7 +74,7 @@ object.load(string: properties); //or object.load(array: properties); //or objec
 ```
 
 1. **properties** is the list of properties and/or relationship names to be loaded, specified as comma-delimited strings or array of names. See **.load()** methods under each object for details.
-2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](../../docs-ref-autogen/office/officeextension.loadoption.yml) for details.
+2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](/javascript/api/office/officeextension.loadoption) for details.
 
 ## Example: Printing all shapes text in active page
 
@@ -193,4 +193,4 @@ As we design and develop new APIs, we'll make them available for your feedback o
 
 ## Visio JavaScript API reference
 
-For detailed information about Visio JavaScript API, see the [Visio JavaScript API reference documentation](../../docs-ref-autogen/visio.yml).
+For detailed information about Visio JavaScript API, see the [Visio JavaScript API reference documentation](/javascript/api/visio).
