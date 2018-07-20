@@ -155,6 +155,15 @@ items:
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using the request context of
       previously-created API objects.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures:
+
+
+      `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>):
+      Promise<T>;`
     name: 'run(objects, batch)'
     fullName: onenote.OneNote.run
     langs:

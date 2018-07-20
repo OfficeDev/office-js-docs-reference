@@ -319,6 +319,8 @@ export declare namespace Visio {
          * Occurs when the data is refreshed in the diagram.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;
         /**
@@ -326,6 +328,8 @@ export declare namespace Visio {
          * Occurs when the Document is loaded, refreshed, or changed.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;
         /**
@@ -333,6 +337,8 @@ export declare namespace Visio {
          * Occurs when the page is finished loading.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;
         /**
@@ -340,6 +346,8 @@ export declare namespace Visio {
          * Occurs when the current selection of shapes changes.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;
         /**
@@ -347,6 +355,8 @@ export declare namespace Visio {
          * Occurs when the user moves the mouse pointer into the bounding box of a shape.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;
         /**
@@ -354,6 +364,8 @@ export declare namespace Visio {
          * Occurs when the user moves the mouse out of the bounding box of a shape.
          *
          * [Api set:  1.1]
+         *
+         * @eventproperty
          */
         readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;
         toJSON(): Visio.Interfaces.DocumentData;
@@ -2527,6 +2539,15 @@ export declare namespace Visio {
      * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * 
+     * @remarks
+     * In addition to this signature, the method also has the following signatures:
+     * 
+     * `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
+     * 
+     * `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
+     * 
+     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
 }

@@ -35524,7 +35524,74 @@
               "text": "Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects."
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "In addition to this signature, the method also has the following signatures:"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(batch: (context: Word.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            }
+          ],
           "isBeta": false
         },
         "SearchOptions": {

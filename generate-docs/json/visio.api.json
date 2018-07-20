@@ -1115,7 +1115,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "onDocumentLoadComplete": {
               "kind": "property",
@@ -1143,7 +1143,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "onPageLoadComplete": {
               "kind": "property",
@@ -1171,7 +1171,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "onSelectionChanged": {
               "kind": "property",
@@ -1199,7 +1199,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "onShapeMouseEnter": {
               "kind": "property",
@@ -1227,7 +1227,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "onShapeMouseLeave": {
               "kind": "property",
@@ -1255,7 +1255,7 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
-              "isEventProperty": false
+              "isEventProperty": true
             },
             "pages": {
               "kind": "property",
@@ -8123,7 +8123,105 @@
               "text": "Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects."
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "In addition to this signature, the method also has the following signatures:"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(batch: (context: Visio.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`run"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": "): Promise"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<T>"
+            },
+            {
+              "kind": "text",
+              "text": ";`"
+            }
+          ],
           "isBeta": false
         },
         "Selection": {

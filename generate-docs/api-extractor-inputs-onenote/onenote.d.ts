@@ -6391,6 +6391,13 @@ export declare namespace OneNote {
      * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
      * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * 
+     * @remarks
+     * In addition to this signature, the method also has the following signatures:
+     * 
+     * `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
+     * 
+     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
 }

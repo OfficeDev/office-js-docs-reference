@@ -150,6 +150,15 @@ items:
     summary: >-
       Executes a batch script that performs actions on the Word object model, using the RequestContext of
       previously-created API objects.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures:
+
+
+      `run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>):
+      Promise<T>;`
     name: 'run(objects, batch)'
     fullName: word.Word.run
     langs:
