@@ -89,6 +89,19 @@ items:
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the request context of
       previously-created API objects.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures:
+
+
+      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
+      Visio.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
+      Promise<T>;`
     name: 'run(objects, batch)'
     fullName: visio.Visio.run
     langs:

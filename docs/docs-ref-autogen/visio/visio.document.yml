@@ -179,7 +179,7 @@ items:
     fullName: visio.Visio.Document.onDataRefreshComplete
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
       return:
@@ -194,7 +194,7 @@ items:
     fullName: visio.Visio.Document.onDocumentLoadComplete
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
       return:
@@ -209,7 +209,7 @@ items:
     fullName: visio.Visio.Document.onPageLoadComplete
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
       return:
@@ -224,7 +224,7 @@ items:
     fullName: visio.Visio.Document.onSelectionChanged
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;'
       return:
@@ -239,7 +239,7 @@ items:
     fullName: visio.Visio.Document.onShapeMouseEnter
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
       return:
@@ -254,7 +254,7 @@ items:
     fullName: visio.Visio.Document.onShapeMouseLeave
     langs:
       - typeScript
-    type: property
+    type: event
     syntax:
       content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
       return:
