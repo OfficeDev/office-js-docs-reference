@@ -201,9 +201,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.ChartSeriesCollection;
+      content: 'load(option?: string | string[]): Excel.ChartSeriesCollection;'
       return:
         type:
           - excel.Excel.ChartSeriesCollection
@@ -212,7 +210,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ChartSeriesCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesCollection.toJSON

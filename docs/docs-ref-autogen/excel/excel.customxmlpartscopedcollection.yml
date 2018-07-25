@@ -252,9 +252,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
+      content: 'load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;'
       return:
         type:
           - excel.Excel.CustomXmlPartScopedCollection
@@ -263,7 +261,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.CustomXmlPartScopedCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomXmlPartScopedCollection.toJSON

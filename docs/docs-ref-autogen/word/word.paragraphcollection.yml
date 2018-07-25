@@ -109,9 +109,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ParagraphCollection;
+      content: 'load(option?: string | string[]): Word.ParagraphCollection;'
       return:
         type:
           - Word.ParagraphCollection
@@ -160,7 +158,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.ParagraphCollection.toJSON
     name: toJSON()
     fullName: word.Word.ParagraphCollection.toJSON

@@ -147,9 +147,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
+      content: 'load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;'
       return:
         type:
           - excel.Excel.ConditionalRangeBorderCollection
@@ -158,7 +156,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ConditionalRangeBorderCollection.right
     summary: |-
       Gets the right border. Read-only.

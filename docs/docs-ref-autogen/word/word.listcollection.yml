@@ -141,9 +141,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.ListCollection;
+      content: 'load(option?: string | string[]): Word.ListCollection;'
       return:
         type:
           - word.Word.ListCollection
@@ -152,7 +150,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.ListCollection.toJSON
     name: toJSON()
     fullName: word.Word.ListCollection.toJSON

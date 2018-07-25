@@ -205,9 +205,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
-        OneNote.PageContentCollection;
+      content: 'load(option?: string | string[]): OneNote.PageContentCollection;'
       return:
         type:
           - onenote.OneNote.PageContentCollection
@@ -216,7 +214,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: onenote.OneNote.PageContentCollection.toJSON
     name: toJSON()
     fullName: onenote.OneNote.PageContentCollection.toJSON

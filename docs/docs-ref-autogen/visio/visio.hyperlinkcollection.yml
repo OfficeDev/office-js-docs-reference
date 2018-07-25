@@ -120,9 +120,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.HyperlinkCollection;
+      content: 'load(option?: string | string[]): Visio.HyperlinkCollection;'
       return:
         type:
           - visio.Visio.HyperlinkCollection
@@ -131,7 +129,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: visio.Visio.HyperlinkCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.HyperlinkCollection.toJSON

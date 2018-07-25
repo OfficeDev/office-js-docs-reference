@@ -672,8 +672,6 @@ export declare namespace Visio {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
-
-        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
         load(option?: string | string[]): Visio.PageCollection;
         load(option?: OfficeExtension.LoadOption): Visio.PageCollection;
         toJSON(): Visio.Interfaces.PageCollectionData;
@@ -715,8 +713,6 @@ export declare namespace Visio {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
-
-        load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
         load(option?: string | string[]): Visio.ShapeCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;
         toJSON(): Visio.Interfaces.ShapeCollectionData;
@@ -1032,8 +1028,6 @@ export declare namespace Visio {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
-
-        load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
         load(option?: string | string[]): Visio.ShapeDataItemCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;
         toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;
@@ -1129,8 +1123,6 @@ export declare namespace Visio {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
-
-        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
         load(option?: string | string[]): Visio.HyperlinkCollection;
         load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;
         toJSON(): Visio.Interfaces.HyperlinkCollectionData;
@@ -1226,8 +1218,6 @@ export declare namespace Visio {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
-
-        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
         load(option?: string | string[]): Visio.CommentCollection;
         load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;
         toJSON(): Visio.Interfaces.CommentCollectionData;
@@ -1437,16 +1427,7 @@ export declare namespace Visio {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        export interface CollectionLoadOptions {
-            /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
-            $top?: number;
-            /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
-            $skip?: number;
-        }
+        
         /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
         export interface ApplicationUpdateData {
             /**
@@ -1949,513 +1930,105 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        export interface ApplicationLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Show or hide the iFrame application borders.
-             *
-             * [Api set:  1.1]
-             */
-            showBorders?: boolean;
-            /**
-             *
-             * Show or hide the standard toolbars.
-             *
-             * [Api set:  1.1]
-             */
-            showToolbars?: boolean;
-        }
+        
         /**
          *
          * Represents the Document class.
          *
          * [Api set:  1.1]
          */
-        export interface DocumentLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents a Visio application instance that contains this document.
-            *
-            * [Api set:  1.1]
-            */
-            application?: Visio.Interfaces.ApplicationLoadOptions;
-            /**
-            *
-            * Returns the DocumentView object.
-            *
-            * [Api set:  1.1]
-            */
-            view?: Visio.Interfaces.DocumentViewLoadOptions;
-        }
+        
         /**
          *
          * Represents the DocumentView class.
          *
          * [Api set:  1.1]
          */
-        export interface DocumentViewLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Disable Hyperlinks.
-             *
-             * [Api set:  1.1]
-             */
-            disableHyperlinks?: boolean;
-            /**
-             *
-             * Disable Pan.
-             *
-             * [Api set:  1.1]
-             */
-            disablePan?: boolean;
-            /**
-             *
-             * Disable Zoom.
-             *
-             * [Api set:  1.1]
-             */
-            disableZoom?: boolean;
-            /**
-             *
-             * Hide Diagram Boundary.
-             *
-             * [Api set:  1.1]
-             */
-            hideDiagramBoundary?: boolean;
-        }
+        
         /**
          *
          * Represents the Page class.
          *
          * [Api set:  1.1]
          */
-        export interface PageLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns the view of the page.
-            *
-            * [Api set:  1.1]
-            */
-            view?: Visio.Interfaces.PageViewLoadOptions;
-            /**
-             *
-             * Returns the height of the page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * Index of the Page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * Whether the page is a background page or not. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            isBackground?: boolean;
-            /**
-             *
-             * Page name. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Returns the width of the page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            width?: boolean;
-        }
+        
         /**
          *
          * Represents the PageView class.
          *
          * [Api set:  1.1]
          */
-        export interface PageViewLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
-             *
-             * [Api set:  1.1]
-             */
-            zoom?: boolean;
-        }
+        
         /**
          *
          * Represents a collection of Page objects that are part of the document.
          *
          * [Api set:  1.1]
          */
-        export interface PageCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the view of the page.
-            *
-            * [Api set:  1.1]
-            */
-            view?: Visio.Interfaces.PageViewLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the height of the page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Index of the Page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            isBackground?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Page name. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the width of the page. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            width?: boolean;
-        }
+        
         /**
          *
          * Represents the Shape Collection.
          *
          * [Api set:  1.1]
          */
-        export interface ShapeCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the view of the shape.
-            *
-            * [Api set:  1.1]
-            */
-            view?: Visio.Interfaces.ShapeViewLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Shape's identifier. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Shape's name. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape explicitly.
-             *
-             * [Api set:  1.1]
-             */
-            select?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Shape's text. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            text?: boolean;
-        }
+        
         /**
          *
          * Represents the Shape class.
          *
          * [Api set:  1.1]
          */
-        export interface ShapeLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns the view of the shape.
-            *
-            * [Api set:  1.1]
-            */
-            view?: Visio.Interfaces.ShapeViewLoadOptions;
-            /**
-             *
-             * Shape's identifier. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Shape's name. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Returns true, if shape is selected. User can set true to select the shape explicitly.
-             *
-             * [Api set:  1.1]
-             */
-            select?: boolean;
-            /**
-             *
-             * Shape's text. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            text?: boolean;
-        }
+        
         /**
          *
          * Represents the ShapeView class.
          *
          * [Api set:  1.1]
          */
-        export interface ShapeViewLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the highlight around the shape.
-             *
-             * [Api set:  1.1]
-             */
-            highlight?: boolean;
-        }
+        
         /**
          *
          * Represents the ShapeDataItemCollection for a given Shape.
          *
          * [Api set:  1.1]
          */
-        export interface ShapeDataItemCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            format?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            formattedValue?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            label?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            value?: boolean;
-        }
+        
         /**
          *
          * Represents the ShapeDataItem.
          *
          * [Api set:  1.1]
          */
-        export interface ShapeDataItemLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * A string that specifies the format of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            format?: boolean;
-            /**
-             *
-             * A string that specifies the formatted value of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            formattedValue?: boolean;
-            /**
-             *
-             * A string that specifies the label of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            label?: boolean;
-            /**
-             *
-             * A string that specifies the value of the shape data item. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            value?: boolean;
-        }
+        
         /**
          *
          * Represents the Hyperlink Collection.
          *
          * [Api set:  1.1]
          */
-        export interface HyperlinkCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            address?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            description?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            extraInfo?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            subAddress?: boolean;
-        }
+        
         /**
          *
          * Represents the Hyperlink.
          *
          * [Api set:  1.1]
          */
-        export interface HyperlinkLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets the address of the Hyperlink object. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            address?: boolean;
-            /**
-             *
-             * Gets the description of a hyperlink. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            description?: boolean;
-            /**
-             *
-             * Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            extraInfo?: boolean;
-            /**
-             *
-             * Gets the sub-address of the Hyperlink object. Read-only.
-             *
-             * [Api set:  1.1]
-             */
-            subAddress?: boolean;
-        }
+        
         /**
          *
          * Represents the CommentCollection for a given Shape.
          *
          * [Api set:  1.1]
          */
-        export interface CommentCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
-             *
-             * [Api set:  1.1]
-             */
-            author?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that specifies the date when the comment was created.
-             *
-             * [Api set:  1.1]
-             */
-            date?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A string that contains the comment text.
-             *
-             * [Api set:  1.1]
-             */
-            text?: boolean;
-        }
+        
         /**
          *
          * Represents the Comment.
          *
          * [Api set:  1.1]
          */
-        export interface CommentLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * A string that specifies the name of the author of the comment.
-             *
-             * [Api set:  1.1]
-             */
-            author?: boolean;
-            /**
-             *
-             * A string that specifies the date when the comment was created.
-             *
-             * [Api set:  1.1]
-             */
-            date?: boolean;
-            /**
-             *
-             * A string that contains the comment text.
-             *
-             * [Api set:  1.1]
-             */
-            text?: boolean;
-        }
+        
     }
 }
 export declare namespace Visio {

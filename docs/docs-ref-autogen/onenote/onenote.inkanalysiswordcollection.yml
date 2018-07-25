@@ -115,9 +115,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions &
-        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
+      content: 'load(option?: string | string[]): OneNote.InkAnalysisWordCollection;'
       return:
         type:
           - onenote.OneNote.InkAnalysisWordCollection
@@ -126,7 +124,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: onenote.OneNote.InkAnalysisWordCollection.toJSON
     name: toJSON()
     fullName: onenote.OneNote.InkAnalysisWordCollection.toJSON

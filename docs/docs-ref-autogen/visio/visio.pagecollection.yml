@@ -109,9 +109,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.PageCollection;
+      content: 'load(option?: string | string[]): Visio.PageCollection;'
       return:
         type:
           - Visio.PageCollection
@@ -120,7 +118,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: visio.Visio.PageCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.PageCollection.toJSON

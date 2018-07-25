@@ -110,9 +110,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.ShapeCollection;
+      content: 'load(option?: string | string[]): Visio.ShapeCollection;'
       return:
         type:
           - visio.Visio.ShapeCollection
@@ -121,7 +119,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: visio.Visio.ShapeCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.ShapeCollection.toJSON

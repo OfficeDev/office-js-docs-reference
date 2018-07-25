@@ -247,9 +247,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
-        OneNote.ParagraphCollection;
+      content: 'load(option?: string | string[]): OneNote.ParagraphCollection;'
       return:
         type:
           - onenote.OneNote.ParagraphCollection
@@ -258,7 +256,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: onenote.OneNote.ParagraphCollection.toJSON
     name: toJSON()
     fullName: onenote.OneNote.ParagraphCollection.toJSON

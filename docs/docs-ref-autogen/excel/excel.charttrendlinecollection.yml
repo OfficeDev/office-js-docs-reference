@@ -130,9 +130,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.ChartTrendlineCollection;
+      content: 'load(option?: string | string[]): Excel.ChartTrendlineCollection;'
       return:
         type:
           - excel.Excel.ChartTrendlineCollection
@@ -141,7 +139,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ChartTrendlineCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendlineCollection.toJSON

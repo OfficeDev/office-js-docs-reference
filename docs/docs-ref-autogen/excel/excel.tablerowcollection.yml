@@ -244,9 +244,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.TableRowCollection;
+      content: 'load(option?: string | string[]): Excel.TableRowCollection;'
       return:
         type:
           - excel.Excel.TableRowCollection
@@ -255,7 +253,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.TableRowCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableRowCollection.toJSON

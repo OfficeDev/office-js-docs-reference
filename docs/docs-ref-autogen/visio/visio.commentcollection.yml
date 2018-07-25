@@ -122,9 +122,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.CommentCollection;
+      content: 'load(option?: string | string[]): Visio.CommentCollection;'
       return:
         type:
           - visio.Visio.CommentCollection
@@ -133,7 +131,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: visio.Visio.CommentCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.CommentCollection.toJSON

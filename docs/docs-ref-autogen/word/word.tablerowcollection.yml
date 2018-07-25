@@ -75,9 +75,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.TableRowCollection;
+      content: 'load(option?: string | string[]): Word.TableRowCollection;'
       return:
         type:
           - Word.TableRowCollection
@@ -86,7 +84,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.TableRowCollection.toJSON
     name: toJSON()
     fullName: word.Word.TableRowCollection.toJSON

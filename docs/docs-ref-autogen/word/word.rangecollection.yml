@@ -75,9 +75,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.RangeCollection;
+      content: 'load(option?: string | string[]): Word.RangeCollection;'
       return:
         type:
           - word.Word.RangeCollection
@@ -86,7 +84,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.RangeCollection.toJSON
     name: toJSON()
     fullName: word.Word.RangeCollection.toJSON
