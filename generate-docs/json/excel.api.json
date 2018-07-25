@@ -108,7 +108,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;",
+              "signature": "load(option?: string | string[]): Excel.Application;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -119,10 +119,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ApplicationLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -136,13 +141,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -454,7 +452,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;",
+              "signature": "load(option?: string | string[]): Excel.Binding;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -465,10 +463,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.BindingLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -482,13 +485,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Binding` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1055,7 +1051,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -1072,13 +1073,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.BindingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2153,7 +2147,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.CellValueConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2164,10 +2158,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.CellValueConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -2181,13 +2180,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CellValueConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2667,7 +2659,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;",
+              "signature": "load(option?: string | string[]): Excel.Chart;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2678,10 +2670,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -2695,13 +2692,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3222,7 +3212,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartAreaFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3233,10 +3223,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAreaFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3250,13 +3245,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAreaFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3469,7 +3457,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;",
+              "signature": "load(option?: string | string[]): Excel.ChartAxes;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3480,10 +3468,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAxesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3497,13 +3490,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3912,7 +3898,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;",
+              "signature": "load(option?: string | string[]): Excel.ChartAxis;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3923,10 +3909,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAxisLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3940,13 +3931,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5052,7 +5036,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartAxisFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5063,10 +5047,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAxisFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -5080,13 +5069,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAxisFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5486,7 +5468,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;",
+              "signature": "load(option?: string | string[]): Excel.ChartAxisTitle;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5497,10 +5479,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAxisTitleLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -5514,13 +5501,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5733,7 +5713,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartAxisTitleFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5744,10 +5724,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartAxisTitleFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -5761,13 +5746,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartAxisTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6013,7 +5991,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;",
+              "signature": "load(option?: string | string[]): Excel.ChartBorder;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6024,10 +6002,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartBorderLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -6041,13 +6024,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6495,7 +6471,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -6512,13 +6493,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6586,7 +6560,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;",
+              "signature": "load(option?: string | string[]): Excel.ChartDataLabel;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6597,10 +6571,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartDataLabelLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -6614,13 +6593,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7029,7 +7001,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartDataLabelFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7040,10 +7012,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartDataLabelFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -7057,13 +7034,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartDataLabelFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7330,7 +7300,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;",
+              "signature": "load(option?: string | string[]): Excel.ChartDataLabels;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7341,10 +7311,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartDataLabelsLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -7358,13 +7333,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7952,7 +7920,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;",
+              "signature": "load(option?: string | string[]): Excel.ChartFont;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7963,10 +7931,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartFontLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -7980,13 +7953,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8227,7 +8193,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;",
+              "signature": "load(option?: string | string[]): Excel.ChartFormatString;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8238,10 +8204,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartFormatStringLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8255,13 +8226,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartFormatString` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8418,7 +8382,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;",
+              "signature": "load(option?: string | string[]): Excel.ChartGridlines;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8429,10 +8393,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartGridlinesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8446,13 +8415,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartGridlines` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8637,7 +8599,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartGridlinesFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8648,10 +8610,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartGridlinesFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8665,13 +8632,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8912,7 +8872,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;",
+              "signature": "load(option?: string | string[]): Excel.ChartLegend;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8923,10 +8883,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartLegendLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8940,13 +8905,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9243,7 +9201,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;",
+              "signature": "load(option?: string | string[]): Excel.ChartLegendEntry;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9254,10 +9212,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartLegendEntryLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -9271,13 +9234,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartLegendEntry` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9541,7 +9497,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -9558,13 +9519,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartLegendEntryCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9688,7 +9642,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartLegendFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9699,10 +9653,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartLegendFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -9716,13 +9675,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartLegendFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10008,7 +9960,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartLineFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10019,10 +9971,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartLineFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -10036,13 +9993,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10503,7 +10453,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;",
+              "signature": "load(option?: string | string[]): Excel.ChartPoint;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10514,10 +10464,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartPointLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -10531,13 +10486,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10862,7 +10810,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartPointFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10873,10 +10821,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartPointFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -10890,13 +10843,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartPointFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -11160,7 +11106,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -11177,13 +11128,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartPointsCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -11450,7 +11394,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;",
+              "signature": "load(option?: string | string[]): Excel.ChartSeries;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11461,10 +11405,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartSeriesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -11478,13 +11427,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12266,7 +12208,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -12283,13 +12230,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartSeriesCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12413,7 +12353,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartSeriesFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12424,10 +12364,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartSeriesFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -12441,13 +12386,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartSeriesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12866,7 +12804,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;",
+              "signature": "load(option?: string | string[]): Excel.ChartTitle;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12877,10 +12815,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartTitleLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -12894,13 +12837,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -13409,7 +13345,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartTitleFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -13420,10 +13356,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartTitleFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -13437,13 +13378,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -13720,7 +13654,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;",
+              "signature": "load(option?: string | string[]): Excel.ChartTrendline;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -13731,10 +13665,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartTrendlineLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -13748,13 +13687,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14146,7 +14078,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -14163,13 +14100,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartTrendlineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14265,7 +14195,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;",
+              "signature": "load(option?: string | string[]): Excel.ChartTrendlineFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14276,10 +14206,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ChartTrendlineFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -14293,13 +14228,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ChartTrendlineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -15252,7 +15180,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.ColorScaleConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15263,10 +15191,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ColorScaleConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -15280,13 +15213,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16009,7 +15935,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16020,10 +15946,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -16037,13 +15968,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16312,7 +16236,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16323,10 +16247,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -16340,13 +16269,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16957,7 +16879,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16968,10 +16890,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -16985,13 +16912,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17603,7 +17523,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -17620,13 +17545,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalFormatCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18190,7 +18108,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalFormatRule;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18201,10 +18119,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalFormatRuleLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -18218,13 +18141,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalFormatRule` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18779,7 +18695,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalRangeBorder;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18790,10 +18706,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalRangeBorderLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -18807,13 +18728,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalRangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19202,7 +19116,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -19219,13 +19138,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19516,7 +19428,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalRangeFill;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19527,10 +19439,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalRangeFillLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -19544,13 +19461,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalRangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19794,7 +19704,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalRangeFont;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19805,10 +19715,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalRangeFontLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -19822,13 +19737,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalRangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20135,7 +20043,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;",
+              "signature": "load(option?: string | string[]): Excel.ConditionalRangeFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20146,10 +20054,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.ConditionalRangeFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -20163,13 +20076,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.ConditionalRangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20659,7 +20565,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.CustomConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20670,10 +20576,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.CustomConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -20687,13 +20598,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20909,7 +20813,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;",
+              "signature": "load(option?: string | string[]): Excel.CustomProperty;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20920,10 +20824,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.CustomPropertyLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -20937,13 +20846,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -21366,7 +21268,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -21383,13 +21290,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -21547,7 +21447,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;",
+              "signature": "load(option?: string | string[]): Excel.CustomXmlPart;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21558,10 +21458,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.CustomXmlPartLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -21575,13 +21480,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -21960,7 +21858,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -21977,13 +21880,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomXmlPartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22264,7 +22160,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -22281,13 +22182,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.CustomXmlPartScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22439,7 +22333,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.DataBarConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22450,10 +22344,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.DataBarConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -22467,13 +22366,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23189,7 +23081,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;",
+              "signature": "load(option?: string | string[]): Excel.DocumentProperties;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23200,10 +23092,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.DocumentPropertiesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -23217,13 +23114,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24951,7 +24841,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;",
+              "signature": "load(option?: string | string[]): Excel.Filter;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24962,10 +24852,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.FilterLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -24979,13 +24874,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Filter` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26204,7 +26092,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;",
+              "signature": "load(option?: string | string[]): Excel.FormatProtection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26215,10 +26103,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.FormatProtectionLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -26232,13 +26125,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.FormatProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26945,7 +26831,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;",
+              "signature": "load(option?: string | string[]): FunctionResult<T>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26956,10 +26842,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.FunctionResultLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -49330,7 +49221,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.IconSetConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -49341,10 +49232,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.IconSetConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -49358,13 +49254,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.IconSetConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -90243,7 +90132,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;",
+              "signature": "load(option?: string | string[]): Excel.NamedItem;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -90254,10 +90143,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.NamedItemLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -90271,13 +90165,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.NamedItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -90602,7 +90489,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;",
+              "signature": "load(option?: string | string[]): Excel.NamedItemArrayValues;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -90613,10 +90500,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.NamedItemArrayValuesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -90630,13 +90522,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.NamedItemArrayValues` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -91057,7 +90942,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -91074,13 +90964,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -91306,7 +91189,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;",
+              "signature": "load(option?: string | string[]): Excel.PivotTable;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -91317,10 +91200,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.PivotTableLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -91334,13 +91222,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -91707,7 +91588,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -91724,13 +91610,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.PivotTableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -91857,7 +91736,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -91868,10 +91747,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -91885,13 +91769,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -93640,7 +93517,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;",
+              "signature": "load(option?: string | string[]): Excel.Range;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -93651,10 +93528,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -93668,13 +93550,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -94324,7 +94199,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;",
+              "signature": "load(option?: string | string[]): Excel.RangeBorder;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -94335,10 +94210,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeBorderLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -94352,13 +94232,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -94719,7 +94592,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -94736,13 +94614,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -94869,7 +94740,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;",
+              "signature": "load(option?: string | string[]): Excel.RangeFill;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -94880,10 +94751,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeFillLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -94897,13 +94773,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -95116,7 +94985,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;",
+              "signature": "load(option?: string | string[]): Excel.RangeFont;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -95127,10 +94996,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeFontLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -95144,13 +95018,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -95565,7 +95432,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;",
+              "signature": "load(option?: string | string[]): Excel.RangeFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -95576,10 +95443,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -95593,13 +95465,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -96581,7 +96446,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;",
+              "signature": "load(option?: string | string[]): Excel.RangeView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -96592,10 +96457,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.RangeViewLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -96609,13 +96479,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -97019,7 +96882,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -97036,13 +96904,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.RangeViewCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -97734,7 +97595,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;",
+              "signature": "load(option?: string | string[]): Excel.Setting;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -97745,10 +97606,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.SettingLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -97762,13 +97628,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Setting` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -98132,7 +97991,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -98149,13 +98013,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.SettingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -99066,7 +98923,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;",
+              "signature": "load(option?: string | string[]): Excel.Style;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -99077,10 +98934,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.StyleLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -99094,13 +98956,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Style` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -99573,7 +99428,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -99590,13 +99450,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.StyleCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -99993,7 +99846,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;",
+              "signature": "load(option?: string | string[]): Excel.Table;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -100004,10 +99857,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TableLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -100021,13 +99879,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -101073,7 +100924,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -101090,13 +100946,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -101431,7 +101280,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;",
+              "signature": "load(option?: string | string[]): Excel.TableColumn;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -101442,10 +101291,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TableColumnLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -101459,13 +101313,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableColumn` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -101941,7 +101788,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -101958,13 +101810,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableColumnCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -102129,7 +101974,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;",
+              "signature": "load(option?: string | string[]): Excel.TableRow;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -102140,10 +101985,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TableRowLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -102157,13 +102007,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -102532,7 +102375,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -102549,13 +102397,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -102915,7 +102756,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;",
+              "signature": "load(option?: string | string[]): Excel.TableSort;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -102926,10 +102767,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TableSortLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -102943,13 +102789,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TableSort` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -103132,7 +102971,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.TextConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -103143,10 +102982,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TextConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -103160,13 +103004,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TextConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -104231,7 +104068,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;",
+              "signature": "load(option?: string | string[]): Excel.TopBottomConditionalFormat;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -104242,10 +104079,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.TopBottomConditionalFormatLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -104259,13 +104101,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.TopBottomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -104678,7 +104513,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;",
+              "signature": "load(option?: string | string[]): Excel.Workbook;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -104689,10 +104524,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.WorkbookLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -104706,13 +104546,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -105121,7 +104954,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;",
+              "signature": "load(option?: string | string[]): Excel.WorkbookProtection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -105132,10 +104965,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.WorkbookProtectionLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -105149,13 +104987,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.WorkbookProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -106029,7 +105860,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;",
+              "signature": "load(option?: string | string[]): Excel.Worksheet;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -106040,10 +105871,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.WorksheetLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -106057,13 +105893,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -107344,7 +107173,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions"
@@ -107361,13 +107195,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -108053,7 +107880,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;",
+              "signature": "load(option?: string | string[]): Excel.WorksheetProtection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -108064,10 +107891,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.Interfaces.WorksheetProtectionLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -108081,13 +107913,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"

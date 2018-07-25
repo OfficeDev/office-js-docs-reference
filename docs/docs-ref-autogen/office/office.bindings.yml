@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Bindings
     summary: Represents the bindings the add-in has within the document.
-    remarks: 'Hosts:'
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.Bindings
     fullName: office.Office.Bindings
     langs:

@@ -995,7 +995,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;",
+              "signature": "load(option?: string | string[]): Word.Body;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1009,7 +1009,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.BodyLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3067,7 +3067,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;",
+              "signature": "load(option?: string | string[]): Word.ContentControl;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3081,7 +3081,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.ContentControlLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -4700,7 +4700,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;",
+              "signature": "load(option?: string | string[]): Word.CustomProperty;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4714,7 +4714,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.CustomPropertyLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -5376,7 +5376,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;",
+              "signature": "load(option?: string | string[]): Word.Document;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5390,7 +5390,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.DocumentLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -5710,7 +5710,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;",
+              "signature": "load(option?: string | string[]): Word.DocumentCreated;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5724,7 +5724,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.DocumentCreatedLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -6355,7 +6355,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;",
+              "signature": "load(option?: string | string[]): Word.DocumentProperties;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6369,7 +6369,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.DocumentPropertiesLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -6959,7 +6959,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.FontLoadOptions): Word.Font;",
+              "signature": "load(option?: string | string[]): Word.Font;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6973,7 +6973,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.FontLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8172,7 +8172,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;",
+              "signature": "load(option?: string | string[]): Word.InlinePicture;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8186,7 +8186,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.InlinePictureLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -29153,7 +29153,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.ListLoadOptions): Word.List;",
+              "signature": "load(option?: string | string[]): Word.List;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29167,7 +29167,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.ListLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -30249,7 +30249,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;",
+              "signature": "load(option?: string | string[]): Word.ListItem;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30263,7 +30263,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.ListItemLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -32094,7 +32094,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;",
+              "signature": "load(option?: string | string[]): Word.Paragraph;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32108,7 +32108,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.ParagraphLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -34422,7 +34422,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;",
+              "signature": "load(option?: string | string[]): Word.Range;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34436,7 +34436,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.RangeLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -35675,7 +35675,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;",
+              "signature": "load(option?: string | string[]): Word.SearchOptions;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35689,7 +35689,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.SearchOptionsLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -36156,7 +36156,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;",
+              "signature": "load(option?: string | string[]): Word.Section;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36170,7 +36170,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.SectionLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -38950,7 +38950,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.TableLoadOptions): Word.Table;",
+              "signature": "load(option?: string | string[]): Word.Table;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38964,7 +38964,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.TableLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -39913,7 +39913,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;",
+              "signature": "load(option?: string | string[]): Word.TableBorder;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -39927,7 +39927,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.TableBorderLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -40592,7 +40592,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;",
+              "signature": "load(option?: string | string[]): Word.TableCell;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -40606,7 +40606,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.TableCellLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -41841,7 +41841,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;",
+              "signature": "load(option?: string | string[]): Word.TableRow;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -41855,7 +41855,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.Interfaces.TableRowLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],

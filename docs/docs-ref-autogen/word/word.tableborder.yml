@@ -47,7 +47,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;'
+      content: 'load(option?: string | string[]): Word.TableBorder;'
       return:
         type:
           - word.Word.TableBorder
@@ -56,7 +56,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableBorderLoadOptions
+            - 'string | string[]'
   - uid: word.Word.TableBorder.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

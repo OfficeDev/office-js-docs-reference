@@ -119,10 +119,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -183,16 +179,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
+      content: 'load(option?: string | string[]): Excel.TableRow;'
       return:
         type:
           - excel.Excel.TableRow
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.TableRowLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.TableRow.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

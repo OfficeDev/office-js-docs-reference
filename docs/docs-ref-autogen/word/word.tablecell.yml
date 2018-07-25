@@ -277,7 +277,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
+      content: 'load(option?: string | string[]): Word.TableCell;'
       return:
         type:
           - Word.TableCell
@@ -286,7 +286,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableCellLoadOptions
+            - 'string | string[]'
   - uid: word.Word.TableCell.parentRow
     summary: |-
       Gets the parent row of the cell. Read-only.

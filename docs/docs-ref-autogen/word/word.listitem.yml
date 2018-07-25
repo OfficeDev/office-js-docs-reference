@@ -138,7 +138,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;'
+      content: 'load(option?: string | string[]): Word.ListItem;'
       return:
         type:
           - word.Word.ListItem
@@ -147,7 +147,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ListItemLoadOptions
+            - 'string | string[]'
   - uid: word.Word.ListItem.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

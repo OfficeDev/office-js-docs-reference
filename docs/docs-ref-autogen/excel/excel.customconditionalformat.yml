@@ -60,10 +60,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.CustomConditionalFormat` - Where option is a comma-delimited string or an
-      array of strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -80,16 +76,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;'
+      content: 'load(option?: string | string[]): Excel.CustomConditionalFormat;'
       return:
         type:
           - excel.Excel.CustomConditionalFormat
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.CustomConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format. Read-only.

@@ -95,10 +95,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -161,16 +157,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;'
+      content: 'load(option?: string | string[]): Excel.ChartLegend;'
       return:
         type:
           - excel.Excel.ChartLegend
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.ChartLegendLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ChartLegend.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.

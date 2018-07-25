@@ -164,10 +164,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.TableRow` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -283,16 +279,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;'
+      content: 'load(option?: string | string[]): OneNote.TableRow;'
       return:
         type:
           - OneNote.TableRow
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - OneNote.Interfaces.TableRowLoadOptions
+            - 'string | string[]'
   - uid: onenote.OneNote.TableRow.parentTable
     summary: |-
       Gets the parent table. Read-only.

@@ -36,7 +36,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;",
+              "signature": "load(option?: string | string[]): Visio.Application;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -47,10 +47,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.ApplicationLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -64,13 +69,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -504,7 +502,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;",
+              "signature": "load(option?: string | string[]): Visio.Comment;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -515,10 +513,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.CommentLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -532,13 +535,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -802,7 +798,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
@@ -819,13 +820,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1033,7 +1027,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;",
+              "signature": "load(option?: string | string[]): Visio.Document;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1044,10 +1038,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.DocumentLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -1061,13 +1060,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1660,7 +1652,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;",
+              "signature": "load(option?: string | string[]): Visio.DocumentView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1671,10 +1663,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.DocumentViewLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -1688,13 +1685,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2045,7 +2035,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;",
+              "signature": "load(option?: string | string[]): Visio.Hyperlink;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2056,10 +2046,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.HyperlinkLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -2073,13 +2068,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2282,7 +2270,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
@@ -2299,13 +2292,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6902,7 +6888,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;",
+              "signature": "load(option?: string | string[]): Visio.Page;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6913,10 +6899,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.PageLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -6930,13 +6921,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7284,7 +7268,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
@@ -7301,13 +7290,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7718,7 +7700,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;",
+              "signature": "load(option?: string | string[]): Visio.PageView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7729,10 +7711,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.PageViewLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -7746,13 +7733,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8260,7 +8240,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "string | string[]"
@@ -8277,13 +8262,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Selection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8575,7 +8553,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;",
+              "signature": "load(option?: string | string[]): Visio.Shape;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8586,10 +8564,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.ShapeLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -8603,13 +8586,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9013,7 +8989,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
@@ -9030,13 +9011,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9188,7 +9162,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;",
+              "signature": "load(option?: string | string[]): Visio.ShapeDataItem;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9199,10 +9173,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.ShapeDataItemLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -9216,13 +9195,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9425,7 +9397,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
@@ -9442,13 +9419,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9810,7 +9780,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;",
+              "signature": "load(option?: string | string[]): Visio.ShapeView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9821,10 +9791,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Visio.Interfaces.ShapeViewLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -9838,13 +9813,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"

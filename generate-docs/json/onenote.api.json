@@ -411,7 +411,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;",
+              "signature": "load(option?: string | string[]): OneNote.Application;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -422,10 +422,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.ApplicationLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -439,13 +444,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -748,7 +746,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;",
+              "signature": "load(option?: string | string[]): OneNote.FloatingInk;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -759,10 +757,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.FloatingInkLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -776,13 +779,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1069,7 +1065,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;",
+              "signature": "load(option?: string | string[]): OneNote.Image;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1080,10 +1076,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.ImageLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -1097,13 +1098,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1501,7 +1495,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;",
+              "signature": "load(option?: string | string[]): OneNote.InkAnalysis;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1512,10 +1506,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkAnalysisLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -1529,13 +1528,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysis` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1768,7 +1760,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;",
+              "signature": "load(option?: string | string[]): OneNote.InkAnalysisLine;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1779,10 +1771,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkAnalysisLineLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -1796,13 +1793,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisLine` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2183,7 +2173,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -2200,13 +2195,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisLineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2406,7 +2394,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;",
+              "signature": "load(option?: string | string[]): OneNote.InkAnalysisParagraph;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2417,10 +2405,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkAnalysisParagraphLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -2434,13 +2427,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2765,7 +2751,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -2782,13 +2773,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2988,7 +2972,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;",
+              "signature": "load(option?: string | string[]): OneNote.InkAnalysisWord;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2999,10 +2983,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkAnalysisWordLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3016,13 +3005,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3403,7 +3385,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -3420,13 +3407,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkAnalysisWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3598,7 +3578,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;",
+              "signature": "load(option?: string | string[]): OneNote.InkStroke;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3609,10 +3589,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkStrokeLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -3626,13 +3611,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3896,7 +3874,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -3913,13 +3896,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4172,7 +4148,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;",
+              "signature": "load(option?: string | string[]): OneNote.InkWord;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4183,10 +4159,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.InkWordLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -4200,13 +4181,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4526,7 +4500,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -4543,13 +4522,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17070,7 +17042,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;",
+              "signature": "load(option?: string | string[]): OneNote.Notebook;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17081,10 +17053,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.NotebookLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -17098,13 +17075,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17496,7 +17466,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -17513,13 +17488,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.NotebookCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17663,7 +17631,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;",
+              "signature": "load(option?: string | string[]): OneNote.NoteTag;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17674,10 +17642,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.NoteTagLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -17691,13 +17664,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18856,7 +18822,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;",
+              "signature": "load(option?: string | string[]): OneNote.Outline;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18867,10 +18833,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.OutlineLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -18884,13 +18855,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19560,7 +19524,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;",
+              "signature": "load(option?: string | string[]): OneNote.Page;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19571,10 +19535,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.PageLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -19588,13 +19557,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20075,7 +20037,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -20092,13 +20059,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20357,7 +20317,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;",
+              "signature": "load(option?: string | string[]): OneNote.PageContent;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20368,10 +20328,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.PageContentLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -20385,13 +20350,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.PageContent` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20828,7 +20786,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -20845,13 +20808,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.PageContentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -21501,7 +21457,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;",
+              "signature": "load(option?: string | string[]): OneNote.Paragraph;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21512,10 +21468,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.ParagraphLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -21529,13 +21490,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22112,7 +22066,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -22129,13 +22088,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22603,7 +22555,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;",
+              "signature": "load(option?: string | string[]): OneNote.RichText;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22614,10 +22566,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.RichTextLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -22631,13 +22588,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23245,7 +23195,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;",
+              "signature": "load(option?: string | string[]): OneNote.Section;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23256,10 +23206,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.SectionLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -23273,13 +23228,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23755,7 +23703,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -23772,13 +23725,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24069,7 +24015,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;",
+              "signature": "load(option?: string | string[]): OneNote.SectionGroup;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24080,10 +24026,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.SectionGroupLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -24097,13 +24048,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24579,7 +24523,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -24596,13 +24545,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.SectionGroupCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25089,7 +25031,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;",
+              "signature": "load(option?: string | string[]): OneNote.Table;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25100,10 +25042,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.TableLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -25117,13 +25064,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25748,7 +25688,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;",
+              "signature": "load(option?: string | string[]): OneNote.TableCell;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25759,10 +25699,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.TableCellLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -25776,13 +25721,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26219,7 +26157,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -26236,13 +26179,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26529,7 +26465,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;",
+              "signature": "load(option?: string | string[]): OneNote.TableRow;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26540,10 +26476,15 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "OneNote.Interfaces.TableRowLoadOptions"
+                  "type": "string | string[]"
                 }
               },
               "deprecatedMessage": [],
@@ -26557,13 +26498,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26922,7 +26856,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions"
@@ -26939,13 +26878,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`load(option?: string | string[]): OneNote.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"

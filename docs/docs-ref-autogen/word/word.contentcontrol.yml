@@ -946,7 +946,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;'
+      content: 'load(option?: string | string[]): Word.ContentControl;'
       return:
         type:
           - word.Word.ContentControl
@@ -1056,7 +1056,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ContentControlLoadOptions
+            - 'string | string[]'
   - uid: word.Word.ContentControl.paragraphs
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.

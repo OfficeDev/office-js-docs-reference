@@ -46,10 +46,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -120,16 +116,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
+      content: 'load(option?: string | string[]): Excel.RangeBorder;'
       return:
         type:
           - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.RangeBorderLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.RangeBorder.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

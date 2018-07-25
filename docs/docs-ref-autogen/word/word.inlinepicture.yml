@@ -480,7 +480,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
+      content: 'load(option?: string | string[]): Word.InlinePicture;'
       return:
         type:
           - word.Word.InlinePicture
@@ -489,7 +489,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.InlinePictureLoadOptions
+            - 'string | string[]'
   - uid: word.Word.InlinePicture.lockAspectRatio
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.

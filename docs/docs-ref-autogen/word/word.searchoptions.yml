@@ -70,7 +70,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
+      content: 'load(option?: string | string[]): Word.SearchOptions;'
       return:
         type:
           - word.Word.SearchOptions
@@ -227,7 +227,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.SearchOptionsLoadOptions
+            - 'string | string[]'
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
