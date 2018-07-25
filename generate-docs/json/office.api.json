@@ -3673,7 +3673,51 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Hosts:"
+              "text": ""
+            },
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Hosts"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Access, Excel, Word"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "text",
+              "text": ""
             }
           ],
           "isBeta": false,
@@ -31235,7 +31279,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- An Office Add-in can have only one dialog box open at any time."
+                  "text": "- An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in Commands (custom ribbon buttons or menu items)."
                 },
                 {
                   "kind": "paragraph"

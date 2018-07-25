@@ -266,7 +266,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;'
+      content: 'load(option?: string | string[]): Word.TableRow;'
       return:
         type:
           - Word.TableRow
@@ -275,7 +275,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableRowLoadOptions
+            - 'string | string[]'
   - uid: word.Word.TableRow.parentTable
     summary: |-
       Gets parent table. Read-only.

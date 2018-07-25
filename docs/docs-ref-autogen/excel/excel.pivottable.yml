@@ -44,10 +44,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -64,16 +60,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
+      content: 'load(option?: string | string[]): Excel.PivotTable;'
       return:
         type:
           - excel.Excel.PivotTable
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.PivotTableLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.PivotTable.name
     summary: |-
       Name of the PivotTable.

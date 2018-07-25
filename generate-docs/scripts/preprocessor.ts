@@ -43,6 +43,10 @@ tryCatch(async () => {
 
     console.log("\nFixing issues with d.ts file...");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties/relationships to load.$1\n')
+        .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?\n/gm, '\n')
+        .replace(/\*\s*?\* `load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties\/relationships to load\.\n\s*?\*/gm, '*')
+        .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)

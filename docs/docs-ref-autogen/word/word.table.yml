@@ -636,7 +636,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.TableLoadOptions): Word.Table;'
+      content: 'load(option?: string | string[]): Word.Table;'
       return:
         type:
           - Word.Table
@@ -645,7 +645,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableLoadOptions
+            - 'string | string[]'
   - uid: word.Word.Table.nestingLevel
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.

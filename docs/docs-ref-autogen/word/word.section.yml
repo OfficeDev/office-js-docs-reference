@@ -227,7 +227,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;'
+      content: 'load(option?: string | string[]): Word.Section;'
       return:
         type:
           - Word.Section
@@ -236,7 +236,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.SectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.Section.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

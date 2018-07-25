@@ -63,16 +63,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
+      content: 'load(option?: string | string[]): FunctionResult<T>;'
       return:
         type:
           - FunctionResult<T>
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.FunctionResultLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.FunctionResult.toJSON
     name: toJSON()
     fullName: excel.Excel.FunctionResult.toJSON

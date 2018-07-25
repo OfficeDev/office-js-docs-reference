@@ -183,9 +183,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.CustomPropertyCollection;
+      content: 'load(option?: string | string[]): Word.CustomPropertyCollection;'
       return:
         type:
           - Word.CustomPropertyCollection
@@ -194,7 +192,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.CustomPropertyCollection.toJSON
     name: toJSON()
     fullName: word.Word.CustomPropertyCollection.toJSON

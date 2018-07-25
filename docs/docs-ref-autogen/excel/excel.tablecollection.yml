@@ -245,10 +245,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array
-      of strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -310,18 +306,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.TableCollection;
+      content: 'load(option?: string | string[]): Excel.TableCollection;'
       return:
         type:
           - excel.Excel.TableCollection
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.

@@ -78,10 +78,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -98,16 +94,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;'
+      content: 'load(option?: string | string[]): Excel.ChartPoint;'
       return:
         type:
           - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.ChartPointLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ChartPoint.markerBackgroundColor
     summary: |-
       HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.

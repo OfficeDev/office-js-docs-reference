@@ -1325,7 +1325,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;'
+      content: 'load(option?: string | string[]): Word.Paragraph;'
       return:
         type:
           - Word.Paragraph
@@ -1334,7 +1334,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.ParagraphLoadOptions
+            - 'string | string[]'
   - uid: word.Word.Paragraph.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.

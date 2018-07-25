@@ -44,10 +44,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.TopBottomConditionalFormat` - Where option is a comma-delimited string or
-      an array of strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is
       a comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -64,16 +60,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;'
+      content: 'load(option?: string | string[]): Excel.TopBottomConditionalFormat;'
       return:
         type:
           - excel.Excel.TopBottomConditionalFormat
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.TopBottomConditionalFormat.rule
     summary: |-
       The criteria of the Top/Bottom conditional format.

@@ -80,10 +80,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -100,16 +96,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
+      content: 'load(option?: string | string[]): Excel.ChartTrendline;'
       return:
         type:
           - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.ChartTrendlineLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ChartTrendline.movingAveragePeriod
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.

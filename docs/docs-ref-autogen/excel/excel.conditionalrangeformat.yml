@@ -74,10 +74,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.ConditionalRangeFormat` - Where option is a comma-delimited string or an
-      array of strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -94,16 +90,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
+      content: 'load(option?: string | string[]): Excel.ConditionalRangeFormat;'
       return:
         type:
           - excel.Excel.ConditionalRangeFormat
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+            - 'string | string[]'
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.

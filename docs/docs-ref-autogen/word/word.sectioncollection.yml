@@ -75,9 +75,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
-        Word.SectionCollection;
+      content: 'load(option?: string | string[]): Word.SectionCollection;'
       return:
         type:
           - Word.SectionCollection
@@ -86,7 +84,7 @@ items:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+            - 'string | string[]'
   - uid: word.Word.SectionCollection.toJSON
     name: toJSON()
     fullName: word.Word.SectionCollection.toJSON

@@ -156,7 +156,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Word.Interfaces.ListLoadOptions): Word.List;'
+      content: 'load(option?: string | string[]): Word.List;'
       return:
         type:
           - word.Word.List
@@ -165,7 +165,7 @@ items:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ListLoadOptions
+            - 'string | string[]'
   - uid: word.Word.List.paragraphs
     summary: |-
       Gets paragraphs in the list. Read-only.

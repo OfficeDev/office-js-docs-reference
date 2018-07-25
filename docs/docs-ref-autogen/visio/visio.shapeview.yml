@@ -87,10 +87,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of
-      strings that specify the properties/relationships to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -161,16 +157,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;'
+      content: 'load(option?: string | string[]): Visio.ShapeView;'
       return:
         type:
           - visio.Visio.ShapeView
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - visio.Visio.Interfaces.ShapeViewLoadOptions
+            - 'string | string[]'
   - uid: visio.Visio.ShapeView.removeOverlay
     summary: |-
       Removes particular overlay or all overlays on the Shape.
