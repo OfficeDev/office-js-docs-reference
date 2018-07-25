@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    summary: |-
+      Represents a cell value conditional format.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    fullName: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.format
+      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.rule
+  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.rule
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: boolean;'
+      return:
+        type:
+          - boolean

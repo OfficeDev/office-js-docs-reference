@@ -14549,7 +14549,16 @@ export declare namespace Excel {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        
+        export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
+            $skip?: number;
+        }
         /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
         export interface ApplicationUpdateData {
             /**
@@ -19992,140 +20001,1202 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ApplicationLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             *
+             * [Api set: ExcelApi 1.1 for get, 1.8 for set]
+             */
+            calculationMode?: boolean;
+        }
         /**
          *
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorkbookLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the Excel application instance that contains this workbook.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            application?: Excel.Interfaces.ApplicationLoadOptions;
+            /**
+            *
+            * Represents a collection of bindings that are part of the workbook.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
+            /**
+            *
+            * Gets the workbook properties.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+            *
+            * Returns workbook protection object for a workbook.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;
+            /**
+            *
+            * Represents a collection of tables associated with the workbook.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * Gets the workbook name. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+        }
         /**
          *
          * Represents the protection of a workbook object.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface WorkbookProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Indicates if the workbook is protected. Read-Only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            protected?: boolean;
+        }
         /**
          *
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorksheetLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns collection of charts that are part of the worksheet.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
+            /**
+            *
+            * Returns sheet protection object for a worksheet.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
+            /**
+            *
+            * Collection of tables that are part of the worksheet.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * The display name of the worksheet.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * The zero-based position of the worksheet within the workbook.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            standardHeight?: boolean;
+            /**
+             *
+             * Returns or sets the standard (default) width of all the columns in the worksheet.
+            One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            standardWidth?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet tab color.
+            When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
+            When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            tabColor?: boolean;
+            /**
+             *
+             * The Visibility of the worksheet.
+             *
+             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
         /**
          *
          * Represents a collection of worksheet objects that are part of the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorksheetCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The display name of the worksheet.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            standardHeight?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the standard (default) width of all the columns in the worksheet.
+            One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            standardWidth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the worksheet tab color.
+            When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
+            When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            tabColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The Visibility of the worksheet.
+             *
+             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
         /**
          *
          * Represents the protection of a sheet object.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+        export interface WorksheetProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Sheet protection options. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            options?: boolean;
+            /**
+             *
+             * Indicates if the worksheet is protected. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            protected?: boolean;
+        }
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.RangeFormatLoadOptions;
+            /**
+            *
+            * The worksheet containing the current range.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            address?: boolean;
+            /**
+             *
+             * Represents range reference for the specified range in the language of the user. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            addressLocal?: boolean;
+            /**
+             *
+             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * Represents the total number of columns in the range. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * Represents if all columns of the current range are hidden.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            columnHidden?: boolean;
+            /**
+             *
+             * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            columnIndex?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation.
+                When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+                When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * Represents the formula in R1C1-style notation.
+                When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * Represents if all cells of the current range are hidden. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            hidden?: boolean;
+            /**
+             *
+             * Represents the hyperlink for the current range.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * Represents if the current range is an entire column. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            isEntireColumn?: boolean;
+            /**
+             *
+             * Represents if the current range is an entire row. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            isEntireRow?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given range.
+                When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given range as a string in the language of the user.
+                When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * Returns the total number of rows in the range. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * Represents if all rows of the current range are hidden.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            rowHidden?: boolean;
+            /**
+             *
+             * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * Represents the style of the current range.
+                If the styles of the cells are inconsistent, null will be returned.
+                For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            style?: boolean;
+            /**
+             *
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the type of data of each cell. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+                When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * RangeView represents a set of visible cells of the parent range.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+        export interface RangeViewLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the cell addresses of the RangeView. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            cellAddresses?: boolean;
+            /**
+             *
+             * Returns the number of visible columns. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * Represents the formula in R1C1-style notation.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * Returns a value that represents the index of the RangeView. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given cell.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Returns the number of visible rows. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the type of data of each cell. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of RangeView objects.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+        export interface RangeViewCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the cell addresses of the RangeView. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            cellAddresses?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the number of visible columns. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in R1C1-style notation.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that represents the index of the RangeView. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given cell.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the number of visible rows. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            text?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
          *
          * [Api set: ExcelApi 1.4]
          */
-        
+        export interface SettingCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the value stored for this setting.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Setting represents a key-value pair of a setting persisted to the document (per file per add-in). These custom key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note that settings are persisted in the document and hence it is not a place to store any sensitive or protected information such as user information and password.
          *
          * [Api set: ExcelApi 1.4]
          */
-        
+        export interface SettingLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns the key that represents the id of the Setting. Read-only.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            key?: boolean;
+            /**
+             *
+             * Represents the value stored for this setting.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            value?: boolean;
+        }
         /**
          *
          * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface NamedItemCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns an object containing values and types of the named item.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
+            *
+            * [Api set: ExcelApi 1.4]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
+            *
+            * [Api set: ExcelApi 1.4]
+            */
+            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the comment associated with this name.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            comment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            formula?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The name of the object. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            scope?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Specifies whether the object is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, or a reference to a range. This object can be used to obtain range object associated with names.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface NamedItemLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns an object containing values and types of the named item.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;
+            /**
+            *
+            * Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
+            *
+            * [Api set: ExcelApi 1.4]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            *
+            * Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
+            *
+            * [Api set: ExcelApi 1.4]
+            */
+            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the comment associated with this name.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            comment?: boolean;
+            /**
+             *
+             * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            formula?: boolean;
+            /**
+             *
+             * The name of the object. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+             *
+             * [Api set: ExcelApi 1.4]
+             */
+            scope?: boolean;
+            /**
+             *
+             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+             */
+            type?: boolean;
+            /**
+             *
+             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+            /**
+             *
+             * Specifies whether the object is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents an object containing values and types of a named item.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface NamedItemArrayValuesLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the types for each item in the named item array
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            types?: boolean;
+            /**
+             *
+             * Represents the values of each item in the named item array.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents an Office.js binding that is defined in the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface BindingLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents binding identifier. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents the collection of all the binding objects that are part of the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface BindingCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents binding identifier. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the sorting for the table.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            sort?: Excel.Interfaces.TableSortLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current table.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            highlightFirstColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            highlightLastColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the table.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showBandedColumns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showBandedRows?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showFilterButton?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showHeaders?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showTotals?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents an Excel table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents a collection of all the columns in the table.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
+            /**
+            *
+            * Represents a collection of all the rows in the table.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
+            /**
+            *
+            * Represents the sorting for the table.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            sort?: Excel.Interfaces.TableSortLoadOptions;
+            /**
+            *
+            * The worksheet containing the current table.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Indicates whether the first column contains special formatting.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            highlightFirstColumn?: boolean;
+            /**
+             *
+             * Indicates whether the last column contains special formatting.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            highlightLastColumn?: boolean;
+            /**
+             *
+             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the table.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showBandedColumns?: boolean;
+            /**
+             *
+             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showBandedRows?: boolean;
+            /**
+             *
+             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            showFilterButton?: boolean;
+            /**
+             *
+             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showHeaders?: boolean;
+            /**
+             *
+             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showTotals?: boolean;
+            /**
+             *
+             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents a collection of all the columns that are part of the table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableColumnCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Retrieve the filter applied to the column.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            filter?: Excel.Interfaces.FilterLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the table column.
+             *
+             * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a column in a table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableColumnLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Retrieve the filter applied to the column.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            filter?: Excel.Interfaces.FilterLoadOptions;
+            /**
+             *
+             * Returns a unique key that identifies the column within the table. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents the name of the table column.
+             *
+             * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of all the rows that are part of the table.
@@ -20137,7 +21208,23 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableRowCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a row in a table.
@@ -20149,287 +21236,1991 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableRowLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * A format object encapsulating the range's font, fill, borders, alignment, and other properties.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Collection of border objects that apply to the overall range.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * Returns the fill object defined on the overall range.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * Returns the font object defined on the overall range.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+            *
+            * Returns the format protection object for a range.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.FormatProtectionLoadOptions;
+            /**
+             *
+             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            columnWidth?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            rowHeight?: boolean;
+            /**
+             *
+             * Gets or sets the text orientation of all the cells within the range.
+                The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+                If the orientation within a range are not uniform, then null will be returned.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Determines if the row height of the Range object equals the standard height of the sheet.
+                Returns True if the row height of the Range object equals the standard height of the sheet.
+                Returns Null if the range contains more than one row and the rows aren't all the same height.
+                Returns False otherwise.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            useStandardHeight?: boolean;
+            /**
+             *
+             * Indicates whether the column width of the Range object equals the standard width of the sheet.
+                Returns True if the column width of the Range object equals the standard width of the sheet.
+                Returns Null if the range contains more than one column and the columns aren't all the same height.
+                Returns False otherwise.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            useStandardWidth?: boolean;
+            /**
+             *
+             * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            wrapText?: boolean;
+        }
         /**
          *
          * Represents the format protection of a range object.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+        export interface FormatProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            locked?: boolean;
+        }
         /**
          *
          * Represents the background of a range object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFillLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+        }
         /**
          *
          * Represents the border of an object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * Represents the border objects that make up the range border.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeBorderCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for an object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Font name (e.g. "Calibri")
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Font size.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            size?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * A collection of all the chart objects on a worksheet.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents chart axes.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            axes?: Excel.Interfaces.ChartAxesLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the datalabels on the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the legend for the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            legend?: Excel.Interfaces.ChartLegendLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartTitleLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current chart.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height, in points, of the chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The unique id of chart. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of a chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showAllFieldButtons?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width, in points, of the chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents a chart object in a workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart axes.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            axes?: Excel.Interfaces.ChartAxesLoadOptions;
+            /**
+            *
+            * Represents the datalabels on the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * Encapsulates the format properties for the chart area.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
+            /**
+            *
+            * Represents the legend for the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            legend?: Excel.Interfaces.ChartLegendLoadOptions;
+            /**
+            *
+            * Represents either a single series or collection of series in the chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
+            /**
+            *
+            * Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartTitleLoadOptions;
+            /**
+            *
+            * The worksheet containing the current chart.
+            *
+            * [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the type of the chart. See Excel.ChartType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * The unique id of chart. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            id?: boolean;
+            /**
+             *
+             * The distance, in points, from the left side of the chart to the worksheet origin.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the name of a chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents whether to display all field buttons on a PivotChart.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showAllFieldButtons?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the chart object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the overall chart area.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAreaFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of chart area, which includes color, linestyle, and weight.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for the current object.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents a collection of chart series.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all points in the series.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+                Throws an invalid argument exception on invalid charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            doughnutHoleSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            filtered?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+                specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            gapWidth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            hasDataLabels?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents markers background color of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents markers foreground color of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker size of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of a series in a chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            plotOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            smooth?: boolean;
+        }
         /**
          *
          * Represents a series in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart series, which includes fill and line formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
+            /**
+            *
+            * Represents a collection of all points in the series.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
+            /**
+             *
+             * Represents the chart type of a series. See Excel.ChartType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+                Throws an invalid argument exception on invalid charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            doughnutHoleSize?: boolean;
+            /**
+             *
+             * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            filtered?: boolean;
+            /**
+             *
+             * Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+                specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            gapWidth?: boolean;
+            /**
+             *
+             * Boolean value representing if the series has data labels or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            hasDataLabels?: boolean;
+            /**
+             *
+             * Represents markers background color of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * Represents markers foreground color of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * Represents marker size of a chart series.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * Represents the name of a series in a chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the plot order of a chart series within the chart group.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            plotOrder?: boolean;
+            /**
+             *
+             * Boolean value representing if the series has a shadow or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            smooth?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart series
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents line formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * A collection of all the chart points within a series inside a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointsCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data label of a chart point.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the format properties chart point.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartPointFormatLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether a data point has a data label. Not applicable for surface charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            hasDataLabel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker size of data point.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the value of a chart point. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents a point of a series in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the data label of a chart point.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;
+            /**
+            *
+            * Encapsulates the format properties chart point.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartPointFormatLoadOptions;
+            /**
+             *
+             * Represents whether a data point has a data label. Not applicable for surface charts.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            hasDataLabel?: boolean;
+            /**
+             *
+             * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * Represents marker size of data point.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * Returns the value of a chart point. Read-only.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents formatting object for chart points.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of a chart data point, which includes color, style, and weight information.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+        }
         /**
          *
          * Represents the chart axes.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the category axis in a chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+            /**
+            *
+            * Represents the series axis of a 3-dimensional chart.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+            /**
+            *
+            * Represents the value axis in an axis.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+        }
         /**
          *
          * Represents a single axis in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart object, which includes line and font formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAxisFormatLoadOptions;
+            /**
+            *
+            * Returns a Gridlines object that represents the major gridlines for the specified axis.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
+            /**
+            *
+            * Returns a Gridlines object that represents the minor gridlines for the specified axis.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
+            /**
+            *
+            * Represents the axis title.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
+            /**
+             *
+             * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            axisGroup?: boolean;
+            /**
+             *
+             * Returns or sets the base unit for the specified category axis.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            baseTimeUnit?: boolean;
+            /**
+             *
+             * Returns or sets the category axis type.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            categoryType?: boolean;
+            /**
+             * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
+             * Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            crosses?: boolean;
+            /**
+             * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `PositionAt` instead.
+             * Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            crossesAt?: boolean;
+            /**
+             *
+             * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            customDisplayUnit?: boolean;
+            /**
+             *
+             * Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            displayUnit?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the base of the logarithm when using logarithmic scales.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            logBase?: boolean;
+            /**
+             *
+             * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            majorTickMark?: boolean;
+            /**
+             *
+             * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            majorTimeUnitScale?: boolean;
+            /**
+             *
+             * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            majorUnit?: boolean;
+            /**
+             *
+             * Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            maximum?: boolean;
+            /**
+             *
+             * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            minimum?: boolean;
+            /**
+             *
+             * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            minorTickMark?: boolean;
+            /**
+             *
+             * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            minorTimeUnitScale?: boolean;
+            /**
+             *
+             * Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            minorUnit?: boolean;
+            /**
+             *
+             * Represents whether Microsoft Excel plots data points from last to first.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            reversePlotOrder?: boolean;
+            /**
+             *
+             * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            scaleType?: boolean;
+            /**
+             *
+             * Represents whether the axis display unit label is visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showDisplayUnitLabel?: boolean;
+            /**
+             *
+             * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            tickLabelPosition?: boolean;
+            /**
+             *
+             * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            tickLabelSpacing?: boolean;
+            /**
+             *
+             * Represents the number of categories or series between tick marks.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            tickMarkSpacing?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the axis type. See Excel.ChartAxisType for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * A boolean value represents the visibility of the axis.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+            /**
+            *
+            * Represents chart line formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Represents the title of a chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisTitleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of chart axis title.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
+            /**
+             *
+             * Represents the axis title.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * A boolean that specifies the visibility of an axis title.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents the chart axis title formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisTitleFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents a collection of all the data labels on a chart point.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartDataLabelsLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the format of chart data labels, which includes fill and font formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            /**
+             *
+             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * String representing the separator used for the data labels on a chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            separator?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label bubble size is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showBubbleSize?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label category name is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showCategoryName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label legend key is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showLegendKey?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label percentage is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showPercentage?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label series name is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showSeriesName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label value is visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            showValue?: boolean;
+        }
         /**
          *
          * Represents the data label of a chart point.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartDataLabelLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            position?: boolean;
+            /**
+             *
+             * String representing the separator used for the data label on a chart.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            separator?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label bubble size is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showBubbleSize?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label category name is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showCategoryName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label legend key is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showLegendKey?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label percentage is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showPercentage?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label series name is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showSeriesName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label value is visible or not.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showValue?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart data labels.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartDataLabelFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents major or minor gridlines on a chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartGridlinesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of chart gridlines.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
+            /**
+             *
+             * Boolean value representing if the axis gridlines are visible or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for chart gridlines.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartGridlinesFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart line formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Represents the legend in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLegendLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart legend, which includes fill and font formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
+            /**
+             *
+             * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the left, in points, of a chart legend. Null if legend is not visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value for whether the chart legend should overlap with the main body of the chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            overlay?: boolean;
+            /**
+             *
+             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents if the legend has a shadow on the chart.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Represents the top of a chart legend.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * A boolean value the represents the visibility of a ChartLegend object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the legendEntry in legendEntryCollection.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartLegendEntryLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the visible of a chart legend entry.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents a collection of legendEntries.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartLegendEntryCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the visible of a chart legend entry.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties of a chart legend.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLegendFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents a chart title object of a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartTitleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart title, which includes fill and font formatting.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
+            /**
+             *
+             * Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for chart title.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value representing if the chart title will overlay the chart or not.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            overlay?: boolean;
+            /**
+             *
+             * Represents the position of chart title. See Excel.ChartTitlePosition for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents a boolean value that determines if the chart title has a shadow.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Represents the title text of a chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * A boolean value the represents the visibility of a chart title object.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartFormatStringLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Provides access to the office art formatting for chart title.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartTitleFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of chart title, which includes color, linestyle, and weight.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for an object.
+            *
+            * [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents the border formatting of a chart element.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of borders in the chart.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the line style of the border. See Excel.ChartLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            lineStyle?: boolean;
+            /**
+             *
+             * Represents weight of the border, in points.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * Encapsulates the formatting options for line elements.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLineFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of lines in the chart.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the line style. See Excel.ChartLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            lineStyle?: boolean;
+            /**
+             *
+             * Represents weight of the line, in points.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Font name (e.g. "Calibri")
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Size of the font (e.g. 11)
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            size?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
+             *
+             * [Api set: ExcelApi 1.1]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * This object represents the attributes for a chart trendline object.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart trendline.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;
+            /**
+             *
+             * Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            intercept?: boolean;
+            /**
+             *
+             * Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            movingAveragePeriod?: boolean;
+            /**
+             *
+             * Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            polynomialOrder?: boolean;
+            /**
+             *
+             * Represents the type of a chart trendline.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a collection of Chart Trendlines.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the formatting of a chart trendline.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            intercept?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            movingAveragePeriod?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            polynomialOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of a chart trendline.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents the format properties for chart trendline.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart line formatting.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Manages sorting operations on Table objects.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+        export interface TableSortLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the current conditions used to last sort the table. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            fields?: boolean;
+            /**
+             *
+             * Represents whether the casing impacted the last sort of the table. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            matchCase?: boolean;
+            /**
+             *
+             * Represents Chinese character ordering method last used to sort the table. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            method?: boolean;
+        }
         /**
          *
          * Manages the filtering of a table's column.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+        export interface FilterLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The currently applied filter on the given column. Read-only.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            criteria?: boolean;
+        }
         /**
          *
          * A scoped collection of custom XML parts.
@@ -20438,203 +23229,1427 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartScopedCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * A collection of custom XML parts.
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * Represents a custom XML part object in a workbook.
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The custom XML part's ID. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * The custom XML part's namespace URI. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+        export interface PivotTableCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current PivotTable.
+            *
+            * [Api set: ExcelApi 1.3]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the PivotTable.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            name?: boolean;
+        }
         /**
          *
          * Represents an Excel PivotTable.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+        export interface PivotTableLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * The worksheet containing the current PivotTable.
+            *
+            * [Api set: ExcelApi 1.3]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Id of the PivotTable. Read-only.
+             *
+             * [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the PivotTable.
+             *
+             * [Api set: ExcelApi 1.3]
+             */
+            name?: boolean;
+        }
         /**
          *
          * Represents workbook properties.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface DocumentPropertiesLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets the author of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            author?: boolean;
+            /**
+             *
+             * Gets or sets the category of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            category?: boolean;
+            /**
+             *
+             * Gets or sets the comments of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            comments?: boolean;
+            /**
+             *
+             * Gets or sets the company of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            company?: boolean;
+            /**
+             *
+             * Gets the creation date of the workbook. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            creationDate?: boolean;
+            /**
+             *
+             * Gets or sets the keywords of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            keywords?: boolean;
+            /**
+             *
+             * Gets the last author of the workbook. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            lastAuthor?: boolean;
+            /**
+             *
+             * Gets or sets the manager of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            manager?: boolean;
+            /**
+             *
+             * Gets the revision number of the workbook. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            revisionNumber?: boolean;
+            /**
+             *
+             * Gets or sets the subject of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            subject?: boolean;
+            /**
+             *
+             * Gets or sets the title of the workbook.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            title?: boolean;
+        }
         /**
          *
          * Represents a custom property.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface CustomPropertyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the key of the custom property. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            key?: boolean;
+            /**
+             *
+             * Gets the value type of the custom property. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * Gets or sets the value of the custom property.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Contains the collection of customProperty objects.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface CustomPropertyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the value type of the custom property. Read only.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents a collection of all the conditional formats that are overlap the range.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+                For example to format all cells between 5 and 10.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+                For example to format all cells between 5 and 10.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
+                For example to format cells matching the word "Text".
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
+                For example to format cells matching the word "Text".
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+                For example to format the top 10% or bottom 10 items.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+                For example to format the top 10% or bottom 10 items.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
+                changes other conditional formats' priorities, to allow for a contiguous priority order.
+                Use a negative priority to begin from the back.
+                Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
+                Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            priority?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+                Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            stopIfTrue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            type?: boolean;
+        }
         /**
          *
          * An object encapsulating a conditional format's range, format, rule, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+                For example to format all cells between 5 and 10.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+                For example to format all cells between 5 and 10.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the data bar properties if the current conditional format is a data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the specific text conditional format properties if the current conditional format is a text type.
+                For example to format cells matching the word "Text".
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the specific text conditional format properties if the current conditional format is a text type.
+                For example to format cells matching the word "Text".
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+                For example to format the top 10% or bottom 10 items.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+                For example to format the top 10% or bottom 10 items.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+             *
+             * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            id?: boolean;
+            /**
+             *
+             * The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
+                changes other conditional formats' priorities, to allow for a contiguous priority order.
+                Use a negative priority to begin from the back.
+                Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
+                Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            priority?: boolean;
+            /**
+             *
+             * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+                Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            stopIfTrue?: boolean;
+            /**
+             *
+             * A type of conditional format. Only one can be set at a time. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents an Excel Conditional Data Bar Type.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface DataBarConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Representation of all values to the left of the axis in an Excel data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;
+            /**
+            *
+            * Representation of all values to the right of the axis in an Excel data bar.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
+            /**
+             *
+             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+                "" (empty string) if no axis is present or set.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            axisColor?: boolean;
+            /**
+             *
+             * Representation of how the axis is determined for an Excel data bar.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            axisFormat?: boolean;
+            /**
+             *
+             * Represents the direction that the data bar graphic should be based on.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            barDirection?: boolean;
+            /**
+             *
+             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            lowerBoundRule?: boolean;
+            /**
+             *
+             * If true, hides the values from the cells where the data bar is applied.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            showDataBarOnly?: boolean;
+            /**
+             *
+             * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            upperBoundRule?: boolean;
+        }
         /**
          *
          * Represents a conditional format DataBar Format for the positive side of the data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalDataBarPositiveFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+                "" (empty string) if no border is present or set.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            borderColor?: boolean;
+            /**
+             *
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            fillColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the DataBar has a gradient.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            gradientFill?: boolean;
+        }
         /**
          *
          * Represents a conditional format DataBar Format for the negative side of the data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalDataBarNegativeFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+                "Empty String" if no border is present or set.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            borderColor?: boolean;
+            /**
+             *
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            fillColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            matchPositiveBorderColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            matchPositiveFillColor?: boolean;
+        }
         /**
          *
          * Represents a custom conditional format type.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface CustomConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+            *
+            * Represents the Rule object on this conditional format.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;
+        }
         /**
          *
          * Represents a rule, for all traditional rule/format pairings.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatRuleLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            formula?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on in the user's language.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            formulaLocal?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            formulaR1C1?: boolean;
+        }
         /**
          *
          * Represents an IconSet criteria for conditional formatting.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface IconSetConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            criteria?: boolean;
+            /**
+             *
+             * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            reverseIconOrder?: boolean;
+            /**
+             *
+             * If true, hides the values and only shows icons.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            showIconOnly?: boolean;
+            /**
+             *
+             * If set, displays the IconSet option for the conditional format.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents an IconSet criteria for conditional formatting.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ColorScaleConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The criteria of the color scale. Midpoint is optional when using a two point color scale.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            criteria?: boolean;
+            /**
+             *
+             * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            threeColorScale?: boolean;
+        }
         /**
          *
          * Represents a Top/Bottom conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface TopBottomConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The criteria of the Top/Bottom conditional format.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface PresetCriteriaConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The rule of the conditional format.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents a specific text conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface TextConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The rule of the conditional format.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents a cell value conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface CellValueConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * Represents the Rule object on this conditional format.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Collection of border objects that apply to the overall conditional format range.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;
+            /**
+            *
+            * Returns the fill object defined on the overall conditional format range.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;
+            /**
+            *
+            * Returns the font object defined on the overall conditional format range.
+            *
+            * [Api set: ExcelApi 1.6]
+            */
+            font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
+            /**
+             *
+             * Represents Excel's number format code for the given range. Cleared if null is passed in.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            numberFormat?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font style, color, etc.) for an object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Represents the strikethrough status of the font.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            strikethrough?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * Represents the background of a conditional range object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFillLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+        }
         /**
          *
          * Represents the border of an object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents the border objects that make up range border.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeBorderCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
+             *
+             * [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * An object encapsulating a style's format and other properties.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface StyleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * A Border collection of four Border objects that represent the style of the four borders.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * The Fill of the style.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * A Font object that represents the font of the style.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+             *
+             * Indicates if the style is a built-in style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            builtIn?: boolean;
+            /**
+             *
+             * Indicates if the formula will be hidden when the worksheet is protected.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeAlignment?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeBorder?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeFont?: boolean;
+            /**
+             *
+             * Indicates if the style includes the NumberFormat property.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeNumber?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includePatterns?: boolean;
+            /**
+             *
+             * Indicates if the style includes the FormulaHidden and Locked protection properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeProtection?: boolean;
+            /**
+             *
+             * An integer from 0 to 250 that indicates the indent level for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            indentLevel?: boolean;
+            /**
+             *
+             * Indicates if the object is locked when the worksheet is protected.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            locked?: boolean;
+            /**
+             *
+             * The name of the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * The format code of the number format for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * The localized format code of the number format for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * The reading order for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * Indicates if text automatically shrinks to fit in the available column width.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            shrinkToFit?: boolean;
+            /**
+             *
+             * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Indicates if Microsoft Excel wraps the text in the object.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            wrapText?: boolean;
+        }
         /**
          *
          * Represents a collection of all the styles.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+        export interface StyleCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four borders.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The Fill of the style.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: A Font object that represents the font of the style.
+            *
+            * [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style is a built-in style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            builtIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeBorder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeFont?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeNumber?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includePatterns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection properties.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            includeProtection?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            indentLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            locked?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The name of the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The format code of the number format for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The localized format code of the number format for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The reading order for the style.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            shrinkToFit?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object.
+             *
+             * [Api set: ExcelApi 1.7]
+             */
+            wrapText?: boolean;
+        }
         /**
          *
          * An object containing the result of a function-evaluation operation
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+        export interface FunctionResultLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            error?: boolean;
+            /**
+             *
+             * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
+             *
+             * [Api set: ExcelApi 1.2]
+             */
+            value?: boolean;
+        }
     }
 }
 

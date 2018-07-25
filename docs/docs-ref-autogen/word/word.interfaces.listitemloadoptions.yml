@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.ListItemLoadOptions
+    summary: |-
+      Represents the paragraph list item format.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ListItemLoadOptions
+    fullName: word.Word.Interfaces.ListItemLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.ListItemLoadOptions.level
+      - word.Word.Interfaces.ListItemLoadOptions.listString
+      - word.Word.Interfaces.ListItemLoadOptions.siblingIndex
+  - uid: word.Word.Interfaces.ListItemLoadOptions.level
+    summary: |-
+      Gets or sets the level of the item in the list.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: level
+    fullName: word.Word.Interfaces.ListItemLoadOptions.level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ListItemLoadOptions.listString
+    summary: |-
+      Gets the list item bullet, number, or picture as a string. Read-only.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: listString
+    fullName: word.Word.Interfaces.ListItemLoadOptions.listString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listString?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ListItemLoadOptions.siblingIndex
+    summary: |-
+      Gets the list item order number in relation to its siblings. Read-only.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: siblingIndex
+    fullName: word.Word.Interfaces.ListItemLoadOptions.siblingIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'siblingIndex?: boolean;'
+      return:
+        type:
+          - boolean
