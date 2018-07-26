@@ -6854,8 +6854,10 @@ OneNote.Notebook.getRestApiId:
         return ctx.sync().
             then(function(){
                 console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
-                // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
 OneNote.Notebook.load:
@@ -6873,7 +6875,9 @@ OneNote.Notebook.load:
         return context.sync()
             .then(function () {
                 console.log("Base url: " + notebook.baseUrl);
-                // This baseUrl should be used to talk to OneNote REST APIs according to https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/ (only required for SharePoint notebooks, will be null for OneDrive notebooks)
+                // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
+                // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
+                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     })
     .catch(function(error) {
@@ -7187,8 +7191,10 @@ OneNote.Page.getRestApiId:
         return ctx.sync().
             then(function(){
                 console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
-                // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+                // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
+                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
 OneNote.Page.insertPageAsSibling:
@@ -7962,8 +7968,10 @@ OneNote.Section.getRestApiId:
         return ctx.sync().
             then(function(){
                 console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
-                // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
 OneNote.Section.load:
@@ -9779,6 +9787,7 @@ Word.Body.clear:
         }
     });
 
+
     // The Silly stories add-in sample shows how the clear method can be used to
     clear the contents of a document.
 
@@ -9948,11 +9957,13 @@ Word.Body.insertInlinePictureFromBase64:
         }
     });
 
+
     // Read "Create better add-ins for Word with Office Open XML" for guidance
     on working with OOXML.
 
     //
     https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
     assemble a document.
@@ -9983,6 +9994,7 @@ Word.Body.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use the
     insertParagraph method to assemble a document.
@@ -10083,6 +10095,7 @@ Word.Body.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
 
     // The Word-Add-in-DocumentAssembly sample provides another example of how
     to search a document.
@@ -10457,6 +10470,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
         }
     });
 
+
     // Read "Create better add-ins for Word with Office Open XML" for guidance
     on working with OOXML.
 
@@ -10534,6 +10548,7 @@ Word.ContentControl.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
 Word.ContentControl.load:
@@ -10774,6 +10789,7 @@ Word.ContentControlCollection.getByTag:
         }
     });
 
+
     // The Word-Add-in-DocumentAssembly sample has another example of using the
     getByTag method.
 
@@ -10821,6 +10837,7 @@ Word.ContentControlCollection.getByTitle:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
 
     // The Word-Add-in-DocumentAssembly sample has another example of using the
     getByTitle method.
@@ -10919,6 +10936,7 @@ Word.ContentControlCollection.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
 
     // The Silly stories add-in sample shows how the load method is used to load
     the content control collection with the tag and title properties.
@@ -12084,6 +12102,7 @@ Word.Range.insertOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance
     on working with OOXML.
