@@ -92,6 +92,7 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
+
           // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
           // https://aka.ms/sillystorywordaddin
           ```
@@ -495,8 +496,10 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
           // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
           // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
           // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```
@@ -580,6 +583,7 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
 
           // The Word-Add-in-DocumentAssembly sample shows how you can use the insertParagraph method to assemble a
           document.
@@ -1010,6 +1014,7 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
           // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```

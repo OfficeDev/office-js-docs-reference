@@ -21,6 +21,7 @@ Word.Body.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
 Word.Body.getHtml:
@@ -185,8 +186,10 @@ Word.Body.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertParagraph:
@@ -212,6 +215,7 @@ Word.Body.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Word-Add-in-DocumentAssembly sample shows how you can use the insertParagraph method to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertText:
@@ -277,6 +281,7 @@ Word.Body.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.select:
@@ -612,6 +617,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.ContentControl.insertParagraph:
@@ -686,6 +692,7 @@ Word.ContentControl.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
 Word.ContentControl.load:
@@ -923,6 +930,7 @@ Word.ContentControlCollection.getByTag:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getByTitle:
@@ -953,6 +961,7 @@ Word.ContentControlCollection.getByTitle:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getFirst:
@@ -1046,6 +1055,7 @@ Word.ContentControlCollection.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
     // The Silly stories add-in sample shows how the load method is used to load the content control collection with the tag and title properties.
     // https://aka.ms/sillystorywordaddin
 Word.Document.getSelection:
@@ -2097,6 +2107,7 @@ Word.Range.insertOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.Range.insertParagraph:

@@ -210,6 +210,7 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
           // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```
@@ -280,6 +281,7 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
           // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```
@@ -491,6 +493,7 @@ items:
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
 
           // The Silly stories add-in sample shows how the load method is used to load the content control collection
           with the tag and title properties.
