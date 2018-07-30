@@ -1290,7 +1290,7 @@ Office.context.mailbox.item.displayReplyForm(
 
 #### getEntities() → {[Entities](/javascript/api/outlook/office.entities)}
 
-Gets the entities found in the selected item.
+Gets the entities found in the selected item's body.
 
 > [!NOTE]
 > This method is not supported in Outlook for iOS or Outlook for Android.
@@ -1310,7 +1310,7 @@ Type:
 
 ##### Example
 
-The following example accesses the contacts entities on the current item.
+The following example accesses the contacts entities in the current item's body.
 
 ```
 var contacts = Office.context.mailbox.item.getEntities().contacts;
@@ -1318,7 +1318,7 @@ var contacts = Office.context.mailbox.item.getEntities().contacts;
 
 #### getEntitiesByType(entityType) → (nullable) {Array.<(String|[Contact](/javascript/api/outlook/office.contact)|[MeetingSuggestion](/javascript/api/outlook/office.meetingsuggestion)|[PhoneNumber](/javascript/api/outlook/office.phonenumber)|[TaskSuggestion](/javascript/api/outlook/office.tasksuggestion))>}
 
-Gets an array of all the entities of the specified entity type found in the selected item.
+Gets an array of all the entities of the specified entity type found in the selected item's body.
 
 > [!NOTE]
 > This method is not supported in Outlook for iOS or Outlook for Android.
@@ -1339,7 +1339,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 ##### Returns:
 
-If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the `entityType` parameter.
+If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the `entityType` parameter.
 
 While the minimum permission level to use this method is **Restricted**, some entity types require **ReadItem** to access, as specified in the following table.
 
@@ -1357,7 +1357,7 @@ Type: Array.<(String|[Contact](/javascript/api/outlook/office.contact)|[MeetingS
 
 ##### Example
 
-The following example shows how to access an array of strings that represent postal addresses in the subject or body of the current item.
+The following example shows how to access an array of strings that represent postal addresses in the current item's body.
 
 ```
 // The initialize function is required for all apps.
@@ -1366,7 +1366,7 @@ Office.initialize = function () {
   $(document).ready(function () {
     // After the DOM is loaded, app-specific code can run.
     var item = Office.context.mailbox.item;
-    // Get an array of strings that represent postal addresses in the current item.
+    // Get an array of strings that represent postal addresses in the current item's body.
     var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
     // Continue processing the array of addresses.
   });
