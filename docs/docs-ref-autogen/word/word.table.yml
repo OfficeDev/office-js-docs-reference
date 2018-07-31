@@ -313,8 +313,7 @@ items:
       return:
         type:
           - Word.TableCell
-        description: |
-
+        description: |-
 
           #### Examples
 

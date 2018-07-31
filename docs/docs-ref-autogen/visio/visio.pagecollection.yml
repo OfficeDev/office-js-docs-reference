@@ -50,8 +50,7 @@ items:
       return:
         type:
           - Visio.Page
-        description: |
-
+        description: |-
 
           #### Examples
 

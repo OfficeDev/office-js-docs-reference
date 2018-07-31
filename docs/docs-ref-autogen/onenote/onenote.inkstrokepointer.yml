@@ -2,7 +2,7 @@
 items:
   - uid: onenote.OneNote.InkStrokePointer
     summary: |-
-      Weak reference to an ink stroke object and its content parent
+      Weak reference to an ink stroke object and its content parent.
 
       \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkStrokePointer

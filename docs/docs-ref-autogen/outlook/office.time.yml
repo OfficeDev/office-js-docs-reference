@@ -83,7 +83,7 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -106,7 +106,6 @@ items:
 
 
       `setAsync(dateTime: Date, callback: (result: AsyncResult) => void): void;`
-
 
       #### Examples
 

@@ -23,7 +23,7 @@ items:
 
 
       Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
 
 
@@ -33,7 +33,6 @@ items:
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
       sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
-
 
       #### Examples
 

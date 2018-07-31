@@ -1032,7 +1032,7 @@ Excel.Range.delete:
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.delete();
+        range.delete("Left");
         return ctx.sync(); 
     }).catch(function(error) {
         console.log("Error: " + error);

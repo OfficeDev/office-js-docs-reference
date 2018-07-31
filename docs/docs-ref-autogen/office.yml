@@ -116,9 +116,8 @@ items:
 
       *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -199,8 +198,7 @@ items:
       return:
         type:
           - Binding
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -228,9 +226,8 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.useShortNamespace
     summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
       #### Examples
 
       ```javascript

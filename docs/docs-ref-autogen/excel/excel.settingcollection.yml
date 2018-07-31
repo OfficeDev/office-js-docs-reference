@@ -39,8 +39,7 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -114,8 +113,7 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -203,8 +201,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
-        description: |
-
+        description: |-
 
           #### Examples
 

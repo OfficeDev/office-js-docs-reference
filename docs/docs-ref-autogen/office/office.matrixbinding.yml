@@ -24,11 +24,10 @@ items:
       - office.Office.MatrixBinding.rowCount
   - uid: office.Office.MatrixBinding.columnCount
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -54,11 +53,10 @@ items:
           - number
   - uid: office.Office.MatrixBinding.rowCount
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
-
       #### Examples
 
       ```javascript

@@ -4,13 +4,12 @@ items:
     summary: >-
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
 
       When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult
       object that you can access from the `callback` function's only parameter.
-
 
       #### Examples
 
@@ -70,9 +69,8 @@ items:
       as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean,
       Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns
       Undefined, if you didn't pass anything to the asyncContext parameter.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -103,9 +101,8 @@ items:
     summary: >-
       Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
       occurred.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -136,9 +133,8 @@ items:
           - office.Office.Error
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -169,7 +165,7 @@ items:
           - office.Office.AsyncResultStatus
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
 
@@ -181,7 +177,6 @@ items:
       of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback
       value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of
       the AsyncResult object topic.
-
 
       #### Examples
 

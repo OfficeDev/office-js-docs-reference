@@ -13,7 +13,9 @@ export declare namespace Office {
         startCustomFunctions(): Promise<void>;
     }
 
-    /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead. */
+    /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". 
+     * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
+     */
     var Promise: IPromiseConstructor;
 
     // Note: this is a copy of the PromiseConstructor object from
@@ -2383,21 +2385,40 @@ export declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * @param coercionType - The type of data structure to return.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
          * 
-         * The possible values for the {@link Office.CoercionType} parameter vary by the host:
-         *
-         * - Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text` (string)
-         *
-         * - Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)
-         *
-         * - Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)
-         *
-         * - Word only: `Office.CoercionType.Html`
-         *
-         * - Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)
-         *
-         * - PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`
+         * <table>
+         *   <tr>
+         *     <th>Host</th>
+         *     <th>Supported coercionType</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Text` (string)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Excel, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Access, Excel, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Word</td>
+         *     <td>`Office.CoercionType.Html`</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Word and Word Online </td>
+         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>`Office.CoercionType.SlideRange`</td>
+         *   </tr>
+         * </table>
+         * 
+         * @param coercionType - The type of data structure to return. See the remarks section for each host's supported coercion types.
          * 
          * @param options - Provides options for customizing what data is returned and how it is formatted.
          * 
@@ -2476,21 +2497,40 @@ export declare namespace Office {
          * <tr><td>PowerPoint</td><td>Insert image</td><td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
          * </table>
          * 
-         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
          * 
-         * The possible CoercionTypes that can be used for the data parameter, or for the coercionType option, vary by host:
-         *
-         * - `Office.CoercionType.Text`: Excel, Word, PowerPoint
-         *
-         * - `Office.CoercionType.Matrix`: Excel, Word
-         *
-         * - `Office.CoercionType.Table`: Access, Excel, Word
-         *
-         * - `Office.CoercionType.Html`: Word
-         *
-         * - `Office.CoercionType.Ooxml`: Word
-         *
-         * - `Office.CoercionType.Image`: Excel, Word, PowerPoint
+         * <table>
+         *   <tr>
+         *     <th>Host</th>
+         *     <th>Supported coercionType</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Text` (string)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Excel, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Access, Excel, Word, and Word Online</td>
+         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Word</td>
+         *     <td>`Office.CoercionType.Html`</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Word and Word Online </td>
+         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>`Office.CoercionType.SlideRange`</td>
+         *   </tr>
+         * </table>
+         * 
+         * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
          * 
          * If the value passed for `data` is:
          * 
@@ -2855,12 +2895,10 @@ export declare namespace Office {
          *
          * <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
          * 
-         * This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. 
+         * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. 
          * Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. 
          * This can happen whenever an instance of the add-in calls the Settings.saveAsync method to persist all of that user's settings to the document. 
          * Calling the refreshAsync method from the event handler for the settingsChanged event of the add-in will refresh the settings values for all users.
-         * 
-         * The refreshAsync method can be called from add-ins created for Excel, but since it doesn't support coauthoring there is no reason to do so.
          *
          * In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information.
          * 
@@ -2932,8 +2970,8 @@ export declare namespace Office {
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. 
          * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
          *
-         * Note: The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. 
-         * The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
+         * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. 
+         * The refreshAsync method is only useful in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to all instances.
          * 
          * <table>
          *   <tr>

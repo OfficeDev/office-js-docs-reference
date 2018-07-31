@@ -72,8 +72,7 @@ items:
       return:
         type:
           - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-        description: |
-
+        description: |-
 
           #### Examples
 

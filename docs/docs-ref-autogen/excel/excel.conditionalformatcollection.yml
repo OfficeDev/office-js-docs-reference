@@ -37,8 +37,7 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormat
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -59,7 +58,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -96,8 +94,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -118,7 +115,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -145,8 +141,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<number>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -184,9 +179,8 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormat
-        description: |
+        description: |-
           Conditional Format object.
-
           #### Examples
 
           ```javascript
@@ -226,8 +220,7 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormat
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -248,7 +241,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");

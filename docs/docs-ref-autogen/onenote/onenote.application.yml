@@ -49,8 +49,7 @@ items:
       return:
         type:
           - onenote.OneNote.Notebook
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -96,8 +95,7 @@ items:
       return:
         type:
           - onenote.OneNote.Notebook
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -144,8 +142,7 @@ items:
       return:
         type:
           - onenote.OneNote.Outline
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -188,8 +185,7 @@ items:
       return:
         type:
           - onenote.OneNote.Outline
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -233,8 +229,7 @@ items:
       return:
         type:
           - onenote.OneNote.Page
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -280,8 +275,7 @@ items:
       return:
         type:
           - onenote.OneNote.Page
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -360,8 +354,7 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -407,8 +400,7 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -529,8 +521,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -585,8 +576,7 @@ items:
       return:
         type:
           - onenote.OneNote.Page
-        description: |
-
+        description: |-
 
           #### Examples
 

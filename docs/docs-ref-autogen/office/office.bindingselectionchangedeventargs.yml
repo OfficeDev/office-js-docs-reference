@@ -52,8 +52,7 @@ items:
       return:
         type:
           - number
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -112,8 +111,7 @@ items:
       return:
         type:
           - number
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -172,8 +170,7 @@ items:
       return:
         type:
           - number
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -232,8 +229,7 @@ items:
       return:
         type:
           - number
-        description: >
-
+        description: >-
 
           #### Examples
 

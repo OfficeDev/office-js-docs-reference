@@ -6583,7 +6583,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the entities found in the selected item."
+                  "text": "Gets the entities found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"
@@ -6709,7 +6709,7 @@
                 "description": [
                   {
                     "kind": "text",
-                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
+                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
                   }
                 ]
               },
@@ -6731,7 +6731,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an array of all the entities of the specified entity type found in the selected item."
+                  "text": "Gets an array of all the entities of the specified entity type found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"
@@ -13526,11 +13526,11 @@
             },
             "OWAView": {
               "kind": "property",
-              "signature": "OWAView: \"string\";",
+              "signature": "OWAView: MailboxEnums.OWAView | \"OneColumn\" | \"TwoColumns\" | \"ThreeColumns\";",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "\"string\"",
+              "type": "MailboxEnums.OWAView | \"OneColumn\" | \"TwoColumns\" | \"ThreeColumns\"",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -18731,7 +18731,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the entities found in the selected item."
+                  "text": "Gets the entities found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"
@@ -18857,7 +18857,7 @@
                 "description": [
                   {
                     "kind": "text",
-                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
+                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
                   }
                 ]
               },
@@ -18879,7 +18879,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an array of all the entities of the specified entity type found in the selected item."
+                  "text": "Gets an array of all the entities of the specified entity type found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"
@@ -22996,7 +22996,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns that can be displayed."
+                  "text": "- OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns that can be displayed."
                 },
                 {
                   "kind": "paragraph"
@@ -25932,6 +25932,59 @@
                 }
               ],
               "isBeta": true
+            },
+            "OWAView": {
+              "kind": "enum",
+              "values": {
+                "OneColumn": {
+                  "kind": "enum value",
+                  "value": "\"OneColumn\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "One column view. Displayed when the screen is narrow. Outlook Web App uses this single-column layout on the entire screen of a smartphone."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "ThreeColumns": {
+                  "kind": "enum value",
+                  "value": "\"ThreeColumns\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Three column view. Displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen window on a desktop computer."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "TwoColumns": {
+                  "kind": "enum value",
+                  "value": "\"TwoColumns\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Two column view. Displayed when the screen is wider. Outlook Web App uses this view on most tablets."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the current view of Outlook Web App."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
             },
             "RecipientType": {
               "kind": "enum",
@@ -34475,7 +34528,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the entities found in the selected item."
+                  "text": "Gets the entities found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"
@@ -34601,7 +34654,7 @@
                 "description": [
                   {
                     "kind": "text",
-                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
+                    "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
                   }
                 ]
               },
@@ -34623,7 +34676,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an array of all the entities of the specified entity type found in the selected item."
+                  "text": "Gets an array of all the entities of the specified entity type found in the selected item's body."
                 },
                 {
                   "kind": "paragraph"

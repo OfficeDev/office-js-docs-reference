@@ -124,8 +124,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -175,8 +174,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -271,7 +269,7 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >
+    remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
@@ -285,7 +283,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
 
       #### Examples
 
@@ -309,7 +306,6 @@ items:
 
       ```
 
-
       ```javascript
 
       // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
@@ -331,7 +327,6 @@ items:
       });
 
       ```
-
 
       ```javascript
 
@@ -438,12 +433,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setData(sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): void;'
+      content: 'setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;'
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -465,7 +459,7 @@ items:
         - id: sourceData
           description: The range corresponding to the source data.
           type:
-            - Range | string
+            - Range
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
@@ -487,8 +481,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

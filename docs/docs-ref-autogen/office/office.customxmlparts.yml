@@ -18,11 +18,10 @@ items:
       - office.Office.CustomXmlParts.getByNamespaceAsync
   - uid: office.Office.CustomXmlParts.addAsync
     summary: Asynchronously adds a new custom XML part to a file.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -72,11 +71,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -119,11 +117,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript

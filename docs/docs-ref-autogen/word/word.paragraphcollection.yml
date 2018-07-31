@@ -113,8 +113,7 @@ items:
       return:
         type:
           - Word.ParagraphCollection
-        description: >
-
+        description: >-
 
           #### Examples
 

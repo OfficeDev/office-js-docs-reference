@@ -89,8 +89,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -145,8 +144,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -211,8 +209,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -312,8 +309,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -395,8 +391,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -462,8 +457,7 @@ items:
       return:
         type:
           - Word.Paragraph
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -541,8 +535,7 @@ items:
       return:
         type:
           - word.Word.RangeCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -613,8 +606,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -653,7 +645,6 @@ items:
               }
           });
           ```
-
           ```typescript
           Word.run(async (context) => {
               context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
@@ -662,7 +653,6 @@ items:
               console.log("success");
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
@@ -695,8 +685,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -779,8 +768,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -847,8 +835,7 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -939,8 +926,7 @@ items:
       return:
         type:
           - Word.Paragraph
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -979,7 +965,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               // Insert first sentence. Then we adjust the formatting.
@@ -1074,8 +1059,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1114,7 +1098,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               // Here we insert to replace text
@@ -1180,8 +1163,7 @@ items:
       return:
         type:
           - number
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1211,8 +1193,7 @@ items:
       return:
         type:
           - number
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1534,8 +1515,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1575,7 +1555,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               // If select is called, with no parameters it selects the object.
@@ -1584,7 +1563,6 @@ items:
               await context.sync();
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               //Select can be at the start or end of a range, this by definition moves the insertion point without selecting the range. 
@@ -1610,8 +1588,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1629,7 +1606,6 @@ items:
               await context.sync();
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               const firstParagraph = context.document.body.paragraphs.getFirst();
@@ -1667,8 +1643,7 @@ items:
       return:
         type:
           - number
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1711,8 +1686,7 @@ items:
       return:
         type:
           - word.Word.RangeCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1769,8 +1743,7 @@ items:
       return:
         type:
           - word.Word.List
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1925,8 +1898,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 

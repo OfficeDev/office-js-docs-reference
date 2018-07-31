@@ -35,8 +35,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -70,8 +69,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -105,8 +103,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -160,8 +157,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -210,8 +206,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

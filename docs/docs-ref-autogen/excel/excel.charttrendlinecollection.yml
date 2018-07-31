@@ -35,8 +35,7 @@ items:
       return:
         type:
           - excel.Excel.ChartTrendline
-        description: |
-
+        description: |-
 
           #### Examples
 

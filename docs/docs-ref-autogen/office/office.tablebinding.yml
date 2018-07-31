@@ -36,7 +36,7 @@ items:
       - office.Office.TableBinding.setTableOptionsAsync
   - uid: office.Office.TableBinding.addColumnsAsync
     summary: Adds the specified data to the table as additional columns.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
@@ -67,7 +67,6 @@ items:
 
       Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
       can't exceed 20,000 in a single call to this method.
-
 
       #### Examples
 
@@ -142,7 +141,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
@@ -173,7 +172,6 @@ items:
 
       Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
       can't exceed 20,000 in a single call to this method.
-
 
       #### Examples
 
@@ -218,7 +216,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
@@ -228,7 +226,6 @@ items:
       See [Format tables in add-ins for
       Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
-
 
       #### Examples
 
@@ -270,11 +267,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.columnCount
     summary: 'Gets the number of columns in the TableBinding, as an integer value.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -293,13 +289,12 @@ items:
           - number
   - uid: office.Office.TableBinding.deleteAllDataValuesAsync
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       In Excel, if the table has no header row, this method will delete the table itself.
-
       #### Examples
 
       ```javascript
@@ -364,11 +359,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
     summary: 'True, if the table has headers; otherwise false.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -394,7 +388,7 @@ items:
           - boolean
   - uid: office.Office.TableBinding.rowCount
     summary: 'Gets the number of rows in the TableBinding, as an integer value.'
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
 
@@ -419,7 +413,6 @@ items:
 
 
       In content add-ins for Access, for performance reasons the rowCount property always returns -1.
-
 
       #### Examples
 
@@ -451,7 +444,7 @@ items:
           - number
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
@@ -565,7 +558,6 @@ items:
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
 
-
       #### Examples
 
 
@@ -635,7 +627,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.setTableOptionsAsync
     summary: Updates table formatting options on the bound table.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
@@ -652,7 +644,6 @@ items:
       <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
-
 
       #### Examples
 

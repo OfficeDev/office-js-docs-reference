@@ -86,8 +86,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -110,7 +109,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               let activeSheet = context.workbook.worksheets.getActiveWorksheet();
@@ -123,7 +121,6 @@ items:
               }
           });
           ```
-
           ```typescript
           let password = await passwordHandler();
           passwordHelper(password);
@@ -189,8 +186,7 @@ items:
       return:
         type:
           - void
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -214,7 +210,6 @@ items:
 
           ```
 
-
           ```javascript
 
           // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a
@@ -233,7 +228,6 @@ items:
 
           ```
 
-
           ```typescript
 
           await Excel.run(async (context) => {
@@ -242,7 +236,6 @@ items:
           });
 
           ```
-
 
           ```typescript
 

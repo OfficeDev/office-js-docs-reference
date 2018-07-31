@@ -154,8 +154,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -254,8 +253,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -264,7 +262,7 @@ items:
               var sheetName = "Sheet1";
               var rangeAddress = "D:F";
               var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.delete();
+              range.delete("Left");
               return ctx.sync(); 
           }).catch(function(error) {
               console.log("Error: " + error);
@@ -394,8 +392,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -439,8 +436,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -486,8 +482,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -577,8 +572,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -622,8 +616,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -681,8 +674,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -724,8 +716,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -794,8 +785,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -830,8 +820,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -866,8 +855,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -905,8 +893,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -985,8 +972,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1094,8 +1080,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1116,7 +1101,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");    
@@ -1184,8 +1168,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1268,8 +1251,7 @@ items:
       return:
         type:
           - excel.Excel.RangeHyperlink
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1318,8 +1300,7 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1377,7 +1358,7 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >
+    remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
@@ -1391,7 +1372,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
 
       #### Examples
 
@@ -1418,7 +1398,6 @@ items:
 
       ```
 
-
       ```javascript
 
       // Below example uses a named-range to get the range object.
@@ -1438,7 +1417,6 @@ items:
       });
 
       ```
-
 
       ```javascript
 
@@ -1497,8 +1475,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1516,7 +1493,6 @@ items:
               }
           });
           ```
-
           ```javascript
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
@@ -1636,8 +1612,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1659,11 +1634,10 @@ items:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |
+    remarks: |-
       This method has the following additional signature:
 
       `set(properties: Excel.Range): void`
-
       #### Examples
 
       ```typescript
@@ -1686,7 +1660,6 @@ items:
           await context.sync();
       });
       ```
-
       ```typescript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1774,8 +1747,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1854,8 +1826,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

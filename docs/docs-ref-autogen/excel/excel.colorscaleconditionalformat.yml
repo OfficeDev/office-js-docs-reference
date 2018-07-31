@@ -34,8 +34,7 @@ items:
       return:
         type:
           - excel.Excel.ConditionalColorScaleCriteria
-        description: |
-
+        description: |-
 
           #### Examples
 

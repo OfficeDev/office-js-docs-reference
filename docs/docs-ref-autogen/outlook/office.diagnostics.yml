@@ -114,7 +114,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'OWAView: "string";'
+      content: 'OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";'
       return:
         type:
-          - '"string"'
+          - MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns"

@@ -68,8 +68,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -85,7 +84,6 @@ items:
               }
           });
           ```
-
           ```typescript
           let password = await passwordHandler();
           passwordHelper(password);
@@ -147,8 +145,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -158,7 +155,6 @@ items:
               workbook.protection.unprotect();
           });
           ```
-
           ```typescript
           let password = await passwordHandler();
           passwordHelper(password);

@@ -466,6 +466,8 @@ items:
                     uid: outlook.Office.MailboxEnums.ItemType
                   - name: Month
                     uid: outlook.Office.MailboxEnums.Month
+                  - name: OWAView
+                    uid: outlook.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: outlook.Office.MailboxEnums.RecipientType
                   - name: RecurrenceTimeZone

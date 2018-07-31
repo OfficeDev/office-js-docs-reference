@@ -23,13 +23,12 @@ items:
       - office.Office.CustomXmlPart.removeHandlerAsync
   - uid: office.Office.CustomXmlPart.addHandlerAsync
     summary: Adds an event handler to the object using the specified event type.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Word</td></tr></table>
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-
 
       #### Examples
 
@@ -55,7 +54,6 @@ items:
 
       ```
 
-
       ```javascript
 
       // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
@@ -76,7 +74,6 @@ items:
       }
 
       ```
-
 
       ```javascript
 
@@ -136,11 +133,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.builtIn
     summary: 'True, if the custom XML part is built in; otherwise false.'
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -168,11 +164,10 @@ items:
           - boolean
   - uid: office.Office.CustomXmlPart.deleteAsync
     summary: Deletes the Custom XML Part.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -211,11 +206,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getNodesAsync
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -263,11 +257,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getXmlAsync
     summary: Asynchronously gets the XML inside this custom XML part.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -306,11 +299,10 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.id
     summary: Gets the GUID of the CustomXMLPart.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -340,11 +332,10 @@ items:
       Gets the set of namespace prefix mappings
       ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
       CustomXMLPart.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -367,11 +358,10 @@ items:
           - office.Office.CustomXmlPrefixMappings
   - uid: office.Office.CustomXmlPart.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
       ```javascript
