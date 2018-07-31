@@ -48,8 +48,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -76,7 +75,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Run a batch operation against the Word object model.
           Word.run(function (context) {
@@ -126,8 +124,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -178,8 +175,7 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -214,7 +210,6 @@ items:
           // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```
-
           ```typescript
           await Word.run(async (context) => {
               let contentControls = context.document.contentControls.getByTag("customer");
@@ -249,8 +244,7 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -326,8 +320,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -421,8 +414,7 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
-        description: >
-
+        description: >-
 
           #### Examples
 

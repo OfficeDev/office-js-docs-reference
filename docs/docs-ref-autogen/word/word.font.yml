@@ -130,8 +130,7 @@ items:
       return:
         type:
           - word.Word.Font
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -159,7 +158,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Change the font color
           // Run a batch operation against the Word object model.
@@ -184,7 +182,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Change the font size
           // Run a batch operation against the Word object model.
@@ -209,7 +206,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Highlight selected text
           // Run a batch operation against the Word object model.
@@ -234,7 +230,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Bold format text
           // Run a batch operation against the Word object model.
@@ -259,7 +254,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Underline format text
           // Run a batch operation against the Word object model.
@@ -284,7 +278,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Strike format text
           // Run a batch operation against the Word object model.

@@ -65,8 +65,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -141,8 +140,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -184,8 +182,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -265,8 +262,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -317,8 +313,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -362,8 +357,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -415,8 +409,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -469,8 +462,7 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -552,8 +544,7 @@ items:
       return:
         type:
           - Word.Paragraph
-        description: >
-
+        description: >-
 
           #### Examples
 
@@ -591,7 +582,6 @@ items:
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 
           ```
-
 
           ```typescript
 
@@ -652,8 +642,7 @@ items:
       return:
         type:
           - Word.Table
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -701,8 +690,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -767,8 +755,7 @@ items:
       return:
         type:
           - Word.Body
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -796,7 +783,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Get the style and the font size, font name, and font color properties on the body object.
           // Run a batch operation against the Word object model.
@@ -970,8 +956,7 @@ items:
       return:
         type:
           - word.Word.RangeCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1018,7 +1003,6 @@ items:
           // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
           // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
           ```
-
           ```typescript
           await Word.run(async (context) => {
               let results = context.document.body.search("Online");
@@ -1034,7 +1018,6 @@ items:
               await context.sync();
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes (i.e. we are using wildcards).
@@ -1085,8 +1068,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

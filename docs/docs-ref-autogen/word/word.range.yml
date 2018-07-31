@@ -78,8 +78,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -158,8 +157,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -265,8 +263,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -385,8 +382,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -513,8 +509,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -566,8 +561,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -602,7 +596,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               let results = context.document.body.search("Contractor");
@@ -637,8 +630,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -693,8 +685,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -777,8 +768,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -833,8 +823,7 @@ items:
       return:
         type:
           - Word.Paragraph
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -925,8 +914,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1243,8 +1231,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

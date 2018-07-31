@@ -37,8 +37,7 @@ items:
       return:
         type:
           - excel.Excel.CustomXmlPart
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -84,8 +83,7 @@ items:
       return:
         type:
           - excel.Excel.CustomXmlPartScopedCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -155,8 +153,7 @@ items:
       return:
         type:
           - excel.Excel.CustomXmlPart
-        description: |
-
+        description: |-
 
           #### Examples
 

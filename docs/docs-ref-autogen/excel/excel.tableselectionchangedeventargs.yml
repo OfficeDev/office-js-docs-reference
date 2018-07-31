@@ -32,8 +32,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 

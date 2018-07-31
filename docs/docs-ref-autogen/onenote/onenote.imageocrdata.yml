@@ -2,7 +2,7 @@
 items:
   - uid: onenote.OneNote.ImageOcrData
     summary: |-
-      Represents data obtained by OCR (optical character recognition) of an image
+      Represents data obtained by OCR (optical character recognition) of an image.
 
       \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ImageOcrData

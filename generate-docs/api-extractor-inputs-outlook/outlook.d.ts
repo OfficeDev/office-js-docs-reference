@@ -229,6 +229,23 @@ export declare namespace Office {
             Dec = "dec"
         }
         /**
+         * Represents the current view of Outlook Web App.
+         */
+        enum OWAView {
+            /**
+             * One column view. Displayed when the screen is narrow. Outlook Web App uses this single-column layout on the entire screen of a smartphone.
+             */
+            OneColumn = "OneColumn",
+            /**
+             * Two column view. Displayed when the screen is wider. Outlook Web App uses this view on most tablets.
+             */
+            TwoColumns = "TwoColumns",
+            /**
+             Three column view. Displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen window on a desktop computer.
+             */
+            ThreeColumns = "ThreeColumns"
+        }
+        /**
          * Specifies the type of recipient for an appointment.
          *
          * [Api set: Mailbox 1.1]
@@ -1663,7 +1680,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          */
-        OWAView: "string";
+        OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
     /**
      * Provides the email properties of the sender or specified recipients of an email message or appointment.
@@ -2302,7 +2319,9 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -3121,7 +3140,9 @@ export declare namespace Office {
          * 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -3139,13 +3160,15 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
          * 
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
         getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;
         /**
-         * Gets the entities found in the selected item.
+         * Gets the entities found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -3159,7 +3182,7 @@ export declare namespace Office {
          */
         getEntities(): Entities;
         /**
-         * Gets an array of all the entities of the specified entity type found in the selected item.
+         * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -3168,7 +3191,7 @@ export declare namespace Office {
          * @param entityType - One of the EntityType enumeration values.
          *
          * @returns
-         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -3880,7 +3903,9 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -4396,7 +4421,9 @@ export declare namespace Office {
          * 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -4414,13 +4441,15 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
          * 
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
         getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;
         /**
-         * Gets the entities found in the selected item.
+         * Gets the entities found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -4434,7 +4463,7 @@ export declare namespace Office {
          */
         getEntities(): Entities;
         /**
-         * Gets an array of all the entities of the specified entity type found in the selected item.
+         * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -4443,7 +4472,7 @@ export declare namespace Office {
          * @param entityType - One of the EntityType enumeration values.
          *
          * @returns
-         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -5101,7 +5130,9 @@ export declare namespace Office {
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -5924,7 +5955,9 @@ export declare namespace Office {
          * 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
@@ -5942,13 +5975,15 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
          * 
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. 
+         * On success, the initialization data is provided in the asyncResult.value property as a string. 
+         * If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          *
          * @beta
          */
         getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;
         /**
-         * Gets the entities found in the selected item.
+         * Gets the entities found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -5962,7 +5997,7 @@ export declare namespace Office {
          */
         getEntities(): Entities;
         /**
-         * Gets an array of all the entities of the specified entity type found in the selected item.
+         * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
@@ -5971,7 +6006,7 @@ export declare namespace Office {
          * @param entityType - One of the EntityType enumeration values.
          * 
          * @returns
-         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
          *
          * @remarks
          * 
@@ -6396,7 +6431,7 @@ export declare namespace Office {
          * 
          *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
          * 
-         *  - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns that can be displayed.
+         *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns that can be displayed.
          *
          *  More information is under {@link Office.Diagnostics}. 
          *

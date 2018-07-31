@@ -39,8 +39,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<number>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -112,8 +111,7 @@ items:
       return:
         type:
           - excel.Excel.CustomXmlPart
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -165,8 +163,7 @@ items:
       return:
         type:
           - excel.Excel.CustomXmlPart
-        description: |
-
+        description: |-
 
           #### Examples
 

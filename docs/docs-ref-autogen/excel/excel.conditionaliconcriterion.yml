@@ -48,8 +48,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -108,8 +107,7 @@ items:
       return:
         type:
           - Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -153,7 +151,6 @@ items:
               await context.sync();
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -181,8 +178,7 @@ items:
       return:
         type:
           - Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
-        description: |
-
+        description: |-
 
           #### Examples
 

@@ -39,8 +39,7 @@ items:
       return:
         type:
           - Word.CustomProperty
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -52,7 +51,6 @@ items:
               console.log("Property added");
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               context.document.properties.customProperties.add("String Property", "Hello World!");
@@ -158,8 +156,7 @@ items:
       return:
         type:
           - 'Word.CustomProperty[]'
-        description: |
-
+        description: |-
 
           #### Examples
 

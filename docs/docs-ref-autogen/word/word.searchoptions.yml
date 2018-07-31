@@ -74,8 +74,7 @@ items:
       return:
         type:
           - word.Word.SearchOptions
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -114,7 +113,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Search based on a prefix
           // Run a batch operation against the Word object model.
@@ -150,7 +148,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Search based on a suffix
           // Run a batch operation against the Word object model.
@@ -186,7 +183,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Search using a wildcard
           // Run a batch operation against the Word object model.

@@ -45,8 +45,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

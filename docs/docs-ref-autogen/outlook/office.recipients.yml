@@ -32,7 +32,7 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -56,7 +56,6 @@ items:
 
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
       void;`
-
 
       #### Examples
 
@@ -129,7 +128,7 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
@@ -142,7 +141,6 @@ items:
 
 
       `getAsync(callback: (result: AsyncResult) => void): void;`
-
 
       #### Examples
 
@@ -203,7 +201,7 @@ items:
       - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -227,7 +225,6 @@ items:
 
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
       void;`
-
 
       #### Examples
 

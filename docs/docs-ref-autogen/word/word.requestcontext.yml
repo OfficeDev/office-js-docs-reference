@@ -13,8 +13,7 @@ items:
     extends:
       - OfficeExtension.ClientRequestContext
     package: word
-    remarks: >
-
+    remarks: >-
 
       #### Examples
 
@@ -59,7 +58,6 @@ items:
       // Note: You must call load() after adding tracked objects.    
 
       ```
-
 
       ```javascript
 

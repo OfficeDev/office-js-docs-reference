@@ -128,8 +128,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -214,8 +213,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -295,8 +293,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -351,8 +348,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -491,8 +487,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -559,8 +554,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -659,8 +653,7 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -760,8 +753,7 @@ items:
       return:
         type:
           - Word.Paragraph
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -868,8 +860,7 @@ items:
       return:
         type:
           - Word.Range
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -952,8 +943,7 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -988,7 +978,6 @@ items:
               }
           });
           ```
-
           ```javascript
           // Load all of the content control properties
           // Run a batch operation against the Word object model.
@@ -1247,8 +1236,7 @@ items:
       return:
         type:
           - word.Word.RangeCollection
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1339,8 +1327,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -1582,8 +1569,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 

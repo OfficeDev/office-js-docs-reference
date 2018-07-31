@@ -33,8 +33,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -88,8 +87,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -109,7 +107,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");

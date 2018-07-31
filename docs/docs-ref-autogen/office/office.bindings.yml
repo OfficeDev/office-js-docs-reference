@@ -19,7 +19,7 @@ items:
       - office.Office.Bindings.releaseByIdAsync
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
@@ -51,7 +51,6 @@ items:
       Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you
       try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the
       operation will fail.
-
 
       #### Examples
 
@@ -160,7 +159,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel</td></tr>
 
 
@@ -169,7 +168,6 @@ items:
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
-
 
       #### Examples
 
@@ -219,7 +217,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
-    remarks: >
+    remarks: >-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
@@ -235,7 +233,6 @@ items:
       bindingType parameter.If you need to use an existing id and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
-
 
       #### Examples
 
@@ -302,11 +299,10 @@ items:
           - Document
   - uid: office.Office.Bindings.getAllAsync
     summary: Gets all bindings that were previously created.
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
-
       #### Examples
 
       ```javascript
@@ -346,13 +342,12 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
       Fails if the specified id does not exist.
-
       #### Examples
 
       ```javascript
@@ -392,13 +387,12 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
-    remarks: |
+    remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
       Fails if the specified id does not exist.
-
       #### Examples
 
       ```javascript

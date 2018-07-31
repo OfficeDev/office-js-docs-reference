@@ -269,11 +269,11 @@ items:
       Exchange Server. An example is the string 15.0.468.0.
 
 
-      - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not
-      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn -
-      displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed
-      when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns
-      that can be displayed.
+      - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of
+      Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in
+      undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
+      displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the
+      width of the screen and the window, and the number of columns that can be displayed.
 
 
       More information is under [Office.Diagnostics](xref:outlook.Office.Diagnostics)<!-- -->.

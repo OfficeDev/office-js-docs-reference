@@ -2832,7 +2832,7 @@
             },
             "setData": {
               "kind": "method",
-              "signature": "setData(sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): void;",
+              "signature": "setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2851,7 +2851,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Range | string"
+                  "type": "Range"
                 },
                 "seriesBy": {
                   "name": "seriesBy",
@@ -6180,7 +6180,7 @@
           "members": {
             "add": {
               "kind": "method",
-              "signature": "add(type: Excel.ChartType, sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;",
+              "signature": "add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6211,7 +6211,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Range | string"
+                  "type": "Range"
                 },
                 "seriesBy": {
                   "name": "seriesBy",

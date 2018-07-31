@@ -49,8 +49,7 @@ items:
       return:
         type:
           - excel.Excel.ChartFont
-        description: |
-
+        description: |-
 
           #### Examples
 

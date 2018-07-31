@@ -34,8 +34,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -81,8 +80,7 @@ items:
       return:
         type:
           - excel.Excel.Style
-        description: |
-
+        description: |-
 
           #### Examples
 

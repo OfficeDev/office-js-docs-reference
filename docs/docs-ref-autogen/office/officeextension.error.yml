@@ -10,8 +10,7 @@ items:
       - typeScript
     type: class
     package: office
-    remarks: |
-
+    remarks: |-
 
       #### Examples
 
@@ -131,8 +130,7 @@ items:
       return:
         type:
           - Array<string>
-        description: |
-
+        description: |-
 
           #### Examples
 

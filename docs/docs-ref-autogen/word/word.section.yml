@@ -56,8 +56,7 @@ items:
       return:
         type:
           - Word.Body
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -99,7 +98,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               context.document.sections.getFirst()
@@ -128,8 +126,7 @@ items:
       return:
         type:
           - Word.Body
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -171,7 +168,6 @@ items:
               }
           });
           ```
-
           ```typescript
           await Word.run(async (context) => {
               context.document.sections.getFirst()

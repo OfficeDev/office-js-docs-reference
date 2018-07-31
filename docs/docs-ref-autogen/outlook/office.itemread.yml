@@ -157,7 +157,7 @@ items:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.getEntities
     summary: |-
-      Gets the entities found in the selected item.
+      Gets the entities found in the selected item's body.
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
@@ -182,7 +182,7 @@ items:
         description: ''
   - uid: outlook.Office.ItemRead.getEntitiesByType
     summary: |-
-      Gets an array of all the entities of the specified entity type found in the selected item.
+      Gets an array of all the entities of the specified entity type found in the selected item's body.
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
@@ -220,7 +220,7 @@ items:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
         description: >-
           If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns
-          null. If no entities of the specified type are present on the item, the method returns an empty array.
+          null. If no entities of the specified type are present in the item's body, the method returns an empty array.
           Otherwise, the type of the objects in the returned array depends on the type of entity requested in the
           entityType parameter.
       parameters:

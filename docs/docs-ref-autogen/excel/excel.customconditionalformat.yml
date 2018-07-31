@@ -36,8 +36,7 @@ items:
       return:
         type:
           - excel.Excel.ConditionalRangeFormat
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -101,8 +100,7 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormatRule
-        description: |
-
+        description: |-
 
           #### Examples
 

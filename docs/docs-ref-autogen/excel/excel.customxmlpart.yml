@@ -36,8 +36,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -84,8 +83,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -126,8 +124,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -217,8 +214,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 

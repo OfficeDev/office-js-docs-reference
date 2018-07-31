@@ -41,7 +41,7 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
@@ -54,7 +54,6 @@ items:
 
 
       `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;`
-
 
       #### Examples
 
@@ -161,7 +160,7 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -184,7 +183,6 @@ items:
 
 
       `prependAsync(data: string): void;`
-
 
       #### Examples
 
@@ -247,7 +245,7 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -271,7 +269,6 @@ items:
 
 
       `setAsync(data: string): void;`
-
 
       #### Examples
 
@@ -350,7 +347,7 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
@@ -374,7 +371,6 @@ items:
 
 
       `setSelectedDataAsync(data: string): void;`
-
 
       #### Examples
 

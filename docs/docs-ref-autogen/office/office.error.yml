@@ -30,8 +30,7 @@ items:
       return:
         type:
           - number
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -63,8 +62,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -96,8 +94,7 @@ items:
       return:
         type:
           - string
-        description: |
-
+        description: |-
 
           #### Examples
 

@@ -107,8 +107,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -141,8 +140,7 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -189,8 +187,7 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |
-
+        description: |-
 
           #### Examples
 

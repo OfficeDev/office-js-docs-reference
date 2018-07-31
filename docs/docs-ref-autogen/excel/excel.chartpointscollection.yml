@@ -66,8 +66,7 @@ items:
       return:
         type:
           - excel.Excel.ChartPoint
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -107,7 +106,7 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >
+    remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
@@ -121,7 +120,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
 
       #### Examples
 
@@ -144,7 +142,6 @@ items:
       });
 
       ```
-
 
       ```javascript
 

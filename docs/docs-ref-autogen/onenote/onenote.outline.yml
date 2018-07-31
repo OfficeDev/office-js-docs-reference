@@ -41,8 +41,7 @@ items:
       return:
         type:
           - void
-        description: |
-
+        description: |-
 
           #### Examples
 
@@ -154,8 +153,7 @@ items:
       return:
         type:
           - OneNote.Table
-        description: |
-
+        description: |-
 
           #### Examples
 

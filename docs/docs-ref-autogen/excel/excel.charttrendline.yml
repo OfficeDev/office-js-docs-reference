@@ -214,8 +214,7 @@ items:
           - >-
             Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
             "Power"
-        description: |
-
+        description: |-
 
           #### Examples
 
