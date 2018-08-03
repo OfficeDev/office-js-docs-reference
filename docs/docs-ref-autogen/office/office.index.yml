@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Index
-    summary: Specifies the relative PowerPoint slide
+    summary: Specifies the relative PowerPoint slide.
     remarks: >-
       **Support details**
 
@@ -15,7 +15,7 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad /th&gt;</tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      browser) </th><th> Office for iPad </th></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td></tr>
       </table>
     name: Office.Index
     fullName: office.Office.Index

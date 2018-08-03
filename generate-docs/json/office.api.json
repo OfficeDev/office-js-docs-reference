@@ -6351,7 +6351,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in PowerPoint when calling the `"
+                  "text": "Note: Only applies to data in PowerPoint when calling the "
                 },
                 {
                   "kind": "api-link",
@@ -6370,7 +6370,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": ".getSelectedData` method to get the current slide or selected range of slides."
+                  "text": ".getSelectedData method to get the current slide or selected range of slides."
                 }
               ],
               "remarks": [],
@@ -21372,7 +21372,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the relative PowerPoint slide"
+              "text": "Specifies the relative PowerPoint slide."
             }
           ],
           "remarks": [
@@ -21469,7 +21469,11 @@
             },
             {
               "kind": "text",
-              "text": " Office for iPad /th>"
+              "text": " Office for iPad "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
             },
             {
               "kind": "html-tag",
@@ -24120,7 +24124,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the project fields that are available as a parameter for the `"
+              "text": "Specifies the project fields that are available as a parameter for the "
             },
             {
               "kind": "api-link",
@@ -24139,13 +24143,13 @@
             },
             {
               "kind": "text",
-              "text": ".getProjectFieldAsync` method."
+              "text": ".getProjectFieldAsync method."
             }
           ],
           "remarks": [
             {
               "kind": "text",
-              "text": "A ProjectProjectFields constant can be used as a parameter of the `"
+              "text": "A ProjectProjectFields constant can be used as a parameter of the "
             },
             {
               "kind": "api-link",
@@ -24164,7 +24168,7 @@
             },
             {
               "kind": "text",
-              "text": ".getProjectFieldAsync` method."
+              "text": ".getProjectFieldAsync method."
             },
             {
               "kind": "paragraph"
@@ -26931,7 +26935,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the resource fields that are available as a parameter for the `"
+              "text": "Specifies the resource fields that are available as a parameter for the "
             },
             {
               "kind": "api-link",
@@ -26950,13 +26954,13 @@
             },
             {
               "kind": "text",
-              "text": ".getResourceFieldAsync` method."
+              "text": ".getResourceFieldAsync method."
             }
           ],
           "remarks": [
             {
               "kind": "text",
-              "text": "A ProjectResourceFields constant can be used as a parameter of the `"
+              "text": "A ProjectResourceFields constant can be used as a parameter of the "
             },
             {
               "kind": "api-link",
@@ -26975,7 +26979,7 @@
             },
             {
               "kind": "text",
-              "text": ".getResourceFieldAsync` method."
+              "text": ".getResourceFieldAsync method."
             },
             {
               "kind": "paragraph"
@@ -30832,7 +30836,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the task fields that are available as a parameter for the `"
+              "text": "Specifies the task fields that are available as a parameter for the "
             },
             {
               "kind": "api-link",
@@ -30851,13 +30855,13 @@
             },
             {
               "kind": "text",
-              "text": ".getTaskFieldAsync` method."
+              "text": ".getTaskFieldAsync method."
             }
           ],
           "remarks": [
             {
               "kind": "text",
-              "text": "A ProjectTaskFields constant can be used as a parameter of the `"
+              "text": "A ProjectTaskFields constant can be used as a parameter of the "
             },
             {
               "kind": "api-link",
@@ -30876,7 +30880,7 @@
             },
             {
               "kind": "text",
-              "text": ".getTaskFieldAsync` method."
+              "text": ".getTaskFieldAsync method."
             },
             {
               "kind": "paragraph"
@@ -31272,7 +31276,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the types of views that the `"
+              "text": "Specifies the types of views that the "
             },
             {
               "kind": "api-link",
@@ -31291,13 +31295,13 @@
             },
             {
               "kind": "text",
-              "text": ".getSelectedViewAsync` method can recognize."
+              "text": ".getSelectedViewAsync method can recognize."
             }
           ],
           "remarks": [
             {
               "kind": "text",
-              "text": "The `"
+              "text": "The "
             },
             {
               "kind": "api-link",
@@ -31316,7 +31320,7 @@
             },
             {
               "kind": "text",
-              "text": ".getSelectedViewAsync` method returns the ProjectViewTypes constant value and name that corresponds to the active view."
+              "text": ".getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the active view."
             },
             {
               "kind": "paragraph"
@@ -31867,7 +31871,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies whether to select (highlight) the location to navigate to (when using the `"
+              "text": "Specifies whether to select (highlight) the location to navigate to (when using the "
             },
             {
               "kind": "api-link",
@@ -31886,7 +31890,7 @@
             },
             {
               "kind": "text",
-              "text": ".goToByIdAsync` method)."
+              "text": ".goToByIdAsync method)."
             }
           ],
           "remarks": [
@@ -31983,7 +31987,11 @@
             },
             {
               "kind": "text",
-              "text": " Office for iPad /th>"
+              "text": " Office for iPad "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
             },
             {
               "kind": "html-tag",

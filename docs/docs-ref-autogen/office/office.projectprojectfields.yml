@@ -2,11 +2,11 @@
 items:
   - uid: office.Office.ProjectProjectFields
     summary: >-
-      Specifies the project fields that are available as a parameter for the
-      `[Document](xref:office.Office.Document)<!-- -->.getProjectFieldAsync` method.
+      Specifies the project fields that are available as a parameter for the [Document](xref:office.Office.Document)<!--
+      -->.getProjectFieldAsync method.
     remarks: >-
-      A ProjectProjectFields constant can be used as a parameter of the `[Document](xref:office.Office.Document)<!--
-      -->.getProjectFieldAsync` method.
+      A ProjectProjectFields constant can be used as a parameter of the [Document](xref:office.Office.Document)<!--
+      -->.getProjectFieldAsync method.
 
 
       **Support details**

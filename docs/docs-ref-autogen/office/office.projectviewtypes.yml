@@ -2,10 +2,10 @@
 items:
   - uid: office.Office.ProjectViewTypes
     summary: >-
-      Specifies the types of views that the `[Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync`
-      method can recognize.
+      Specifies the types of views that the [Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method
+      can recognize.
     remarks: >-
-      The `[Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync` method returns the ProjectViewTypes
+      The [Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method returns the ProjectViewTypes
       constant value and name that corresponds to the active view.
 
 
