@@ -1,9 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.ProjectTaskFields
-    summary: Specifies the task fields that are available as a parameter for the getTaskFieldAsync method.
+    summary: >-
+      Specifies the task fields that are available as a parameter for the `[Document](xref:office.Office.Document)<!--
+      -->.getTaskFieldAsync` method.
     remarks: >-
-      A ProjectTaskFields constant can be used as a parameter of the getTaskFieldAsync method.
+      A ProjectTaskFields constant can be used as a parameter of the `[Document](xref:office.Office.Document)<!--
+      -->.getTaskFieldAsync` method.
 
 
       For more information about working with fields in Project, see the [Available
@@ -11,7 +14,19 @@ items:
       reference. In Project Help, search for Available fields.
 
 
-      <table><tr><td>Hosts</td><td>Project</td></tr></table>
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th></tr> <tr><th> Project </th><td> Y </td><td> </td></tr> </table>
     name: Office.ProjectTaskFields
     fullName: office.Office.ProjectTaskFields
     langs:

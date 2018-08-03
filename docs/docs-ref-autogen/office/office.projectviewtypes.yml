@@ -1,13 +1,27 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.ProjectViewTypes
-    summary: Specifies the types of views that the getSelectedViewAsync method can recognize.
+    summary: >-
+      Specifies the types of views that the `[Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync`
+      method can recognize.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Project</td></tr></table>
+      The `[Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync` method returns the ProjectViewTypes
+      constant value and name that corresponds to the active view.
 
 
-      The getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the
-      active view.
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th></tr> <tr><th> Project </th><td> Y </td><td> </td></tr> </table>
     name: Office.ProjectViewTypes
     fullName: office.Office.ProjectViewTypes
     langs:

@@ -267,9 +267,25 @@ export declare namespace Office {
      * Specifies the result of an asynchronous call.
      * 
      * @remarks
-     * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
      * 
-     * Returned by the status property of the AsyncResult object.
+     * Returned by the `status` property of the {@link Office.AsyncResult | AsyncResult} object.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th> Access     </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Outlook    </th><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *  </table>
      */
     enum AsyncResultStatus {
         /**
@@ -285,7 +301,20 @@ export declare namespace Office {
      * Specifies whether the add-in was just inserted or was already contained in the document.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum InitializationReason {
         /**
@@ -301,7 +330,24 @@ export declare namespace Office {
      * Specifies the host Office application in which the add-in is running.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook, OneNote, Project, Access</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th> Access     </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> OneNote    </th><td>                            </td><td> Y                          </td><td>                 </td><td> Y               </td><td>                </td></tr>
+     *   <tr><th> Outlook    </th><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *  </table>
      */
     enum HostType {
         /**
@@ -337,7 +383,24 @@ export declare namespace Office {
      * Specifies the OS or other platform on which the Office host application is running.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook, OneNote, Project, Access</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th> Access     </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> OneNote    </th><td>                            </td><td> Y                          </td><td>                 </td><td> Y               </td><td>                </td></tr>
+     *   <tr><th> Outlook    </th><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *  </table>
      */
     enum PlatformType {
         /**
@@ -376,7 +439,7 @@ export declare namespace Office {
         */
         export interface AsyncResult {
         /**
-        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
         *
         * @remarks
         * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
@@ -402,9 +465,9 @@ export declare namespace Office {
         * @remarks
         * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
         * 
-        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object.
+        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
         *
-        * Note: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of the AsyncResult object topic.
+        * Note: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
         */
         value: any;
     }
@@ -436,6 +499,7 @@ export declare namespace Office {
         diagnostics: ContextInformation;
         /**
         * Gets the locale (language) specified by the user for the UI of the Office host application.
+        * 
         * @remarks
         * When using in Outlook, the applicable modes are Compose or read.
         */
@@ -748,7 +812,8 @@ export declare namespace Office {
         * @remarks
         * <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
         *
-        * <tr><td>Requirement sets</td><td>IdentityAPI</td></tr></table>
+        * <tr><td>Requirement sets</td><td>{@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements
+| IdentityAPI}</td></tr></table>
         *
         * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
         *
@@ -1145,7 +1210,18 @@ export declare namespace Office {
     /**
      * Specifies the state of the active view of the document, for example, whether the user can edit the document.
      * @remarks
-     * <table><tr><td>Hosts</td><td>PowerPoint</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
      */
     enum ActiveView {
         /**
@@ -1160,7 +1236,20 @@ export declare namespace Office {
     /**
      * Specifies the type of the binding object that should be returned.
      * @remarks
-     * <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Access     </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
      */
     enum BindingType {
         /**
@@ -1172,7 +1261,7 @@ export declare namespace Office {
          */
         Matrix,
         /**
-         * Tabular data with a header row. Data is returned as a TableData object.
+         * Tabular data with a header row. Data is returned as a {@link Office.TableData | TableData} object.
          */
         Table
     }
@@ -1180,49 +1269,65 @@ export declare namespace Office {
      * Specifies how to coerce data returned or set by the invoked method.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+     * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and `Office.CoercionType.SlideRange`.
      * 
-     * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and `Office.CoercionType.SlideRange`. Project supports only `Office.CoercionType.Text`.
+     * Project supports only `Office.CoercionType.Text`.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th> Access     </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Outlook    </th><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *  </table>
      */
     enum CoercionType {
         /**
-         * Return or set data as text (string).Data is returned or set as a one-dimensional run of characters.
+         * Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
          */
         Text,
         /**
          * Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  string values in two columns would be: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]].
-         * @remarks
-         * Only applies to data in Excel and Word.
+         *
+         * Note: Only applies to data in Excel and Word.
          */
         Matrix,
         /**
          * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
-         * @remarks
-         * Only applies to data in Access, Excel and Word.
+         * 
+         * Note: Only applies to data in Access, Excel, and Word.
          */
         Table,
         /**
          * Return or set data as HTML.
-         * @remarks
-         * Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+         * 
+         * Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
          */
         Html,
         /**
          * Return or set data as Office Open XML.
-         * @remarks
-         * Only applies to data in Word.
+         * 
+         * Note: Only applies to data in Word.
          */
         Ooxml,
         /**
-         * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example,  `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
-         * @remarks
-         * Only applies to data in PowerPoint when calling the Document.getSelectedData method to get the current slide or selected range of slides.
+         * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example, `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
+         * 
+         * Note: Only applies to data in PowerPoint when calling the `{@link Office.Document | Document}.getSelectedData` method to get the current slide or selected range of slides.
          */
         SlideRange,
         /**
         * Data is returned or set as an image stream.
-        * @remarks
-        * Only applies to data in Excel, Word and PowerPoint.
+        * Note: Only applies to data in Excel, Word and PowerPoint.
         */
         Image
     }
@@ -1230,9 +1335,23 @@ export declare namespace Office {
      * Specifies whether the document in the associated application is read-only or read-write.
      * 
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, PowerPoint, Project, Word</td></tr></table>
+     *  
+     * Returned by the mode property of the {@link Office.Document | Document} object.
      * 
-     * Returned by the mode property of the Document object.
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum DocumentMode {
         /**
@@ -1248,9 +1367,19 @@ export declare namespace Office {
      * Specifies the type of the XML node.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Word</td></tr>
+     * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
      * 
-     * <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
      */
     enum CustomXMLNodeType {
         /**
@@ -1284,13 +1413,28 @@ export declare namespace Office {
     }
     /**
      * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
-     *
-     * @remarks
-     * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-     * <tr><td>Hosts (BindingDataChanged and BindingSelectionChanged)</td><td>Access, Excel, Word</td></tr></table>
-     * 
      * 
      * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.
+     * 
+     * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
+     *
+     * @remarks
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Outlook    </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum EventType {
         /**
@@ -1318,27 +1462,33 @@ export declare namespace Office {
          */
         DialogEventReceived,
         /**
-         * Triggers when a document level selection happens
+         * Triggers when a document level selection happens.
          */
         DocumentSelectionChanged,
         /**
-         * A Document.SelectionChanged event was raised.
+         * Triggers when the selected Outlook item was changed.
+         * 
+         * [Api set: Mailbox 1.1]
          */
         ItemChanged,
         /**
-         * Triggers when a customXmlPart node was deleted
+         * Triggers when a customXmlPart node was deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a customXmlPart node was inserted
+         * Triggers when a customXmlPart node was inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a customXmlPart node was replaced
+         * Triggers when a customXmlPart node was replaced.
          */
         NodeReplaced,
         /**
-         * The recurrence pattern of the selected series has changed.
+         * Triggers when the recurrence pattern of the selected series was changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
          */
         RecurrencePatternChanged,
         /**
@@ -1362,7 +1512,21 @@ export declare namespace Office {
      * Specifies the format in which to return the document.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr></table>
+     * FileType.Text is only supported in Word, FileType.Pdf is only supported in Word for Windows, Word for Mac, Word Online, and PowerPoint.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
      */
     enum FileType {
         /**
@@ -1370,7 +1534,7 @@ export declare namespace Office {
          */
         Text,
         /**
-         * Returns the entire document (.pptx, .docx, or .xslx) in Office Open XML (OOXML) format as a byte array.
+         * Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.
          */
         Compressed,
         /**
@@ -1382,7 +1546,20 @@ export declare namespace Office {
      * Specifies whether filtering from the host application is applied when the data is retrieved.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum FilterType {
         /**
@@ -1398,32 +1575,101 @@ export declare namespace Office {
      * Specifies the type of place or object to navigate to.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum GoToType {
         /**
          * Goes to a binding object using the specified binding id.
+         * 
+         * Supported hosts: Excel, Word
          */
         Binding,
         /**
          * Goes to a named item using that item's name.
          * In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"
+         * 
+         * Supported hosts: Excel
          */
         NamedItem,
         /**
          * Goes to a slide using the specified id.
+         * 
+         * Supported hosts: PowerPoint
          */
         Slide,
         /**
-         * Goes to the specified index by slide number or Office.Index
+         * Goes to the specified index by slide number or {@link Office.Index}.
+         * 
+         * Supported hosts: PowerPoint
          */
         Index
     }
     /**
-     * Specifies whether to select (highlight) the location to navigate to (when using the Document.goToByIdAsync method).
+     * Specifies the relative PowerPoint slide
+     * 
+     * @remarks
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad /th></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
+     */
+    enum Index {
+        /**
+         * Represents the first PowerPoint slide
+         */
+        First,
+        /**
+         * Represents the last PowerPoint slide
+         */
+        Last,
+        /**
+         * Represents the next PowerPoint slide
+         */
+        Next,
+        /**
+         * Represents the previous PowerPoint slide
+         */
+        Previous
+    }
+    /**
+     * Specifies whether to select (highlight) the location to navigate to (when using the `{@link Office.Document | Document}.goToByIdAsync` method).
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad /th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> PowerPoint </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum SelectionMode {
         Default,
@@ -1432,7 +1678,7 @@ export declare namespace Office {
          */
         Selected,
         /**
-         * The cursor is moved the beginning of the location.
+         * The cursor is moved to the beginning of the location.
          */
         None
     }
@@ -1440,10 +1686,22 @@ export declare namespace Office {
      * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>
-     * 
      * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the host application will have its formatting preserved. 
      * If the valueFormat parameter is specified as "unformatted", a date will be returned in its underlying sequential serial number form.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><th> Word       </th><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *  </table>
      */
     enum ValueFormat {
         /**
@@ -3404,10 +3662,21 @@ export declare namespace Office {
         rows: any[][];
     }
     /**
-     * Specifies enumerated values for the cells: property in the cellFormat parameter of {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
+     * Specifies enumerated values for the `cells` property in the cellFormat parameter of {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th> Excel      </th><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *  </table>
      */
     enum Table {
         /**
@@ -3435,12 +3704,23 @@ export declare namespace Office {
     */
     export interface TextBinding extends Binding { }
     /**
-     * Specifies the project fields that are available as a parameter for the getProjectFieldAsync method.
+     * Specifies the project fields that are available as a parameter for the `{@link Office.Document | Document}.getProjectFieldAsync` method.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Project</td></tr></table>
      * 
-     * A ProjectProjectFields constant can be used as a parameter of the getProjectFieldAsync method.
+     * A ProjectProjectFields constant can be used as a parameter of the `{@link Office.Document | Document}.getProjectFieldAsync` method.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td></tr>
+     *  </table>
      */
     enum ProjectProjectFields {
         /**
@@ -3494,12 +3774,24 @@ export declare namespace Office {
         WSSList
     }
     /**
-     * Specifies the resource fields that are available as a parameter for the getResourceFieldAsync method.
+     * Specifies the resource fields that are available as a parameter for the `{@link Office.Document | Document}.getResourceFieldAsync` method.
      *
      * @remarks
-     * A ProjectResourceFields constant can be used as a parameter of the getResourceFieldAsync method.
+     * A ProjectResourceFields constant can be used as a parameter of the `{@link Office.Document | Document}.getResourceFieldAsync` method.
      *
      * For more information about working with fields in Project, see {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In Project Help, search for Available fields.
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td></tr>
+     *  </table>
      */
     enum ProjectResourceFields {
         /**
@@ -4304,14 +4596,24 @@ export declare namespace Office {
         Text9
     }
     /**
-     * Specifies the task fields that are available as a parameter for the getTaskFieldAsync method.
+     * Specifies the task fields that are available as a parameter for the `{@link Office.Document | Document}.getTaskFieldAsync` method.
      *
      * @remarks
-     * A ProjectTaskFields constant can be used as a parameter of the getTaskFieldAsync method.
+     * A ProjectTaskFields constant can be used as a parameter of the `{@link Office.Document | Document}.getTaskFieldAsync` method.
      *
      * For more information about working with fields in Project, see the {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In Project Help, search for Available fields.
-     *
-     * <table><tr><td>Hosts</td><td>Project</td></tr></table>
+     * 
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td></tr>
+     *  </table>
      */
     enum ProjectTaskFields {
         /**
@@ -5442,12 +5744,22 @@ export declare namespace Office {
         WSSID
     }
     /**
-     * Specifies the types of views that the getSelectedViewAsync method can recognize.
+     * Specifies the types of views that the `{@link Office.Document | Document}.getSelectedViewAsync` method can recognize.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Project</td></tr></table>
+     * The `{@link Office.Document | Document}.getSelectedViewAsync` method returns the ProjectViewTypes constant value and name that corresponds to the active view.
      * 
-     * The getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the active view.
+     * **Support details**
+     * 
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * 
+     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * 
+     * *Supported hosts, by platform*
+     *  <table>
+     *   <tr><th>            </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><th> Project    </th><td> Y                          </td><td>                            </td></tr>
+     *  </table>
      */
     enum ProjectViewTypes {
         /**

@@ -1224,6 +1224,8 @@ items:
                 uid: office.Office.GoToType
               - name: HostType
                 uid: office.Office.HostType
+              - name: Index
+                uid: office.Office.Index
               - name: InitializationReason
                 uid: office.Office.InitializationReason
               - name: IPromiseConstructor

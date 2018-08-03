@@ -66,9 +66,9 @@ items:
   - uid: office.Office.AsyncResult.asyncContext
     summary: >-
       Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state
-      as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean,
-      Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns
-      Undefined, if you didn't pass anything to the asyncContext parameter.
+      as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number,
+      Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method.
+      Returns Undefined, if you didn't pass anything to the asyncContext parameter.
     remarks: |-
       <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
       #### Examples
@@ -170,13 +170,13 @@ items:
 
 
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
-      method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object.
+      method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the
+      [Document](xref:office.Office.Document) object.
 
 
       Note: What the value property returns for a particular "Async" method varies depending on the purpose and context
       of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback
-      value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of
-      the AsyncResult object topic.
+      value" section of the method's topic.
 
       #### Examples
 

@@ -2,7 +2,22 @@
 items:
   - uid: office.Office.BindingType
     summary: Specifies the type of the binding object that should be returned.
-    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> Y </td><td> </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: Office.BindingType
     fullName: office.Office.BindingType
     langs:
@@ -23,7 +38,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Table
-    summary: Tabular data with a header row. Data is returned as a TableData object.
+    summary: 'Tabular data with a header row. Data is returned as a [TableData](xref:office.Office.TableData) object.'
     name: Table
     fullName: office.Office.BindingType.Table
     langs:
