@@ -3,7 +3,7 @@ items:
   - uid: office.Office.SelectionMode
     summary: >-
       Specifies whether to select (highlight) the location to navigate to (when using the
-      `[Document](xref:office.Office.Document)<!-- -->.goToByIdAsync` method).
+      [Document](xref:office.Office.Document)<!-- -->.goToByIdAsync method).
     remarks: >-
       **Support details**
 
@@ -17,7 +17,7 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad /th&gt;</tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
       <tr><th> PowerPoint </th><td> Y </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> </td><td> Y
       </td></tr> </table>
     name: Office.SelectionMode

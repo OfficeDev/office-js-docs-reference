@@ -3,10 +3,10 @@ items:
   - uid: office.Office.ProjectResourceFields
     summary: >-
       Specifies the resource fields that are available as a parameter for the
-      `[Document](xref:office.Office.Document)<!-- -->.getResourceFieldAsync` method.
+      [Document](xref:office.Office.Document)<!-- -->.getResourceFieldAsync method.
     remarks: >-
-      A ProjectResourceFields constant can be used as a parameter of the `[Document](xref:office.Office.Document)<!--
-      -->.getResourceFieldAsync` method.
+      A ProjectResourceFields constant can be used as a parameter of the [Document](xref:office.Office.Document)<!--
+      -->.getResourceFieldAsync method.
 
 
       For more information about working with fields in Project, see [Available

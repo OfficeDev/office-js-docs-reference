@@ -89,8 +89,8 @@ items:
       two slides.
 
 
-      Note: Only applies to data in PowerPoint when calling the `[Document](xref:office.Office.Document)<!--
-      -->.getSelectedData` method to get the current slide or selected range of slides.
+      Note: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
+      -->.getSelectedData method to get the current slide or selected range of slides.
     name: SlideRange
     fullName: office.Office.CoercionType.SlideRange
     langs:
