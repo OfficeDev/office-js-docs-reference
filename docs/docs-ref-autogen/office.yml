@@ -48,6 +48,7 @@ items:
       - office.Office.GoToByIdOptions
       - office.Office.GoToType
       - office.Office.HostType
+      - office.Office.Index
       - office.Office.InitializationReason
       - office.Office.initialize
       - office.Office.IPromiseConstructor
@@ -355,6 +356,8 @@ references:
     name: Office.GoToType
   - uid: office.Office.HostType
     name: Office.HostType
+  - uid: office.Office.Index
+    name: Office.Index
   - uid: office.Office.InitializationReason
     name: Office.InitializationReason
   - uid: office.Office.IPromiseConstructor

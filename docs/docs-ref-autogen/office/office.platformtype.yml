@@ -2,7 +2,26 @@
 items:
   - uid: office.Office.PlatformType
     summary: Specifies the OS or other platform on which the Office host application is running.
-    remarks: '<table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook, OneNote, Project, Access</td></tr></table>'
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> OneNote </th><td> </td><td> Y </td><td> </td><td> Y </td><td> </td></tr>
+      <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><th> PowerPoint
+      </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project </th><td> Y </td><td>
+      </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td>
+      </td></tr> </table>
     name: Office.PlatformType
     fullName: office.Office.PlatformType
     langs:

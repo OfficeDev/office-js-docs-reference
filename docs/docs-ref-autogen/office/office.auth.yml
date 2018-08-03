@@ -27,7 +27,8 @@ items:
       <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
 
 
-      <tr><td>Requirement sets</td><td>IdentityAPI</td></tr></table>
+      <tr><td>Requirement
+      sets</td><td>[IdentityAPI](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)</td></tr></table>
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
