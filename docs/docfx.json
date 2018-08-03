@@ -74,7 +74,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json"
+      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
+      "ms.author": "o365devx",
+      "author": "o365devx",
+      "ms.prod": "office",
+      "ms.technology": "office-add-ins",
+      "ms.devlang": "JavaScript"
     },
     "fileMetadata": {},
     "template": [],
