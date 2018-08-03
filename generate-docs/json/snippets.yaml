@@ -525,7 +525,7 @@ Excel.ChartFill.setSolidColor:
 
         OfficeHelpers.UI.notify("Successfully set chart point color to red (for the third item in series 1).");            
     });
-Excel.ChartFont.load:
+Excel.ChartFont:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
     Excel.run(function (ctx) { 
@@ -543,7 +543,6 @@ Excel.ChartFont.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - ''
 Excel.ChartGridlines.load:
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
