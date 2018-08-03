@@ -497,7 +497,7 @@ Excel.ChartFill.setSolidColor:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFont.load:
+Excel.ChartFont:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
     Excel.run(function (ctx) { 
@@ -515,7 +515,6 @@ Excel.ChartFont.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
 Excel.ChartGridlines.load:
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
