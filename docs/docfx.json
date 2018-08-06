@@ -76,10 +76,15 @@
     "globalMetadata": {
       "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
       "ms.author": "o365devx",
+      "ms.date": "08/15/2018",
       "author": "o365devx",
       "ms.prod": "office",
       "ms.technology": "office-add-ins",
-      "ms.devlang": "JavaScript"
+      "ms.topic": "reference",
+      "ms.devlang": "JavaScript",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/"      
     },
     "fileMetadata": {},
     "template": [],
