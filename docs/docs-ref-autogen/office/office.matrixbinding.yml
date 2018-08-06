@@ -3,14 +3,27 @@ items:
   - uid: office.Office.MatrixBinding
     summary: Represents a binding in two dimensions of rows and columns.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
 
 
       The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
       from the Binding object.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this interface.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: Office.MatrixBinding
     fullName: office.Office.MatrixBinding
     langs:

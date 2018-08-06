@@ -50,7 +50,24 @@ items:
       - office.Office.EventType.TaskSelectionChanged
       - office.Office.EventType.ViewSelectionChanged
   - uid: office.Office.EventType.ActiveViewChanged
-    summary: A Document.ActiveViewChanged event was raised.
+    summary: >-
+      A Document.ActiveViewChanged event was raised.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: ActiveViewChanged
     fullName: office.Office.EventType.ActiveViewChanged
     langs:
@@ -61,6 +78,22 @@ items:
       Occurs when data within the binding is changed. To add an event handler for the BindingDataChanged event of a
       binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument of type
       [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs)<!-- -->.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: BindingDataChanged
     fullName: office.Office.EventType.BindingDataChanged
     langs:
@@ -71,6 +104,22 @@ items:
       Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged
       event of a binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument
       of type [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: BindingSelectionChanged
     fullName: office.Office.EventType.BindingSelectionChanged
     langs:
@@ -91,7 +140,24 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.DocumentSelectionChanged
-    summary: Triggers when a document level selection happens.
+    summary: >-
+      Triggers when a document level selection happens
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Word </th><td> Y </td><td> Y </td><td> </td></tr> </table>
     name: DocumentSelectionChanged
     fullName: office.Office.EventType.DocumentSelectionChanged
     langs:
@@ -147,7 +213,25 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.SettingsChanged
-    summary: A Settings.settingsChanged event was raised.
+    summary: >-
+      A Settings.settingsChanged event was raised.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: SettingsChanged
     fullName: office.Office.EventType.SettingsChanged
     langs:

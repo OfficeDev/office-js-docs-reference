@@ -56,6 +56,57 @@ items:
           - boolean
   - uid: office.Office.Context.contentLanguage
     summary: Gets the locale (language) specified by the user for editing the document or item.
+    remarks: >-
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File &gt; Options &gt;
+      Language** in the Office host application.
+
+
+      In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function sayHelloWithContentLanguage() {
+          var myContentLanguage = Office.context.contentLanguage;
+          switch (myContentLanguage) {
+              case 'en-US':
+                  write('Hello!');
+                  break;
+              case 'en-NZ':
+                  write('G\'day mate!');
+                  break;
+          }
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: contentLanguage
     fullName: office.Office.Context.contentLanguage
     langs:
@@ -66,27 +117,6 @@ items:
       return:
         type:
           - string
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function sayHelloWithContentLanguage() {
-              var myContentLanguage = Office.context.contentLanguage;
-              switch (myContentLanguage) {
-                  case 'en-US':
-                      write('Hello!');
-                      break;
-                  case 'en-NZ':
-                      write('G\'day mate!');
-                      break;
-              }
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - uid: office.Office.Context.diagnostics
     summary: Gets information about the environment in which the add-in is running.
     name: diagnostics
@@ -101,11 +131,44 @@ items:
           - office.Office.ContextInformation
   - uid: office.Office.Context.displayLanguage
     summary: Gets the locale (language) specified by the user for the UI of the Office host application.
-    remarks: |-
+    remarks: >-
+      The returned value is a string in the RFC 1766 Language tag format, such as en-US.
+
+
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File &gt; Options
+      &gt; Language** in the Office host application.
+
+
+      In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
+
+
       When using in Outlook, the applicable modes are Compose or read.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
+
       #### Examples
 
+
       ```javascript
+
       function sayHelloWithDisplayLanguage() {
           var myDisplayLanguage = Office.context.displayLanguage;
           switch (myDisplayLanguage) {
@@ -117,10 +180,13 @@ items:
                   break;
           }
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: displayLanguage
     fullName: office.Office.Context.displayLanguage
@@ -134,6 +200,46 @@ items:
           - string
   - uid: office.Office.Context.document
     summary: Gets an object that represents the document the content or task pane add-in is interacting with.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><th> Project </th><td> Y </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y
+      </td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Extension initialization code.
+
+      var _document;
+
+
+      // The initialize function is required for all add-ins.
+
+      Office.initialize = function () {
+          // Checks for the DOM to load using the jQuery ready function.
+          $(document).ready(function () {
+          // After the DOM is loaded, code specific to the add-in can run.
+          // Initialize instance variables to access API objects.
+          _document = Office.context.document;
+          });
+      }
+
+      ```
     name: document
     fullName: office.Office.Context.document
     langs:
@@ -144,24 +250,6 @@ items:
       return:
         type:
           - Document
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Extension initialization code.
-          var _document;
-
-          // The initialize function is required for all add-ins.
-          Office.initialize = function () {
-              // Checks for the DOM to load using the jQuery ready function.
-              $(document).ready(function () {
-              // After the DOM is loaded, code specific to the add-in can run.
-              // Initialize instance variables to access API objects.
-              _document = Office.context.document;
-              });
-          }
-          ```
   - uid: office.Office.Context.host
     summary: Contains the Office application host in which the add-in is running.
     name: host

@@ -69,23 +69,47 @@ items:
       as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number,
       Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method.
       Returns Undefined, if you didn't pass anything to the asyncContext parameter.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
+
       #### Examples
 
+
       ```javascript
+
       function getDataWithContext() {
           var format = "Your data: ";
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
       }
 
+
       function showDataWithContext(asyncResult) {
           write(asyncResult.asyncContext + asyncResult.value);
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: asyncContext
     fullName: office.Office.AsyncResult.asyncContext
@@ -101,11 +125,31 @@ items:
     summary: >-
       Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
       occurred.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
+
       #### Examples
 
+
       ```javascript
+
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -116,10 +160,13 @@ items:
               }
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: error
     fullName: office.Office.AsyncResult.error
@@ -133,11 +180,31 @@ items:
           - office.Office.Error
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
+
       #### Examples
 
+
       ```javascript
+
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -148,10 +215,13 @@ items:
               }
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: status
     fullName: office.Office.AsyncResult.status
@@ -166,9 +236,6 @@ items:
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
-
-
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
       method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the
       [Document](xref:office.Office.Document) object.
@@ -177,6 +244,26 @@ items:
       Note: What the value property returns for a particular "Async" method varies depending on the purpose and context
       of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback
       value" section of the method's topic.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><th> Access
+      </th><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> <tr><th> Outlook </th><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><th> Project
+      </th><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y
+      </td><td> </td><td> </td></tr> </table>
 
       #### Examples
 

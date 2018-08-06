@@ -2,7 +2,6 @@
 items:
   - uid: office.Office.Bindings
     summary: Represents the bindings the add-in has within the document.
-    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.Bindings
     fullName: office.Office.Bindings
     langs:
@@ -20,9 +19,6 @@ items:
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
-
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
@@ -51,6 +47,23 @@ items:
       Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you
       try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the
       operation will fail.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
@@ -160,14 +173,27 @@ items:
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel</td></tr>
-
-
       <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -218,9 +244,6 @@ items:
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
-
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
@@ -230,9 +253,26 @@ items:
 
       Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
       Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
-      bindingType parameter.If you need to use an existing id and change the bindingType, call the
+      bindingType parameter. If you need to use an existing id and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
@@ -286,7 +326,22 @@ items:
     summary: >-
       Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
       set of bindings.
-    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: document
     fullName: office.Office.Bindings.document
     langs:
@@ -299,13 +354,31 @@ items:
           - Document
   - uid: office.Office.Bindings.getAllAsync
     summary: Gets all bindings that were previously created.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
+    remarks: >-
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       function displayAllBindingNames() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
               var bindingString = '';
@@ -315,10 +388,13 @@ items:
               write('Existing bindings: ' + bindingString);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: 'getAllAsync(options, callback)'
     fullName: office.Office.Bindings.getAllAsync
@@ -342,24 +418,46 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
+    remarks: >-
       <tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
+
       Fails if the specified id does not exist.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       function displayBindingType() {
           Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
               write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: 'getByIdAsync(id, options, callback)'
     fullName: office.Office.Bindings.getByIdAsync
@@ -387,22 +485,44 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
+    remarks: >-
       <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
+
       Fails if the specified id does not exist.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
           write("Released MyBinding!"); 
       }); 
+
       // Function that writes to a div with id='message' on the page. 
+
       function write(message){ 
           document.getElementById('message').innerText += message;  
       }
+
       ```
     name: 'releaseByIdAsync(id, options, callback)'
     fullName: office.Office.Bindings.releaseByIdAsync
