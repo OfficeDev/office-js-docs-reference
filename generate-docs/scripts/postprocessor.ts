@@ -254,20 +254,22 @@ tryCatch(async () => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name === 'office') {
                 packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                    membersToMove.items = namespaceItem.items;
+                    if (namespaceItem.name.toLocaleLowerCase() === 'office') {
+                        let enumList = namespaceItem.items.filter(item => {
+                            return sharedEnumFilter.indexOf(item.name) >= 0;
+                        });
+                        let primaryList = namespaceItem.items.filter(item => {
+                            return sharedEnumFilter.indexOf(item.name) < 0;
+                        });
+                        sharedEnumRoot.items = enumList;
+                        primaryList.unshift(sharedEnumRoot);
+                        packageItem.items = primaryList as any;
+                    }
                 });
-                let enumList = membersToMove.items.filter(item => {
-                    return sharedEnumFilter.indexOf(item.name) >= 0;
-                });
-                let primaryList = membersToMove.items.filter(item => {
-                    return sharedEnumFilter.indexOf(item.name) < 0;
-                });
-                sharedEnumRoot.items = enumList;
-                primaryList.unshift(sharedEnumRoot);
                 newToc.items[0].items.push({
                     "name": 'Shared API',
                     "uid": packageItem.uid,
-                    "items": primaryList as any
+                    "items": packageItem.items
                 });
             }
         });
