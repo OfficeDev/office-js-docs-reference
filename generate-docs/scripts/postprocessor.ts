@@ -110,7 +110,11 @@ tryCatch(async () => {
 
     // create folders for word subcategories
     let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let wordEnumFilter : string [] = ["Word.Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
+    let wordEnumFilter : string [] = ["Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
+
+    // create folders for shared API subcategories
+    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let sharedEnumFilter : string [] = ["ActiveView", "AsyncResultStatus", "BindingType", "CoercionType", "CustomXMLNodeType", "DocumentMode", "EventType", "FileType", "FilterType", "GoToType", "HostType", "InitializationReason", "PlatformType", "ProjectProjectFields", "ProjectResourceFields", "ProjectTaskFields", "ProjectViewTypes", "SelectionMode", "Table", "ValueFormat"];
 
     // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
@@ -249,6 +253,19 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name === 'office') {
+                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
+                    if (namespaceItem.name.toLocaleLowerCase() === 'office') {
+                        let enumList = namespaceItem.items.filter(item => {
+                            return sharedEnumFilter.indexOf(item.name) >= 0;
+                        });
+                        let primaryList = namespaceItem.items.filter(item => {
+                            return sharedEnumFilter.indexOf(item.name) < 0;
+                        });
+                        sharedEnumRoot.items = enumList;
+                        primaryList.unshift(sharedEnumRoot);
+                        namespaceItem.items = primaryList as any;
+                    }
+                });
                 newToc.items[0].items.push({
                     "name": 'Shared API',
                     "uid": packageItem.uid,

@@ -1027,6 +1027,8 @@ items:
           - name: Enums
             uid: ''
             items:
+              - name: Alignment
+                uid: word.Word.Alignment
               - name: BodyType
                 uid: word.Word.BodyType
               - name: BorderLocation
@@ -1073,8 +1075,6 @@ items:
                 uid: word.Word.UnderlineType
               - name: VerticalAlignment
                 uid: word.Word.VerticalAlignment
-          - name: Alignment
-            uid: word.Word.Alignment
           - name: Application
             uid: word.Word.Application
           - name: Body
@@ -1140,8 +1140,49 @@ items:
         items:
           - name: Office
             items:
-              - name: ActiveView
-                uid: office.Office.ActiveView
+              - name: Enums
+                uid: ''
+                items:
+                  - name: ActiveView
+                    uid: office.Office.ActiveView
+                  - name: AsyncResultStatus
+                    uid: office.Office.AsyncResultStatus
+                  - name: BindingType
+                    uid: office.Office.BindingType
+                  - name: CoercionType
+                    uid: office.Office.CoercionType
+                  - name: CustomXMLNodeType
+                    uid: office.Office.CustomXMLNodeType
+                  - name: DocumentMode
+                    uid: office.Office.DocumentMode
+                  - name: EventType
+                    uid: office.Office.EventType
+                  - name: FileType
+                    uid: office.Office.FileType
+                  - name: FilterType
+                    uid: office.Office.FilterType
+                  - name: GoToType
+                    uid: office.Office.GoToType
+                  - name: HostType
+                    uid: office.Office.HostType
+                  - name: InitializationReason
+                    uid: office.Office.InitializationReason
+                  - name: PlatformType
+                    uid: office.Office.PlatformType
+                  - name: ProjectProjectFields
+                    uid: office.Office.ProjectProjectFields
+                  - name: ProjectResourceFields
+                    uid: office.Office.ProjectResourceFields
+                  - name: ProjectTaskFields
+                    uid: office.Office.ProjectTaskFields
+                  - name: ProjectViewTypes
+                    uid: office.Office.ProjectViewTypes
+                  - name: SelectionMode
+                    uid: office.Office.SelectionMode
+                  - name: Table
+                    uid: office.Office.Table
+                  - name: ValueFormat
+                    uid: office.Office.ValueFormat
               - name: AddBindingFromNamedItemOptions
                 uid: office.Office.AddBindingFromNamedItemOptions
               - name: AddBindingFromPromptOptions
@@ -1158,8 +1199,6 @@ items:
                 uid: office.Office.AsyncContextOptions
               - name: AsyncResult
                 uid: office.Office.AsyncResult
-              - name: AsyncResultStatus
-                uid: office.Office.AsyncResultStatus
               - name: Auth
                 uid: office.Office.Auth
               - name: AuthOptions
@@ -1172,18 +1211,12 @@ items:
                 uid: office.Office.Bindings
               - name: BindingSelectionChangedEventArgs
                 uid: office.Office.BindingSelectionChangedEventArgs
-              - name: BindingType
-                uid: office.Office.BindingType
-              - name: CoercionType
-                uid: office.Office.CoercionType
               - name: Context
                 uid: office.Office.Context
               - name: ContextInformation
                 uid: office.Office.ContextInformation
               - name: CustomXmlNode
                 uid: office.Office.CustomXmlNode
-              - name: CustomXMLNodeType
-                uid: office.Office.CustomXMLNodeType
               - name: CustomXmlPart
                 uid: office.Office.CustomXmlPart
               - name: CustomXmlParts
@@ -1196,22 +1229,14 @@ items:
                 uid: office.Office.DialogOptions
               - name: Document
                 uid: office.Office.Document
-              - name: DocumentMode
-                uid: office.Office.DocumentMode
               - name: DocumentSelectionChangedEventArgs
                 uid: office.Office.DocumentSelectionChangedEventArgs
               - name: Error
                 uid: office.Office.Error
-              - name: EventType
-                uid: office.Office.EventType
               - name: File
                 uid: office.Office.File
               - name: FileProperties
                 uid: office.Office.FileProperties
-              - name: FileType
-                uid: office.Office.FileType
-              - name: FilterType
-                uid: office.Office.FilterType
               - name: GetBindingDataOptions
                 uid: office.Office.GetBindingDataOptions
               - name: GetFileOptions
@@ -1220,14 +1245,8 @@ items:
                 uid: office.Office.GetSelectedDataOptions
               - name: GoToByIdOptions
                 uid: office.Office.GoToByIdOptions
-              - name: GoToType
-                uid: office.Office.GoToType
-              - name: HostType
-                uid: office.Office.HostType
               - name: Index
                 uid: office.Office.Index
-              - name: InitializationReason
-                uid: office.Office.InitializationReason
               - name: IPromiseConstructor
                 uid: office.Office.IPromiseConstructor
               - name: MatrixBinding
@@ -1240,16 +1259,6 @@ items:
                 uid: office.Office.NodeReplacedEventArgs
               - name: OfficeTheme
                 uid: office.Office.OfficeTheme
-              - name: PlatformType
-                uid: office.Office.PlatformType
-              - name: ProjectProjectFields
-                uid: office.Office.ProjectProjectFields
-              - name: ProjectResourceFields
-                uid: office.Office.ProjectResourceFields
-              - name: ProjectTaskFields
-                uid: office.Office.ProjectTaskFields
-              - name: ProjectViewTypes
-                uid: office.Office.ProjectViewTypes
               - name: RangeCoordinates
                 uid: office.Office.RangeCoordinates
               - name: RangeFormatConfiguration
@@ -1260,8 +1269,6 @@ items:
                 uid: office.Office.RequirementSetSupport
               - name: SaveSettingsOptions
                 uid: office.Office.SaveSettingsOptions
-              - name: SelectionMode
-                uid: office.Office.SelectionMode
               - name: SetBindingDataOptions
                 uid: office.Office.SetBindingDataOptions
               - name: SetSelectedDataOptions
@@ -1270,8 +1277,6 @@ items:
                 uid: office.Office.Settings
               - name: Slice
                 uid: office.Office.Slice
-              - name: Table
-                uid: office.Office.Table
               - name: TableBinding
                 uid: office.Office.TableBinding
               - name: TableData
@@ -1280,8 +1285,6 @@ items:
                 uid: office.Office.TextBinding
               - name: UI
                 uid: office.Office.UI
-              - name: ValueFormat
-                uid: office.Office.ValueFormat
           - name: OfficeExtension
             items:
               - name: ClientObject
