@@ -263,13 +263,18 @@ tryCatch(async () => {
                         });
                         sharedEnumRoot.items = enumList;
                         primaryList.unshift(sharedEnumRoot);
-                        packageItem.items = primaryList as any;
+                        newToc.items[0].items.push({
+                            "name": 'Shared API',
+                            "uid": packageItem.uid,
+                            "items": primaryList as any
+                        });
+                    } else {
+                        newToc.items[0].items.push({
+                            "name": 'Shared API',
+                            "uid": packageItem.uid,
+                            "items": packageItem.items
+                        });
                     }
-                });
-                newToc.items[0].items.push({
-                    "name": 'Shared API',
-                    "uid": packageItem.uid,
-                    "items": packageItem.items
                 });
             }
         });
