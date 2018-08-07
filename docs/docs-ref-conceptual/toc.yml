@@ -144,7 +144,7 @@ items:
               - name: API Reference
                 uid: Outlook_1_1
     - name: PowerPoint and Project
-      href: overview/powerpoint-and-project-note.md
+      href: overview/requirement-sets/powerpoint-and-project-note.md
     - name: Visio
       href: overview/visio-javascript-reference-overview.md
       items:
