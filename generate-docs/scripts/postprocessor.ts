@@ -253,6 +253,9 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name === 'office') {
+                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
+                    membersToMove.items = namespaceItem.items;
+                });
                 let enumList = membersToMove.items.filter(item => {
                     return sharedEnumFilter.indexOf(item.name) >= 0;
                 });
