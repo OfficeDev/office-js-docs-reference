@@ -1027,294 +1027,337 @@ items:
           - name: Enums
             uid: ''
             items:
-              - name: BodyType
+              - &ref_2
+                name: Alignment
+                uid: word.Word.Alignment
+              - &ref_5
+                name: BodyType
                 uid: word.Word.BodyType
-              - name: BorderLocation
+              - &ref_6
+                name: BorderLocation
                 uid: word.Word.BorderLocation
-              - name: BorderType
+              - &ref_7
+                name: BorderType
                 uid: word.Word.BorderType
-              - name: BreakType
+              - &ref_8
+                name: BreakType
                 uid: word.Word.BreakType
-              - name: CellPaddingLocation
+              - &ref_9
+                name: CellPaddingLocation
                 uid: word.Word.CellPaddingLocation
-              - name: ContentControlAppearance
+              - &ref_11
+                name: ContentControlAppearance
                 uid: word.Word.ContentControlAppearance
-              - name: ContentControlType
+              - &ref_13
+                name: ContentControlType
                 uid: word.Word.ContentControlType
-              - name: DocumentPropertyType
+              - &ref_19
+                name: DocumentPropertyType
                 uid: word.Word.DocumentPropertyType
-              - name: ErrorCodes
+              - &ref_20
+                name: ErrorCodes
                 uid: word.Word.ErrorCodes
-              - name: FileContentFormat
+              - &ref_21
+                name: FileContentFormat
                 uid: word.Word.FileContentFormat
-              - name: HeaderFooterType
+              - &ref_23
+                name: HeaderFooterType
                 uid: word.Word.HeaderFooterType
-              - name: ImageFormat
+              - &ref_24
+                name: ImageFormat
                 uid: word.Word.ImageFormat
-              - name: InsertLocation
+              - &ref_27
+                name: InsertLocation
                 uid: word.Word.InsertLocation
-              - name: ListBullet
+              - &ref_29
+                name: ListBullet
                 uid: word.Word.ListBullet
-              - name: ListLevelType
+              - &ref_32
+                name: ListLevelType
                 uid: word.Word.ListLevelType
-              - name: ListNumbering
+              - &ref_33
+                name: ListNumbering
                 uid: word.Word.ListNumbering
-              - name: LocationRelation
+              - &ref_34
+                name: LocationRelation
                 uid: word.Word.LocationRelation
-              - name: RangeLocation
+              - &ref_39
+                name: RangeLocation
                 uid: word.Word.RangeLocation
-              - name: SelectionMode
+              - &ref_0
+                name: SelectionMode
                 uid: word.Word.SelectionMode
-              - name: Style
+              - &ref_44
+                name: Style
                 uid: word.Word.Style
-              - name: TapObjectType
+              - &ref_51
+                name: TapObjectType
                 uid: word.Word.TapObjectType
-              - name: UnderlineType
+              - &ref_52
+                name: UnderlineType
                 uid: word.Word.UnderlineType
-              - name: VerticalAlignment
+              - &ref_53
+                name: VerticalAlignment
                 uid: word.Word.VerticalAlignment
-          - name: Alignment
-            uid: word.Word.Alignment
-          - name: Application
+          - &ref_3
+            name: Application
             uid: word.Word.Application
-          - name: Body
+          - &ref_4
+            name: Body
             uid: word.Word.Body
-          - name: ContentControl
+          - &ref_10
+            name: ContentControl
             uid: word.Word.ContentControl
-          - name: ContentControlCollection
+          - &ref_12
+            name: ContentControlCollection
             uid: word.Word.ContentControlCollection
-          - name: CustomProperty
+          - &ref_14
+            name: CustomProperty
             uid: word.Word.CustomProperty
-          - name: CustomPropertyCollection
+          - &ref_15
+            name: CustomPropertyCollection
             uid: word.Word.CustomPropertyCollection
-          - name: Document
+          - &ref_16
+            name: Document
             uid: word.Word.Document
-          - name: DocumentCreated
+          - &ref_17
+            name: DocumentCreated
             uid: word.Word.DocumentCreated
-          - name: DocumentProperties
+          - &ref_18
+            name: DocumentProperties
             uid: word.Word.DocumentProperties
-          - name: Font
+          - &ref_22
+            name: Font
             uid: word.Word.Font
-          - name: InlinePicture
+          - &ref_25
+            name: InlinePicture
             uid: word.Word.InlinePicture
-          - name: InlinePictureCollection
+          - &ref_26
+            name: InlinePictureCollection
             uid: word.Word.InlinePictureCollection
-          - name: List
+          - &ref_28
+            name: List
             uid: word.Word.List
-          - name: ListCollection
+          - &ref_30
+            name: ListCollection
             uid: word.Word.ListCollection
-          - name: ListItem
+          - &ref_31
+            name: ListItem
             uid: word.Word.ListItem
-          - name: Paragraph
+          - &ref_35
+            name: Paragraph
             uid: word.Word.Paragraph
-          - name: ParagraphCollection
+          - &ref_36
+            name: ParagraphCollection
             uid: word.Word.ParagraphCollection
-          - name: Range
+          - &ref_37
+            name: Range
             uid: word.Word.Range
-          - name: RangeCollection
+          - &ref_38
+            name: RangeCollection
             uid: word.Word.RangeCollection
-          - name: RequestContext
+          - &ref_40
+            name: RequestContext
             uid: word.Word.RequestContext
-          - name: SearchOptions
+          - &ref_41
+            name: SearchOptions
             uid: word.Word.SearchOptions
-          - name: Section
+          - &ref_42
+            name: Section
             uid: word.Word.Section
-          - name: SectionCollection
+          - &ref_43
+            name: SectionCollection
             uid: word.Word.SectionCollection
-          - name: Table
+          - &ref_1
+            name: Table
             uid: word.Word.Table
-          - name: TableBorder
+          - &ref_45
+            name: TableBorder
             uid: word.Word.TableBorder
-          - name: TableCell
+          - &ref_46
+            name: TableCell
             uid: word.Word.TableCell
-          - name: TableCellCollection
+          - &ref_47
+            name: TableCellCollection
             uid: word.Word.TableCellCollection
-          - name: TableCollection
+          - &ref_48
+            name: TableCollection
             uid: word.Word.TableCollection
-          - name: TableRow
+          - &ref_49
+            name: TableRow
             uid: word.Word.TableRow
-          - name: TableRowCollection
+          - &ref_50
+            name: TableRowCollection
             uid: word.Word.TableRowCollection
       - name: Shared API
         uid: office
         items:
-          - name: Office
+          - name: Enums
+            uid: ''
             items:
-              - name: ActiveView
-                uid: office.Office.ActiveView
-              - name: AddBindingFromNamedItemOptions
-                uid: office.Office.AddBindingFromNamedItemOptions
-              - name: AddBindingFromPromptOptions
-                uid: office.Office.AddBindingFromPromptOptions
-              - name: AddBindingFromSelectionOptions
-                uid: office.Office.AddBindingFromSelectionOptions
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: office.Office.AddinCommands.Event
-                  - name: Source
-                    uid: office.Office.AddinCommands.Source
-              - name: AsyncContextOptions
-                uid: office.Office.AsyncContextOptions
-              - name: AsyncResult
-                uid: office.Office.AsyncResult
-              - name: AsyncResultStatus
-                uid: office.Office.AsyncResultStatus
-              - name: Auth
-                uid: office.Office.Auth
-              - name: AuthOptions
-                uid: office.Office.AuthOptions
-              - name: Binding
-                uid: office.Office.Binding
-              - name: BindingDataChangedEventArgs
-                uid: office.Office.BindingDataChangedEventArgs
-              - name: Bindings
-                uid: office.Office.Bindings
-              - name: BindingSelectionChangedEventArgs
-                uid: office.Office.BindingSelectionChangedEventArgs
-              - name: BindingType
-                uid: office.Office.BindingType
-              - name: CoercionType
-                uid: office.Office.CoercionType
-              - name: Context
-                uid: office.Office.Context
-              - name: ContextInformation
-                uid: office.Office.ContextInformation
-              - name: CustomXmlNode
-                uid: office.Office.CustomXmlNode
-              - name: CustomXMLNodeType
-                uid: office.Office.CustomXMLNodeType
-              - name: CustomXmlPart
-                uid: office.Office.CustomXmlPart
-              - name: CustomXmlParts
-                uid: office.Office.CustomXmlParts
-              - name: CustomXmlPrefixMappings
-                uid: office.Office.CustomXmlPrefixMappings
-              - name: Dialog
-                uid: office.Office.Dialog
-              - name: DialogOptions
-                uid: office.Office.DialogOptions
-              - name: Document
-                uid: office.Office.Document
-              - name: DocumentMode
-                uid: office.Office.DocumentMode
-              - name: DocumentSelectionChangedEventArgs
-                uid: office.Office.DocumentSelectionChangedEventArgs
-              - name: Error
-                uid: office.Office.Error
-              - name: EventType
-                uid: office.Office.EventType
-              - name: File
-                uid: office.Office.File
-              - name: FileProperties
-                uid: office.Office.FileProperties
-              - name: FileType
-                uid: office.Office.FileType
-              - name: FilterType
-                uid: office.Office.FilterType
-              - name: GetBindingDataOptions
-                uid: office.Office.GetBindingDataOptions
-              - name: GetFileOptions
-                uid: office.Office.GetFileOptions
-              - name: GetSelectedDataOptions
-                uid: office.Office.GetSelectedDataOptions
-              - name: GoToByIdOptions
-                uid: office.Office.GoToByIdOptions
-              - name: GoToType
-                uid: office.Office.GoToType
-              - name: HostType
-                uid: office.Office.HostType
-              - name: Index
-                uid: office.Office.Index
-              - name: InitializationReason
-                uid: office.Office.InitializationReason
-              - name: IPromiseConstructor
-                uid: office.Office.IPromiseConstructor
-              - name: MatrixBinding
-                uid: office.Office.MatrixBinding
-              - name: NodeDeletedEventArgs
-                uid: office.Office.NodeDeletedEventArgs
-              - name: NodeInsertedEventArgs
-                uid: office.Office.NodeInsertedEventArgs
-              - name: NodeReplacedEventArgs
-                uid: office.Office.NodeReplacedEventArgs
-              - name: OfficeTheme
-                uid: office.Office.OfficeTheme
-              - name: PlatformType
-                uid: office.Office.PlatformType
-              - name: ProjectProjectFields
-                uid: office.Office.ProjectProjectFields
-              - name: ProjectResourceFields
-                uid: office.Office.ProjectResourceFields
-              - name: ProjectTaskFields
-                uid: office.Office.ProjectTaskFields
-              - name: ProjectViewTypes
-                uid: office.Office.ProjectViewTypes
-              - name: RangeCoordinates
-                uid: office.Office.RangeCoordinates
-              - name: RangeFormatConfiguration
-                uid: office.Office.RangeFormatConfiguration
-              - name: RemoveHandlerOptions
-                uid: office.Office.RemoveHandlerOptions
-              - name: RequirementSetSupport
-                uid: office.Office.RequirementSetSupport
-              - name: SaveSettingsOptions
-                uid: office.Office.SaveSettingsOptions
-              - name: SelectionMode
-                uid: office.Office.SelectionMode
-              - name: SetBindingDataOptions
-                uid: office.Office.SetBindingDataOptions
-              - name: SetSelectedDataOptions
-                uid: office.Office.SetSelectedDataOptions
-              - name: Settings
-                uid: office.Office.Settings
-              - name: Slice
-                uid: office.Office.Slice
-              - name: Table
-                uid: office.Office.Table
-              - name: TableBinding
-                uid: office.Office.TableBinding
+              - *ref_0
+              - *ref_1
+          - *ref_2
+          - *ref_3
+          - *ref_4
+          - *ref_5
+          - *ref_6
+          - *ref_7
+          - *ref_8
+          - *ref_9
+          - *ref_10
+          - *ref_11
+          - *ref_12
+          - *ref_13
+          - *ref_14
+          - *ref_15
+          - *ref_16
+          - *ref_17
+          - *ref_18
+          - *ref_19
+          - *ref_20
+          - *ref_21
+          - *ref_22
+          - *ref_23
+          - *ref_24
+          - *ref_25
+          - *ref_26
+          - *ref_27
+          - name: Interfaces
+            items:
+              - name: BodyData
+                uid: word.Word.Interfaces.BodyData
+              - name: BodyUpdateData
+                uid: word.Word.Interfaces.BodyUpdateData
+              - name: ContentControlCollectionData
+                uid: word.Word.Interfaces.ContentControlCollectionData
+              - name: ContentControlCollectionUpdateData
+                uid: word.Word.Interfaces.ContentControlCollectionUpdateData
+              - name: ContentControlData
+                uid: word.Word.Interfaces.ContentControlData
+              - name: ContentControlUpdateData
+                uid: word.Word.Interfaces.ContentControlUpdateData
+              - name: CustomPropertyCollectionData
+                uid: word.Word.Interfaces.CustomPropertyCollectionData
+              - name: CustomPropertyCollectionUpdateData
+                uid: word.Word.Interfaces.CustomPropertyCollectionUpdateData
+              - name: CustomPropertyData
+                uid: word.Word.Interfaces.CustomPropertyData
+              - name: CustomPropertyUpdateData
+                uid: word.Word.Interfaces.CustomPropertyUpdateData
+              - name: DocumentCreatedData
+                uid: word.Word.Interfaces.DocumentCreatedData
+              - name: DocumentCreatedUpdateData
+                uid: word.Word.Interfaces.DocumentCreatedUpdateData
+              - name: DocumentData
+                uid: word.Word.Interfaces.DocumentData
+              - name: DocumentPropertiesData
+                uid: word.Word.Interfaces.DocumentPropertiesData
+              - name: DocumentPropertiesUpdateData
+                uid: word.Word.Interfaces.DocumentPropertiesUpdateData
+              - name: DocumentUpdateData
+                uid: word.Word.Interfaces.DocumentUpdateData
+              - name: FontData
+                uid: word.Word.Interfaces.FontData
+              - name: FontUpdateData
+                uid: word.Word.Interfaces.FontUpdateData
+              - name: InlinePictureCollectionData
+                uid: word.Word.Interfaces.InlinePictureCollectionData
+              - name: InlinePictureCollectionUpdateData
+                uid: word.Word.Interfaces.InlinePictureCollectionUpdateData
+              - name: InlinePictureData
+                uid: word.Word.Interfaces.InlinePictureData
+              - name: InlinePictureUpdateData
+                uid: word.Word.Interfaces.InlinePictureUpdateData
+              - name: ListCollectionData
+                uid: word.Word.Interfaces.ListCollectionData
+              - name: ListCollectionUpdateData
+                uid: word.Word.Interfaces.ListCollectionUpdateData
+              - name: ListData
+                uid: word.Word.Interfaces.ListData
+              - name: ListItemData
+                uid: word.Word.Interfaces.ListItemData
+              - name: ListItemUpdateData
+                uid: word.Word.Interfaces.ListItemUpdateData
+              - name: ParagraphCollectionData
+                uid: word.Word.Interfaces.ParagraphCollectionData
+              - name: ParagraphCollectionUpdateData
+                uid: word.Word.Interfaces.ParagraphCollectionUpdateData
+              - name: ParagraphData
+                uid: word.Word.Interfaces.ParagraphData
+              - name: ParagraphUpdateData
+                uid: word.Word.Interfaces.ParagraphUpdateData
+              - name: RangeCollectionData
+                uid: word.Word.Interfaces.RangeCollectionData
+              - name: RangeCollectionUpdateData
+                uid: word.Word.Interfaces.RangeCollectionUpdateData
+              - name: RangeData
+                uid: word.Word.Interfaces.RangeData
+              - name: RangeUpdateData
+                uid: word.Word.Interfaces.RangeUpdateData
+              - name: SearchOptionsData
+                uid: word.Word.Interfaces.SearchOptionsData
+              - name: SearchOptionsUpdateData
+                uid: word.Word.Interfaces.SearchOptionsUpdateData
+              - name: SectionCollectionData
+                uid: word.Word.Interfaces.SectionCollectionData
+              - name: SectionCollectionUpdateData
+                uid: word.Word.Interfaces.SectionCollectionUpdateData
+              - name: SectionData
+                uid: word.Word.Interfaces.SectionData
+              - name: SectionUpdateData
+                uid: word.Word.Interfaces.SectionUpdateData
+              - name: TableBorderData
+                uid: word.Word.Interfaces.TableBorderData
+              - name: TableBorderUpdateData
+                uid: word.Word.Interfaces.TableBorderUpdateData
+              - name: TableCellCollectionData
+                uid: word.Word.Interfaces.TableCellCollectionData
+              - name: TableCellCollectionUpdateData
+                uid: word.Word.Interfaces.TableCellCollectionUpdateData
+              - name: TableCellData
+                uid: word.Word.Interfaces.TableCellData
+              - name: TableCellUpdateData
+                uid: word.Word.Interfaces.TableCellUpdateData
+              - name: TableCollectionData
+                uid: word.Word.Interfaces.TableCollectionData
+              - name: TableCollectionUpdateData
+                uid: word.Word.Interfaces.TableCollectionUpdateData
               - name: TableData
-                uid: office.Office.TableData
-              - name: TextBinding
-                uid: office.Office.TextBinding
-              - name: UI
-                uid: office.Office.UI
-              - name: ValueFormat
-                uid: office.Office.ValueFormat
-          - name: OfficeExtension
-            items:
-              - name: ClientObject
-                uid: office.OfficeExtension.ClientObject
-              - name: ClientRequestContext
-                uid: office.OfficeExtension.ClientRequestContext
-              - name: ClientResult
-                uid: office.OfficeExtension.ClientResult
-              - name: DebugInfo
-                uid: office.OfficeExtension.DebugInfo
-              - name: EmbeddedOptions
-                uid: office.OfficeExtension.EmbeddedOptions
-              - name: EmbeddedSession
-                uid: office.OfficeExtension.EmbeddedSession
-              - name: Error
-                uid: office.OfficeExtension.Error
-              - name: ErrorCodes
-                uid: office.OfficeExtension.ErrorCodes
-              - name: EventHandlerResult
-                uid: office.OfficeExtension.EventHandlerResult
-              - name: EventHandlers
-                uid: office.OfficeExtension.EventHandlers
-              - name: EventInfo
-                uid: office.OfficeExtension.EventInfo
-              - name: LoadOption
-                uid: office.OfficeExtension.LoadOption
-              - name: RequestContextDebugInfo
-                uid: office.OfficeExtension.RequestContextDebugInfo
-              - name: RequestUrlAndHeaderInfo
-                uid: office.OfficeExtension.RequestUrlAndHeaderInfo
-              - name: RunOptions
-                uid: office.OfficeExtension.RunOptions
-              - name: TrackedObjects
-                uid: office.OfficeExtension.TrackedObjects
-              - name: UpdateOptions
-                uid: office.OfficeExtension.UpdateOptions
+                uid: word.Word.Interfaces.TableData
+              - name: TableRowCollectionData
+                uid: word.Word.Interfaces.TableRowCollectionData
+              - name: TableRowCollectionUpdateData
+                uid: word.Word.Interfaces.TableRowCollectionUpdateData
+              - name: TableRowData
+                uid: word.Word.Interfaces.TableRowData
+              - name: TableRowUpdateData
+                uid: word.Word.Interfaces.TableRowUpdateData
+              - name: TableUpdateData
+                uid: word.Word.Interfaces.TableUpdateData
+          - *ref_28
+          - *ref_29
+          - *ref_30
+          - *ref_31
+          - *ref_32
+          - *ref_33
+          - *ref_34
+          - *ref_35
+          - *ref_36
+          - *ref_37
+          - *ref_38
+          - *ref_39
+          - *ref_40
+          - *ref_41
+          - *ref_42
+          - *ref_43
+          - *ref_44
+          - *ref_45
+          - *ref_46
+          - *ref_47
+          - *ref_48
+          - *ref_49
+          - *ref_50
+          - *ref_51
+          - *ref_52
+          - *ref_53
