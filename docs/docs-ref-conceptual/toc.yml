@@ -143,6 +143,8 @@ items:
                 href: objectmodel/requirement-set-1.1/Office.context.mailbox.userProfile.md
               - name: API Reference
                 uid: Outlook_1_1
+    - name: PowerPoint and Project
+      href: overview/powerpoint-and-project-note.md
     - name: Visio
       href: overview/visio-javascript-reference-overview.md
       items:
