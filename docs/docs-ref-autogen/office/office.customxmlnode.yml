@@ -2,10 +2,24 @@
 items:
   - uid: office.Office.CustomXmlNode
     summary: Represents an XML node in a tree in a document.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this interface.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -26,8 +40,6 @@ items:
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -61,8 +73,6 @@ items:
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -114,8 +124,6 @@ items:
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -161,9 +169,6 @@ items:
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
@@ -224,8 +229,6 @@ items:
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -271,8 +274,6 @@ items:
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -306,8 +307,6 @@ items:
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -341,8 +340,6 @@ items:
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
@@ -465,8 +462,6 @@ items:
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 

@@ -3,10 +3,7 @@ items:
   - uid: office.Office.TableBinding
     summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
@@ -37,12 +34,6 @@ items:
   - uid: office.Office.TableBinding.addColumnsAsync
     summary: Adds the specified data to the table as additional columns.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
       parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data
       parameter.
@@ -67,6 +58,22 @@ items:
 
       Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
       can't exceed 20,000 in a single call to this method.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -142,12 +149,6 @@ items:
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
       parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data
       parameter.
@@ -172,6 +173,23 @@ items:
 
       Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
       can't exceed 20,000 in a single call to this method.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
@@ -217,15 +235,25 @@ items:
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
-
-
       See [Format tables in add-ins for
       Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
@@ -267,15 +295,32 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.columnCount
     summary: 'Gets the number of columns in the TableBinding, as an integer value.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
+    remarks: >-
+      **Support details**
 
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
+
       Office.select(bindings#myBinding).clearFormatsAsync();
+
       ```
     name: columnCount
     fullName: office.Office.TableBinding.columnCount
@@ -289,21 +334,38 @@ items:
           - number
   - uid: office.Office.TableBinding.deleteAllDataValuesAsync
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
-
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
+    remarks: >-
       In Excel, if the table has no header row, this method will delete the table itself.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       function deleteAllRowsFromTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               var binding = asyncResult.value;
               binding.deleteAllDataValuesAsync();
           });
       }
+
       ```
     name: 'deleteAllDataValuesAsync(options, callback)'
     fullName: office.Office.TableBinding.deleteAllDataValuesAsync
@@ -359,22 +421,40 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
     summary: 'True, if the table has headers; otherwise false.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+    remarks: >-
+      **Support details**
 
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
+
       ```javascript
+
       function showBindingHasHeaders() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write("Binding has headers: " + asyncResult.value.hasHeaders);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: hasHeaders
     fullName: office.Office.TableBinding.hasHeaders
@@ -389,20 +469,12 @@ items:
   - uid: office.Office.TableBinding.rowCount
     summary: 'Gets the number of rows in the TableBinding, as an integer value.'
     remarks: >-
-      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-
-
       When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert
       tab), both Office host applications create a single row of headers followed by a single blank row. However, if
       your add-in's script creates a binding for this newly inserted table (for example, by using the
       addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ
-      depending whether the spreadsheet is open in Excel 2013 or Excel Online.
-
-
-      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+      depending whether the spreadsheet is open in Excel 2013 or Excel Online. - In Excel on the desktop, rowCount will
+      return 0 (the blank row following the headers is not counted).
 
 
       - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
@@ -413,6 +485,23 @@ items:
 
 
       In content add-ins for Access, for performance reasons the rowCount property always returns -1.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
+      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
@@ -445,12 +534,6 @@ items:
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel</td></tr>
-
-
-      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
-
-
       **Specifying the cellFormat parameter**
 
 
@@ -558,6 +641,22 @@ items:
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
 
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
       #### Examples
 
 
@@ -644,6 +743,22 @@ items:
       <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
 
       #### Examples
 
