@@ -86,12 +86,7 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/"      
     },
-    "fileMetadata": {
-      "ms.topic":
-      {
-        "overview/office.md": "overview"
-      }
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "office-docs-ref-javascript"
   }
