@@ -19,7 +19,7 @@ items:
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
     remarks: >-
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       For Excel, the itemName parameter can refer to a named range or a table.
@@ -173,7 +173,7 @@ items:
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
@@ -244,7 +244,7 @@ items:
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
@@ -355,7 +355,7 @@ items:
   - uid: office.Office.Bindings.getAllAsync
     summary: Gets all bindings that were previously created.
     remarks: >-
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       **Support details**
@@ -419,7 +419,8 @@ items:
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
     remarks: >-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings,
+      TextBindings</td></tr></table>
 
 
       Fails if the specified id does not exist.
@@ -486,7 +487,7 @@ items:
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
     remarks: >-
-      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       Fails if the specified id does not exist.
