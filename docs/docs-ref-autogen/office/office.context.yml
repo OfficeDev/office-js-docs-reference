@@ -41,9 +41,24 @@ items:
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
       The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However,
-      Office Add-ins running on the Windows desktop or for Office Online in the browser, do allow such links. If you
-      want the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can
-      use the commerceAllowed property to control when that link is displayed.
+      Office Add-ins running on the Windows desktop or for Office Online in the browser do allow such links. If you want
+      the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
+      commerceAllowed property to control when that link is displayed.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y
+      </td></tr> <tr><th> Word </th><td> Y </td></tr> </table>
     name: commerceAllowed
     fullName: office.Office.Context.commerceAllowed
     langs:
@@ -246,10 +261,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'document: Document;'
+      content: 'document: Office.Document;'
       return:
         type:
-          - Document
+          - office.Office.Document
   - uid: office.Office.Context.host
     summary: Contains the Office application host in which the add-in is running.
     name: host
@@ -311,10 +326,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mailbox: Mailbox;'
+      content: 'mailbox: Office.Mailbox;'
       return:
         type:
-          - Mailbox
+          - outlook.Office.Mailbox
   - uid: office.Office.Context.officeTheme
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
@@ -390,15 +405,32 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'roamingSettings: RoamingSettings;'
+      content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type:
-          - RoamingSettings
+          - outlook.Office.RoamingSettings
   - uid: office.Office.Context.touchEnabled
-    summary: Specifies whether the platform and device allows touch interaction.
+    summary: >-
+      Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
+      device, such as an iPad; false otherwise.
     remarks: >-
       Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
       the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y
+      </td></tr> <tr><th> PowerPoint </th><td> Y </td></tr> <tr><th> Word </th><td> Y </td></tr> </table>
     name: touchEnabled
     fullName: office.Office.Context.touchEnabled
     langs:

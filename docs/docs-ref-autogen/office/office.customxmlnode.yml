@@ -40,7 +40,7 @@ items:
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -73,7 +73,7 @@ items:
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -124,7 +124,7 @@ items:
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -169,7 +169,7 @@ items:
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -229,7 +229,7 @@ items:
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -274,7 +274,7 @@ items:
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -307,7 +307,7 @@ items:
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -340,7 +340,7 @@ items:
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
@@ -462,7 +462,7 @@ items:
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
       #### Examples
 
       ```javascript
