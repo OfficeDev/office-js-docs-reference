@@ -219,7 +219,7 @@ Excel.Chart.name:
 
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.name="New Name";
+        chart.name = "New Name";
         chart.top = 100;
         chart.left = 100;
         chart.height = 200;

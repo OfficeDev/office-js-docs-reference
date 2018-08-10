@@ -211,7 +211,7 @@ Excel.Chart.name:
     // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100 points to the top and left. 
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.name="New Name";
+        chart.name = "New Name";
         chart.top = 100;
         chart.left = 100;
         chart.height = 200;
