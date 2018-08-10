@@ -72,8 +72,8 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -187,9 +187,9 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
-      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -252,8 +252,8 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td></tr> </table>
 
       #### Examples
 
@@ -308,9 +308,9 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
-      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -350,9 +350,9 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
-      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -434,9 +434,9 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
-      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -499,9 +499,9 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Access </th><td> </td><td> Y </td><td> </td></tr> <tr><th>
-      Excel </th><td> Y </td><td> Y </td><td> Y </td></tr> <tr><th> Word </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -654,8 +654,8 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td></tr> </table>
 
       #### Examples
 
@@ -757,8 +757,8 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><th> Excel </th><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td></tr> </table>
 
       #### Examples
 
