@@ -84,7 +84,8 @@
       "ms.devlang": "JavaScript",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/",
+      "product": ["office 365"]
     },
     "fileMetadata": {},
     "template": [],
