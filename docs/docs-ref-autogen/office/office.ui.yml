@@ -19,6 +19,7 @@ items:
       - office.Office.UI.closeContainer
       - office.Office.UI.displayDialogAsync
       - office.Office.UI.messageParent
+      - office.Office.UI.openBrowserWindow
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
@@ -129,7 +130,7 @@ items:
       <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
       object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
       </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
-      failed.<td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
       passed one as the asyncContext parameter.</td> </tr> </table>
     name: 'displayDialogAsync(startAddress, options, callback)'
     fullName: office.Office.UI.displayDialogAsync
@@ -181,3 +182,21 @@ items:
           description: Accepts a message from the dialog to deliver to the add-in.
           type:
             - any
+  - uid: office.Office.UI.openBrowserWindow
+    summary: Opens a browser window and loads the specified URL.
+    name: openBrowserWindow(url)
+    fullName: office.Office.UI.openBrowserWindow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'openBrowserWindow(url: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: url
+          description: 'The full URL to be opened including protocol (e.g., https), and port number, if any.'
+          type:
+            - string
