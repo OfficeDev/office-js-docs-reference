@@ -25,6 +25,7 @@
       "customized_template_paths": [
         "_dependentPackages/uref.plugins/content"
       ]
+
     }
   ],
   "JoinTOCPlugin": [
@@ -33,6 +34,7 @@
       "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json",
       "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
       "ConceptualTOCUrl": "/javascript/office/toc.json"
+
     }
   ],
   "notification_subscribers": [],
@@ -48,6 +50,7 @@
       "branch_mapping": {}
     }
   ],
+
   "branch_target_mapping": {
     "live": [
       "Publish",
@@ -55,6 +58,7 @@
     ]
   },
   "need_generate_pdf_url_template": true, 
+
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
@@ -62,6 +66,7 @@
       "path_to_root": "_dependentPackages/uref.plugins",
       "target_framework": "net45",
       "version": "latest"
+
     },
     {
       "id": "Microsoft.OpenPublishing.CommonPlugins",
@@ -72,3 +77,4 @@
     }
   ]
 }
+

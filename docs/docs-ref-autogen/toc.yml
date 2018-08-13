@@ -1,3 +1,4 @@
+
 items:
   - name: API reference
     href: ~/docs-ref-autogen/overview/office.md
@@ -1321,3 +1322,4 @@ items:
                 uid: office.OfficeExtension.TrackedObjects
               - name: UpdateOptions
                 uid: office.OfficeExtension.UpdateOptions
+

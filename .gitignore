@@ -5,5 +5,4 @@ _site/
 _themes*/
 _repo.*/
 _dependentPackages/
-
 .openpublishing.buildcore.ps1
