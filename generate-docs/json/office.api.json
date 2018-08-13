@@ -60150,7 +60150,7 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<td>"
+                  "token": "</td>"
                 },
                 {
                   "kind": "text",
@@ -60255,6 +60255,43 @@
                 {
                   "kind": "text",
                   "text": "Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "openBrowserWindow": {
+              "kind": "method",
+              "signature": "openBrowserWindow(url: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "url": {
+                  "name": "url",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The full URL to be opened including protocol (e.g., https), and port number, if any."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Opens a browser window and loads the specified URL."
                 }
               ],
               "remarks": [],

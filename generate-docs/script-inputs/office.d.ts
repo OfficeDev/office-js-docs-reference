@@ -987,7 +987,7 @@ declare namespace Office {
         *   </tr>
         *   <tr>
         *     <td>AsyncResult.error</td>
-        *     <td>Access an Error object that provides error information if the operation failed.<td>
+        *     <td>Access an Error object that provides error information if the operation failed.</td>
         *   </tr>
         *   <tr>
         *     <td>AsyncResult.asyncContext</td>
@@ -1020,6 +1020,11 @@ declare namespace Office {
          * - Called from a module extension: No effect.
          */
         closeContainer(): void;
+        /**
+         * Opens a browser window and loads the specified URL. 
+         * @param url The full URL to be opened including protocol (e.g., https), and port number, if any.
+         */
+        openBrowserWindow(url: string): void;
     }
 
     /**
