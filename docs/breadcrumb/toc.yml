@@ -5,3 +5,6 @@
   - name: JavaScript API for Office
     tocHref: /javascript/office/
     topicHref: /javascript/office/javascript-api-for-office
+  - name: API reference
+    tocHref: /javascript/api/overview/office
+    topicHref: /javascript/api/overview/office
