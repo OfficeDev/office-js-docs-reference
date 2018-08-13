@@ -305,47 +305,6 @@ items:
       });
 
       ```
-
-      ```javascript
-
-      // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
-      points to the top and left. 
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.name="New Name";
-          chart.top = 100;
-          chart.left = 100;
-          chart.height = 200;
-          chart.width = 200;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
-          chart.name="New Name";    
-          chart.top = 100;
-          chart.left = 100;
-          chart.height =200;
-          chart.width =200;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: excel.Excel.Chart.load
     langs:
@@ -377,6 +336,32 @@ items:
       return:
         type:
           - string
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
+          points to the top and left. 
+
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.name = "New Name";
+              chart.top = 100;
+              chart.left = 100;
+              chart.height = 200;
+              chart.width = 200;
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          ```
   - uid: excel.Excel.Chart.series
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
