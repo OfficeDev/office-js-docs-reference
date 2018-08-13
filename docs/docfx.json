@@ -7,7 +7,8 @@
           "**/toc.yml"
         ],
         "src" : "docs-ref-autogen",
-        "dest": "api/office_ref_toc"
+        "dest": "api/office_ref_toc",
+        "version": "office-js"
       },
       {
         "files": [
@@ -16,6 +17,7 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "office",
+        "version": "office-js",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -28,6 +30,7 @@
         ],
         "src": "docs-ref-autogen",
         "dest": "api",
+        "version": "office-js",
         "exclude": [
           "**/*..yml",
           "*/toc.yml"
@@ -38,6 +41,7 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
+        "version": "office-js",
         "dest": "office/breadcrumb",
         "exclude": [
           "**/obj/**",
@@ -55,7 +59,8 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "dest": "api"
+        "dest": "api",
+        "version": "office-js"
       },
       {
         "files": [
@@ -68,9 +73,15 @@
           "**/includes/**"
         ],
         "src": "docs-ref-conceptual",
+        "version": "office-js",
         "dest": "office"
       }
     ],
+    "versions": {
+      "office-js": {
+        "dest": "office-js"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
