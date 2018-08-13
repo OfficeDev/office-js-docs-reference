@@ -34,7 +34,6 @@ items:
       - excel.Excel.Style.numberFormat
       - excel.Excel.Style.numberFormatLocal
       - excel.Excel.Style.readingOrder
-      - excel.Excel.Style.set
       - excel.Excel.Style.shrinkToFit
       - excel.Excel.Style.toJSON
       - excel.Excel.Style.verticalAlignment
@@ -445,36 +444,6 @@ items:
       return:
         type:
           - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Style.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Style): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Style.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.StyleUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Style.shrinkToFit
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.

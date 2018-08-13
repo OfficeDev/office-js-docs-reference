@@ -1203,67 +1203,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.ImageUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.Image): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): OneNote.Interfaces.ImageData;",
@@ -1577,67 +1516,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.InkAnalysisUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.InkAnalysis): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): OneNote.Interfaces.InkAnalysisData;",
@@ -1841,67 +1719,6 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
-            },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisLineUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.InkAnalysisLineUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.InkAnalysisLine): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -2448,67 +2265,6 @@
               "isVirtual": false,
               "isOverride": false
             },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.InkAnalysisParagraphUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.InkAnalysisParagraph): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): OneNote.Interfaces.InkAnalysisParagraphData;",
@@ -3019,67 +2775,6 @@
                 {
                   "kind": "text",
                   "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisWordUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.InkAnalysisWordUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.InkAnalysisWord): void`"
                 }
               ],
               "isBeta": false,
@@ -12647,67 +12342,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.PageUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.Page): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "title": {
               "kind": "property",
               "signature": "title: string;",
@@ -13439,67 +13073,6 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
-            },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.PageContentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.PageContentUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.PageContent): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -14719,67 +14292,6 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
-            },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.ParagraphUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.Paragraph): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
             },
             "table": {
               "kind": "property",
@@ -18182,67 +17694,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.TableUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.Table): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "setShadingColor": {
               "kind": "method",
               "signature": "setShadingColor(colorCode: string): void;",
@@ -18838,67 +18289,6 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
-            },
-            "set": {
-              "kind": "method",
-              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "properties": {
-                  "name": "properties",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Interfaces.TableCellUpdateData"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "OfficeExtension.UpdateOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "This method has the following additional signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`set(properties: OneNote.TableCell): void`"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
             },
             "shadingColor": {
               "kind": "property",

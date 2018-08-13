@@ -16,7 +16,6 @@ items:
     children:
       - excel.Excel.ChartGridlines.format
       - excel.Excel.ChartGridlines.load
-      - excel.Excel.ChartGridlines.set
       - excel.Excel.ChartGridlines.toJSON
       - excel.Excel.ChartGridlines.visible
   - uid: excel.Excel.ChartGridlines.format
@@ -110,36 +109,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartGridlines.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartGridlines): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ChartGridlines.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartGridlinesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartGridlinesUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartGridlines.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartGridlines.toJSON

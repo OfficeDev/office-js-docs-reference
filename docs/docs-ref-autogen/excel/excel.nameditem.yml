@@ -26,7 +26,6 @@ items:
       - excel.Excel.NamedItem.load
       - excel.Excel.NamedItem.name
       - excel.Excel.NamedItem.scope
-      - excel.Excel.NamedItem.set
       - excel.Excel.NamedItem.toJSON
       - excel.Excel.NamedItem.type
       - excel.Excel.NamedItem.value
@@ -289,36 +288,6 @@ items:
       return:
         type:
           - Excel.NamedItemScope | "Worksheet" | "Workbook"
-  - uid: excel.Excel.NamedItem.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.NamedItem): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.NamedItem.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.NamedItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.NamedItemUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.NamedItem.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItem.toJSON

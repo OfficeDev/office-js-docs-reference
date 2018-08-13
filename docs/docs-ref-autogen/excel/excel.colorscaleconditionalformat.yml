@@ -16,7 +16,6 @@ items:
     children:
       - excel.Excel.ColorScaleConditionalFormat.criteria
       - excel.Excel.ColorScaleConditionalFormat.load
-      - excel.Excel.ColorScaleConditionalFormat.set
       - excel.Excel.ColorScaleConditionalFormat.threeColorScale
       - excel.Excel.ColorScaleConditionalFormat.toJSON
   - uid: excel.Excel.ColorScaleConditionalFormat.criteria
@@ -88,38 +87,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ColorScaleConditionalFormat.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ColorScaleConditionalFormat): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ColorScaleConditionalFormat.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ColorScaleConditionalFormatUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,

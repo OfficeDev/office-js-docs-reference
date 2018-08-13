@@ -18,7 +18,6 @@ items:
       - excel.Excel.ConditionalFormatRule.formulaLocal
       - excel.Excel.ConditionalFormatRule.formulaR1C1
       - excel.Excel.ConditionalFormatRule.load
-      - excel.Excel.ConditionalFormatRule.set
       - excel.Excel.ConditionalFormatRule.toJSON
   - uid: excel.Excel.ConditionalFormatRule.formula
     summary: |-
@@ -114,36 +113,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalFormatRule.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalFormatRule): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ConditionalFormatRule.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ConditionalFormatRuleUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalFormatRule.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalFormatRule.toJSON

@@ -17,7 +17,6 @@ items:
       - excel.Excel.TopBottomConditionalFormat.format
       - excel.Excel.TopBottomConditionalFormat.load
       - excel.Excel.TopBottomConditionalFormat.rule
-      - excel.Excel.TopBottomConditionalFormat.set
       - excel.Excel.TopBottomConditionalFormat.toJSON
   - uid: excel.Excel.TopBottomConditionalFormat.format
     summary: >-
@@ -85,36 +84,6 @@ items:
       return:
         type:
           - excel.Excel.ConditionalTopBottomRule
-  - uid: excel.Excel.TopBottomConditionalFormat.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.TopBottomConditionalFormat): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.TopBottomConditionalFormat.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.TopBottomConditionalFormatUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.TopBottomConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.TopBottomConditionalFormat.toJSON

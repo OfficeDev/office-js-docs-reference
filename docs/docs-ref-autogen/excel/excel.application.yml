@@ -17,7 +17,6 @@ items:
       - excel.Excel.Application.calculate
       - excel.Excel.Application.calculationMode
       - excel.Excel.Application.load
-      - excel.Excel.Application.set
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
       - excel.Excel.Application.toJSON
   - uid: excel.Excel.Application.calculate
@@ -127,36 +126,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Application.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Application): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Application.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ApplicationUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to

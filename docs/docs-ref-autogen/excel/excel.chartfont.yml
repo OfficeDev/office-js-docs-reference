@@ -41,7 +41,6 @@ items:
       - excel.Excel.ChartFont.italic
       - excel.Excel.ChartFont.load
       - excel.Excel.ChartFont.name
-      - excel.Excel.ChartFont.set
       - excel.Excel.ChartFont.size
       - excel.Excel.ChartFont.toJSON
       - excel.Excel.ChartFont.underline
@@ -139,36 +138,6 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartFont.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartFont): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ChartFont.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartFontUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartFont.size
     summary: |-
       Size of the font (e.g. 11)

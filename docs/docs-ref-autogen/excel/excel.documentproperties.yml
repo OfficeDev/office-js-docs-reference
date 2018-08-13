@@ -25,7 +25,6 @@ items:
       - excel.Excel.DocumentProperties.load
       - excel.Excel.DocumentProperties.manager
       - excel.Excel.DocumentProperties.revisionNumber
-      - excel.Excel.DocumentProperties.set
       - excel.Excel.DocumentProperties.subject
       - excel.Excel.DocumentProperties.title
       - excel.Excel.DocumentProperties.toJSON
@@ -213,36 +212,6 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.DocumentProperties.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.DocumentProperties): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.DocumentProperties.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.DocumentPropertiesUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the workbook.

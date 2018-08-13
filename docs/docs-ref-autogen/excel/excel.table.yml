@@ -31,7 +31,6 @@ items:
       - excel.Excel.Table.onSelectionChanged
       - excel.Excel.Table.reapplyFilters
       - excel.Excel.Table.rows
-      - excel.Excel.Table.set
       - excel.Excel.Table.showBandedColumns
       - excel.Excel.Table.showBandedRows
       - excel.Excel.Table.showFilterButton
@@ -529,36 +528,6 @@ items:
       return:
         type:
           - excel.Excel.TableRowCollection
-  - uid: excel.Excel.Table.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Table): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Table.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.TableUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
