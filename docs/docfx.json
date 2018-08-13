@@ -97,9 +97,6 @@
       "ms.technology": "add-ins",
       "ms.topic": "reference",
       "ms.devlang": "JavaScript",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/visualstudio-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "product": ["office 365"]
     },
     "fileMetadata": {
