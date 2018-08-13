@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisUpdateData
+    summary: 'An interface for updating data on the InkAnalysis object, for use in "inkAnalysis.set({ ... })".'
+    name: OneNote.Interfaces.InkAnalysisUpdateData
+    fullName: onenote.OneNote.Interfaces.InkAnalysisUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
+  - uid: onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
+    summary: |-
+      Gets the parent page object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: page
+    fullName: onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'page?: OneNote.Interfaces.PageUpdateData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageUpdateData

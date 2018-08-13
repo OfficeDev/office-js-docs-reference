@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.ReplyFormData
+    summary: >-
+      A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
+      form.
+    name: Office.ReplyFormData
+    fullName: outlook.Office.ReplyFormData
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.ReplyFormData.attachments
+      - outlook.Office.ReplyFormData.callback
+      - outlook.Office.ReplyFormData.htmlBody
+  - uid: outlook.Office.ReplyFormData.attachments
+    summary: >-
+      An array of [Office.ReplyFormAttachment](xref:outlook.Office.ReplyFormAttachment) that are either file or item
+      attachments.
+    name: attachments
+    fullName: outlook.Office.ReplyFormData.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments?: ReplyFormAttachment[];'
+      return:
+        type:
+          - 'ReplyFormAttachment[]'
+  - uid: outlook.Office.ReplyFormData.callback
+    summary: >-
+      When the reply display call completes, the function passed in the callback parameter is called with a single
+      parameter, asyncResult, which is an AsyncResult object.
+    name: callback
+    fullName: outlook.Office.ReplyFormData.callback
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'callback?: (result: AsyncResult) => void;'
+      return:
+        type:
+          - '(result: AsyncResult) => void'
+  - uid: outlook.Office.ReplyFormData.htmlBody
+    summary: >-
+      A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
+      KB.
+    name: htmlBody
+    fullName: outlook.Office.ReplyFormData.htmlBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'htmlBody?: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,133 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.ShapeCollection
+    summary: |-
+      Represents the Shape Collection.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.ShapeCollection
+    fullName: visio.Visio.ShapeCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.ShapeCollection.getCount
+      - visio.Visio.ShapeCollection.getItem
+      - visio.Visio.ShapeCollection.items
+      - visio.Visio.ShapeCollection.load
+      - visio.Visio.ShapeCollection.toJSON
+  - uid: visio.Visio.ShapeCollection.getCount
+    summary: |-
+      Gets the number of Shapes in the collection.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: getCount()
+    fullName: visio.Visio.ShapeCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Visio.run(function (ctx) { 
+              var activePage = ctx.document.getActivePage();
+              var numShapesActivePage = activePage.shapes.getCount();
+              return ctx.sync().then(function () {
+                  console.log("Shapes Count: " + numShapesActivePage.value);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: visio.Visio.ShapeCollection.getItem
+    summary: |-
+      Gets a Shape using its key (name or Index).
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: getItem(key)
+    fullName: visio.Visio.ShapeCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: number | string): Visio.Shape;'
+      return:
+        type:
+          - visio.Visio.Shape
+        description: ''
+      parameters:
+        - id: key
+          description: Key is the Name or Index of the shape to be retrieved.
+          type:
+            - number | string
+  - uid: visio.Visio.ShapeCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: visio.Visio.ShapeCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Visio.Shape[];'
+      return:
+        type:
+          - 'Visio.Shape[]'
+  - uid: visio.Visio.ShapeCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: visio.Visio.ShapeCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.ShapeCollection;'
+      return:
+        type:
+          - visio.Visio.ShapeCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.ShapeCollection.toJSON
+    name: toJSON()
+    fullName: visio.Visio.ShapeCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.ShapeCollectionData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.ShapeCollectionData
+        description: ''

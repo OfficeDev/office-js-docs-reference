@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ContextInformation
+    summary: Provides information about the environment in which the add-in is running.
+    name: Office.ContextInformation
+    fullName: office.Office.ContextInformation
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.ContextInformation.host
+      - office.Office.ContextInformation.platform
+      - office.Office.ContextInformation.version
+  - uid: office.Office.ContextInformation.host
+    summary: Gets the Office application host in which the add-in is running.
+    name: host
+    fullName: office.Office.ContextInformation.host
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'host: Office.HostType;'
+      return:
+        type:
+          - office.Office.HostType
+  - uid: office.Office.ContextInformation.platform
+    summary: Gets the platform on which the add-in is running.
+    name: platform
+    fullName: office.Office.ContextInformation.platform
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'platform: Office.PlatformType;'
+      return:
+        type:
+          - office.Office.PlatformType
+  - uid: office.Office.ContextInformation.version
+    summary: Gets the version of Office on which the add-in is running.
+    name: version
+    fullName: office.Office.ContextInformation.version
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'version: string;'
+      return:
+        type:
+          - string

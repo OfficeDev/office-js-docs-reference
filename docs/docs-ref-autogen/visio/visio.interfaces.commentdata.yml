@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.CommentData
+    summary: An interface describing the data returned by calling "comment.toJSON()".
+    name: Visio.Interfaces.CommentData
+    fullName: visio.Visio.Interfaces.CommentData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.CommentData.author
+      - visio.Visio.Interfaces.CommentData.date
+      - visio.Visio.Interfaces.CommentData.text
+  - uid: visio.Visio.Interfaces.CommentData.author
+    summary: |-
+      A string that specifies the name of the author of the comment.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: author
+    fullName: visio.Visio.Interfaces.CommentData.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.CommentData.date
+    summary: |-
+      A string that specifies the date when the comment was created.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: date
+    fullName: visio.Visio.Interfaces.CommentData.date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.CommentData.text
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: visio.Visio.Interfaces.CommentData.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string

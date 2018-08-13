@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisData
+    summary: An interface describing the data returned by calling "inkAnalysis.toJSON()".
+    name: OneNote.Interfaces.InkAnalysisData
+    fullName: onenote.OneNote.Interfaces.InkAnalysisData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisData.id
+      - onenote.OneNote.Interfaces.InkAnalysisData.page
+      - onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
+  - uid: onenote.OneNote.Interfaces.InkAnalysisData.id
+    summary: |-
+      Gets the ID of the InkAnalysis object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.InkAnalysisData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.InkAnalysisData.page
+    summary: |-
+      Gets the parent page object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: page
+    fullName: onenote.OneNote.Interfaces.InkAnalysisData.page
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'page?: OneNote.Interfaces.PageData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageData
+  - uid: onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
+    summary: |-
+      Gets the ink analysis paragraphs in this page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.InkAnalysisParagraphData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkAnalysisParagraphData[]'

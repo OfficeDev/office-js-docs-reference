@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.DocumentPropertyItem
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DocumentPropertyItem
+    fullName: excel.Excel.DocumentPropertyItem
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.DocumentPropertyItem.appName
+      - excel.Excel.DocumentPropertyItem.author
+      - excel.Excel.DocumentPropertyItem.category
+      - excel.Excel.DocumentPropertyItem.comments
+      - excel.Excel.DocumentPropertyItem.company
+      - excel.Excel.DocumentPropertyItem.creation
+      - excel.Excel.DocumentPropertyItem.format
+      - excel.Excel.DocumentPropertyItem.keywords
+      - excel.Excel.DocumentPropertyItem.lastAuth
+      - excel.Excel.DocumentPropertyItem.lastPrint
+      - excel.Excel.DocumentPropertyItem.lastSave
+      - excel.Excel.DocumentPropertyItem.manager
+      - excel.Excel.DocumentPropertyItem.revision
+      - excel.Excel.DocumentPropertyItem.subject
+      - excel.Excel.DocumentPropertyItem.template
+      - excel.Excel.DocumentPropertyItem.title
+  - uid: excel.Excel.DocumentPropertyItem.appName
+    name: appName
+    fullName: excel.Excel.DocumentPropertyItem.appName
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AppName"'
+  - uid: excel.Excel.DocumentPropertyItem.author
+    name: author
+    fullName: excel.Excel.DocumentPropertyItem.author
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Author"'
+  - uid: excel.Excel.DocumentPropertyItem.category
+    name: category
+    fullName: excel.Excel.DocumentPropertyItem.category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: excel.Excel.DocumentPropertyItem.comments
+    name: comments
+    fullName: excel.Excel.DocumentPropertyItem.comments
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Comments"'
+  - uid: excel.Excel.DocumentPropertyItem.company
+    name: company
+    fullName: excel.Excel.DocumentPropertyItem.company
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Company"'
+  - uid: excel.Excel.DocumentPropertyItem.creation
+    name: creation
+    fullName: excel.Excel.DocumentPropertyItem.creation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Creation"'
+  - uid: excel.Excel.DocumentPropertyItem.format
+    name: format
+    fullName: excel.Excel.DocumentPropertyItem.format
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Format"'
+  - uid: excel.Excel.DocumentPropertyItem.keywords
+    name: keywords
+    fullName: excel.Excel.DocumentPropertyItem.keywords
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Keywords"'
+  - uid: excel.Excel.DocumentPropertyItem.lastAuth
+    name: lastAuth
+    fullName: excel.Excel.DocumentPropertyItem.lastAuth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastAuth"'
+  - uid: excel.Excel.DocumentPropertyItem.lastPrint
+    name: lastPrint
+    fullName: excel.Excel.DocumentPropertyItem.lastPrint
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastPrint"'
+  - uid: excel.Excel.DocumentPropertyItem.lastSave
+    name: lastSave
+    fullName: excel.Excel.DocumentPropertyItem.lastSave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastSave"'
+  - uid: excel.Excel.DocumentPropertyItem.manager
+    name: manager
+    fullName: excel.Excel.DocumentPropertyItem.manager
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manager"'
+  - uid: excel.Excel.DocumentPropertyItem.revision
+    name: revision
+    fullName: excel.Excel.DocumentPropertyItem.revision
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Revision"'
+  - uid: excel.Excel.DocumentPropertyItem.subject
+    name: subject
+    fullName: excel.Excel.DocumentPropertyItem.subject
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Subject"'
+  - uid: excel.Excel.DocumentPropertyItem.template
+    name: template
+    fullName: excel.Excel.DocumentPropertyItem.template
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Template"'
+  - uid: excel.Excel.DocumentPropertyItem.title
+    name: title
+    fullName: excel.Excel.DocumentPropertyItem.title
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Title"'

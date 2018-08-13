@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.IPromiseConstructor
+    name: Office.IPromiseConstructor
+    fullName: office.Office.IPromiseConstructor
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.IPromiseConstructor.__new
+      - office.Office.IPromiseConstructor.all
+      - office.Office.IPromiseConstructor.prototype
+      - office.Office.IPromiseConstructor.race
+      - office.Office.IPromiseConstructor.reject
+      - office.Office.IPromiseConstructor.resolve
+  - uid: office.Office.IPromiseConstructor.__new
+    summary: Creates a new Promise.
+    name: __new(executor)
+    fullName: office.Office.IPromiseConstructor.__new
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        new <T>(executor: (resolve: (value?: T | PromiseLike<T>) => void, reject: (reason?: any) => void) => void):
+        Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: executor
+          description: >-
+            A callback used to initialize the promise. This callback is passed two arguments: a resolve callback used
+            resolve the promise with a value or the result of another promise, and a reject callback used to reject the
+            promise with a provided reason or error.
+          type:
+            - '(resolve: (value?: T | PromiseLike<T>) => void, reject: (reason?: any) => void) => void'
+  - uid: office.Office.IPromiseConstructor.all
+    summary: >-
+      Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
+      when any Promise is rejected.
+    name: all(values)
+    fullName: office.Office.IPromiseConstructor.all
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        all<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 |
+        PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 |
+        PromiseLike<T8>, T9 | PromiseLike<T9>, T10 | PromiseLike<T10>]): Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9,
+        T10]>;
+      return:
+        type:
+          - 'Promise<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]>'
+        description: A new Promise.
+      parameters:
+        - id: values
+          description: An array of Promises.
+          type:
+            - >-
+              [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
+              PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>,
+              T10 | PromiseLike<T10>]
+  - uid: office.Office.IPromiseConstructor.prototype
+    summary: A reference to the prototype.
+    name: prototype
+    fullName: office.Office.IPromiseConstructor.prototype
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly prototype: Promise<any>;'
+      return:
+        type:
+          - Promise<any>
+  - uid: office.Office.IPromiseConstructor.race
+    summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
+    name: race(values)
+    fullName: office.Office.IPromiseConstructor.race
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        race<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>(values: [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 |
+        PromiseLike<T3>, T4 | PromiseLike<T4>, T5 | PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 |
+        PromiseLike<T8>, T9 | PromiseLike<T9>, T10 | PromiseLike<T10>]): Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 |
+        T9 | T10>;
+      return:
+        type:
+          - Promise<T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10>
+        description: A new Promise.
+      parameters:
+        - id: values
+          description: An array of Promises.
+          type:
+            - >-
+              [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
+              PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>,
+              T10 | PromiseLike<T10>]
+  - uid: office.Office.IPromiseConstructor.reject
+    summary: Creates a new rejected promise for the provided reason.
+    name: reject(reason)
+    fullName: office.Office.IPromiseConstructor.reject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reject(reason: any): Promise<never>;'
+      return:
+        type:
+          - Promise<never>
+        description: A new rejected Promise.
+      parameters:
+        - id: reason
+          description: The reason the promise was rejected.
+          type:
+            - any
+  - uid: office.Office.IPromiseConstructor.resolve
+    summary: Creates a new resolved promise for the provided value.
+    name: resolve(value)
+    fullName: office.Office.IPromiseConstructor.resolve
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'resolve<T>(value: T | PromiseLike<T>): Promise<T>;'
+      return:
+        type:
+          - Promise<T>
+        description: A promise whose internal state matches the provided promise.
+      parameters:
+        - id: value
+          description: A promise.
+          type:
+            - T | PromiseLike<T>

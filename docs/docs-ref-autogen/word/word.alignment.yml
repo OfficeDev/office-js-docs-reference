@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Alignment
+    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.Alignment
+    fullName: word.Word.Alignment
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.Alignment.centered
+      - word.Word.Alignment.justified
+      - word.Word.Alignment.left
+      - word.Word.Alignment.mixed
+      - word.Word.Alignment.right
+      - word.Word.Alignment.unknown
+  - uid: word.Word.Alignment.centered
+    summary: Alignment to the center.
+    name: centered
+    fullName: word.Word.Alignment.centered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Centered"'
+  - uid: word.Word.Alignment.justified
+    summary: Fully justified alignment.
+    name: justified
+    fullName: word.Word.Alignment.justified
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justified"'
+  - uid: word.Word.Alignment.left
+    summary: Alignment to the left.
+    name: left
+    fullName: word.Word.Alignment.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: word.Word.Alignment.mixed
+    name: mixed
+    fullName: word.Word.Alignment.mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: word.Word.Alignment.right
+    summary: Alignment to the right.
+    name: right
+    fullName: word.Word.Alignment.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: word.Word.Alignment.unknown
+    summary: Unknown alignment.
+    name: unknown
+    fullName: word.Word.Alignment.unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

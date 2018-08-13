@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.HostType
+    summary: Specifies the host Office application in which the add-in is running.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
+      Access </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> OneNote
+      </strong></td><td> </td><td> Y </td><td> </td><td> Y </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+    name: Office.HostType
+    fullName: office.Office.HostType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.HostType.Access
+      - office.Office.HostType.Excel
+      - office.Office.HostType.OneNote
+      - office.Office.HostType.Outlook
+      - office.Office.HostType.PowerPoint
+      - office.Office.HostType.Project
+      - office.Office.HostType.Word
+  - uid: office.Office.HostType.Access
+    summary: The Office host is Microsoft Access.
+    name: Access
+    fullName: office.Office.HostType.Access
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Excel
+    summary: The Office host is Microsoft Excel.
+    name: Excel
+    fullName: office.Office.HostType.Excel
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.OneNote
+    summary: The Office host is Microsoft OneNote.
+    name: OneNote
+    fullName: office.Office.HostType.OneNote
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Outlook
+    summary: The Office host is Microsoft Outlook.
+    name: Outlook
+    fullName: office.Office.HostType.Outlook
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.PowerPoint
+    summary: The Office host is Microsoft PowerPoint.
+    name: PowerPoint
+    fullName: office.Office.HostType.PowerPoint
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Project
+    summary: The Office host is Microsoft Project.
+    name: Project
+    fullName: office.Office.HostType.Project
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Word
+    summary: The Office host is Microsoft Word.
+    name: Word
+    fullName: office.Office.HostType.Word
+    langs:
+      - typeScript
+    type: field

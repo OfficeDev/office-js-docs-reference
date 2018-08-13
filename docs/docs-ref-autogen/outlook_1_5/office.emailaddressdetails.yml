@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_5.Office.EmailAddressDetails
+    summary: |-
+      Provides the email properties of the sender or specified recipients of an email message or appointment.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    name: Office.EmailAddressDetails
+    fullName: Outlook_1_5.Office.EmailAddressDetails
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_5
+    children:
+      - Outlook_1_5.Office.EmailAddressDetails.appointmentResponse
+      - Outlook_1_5.Office.EmailAddressDetails.displayName
+      - Outlook_1_5.Office.EmailAddressDetails.emailAddress
+      - Outlook_1_5.Office.EmailAddressDetails.recipientType
+  - uid: Outlook_1_5.Office.EmailAddressDetails.appointmentResponse
+    summary: >-
+      Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an
+      appointment, as represented by the optionalAttendees or requiredAttendees property. This property returns
+      undefined in other scenarios.
+    name: appointmentResponse
+    fullName: Outlook_1_5.Office.EmailAddressDetails.appointmentResponse
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'appointmentResponse: Office.MailboxEnums.ResponseType;'
+      return:
+        type:
+          - outlook.Office.MailboxEnums.ResponseType
+  - uid: Outlook_1_5.Office.EmailAddressDetails.displayName
+    summary: Gets the display name associated with an email address.
+    name: displayName
+    fullName: Outlook_1_5.Office.EmailAddressDetails.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_5.Office.EmailAddressDetails.emailAddress
+    summary: Gets the SMTP email address.
+    name: emailAddress
+    fullName: Outlook_1_5.Office.EmailAddressDetails.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_5.Office.EmailAddressDetails.recipientType
+    summary: Gets the email address type of a recipient.
+    name: recipientType
+    fullName: Outlook_1_5.Office.EmailAddressDetails.recipientType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recipientType: Office.MailboxEnums.RecipientType;'
+      return:
+        type:
+          - outlook.Office.MailboxEnums.RecipientType

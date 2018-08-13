@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData
+    summary: 'An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })".'
+    name: Excel.Interfaces.ChartAxisTitleUpdateData
+    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
+      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
+      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
+  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
+    summary: |-
+      Represents the formatting of chart axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
+    summary: |-
+      Represents the axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
+    summary: |-
+      A boolean that specifies the visibility of an axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

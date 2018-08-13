@@ -1,0 +1,147 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.GetBindingDataOptions
+    summary: Provides options for how to get the data in a binding.
+    remarks: 'If the rows option is used, the value must be "thisRow".'
+    name: Office.GetBindingDataOptions
+    fullName: office.Office.GetBindingDataOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.GetBindingDataOptions.asyncContext
+      - office.Office.GetBindingDataOptions.coercionType
+      - office.Office.GetBindingDataOptions.columnCount
+      - office.Office.GetBindingDataOptions.filterType
+      - office.Office.GetBindingDataOptions.rowCount
+      - office.Office.GetBindingDataOptions.rows
+      - office.Office.GetBindingDataOptions.startColumn
+      - office.Office.GetBindingDataOptions.startRow
+      - office.Office.GetBindingDataOptions.valueFormat
+  - uid: office.Office.GetBindingDataOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.GetBindingDataOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.GetBindingDataOptions.coercionType
+    summary: >-
+      The expected shape of the selection. Use [Office.CoercionType](xref:office.Office.CoercionType) or text value.
+      Default: The original, uncoerced type of the binding.
+    name: coercionType
+    fullName: office.Office.GetBindingDataOptions.coercionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coercionType?: Office.CoercionType | string;'
+      return:
+        type:
+          - Office.CoercionType | string
+  - uid: office.Office.GetBindingDataOptions.columnCount
+    summary: >-
+      For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
+      subsequent columns.
+    name: columnCount
+    fullName: office.Office.GetBindingDataOptions.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.GetBindingDataOptions.filterType
+    summary: >-
+      Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
+      data. Use Office.FilterType or text value.
+    name: filterType
+    fullName: office.Office.GetBindingDataOptions.filterType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filterType?: Office.FilterType | string;'
+      return:
+        type:
+          - Office.FilterType | string
+  - uid: office.Office.GetBindingDataOptions.rowCount
+    summary: >-
+      For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
+      rows.
+    name: rowCount
+    fullName: office.Office.GetBindingDataOptions.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.GetBindingDataOptions.rows
+    summary: >-
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
+    name: rows
+    fullName: office.Office.GetBindingDataOptions.rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.GetBindingDataOptions.startColumn
+    summary: >-
+      For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
+      Default is first column.
+    name: startColumn
+    fullName: office.Office.GetBindingDataOptions.startColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startColumn?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.GetBindingDataOptions.startRow
+    summary: >-
+      For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
+      Default is first row.
+    name: startRow
+    fullName: office.Office.GetBindingDataOptions.startRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startRow?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.GetBindingDataOptions.valueFormat
+    summary: >-
+      Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
+      Office.ValueFormat or text value. Default: Unformatted data.
+    name: valueFormat
+    fullName: office.Office.GetBindingDataOptions.valueFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFormat?: Office.ValueFormat | string;'
+      return:
+        type:
+          - Office.ValueFormat | string

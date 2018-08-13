@@ -1,0 +1,230 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalFormatPresetCriterion
+    summary: |-
+      Represents the criteria for the Preset Criteria conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormatPresetCriterion
+    fullName: excel.Excel.ConditionalFormatPresetCriterion
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ConditionalFormatPresetCriterion.aboveAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.belowAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.blanks
+      - excel.Excel.ConditionalFormatPresetCriterion.duplicateValues
+      - excel.Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.errors
+      - excel.Excel.ConditionalFormatPresetCriterion.invalid
+      - excel.Excel.ConditionalFormatPresetCriterion.lastMonth
+      - excel.Excel.ConditionalFormatPresetCriterion.lastSevenDays
+      - excel.Excel.ConditionalFormatPresetCriterion.lastWeek
+      - excel.Excel.ConditionalFormatPresetCriterion.nextMonth
+      - excel.Excel.ConditionalFormatPresetCriterion.nextWeek
+      - excel.Excel.ConditionalFormatPresetCriterion.nonBlanks
+      - excel.Excel.ConditionalFormatPresetCriterion.nonErrors
+      - excel.Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.thisMonth
+      - excel.Excel.ConditionalFormatPresetCriterion.thisWeek
+      - excel.Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.today
+      - excel.Excel.ConditionalFormatPresetCriterion.tomorrow
+      - excel.Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage
+      - excel.Excel.ConditionalFormatPresetCriterion.uniqueValues
+      - excel.Excel.ConditionalFormatPresetCriterion.yesterday
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.aboveAverage
+    name: aboveAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.aboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AboveAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.belowAverage
+    name: belowAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.belowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BelowAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.blanks
+    name: blanks
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.blanks
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Blanks"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.duplicateValues
+    name: duplicateValues
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.duplicateValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DuplicateValues"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage
+    name: equalOrAboveAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EqualOrAboveAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage
+    name: equalOrBelowAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EqualOrBelowAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.errors
+    name: errors
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.errors
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Errors"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.invalid
+    name: invalid
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.lastMonth
+    name: lastMonth
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.lastMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastMonth"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.lastSevenDays
+    name: lastSevenDays
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.lastSevenDays
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastSevenDays"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.lastWeek
+    name: lastWeek
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.lastWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastWeek"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.nextMonth
+    name: nextMonth
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.nextMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextMonth"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.nextWeek
+    name: nextWeek
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.nextWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextWeek"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.nonBlanks
+    name: nonBlanks
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.nonBlanks
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonBlanks"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.nonErrors
+    name: nonErrors
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.nonErrors
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonErrors"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage
+    name: oneStdDevAboveAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OneStdDevAboveAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage
+    name: oneStdDevBelowAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OneStdDevBelowAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.thisMonth
+    name: thisMonth
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.thisMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisMonth"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.thisWeek
+    name: thisWeek
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.thisWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisWeek"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage
+    name: threeStdDevAboveAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeStdDevAboveAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage
+    name: threeStdDevBelowAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeStdDevBelowAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.today
+    name: today
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.today
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Today"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.tomorrow
+    name: tomorrow
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.tomorrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomorrow"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage
+    name: twoStdDevAboveAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoStdDevAboveAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage
+    name: twoStdDevBelowAverage
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoStdDevBelowAverage"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.uniqueValues
+    name: uniqueValues
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.uniqueValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UniqueValues"'
+  - uid: excel.Excel.ConditionalFormatPresetCriterion.yesterday
+    name: yesterday
+    fullName: excel.Excel.ConditionalFormatPresetCriterion.yesterday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yesterday"'

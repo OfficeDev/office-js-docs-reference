@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartDataLabelPosition
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartDataLabelPosition
+    fullName: excel.Excel.ChartDataLabelPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartDataLabelPosition.bestFit
+      - excel.Excel.ChartDataLabelPosition.bottom
+      - excel.Excel.ChartDataLabelPosition.callout
+      - excel.Excel.ChartDataLabelPosition.center
+      - excel.Excel.ChartDataLabelPosition.insideBase
+      - excel.Excel.ChartDataLabelPosition.insideEnd
+      - excel.Excel.ChartDataLabelPosition.invalid
+      - excel.Excel.ChartDataLabelPosition.left
+      - excel.Excel.ChartDataLabelPosition.none
+      - excel.Excel.ChartDataLabelPosition.outsideEnd
+      - excel.Excel.ChartDataLabelPosition.right
+      - excel.Excel.ChartDataLabelPosition.top
+  - uid: excel.Excel.ChartDataLabelPosition.bestFit
+    name: bestFit
+    fullName: excel.Excel.ChartDataLabelPosition.bestFit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BestFit"'
+  - uid: excel.Excel.ChartDataLabelPosition.bottom
+    name: bottom
+    fullName: excel.Excel.ChartDataLabelPosition.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: excel.Excel.ChartDataLabelPosition.callout
+    name: callout
+    fullName: excel.Excel.ChartDataLabelPosition.callout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Callout"'
+  - uid: excel.Excel.ChartDataLabelPosition.center
+    name: center
+    fullName: excel.Excel.ChartDataLabelPosition.center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: excel.Excel.ChartDataLabelPosition.insideBase
+    name: insideBase
+    fullName: excel.Excel.ChartDataLabelPosition.insideBase
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideBase"'
+  - uid: excel.Excel.ChartDataLabelPosition.insideEnd
+    name: insideEnd
+    fullName: excel.Excel.ChartDataLabelPosition.insideEnd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideEnd"'
+  - uid: excel.Excel.ChartDataLabelPosition.invalid
+    name: invalid
+    fullName: excel.Excel.ChartDataLabelPosition.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ChartDataLabelPosition.left
+    name: left
+    fullName: excel.Excel.ChartDataLabelPosition.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ChartDataLabelPosition.none
+    name: none
+    fullName: excel.Excel.ChartDataLabelPosition.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.ChartDataLabelPosition.outsideEnd
+    name: outsideEnd
+    fullName: excel.Excel.ChartDataLabelPosition.outsideEnd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OutsideEnd"'
+  - uid: excel.Excel.ChartDataLabelPosition.right
+    name: right
+    fullName: excel.Excel.ChartDataLabelPosition.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: excel.Excel.ChartDataLabelPosition.top
+    name: top
+    fullName: excel.Excel.ChartDataLabelPosition.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.RequestContext
+    name: OneNote.RequestContext
+    fullName: onenote.OneNote.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientRequestContext
+    package: onenote
+    children:
+      - onenote.OneNote.RequestContext.constructor
+      - onenote.OneNote.RequestContext.application
+  - uid: onenote.OneNote.RequestContext.constructor
+    summary: 'Constructs a new instance of the [RequestContext](xref:onenote.OneNote.RequestContext) class'
+    name: constructor(url)
+    fullName: onenote.OneNote.RequestContext.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string
+  - uid: onenote.OneNote.RequestContext.application
+    name: application
+    fullName: onenote.OneNote.RequestContext.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Application;'
+      return:
+        type:
+          - Application

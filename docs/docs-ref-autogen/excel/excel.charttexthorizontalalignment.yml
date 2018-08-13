@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTextHorizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for the specified object.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTextHorizontalAlignment
+    fullName: excel.Excel.ChartTextHorizontalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartTextHorizontalAlignment.center
+      - excel.Excel.ChartTextHorizontalAlignment.distributed
+      - excel.Excel.ChartTextHorizontalAlignment.justify
+      - excel.Excel.ChartTextHorizontalAlignment.left
+      - excel.Excel.ChartTextHorizontalAlignment.right
+  - uid: excel.Excel.ChartTextHorizontalAlignment.center
+    name: center
+    fullName: excel.Excel.ChartTextHorizontalAlignment.center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: excel.Excel.ChartTextHorizontalAlignment.distributed
+    name: distributed
+    fullName: excel.Excel.ChartTextHorizontalAlignment.distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: excel.Excel.ChartTextHorizontalAlignment.justify
+    name: justify
+    fullName: excel.Excel.ChartTextHorizontalAlignment.justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: excel.Excel.ChartTextHorizontalAlignment.left
+    name: left
+    fullName: excel.Excel.ChartTextHorizontalAlignment.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ChartTextHorizontalAlignment.right
+    name: right
+    fullName: excel.Excel.ChartTextHorizontalAlignment.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

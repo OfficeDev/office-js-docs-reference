@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FiveBoxesSet
+    name: Excel.FiveBoxesSet
+    fullName: excel.Excel.FiveBoxesSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.FiveBoxesSet.__index
+      - excel.Excel.FiveBoxesSet.fourFilledBoxes
+      - excel.Excel.FiveBoxesSet.noFilledBoxes
+      - excel.Excel.FiveBoxesSet.oneFilledBox
+      - excel.Excel.FiveBoxesSet.threeFilledBoxes
+      - excel.Excel.FiveBoxesSet.twoFilledBoxes
+  - uid: excel.Excel.FiveBoxesSet.__index
+    name: __index(index)
+    fullName: excel.Excel.FiveBoxesSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.FiveBoxesSet.fourFilledBoxes
+    name: fourFilledBoxes
+    fullName: excel.Excel.FiveBoxesSet.fourFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourFilledBoxes: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FiveBoxesSet.noFilledBoxes
+    name: noFilledBoxes
+    fullName: excel.Excel.FiveBoxesSet.noFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'noFilledBoxes: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FiveBoxesSet.oneFilledBox
+    name: oneFilledBox
+    fullName: excel.Excel.FiveBoxesSet.oneFilledBox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneFilledBox: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FiveBoxesSet.threeFilledBoxes
+    name: threeFilledBoxes
+    fullName: excel.Excel.FiveBoxesSet.threeFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeFilledBoxes: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FiveBoxesSet.twoFilledBoxes
+    name: twoFilledBoxes
+    fullName: excel.Excel.FiveBoxesSet.twoFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoFilledBoxes: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon

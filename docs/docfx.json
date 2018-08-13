@@ -3,15 +3,51 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+
+          "**/toc.md",
+          "**/toc.yml"
         ],
+        "src" : "docs-ref-autogen",
+        "dest": "api/office_ref_toc",
+        "version": "office-js"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "office",
+        "version": "office-js",
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "api",
+        "version": "office-js",
+        "exclude": [
+          "**/*..yml",
+          "*/toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "version": "office-js",
+        "dest": "office/breadcrumb",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+
         ]
       }
     ],
@@ -24,14 +60,54 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+
+        ],
+        "dest": "api",
+        "version": "office-js"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "docs-ref-conceptual",
+        "version": "office-js",
+        "dest": "office"
       }
     ],
+    "versions": {
+      "office-js": {
+        "dest": "office-js"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
+      "ms.author": "o365devx",
+      "apiPlatform": "javascript",
+      "ms.date": "08/15/2018",
+      "author": "o365devx",
+      "ms.prod": "office 365",
+      "ms.technology": "add-ins",
+      "ms.topic": "reference",
+      "ms.devlang": "JavaScript",
+      "product": ["office 365"]
+    },
+    "fileMetadata": {
+      "monikers": {
+        "docs-ref-autogen/**": [
+          "office-js"
+        ]
+      }
+    },
     "template": [],
     "dest": "office-docs-ref-javascript"
   }
 }
+

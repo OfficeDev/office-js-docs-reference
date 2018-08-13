@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ShapeViewUpdateData
+    summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })".'
+    name: Visio.Interfaces.ShapeViewUpdateData
+    fullName: visio.Visio.Interfaces.ShapeViewUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ShapeViewUpdateData.highlight
+  - uid: visio.Visio.Interfaces.ShapeViewUpdateData.highlight
+    summary: |-
+      Represents the highlight around the shape.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: highlight
+    fullName: visio.Visio.Interfaces.ShapeViewUpdateData.highlight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlight?: Visio.Highlight;'
+      return:
+        type:
+          - visio.Visio.Highlight

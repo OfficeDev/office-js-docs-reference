@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalColorScaleCriteria
+    summary: |-
+      Represents the criteria of the color scale.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalColorScaleCriteria
+    fullName: excel.Excel.ConditionalColorScaleCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ConditionalColorScaleCriteria.maximum
+      - excel.Excel.ConditionalColorScaleCriteria.midpoint
+      - excel.Excel.ConditionalColorScaleCriteria.minimum
+  - uid: excel.Excel.ConditionalColorScaleCriteria.maximum
+    summary: |-
+      The maximum point Color Scale Criterion.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: excel.Excel.ConditionalColorScaleCriteria.maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - excel.Excel.ConditionalColorScaleCriterion
+  - uid: excel.Excel.ConditionalColorScaleCriteria.midpoint
+    summary: |-
+      The midpoint Color Scale Criterion if the color scale is a 3-color scale.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: midpoint
+    fullName: excel.Excel.ConditionalColorScaleCriteria.midpoint
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - excel.Excel.ConditionalColorScaleCriterion
+  - uid: excel.Excel.ConditionalColorScaleCriteria.minimum
+    summary: |-
+      The minimum point Color Scale Criterion.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: excel.Excel.ConditionalColorScaleCriteria.minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - excel.Excel.ConditionalColorScaleCriterion

@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.BorderLocation
+    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.BorderLocation
+    fullName: word.Word.BorderLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.BorderLocation.all
+      - word.Word.BorderLocation.bottom
+      - word.Word.BorderLocation.inside
+      - word.Word.BorderLocation.insideHorizontal
+      - word.Word.BorderLocation.insideVertical
+      - word.Word.BorderLocation.left
+      - word.Word.BorderLocation.outside
+      - word.Word.BorderLocation.right
+      - word.Word.BorderLocation.top
+  - uid: word.Word.BorderLocation.all
+    name: all
+    fullName: word.Word.BorderLocation.all
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"All"'
+  - uid: word.Word.BorderLocation.bottom
+    name: bottom
+    fullName: word.Word.BorderLocation.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: word.Word.BorderLocation.inside
+    name: inside
+    fullName: word.Word.BorderLocation.inside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Inside"'
+  - uid: word.Word.BorderLocation.insideHorizontal
+    name: insideHorizontal
+    fullName: word.Word.BorderLocation.insideHorizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideHorizontal"'
+  - uid: word.Word.BorderLocation.insideVertical
+    name: insideVertical
+    fullName: word.Word.BorderLocation.insideVertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideVertical"'
+  - uid: word.Word.BorderLocation.left
+    name: left
+    fullName: word.Word.BorderLocation.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: word.Word.BorderLocation.outside
+    name: outside
+    fullName: word.Word.BorderLocation.outside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outside"'
+  - uid: word.Word.BorderLocation.right
+    name: right
+    fullName: word.Word.BorderLocation.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: word.Word.BorderLocation.top
+    name: top
+    fullName: word.Word.BorderLocation.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

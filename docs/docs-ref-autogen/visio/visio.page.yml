@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Page
+    summary: |-
+      Represents the Page class.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.Page
+    fullName: visio.Visio.Page
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Page.activate
+      - visio.Visio.Page.allShapes
+      - visio.Visio.Page.comments
+      - visio.Visio.Page.height
+      - visio.Visio.Page.index
+      - visio.Visio.Page.isBackground
+      - visio.Visio.Page.load
+      - visio.Visio.Page.name
+      - visio.Visio.Page.set
+      - visio.Visio.Page.shapes
+      - visio.Visio.Page.toJSON
+      - visio.Visio.Page.view
+      - visio.Visio.Page.width
+  - uid: visio.Visio.Page.activate
+    summary: |-
+      Set the page as Active Page of the document.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: activate()
+    fullName: visio.Visio.Page.activate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: visio.Visio.Page.allShapes
+    summary: |-
+      All shapes in the Page, including subshapes. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: allShapes
+    fullName: visio.Visio.Page.allShapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly allShapes: Visio.ShapeCollection;'
+      return:
+        type:
+          - visio.Visio.ShapeCollection
+  - uid: visio.Visio.Page.comments
+    summary: |-
+      Returns the Comments Collection. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: comments
+    fullName: visio.Visio.Page.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly comments: Visio.CommentCollection;'
+      return:
+        type:
+          - visio.Visio.CommentCollection
+  - uid: visio.Visio.Page.height
+    summary: |-
+      Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: height
+    fullName: visio.Visio.Page.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Page.index
+    summary: |-
+      Index of the Page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: index
+    fullName: visio.Visio.Page.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Page.isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: isBackground
+    fullName: visio.Visio.Page.isBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBackground: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Page.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+    name: load(option)
+    fullName: visio.Visio.Page.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.Page;'
+      return:
+        type:
+          - Visio.Page
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.Page.name
+    summary: |-
+      Page name. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: name
+    fullName: visio.Visio.Page.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Page.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Page): void`
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Page.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PageUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.Page.shapes
+    summary: |-
+      All top-level shapes in the Page.Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: shapes
+    fullName: visio.Visio.Page.shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Visio.ShapeCollection;'
+      return:
+        type:
+          - visio.Visio.ShapeCollection
+  - uid: visio.Visio.Page.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Page.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.PageData;'
+      return:
+        type:
+          - Visio.Interfaces.PageData
+        description: ''
+  - uid: visio.Visio.Page.view
+    summary: |-
+      Returns the view of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: visio.Visio.Page.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly view: Visio.PageView;'
+      return:
+        type:
+          - visio.Visio.PageView
+  - uid: visio.Visio.Page.width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: width
+    fullName: visio.Visio.Page.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

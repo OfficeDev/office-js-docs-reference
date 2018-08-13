@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartSeriesFormatData
+    summary: An interface describing the data returned by calling "chartSeriesFormat.toJSON()".
+    name: Excel.Interfaces.ChartSeriesFormatData
+    fullName: excel.Excel.Interfaces.ChartSeriesFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartSeriesFormatData.line
+  - uid: excel.Excel.Interfaces.ChartSeriesFormatData.line
+    summary: |-
+      Represents line formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: excel.Excel.Interfaces.ChartSeriesFormatData.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatData

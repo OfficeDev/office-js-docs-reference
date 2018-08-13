@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTitlePosition
+    summary: |-
+      Represents the position of chart title.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTitlePosition
+    fullName: excel.Excel.ChartTitlePosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartTitlePosition.automatic
+      - excel.Excel.ChartTitlePosition.bottom
+      - excel.Excel.ChartTitlePosition.left
+      - excel.Excel.ChartTitlePosition.right
+      - excel.Excel.ChartTitlePosition.top
+  - uid: excel.Excel.ChartTitlePosition.automatic
+    name: automatic
+    fullName: excel.Excel.ChartTitlePosition.automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel.Excel.ChartTitlePosition.bottom
+    name: bottom
+    fullName: excel.Excel.ChartTitlePosition.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: excel.Excel.ChartTitlePosition.left
+    name: left
+    fullName: excel.Excel.ChartTitlePosition.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ChartTitlePosition.right
+    name: right
+    fullName: excel.Excel.ChartTitlePosition.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: excel.Excel.ChartTitlePosition.top
+    name: top
+    fullName: excel.Excel.ChartTitlePosition.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

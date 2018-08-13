@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.SelectionChangedEventArgs
+    summary: |-
+      Provides information about the shape collection that raised the SelectionChanged event.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.SelectionChangedEventArgs
+    fullName: visio.Visio.SelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.SelectionChangedEventArgs.pageName
+      - visio.Visio.SelectionChangedEventArgs.shapeNames
+  - uid: visio.Visio.SelectionChangedEventArgs.pageName
+    summary: |-
+      Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: pageName
+    fullName: visio.Visio.SelectionChangedEventArgs.pageName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageName: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.SelectionChangedEventArgs.shapeNames
+    summary: |-
+      Gets the array of shape names that raised the SelectionChanged event.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: shapeNames
+    fullName: visio.Visio.SelectionChangedEventArgs.shapeNames
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapeNames: string[];'
+      return:
+        type:
+          - 'string[]'

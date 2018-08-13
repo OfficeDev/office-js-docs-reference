@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.ParagraphData
+    summary: An interface describing the data returned by calling "paragraph.toJSON()".
+    name: OneNote.Interfaces.ParagraphData
+    fullName: onenote.OneNote.Interfaces.ParagraphData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.ParagraphData.id
+      - onenote.OneNote.Interfaces.ParagraphData.image
+      - onenote.OneNote.Interfaces.ParagraphData.inkWords
+      - onenote.OneNote.Interfaces.ParagraphData.outline
+      - onenote.OneNote.Interfaces.ParagraphData.paragraphs
+      - onenote.OneNote.Interfaces.ParagraphData.parentParagraph
+      - onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
+      - onenote.OneNote.Interfaces.ParagraphData.parentTableCell
+      - onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
+      - onenote.OneNote.Interfaces.ParagraphData.richText
+      - onenote.OneNote.Interfaces.ParagraphData.table
+      - onenote.OneNote.Interfaces.ParagraphData.type
+  - uid: onenote.OneNote.Interfaces.ParagraphData.id
+    summary: |-
+      Gets the ID of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.ParagraphData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.ParagraphData.image
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
+    fullName: onenote.OneNote.Interfaces.ParagraphData.image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ImageData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkWords
+    fullName: onenote.OneNote.Interfaces.ParagraphData.inkWords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkWords?: OneNote.Interfaces.InkWordData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkWordData[]'
+  - uid: onenote.OneNote.Interfaces.ParagraphData.outline
+    summary: |-
+      Gets the Outline object that contains the Paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: outline
+    fullName: onenote.OneNote.Interfaces.ParagraphData.outline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'outline?: OneNote.Interfaces.OutlineData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.OutlineData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.paragraphs
+    summary: |-
+      The collection of paragraphs under this paragraph. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: onenote.OneNote.Interfaces.ParagraphData.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.ParagraphData[]'
+  - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraph
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentParagraph
+    fullName: onenote.OneNote.Interfaces.ParagraphData.parentParagraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraph?: OneNote.Interfaces.ParagraphData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentParagraphOrNull
+    fullName: onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCell
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
+      ItemNotFound. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: onenote.OneNote.Interfaces.ParagraphData.parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: OneNote.Interfaces.TableCellData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.TableCellData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentTableCellOrNull
+    fullName: onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.TableCellData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.richText
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: richText
+    fullName: onenote.OneNote.Interfaces.ParagraphData.richText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'richText?: OneNote.Interfaces.RichTextData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.RichTextData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.table
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: table
+    fullName: onenote.OneNote.Interfaces.ParagraphData.table
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'table?: OneNote.Interfaces.TableData;'
+      return:
+        type:
+          - OneNote.Interfaces.TableData
+  - uid: onenote.OneNote.Interfaces.ParagraphData.type
+    summary: |-
+      Gets the type of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: type
+    fullName: onenote.OneNote.Interfaces.ParagraphData.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";'
+      return:
+        type:
+          - OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"

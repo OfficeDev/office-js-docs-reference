@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.DocumentPropertyType
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DocumentPropertyType
+    fullName: excel.Excel.DocumentPropertyType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.DocumentPropertyType.boolean
+      - excel.Excel.DocumentPropertyType.date
+      - excel.Excel.DocumentPropertyType.float
+      - excel.Excel.DocumentPropertyType.number
+      - excel.Excel.DocumentPropertyType.string
+  - uid: excel.Excel.DocumentPropertyType.boolean
+    name: boolean
+    fullName: excel.Excel.DocumentPropertyType.boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: excel.Excel.DocumentPropertyType.date
+    name: date
+    fullName: excel.Excel.DocumentPropertyType.date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: excel.Excel.DocumentPropertyType.float
+    name: float
+    fullName: excel.Excel.DocumentPropertyType.float
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Float"'
+  - uid: excel.Excel.DocumentPropertyType.number
+    name: number
+    fullName: excel.Excel.DocumentPropertyType.number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: excel.Excel.DocumentPropertyType.string
+    name: string
+    fullName: excel.Excel.DocumentPropertyType.string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

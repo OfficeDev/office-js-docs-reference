@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.FormatProtectionData
+    summary: An interface describing the data returned by calling "formatProtection.toJSON()".
+    name: Excel.Interfaces.FormatProtectionData
+    fullName: excel.Excel.Interfaces.FormatProtectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.FormatProtectionData.formulaHidden
+      - excel.Excel.Interfaces.FormatProtectionData.locked
+  - uid: excel.Excel.Interfaces.FormatProtectionData.formulaHidden
+    summary: >-
+      Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
+      doesn't have uniform formula hidden setting.
+
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaHidden
+    fullName: excel.Excel.Interfaces.FormatProtectionData.formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.FormatProtectionData.locked
+    summary: >-
+      Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
+      uniform lock setting.
+
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: locked
+    fullName: excel.Excel.Interfaces.FormatProtectionData.locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean
