@@ -99,7 +99,11 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "product": ["office 365"]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "docs-ref-autogen/**": [
+          "office-js"
+      ]
+    },
     "template": [],
     "dest": "office-docs-ref-javascript"
   }
