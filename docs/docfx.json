@@ -100,9 +100,11 @@
       "product": ["office 365"]
     },
     "fileMetadata": {
-      "docs-ref-autogen/**": [
+      "monikers": {
+        "docs-ref-autogen/**": [
           "office-js"
-      ]
+        ]
+      }
     },
     "template": [],
     "dest": "office-docs-ref-javascript"
