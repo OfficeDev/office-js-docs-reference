@@ -1,5 +1,4 @@
 {
-  "need_generate_pdf": true,
   "docsets_to_publish": [
     {
       "customized_tasks": {
@@ -28,6 +27,26 @@
 
     }
   ],
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    }
+  ],
+  "branch_target_mapping": {
+   "live": [
+     "Publish",
+     "Pdf"
+   ]
+  },
+  "need_generate_pdf_url_template": true,
+  "Targets": {
+    "Pdf": {  
+    "template_folder": "_themes.pdf"  
+    } 
+   },
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
@@ -42,23 +61,6 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
-  "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
-    }
-  ],
-
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "need_generate_pdf_url_template": true, 
-
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
