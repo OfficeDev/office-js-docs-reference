@@ -11,8 +11,8 @@ The  **id** attribute must be unique within the manifest.
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
 |  [Group](group.md)      | Yes |  Defines a Group of commands.  |
-|  [Label](#label)      | Yes |  The label for the CustomTab or a Group.  |
-|  [Control](#control)    | Yes |  A collection of one or more Control objects.  |
+|  [Label](#label-tab)      | Yes |  The label for the CustomTab or a Group.  |
+|  [Control](control.md)    | Yes |  A collection of one or more Control objects.  |
 
 ### Group
 
