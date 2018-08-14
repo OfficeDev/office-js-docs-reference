@@ -21,7 +21,9 @@
         "version": "office-js",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/_themes/**",
+          "**/_themes.pdf/**"
         ]
       },
       {
