@@ -1,0 +1,304 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Section
+    summary: |-
+      Represents a section in a Word document.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Section
+    fullName: word.Word.Section
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.Section.body
+      - word.Word.Section.getFooter
+      - word.Word.Section.getHeader
+      - word.Word.Section.getNext
+      - word.Word.Section.getNextOrNullObject
+      - word.Word.Section.load
+      - word.Word.Section.set
+      - word.Word.Section.toJSON
+      - word.Word.Section.track
+      - word.Word.Section.untrack
+  - uid: word.Word.Section.body
+    summary: >-
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: word.Word.Section.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly body: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: word.Word.Section.getFooter
+    summary: |-
+      Gets one of the section's footers.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getFooter(type)
+    fullName: word.Word.Section.getFooter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Create a proxy sectionsCollection object.
+              var mySections = context.document.sections;
+              
+              // Queue a commmand to load the sections.
+              context.load(mySections, 'body/style');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  
+                  // Create a proxy object the primary footer of the first section. 
+                  // Note that the footer is a body object.
+                  var myFooter = mySections.items[0].getFooter("primary");
+                  
+                  // Queue a command to insert text at the end of the footer.
+                  myFooter.insertText("This is a footer.", Word.InsertLocation.end);
+                  
+                  // Queue a command to wrap the header in a content control.
+                  myFooter.insertContentControl();
+                                        
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync().then(function () {
+                      console.log("Added a footer to the first section.");
+                  });                    
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+              context.document.sections.getFirst()
+                  .getFooter("Primary").insertParagraph("Confidential", "End");
+
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: type
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+  - uid: word.Word.Section.getHeader
+    summary: |-
+      Gets one of the section's headers.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getHeader(type)
+    fullName: word.Word.Section.getHeader
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+              
+              // Create a proxy sectionsCollection object.
+              var mySections = context.document.sections;
+              
+              // Queue a commmand to load the sections.
+              context.load(mySections, 'body/style');
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  
+                  // Create a proxy object the primary header of the first section. 
+                  // Note that the header is a body object.
+                  var myHeader = mySections.items[0].getHeader("primary");
+                  
+                  // Queue a command to insert text at the end of the header.
+                  myHeader.insertText("This is a header.", Word.InsertLocation.end);
+                  
+                  // Queue a command to wrap the header in a content control.
+                  myHeader.insertContentControl();
+                                        
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync().then(function () {
+                      console.log("Added a header to the first section.");
+                  });                    
+              });  
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+              context.document.sections.getFirst()
+                  .getHeader("Primary").insertText("This is a header", "Start");
+
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: type
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+  - uid: word.Word.Section.getNext
+    summary: |-
+      Gets the next section. Throws if this section is the last one.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getNext()
+    fullName: word.Word.Section.getNext
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(): Word.Section;'
+      return:
+        type:
+          - Word.Section
+        description: ''
+  - uid: word.Word.Section.getNextOrNullObject
+    summary: |-
+      Gets the next section. Returns a null object if this section is the last one.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getNextOrNullObject()
+    fullName: word.Word.Section.getNextOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextOrNullObject(): Word.Section;'
+      return:
+        type:
+          - Word.Section
+        description: ''
+  - uid: word.Word.Section.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: word.Word.Section.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.Section;'
+      return:
+        type:
+          - Word.Section
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[]'
+  - uid: word.Word.Section.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: word.Word.Section.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.SectionUpdateData
+        - id: options
+          description: ''
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.Section.toJSON
+    name: toJSON()
+    fullName: word.Word.Section.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.SectionData;'
+      return:
+        type:
+          - Word.Interfaces.SectionData
+        description: ''
+  - uid: word.Word.Section.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: word.Word.Section.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Section;'
+      return:
+        type:
+          - Word.Section
+        description: ''
+  - uid: word.Word.Section.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: word.Word.Section.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Section;'
+      return:
+        type:
+          - Word.Section
+        description: ''

@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData
+    summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })".'
+    name: OneNote.Interfaces.ParagraphUpdateData
+    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.ParagraphUpdateData.image
+      - onenote.OneNote.Interfaces.ParagraphUpdateData.table
+  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.image
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
+    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData.image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageUpdateData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ImageUpdateData
+  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.table
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: table
+    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData.table
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'table?: OneNote.Interfaces.TableUpdateData;'
+      return:
+        type:
+          - OneNote.Interfaces.TableUpdateData

@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ShapeData
+    summary: An interface describing the data returned by calling "shape.toJSON()".
+    name: Visio.Interfaces.ShapeData
+    fullName: visio.Visio.Interfaces.ShapeData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ShapeData.comments
+      - visio.Visio.Interfaces.ShapeData.hyperlinks
+      - visio.Visio.Interfaces.ShapeData.id
+      - visio.Visio.Interfaces.ShapeData.name
+      - visio.Visio.Interfaces.ShapeData.select
+      - visio.Visio.Interfaces.ShapeData.shapeDataItems
+      - visio.Visio.Interfaces.ShapeData.subShapes
+      - visio.Visio.Interfaces.ShapeData.text
+      - visio.Visio.Interfaces.ShapeData.view
+  - uid: visio.Visio.Interfaces.ShapeData.comments
+    summary: |-
+      Returns the Comments Collection. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: comments
+    fullName: visio.Visio.Interfaces.ShapeData.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: Visio.Interfaces.CommentData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.CommentData[]'
+  - uid: visio.Visio.Interfaces.ShapeData.hyperlinks
+    summary: |-
+      Returns the Hyperlinks collection for a Shape object. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: hyperlinks
+    fullName: visio.Visio.Interfaces.ShapeData.hyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlinks?: Visio.Interfaces.HyperlinkData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.HyperlinkData[]'
+  - uid: visio.Visio.Interfaces.ShapeData.id
+    summary: |-
+      Shape's identifier. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: id
+    fullName: visio.Visio.Interfaces.ShapeData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Interfaces.ShapeData.name
+    summary: |-
+      Shape's name. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: name
+    fullName: visio.Visio.Interfaces.ShapeData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.ShapeData.select
+    summary: |-
+      Returns true, if shape is selected. User can set true to select the shape explicitly.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: select
+    fullName: visio.Visio.Interfaces.ShapeData.select
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'select?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.ShapeData.shapeDataItems
+    summary: |-
+      Returns the Shape's Data Section. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: shapeDataItems
+    fullName: visio.Visio.Interfaces.ShapeData.shapeDataItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.ShapeDataItemData[]'
+  - uid: visio.Visio.Interfaces.ShapeData.subShapes
+    summary: |-
+      Gets SubShape Collection. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: subShapes
+    fullName: visio.Visio.Interfaces.ShapeData.subShapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subShapes?: Visio.Interfaces.ShapeData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.ShapeData[]'
+  - uid: visio.Visio.Interfaces.ShapeData.text
+    summary: |-
+      Shape's text. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: visio.Visio.Interfaces.ShapeData.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.ShapeData.view
+    summary: |-
+      Returns the view of the shape. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: visio.Visio.Interfaces.ShapeData.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.ShapeViewData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.ShapeViewData

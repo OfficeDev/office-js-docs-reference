@@ -1,0 +1,145 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.CommentCollection
+    summary: |-
+      Represents the CommentCollection for a given Shape.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.CommentCollection
+    fullName: visio.Visio.CommentCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.CommentCollection.getCount
+      - visio.Visio.CommentCollection.getItem
+      - visio.Visio.CommentCollection.items
+      - visio.Visio.CommentCollection.load
+      - visio.Visio.CommentCollection.toJSON
+  - uid: visio.Visio.CommentCollection.getCount
+    summary: |-
+      Gets the number of Comments.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: getCount()
+    fullName: visio.Visio.CommentCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: visio.Visio.CommentCollection.getItem
+    summary: |-
+      Gets the Comment using its name.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: getItem(key)
+    fullName: visio.Visio.CommentCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: key
+          description: Key is the name of the Comment to be retrieved.
+          type:
+            - string
+  - uid: visio.Visio.CommentCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: visio.Visio.CommentCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Visio.Comment[];'
+      return:
+        type:
+          - 'Visio.Comment[]'
+  - uid: visio.Visio.CommentCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Position Belt.41";
+          var shape = activePage.shapes.getItem(shapeName);
+          var shapecomments= shape.comments;
+          shapecomments.load();
+          return ctx.sync().then(function () {
+              for(var i=0; i<shapecomments.items.length;i++)
+              {
+                  var comment= shapecomments.items[i];
+                  console.log("comment Author: " + comment.author);
+                  console.log("Comment Text: " + comment.text);
+                  console.log("Date " + comment.date);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+    name: load(option)
+    fullName: visio.Visio.CommentCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.CommentCollection;'
+      return:
+        type:
+          - visio.Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.CommentCollection.toJSON
+    name: toJSON()
+    fullName: visio.Visio.CommentCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.CommentCollectionData
+        description: ''

@@ -1,0 +1,160 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CustomProperty
+    summary: |-
+      Represents a custom property.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CustomProperty
+    fullName: excel.Excel.CustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.CustomProperty.delete
+      - excel.Excel.CustomProperty.key
+      - excel.Excel.CustomProperty.load
+      - excel.Excel.CustomProperty.set
+      - excel.Excel.CustomProperty.toJSON
+      - excel.Excel.CustomProperty.type
+      - excel.Excel.CustomProperty.value
+  - uid: excel.Excel.CustomProperty.delete
+    summary: |-
+      Deletes the custom property.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: excel.Excel.CustomProperty.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.CustomProperty.key
+    summary: |-
+      Gets the key of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: excel.Excel.CustomProperty.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CustomProperty.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomProperty` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: excel.Excel.CustomProperty.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.CustomProperty;'
+      return:
+        type:
+          - excel.Excel.CustomProperty
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.CustomProperty.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.CustomProperty): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.CustomProperty.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.CustomPropertyUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.CustomProperty.toJSON
+    name: toJSON()
+    fullName: excel.Excel.CustomProperty.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.CustomPropertyData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.CustomPropertyData
+        description: ''
+  - uid: excel.Excel.CustomProperty.type
+    summary: |-
+      Gets the value type of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: excel.Excel.CustomProperty.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";'
+      return:
+        type:
+          - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
+  - uid: excel.Excel.CustomProperty.value
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: excel.Excel.CustomProperty.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

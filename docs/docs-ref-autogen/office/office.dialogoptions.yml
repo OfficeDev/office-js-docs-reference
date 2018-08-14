@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DialogOptions
+    summary: Provides options for how a dialog is displayed.
+    name: Office.DialogOptions
+    fullName: office.Office.DialogOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.DialogOptions.asyncContext
+      - office.Office.DialogOptions.displayInIframe
+      - office.Office.DialogOptions.height
+      - office.Office.DialogOptions.width
+  - uid: office.Office.DialogOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.DialogOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.DialogOptions.displayInIframe
+    summary: >-
+      Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office
+      Online clients, and is ignored by other platforms. If false (default), the dialog will be displayed as a new
+      browser window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the
+      dialog will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
+    name: displayInIframe
+    fullName: office.Office.DialogOptions.displayInIframe
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayInIframe?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.DialogOptions.height
+    summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
+    name: height
+    fullName: office.Office.DialogOptions.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.DialogOptions.width
+    summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
+    name: width
+    fullName: office.Office.DialogOptions.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

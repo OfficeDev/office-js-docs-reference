@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkStrokeData
+    summary: An interface describing the data returned by calling "inkStroke.toJSON()".
+    name: OneNote.Interfaces.InkStrokeData
+    fullName: onenote.OneNote.Interfaces.InkStrokeData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkStrokeData.floatingInk
+      - onenote.OneNote.Interfaces.InkStrokeData.id
+  - uid: onenote.OneNote.Interfaces.InkStrokeData.floatingInk
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: floatingInk
+    fullName: onenote.OneNote.Interfaces.InkStrokeData.floatingInk
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'floatingInk?: OneNote.Interfaces.FloatingInkData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.FloatingInkData
+  - uid: onenote.OneNote.Interfaces.InkStrokeData.id
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.InkStrokeData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string

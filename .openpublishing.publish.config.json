@@ -1,6 +1,12 @@
 {
+  "need_generate_pdf": false,
   "docsets_to_publish": [
     {
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
       "docset_name": "office-docs-ref-javascript",
       "build_source_folder": "docs",
       "build_output_subfolder": "office-docs-ref-javascript",
@@ -19,26 +25,16 @@
       "customized_template_paths": [
         "_dependentPackages/uref.plugins/content"
       ]
-    },
+
+    }
+  ],
+  "JoinTOCPlugin": [
     {
-      "docset_name": "tsdocs",
-      "build_source_folder": "tsdocs",
-      "build_output_subfolder": "tsdocs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "UniversalReference": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/uref.plugins/content"
-      ]
+      "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
+      "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json",
+      "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
+      "ConceptualTOCUrl": "/javascript/office/toc.json"
+
     }
   ],
   "notification_subscribers": [],
@@ -54,8 +50,15 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
+
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true, 
+
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
@@ -63,6 +66,15 @@
       "path_to_root": "_dependentPackages/uref.plugins",
       "target_framework": "net45",
       "version": "latest"
+
+    },
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest"
     }
   ]
 }
+

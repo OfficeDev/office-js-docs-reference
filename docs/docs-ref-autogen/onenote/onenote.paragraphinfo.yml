@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.ParagraphInfo
+    summary: |-
+      List information for paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.ParagraphInfo
+    fullName: onenote.OneNote.ParagraphInfo
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.ParagraphInfo.bulletType
+      - onenote.OneNote.ParagraphInfo.index
+      - onenote.OneNote.ParagraphInfo.listType
+      - onenote.OneNote.ParagraphInfo.numberType
+  - uid: onenote.OneNote.ParagraphInfo.bulletType
+    summary: |-
+      // Bullet list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: bulletType
+    fullName: onenote.OneNote.ParagraphInfo.bulletType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bulletType: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.ParagraphInfo.index
+    summary: |-
+      // Index of paragraph in list
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: index
+    fullName: onenote.OneNote.ParagraphInfo.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.ParagraphInfo.listType
+    summary: |-
+      // Type of list in paragraph
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: listType
+    fullName: onenote.OneNote.ParagraphInfo.listType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listType: OneNote.ListType | "None" | "Number" | "Bullet";'
+      return:
+        type:
+          - OneNote.ListType | "None" | "Number" | "Bullet"
+  - uid: onenote.OneNote.ParagraphInfo.numberType
+    summary: |-
+      // number list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: numberType
+    fullName: onenote.OneNote.ParagraphInfo.numberType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        numberType: OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal"
+        | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" |
+        "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" |
+        "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" |
+        "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" |
+        "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" |
+        "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom";
+      return:
+        type:
+          - >-
+            OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" |
+            "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar"
+            | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" |
+            "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" |
+            "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" |
+            "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" |
+            "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" |
+            "Custom"

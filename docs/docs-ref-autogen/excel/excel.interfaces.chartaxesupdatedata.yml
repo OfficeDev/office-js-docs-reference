@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartAxesUpdateData
+    summary: 'An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })".'
+    name: Excel.Interfaces.ChartAxesUpdateData
+    fullName: excel.Excel.Interfaces.ChartAxesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+      - excel.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+      - excel.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+    summary: |-
+      Represents the category axis in a chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryAxis
+    fullName: excel.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData
+  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+    summary: |-
+      Represents the series axis of a 3-dimensional chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesAxis
+    fullName: excel.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData
+  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+    summary: |-
+      Represents the value axis in an axis.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: valueAxis
+    fullName: excel.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData
+    summary: 'An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set({ ... })".'
+    name: Excel.Interfaces.ChartLegendEntryUpdateData
+    fullName: excel.Excel.Interfaces.ChartLegendEntryUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
+  - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

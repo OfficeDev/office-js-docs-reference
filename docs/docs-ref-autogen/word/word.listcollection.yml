@@ -1,0 +1,200 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ListCollection
+    summary: |-
+      Contains a collection of [Word.List](xref:word.Word.List) objects.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ListCollection
+    fullName: word.Word.ListCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.ListCollection.getById
+      - word.Word.ListCollection.getByIdOrNullObject
+      - word.Word.ListCollection.getFirst
+      - word.Word.ListCollection.getFirstOrNullObject
+      - word.Word.ListCollection.getItem
+      - word.Word.ListCollection.items
+      - word.Word.ListCollection.load
+      - word.Word.ListCollection.toJSON
+      - word.Word.ListCollection.track
+      - word.Word.ListCollection.untrack
+  - uid: word.Word.ListCollection.getById
+    summary: |-
+      Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getById(id)
+    fullName: word.Word.ListCollection.getById
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getById(id: number): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+      parameters:
+        - id: id
+          description: Required. A list identifier.
+          type:
+            - number
+  - uid: word.Word.ListCollection.getByIdOrNullObject
+    summary: |-
+      Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getByIdOrNullObject(id)
+    fullName: word.Word.ListCollection.getByIdOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByIdOrNullObject(id: number): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+      parameters:
+        - id: id
+          description: Required. A list identifier.
+          type:
+            - number
+  - uid: word.Word.ListCollection.getFirst
+    summary: |-
+      Gets the first list in this collection. Throws if this collection is empty.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getFirst()
+    fullName: word.Word.ListCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+  - uid: word.Word.ListCollection.getFirstOrNullObject
+    summary: |-
+      Gets the first list in this collection. Returns a null object if this collection is empty.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getFirstOrNullObject()
+    fullName: word.Word.ListCollection.getFirstOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstOrNullObject(): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+  - uid: word.Word.ListCollection.getItem
+    summary: |-
+      Gets a list object by its index in the collection.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: word.Word.ListCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+      parameters:
+        - id: index
+          description: A number that identifies the index location of a list object.
+          type:
+            - number
+  - uid: word.Word.ListCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: word.Word.ListCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.List[];'
+      return:
+        type:
+          - 'Word.List[]'
+  - uid: word.Word.ListCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: word.Word.ListCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[]'
+  - uid: word.Word.ListCollection.toJSON
+    name: toJSON()
+    fullName: word.Word.ListCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ListCollectionData;'
+      return:
+        type:
+          - word.Word.Interfaces.ListCollectionData
+        description: ''
+  - uid: word.Word.ListCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: word.Word.ListCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+        description: ''
+  - uid: word.Word.ListCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: word.Word.ListCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+        description: ''

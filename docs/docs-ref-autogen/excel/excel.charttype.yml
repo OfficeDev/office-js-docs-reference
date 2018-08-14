@@ -1,0 +1,627 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartType
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartType
+    fullName: excel.Excel.ChartType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartType._3DArea
+      - excel.Excel.ChartType._3DAreaStacked
+      - excel.Excel.ChartType._3DAreaStacked100
+      - excel.Excel.ChartType._3DBarClustered
+      - excel.Excel.ChartType._3DBarStacked
+      - excel.Excel.ChartType._3DBarStacked100
+      - excel.Excel.ChartType._3DColumn
+      - excel.Excel.ChartType._3DColumnClustered
+      - excel.Excel.ChartType._3DColumnStacked
+      - excel.Excel.ChartType._3DColumnStacked100
+      - excel.Excel.ChartType._3DLine
+      - excel.Excel.ChartType._3DPie
+      - excel.Excel.ChartType._3DPieExploded
+      - excel.Excel.ChartType.area
+      - excel.Excel.ChartType.areaStacked
+      - excel.Excel.ChartType.areaStacked100
+      - excel.Excel.ChartType.barClustered
+      - excel.Excel.ChartType.barOfPie
+      - excel.Excel.ChartType.barStacked
+      - excel.Excel.ChartType.barStacked100
+      - excel.Excel.ChartType.bubble
+      - excel.Excel.ChartType.bubble3DEffect
+      - excel.Excel.ChartType.columnClustered
+      - excel.Excel.ChartType.columnStacked
+      - excel.Excel.ChartType.columnStacked100
+      - excel.Excel.ChartType.coneBarClustered
+      - excel.Excel.ChartType.coneBarStacked
+      - excel.Excel.ChartType.coneBarStacked100
+      - excel.Excel.ChartType.coneCol
+      - excel.Excel.ChartType.coneColClustered
+      - excel.Excel.ChartType.coneColStacked
+      - excel.Excel.ChartType.coneColStacked100
+      - excel.Excel.ChartType.cylinderBarClustered
+      - excel.Excel.ChartType.cylinderBarStacked
+      - excel.Excel.ChartType.cylinderBarStacked100
+      - excel.Excel.ChartType.cylinderCol
+      - excel.Excel.ChartType.cylinderColClustered
+      - excel.Excel.ChartType.cylinderColStacked
+      - excel.Excel.ChartType.cylinderColStacked100
+      - excel.Excel.ChartType.doughnut
+      - excel.Excel.ChartType.doughnutExploded
+      - excel.Excel.ChartType.histogram
+      - excel.Excel.ChartType.invalid
+      - excel.Excel.ChartType.line
+      - excel.Excel.ChartType.lineMarkers
+      - excel.Excel.ChartType.lineMarkersStacked
+      - excel.Excel.ChartType.lineMarkersStacked100
+      - excel.Excel.ChartType.lineStacked
+      - excel.Excel.ChartType.lineStacked100
+      - excel.Excel.ChartType.pareto
+      - excel.Excel.ChartType.pie
+      - excel.Excel.ChartType.pieExploded
+      - excel.Excel.ChartType.pieOfPie
+      - excel.Excel.ChartType.pyramidBarClustered
+      - excel.Excel.ChartType.pyramidBarStacked
+      - excel.Excel.ChartType.pyramidBarStacked100
+      - excel.Excel.ChartType.pyramidCol
+      - excel.Excel.ChartType.pyramidColClustered
+      - excel.Excel.ChartType.pyramidColStacked
+      - excel.Excel.ChartType.pyramidColStacked100
+      - excel.Excel.ChartType.radar
+      - excel.Excel.ChartType.radarFilled
+      - excel.Excel.ChartType.radarMarkers
+      - excel.Excel.ChartType.regionMap
+      - excel.Excel.ChartType.stockHLC
+      - excel.Excel.ChartType.stockOHLC
+      - excel.Excel.ChartType.stockVHLC
+      - excel.Excel.ChartType.stockVOHLC
+      - excel.Excel.ChartType.surface
+      - excel.Excel.ChartType.surfaceTopView
+      - excel.Excel.ChartType.surfaceTopViewWireframe
+      - excel.Excel.ChartType.surfaceWireframe
+      - excel.Excel.ChartType.xyscatter
+      - excel.Excel.ChartType.xyscatterLines
+      - excel.Excel.ChartType.xyscatterLinesNoMarkers
+      - excel.Excel.ChartType.xyscatterSmooth
+      - excel.Excel.ChartType.xyscatterSmoothNoMarkers
+  - uid: excel.Excel.ChartType._3DArea
+    name: _3DArea
+    fullName: excel.Excel.ChartType._3DArea
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DArea"'
+  - uid: excel.Excel.ChartType._3DAreaStacked
+    name: _3DAreaStacked
+    fullName: excel.Excel.ChartType._3DAreaStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DAreaStacked"'
+  - uid: excel.Excel.ChartType._3DAreaStacked100
+    name: _3DAreaStacked100
+    fullName: excel.Excel.ChartType._3DAreaStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DAreaStacked100"'
+  - uid: excel.Excel.ChartType._3DBarClustered
+    name: _3DBarClustered
+    fullName: excel.Excel.ChartType._3DBarClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DBarClustered"'
+  - uid: excel.Excel.ChartType._3DBarStacked
+    name: _3DBarStacked
+    fullName: excel.Excel.ChartType._3DBarStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DBarStacked"'
+  - uid: excel.Excel.ChartType._3DBarStacked100
+    name: _3DBarStacked100
+    fullName: excel.Excel.ChartType._3DBarStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DBarStacked100"'
+  - uid: excel.Excel.ChartType._3DColumn
+    name: _3DColumn
+    fullName: excel.Excel.ChartType._3DColumn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DColumn"'
+  - uid: excel.Excel.ChartType._3DColumnClustered
+    name: _3DColumnClustered
+    fullName: excel.Excel.ChartType._3DColumnClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DColumnClustered"'
+  - uid: excel.Excel.ChartType._3DColumnStacked
+    name: _3DColumnStacked
+    fullName: excel.Excel.ChartType._3DColumnStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DColumnStacked"'
+  - uid: excel.Excel.ChartType._3DColumnStacked100
+    name: _3DColumnStacked100
+    fullName: excel.Excel.ChartType._3DColumnStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DColumnStacked100"'
+  - uid: excel.Excel.ChartType._3DLine
+    name: _3DLine
+    fullName: excel.Excel.ChartType._3DLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DLine"'
+  - uid: excel.Excel.ChartType._3DPie
+    name: _3DPie
+    fullName: excel.Excel.ChartType._3DPie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DPie"'
+  - uid: excel.Excel.ChartType._3DPieExploded
+    name: _3DPieExploded
+    fullName: excel.Excel.ChartType._3DPieExploded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"3DPieExploded"'
+  - uid: excel.Excel.ChartType.area
+    name: area
+    fullName: excel.Excel.ChartType.area
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Area"'
+  - uid: excel.Excel.ChartType.areaStacked
+    name: areaStacked
+    fullName: excel.Excel.ChartType.areaStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AreaStacked"'
+  - uid: excel.Excel.ChartType.areaStacked100
+    name: areaStacked100
+    fullName: excel.Excel.ChartType.areaStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AreaStacked100"'
+  - uid: excel.Excel.ChartType.barClustered
+    name: barClustered
+    fullName: excel.Excel.ChartType.barClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BarClustered"'
+  - uid: excel.Excel.ChartType.barOfPie
+    name: barOfPie
+    fullName: excel.Excel.ChartType.barOfPie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BarOfPie"'
+  - uid: excel.Excel.ChartType.barStacked
+    name: barStacked
+    fullName: excel.Excel.ChartType.barStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BarStacked"'
+  - uid: excel.Excel.ChartType.barStacked100
+    name: barStacked100
+    fullName: excel.Excel.ChartType.barStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BarStacked100"'
+  - uid: excel.Excel.ChartType.bubble
+    name: bubble
+    fullName: excel.Excel.ChartType.bubble
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bubble"'
+  - uid: excel.Excel.ChartType.bubble3DEffect
+    name: bubble3DEffect
+    fullName: excel.Excel.ChartType.bubble3DEffect
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bubble3DEffect"'
+  - uid: excel.Excel.ChartType.columnClustered
+    name: columnClustered
+    fullName: excel.Excel.ChartType.columnClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColumnClustered"'
+  - uid: excel.Excel.ChartType.columnStacked
+    name: columnStacked
+    fullName: excel.Excel.ChartType.columnStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColumnStacked"'
+  - uid: excel.Excel.ChartType.columnStacked100
+    name: columnStacked100
+    fullName: excel.Excel.ChartType.columnStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColumnStacked100"'
+  - uid: excel.Excel.ChartType.coneBarClustered
+    name: coneBarClustered
+    fullName: excel.Excel.ChartType.coneBarClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeBarClustered"'
+  - uid: excel.Excel.ChartType.coneBarStacked
+    name: coneBarStacked
+    fullName: excel.Excel.ChartType.coneBarStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeBarStacked"'
+  - uid: excel.Excel.ChartType.coneBarStacked100
+    name: coneBarStacked100
+    fullName: excel.Excel.ChartType.coneBarStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeBarStacked100"'
+  - uid: excel.Excel.ChartType.coneCol
+    name: coneCol
+    fullName: excel.Excel.ChartType.coneCol
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeCol"'
+  - uid: excel.Excel.ChartType.coneColClustered
+    name: coneColClustered
+    fullName: excel.Excel.ChartType.coneColClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeColClustered"'
+  - uid: excel.Excel.ChartType.coneColStacked
+    name: coneColStacked
+    fullName: excel.Excel.ChartType.coneColStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeColStacked"'
+  - uid: excel.Excel.ChartType.coneColStacked100
+    name: coneColStacked100
+    fullName: excel.Excel.ChartType.coneColStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConeColStacked100"'
+  - uid: excel.Excel.ChartType.cylinderBarClustered
+    name: cylinderBarClustered
+    fullName: excel.Excel.ChartType.cylinderBarClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderBarClustered"'
+  - uid: excel.Excel.ChartType.cylinderBarStacked
+    name: cylinderBarStacked
+    fullName: excel.Excel.ChartType.cylinderBarStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderBarStacked"'
+  - uid: excel.Excel.ChartType.cylinderBarStacked100
+    name: cylinderBarStacked100
+    fullName: excel.Excel.ChartType.cylinderBarStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderBarStacked100"'
+  - uid: excel.Excel.ChartType.cylinderCol
+    name: cylinderCol
+    fullName: excel.Excel.ChartType.cylinderCol
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderCol"'
+  - uid: excel.Excel.ChartType.cylinderColClustered
+    name: cylinderColClustered
+    fullName: excel.Excel.ChartType.cylinderColClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderColClustered"'
+  - uid: excel.Excel.ChartType.cylinderColStacked
+    name: cylinderColStacked
+    fullName: excel.Excel.ChartType.cylinderColStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderColStacked"'
+  - uid: excel.Excel.ChartType.cylinderColStacked100
+    name: cylinderColStacked100
+    fullName: excel.Excel.ChartType.cylinderColStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CylinderColStacked100"'
+  - uid: excel.Excel.ChartType.doughnut
+    name: doughnut
+    fullName: excel.Excel.ChartType.doughnut
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Doughnut"'
+  - uid: excel.Excel.ChartType.doughnutExploded
+    name: doughnutExploded
+    fullName: excel.Excel.ChartType.doughnutExploded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DoughnutExploded"'
+  - uid: excel.Excel.ChartType.histogram
+    name: histogram
+    fullName: excel.Excel.ChartType.histogram
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Histogram"'
+  - uid: excel.Excel.ChartType.invalid
+    name: invalid
+    fullName: excel.Excel.ChartType.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ChartType.line
+    name: line
+    fullName: excel.Excel.ChartType.line
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line"'
+  - uid: excel.Excel.ChartType.lineMarkers
+    name: lineMarkers
+    fullName: excel.Excel.ChartType.lineMarkers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineMarkers"'
+  - uid: excel.Excel.ChartType.lineMarkersStacked
+    name: lineMarkersStacked
+    fullName: excel.Excel.ChartType.lineMarkersStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineMarkersStacked"'
+  - uid: excel.Excel.ChartType.lineMarkersStacked100
+    name: lineMarkersStacked100
+    fullName: excel.Excel.ChartType.lineMarkersStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineMarkersStacked100"'
+  - uid: excel.Excel.ChartType.lineStacked
+    name: lineStacked
+    fullName: excel.Excel.ChartType.lineStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineStacked"'
+  - uid: excel.Excel.ChartType.lineStacked100
+    name: lineStacked100
+    fullName: excel.Excel.ChartType.lineStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineStacked100"'
+  - uid: excel.Excel.ChartType.pareto
+    name: pareto
+    fullName: excel.Excel.ChartType.pareto
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pareto"'
+  - uid: excel.Excel.ChartType.pie
+    name: pie
+    fullName: excel.Excel.ChartType.pie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pie"'
+  - uid: excel.Excel.ChartType.pieExploded
+    name: pieExploded
+    fullName: excel.Excel.ChartType.pieExploded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PieExploded"'
+  - uid: excel.Excel.ChartType.pieOfPie
+    name: pieOfPie
+    fullName: excel.Excel.ChartType.pieOfPie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PieOfPie"'
+  - uid: excel.Excel.ChartType.pyramidBarClustered
+    name: pyramidBarClustered
+    fullName: excel.Excel.ChartType.pyramidBarClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidBarClustered"'
+  - uid: excel.Excel.ChartType.pyramidBarStacked
+    name: pyramidBarStacked
+    fullName: excel.Excel.ChartType.pyramidBarStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidBarStacked"'
+  - uid: excel.Excel.ChartType.pyramidBarStacked100
+    name: pyramidBarStacked100
+    fullName: excel.Excel.ChartType.pyramidBarStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidBarStacked100"'
+  - uid: excel.Excel.ChartType.pyramidCol
+    name: pyramidCol
+    fullName: excel.Excel.ChartType.pyramidCol
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidCol"'
+  - uid: excel.Excel.ChartType.pyramidColClustered
+    name: pyramidColClustered
+    fullName: excel.Excel.ChartType.pyramidColClustered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidColClustered"'
+  - uid: excel.Excel.ChartType.pyramidColStacked
+    name: pyramidColStacked
+    fullName: excel.Excel.ChartType.pyramidColStacked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidColStacked"'
+  - uid: excel.Excel.ChartType.pyramidColStacked100
+    name: pyramidColStacked100
+    fullName: excel.Excel.ChartType.pyramidColStacked100
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PyramidColStacked100"'
+  - uid: excel.Excel.ChartType.radar
+    name: radar
+    fullName: excel.Excel.ChartType.radar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Radar"'
+  - uid: excel.Excel.ChartType.radarFilled
+    name: radarFilled
+    fullName: excel.Excel.ChartType.radarFilled
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RadarFilled"'
+  - uid: excel.Excel.ChartType.radarMarkers
+    name: radarMarkers
+    fullName: excel.Excel.ChartType.radarMarkers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RadarMarkers"'
+  - uid: excel.Excel.ChartType.regionMap
+    name: regionMap
+    fullName: excel.Excel.ChartType.regionMap
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RegionMap"'
+  - uid: excel.Excel.ChartType.stockHLC
+    name: stockHLC
+    fullName: excel.Excel.ChartType.stockHLC
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StockHLC"'
+  - uid: excel.Excel.ChartType.stockOHLC
+    name: stockOHLC
+    fullName: excel.Excel.ChartType.stockOHLC
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StockOHLC"'
+  - uid: excel.Excel.ChartType.stockVHLC
+    name: stockVHLC
+    fullName: excel.Excel.ChartType.stockVHLC
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StockVHLC"'
+  - uid: excel.Excel.ChartType.stockVOHLC
+    name: stockVOHLC
+    fullName: excel.Excel.ChartType.stockVOHLC
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StockVOHLC"'
+  - uid: excel.Excel.ChartType.surface
+    name: surface
+    fullName: excel.Excel.ChartType.surface
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Surface"'
+  - uid: excel.Excel.ChartType.surfaceTopView
+    name: surfaceTopView
+    fullName: excel.Excel.ChartType.surfaceTopView
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SurfaceTopView"'
+  - uid: excel.Excel.ChartType.surfaceTopViewWireframe
+    name: surfaceTopViewWireframe
+    fullName: excel.Excel.ChartType.surfaceTopViewWireframe
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SurfaceTopViewWireframe"'
+  - uid: excel.Excel.ChartType.surfaceWireframe
+    name: surfaceWireframe
+    fullName: excel.Excel.ChartType.surfaceWireframe
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SurfaceWireframe"'
+  - uid: excel.Excel.ChartType.xyscatter
+    name: xyscatter
+    fullName: excel.Excel.ChartType.xyscatter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XYScatter"'
+  - uid: excel.Excel.ChartType.xyscatterLines
+    name: xyscatterLines
+    fullName: excel.Excel.ChartType.xyscatterLines
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XYScatterLines"'
+  - uid: excel.Excel.ChartType.xyscatterLinesNoMarkers
+    name: xyscatterLinesNoMarkers
+    fullName: excel.Excel.ChartType.xyscatterLinesNoMarkers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XYScatterLinesNoMarkers"'
+  - uid: excel.Excel.ChartType.xyscatterSmooth
+    name: xyscatterSmooth
+    fullName: excel.Excel.ChartType.xyscatterSmooth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XYScatterSmooth"'
+  - uid: excel.Excel.ChartType.xyscatterSmoothNoMarkers
+    name: xyscatterSmoothNoMarkers
+    fullName: excel.Excel.ChartType.xyscatterSmoothNoMarkers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XYScatterSmoothNoMarkers"'

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SettingUpdateData
+    summary: 'An interface for updating data on the Setting object, for use in "setting.set({ ... })".'
+    name: Excel.Interfaces.SettingUpdateData
+    fullName: excel.Excel.Interfaces.SettingUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SettingUpdateData.value
+  - uid: excel.Excel.Interfaces.SettingUpdateData.value
+    summary: |-
+      Represents the value stored for this setting.
+
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: excel.Excel.Interfaces.SettingUpdateData.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: any;'
+      return:
+        type:
+          - any

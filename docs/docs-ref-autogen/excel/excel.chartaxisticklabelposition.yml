@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartAxisTickLabelPosition
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisTickLabelPosition
+    fullName: excel.Excel.ChartAxisTickLabelPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartAxisTickLabelPosition.high
+      - excel.Excel.ChartAxisTickLabelPosition.low
+      - excel.Excel.ChartAxisTickLabelPosition.nextToAxis
+      - excel.Excel.ChartAxisTickLabelPosition.none
+  - uid: excel.Excel.ChartAxisTickLabelPosition.high
+    name: high
+    fullName: excel.Excel.ChartAxisTickLabelPosition.high
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"High"'
+  - uid: excel.Excel.ChartAxisTickLabelPosition.low
+    name: low
+    fullName: excel.Excel.ChartAxisTickLabelPosition.low
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Low"'
+  - uid: excel.Excel.ChartAxisTickLabelPosition.nextToAxis
+    name: nextToAxis
+    fullName: excel.Excel.ChartAxisTickLabelPosition.nextToAxis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextToAxis"'
+  - uid: excel.Excel.ChartAxisTickLabelPosition.none
+    name: none
+    fullName: excel.Excel.ChartAxisTickLabelPosition.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'

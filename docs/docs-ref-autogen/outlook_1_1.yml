@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_1
+    name: Outlook_1_1
+    fullName: Outlook_1_1
+    langs:
+      - typeScript
+    type: package
+    children:
+      - Outlook_1_1.Office.Appointment
+      - Outlook_1_1.Office.AppointmentCompose
+      - Outlook_1_1.Office.AppointmentForm
+      - Outlook_1_1.Office.AppointmentRead
+      - Outlook_1_1.Office.AttachmentDetails
+      - Outlook_1_1.Office.Body
+      - Outlook_1_1.Office.CoercionTypeOptions
+      - Outlook_1_1.Office.Contact
+      - Outlook_1_1.Office.CustomProperties
+      - Outlook_1_1.Office.Diagnostics
+      - Outlook_1_1.Office.EmailAddressDetails
+      - Outlook_1_1.Office.EmailUser
+      - Outlook_1_1.Office.Entities
+      - Outlook_1_1.Office.Item
+      - Outlook_1_1.Office.ItemCompose
+      - Outlook_1_1.Office.ItemRead
+      - Outlook_1_1.Office.LocalClientTime
+      - Outlook_1_1.Office.Location
+      - Outlook_1_1.Office.Mailbox
+      - Outlook_1_1.Office.MailboxEnums.AttachmentType
+      - Outlook_1_1.Office.MailboxEnums.EntityType
+      - Outlook_1_1.Office.MailboxEnums.ItemType
+      - Outlook_1_1.Office.MailboxEnums.RecipientType
+      - Outlook_1_1.Office.MailboxEnums.ResponseType
+      - Outlook_1_1.Office.MeetingSuggestion
+      - Outlook_1_1.Office.Message
+      - Outlook_1_1.Office.MessageCompose
+      - Outlook_1_1.Office.MessageRead
+      - Outlook_1_1.Office.PhoneNumber
+      - Outlook_1_1.Office.Recipients
+      - Outlook_1_1.Office.ReplyFormAttachment
+      - Outlook_1_1.Office.ReplyFormData
+      - Outlook_1_1.Office.RoamingSettings
+      - Outlook_1_1.Office.SourceProperty
+      - Outlook_1_1.Office.Subject
+      - Outlook_1_1.Office.TaskSuggestion
+      - Outlook_1_1.Office.Time
+      - Outlook_1_1.Office.UserProfile
+references:
+  - uid: Outlook_1_1.Office.Appointment
+    name: Office.Appointment
+  - uid: Outlook_1_1.Office.AppointmentCompose
+    name: Office.AppointmentCompose
+  - uid: Outlook_1_1.Office.AppointmentForm
+    name: Office.AppointmentForm
+  - uid: Outlook_1_1.Office.AppointmentRead
+    name: Office.AppointmentRead
+  - uid: Outlook_1_1.Office.AttachmentDetails
+    name: Office.AttachmentDetails
+  - uid: Outlook_1_1.Office.Body
+    name: Office.Body
+  - uid: Outlook_1_1.Office.CoercionTypeOptions
+    name: Office.CoercionTypeOptions
+  - uid: Outlook_1_1.Office.Contact
+    name: Office.Contact
+  - uid: Outlook_1_1.Office.CustomProperties
+    name: Office.CustomProperties
+  - uid: Outlook_1_1.Office.Diagnostics
+    name: Office.Diagnostics
+  - uid: Outlook_1_1.Office.EmailAddressDetails
+    name: Office.EmailAddressDetails
+  - uid: Outlook_1_1.Office.EmailUser
+    name: Office.EmailUser
+  - uid: Outlook_1_1.Office.Entities
+    name: Office.Entities
+  - uid: Outlook_1_1.Office.Item
+    name: Office.Item
+  - uid: Outlook_1_1.Office.ItemCompose
+    name: Office.ItemCompose
+  - uid: Outlook_1_1.Office.ItemRead
+    name: Office.ItemRead
+  - uid: Outlook_1_1.Office.LocalClientTime
+    name: Office.LocalClientTime
+  - uid: Outlook_1_1.Office.Location
+    name: Office.Location
+  - uid: Outlook_1_1.Office.Mailbox
+    name: Office.Mailbox
+  - uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
+    name: Office.MailboxEnums.AttachmentType
+  - uid: Outlook_1_1.Office.MailboxEnums.EntityType
+    name: Office.MailboxEnums.EntityType
+  - uid: Outlook_1_1.Office.MailboxEnums.ItemType
+    name: Office.MailboxEnums.ItemType
+  - uid: Outlook_1_1.Office.MailboxEnums.RecipientType
+    name: Office.MailboxEnums.RecipientType
+  - uid: Outlook_1_1.Office.MailboxEnums.ResponseType
+    name: Office.MailboxEnums.ResponseType
+  - uid: Outlook_1_1.Office.MeetingSuggestion
+    name: Office.MeetingSuggestion
+  - uid: Outlook_1_1.Office.Message
+    name: Office.Message
+  - uid: Outlook_1_1.Office.MessageCompose
+    name: Office.MessageCompose
+  - uid: Outlook_1_1.Office.MessageRead
+    name: Office.MessageRead
+  - uid: Outlook_1_1.Office.PhoneNumber
+    name: Office.PhoneNumber
+  - uid: Outlook_1_1.Office.Recipients
+    name: Office.Recipients
+  - uid: Outlook_1_1.Office.ReplyFormAttachment
+    name: Office.ReplyFormAttachment
+  - uid: Outlook_1_1.Office.ReplyFormData
+    name: Office.ReplyFormData
+  - uid: Outlook_1_1.Office.RoamingSettings
+    name: Office.RoamingSettings
+  - uid: Outlook_1_1.Office.SourceProperty
+    name: Office.SourceProperty
+  - uid: Outlook_1_1.Office.Subject
+    name: Office.Subject
+  - uid: Outlook_1_1.Office.TaskSuggestion
+    name: Office.TaskSuggestion
+  - uid: Outlook_1_1.Office.Time
+    name: Office.Time
+  - uid: Outlook_1_1.Office.UserProfile
+    name: Office.UserProfile

@@ -1,0 +1,8 @@
+{
+  "name": "generate-docs",
+  "version": "1.0.0",
+  "dependencies": {
+    "@microsoft/api-extractor": "*",
+    "@microsoft/api-documenter": "*"
+  }
+}

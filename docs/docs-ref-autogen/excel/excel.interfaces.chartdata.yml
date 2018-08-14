@@ -1,0 +1,283 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartData
+    summary: An interface describing the data returned by calling "chart.toJSON()".
+    name: Excel.Interfaces.ChartData
+    fullName: excel.Excel.Interfaces.ChartData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartData.axes
+      - excel.Excel.Interfaces.ChartData.chartType
+      - excel.Excel.Interfaces.ChartData.dataLabels
+      - excel.Excel.Interfaces.ChartData.format
+      - excel.Excel.Interfaces.ChartData.height
+      - excel.Excel.Interfaces.ChartData.id
+      - excel.Excel.Interfaces.ChartData.left
+      - excel.Excel.Interfaces.ChartData.legend
+      - excel.Excel.Interfaces.ChartData.name
+      - excel.Excel.Interfaces.ChartData.series
+      - excel.Excel.Interfaces.ChartData.showAllFieldButtons
+      - excel.Excel.Interfaces.ChartData.title
+      - excel.Excel.Interfaces.ChartData.top
+      - excel.Excel.Interfaces.ChartData.width
+      - excel.Excel.Interfaces.ChartData.worksheet
+  - uid: excel.Excel.Interfaces.ChartData.axes
+    summary: |-
+      Represents chart axes. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: axes
+    fullName: excel.Excel.Interfaces.ChartData.axes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axes?: Excel.Interfaces.ChartAxesData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxesData
+  - uid: excel.Excel.Interfaces.ChartData.chartType
+    summary: |-
+      Represents the type of the chart. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: excel.Excel.Interfaces.ChartData.chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Pareto" | "RegionMap";
+      return:
+        type:
+          - >-
+            Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered"
+            | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
+            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Pareto" | "RegionMap"
+  - uid: excel.Excel.Interfaces.ChartData.dataLabels
+    summary: |-
+      Represents the datalabels on the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: excel.Excel.Interfaces.ChartData.dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelsData
+  - uid: excel.Excel.Interfaces.ChartData.format
+    summary: |-
+      Encapsulates the format properties for the chart area. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAreaFormatData
+  - uid: excel.Excel.Interfaces.ChartData.height
+    summary: |-
+      Represents the height, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.Interfaces.ChartData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.id
+    summary: |-
+      The unique id of chart. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: excel.Excel.Interfaces.ChartData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartData.left
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.Interfaces.ChartData.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.legend
+    summary: |-
+      Represents the legend for the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: legend
+    fullName: excel.Excel.Interfaces.ChartData.legend
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legend?: Excel.Interfaces.ChartLegendData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLegendData
+  - uid: excel.Excel.Interfaces.ChartData.name
+    summary: |-
+      Represents the name of a chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.ChartData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartData.series
+    summary: |-
+      Represents either a single series or collection of series in the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: series
+    fullName: excel.Excel.Interfaces.ChartData.series
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'series?: Excel.Interfaces.ChartSeriesData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartSeriesData[]'
+  - uid: excel.Excel.Interfaces.ChartData.showAllFieldButtons
+    summary: |-
+      Represents whether to display all field buttons on a PivotChart.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllFieldButtons
+    fullName: excel.Excel.Interfaces.ChartData.showAllFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartData.title
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: excel.Excel.Interfaces.ChartData.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartTitleData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTitleData
+  - uid: excel.Excel.Interfaces.ChartData.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
+      top of the chart area (on a chart).
+
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.Interfaces.ChartData.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.width
+    summary: |-
+      Represents the width, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.Interfaces.ChartData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.worksheet
+    summary: |-
+      The worksheet containing the current chart. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: excel.Excel.Interfaces.ChartData.worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetData

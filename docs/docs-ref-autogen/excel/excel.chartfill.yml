@@ -1,0 +1,146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartFill
+    summary: |-
+      Represents the fill formatting for a chart element.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartFill
+    fullName: excel.Excel.ChartFill
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartFill.clear
+      - excel.Excel.ChartFill.load
+      - excel.Excel.ChartFill.setSolidColor
+      - excel.Excel.ChartFill.toJSON
+  - uid: excel.Excel.ChartFill.clear
+    summary: |-
+      Clear the fill color of a chart element.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: excel.Excel.ChartFill.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
+          Excel.run(function (ctx) { 
+              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+              gridlines.format.line.clear();
+              return ctx.sync().then(function() {
+                      console.log("Chart Major Gridlines Format Cleared");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: excel.Excel.ChartFill.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartFill.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;'
+      return:
+        type:
+          - excel.Excel.ChartFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartFill.setSolidColor
+    summary: |-
+      Sets the fill formatting of a chart element to a uniform color.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: setSolidColor(color)
+    fullName: excel.Excel.ChartFill.setSolidColor
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+
+              chart.format.fill.setSolidColor("#FF0000");
+
+              return ctx.sync().then(function() {
+                      console.log("Chart1 Background Color Changed.");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+              let point = pointsCollection.getItemAt(2);
+
+              // Set color for chart point.
+              point.format.fill.setSolidColor('red');
+
+              await context.sync();
+
+              OfficeHelpers.UI.notify("Successfully set chart point color to red (for the third item in series 1).");            
+          });
+          ```
+      parameters:
+        - id: color
+          description: >-
+            HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a
+            named HTML color (e.g. "orange").
+          type:
+            - string
+  - uid: excel.Excel.ChartFill.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartFill.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - |-
+            {
+                        [key: string]: string;
+                    }
+        description: ''

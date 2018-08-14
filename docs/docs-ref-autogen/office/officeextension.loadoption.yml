@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.LoadOption
+    summary: >-
+      Specifies which properties of an object should be loaded. This load happens when the sync() method is executed.
+      This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
+    remarks: >-
+      For Word, the preferred method for specifying the properties and paging information is by using a string literal.
+      The first two examples show the preferred way to request the text and font size properties for paragraphs in a
+      paragraph collection:
+
+
+      `context.load(paragraphs, 'text, font/size');`
+
+
+      `paragraphs.load('text, font/size');`
+
+
+      Here is a similar example using object notation (includes paging):
+
+
+      `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
+
+
+      `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
+
+
+      Note that if we don't specify the specific properties on the font object in the select statement, the expand
+      statement by itself would indicate that all of the font properties are loaded.
+    name: OfficeExtension.LoadOption
+    fullName: office.OfficeExtension.LoadOption
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.LoadOption.expand
+      - office.OfficeExtension.LoadOption.select
+      - office.OfficeExtension.LoadOption.skip
+      - office.OfficeExtension.LoadOption.top
+  - uid: office.OfficeExtension.LoadOption.expand
+    summary: 'A comma-delimited string, or array of strings, that specifies the relationships to load.'
+    name: expand
+    fullName: office.OfficeExtension.LoadOption.expand
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expand?: string | string[];'
+      return:
+        type:
+          - 'string | string[]'
+  - uid: office.OfficeExtension.LoadOption.select
+    summary: 'A comma-delimited string, or array of strings, that specifies the properties/relationships to load.'
+    name: select
+    fullName: office.OfficeExtension.LoadOption.select
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'select?: string | string[];'
+      return:
+        type:
+          - 'string | string[]'
+  - uid: office.OfficeExtension.LoadOption.skip
+    summary: >-
+      Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not
+      included in the result. If top is specified, the result set will start after skipping the specified number of
+      items.
+    name: skip
+    fullName: office.OfficeExtension.LoadOption.skip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'skip?: number;'
+      return:
+        type:
+          - number
+  - uid: office.OfficeExtension.LoadOption.top
+    summary: >-
+      Only usable on collection types. Specifies the maximum number of collection items that can be included in the
+      result.
+    name: top
+    fullName: office.OfficeExtension.LoadOption.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

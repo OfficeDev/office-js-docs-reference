@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetSelectionChangedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetSelectionChangedEventArgs
+    fullName: excel.Excel.WorksheetSelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetSelectionChangedEventArgs.address
+      - excel.Excel.WorksheetSelectionChangedEventArgs.type
+      - excel.Excel.WorksheetSelectionChangedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetSelectionChangedEventArgs.address
+    summary: |-
+      Gets the range address that represents the selected area of a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: excel.Excel.WorksheetSelectionChangedEventArgs.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.WorksheetSelectionChangedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: excel.Excel.WorksheetSelectionChangedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetSelectionChanged";'
+      return:
+        type:
+          - '"WorksheetSelectionChanged"'
+  - uid: excel.Excel.WorksheetSelectionChangedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet in which the selection changed.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: excel.Excel.WorksheetSelectionChangedEventArgs.worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SortMethod
+    summary: '\[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SortMethod
+    fullName: excel.Excel.SortMethod
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SortMethod.pinYin
+      - excel.Excel.SortMethod.strokeCount
+  - uid: excel.Excel.SortMethod.pinYin
+    name: pinYin
+    fullName: excel.Excel.SortMethod.pinYin
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PinYin"'
+  - uid: excel.Excel.SortMethod.strokeCount
+    name: strokeCount
+    fullName: excel.Excel.SortMethod.strokeCount
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StrokeCount"'

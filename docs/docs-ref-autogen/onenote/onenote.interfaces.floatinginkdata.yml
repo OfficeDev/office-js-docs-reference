@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.FloatingInkData
+    summary: An interface describing the data returned by calling "floatingInk.toJSON()".
+    name: OneNote.Interfaces.FloatingInkData
+    fullName: onenote.OneNote.Interfaces.FloatingInkData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.FloatingInkData.id
+      - onenote.OneNote.Interfaces.FloatingInkData.inkStrokes
+      - onenote.OneNote.Interfaces.FloatingInkData.pageContent
+  - uid: onenote.OneNote.Interfaces.FloatingInkData.id
+    summary: |-
+      Gets the ID of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.FloatingInkData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.FloatingInkData.inkStrokes
+    summary: |-
+      Gets the strokes of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkStrokes
+    fullName: onenote.OneNote.Interfaces.FloatingInkData.inkStrokes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkStrokes?: OneNote.Interfaces.InkStrokeData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkStrokeData[]'
+  - uid: onenote.OneNote.Interfaces.FloatingInkData.pageContent
+    summary: |-
+      Gets the PageContent parent of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageContent
+    fullName: onenote.OneNote.Interfaces.FloatingInkData.pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageContentData

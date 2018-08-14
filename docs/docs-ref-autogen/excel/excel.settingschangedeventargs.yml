@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SettingsChangedEventArgs
+    summary: |-
+      Provides information about the setting that raised the SettingsChanged event
+
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.SettingsChangedEventArgs
+    fullName: excel.Excel.SettingsChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.SettingsChangedEventArgs.settings
+  - uid: excel.Excel.SettingsChangedEventArgs.settings
+    summary: |-
+      Gets the Setting object that represents the binding that raised the SettingsChanged event
+
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: settings
+    fullName: excel.Excel.SettingsChangedEventArgs.settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'settings: Excel.SettingCollection;'
+      return:
+        type:
+          - excel.Excel.SettingCollection

@@ -1,0 +1,133 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.SetBindingDataOptions
+    summary: Provides options for how to set the data in a binding.
+    remarks: 'If the rows option is used, the value must be "thisRow".'
+    name: Office.SetBindingDataOptions
+    fullName: office.Office.SetBindingDataOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.SetBindingDataOptions.asyncContext
+      - office.Office.SetBindingDataOptions.cellFormat
+      - office.Office.SetBindingDataOptions.coercionType
+      - office.Office.SetBindingDataOptions.columns
+      - office.Office.SetBindingDataOptions.rows
+      - office.Office.SetBindingDataOptions.startColumn
+      - office.Office.SetBindingDataOptions.startRow
+      - office.Office.SetBindingDataOptions.tableOptions
+  - uid: office.Office.SetBindingDataOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.SetBindingDataOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.SetBindingDataOptions.cellFormat
+    summary: >-
+      Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
+      that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
+      that range.
+
+
+      Example: `\[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
+      {borderColor: "white", fontStyle: "bold"}}\]`
+    name: cellFormat
+    fullName: office.Office.SetBindingDataOptions.cellFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellFormat?: Array<RangeFormatConfiguration>;'
+      return:
+        type:
+          - Array<RangeFormatConfiguration>
+  - uid: office.Office.SetBindingDataOptions.coercionType
+    summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
+    name: coercionType
+    fullName: office.Office.SetBindingDataOptions.coercionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coercionType?: Office.CoercionType | string;'
+      return:
+        type:
+          - Office.CoercionType | string
+  - uid: office.Office.SetBindingDataOptions.columns
+    summary: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
+    name: columns
+    fullName: office.Office.SetBindingDataOptions.columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columns?: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office.SetBindingDataOptions.rows
+    summary: >-
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
+    name: rows
+    fullName: office.Office.SetBindingDataOptions.rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.SetBindingDataOptions.startColumn
+    summary: >-
+      Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted,
+      data is set starting in the first column.
+    name: startColumn
+    fullName: office.Office.SetBindingDataOptions.startColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startColumn?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetBindingDataOptions.startRow
+    summary: >-
+      Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings.
+      If omitted, data is set starting in the first row.
+    name: startRow
+    fullName: office.Office.SetBindingDataOptions.startRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startRow?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetBindingDataOptions.tableOptions
+    summary: >-
+      For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
+      row, and banded rows. Example: `{bandedRows: true, filterButton: false}`
+    name: tableOptions
+    fullName: office.Office.SetBindingDataOptions.tableOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableOptions?: object;'
+      return:
+        type:
+          - object

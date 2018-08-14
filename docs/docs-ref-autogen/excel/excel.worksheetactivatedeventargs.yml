@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetActivatedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the Activated event.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetActivatedEventArgs
+    fullName: excel.Excel.WorksheetActivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetActivatedEventArgs.type
+      - excel.Excel.WorksheetActivatedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetActivatedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: excel.Excel.WorksheetActivatedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetActivated";'
+      return:
+        type:
+          - '"WorksheetActivated"'
+  - uid: excel.Excel.WorksheetActivatedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet that is activated.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: excel.Excel.WorksheetActivatedEventArgs.worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

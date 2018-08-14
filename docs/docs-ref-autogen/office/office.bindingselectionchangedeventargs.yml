@@ -1,0 +1,282 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.BindingSelectionChangedEventArgs
+    summary: Provides information about the binding that raised the SelectionChanged event.
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
+    name: Office.BindingSelectionChangedEventArgs
+    fullName: office.Office.BindingSelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.BindingSelectionChangedEventArgs.binding
+      - office.Office.BindingSelectionChangedEventArgs.columnCount
+      - office.Office.BindingSelectionChangedEventArgs.rowCount
+      - office.Office.BindingSelectionChangedEventArgs.startColumn
+      - office.Office.BindingSelectionChangedEventArgs.startRow
+      - office.Office.BindingSelectionChangedEventArgs.type
+  - uid: office.Office.BindingSelectionChangedEventArgs.binding
+    summary: >-
+      Gets an [Office.Binding](xref:office.Office.Binding) object that represents the binding that raised the
+      SelectionChanged event.
+    name: binding
+    fullName: office.Office.BindingSelectionChangedEventArgs.binding
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'binding: Binding;'
+      return:
+        type:
+          - Binding
+  - uid: office.Office.BindingSelectionChangedEventArgs.columnCount
+    summary: >-
+      Gets the number of columns selected. If a single cell is selected returns 1.
+
+
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
+    name: columnCount
+    fullName: office.Office.BindingSelectionChangedEventArgs.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
+
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
+
+          // and the number of row and columns selected.
+
+          function addSelectionHandler() {
+              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+              });
+          }
+
+
+          // Display selection start coordinates and row/column count.
+
+          function myHandler(bArgs) {
+              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+              write("Selection row count: " + bArgs.rowCount);
+              write("Selection col count: " + bArgs.columnCount);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+
+          ```
+  - uid: office.Office.BindingSelectionChangedEventArgs.rowCount
+    summary: >-
+      Gets the number of rows selected. If a single cell is selected returns 1.
+
+
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
+    name: rowCount
+    fullName: office.Office.BindingSelectionChangedEventArgs.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
+
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
+
+          // and the number of row and columns selected.
+
+          function addSelectionHandler() {
+              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+              });
+          }
+
+
+          // Display selection start coordinates and row/column count.
+
+          function myHandler(bArgs) {
+              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+              write("Selection row count: " + bArgs.rowCount);
+              write("Selection col count: " + bArgs.columnCount);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+
+          ```
+  - uid: office.Office.BindingSelectionChangedEventArgs.startColumn
+    summary: >-
+      The zero-based index of the first column of the selection counting from the leftmost column in the binding.
+
+
+      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
+      are returned.
+
+
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
+    name: startColumn
+    fullName: office.Office.BindingSelectionChangedEventArgs.startColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startColumn: number;'
+      return:
+        type:
+          - number
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
+
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
+
+          // and the number of row and columns selected.
+
+          function addSelectionHandler() {
+              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+              });
+          }
+
+
+          // Display selection start coordinates and row/column count.
+
+          function myHandler(bArgs) {
+              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+              write("Selection row count: " + bArgs.rowCount);
+              write("Selection col count: " + bArgs.columnCount);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+
+          ```
+  - uid: office.Office.BindingSelectionChangedEventArgs.startRow
+    summary: >-
+      The zero-based index of the first row of the selection counting from the first row in the binding.
+
+
+      If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding
+      are returned.
+
+
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
+      merged cells, because the structure of the table must be uniform for this property to work correctly.
+    name: startRow
+    fullName: office.Office.BindingSelectionChangedEventArgs.startRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startRow: number;'
+      return:
+        type:
+          - number
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following example adds an event handler for the SelectionChanged event to the binding with an id of
+          myTable.
+
+          // When the user changes the selection, the handler displays the coordinates of the first cell in the
+          selection,
+
+          // and the number of row and columns selected.
+
+          function addSelectionHandler() {
+              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+              });
+          }
+
+
+          // Display selection start coordinates and row/column count.
+
+          function myHandler(bArgs) {
+              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+              write("Selection row count: " + bArgs.rowCount);
+              write("Selection col count: " + bArgs.columnCount);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+
+          ```
+  - uid: office.Office.BindingSelectionChangedEventArgs.type
+    summary: >-
+      Gets an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
+      was raised.
+    name: type
+    fullName: office.Office.BindingSelectionChangedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: EventType;'
+      return:
+        type:
+          - EventType

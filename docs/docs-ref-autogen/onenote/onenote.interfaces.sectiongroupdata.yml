@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.SectionGroupData
+    summary: An interface describing the data returned by calling "sectionGroup.toJSON()".
+    name: OneNote.Interfaces.SectionGroupData
+    fullName: onenote.OneNote.Interfaces.SectionGroupData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.SectionGroupData.clientUrl
+      - onenote.OneNote.Interfaces.SectionGroupData.id
+      - onenote.OneNote.Interfaces.SectionGroupData.name
+      - onenote.OneNote.Interfaces.SectionGroupData.notebook
+      - onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
+      - onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
+      - onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
+      - onenote.OneNote.Interfaces.SectionGroupData.sections
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.clientUrl
+    summary: |-
+      The client url of the section group. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: clientUrl
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.id
+    summary: |-
+      Gets the ID of the section group. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.name
+    summary: |-
+      Gets the name of the section group. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: name
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.notebook
+    summary: |-
+      Gets the notebook that contains the section group. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: notebook
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.notebook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notebook?: OneNote.Interfaces.NotebookData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.NotebookData
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
+    summary: >-
+      Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
+      of the notebook. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentSectionGroup
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.SectionGroupData
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
+    summary: >-
+      Gets the section group that contains the section group. Returns null if the section group is a direct child of the
+      notebook. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentSectionGroupOrNull
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.SectionGroupData
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
+    summary: |-
+      The collection of section groups in the section group. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: sectionGroups
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sectionGroups?: OneNote.Interfaces.SectionGroupData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.SectionGroupData[]'
+  - uid: onenote.OneNote.Interfaces.SectionGroupData.sections
+    summary: |-
+      The collection of sections in the section group. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: sections
+    fullName: onenote.OneNote.Interfaces.SectionGroupData.sections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sections?: OneNote.Interfaces.SectionData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.SectionData[]'

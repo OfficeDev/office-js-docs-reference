@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.InsertLocation
+    summary: |-
+      The insertion location types
+
+      \[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.InsertLocation
+    fullName: word.Word.InsertLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.InsertLocation.after
+      - word.Word.InsertLocation.before
+      - word.Word.InsertLocation.end
+      - word.Word.InsertLocation.replace
+      - word.Word.InsertLocation.start
+  - uid: word.Word.InsertLocation.after
+    summary: Add content after the contents of the calling object.
+    name: after
+    fullName: word.Word.InsertLocation.after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: word.Word.InsertLocation.before
+    summary: Add content before the contents of the calling object.
+    name: before
+    fullName: word.Word.InsertLocation.before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: word.Word.InsertLocation.end
+    summary: Append content to the contents of the calling object.
+    name: end
+    fullName: word.Word.InsertLocation.end
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"End"'
+  - uid: word.Word.InsertLocation.replace
+    summary: Replace the contents of the current object.
+    name: replace
+    fullName: word.Word.InsertLocation.replace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Replace"'
+  - uid: word.Word.InsertLocation.start
+    summary: Prepend content to the contents of the calling object.
+    name: start
+    fullName: word.Word.InsertLocation.start
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Start"'

@@ -1,0 +1,153 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Hyperlink
+    summary: |-
+      Represents the Hyperlink.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.Hyperlink
+    fullName: visio.Visio.Hyperlink
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Hyperlink.address
+      - visio.Visio.Hyperlink.description
+      - visio.Visio.Hyperlink.extraInfo
+      - visio.Visio.Hyperlink.load
+      - visio.Visio.Hyperlink.subAddress
+      - visio.Visio.Hyperlink.toJSON
+  - uid: visio.Visio.Hyperlink.address
+    summary: |-
+      Gets the address of the Hyperlink object. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: address
+    fullName: visio.Visio.Hyperlink.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Hyperlink.description
+    summary: |-
+      Gets the description of a hyperlink. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: description
+    fullName: visio.Visio.Hyperlink.description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly description: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Hyperlink.extraInfo
+    summary: |-
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: extraInfo
+    fullName: visio.Visio.Hyperlink.extraInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly extraInfo: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Hyperlink.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          var hyperlink = shape.hyperlinks.getItem(0);
+          hyperlink.load();
+          return ctx.sync().then(function() {
+              console.log(hyperlink.description);
+              console.log(hyperlink.address);
+              console.log(hyperlink.subAddress);
+              console.log(hyperlink.extraInfo);
+           });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+    name: load(option)
+    fullName: visio.Visio.Hyperlink.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.Hyperlink;'
+      return:
+        type:
+          - visio.Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.Hyperlink.subAddress
+    summary: |-
+      Gets the sub-address of the Hyperlink object. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: subAddress
+    fullName: visio.Visio.Hyperlink.subAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly subAddress: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Hyperlink.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Hyperlink.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.HyperlinkData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.HyperlinkData
+        description: ''

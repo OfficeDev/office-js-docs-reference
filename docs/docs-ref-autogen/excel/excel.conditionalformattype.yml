@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalFormatType
+    summary: '\[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ConditionalFormatType
+    fullName: excel.Excel.ConditionalFormatType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ConditionalFormatType.cellValue
+      - excel.Excel.ConditionalFormatType.colorScale
+      - excel.Excel.ConditionalFormatType.containsText
+      - excel.Excel.ConditionalFormatType.custom
+      - excel.Excel.ConditionalFormatType.dataBar
+      - excel.Excel.ConditionalFormatType.iconSet
+      - excel.Excel.ConditionalFormatType.presetCriteria
+      - excel.Excel.ConditionalFormatType.topBottom
+  - uid: excel.Excel.ConditionalFormatType.cellValue
+    name: cellValue
+    fullName: excel.Excel.ConditionalFormatType.cellValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CellValue"'
+  - uid: excel.Excel.ConditionalFormatType.colorScale
+    name: colorScale
+    fullName: excel.Excel.ConditionalFormatType.colorScale
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColorScale"'
+  - uid: excel.Excel.ConditionalFormatType.containsText
+    name: containsText
+    fullName: excel.Excel.ConditionalFormatType.containsText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ContainsText"'
+  - uid: excel.Excel.ConditionalFormatType.custom
+    name: custom
+    fullName: excel.Excel.ConditionalFormatType.custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: excel.Excel.ConditionalFormatType.dataBar
+    name: dataBar
+    fullName: excel.Excel.ConditionalFormatType.dataBar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DataBar"'
+  - uid: excel.Excel.ConditionalFormatType.iconSet
+    name: iconSet
+    fullName: excel.Excel.ConditionalFormatType.iconSet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IconSet"'
+  - uid: excel.Excel.ConditionalFormatType.presetCriteria
+    name: presetCriteria
+    fullName: excel.Excel.ConditionalFormatType.presetCriteria
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PresetCriteria"'
+  - uid: excel.Excel.ConditionalFormatType.topBottom
+    name: topBottom
+    fullName: excel.Excel.ConditionalFormatType.topBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopBottom"'

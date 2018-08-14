@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
+    summary: >-
+      An interface for updating data on the ShapeDataItemCollection object, for use in "shapeDataItemCollection.set({
+      ... })".
+    name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
+    fullName: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
+  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
+    name: items
+    fullName: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Visio.Interfaces.ShapeDataItemData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.ShapeDataItemData[]'

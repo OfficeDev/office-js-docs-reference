@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.FileContentFormat
+    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.FileContentFormat
+    fullName: word.Word.FileContentFormat
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.FileContentFormat.base64
+      - word.Word.FileContentFormat.html
+      - word.Word.FileContentFormat.ooxml
+  - uid: word.Word.FileContentFormat.base64
+    name: base64
+    fullName: word.Word.FileContentFormat.base64
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Base64"'
+  - uid: word.Word.FileContentFormat.html
+    name: html
+    fullName: word.Word.FileContentFormat.html
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Html"'
+  - uid: word.Word.FileContentFormat.ooxml
+    name: ooxml
+    fullName: word.Word.FileContentFormat.ooxml
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ooxml"'

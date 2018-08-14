@@ -1,0 +1,239 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.CustomPropertyCollection
+    summary: |-
+      Contains the collection of [Word.CustomProperty](xref:word.Word.CustomProperty) objects.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.CustomPropertyCollection
+    fullName: word.Word.CustomPropertyCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.CustomPropertyCollection.add
+      - word.Word.CustomPropertyCollection.deleteAll
+      - word.Word.CustomPropertyCollection.getCount
+      - word.Word.CustomPropertyCollection.getItem
+      - word.Word.CustomPropertyCollection.getItemOrNullObject
+      - word.Word.CustomPropertyCollection.items
+      - word.Word.CustomPropertyCollection.load
+      - word.Word.CustomPropertyCollection.toJSON
+      - word.Word.CustomPropertyCollection.track
+      - word.Word.CustomPropertyCollection.untrack
+  - uid: word.Word.CustomPropertyCollection.add
+    summary: |-
+      Creates a new or sets an existing custom property.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: 'add(key, value)'
+    fullName: word.Word.CustomPropertyCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: any): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+              context.document.properties.customProperties.add("Numeric Property", 1234);
+
+              await context.sync();
+              console.log("Property added");
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+              context.document.properties.customProperties.add("String Property", "Hello World!");
+
+              await context.sync();
+              console.log("Property added");
+          });
+          ```
+      parameters:
+        - id: key
+          description: 'Required. The custom property''s key, which is case-insensitive.'
+          type:
+            - string
+        - id: value
+          description: Required. The custom property's value.
+          type:
+            - any
+  - uid: word.Word.CustomPropertyCollection.deleteAll
+    summary: |-
+      Deletes all custom properties in this collection.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: deleteAll()
+    fullName: word.Word.CustomPropertyCollection.deleteAll
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: word.Word.CustomPropertyCollection.getCount
+    summary: |-
+      Gets the count of custom properties.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getCount()
+    fullName: word.Word.CustomPropertyCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: word.Word.CustomPropertyCollection.getItem
+    summary: |-
+      Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: word.Word.CustomPropertyCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+      parameters:
+        - id: key
+          description: The key that identifies the custom property object.
+          type:
+            - string
+  - uid: word.Word.CustomPropertyCollection.getItemOrNullObject
+    summary: >-
+      Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
+      does not exist.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: getItemOrNullObject(key)
+    fullName: word.Word.CustomPropertyCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+      parameters:
+        - id: key
+          description: Required. The key that identifies the custom property object.
+          type:
+            - string
+  - uid: word.Word.CustomPropertyCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: word.Word.CustomPropertyCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.CustomProperty[];'
+      return:
+        type:
+          - 'Word.CustomProperty[]'
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+              let properties = context.document.properties.customProperties;
+              properties.load("key,type,value");
+
+              await context.sync();
+              for (var i = 0; i < properties.items.length; i++)
+                  console.log("Property Name:" + properties.items[i].key + ";Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+          });
+          ```
+  - uid: word.Word.CustomPropertyCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: word.Word.CustomPropertyCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.CustomPropertyCollection;'
+      return:
+        type:
+          - Word.CustomPropertyCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[]'
+  - uid: word.Word.CustomPropertyCollection.toJSON
+    name: toJSON()
+    fullName: word.Word.CustomPropertyCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CustomPropertyCollectionData;'
+      return:
+        type:
+          - Word.Interfaces.CustomPropertyCollectionData
+        description: ''
+  - uid: word.Word.CustomPropertyCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: word.Word.CustomPropertyCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.CustomPropertyCollection;'
+      return:
+        type:
+          - Word.CustomPropertyCollection
+        description: ''
+  - uid: word.Word.CustomPropertyCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: word.Word.CustomPropertyCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.CustomPropertyCollection;'
+      return:
+        type:
+          - Word.CustomPropertyCollection
+        description: ''

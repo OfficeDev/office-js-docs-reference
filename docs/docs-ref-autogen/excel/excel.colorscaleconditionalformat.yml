@@ -1,0 +1,151 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ColorScaleConditionalFormat
+    summary: |-
+      Represents an IconSet criteria for conditional formatting.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ColorScaleConditionalFormat
+    fullName: excel.Excel.ColorScaleConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ColorScaleConditionalFormat.criteria
+      - excel.Excel.ColorScaleConditionalFormat.load
+      - excel.Excel.ColorScaleConditionalFormat.set
+      - excel.Excel.ColorScaleConditionalFormat.threeColorScale
+      - excel.Excel.ColorScaleConditionalFormat.toJSON
+  - uid: excel.Excel.ColorScaleConditionalFormat.criteria
+    summary: |-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: excel.Excel.ColorScaleConditionalFormat.criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: Excel.ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - excel.Excel.ConditionalColorScaleCriteria
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:M5");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              const criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.ColorScaleConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is
+      a comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.ColorScaleConditionalFormat` - Only available on collection types. It is similar to the preceding signature.
+      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
+      the result set will start after skipping the specified number of items.
+    name: load(option)
+    fullName: excel.Excel.ColorScaleConditionalFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ColorScaleConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ColorScaleConditionalFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ColorScaleConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ColorScaleConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ColorScaleConditionalFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
+    summary: >-
+      If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
+      maximum).
+
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: threeColorScale
+    fullName: excel.Excel.ColorScaleConditionalFormat.threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly threeColorScale: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ColorScaleConditionalFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ColorScaleConditionalFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ColorScaleConditionalFormatData
+        description: ''

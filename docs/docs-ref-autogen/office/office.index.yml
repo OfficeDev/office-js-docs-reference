@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Index
+    summary: Specifies the relative PowerPoint slide.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td></tr> </table>
+    name: Office.Index
+    fullName: office.Office.Index
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.Index.First
+      - office.Office.Index.Last
+      - office.Office.Index.Next
+      - office.Office.Index.Previous
+  - uid: office.Office.Index.First
+    summary: Represents the first PowerPoint slide
+    name: First
+    fullName: office.Office.Index.First
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Last
+    summary: Represents the last PowerPoint slide
+    name: Last
+    fullName: office.Office.Index.Last
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Next
+    summary: Represents the next PowerPoint slide
+    name: Next
+    fullName: office.Office.Index.Next
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Previous
+    summary: Represents the previous PowerPoint slide
+    name: Previous
+    fullName: office.Office.Index.Previous
+    langs:
+      - typeScript
+    type: field

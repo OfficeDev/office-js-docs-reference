@@ -1,0 +1,129 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartPointFormat
+    summary: |-
+      Represents formatting object for chart points.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartPointFormat
+    fullName: excel.Excel.ChartPointFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartPointFormat.border
+      - excel.Excel.ChartPointFormat.fill
+      - excel.Excel.ChartPointFormat.load
+      - excel.Excel.ChartPointFormat.set
+      - excel.Excel.ChartPointFormat.toJSON
+  - uid: excel.Excel.ChartPointFormat.border
+    summary: >-
+      Represents the border format of a chart data point, which includes color, style, and weight information.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.ChartPointFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
+  - uid: excel.Excel.ChartPointFormat.fill
+    summary: |-
+      Represents the fill format of a chart, which includes background formating information. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: excel.Excel.ChartPointFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - excel.Excel.ChartFill
+  - uid: excel.Excel.ChartPointFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointFormat` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: excel.Excel.ChartPointFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartPointFormat;'
+      return:
+        type:
+          - excel.Excel.ChartPointFormat
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ChartPointFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartPointFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartPointFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartPointFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartPointFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartPointFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartPointFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartPointFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPointFormatData
+        description: ''

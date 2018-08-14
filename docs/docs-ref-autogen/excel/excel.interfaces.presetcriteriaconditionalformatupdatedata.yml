@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the PresetCriteriaConditionalFormat object, for use in
+      "presetCriteriaConditionalFormat.set({ ... })".
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format
+      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
+  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.ConditionalPresetCriteriaRule;'
+      return:
+        type:
+          - excel.Excel.ConditionalPresetCriteriaRule

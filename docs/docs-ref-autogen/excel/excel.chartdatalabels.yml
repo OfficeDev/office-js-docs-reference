@@ -1,0 +1,269 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartDataLabels
+    summary: |-
+      Represents a collection of all the data labels on a chart point.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartDataLabels
+    fullName: excel.Excel.ChartDataLabels
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartDataLabels.format
+      - excel.Excel.ChartDataLabels.load
+      - excel.Excel.ChartDataLabels.position
+      - excel.Excel.ChartDataLabels.separator
+      - excel.Excel.ChartDataLabels.set
+      - excel.Excel.ChartDataLabels.showBubbleSize
+      - excel.Excel.ChartDataLabels.showCategoryName
+      - excel.Excel.ChartDataLabels.showLegendKey
+      - excel.Excel.ChartDataLabels.showPercentage
+      - excel.Excel.ChartDataLabels.showSeriesName
+      - excel.Excel.ChartDataLabels.showValue
+      - excel.Excel.ChartDataLabels.toJSON
+  - uid: excel.Excel.ChartDataLabels.format
+    summary: |-
+      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.ChartDataLabels.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartDataLabelFormat;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabelFormat
+  - uid: excel.Excel.ChartDataLabels.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabels` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
+
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.datalabels.showValue = true;
+          chart.datalabels.position = "top";
+          chart.datalabels.showSeriesName = true;
+          return ctx.sync().then(function() {
+                  console.log("Datalabels Shown");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+    name: load(option)
+    fullName: excel.Excel.ChartDataLabels.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartDataLabels;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabels
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ChartDataLabels.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: excel.Excel.ChartDataLabels.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+      return:
+        type:
+          - >-
+            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
+            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+  - uid: excel.Excel.ChartDataLabels.separator
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: excel.Excel.ChartDataLabels.separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartDataLabels.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartDataLabels): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartDataLabels.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartDataLabelsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartDataLabelsUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartDataLabels.showBubbleSize
+    summary: |-
+      Boolean value representing if the data label bubble size is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: excel.Excel.ChartDataLabels.showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showCategoryName
+    summary: |-
+      Boolean value representing if the data label category name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: excel.Excel.ChartDataLabels.showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showLegendKey
+    summary: |-
+      Boolean value representing if the data label legend key is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: excel.Excel.ChartDataLabels.showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showPercentage
+    summary: |-
+      Boolean value representing if the data label percentage is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: excel.Excel.ChartDataLabels.showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showSeriesName
+    summary: |-
+      Boolean value representing if the data label series name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: excel.Excel.ChartDataLabels.showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showValue
+    summary: |-
+      Boolean value representing if the data label value is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: excel.Excel.ChartDataLabels.showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartDataLabels.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelsData
+        description: ''

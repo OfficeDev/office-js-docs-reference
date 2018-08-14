@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.DocumentLoadCompleteEventArgs
+    summary: |-
+      Provides information about the success or failure of the DocumentLoadComplete event.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.DocumentLoadCompleteEventArgs
+    fullName: visio.Visio.DocumentLoadCompleteEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.DocumentLoadCompleteEventArgs.success
+  - uid: visio.Visio.DocumentLoadCompleteEventArgs.success
+    summary: |-
+      Gets the success or failure of the DocumentLoadComplete event.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: success
+    fullName: visio.Visio.DocumentLoadCompleteEventArgs.success
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'success: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.ParagraphType
+    summary: '\[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.ParagraphType
+    fullName: onenote.OneNote.ParagraphType
+    langs:
+      - typeScript
+    type: enum
+    package: onenote
+    children:
+      - onenote.OneNote.ParagraphType.image
+      - onenote.OneNote.ParagraphType.ink
+      - onenote.OneNote.ParagraphType.other
+      - onenote.OneNote.ParagraphType.richText
+      - onenote.OneNote.ParagraphType.table
+  - uid: onenote.OneNote.ParagraphType.image
+    name: image
+    fullName: onenote.OneNote.ParagraphType.image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: onenote.OneNote.ParagraphType.ink
+    name: ink
+    fullName: onenote.OneNote.ParagraphType.ink
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ink"'
+  - uid: onenote.OneNote.ParagraphType.other
+    name: other
+    fullName: onenote.OneNote.ParagraphType.other
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Other"'
+  - uid: onenote.OneNote.ParagraphType.richText
+    name: richText
+    fullName: onenote.OneNote.ParagraphType.richText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichText"'
+  - uid: onenote.OneNote.ParagraphType.table
+    name: table
+    fullName: onenote.OneNote.ParagraphType.table
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Table"'

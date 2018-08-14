@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Comment
+    summary: |-
+      Represents the Comment.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.Comment
+    fullName: visio.Visio.Comment
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Comment.author
+      - visio.Visio.Comment.date
+      - visio.Visio.Comment.load
+      - visio.Visio.Comment.set
+      - visio.Visio.Comment.text
+      - visio.Visio.Comment.toJSON
+  - uid: visio.Visio.Comment.author
+    summary: |-
+      A string that specifies the name of the author of the comment.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: author
+    fullName: visio.Visio.Comment.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Comment.date
+    summary: |-
+      A string that specifies the date when the comment was created.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: date
+    fullName: visio.Visio.Comment.date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Comment.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Position Belt.41";
+          var shape = activePage.shapes.getItem(shapeName);
+          var shapecomments= shape.comments;
+          shapecomments.load();
+          return ctx.sync().then(function () {
+              for(var i=0; i<shapecomments.items.length;i++)
+              {
+                  var comment= shapecomments.items[i];
+                  console.log("comment Author: " + comment.author);
+                  console.log("Comment Text: " + comment.text);
+                  console.log("Date " + comment.date);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+    name: load(option)
+    fullName: visio.Visio.Comment.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.Comment.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Comment): void`
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Comment.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.CommentUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.Comment.text
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: visio.Visio.Comment.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Comment.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Comment.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.CommentData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.CommentData
+        description: ''
