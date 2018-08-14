@@ -36,7 +36,6 @@ items:
       - excel.Excel.ChartAxis.minorUnit
       - excel.Excel.ChartAxis.reversePlotOrder
       - excel.Excel.ChartAxis.scaleType
-      - excel.Excel.ChartAxis.set
       - excel.Excel.ChartAxis.setCategoryNames
       - excel.Excel.ChartAxis.setCustomDisplayUnit
       - excel.Excel.ChartAxis.showDisplayUnitLabel
@@ -483,36 +482,6 @@ items:
       return:
         type:
           - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
-  - uid: excel.Excel.ChartAxis.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxis): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ChartAxis.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartAxisUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartAxisUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxis.setCategoryNames
     summary: |-
       Sets all the category names for the specified axis.

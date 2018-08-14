@@ -54,7 +54,6 @@ items:
       - word.Word.Range.parentTableOrNullObject
       - word.Word.Range.search
       - word.Word.Range.select
-      - word.Word.Range.set
       - word.Word.Range.split
       - word.Word.Range.style
       - word.Word.Range.styleBuiltIn
@@ -1031,6 +1030,20 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
     name: load(option)
     fullName: word.Word.Range.load
     langs:
@@ -1044,7 +1057,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.Range.paragraphs
@@ -1267,28 +1280,6 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
-  - uid: word.Word.Range.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.Range.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.RangeUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Range.split
     summary: |-
       Splits the range into child ranges by using delimiters.

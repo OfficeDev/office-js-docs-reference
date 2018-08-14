@@ -146,10 +146,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Body): void;
+        
         /**
          *
          * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
@@ -366,7 +363,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param searchText - Required. The search text.
+         * @param searchText - Required. The search text. Can be a maximum of 255 characters.
          * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
@@ -398,6 +395,15 @@ export declare namespace Word {
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Body;
         load(option?: {
@@ -610,10 +616,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: ContentControl): void;
+        
         /**
          *
          * Clears the contents of the content control. The user can perform the undo operation on the cleared content.
@@ -886,6 +889,15 @@ export declare namespace Word {
         split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.ContentControl;
         load(option?: {
@@ -981,6 +993,15 @@ export declare namespace Word {
         getItem(index: number): Word.ContentControl;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.ContentControlCollection;
         load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
@@ -1022,10 +1043,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         value: any;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: CustomProperty): void;
+        
         /**
          *
          * Deletes the custom property.
@@ -1035,6 +1053,15 @@ export declare namespace Word {
         delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.CustomProperty;
         load(option?: {
@@ -1104,6 +1131,15 @@ export declare namespace Word {
         getItemOrNullObject(key: string): Word.CustomProperty;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
@@ -1159,10 +1195,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly saved: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Document): void;
+        
         /**
          *
          * Gets the current selection of the document. Multiple selections are not supported.
@@ -1179,6 +1212,15 @@ export declare namespace Word {
         save(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Document;
         load(option?: {
@@ -1237,10 +1279,7 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly saved: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: DocumentCreated): void;
+        
         /**
          *
          * Opens the document.
@@ -1257,6 +1296,15 @@ export declare namespace Word {
         save(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.DocumentCreated;
         load(option?: {
@@ -1406,12 +1454,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         title: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: DocumentProperties): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.DocumentProperties;
         load(option?: {
@@ -1512,12 +1566,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Font): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Font;
         load(option?: {
@@ -1632,10 +1692,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: InlinePicture): void;
+        
         /**
          *
          * Deletes the inline picture from the document.
@@ -1849,6 +1906,15 @@ export declare namespace Word {
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.InlinePicture;
         load(option?: {
@@ -1890,6 +1956,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.InlinePicture;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.InlinePictureCollection;
         load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
@@ -2065,6 +2140,15 @@ export declare namespace Word {
         setLevelStartingNumber(level: number, startingNumber: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.List;
         load(option?: {
@@ -2133,6 +2217,15 @@ export declare namespace Word {
         getItem(index: number): Word.List;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.ListCollection;
         load(option?: OfficeExtension.LoadOption): Word.ListCollection;
@@ -2174,10 +2267,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly siblingIndex: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: ListItem): void;
+        
         /**
          *
          * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.
@@ -2207,6 +2297,15 @@ export declare namespace Word {
         getDescendants(directChildrenOnly?: boolean): Word.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.ListItem;
         load(option?: {
@@ -2440,10 +2539,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Paragraph): void;
+        
         /**
          *
          * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item.
@@ -2772,6 +2868,15 @@ export declare namespace Word {
         startNewList(): Word.List;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Paragraph;
         load(option?: {
@@ -2827,6 +2932,15 @@ export declare namespace Word {
         getLastOrNullObject(): Word.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
@@ -2973,10 +3087,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Range): void;
+        
         /**
          *
          * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
@@ -3326,6 +3437,15 @@ export declare namespace Word {
         split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Range;
         load(option?: {
@@ -3367,6 +3487,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
@@ -3437,12 +3566,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         matchWildcards: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: SearchOptions): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.SearchOptions;
         load(option?: {
@@ -3469,10 +3604,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Section): void;
+        
         /**
          *
          * Gets one of the section's footers.
@@ -3525,6 +3657,15 @@ export declare namespace Word {
         getNextOrNullObject(): Word.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Section;
         load(option?: {
@@ -3566,6 +3707,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.SectionCollection;
         load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
@@ -3775,10 +3925,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Table): void;
+        
         /**
          *
          * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
@@ -4096,6 +4243,15 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.Table;
         load(option?: {
@@ -4137,6 +4293,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCollection;
@@ -4234,10 +4399,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: TableRow): void;
+        
         /**
          *
          * Clears the contents of the row.
@@ -4382,6 +4544,15 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableRow;
         load(option?: {
@@ -4423,6 +4594,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
@@ -4520,10 +4700,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: TableCell): void;
+        
         /**
          *
          * Deletes the column containing this cell. This is applicable to uniform tables.
@@ -4654,6 +4831,15 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableCell;
         load(option?: {
@@ -4695,6 +4881,15 @@ export declare namespace Word {
         getFirstOrNullObject(): Word.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
@@ -4736,12 +4931,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         width: number;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.TableBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: TableBorder): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
         load(option?: string | string[]): Word.TableBorder;
         load(option?: {
@@ -5572,6 +5773,9 @@ export declare namespace Word {
         notImplemented = "NotImplemented",
     }
     export module Interfaces {
+        /**
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
         
         /** An interface for updating data on the Body object, for use in "body.set({ ... })". */
         export interface BodyUpdateData {

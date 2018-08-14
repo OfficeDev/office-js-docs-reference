@@ -23,7 +23,6 @@ items:
       - onenote.OneNote.Image.ocrData
       - onenote.OneNote.Image.pageContent
       - onenote.OneNote.Image.paragraph
-      - onenote.OneNote.Image.set
       - onenote.OneNote.Image.toJSON
       - onenote.OneNote.Image.track
       - onenote.OneNote.Image.untrack
@@ -357,36 +356,6 @@ items:
       return:
         type:
           - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.Image.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: OneNote.Image): void`
-    name: 'set(properties, options)'
-    fullName: onenote.OneNote.Image.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ImageUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.Image.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Image.toJSON

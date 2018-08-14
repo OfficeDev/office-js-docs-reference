@@ -36,7 +36,7 @@ items:
       - excel.Excel.Interfaces.RangeData.worksheet
   - uid: excel.Excel.Interfaces.RangeData.address
     summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4).
+      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
 
 

@@ -21,7 +21,6 @@ items:
       - excel.Excel.ChartTrendline.movingAveragePeriod
       - excel.Excel.ChartTrendline.name
       - excel.Excel.ChartTrendline.polynomialOrder
-      - excel.Excel.ChartTrendline.set
       - excel.Excel.ChartTrendline.toJSON
       - excel.Excel.ChartTrendline.type
   - uid: excel.Excel.ChartTrendline.delete
@@ -153,36 +152,6 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartTrendline.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartTrendline): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ChartTrendline.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartTrendlineUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartTrendlineUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTrendline.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendline.toJSON

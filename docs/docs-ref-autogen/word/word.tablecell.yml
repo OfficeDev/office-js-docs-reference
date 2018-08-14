@@ -30,7 +30,6 @@ items:
       - word.Word.TableCell.parentRow
       - word.Word.TableCell.parentTable
       - word.Word.TableCell.rowIndex
-      - word.Word.TableCell.set
       - word.Word.TableCell.setCellPadding
       - word.Word.TableCell.shadingColor
       - word.Word.TableCell.toJSON
@@ -271,6 +270,20 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: word.Word.TableCell.load
     langs:
@@ -284,7 +297,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.TableCell.parentRow
@@ -332,28 +345,6 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableCell.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.TableCell.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.TableCellUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.

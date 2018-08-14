@@ -398,7 +398,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - Office.MailboxEnums.EntityType
+            - outlook.Office.MailboxEnums.EntityType
   - uid: Outlook_1_3.Office.MessageRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.

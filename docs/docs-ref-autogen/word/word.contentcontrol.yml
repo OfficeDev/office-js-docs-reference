@@ -53,7 +53,6 @@ items:
       - word.Word.ContentControl.removeWhenEdited
       - word.Word.ContentControl.search
       - word.Word.ContentControl.select
-      - word.Word.ContentControl.set
       - word.Word.ContentControl.split
       - word.Word.ContentControl.style
       - word.Word.ContentControl.styleBuiltIn
@@ -933,6 +932,130 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+          
+          // Create a proxy range object for the current selection.
+          var range = context.document.getSelection();
+          
+          // Queue a commmand to create the content control.
+          var myContentControl = range.insertContentControl();
+          myContentControl.tag = 'Customer-Address';
+          myContentControl.title = ' has t';
+          myContentControl.style = 'Heading 2';
+          myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'replace');
+          myContentControl.cannotEdit = true;
+          
+          // Queue a command to load the id property for the content control you created.
+          context.load(myContentControl, 'id');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Created content control with id: ' + myContentControl.id);
+          });  
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Load all of the content control properties
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to load the properties on the first content control. 
+                  contentControls.items[0].load(  'appearance,' +
+                                                  'cannotDelete,' +
+                                                  'cannotEdit,' +
+                                                  'id,' +
+                                                  'placeHolderText,' +
+                                                  'removeWhenEdited,' +
+                                                  'title,' +
+                                                  'text,' +
+                                                  'type,' +
+                                                  'style,' +
+                                                  'tag,' +
+                                                  'font/size,' +
+                                                  'font/name,' +
+                                                  'font/color');             
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Property values of the first content control:' + 
+                              '   ----- appearance: ' + contentControls.items[0].appearance + 
+                              '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                              '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                              '   ----- color: ' + contentControls.items[0].color +
+                              '   ----- id: ' + contentControls.items[0].id +
+                              '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                              '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                              '   ----- title: ' + contentControls.items[0].title +
+                              '   ----- text: ' + contentControls.items[0].text +
+                              '   ----- type: ' + contentControls.items[0].type +
+                              '   ----- style: ' + contentControls.items[0].style +
+                              '   ----- tag: ' + contentControls.items[0].tag +
+                              '   ----- font size: ' + contentControls.items[0].font.size +
+                              '   ----- font name: ' + contentControls.items[0].font.name +
+                              '   ----- font color: ' + contentControls.items[0].font.color);
+                  });
+              }
+          });  
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: word.Word.ContentControl.load
     langs:
@@ -943,109 +1066,10 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy range object for the current selection.
-              var range = context.document.getSelection();
-              
-              // Queue a commmand to create the content control.
-              var myContentControl = range.insertContentControl();
-              myContentControl.tag = 'Customer-Address';
-              myContentControl.title = ' has t';
-              myContentControl.style = 'Heading 2';
-              myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'replace');
-              myContentControl.cannotEdit = true;
-              
-              // Queue a command to load the id property for the content control you created.
-              context.load(myContentControl, 'id');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Created content control with id: ' + myContentControl.id);
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Load all of the content control properties
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to load the properties on the first content control. 
-                      contentControls.items[0].load(  'appearance,' +
-                                                      'cannotDelete,' +
-                                                      'cannotEdit,' +
-                                                      'id,' +
-                                                      'placeHolderText,' +
-                                                      'removeWhenEdited,' +
-                                                      'title,' +
-                                                      'text,' +
-                                                      'type,' +
-                                                      'style,' +
-                                                      'tag,' +
-                                                      'font/size,' +
-                                                      'font/name,' +
-                                                      'font/color');             
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Property values of the first content control:' + 
-                                  '   ----- appearance: ' + contentControls.items[0].appearance + 
-                                  '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                                  '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                                  '   ----- color: ' + contentControls.items[0].color +
-                                  '   ----- id: ' + contentControls.items[0].id +
-                                  '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                                  '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                                  '   ----- title: ' + contentControls.items[0].title +
-                                  '   ----- text: ' + contentControls.items[0].text +
-                                  '   ----- type: ' + contentControls.items[0].type +
-                                  '   ----- style: ' + contentControls.items[0].style +
-                                  '   ----- tag: ' + contentControls.items[0].tag +
-                                  '   ----- font size: ' + contentControls.items[0].font.size +
-                                  '   ----- font name: ' + contentControls.items[0].font.name +
-                                  '   ----- font color: ' + contentControls.items[0].font.color);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.ContentControl.paragraphs
@@ -1315,65 +1339,6 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
-  - uid: word.Word.ContentControl.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.ContentControl.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          // I'll add title and colors to odd and even content controls! and change appearance of all.
-          await Word.run(async (context) => {
-              // Gets the complete sentence  (as range) associated with the insertion point.
-              let evenContentControls = context.document.contentControls.getByTag("even");
-              let oddContentControls = context.document.contentControls.getByTag("odd");
-              evenContentControls.load("color,title,appearance");
-              oddContentControls.load("color,title,appearance");
-
-              await context.sync();
-
-              for (let i = 0; i < evenContentControls.items.length; i++) {
-                  // Change a few properties and append a paragraph
-                  evenContentControls.items[i].set({
-                      color: 'red',
-                      title: 'Odd ContentControl #' + (i + 1),
-                      appearance: 'Tags'
-                  });
-                  evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
-              }
-
-              for (let j = 0; j < oddContentControls.items.length; j++) {
-                  // Change a few properties and append a paragraph
-                  oddContentControls.items[j].set({
-                      color: 'green',
-                      title: 'Even ContentControl #' + (j + 1),
-                      appearance: 'Tags'
-                  });
-                  oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
-              }
-
-              await context.sync();
-          });
-          ```
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.ContentControlUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.ContentControl.split
     summary: |-
       Splits the content control into child ranges by using delimiters.

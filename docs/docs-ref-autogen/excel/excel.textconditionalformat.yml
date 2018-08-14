@@ -17,7 +17,6 @@ items:
       - excel.Excel.TextConditionalFormat.format
       - excel.Excel.TextConditionalFormat.load
       - excel.Excel.TextConditionalFormat.rule
-      - excel.Excel.TextConditionalFormat.set
       - excel.Excel.TextConditionalFormat.toJSON
   - uid: excel.Excel.TextConditionalFormat.format
     summary: >-
@@ -117,36 +116,6 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.TextConditionalFormat.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.TextConditionalFormat): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.TextConditionalFormat.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.TextConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.TextConditionalFormatUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.TextConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.TextConditionalFormat.toJSON
