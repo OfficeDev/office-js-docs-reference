@@ -175,7 +175,7 @@ items:
           uid: office
   - name: API open specifications
     href: openspec.md
-  - name: Manifest
+  - name: Office Add-in Manifest Reference
     items:
       - name: AllowSnapshot
         href: manifest/allowsnapshot.md
