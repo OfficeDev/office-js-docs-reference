@@ -137,7 +137,7 @@ The following example shows how to define a menu item with two submenu items. Th
 |  **ToolTip**	|No|The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resources.md) element.|		
 |  [Supertip](supertip.md)  | Yes |  The supertip for this button.    |
 |  [Icon](icon.md)      | Yes |  An image for the button.         |
-|  [Items](#items)     | Yes |  A collection of Buttons to display within the menu. Contains the  **Item** elements for each submenu item. Each **Item** element contains the  child elements of the [Button control](#button-control).|
+|  **Items**     | Yes |  A collection of Buttons to display within the menu. Contains the  **Item** elements for each submenu item. Each **Item** element contains the  child elements of the [Button control](#button-control).|
 
 ### Menu control examples
 
