@@ -1,5 +1,5 @@
 {
-  "need_generate_pdf": false,
+  "need_generate_pdf": true,
   "docsets_to_publish": [
     {
       "customized_tasks": {
