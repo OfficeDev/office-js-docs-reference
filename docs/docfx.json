@@ -97,7 +97,10 @@
       "ms.technology": "add-ins",
       "ms.topic": "reference",
       "ms.devlang": "JavaScript",
-      "product": ["office 365"]
+      "product": ["office 365"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "OfficeDev/office-js-docs-reference",
+      "feedback_product_url": "https://officespdev.uservoice.com/" 
     },
     "fileMetadata": {
       "monikers": {
