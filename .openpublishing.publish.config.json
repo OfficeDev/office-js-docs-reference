@@ -39,7 +39,11 @@
    "live": [
      "Publish",
      "Pdf"
-   ]
+   ],
+   "master": [
+    "Publish",
+    "Pdf"
+  ]
   },
   "need_generate_pdf_url_template": true,
   "Targets": {
