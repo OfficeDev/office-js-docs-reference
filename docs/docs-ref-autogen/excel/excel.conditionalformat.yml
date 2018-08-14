@@ -250,8 +250,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.ConditionalFormat.getRange
-    summary: |-
-      Returns the range the conditonal format is applied to. Read-only.
+    summary: >-
+      Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
+      multiple ranges. Read-only.
+
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
@@ -303,8 +305,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.getRangeOrNullObject
-    summary: |-
-      Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
+    summary: >-
+      Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to
+      multiple ranges. Read-only.
+
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()

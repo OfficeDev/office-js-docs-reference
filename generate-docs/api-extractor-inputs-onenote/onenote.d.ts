@@ -2989,15 +2989,6 @@ export declare namespace OneNote {
     /**
      * [Api set: OneNoteApi 1.1]
      */
-    enum EntityType {
-        notebook = "Notebook",
-        sectionGroup = "SectionGroup",
-        section = "Section",
-        page = "Page",
-    }
-    /**
-     * [Api set: OneNoteApi 1.1]
-     */
     enum InsertLocation {
         before = "Before",
         after = "After",
@@ -4247,6 +4238,7 @@ export declare namespace OneNote {
         export interface TableCellCollectionData {
             items?: OneNote.Interfaces.TableCellData[];
         }
+        
         /**
          *
          * Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active notebook, and the active section.
@@ -4483,34 +4475,6 @@ export declare namespace OneNote {
          * Contains a collection of TableCell objects.
          *
          * [Api set: OneNoteApi 1.1]
-         */
-        
-        /**
-         *
-         * Represents a OneNote accessibility violation.
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * Represents the collection of AccessibilityViolations
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * A OneNote structure that stores metadata about accessibility violations for an entity.
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * Represents the collection of AccessibilityViolationsByEntity
-         *
-         * [Api set: OneNoteApi 1.2]
          */
         
     }

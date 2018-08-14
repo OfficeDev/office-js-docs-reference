@@ -77,7 +77,7 @@ items:
       - excel.Excel.Range.worksheet
   - uid: excel.Excel.Range.address
     summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4).
+      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
 
 
@@ -377,7 +377,7 @@ items:
   - uid: excel.Excel.Range.getBoundingRect
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
-      "D10:E15" is "B2:E16".
+      "D10:E15" is "B2:E15".
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -1595,10 +1595,8 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.select
-    summary: >-
-      Selects the specified range in the Excel UI. If true, a multi-area range can be selected; otherwise, only the
-      first area will be selected. Default is false.
-
+    summary: |-
+      Selects the specified range in the Excel UI.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: select()

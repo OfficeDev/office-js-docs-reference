@@ -41,7 +41,6 @@ items:
       - word.Word.Body.parentSectionOrNullObject
       - word.Word.Body.search
       - word.Word.Body.select
-      - word.Word.Body.set
       - word.Word.Body.style
       - word.Word.Body.styleBuiltIn
       - word.Word.Body.tables
@@ -745,6 +744,90 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the text property on the body object
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a proxy object for the document body.
+          var body = context.document.body;
+
+          // Queue a commmand to load the text in document body.
+          context.load(body, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log("Body contents: " + body.text);
+          });
+      })
+
+      .catch(function (error) {
+          console.log("Error: " + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Get the style and the font size, font name, and font color properties on the body object.
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a proxy object for the document body.
+          var body = context.document.body;
+
+          // Queue a commmand to load font and style information for the document body.
+          context.load(body, 'font/size, font/name, font/color, style');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              // Show the results of the load method. Here we show the
+              // property values on the body object.
+              var results = 'Font size: ' + body.font.size +
+                            '; Font name: ' + body.font.name +
+                            '; Font color: ' + body.font.color +
+                            '; Body style: ' + body.style;
+
+              console.log(results);
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: word.Word.Body.load
     langs:
@@ -755,68 +838,10 @@ items:
       return:
         type:
           - Word.Body
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Get the text property on the body object
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the document body.
-              var body = context.document.body;
-
-              // Queue a commmand to load the text in document body.
-              context.load(body, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log("Body contents: " + body.text);
-              });
-          })
-          .catch(function (error) {
-              console.log("Error: " + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Get the style and the font size, font name, and font color properties on the body object.
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the document body.
-              var body = context.document.body;
-
-              // Queue a commmand to load font and style information for the document body.
-              context.load(body, 'font/size, font/name, font/color, style');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  // Show the results of the load method. Here we show the
-                  // property values on the body object.
-                  var results = 'Font size: ' + body.font.size +
-                                '; Font name: ' + body.font.name +
-                                '; Font color: ' + body.font.color +
-                                '; Body style: ' + body.style;
-
-                  console.log(results);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.Body.paragraphs
@@ -1037,7 +1062,7 @@ items:
           ```
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: Required. The search text. Can be a maximum of 255 characters.
           type:
             - string
         - id: searchOptions
@@ -1101,28 +1126,6 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
-  - uid: word.Word.Body.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.Body.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.BodyUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Body.style
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use

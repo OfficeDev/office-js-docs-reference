@@ -358,8 +358,6 @@ items:
           - name: Enums
             uid: ''
             items:
-              - name: EntityType
-                uid: onenote.OneNote.EntityType
               - name: ErrorCodes
                 uid: onenote.OneNote.ErrorCodes
               - name: InsertLocation

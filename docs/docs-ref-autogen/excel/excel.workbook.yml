@@ -140,8 +140,10 @@ items:
           });
           ```
   - uid: excel.Excel.Workbook.getSelectedRange
-    summary: |-
-      Gets the currently selected range from the workbook.
+    summary: >-
+      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
+      will throw an error.
+
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()

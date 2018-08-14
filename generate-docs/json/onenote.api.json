@@ -602,52 +602,6 @@
             }
           }
         },
-        "EntityType": {
-          "kind": "enum",
-          "values": {
-            "notebook": {
-              "kind": "enum value",
-              "value": "\"Notebook\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "page": {
-              "kind": "enum value",
-              "value": "\"Page\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "section": {
-              "kind": "enum value",
-              "value": "\"Section\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "sectionGroup": {
-              "kind": "enum value",
-              "value": "\"SectionGroup\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "[Api set: OneNoteApi 1.1]"
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
-        },
         "ErrorCodes": {
           "kind": "enum",
           "values": {

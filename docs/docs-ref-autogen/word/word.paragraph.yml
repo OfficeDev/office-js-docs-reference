@@ -62,7 +62,6 @@ items:
       - word.Word.Paragraph.rightIndent
       - word.Word.Paragraph.search
       - word.Word.Paragraph.select
-      - word.Word.Paragraph.set
       - word.Word.Paragraph.spaceAfter
       - word.Word.Paragraph.spaceBefore
       - word.Word.Paragraph.split
@@ -1300,6 +1299,20 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: word.Word.Paragraph.load
     langs:
@@ -1313,7 +1326,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.Paragraph.outlineLevel
@@ -1576,58 +1589,6 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
-  - uid: word.Word.Paragraph.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.Paragraph.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Word.run(async (context) => {
-              const paragraph = context.document.body.paragraphs.getFirst();
-              paragraph.set({
-                  leftIndent: 30,
-                  font: {
-                      bold: true,
-                      color: "red"
-                  }
-              });
-
-              await context.sync();
-          });
-          ```
-          ```typescript
-          await Word.run(async (context) => {
-              const firstParagraph = context.document.body.paragraphs.getFirst();
-              const secondParagraph = firstParagraph.getNext();
-              firstParagraph.load("text, font/color, font/bold, leftIndent");
-
-              await context.sync();
-
-              secondParagraph.set(firstParagraph);
-
-              await context.sync();
-          });
-          ```
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.ParagraphUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Paragraph.spaceAfter
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.

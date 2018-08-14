@@ -41,7 +41,6 @@ items:
       - word.Word.InlinePicture.parentTableCellOrNullObject
       - word.Word.InlinePicture.parentTableOrNullObject
       - word.Word.InlinePicture.select
-      - word.Word.InlinePicture.set
       - word.Word.InlinePicture.toJSON
       - word.Word.InlinePicture.track
       - word.Word.InlinePicture.untrack
@@ -471,6 +470,20 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: word.Word.InlinePicture.load
     langs:
@@ -484,7 +497,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.InlinePicture.lockAspectRatio
@@ -634,28 +647,6 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
-  - uid: word.Word.InlinePicture.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.InlinePicture.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.InlinePictureUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.InlinePicture.toJSON
     name: toJSON()
     fullName: word.Word.InlinePicture.toJSON

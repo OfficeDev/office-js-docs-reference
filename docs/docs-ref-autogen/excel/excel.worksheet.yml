@@ -396,7 +396,7 @@ items:
             - boolean
   - uid: excel.Excel.Worksheet.getRange
     summary: |-
-      Gets the range object specified by the address or name.
+      Gets the range object, representing a single rectangular block of cells, specified by the address or name.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(address)
@@ -463,7 +463,9 @@ items:
           ```
       parameters:
         - id: address
-          description: 'Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.'
+          description: >-
+            Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified,
+            the entire worksheet range is returned.
           type:
             - string
   - uid: excel.Excel.Worksheet.getRangeByIndexes
