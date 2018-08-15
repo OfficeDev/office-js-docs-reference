@@ -23,7 +23,11 @@
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
-          "**/_themes.pdf/**"
+          "**/_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       },
       {
@@ -35,22 +39,23 @@
         "dest": "api",
         "version": "office-js",
         "exclude": [
-          "**/*..yml",
-          "*/toc.yml"
+          "**/obj/**",
+          "**/includes/**",
+          "**/_themes/**",
+          "**/_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       },
       {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "version": "office-js",
-        "dest": "office/breadcrumb",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-
-        ]
+        "files": ["breadcrumb/toc.yml"]
+      },
+      {
+        "files": ["**/**.md",
+                  "**/**.yml"],
+        "exclude": ["**/obj/**"]
       }
     ],
     "resource": [
