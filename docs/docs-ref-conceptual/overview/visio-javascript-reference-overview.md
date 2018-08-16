@@ -6,9 +6,9 @@ You can use the Visio JavaScript APIs to embed Visio diagrams in SharePoint Onli
 
 You can use the Visio JavaScript APIs to:
 
-* Interact with Visio diagram elements like pages and shapes 
-* Create visual markup on the Visio diagram canvas 
-* Write custom handlers for mouse events within the drawing 
+* Interact with Visio diagram elements like pages and shapes.
+* Create visual markup on the Visio diagram canvas.
+* Write custom handlers for mouse events within the drawing.
 * Expose diagram data, such as shape text, shape data, and hyperlinks, to your solution.
 
 This article describes how to use the Visio JavaScript APIs with Visio Online to build your solutions for SharePoint Online. It introduces key concepts that are fundamental to using the APIs, such as **EmbeddedSession**, **RequestContext**, and JavaScript proxy objects, and the **sync()**, **Visio.run()**, and **load()** methods. The code examples show you how to apply these concepts.
