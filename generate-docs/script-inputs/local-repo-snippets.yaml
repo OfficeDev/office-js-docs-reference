@@ -5279,7 +5279,7 @@ Office.TableBinding.addRowsAsync:
 Office.TableBinding.clearFormatsAsync:
   - |-
     // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
-    Office.select(bindings#myBinding).clearFormatsAsync();
+    Office.select("bindings#myBinding").clearFormatsAsync();
 Office.TableBinding.columnCount:
   - |-
     function showBindingColumnCount() {
