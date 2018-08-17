@@ -9,7 +9,7 @@ Word.Body.clear:
         // Queue a commmand to clear the contents of the body.
         body.clear();
     
-        // Synchronize the document state by executing the queued commands,
+        // Synchronize the document state by executing the commands
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             console.log('Cleared the body contents.');
