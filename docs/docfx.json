@@ -96,6 +96,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
