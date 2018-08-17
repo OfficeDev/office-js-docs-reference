@@ -1,11 +1,4 @@
 - name: Office Add-ins
-  tocHref: /office/dev/add-ins/
-  topicHref: /office/dev/add-ins/index
-  items:
-  - name: JavaScript API for Office
-    tocHref: /javascript/office/
-    topicHref: /javascript/office/javascript-api-for-office
-  - name: API reference
-    tocHref: /javascript/api/overview/
-    topicHref: /javascript/api/overview/office
+  tocHref: /
+  topicHref: /
 
