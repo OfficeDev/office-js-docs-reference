@@ -95,8 +95,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "breadcrumb_path": "javascript/office/breadcrumb/toc.json",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
@@ -115,7 +114,10 @@
         "docs-ref-autogen/**": [
           "office-js"
         ]
-      }
+      },
+      "breadcrumb_path": {
+        "javascript/api/overview/office/**/*.md": "javascript/office/breadcrumb/toc.json", 
+        "javascript/office/javascript-api-for-office/**/*.md": "javascript/office/breadcrumb/toc.json" }
     },
     "template": [],
     "dest": "office-docs-ref-javascript"
