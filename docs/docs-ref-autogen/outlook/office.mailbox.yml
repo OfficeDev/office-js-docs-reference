@@ -622,7 +622,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -634,7 +636,7 @@ items:
             provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
             asyncContext: Any state data that is passed to the asynchronous method.
           type:
-            - office.Office.AsyncContextOptions
+            - 'Office.AsyncContextOptions & { isRest?: boolean }'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter

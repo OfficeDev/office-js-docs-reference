@@ -588,6 +588,7 @@ export declare namespace Office {
     }
     /**
      * Represents the runtime environment of the add-in and provides access to key objects of the API. 
+     * The current context exists as a property of Office. It is accessed using `Office.context`.
      *
      * @remarks 
      * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>
@@ -1009,7 +1010,11 @@ export declare namespace Office {
          */
         closeContainer(): void;
         /**
-         * Opens a browser window and loads the specified URL. 
+         * For internal Microsoft use only. Do not call from your code. Opens a browser window and loads the specified URL.
+         * 
+         * @remarks
+         * <table><tr><td>Requirement sets</td><td>OpenBrowserWindowAPI 1.1</td></tr></table>
+         * 
          * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
          */
         openBrowserWindow(url: string): void;
@@ -1067,6 +1072,8 @@ export declare namespace Office {
         *
         * @param options - Optional. Accepts an AuthOptions object to define sign-on behaviors.
         * @param callback - Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+        * 
+        * @beta
         */
         getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult) => void): void;
 
@@ -1732,6 +1739,14 @@ export declare namespace Office {
          */
         ActiveViewChanged,
         /**
+         * Triggers when the appointment date or time of the selected series was changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        AppointmentTimeChanged,
+        /**
          * Occurs when data within the binding is changed. 
          * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
@@ -1818,6 +1833,14 @@ export declare namespace Office {
          * Triggers when a customXmlPart node was replaced.
          */
         NodeReplaced,
+        /**
+         * Triggers when the recipient list of the selected item was changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        RecipientsChanged,
         /**
          * Triggers when the recurrence pattern of the selected series was changed in Outlook.
          * 
