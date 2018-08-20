@@ -1,8 +1,6 @@
 # Excel JavaScript API overview
 
-You can use the Excel JavaScript API to build add-ins for Excel 2016. The following list shows the high-level Excel objects that are available in the API. Each object page link contains a description of the properties, relationships, and methods that are available on the object. Explore the links from the menu to learn more.
-
-Note that the relationships section within the document lists the properties that are used to navigate from the main object to another related object. These are non-scalar objects that themselves may contain other properties, methods and relationships.
+You can use the Excel JavaScript API to build add-ins for Excel 2016. The following list shows the high-level Excel objects that are available in the API. Each object page link contains a description of the properties, events, and methods that are available on the object. Explore the links from the menu to learn more.
 
 Some of the core Excel objects are listed below for convenience: 
 
