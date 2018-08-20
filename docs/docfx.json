@@ -3,11 +3,10 @@
     "content": [
       {
         "files": [
-
           "**/toc.md",
           "**/toc.yml"
         ],
-        "src" : "docs-ref-autogen",
+        "src": "docs-ref-autogen",
         "dest": "api/office_ref_toc",
         "version": "office-js"
       },
@@ -50,12 +49,20 @@
         ]
       },
       {
-        "files": ["breadcrumb/toc.yml"]
+        "files": [
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
       },
       {
-        "files": ["**/**.md",
-                  "**/**.yml"],
-        "exclude": ["**/obj/**"]
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
       }
     ],
     "resource": [
@@ -67,7 +74,6 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-
         ],
         "dest": "api",
         "version": "office-js"
@@ -95,7 +101,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "javascript/office/breadcrumb/toc.json",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
@@ -104,18 +110,21 @@
       "ms.technology": "add-ins",
       "ms.topic": "reference",
       "ms.devlang": "JavaScript",
-      "product": ["office 365"],
+      "product": [
+        "office 365"
+      ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "OfficeDev/office-js-docs-reference",
-      "feedback_product_url": "https://officespdev.uservoice.com/" 
+      "feedback_product_url": "https://officespdev.uservoice.com/"
     },
     "fileMetadata": {
       "monikers": {
-        "docs-ref-autogen/**": ["office-js"]
+        "docs-ref-autogen/**": [
+          "office-js"
+        ]
       }
     },
     "template": [],
     "dest": "office-docs-ref-javascript"
   }
 }
-
