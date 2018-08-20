@@ -6014,6 +6014,12 @@ Office.TableBinding.addRowsAsync:
         });
     }
 Office.TableBinding.clearFormatsAsync:
+  - >-
+    // The following example shows how to clear the formatting of the bound
+    table with an ID of "myBinding":
+
+    Office.select("bindings#myBinding").clearFormatsAsync();
+Office.TableBinding.columnCount:
   - |-
     function showBindingColumnCount() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -6024,12 +6030,6 @@ Office.TableBinding.clearFormatsAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.TableBinding.columnCount:
-  - >-
-    // The following example shows how to clear the formatting of the bound
-    table with an ID of "myBinding":
-
-    Office.select(bindings#myBinding).clearFormatsAsync();
 Office.TableBinding.deleteAllDataValuesAsync:
   - |-
     function deleteAllRowsFromTable() {
@@ -9255,7 +9255,7 @@ Office.Time.setAsync:
     });
 Visio.Application.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var application = ctx.document.application;
         application.showToolbars = false;
         application.showBorders = false;
@@ -9268,7 +9268,7 @@ Visio.Application.load:
     });
 Visio.Comment.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
@@ -9291,7 +9291,7 @@ Visio.Comment.load:
     });
 Visio.CommentCollection.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
@@ -9314,7 +9314,7 @@ Visio.CommentCollection.load:
     });
 Visio.DataRefreshCompleteEventArgs.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
       var document1= ctx.document;
                    var page = document1.getActivePage();
              eventResult1 = document1.onDataRefreshComplete.add(
@@ -9333,7 +9333,7 @@ Visio.DataRefreshCompleteEventArgs.load:
     });
 Visio.Document.getActivePage:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document = ctx.document;
         var activePage = document.getActivePage();
         activePage.load();
@@ -9348,7 +9348,7 @@ Visio.Document.getActivePage:
     });
 Visio.Document.setActivePage:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document = ctx.document;
         var pageName = "Page-1";
         document.setActivePage(pageName);
@@ -9361,7 +9361,7 @@ Visio.Document.setActivePage:
     });
 Visio.Document.startDataRefresh:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document = ctx.document;
         document.startDataRefresh();
         return ctx.sync();
@@ -9373,7 +9373,7 @@ Visio.Document.startDataRefresh:
     });
 Visio.Document.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var pages = ctx.document.pages;
         var pageCount = pages.getCount();
         return ctx.sync().then(function () {
@@ -9386,7 +9386,7 @@ Visio.Document.load:
         }
     });
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var documentView = ctx.document.view;
         documentView.disableHyperlinks();
         return ctx.sync();
@@ -9397,7 +9397,7 @@ Visio.Document.load:
         }
     });
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var application = ctx.document.application;
         application.showToolbars = false;
         return ctx.sync();
@@ -9409,7 +9409,7 @@ Visio.Document.load:
     });
 Visio.DocumentLoadCompleteEventArgs.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document1 = ctx.document;
         eventResult1 = document1.onDocumentLoadComplete.add(
             function (args){
@@ -9427,7 +9427,7 @@ Visio.DocumentLoadCompleteEventArgs.load:
     });
 Visio.Highlight.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -9440,7 +9440,7 @@ Visio.Highlight.load:
     });
 Visio.Hyperlink.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var hyperlink = shape.hyperlinks.getItem(0);
@@ -9459,7 +9459,7 @@ Visio.Hyperlink.load:
     });
 Visio.HyperlinkCollection.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shapeName = "Manager Belt";
         var shape = activePage.shapes.getItem(shapeName);
@@ -9480,7 +9480,7 @@ Visio.HyperlinkCollection.load:
     });
 Visio.PageCollection.getItem:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var pageName = 'Page-1';
         var page = ctx.document.pages.getItem(pageName);
         page.activate();
@@ -9493,7 +9493,7 @@ Visio.PageCollection.getItem:
     });
 Visio.PageLoadCompleteEventArgs.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document1= ctx.document;
         var page = document1.getActivePage();
         eventResult1 = document1.onPageLoadComplete.add(
@@ -9512,7 +9512,7 @@ Visio.PageLoadCompleteEventArgs.load:
     });
 Visio.PageView.centerViewportOnShape:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         activePage.view.centerViewportOnShape(shape.Id);
@@ -9525,7 +9525,7 @@ Visio.PageView.centerViewportOnShape:
     });
 Visio.PageView.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         activePage.view.zoom = 300;
         return ctx.sync();
@@ -9593,7 +9593,7 @@ Visio.SelectionChangedEventArgs.load:
     }
 Visio.Shape.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shapeName = "Sample Name";
         var shape = activePage.shapes.getItem(shapeName);
@@ -9611,7 +9611,7 @@ Visio.Shape.load:
         }
     });
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -9624,7 +9624,7 @@ Visio.Shape.load:
     });
 Visio.ShapeCollection.getCount:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var numShapesActivePage = activePage.shapes.getCount();
         return ctx.sync().then(function () {
@@ -9638,7 +9638,7 @@ Visio.ShapeCollection.getCount:
     });
 Visio.ShapeDataItem.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItem = shape.shapeDataItems.getItem(0);
@@ -9655,7 +9655,7 @@ Visio.ShapeDataItem.load:
     });
 Visio.ShapeDataItemCollection.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItems = shape.shapeDataItems;
@@ -9675,7 +9675,7 @@ Visio.ShapeDataItemCollection.load:
     });
 Visio.ShapeMouseEnterEventArgs.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document1= ctx.document;
         var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseEnter.add(
@@ -9693,7 +9693,7 @@ Visio.ShapeMouseEnterEventArgs.load:
     });
 Visio.ShapeMouseLeaveEventArgs.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var document1= ctx.document;
         var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseLeave.add(
@@ -9711,7 +9711,7 @@ Visio.ShapeMouseLeaveEventArgs.load:
     });
 Visio.ShapeView.load:
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -9723,7 +9723,7 @@ Visio.ShapeView.load:
         }
     });
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
@@ -9735,7 +9735,7 @@ Visio.ShapeView.load:
         }
     });
   - |-
-    Visio.run(function (ctx) { 
+    Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         shape.view.removeOverlay(1);

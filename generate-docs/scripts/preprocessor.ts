@@ -42,11 +42,15 @@ tryCatch(async () => {
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
     console.log("\nFixing issues with d.ts file...");
+    // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
+    // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
+    // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties/relationships to load.$1\n')
         .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?\n/gm, '\n')
         .replace(/\*\s*?\* `load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties\/relationships to load\.\n\s*?\*/gm, '*')
         .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
+        .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)

@@ -17,7 +17,6 @@ items:
       - excel.Excel.ChartLegendFormat.fill
       - excel.Excel.ChartLegendFormat.font
       - excel.Excel.ChartLegendFormat.load
-      - excel.Excel.ChartLegendFormat.set
       - excel.Excel.ChartLegendFormat.toJSON
   - uid: excel.Excel.ChartLegendFormat.fill
     summary: |-
@@ -106,36 +105,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLegendFormat.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartLegendFormat): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ChartLegendFormat.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartLegendFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartLegendFormatUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegendFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLegendFormat.toJSON

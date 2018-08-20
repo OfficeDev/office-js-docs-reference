@@ -8,7 +8,6 @@ items:
     type: package
     children:
       - onenote.OneNote.Application
-      - onenote.OneNote.EntityType
       - onenote.OneNote.ErrorCodes
       - onenote.OneNote.FloatingInk
       - onenote.OneNote.Image
@@ -153,8 +152,6 @@ items:
 references:
   - uid: onenote.OneNote.Application
     name: OneNote.Application
-  - uid: onenote.OneNote.EntityType
-    name: OneNote.EntityType
   - uid: onenote.OneNote.ErrorCodes
     name: OneNote.ErrorCodes
   - uid: onenote.OneNote.FloatingInk

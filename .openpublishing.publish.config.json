@@ -12,7 +12,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -28,6 +28,12 @@
     }
   ],
   "dependent_repositories": [
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    },
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
@@ -54,9 +60,9 @@
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
-      "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json",
+      "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json?view=office-js",
       "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
-      "ConceptualTOCUrl": "/javascript/office/toc.json"
+      "ConceptualTOCUrl": "/javascript/office/toc.json?view=office-js"
 
     }
   ],

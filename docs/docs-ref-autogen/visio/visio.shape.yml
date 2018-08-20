@@ -21,7 +21,6 @@ items:
       - visio.Visio.Shape.load
       - visio.Visio.Shape.name
       - visio.Visio.Shape.select
-      - visio.Visio.Shape.set
       - visio.Visio.Shape.shapeDataItems
       - visio.Visio.Shape.subShapes
       - visio.Visio.Shape.text
@@ -112,7 +111,7 @@ items:
 
       ```javascript
 
-      Visio.run(function (ctx) { 
+      Visio.run(session, function (ctx) {
           var activePage = ctx.document.getActivePage();
           var shapeName = "Sample Name";
           var shape = activePage.shapes.getItem(shapeName);
@@ -134,7 +133,7 @@ items:
 
       ```javascript
 
-      Visio.run(function (ctx) { 
+      Visio.run(session, function (ctx) {
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -193,36 +192,6 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Shape.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Shape): void`
-    name: 'set(properties, options)'
-    fullName: visio.Visio.Shape.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ShapeUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.Shape.shapeDataItems
     summary: |-
       Returns the Shape's Data Section. Read-only.

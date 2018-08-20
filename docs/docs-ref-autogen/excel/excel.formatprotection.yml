@@ -17,7 +17,6 @@ items:
       - excel.Excel.FormatProtection.formulaHidden
       - excel.Excel.FormatProtection.load
       - excel.Excel.FormatProtection.locked
-      - excel.Excel.FormatProtection.set
       - excel.Excel.FormatProtection.toJSON
   - uid: excel.Excel.FormatProtection.formulaHidden
     summary: >-
@@ -87,36 +86,6 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.FormatProtection.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.FormatProtection): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.FormatProtection.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.FormatProtectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.FormatProtectionUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.FormatProtection.toJSON
     name: toJSON()
     fullName: excel.Excel.FormatProtection.toJSON

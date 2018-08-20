@@ -32,7 +32,6 @@ items:
       - excel.Excel.ConditionalFormat.preset
       - excel.Excel.ConditionalFormat.presetOrNullObject
       - excel.Excel.ConditionalFormat.priority
-      - excel.Excel.ConditionalFormat.set
       - excel.Excel.ConditionalFormat.stopIfTrue
       - excel.Excel.ConditionalFormat.textComparison
       - excel.Excel.ConditionalFormat.textComparisonOrNullObject
@@ -251,8 +250,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.ConditionalFormat.getRange
-    summary: |-
-      Returns the range the conditonal format is applied to. Read-only.
+    summary: >-
+      Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
+      multiple ranges. Read-only.
+
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
@@ -304,8 +305,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.getRangeOrNullObject
-    summary: |-
-      Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
+    summary: >-
+      Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to
+      multiple ranges. Read-only.
+
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
@@ -508,36 +511,6 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ConditionalFormat.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalFormat): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.ConditionalFormat.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ConditionalFormatUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.

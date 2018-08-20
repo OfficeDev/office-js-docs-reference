@@ -21,7 +21,6 @@ items:
       - word.Word.Font.italic
       - word.Word.Font.load
       - word.Word.Font.name
-      - word.Word.Font.set
       - word.Word.Font.size
       - word.Word.Font.strikeThrough
       - word.Word.Font.subscript
@@ -120,6 +119,233 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Change the font name
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to change the current selection's font name.
+          selection.font.name = 'Arial';
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font name has changed.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Change the font color
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to change the font color of the current selection.
+          selection.font.color = 'blue';
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font color of the selection has been changed.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Change the font size
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to change the current selection's font size.
+          selection.font.size = 20;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font size has changed.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Highlight selected text
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to highlight the current selection.
+          selection.font.highlightColor = '#FFFF00'; // Yellow
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection has been highlighted.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Bold format text
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to make the current selection bold.
+          selection.font.bold = true;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection is now bold.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Underline format text
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to underline the current selection.
+          selection.font.underline = Word.UnderlineType.single;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection now has an underline style.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Strike format text
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a commmand to strikethrough the font of the current selection.
+          selection.font.strikeThrough = true;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection now has a strikethrough.');
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: word.Word.Font.load
     langs:
@@ -130,181 +356,10 @@ items:
       return:
         type:
           - word.Word.Font
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Change the font name
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to change the current selection's font name.
-              selection.font.name = 'Arial';
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font name has changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Change the font color
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to change the font color of the current selection.
-              selection.font.color = 'blue';
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font color of the selection has been changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Change the font size
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to change the current selection's font size.
-              selection.font.size = 20;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font size has changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Highlight selected text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to highlight the current selection.
-              selection.font.highlightColor = '#FFFF00'; // Yellow
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection has been highlighted.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Bold format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to make the current selection bold.
-              selection.font.bold = true;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection is now bold.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Underline format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to underline the current selection.
-              selection.font.underline = Word.UnderlineType.single;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection now has an underline style.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Strike format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a commmand to strikethrough the font of the current selection.
-              selection.font.strikeThrough = true;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection now has a strikethrough.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
             - 'string | string[]'
   - uid: word.Word.Font.name
@@ -322,28 +377,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Font.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: word.Word.Font.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.FontUpdateData
-        - id: options
-          description: ''
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Font.size
     summary: |-
       Gets or sets a value that represents the font size in points.

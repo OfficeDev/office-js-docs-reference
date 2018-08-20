@@ -108,7 +108,6 @@ items:
       - excel.Excel.ConditionalTextOperator
       - excel.Excel.ConditionalTopBottomCriterionType
       - excel.Excel.ConditionalTopBottomRule
-      - excel.Excel.createWorkbook
       - excel.Excel.CustomConditionalFormat
       - excel.Excel.CustomProperty
       - excel.Excel.CustomPropertyCollection
@@ -403,23 +402,6 @@ items:
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
       - excel.Excel.WorksheetSelectionChangedEventArgs
-  - uid: excel.Excel.createWorkbook
-    name: createWorkbook(base64)
-    fullName: excel.Excel.createWorkbook
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function createWorkbook(base64?: string): Promise<object>;'
-      return:
-        type:
-          - Promise<object>
-        description: ''
-      parameters:
-        - id: base64
-          description: ''
-          type:
-            - string
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a

@@ -260,17 +260,9 @@ items:
 
       ```javascript
 
-      function showBindingColumnCount() {
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write("Column: " + asyncResult.value.columnCount);
-          });
-      }
+      // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
 
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
+      Office.select("bindings#myBinding").clearFormatsAsync();
 
       ```
     name: 'clearFormatsAsync(options, callback)'
@@ -317,9 +309,17 @@ items:
 
       ```javascript
 
-      // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
+      function showBindingColumnCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Column: " + asyncResult.value.columnCount);
+          });
+      }
 
-      Office.select(bindings#myBinding).clearFormatsAsync();
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
 
       ```
     name: columnCount

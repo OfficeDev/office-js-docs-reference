@@ -2,13 +2,13 @@
 
 You can use the Visio JavaScript APIs to embed Visio diagrams in SharePoint Online. An embedded Visio diagram is a diagram that is stored in a SharePoint document library and displayed on a SharePoint page. To embed a Visio diagram, display it in an HTML &lt;iframe&gt; element. Then you can use Visio JavaScript APIs to programmatically work with the embedded diagram.
 
-![Visio diagram in iframe on SharePoint page along with script editor web part](../images/visio-api-block-diagram.png)
+<img alt="Visio diagram in iframe on SharePoint page along with script editor web part" src="../images/visio-api-block-diagram.png">
 
 You can use the Visio JavaScript APIs to:
 
-* Interact with Visio diagram elements like pages and shapes 
-* Create visual markup on the Visio diagram canvas 
-* Write custom handlers for mouse events within the drawing 
+* Interact with Visio diagram elements like pages and shapes.
+* Create visual markup on the Visio diagram canvas.
+* Write custom handlers for mouse events within the drawing.
 * Expose diagram data, such as shape text, shape data, and hyperlinks, to your solution.
 
 This article describes how to use the Visio JavaScript APIs with Visio Online to build your solutions for SharePoint Online. It introduces key concepts that are fundamental to using the APIs, such as **EmbeddedSession**, **RequestContext**, and JavaScript proxy objects, and the **sync()**, **Visio.run()**, and **load()** methods. The code examples show you how to apply these concepts.
@@ -74,6 +74,7 @@ object.load(string: properties); //or object.load(array: properties); //or objec
 ```
 
 1. **properties** is the list of properties and/or relationship names to be loaded, specified as comma-delimited strings or array of names. See **.load()** methods under each object for details.
+
 2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](/javascript/api/office/officeextension.loadoption) for details.
 
 ## Example: Printing all shapes text in active page
@@ -183,9 +184,11 @@ function getSelectedShapeText() {
 
 After that, all you need is the URL of a Visio diagram that you want to work with. Just upload the Visio diagram to SharePoint Online and open it in Visio Online. From there, open the Embed dialog and use the Embed URL in the above example.
 
-![Copy Visio file URL from Embed dialog](../images/Visio-embed-url.png)
 
-If you are using Visio Online in Edit mode, open the Embed dialog by clicking on File > Share > Embed. If you are using Visio Online in View mode, open the Embed dialog by clicking on '...' and then 'Embed'. 
+<img alt="Copy Visio file URL from Embed dialog" src="../images/Visio-embed-url.png">
+
+
+If you are using Visio Online in Edit mode, open the Embed dialog by choosing **File** > **Share** > **Embed**. If you are using Visio Online in View mode, open the Embed dialog by choosing '...' and then **Embed**. 
 
 ## Open API specifications
 

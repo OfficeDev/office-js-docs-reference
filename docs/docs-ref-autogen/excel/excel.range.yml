@@ -64,7 +64,6 @@ items:
       - excel.Excel.Range.rowHidden
       - excel.Excel.Range.rowIndex
       - excel.Excel.Range.select
-      - excel.Excel.Range.set
       - excel.Excel.Range.showCard
       - excel.Excel.Range.sort
       - excel.Excel.Range.style
@@ -78,7 +77,7 @@ items:
       - excel.Excel.Range.worksheet
   - uid: excel.Excel.Range.address
     summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4).
+      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
 
 
@@ -378,7 +377,7 @@ items:
   - uid: excel.Excel.Range.getBoundingRect
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
-      "D10:E15" is "B2:E16".
+      "D10:E15" is "B2:E15".
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -1596,10 +1595,8 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.select
-    summary: >-
-      Selects the specified range in the Excel UI. If true, a multi-area range can be selected; otherwise, only the
-      first area will be selected. Default is false.
-
+    summary: |-
+      Selects the specified range in the Excel UI.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: select()
@@ -1630,74 +1627,6 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Range): void`
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          const range = sheet.getRange("B2:E2");
-          range.set({
-              format: {
-                  fill: {
-                      color: "#4472C4"
-                  },
-                  font: {
-                      name: "Verdana",
-                      color: "white"
-                  }
-              }
-          })
-          range.format.autofitColumns();
-          await context.sync();
-      });
-      ```
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          const sourceRange = sheet.getRange("B2:E2");
-          sourceRange.load("format/fill/color, format/font/name, format/font/color");
-          await context.sync();
-
-          // Set properties based on the loaded and synced 
-          // source range.
-          const targetRange = sheet.getRange("B7:E7");
-          targetRange.set(sourceRange); 
-          targetRange.format.autofitColumns();
-          await context.sync();
-      });
-      ```
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Range.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.RangeUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.

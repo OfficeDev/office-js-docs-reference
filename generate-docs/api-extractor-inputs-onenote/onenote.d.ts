@@ -148,20 +148,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.InkAnalysis): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.InkAnalysisUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.InkAnalysis): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -217,20 +204,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.InkAnalysisParagraph): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.InkAnalysisParagraph): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -344,20 +318,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly id: string;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.InkAnalysisLine): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.InkAnalysisLineUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.InkAnalysisLine): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -485,20 +446,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly wordAlternates: string[];
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.InkAnalysisWord): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.InkAnalysisWordUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.InkAnalysisWord): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1517,20 +1465,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly webUrl: string;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.Page): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.Page): void;
+        
         /**
          *
          * Adds an Outline to the page at the specified position.
@@ -1765,20 +1700,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly type: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.PageContent): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.PageContentUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.PageContent): void;
+        
         /**
          *
          * Deletes the PageContent object.
@@ -2064,20 +1986,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly type: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.Paragraph): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.Paragraph): void;
+        
         /**
          *
          * Add NoteTag to the paragraph.
@@ -2473,20 +2382,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         width: number;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.Image): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.Image): void;
+        
         /**
          *
          * Gets the base64-encoded binary representation of the Image.
@@ -2571,20 +2467,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         readonly rowCount: number;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.Table): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.Table): void;
+        
         /**
          *
          * Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is empty.
@@ -2886,20 +2769,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         shadingColor: string;
-        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         *
-         * @remarks
-         *
-         * This method has the following additional signature:
-         *
-         * `set(properties: OneNote.TableCell): void`
-         *
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: OneNote.TableCell): void;
+        
         /**
          *
          * Adds the specified HTML to the bottom of the TableCell.
@@ -3115,15 +2985,6 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          */
         numberType: OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom";
-    }
-    /**
-     * [Api set: OneNoteApi 1.1]
-     */
-    enum EntityType {
-        notebook = "Notebook",
-        sectionGroup = "SectionGroup",
-        section = "Section",
-        page = "Page",
     }
     /**
      * [Api set: OneNoteApi 1.1]
@@ -4377,6 +4238,7 @@ export declare namespace OneNote {
         export interface TableCellCollectionData {
             items?: OneNote.Interfaces.TableCellData[];
         }
+        
         /**
          *
          * Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active notebook, and the active section.
@@ -4613,34 +4475,6 @@ export declare namespace OneNote {
          * Contains a collection of TableCell objects.
          *
          * [Api set: OneNoteApi 1.1]
-         */
-        
-        /**
-         *
-         * Represents a OneNote accessibility violation.
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * Represents the collection of AccessibilityViolations
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * A OneNote structure that stores metadata about accessibility violations for an entity.
-         *
-         * [Api set: OneNoteApi 1.2]
-         */
-        
-        /**
-         *
-         * Represents the collection of AccessibilityViolationsByEntity
-         *
-         * [Api set: OneNoteApi 1.2]
          */
         
     }

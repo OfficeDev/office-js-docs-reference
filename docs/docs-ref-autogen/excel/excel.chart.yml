@@ -27,7 +27,6 @@ items:
       - excel.Excel.Chart.load
       - excel.Excel.Chart.name
       - excel.Excel.Chart.series
-      - excel.Excel.Chart.set
       - excel.Excel.Chart.setData
       - excel.Excel.Chart.setPosition
       - excel.Excel.Chart.showAllFieldButtons
@@ -76,7 +75,7 @@ items:
         "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
         "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
         "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
-        "Histogram" | "Pareto" | "RegionMap";
+        "Histogram" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
       return:
         type:
           - >-
@@ -93,7 +92,8 @@ items:
             | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
             "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
-            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Pareto" | "RegionMap"
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Pareto" | "RegionMap" |
+            "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
       Represents the datalabels on the chart. Read-only.
@@ -377,36 +377,6 @@ items:
       return:
         type:
           - excel.Excel.ChartSeriesCollection
-  - uid: excel.Excel.Chart.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Chart): void`
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Chart.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ChartUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -442,7 +412,7 @@ items:
           ```
       parameters:
         - id: sourceData
-          description: The range corresponding to the source data.
+          description: The range object corresponding to the source data.
           type:
             - Range
         - id: seriesBy

@@ -18,7 +18,6 @@ items:
       - visio.Visio.ShapeView.highlight
       - visio.Visio.ShapeView.load
       - visio.Visio.ShapeView.removeOverlay
-      - visio.Visio.ShapeView.set
       - visio.Visio.ShapeView.toJSON
   - uid: visio.Visio.ShapeView.addOverlay
     summary: |-
@@ -103,7 +102,7 @@ items:
 
       ```javascript
 
-      Visio.run(function (ctx) { 
+      Visio.run(session, function (ctx) {
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -119,7 +118,7 @@ items:
 
       ```javascript
 
-      Visio.run(function (ctx) { 
+      Visio.run(session, function (ctx) {
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
@@ -135,7 +134,7 @@ items:
 
       ```javascript
 
-      Visio.run(function (ctx) { 
+      Visio.run(session, function (ctx) {
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           shape.view.removeOverlay(1);
@@ -185,36 +184,6 @@ items:
           description: An Overlay Id. Removes the specific overlay id from the shape.
           type:
             - number
-  - uid: visio.Visio.ShapeView.set
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
-      properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.ShapeView): void`
-    name: 'set(properties, options)'
-    fullName: visio.Visio.ShapeView.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.ShapeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: >-
-            A JavaScript object with properties that are structured isomorphically to the properties of the object on
-            which the method is called.
-          type:
-            - Interfaces.ShapeViewUpdateData
-        - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type:
-            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.ShapeView.toJSON
     name: toJSON()
     fullName: visio.Visio.ShapeView.toJSON

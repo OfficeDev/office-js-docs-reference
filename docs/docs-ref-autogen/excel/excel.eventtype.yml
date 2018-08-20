@@ -130,8 +130,8 @@ items:
     numericValue: '"TableSelectionChanged"'
   - uid: excel.Excel.EventType.visualSelectionChanged
     summary: >-
-      ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
-      activates.
+      VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual
+      selection changes.
     name: visualSelectionChanged
     fullName: excel.Excel.EventType.visualSelectionChanged
     langs:
