@@ -1,7 +1,7 @@
 { 
     "redirections": [
         {   
-            "source_path": "docs/docs-ref-autogen/word/word.word-add-ins-reference-overview.yml",
+            "source_path": "docs/docs-ref-autogen/word/word.word-add-ins-reference-overview.md",
             "redirect_url": "/javascript/office/overview/word-add-ins-reference-overview"
         }
       ] 
