@@ -103,6 +103,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "extendBreadcrumb": true,
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
