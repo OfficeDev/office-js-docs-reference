@@ -36,6 +36,7 @@ items:
     package: office
     children:
       - office.Office.EventType.ActiveViewChanged
+      - office.Office.EventType.AppointmentTimeChanged
       - office.Office.EventType.BindingDataChanged
       - office.Office.EventType.BindingSelectionChanged
       - office.Office.EventType.DialogEventReceived
@@ -45,6 +46,7 @@ items:
       - office.Office.EventType.NodeDeleted
       - office.Office.EventType.NodeInserted
       - office.Office.EventType.NodeReplaced
+      - office.Office.EventType.RecipientsChanged
       - office.Office.EventType.RecurrencePatternChanged
       - office.Office.EventType.ResourceSelectionChanged
       - office.Office.EventType.SettingsChanged
@@ -71,6 +73,17 @@ items:
       </td><td> Y </td></tr> </table>
     name: ActiveViewChanged
     fullName: office.Office.EventType.ActiveViewChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.AppointmentTimeChanged
+    summary: |-
+      Triggers when the appointment date or time of the selected series was changed in Outlook.
+
+      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
+    isPreview: true
+    name: AppointmentTimeChanged
+    fullName: office.Office.EventType.AppointmentTimeChanged
     langs:
       - typeScript
     type: field
@@ -192,6 +205,17 @@ items:
     summary: Triggers when a customXmlPart node was replaced.
     name: NodeReplaced
     fullName: office.Office.EventType.NodeReplaced
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.RecipientsChanged
+    summary: |-
+      Triggers when the recipient list of the selected item was changed in Outlook.
+
+      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
+    isPreview: true
+    name: RecipientsChanged
+    fullName: office.Office.EventType.RecipientsChanged
     langs:
       - typeScript
     type: field
