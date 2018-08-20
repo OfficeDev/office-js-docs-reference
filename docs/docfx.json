@@ -53,6 +53,7 @@
           "toc.yml"
         ],
         "src": "breadcrumb",
+        "version": "office-js",
         "dest": "office_js_breadcrumb"
       },
       {
@@ -101,7 +102,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/docs/breadcrumb/toc.yml",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
@@ -120,6 +121,12 @@
     "fileMetadata": {
       "monikers": {
         "docs-ref-autogen/**": [
+          "office-js"
+        ],
+        "docs-ref-conceptual/**": [
+          "office-js"
+        ],
+        "breadcrumb/**": [
           "office-js"
         ]
       }
