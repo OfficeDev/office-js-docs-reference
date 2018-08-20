@@ -183,7 +183,8 @@ items:
           type:
             - any
   - uid: office.Office.UI.openBrowserWindow
-    summary: Opens a browser window and loads the specified URL.
+    summary: For internal Microsoft use only. Do not call from your code. Opens a browser window and loads the specified URL.
+    remarks: <table><tr><td>Requirement sets</td><td>OpenBrowserWindowAPI 1.1</td></tr></table>
     name: openBrowserWindow(url)
     fullName: office.Office.UI.openBrowserWindow
     langs:

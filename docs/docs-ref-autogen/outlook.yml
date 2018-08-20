@@ -46,6 +46,7 @@ items:
       - outlook.Office.MessageRead
       - outlook.Office.NotificationMessageDetails
       - outlook.Office.NotificationMessages
+      - outlook.Office.Organizer
       - outlook.Office.PhoneNumber
       - outlook.Office.Recipients
       - outlook.Office.Recurrence
@@ -138,6 +139,8 @@ references:
     name: Office.NotificationMessageDetails
   - uid: outlook.Office.NotificationMessages
     name: Office.NotificationMessages
+  - uid: outlook.Office.Organizer
+    name: Office.Organizer
   - uid: outlook.Office.PhoneNumber
     name: Office.PhoneNumber
   - uid: outlook.Office.Recipients
