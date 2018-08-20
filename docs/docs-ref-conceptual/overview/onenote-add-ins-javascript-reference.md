@@ -2,7 +2,7 @@
 
 Applies to: OneNote Online
 
-The following links show the high level OneNote objects available in the API. Each object page link contains a description of the properties, relationships, and methods available on the object. Explore these links to learn more. 
+The following links show the high level OneNote objects available in the API. Each object page link contains a description of the properties, events, and methods available on the object. Explore these links to learn more. 
 	
 - [Application](/javascript/api/onenote/onenote.application): The top-level object used to access all globally addressable OneNote objects, such as the active notebook and the active section.
 
