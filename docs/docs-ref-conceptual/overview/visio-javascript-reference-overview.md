@@ -73,7 +73,7 @@ The following shows the syntax for the **load()** method.
 object.load(string: properties); //or object.load(array: properties); //or object.load({loadOption});
 ```
 
-1. **properties** is the list of properties and/or relationship names to be loaded, specified as comma-delimited strings or array of names. See **.load()** methods under each object for details.
+1. **properties** is the list of properties names to be loaded, specified as comma-delimited strings or array of names. See **.load()** methods under each object for details.
 
 2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](/javascript/api/office/officeextension.loadoption) for details.
 
