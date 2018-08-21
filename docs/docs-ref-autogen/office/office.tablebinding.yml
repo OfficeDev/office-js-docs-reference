@@ -6,12 +6,12 @@ items:
       <table><tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
-      The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
-      the Binding object.
+      The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync`
+      method from the [Office.Binding](xref:office.Office.Binding) object.
 
 
-      For Excel, note that after you establish a table binding in Excel, each new row a user adds to the table is
-      automatically included in the binding and rowCount increases.
+      For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically
+      included in the binding and rowCount increases.
     name: Office.TableBinding
     fullName: office.Office.TableBinding
     langs:
@@ -143,17 +143,14 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
-      To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
-      parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data
-      parameter.
-
-
       The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
       succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will
       report failure):
@@ -229,7 +226,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.clearFormatsAsync
@@ -282,7 +281,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.columnCount
@@ -384,7 +385,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.getFormatsAsync
@@ -416,7 +419,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
@@ -472,9 +477,12 @@ items:
       When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert
       tab), both Office host applications create a single row of headers followed by a single blank row. However, if
       your add-in's script creates a binding for this newly inserted table (for example, by using the
-      addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ
-      depending whether the spreadsheet is open in Excel 2013 or Excel Online. - In Excel on the desktop, rowCount will
-      return 0 (the blank row following the headers is not counted).
+      [Office.Bindings](xref:office.Office.Bindings)<!-- -->.addFromSelectionAsync method), and then checks the value of
+      the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or
+      Excel Online.
+
+
+      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
 
 
       - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
@@ -721,7 +729,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.setTableOptionsAsync
@@ -803,7 +813,7 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
-            You can use the properties of the AsyncResult object to return the following information.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'

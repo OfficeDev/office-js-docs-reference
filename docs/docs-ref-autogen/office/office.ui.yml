@@ -96,7 +96,7 @@ items:
       - Display authentication pages to collect user credentials.
 
 
-      - Display an error/progress/input screen from a ShowTaspane or ExecuteAction command.
+      - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
 
 
       - Temporarily increase the surface area that a user has available to complete a task.

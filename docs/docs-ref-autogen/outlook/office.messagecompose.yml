@@ -110,15 +110,15 @@ items:
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
-            attachment will be shown inline in the message body and should not be displayed in the attachment list.
+            attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
-            provides a description of the error.
+            of type<!-- -->Office.asyncResult<!-- -->. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.addFileAttachmentFromBase64Async
@@ -244,7 +244,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an AsyncResult object.
+            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.addItemAttachmentAsync
@@ -592,9 +592,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value
-            property as a string. If there is no initialization context, the asyncResult object will contain an Error
-            object with its code property set to 9020 and its name property set to GenericResponseError.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. On success, the initialization data is provided in the
+            asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
+            contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.getSelectedDataAsync
@@ -637,7 +638,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.itemType
@@ -706,7 +707,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
         - id: userContext
@@ -744,8 +745,8 @@ items:
 
 
       The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
-      a series or an instance in a series. null is returned for single appointments and meeting requests of single
-      appointments. undefined is returned for messages that are not meeting requests.
+      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
+      appointments. `undefined` is returned for messages that are not meeting requests.
 
 
       Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
@@ -836,8 +837,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.removeHandlerAsync
@@ -897,7 +898,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an AsyncResult object.
+            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.saveAsync
@@ -975,8 +976,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.seriesId
@@ -1085,8 +1086,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageCompose.subject
