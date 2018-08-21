@@ -1,6 +1,6 @@
 # Office JavaScript API Reference
 
-Welcome to the Office JavaScript API Reference documentation. In this repository, you can find the documentation source files for Office JavaScript API Reference. For the best experience, we recommend you view this content on [docs.microsoft.com](https://docs.microsoft.com/javascript/api/overview/office?view=office-js).
+Welcome to the Office JavaScript API Reference documentation repository. For the best experience, we recommend you view this content on [docs.microsoft.com](https://docs.microsoft.com/javascript/api/overview/office?view=office-js).
 
 > **Note**: You can find the documentation source files for Office JavaScript API concepts, quickstarts, tutorials, and how-to guides in the [OfficeDev/office-js-docs-pr](https://github.com/OfficeDev/office-js-docs-pr) repository.
 
