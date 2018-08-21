@@ -142,8 +142,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. The content type is returned as one of the CoercionType values in the
-            asyncResult.value property.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. The content type is returned as one of the CoercionType
+            values in the asyncResult.value property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.prependAsync
@@ -226,7 +226,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
+            asyncResult.error property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setAsync
@@ -328,7 +329,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
+            asyncResult.error property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync
@@ -414,6 +416,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
+            asyncResult.error property.
           type:
             - '(result: AsyncResult) => void'

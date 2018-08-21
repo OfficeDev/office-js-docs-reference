@@ -93,7 +93,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Mailbox.convertToEwsId
@@ -640,7 +640,8 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type<!-- -->Office.AsyncResult<!-- -->. The token is provided as a string in the asyncResult.value
+            property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Mailbox.getUserIdentityTokenAsync
@@ -676,7 +677,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
         - id: userContext
@@ -718,15 +719,21 @@ items:
 
       Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about
       using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync
-      method, see Specify permissions for mail add-in access to the user's mailbox.
+      method, see [Specify permissions for mail add-in access to the user's
+      mailbox](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->.
 
 
       The XML result of the EWS call is provided as a string in the asyncResult.value property. If the result exceeds 1
       MB in size, an error message is returned instead.
 
 
-      Note: This method is not supported in the following scenarios. - In Outlook for iOS or Outlook for Android - When
-      the add-in is loaded in a Gmail mailbox
+      Note: This method is not supported in the following scenarios:
+
+
+      - In Outlook for iOS or Outlook for Android.
+
+
+      - When the add-in is loaded in a Gmail mailbox.
 
 
       Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to
@@ -776,7 +783,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
         - id: userContext

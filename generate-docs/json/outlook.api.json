@@ -135,7 +135,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -733,7 +733,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -922,7 +941,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -1814,7 +1852,11 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -2275,7 +2317,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -2983,7 +3044,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments."
                 },
                 {
                   "kind": "paragraph"
@@ -3146,7 +3207,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -3384,7 +3464,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -3688,7 +3787,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -4104,7 +4222,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -5854,7 +5991,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -7994,7 +8150,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -9097,7 +9272,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -9349,7 +9538,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -10153,7 +10361,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments."
                 },
                 {
                   "kind": "paragraph"
@@ -10328,7 +10536,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -11613,7 +11840,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The content type is returned as one of the CoercionType values in the asyncResult.value property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". The content type is returned as one of the CoercionType values in the asyncResult.value property."
                     }
                   ],
                   "isOptional": true,
@@ -11777,7 +12023,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -12022,7 +12287,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -12295,7 +12579,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -13259,7 +13562,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -14944,7 +15266,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": false,
@@ -15284,7 +15625,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -15927,7 +16287,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -16211,7 +16590,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -16386,7 +16765,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -16762,7 +17160,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -17352,7 +17750,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -17728,7 +18145,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -17900,7 +18336,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -18074,7 +18529,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -18288,7 +18762,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -18549,7 +19042,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -20423,7 +20935,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -21530,7 +22061,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -22334,7 +22879,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -22508,7 +23079,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the location fails, the asyncResult.error property will contain an error code."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -22892,7 +23489,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24819,7 +25435,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The token is provided as a string in the asyncResult.value property."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". The token is provided as a string in the asyncResult.value property."
                     }
                   ],
                   "isOptional": false,
@@ -25028,7 +25663,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -25233,7 +25887,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -25292,7 +25965,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see Specify permissions for mail add-in access to the user's mailbox."
+                  "text": "Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Specify permissions for mail add-in access to the user's mailbox"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -25306,7 +25993,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in the following scenarios. - In Outlook for iOS or Outlook for Android - When the add-in is loaded in a Gmail mailbox"
+                  "text": "Note: This method is not supported in the following scenarios:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- In Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- When the add-in is loaded in a Gmail mailbox."
                 },
                 {
                   "kind": "paragraph"
@@ -29775,7 +30476,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -29787,7 +30488,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.asyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "asyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -30373,7 +31093,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -31835,7 +32574,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -32007,7 +32765,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -32284,7 +33061,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -32568,7 +33364,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -32731,7 +33527,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -32969,7 +33784,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -33134,7 +33968,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -33550,7 +34403,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -34093,7 +34965,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -36497,7 +37388,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -37720,7 +38630,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -37972,7 +38896,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -38383,7 +39326,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -38558,7 +39501,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -39644,7 +40606,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. [Api set: Mailbox 1.3]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.3]"
                     }
                   ],
                   "isOptional": true,
@@ -39820,7 +40808,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -39994,7 +41001,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -40194,7 +41220,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -40986,7 +42031,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If adding the recipients fails, the asyncResult.error property will contain an error code."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If adding the recipients fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,
@@ -41225,7 +42289,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -41425,7 +42508,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred while adding the data."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred while adding the data."
                     }
                   ],
                   "isOptional": true,
@@ -42296,7 +43398,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -42972,7 +44093,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -43600,7 +44740,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.AsyncResult"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "AsyncResult"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object."
                 }
               ],
               "remarks": [],
@@ -44081,7 +45240,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional? When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -46164,7 +47342,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -46345,7 +47542,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the subject fails, the asyncResult.error property will contain an error code."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the subject fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,
@@ -46553,7 +47769,26 @@
             },
             {
               "kind": "text",
-              "text": "The list of tasks suggested in an email message is returned in the taskSuggestions property of the [Entities]Entities object that is returned when the getEntities or getEntitiesByType method is called on the active item."
+              "text": "The list of tasks suggested in an email message is returned in the taskSuggestions property of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Entities"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Entities"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " object that is returned when the getEntities or getEntitiesByType method is called on the active item."
             },
             {
               "kind": "paragraph"
@@ -47035,7 +48270,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the date and time fails, the asyncResult.error property will contain an error code."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the date and time fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,
