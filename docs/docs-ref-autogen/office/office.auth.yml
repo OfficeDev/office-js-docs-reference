@@ -50,6 +50,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: 'getAccessTokenAsync(options, callback)'
     fullName: office.Office.Auth.getAccessTokenAsync
     langs:

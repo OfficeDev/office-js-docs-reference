@@ -5378,7 +5378,7 @@
                   "text": "This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph."
                 }
               ],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -12338,7 +12338,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API."
+              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API. The current context exists as a property of Office. It is accessed using `Office.context`."
             }
           ],
           "remarks": [
@@ -30919,6 +30919,26 @@
               "remarks": [],
               "isBeta": false
             },
+            "AppointmentTimeChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when the appointment date or time of the selected series was changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
+            },
             "BindingDataChanged": {
               "kind": "enum value",
               "value": "",
@@ -31974,6 +31994,26 @@
               ],
               "remarks": [],
               "isBeta": false
+            },
+            "RecipientsChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when the recipient list of the selected item was changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
             },
             "RecurrencePatternChanged": {
               "kind": "enum value",
@@ -60255,43 +60295,6 @@
                 {
                   "kind": "text",
                   "text": "Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "openBrowserWindow": {
-              "kind": "method",
-              "signature": "openBrowserWindow(url: string): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "url": {
-                  "name": "url",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The full URL to be opened including protocol (e.g., https), and port number, if any."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Opens a browser window and loads the specified URL."
                 }
               ],
               "remarks": [],

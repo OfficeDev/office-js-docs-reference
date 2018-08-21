@@ -1184,57 +1184,6 @@ var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
 var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
 ```
 
-####  getSelectedDataAsync(coercionType, [options], callback) → {String}
-
-Asynchronously returns selected data from the subject or body of a message.
-
-If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the `InvalidSelection` error.
-
-##### Parameters:
-
-|Name| Type| Attributes| Description|
-|---|---|---|---|
-|`coercionType`| [Office.CoercionType](office.md#coerciontype-string)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
-|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object.<br/><br/>To access the selected data from the callback method, call `asyncResult.value.data`. To access the source property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.|
-
-##### Requirements
-
-|Requirement| Value|
-|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteItem|
-|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose|
-
-##### Returns:
-
-The selected data as a string with format determined by `coercionType`.
-
-<dl class="param-type">
-
-<dt>Type</dt>
-
-<dd>String</dd>
-
-</dl>
-
-##### Example
-
-```JavaScript
-// getting selected data
-Office.initialize = function () {
-    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-}
-
-function getCallback(asyncResult) {
-    var text = asyncResult.value.data;
-    var prop = asyncResult.value.sourceProperty;
-
-    // Do something with value;
-}
-```
-
 ####  loadCustomPropertiesAsync(callback, [userContext])
 
 Asynchronously loads custom properties for this add-in on the selected item.

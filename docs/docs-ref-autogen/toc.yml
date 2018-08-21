@@ -516,6 +516,8 @@ items:
                 uid: outlook.Office.NotificationMessageDetails
               - name: NotificationMessages
                 uid: outlook.Office.NotificationMessages
+              - name: Organizer
+                uid: outlook.Office.Organizer
               - name: PhoneNumber
                 uid: outlook.Office.PhoneNumber
               - name: Recipients
