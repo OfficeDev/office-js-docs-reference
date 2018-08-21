@@ -88,7 +88,9 @@ Specifies the event associated with an event handler.
 
 | Name | Type | Description | Minimum requirement set |
 |---|---|---|---|
+|`AppointmentTimeChanged`| String | The appointment date or time of the selected series has changed. | Preview |
 |`ItemChanged`| String | The selected item has changed. | 1.5 |
+|`RecipientsChanged`| String | The recipient list of the selected item has changed. | Preview |
 |`RecurrencePatternChanged`| String | The recurrence pattern of the selected series has changed. | Preview |
 
 ##### Requirements

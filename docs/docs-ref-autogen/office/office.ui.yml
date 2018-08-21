@@ -19,7 +19,6 @@ items:
       - office.Office.UI.closeContainer
       - office.Office.UI.displayDialogAsync
       - office.Office.UI.messageParent
-      - office.Office.UI.openBrowserWindow
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
@@ -182,21 +181,3 @@ items:
           description: Accepts a message from the dialog to deliver to the add-in.
           type:
             - any
-  - uid: office.Office.UI.openBrowserWindow
-    summary: Opens a browser window and loads the specified URL.
-    name: openBrowserWindow(url)
-    fullName: office.Office.UI.openBrowserWindow
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'openBrowserWindow(url: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: url
-          description: 'The full URL to be opened including protocol (e.g., https), and port number, if any.'
-          type:
-            - string

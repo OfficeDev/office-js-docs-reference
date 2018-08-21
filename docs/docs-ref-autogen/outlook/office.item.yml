@@ -36,8 +36,8 @@ items:
       Adds an event handler for a supported event.
 
 
-      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
-      user changes the recurrence pattern of a series.
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -342,8 +342,8 @@ items:
       Removes an event handler for a supported event.
 
 
-      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
-      user changes the recurrence pattern of a series.
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
