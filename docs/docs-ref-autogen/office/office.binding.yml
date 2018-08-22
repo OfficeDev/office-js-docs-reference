@@ -61,14 +61,15 @@ items:
 
       ```javascript
 
-      // The following code sample calls the select method of the Office object to access the binding with ID
-      "MyBinding",
+      // The following code sample calls the select method of the Office object to access the binding
 
-      // and then calls the addHandlerAsync method to add a handler function for the bindingDataChanged event of that
-      binding.
+      // with ID "MyBinding", and then calls the addHandlerAsync method to add a handler function 
+
+      // for the bindingDataChanged event of that binding.
 
       function addEventHandlerToBinding() {
-          Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+          Office.select("bindings#MyBinding").addHandlerAsync(
+              Office.EventType.BindingDataChanged, onBindingDataChanged);
       }
 
 
@@ -87,13 +88,15 @@ items:
 
       ```javascript
 
-      // To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of
-      the Binding object.
+      // To add an event handler for the BindingSelectionChanged event of a binding, 
+
+      // use the addHandlerAsync method of the Binding object.
 
       // The event handler receives an argument of type BindingSelectionChangedEventArgs.
 
       function addEventHandlerToBinding() {
-          Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
+          Office.select("bindings#MyBinding").addHandlerAsync(
+              Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
       }
 
 
@@ -214,7 +217,12 @@ items:
       // first non-header row in the table.
 
       function selectionChanged(evtArgs) { 
-          Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'table', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
+          Office.select("bindings#TableTranslate").getDataAsync(
+              { coercionType: 'table', 
+                startRow: evtArgs.startRow, 
+                startCol: 0, 
+                rowCount: 1, 
+                columnCount: 1 },  
               function (result) { 
                   if (result.status == 'succeeded') { 
                       write("Image to find: " + result.value.rows[0][0]); 
@@ -238,7 +246,12 @@ items:
       // included in the result.value matrix as separate rows before the table body rows are included.
 
       function selectionChanged(evtArgs) { 
-          Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'matrix', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
+          Office.select("bindings#TableTranslate").getDataAsync(
+              { coercionType: 'matrix', 
+                startRow: evtArgs.startRow, 
+                startCol: 0, 
+                rowCount: 1, 
+                columnCount: 1 },  
               function (result) { 
                   if (result.status == 'succeeded') { 
                       write("Image to find: " + result.value[1][0]); 
@@ -313,7 +326,8 @@ items:
 
       ```javascript
       function removeEventHandlerFromBinding() {
-          Office.select("bindings#MyBinding").removeHandlerAsync(Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
+          Office.select("bindings#MyBinding").removeHandlerAsync(
+              Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
       }
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
@@ -442,13 +456,13 @@ items:
       // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a
       binding.
 
-      // For example, in Word if you want to write HTML to a text binding, you can specify the coercionType parameter as
-      "html"
+      // For example, in Word if you want to write HTML to a text binding, you can specify the coercionType parameter 
 
-      // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
+      // as "html" as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
 
       function writeHtmlData() {
-          Office.select("bindings#myBinding").setDataAsync("<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
+          Office.select("bindings#myBinding").setDataAsync(
+              "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
               if (asyncResult.status == "failed") {
                   write('Error: ' + asyncResult.error.message);
               }
@@ -465,11 +479,13 @@ items:
 
       // In this example, the call to setDataAsync passes the data parameter as an array of arrays
 
-      // (to create a single column of three rows), and specifies the data structure with the coercionType parameter as
-      a "matrix".
+      // (to create a single column of three rows), and specifies the data structure with the 
+
+      // coercionType parameter as a "matrix".
 
       function writeBoundDataMatrix() {
-          Office.select("bindings#myBinding").setDataAsync([['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
+          Office.select("bindings#myBinding").setDataAsync(
+              [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
               if (asyncResult.status == "failed") {
                   write('Error: ' + asyncResult.error.message);
               } else {
@@ -485,23 +501,21 @@ items:
       }
 
 
-      // In the writeBoundDataTable function in this example, the call to setDataAsync passes the data parameter as a
-      TableData object
+      // In the writeBoundDataTable function in this example, the call to setDataAsync passes the data parameter 
 
-      // (to write three columns and three rows), and specifies the data structure with the coercionType parameter as a
-      "table".
+      // as a TableData object (to write three columns and three rows), and specifies the data structure
+
+      // with the coercionType parameter as a "table".
 
 
       // In the updateTableData function, the call to setDataAsync again passes the data parameter as a TableData
       object,
 
-      // but as a single column with a new header and three rows, to update the values in the last column of the table
-      created
+      // but as a single column with a new header and three rows, to update the values in the last column 
 
-      // with the writeBoundDataTable function. The optional zero-based startColumn parameter is specified as 2 to
-      replace the values
+      // of the table created with the writeBoundDataTable function. The optional zero-based startColumn parameter 
 
-      // in the third column of the table.
+      // is specified as 2 to replace the values in the third column of the table.
 
       function writeBoundDataTable() {
           // Create a TableData object.

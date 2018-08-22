@@ -676,7 +676,8 @@ OneNote.Notebook.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+                // according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -816,7 +817,8 @@ OneNote.NotebookCollection.getByName:
         return context.sync()
             .then(function () {
     
-                // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                // Iterate through the collection or access items individually by index,
+                // for example: notebooks.items[0]
                 if (notebooks.items.length > 0) {
                     console.log("Notebook name: " + notebooks.items[0].name);
                     console.log("Notebook ID: " + notebooks.items[0].id);
@@ -845,7 +847,8 @@ OneNote.NotebookCollection.load:
         return context.sync()
             .then(function () {
     
-                // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                // Iterate through the collection or access items individually by index, 
+                // for example: notebooks.items[0]
                 $.each(notebooks.items, function(index, notebook) {
                     notebook.addSection("Biology");
                     notebook.addSection("Spanish");
@@ -1013,7 +1016,8 @@ OneNote.Page.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+                // according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -1516,7 +1520,9 @@ OneNote.ParagraphCollection.getItemAt:
         return context.sync()
             .then(function () {
                 // Write text from paragraph to console
-                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                console.log(
+                    "First Paragraph found with id : " + 
+                    firstParagraph.id + " and type " + firstParagraph.type);
             });
     })
     .catch(function(error) {
@@ -1544,7 +1550,9 @@ OneNote.ParagraphCollection.load:
             .then(function () {
                 var firstParagraph = paragraphs.items[0];
                 // Write text from first paragraph to console
-                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                console.log(
+                    "First Paragraph found with id : " + 
+                    firstParagraph.id + " and type " + firstParagraph.type);
             });
     })
     .catch(function(error) {
@@ -1598,7 +1606,9 @@ OneNote.ParagraphCollection.load:
                 // Display all rich text paragraphs to the console
                 $.each(richTextParagraphs, function(index, richTextParagraph) {
                     var richText = richTextParagraph.richText;
-                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                    console.log(
+                        "Paragraph found with richtext content : " + 
+                        richText.text + " and richtext id : " + richText.id);
                 });
                 return context.sync();
             });
@@ -1655,7 +1665,9 @@ OneNote.RichText.load:
                 // Display all rich text paragraphs to the console
                 $.each(richTextParagraphs, function(index, richTextParagraph) {
                     var richText = richTextParagraph.richText;
-                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                    console.log(
+                        "Paragraph found with richtext content : " + 
+                        richText.text + " and richtext id : " + richText.id);
                 });
                 return context.sync();
             });
@@ -1790,7 +1802,8 @@ OneNote.Section.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
+                // OneNote REST API according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -2156,7 +2169,8 @@ OneNote.SectionGroupCollection.load:
         return context.sync()
             .then(function () {
                 
-                // Iterate through the collection or access items individually by index, for example: sectionGroups.items[0]
+                // Iterate through the collection or access items individually by index, 
+                // for example: sectionGroups.items[0]
                 $.each(sectionGroups.items, function(index, sectionGroup) {
                     console.log("Section group name: " + sectionGroup.name);  
                     console.log("Section group ID: " + sectionGroup.id);  

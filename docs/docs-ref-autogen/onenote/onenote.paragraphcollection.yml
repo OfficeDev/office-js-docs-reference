@@ -97,7 +97,9 @@ items:
               return context.sync()
                   .then(function () {
                       // Write text from paragraph to console
-                      console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                      console.log(
+                          "First Paragraph found with id : " + 
+                          firstParagraph.id + " and type " + firstParagraph.type);
                   });
           })
           .catch(function(error) {
@@ -165,7 +167,9 @@ items:
               .then(function () {
                   var firstParagraph = paragraphs.items[0];
                   // Write text from first paragraph to console
-                  console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                  console.log(
+                      "First Paragraph found with id : " + 
+                      firstParagraph.id + " and type " + firstParagraph.type);
               });
       })
 
@@ -224,7 +228,9 @@ items:
                   // Display all rich text paragraphs to the console
                   $.each(richTextParagraphs, function(index, richTextParagraph) {
                       var richText = richTextParagraph.richText;
-                      console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                      console.log(
+                          "Paragraph found with richtext content : " + 
+                          richText.text + " and richtext id : " + richText.id);
                   });
                   return context.sync();
               });

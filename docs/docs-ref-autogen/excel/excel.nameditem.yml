@@ -167,7 +167,8 @@ items:
           #### Examples
 
           ```javascript
-          // Returns the Range object that is associated with the name. null if the name is not of the type Range.
+          // Returns the Range object that is associated with the name. 
+          // null if the name is not of the type Range.
           // Note: This API currently supports only the Workbook scoped items.
           Excel.run(function (ctx) { 
               var names = ctx.workbook.names;

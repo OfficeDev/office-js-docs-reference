@@ -48,12 +48,14 @@ items:
 
           ```javascript
           function addXMLPart() {
-              Office.context.document.customXmlParts.addAsync('<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>', function (result) {
-                  });
+              Office.context.document.customXmlParts.addAsync(
+                  '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
+                  function (result) {});
           }
 
           function addXMLPartandHandler() {
-              Office.context.document.customXmlParts.addAsync("<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
+              Office.context.document.customXmlParts.addAsync(
+                  "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
                   function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
                       function(a) {write(a.type)
                       },
@@ -100,7 +102,8 @@ items:
 
           ```javascript
           function showXMLPartInnerXML() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   xmlPart.getXmlAsync({}, function (eventArgs) {
                       write(eventArgs.value);
@@ -147,8 +150,10 @@ items:
 
           ```javascript
           function showXMLPartsInNamespace() {
-              Office.context.document.customXmlParts.getByNamespaceAsync("http://tempuri.org", function (eventArgs) {
-                  write("Found " + eventArgs.value.length + " parts with this namespace");
+              Office.context.document.customXmlParts.getByNamespaceAsync(
+                  "http://tempuri.org", 
+                  function (eventArgs) {
+                      write("Found " + eventArgs.value.length + " parts with this namespace");
               }); 
           }
           // Function that writes to a div with id='message' on the page.

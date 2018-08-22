@@ -84,7 +84,8 @@ Excel.Binding.load:
     });
 Excel.BindingCollection.getItem:
   - |-
-    // Create a table binding to monitor data changes in the table. When data is changed, the background color of the table will be changed to orange.
+    // Create a table binding to monitor data changes in the table. 
+    // When data is changed, the background color of the table will be changed to orange.
     function addEventHandler() {
         //Create Table1
     Excel.run(function (ctx) { 
@@ -97,13 +98,15 @@ Excel.BindingCollection.getItem:
         });
     });
         //Create a new table binding for Table1
-    Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+    Office.context.document.bindings.addFromNamedItemAsync(
+        "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
         if (asyncResult.status == "failed") {
             console.log("Action failed with error: " + asyncResult.error.message);
         }
         else {
             // If succeeded, then add event handler to the table binding.
-            Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+            Office.select("bindings#myBinding").addHandlerAsync(
+                Office.EventType.BindingDataChanged, onBindingDataChanged);
         }
     });
     }
@@ -208,7 +211,8 @@ Excel.Chart.getImage:
     });
 Excel.Chart.name:
   - |-
-    // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100 points to the top and left. 
+    // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
+    // Move Chart1 to 100 points to the top and left. 
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.name = "New Name";
@@ -335,7 +339,8 @@ Excel.ChartAxisTitle.load:
     });
 Excel.ChartCollection.add:
   - |-
-    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+    // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
     Excel.run(function (ctx) { 
         var rangeSelection = "A1:B4";
         var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -456,7 +461,7 @@ Excel.ChartFill.clear:
   - |-
     // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
     Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
                 console.log("Chart Major Gridlines Format Cleared");
@@ -567,7 +572,7 @@ Excel.ChartLineFormat.clear:
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
                 console.log("Chart Major Gridlines Format Cleared");
@@ -612,7 +617,8 @@ Excel.ChartPointsCollection.load:
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
-        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        var pointsCollection = 
+            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('items');
         return ctx.sync().then(function() {
             console.log("Points Collection loaded");
@@ -626,7 +632,8 @@ Excel.ChartPointsCollection.load:
   - |-
     // Get the number of points
     Excel.run(function (ctx) { 
-        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        var pointsCollection = 
+            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('count');
         return ctx.sync().then(function() {
             console.log("points: Count= " + pointsCollection.count);
@@ -842,7 +849,8 @@ Excel.CustomConditionalFormat.rule:
     });
 Excel.NamedItem.getRange:
   - |-
-    // Returns the Range object that is associated with the name. null if the name is not of the type Range.
+    // Returns the Range object that is associated with the name. 
+    // null if the name is not of the type Range.
     // Note: This API currently supports only the Workbook scoped items.
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -987,7 +995,8 @@ Excel.Range.getColumn:
     });
 Excel.Range.getEntireColumn:
   - |-
-    // Note: the grid properties of the Range (values, numberFormat, formulas) contains null since the Range in question is unbounded.
+    // Note: the grid properties of the Range (values, numberFormat, formulas) 
+    // contains null since the Range in question is unbounded.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -1005,7 +1014,9 @@ Excel.Range.getEntireColumn:
     });
 Excel.Range.getEntireRow:
   - |-
-    // Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", it's GetEntireRow is a range that represents rows "4:11").
+    // Gets an object that represents the entire row of the range 
+    // (for example, if the current range represents cells "B4:E11", 
+    // its GetEntireRow is a range that represents rows "4:11").
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "D:F"; 
@@ -1026,7 +1037,8 @@ Excel.Range.getIntersection:
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+        var range = 
+            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
         range.load('address');
         return ctx.sync().then(function() {
             console.log(range.address); // prints Sheet1!D4:F6
@@ -1090,7 +1102,8 @@ Excel.Range.getOffsetRange:
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D4:F6";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+        var range = 
+            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
         range.load('address');
         return ctx.sync().then(function() {
             console.log(range.address); // prints Sheet1!H3:K5
@@ -2303,8 +2316,10 @@ Excel.WorksheetProtection.unprotect:
         }
     });
   - |-
-    // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a worksheet.
-    // To remove only a subset of WorksheetProtectionOptions use the protect() method and set the options you wish to remove to true.
+    // Unprotecting a worksheet with unprotect() will remove all 
+    // WorksheetProtectionOptions options applied to a worksheet.
+    // To remove only a subset of WorksheetProtectionOptions use the 
+    // protect() method and set the options you wish to remove to true.
     Excel.run(function(ctx) {
       var sheet = ctx.workbook.worksheets.getItem("Sheet1");
       sheet.protection.protect({
@@ -2403,18 +2418,22 @@ Office.AsyncResult:
                 console.log(err.name + ": " + err.message);
             }
         });
-    // The anonymous function passed as the callback argument ( function (result){...}) has a single parameter named result
-    // that provides access to an AsyncResult object when the function executes. When the call to the getSelectedDataAsync method
-    // completes, the callback function executes, and the following line of code accesses the value property of the AsyncResult
-    // object to return the data selected in the document:
+    // The anonymous function passed as the callback argument ( function (result){...}) has a single 
+    // parameter named result that provides access to an AsyncResult object when the function executes.
+    // When the call to the getSelectedDataAsync method completes, the callback function executes, 
+    // and the following line of code accesses the value property of the AsyncResult object to 
+    // return the data selected in the document:
     var dataValue = result.value;
-    // Note that other lines of code in the function use the result parameter of the callback function to access the status and
-    // error properties of the AsyncResult object.
+    // Note that other lines of code in the function use the result parameter of the callback function 
+    // to access the status and error properties of the AsyncResult object.
 Office.AsyncResult.asyncContext:
   - |-
     function getDataWithContext() {
         var format = "Your data: ";
-        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text, 
+            { asyncContext: format }, 
+            showDataWithContext);
     }
 
     function showDataWithContext(asyncResult) {
@@ -2484,10 +2503,12 @@ Office.Auth.getAccessTokenAsync:
     });
 Office.Binding.addHandlerAsync:
   - |-
-    // The following code sample calls the select method of the Office object to access the binding with ID "MyBinding",
-    // and then calls the addHandlerAsync method to add a handler function for the bindingDataChanged event of that binding.
+    // The following code sample calls the select method of the Office object to access the binding
+    // with ID "MyBinding", and then calls the addHandlerAsync method to add a handler function 
+    // for the bindingDataChanged event of that binding.
     function addEventHandlerToBinding() {
-        Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+        Office.select("bindings#MyBinding").addHandlerAsync(
+            Office.EventType.BindingDataChanged, onBindingDataChanged);
     }
 
     function onBindingDataChanged(eventArgs) {
@@ -2499,10 +2520,12 @@ Office.Binding.addHandlerAsync:
         document.getElementById('message').innerText += message; 
     }
   - |-
-    // To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of the Binding object.
+    // To add an event handler for the BindingSelectionChanged event of a binding, 
+    // use the addHandlerAsync method of the Binding object.
     // The event handler receives an argument of type BindingSelectionChangedEventArgs.
     function addEventHandlerToBinding() {
-        Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
+        Office.select("bindings#MyBinding").addHandlerAsync(
+            Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
     }
 
     function onBindingSelectionChanged(eventArgs) {
@@ -2627,7 +2650,12 @@ Office.Binding.getDataAsync:
     // code example) returns an array that contains only the body rows of the table. So, its 0th row will be the
     // first non-header row in the table.
     function selectionChanged(evtArgs) { 
-        Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'table', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
+        Office.select("bindings#TableTranslate").getDataAsync(
+            { coercionType: 'table', 
+              startRow: evtArgs.startRow, 
+              startCol: 0, 
+              rowCount: 1, 
+              columnCount: 1 },  
             function (result) { 
                 if (result.status == 'succeeded') { 
                     write("Image to find: " + result.value.rows[0][0]); 
@@ -2645,7 +2673,12 @@ Office.Binding.getDataAsync:
     // that contains the table header in the 0th row. If the table header contains multiple rows, then these are all
     // included in the result.value matrix as separate rows before the table body rows are included.
     function selectionChanged(evtArgs) { 
-        Office.select("bindings#TableTranslate").getDataAsync({ coercionType: 'matrix', startRow: evtArgs.startRow, startCol: 0, rowCount: 1, columnCount: 1 },  
+        Office.select("bindings#TableTranslate").getDataAsync(
+            { coercionType: 'matrix', 
+              startRow: evtArgs.startRow, 
+              startCol: 0, 
+              rowCount: 1, 
+              columnCount: 1 },  
             function (result) { 
                 if (result.status == 'succeeded') { 
                     write("Image to find: " + result.value[1][0]); 
@@ -2671,7 +2704,8 @@ Office.Binding.id:
 Office.Binding.removeHandlerAsync:
   - |-
     function removeEventHandlerFromBinding() {
-        Office.select("bindings#MyBinding").removeHandlerAsync(Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
+        Office.select("bindings#MyBinding").removeHandlerAsync(
+            Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
     }
 Office.Binding.setDataAsync:
   - |-
@@ -2680,10 +2714,11 @@ Office.Binding.setDataAsync:
     }
 
     // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a binding.
-    // For example, in Word if you want to write HTML to a text binding, you can specify the coercionType parameter as "html"
-    // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
+    // For example, in Word if you want to write HTML to a text binding, you can specify the coercionType parameter 
+    // as "html" as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
     function writeHtmlData() {
-        Office.select("bindings#myBinding").setDataAsync("<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
+        Office.select("bindings#myBinding").setDataAsync(
+            "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
             if (asyncResult.status == "failed") {
                 write('Error: ' + asyncResult.error.message);
             }
@@ -2696,9 +2731,11 @@ Office.Binding.setDataAsync:
     }
 
     // In this example, the call to setDataAsync passes the data parameter as an array of arrays
-    // (to create a single column of three rows), and specifies the data structure with the coercionType parameter as a "matrix".
+    // (to create a single column of three rows), and specifies the data structure with the 
+    // coercionType parameter as a "matrix".
     function writeBoundDataMatrix() {
-        Office.select("bindings#myBinding").setDataAsync([['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
+        Office.select("bindings#myBinding").setDataAsync(
+            [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
             if (asyncResult.status == "failed") {
                 write('Error: ' + asyncResult.error.message);
             } else {
@@ -2711,13 +2748,14 @@ Office.Binding.setDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // In the writeBoundDataTable function in this example, the call to setDataAsync passes the data parameter as a TableData object
-    // (to write three columns and three rows), and specifies the data structure with the coercionType parameter as a "table".
+    // In the writeBoundDataTable function in this example, the call to setDataAsync passes the data parameter 
+    // as a TableData object (to write three columns and three rows), and specifies the data structure
+    // with the coercionType parameter as a "table".
 
     // In the updateTableData function, the call to setDataAsync again passes the data parameter as a TableData object,
-    // but as a single column with a new header and three rows, to update the values in the last column of the table created
-    // with the writeBoundDataTable function. The optional zero-based startColumn parameter is specified as 2 to replace the values
-    // in the third column of the table.
+    // but as a single column with a new header and three rows, to update the values in the last column 
+    // of the table created with the writeBoundDataTable function. The optional zero-based startColumn parameter 
+    // is specified as 2 to replace the values in the third column of the table.
     function writeBoundDataTable() {
         // Create a TableData object.
         var myTable = new Office.TableData();
@@ -2770,7 +2808,8 @@ Office.Bindings.addFromNamedItemAsync:
     // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
     // and assigns the binding's id as myMatrix.
     function bindNamedItem() {
-        Office.context.document.bindings.addFromNamedItemAsync("myRange", "matrix", {id:'myMatrix'}, function (result) {
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "myRange", "matrix", {id:'myMatrix'}, function (result) {
             if (result.status == 'succeeded'){
                 write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                 }
@@ -2787,7 +2826,8 @@ Office.Bindings.addFromNamedItemAsync:
     // The following example adds a binding to the Table1 named item in Excel as a "table" binding,
     // and assigns the binding's id as myTable.
     function bindNamedItem() {
-        Office.context.document.bindings.addFromNamedItemAsync("Table1", "table", {id:'myTable'}, function (result) {
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "Table1", "table", {id:'myTable'}, function (result) {
             if (result.status == 'succeeded'){
                 write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                 }
@@ -2822,8 +2862,11 @@ Office.Bindings.addFromNamedItemAsync:
 Office.Bindings.addFromPromptAsync:
   - |-
     function addBindingFromPrompt() {
-        Office.context.document.bindings.addFromPromptAsync(Office.BindingType.Text, { id: 'MyBinding', promptText: 'Select text to bind to.' }, function (asyncResult) {
-            write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+        Office.context.document.bindings.addFromPromptAsync(
+            Office.BindingType.Text, 
+            { id: 'MyBinding', promptText: 'Select text to bind to.' },
+            function (asyncResult) {
+                write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
         });
     }
     // Function that writes to a div with id='message' on the page.
@@ -2952,7 +2995,8 @@ Office.Context.officeTheme:
 Office.CustomXmlNode.baseName:
   - |-
     function showXmlNodeBaseNames() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -2969,7 +3013,8 @@ Office.CustomXmlNode.baseName:
 Office.CustomXmlNode.getNodesAsync:
   - |-
     function showXmlChildNodes() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -2988,7 +3033,8 @@ Office.CustomXmlNode.getNodesAsync:
 Office.CustomXmlNode.getNodeValueAsync:
   - |-
     function showXmlNodeValues() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3007,14 +3053,21 @@ Office.CustomXmlNode.getNodeValueAsync:
 Office.CustomXmlNode.getTextAsync:
   - |-
     // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-    Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
+    Office.context.document.customXmlParts.getByIdAsync(
+        "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
         
         // Access the XML part.
         var xmlPart = getByIdAsyncResult.value;
         
         // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-        xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
-            xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
+        xmlPart.namespaceManager.addNamespaceAsync(
+            'cp',
+            'http://schemas.openxmlformats.org/package/2006/metadata/core-properties',
+            function () {
+            xmlPart.namespaceManager.addNamespaceAsync(
+                'dc', 
+                'http://purl.org/dc/elements/1.1/', 
+                function () {
 
                 // Get XML nodes by using an Xpath expression. This results in a call to Word.
                 xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
@@ -3035,7 +3088,8 @@ Office.CustomXmlNode.getTextAsync:
 Office.CustomXmlNode.getXmlAsync:
   - |-
     function showXmlNodeInnerXml() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3054,7 +3108,8 @@ Office.CustomXmlNode.getXmlAsync:
 Office.CustomXmlNode.namespaceUri:
   - |-
     function showXmlNamespaceUri() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3071,7 +3126,8 @@ Office.CustomXmlNode.namespaceUri:
 Office.CustomXmlNode.nodeType:
   - |-
     function showXmlNodeType() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3088,7 +3144,8 @@ Office.CustomXmlNode.nodeType:
 Office.CustomXmlNode.setNodeValueAsync:
   - |-
     function setXmlNodeValue() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3108,26 +3165,38 @@ Office.CustomXmlNode.setTextAsync:
     // Learn how to set the text value of a node in a custom XML part from the following example.
 
     // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-    Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
+    Office.context.document.customXmlParts.getByIdAsync(
+        "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
+        function (getByIdAsyncResult) {
         
         // Access the XML part.
         var xmlPart = getByIdAsyncResult.value;
         
         // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-        xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
-            xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
+        xmlPart.namespaceManager.addNamespaceAsync(
+            'cp', 
+            'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', 
+            function () {
+            xmlPart.namespaceManager.addNamespaceAsync(
+                'dc', 
+                'http://purl.org/dc/elements/1.1/', 
+                function () {
 
                 // Get XML nodes by using an Xpath expression. This results in a call to the host.
                 xmlPart.getNodesAsync("/cp:coreProperties/dc:subject", function (getNodesAsyncResult) {
                     
-                    // Get the first node returned by using the Xpath expression. This will be the subject element in this example.
+                    // Get the first node returned by using the Xpath expression.
+                    // This will be the subject element in this example.
                     var subjectNode = getNodesAsyncResult.value[0];
                     
-                    // Set the text value of the subject node and use the asyncContext. This results in a call to the host. 
-                    // The results are logged to the browser console. 
-                    subjectNode.setTextAsync("newSubject", {asyncContext: "StateNormal"}, function (setTextAsyncResult) {
-                      console.log("The status of the call: " + setTextAsyncResult.status);
-                      console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
+                    // Set the text value of the subject node and use the asyncContext. 
+                    // This results in a call to the host.  The results are logged to the browser console.
+                    subjectNode.setTextAsync(
+                        "newSubject", 
+                        {asyncContext: "StateNormal"}, 
+                        function (setTextAsyncResult) {
+                            console.log("The status of the call: " + setTextAsyncResult.status);
+                            console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
                     });
                 });
             });
@@ -3136,7 +3205,8 @@ Office.CustomXmlNode.setTextAsync:
 Office.CustomXmlNode.setXmlAsync:
   - |-
     function setXmlNodeInnerXml() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3150,7 +3220,8 @@ Office.CustomXmlPart.addHandlerAsync:
   - |-
     // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
     function addNodeDeletedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
                 write("A node has been deleted.");
@@ -3164,7 +3235,8 @@ Office.CustomXmlPart.addHandlerAsync:
   - |-
     // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
     function addNodeInsertedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
                 write("A node has been inserted.");
@@ -3178,7 +3250,8 @@ Office.CustomXmlPart.addHandlerAsync:
   - |-
     // To add an event handler for the NodeReplaced event, use the addHandlerAsync method of the CustomXmlPart object.
     function addNodeReplacedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
                 write("A node has been replaced.");
@@ -3192,7 +3265,8 @@ Office.CustomXmlPart.addHandlerAsync:
 Office.CustomXmlPart.builtIn:
   - |-
     function showXMLPartBuiltIn() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             write(xmlPart.builtIn);
         });
@@ -3205,7 +3279,8 @@ Office.CustomXmlPart.builtIn:
 Office.CustomXmlPart.deleteAsync:
   - |-
     function deleteXMLPart() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.deleteAsync(function (eventArgs) {
                 write("The XML Part has been deleted.");
@@ -3219,7 +3294,8 @@ Office.CustomXmlPart.deleteAsync:
 Office.CustomXmlPart.getNodesAsync:
   - |-
     function showXmlNodeType() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
                 for (i = 0; i < nodeResults.value.length; i++) {
@@ -3236,7 +3312,8 @@ Office.CustomXmlPart.getNodesAsync:
 Office.CustomXmlPart.getXmlAsync:
   - |-
     function showXMLPartInnerXML() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getXmlAsync({}, function (eventArgs) {
                 write(eventArgs.value);
@@ -3250,7 +3327,8 @@ Office.CustomXmlPart.getXmlAsync:
 Office.CustomXmlPart.id:
   - |-
     function showXMLPartBuiltId() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             write(xmlPart.id);
         });
@@ -3262,7 +3340,8 @@ Office.CustomXmlPart.id:
 Office.CustomXmlPart.namespaceManager:
   - |-
     function setXMLPartNamespaceManagerNamespace() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
         });
@@ -3270,7 +3349,8 @@ Office.CustomXmlPart.namespaceManager:
 Office.CustomXmlPart.removeHandlerAsync:
   - |-
     function removeNodeInsertedEventHandler() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
             function (result) {
                 var xmlPart = result.value;
                 xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
@@ -3279,12 +3359,14 @@ Office.CustomXmlPart.removeHandlerAsync:
 Office.CustomXmlParts.addAsync:
   - |-
     function addXMLPart() {
-        Office.context.document.customXmlParts.addAsync('<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>', function (result) {
-            });
+        Office.context.document.customXmlParts.addAsync(
+            '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
+            function (result) {});
     }
 
     function addXMLPartandHandler() {
-        Office.context.document.customXmlParts.addAsync("<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
+        Office.context.document.customXmlParts.addAsync(
+            "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
             function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
                 function(a) {write(a.type)
                 },
@@ -3300,7 +3382,8 @@ Office.CustomXmlParts.addAsync:
 Office.CustomXmlParts.getByIdAsync:
   - |-
     function showXMLPartInnerXML() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
             xmlPart.getXmlAsync({}, function (eventArgs) {
                 write(eventArgs.value);
@@ -3314,8 +3397,10 @@ Office.CustomXmlParts.getByIdAsync:
 Office.CustomXmlParts.getByNamespaceAsync:
   - |-
     function showXMLPartsInNamespace() {
-        Office.context.document.customXmlParts.getByNamespaceAsync("http://tempuri.org", function (eventArgs) {
-            write("Found " + eventArgs.value.length + " parts with this namespace");
+        Office.context.document.customXmlParts.getByNamespaceAsync(
+            "http://tempuri.org", 
+            function (eventArgs) {
+                write("Found " + eventArgs.value.length + " parts with this namespace");
         }); 
     }
     // Function that writes to a div with id='message' on the page.
@@ -3666,7 +3751,8 @@ Office.Document.getFileAsync:
                 var myFile = result.value;
                 var sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-                // Now, you can call getSliceAsync to download the files, as described in the previous code segment (compressed format).
+                // Now, you can call getSliceAsync to download the files,
+                // as described in the previous code segment (compressed format).
                 
                 myFile.closeAsync();
             }
@@ -3679,7 +3765,8 @@ Office.Document.getFilePropertiesAsync:
   - |-
     // To read the URL of the current file, you need to write a callback function that returns the URL.
     // The following example shows how to:
-    // 1. Pass an anonymous callback function that returns the value of the file's URL to the callback parameter of the getFilePropertiesAsync method.
+    // 1. Pass an anonymous callback function that returns the value of the file's URL
+    //    to the callback parameter of the getFilePropertiesAsync method.
     // 2. Display the value on the add-in's page.
     function getFileUrl() {
         // Get the URL of the current file.
@@ -3717,7 +3804,8 @@ Office.Document.getSelectedDataAsync:
   - |-
     // To read the value of the current selection, you need to write a callback function that reads the selection.
     // The following example shows how to:
-    // 1. Pass an anonymous callback function that reads the value of the current selection to the callback parameter of the getSelectedDataAsync method.
+    // 1. Pass an anonymous callback function that reads the value of the current selection
+    //    to the callback parameter of the getSelectedDataAsync method.
     // 2. Read the selection as text, unformatted, and not filtered.
     // 3. Display the value on the add-in's page.
     function getText() {
@@ -3789,7 +3877,8 @@ Office.Document.goToByIdAsync:
     // The following example shows how to:
     // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
     // 2. Specify that binding as the binding to go to.
-    // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of the goToByIdAsync method.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
     // 4. Display the value on the add-in's page.
     function gotoBinding() {
         // Create a new table binding for the selected table.
@@ -3816,7 +3905,8 @@ Office.Document.goToByIdAsync:
     // Go to a table in a spreadsheet (Excel)
     // The following example shows how to:
     // 1. Specify a table by name as the table to go to.
-    // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of the goToByIdAsync method.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
     // 3. Display the value on the add-in's page.
     function goToTable() {
         Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
@@ -3833,8 +3923,10 @@ Office.Document.goToByIdAsync:
     // The following example shows how to:
     // 1. Get the id of the currently selected slides using the getSelectedDataAsync method.
     // 2. Specify the returned id as the slide to go to.
-    // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of the goToByIdAsync method.
-    // 4. Display the value of the stringified JSON object returned by asyncResult.value, which contains information about the selected slides, on the add-in's page.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 4. Display the value of the stringified JSON object returned by asyncResult.value,
+    //    which contains information about the selected slides, on the add-in's page.
     var firstSlideId = 0;
     function gotoSelectedSlide() {
         //Get currently selected slide's id
@@ -3861,7 +3953,8 @@ Office.Document.goToByIdAsync:
     // Go to slide by index (PowerPoint)
     // The following example shows how to:
     // 1. Specify the index of the first, last, previous, or next slide to go to.
-    // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of the goToByIdAsync method.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
     // 3. Display the value on the add-in's page.
     function goToSlideByIndex() {
         var goToFirst = Office.Index.First;
@@ -3992,8 +4085,8 @@ Office.Document.removeHandlerAsync:
     })();
 Office.Document.setSelectedDataAsync:
   - |-
-    // The following example sets the selected text or cell to "Hello World!", and if that fails, displays the value of the
-    // error.message property.
+    // The following example sets the selected text or cell to "Hello World!", 
+    // and if that fails, displays the value of the error.message property.
     function writeText() {
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
@@ -4009,11 +4102,14 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a selection.
-    // The following example writes data as an array of three rows of two columns, specifying the coercionType as "matrix"
-    // for that data structure, and if that fails, displays the value of the error.message property.
+    // Specifying the optional coercionType parameter lets you specify the kind of data you want to write
+    // to a selection. The following example writes data as an array of three rows of two columns, 
+    // specifying the coercionType as "matrix" for that data structure, and if that fails, 
+    // displays the value of the error.message property.
     function writeMatrix() {
-        Office.context.document.setSelectedDataAsync([["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]], {coercionType: Office.CoercionType.Matrix}
+        Office.context.document.setSelectedDataAsync(
+            [["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]],
+            {coercionType: Office.CoercionType.Matrix}
             function (asyncResult) {
                 var error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed){
@@ -4027,8 +4123,9 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // The following example writes data as a one column table with a header and four rows, specifying the coercionType as "table"
-    // for that data structure, and if that fails, displays the value of the error.message property.
+    // The following example writes data as a one column table with a header and four rows, 
+    // specifying the coercionType as "table" for that data structure, and if that fails, 
+    // displays the value of the error.message property.
     function writeTable() {
         // Build table.
         var myTable = new Office.TableData();
@@ -4050,13 +4147,14 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html" as shown
-    // in the following example, which uses HTML <b> tags to make "Hello" bold.
+    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html"
+    // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
     function writeHtmlData() {
-        Office.context.document.setSelectedDataAsync("<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                write('Error: ' + asyncResult.error.message);
-            }
+        Office.context.document.setSelectedDataAsync(
+            "<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    write('Error: ' + asyncResult.error.message);
+                }
         });
     }
 
@@ -4065,8 +4163,8 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType parameter
-    // as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+    // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
+    // parameter as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
     function insertPictureAtSelection(base64EncodedImageStr) {
 
         Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
@@ -4187,10 +4285,10 @@ Office.MatrixBinding.rowCount:
     }
 Office.Document.getMaxResourceIndexAsync:
   - |-
-    // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection of resources
-    // in the current project. Then it uses the returned value and the getResourceByIndexAsync method to get each resource GUID.
-    // The example assumes that your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body:
+    // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
+    // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
+    // method to get each resource GUID. The example assumes that your add-in has a reference to the 
+    // jQuery library and that the following page controls are defined in the content div in the page body:
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
@@ -4341,12 +4439,12 @@ Office.Document.getMaxTaskIndexAsync:
     })();
 Office.Document.getProjectFieldAsync:
   - |-
-    // The following code example gets the values of three specified fields for the active project, and then displays
-    // the values in the add-in.
-    // The example calls getProjectFieldAsync recursively, after the previous call returns successfully. It also tracks
-    // the calls to determine when all calls are sent.
-    // The example assumes your add-in has a reference to the jQuery library and that the following page control is defined
-    // in the content div in the page body:
+    // The following code example gets the values of three specified fields for the active project, 
+    // and then displays the values in the add-in.
+    // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
+    // It also tracks the calls to determine when all calls are sent.
+    // The example assumes your add-in has a reference to the jQuery library and that the 
+    // following page control is defined in the content div in the page body:
     // <span id="message"></span>
 
     (function () {
@@ -4364,7 +4462,9 @@ Office.Document.getProjectFieldAsync:
         // Get the specified fields for the active project.
         function getProjectInformation() {
             var fields =
-                [Office.ProjectProjectFields.Start, Office.ProjectProjectFields.Finish, Office.ProjectProjectFields.GUID];
+                [Office.ProjectProjectFields.Start, 
+                 Office.ProjectProjectFields.Finish, 
+                 Office.ProjectProjectFields.GUID];
             var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
             var index = 0; 
             getField();
@@ -4403,10 +4503,10 @@ Office.Document.getProjectFieldAsync:
     })();
 Office.Document.getResourceByIndexAsync:
   - |-
-    // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource collection,
-    // and then calls getResourceByIndexAsync to get the GUID for each resource.
-    // The example assumes that your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body:
+    // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource
+    // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
+    // The example assumes that your add-in has a reference to the jQuery library and that the following 
+    // page controls are defined in the content div in the page body:
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
@@ -4480,10 +4580,11 @@ Office.Document.getResourceByIndexAsync:
     })();
 Office.Document.getResourceFieldAsync:
   - |-
-    // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently selected
-    // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
-    // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
-    // defined in the content div in the page body:
+    // The following code example calls getSelectedResourceAsync to get the GUID of the resource
+    // that's currently selected in a resource view. Then it gets three resource field values by calling 
+    // getResourceFieldAsync recursively.
+    // The example assumes your add-in has a reference to the jQuery library and that the following 
+    // page controls are defined in the content div in the page body:
     // <input id="get-info" type="button" value="Get info" /><br />
     // <span id="message"></span>
 
@@ -4527,7 +4628,9 @@ Office.Document.getResourceFieldAsync:
         // Get the specified fields for the selected resource.
         function getResourceFields(resourceGuid) {
             var targetFields =
-                [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+                [Office.ProjectResourceFields.Name,
+                 Office.ProjectResourceFields.Units, 
+                 Office.ProjectResourceFields.BaseCalendar];
             var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
             var index = 0; 
             getField();
@@ -4567,8 +4670,9 @@ Office.Document.getResourceFieldAsync:
     })();
 Office.Document.getSelectedResourceAsync:
   - |-
-    // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently selected
-    // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
+    // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
+    // currently selected in a resource view. Then it gets three resource field values by calling 
+    // getResourceFieldAsync recursively.
     // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
     // defined in the content div in the page body:
     // <input id="get-info" type="button" value="Get info" /><br />
@@ -4614,7 +4718,9 @@ Office.Document.getSelectedResourceAsync:
         // Get the specified fields for the selected resource.
         function getResourceFields(resourceGuid) {
             var targetFields =
-                [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+                [Office.ProjectResourceFields.Name,
+                 Office.ProjectResourceFields.Units, 
+                 Office.ProjectResourceFields.BaseCalendar];
             var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
             var index = 0; 
             getField();
@@ -5325,7 +5431,8 @@ Office.TableBinding.setTableOptionsAsync:
   - |-
     // The following example shows how to:
     // 1. Create an object literal that specifies the table formatting options to update on the bound table.
-    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with formatting setting as the tableOptions parameter.
+    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object
+    //    with formatting setting as the tableOptions parameter.
     function updateTableFormatting(){
         var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 
@@ -5340,16 +5447,20 @@ Office.TableBinding.setFormatsAsync:
         function (asyncResult){});
     
     // Specifying multiple targets
-    // The setFormatsAsync method can support formatting multiple targets within the bound table in a single function call.
-    // To do that, you pass a list of objects in the cellFormat array for each target that you want to format.
-    // For example, the following line of code will set the font color of the first row yellow, and the fourth cell in the third row to have a white border and bold text.
+    // The setFormatsAsync method can support formatting multiple targets within the bound table in a 
+    // single function call. To do that, you pass a list of objects in the cellFormat array 
+    // for each target that you want to format.
+    // For example, the following line of code will set the font color of the first row yellow, 
+    // and the fourth cell in the third row to have a white border and bold text.
     Office.select("bindings#myBinding").setFormatsAsync(
         [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
         function (asyncResult){});
     
     // Additional remarks for Excel Online
-    // The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to cellFormat.
+    // The number of formatting groups passed to the cellFormat parameter can't exceed 100. 
+    // A single formatting group consists of a set of formatting applied to a specified range of cells. 
+    // For example, the following call passes two formatting groups to cellFormat.
     Office.select("bindings#myBinding").setFormatsAsync(
         [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
@@ -6076,7 +6187,8 @@ OneNote.Notebook.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+                // according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -6216,7 +6328,8 @@ OneNote.NotebookCollection.getByName:
         return context.sync()
             .then(function () {
     
-                // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                // Iterate through the collection or access items individually by index,
+                // for example: notebooks.items[0]
                 if (notebooks.items.length > 0) {
                     console.log("Notebook name: " + notebooks.items[0].name);
                     console.log("Notebook ID: " + notebooks.items[0].id);
@@ -6245,7 +6358,8 @@ OneNote.NotebookCollection.load:
         return context.sync()
             .then(function () {
     
-                // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                // Iterate through the collection or access items individually by index, 
+                // for example: notebooks.items[0]
                 $.each(notebooks.items, function(index, notebook) {
                     notebook.addSection("Biology");
                     notebook.addSection("Spanish");
@@ -6413,7 +6527,8 @@ OneNote.Page.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+                // according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -6916,7 +7031,9 @@ OneNote.ParagraphCollection.getItemAt:
         return context.sync()
             .then(function () {
                 // Write text from paragraph to console
-                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                console.log(
+                    "First Paragraph found with id : " + 
+                    firstParagraph.id + " and type " + firstParagraph.type);
             });
     })
     .catch(function(error) {
@@ -6944,7 +7061,9 @@ OneNote.ParagraphCollection.load:
             .then(function () {
                 var firstParagraph = paragraphs.items[0];
                 // Write text from first paragraph to console
-                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+                console.log(
+                    "First Paragraph found with id : " + 
+                    firstParagraph.id + " and type " + firstParagraph.type);
             });
     })
     .catch(function(error) {
@@ -6998,7 +7117,9 @@ OneNote.ParagraphCollection.load:
                 // Display all rich text paragraphs to the console
                 $.each(richTextParagraphs, function(index, richTextParagraph) {
                     var richText = richTextParagraph.richText;
-                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                    console.log(
+                        "Paragraph found with richtext content : " + 
+                        richText.text + " and richtext id : " + richText.id);
                 });
                 return context.sync();
             });
@@ -7055,7 +7176,9 @@ OneNote.RichText.load:
                 // Display all rich text paragraphs to the console
                 $.each(richTextParagraphs, function(index, richTextParagraph) {
                     var richText = richTextParagraph.richText;
-                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                    console.log(
+                        "Paragraph found with richtext content : " + 
+                        richText.text + " and richtext id : " + richText.id);
                 });
                 return context.sync();
             });
@@ -7190,7 +7313,8 @@ OneNote.Section.getRestApiId:
                 console.log("The REST API ID is " + restApiId.value);
                 // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
                 // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to the OneNote Development Blog.
+                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
+                // OneNote REST API according to the OneNote Development Blog.
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
@@ -7556,7 +7680,8 @@ OneNote.SectionGroupCollection.load:
         return context.sync()
             .then(function () {
                 
-                // Iterate through the collection or access items individually by index, for example: sectionGroups.items[0]
+                // Iterate through the collection or access items individually by index, 
+                // for example: sectionGroups.items[0]
                 $.each(sectionGroups.items, function(index, sectionGroup) {
                     console.log("Section group name: " + sectionGroup.name);  
                     console.log("Section group ID: " + sectionGroup.id);  
@@ -8293,7 +8418,11 @@ Office.Recurrence.getAsync:
     }
 
     // The following is an example of the results of the getAsync call.
-    Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject}, 
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
 Office.Recurrence.setAsync:
   - |-
     // The following example sets the recurrence pattern of an appointment series.
@@ -8303,11 +8432,16 @@ Office.Recurrence.setAsync:
     seriesTimeObject.setStartTime(10,30); 
     seriesTimeObject.setDuration(30);
 
-    var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue", "Thu"], "firstDayOfWeek": "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+    var pattern = {
+        "seriesTime": seriesTimeObject,
+        "type": "Weekly",
+        "properties": {"interval": 1, "days": ["Tue", "Thu"], "firstDayOfWeek": "Sun"},
+        "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
 
     Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
   
-    //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+    //Result: This created a recurring event from November 2, 2017 to December 2, 2017
+    //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RoamingSettings:
   - |-
     // Get the current value of the 'myKey' setting
@@ -8625,7 +8759,9 @@ Visio.HyperlinkCollection.load:
                 for(var i=0; i<shapeHyperlinks.items.length;i++)
                 {
                     var hyperlink = shapeHyperlinks.items[i];
-                    console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
+                    console.log(
+                        "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
+                        hyperlink.subAddress);
                 }
             });
     }).catch(function(error) {
@@ -8922,7 +9058,8 @@ Word.Body.clear:
         }
     });
 
-    // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
+    // The Silly stories add-in sample shows how the 
+    // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
 Word.Body.getHtml:
   - |-
@@ -9049,7 +9186,8 @@ Word.Body.insertHtml:
         var body = context.document.body;
     
         // Queue a commmand to insert HTML in to the beginning of the body.
-        body.insertHtml('<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
+        body.insertHtml(
+            '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -9464,7 +9602,9 @@ Word.ContentControl.insertFileFromBase64:
             }
             else {
                 // Queue a command to put HTML into the contents of the first content control.
-                contentControls.items[0].insertHtml('<strong>HTML content inserted into the content control.</strong>', 'Start');
+                contentControls.items[0].insertHtml(
+                    '<strong>HTML content inserted into the content control.</strong>',
+                    'Start');
             
                 // Synchronize the document state by executing the queued commands, 
                 // and return a promise to indicate task completion.
@@ -9819,7 +9959,9 @@ Word.ContentControlCollection.getByTag:
             if (contentControlsWithTag.items.length === 0) {
                 console.log("There isn't a content control with a tag of Customer-Address in this document.");
             } else {
-                console.log('The first content control with the tag of Customer-Address has this text: ' + contentControlsWithTag.items[0].text);
+                console.log(
+                    'The first content control with the tag of Customer-Address has this text: ' + 
+                    contentControlsWithTag.items[0].text);
             }
     
         });
@@ -9848,9 +9990,12 @@ Word.ContentControlCollection.getByTitle:
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             if (contentControlsWithTitle.items.length === 0) {
-                console.log("There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+                console.log(
+                    "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
             } else {
-                console.log("The first content control with the title of 'Enter Customer Address Here' has this text: " + contentControlsWithTitle.items[0].text);
+                console.log(
+                    "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
+                    contentControlsWithTitle.items[0].text);
             }
     
         });
@@ -9956,7 +10101,8 @@ Word.ContentControlCollection.load:
         }
     });
 
-    // The Silly stories add-in sample shows how the load method is used to load the content control collection with the tag and title properties.
+    // The Silly stories add-in sample shows how the load method is used
+    // to load the content control collection with the tag and title properties.
     // https://aka.ms/sillystorywordaddin
 Word.Document.getSelection:
   - |-
@@ -10757,7 +10903,8 @@ Word.Paragraph.select:
     });
 Word.ParagraphCollection.load:
   - |-
-    // This example shows how to get the paragraphs in the Word document along with their text and font size properties.
+    // This example shows how to get the paragraphs in the Word document
+    // along with their text and font size properties.
     // 
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

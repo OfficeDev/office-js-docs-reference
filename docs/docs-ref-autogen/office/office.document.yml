@@ -694,7 +694,8 @@ items:
                   var myFile = result.value;
                   var sliceCount = myFile.sliceCount;
                   app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-                  // Now, you can call getSliceAsync to download the files, as described in the previous code segment (compressed format).
+                  // Now, you can call getSliceAsync to download the files,
+                  // as described in the previous code segment (compressed format).
                   
                   myFile.closeAsync();
               }
@@ -766,8 +767,9 @@ items:
 
       // The following example shows how to:
 
-      // 1. Pass an anonymous callback function that returns the value of the file's URL to the callback parameter of
-      the getFilePropertiesAsync method.
+      // 1. Pass an anonymous callback function that returns the value of the file's URL
+
+      //    to the callback parameter of the getFilePropertiesAsync method.
 
       // 2. Display the value on the add-in's page.
 
@@ -832,16 +834,13 @@ items:
 
       ```javascript
 
-      // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection of
-      resources
+      // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
 
-      // in the current project. Then it uses the returned value and the getResourceByIndexAsync method to get each
-      resource GUID.
+      // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
 
-      // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
-      are
+      // method to get each resource GUID. The example assumes that your add-in has a reference to the 
 
-      // defined in the content div in the page body:
+      // jQuery library and that the following page controls are defined in the content div in the page body:
 
       // <input id="get-info" type="button" value="Get info" /><br />
 
@@ -1093,19 +1092,17 @@ items:
 
       ```javascript
 
-      // The following code example gets the values of three specified fields for the active project, and then displays
+      // The following code example gets the values of three specified fields for the active project, 
 
-      // the values in the add-in.
+      // and then displays the values in the add-in.
 
-      // The example calls getProjectFieldAsync recursively, after the previous call returns successfully. It also
-      tracks
+      // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
 
-      // the calls to determine when all calls are sent.
+      // It also tracks the calls to determine when all calls are sent.
 
-      // The example assumes your add-in has a reference to the jQuery library and that the following page control is
-      defined
+      // The example assumes your add-in has a reference to the jQuery library and that the 
 
-      // in the content div in the page body:
+      // following page control is defined in the content div in the page body:
 
       // <span id="message"></span>
 
@@ -1125,7 +1122,9 @@ items:
           // Get the specified fields for the active project.
           function getProjectInformation() {
               var fields =
-                  [Office.ProjectProjectFields.Start, Office.ProjectProjectFields.Finish, Office.ProjectProjectFields.GUID];
+                  [Office.ProjectProjectFields.Start, 
+                   Office.ProjectProjectFields.Finish, 
+                   Office.ProjectProjectFields.GUID];
               var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
               var index = 0; 
               getField();
@@ -1218,14 +1217,12 @@ items:
       ```javascript
 
       // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource
-      collection,
 
-      // and then calls getResourceByIndexAsync to get the GUID for each resource.
+      // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
 
-      // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
-      are
+      // The example assumes that your add-in has a reference to the jQuery library and that the following 
 
-      // defined in the content div in the page body:
+      // page controls are defined in the content div in the page body:
 
       // <input id="get-info" type="button" value="Get info" /><br />
 
@@ -1352,14 +1349,15 @@ items:
 
       ```javascript
 
-      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently
-      selected
+      // The following code example calls getSelectedResourceAsync to get the GUID of the resource
 
-      // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
+      // that's currently selected in a resource view. Then it gets three resource field values by calling 
 
-      // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
+      // getResourceFieldAsync recursively.
 
-      // defined in the content div in the page body:
+      // The example assumes your add-in has a reference to the jQuery library and that the following 
+
+      // page controls are defined in the content div in the page body:
 
       // <input id="get-info" type="button" value="Get info" /><br />
 
@@ -1406,7 +1404,9 @@ items:
           // Get the specified fields for the selected resource.
           function getResourceFields(resourceGuid) {
               var targetFields =
-                  [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+                  [Office.ProjectResourceFields.Name,
+                   Office.ProjectResourceFields.Units, 
+                   Office.ProjectResourceFields.BaseCalendar];
               var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
               var index = 0; 
               getField();
@@ -1564,8 +1564,9 @@ items:
 
       // The following example shows how to:
 
-      // 1. Pass an anonymous callback function that reads the value of the current selection to the callback parameter
-      of the getSelectedDataAsync method.
+      // 1. Pass an anonymous callback function that reads the value of the current selection
+
+      //    to the callback parameter of the getSelectedDataAsync method.
 
       // 2. Read the selection as text, unformatted, and not filtered.
 
@@ -1698,10 +1699,11 @@ items:
 
       ```javascript
 
-      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently
-      selected
+      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
 
-      // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
+      // currently selected in a resource view. Then it gets three resource field values by calling 
+
+      // getResourceFieldAsync recursively.
 
       // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
 
@@ -1752,7 +1754,9 @@ items:
           // Get the specified fields for the selected resource.
           function getResourceFields(resourceGuid) {
               var targetFields =
-                  [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+                  [Office.ProjectResourceFields.Name,
+                   Office.ProjectResourceFields.Units, 
+                   Office.ProjectResourceFields.BaseCalendar];
               var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
               var index = 0; 
               getField();
@@ -2531,8 +2535,9 @@ items:
 
       // 2. Specify that binding as the binding to go to.
 
-      // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
-      the goToByIdAsync method.
+      // 3. Pass an anonymous callback function that returns the status of the operation
+
+      //    to the callback parameter of the goToByIdAsync method.
 
       // 4. Display the value on the add-in's page.
 
@@ -2565,8 +2570,9 @@ items:
 
       // 1. Specify a table by name as the table to go to.
 
-      // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
-      the goToByIdAsync method.
+      // 2. Pass an anonymous callback function that returns the status of the operation
+
+      //    to the callback parameter of the goToByIdAsync method.
 
       // 3. Display the value on the add-in's page.
 
@@ -2590,11 +2596,13 @@ items:
 
       // 2. Specify the returned id as the slide to go to.
 
-      // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
-      the goToByIdAsync method.
+      // 3. Pass an anonymous callback function that returns the status of the operation
 
-      // 4. Display the value of the stringified JSON object returned by asyncResult.value, which contains information
-      about the selected slides, on the add-in's page.
+      //    to the callback parameter of the goToByIdAsync method.
+
+      // 4. Display the value of the stringified JSON object returned by asyncResult.value,
+
+      //    which contains information about the selected slides, on the add-in's page.
 
       var firstSlideId = 0;
 
@@ -2627,8 +2635,9 @@ items:
 
       // 1. Specify the index of the first, last, previous, or next slide to go to.
 
-      // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
-      the goToByIdAsync method.
+      // 2. Pass an anonymous callback function that returns the status of the operation
+
+      //    to the callback parameter of the goToByIdAsync method.
 
       // 3. Display the value on the add-in's page.
 
@@ -3153,10 +3162,9 @@ items:
 
       ```javascript
 
-      // The following example sets the selected text or cell to "Hello World!", and if that fails, displays the value
-      of the
+      // The following example sets the selected text or cell to "Hello World!", 
 
-      // error.message property.
+      // and if that fails, displays the value of the error.message property.
 
       function writeText() {
           Office.context.document.setSelectedDataAsync("Hello World!",
@@ -3176,16 +3184,18 @@ items:
       }
 
 
-      // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a
-      selection.
+      // Specifying the optional coercionType parameter lets you specify the kind of data you want to write
 
-      // The following example writes data as an array of three rows of two columns, specifying the coercionType as
-      "matrix"
+      // to a selection. The following example writes data as an array of three rows of two columns, 
 
-      // for that data structure, and if that fails, displays the value of the error.message property.
+      // specifying the coercionType as "matrix" for that data structure, and if that fails, 
+
+      // displays the value of the error.message property.
 
       function writeMatrix() {
-          Office.context.document.setSelectedDataAsync([["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]], {coercionType: Office.CoercionType.Matrix}
+          Office.context.document.setSelectedDataAsync(
+              [["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]],
+              {coercionType: Office.CoercionType.Matrix}
               function (asyncResult) {
                   var error = asyncResult.error;
                   if (asyncResult.status === Office.AsyncResultStatus.Failed){
@@ -3202,10 +3212,11 @@ items:
       }
 
 
-      // The following example writes data as a one column table with a header and four rows, specifying the
-      coercionType as "table"
+      // The following example writes data as a one column table with a header and four rows, 
 
-      // for that data structure, and if that fails, displays the value of the error.message property.
+      // specifying the coercionType as "table" for that data structure, and if that fails, 
+
+      // displays the value of the error.message property.
 
       function writeTable() {
           // Build table.
@@ -3231,16 +3242,16 @@ items:
       }
 
 
-      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html" as
-      shown
+      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html"
 
-      // in the following example, which uses HTML <b> tags to make "Hello" bold.
+      // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
 
       function writeHtmlData() {
-          Office.context.document.setSelectedDataAsync("<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  write('Error: ' + asyncResult.error.message);
-              }
+          Office.context.document.setSelectedDataAsync(
+              "<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      write('Error: ' + asyncResult.error.message);
+                  }
           });
       }
 
@@ -3253,9 +3264,8 @@ items:
 
 
       // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
-      parameter
 
-      // as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+      // parameter as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
 
       function insertPictureAtSelection(base64EncodedImageStr) {
 
