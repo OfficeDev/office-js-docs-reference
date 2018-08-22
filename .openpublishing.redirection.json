@@ -19,6 +19,10 @@
         {
             "source_path": "docs/docs-ref-autogen/word/word.error.md",
             "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.index.md",
+            "redirect_url": "/javascript/office/objectmodel/preview-requirement-set/outlook-requirement-set-preview"
         }
       ] 
 }
