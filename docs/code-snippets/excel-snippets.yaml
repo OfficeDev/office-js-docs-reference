@@ -84,7 +84,8 @@ Excel.Binding.load:
     });
 Excel.BindingCollection.getItem:
   - |-
-    // Create a table binding to monitor data changes in the table. When data is changed, the background color of the table will be changed to orange.
+    // Create a table binding to monitor data changes in the table. 
+    // When data is changed, the background color of the table will be changed to orange.
     function addEventHandler() {
         //Create Table1
     Excel.run(function (ctx) { 
@@ -97,13 +98,15 @@ Excel.BindingCollection.getItem:
         });
     });
         //Create a new table binding for Table1
-    Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+    Office.context.document.bindings.addFromNamedItemAsync(
+        "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
         if (asyncResult.status == "failed") {
             console.log("Action failed with error: " + asyncResult.error.message);
         }
         else {
             // If succeeded, then add event handler to the table binding.
-            Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+            Office.select("bindings#myBinding").addHandlerAsync(
+                Office.EventType.BindingDataChanged, onBindingDataChanged);
         }
     });
     }
@@ -208,7 +211,8 @@ Excel.Chart.getImage:
     });
 Excel.Chart.name:
   - |-
-    // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100 points to the top and left. 
+    // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
+    // Move Chart1 to 100 points to the top and left. 
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.name = "New Name";
@@ -335,7 +339,8 @@ Excel.ChartAxisTitle.load:
     });
 Excel.ChartCollection.add:
   - |-
-    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+    // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
     Excel.run(function (ctx) { 
         var rangeSelection = "A1:B4";
         var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -456,7 +461,7 @@ Excel.ChartFill.clear:
   - |-
     // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
     Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
                 console.log("Chart Major Gridlines Format Cleared");
@@ -567,7 +572,7 @@ Excel.ChartLineFormat.clear:
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
                 console.log("Chart Major Gridlines Format Cleared");
@@ -612,7 +617,8 @@ Excel.ChartPointsCollection.load:
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
-        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        var pointsCollection = 
+            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('items');
         return ctx.sync().then(function() {
             console.log("Points Collection loaded");
@@ -626,7 +632,8 @@ Excel.ChartPointsCollection.load:
   - |-
     // Get the number of points
     Excel.run(function (ctx) { 
-        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        var pointsCollection = 
+            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('count');
         return ctx.sync().then(function() {
             console.log("points: Count= " + pointsCollection.count);
@@ -842,7 +849,8 @@ Excel.CustomConditionalFormat.rule:
     });
 Excel.NamedItem.getRange:
   - |-
-    // Returns the Range object that is associated with the name. null if the name is not of the type Range.
+    // Returns the Range object that is associated with the name. 
+    // null if the name is not of the type Range.
     // Note: This API currently supports only the Workbook scoped items.
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -987,7 +995,8 @@ Excel.Range.getColumn:
     });
 Excel.Range.getEntireColumn:
   - |-
-    // Note: the grid properties of the Range (values, numberFormat, formulas) contains null since the Range in question is unbounded.
+    // Note: the grid properties of the Range (values, numberFormat, formulas) 
+    // contains null since the Range in question is unbounded.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -1005,7 +1014,9 @@ Excel.Range.getEntireColumn:
     });
 Excel.Range.getEntireRow:
   - |-
-    // Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", it's GetEntireRow is a range that represents rows "4:11").
+    // Gets an object that represents the entire row of the range 
+    // (for example, if the current range represents cells "B4:E11", 
+    // it's GetEntireRow is a range that represents rows "4:11").
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "D:F"; 
@@ -1026,7 +1037,8 @@ Excel.Range.getIntersection:
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+        var range = 
+            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
         range.load('address');
         return ctx.sync().then(function() {
             console.log(range.address); // prints Sheet1!D4:F6
@@ -1090,7 +1102,8 @@ Excel.Range.getOffsetRange:
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D4:F6";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+        var range = 
+            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
         range.load('address');
         return ctx.sync().then(function() {
             console.log(range.address); // prints Sheet1!H3:K5
@@ -2303,8 +2316,10 @@ Excel.WorksheetProtection.unprotect:
         }
     });
   - |-
-    // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a worksheet.
-    // To remove only a subset of WorksheetProtectionOptions use the protect() method and set the options you wish to remove to true.
+    // Unprotecting a worksheet with unprotect() will remove all 
+    // WorksheetProtectionOptions options applied to a worksheet.
+    // To remove only a subset of WorksheetProtectionOptions use the 
+    // protect() method and set the options you wish to remove to true.
     Excel.run(function(ctx) {
       var sheet = ctx.workbook.worksheets.getItem("Sheet1");
       sheet.protection.protect({
