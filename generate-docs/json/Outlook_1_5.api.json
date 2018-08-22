@@ -39,7 +39,7 @@
             },
             {
               "kind": "text",
-              "text": " dealing with apppointments."
+              "text": " dealing with appointments."
             },
             {
               "kind": "paragraph"
@@ -135,7 +135,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -1389,7 +1389,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -13367,7 +13367,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -14085,7 +14085,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -22535,7 +22535,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -24024,7 +24024,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [

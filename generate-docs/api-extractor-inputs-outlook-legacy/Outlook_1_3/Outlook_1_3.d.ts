@@ -1022,7 +1022,7 @@ export declare namespace Office {
         urls: string[];
     }
     /**
-     * The subclass of {@link Office.Item} dealing with apppointments.
+     * The subclass of {@link Office.Item} dealing with appointments.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -1210,7 +1210,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -1254,7 +1254,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;
         /**
@@ -1405,7 +1405,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -1429,7 +1429,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -2366,7 +2366,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -2410,7 +2410,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;
         /**
@@ -2563,7 +2563,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -2585,7 +2585,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -3384,7 +3384,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -3428,7 +3428,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;
         /**
@@ -3579,7 +3579,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -3601,7 +3601,7 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * [Api set: Mailbox 1.0]
+         * [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.

@@ -5378,7 +5378,7 @@
                   "text": "This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph."
                 }
               ],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -6316,7 +6316,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -6459,7 +6478,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -7826,7 +7864,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -8292,7 +8349,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -8659,7 +8735,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -9449,7 +9544,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -9877,7 +9991,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -10312,7 +10445,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -12338,7 +12490,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API."
+              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API. The current context exists as a property of Office. It is accessed using `Office.context`."
             }
           ],
           "remarks": [
@@ -15690,7 +15842,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -15788,7 +15959,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -15886,7 +16076,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -15984,7 +16193,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -16234,7 +16462,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -16344,7 +16591,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -16489,7 +16755,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17268,7 +17553,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17343,7 +17647,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17409,7 +17732,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17463,7 +17805,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17602,7 +17963,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17917,7 +18297,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -17978,7 +18377,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -18039,7 +18457,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -18357,7 +18794,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -18423,7 +18879,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -18489,7 +18964,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -18882,7 +19376,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -19926,7 +20439,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -20361,7 +20893,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -20838,7 +21389,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -21261,7 +21831,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -21477,7 +22066,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -21705,7 +22313,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -21926,7 +22553,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -22166,7 +22812,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -22382,7 +23047,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -23573,7 +24257,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -23782,7 +24485,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -23991,7 +24713,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24212,7 +24953,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24433,7 +25193,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24673,7 +25452,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24882,7 +25680,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -25115,7 +25932,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -25987,7 +26823,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -26439,7 +27294,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -26683,7 +27557,14 @@
                     },
                     {
                       "kind": "text",
-                      "text": "- An array of arrays (\"matrix\"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, you can pass an array like this: [[\"R1C1\", \"R1C2\"], [\"R2C1\", \"R2C2\"], [\"R3C1\", \"R3C2\"]]. To write a single column of three rows, pass an array like this: [[\"R1C1\"], [\"R2C1\"], [\"R3C1\"]] In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no other data will be overwritten, setting data to [[\"=SUM(A1:A5)\",\"=AVERAGE(A1:A5)\"]] will add those two formulas to the selection. Just as when setting a formula on a single cell as \"text\", you can't read the added formulas (or any pre-existing formulas) after they have been set - you can only read the formulas' results."
+                      "text": "- An array of arrays (\"matrix\"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, you can pass an array like this: [[\"R1C1\", \"R1C2\"], [\"R2C1\", \"R2C2\"], [\"R3C1\", \"R3C2\"]]. To write a single column of three rows, pass an array like this: [[\"R1C1\"], [\"R2C1\"], [\"R3C1\"]]"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no other data will be overwritten, setting data to [[\"=SUM(A1:A5)\",\"=AVERAGE(A1:A5)\"]] will add those two formulas to the selection. Just as when setting a formula on a single cell as \"text\", you can't read the added formulas (or any pre-existing formulas) after they have been set - you can only read the formulas' results."
                     },
                     {
                       "kind": "paragraph"
@@ -26714,7 +27595,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. The AsyncResult.value property always returns undefined because there is no object or data to retrieve."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". The AsyncResult.value property always returns undefined because there is no object or data to retrieve."
                     }
                   ],
                   "isOptional": true,
@@ -28377,7 +29277,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -30919,6 +31838,26 @@
               "remarks": [],
               "isBeta": false
             },
+            "AppointmentTimeChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when the appointment date or time of the selected series was changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
+            },
             "BindingDataChanged": {
               "kind": "enum value",
               "value": "",
@@ -31974,6 +32913,26 @@
               ],
               "remarks": [],
               "isBeta": false
+            },
+            "RecipientsChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when the recipient list of the selected item was changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
             },
             "RecurrencePatternChanged": {
               "kind": "enum value",
@@ -33241,7 +34200,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -33604,7 +34582,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -35242,7 +36239,7 @@
             },
             {
               "kind": "text",
-              "text": "In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` Doesn't select anything."
+              "text": "In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` doesn't select anything."
             },
             {
               "kind": "paragraph"
@@ -48794,7 +49791,26 @@
               "description": [
                 {
                   "kind": "text",
-                  "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                  "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.AsyncResult"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "AsyncResult"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isOptional": true,
@@ -50079,7 +51095,302 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information. <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table> **Support details** A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method. For more information about Office host application and server requirements, see"
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<table>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<th>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Property"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</th>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<th>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Use to..."
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</th>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "AsyncResult.value"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Always returns undefined because there is no data or object to retrieve when adding an event handler."
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "AsyncResult.status"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Determine the success or failure of the operation."
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "AsyncResult.error"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Access an Error object that provides error information if the operation failed."
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "AsyncResult.asyncContext"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "A user-defined item of any type that is returned in the AsyncResult object without being altered."
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</table>"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "**Support details**"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "For more information about Office host application and server requirements, see "
                     },
                     {
                       "kind": "web-link",
@@ -50808,7 +52119,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -52050,7 +53380,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -52483,7 +53832,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -54361,14 +55729,33 @@
             },
             {
               "kind": "text",
-              "text": "The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object."
+              "text": "The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync` method from the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Binding"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "Binding"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " object."
             },
             {
               "kind": "paragraph"
             },
             {
               "kind": "text",
-              "text": "For Excel, note that after you establish a table binding in Excel, each new row a user adds to the table is automatically included in the binding and rowCount increases."
+              "text": "For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically included in the binding and rowCount increases."
             }
           ],
           "isBeta": false,
@@ -54414,7 +55801,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -54769,7 +56175,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -54785,13 +56210,6 @@
                 }
               ],
               "remarks": [
-                {
-                  "kind": "text",
-                  "text": "To add one or more columns specifying the values of the data and headers, pass a TableData object as the data parameter. To add one or more columns specifying only the data, pass an array of arrays (\"matrix\") as the data parameter."
-                },
-                {
-                  "kind": "paragraph"
-                },
                 {
                   "kind": "text",
                   "text": "The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will report failure):"
@@ -55180,7 +56598,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -55775,7 +57212,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -56175,7 +57631,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -56554,7 +58029,33 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this newly inserted table (for example, by using the addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online. - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted)."
+                  "text": "When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this newly inserted table (for example, by using the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Bindings"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Bindings"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": ".addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted)."
                 },
                 {
                   "kind": "paragraph"
@@ -56946,7 +58447,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -57993,7 +59513,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -59695,7 +61234,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Display an error/progress/input screen from a ShowTaspane or ExecuteAction command."
+                  "text": "- Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command."
                 },
                 {
                   "kind": "paragraph"
@@ -60255,43 +61794,6 @@
                 {
                   "kind": "text",
                   "text": "Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "openBrowserWindow": {
-              "kind": "method",
-              "signature": "openBrowserWindow(url: string): void;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "url": {
-                  "name": "url",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The full URL to be opened including protocol (e.g., https), and port number, if any."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Opens a browser window and loads the specified URL."
                 }
               ],
               "remarks": [],

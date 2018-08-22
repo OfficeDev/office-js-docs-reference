@@ -17,6 +17,7 @@ items:
     package: outlook
     children:
       - outlook.Office.ItemCompose.addFileAttachmentAsync
+      - outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
       - outlook.Office.ItemCompose.addItemAttachmentAsync
       - outlook.Office.ItemCompose.close
       - outlook.Office.ItemCompose.getInitializationContextAsync
@@ -93,8 +94,74 @@ items:
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. inInline: If true, indicates that the
+            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item
+      in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
+    fullName: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: base64File
+          description: The base64 encoded content of an image or file to be added to an email or event.
+          type:
+            - string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
+            attachment will be shown inline in the message body and should not be displayed in the attachment list.
           type:
             - office.Office.AsyncContextOptions
         - id: callback
@@ -181,9 +248,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
-            a description of the error.
+            of type<!-- -->Office.AsyncResult<!-- -->. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.close
@@ -266,9 +333,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value
-            property as a string. If there is no initialization context, the asyncResult object will contain an Error
-            object with its code property set to 9020 and its name property set to GenericResponseError.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. On success, the initialization data is provided in the
+            asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
+            contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.getSelectedDataAsync
@@ -284,7 +352,7 @@ items:
       that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
 
 
-      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -311,7 +379,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.removeAttachmentAsync
@@ -376,8 +444,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.saveAsync
@@ -455,8 +523,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.setSelectedDataAsync
@@ -526,8 +594,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
+            property will contain an error code with the reason for the failure.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.subject

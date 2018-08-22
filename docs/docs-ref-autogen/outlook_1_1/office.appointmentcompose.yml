@@ -22,7 +22,6 @@ items:
       - Outlook_1_1.Office.AppointmentCompose.dateTimeCreated
       - Outlook_1_1.Office.AppointmentCompose.dateTimeModifed
       - Outlook_1_1.Office.AppointmentCompose.end
-      - Outlook_1_1.Office.AppointmentCompose.getSelectedDataAsync
       - Outlook_1_1.Office.AppointmentCompose.itemType
       - Outlook_1_1.Office.AppointmentCompose.loadCustomPropertiesAsync
       - Outlook_1_1.Office.AppointmentCompose.location
@@ -99,7 +98,7 @@ items:
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. inInline: If true, indicates that the
+            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
             - office.Office.AsyncContextOptions
@@ -297,58 +296,6 @@ items:
       return:
         type:
           - Time
-  - uid: Outlook_1_1.Office.AppointmentCompose.getSelectedDataAsync
-    summary: >-
-      Asynchronously returns selected data from the subject or body of a message.
-
-
-      If there is no selection but the cursor is in the body or subject, the method returns null for the selected data.
-      If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-
-
-      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
-      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-
-
-      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
-      Organizer</td></tr></table>
-    name: 'getSelectedDataAsync(coerciontype, options, callback)'
-    fullName: Outlook_1_1.Office.AppointmentCompose.getSelectedDataAsync
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
-        AsyncResult) => void): void;
-      return:
-        type:
-          - void
-        description: The selected data as a string with format determined by coercionType.
-      parameters:
-        - id: coerciontype
-          description: ''
-          type:
-            - office.Office.CoercionType
-        - id: options
-          description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
-          type:
-            - office.Office.AsyncContextOptions
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
-          type:
-            - '(result: AsyncResult) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.

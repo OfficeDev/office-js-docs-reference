@@ -389,7 +389,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.bindings
@@ -555,7 +557,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getFileAsync
@@ -723,7 +727,9 @@ items:
           type:
             - office.Office.GetFileOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
@@ -796,7 +802,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getMaxResourceIndexAsync
@@ -927,7 +935,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getMaxTaskIndexAsync
@@ -1056,7 +1066,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getProjectFieldAsync
@@ -1175,7 +1187,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getResourceByIndexAsync
@@ -1311,7 +1325,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getResourceFieldAsync
@@ -1457,7 +1473,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedDataAsync
@@ -1653,7 +1671,9 @@ items:
           type:
             - office.Office.GetSelectedDataOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
@@ -1789,7 +1809,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
@@ -1906,7 +1928,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedViewAsync
@@ -1997,7 +2021,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskAsync
@@ -2122,7 +2148,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskByIndexAsync
@@ -2259,7 +2287,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskFieldAsync
@@ -2403,7 +2433,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getWSSUrlAsync
@@ -2439,7 +2471,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.goToByIdAsync
@@ -2642,7 +2676,9 @@ items:
           type:
             - office.Office.GoToByIdOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.mode
@@ -2870,7 +2906,9 @@ items:
           type:
             - office.Office.RemoveHandlerOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setResourceFieldAsync
@@ -3018,7 +3056,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setSelectedDataAsync
@@ -3268,11 +3308,14 @@ items:
             - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data
             to three rows in two columns, you can pass an array like this: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\],
             \["R3C1", "R3C2"\]\]. To write a single column of three rows, pass an array like this: \[\["R1C1"\],
-            \["R2C1"\], \["R3C1"\]\] In Excel, you can also specify data as an array of arrays that contains valid
-            formulas to add them to the selected cells. For example if no other data will be overwritten, setting data
-            to \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas to the selection. Just as when
-            setting a formula on a single cell as "text", you can't read the added formulas (or any pre-existing
-            formulas) after they have been set - you can only read the formulas' results.
+            \["R2C1"\], \["R3C1"\]\]
+
+
+            In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the
+            selected cells. For example if no other data will be overwritten, setting data to
+            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas to the selection. Just as when setting a
+            formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after
+            they have been set - you can only read the formulas' results.
 
 
             - A TableData object: A table with headers will be inserted. In Excel, if you specify formulas in the
@@ -3289,8 +3332,9 @@ items:
             - office.Office.SetSelectedDataOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
-            The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always
+            returns undefined because there is no object or data to retrieve.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setTaskFieldAsync
@@ -3438,7 +3482,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.settings

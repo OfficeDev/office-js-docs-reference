@@ -838,7 +838,7 @@ export declare namespace Office {
         urls: string[];
     }
     /**
-     * The subclass of {@link Office.Item} dealing with apppointments.
+     * The subclass of {@link Office.Item} dealing with appointments.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -1014,7 +1014,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -1058,7 +1058,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;
         /**
@@ -1184,52 +1184,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param options - An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;
-         /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -1917,7 +1871,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -1961,7 +1915,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;
         /**
@@ -2088,52 +2042,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param options - An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -2693,7 +2601,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
@@ -2737,7 +2645,7 @@ export declare namespace Office {
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;
         /**
@@ -2863,52 +2771,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously returns selected data from the subject or body of a message.
-         *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
-         *
-         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @returns
-         * The selected data as a string with format determined by coercionType.
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
-         *
-         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
-         * @param options - An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *

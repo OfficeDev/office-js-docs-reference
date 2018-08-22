@@ -219,7 +219,7 @@ export declare namespace Office {
         resolve<T>(value: T | PromiseLike<T>): Promise<T>;
 
         /**
-         * Creates a new resolved promise .
+         * Creates a new resolved promise.
          * @returns A resolved promise.
          */
         resolve(): Promise<void>;
@@ -232,9 +232,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -251,21 +253,26 @@ export declare namespace Office {
     /**
      * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
      * 
-     * The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
+     * The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value that specifies how 
+     * initialization occurred. A task pane or content add-in can be initialized in two ways:
      * 
-     *  - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office host application, or from Insert add-in dialog box.
+     *  - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office 
+     * host application, or from Insert add-in dialog box.
      * 
      *  - The user opened a document that already contains the add-in.
      * 
-     * *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason` enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
+     * *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason` enumeration value for task pane 
+     * and content add-ins. It does not return a value for Outlook add-ins.
      * 
      * @remarks
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this method.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -282,9 +289,13 @@ export declare namespace Office {
      */
     export function initialize(reason: InitializationReason): void;
     /**
-    * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise will wait until the Office host is ready to accept API calls.
-    * Note that though this API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call the callback and resolve the promise with "null" for both the host and platform.
-    * @param callback - An optional callback method, that will receive the host and platform info. Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
+    * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
+    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can 
+    * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call 
+    * the callback and resolve the promise with "null" for both the host and platform.
+    * 
+    * @param callback - An optional callback method, that will receive the host and platform info. 
+    *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
     * @returns A Promise that contains the host and platform info, once initialization is completed.
     */
     export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
@@ -295,9 +306,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this method.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -323,9 +336,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -355,9 +370,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -384,9 +401,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -437,9 +456,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -486,19 +507,24 @@ export declare namespace Office {
         * @remarks
         * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
         *
-        * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access from the `callback` function's only parameter.
+        * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access 
+        * from the `callback` function's only parameter.
         */
         export interface AsyncResult {
         /**
-        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. 
+        * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed 
+        * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
         *
         * @remarks
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -519,9 +545,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -542,9 +570,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -562,16 +592,19 @@ export declare namespace Office {
         * Gets the payload or content of this asynchronous operation, if any.
         * 
         * @remarks
-        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
+        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the 
+        * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
         *
         * Note: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. 
         * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -588,6 +621,7 @@ export declare namespace Office {
     }
     /**
      * Represents the runtime environment of the add-in and provides access to key objects of the API. 
+     * The current context exists as a property of Office. It is accessed using `Office.context`.
      *
      * @remarks 
      * <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>
@@ -601,13 +635,17 @@ export declare namespace Office {
         * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
         * 
         * @remarks
-        * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running on the Windows desktop or for Office Online in the browser do allow such links. If you want the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
+        * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running on 
+        * the Windows desktop or for Office Online in the browser do allow such links. If you want the UI of your add-in to provide a link to an 
+        * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -621,15 +659,18 @@ export declare namespace Office {
         * Gets the locale (language) specified by the user for editing the document or item.
         * 
         * @remarks
-        * The `contentLanguage` value reflects the **Editing Language** setting specified with **File > Options > Language** in the Office host application.
+        * The `contentLanguage` value reflects the **Editing Language** setting specified with **File > Options > Language** in the Office host 
+        * application.
         * 
         * In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -654,7 +695,8 @@ export declare namespace Office {
         * 
         * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
         * 
-        * The `displayLanguage` value reflects the current **Display Language** setting specified with **File > Options > Language** in the Office host application.
+        * The `displayLanguage` value reflects the current **Display Language** setting specified with **File > Options > Language** in the Office 
+        * host application.
         * 
         * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
         * 
@@ -662,9 +704,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -685,9 +729,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -742,7 +788,8 @@ export declare namespace Office {
         /**
          * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
          *
-         * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to that add-in when it is running from any host client application used to access that mailbox.
+         * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to 
+         * that add-in when it is running from any host client application used to access that mailbox.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -753,16 +800,20 @@ export declare namespace Office {
          */
         roamingSettings: Office.RoamingSettings;
         /**
-        * Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch device, such as an iPad; false otherwise.
+        * Specifies whether the platform and device allows touch interaction. 
+        * True if the add-in is running on a touch device, such as an iPad; false otherwise.
         * 
         * @remarks
-        * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+        * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and 
+        * size and spacing of elements in your add-in's UI to accommodate touch interactions.
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -782,13 +833,16 @@ export declare namespace Office {
      * Provides specific information about an error that occurred during an asynchronous data operation.
      *
      * @remarks
-     * The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous data operation, such as the setSelectedDataAsync method of the Document object.
+     * The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous 
+     * data operation, such as the setSelectedDataAsync method of the Document object.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -817,7 +871,8 @@ export declare namespace Office {
     }
     export namespace AddinCommands {
         /**
-         * The event object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify which button was clicked and to signal the host that it has completed its processing.
+         * The event object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify 
+         * which button was clicked and to signal the host that it has completed its processing.
          * 
          * @remarks
          * 
@@ -834,9 +889,11 @@ export declare namespace Office {
              * 
              * **Support details**
              * 
-             * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+             * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+             * An empty cell indicates that the Office host application doesn't support this property.
              * 
-             * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+             * For more information about Office host application and server requirements, see 
+             * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
              * 
              * *Supported hosts, by platform*
              *  <table>
@@ -848,7 +905,10 @@ export declare namespace Office {
             /**
              * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.
              * 
-             * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook will warn that a function is still executing.
+             * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an 
+             * xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can 
+             * clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook 
+             * will warn that a function is still executing.
              * 
              * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.
              * 
@@ -862,9 +922,11 @@ export declare namespace Office {
              * 
              * **Support details**
              * 
-             * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+             * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+             * An empty cell indicates that the Office host application doesn't support this method.
              * 
-             * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+             * For more information about Office host application and server requirements, see 
+             * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
              * 
              * *Supported hosts, by platform*
              *  <table>
@@ -876,7 +938,9 @@ export declare namespace Office {
              *  </table>
              * 
              * @param options - Optional. An object literal that contains one or more of the following properties.
-             *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
+             *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, 
+             *                    this value indicates of the handled event should continue execution or be canceled. 
+             *                    For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
              */
             completed(options?: any): void;
         }
@@ -887,7 +951,8 @@ export declare namespace Office {
         export interface Source {
 
             /**
-             * The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of your Office Add-in as a GUID.
+             * The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of your Office Add-in 
+             * as a GUID.
              */
             id: string;
         }
@@ -895,7 +960,8 @@ export declare namespace Office {
     /**
      * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins.
      * 
-     * Visit "{@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}" for more information.
+     * Visit "{@link https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Dialog API in your Office Add-ins}" 
+     * for more information.
      */
     export interface UI {
         /**
@@ -906,10 +972,12 @@ export declare namespace Office {
         *
         * <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr></table>
         * 
-        * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 for Outlook. 
-        * For more on how to specify a requirement set in your manifest, see {@link https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+        * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
+        * for Outlook. For more on how to specify a requirement set in your manifest, see 
+        * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
         *
-        * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to other domains.
+        * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
+        * other domains.
         *
         * Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page.
         * 
@@ -917,7 +985,8 @@ export declare namespace Office {
         *
         * The following design considerations apply to dialog boxes:
         *
-        * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in Commands (custom ribbon buttons or menu items).
+        * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in 
+        * Commands (custom ribbon buttons or menu items).
         *
         * - Every dialog box can be moved and resized by the user.
         *
@@ -929,13 +998,15 @@ export declare namespace Office {
         *
         * - Display authentication pages to collect user credentials.
         *
-        * - Display an error/progress/input screen from a ShowTaspane or ExecuteAction command.
+        * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
         *
         * - Temporarily increase the surface area that a user has available to complete a task.
         *
         * Do not use a dialog box to interact with a document. Use a task pane instead.
         * 
-        * For a design pattern that you can use to create a dialog box, see {@link https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md | Client Dialog}  in the Office Add-in UX Design Patterns repository on GitHub.
+        * For a design pattern that you can use to create a dialog box, see 
+        * {@link https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md | Client Dialog}  in the Office 
+        * Add-in UX Design Patterns repository on GitHub.
         * 
         * **displayDialogAsync Errors**:
         * 
@@ -958,7 +1029,8 @@ export declare namespace Office {
         *   </tr>
         * </table>
         * 
-        * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the following information.
+        * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the 
+        * following information.
         * 
         * <table>
         *   <tr>
@@ -1003,16 +1075,12 @@ export declare namespace Office {
          *
          * - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
          *
-         * - Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the taskpane supports pinning and was pinned by the user, it will be un-pinned.
+         * - Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. 
+         * If the taskpane supports pinning and was pinned by the user, it will be un-pinned.
          *
          * - Called from a module extension: No effect.
          */
         closeContainer(): void;
-        /**
-         * Opens a browser window and loads the specified URL. 
-         * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
-         */
-        openBrowserWindow(url: string): void;
     }
 
     /**
@@ -1040,7 +1108,10 @@ export declare namespace Office {
          */
         width?: number,
         /**
-         * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office Online clients, and is ignored by other platforms. If false (default), the dialog will be displayed as a new browser window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the dialog will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
+         * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office Online clients, and is 
+         * ignored by other platforms. If false (default), the dialog will be displayed as a new browser window (pop-up). Recommended for 
+         * authentication pages that cannot be displayed in an IFrame. If true, the dialog will be displayed as a floating overlay with an IFrame. 
+         * This is best for user experience and performance.
          */
         displayInIframe?: boolean
         /**
@@ -1049,11 +1120,14 @@ export declare namespace Office {
         asyncContext?: any
     }
     /**
-     * The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain and access the add-in token. Indirectly, enable the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
+     * The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain and access the add-in token. 
+     * Indirectly, enable the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
      */
     export interface Auth {
         /**
-        * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Allows add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
+        * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Allows add-ins to identify users. 
+        * Server side code can use this token to access Microsoft Graph for the add-in's web application by using the 
+        * {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
         * 
         * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
         *
@@ -1063,10 +1137,13 @@ export declare namespace Office {
         * <tr><td>Requirement sets</td><td>{@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements
 | IdentityAPI}</td></tr></table>
         *
-        * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
+        * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 
+        * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
         *
         * @param options - Optional. Accepts an AuthOptions object to define sign-on behaviors.
         * @param callback - Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+        * 
+        * @beta
         */
         getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult) => void): void;
 
@@ -1076,7 +1153,8 @@ export declare namespace Office {
      */
     export interface AuthOptions {
         /**
-         * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked.
+         * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has 
+         * been revoked.
          */
         forceConsent?: boolean,
         /**
@@ -1084,7 +1162,11 @@ export declare namespace Office {
          */
         forceAddAccount?: boolean,
         /**
-         * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a "second try" call of getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the authChallenge option.
+         * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor 
+         * authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development 
+         * time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a "second try" 
+         * call of getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the string that should 
+         * be used with the authChallenge option.
          */
         authChallenge?: string
         /**
@@ -1130,7 +1212,8 @@ export declare namespace Office {
          */
         coercionType?: Office.CoercionType | string
         /**
-         * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value. Default: Unformatted data.
+         * Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value. 
+         * Default: Unformatted data.
          */
         valueFormat?: Office.ValueFormat | string
         /**
@@ -1150,7 +1233,8 @@ export declare namespace Office {
         */
         columnCount?: number
         /**
-        * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data. Use Office.FilterType or text value.
+        * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data. 
+        * Use Office.FilterType or text value.
         */
         filterType?: Office.FilterType | string
         /**
@@ -1170,7 +1254,8 @@ export declare namespace Office {
      */
     export interface SetBindingDataOptions {
         /**
-         * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. 
+         * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of 
+         * columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. 
          * 
          * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
          */
@@ -1188,15 +1273,18 @@ export declare namespace Office {
         */
         rows?: string
         /**
-        * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set starting in the first row.
+        * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set 
+        * starting in the first row.
         */
         startRow?: number
         /**
-        * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in the first column.
+        * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in 
+        * the first column.
         */
         startColumn?: number
         /**
-        * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
+        * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. 
+        * Example: `{bandedRows: true,  filterButton: false}`
         */
         tableOptions?: object
         /**
@@ -1209,7 +1297,8 @@ export declare namespace Office {
      */
     export interface RangeFormatConfiguration {
         /**
-         * Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
+         * Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: {row: 3, column: 4} specifies 
+         * the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
          */
          cells: Office.Table | RangeCoordinates
         /**
@@ -1218,7 +1307,8 @@ export declare namespace Office {
          format: object
     }
     /**
-     * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
+     * Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: {row: 3, column: 4} specifies the cell in the 3rd 
+     * (zero-based) row in the 4th (zero-based) column.
      */
     export interface RangeCoordinates {
         /**
@@ -1265,11 +1355,14 @@ export declare namespace Office {
          */
         id?: string
         /**
-         * Specifies the string to display in the prompt UI that tells the user what to select. Limited to 200 characters. If no promptText argument is passed, "Please make a selection" is displayed.
+         * Specifies the string to display in the prompt UI that tells the user what to select. Limited to 200 characters. 
+         * If no promptText argument is passed, "Please make a selection" is displayed.
          */
         promptText?: string
         /**
-         * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. The headers provided in the TableData object specify the labels used in the field selection UI. Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+         * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
+         * The headers provided in the TableData object specify the labels used in the field selection UI. 
+         * Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
          */
         sampleData?: Office.TableData
         /**
@@ -1316,7 +1409,8 @@ export declare namespace Office {
          */
         valueFormat?: Office.ValueFormat | string
         /**
-         * Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data. Use {@link Office.FilterType} or string equivalent. This parameter is ignored in Word documents.
+         * Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data. 
+         * Use {@link Office.FilterType} or string equivalent. This parameter is ignored in Word documents.
          */
         filterType?: Office.FilterType | string
         /**
@@ -1330,15 +1424,19 @@ export declare namespace Office {
      * @remarks
      * The behavior caused by the {@link Office.SelectionMode | options.selectionMode} option varies by host:
      *
-     * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. `Office.SelectionMode.None` for text bindings, selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
+     * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. `Office.SelectionMode.None` for text bindings, 
+     * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
      *
-     * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` Doesn't select anything.
+     * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. 
+     * `Office.SelectionMode.None` doesn't select anything.
      *
-     * In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
+     * In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text bindings, moves the cursor to 
+     * the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
      */
     export interface GoToByIdOptions {
         /**
-         * Specifies whether the location specified by the id parameter is selected (highlighted). Use {@link Office.SelectionMode} or string equivalent. See the Remarks for more information.
+         * Specifies whether the location specified by the id parameter is selected (highlighted). 
+         * Use {@link Office.SelectionMode} or string equivalent. See the Remarks for more information.
          */
         selectionMode?: Office.SelectionMode | string
         /**
@@ -1351,7 +1449,8 @@ export declare namespace Office {
      */
     export interface SetSelectedDataOptions {
         /**
-         * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. 
+         * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of 
+         * columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. 
          * 
          * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
          */
@@ -1361,23 +1460,30 @@ export declare namespace Office {
          */
         coercionType?: Office.CoercionType | string
         /**
-         * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
+         * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. 
+         * Example: `{bandedRows: true,  filterButton: false}`
          */
         tableOptions?: object
         /**
-        * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+        * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its 
+        * relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
         */
         imageTop?: number
         /**
-        * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly. If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+        * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image 
+        * will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly. 
+        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
         */
         imageWidth?: number
         /**
-        * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+        * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and 
+        * its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
         */
         imageLeft?: number
         /**
-        * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly. If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+        * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image 
+        * will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly. 
+        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
         */
         imageHeight?: number
         /**
@@ -1401,15 +1507,19 @@ export declare namespace Office {
     /**
      * Provides access to the properties for Office theme colors.
      *
-     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File > Office Account > Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.
+     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File > 
+     * Office Account > Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and 
+     * task pane add-ins.
      *
      * @remarks
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that these properties are supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that these properties are supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1465,15 +1575,17 @@ export declare namespace Office {
     /**
      * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
      * @param expression - The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
-     * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+     * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
      * 
      * @remarks
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this method.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1491,9 +1603,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1517,9 +1631,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1535,7 +1651,8 @@ export declare namespace Office {
          */
         Text,
         /**
-         * Tabular data without a header row. Data is returned as an array of arrays, for example in this form: [[row1column1, row1column2],[row2column1, row2column2]]
+         * Tabular data without a header row. Data is returned as an array of arrays, for example in this form: 
+         * [[row1column1, row1column2],[row2column1, row2column2]]
          */
         Matrix,
         /**
@@ -1553,9 +1670,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1574,7 +1693,8 @@ export declare namespace Office {
          */
         Text,
         /**
-         * Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of  string values in two columns would be: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]].
+         * Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of 
+         * characters. For example, three rows of  string values in two columns would be: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]].
          *
          * Note: Only applies to data in Excel and Word.
          */
@@ -1598,9 +1718,11 @@ export declare namespace Office {
          */
         Ooxml,
         /**
-         * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example, `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
+         * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example, 
+         * `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
          * 
-         * Note: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current slide or selected range of slides.
+         * Note: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current 
+         * slide or selected range of slides.
          */
         SlideRange,
         /**
@@ -1618,9 +1740,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1649,9 +1773,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1692,7 +1818,8 @@ export declare namespace Office {
     /**
      * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
      * 
-     * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.
+     * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
+     * `Office.EventType.ViewSelectionChanged` event types.
      * 
      * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
      *
@@ -1700,9 +1827,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1720,9 +1849,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this enumeration.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -1732,6 +1863,14 @@ export declare namespace Office {
          */
         ActiveViewChanged,
         /**
+         * Triggers when the appointment date or time of the selected series was changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        AppointmentTimeChanged,
+        /**
          * Occurs when data within the binding is changed. 
          * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
@@ -1740,9 +1879,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this enumeration.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -1754,17 +1895,18 @@ export declare namespace Office {
          */
         BindingDataChanged,
         /**
-         * Occurs when the selection is changed within the binding.
-         * To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of the Binding object. 
-         * The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
+         * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
+         * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this enumeration.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -1788,9 +1930,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+         * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this enumeration.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -1819,6 +1963,14 @@ export declare namespace Office {
          */
         NodeReplaced,
         /**
+         * Triggers when the recipient list of the selected item was changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        RecipientsChanged,
+        /**
          * Triggers when the recurrence pattern of the selected series was changed in Outlook.
          * 
          * [Api set: Mailbox Preview]
@@ -1835,9 +1987,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -1866,9 +2020,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1899,9 +2055,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1928,9 +2086,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -1974,9 +2134,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2009,9 +2171,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2036,14 +2200,17 @@ export declare namespace Office {
      * Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
      *
      * @remarks
-     * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the host application will have its formatting preserved. 
-     * If the valueFormat parameter is specified as "unformatted", a date will be returned in its underlying sequential serial number form.
+     * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the 
+     * host application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its 
+     * underlying sequential serial number form.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2072,13 +2239,19 @@ export declare namespace Office {
     *
     * The Binding object exposes the functionality possessed by all bindings regardless of type.
     *
-    * The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding: {@link Office.MatrixBinding}, {@link Office.TableBinding}, or {@link Office.TextBinding}. All three of these objects inherit the getDataAsync and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the id and type properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix- and table-specific features, such as counting the number of rows and columns.
+    * The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding: 
+    * {@link Office.MatrixBinding}, {@link Office.TableBinding}, or {@link Office.TextBinding}. All three of these objects inherit the getDataAsync 
+    * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the id and type 
+    * properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix- 
+    * and table-specific features, such as counting the number of rows and columns.
     * 
     * **Support details**
     * 
-    * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+    * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+    * An empty cell indicates that the Office host application doesn't support this interface.
     * 
-    * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+    * For more information about Office host application and server requirements, see 
+    * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
     * 
     * *Supported hosts, by platform*
     *  <table>
@@ -2104,7 +2277,8 @@ export declare namespace Office {
         */
         type: Office.BindingType;
         /**
-         * Adds an event handler to the object for the specified {@link Office.EventType}. Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
+         * Adds an event handler to the object for the specified {@link Office.EventType}. Supported EventTypes are 
+         * `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
          *
          * @remarks
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
@@ -2121,7 +2295,8 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
          *
-         * When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
+         * When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, 
+         * startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
          *
          * @param options - Provides options for how to get the data in a binding.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -2135,7 +2310,7 @@ export declare namespace Office {
          *
          * @param eventType - The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`.
          * @param options - Provides options to determine which event handler or handlers are removed.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2145,7 +2320,8 @@ export declare namespace Office {
          *
          * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
          * 
-         * The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as described in the following table.
+         * The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as 
+         * described in the following table.
          * 
          * <table>
          *   <tr>
@@ -2166,7 +2342,8 @@ export declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the binding as follows:
+         * Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the 
+         * binding as follows:
          * 
          * <table>
          *   <tr>
@@ -2216,13 +2393,16 @@ export declare namespace Office {
          * 
          *  - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
          * 
-         *  - The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.
+         *  - The number of formatting groups passed to the cellFormat parameter can't exceed 100. 
+         * A single formatting group consists of a set of formatting applied to a specified range of cells.
          * 
          * In all other cases, an error is returned.
          * 
-         * The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and startColumn parameters are specified, and they specify a valid range.
+         * The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and startColumn parameters are 
+         * specified, and they specify a valid range.
          * 
-         * In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object to return the following 
+         * information.
          * 
          * <table>
          *   <tr>
@@ -2261,7 +2441,7 @@ export declare namespace Office {
          *
          * @param options - Provides options for how to set the data in a binding.
          *
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2300,7 +2480,9 @@ export declare namespace Office {
          * 
          * If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned. 
          * 
-         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
+         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is 
+         * returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property 
+         * to work correctly.
          */
         columnCount: number;
         /**
@@ -2308,7 +2490,9 @@ export declare namespace Office {
          * 
          * If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned. 
          * 
-         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
+         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is 
+         * returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property 
+         * to work correctly.
          */
         rowCount: number;
         /**
@@ -2316,7 +2500,9 @@ export declare namespace Office {
          * 
          * If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding are returned. 
          * 
-         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
+         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is 
+         * returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property 
+         * to work correctly.
          */
         startColumn: number;
         /**
@@ -2324,7 +2510,9 @@ export declare namespace Office {
          * 
          * If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding are returned. 
          * 
-         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
+         * For Word, this property will work only for bindings of {@link Office.BindingType} "table". If the binding is of type "matrix", null is 
+         * returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property 
+         * to work correctly.
          */
         startRow: number;
         /**
@@ -2344,9 +2532,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2365,21 +2555,29 @@ export declare namespace Office {
          *
          * For Excel, the itemName parameter can refer to a named range or a table.
          *
-         * By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second table you add, and so on. To assign a meaningful name for a table in the Excel UI, use the Table Name property on the Table Tools | Design tab of the ribbon.
+         * By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second table you add, and so on. 
+         * To assign a meaningful name for a table in the Excel UI, use the Table Name property on the Table Tools | Design tab of the ribbon.
          *
-         *     Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of the table in this format: "Sheet1!Table1"
+         *     Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
+         * the table in this format: "Sheet1!Table1"
          *
-         * For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other than the Rich Text content control).
+         * For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other 
+         * than the Rich Text content control).
          *
-         * By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after inserting a Rich Text content control from the Controls group on the Developer tab of the ribbon, use the Properties command in the Controls group to display the Content Control Properties dialog box. Then set the Title property of the content control to the name you want to reference from your code.
+         * By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after inserting a Rich Text content 
+         * control from the Controls group on the Developer tab of the ribbon, use the Properties command in the Controls group to display the Content 
+         * Control Properties dialog box. Then set the Title property of the content control to the name you want to reference from your code.
          *
-         *     Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
+         *     Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
+         * these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
          *
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2391,7 +2589,7 @@ export declare namespace Office {
          * @param itemName - Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
          * @param bindingType - The {@link Office.BindingType} for the data. The method returns null if the selected object cannot be coerced into the specified type.
          * @param options - Provides options for configuring the binding that is created.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2400,13 +2598,16 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
          *
-         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. The method fails if the specified selection cannot be bound.
+         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. 
+         * The method fails if the specified selection cannot be bound.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2415,9 +2616,10 @@ export declare namespace Office {
          *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          *
-         * @param bindingType - Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be coerced into the specified type.
+         * @param bindingType - Specifies the type of the binding object to create. Required. 
+         *                    Returns null if the selected object cannot be coerced into the specified type.
          * @param options - Provides options for configuring the prompt and identifying the binding that is created.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2428,14 +2630,18 @@ export declare namespace Office {
          *
          * Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied id.
          *
-         * Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter. 
-         * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to reestablish the binding with a new type.
+         * Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that 
+         * binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter. 
+         * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and 
+         * then call the addFromSelectionAsync method to reestablish the binding with a new type.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2445,9 +2651,10 @@ export declare namespace Office {
          *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          *
-         * @param bindingType - Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be coerced into the specified type.
+         * @param bindingType - Specifies the type of the binding object to create. Required. 
+         *                    Returns null if the selected object cannot be coerced into the specified type.
          * @param options - Provides options for configuring the prompt and identifying the binding that is created.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2458,9 +2665,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2471,7 +2680,7 @@ export declare namespace Office {
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2484,9 +2693,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2498,7 +2709,7 @@ export declare namespace Office {
          *
          * @param id - Specifies the unique name of the binding object. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
           */
         getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2511,9 +2722,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2525,7 +2738,7 @@ export declare namespace Office {
          *
          * @param id - Specifies the unique name to be used to identify the binding object. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2537,9 +2750,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2577,7 +2792,7 @@ export declare namespace Office {
          *
          * @param xPath - The XPath expression that specifies the nodes to get. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2587,7 +2802,7 @@ export declare namespace Office {
          * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2597,7 +2812,7 @@ export declare namespace Office {
          * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2607,7 +2822,7 @@ export declare namespace Office {
          * <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2618,7 +2833,7 @@ export declare namespace Office {
          *
          * @param value - The value to be set on the node
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2631,7 +2846,7 @@ export declare namespace Office {
          *
          * @param text - Required. The text value of the XML node.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2642,7 +2857,7 @@ export declare namespace Office {
          *
          * @param xml - The XML to be set on the node
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2654,9 +2869,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2685,10 +2902,12 @@ export declare namespace Office {
          *
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
-         * @param eventType - Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
-         * @param handler - The event handler function to add, whose only parameter is of type {@link Office.NodeDeletedEventArgs}, {@link Office.NodeInsertedEventArgs}, or {@link Office.NodeReplacedEventArgs}
+         * @param eventType - Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as 
+         *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+         * @param handler - The event handler function to add, whose only parameter is of type {@link Office.NodeDeletedEventArgs}, 
+         *                {@link Office.NodeInsertedEventArgs}, or {@link Office.NodeReplacedEventArgs}
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2697,7 +2916,7 @@ export declare namespace Office {
          * @remarks
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2707,7 +2926,7 @@ export declare namespace Office {
          *
          * @param xPath - An XPath expression that specifies the nodes you want returned. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2716,7 +2935,7 @@ export declare namespace Office {
          * @remarks
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2724,10 +2943,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * @param eventType - Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+         * @param eventType - Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
+         *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
          * @param handler - The name of the handler to remove.
          * @param options - Provides options to determine which event handler or handlers are removed.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2739,9 +2959,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2761,7 +2983,8 @@ export declare namespace Office {
         /**
          * Gets the node which was just deleted from the {@link Office.CustomXmlPart} object.
          * 
-         * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
+         * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in 
+         * that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
          */
         oldNode: CustomXmlNode;
     }
@@ -2773,9 +2996,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2802,9 +3027,11 @@ export declare namespace Office {
      * @remarks
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2826,7 +3053,8 @@ export declare namespace Office {
         /**
          * Gets the node which was just deleted (replaced) from the CustomXmlPart object.
          * 
-         * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
+         * Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in 
+         * that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
          */
         oldNode: CustomXmlNode;
     }
@@ -2839,9 +3067,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2855,7 +3085,7 @@ export declare namespace Office {
          *
          * @param xml - The XML to add to the newly created custom XML part.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2863,7 +3093,7 @@ export declare namespace Office {
          *
          * @param id - The GUID of the custom XML part, including opening and closing braces.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2871,7 +3101,7 @@ export declare namespace Office {
          *
          * @param ns - The namespace URI.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2884,9 +3114,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -2904,7 +3136,7 @@ export declare namespace Office {
          * @param prefix - Specifies the prefix to add to the prefix mapping list. Required.
          * @param ns - Specifies the namespace URI to assign to the newly added prefix. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2912,11 +3144,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one added or used by the data store internally, in which case it will return an error.
+         * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one 
+         * added or used by the data store internally, in which case it will return an error.
          *
          * @param prefix - TSpecifies the prefix to get the namespace for. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2924,11 +3157,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the supplied namespace.
+         * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in 
+         * the namespace manager, the method returns the first prefix that matches the supplied namespace.
          *
          * @param ns - Specifies the namespace to get the prefix for. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
     }
@@ -2943,13 +3177,16 @@ export declare namespace Office {
          * Gets an object that provides access to the bindings defined in the document.
          *
          * @remarks
-         * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current document or worksheet, use `Office.context.document` in your script.
+         * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
+         * document or worksheet, use `Office.context.document` in your script.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2967,9 +3204,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -2985,9 +3224,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3006,9 +3247,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3027,9 +3270,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this property.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3051,9 +3296,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3064,10 +3311,11 @@ export declare namespace Office {
          *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          *
-         * @param eventType - For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`, or the corresponding text value of this enumeration.
+         * @param eventType - For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
+         *                  `Office.EventType.Document.ActiveViewChanged`, or the corresponding text value of this enumeration.
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DocumentSelectionChangedEventArgs}. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3080,9 +3328,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3093,18 +3343,22 @@ export declare namespace Office {
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
-         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
+         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is supported up to 65536 (64 KB). 
+         * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
          *
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
          *
-         * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 65536 (64 KB).
+         * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up 
+         * to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 
+         * 65536 (64 KB).
          *
-         * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with the host:
+         * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
+         * the host:
          *
          * Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
          *
@@ -3116,9 +3370,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3130,7 +3386,7 @@ export declare namespace Office {
          *
          * @param fileType - The format in which the file will be returned
          * @param options - Provides options for setting the size of slices that the document will be divided into.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3143,9 +3399,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3156,7 +3414,7 @@ export declare namespace Office {
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
         */
         getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3165,7 +3423,8 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
          * 
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return 
+         * the following information.
          * 
          * <table>
          *   <tr>
@@ -3225,9 +3484,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3243,7 +3504,7 @@ export declare namespace Office {
          * 
          * @param options - Provides options for customizing what data is returned and how it is formatted.
          * 
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getSelectedDataAsync(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3256,17 +3517,22 @@ export declare namespace Office {
          *
          * The behavior caused by the selectionMode option varies by host:
          *
-         * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings, selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
+         * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings, 
+         * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
          *
-         * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` Doesn't select anything.
+         * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` Doesn't 
+         * select anything.
          *
-         * In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
+         * In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text bindings, moves the cursor 
+         * to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3279,7 +3545,7 @@ export declare namespace Office {
          * @param id - The identifier of the object or location to go to.
          * @param goToType - The type of the location to go to.
          * @param options - Provides options for whether to select the location that is navigated to.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3290,9 +3556,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3304,7 +3572,7 @@ export declare namespace Office {
          *
          * @param eventType - The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
          * @param options - Provides options to determine which event handler or handlers are removed.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -3375,9 +3643,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3393,16 +3663,28 @@ export declare namespace Office {
          * If the value passed for `data` is:
          * 
          * - A string: Plain text or anything that can be coerced to a string will be inserted. 
-         * In Excel, you can also specify data as a valid formula to add that formula to the selected cell. For example, setting data to "=SUM(A1:A5)" will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Document.getSelectedDataAsync method on the selected cell to read its data, the method can return only the data displayed in the cell (the formula's result).
+         * In Excel, you can also specify data as a valid formula to add that formula to the selected cell. For example, setting data to "=SUM(A1:A5)" 
+         * will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added 
+         * formula (or any pre-existing formula) from the bound cell. If you call the Document.getSelectedDataAsync method on the selected cell to 
+         * read its data, the method can return only the data displayed in the cell (the formula's result).
          * 
-         * - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, you can pass an array like this: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]. To write a single column of three rows, pass an array like this: [["R1C1"], ["R2C1"], ["R3C1"]]
-         * In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no other data will be overwritten, setting data to [["=SUM(A1:A5)","=AVERAGE(A1:A5)"]] will add those two formulas to the selection. Just as when setting a formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after they have been set - you can only read the formulas' results.
+         * - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, 
+         * you can pass an array like this: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]. To write a single column of three rows, pass an 
+         * array like this: [["R1C1"], ["R2C1"], ["R3C1"]]
+         * 
+         * In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no 
+         * other data will be overwritten, setting data to [["=SUM(A1:A5)","=AVERAGE(A1:A5)"]] will add those two formulas to the selection. Just as 
+         * when setting a formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after they have been 
+         * set - you can only read the formulas' results.
          * 
          * - A TableData object: A table with headers will be inserted.
-         * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and specify the coercionType as Microsoft.Office.Matrix or "matrix".
+         * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to 
+         * the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to 
+         * write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and 
+         * specify the coercionType as Microsoft.Office.Matrix or "matrix".
          * 
          * @param options - Provides options for how to insert data to the selection.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. 
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}. 
          * The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
          */
         setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;
@@ -3410,15 +3692,17 @@ export declare namespace Office {
          * Project documents only. Get Project field (Ex. ProjectWebAccessURL).
          * @param fieldId - Project level fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3432,15 +3716,17 @@ export declare namespace Office {
          * @param resourceId - Either a string or value of the Resource Id.
          * @param fieldId - Resource Fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3452,15 +3738,17 @@ export declare namespace Office {
         /**
          * Project documents only. Get the current selected Resource's Id.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3472,15 +3760,17 @@ export declare namespace Office {
         /**
          * Project documents only. Get the current selected Task's Id.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3492,15 +3782,17 @@ export declare namespace Office {
         /**
          * Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3513,15 +3805,17 @@ export declare namespace Office {
          * Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
          * @param taskId - Either a string or value of the Task Id.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3535,15 +3829,17 @@ export declare namespace Office {
          * @param taskId - Either a string or value of the Task Id.
          * @param fieldId - Task Fields.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3555,15 +3851,17 @@ export declare namespace Office {
         /**
          * Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3578,15 +3876,17 @@ export declare namespace Office {
          * Important: This API works only in Project 2016 on Windows desktop.
          * 
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3601,15 +3901,17 @@ export declare namespace Office {
          * Important: This API works only in Project 2016 on Windows desktop.
          * 
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3625,15 +3927,17 @@ export declare namespace Office {
          * 
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3649,15 +3953,17 @@ export declare namespace Office {
          * 
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3675,15 +3981,17 @@ export declare namespace Office {
          * @param fieldId - Resource Fields.
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3701,15 +4009,17 @@ export declare namespace Office {
          * @param fieldId - Task Fields.
          * @param fieldValue - Value of the target field.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * @remarks
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3740,9 +4050,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -3770,9 +4082,11 @@ export declare namespace Office {
          * 
          * <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
          * 
-         * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync method to close the file when you are finished working with it.
+         * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync 
+         * method to close the file when you are finished working with it.
          * 
-         * In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following 
+         * information.
          * 
          * <table>
          *   <tr>
@@ -3797,7 +4111,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         closeAsync(callback?: (result: AsyncResult) => void): void;
         /**
@@ -3806,7 +4120,8 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
          * 
-         * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following 
+         * information.
          * 
          * <table>
          *   <tr>
@@ -3832,7 +4147,7 @@ export declare namespace Office {
          * </table>
          * 
          * @param sliceIndex - Specifies the zero-based index of the slice to be retrieved. Required.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;
     }
@@ -3852,9 +4167,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -3896,14 +4213,17 @@ export declare namespace Office {
      *
      * The name of a setting is a string, while the value can be a string, number, boolean, null, object, or array.
      *
-     * The Settings object is automatically loaded as part of the Document object, and is available by calling the settings property of that object when the add-in is activated. 
+     * The Settings object is automatically loaded as part of the Document object, and is available by calling the settings property of that object 
+     * when the add-in is activated. 
      * The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings in the document.
      */
     export interface Settings {
         /**
          * Adds an event handler for the settingsChanged event.
          *
-         * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+         * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
+         * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
+         * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
          *
          * @remarks
          *
@@ -3914,7 +4234,7 @@ export declare namespace Office {
          * @param eventType - Specifies the type of event to add. Required.
          * @param handler - The event handler function to add. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
          * <table>
          *   <tr>
@@ -3941,9 +4261,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3960,9 +4282,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -3984,12 +4308,14 @@ export declare namespace Office {
          * 
          * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
          * 
-         * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. 
-         * Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. 
-         * This can happen whenever an instance of the add-in calls the Settings.saveAsync method to persist all of that user's settings to the document. 
-         * Calling the refreshAsync method from the event handler for the settingsChanged event of the add-in will refresh the settings values for all users.
+         * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against 
+         * the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user 
+         * opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the 
+         * Settings.saveAsync method to persist all of that user's settings to the document. Calling the refreshAsync method from the event handler 
+         * for the settingsChanged event of the add-in will refresh the settings values for all users.
          *
-         * In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following 
+         * information.
          * 
          * <table>
          *   <tr>
@@ -4016,9 +4342,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4029,13 +4357,15 @@ export declare namespace Office {
          *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          *
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         refreshAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Removes the specified setting.
          *
-         * Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method.
+         * Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of 
+         * the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must 
+         * call the Settings.saveAsync method.
          *
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
@@ -4044,9 +4374,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4067,17 +4399,22 @@ export declare namespace Office {
          *
          * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
          * 
-         * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType will be removed.
+         * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType 
+         * will be removed.
          * 
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback 
+         * function's only parameter.
          * 
-         * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the 
+         * following information.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4089,18 +4426,21 @@ export declare namespace Office {
          *
          * @param eventType - Specifies the type of event to remove. Required.
          * @param options - Provides options to determine which event handler or handlers are removed.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;
         /**
          * Persists the in-memory copy of the settings property bag in the document.
          * 
          * @remarks
-         * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. 
-         * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
+         * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the 
+         * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
+         * available the next time the add-in is used, use the saveAsync method.
          *
-         * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. 
-         * The refreshAsync method is only useful in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to all instances.
+         * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
+         * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful 
+         * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to 
+         * all instances.
          * 
          * <table>
          *   <tr>
@@ -4127,9 +4467,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4141,26 +4483,31 @@ export declare namespace Office {
          *  </table>
          * 
          * @param options - Provides options for saving settings.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult) => void): void;
         /**
          * Sets or creates the specified setting.
          *
          * Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. 
-         * To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document.
+         * To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point 
+         * after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in 
+         * the document.
          *
          * @remarks
          * <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
          * 
-         * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. 
-         * After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.
+         * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name 
+         * in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as 
+         * the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4186,9 +4533,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -4199,7 +4548,8 @@ export declare namespace Office {
      */
     export interface Slice {
         /**
-         * Gets the raw data of the file slice in `Office.FileType.Text` ("text") or `Office.FileType.Compressed` ("compressed") format as specified by the fileType parameter of the call to the Document.getFileAsync method.
+         * Gets the raw data of the file slice in `Office.FileType.Text` ("text") or `Office.FileType.Compressed` ("compressed") format as specified 
+         * by the fileType parameter of the call to the Document.getFileAsync method.
          *
          * @remarks
          * 
@@ -4221,9 +4571,11 @@ export declare namespace Office {
      * @remarks
      * <table><tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
      *
-     * The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object.
+     * The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync` method from the 
+     * {@link Office.Binding} object.
      *
-     * For Excel, note that after you establish a table binding in Excel, each new row a user adds to the table is automatically included in the binding and rowCount increases.
+     * For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically included in the binding and 
+     * rowCount increases.
      */
     export interface TableBinding extends Binding {
         /**
@@ -4233,9 +4585,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this property.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -4253,9 +4607,11 @@ export declare namespace Office {
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this property.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -4270,20 +4626,27 @@ export declare namespace Office {
         * Gets the number of rows in the TableBinding, as an integer value.
         *
         * @remarks
-        * When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this newly inserted table (for example, by using the addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online.
+        * When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host 
+        * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
+        * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
+        * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online.
+        * 
         * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
         *
         * - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
         *
-        * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty strings.
+        * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
+        * strings.
         *
         * In content add-ins for Access, for performance reasons the rowCount property always returns -1.
         * 
         * **Support details**
         * 
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this property.
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this property.
         * 
-        * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
         * 
         * *Supported hosts, by platform*
         *  <table>
@@ -4299,23 +4662,30 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * To add one or more columns specifying the values of the data and headers, pass a TableData object as the data parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data parameter.
+         * To add one or more columns specifying the values of the data and headers, pass a TableData object as the data parameter. To add one or more 
+         * columns specifying only the data, pass an array of arrays ("matrix") as the data parameter.
          *
-         * The success or failure of an addColumnsAsync operation is atomic. That is, the entire add columns operation must succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will report failure):
+         * The success or failure of an addColumnsAsync operation is atomic. That is, the entire add columns operation must succeed, or it will be 
+         * completely rolled back (and the AsyncResult.status property returned to the callback will report failure):
          *
-         *  - Each row in the array you pass as the data argument must have the same number of rows as the table being updated. If not, the entire operation will fail.
+         *  - Each row in the array you pass as the data argument must have the same number of rows as the table being updated. If not, the entire 
+         * operation will fail.
          *
-         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s). If any row or cell fails to be set for any reason, the entire operation will fail.
+         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s). If any row or cell 
+         * fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in a single call to this method.
+         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * a single call to this method.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
         * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4326,7 +4696,7 @@ export declare namespace Office {
          *
          * @param tableData - An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4334,23 +4704,27 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * To add one or more columns specifying the values of the data and headers, pass a TableData object as the data parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data parameter.
+         * The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must succeed, or it will be 
+         * completely rolled back (and the AsyncResult.status property returned to the callback will report failure):
          *
-         * The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will report failure):
+         *  - Each row in the array you pass as the data argument must have the same number of columns as the table being updated. If not, the entire 
+         * operation will fail.
          *
-         *  - Each row in the array you pass as the data argument must have the same number of columns as the table being updated. If not, the entire operation will fail.
-         *
-         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows(s). If any column or cell fails to be set for any reason, the entire operation will fail.
+         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows(s). If any column or 
+         * cell fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in a single call to this method.
+         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * a single call to this method.
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4362,7 +4736,7 @@ export declare namespace Office {
          *
          * @param rows - An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4374,9 +4748,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4387,7 +4763,7 @@ export declare namespace Office {
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4398,9 +4774,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4409,7 +4787,7 @@ export declare namespace Office {
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4417,7 +4795,7 @@ export declare namespace Office {
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4428,7 +4806,8 @@ export declare namespace Office {
          * **Specifying the cellFormat parameter**
          * 
          * Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background, alignment, and so on. 
-         * The value you pass as the cellFormat parameter is an array that contains a list of one or more JavaScript objects that specify which cells to target (`cells:`) and the formats (`format:`) to apply to them.
+         * The value you pass as the cellFormat parameter is an array that contains a list of one or more JavaScript objects that specify which cells 
+         * to target (`cells:`) and the formats (`format:`) to apply to them.
          * 
          * Each JavaScript object in the cellFormat array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
          * 
@@ -4467,9 +4846,11 @@ export declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel (Right-click > Format Cells or Home > Format > Format Cells).
+         * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel 
+         * (Right-click > Format Cells or Home > Format > Format Cells).
          * 
-         * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The property name specifies the name of the formatting property to set, and value specifies the property value. 
+         * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The 
+         * property name specifies the name of the formatting property to set, and value specifies the property value. 
          * You can specify multiple values for a given format, such as both a font's color and size. 
          * 
          * Here's three `format:` property value examples:
@@ -4495,9 +4876,11 @@ export declare namespace Office {
          * 
          * For more detail, see how to {@link https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
          * 
-         * To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
+         * To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the 
+         * `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
          * 
-         * Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and `TableBinding.setDataAsync` methods only works to set formatting when writing data the first time. 
+         * Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and `TableBinding.setDataAsync` methods only works 
+         * to set formatting when writing data the first time. 
          * To make formatting changes after writing data, use the following methods:
          * 
          *  - To update cell formatting, such as font color and style, use the `TableBinding.setFormatsAsync` method (this method).
@@ -4506,9 +4889,11 @@ export declare namespace Office {
          * 
          *  - To clear formatting, use the `TableBinding.clearFormats` method.
          * 
-         * For more details and examples, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | How to format tables in add-ins for Excel}.
+         * For more details and examples, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | How to format tables in add-ins for Excel}.
          * 
-         * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following 
+         * information.
          * 
          * <table>
          *   <tr>
@@ -4535,9 +4920,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4547,7 +4934,7 @@ export declare namespace Office {
          *
          * @param cellFormat - An array that contains one or more JavaScript objects that specify which cells to target and the formatting to apply to them.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
         setFormatsAsync(cellFormat?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -4585,9 +4972,11 @@ export declare namespace Office {
          * 
          * **Support details**
          * 
-         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this method.
+         * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
+         * An empty cell indicates that the Office host application doesn't support this method.
          * 
-         * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         * For more information about Office host application and server requirements, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
@@ -4597,7 +4986,7 @@ export declare namespace Office {
          *
          * @param tableOptions - An object literal containing a list of property name-value pairs that define the table options to apply.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          * 
 
          */
@@ -4622,9 +5011,11 @@ export declare namespace Office {
          *
          * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
          * 
-         * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers for a two-column table you would set the header property to [['header1', 'header2']].
+         * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers 
+         * for a two-column table you would set the header property to [['header1', 'header2']].
          *
-         * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results occur when your code executes:
+         * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results 
+         * occur when your code executes:
          *
          * - If you insert a new table, the default column headers for the table are created.
          *
@@ -4632,16 +5023,19 @@ export declare namespace Office {
          */
         headers: any[];
         /**
-         * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an empty array ``, if there are no rows.
+         * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an empty array ``, if there are 
+         * no rows.
          * 
          * @remarks
          * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
          *
          * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
          * 
-         * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
+         * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of 
+         * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
          *
-         * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur when your code executes:
+         * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur 
+         * when your code executes:
          *
          * - If you insert a new table, a blank row will be inserted.
          *
@@ -4650,15 +5044,18 @@ export declare namespace Office {
         rows: any[][];
     }
     /**
-     * Specifies enumerated values for the `cells` property in the cellFormat parameter of {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
+     * Specifies enumerated values for the `cells` property in the cellFormat parameter of 
+     * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
      *
      * @remarks
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -4686,13 +5083,16 @@ export declare namespace Office {
      * @remarks
      * <table><tr><td>Requirement Sets</td><td>TextBindings</td></tr></table>
      *
-     * The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding} object. It does not implement any additional properties or methods of its own.
+     * The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding} 
+     * object. It does not implement any additional properties or methods of its own.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface.
+     * A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this interface.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -4711,9 +5111,11 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -4731,7 +5133,8 @@ export declare namespace Office {
          */
         CurrencySymbol,
         /**
-         * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
+         * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; 
+         * Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
          */
         CurrencySymbolPosition,
         DurationUnits,
@@ -4778,13 +5181,17 @@ export declare namespace Office {
      * @remarks
      * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
      *
-     * For more information about working with fields in Project, see {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In Project Help, search for Available fields.
+     * For more information about working with fields in Project, see 
+     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In 
+     * Project Help, search for Available fields.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -4794,7 +5201,8 @@ export declare namespace Office {
      */
     enum ProjectResourceFields {
         /**
-         * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Accrual,
         /**
@@ -5600,13 +6008,17 @@ export declare namespace Office {
      * @remarks
      * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
      *
-     * For more information about working with fields in Project, see the {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In Project Help, search for Available fields.
+     * For more information about working with fields in Project, see the 
+     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. 
+     * In Project Help, search for Available fields.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -5868,7 +6280,8 @@ export declare namespace Office {
          */
         Baseline10FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline10FixedCostAccrual,
         /**
@@ -5904,7 +6317,8 @@ export declare namespace Office {
          */
         Baseline1FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline1FixedCostAccrual,
         /**
@@ -5940,7 +6354,8 @@ export declare namespace Office {
          */
         Baseline2FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline2FixedCostAccrual,
         /**
@@ -5976,7 +6391,8 @@ export declare namespace Office {
          */
         Baseline3FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline3FixedCostAccrual,
         /**
@@ -6012,7 +6428,8 @@ export declare namespace Office {
          */
         Baseline4FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline4FixedCostAccrual,
         /**
@@ -6048,7 +6465,8 @@ export declare namespace Office {
          */
         Baseline5FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline5FixedCostAccrual,
         /**
@@ -6084,7 +6502,8 @@ export declare namespace Office {
          */
         Baseline6FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline6FixedCostAccrual,
         /**
@@ -6120,7 +6539,8 @@ export declare namespace Office {
          */
         Baseline7FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline7FixedCostAccrual,
         /**
@@ -6156,7 +6576,8 @@ export declare namespace Office {
          */
         Baseline8FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline8FixedCostAccrual,
         /**
@@ -6192,7 +6613,8 @@ export declare namespace Office {
          */
         Baseline9FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         Baseline9FixedCostAccrual,
         /**
@@ -6228,7 +6650,8 @@ export declare namespace Office {
          */
         BaselineFixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         BaselineFixedCostAccrual,
         /**
@@ -6258,7 +6681,8 @@ export declare namespace Office {
          */
         ConstraintDate,
         /**
-         * A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish On = 3, Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
+         * A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish On = 3, 
+         * Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
          */
         ConstraintType,
         /**
@@ -6402,7 +6826,8 @@ export declare namespace Office {
          */
         FixedCost,
         /**
-         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+         * The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1, 
+         * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
          */
         FixedCostAccrual,
         /**
@@ -6746,13 +7171,16 @@ export declare namespace Office {
      * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
      *
      * @remarks
-     * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the active view.
+     * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the 
+     * active view.
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this enumeration.
      * 
-     * For more information about Office host application and server requirements, see {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+     * For more information about Office host application and server requirements, see 
+     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
      *  <table>
@@ -6838,24 +7266,31 @@ export declare namespace Office {
 ////////////////////////////////////////////////////////////////
 
 export declare namespace OfficeExtension {
-    /** An abstract proxy object that represents an object in an Office document. 
-     * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling `context.sync()`.
+    /**
+     * An abstract proxy object that represents an object in an Office document. 
+     * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the 
+     * proxy object state with the document by calling `context.sync()`.
      */
     export class ClientObject {
         /** The request context associated with the object */
         context: ClientRequestContext;
-        /** Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the isNullObject property. */
+        /**
+         *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+         * isNullObject property.
+         */
         isNullObject: boolean;
     }
 }
 
 export declare namespace OfficeExtension {
     /**
-     * Specifies which properties of an object should be loaded. This load happens when the sync() method is executed. This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
+     * Specifies which properties of an object should be loaded. This load happens when the sync() method is executed.
+     * This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
      * 
      * @remarks
      * 
-     * For Word, the preferred method for specifying the properties and paging information is by using a string literal. The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:
+     * For Word, the preferred method for specifying the properties and paging information is by using a string literal. 
+     * The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:
      * 
      * `context.load(paragraphs, 'text, font/size');`
      * 
@@ -6867,7 +7302,8 @@ export declare namespace OfficeExtension {
      * 
      * `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
      * 
-     * Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded.
+     * Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would 
+     * indicate that all of the font properties are loaded.
      */
     export interface LoadOption {
         /**
@@ -6883,7 +7319,8 @@ export declare namespace OfficeExtension {
          */
         top?: number;
         /**
-         * Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. If top is specified, the result set will start after skipping the specified number of items.
+         * Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. 
+         * If top is specified, the result set will start after skipping the specified number of items.
          */
         skip?: number;
     }
@@ -6907,7 +7344,9 @@ export declare namespace OfficeExtension {
         session?: RequestUrlAndHeaderInfo | T;
     
         /**
-         *  A previously-created context, or API object, or array of objects. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`.
+         *  A previously-created context, or API object, or array of objects. 
+         * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up 
+         * by `context.sync()`.
          */
         previousObjects?: ClientObject | ClientObject[] | ClientRequestContext;
     }
@@ -6922,7 +7361,10 @@ export declare namespace OfficeExtension {
         pendingStatements: string[];
     }
 
-    /** An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run` and `Word.run` methods provide a request context. */
+    /**
+     * An abstract RequestContext object that facilitates requests to the host Office application. 
+     * The `Excel.run` and `Word.run` methods provide a request context.
+     */
     export class ClientRequestContext {
         constructor(url?: string);
 
@@ -6932,10 +7374,12 @@ export declare namespace OfficeExtension {
         /** Request headers */
         requestHeaders: { [name: string]: string };
 
-        /** Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties. 
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties. 
          * 
          * @param object - The object whose properties are loaded.
-         * @param option - A  comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an {@link OfficeExtension.LoadOption} object.
+         * @param option - A  comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an 
+         * {@link OfficeExtension.LoadOption} object.
          */
         load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
@@ -6945,15 +7389,24 @@ export declare namespace OfficeExtension {
         * You must call `context.sync()` before reading the properties.
         *
         * @param object - The object to be loaded.
-        * @param options - The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }`
+        * @param options - The key-value pairing of load options for the types, such as 
+        *                `{ "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }`
         * @param maxDepth - The maximum recursive depth.
         */
         loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
-        /** Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
+        /**
+         * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" 
+         * array to the OfficeExtension.Error object, containing all trace messages that were executed. 
+         * These messages can help you monitor the program execution sequence and detect the cause of the error. 
+         */
         trace(message: string): void;
 
-        /** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code. This method returns a promise, which is resolved when the synchronization is complete. */
+        /**
+         * Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context 
+         * and retrieving properties of loaded Office objects for use in your code. 
+         * This method returns a promise, which is resolved when the synchronization is complete.
+         */
         sync<T>(passThroughValue?: T): Promise<T>;
 
         /** Debug information */
@@ -6989,10 +7442,13 @@ export declare namespace OfficeExtension {
         /**
          * Determines whether to log additional error information upon failure.
          *
-         * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the batch request, including all statements that precede and follow the point of failure.
+         * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the 
+         * batch request, including all statements that precede and follow the point of failure.
          *
-         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements that may contain potentially-sensitive data.
-         * It is recommended that you only set this property to true during debugging and that you never log the value of error.debugInfo.fullStatements to an external database or analytics service.
+         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements 
+         * that may contain potentially-sensitive data.
+         * It is recommended that you only set this property to true during debugging and that you never log the value of 
+         * error.debugInfo.fullStatements to an external database or analytics service.
          */
         extendedErrorLogging: boolean;
     };
@@ -7011,13 +7467,15 @@ export declare namespace OfficeExtension {
         /**
          * The statement that caused the error, if available.
          *
-         * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
+         * but will be a close approximation.
          */
         statements?: string;
         /**
          * The statements that closely precede and follow the statement that caused the error, if available.
          *
-         * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, 
+         * but will be a close approximation.
          */
         surroundingStatements?: string[];
         /**
@@ -7038,7 +7496,11 @@ export declare namespace OfficeExtension {
         stack: string;
         /** Error code string, such as "InvalidArgument". */
         code: string;
-        /** Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error. */
+        /**
+         * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
+         * If there was an error, this contains all trace messages that were executed before the error occurred. 
+         * These messages can help you monitor the program execution sequence and detect the case of the error.
+         */
         traceMessages: Array<string>;
         /** Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`). */
         debugInfo: DebugInfo;
@@ -7065,7 +7527,13 @@ export declare namespace OfficeExtension {
 }
 
 export declare namespace OfficeExtension {
-    /** A Promise object that represents a deferred interaction with the host Office application. The publicly-consumable {@link Office.OfficeExtension.Promise} is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
+    /**
+     * A Promise object that represents a deferred interaction with the host Office application. 
+     * The publicly-consumable {@link Office.OfficeExtension.Promise} is available starting in ExcelApi 1.2 and WordApi 1.2. 
+     * Promises can be chained via ".then", and errors can be caught via ".catch". 
+     * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. 
+     * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
+     */
     const Promise: Office.IPromiseConstructor;
     type IPromise<T> = Promise<T>;
 }
@@ -7074,24 +7542,38 @@ export declare namespace OfficeExtension {
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
     export class TrackedObjects {
         /** 
-         * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. 
+         * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
+         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
+         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
+         * to the tracked object collection when the object was first created. 
          * 
          * This method also has the following signature: 
          * 
          * `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
          */
         add(object: ClientObject): void;
-        /** Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
+        /**
+         * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
+         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
+         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
+         * to the tracked object collection when the object was first created.
+         */
         add(objects: ClientObject[]): void;
         /** 
-         * Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with an object that was previously added to this collection. 
+         * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
+         * You will need to call `context.sync()` before the memory release takes effect.
          * 
          * This method also has the following signature: 
          * 
          * `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
          */
         remove(object: ClientObject): void;
-        /** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect. */
+        /**
+         * Release the memory associated with an object that was previously added to this collection. 
+         * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
+         * You will need to call `context.sync()` before the memory release takes effect.
+         */
         remove(objects: ClientObject[]): void;
     }
 }

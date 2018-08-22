@@ -110,7 +110,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. \[Api set: Mailbox 1.3\]
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
+
+
+            \[Api set: Mailbox 1.3\]
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.getAllAsync
@@ -172,7 +175,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.removeAsync
@@ -235,7 +238,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.replaceAsync
@@ -314,6 +317,6 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'

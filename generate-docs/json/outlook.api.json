@@ -39,7 +39,7 @@
             },
             {
               "kind": "text",
-              "text": " dealing with apppointments."
+              "text": " dealing with appointments."
             },
             {
               "kind": "paragraph"
@@ -135,7 +135,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -400,6 +400,287 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "addFileAttachmentFromBase64Async": {
+              "kind": "method",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "base64File": {
+                  "name": "base64File",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The base64 encoded content of an image or file to be added to an email or event."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "attachmentName": {
+                  "name": "attachmentName",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds a file to a message or appointment as an attachment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "addHandlerAsync": {
               "kind": "method",
               "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
@@ -452,7 +733,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -471,7 +771,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -641,7 +941,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -1533,7 +1852,11 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -1750,7 +2073,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -1994,7 +2317,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -2538,6 +2880,152 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "organizer": {
+              "kind": "property",
+              "signature": "organizer: Office.Organizer;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.Organizer",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the organizer for the specified meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The organizer property returns an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Organizer"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Organizer"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that provides a method to get the organizer value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "recurrence": {
               "kind": "property",
               "signature": "recurrence: Recurrence;",
@@ -2556,7 +3044,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments."
                 },
                 {
                   "kind": "paragraph"
@@ -2719,7 +3207,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -2957,7 +3464,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -2976,7 +3502,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -3261,7 +3787,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -3677,7 +4222,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -5427,7 +5991,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -5446,7 +6029,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -7567,7 +8150,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -8670,7 +9272,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -8922,7 +9538,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -9599,7 +10234,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the email address of the meeting organizer for a specified meeting. Read mode only."
+                  "text": "Gets the email address of the meeting organizer for a specified meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -9726,7 +10361,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments."
                 },
                 {
                   "kind": "paragraph"
@@ -9901,7 +10536,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -9920,7 +10574,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -11186,7 +11840,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The content type is returned as one of the CoercionType values in the asyncResult.value property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". The content type is returned as one of the CoercionType values in the asyncResult.value property."
                     }
                   ],
                   "isOptional": true,
@@ -11350,7 +12023,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -11595,7 +12287,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -11868,7 +12579,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Any errors encountered will be provided in the asyncResult.error property."
                     }
                   ],
                   "isOptional": true,
@@ -12832,7 +13562,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -14517,7 +15266,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": false,
@@ -14857,7 +15625,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -14876,7 +15663,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -15500,7 +16287,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -15784,7 +16590,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -15959,7 +16765,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -15978,7 +16803,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -16335,7 +17160,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -16592,6 +17417,287 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "addFileAttachmentFromBase64Async": {
+              "kind": "method",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "base64File": {
+                  "name": "base64File",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The base64 encoded content of an image or file to be added to an email or event."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "attachmentName": {
+                  "name": "attachmentName",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds a file to a message or appointment as an attachment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "addItemAttachmentAsync": {
               "kind": "method",
               "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
@@ -16644,7 +17750,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -17020,7 +18145,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -17192,7 +18336,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -17225,7 +18388,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -17366,7 +18529,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -17580,7 +18762,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -17841,7 +19042,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -19715,7 +20935,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -20822,7 +22061,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -21626,7 +22879,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -21800,7 +23079,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the location fails, the asyncResult.error property will contain an error code."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -22184,7 +23489,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -24085,7 +25409,7 @@
             },
             "getCallbackTokenAsync": {
               "kind": "method",
-              "signature": "getCallbackTokenAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
+              "signature": "getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24104,14 +25428,33 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions & { isRest?: boolean }"
                 },
                 "callback": {
                   "name": "callback",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The token is provided as a string in the asyncResult.value property."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". The token is provided as a string in the asyncResult.value property."
                     }
                   ],
                   "isOptional": false,
@@ -24320,7 +25663,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -24525,7 +25887,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -24584,7 +25965,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see Specify permissions for mail add-in access to the user's mailbox."
+                  "text": "Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Specify permissions for mail add-in access to the user's mailbox"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -24598,7 +25993,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in the following scenarios. - In Outlook for iOS or Outlook for Android - When the add-in is loaded in a Gmail mailbox"
+                  "text": "Note: This method is not supported in the following scenarios:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- In Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- When the add-in is loaded in a Gmail mailbox."
                 },
                 {
                   "kind": "paragraph"
@@ -29067,7 +30476,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
                     }
                   ],
                   "isOptional": true,
@@ -29079,7 +30488,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.asyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "asyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
@@ -29332,6 +30760,287 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "addFileAttachmentFromBase64Async": {
+              "kind": "method",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "base64File": {
+                  "name": "base64File",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The base64 encoded content of an image or file to be added to an email or event."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "attachmentName": {
+                  "name": "attachmentName",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds a file to a message or appointment as an attachment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "addHandlerAsync": {
               "kind": "method",
               "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
@@ -29384,7 +31093,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -29403,7 +31131,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -30846,7 +32574,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -31018,7 +32765,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -31051,7 +32817,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -31295,7 +33061,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -31579,7 +33364,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -31742,7 +33527,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -31980,7 +33784,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -31999,7 +33822,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -32145,7 +33968,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -32561,7 +34403,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
                     }
                   ],
                   "isOptional": true,
@@ -33104,7 +34965,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -33123,7 +35003,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -35508,7 +37388,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError."
                     }
                   ],
                   "isOptional": true,
@@ -36731,7 +38630,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in."
+                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -36983,7 +38896,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -37394,7 +39326,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests."
                 },
                 {
                   "kind": "paragraph"
@@ -37569,7 +39501,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -37588,7 +39539,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -38655,7 +40606,33 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. [Api set: Mailbox 1.3]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.3]"
                     }
                   ],
                   "isOptional": true,
@@ -38831,7 +40808,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -39005,7 +41001,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -39205,7 +41220,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -39356,6 +41390,298 @@
                 }
               ],
               "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "Organizer": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object provides a method to get the organizer value of an appointment in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": ""
+            },
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "text",
+              "text": ""
+            }
+          ],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the organizer value of an appointment as an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EmailAddressDetails"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EmailAddressDetails"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " in the asyncResult.value property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -39705,7 +42031,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If adding the recipients fails, the asyncResult.error property will contain an error code."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If adding the recipients fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,
@@ -39944,7 +42289,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -40144,7 +42508,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred while adding the data."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred while adding the data."
                     }
                   ],
                   "isOptional": true,
@@ -41015,7 +43398,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -41691,7 +44093,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
@@ -42319,7 +44740,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.AsyncResult"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "AsyncResult"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object."
                 }
               ],
               "remarks": [],
@@ -42800,7 +45240,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional? When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": true,
@@ -44883,7 +47342,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -45064,7 +47542,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the subject fails, the asyncResult.error property will contain an error code."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the subject fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,
@@ -45272,7 +47769,26 @@
             },
             {
               "kind": "text",
-              "text": "The list of tasks suggested in an email message is returned in the taskSuggestions property of the [Entities]Entities object that is returned when the getEntities or getEntitiesByType method is called on the active item."
+              "text": "The list of tasks suggested in an email message is returned in the taskSuggestions property of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Entities"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Entities"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " object that is returned when the getEntities or getEntitiesByType method is called on the active item."
             },
             {
               "kind": "paragraph"
@@ -45754,7 +48270,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If setting the date and time fails, the asyncResult.error property will contain an error code."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.AsyncResult"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "AsyncResult"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". If setting the date and time fails, the asyncResult.error property will contain an error code."
                     }
                   ],
                   "isOptional": true,

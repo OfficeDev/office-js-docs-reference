@@ -36,8 +36,8 @@ items:
       Adds an event handler for a supported event.
 
 
-      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
-      user changes the recurrence pattern of a series.
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -88,7 +88,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an AsyncResult object.
+            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Item.body
@@ -269,7 +269,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
         - id: userContext
@@ -307,8 +307,8 @@ items:
 
 
       The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
-      a series or an instance in a series. null is returned for single appointments and meeting requests of single
-      appointments. undefined is returned for messages that are not meeting requests.
+      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
+      appointments. `undefined` is returned for messages that are not meeting requests.
 
 
       Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
@@ -342,8 +342,8 @@ items:
       Removes an event handler for a supported event.
 
 
-      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
-      user changes the recurrence pattern of a series.
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -394,7 +394,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an AsyncResult object.
+            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Item.seriesId

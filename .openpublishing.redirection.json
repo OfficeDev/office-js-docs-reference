@@ -1,0 +1,24 @@
+{ 
+    "redirections": [
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.excel-add-ins-reference-overview.md",
+            "redirect_url": "/javascript/office/overview/excel-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.onenote-add-ins-javascript-reference.md",
+            "redirect_url": "/javascript/office/overview/onenote-add-ins-javascript-reference"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/visio/visio.visio-javascript-reference-overview.md",
+            "redirect_url": "/javascript/office/overview/visio-javascript-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.word-add-ins-reference-overview.md",
+            "redirect_url": "/javascript/office/overview/word-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.error.md",
+            "redirect_url": "/javascript/api/office/officeextension.error"
+        }
+      ] 
+}

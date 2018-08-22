@@ -60,7 +60,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
@@ -91,7 +93,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
@@ -123,6 +127,8 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'

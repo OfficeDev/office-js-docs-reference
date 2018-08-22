@@ -118,7 +118,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
@@ -163,7 +165,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
@@ -223,7 +227,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
@@ -268,7 +274,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.namespaceUri
@@ -384,7 +392,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
@@ -456,7 +466,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
@@ -499,6 +511,8 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'

@@ -1,8 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.From
-    summary: |-
-      Provides a method to get the from value of a message in an Outlook add-in.
+  - uid: outlook.Office.Organizer
+    summary: >-
+      Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This
+      object provides a method to get the organizer value of an appointment in an Outlook add-in.
+
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -13,24 +15,18 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     isPreview: true
-    name: Office.From
-    fullName: outlook.Office.From
+    name: Office.Organizer
+    fullName: outlook.Office.Organizer
     langs:
       - typeScript
     type: interface
     package: outlook
     children:
-      - outlook.Office.From.getAsync
-  - uid: outlook.Office.From.getAsync
+      - outlook.Office.Organizer.getAsync
+  - uid: outlook.Office.Organizer.getAsync
     summary: >-
-      Gets the from value of a message.
-
-
-      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
-
-
-      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
-      in the asyncResult.value property.
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) in the asyncResult.value property.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -41,20 +37,14 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `getAsync(callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'getAsync(options, callback)'
-    fullName: outlook.Office.From.getAsync
+    fullName: outlook.Office.Organizer.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -69,6 +59,6 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
-            asyncResult, which is an<!-- -->Office.AsyncResult object.
+            asyncResult, which is an AsyncResult object.
           type:
             - '(result: AsyncResult) => void'

@@ -167,7 +167,9 @@ items:
           type:
             - office.Office.AddBindingFromNamedItemOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.addFromPromptAsync
@@ -238,7 +240,9 @@ items:
           type:
             - office.Office.AddBindingFromPromptOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.addFromSelectionAsync
@@ -319,7 +323,9 @@ items:
           type:
             - office.Office.AddBindingFromSelectionOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.document
@@ -413,7 +419,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.getByIdAsync
@@ -481,7 +489,9 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
@@ -548,6 +558,8 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult) => void'

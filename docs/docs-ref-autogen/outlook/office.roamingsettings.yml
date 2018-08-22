@@ -152,8 +152,8 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional? When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.RoamingSettings.set
