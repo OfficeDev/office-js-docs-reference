@@ -264,7 +264,8 @@ items:
               // and return a promise to indicate task completion.
               return context.sync().then(function () {
                   if (contentControlsWithTitle.items.length === 0) {
-                      console.log("There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+                      console.log(
+                          "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
                   } else {
                       console.log(
                           "The first content control with the title of 'Enter Customer Address Here' has this text: " + 

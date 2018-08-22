@@ -618,7 +618,7 @@ items:
           ```javascript
           // Gets an object that represents the entire row of the range 
           // (for example, if the current range represents cells "B4:E11", 
-          // it's GetEntireRow is a range that represents rows "4:11").
+          // its GetEntireRow is a range that represents rows "4:11").
           Excel.run(function (ctx) {
               var sheetName = "Sheet1";
               var rangeAddress = "D:F"; 
