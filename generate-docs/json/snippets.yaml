@@ -9243,8 +9243,8 @@ Office.Recurrence.setAsync:
 
     var pattern = {
         "seriesTime": seriesTimeObject,
-        "type": "Weekly",
-        "properties": {"interval": 1, "days": ["Tue", "Thu"], "firstDayOfWeek": "Sun"},
+        "type": "weekly",
+        "properties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
         "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
 
     Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
