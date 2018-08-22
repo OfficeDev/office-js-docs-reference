@@ -575,7 +575,9 @@ items:
                   }
                   else {
                       // Queue a command to put HTML into the contents of the first content control.
-                      contentControls.items[0].insertHtml('<strong>HTML content inserted into the content control.</strong>', 'Start');
+                      contentControls.items[0].insertHtml(
+                          '<strong>HTML content inserted into the content control.</strong>',
+                          'Start');
                   
                       // Synchronize the document state by executing the queued commands, 
                       // and return a promise to indicate task completion.

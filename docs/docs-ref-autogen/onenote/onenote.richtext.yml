@@ -137,7 +137,9 @@ items:
                   // Display all rich text paragraphs to the console
                   $.each(richTextParagraphs, function(index, richTextParagraph) {
                       var richText = richTextParagraph.richText;
-                      console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                      console.log(
+                          "Paragraph found with richtext content : " + 
+                          richText.text + " and richtext id : " + richText.id);
                   });
                   return context.sync();
               });

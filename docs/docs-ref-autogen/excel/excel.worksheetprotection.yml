@@ -186,13 +186,11 @@ items:
       return:
         type:
           - void
-        description: >-
+        description: |-
 
           #### Examples
 
-
           ```javascript
-
           Excel.run(function(ctx) {
             // get a reference to Sheet1
             var sheet = ctx.workbook.worksheets.getItem("Sheet1");
@@ -207,17 +205,12 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
-
           ```javascript
-
-          // Unprotecting a worksheet with unprotect() will remove all WorksheetProtectionOptions options applied to a
-          worksheet.
-
-          // To remove only a subset of WorksheetProtectionOptions use the protect() method and set the options you wish
-          to remove to true.
-
+          // Unprotecting a worksheet with unprotect() will remove all 
+          // WorksheetProtectionOptions options applied to a worksheet.
+          // To remove only a subset of WorksheetProtectionOptions use the 
+          // protect() method and set the options you wish to remove to true.
           Excel.run(function(ctx) {
             var sheet = ctx.workbook.worksheets.getItem("Sheet1");
             sheet.protection.protect({
@@ -225,29 +218,20 @@ items:
               allowDeleteRows: true // Unprotect row deletion
             });
           });
-
           ```
-
           ```typescript
-
           await Excel.run(async (context) => {
               let activeSheet = context.workbook.worksheets.getActiveWorksheet();
               activeSheet.protection.unprotect();
           });
-
           ```
-
           ```typescript
-
           let password = await passwordHandler();
-
           passwordHelper(password);
-
           await Excel.run(async (context) => {
               let activeSheet = context.workbook.worksheets.getActiveWorksheet();
               activeSheet.protection.unprotect(password);
           });
-
           ```
       parameters:
         - id: password

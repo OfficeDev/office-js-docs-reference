@@ -49,7 +49,8 @@ items:
       // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeDeletedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
                   write("A node has been deleted.");
@@ -70,7 +71,8 @@ items:
       // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeInsertedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
                   write("A node has been inserted.");
@@ -91,7 +93,8 @@ items:
       // To add an event handler for the NodeReplaced event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeReplacedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
                   write("A node has been replaced.");
@@ -162,7 +165,8 @@ items:
 
           ```javascript
           function showXMLPartBuiltIn() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   write(xmlPart.builtIn);
               });
@@ -191,7 +195,8 @@ items:
 
           ```javascript
           function deleteXMLPart() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   xmlPart.deleteAsync(function (eventArgs) {
                       write("The XML Part has been deleted.");
@@ -234,7 +239,8 @@ items:
 
           ```javascript
           function showXmlNodeType() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   xmlPart.getNodesAsync('*/*', function (nodeResults) {
                       for (i = 0; i < nodeResults.value.length; i++) {
@@ -282,7 +288,8 @@ items:
 
           ```javascript
           function showXMLPartInnerXML() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   xmlPart.getXmlAsync({}, function (eventArgs) {
                       write(eventArgs.value);
@@ -323,7 +330,8 @@ items:
 
           ```javascript
           function showXMLPartBuiltId() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   write(xmlPart.id);
               });
@@ -354,7 +362,8 @@ items:
 
           ```javascript
           function setXMLPartNamespaceManagerNamespace() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
                   var xmlPart = result.value;
                   xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
               });
@@ -380,7 +389,8 @@ items:
 
           ```javascript
           function removeNodeInsertedEventHandler() {
-              Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
                   function (result) {
                       var xmlPart = result.value;
                       xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});

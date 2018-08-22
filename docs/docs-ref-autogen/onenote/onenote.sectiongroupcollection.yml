@@ -187,7 +187,8 @@ items:
           return context.sync()
               .then(function () {
                   
-                  // Iterate through the collection or access items individually by index, for example: sectionGroups.items[0]
+                  // Iterate through the collection or access items individually by index, 
+                  // for example: sectionGroups.items[0]
                   $.each(sectionGroups.items, function(index, sectionGroup) {
                       console.log("Section group name: " + sectionGroup.name);  
                       console.log("Section group ID: " + sectionGroup.id);  

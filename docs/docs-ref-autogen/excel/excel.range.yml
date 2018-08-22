@@ -571,16 +571,13 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: >-
+        description: |-
 
           #### Examples
 
-
           ```javascript
-
-          // Note: the grid properties of the Range (values, numberFormat, formulas) contains null since the Range in
-          question is unbounded.
-
+          // Note: the grid properties of the Range (values, numberFormat, formulas) 
+          // contains null since the Range in question is unbounded.
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "D:F";
@@ -596,7 +593,6 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - uid: excel.Excel.Range.getEntireRow
     summary: >-
@@ -615,16 +611,14 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: >-
+        description: |-
 
           #### Examples
 
-
           ```javascript
-
-          // Gets an object that represents the entire row of the range (for example, if the current range represents
-          cells "B4:E11", it's GetEntireRow is a range that represents rows "4:11").
-
+          // Gets an object that represents the entire row of the range 
+          // (for example, if the current range represents cells "B4:E11", 
+          // it's GetEntireRow is a range that represents rows "4:11").
           Excel.run(function (ctx) {
               var sheetName = "Sheet1";
               var rangeAddress = "D:F"; 
@@ -640,7 +634,6 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - uid: excel.Excel.Range.getImage
     summary: |-
@@ -681,7 +674,8 @@ items:
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+              var range = 
+                  ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
               range.load('address');
               return ctx.sync().then(function() {
                   console.log(range.address); // prints Sheet1!D4:F6
@@ -900,7 +894,8 @@ items:
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "D4:F6";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+              var range = 
+                  ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
               range.load('address');
               return ctx.sync().then(function() {
                   console.log(range.address); // prints Sheet1!H3:K5

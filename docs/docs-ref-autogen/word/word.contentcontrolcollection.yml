@@ -195,7 +195,9 @@ items:
                   if (contentControlsWithTag.items.length === 0) {
                       console.log("There isn't a content control with a tag of Customer-Address in this document.");
                   } else {
-                      console.log('The first content control with the tag of Customer-Address has this text: ' + contentControlsWithTag.items[0].text);
+                      console.log(
+                          'The first content control with the tag of Customer-Address has this text: ' + 
+                          contentControlsWithTag.items[0].text);
                   }
 
               });
@@ -264,7 +266,9 @@ items:
                   if (contentControlsWithTitle.items.length === 0) {
                       console.log("There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
                   } else {
-                      console.log("The first content control with the title of 'Enter Customer Address Here' has this text: " + contentControlsWithTitle.items[0].text);
+                      console.log(
+                          "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
+                          contentControlsWithTitle.items[0].text);
                   }
 
               });
@@ -490,8 +494,9 @@ items:
       });
 
 
-      // The Silly stories add-in sample shows how the load method is used to load the content control collection with
-      the tag and title properties.
+      // The Silly stories add-in sample shows how the load method is used
+
+      // to load the content control collection with the tag and title properties.
 
       // https://aka.ms/sillystorywordaddin
 

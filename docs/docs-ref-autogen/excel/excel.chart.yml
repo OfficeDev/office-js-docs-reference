@@ -336,16 +336,13 @@ items:
       return:
         type:
           - string
-        description: >-
+        description: |-
 
           #### Examples
 
-
           ```javascript
-
-          // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
-          points to the top and left. 
-
+          // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
+          // Move Chart1 to 100 points to the top and left. 
           Excel.run(function (ctx) { 
               var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.name = "New Name";
@@ -360,7 +357,6 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - uid: excel.Excel.Chart.series
     summary: |-

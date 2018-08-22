@@ -91,7 +91,8 @@ items:
               }
           });
 
-          // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
+          // The Silly stories add-in sample shows how the 
+          // clear method can be used to clear the contents of a document.
           // https://aka.ms/sillystorywordaddin
           ```
   - uid: word.Word.Body.contentControls
@@ -420,7 +421,8 @@ items:
               var body = context.document.body;
 
               // Queue a commmand to insert HTML in to the beginning of the body.
-              body.insertHtml('<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
+              body.insertHtml(
+                  '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.

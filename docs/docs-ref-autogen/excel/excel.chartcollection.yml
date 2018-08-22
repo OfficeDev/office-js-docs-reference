@@ -38,16 +38,13 @@ items:
       return:
         type:
           - excel.Excel.Chart
-        description: >-
+        description: |-
 
           #### Examples
 
-
           ```javascript
-
-          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" with sourceData from Range "A1:B4" and
-          seriresBy is set to be "auto".
-
+          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
           Excel.run(function (ctx) { 
               var rangeSelection = "A1:B4";
               var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -62,7 +59,6 @@ items:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
       parameters:
         - id: type
