@@ -55,6 +55,22 @@
         {
             "source_path": "docs/docs-ref-autogen/excel/excel.scriptcustomfunctions.md",
             "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/preview-requirement-set/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.error.md",
+            "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/visio/visio.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
         }
-      ] 
+    ] 
 }
