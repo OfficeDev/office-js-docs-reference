@@ -19,6 +19,114 @@
         {
             "source_path": "docs/docs-ref-autogen/word/word.error.md",
             "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.index.md",
+            "redirect_url": "/javascript/office/objectmodel/preview-requirement-set/outlook-requirement-set-preview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.enums.md",
+            "redirect_url": "/javascript/api/word#enums"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.setting.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-word-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.settingcollection.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-word-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionsenumerations.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunction.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctioncollection.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.scriptcustomfunctions.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/preview-requirement-set/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.error.md",
+            "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/visio/visio.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.6/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.5/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.4/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.3/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.binding.bindingselectionchangedevent.md",
+            "redirect_url": "/javascript/api/office/office.bindingselectionchangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodedeleted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodeinserted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodereplaced.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.document.selectionchanged.md",
+            "redirect_url": "/javascript/api/office/office.document"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.settings"
         }
-      ] 
+    ]
 }
