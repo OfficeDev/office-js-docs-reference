@@ -104,8 +104,8 @@ items:
     type: method
     syntax:
       content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<CustomXmlNode[]>) => void): void;
       return:
         type:
           - void
@@ -122,9 +122,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
+            array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the
+            `xPath` parameter.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<CustomXmlNode[]>) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |-
@@ -157,7 +159,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -170,9 +172,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
+            string that contains the value of the referenced node.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: |-
@@ -220,7 +223,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -233,9 +236,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
+            string that contains the inner text of the referenced nodes.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |-
@@ -268,7 +272,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -281,9 +285,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
+            string that contains the XML of the referenced node.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |-
@@ -384,7 +389,7 @@ items:
     type: method
     syntax:
       content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
+        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -404,7 +409,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: |-
@@ -462,8 +467,8 @@ items:
     type: method
     syntax:
       content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -482,7 +487,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |-
@@ -509,7 +514,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -528,4 +535,4 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

@@ -364,7 +364,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -393,7 +393,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.bindings
     summary: Gets an object that provides access to the bindings defined in the document.
     remarks: >-
@@ -546,7 +546,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) =>
+        void): void;
       return:
         type:
           - void
@@ -559,9 +561,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
+            corresponds to either Slide Show or Reading View.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<"edit" | "read">) => void'
   - uid: office.Office.Document.getFileAsync
     summary: >-
       Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is
@@ -713,7 +718,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) =>
+        void): void;
       return:
         type:
           - void
@@ -730,9 +737,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            File object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.File>) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
     summary: Gets file properties of the current document.
     remarks: >-
@@ -793,7 +801,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.FileProperties>) => void): void;
       return:
         type:
           - void
@@ -806,9 +816,10 @@ items:
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            file's properties (with the URL found at `asyncResult.value.url`).
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.FileProperties>) => void'
   - uid: office.Office.Document.getMaxResourceIndexAsync
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
@@ -923,7 +934,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) =>
+        void): void;
       return:
         type:
           - void
@@ -936,9 +949,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            highest index number in the current project's resource collection.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getMaxTaskIndexAsync
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
@@ -1054,7 +1068,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void):
+        void;
       return:
         type:
           - void
@@ -1067,9 +1083,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            highest index number in the current project's task collection.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getProjectFieldAsync
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     remarks: >-
@@ -1170,8 +1187,8 @@ items:
     type: method
     syntax:
       content: >-
-        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -1188,9 +1205,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getResourceByIndexAsync
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
@@ -1307,7 +1325,7 @@ items:
     syntax:
       content: >-
         getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -1324,9 +1342,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            GUID of the resource as a string.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getResourceFieldAsync
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     remarks: >-
@@ -1454,7 +1473,7 @@ items:
     syntax:
       content: >-
         getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -1475,9 +1494,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            GUID of the resource as a string.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedDataAsync
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
@@ -1656,8 +1676,8 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
-        AsyncResult) => void): void;
+        getSelectedDataAsync<T>(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
+        AsyncResult<T>) => void): void;
       return:
         type:
           - void
@@ -1674,9 +1694,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            data in the current selection. This is returned in the data structure or format you specified with the
+            coercionType parameter. (See Remarks for more information about data coercion.)
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
     summary: Project documents only. Get the current selected Resource's Id.
     remarks: >-
@@ -1802,7 +1824,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
+        void): void;
       return:
         type:
           - void
@@ -1815,9 +1839,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            GUID of the resource as a string.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
     summary: Project documents only. Get the current selected Task's Id.
     remarks: >-
@@ -1921,7 +1946,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void):
+        void;
       return:
         type:
           - void
@@ -1934,9 +1961,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            GUID of the resource as a string.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedViewAsync
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: >-
@@ -2014,7 +2042,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -2027,9 +2055,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
+            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
+            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: >-
@@ -2136,8 +2166,8 @@ items:
     type: method
     syntax:
       content: >-
-        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
+        void): void;
       return:
         type:
           - void
@@ -2154,9 +2184,13 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
+            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
+            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
+            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
+            task.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskByIndexAsync
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
@@ -2275,8 +2309,8 @@ items:
     type: method
     syntax:
       content: >-
-        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -2293,9 +2327,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            GUID of the task as a string.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getTaskFieldAsync
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     remarks: >-
@@ -2418,7 +2453,7 @@ items:
     syntax:
       content: >-
         getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -2439,9 +2474,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getWSSUrlAsync
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: >-
@@ -2464,7 +2500,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -2477,9 +2513,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
+            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
+            `serverUrl` - the URL of the synchronized SharePoint task list.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.goToByIdAsync
     summary: Goes to the specified object or location in the document.
     remarks: >-
@@ -2498,7 +2536,7 @@ items:
 
 
       In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
-      `Office.SelectionMode.None` Doesn't select anything.
+      `Office.SelectionMode.None` doesn't select anything.
 
 
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
@@ -2666,7 +2704,7 @@ items:
     syntax:
       content: >-
         goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -2687,9 +2725,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            current view.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.mode
     summary: Gets the mode the document is in.
     remarks: >-
@@ -2899,8 +2938,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -2919,7 +2958,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setResourceFieldAsync
     summary: |-
       Project documents only. Set resource field for specified resource Id.
@@ -3042,7 +3081,7 @@ items:
     syntax:
       content: >-
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
-        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -3069,7 +3108,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setSelectedDataAsync
     summary: Writes the specified data into the current selection.
     remarks: >-
@@ -3292,7 +3331,7 @@ items:
     syntax:
       content: >-
         setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -3346,7 +3385,7 @@ items:
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always
             returns undefined because there is no object or data to retrieve.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setTaskFieldAsync
     summary: |-
       Project documents only. Set task field for specified task Id.
@@ -3469,7 +3508,7 @@ items:
     syntax:
       content: >-
         setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -3496,7 +3535,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.settings
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current

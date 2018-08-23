@@ -54,8 +54,8 @@ items:
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
-      void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
+      void): void;`
 
       #### Examples
 
@@ -95,7 +95,7 @@ items:
     syntax:
       content: >-
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -117,14 +117,14 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. If adding the recipients fails, the asyncResult.error
             property will contain an error code.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.getAsync
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
-      When the call completes, the asyncResult.value property will contain an array
-      of[Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+      When the call completes, the asyncResult.value property will contain an array of
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -140,7 +140,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback: (result: AsyncResult) => void): void;`
+      `getAsync(callback: (result: AsyncResult&lt;Office.EmailAddressDetails[]&gt;) => void): void;`
 
       #### Examples
 
@@ -168,7 +168,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails[]>) =>
+        void): void;
       return:
         type:
           - void
@@ -183,9 +185,10 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->.
+            of type<!-- -->Office.AsyncResult<!-- -->. The `value` property of the result is an array of
+            EmailAddressDetails objects.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.EmailAddressDetails[]>) => void'
   - uid: outlook.Office.Recipients.setAsync
     summary: |-
       Sets a recipient list for an appointment or message.
@@ -223,8 +226,8 @@ items:
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
-      void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
+      void): void;`
 
       #### Examples
 
@@ -264,7 +267,7 @@ items:
     syntax:
       content: >-
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -286,4 +289,4 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. If setting the recipients fails the asyncResult.error
             property will contain a code that indicates any error that occurred while adding the data.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

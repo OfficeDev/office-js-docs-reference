@@ -126,7 +126,7 @@ items:
     syntax:
       content: >-
         addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -147,7 +147,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
@@ -208,8 +208,8 @@ items:
     type: method
     syntax:
       content: >-
-        addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -230,7 +230,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
     remarks: >-
@@ -270,7 +270,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -285,7 +285,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.TableBinding.columnCount
     summary: 'Gets the number of columns in the TableBinding, as an integer value.'
     remarks: >-
@@ -374,7 +374,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -389,9 +391,34 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.TableBinding.getFormatsAsync
     summary: Gets the formatting on specified items in the table.
+    remarks: >-
+      **Returned format structure**
+
+
+      Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition
+      }}`
+
+
+      The `cells:` property specifies the range you want format using one of the following values:
+
+
+      **Supported ranges in cells property**
+
+
+      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>{row: n}</td> <td>Specifies the
+      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>{column: n}</td> <td>Specifies the
+      range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>{row: i, column: j}</td>
+      <td>Specifies the single cell that is the ith row and jth column of the table.</td> </tr> <tr>
+      <td>Office.Table.All</td> <td>Specifies the entire table, including column headers, data, and totals (if
+      any).</td> </tr> <tr> <td>Office.Table.Data</td> <td>Specifies only the data in the table (no headers and
+      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>Specifies only the header row.</td> </tr> </table>
+
+
+      The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
+      dialog box in Excel (Right-click &gt; Format Cells or Home &gt; Format &gt; Format Cells).
     name: 'getFormatsAsync(cellReference, formats, options, callback)'
     fullName: office.Office.TableBinding.getFormatsAsync
     langs:
@@ -400,7 +427,7 @@ items:
     syntax:
       content: >-
         getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult< ({ cells: any, format: any})[]>) => void): void;
       return:
         type:
           - void
@@ -421,9 +448,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
+            array containing one or more JavaScript objects specifying the formatting of their corresponding cells.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
   - uid: office.Office.TableBinding.hasHeaders
     summary: 'True, if the table has headers; otherwise false.'
     remarks: >-
@@ -638,18 +666,6 @@ items:
       Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
 
 
-      In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
-      to return the following information.
-
-
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-      undefined because there is no data or object to retrieve when setting formats.</td> </tr> <tr>
-      <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
-      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
-      the AsyncResult object without being altered.</td> </tr> </table>
-
-
       **Support details**
 
 
@@ -715,8 +731,8 @@ items:
     type: method
     syntax:
       content: >-
-        setFormatsAsync(cellFormat?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) =>
-        void): void;
+        setFormatsAsync(cellFormat: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>)
+        => void): void;
       return:
         type:
           - void
@@ -737,7 +753,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.TableBinding.setTableOptionsAsync
     summary: Updates table formatting options on the bound table.
     remarks: >-
@@ -801,8 +817,8 @@ items:
     type: method
     syntax:
       content: >-
-        setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -821,4 +837,4 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

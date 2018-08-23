@@ -61,7 +61,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback?: (result: AsyncResult) => void): void;`
+      `getAsync(callback?: (result: AsyncResult&lt;Office.Recurrence&gt;) => void): void;`
 
       #### Examples
 
@@ -94,7 +94,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Recurrence>) => void):
+        void;
       return:
         type:
           - void
@@ -109,9 +111,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
+            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object. The `value` property of the result is
+            a Recurrence object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.Recurrence>) => void'
   - uid: outlook.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -230,7 +233,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -272,8 +275,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult)
-        => void): void;
+        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -294,4 +297,4 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

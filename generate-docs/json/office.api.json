@@ -1457,7 +1457,9 @@
           "kind": "interface",
           "extends": "",
           "implements": "",
-          "typeParameters": [],
+          "typeParameters": [
+            "T"
+          ],
           "deprecatedMessage": [],
           "summary": [
             {
@@ -3700,11 +3702,11 @@
             },
             "value": {
               "kind": "property",
-              "signature": "value: any;",
+              "signature": "value: T;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "any",
+              "type": "T",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -5222,7 +5224,7 @@
           "members": {
             "getAccessTokenAsync": {
               "kind": "method",
-              "signature": "getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5253,7 +5255,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -5943,7 +5945,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6055,7 +6057,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: Office.AsyncResult) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -6118,7 +6120,7 @@
             },
             "getDataAsync": {
               "kind": "method",
-              "signature": "getDataAsync(options?: GetBindingDataOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getDataAsync<T>(options?: GetBindingDataOptions, callback?: (result: AsyncResult<T>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6163,12 +6165,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the values in the specified binding. If the `coercionType` parameter is specified (and the call is successful), the data is returned in the format described in the CoercionType enumeration topic."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<T>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -6278,7 +6280,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6340,7 +6342,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -6407,7 +6409,7 @@
             },
             "setDataAsync": {
               "kind": "method",
-              "signature": "setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6502,7 +6504,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -7795,7 +7797,7 @@
           "members": {
             "addFromNamedItemAsync": {
               "kind": "method",
-              "signature": "addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions, callback?: (result: AsyncResult<Binding>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7883,12 +7885,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the Binding object that represents the specified named item."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Binding>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -8311,7 +8313,7 @@
             },
             "addFromPromptAsync": {
               "kind": "method",
-              "signature": "addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result: AsyncResult<Binding>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8368,12 +8370,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the Binding object that represents the selection specified by the user."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Binding>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -8697,7 +8699,7 @@
             },
             "addFromSelectionAsync": {
               "kind": "method",
-              "signature": "addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result: AsyncResult<Binding>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8754,12 +8756,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the Binding object that represents the selection specified by the user."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Binding>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -9518,7 +9520,7 @@
             },
             "getAllAsync": {
               "kind": "method",
-              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9563,12 +9565,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an array that contains each binding created for the referenced Bindings object."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Binding[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -9953,7 +9955,7 @@
             },
             "getByIdAsync": {
               "kind": "method",
-              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10010,12 +10012,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the Binding object specified by the id in the call."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Binding>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -10407,7 +10409,7 @@
             },
             "releaseByIdAsync": {
               "kind": "method",
-              "signature": "releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10469,7 +10471,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15804,7 +15806,7 @@
             },
             "getNodesAsync": {
               "kind": "method",
-              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15861,12 +15863,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the `xPath` parameter."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<CustomXmlNode[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15933,7 +15935,7 @@
             },
             "getNodeValueAsync": {
               "kind": "method",
-              "signature": "getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15978,12 +15980,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the value of the referenced node."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16050,7 +16052,7 @@
             },
             "getTextAsync": {
               "kind": "method",
-              "signature": "getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16095,12 +16097,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the inner text of the referenced nodes."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16167,7 +16169,7 @@
             },
             "getXmlAsync": {
               "kind": "method",
-              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16212,12 +16214,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the XML of the referenced node."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16424,7 +16426,7 @@
             },
             "setNodeValueAsync": {
               "kind": "method",
-              "signature": "setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16486,7 +16488,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16553,7 +16555,7 @@
             },
             "setTextAsync": {
               "kind": "method",
-              "signature": "setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16615,7 +16617,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16717,7 +16719,7 @@
             },
             "setXmlAsync": {
               "kind": "method",
-              "signature": "setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16779,7 +16781,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17450,7 +17452,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17577,7 +17579,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17621,7 +17623,7 @@
             },
             "deleteAsync": {
               "kind": "method",
-              "signature": "deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17671,7 +17673,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17694,7 +17696,7 @@
             },
             "getNodesAsync": {
               "kind": "method",
-              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlNode[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17751,12 +17753,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath parameter."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<CustomXmlNode[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17779,7 +17781,7 @@
             },
             "getXmlAsync": {
               "kind": "method",
-              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17824,12 +17826,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the XML of the referenced CustomXmlPart object."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17901,7 +17903,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": ") used against the current CustomXMLPart."
+                  "text": ") used against the current CustomXmlPart."
                 }
               ],
               "remarks": [],
@@ -17913,7 +17915,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17987,7 +17989,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18259,7 +18261,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18316,12 +18318,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the newly created CustomXmlPart object."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<CustomXmlPart>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18339,7 +18341,7 @@
             },
             "getByIdAsync": {
               "kind": "method",
-              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18396,12 +18398,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with the specified id, the method returns null."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<CustomXmlPart>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18419,7 +18421,7 @@
             },
             "getByNamespaceAsync": {
               "kind": "method",
-              "signature": "getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18476,12 +18478,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an array of CustomXmlPart objects that match the specified namespace."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<CustomXmlPart[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18744,7 +18746,7 @@
           "members": {
             "addNamespaceAsync": {
               "kind": "method",
-              "signature": "addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addNamespaceAsync(prefix: string, ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18818,7 +18820,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18841,7 +18843,7 @@
             },
             "getNamespaceAsync": {
               "kind": "method",
-              "signature": "getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getNamespaceAsync(prefix: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18898,12 +18900,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the namespace mapped to the specified prefix."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18926,7 +18928,7 @@
             },
             "getPrefixAsync": {
               "kind": "method",
-              "signature": "getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getPrefixAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18983,12 +18985,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is a string that contains the prefix of the specified namespace."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -19307,7 +19309,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19400,7 +19402,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -20413,7 +20415,7 @@
             },
             "getActiveViewAsync": {
               "kind": "method",
-              "signature": "getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<\"edit\" | \"read\">) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20458,12 +20460,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the state of the presentation's current view. The value returned can be either \"edit\" or \"read\". \"edit\" corresponds to any of the views in which you can edit slides, such as Normal or Outline View. \"read\" corresponds to either Slide Show or Reading View."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<\"edit\" | \"read\">) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -20855,7 +20857,7 @@
             },
             "getFileAsync": {
               "kind": "method",
-              "signature": "getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20912,12 +20914,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the File object."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Office.File>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -21363,7 +21365,7 @@
             },
             "getFilePropertiesAsync": {
               "kind": "method",
-              "signature": "getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.FileProperties>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21408,12 +21410,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the file's properties (with the URL found at `asyncResult.value.url`)."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Office.FileProperties>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -21805,7 +21807,7 @@
             },
             "getMaxResourceIndexAsync": {
               "kind": "method",
-              "signature": "getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21850,12 +21852,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the highest index number in the current project's resource collection."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<number>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -22040,7 +22042,7 @@
             },
             "getMaxTaskIndexAsync": {
               "kind": "method",
-              "signature": "getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22085,12 +22087,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the highest index number in the current project's task collection."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<number>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -22275,7 +22277,7 @@
             },
             "getProjectFieldAsync": {
               "kind": "method",
-              "signature": "getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22332,12 +22334,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -22515,7 +22517,7 @@
             },
             "getResourceByIndexAsync": {
               "kind": "method",
-              "signature": "getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22572,12 +22574,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the GUID of the resource as a string."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -22762,7 +22764,7 @@
             },
             "getResourceFieldAsync": {
               "kind": "method",
-              "signature": "getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22831,12 +22833,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the GUID of the resource as a string."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -23014,7 +23016,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync<T>(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23066,12 +23068,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the data in the current selection. This is returned in the data structure or format you specified with the coercionType parameter. (See Remarks for more information about data coercion.)"
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<T>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24231,7 +24233,7 @@
             },
             "getSelectedResourceAsync": {
               "kind": "method",
-              "signature": "getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24276,12 +24278,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the GUID of the resource as a string."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24459,7 +24461,7 @@
             },
             "getSelectedTaskAsync": {
               "kind": "method",
-              "signature": "getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24504,12 +24506,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the GUID of the resource as a string."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24687,7 +24689,7 @@
             },
             "getSelectedViewAsync": {
               "kind": "method",
-              "signature": "getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24732,12 +24734,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` - The type of view, as the integer value of a ProjectViewTypes constant."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24915,7 +24917,7 @@
             },
             "getTaskAsync": {
               "kind": "method",
-              "signature": "getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24972,12 +24974,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -25155,7 +25157,7 @@
             },
             "getTaskByIndexAsync": {
               "kind": "method",
-              "signature": "getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25212,12 +25214,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the GUID of the task as a string."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -25402,7 +25404,7 @@
             },
             "getTaskFieldAsync": {
               "kind": "method",
-              "signature": "getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25471,12 +25473,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -25654,7 +25656,7 @@
             },
             "getWSSUrlAsync": {
               "kind": "method",
-              "signature": "getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25699,12 +25701,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result contains the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the URL of the synchronized SharePoint task list."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -25882,7 +25884,7 @@
             },
             "goToByIdAsync": {
               "kind": "method",
-              "signature": "goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25951,12 +25953,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the current view."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -26037,7 +26039,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` Doesn't select anything."
+                  "text": "In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. `Office.SelectionMode.None` doesn't select anything."
                 },
                 {
                   "kind": "paragraph"
@@ -26785,7 +26787,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26847,7 +26849,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -27232,7 +27234,7 @@
             },
             "setResourceFieldAsync": {
               "kind": "method",
-              "signature": "setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27318,7 +27320,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -27503,7 +27505,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27619,7 +27621,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -29215,7 +29217,7 @@
             },
             "setTaskFieldAsync": {
               "kind": "method",
-              "signature": "setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29301,7 +29303,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -34186,7 +34188,7 @@
           "members": {
             "closeAsync": {
               "kind": "method",
-              "signature": "closeAsync(callback?: (result: AsyncResult) => void): void;",
+              "signature": "closeAsync(callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34224,7 +34226,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -34556,7 +34558,7 @@
             },
             "getSliceAsync": {
               "kind": "method",
-              "signature": "getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult<Office.Slice>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34601,12 +34603,31 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is the "
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.Slice"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "Slice"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Office.Slice>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -49768,7 +49789,7 @@
         },
         "select": {
           "kind": "function",
-          "signature": "export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;",
+          "signature": "export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;",
           "returnValue": {
             "type": "Binding",
             "description": []
@@ -49815,7 +49836,7 @@
               ],
               "isOptional": true,
               "isSpread": false,
-              "type": "(result: AsyncResult) => void"
+              "type": "(result: AsyncResult<any>) => void"
             }
           },
           "deprecatedMessage": [],
@@ -51045,7 +51066,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -51560,7 +51581,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -52105,7 +52126,7 @@
             },
             "refreshAsync": {
               "kind": "method",
-              "signature": "refreshAsync(callback?: (result: AsyncResult) => void): void;",
+              "signature": "refreshAsync(callback?: (result: AsyncResult<Office.Settings>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -52138,12 +52159,31 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an "
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.Settings"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "Settings"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object with the refreshed values."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Office.Settings>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -53342,7 +53382,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -53404,7 +53444,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -53806,7 +53846,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -53856,7 +53896,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -55763,7 +55803,7 @@
           "members": {
             "addColumnsAsync": {
               "kind": "method",
-              "signature": "addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addColumnsAsync(tableData: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -55825,7 +55865,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -56137,7 +56177,7 @@
             },
             "addRowsAsync": {
               "kind": "method",
-              "signature": "addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "addRowsAsync(rows: TableData | any[][], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -56199,7 +56239,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -56572,7 +56612,7 @@
             },
             "clearFormatsAsync": {
               "kind": "method",
-              "signature": "clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "clearFormatsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -56622,7 +56662,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -57186,7 +57226,7 @@
             },
             "deleteAllDataValuesAsync": {
               "kind": "method",
-              "signature": "deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -57236,7 +57276,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -57581,7 +57621,7 @@
             },
             "getFormatsAsync": {
               "kind": "method",
-              "signature": "getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "getFormatsAsync(cellReference?: any, formats?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult< ({ cells: any, format: any})[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -57650,12 +57690,12 @@
                     },
                     {
                       "kind": "text",
-                      "text": "."
+                      "text": ". The `value` property of the result is an array containing one or more JavaScript objects specifying the formatting of their corresponding cells."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult< ({ cells: any, format: any})[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -57665,7 +57705,391 @@
                   "text": "Gets the formatting on specified items in the table."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "**Returned format structure**"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition }}`"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The `cells:` property specifies the range you want format using one of the following values:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Supported ranges in cells property**"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": "cells range settings"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Description"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "{row: n}"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies the range that is the zero-based nth row of data in the table."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "{column: n}"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies the range that is the zero-based nth column of data in the table."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "{row: i, column: j}"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies the single cell that is the ith row and jth column of the table."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Office.Table.All"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies the entire table, including column headers, data, and totals (if any)."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Office.Table.Data"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies only the data in the table (no headers and totals)."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Office.Table.Headers"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Specifies only the header row."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel (Right-click > Format Cells or Home > Format > Format Cells)."
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -58409,7 +58833,7 @@
             },
             "setFormatsAsync": {
               "kind": "method",
-              "signature": "setFormatsAsync(cellFormat?: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setFormatsAsync(cellFormat: any[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -58426,7 +58850,7 @@
                       "text": "An array that contains one or more JavaScript objects that specify which cells to target and the formatting to apply to them."
                     }
                   ],
-                  "isOptional": true,
+                  "isOptional": false,
                   "isSpread": false,
                   "type": "any[]"
                 },
@@ -58471,7 +58895,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -59024,268 +59448,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<th>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Property"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</th>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<th>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Use to..."
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</th>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "AsyncResult.value"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Always returns undefined because there is no data or object to retrieve when setting formats."
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "AsyncResult.status"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Determine the success or failure of the operation."
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "AsyncResult.error"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Access an Error object that provides error information if the operation failed."
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "AsyncResult.asyncContext"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "A user-defined item of any type that is returned in the AsyncResult object without being altered."
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "**Support details**"
                 },
                 {
@@ -59475,7 +59637,7 @@
             },
             "setTableOptionsAsync": {
               "kind": "method",
-              "signature": "setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "setTableOptionsAsync(tableOptions: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -59537,7 +59699,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -60986,7 +61148,7 @@
             },
             "displayDialogAsync": {
               "kind": "method",
-              "signature": "displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void): void;",
+              "signature": "displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -61048,7 +61210,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult) => void"
+                  "type": "(result: AsyncResult<Dialog>) => void"
                 }
               },
               "deprecatedMessage": [],

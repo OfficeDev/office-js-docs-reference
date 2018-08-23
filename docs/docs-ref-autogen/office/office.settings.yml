@@ -82,7 +82,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -131,7 +131,7 @@ items:
             (in browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> </td><td> Y
             </td><td> </td></tr> </table>
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.get
     summary: Retrieves the specified setting.
     remarks: >-
@@ -255,7 +255,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'refreshAsync(callback?: (result: AsyncResult) => void): void;'
+      content: 'refreshAsync(callback?: (result: AsyncResult<Office.Settings>) => void): void;'
       return:
         type:
           - void
@@ -264,9 +264,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
+            [Office.Settings](xref:office.Office.Settings) object with the refreshed values.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.Settings>) => void'
   - uid: office.Office.Settings.remove
     summary: >-
       Removes the specified setting.
@@ -390,8 +391,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult)
-        => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -410,7 +411,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.saveAsync
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
@@ -475,7 +476,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -490,7 +491,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.set
     summary: >-
       Sets or creates the specified setting.
