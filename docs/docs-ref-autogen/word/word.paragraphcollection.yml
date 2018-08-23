@@ -123,8 +123,9 @@ items:
 
       ```javascript
 
-      // This example shows how to get the paragraphs in the Word document along with their text and font size
-      properties.
+      // This example shows how to get the paragraphs in the Word document
+
+      // along with their text and font size properties.
 
       // 
 

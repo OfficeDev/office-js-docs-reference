@@ -129,7 +129,8 @@ items:
       // Get the names of points in the points collection
 
       Excel.run(function (ctx) { 
-          var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          var pointsCollection = 
+              ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
           pointsCollection.load('items');
           return ctx.sync().then(function() {
               console.log("Points Collection loaded");
@@ -148,7 +149,8 @@ items:
       // Get the number of points
 
       Excel.run(function (ctx) { 
-          var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          var pointsCollection = 
+              ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
           pointsCollection.load('count');
           return ctx.sync().then(function() {
               console.log("points: Count= " + pointsCollection.count);

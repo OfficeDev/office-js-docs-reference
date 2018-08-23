@@ -45,7 +45,8 @@ items:
 
       ```javascript
       function showXmlNodeBaseNames() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -78,7 +79,8 @@ items:
 
       ```javascript
       function showXmlChildNodes() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -131,7 +133,8 @@ items:
 
       ```javascript
       function showXmlNodeValues() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -172,25 +175,27 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
-    remarks: >-
+    remarks: |-
       <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
-
       ```javascript
-
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-
-      Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function
-      (getByIdAsyncResult) {
+      Office.context.document.customXmlParts.getByIdAsync(
+          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
           
           // Access the XML part.
           var xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
-              xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
+          xmlPart.namespaceManager.addNamespaceAsync(
+              'cp',
+              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties',
+              function () {
+              xmlPart.namespaceManager.addNamespaceAsync(
+                  'dc', 
+                  'http://purl.org/dc/elements/1.1/', 
+                  function () {
 
                   // Get XML nodes by using an Xpath expression. This results in a call to Word.
                   xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
@@ -208,7 +213,6 @@ items:
               });
           });
       });
-
       ```
     name: 'getTextAsync(options, callback)'
     fullName: office.Office.CustomXmlNode.getTextAsync
@@ -240,7 +244,8 @@ items:
 
       ```javascript
       function showXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -287,7 +292,8 @@ items:
 
       ```javascript
       function showXmlNamespaceUri() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -320,7 +326,8 @@ items:
 
       ```javascript
       function showXmlNodeType() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -353,7 +360,8 @@ items:
 
       ```javascript
       function setXmlNodeValue() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -399,49 +407,53 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
-    remarks: >-
+    remarks: |-
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
-
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
       #### Examples
 
-
       ```javascript
-
       // Learn how to set the text value of a node in a custom XML part from the following example.
 
-
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-
-      Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function
-      (getByIdAsyncResult) {
+      Office.context.document.customXmlParts.getByIdAsync(
+          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
+          function (getByIdAsyncResult) {
           
           // Access the XML part.
           var xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
-              xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
+          xmlPart.namespaceManager.addNamespaceAsync(
+              'cp', 
+              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', 
+              function () {
+              xmlPart.namespaceManager.addNamespaceAsync(
+                  'dc', 
+                  'http://purl.org/dc/elements/1.1/', 
+                  function () {
 
                   // Get XML nodes by using an Xpath expression. This results in a call to the host.
                   xmlPart.getNodesAsync("/cp:coreProperties/dc:subject", function (getNodesAsyncResult) {
                       
-                      // Get the first node returned by using the Xpath expression. This will be the subject element in this example.
+                      // Get the first node returned by using the Xpath expression.
+                      // This will be the subject element in this example.
                       var subjectNode = getNodesAsyncResult.value[0];
                       
-                      // Set the text value of the subject node and use the asyncContext. This results in a call to the host. 
-                      // The results are logged to the browser console. 
-                      subjectNode.setTextAsync("newSubject", {asyncContext: "StateNormal"}, function (setTextAsyncResult) {
-                        console.log("The status of the call: " + setTextAsyncResult.status);
-                        console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
+                      // Set the text value of the subject node and use the asyncContext. 
+                      // This results in a call to the host.  The results are logged to the browser console.
+                      subjectNode.setTextAsync(
+                          "newSubject", 
+                          {asyncContext: "StateNormal"}, 
+                          function (setTextAsyncResult) {
+                              console.log("The status of the call: " + setTextAsyncResult.status);
+                              console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
                       });
                   });
               });
           });
       });
-
       ```
     name: 'setTextAsync(text, options, callback)'
     fullName: office.Office.CustomXmlNode.setTextAsync
@@ -479,7 +491,8 @@ items:
 
       ```javascript
       function setXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {

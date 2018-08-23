@@ -1,6 +1,6 @@
-## Supertip
+# Supertip
 
-Defines a rich tooltip (both Title and Description). It is used by both [Button](control.md#button-control) or [Menu](control.md#menu-dropdown-button-controls)  controls. 
+Defines a rich tooltip (both Title and Description). It is used by both [Button](control.md#button-control) or [Menu](control.md#menu-dropdown-button-controls)  controls.
 
 ## Child elements
 
@@ -17,7 +17,7 @@ Required. The text for the supertip. The  **resid** attribute must be set to the
 
 Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the [Resources](resources.md) element.
 
-## Example 
+## Example
 
 ```xml
 <Supertip>

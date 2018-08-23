@@ -102,7 +102,9 @@ items:
                   for(var i=0; i<shapeHyperlinks.items.length;i++)
                   {
                       var hyperlink = shapeHyperlinks.items[i];
-                      console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
+                      console.log(
+                          "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
+                          hyperlink.subAddress);
                   }
               });
       }).catch(function(error) {

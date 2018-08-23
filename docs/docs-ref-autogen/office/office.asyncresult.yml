@@ -33,23 +33,21 @@ items:
                   console.log(err.name + ": " + err.message);
               }
           });
-      // The anonymous function passed as the callback argument ( function (result){...}) has a single parameter named
-      result
+      // The anonymous function passed as the callback argument ( function (result){...}) has a single 
 
-      // that provides access to an AsyncResult object when the function executes. When the call to the
-      getSelectedDataAsync method
+      // parameter named result that provides access to an AsyncResult object when the function executes.
 
-      // completes, the callback function executes, and the following line of code accesses the value property of the
-      AsyncResult
+      // When the call to the getSelectedDataAsync method completes, the callback function executes, 
 
-      // object to return the data selected in the document:
+      // and the following line of code accesses the value property of the AsyncResult object to 
+
+      // return the data selected in the document:
 
       var dataValue = result.value;
 
-      // Note that other lines of code in the function use the result parameter of the callback function to access the
-      status and
+      // Note that other lines of code in the function use the result parameter of the callback function 
 
-      // error properties of the AsyncResult object.
+      // to access the status and error properties of the AsyncResult object.
 
       ```
     name: Office.AsyncResult
@@ -97,7 +95,10 @@ items:
 
       function getDataWithContext() {
           var format = "Your data: ";
-          Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
+          Office.context.document.getSelectedDataAsync(
+              Office.CoercionType.Text, 
+              { asyncContext: format }, 
+              showDataWithContext);
       }
 
 
