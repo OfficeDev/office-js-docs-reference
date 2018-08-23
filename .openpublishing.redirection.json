@@ -71,6 +71,38 @@
         {
             "source_path": "docs/docs-ref-autogen/visio/visio.loadoption.md",
             "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.6/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.5/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.4/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.3/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
         }
-    ] 
+    ]
 }
