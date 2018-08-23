@@ -155,6 +155,18 @@
         {
             "source_path": "docs/docs-ref-autogen/outlook/office.RecurrenceTimeZone.md",
             "redirect_url": "/javascript/api/outlook/office.mailboxenums.recurrencetimezone"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.showcardpostprocessaction.md",
+            "redirect_url": "/javascript/api/excel"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.common.md",
+            "redirect_url": "/javascript/office/requirement-sets/office-add-in-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.richapiobject-methods.md",
+            "redirect_url": "/javascript/office/javascript-api-for-office"
         }
     ]
 }
