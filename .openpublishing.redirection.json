@@ -103,6 +103,30 @@
         {
             "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Event.md",
             "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.binding.bindingselectionchangedevent.md",
+            "redirect_url": "/javascript/api/office/office.bindingselectionchangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodedeleted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodedeleted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodereplaced.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.document.selectionchanged.md",
+            "redirect_url": "/javascript/api/office/office.document"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.settings"
         }
     ]
 }
