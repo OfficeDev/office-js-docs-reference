@@ -105,6 +105,14 @@
             "redirect_url": "/javascript/api/office/office.addincommands.event"
         },
         {
+            "source_path": "docs/docs-ref-autogen/outlook_1_2/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.2/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_1/office.Office.md",
+            "redirect_url": "/javascript/office/objectmodel/requirement-set-1.1/office"
+        },
+        {
             "source_path": "docs/docs-ref-autogen/office/office.binding.bindingselectionchangedevent.md",
             "redirect_url": "/javascript/api/office/office.bindingselectionchangedeventargs"
         },
@@ -127,6 +135,26 @@
         {
             "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
             "redirect_url": "/javascript/api/office/office.settings"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionpostprocessaction.md",
+            "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.binding.bindingdatachangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.bindingdatachangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.document.selectionchangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.documentselectionchangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.RecurrenceTimeZone.md",
+            "redirect_url": "/javascript/api/outlook/office.mailboxenums.recurrencetimezone"
         }
     ]
 }
