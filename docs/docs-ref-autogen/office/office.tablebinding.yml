@@ -680,13 +680,15 @@ items:
 
       // Specifying multiple targets
 
-      // The setFormatsAsync method can support formatting multiple targets within the bound table in a single function
-      call.
+      // The setFormatsAsync method can support formatting multiple targets within the bound table in a 
 
-      // To do that, you pass a list of objects in the cellFormat array for each target that you want to format.
+      // single function call. To do that, you pass a list of objects in the cellFormat array 
 
-      // For example, the following line of code will set the font color of the first row yellow, and the fourth cell in
-      the third row to have a white border and bold text.
+      // for each target that you want to format.
+
+      // For example, the following line of code will set the font color of the first row yellow, 
+
+      // and the fourth cell in the third row to have a white border and bold text.
 
       Office.select("bindings#myBinding").setFormatsAsync(
           [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
@@ -695,9 +697,11 @@ items:
 
       // Additional remarks for Excel Online
 
-      // The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group
-      consists of a set of formatting applied to a specified range of cells. For example, the following call passes two
-      formatting groups to cellFormat.
+      // The number of formatting groups passed to the cellFormat parameter can't exceed 100. 
+
+      // A single formatting group consists of a set of formatting applied to a specified range of cells. 
+
+      // For example, the following call passes two formatting groups to cellFormat.
 
       Office.select("bindings#myBinding").setFormatsAsync(
           [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
@@ -779,8 +783,9 @@ items:
 
       // 1. Create an object literal that specifies the table formatting options to update on the bound table.
 
-      // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with
-      formatting setting as the tableOptions parameter.
+      // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object
+
+      //    with formatting setting as the tableOptions parameter.
 
       function updateTableFormatting(){
           var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 

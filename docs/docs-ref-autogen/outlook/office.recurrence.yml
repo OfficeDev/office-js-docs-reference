@@ -81,10 +81,11 @@ items:
 
       // The following is an example of the results of the getAsync call.
 
-      Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"],
-      "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard
-      Time", "offset": -480}}
-
+      Recurrence = {
+          "recurrenceType": "weekly",
+          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+          "seriesTime": {seriesTimeObject}, 
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
       ```
     isPreview: true
     name: 'getAsync(options, callback)'
@@ -249,15 +250,18 @@ items:
       seriesTimeObject.setDuration(30);
 
 
-      var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue",
-      "Thu"], "firstDayOfWeek": "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
-
+      var pattern = {
+          "seriesTime": seriesTimeObject,
+          "type": "weekly",
+          "properties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
+          "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
 
       Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
 
 
-      //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST
-      every Tuesday and Thursday.
+      //Result: This created a recurring event from November 2, 2017 to December 2, 2017
+
+      //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 
       ```
     isPreview: true

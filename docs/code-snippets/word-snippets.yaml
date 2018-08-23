@@ -22,7 +22,8 @@ Word.Body.clear:
         }
     });
 
-    // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
+    // The Silly stories add-in sample shows how the 
+    // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
 Word.Body.getHtml:
   - |-
@@ -149,7 +150,8 @@ Word.Body.insertHtml:
         var body = context.document.body;
     
         // Queue a commmand to insert HTML in to the beginning of the body.
-        body.insertHtml('<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
+        body.insertHtml(
+            '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -564,7 +566,9 @@ Word.ContentControl.insertFileFromBase64:
             }
             else {
                 // Queue a command to put HTML into the contents of the first content control.
-                contentControls.items[0].insertHtml('<strong>HTML content inserted into the content control.</strong>', 'Start');
+                contentControls.items[0].insertHtml(
+                    '<strong>HTML content inserted into the content control.</strong>',
+                    'Start');
             
                 // Synchronize the document state by executing the queued commands, 
                 // and return a promise to indicate task completion.
@@ -919,7 +923,9 @@ Word.ContentControlCollection.getByTag:
             if (contentControlsWithTag.items.length === 0) {
                 console.log("There isn't a content control with a tag of Customer-Address in this document.");
             } else {
-                console.log('The first content control with the tag of Customer-Address has this text: ' + contentControlsWithTag.items[0].text);
+                console.log(
+                    'The first content control with the tag of Customer-Address has this text: ' + 
+                    contentControlsWithTag.items[0].text);
             }
     
         });
@@ -948,9 +954,12 @@ Word.ContentControlCollection.getByTitle:
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             if (contentControlsWithTitle.items.length === 0) {
-                console.log("There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+                console.log(
+                    "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
             } else {
-                console.log("The first content control with the title of 'Enter Customer Address Here' has this text: " + contentControlsWithTitle.items[0].text);
+                console.log(
+                    "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
+                    contentControlsWithTitle.items[0].text);
             }
     
         });
@@ -1056,7 +1065,8 @@ Word.ContentControlCollection.load:
         }
     });
 
-    // The Silly stories add-in sample shows how the load method is used to load the content control collection with the tag and title properties.
+    // The Silly stories add-in sample shows how the load method is used
+    // to load the content control collection with the tag and title properties.
     // https://aka.ms/sillystorywordaddin
 Word.Document.getSelection:
   - |-
@@ -1857,7 +1867,8 @@ Word.Paragraph.select:
     });
 Word.ParagraphCollection.load:
   - |-
-    // This example shows how to get the paragraphs in the Word document along with their text and font size properties.
+    // This example shows how to get the paragraphs in the Word document
+    // along with their text and font size properties.
     // 
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

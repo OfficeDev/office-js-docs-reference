@@ -71,7 +71,8 @@ items:
               return context.sync()
                   .then(function () {
 
-                      // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                      // Iterate through the collection or access items individually by index,
+                      // for example: notebooks.items[0]
                       if (notebooks.items.length > 0) {
                           console.log("Notebook name: " + notebooks.items[0].name);
                           console.log("Notebook ID: " + notebooks.items[0].id);
@@ -182,7 +183,8 @@ items:
           return context.sync()
               .then(function () {
 
-                  // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                  // Iterate through the collection or access items individually by index, 
+                  // for example: notebooks.items[0]
                   $.each(notebooks.items, function(index, notebook) {
                       notebook.addSection("Biology");
                       notebook.addSection("Spanish");
