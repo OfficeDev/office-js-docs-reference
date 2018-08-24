@@ -148,7 +148,7 @@ items:
     syntax:
       content: >-
         addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: AddBindingFromNamedItemOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<Binding>) => void): void;
       return:
         type:
           - void
@@ -171,9 +171,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the specified named item.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
@@ -228,7 +229,7 @@ items:
     syntax:
       content: >-
         addFromPromptAsync(bindingType: BindingType, options?: AddBindingFromPromptOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<Binding>) => void): void;
       return:
         type:
           - void
@@ -247,9 +248,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the selection specified by the user.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
     remarks: >-
@@ -311,7 +313,7 @@ items:
     syntax:
       content: >-
         addFromSelectionAsync(bindingType: BindingType, options?: AddBindingFromSelectionOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<Binding>) => void): void;
       return:
         type:
           - void
@@ -330,9 +332,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the selection specified by the user.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.document
     summary: >-
       Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
@@ -413,7 +416,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding[]>) => void): void;'
       return:
         type:
           - void
@@ -426,9 +429,10 @@ items:
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
+            array that contains each binding created for the referenced Bindings object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Binding[]>) => void'
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
     remarks: >-
@@ -479,7 +483,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
       return:
         type:
           - void
@@ -496,9 +502,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object specified by the id in the call.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
     remarks: >-
@@ -547,8 +554,8 @@ items:
     type: method
     syntax:
       content: >-
-        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -567,4 +574,4 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

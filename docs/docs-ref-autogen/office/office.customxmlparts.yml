@@ -38,7 +38,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) =>
+        void): void;
       return:
         type:
           - void
@@ -81,9 +83,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            newly created CustomXmlPart object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<CustomXmlPart>) => void'
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
     name: 'getByIdAsync(id, options, callback)'
@@ -92,7 +95,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>)
+        => void): void;
       return:
         type:
           - void
@@ -127,9 +132,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
+            CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with the
+            specified id, the method returns null.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<CustomXmlPart>) => void'
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     name: 'getByNamespaceAsync(ns, options, callback)'
@@ -139,8 +146,8 @@ items:
     type: method
     syntax:
       content: >-
-        getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<CustomXmlPart[]>) => void): void;
       return:
         type:
           - void
@@ -173,6 +180,7 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
+            array of CustomXmlPart objects that match the specified namespace.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<CustomXmlPart[]>) => void'

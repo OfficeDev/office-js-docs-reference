@@ -448,19 +448,6 @@ items:
               }
           });
           ```
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // To create a Range with multiple child areas, pass a 
-              // comma-delimited string of range addresses to 
-              // Worksheet.getRange.
-              const range = sheet.getRange("F3:F5, H3:H5");
-              range.format.fill.color = "pink";
-
-              await context.sync();
-          });
-          ```
       parameters:
         - id: address
           description: >-

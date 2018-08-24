@@ -58,7 +58,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'closeAsync(callback?: (result: AsyncResult) => void): void;'
+      content: 'closeAsync(callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -69,7 +69,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.File.getSliceAsync
     summary: Returns the specified slice.
     remarks: >-
@@ -91,7 +91,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;'
+      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult<Office.Slice>) => void): void;'
       return:
         type:
           - void
@@ -104,9 +104,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            [Office.Slice](xref:office.Office.Slice) object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.Slice>) => void'
   - uid: office.Office.File.size
     summary: Gets the document file size in bytes.
     remarks: <table><tr><td>Requirement Sets</td><td>File</td></tr></table>

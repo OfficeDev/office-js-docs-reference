@@ -73,6 +73,7 @@ items:
       - office.Office.SetBindingDataOptions
       - office.Office.SetSelectedDataOptions
       - office.Office.Settings
+      - office.Office.SettingsChangedEventArgs
       - office.Office.Slice
       - office.Office.Table
       - office.Office.TableBinding
@@ -259,7 +260,7 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;'
+      content: 'export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;'
       return:
         type:
           - Binding
@@ -276,7 +277,7 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of
             type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.useShortNamespace
     summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: >-
@@ -477,6 +478,8 @@ references:
     name: Office.SetSelectedDataOptions
   - uid: office.Office.Settings
     name: Office.Settings
+  - uid: office.Office.SettingsChangedEventArgs
+    name: Office.SettingsChangedEventArgs
   - uid: office.Office.Slice
     name: Office.Slice
   - uid: office.Office.Table

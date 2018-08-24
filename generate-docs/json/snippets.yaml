@@ -2321,18 +2321,6 @@ Excel.Worksheet.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        // To create a Range with multiple child areas, pass a 
-        // comma-delimited string of range addresses to 
-        // Worksheet.getRange.
-        const range = sheet.getRange("F3:F5, H3:H5");
-        range.format.fill.color = "pink";
-
-        await context.sync();
-    });
 Excel.Worksheet.getUsedRange:
   - |-
     Excel.run(function (ctx) { 

@@ -80,7 +80,8 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
+      void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addFileAttachmentAsync
     langs:
@@ -89,7 +90,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -121,7 +122,7 @@ items:
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async
     summary: >-
       Adds a file to a message or appointment as an attachment.
@@ -157,7 +158,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -187,7 +188,7 @@ items:
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentCompose.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event.
@@ -211,7 +212,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addHandlerAsync
@@ -220,8 +221,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -248,7 +249,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -291,7 +292,8 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
+      void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addItemAttachmentAsync
     langs:
@@ -300,7 +302,7 @@ items:
     syntax:
       content: >-
         addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -329,7 +331,7 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -501,8 +503,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
+        void): void;
       return:
         type:
           - void
@@ -517,11 +519,12 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type On success, the initialization data is provided in the asyncResult.value property as a
-            string. If there is no initialization context, the asyncResult object will contain an Error object with its
-            code property set to 9020 and its name property set to GenericResponseError.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->. On success, the initialization data is provided in the
+            asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
+            contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -552,7 +555,7 @@ items:
     syntax:
       content: >-
         getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
-        AsyncResult) => void): void;
+        AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -573,7 +576,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: outlook.Office.AppointmentCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -633,7 +636,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        void;
       return:
         type:
           - void
@@ -644,7 +649,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type<!-- -->Office.AsyncResult<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -825,7 +830,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeAttachmentAsync
     langs:
@@ -834,7 +839,7 @@ items:
     syntax:
       content: >-
         removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -856,7 +861,7 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
             property will contain an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentCompose.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.
@@ -880,7 +885,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeHandlerAsync
@@ -889,8 +894,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -917,7 +922,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
@@ -997,14 +1002,14 @@ items:
       `saveAsync(options: Office.AsyncContextOptions): void;`
 
 
-      `saveAsync(callback: (result: AsyncResult) => void): void;`
+      `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.AppointmentCompose.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -1019,10 +1024,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
-            property will contain an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentCompose.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
@@ -1095,7 +1099,7 @@ items:
       `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.AppointmentCompose.setSelectedDataAsync
     langs:
@@ -1104,7 +1108,7 @@ items:
     syntax:
       content: >-
         setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1130,10 +1134,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->. If removing the attachment fails, the asyncResult.error
-            property will contain an error code with the reason for the failure.
+            parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentCompose.start
     summary: >-
       Gets or sets the date and time that the appointment is to begin.

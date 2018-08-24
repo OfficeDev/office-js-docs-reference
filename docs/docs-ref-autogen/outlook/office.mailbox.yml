@@ -70,7 +70,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -95,7 +95,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type<!-- -->Office.AsyncResult<!-- -->.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -612,10 +612,10 @@ items:
       In addition to this signature, the method has the following signatures:
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) => void): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;`
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:
@@ -624,7 +624,7 @@ items:
     syntax:
       content: >-
         getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
-        AsyncResult) => void): void;
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -643,7 +643,7 @@ items:
             of type<!-- -->Office.AsyncResult<!-- -->. The token is provided as a string in the asyncResult.value
             property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Mailbox.getUserIdentityTokenAsync
     summary: |-
       Gets a token identifying the user and the Office Add-in.
@@ -668,7 +668,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -677,9 +677,10 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->.
+            of type<!-- -->Office.AsyncResult<!-- -->. The token is provided as a string in the asyncResult.value
+            property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -770,7 +771,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -783,9 +784,10 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->.
+            of type<!-- -->Office.AsyncResult<!-- -->. The `value` property of the result is the XML of the EWS request
+            provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
