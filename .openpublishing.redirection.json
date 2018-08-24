@@ -163,6 +163,10 @@
         {
             "source_path": "docs/docs-ref-autogen/office/office.richapiobject-methods.md",
             "redirect_url": "/javascript/office/javascript-api-for-office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.settingschangedeventargs"
         }
     ]
 }
