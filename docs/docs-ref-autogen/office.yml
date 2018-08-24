@@ -73,6 +73,7 @@ items:
       - office.Office.SetBindingDataOptions
       - office.Office.SetSelectedDataOptions
       - office.Office.Settings
+      - office.Office.SettingsChangedEventArgs
       - office.Office.Slice
       - office.Office.Table
       - office.Office.TableBinding
@@ -477,6 +478,8 @@ references:
     name: Office.SetSelectedDataOptions
   - uid: office.Office.Settings
     name: Office.Settings
+  - uid: office.Office.SettingsChangedEventArgs
+    name: Office.SettingsChangedEventArgs
   - uid: office.Office.Slice
     name: Office.Slice
   - uid: office.Office.Table

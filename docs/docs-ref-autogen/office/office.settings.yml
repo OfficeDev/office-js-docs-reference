@@ -19,8 +19,11 @@ items:
 
 
       The Settings object is automatically loaded as part of the Document object, and is available by calling the
-      settings property of that object when the add-in is activated. The developer is responsible for calling the
-      saveAsync method after adding or deleting settings to save the settings in the document.
+      settings property of that object when the add-in is activated.
+
+
+      The developer is responsible for calling the saveAsync method after adding or deleting settings to save the
+      settings in the document.
     name: Office.Settings
     fullName: office.Office.Settings
     langs:
@@ -93,7 +96,9 @@ items:
           type:
             - Office.EventType
         - id: handler
-          description: The event handler function to add. Required.
+          description: >-
+            The event handler function to add, whose only parameter is of
+            type[Office.SettingsChangedEventArgs](xref:office.Office.SettingsChangedEventArgs)<!-- -->. Required.
           type:
             - any
         - id: options

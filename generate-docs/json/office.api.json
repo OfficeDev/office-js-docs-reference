@@ -51058,7 +51058,14 @@
             },
             {
               "kind": "text",
-              "text": "The Settings object is automatically loaded as part of the Document object, and is available by calling the settings property of that object when the add-in is activated. The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings in the document."
+              "text": "The Settings object is automatically loaded as part of the Document object, and is available by calling the settings property of that object when the add-in is activated."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings in the document."
             }
           ],
           "isBeta": false,
@@ -51092,7 +51099,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event handler function to add. Required."
+                      "text": "The event handler function to add, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.SettingsChangedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "SettingsChangedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Required."
                     }
                   ],
                   "isOptional": false,
@@ -55061,6 +55087,450 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            }
+          }
+        },
+        "SettingsChangedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the settings that raised the settingsChanged event."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": ""
+            },
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Requirement Sets"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Settings"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "To add an event handler for the settingsChanged event, use the addHandlerAsync method of the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Settings"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "Settings"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " object."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The settingsChanged event fires only when your add-in's script calls the Settings.saveAsync method to persist the in-memory copy of the settings into the document file. The settingsChanged event is not triggered when the Settings.set or Settings.remove methods are called."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The settingsChanged event was designed to let you to handle potential conflicts when two or more users are attempting to save settings at the same time when your add-in is used in a shared (co-authored) document."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "**Important:** Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "**Support details**"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this interface."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "For more information about Office host application and server requirements, see "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Requirements for running Office Add-ins"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "*Supported hosts, by platform* "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Windows desktop "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office Online (in browser) "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for iPad "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<strong>"
+            },
+            {
+              "kind": "text",
+              "text": " Excel "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<strong>"
+            },
+            {
+              "kind": "text",
+              "text": " Word "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "text",
+              "text": ""
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "settings": {
+              "kind": "property",
+              "signature": "settings: Settings;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Settings",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Settings"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Settings"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that represents the settings that raised the settingsChanged event."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: EventType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EventType",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Get an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EventType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "EventType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " enumeration value that identifies the kind of event that was raised."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },

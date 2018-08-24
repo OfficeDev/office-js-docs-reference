@@ -133,10 +133,6 @@
             "redirect_url": "/javascript/api/office/office.document"
         },
         {
-            "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
-            "redirect_url": "/javascript/api/office/office.settings"
-        },
-        {
             "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionpostprocessaction.md",
             "redirect_url": "/javascript/docs-ref-conceptual/openspec#new-excel-javascript-apis"
         },
