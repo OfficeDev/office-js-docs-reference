@@ -46,7 +46,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback?: (result: AsyncResult) => void): void;`
+      `getAsync(callback?: (result: AsyncResult&lt;Office.EmailAddressDetails&gt;) => void): void;`
     isPreview: true
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.From.getAsync
@@ -54,7 +54,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails>) =>
+        void): void;
       return:
         type:
           - void
@@ -69,6 +71,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
-            asyncResult, which is an<!-- -->Office.AsyncResult object.
+            asyncResult, which is an<!-- -->Office.AsyncResult object. The `value` property of the result is message's
+            from value, as an EmailAddressDetails object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.EmailAddressDetails>) => void'

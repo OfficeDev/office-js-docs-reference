@@ -1275,6 +1275,8 @@ items:
                 uid: office.Office.SetSelectedDataOptions
               - name: Settings
                 uid: office.Office.Settings
+              - name: SettingsChangedEventArgs
+                uid: office.Office.SettingsChangedEventArgs
               - name: Slice
                 uid: office.Office.Slice
               - name: TableBinding

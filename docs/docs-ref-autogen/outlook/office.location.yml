@@ -40,14 +40,14 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult) => void): void;`
+      `getAsync(callback: (result: AsyncResult<string>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.Location.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -67,7 +67,7 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Location.setAsync
     summary: >-
       Sets the location of an appointment.
@@ -97,7 +97,7 @@ items:
       `setAsync(location: string, options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(location: string, callback: (result: AsyncResult) => void): void;`
+      `setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setAsync(location, options, callback)'
     fullName: outlook.Office.Location.setAsync
     langs:
@@ -105,8 +105,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -131,4 +131,4 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

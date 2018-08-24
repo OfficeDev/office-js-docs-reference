@@ -299,7 +299,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'value: any;'
+      content: 'value: T;'
       return:
         type:
-          - any
+          - T

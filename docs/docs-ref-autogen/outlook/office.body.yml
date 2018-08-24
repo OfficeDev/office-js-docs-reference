@@ -53,7 +53,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;`
+      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult&lt;Office.Body&gt;) => void): void;`
 
       #### Examples
 
@@ -86,7 +86,7 @@ items:
     syntax:
       content: >-
         getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<Office.Body>) => void): void;
       return:
         type:
           - void
@@ -108,7 +108,7 @@ items:
             parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.Body>) => void'
   - uid: outlook.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -127,7 +127,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.CoercionType>) =>
+        void): void;
       return:
         type:
           - void
@@ -145,7 +147,7 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. The content type is returned as one of the CoercionType
             values in the asyncResult.value property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.CoercionType>) => void'
   - uid: outlook.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -179,7 +181,7 @@ items:
       `prependAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      `prependAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
 
 
       `prependAsync(data: string): void;`
@@ -206,7 +208,7 @@ items:
     syntax:
       content: >-
         prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -229,7 +231,7 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
             asyncResult.error property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setAsync
     summary: >-
       Replaces the entire body with the specified text.
@@ -266,7 +268,7 @@ items:
       `setAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      `setAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
 
 
       `setAsync(data: string): void;`
@@ -309,7 +311,7 @@ items:
     syntax:
       content: >-
         setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -332,7 +334,7 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
             asyncResult.error property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -369,7 +371,7 @@ items:
       `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`
@@ -396,7 +398,7 @@ items:
     syntax:
       content: >-
         setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -419,4 +421,4 @@ items:
             parameter of type<!-- -->Office.AsyncResult<!-- -->. Any errors encountered will be provided in the
             asyncResult.error property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

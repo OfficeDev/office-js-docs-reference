@@ -138,8 +138,8 @@ items:
     type: method
     syntax:
       content: >-
-        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void):
-        void;
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) =>
+        void): void;
       return:
         type:
           - void
@@ -160,7 +160,7 @@ items:
             Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
             AsyncResult.value is a Dialog object.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Dialog>) => void'
   - uid: office.Office.UI.messageParent
     summary: >-
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
