@@ -114,8 +114,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->. If adding the recipients fails, the asyncResult.error
-            property will contain an error code.
+            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
+            contain an error code.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.getAsync
@@ -185,8 +185,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. The `value` property of the result is an array of
-            EmailAddressDetails objects.
+            of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
             - '(result: AsyncResult<Office.EmailAddressDetails[]>) => void'
   - uid: outlook.Office.Recipients.setAsync
@@ -286,7 +285,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->. If setting the recipients fails the asyncResult.error
-            property will contain a code that indicates any error that occurred while adding the data.
+            parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
             - '(result: AsyncResult<void>) => void'

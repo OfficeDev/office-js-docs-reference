@@ -104,7 +104,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.MessageRead.attachments
@@ -555,7 +555,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object. On success, the initialization data is
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
             provided in the asyncResult.value property as a string. If there is no initialization context, the
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
@@ -881,7 +881,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->.
+            of type Office.AsyncResult.
           type:
             - '(result: AsyncResult<Office.CustomProperties>) => void'
         - id: userContext
@@ -1033,7 +1033,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an<!-- -->Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.MessageRead.sender
