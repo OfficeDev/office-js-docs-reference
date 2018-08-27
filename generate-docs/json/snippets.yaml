@@ -6297,9 +6297,12 @@ OfficeExtension.LoadOption:
         }
     });
 OfficeExtension.LoadOption.top:
-  - |-
-    // This OneNote example show how to get the page title and indentation level
+  - >-
+    // This OneNote example shows how to get the page title and indentation
+    level
+
     // of the top five pages in the current section.
+
     OneNote.run(function (context) {
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
