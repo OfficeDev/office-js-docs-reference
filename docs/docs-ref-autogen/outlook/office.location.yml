@@ -62,10 +62,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->.
-
-
-            \[Api set: Mailbox 1.1\]
+            parameter of type Office.AsyncResult. \[Api set: Mailbox 1.1\]
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Location.setAsync
@@ -125,10 +122,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->. If setting the location fails, the asyncResult.error
-            property will contain an error code.
-
-
-            \[Api set: Mailbox 1.1\]
+            parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will
+            contain an error code. \[Api set: Mailbox 1.1\]
           type:
             - '(result: AsyncResult<void>) => void'
