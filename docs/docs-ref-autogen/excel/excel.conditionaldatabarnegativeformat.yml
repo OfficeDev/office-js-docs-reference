@@ -19,6 +19,7 @@ items:
       - excel.Excel.ConditionalDataBarNegativeFormat.load
       - excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
       - excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveFillColor
+      - excel.Excel.ConditionalDataBarNegativeFormat.set
       - excel.Excel.ConditionalDataBarNegativeFormat.toJSON
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.borderColor
     summary: >-
@@ -62,6 +63,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ConditionalDataBarNegativeFormat` - Where option is a comma-delimited
+      string or an array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where
       option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
       is a comma-delimited string that specifies the relationships to load.
@@ -78,16 +83,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions):
+        Excel.ConditionalDataBarNegativeFormat;
       return:
         type:
           - excel.Excel.ConditionalDataBarNegativeFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
@@ -118,6 +125,38 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.ConditionalDataBarNegativeFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ConditionalDataBarNegativeFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ConditionalDataBarNegativeFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ConditionalDataBarNegativeFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.toJSON

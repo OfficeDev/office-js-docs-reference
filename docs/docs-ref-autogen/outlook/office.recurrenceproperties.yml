@@ -10,8 +10,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: Office.RecurrenceProperties
     fullName: outlook.Office.RecurrenceProperties
@@ -49,10 +48,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dayOfWeek: Office.MailboxEnums.Days;'
+      content: 'dayOfWeek: MailboxEnums.Days;'
       return:
         type:
-          - outlook.Office.MailboxEnums.Days
+          - MailboxEnums.Days
   - uid: outlook.Office.RecurrenceProperties.days
     summary: >-
       Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and
@@ -64,10 +63,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'days: Office.MailboxEnums.Days[];'
+      content: 'days: MailboxEnums.Days[];'
       return:
         type:
-          - 'Office.MailboxEnums.Days[]'
+          - 'MailboxEnums.Days[]'
   - uid: outlook.Office.RecurrenceProperties.firstDayOfWeek
     summary: >-
       Represents your chosen first day of the week otherwise the default is the value in the current user's settings.
@@ -79,10 +78,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'firstDayOfWeek: Office.MailboxEnums.Days;'
+      content: 'firstDayOfWeek: MailboxEnums.Days;'
       return:
         type:
-          - outlook.Office.MailboxEnums.Days
+          - MailboxEnums.Days
   - uid: outlook.Office.RecurrenceProperties.interval
     summary: Represents the period between instances of the same recurring series.
     isPreview: true
@@ -105,10 +104,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'month: Office.MailboxEnums.Month;'
+      content: 'month: MailboxEnums.Month;'
       return:
         type:
-          - outlook.Office.MailboxEnums.Month
+          - MailboxEnums.Month
   - uid: outlook.Office.RecurrenceProperties.weekNumber
     summary: Represents the number of the week in the selected month e.g. 'first' for first week of the month.
     isPreview: true
@@ -118,7 +117,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'weekNumber: Office.MailboxEnums.WeekNumber;'
+      content: 'weekNumber: MailboxEnums.WeekNumber;'
       return:
         type:
-          - outlook.Office.MailboxEnums.WeekNumber
+          - MailboxEnums.WeekNumber

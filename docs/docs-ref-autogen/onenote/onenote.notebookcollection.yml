@@ -53,45 +53,46 @@ items:
       return:
         type:
           - onenote.OneNote.NotebookCollection
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the notebooks that are open in the application instance and have the specified name.
-              var notebooks = context.application.notebooks.getByName("Homework");
-
-              // Queue a command to load the notebooks. 
-              // For best performance, request specific properties.           
-              notebooks.load("id,name");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Iterate through the collection or access items individually by index,
-                      // for example: notebooks.items[0]
-                      if (notebooks.items.length > 0) {
-                          console.log("Notebook name: " + notebooks.items[0].name);
-                          console.log("Notebook ID: " + notebooks.items[0].id);
-                      }
-                          
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: name
           description: The name of the notebook.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Get the notebooks that are open in the application instance and have the specified name.
+          var notebooks = context.application.notebooks.getByName("Homework");
+
+          // Queue a command to load the notebooks. 
+          // For best performance, request specific properties.           
+          notebooks.load("id,name");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+
+                  // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
+                  if (notebooks.items.length > 0) {
+                      console.log("Notebook name: " + notebooks.items[0].name);
+                      console.log("Notebook ID: " + notebooks.items[0].id);
+                  }
+                      
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.NotebookCollection.getItem
     summary: |-
       Gets a notebook by ID or by its index in the collection. Read-only.
@@ -142,34 +143,38 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: OneNote.Notebook[];'
+      content: 'readonly items: Array<OneNote.Notebook>;'
       return:
         type:
-          - 'OneNote.Notebook[]'
+          - Array<OneNote.Notebook>
   - uid: onenote.OneNote.NotebookCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.NotebookCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.NotebookCollection;
+      return:
+        type:
+          - onenote.OneNote.NotebookCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function (context) {
 
           // Get the notebooks that are open in the application instance and have the specified name.
@@ -183,8 +188,7 @@ items:
           return context.sync()
               .then(function () {
 
-                  // Iterate through the collection or access items individually by index, 
-                  // for example: notebooks.items[0]
+                  // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
                   $.each(notebooks.items, function(index, notebook) {
                       notebook.addSection("Biology");
                       notebook.addSection("Spanish");
@@ -194,31 +198,13 @@ items:
                   return context.sync();
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.NotebookCollection.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.NotebookCollection;'
-      return:
-        type:
-          - onenote.OneNote.NotebookCollection
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.NotebookCollection.toJSON
     name: toJSON()
     fullName: onenote.OneNote.NotebookCollection.toJSON

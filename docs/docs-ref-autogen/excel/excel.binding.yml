@@ -55,25 +55,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var range = binding.getRange();
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var range = binding.getRange();
+          range.load('cellCount');
+          return ctx.sync().then(function() {
+              console.log(range.cellCount);
           });
-          ```
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Binding.getTable
     summary: |-
       Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
@@ -89,25 +91,27 @@ items:
       return:
         type:
           - excel.Excel.Table
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var table = binding.getTable();
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var table = binding.getTable();
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
           });
-          ```
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Binding.getText
     summary: |-
       Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
@@ -123,25 +127,27 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var text = binding.getText();
-              binding.load('text');
-              return ctx.sync().then(function() {
-                  console.log(text);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var text = binding.getText();
+          binding.load('text');
+          return ctx.sync().then(function() {
+              console.log(text);
           });
-          ```
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Binding.id
     summary: |-
       Represents binding identifier. Read-only.
@@ -161,8 +167,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.Binding` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited
@@ -175,6 +185,7 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -201,16 +212,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Binding;'
+      content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
           - excel.Excel.Binding
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.
@@ -220,28 +231,29 @@ items:
     fullName: excel.Excel.Binding.onDataChanged
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");    
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
-              salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+      #### Examples
 
-              OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");    
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+          salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
 
-              await context.sync();
-          });
-          ```
+          OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Binding.onSelectionChanged
     summary: |-
       Occurs when the selected content in the binding is changed.
@@ -251,7 +263,7 @@ items:
     fullName: excel.Excel.Binding.onSelectionChanged
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
       return:

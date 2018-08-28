@@ -24,6 +24,7 @@ items:
       - visio.Visio.Document.onShapeMouseEnter
       - visio.Visio.Document.onShapeMouseLeave
       - visio.Visio.Document.pages
+      - visio.Visio.Document.set
       - visio.Visio.Document.setActivePage
       - visio.Visio.Document.startDataRefresh
       - visio.Visio.Document.toJSON
@@ -58,50 +59,54 @@ items:
       return:
         type:
           - Visio.Page
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              var activePage = document.getActivePage();
-              activePage.load();
-              return ctx.sync().then(function () {
-              console.log("pageName: " +activePage.name);
-                });   
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          var activePage = document.getActivePage();
+          activePage.load();
+          return ctx.sync().then(function () {
+          console.log("pageName: " +activePage.name);
+            });   
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Document.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: visio.Visio.Document.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;'
+      return:
+        type:
+          - Visio.Document
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.DocumentLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var pages = ctx.document.pages;
           var pageCount = pages.getCount();
           return ctx.sync().then(function () {
@@ -113,12 +118,10 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var documentView = ctx.document.view;
           documentView.disableHyperlinks();
           return ctx.sync();
@@ -128,12 +131,10 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var application = ctx.document.application;
           application.showToolbars = false;
           return ctx.sync();
@@ -143,24 +144,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: visio.Visio.Document.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): Visio.Document;'
-      return:
-        type:
-          - Visio.Document
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: visio.Visio.Document.onDataRefreshComplete
     summary: |-
       Occurs when the data is refreshed in the diagram.
@@ -170,7 +154,7 @@ items:
     fullName: visio.Visio.Document.onDataRefreshComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
       return:
@@ -185,7 +169,7 @@ items:
     fullName: visio.Visio.Document.onDocumentLoadComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
       return:
@@ -200,7 +184,7 @@ items:
     fullName: visio.Visio.Document.onPageLoadComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
       return:
@@ -215,7 +199,7 @@ items:
     fullName: visio.Visio.Document.onSelectionChanged
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;'
       return:
@@ -230,7 +214,7 @@ items:
     fullName: visio.Visio.Document.onShapeMouseEnter
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
       return:
@@ -245,7 +229,7 @@ items:
     fullName: visio.Visio.Document.onShapeMouseLeave
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
       return:
@@ -266,6 +250,37 @@ items:
       return:
         type:
           - Visio.PageCollection
+  - uid: visio.Visio.Document.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Document.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.DocumentUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.DocumentUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: visio.Visio.Document.setActivePage
     summary: |-
       Set the Active Page of the document.
@@ -281,28 +296,30 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              var pageName = "Page-1";
-              document.setActivePage(pageName);
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: PageName
           description: Name of the page
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          var pageName = "Page-1";
+          document.setActivePage(pageName);
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Document.startDataRefresh
     summary: |-
       Triggers the refresh of the data in the Diagram, for all pages.
@@ -318,22 +335,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              document.startDataRefresh();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          document.startDataRefresh();
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Document.toJSON
     name: toJSON()
     fullName: visio.Visio.Document.toJSON
@@ -348,7 +367,7 @@ items:
         description: ''
   - uid: visio.Visio.Document.view
     summary: |-
-      Returns the DocumentView object. Read-only.
+      Returns the DocumentView object.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: view

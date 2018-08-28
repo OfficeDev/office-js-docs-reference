@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.ServiceToken
+    summary: |-
+      Service token for Application::\_GetServiceToken.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.ServiceToken
+    fullName: onenote.OneNote.ServiceToken
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.ServiceToken.accountType
+      - onenote.OneNote.ServiceToken.headerName
+      - onenote.OneNote.ServiceToken.headerValue
+  - uid: onenote.OneNote.ServiceToken.accountType
+    summary: |-
+      Account type
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: accountType
+    fullName: onenote.OneNote.ServiceToken.accountType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.ServiceToken.headerName
+    summary: |-
+      // Header name of the service token
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: headerName
+    fullName: onenote.OneNote.ServiceToken.headerName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerName: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.ServiceToken.headerValue
+    summary: |-
+      Header value of the service token
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: headerValue
+    fullName: onenote.OneNote.ServiceToken.headerValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerValue: string;'
+      return:
+        type:
+          - string

@@ -19,6 +19,7 @@ items:
       - excel.Excel.ConditionalRangeFont.color
       - excel.Excel.ConditionalRangeFont.italic
       - excel.Excel.ConditionalRangeFont.load
+      - excel.Excel.ConditionalRangeFont.set
       - excel.Excel.ConditionalRangeFont.strikethrough
       - excel.Excel.ConditionalRangeFont.toJSON
       - excel.Excel.ConditionalRangeFont.underline
@@ -91,6 +92,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ConditionalRangeFont` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -107,16 +112,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalRangeFont;'
+      content: 'load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
       return:
         type:
           - excel.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
+  - uid: excel.Excel.ConditionalRangeFont.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ConditionalRangeFont): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ConditionalRangeFont.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ConditionalRangeFontUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.

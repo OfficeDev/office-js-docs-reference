@@ -21,6 +21,7 @@ items:
       - excel.Excel.Setting.delete
       - excel.Excel.Setting.key
       - excel.Excel.Setting.load
+      - excel.Excel.Setting.set
       - excel.Excel.Setting.toJSON
       - excel.Excel.Setting.value
   - uid: excel.Excel.Setting.delete
@@ -38,28 +39,30 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
+      #### Examples
 
-              await context.sync();
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          let needsReview = settings.getItem("NeedsReview");
+          needsReview.delete();
+          needsReview = settings.getItemOrNullObject("NeedsReview");
 
-              if (needsReview.isNullObject) {
-                  OfficeHelpers.UI.notify("The setting has been deleted");
-              } else {
-                  OfficeHelpers.UI.notify("The setting was not deleted");
-              }
+          await context.sync();
 
-              await context.sync();
-          });
-          ```
+          if (needsReview.isNullObject) {
+              OfficeHelpers.UI.notify("The setting has been deleted");
+          } else {
+              OfficeHelpers.UI.notify("The setting was not deleted");
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Setting.key
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.
@@ -83,6 +86,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.Setting` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -99,16 +106,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Setting;'
+      content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
       return:
         type:
           - excel.Excel.Setting
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.SettingLoadOptions
+  - uid: excel.Excel.Setting.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Setting): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Setting.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.SettingUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.SettingUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Setting.toJSON
     name: toJSON()
     fullName: excel.Excel.Setting.toJSON

@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.AccountInfo
+    summary: |-
+      Account information.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.AccountInfo
+    fullName: onenote.OneNote.AccountInfo
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.AccountInfo.accountType
+      - onenote.OneNote.AccountInfo.email
+      - onenote.OneNote.AccountInfo.userName
+  - uid: onenote.OneNote.AccountInfo.accountType
+    summary: |-
+      Account type
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: accountType
+    fullName: onenote.OneNote.AccountInfo.accountType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.AccountInfo.email
+    summary: |-
+      Account email
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: email
+    fullName: onenote.OneNote.AccountInfo.email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.AccountInfo.userName
+    summary: |-
+      // Account user name
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: userName
+    fullName: onenote.OneNote.AccountInfo.userName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'userName: string;'
+      return:
+        type:
+          - string

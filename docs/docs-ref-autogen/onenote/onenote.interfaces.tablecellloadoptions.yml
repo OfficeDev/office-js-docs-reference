@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions
+    summary: |-
+      Represents a cell in a OneNote table.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.TableCellLoadOptions
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.cellIndex
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.id
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.paragraphs
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.parentRow
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.rowIndex
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.shadingColor
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.cellIndex
+    summary: |-
+      Gets the index of the cell in its row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: cellIndex
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.cellIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.id
+    summary: |-
+      Gets the ID of the cell. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.paragraphs
+    summary: |-
+      Gets the collection of Paragraph objects in the TableCell.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.parentRow
+    summary: |-
+      Gets the parent row of the cell.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentRow
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.TableRowLoadOptions
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.rowIndex
+    summary: |-
+      Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: rowIndex
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.shadingColor
+    summary: |-
+      Gets and sets the shading color of the cell
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: shadingColor
+    fullName: onenote.OneNote.Interfaces.TableCellLoadOptions.shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: boolean;'
+      return:
+        type:
+          - boolean

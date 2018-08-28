@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.ChartLegendEntry.load
+      - excel.Excel.ChartLegendEntry.set
       - excel.Excel.ChartLegendEntry.toJSON
       - excel.Excel.ChartLegendEntry.visible
   - uid: excel.Excel.ChartLegendEntry.load
@@ -23,6 +24,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ChartLegendEntry` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a
@@ -41,16 +46,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLegendEntry;'
+      content: 'load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;'
       return:
         type:
           - excel.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLegendEntryLoadOptions
+  - uid: excel.Excel.ChartLegendEntry.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartLegendEntry): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartLegendEntry.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLegendEntryUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartLegendEntryUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegendEntry.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLegendEntry.toJSON

@@ -36,7 +36,7 @@ items:
             - 'any[]'
   - uid: office.Office.TableData.headers
     summary: Gets or sets the headers of the table.
-    remarks: >-
+    remarks: >
       <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
@@ -56,6 +56,7 @@ items:
 
 
       - If you overwrite or update an existing table, the existing headers are not altered.
+
 
       #### Examples
 
@@ -86,7 +87,7 @@ items:
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
       empty array ``, if there are no rows.
-    remarks: >-
+    remarks: >
       <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
@@ -106,6 +107,7 @@ items:
 
 
       - If you overwrite or update an existing table, the existing rows are not altered.
+
 
       #### Examples
 

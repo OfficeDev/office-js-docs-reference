@@ -18,6 +18,7 @@ items:
     children:
       - Outlook_1_1.Office.ItemCompose.addFileAttachmentAsync
       - Outlook_1_1.Office.ItemCompose.addItemAttachmentAsync
+      - Outlook_1_1.Office.ItemCompose.getSelectedDataAsync
       - Outlook_1_1.Office.ItemCompose.removeAttachmentAsync
       - Outlook_1_1.Office.ItemCompose.subject
   - uid: Outlook_1_1.Office.ItemCompose.addFileAttachmentAsync
@@ -39,8 +40,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
@@ -88,7 +88,7 @@ items:
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
+            can provide any object they wish to access in the callback method. inInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
             - office.Office.AsyncContextOptions
@@ -125,8 +125,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
@@ -181,6 +180,48 @@ items:
             a description of the error.
           type:
             - '(result: AsyncResult) => void'
+  - uid: Outlook_1_1.Office.ItemCompose.getSelectedDataAsync
+    summary: >-
+      Asynchronously returns selected data from the subject or body of a message.
+
+
+      If there is no selection but the cursor is in the body or subject, the method returns null for the selected data.
+      If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+
+
+      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+    name: 'getSelectedDataAsync(coerciontype, callback)'
+    fullName: Outlook_1_1.Office.ItemCompose.getSelectedDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: The selected data as a string with format determined by coercionType.
+      parameters:
+        - id: coerciontype
+          description: ''
+          type:
+            - office.Office.CoercionType
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: Outlook_1_1.Office.ItemCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -199,8 +240,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
@@ -261,8 +301,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: Outlook_1_1.Office.ItemCompose.subject
     langs:

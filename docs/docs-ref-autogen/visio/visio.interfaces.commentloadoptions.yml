@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.CommentLoadOptions
+    summary: |-
+      Represents the Comment.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.CommentLoadOptions
+    fullName: visio.Visio.Interfaces.CommentLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.CommentLoadOptions.author
+      - visio.Visio.Interfaces.CommentLoadOptions.date
+      - visio.Visio.Interfaces.CommentLoadOptions.text
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.author
+    summary: |-
+      A string that specifies the label of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: author
+    fullName: visio.Visio.Interfaces.CommentLoadOptions.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.date
+    summary: |-
+      A string that specifies the format of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: date
+    fullName: visio.Visio.Interfaces.CommentLoadOptions.date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.text
+    summary: |-
+      A string that specifies the value of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: visio.Visio.Interfaces.CommentLoadOptions.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean

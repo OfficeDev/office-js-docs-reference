@@ -20,6 +20,7 @@ items:
       - word.Word.Section.getNext
       - word.Word.Section.getNextOrNullObject
       - word.Word.Section.load
+      - word.Word.Section.set
       - word.Word.Section.toJSON
       - word.Word.Section.track
       - word.Word.Section.untrack
@@ -55,61 +56,64 @@ items:
       return:
         type:
           - Word.Body
-        description: |-
+        description: ''
+      parameters:
+        - id: type
+          description: 'Required. The type of footer to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy sectionsCollection object.
+          var mySections = context.document.sections;
+          
+          // Queue a commmand to load the sections.
+          context.load(mySections, 'body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
               
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
+              // Create a proxy object the primary footer of the first section. 
+              // Note that the footer is a body object.
+              var myFooter = mySections.items[0].getFooter("primary");
               
-              // Queue a commmand to load the sections.
-              context.load(mySections, 'body/style');
+              // Queue a command to insert text at the end of the footer.
+              myFooter.insertText("This is a footer.", Word.InsertLocation.end);
               
+              // Queue a command to wrap the header in a content control.
+              myFooter.insertContentControl();
+                                    
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
               return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary footer of the first section. 
-                  // Note that the footer is a body object.
-                  var myFooter = mySections.items[0].getFooter("primary");
-                  
-                  // Queue a command to insert text at the end of the footer.
-                  myFooter.insertText("This is a footer.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myFooter.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a footer to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```typescript
-          await Word.run(async (context) => {
-              context.document.sections.getFirst()
-                  .getFooter("Primary").insertParagraph("Confidential", "End");
+                  console.log("Added a footer to the first section.");
+              });                    
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
 
-              await context.sync();
-          });
-          ```
-      parameters:
-        - id: type
-          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
-          type:
-            - word.Word.HeaderFooterType
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.sections.getFirst()
+              .getFooter("Primary").insertParagraph("Confidential", "End");
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.Section.getHeader
     summary: |-
       Gets one of the section's headers.
@@ -125,61 +129,64 @@ items:
       return:
         type:
           - Word.Body
-        description: |-
+        description: ''
+      parameters:
+        - id: type
+          description: 'Required. The type of header to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy sectionsCollection object.
+          var mySections = context.document.sections;
+          
+          // Queue a commmand to load the sections.
+          context.load(mySections, 'body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
               
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
+              // Create a proxy object the primary header of the first section. 
+              // Note that the header is a body object.
+              var myHeader = mySections.items[0].getHeader("primary");
               
-              // Queue a commmand to load the sections.
-              context.load(mySections, 'body/style');
+              // Queue a command to insert text at the end of the header.
+              myHeader.insertText("This is a header.", Word.InsertLocation.end);
               
+              // Queue a command to wrap the header in a content control.
+              myHeader.insertContentControl();
+                                    
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
               return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary header of the first section. 
-                  // Note that the header is a body object.
-                  var myHeader = mySections.items[0].getHeader("primary");
-                  
-                  // Queue a command to insert text at the end of the header.
-                  myHeader.insertText("This is a header.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myHeader.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a header to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```typescript
-          await Word.run(async (context) => {
-              context.document.sections.getFirst()
-                  .getHeader("Primary").insertText("This is a header", "Start");
+                  console.log("Added a header to the first section.");
+              });                    
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
 
-              await context.sync();
-          });
-          ```
-      parameters:
-        - id: type
-          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
-          type:
-            - word.Word.HeaderFooterType
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.sections.getFirst()
+              .getHeader("Primary").insertText("This is a header", "Start");
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.Section.getNext
     summary: |-
       Gets the next section. Throws if this section is the last one.
@@ -216,36 +223,44 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
     name: load(option)
     fullName: word.Word.Section.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Section;'
+      content: 'load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;'
       return:
         type:
           - Word.Section
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.SectionLoadOptions
+  - uid: word.Word.Section.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: word.Word.Section.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.SectionUpdateData
+        - id: options
+          description: ''
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Section.toJSON
     name: toJSON()
     fullName: word.Word.Section.toJSON

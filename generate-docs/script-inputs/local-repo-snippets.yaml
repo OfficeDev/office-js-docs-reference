@@ -2495,7 +2495,7 @@ Office.Auth.getAccessTokenAsync:
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
         if (result.status === "succeeded") {
-            var token = result.value.accessToken;
+            var token = result.value;
             // ...
         } else {
             console.log("Error obtaining token", result.error);

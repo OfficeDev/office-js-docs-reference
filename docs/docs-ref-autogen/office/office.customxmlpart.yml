@@ -2,24 +2,10 @@
 items:
   - uid: office.Office.CustomXmlPart
     summary: 'Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office.Office.CustomXmlParts) collection.'
-    remarks: >-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |-
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this interface.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlPart
     fullName: office.Office.CustomXmlPart
     langs:
@@ -37,9 +23,13 @@ items:
       - office.Office.CustomXmlPart.removeHandlerAsync
   - uid: office.Office.CustomXmlPart.addHandlerAsync
     summary: Adds an event handler to the object using the specified event type.
-    remarks: >-
+    remarks: >
+      <table><tr><td>Hosts</td><td>Word</td></tr></table>
+
+
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
+
 
       #### Examples
 
@@ -49,8 +39,7 @@ items:
       // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeDeletedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
                   write("A node has been deleted.");
@@ -66,13 +55,13 @@ items:
 
       ```
 
+
       ```javascript
 
       // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeInsertedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
                   write("A node has been inserted.");
@@ -88,13 +77,13 @@ items:
 
       ```
 
+
       ```javascript
 
       // To add an event handler for the NodeReplaced event, use the addHandlerAsync method of the CustomXmlPart object.
 
       function addNodeReplacedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
                   write("A node has been replaced.");
@@ -116,8 +105,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (result: any) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -128,7 +117,7 @@ items:
             Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
             `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of
@@ -142,13 +131,31 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.builtIn
     summary: 'True, if the custom XML part is built in; otherwise false.'
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function showXMLPartBuiltIn() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              write(xmlPart.builtIn);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: builtIn
     fullName: office.Office.CustomXmlPart.builtIn
     langs:
@@ -159,102 +166,86 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartBuiltIn() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  write(xmlPart.builtIn);
-              });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - uid: office.Office.CustomXmlPart.deleteAsync
     summary: Deletes the Custom XML Part.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function deleteXMLPart() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.deleteAsync(function (eventArgs) {
+                  write("The XML Part has been deleted.");
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: 'deleteAsync(options, callback)'
     fullName: office.Office.CustomXmlPart.deleteAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'deleteAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function deleteXMLPart() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.deleteAsync(function (eventArgs) {
-                      write("The XML Part has been deleted.");
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getNodesAsync
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function showXmlNodeType() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (i = 0; i < nodeResults.value.length; i++) {
+                      var node = nodeResults.value[i];
+                      write(node.nodeType);
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: 'getNodesAsync(xPath, options, callback)'
     fullName: office.Office.CustomXmlPart.getNodesAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<CustomXmlNode[]>) => void): void;
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXmlNodeType() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          write(node.nodeType);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: xPath
           description: An XPath expression that specifies the nodes you want returned. Required.
@@ -265,58 +256,73 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
-            array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the
-            xPath parameter.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<CustomXmlNode[]>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getXmlAsync
     summary: Asynchronously gets the XML inside this custom XML part.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function showXMLPartInnerXML() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getXmlAsync({}, function (eventArgs) {
+                  write(eventArgs.value);
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: 'getXmlAsync(options, callback)'
     fullName: office.Office.CustomXmlPart.getXmlAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartInnerXML() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getXmlAsync({}, function (eventArgs) {
-                      write(eventArgs.value);
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            string that contains the XML of the referenced CustomXmlPart object.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.id
     summary: Gets the GUID of the CustomXMLPart.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function showXMLPartBuiltId() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              write(xmlPart.id);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: id
     fullName: office.Office.CustomXmlPart.id
     langs:
@@ -327,28 +333,26 @@ items:
       return:
         type:
           - string
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartBuiltId() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  write(xmlPart.id);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - uid: office.Office.CustomXmlPart.namespaceManager
     summary: >-
       Gets the set of namespace prefix mappings
       ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
-      CustomXmlPart.
+      CustomXMLPart.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function setXMLPartNamespaceManagerNamespace() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
+          });
+      }
+      ```
     name: namespaceManager
     fullName: office.Office.CustomXmlPart.namespaceManager
     langs:
@@ -359,21 +363,24 @@ items:
       return:
         type:
           - office.Office.CustomXmlPrefixMappings
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function setXMLPartNamespaceManagerNamespace() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
-              });
-          }
-          ```
   - uid: office.Office.CustomXmlPart.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+      #### Examples
+
+      ```javascript
+      function removeNodeInsertedEventHandler() {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
+              function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
+          });
+      }
+      ```
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.CustomXmlPart.removeHandlerAsync
     langs:
@@ -381,32 +388,19 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function removeNodeInsertedEventHandler() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
-                  function (result) {
-                      var xmlPart = result.value;
-                      xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
-              });
-          }
-          ```
+        description: ''
       parameters:
         - id: eventType
           description: >-
             Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
             as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: The name of the handler to remove.
           type:
@@ -416,8 +410,6 @@ items:
           type:
             - office.Office.RemoveHandlerOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'

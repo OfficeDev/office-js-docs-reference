@@ -24,7 +24,6 @@ items:
       - word.Word.LocationRelation.overlapsBefore
       - word.Word.LocationRelation.unrelated
   - uid: word.Word.LocationRelation.adjacentAfter
-    summary: 'Indicates that this instance occurs after, and is adjacent to, the range.'
     name: adjacentAfter
     fullName: word.Word.LocationRelation.adjacentAfter
     langs:
@@ -32,7 +31,6 @@ items:
     type: field
     numericValue: '"AdjacentAfter"'
   - uid: word.Word.LocationRelation.adjacentBefore
-    summary: 'Indicates that this instance occurs before, and is adjacent to, the range.'
     name: adjacentBefore
     fullName: word.Word.LocationRelation.adjacentBefore
     langs:
@@ -40,7 +38,6 @@ items:
     type: field
     numericValue: '"AdjacentBefore"'
   - uid: word.Word.LocationRelation.after
-    summary: Indicates that this instance occurs after the range.
     name: after
     fullName: word.Word.LocationRelation.after
     langs:
@@ -48,7 +45,6 @@ items:
     type: field
     numericValue: '"After"'
   - uid: word.Word.LocationRelation.before
-    summary: Indicates that this instance occurs before the range.
     name: before
     fullName: word.Word.LocationRelation.before
     langs:
@@ -56,9 +52,6 @@ items:
     type: field
     numericValue: '"Before"'
   - uid: word.Word.LocationRelation.contains
-    summary: >-
-      Indicates that this instance contains the range, with the exception of the start and end character of this
-      instance.
     name: contains
     fullName: word.Word.LocationRelation.contains
     langs:
@@ -66,9 +59,6 @@ items:
     type: field
     numericValue: '"Contains"'
   - uid: word.Word.LocationRelation.containsEnd
-    summary: >-
-      Indicates that this instance contains the range and that it shares the same end character. The range does not
-      share the same start character as this instance.
     name: containsEnd
     fullName: word.Word.LocationRelation.containsEnd
     langs:
@@ -76,9 +66,6 @@ items:
     type: field
     numericValue: '"ContainsEnd"'
   - uid: word.Word.LocationRelation.containsStart
-    summary: >-
-      Indicates that this instance contains the range and that it shares the same start character. The range does not
-      share the same end character as this instance.
     name: containsStart
     fullName: word.Word.LocationRelation.containsStart
     langs:
@@ -86,7 +73,6 @@ items:
     type: field
     numericValue: '"ContainsStart"'
   - uid: word.Word.LocationRelation.equal
-    summary: Indicates that this instance and the range represent the same range.
     name: equal
     fullName: word.Word.LocationRelation.equal
     langs:
@@ -94,9 +80,6 @@ items:
     type: field
     numericValue: '"Equal"'
   - uid: word.Word.LocationRelation.inside
-    summary: >-
-      Indicates that this instance is inside the range. The range does not share the same start and end characters as
-      this instance.
     name: inside
     fullName: word.Word.LocationRelation.inside
     langs:
@@ -104,9 +87,6 @@ items:
     type: field
     numericValue: '"Inside"'
   - uid: word.Word.LocationRelation.insideEnd
-    summary: >-
-      Indicates that this instance is inside the range and that it shares the same end character. The range does not
-      share the same start character as this instance.
     name: insideEnd
     fullName: word.Word.LocationRelation.insideEnd
     langs:
@@ -114,9 +94,6 @@ items:
     type: field
     numericValue: '"InsideEnd"'
   - uid: word.Word.LocationRelation.insideStart
-    summary: >-
-      Indicates that this instance is inside the range and that it shares the same start character. The range does not
-      share the same end character as this instance.
     name: insideStart
     fullName: word.Word.LocationRelation.insideStart
     langs:
@@ -124,7 +101,6 @@ items:
     type: field
     numericValue: '"InsideStart"'
   - uid: word.Word.LocationRelation.overlapsAfter
-    summary: Indicates that this instance starts inside the range and overlaps the range’s last character.
     name: overlapsAfter
     fullName: word.Word.LocationRelation.overlapsAfter
     langs:
@@ -132,7 +108,6 @@ items:
     type: field
     numericValue: '"OverlapsAfter"'
   - uid: word.Word.LocationRelation.overlapsBefore
-    summary: Indicates that this instance starts before the range and overlaps the range’s first character.
     name: overlapsBefore
     fullName: word.Word.LocationRelation.overlapsBefore
     langs:
@@ -140,7 +115,6 @@ items:
     type: field
     numericValue: '"OverlapsBefore"'
   - uid: word.Word.LocationRelation.unrelated
-    summary: Indicates that this instance and the range are in different sub-documents.
     name: unrelated
     fullName: word.Word.LocationRelation.unrelated
     langs:

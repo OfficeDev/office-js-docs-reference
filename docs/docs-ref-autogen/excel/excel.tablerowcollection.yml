@@ -19,6 +19,30 @@ items:
     extends:
       - OfficeExtension.ClientObject
     package: excel
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // In the example, we'll select the top 100 rows of the table.
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.getItem("Table1");
+          var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
+          return ctx.sync().then(function() {
+              for (var i = 0; i < tableRows.items.length; i++)
+              {
+                  console.log(tableRows.items[i].index);
+                  console.log(tableRows.items[i].values);
+              }
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
     children:
       - excel.Excel.TableRowCollection.add
       - excel.Excel.TableRowCollection.count
@@ -51,26 +75,7 @@ items:
       return:
         type:
           - excel.Excel.TableRow
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              var values = [["Sample", "Values", "For", "New", "Row"]];
-              var row = tables.getItem("Table1").rows.add(null, values);
-              row.load('index');
-              return ctx.sync().then(function() {
-                  console.log(row.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: index
           description: >-
@@ -82,6 +87,27 @@ items:
           description: Optional. A 2-dimensional array of unformatted values of the table row.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tables = ctx.workbook.tables;
+          var values = [["Sample", "Values", "For", "New", "Row"]];
+          var row = tables.getItem("Table1").rows.add(null, values);
+          row.load('index');
+          return ctx.sync().then(function() {
+              console.log(row.index);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.
@@ -134,29 +160,31 @@ items:
       return:
         type:
           - excel.Excel.TableRow
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-              tablerow.load('name');
-              return ctx.sync().then(function() {
-                      console.log(tablerow.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
+          tablerow.load('name');
+          return ctx.sync().then(function() {
+                  console.log(tablerow.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableRowCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -173,8 +201,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.TableRowCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a
@@ -187,6 +219,7 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
+
 
       #### Examples
 
@@ -211,45 +244,24 @@ items:
       });
 
       ```
-
-      ```javascript
-
-      // In the example, we'll select the top 100 rows of the table.
-
-      Excel.run(function (ctx) { 
-          var table = ctx.workbook.tables.getItem("Table1");
-          var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
-          return ctx.sync().then(function() {
-              for (var i = 0; i < tableRows.items.length; i++)
-              {
-                  console.log(tableRows.items[i].index);
-                  console.log(tableRows.items[i].values);
-              }
-          });
-      }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-      });
-
-      ```
     name: load(option)
     fullName: excel.Excel.TableRowCollection.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.TableRowCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableRowCollection;
       return:
         type:
           - excel.Excel.TableRowCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.TableRowCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableRowCollection.toJSON

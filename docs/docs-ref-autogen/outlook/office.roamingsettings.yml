@@ -26,13 +26,13 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+
 
       #### Examples
 
@@ -73,8 +73,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: get(name)
     fullName: outlook.Office.RoamingSettings.get
     langs:
@@ -101,8 +100,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: remove(name)
     fullName: outlook.Office.RoamingSettings.remove
     langs:
@@ -136,15 +134,14 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: saveAsync(callback)
     fullName: outlook.Office.RoamingSettings.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -152,10 +149,10 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional? When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.RoamingSettings.set
     summary: >-
       Sets or creates the specified setting.
@@ -179,8 +176,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'set(name, value)'
     fullName: outlook.Office.RoamingSettings.set
     langs:

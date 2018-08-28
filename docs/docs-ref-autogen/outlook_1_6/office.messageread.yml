@@ -19,7 +19,6 @@ items:
       - Outlook_1_6.Office.MessageRead.attachments
       - Outlook_1_6.Office.MessageRead.body
       - Outlook_1_6.Office.MessageRead.cc
-      - Outlook_1_6.Office.MessageRead.conversationId
       - Outlook_1_6.Office.MessageRead.dateTimeCreated
       - Outlook_1_6.Office.MessageRead.dateTimeModifed
       - Outlook_1_6.Office.MessageRead.displayReplyAllForm
@@ -52,8 +51,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -80,8 +78,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: body
     fullName: Outlook_1_6.Office.MessageRead.body
     langs:
@@ -108,8 +105,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: cc
     fullName: Outlook_1_6.Office.MessageRead.cc
     langs:
@@ -120,38 +116,6 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
-  - uid: Outlook_1_6.Office.MessageRead.conversationId
-    summary: >-
-      Gets an identifier for the email conversation that contains a particular message.
-
-
-      You can get an integer for this property if your mail app is activated in read forms or responses in compose
-      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
-      ID for that message will change and that value you obtained earlier will no longer apply.
-
-
-      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
-      the conversationId property will return a value.
-
-
-      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
-    name: conversationId
-    fullName: Outlook_1_6.Office.MessageRead.conversationId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'conversationId: string;'
-      return:
-        type:
-          - string
   - uid: Outlook_1_6.Office.MessageRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -162,8 +126,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: dateTimeCreated
     fullName: Outlook_1_6.Office.MessageRead.dateTimeCreated
     langs:
@@ -184,8 +147,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -226,8 +188,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: Outlook_1_6.Office.MessageRead.displayReplyAllForm
     langs:
@@ -274,8 +235,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: Outlook_1_6.Office.MessageRead.displayReplyForm
     langs:
@@ -316,8 +276,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: from
     fullName: Outlook_1_6.Office.MessageRead.from
     langs:
@@ -340,8 +299,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getEntities()
     fullName: Outlook_1_6.Office.MessageRead.getEntities
     langs:
@@ -365,8 +323,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -419,8 +376,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: Outlook_1_6.Office.MessageRead.getFilteredEntitiesByName
     langs:
@@ -468,8 +424,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatches()
     fullName: Outlook_1_6.Office.MessageRead.getRegExMatches
     langs:
@@ -508,8 +463,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: Outlook_1_6.Office.MessageRead.getRegExMatchesByName
     langs:
@@ -541,8 +495,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedEntities()
     fullName: Outlook_1_6.Office.MessageRead.getSelectedEntities
     langs:
@@ -581,8 +534,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: Outlook_1_6.Office.MessageRead.getSelectedRegExMatches
     langs:
@@ -607,8 +559,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: internetMessageId
     fullName: Outlook_1_6.Office.MessageRead.internetMessageId
     langs:
@@ -634,8 +585,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -681,8 +631,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemId
     fullName: Outlook_1_6.Office.MessageRead.itemId
     langs:
@@ -708,8 +657,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemType
     fullName: Outlook_1_6.Office.MessageRead.itemType
     langs:
@@ -742,8 +690,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: Outlook_1_6.Office.MessageRead.loadCustomPropertiesAsync
     langs:
@@ -783,8 +730,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: normalizedSubject
     fullName: Outlook_1_6.Office.MessageRead.normalizedSubject
     langs:
@@ -805,8 +751,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: notificationMessages
     fullName: Outlook_1_6.Office.MessageRead.notificationMessages
     langs:
@@ -835,8 +780,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: sender
     fullName: Outlook_1_6.Office.MessageRead.sender
     langs:
@@ -865,8 +809,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: subject
     fullName: Outlook_1_6.Office.MessageRead.subject
     langs:
@@ -893,8 +836,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
-      Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: to
     fullName: Outlook_1_6.Office.MessageRead.to
     langs:

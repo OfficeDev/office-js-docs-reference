@@ -2,10 +2,10 @@
 items:
   - uid: word.Word.ContentControlCollection
     summary: >-
-      Contains a collection of [Word.ContentControl](xref:word.Word.ContentControl) objects. Content controls are
-      bounded and potentially labeled regions in a document that serve as containers for specific types of content.
-      Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
-      Currently, only rich text content controls are supported.
+      Contains a collection of \[contentControl\](contentControl.md) objects. Content controls are bounded and
+      potentially labeled regions in a document that serve as containers for specific types of content. Individual
+      content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only
+      rich text content controls are supported.
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -48,65 +48,68 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getById(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The content control with that Id has been found in this document.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There is no content control with that ID.')
-                  } else {
-                      console.log('The content control with that ID has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: id
           description: Required. A content control identifier.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the content control that contains a specific id.
+          var contentControl = context.document.contentControls.getById(30086310);
+
+          // Queue a command to load the text property for a content control.
+          context.load(contentControl, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The content control with that Id has been found in this document.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the content control that contains a specific id.
+          var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+
+          // Queue a command to load the text property for a content control.
+          context.load(contentControl, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControl.isNullObject) {
+                  console.log('There is no content control with that ID.')
+              } else {
+                  console.log('The content control with that ID has been found in this document.');
+              }
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.ContentControlCollection.getByIdOrNullObject
     summary: >-
       Gets a content control by its identifier. Returns a null object if there isn't a content control with the
@@ -124,42 +127,44 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There is no content control with that ID.')
-                  } else {
-                      console.log('The content control with that ID has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: id
           description: Required. A content control identifier.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the content control that contains a specific id.
+          var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+
+          // Queue a command to load the text property for a content control.
+          context.load(contentControl, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControl.isNullObject) {
+                  console.log('There is no content control with that ID.')
+              } else {
+                  console.log('The content control with that ID has been found in this document.');
+              }
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.ContentControlCollection.getByTag
     summary: |-
       Gets the content controls that have the specified tag.
@@ -175,62 +180,62 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content controls collection that contains a specific tag.
-              var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-
-              // Queue a command to load the text property for all of content controls with a specific tag.
-              context.load(contentControlsWithTag, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTag.items.length === 0) {
-                      console.log("There isn't a content control with a tag of Customer-Address in this document.");
-                  } else {
-                      console.log(
-                          'The first content control with the tag of Customer-Address has this text: ' + 
-                          contentControlsWithTag.items[0].text);
-                  }
-
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
-          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-          ```
-          ```typescript
-          await Word.run(async (context) => {
-              let contentControls = context.document.contentControls.getByTag("customer");
-              contentControls.load("text");
-
-              await context.sync();
-
-              for (let i = 0; i < contentControls.items.length; i++) {
-                  contentControls.items[i].insertText("Fabrikam", "Replace");
-              }
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: tag
           description: Required. A tag set on a content control.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the content controls collection that contains a specific tag.
+          var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+
+          // Queue a command to load the text property for all of content controls with a specific tag.
+          context.load(contentControlsWithTag, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControlsWithTag.items.length === 0) {
+                  console.log("There isn't a content control with a tag of Customer-Address in this document.");
+              } else {
+                  console.log('The first content control with the tag of Customer-Address has this text: ' + contentControlsWithTag.items[0].text);
+              }
+
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+      ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          let contentControls = context.document.contentControls.getByTag("customer");
+          contentControls.load("text");
+
+          await context.sync();
+
+          for (let i = 0; i < contentControls.items.length; i++) {
+              contentControls.items[i].insertText("Fabrikam", "Replace");
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.ContentControlCollection.getByTitle
     summary: |-
       Gets the content controls that have the specified title.
@@ -246,49 +251,47 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content controls collection that contains a specific title.
-              var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
-
-              // Queue a command to load the text property for all of content controls with a specific title.
-              context.load(contentControlsWithTitle, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTitle.items.length === 0) {
-                      console.log(
-                          "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
-                  } else {
-                      console.log(
-                          "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
-                          contentControlsWithTitle.items[0].text);
-                  }
-
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
-          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-          ```
+        description: ''
       parameters:
         - id: title
           description: Required. The title of a content control.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the content controls collection that contains a specific title.
+          var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
+
+          // Queue a command to load the text property for all of content controls with a specific title.
+          context.load(contentControlsWithTitle, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControlsWithTitle.items.length === 0) {
+                  console.log("There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+              } else {
+                  console.log("The first content control with the title of 'Enter Customer Address Here' has this text: " + contentControlsWithTitle.items[0].text);
+              }
+
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+      ```
   - uid: word.Word.ContentControlCollection.getByTypes
     summary: |-
       Gets the content controls that have the specified types and/or subtypes.
@@ -325,37 +328,39 @@ items:
       return:
         type:
           - word.Word.ContentControl
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+      #### Examples
 
-              // Create a proxy object for the first content control in the document.
-              var contentControl = context.document.contentControls.getFirstOrNullObject();
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
 
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
+          // Create a proxy object for the first content control in the document.
+          var contentControl = context.document.contentControls.getFirstOrNullObject();
 
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There are no content controls in this document.')
-                  } else {
-                      console.log('The first content control has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          // Queue a command to load the text property for a content control.
+          context.load(contentControl, 'text');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControl.isNullObject) {
+                  console.log('There are no content controls in this document.')
+              } else {
+                  console.log('The first content control has been found in this document.');
               }
           });
-          ```
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.ContentControlCollection.getFirstOrNullObject
     summary: |-
       Gets the first content control in this collection. Returns a null object if this collection is empty.
@@ -409,20 +414,26 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: word.Word.ContentControlCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ContentControlCollection;
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    remarks: >
 
-
-      `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection`
-      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
 
       #### Examples
 
@@ -494,30 +505,12 @@ items:
           }
       });
 
-
-      // The Silly stories add-in sample shows how the load method is used
-
-      // to load the content control collection with the tag and title properties.
+      // The Silly stories add-in sample shows how the load method is used to load the content control collection with
+      the tag and title properties.
 
       // https://aka.ms/sillystorywordaddin
 
       ```
-    name: load(option)
-    fullName: word.Word.ContentControlCollection.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): Word.ContentControlCollection;'
-      return:
-        type:
-          - word.Word.ContentControlCollection
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: word.Word.ContentControlCollection.toJSON
     name: toJSON()
     fullName: word.Word.ContentControlCollection.toJSON

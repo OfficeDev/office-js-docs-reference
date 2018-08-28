@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.BreakType
     summary: |-
-      Specifies the form of a break.
+      Page break, line break, and four section breaks
 
       \[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.BreakType
@@ -37,7 +37,7 @@ items:
     type: field
     numericValue: '"Next"'
   - uid: word.Word.BreakType.page
-    summary: Page break at the insertion point.
+    summary: Page break.
     name: page
     fullName: word.Word.BreakType.page
     langs:
@@ -45,7 +45,7 @@ items:
     type: field
     numericValue: '"Page"'
   - uid: word.Word.BreakType.sectionContinuous
-    summary: New section without a corresponding page break.
+    summary: 'Section break, with the new section starting on the same page.'
     name: sectionContinuous
     fullName: word.Word.BreakType.sectionContinuous
     langs:
@@ -53,9 +53,7 @@ items:
     type: field
     numericValue: '"SectionContinuous"'
   - uid: word.Word.BreakType.sectionEven
-    summary: >-
-      Section break with the next section beginning on the next even-numbered page. If the section break falls on an
-      even-numbered page, Word leaves the next odd-numbered page blank.
+    summary: 'Section break, with the new section starting on the next even-numbered page.'
     name: sectionEven
     fullName: word.Word.BreakType.sectionEven
     langs:
@@ -63,7 +61,7 @@ items:
     type: field
     numericValue: '"SectionEven"'
   - uid: word.Word.BreakType.sectionNext
-    summary: Section break on next page.
+    summary: 'Section break, with the new section starting on the next page.'
     name: sectionNext
     fullName: word.Word.BreakType.sectionNext
     langs:
@@ -71,9 +69,7 @@ items:
     type: field
     numericValue: '"SectionNext"'
   - uid: word.Word.BreakType.sectionOdd
-    summary: >-
-      Section break with the next section beginning on the next odd-numbered page. If the section break falls on an
-      odd-numbered page, Word leaves the next even-numbered page blank.
+    summary: 'Section break, with the new section starting on the next odd-numbered page.'
     name: sectionOdd
     fullName: word.Word.BreakType.sectionOdd
     langs:

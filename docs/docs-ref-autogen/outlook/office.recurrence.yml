@@ -13,8 +13,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       **States**
@@ -49,19 +48,19 @@ items:
       This method returns the entire recurrence object for the appointment series.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback?: (result: AsyncResult&lt;Office.Recurrence&gt;) => void): void;`
+      `getAsync(callback?: (result: AsyncResult) => void): void;`
+
 
       #### Examples
 
@@ -81,11 +80,10 @@ items:
 
       // The following is an example of the results of the getAsync call.
 
-      Recurrence = {
-          "recurrenceType": "weekly",
-          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-          "seriesTime": {seriesTimeObject}, 
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+      Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"],
+      "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard
+      Time", "offset": -480}}
+
       ```
     isPreview: true
     name: 'getAsync(options, callback)'
@@ -94,9 +92,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Recurrence>) => void):
-        void;
+      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -111,10 +107,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
-            Recurrence object.
+            parameter, asyncResult, which is an AsyncResult object.
           type:
-            - '(result: AsyncResult<Office.Recurrence>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -125,8 +120,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
@@ -148,8 +142,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
@@ -157,10 +150,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceTimeZone: Office.MailboxEnums.RecurrenceTimeZone;'
+      content: 'recurrenceTimeZone: MailboxEnums.RecurrenceTimeZone;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecurrenceTimeZone
+          - MailboxEnums.RecurrenceTimeZone
   - uid: outlook.Office.Recurrence.recurrenceType
     summary: |-
       Gets or sets the type of the recurring appointment series.
@@ -171,8 +164,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
@@ -180,10 +172,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceType: Office.MailboxEnums.RecurrenceType;'
+      content: 'recurrenceType: MailboxEnums.RecurrenceType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecurrenceType
+          - MailboxEnums.RecurrenceType
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
       The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
@@ -198,8 +190,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
@@ -207,7 +198,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'seriesTime: Office.SeriesTime;'
+      content: 'seriesTime: SeriesTime;'
       return:
         type:
           - outlook.Office.SeriesTime
@@ -218,13 +209,12 @@ items:
       Note: setAsync should only be available for series items and not instance items.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
@@ -233,7 +223,8 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;`
+
 
       #### Examples
 
@@ -253,18 +244,15 @@ items:
       seriesTimeObject.setDuration(30);
 
 
-      var pattern = {
-          "seriesTime": seriesTimeObject,
-          "type": "weekly",
-          "properties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+      var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue",
+      "Thu"], "firstDayOfWeek": "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+
 
       Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
 
 
-      //Result: This created a recurring event from November 2, 2017 to December 2, 2017
-
-      //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+      //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST
+      every Tuesday and Thursday.
 
       ```
     isPreview: true
@@ -275,8 +263,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        setAsync(recurrencePattern: Recurrence, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -295,6 +283,6 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'

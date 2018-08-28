@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartDataLabel.load
       - excel.Excel.ChartDataLabel.position
       - excel.Excel.ChartDataLabel.separator
+      - excel.Excel.ChartDataLabel.set
       - excel.Excel.ChartDataLabel.showBubbleSize
       - excel.Excel.ChartDataLabel.showCategoryName
       - excel.Excel.ChartDataLabel.showLegendKey
@@ -30,6 +31,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a
@@ -48,16 +53,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartDataLabel;'
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
       return:
         type:
           - excel.Excel.ChartDataLabel
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: excel.Excel.ChartDataLabel.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
@@ -94,6 +99,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.ChartDataLabel.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartDataLabel): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartDataLabel.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartDataLabelUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartDataLabelUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabel.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.

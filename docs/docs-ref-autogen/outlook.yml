@@ -33,7 +33,6 @@ items:
       - outlook.Office.MailboxEnums.ItemNotificationMessageType
       - outlook.Office.MailboxEnums.ItemType
       - outlook.Office.MailboxEnums.Month
-      - outlook.Office.MailboxEnums.OWAView
       - outlook.Office.MailboxEnums.RecipientType
       - outlook.Office.MailboxEnums.RecurrenceTimeZone
       - outlook.Office.MailboxEnums.RecurrenceType
@@ -46,7 +45,6 @@ items:
       - outlook.Office.MessageRead
       - outlook.Office.NotificationMessageDetails
       - outlook.Office.NotificationMessages
-      - outlook.Office.Organizer
       - outlook.Office.PhoneNumber
       - outlook.Office.Recipients
       - outlook.Office.Recurrence
@@ -113,8 +111,6 @@ references:
     name: Office.MailboxEnums.ItemType
   - uid: outlook.Office.MailboxEnums.Month
     name: Office.MailboxEnums.Month
-  - uid: outlook.Office.MailboxEnums.OWAView
-    name: Office.MailboxEnums.OWAView
   - uid: outlook.Office.MailboxEnums.RecipientType
     name: Office.MailboxEnums.RecipientType
   - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
@@ -139,8 +135,6 @@ references:
     name: Office.NotificationMessageDetails
   - uid: outlook.Office.NotificationMessages
     name: Office.NotificationMessages
-  - uid: outlook.Office.Organizer
-    name: Office.Organizer
   - uid: outlook.Office.PhoneNumber
     name: Office.PhoneNumber
   - uid: outlook.Office.Recipients

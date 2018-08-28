@@ -57,13 +57,6 @@ items:
       <tr><td>Requirement sets</td><td>DialogAPI, Mailbox 1.4</td></tr></table>
 
 
-      This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
-      Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
-      [Specify Office hosts and API
-      requirements](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
-      -->.
-
-
       The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
       page loads, you can go to other domains.
 
@@ -77,8 +70,7 @@ items:
       The following design considerations apply to dialog boxes:
 
 
-      - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the
-      same time from Add-in Commands (custom ribbon buttons or menu items).
+      - An Office Add-in can have only one dialog box open at any time.
 
 
       - Every dialog box can be moved and resized by the user.
@@ -96,7 +88,7 @@ items:
       - Display authentication pages to collect user credentials.
 
 
-      - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
+      - Display an error/progress/input screen from a ShowTaspane or ExecuteAction command.
 
 
       - Temporarily increase the surface area that a user has available to complete a task.
@@ -129,7 +121,7 @@ items:
       <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
       object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
       </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
-      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      failed.<td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
       passed one as the asyncContext parameter.</td> </tr> </table>
     name: 'displayDialogAsync(startAddress, options, callback)'
     fullName: office.Office.UI.displayDialogAsync
@@ -138,8 +130,8 @@ items:
     type: method
     syntax:
       content: >-
-        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) =>
-        void): void;
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -160,7 +152,7 @@ items:
             Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
             AsyncResult.value is a Dialog object.
           type:
-            - '(result: AsyncResult<Dialog>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.UI.messageParent
     summary: >-
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same

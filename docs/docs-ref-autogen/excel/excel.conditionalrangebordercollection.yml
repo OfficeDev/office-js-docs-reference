@@ -131,6 +131,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited
+      string or an array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where
       option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
       is a comma-delimited string that specifies the relationships to load.
@@ -147,16 +151,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
           - excel.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ConditionalRangeBorderCollection.right
     summary: |-
       Gets the right border. Read-only.

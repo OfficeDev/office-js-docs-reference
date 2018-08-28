@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.RangeBorder.color
       - excel.Excel.RangeBorder.load
+      - excel.Excel.RangeBorder.set
       - excel.Excel.RangeBorder.sideIndex
       - excel.Excel.RangeBorder.style
       - excel.Excel.RangeBorder.toJSON
@@ -41,8 +42,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a
@@ -55,6 +60,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -83,6 +89,7 @@ items:
       });
 
       ```
+
 
       ```javascript
 
@@ -113,16 +120,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeBorder;'
+      content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
           - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeBorderLoadOptions
+  - uid: excel.Excel.RangeBorder.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.RangeBorder): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.RangeBorder.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeBorderUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.

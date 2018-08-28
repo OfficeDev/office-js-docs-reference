@@ -40,36 +40,22 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
     name: load(option)
     fullName: onenote.OneNote.NoteTag.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.NoteTag;'
+      content: 'load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;'
       return:
         type:
           - onenote.OneNote.NoteTag
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - onenote.OneNote.Interfaces.NoteTagLoadOptions
   - uid: onenote.OneNote.NoteTag.status
     summary: |-
       Gets the status of the NoteTag object. Read-only.
@@ -81,14 +67,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        readonly status: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
-        "TaskNotSyncedYet" | "TaskRemoved";
+      content: 'readonly status: string;'
       return:
         type:
-          - >-
-            OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet"
-            | "TaskRemoved"
+          - string
   - uid: onenote.OneNote.NoteTag.toJSON
     name: toJSON()
     fullName: onenote.OneNote.NoteTag.toJSON
@@ -130,14 +112,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        readonly type: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" |
-        "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
+      content: 'readonly type: string;'
       return:
         type:
-          - >-
-            OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber"
-            | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+          - string
   - uid: onenote.OneNote.NoteTag.untrack
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for

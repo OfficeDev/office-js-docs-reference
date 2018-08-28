@@ -2,24 +2,10 @@
 items:
   - uid: office.Office.CustomXmlNode
     summary: Represents an XML node in a tree in a document.
-    remarks: >-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |-
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this interface.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -39,14 +25,16 @@ items:
       - office.Office.CustomXmlNode.setXmlAsync
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlNodeBaseNames() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -73,14 +61,16 @@ items:
           - string
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlChildNodes() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -103,9 +93,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getNodesAsync(xPath: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<CustomXmlNode[]>) => void): void;
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -120,23 +108,21 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
-            array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the
-            `xPath` parameter.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<CustomXmlNode[]>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlNodeValues() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -159,7 +145,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodeValueAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      content: 'getNodeValueAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -170,35 +156,34 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            string that contains the value of the referenced node.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: >
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+
       #### Examples
 
+
       ```javascript
+
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-      Office.context.document.customXmlParts.getByIdAsync(
-          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
+
+      Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function
+      (getByIdAsyncResult) {
           
           // Access the XML part.
           var xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync(
-              'cp',
-              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties',
-              function () {
-              xmlPart.namespaceManager.addNamespaceAsync(
-                  'dc', 
-                  'http://purl.org/dc/elements/1.1/', 
-                  function () {
+          xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
+              xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
 
                   // Get XML nodes by using an Xpath expression. This results in a call to Word.
                   xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
@@ -216,6 +201,7 @@ items:
               });
           });
       });
+
       ```
     name: 'getTextAsync(options, callback)'
     fullName: office.Office.CustomXmlNode.getTextAsync
@@ -223,7 +209,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      content: 'getTextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -234,22 +220,21 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            string that contains the inner text of the referenced nodes.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -272,7 +257,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -283,22 +268,21 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            string that contains the XML of the referenced node.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlNamespaceUri() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -325,14 +309,16 @@ items:
           - string
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function showXmlNodeType() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -359,14 +345,16 @@ items:
           - string
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function setXmlNodeValue() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -388,9 +376,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setNodeValueAsync(value: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'setNodeValueAsync(value: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -405,60 +391,55 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
-    remarks: |-
+    remarks: >
       <table><tr><td>Hosts</td><td>Word</td></tr>
 
+
       <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
+
       #### Examples
 
+
       ```javascript
+
       // Learn how to set the text value of a node in a custom XML part from the following example.
 
+
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
-      Office.context.document.customXmlParts.getByIdAsync(
-          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
-          function (getByIdAsyncResult) {
+
+      Office.context.document.customXmlParts.getByIdAsync("{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function
+      (getByIdAsyncResult) {
           
           // Access the XML part.
           var xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync(
-              'cp', 
-              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', 
-              function () {
-              xmlPart.namespaceManager.addNamespaceAsync(
-                  'dc', 
-                  'http://purl.org/dc/elements/1.1/', 
-                  function () {
+          xmlPart.namespaceManager.addNamespaceAsync('cp', 'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', function () {
+              xmlPart.namespaceManager.addNamespaceAsync('dc', 'http://purl.org/dc/elements/1.1/', function () {
 
                   // Get XML nodes by using an Xpath expression. This results in a call to the host.
                   xmlPart.getNodesAsync("/cp:coreProperties/dc:subject", function (getNodesAsyncResult) {
                       
-                      // Get the first node returned by using the Xpath expression.
-                      // This will be the subject element in this example.
+                      // Get the first node returned by using the Xpath expression. This will be the subject element in this example.
                       var subjectNode = getNodesAsyncResult.value[0];
                       
-                      // Set the text value of the subject node and use the asyncContext. 
-                      // This results in a call to the host.  The results are logged to the browser console.
-                      subjectNode.setTextAsync(
-                          "newSubject", 
-                          {asyncContext: "StateNormal"}, 
-                          function (setTextAsyncResult) {
-                              console.log("The status of the call: " + setTextAsyncResult.status);
-                              console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
+                      // Set the text value of the subject node and use the asyncContext. This results in a call to the host. 
+                      // The results are logged to the browser console. 
+                      subjectNode.setTextAsync("newSubject", {asyncContext: "StateNormal"}, function (setTextAsyncResult) {
+                        console.log("The status of the call: " + setTextAsyncResult.status);
+                        console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
                       });
                   });
               });
           });
       });
+
       ```
     name: 'setTextAsync(text, options, callback)'
     fullName: office.Office.CustomXmlNode.setTextAsync
@@ -466,9 +447,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setTextAsync(text: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'setTextAsync(text: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -483,21 +462,21 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+
       #### Examples
 
       ```javascript
       function setXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+          Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
               var xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
                   for (i = 0; i < nodeResults.value.length; i++) {
@@ -514,9 +493,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setXmlAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: 'setXmlAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -531,8 +508,6 @@ items:
           type:
             - office.Office.AsyncContextOptions
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'

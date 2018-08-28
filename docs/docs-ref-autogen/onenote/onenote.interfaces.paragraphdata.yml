@@ -201,7 +201,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type?: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";'
+      content: 'type?: string;'
       return:
         type:
-          - OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
+          - string

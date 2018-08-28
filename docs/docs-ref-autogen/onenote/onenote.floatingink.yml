@@ -55,26 +55,28 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.FloatingInk.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function(context) {
 
           // Gets the active page.
@@ -106,31 +108,13 @@ items:
                   })                
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       }); 
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.FloatingInk.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.FloatingInk;'
-      return:
-        type:
-          - onenote.OneNote.FloatingInk
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.FloatingInk.pageContent
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.

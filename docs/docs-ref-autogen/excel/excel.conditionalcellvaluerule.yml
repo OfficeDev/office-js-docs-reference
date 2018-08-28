@@ -30,22 +30,23 @@ items:
       return:
         type:
           - string
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ConditionalCellValueRule.formula2
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
@@ -80,19 +81,20 @@ items:
           - >-
             Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
             "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```

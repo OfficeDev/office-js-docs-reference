@@ -39,65 +39,7 @@ items:
       return:
         type:
           - excel.Excel.NamedItem
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const headerRange = sheet.getRange("A1:E1");
-              sheet.names.add("ExpensesHeader", headerRange);
-              const namedItems = sheet.names.load("name, type");
-
-              await context.sync();
-
-              let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
-              for (let i = 0; i < namedItems.items.length; i++) {
-                  namedItemsList += JSON.stringify(namedItems.items[i]);
-              }
-              OfficeHelpers.UI.notify(namedItemsList);
-
-              await context.sync();
-          });
-          ```
-          ```typescript
-          try {
-              await Excel.run(async (context) => {
-
-                  await OfficeHelpers.ExcelUtilities.forceCreateSheet(context.workbook, "Sample");
-
-                  const sheet = context.workbook.worksheets.getItem("Sample");
-
-                  let expensesTable = sheet.tables.add("A1:D1", true);
-                  expensesTable.name = "ExpensesTable";
-
-                  expensesTable.getHeaderRowRange().values = [["DATE", "MERCHANT", "CATEGORY", "AMOUNT"]];
-
-                  let newData = transactions.map(item =>
-                      [item.DATE, item.MERCHANT, item.CATEGORY, item.AMOUNT]);
-
-                  expensesTable.rows.add(null, newData);
-
-                  sheet.names.add("TotalAmount", "=SUM(ExpensesTable[AMOUNT])");
-
-                  sheet.getRange("D11").values = [["=TotalAmount"]];
-
-                  if (Office.context.requirements.isSetSupported("ExcelApi", 1.2)) {
-                      sheet.getUsedRange().format.autofitColumns();
-                      sheet.getUsedRange().format.autofitRows();
-                  }
-
-                  sheet.activate();
-
-                  await context.sync();
-              });
-          }
-          catch (error) {
-              OfficeHelpers.UI.notify(error);
-              OfficeHelpers.Utilities.log(error);
-          }
-          ```
+        description: ''
       parameters:
         - id: name
           description: The name of the named item.
@@ -111,6 +53,67 @@ items:
           description: Optional. The comment associated with the named item.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const headerRange = sheet.getRange("A1:E1");
+          sheet.names.add("ExpensesHeader", headerRange);
+          const namedItems = sheet.names.load("name, type");
+
+          await context.sync();
+
+          let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
+          for (let i = 0; i < namedItems.items.length; i++) {
+              namedItemsList += JSON.stringify(namedItems.items[i]);
+          }
+          OfficeHelpers.UI.notify(namedItemsList);
+
+          await context.sync();
+      });
+      ```
+
+      ```typescript
+      try {
+          await Excel.run(async (context) => {
+
+              await OfficeHelpers.ExcelUtilities.forceCreateSheet(context.workbook, "Sample");
+
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let expensesTable = sheet.tables.add("A1:D1", true);
+              expensesTable.name = "ExpensesTable";
+
+              expensesTable.getHeaderRowRange().values = [["DATE", "MERCHANT", "CATEGORY", "AMOUNT"]];
+
+              let newData = transactions.map(item =>
+                  [item.DATE, item.MERCHANT, item.CATEGORY, item.AMOUNT]);
+
+              expensesTable.rows.add(null, newData);
+
+              sheet.names.add("TotalAmount", "=SUM(ExpensesTable[AMOUNT])");
+
+              sheet.getRange("D11").values = [["=TotalAmount"]];
+
+              if (Office.context.requirements.isSetSupported("ExcelAPI", 1.2)) {
+                  sheet.getUsedRange().format.autofitColumns();
+                  sheet.getUsedRange().format.autofitRows();
+              }
+
+              sheet.activate();
+
+              await context.sync();
+          });
+      }
+      catch (error) {
+          OfficeHelpers.UI.notify(error);
+          OfficeHelpers.Utilities.log(error);
+      }
+      ```
   - uid: excel.Excel.NamedItemCollection.addFormulaLocal
     summary: |-
       Adds a new name to the collection of the given scope using the user's locale for the formula.
@@ -171,30 +174,32 @@ items:
       return:
         type:
           - excel.Excel.NamedItem
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = 'Sheet1';
-              var nameditem = ctx.workbook.names.getItem(sheetName);
-              nameditem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(nameditem.type);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: name
           description: Nameditem name.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = 'Sheet1';
+          var nameditem = ctx.workbook.names.getItem(sheetName);
+          nameditem.load('type');
+          return ctx.sync().then(function() {
+                  console.log(nameditem.type);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.NamedItemCollection.getItemOrNullObject
     summary: |-
       Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
@@ -232,8 +237,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a
@@ -246,6 +255,7 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
+
 
       #### Examples
 
@@ -276,16 +286,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.NamedItemCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.NamedItemCollection;
       return:
         type:
           - excel.Excel.NamedItemCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.NamedItemCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItemCollection.toJSON

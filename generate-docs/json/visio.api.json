@@ -115,8 +115,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "showToolbar": {
               "kind": "method",
@@ -199,8 +198,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -271,8 +269,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -299,8 +296,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "x": {
               "kind": "property",
@@ -327,8 +323,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "y": {
               "kind": "property",
@@ -355,8 +350,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -408,8 +402,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "date": {
               "kind": "property",
@@ -436,8 +429,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -520,8 +512,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -660,8 +651,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -788,8 +778,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "success": {
               "kind": "property",
@@ -816,8 +805,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -869,8 +857,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "getActivePage": {
               "kind": "method",
@@ -984,8 +971,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "onDocumentLoadComplete": {
               "kind": "property",
@@ -1012,8 +998,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "onPageLoadComplete": {
               "kind": "property",
@@ -1040,8 +1025,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "onSelectionChanged": {
               "kind": "property",
@@ -1068,8 +1052,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "onShapeMouseEnter": {
               "kind": "property",
@@ -1096,8 +1079,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "onShapeMouseLeave": {
               "kind": "property",
@@ -1124,8 +1106,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": true
+              "isOverride": false
             },
             "pages": {
               "kind": "property",
@@ -1152,8 +1133,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "setActivePage": {
               "kind": "method",
@@ -1274,8 +1254,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -1327,8 +1306,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -1380,8 +1358,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "disablePan": {
               "kind": "property",
@@ -1408,8 +1385,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "disableZoom": {
               "kind": "property",
@@ -1436,8 +1412,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "hideDiagramBoundary": {
               "kind": "property",
@@ -1464,8 +1439,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -1649,8 +1623,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -1677,8 +1650,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -1730,8 +1702,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "description": {
               "kind": "property",
@@ -1758,8 +1729,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "extraInfo": {
               "kind": "property",
@@ -1786,8 +1756,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -1870,8 +1839,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -2010,8 +1978,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -2138,8 +2105,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "showToolbars": {
                   "kind": "property",
@@ -2166,8 +2132,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2212,8 +2177,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "showToolbars": {
                   "kind": "property",
@@ -2240,8 +2204,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2274,8 +2237,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2308,8 +2270,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2354,8 +2315,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "date": {
                   "kind": "property",
@@ -2382,8 +2342,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "text": {
                   "kind": "property",
@@ -2410,8 +2369,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2456,8 +2414,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "date": {
                   "kind": "property",
@@ -2484,8 +2441,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "text": {
                   "kind": "property",
@@ -2512,8 +2468,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2558,8 +2513,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "pages": {
                   "kind": "property",
@@ -2586,8 +2540,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "view": {
                   "kind": "property",
@@ -2614,8 +2567,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2660,8 +2612,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "view": {
                   "kind": "property",
@@ -2688,8 +2639,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2734,8 +2684,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "disablePan": {
                   "kind": "property",
@@ -2762,8 +2711,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "disableZoom": {
                   "kind": "property",
@@ -2790,8 +2738,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "hideDiagramBoundary": {
                   "kind": "property",
@@ -2818,8 +2765,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2864,8 +2810,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "disablePan": {
                   "kind": "property",
@@ -2892,8 +2837,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "disableZoom": {
                   "kind": "property",
@@ -2920,8 +2864,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "hideDiagramBoundary": {
                   "kind": "property",
@@ -2948,8 +2891,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -2982,8 +2924,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3016,8 +2957,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3062,8 +3002,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "description": {
                   "kind": "property",
@@ -3090,8 +3029,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "extraInfo": {
                   "kind": "property",
@@ -3118,8 +3056,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "subAddress": {
                   "kind": "property",
@@ -3146,8 +3083,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3180,8 +3116,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3214,8 +3149,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3260,8 +3194,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "comments": {
                   "kind": "property",
@@ -3288,8 +3221,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "height": {
                   "kind": "property",
@@ -3316,8 +3248,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "index": {
                   "kind": "property",
@@ -3344,8 +3275,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "isBackground": {
                   "kind": "property",
@@ -3372,8 +3302,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "name": {
                   "kind": "property",
@@ -3400,8 +3329,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "shapes": {
                   "kind": "property",
@@ -3428,8 +3356,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "view": {
                   "kind": "property",
@@ -3456,8 +3383,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "width": {
                   "kind": "property",
@@ -3484,8 +3410,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3530,8 +3455,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3576,8 +3500,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3622,8 +3545,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3668,8 +3590,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3702,8 +3623,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3736,8 +3656,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -3782,8 +3701,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "hyperlinks": {
                   "kind": "property",
@@ -3810,8 +3728,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "id": {
                   "kind": "property",
@@ -3838,8 +3755,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "name": {
                   "kind": "property",
@@ -3866,8 +3782,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "select": {
                   "kind": "property",
@@ -3894,8 +3809,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "shapeDataItems": {
                   "kind": "property",
@@ -3922,8 +3836,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "subShapes": {
                   "kind": "property",
@@ -3950,8 +3863,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "text": {
                   "kind": "property",
@@ -3978,8 +3890,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "view": {
                   "kind": "property",
@@ -4006,8 +3917,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4040,8 +3950,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4074,8 +3983,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4120,8 +4028,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "formattedValue": {
                   "kind": "property",
@@ -4148,8 +4055,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "label": {
                   "kind": "property",
@@ -4176,8 +4082,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "value": {
                   "kind": "property",
@@ -4204,8 +4109,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4250,8 +4154,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 },
                 "view": {
                   "kind": "property",
@@ -4278,8 +4181,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4324,8 +4226,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             },
@@ -4370,8 +4271,7 @@
                   "isBeta": false,
                   "isSealed": false,
                   "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
+                  "isOverride": false
                 }
               }
             }
@@ -4623,8 +4523,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "comments": {
               "kind": "property",
@@ -4651,8 +4550,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "height": {
               "kind": "property",
@@ -4679,8 +4577,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "index": {
               "kind": "property",
@@ -4707,8 +4604,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "isBackground": {
               "kind": "property",
@@ -4735,8 +4631,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -4819,8 +4714,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "shapes": {
               "kind": "property",
@@ -4847,8 +4741,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -4894,8 +4787,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -4922,8 +4814,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -5043,8 +4934,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -5171,8 +5061,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "success": {
               "kind": "property",
@@ -5199,8 +5088,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -5252,8 +5140,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "success": {
               "kind": "property",
@@ -5280,8 +5167,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -5633,8 +5519,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -5686,8 +5571,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "y": {
               "kind": "property",
@@ -5714,8 +5598,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -5788,8 +5671,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -6038,8 +5920,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -6110,8 +5991,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "shapeNames": {
               "kind": "property",
@@ -6138,8 +6018,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -6191,8 +6070,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "getBounds": {
               "kind": "method",
@@ -6250,8 +6128,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "id": {
               "kind": "property",
@@ -6278,8 +6155,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -6362,8 +6238,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "select": {
               "kind": "property",
@@ -6390,8 +6265,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "shapeDataItems": {
               "kind": "property",
@@ -6418,8 +6292,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "subShapes": {
               "kind": "property",
@@ -6446,8 +6319,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "text": {
               "kind": "property",
@@ -6474,8 +6346,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -6521,8 +6392,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -6642,8 +6512,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -6770,8 +6639,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "formattedValue": {
               "kind": "property",
@@ -6798,8 +6666,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "label": {
               "kind": "property",
@@ -6826,8 +6693,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -6929,8 +6795,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -7050,8 +6915,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -7178,8 +7042,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "shapeName": {
               "kind": "property",
@@ -7206,8 +7069,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -7259,8 +7121,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "shapeName": {
               "kind": "property",
@@ -7287,8 +7148,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             }
           }
         },
@@ -7444,8 +7304,7 @@
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "isOverride": false
             },
             "load": {
               "kind": "method",

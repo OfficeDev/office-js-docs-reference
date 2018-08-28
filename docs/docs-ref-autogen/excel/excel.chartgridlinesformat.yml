@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.ChartGridlinesFormat.line
       - excel.Excel.ChartGridlinesFormat.load
+      - excel.Excel.ChartGridlinesFormat.set
       - excel.Excel.ChartGridlinesFormat.toJSON
   - uid: excel.Excel.ChartGridlinesFormat.line
     summary: |-
@@ -40,6 +41,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -56,16 +61,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartGridlinesFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;'
       return:
         type:
           - excel.Excel.ChartGridlinesFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+  - uid: excel.Excel.ChartGridlinesFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartGridlinesFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartGridlinesFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartGridlinesFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartGridlinesFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartGridlinesFormat.toJSON

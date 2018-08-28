@@ -17,7 +17,7 @@ items:
       - word.Word.Interfaces.InlinePictureUpdateData.width
   - uid: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
     summary: |-
-      Gets or sets a string that represents the alternative text associated with the inline image.
+      Gets or sets a string that represents the alternative text associated with the inline image
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription

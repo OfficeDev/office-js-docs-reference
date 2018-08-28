@@ -21,7 +21,7 @@ items:
       - visio.Visio.CommentCollection.toJSON
   - uid: visio.Visio.CommentCollection.getCount
     summary: |-
-      Gets the number of Comments.
+      Gets the number of Shape Data Items.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getCount()
@@ -64,35 +64,39 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Visio.Comment[];'
+      content: 'readonly items: Array<Visio.Comment>;'
       return:
         type:
-          - 'Visio.Comment[]'
+          - Array<Visio.Comment>
   - uid: visio.Visio.CommentCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: visio.Visio.CommentCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
+      return:
+        type:
+          - visio.Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var activePage = ctx.document.getActivePage();
           var shapeName = "Position Belt.41";
           var shape = activePage.shapes.getItem(shapeName);
@@ -113,24 +117,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: visio.Visio.CommentCollection.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): Visio.CommentCollection;'
-      return:
-        type:
-          - visio.Visio.CommentCollection
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: visio.Visio.CommentCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.CommentCollection.toJSON

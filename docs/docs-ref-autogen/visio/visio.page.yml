@@ -22,6 +22,7 @@ items:
       - visio.Visio.Page.isBackground
       - visio.Visio.Page.load
       - visio.Visio.Page.name
+      - visio.Visio.Page.set
       - visio.Visio.Page.shapes
       - visio.Visio.Page.toJSON
       - visio.Visio.Page.view
@@ -44,7 +45,7 @@ items:
         description: ''
   - uid: visio.Visio.Page.allShapes
     summary: |-
-      All shapes in the Page, including subshapes. Read-only.
+      All shapes in the page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: allShapes
@@ -59,7 +60,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Page.comments
     summary: |-
-      Returns the Comments Collection. Read-only.
+      Returns the Comments Collection
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
@@ -89,7 +90,7 @@ items:
           - number
   - uid: visio.Visio.Page.index
     summary: |-
-      Index of the Page. Read-only.
+      Index of the Page.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index
@@ -121,36 +122,22 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on
-      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
-      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
-      included in the result. If option.top is specified, the result set will start after skipping the specified number
-      of items.
     name: load(option)
     fullName: visio.Visio.Page.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Page;'
+      content: 'load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;'
       return:
         type:
           - Visio.Page
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Visio.Interfaces.PageLoadOptions
   - uid: visio.Visio.Page.name
     summary: |-
       Page name. Read-only.
@@ -166,9 +153,40 @@ items:
       return:
         type:
           - string
+  - uid: visio.Visio.Page.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Page.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.PageUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: visio.Visio.Page.shapes
     summary: |-
-      All top-level shapes in the Page.Read-only.
+      Shapes at root level, in the page. Read-only.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapes

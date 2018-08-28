@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.SectionCollectionLoadOptions
+    summary: |-
+      Contains the collection of the document's \[section\](section.md) objects.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.SectionCollectionLoadOptions
+    fullName: word.Word.Interfaces.SectionCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.SectionCollectionLoadOptions.body
+  - uid: word.Word.Interfaces.SectionCollectionLoadOptions.body
+    summary: >-
+      For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
+      other section metadata.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: word.Word.Interfaces.SectionCollectionLoadOptions.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyLoadOptions

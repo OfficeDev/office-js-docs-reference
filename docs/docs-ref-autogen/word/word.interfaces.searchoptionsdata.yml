@@ -53,7 +53,7 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsData.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box.
+      check box in the Find and Replace dialog box (Edit menu).
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]

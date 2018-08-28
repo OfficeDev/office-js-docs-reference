@@ -22,6 +22,7 @@ items:
       - excel.Excel.ChartPoint.markerForegroundColor
       - excel.Excel.ChartPoint.markerSize
       - excel.Excel.ChartPoint.markerStyle
+      - excel.Excel.ChartPoint.set
       - excel.Excel.ChartPoint.toJSON
       - excel.Excel.ChartPoint.value
   - uid: excel.Excel.ChartPoint.dataLabel
@@ -77,6 +78,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -93,16 +98,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartPoint;'
+      content: 'load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;'
       return:
         type:
           - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartPointLoadOptions
   - uid: excel.Excel.ChartPoint.markerBackgroundColor
     summary: |-
       HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
@@ -167,6 +172,36 @@ items:
           - >-
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+  - uid: excel.Excel.ChartPoint.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartPoint): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartPoint.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartPointUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartPointUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartPoint.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPoint.toJSON

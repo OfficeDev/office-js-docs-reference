@@ -7,8 +7,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Recipients
     fullName: Outlook_1_3.Office.Recipients
     langs:
@@ -37,8 +36,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
@@ -48,13 +46,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
       void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: Outlook_1_3.Office.Recipients.addAsync
@@ -102,8 +101,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -154,8 +152,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
@@ -165,13 +162,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
       void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: Outlook_1_3.Office.Recipients.setAsync

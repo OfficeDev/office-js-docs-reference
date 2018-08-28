@@ -16,7 +16,6 @@ items:
       - word.Word.Alignment.right
       - word.Word.Alignment.unknown
   - uid: word.Word.Alignment.centered
-    summary: Alignment to the center.
     name: centered
     fullName: word.Word.Alignment.centered
     langs:
@@ -24,7 +23,6 @@ items:
     type: field
     numericValue: '"Centered"'
   - uid: word.Word.Alignment.justified
-    summary: Fully justified alignment.
     name: justified
     fullName: word.Word.Alignment.justified
     langs:
@@ -32,7 +30,6 @@ items:
     type: field
     numericValue: '"Justified"'
   - uid: word.Word.Alignment.left
-    summary: Alignment to the left.
     name: left
     fullName: word.Word.Alignment.left
     langs:
@@ -47,7 +44,6 @@ items:
     type: field
     numericValue: '"Mixed"'
   - uid: word.Word.Alignment.right
-    summary: Alignment to the right.
     name: right
     fullName: word.Word.Alignment.right
     langs:
@@ -55,7 +51,6 @@ items:
     type: field
     numericValue: '"Right"'
   - uid: word.Word.Alignment.unknown
-    summary: Unknown alignment.
     name: unknown
     fullName: word.Word.Alignment.unknown
     langs:

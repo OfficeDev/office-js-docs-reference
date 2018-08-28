@@ -31,7 +31,7 @@ items:
           - string
   - uid: visio.Visio.SelectionChangedEventArgs.shapeNames
     summary: |-
-      Gets the array of shape names that raised the SelectionChanged event.
+      Gets the ShapeCollection object that raised the SelectionChanged event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapeNames
@@ -40,7 +40,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'shapeNames: string[];'
+      content: 'shapeNames: Array<string>;'
       return:
         type:
-          - 'string[]'
+          - Array<string>
