@@ -18,6 +18,7 @@ items:
       - excel.Excel.ChartLineFormat.color
       - excel.Excel.ChartLineFormat.lineStyle
       - excel.Excel.ChartLineFormat.load
+      - excel.Excel.ChartLineFormat.set
       - excel.Excel.ChartLineFormat.toJSON
       - excel.Excel.ChartLineFormat.weight
   - uid: excel.Excel.ChartLineFormat.clear
@@ -35,25 +36,27 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // Set to show legend of Chart1 and make it on top of the chart.
-          Excel.run(function (ctx) { 
-              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.clear();
-              return ctx.sync().then(function() {
-                      console.log("Chart Major Gridlines Format Cleared");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+      #### Examples
+
+      ```javascript
+      // Set to show legend of Chart1 and make it on top of the chart.
+      Excel.run(function (ctx) { 
+          var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+          gridlines.format.line.clear();
+          return ctx.sync().then(function() {
+                  console.log("Chart Major Gridlines Format Cleared");
           });
-          ```
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.ChartLineFormat.color
     summary: |-
       HTML color code representing the color of lines in the chart.
@@ -92,8 +95,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a
@@ -106,6 +113,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -134,16 +142,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLineFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
       return:
         type:
           - excel.Excel.ChartLineFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+  - uid: excel.Excel.ChartLineFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartLineFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartLineFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartLineFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLineFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLineFormat.toJSON

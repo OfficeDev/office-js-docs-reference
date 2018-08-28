@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartLegendFormat.fill
       - excel.Excel.ChartLegendFormat.font
       - excel.Excel.ChartLegendFormat.load
+      - excel.Excel.ChartLegendFormat.set
       - excel.Excel.ChartLegendFormat.toJSON
   - uid: excel.Excel.ChartLegendFormat.fill
     summary: |-
@@ -48,35 +49,40 @@ items:
       return:
         type:
           - excel.Excel.ChartFont
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
+      #### Examples
 
-              let chart = sheet.charts.getItemAt(0);
-              chart.legend.visible = true;
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
 
-              // Format the legend font.
-              let font = chart.legend.format.font;
-              font.bold = true;
-              font.color = "red";
-              font.italic = true;
-              font.size = 15;
-              font.name = "Calibri";
-              font.underline = "Single";
+          let chart = sheet.charts.getItemAt(0);
+          chart.legend.visible = true;
 
-              await context.sync();
-          });
-          ```
+          // Format the legend font.
+          let font = chart.legend.format.font;
+          font.bold = true;
+          font.color = "red";
+          font.italic = true;
+          font.size = 15;
+          font.name = "Calibri";
+          font.underline = "Single";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartLegendFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ChartLegendFormat` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a
@@ -95,16 +101,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLegendFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;'
       return:
         type:
           - excel.Excel.ChartLegendFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
+  - uid: excel.Excel.ChartLegendFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartLegendFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartLegendFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLegendFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartLegendFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegendFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLegendFormat.toJSON

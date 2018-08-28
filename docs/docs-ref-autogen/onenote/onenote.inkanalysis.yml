@@ -17,6 +17,8 @@ items:
       - onenote.OneNote.InkAnalysis.id
       - onenote.OneNote.InkAnalysis.load
       - onenote.OneNote.InkAnalysis.page
+      - onenote.OneNote.InkAnalysis.paragraphs
+      - onenote.OneNote.InkAnalysis.set
       - onenote.OneNote.InkAnalysis.toJSON
       - onenote.OneNote.InkAnalysis.track
       - onenote.OneNote.InkAnalysis.untrack
@@ -39,26 +41,28 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.InkAnalysis.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysis
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function (ctx) {        
           var app = ctx.application;
           
@@ -73,31 +77,13 @@ items:
                   console.log(page.inkAnalysisOrNull.paragraphs.items.length);
               })
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       }); 
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.InkAnalysis.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.InkAnalysis;'
-      return:
-        type:
-          - onenote.OneNote.InkAnalysis
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.InkAnalysis.page
     summary: |-
       Gets the parent page object. Read-only.
@@ -113,6 +99,52 @@ items:
       return:
         type:
           - onenote.OneNote.Page
+  - uid: onenote.OneNote.InkAnalysis.paragraphs
+    summary: |-
+      Gets the ink analysis paragraphs in this page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: onenote.OneNote.InkAnalysis.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly paragraphs: OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisParagraphCollection
+  - uid: onenote.OneNote.InkAnalysis.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.InkAnalysis.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.InkAnalysisUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.InkAnalysisUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.InkAnalysis.toJSON
     name: toJSON()
     fullName: onenote.OneNote.InkAnalysis.toJSON

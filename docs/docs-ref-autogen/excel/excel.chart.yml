@@ -27,6 +27,7 @@ items:
       - excel.Excel.Chart.load
       - excel.Excel.Chart.name
       - excel.Excel.Chart.series
+      - excel.Excel.Chart.set
       - excel.Excel.Chart.setData
       - excel.Excel.Chart.setPosition
       - excel.Excel.Chart.showAllFieldButtons
@@ -74,8 +75,7 @@ items:
         "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
         "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
         "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
-        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
-        "Histogram" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar";
       return:
         type:
           - >-
@@ -92,8 +92,7 @@ items:
             | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
             "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
-            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Pareto" | "RegionMap" |
-            "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar"
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
       Represents the datalabels on the chart. Read-only.
@@ -124,22 +123,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.delete();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Chart.format
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
@@ -174,22 +175,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var image = chart.getImage();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: width
           description: (Optional) The desired width of the resulting image.
@@ -205,6 +191,23 @@ items:
             and width are set).
           type:
             - excel.Excel.ImageFittingMode
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          var image = chart.getImage();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Chart.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -269,8 +272,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.Chart` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited
@@ -283,6 +290,7 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -305,22 +313,65 @@ items:
       });
 
       ```
+
+
+      ```javascript
+
+      // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
+      points to the top and left. 
+
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.name="New Name";
+          chart.top = 100;
+          chart.left = 100;
+          chart.height = 200;
+          chart.width = 200;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+          chart.name="New Name";    
+          chart.top = 100;
+          chart.left = 100;
+          chart.height =200;
+          chart.width =200;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.Chart.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Chart;'
+      content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
           - excel.Excel.Chart
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLoadOptions
   - uid: excel.Excel.Chart.name
     summary: |-
       Represents the name of a chart object.
@@ -336,28 +387,6 @@ items:
       return:
         type:
           - string
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
-          // Move Chart1 to 100 points to the top and left. 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.name = "New Name";
-              chart.top = 100;
-              chart.left = 100;
-              chart.height = 200;
-              chart.width = 200;
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - uid: excel.Excel.Chart.series
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
@@ -373,6 +402,36 @@ items:
       return:
         type:
           - excel.Excel.ChartSeriesCollection
+  - uid: excel.Excel.Chart.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Chart): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Chart.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -384,39 +443,41 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;'
+      content: 'setData(sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): void;'
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var sourceData = "A1:B4";
-              chart.setData(sourceData, "Columns");
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: sourceData
-          description: The range object corresponding to the source data.
+          description: The range corresponding to the source data.
           type:
-            - Range
+            - Range | string
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
             - excel.Excel.ChartSeriesBy
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          var sourceData = "A1:B4";
+          chart.setData(sourceData, "Columns");
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Chart.setPosition
     summary: |-
       Positions the chart relative to cells on the worksheet.
@@ -432,28 +493,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Charts";
-              var rangeSelection = "A1:B4";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
-              var sourceData = sheetName + "!" + "A1:B4";
-              var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
-              chart.width = 500;
-              chart.height = 300;
-              chart.setPosition("C2", null);
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: startCell
           description: >-
@@ -467,6 +507,29 @@ items:
             cell/range.
           type:
             - Range | string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Charts";
+          var rangeSelection = "A1:B4";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+          var sourceData = sheetName + "!" + "A1:B4";
+          var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+          chart.width = 500;
+          chart.height = 300;
+          chart.setPosition("C2", null);
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Chart.showAllFieldButtons
     summary: |-
       Represents whether to display all field buttons on a PivotChart.

@@ -18,6 +18,7 @@ items:
       - excel.Excel.ChartTitleFormat.fill
       - excel.Excel.ChartTitleFormat.font
       - excel.Excel.ChartTitleFormat.load
+      - excel.Excel.ChartTitleFormat.set
       - excel.Excel.ChartTitleFormat.toJSON
   - uid: excel.Excel.ChartTitleFormat.border
     summary: |-
@@ -72,6 +73,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -88,16 +93,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTitleFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;'
       return:
         type:
           - excel.Excel.ChartTitleFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
+  - uid: excel.Excel.ChartTitleFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartTitleFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartTitleFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTitleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartTitleFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTitleFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTitleFormat.toJSON

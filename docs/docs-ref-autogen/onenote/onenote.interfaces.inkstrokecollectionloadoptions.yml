@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+    summary: |-
+      Represents a collection of InkStroke objects.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+    fullName: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
+      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
+  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkStroke object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: floatingInk
+    fullName: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean

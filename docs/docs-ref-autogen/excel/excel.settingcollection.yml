@@ -39,19 +39,7 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: key
           description: The Key of the new setting.
@@ -61,6 +49,20 @@ items:
           description: The Value for the new setting.
           type:
             - string | number | boolean | Date | Array<any> | any
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+          OfficeHelpers.UI.notify("Handler registered", "");
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -113,33 +115,35 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
-
-              await context.sync();
-
-              if (needsReview.isNullObject) {
-                  OfficeHelpers.UI.notify("The setting has been deleted");
-              } else {
-                  OfficeHelpers.UI.notify("The setting was not deleted");
-              }
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: key
           description: The key of the setting.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          let needsReview = settings.getItem("NeedsReview");
+          needsReview.delete();
+          needsReview = settings.getItemOrNullObject("NeedsReview");
+
+          await context.sync();
+
+          if (needsReview.isNullObject) {
+              OfficeHelpers.UI.notify("The setting has been deleted");
+          } else {
+              OfficeHelpers.UI.notify("The setting was not deleted");
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.SettingCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -160,6 +164,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.SettingCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -176,16 +184,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.SettingCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SettingCollection;
       return:
         type:
           - excel.Excel.SettingCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.SettingCollection.onSettingsChanged
     summary: |-
       Occurs when the Settings in the document are changed.
@@ -195,25 +205,26 @@ items:
     fullName: excel.Excel.SettingCollection.onSettingsChanged
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+          OfficeHelpers.UI.notify("Handler registered", "");
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.SettingCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.SettingCollection.toJSON

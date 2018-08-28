@@ -48,7 +48,6 @@ items:
       - office.Office.GoToByIdOptions
       - office.Office.GoToType
       - office.Office.HostType
-      - office.Office.Index
       - office.Office.InitializationReason
       - office.Office.initialize
       - office.Office.IPromiseConstructor
@@ -73,7 +72,6 @@ items:
       - office.Office.SetBindingDataOptions
       - office.Office.SetSelectedDataOptions
       - office.Office.Settings
-      - office.Office.SettingsChangedEventArgs
       - office.Office.Slice
       - office.Office.Table
       - office.Office.TableBinding
@@ -118,40 +116,16 @@ items:
 
       *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+    remarks: |
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
-
       ```javascript
-
       // You can use the value of the InitializationEnumeration to implement different logic for
-
       // when the add-in is first inserted versus when it is already part of the document.
-
       // The following example shows some simple logic that uses the value of the reason parameter
-
       // to display how the task pane or content add-in was initialized.
-
       Office.initialize = function (reason) {
           // Checks for the DOM to load using the jQuery ready function.
           $(document).ready(function () {
@@ -165,13 +139,10 @@ items:
           });
       }
 
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message){
           document.getElementById('message').innerText += message; 
       }
-
       ```
     name: initialize(reason)
     fullName: office.Office.initialize
@@ -218,49 +189,13 @@ items:
             - '(info: { host: HostType, platform: PlatformType }) => any'
   - uid: office.Office.select
     summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
-      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
-      </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example uses the select method to retrieve a binding with the id "cities" from
-
-      // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
-
-      // dataChanged event of the binding.
-
-      function addBindingDataChangedEventHandler() {
-          Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
-          function (eventArgs) {
-              doSomethingWithBinding(eventArgs.binding);
-          });
-      }
-
-      ```
     name: 'select(expression, callback)'
     fullName: office.Office.select
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;'
+      content: 'export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;'
       return:
         type:
           - Binding
@@ -273,39 +208,33 @@ items:
           type:
             - string
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.useShortNamespace
-    summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
-    remarks: >-
-      **Support details**
+            - '(result: AsyncResult) => void'
+    remarks: |
 
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
 
       #### Examples
 
+      ```javascript
+      // The following code example uses the select method to retrieve a binding with the id "cities" from
+      // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+      // dataChanged event of the binding.
+      function addBindingDataChangedEventHandler() {
+          Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+          function (eventArgs) {
+              doSomethingWithBinding(eventArgs.binding);
+          });
+      }
+      ```
+  - uid: office.Office.useShortNamespace
+    summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
+    remarks: |
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+
+      #### Examples
 
       ```javascript
-
       function startUsingShortNamespace() {
           if (typeof Office === 'undefined') {
               Microsoft.Office.WebExtension.useShortNamespace(true);
@@ -315,7 +244,6 @@ items:
           }
           write('Office alias is now ' + typeof Office);
       }
-
 
       function stopUsingShortNamespace() {
           if (typeof Office === 'undefined') {
@@ -327,13 +255,10 @@ items:
           write('Office alias is now ' + typeof Office);
       }
 
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message){
           document.getElementById('message').innerText += message; 
       }
-
       ```
     name: useShortNamespace(useShortNamespace)
     fullName: office.Office.useShortNamespace
@@ -434,8 +359,6 @@ references:
     name: Office.GoToType
   - uid: office.Office.HostType
     name: Office.HostType
-  - uid: office.Office.Index
-    name: Office.Index
   - uid: office.Office.InitializationReason
     name: Office.InitializationReason
   - uid: office.Office.IPromiseConstructor
@@ -478,8 +401,6 @@ references:
     name: Office.SetSelectedDataOptions
   - uid: office.Office.Settings
     name: Office.Settings
-  - uid: office.Office.SettingsChangedEventArgs
-    name: Office.SettingsChangedEventArgs
   - uid: office.Office.Slice
     name: Office.Slice
   - uid: office.Office.Table

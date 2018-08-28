@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartBorder.color
       - excel.Excel.ChartBorder.lineStyle
       - excel.Excel.ChartBorder.load
+      - excel.Excel.ChartBorder.set
       - excel.Excel.ChartBorder.toJSON
       - excel.Excel.ChartBorder.weight
   - uid: excel.Excel.ChartBorder.color
@@ -61,6 +62,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartBorder` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -77,16 +82,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartBorder;'
+      content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
       return:
         type:
           - excel.Excel.ChartBorder
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartBorderLoadOptions
+  - uid: excel.Excel.ChartBorder.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartBorder): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartBorder.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartBorderUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartBorder.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartBorder.toJSON

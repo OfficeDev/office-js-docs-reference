@@ -2,30 +2,40 @@
 items:
   - uid: office.Office.Error
     summary: Provides specific information about an error that occurred during an asynchronous data operation.
-    remarks: >-
+    remarks: >
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+
+
       The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback
       argument of an asynchronous data operation, such as the setSelectedDataAsync method of the Document object.
 
 
-      **Support details**
+      #### Examples
 
 
-      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this interface.
+      ```javascript
+
+      // The following example uses the setSelectedDataAsync method to set the selected text to "Hello World!",
+
+      // and if that fails, displays the values of the name and message properties of the Error object.
+
+      function setText() {
+          Office.context.document.setSelectedDataAsync("Hello World!", {},
+              function (asyncResult) {
+                  if (asyncResult.status === "failed")
+                  var err = asyncResult.error; 
+                      write(err.name + ": " + err.message);
+              });
+      }
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+      // Function that writes to a div with id='message' on the page.
 
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+      ```
     name: Office.Error
     fullName: office.Office.Error
     langs:
@@ -48,26 +58,27 @@ items:
       return:
         type:
           - number
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.code + " - " + error.message);
-                  });
-          }
+      #### Examples
 
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+      ```javascript
+      // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
+      function setText() {
+          Office.context.document.setSelectedDataAsync("Hello World!",
+              function (asyncResult) {
+                  if (asyncResult.status === "failed")
+                      var error = asyncResult.error;
+                  write(error.name + ": " + error.code + " - " + error.message);
+              });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
   - uid: office.Office.Error.message
     summary: Gets the name of the error.
     name: message
@@ -80,26 +91,27 @@ items:
       return:
         type:
           - string
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
+      #### Examples
 
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+      ```javascript
+      // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
+      function setText() {
+          Office.context.document.setSelectedDataAsync("Hello World!",
+              function (asyncResult) {
+                  if (asyncResult.status === "failed")
+                      var error = asyncResult.error;
+                  write(error.name + ": " + error.message);
+              });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
   - uid: office.Office.Error.name
     summary: Gets a detailed description of the error.
     name: name
@@ -112,23 +124,24 @@ items:
       return:
         type:
           - string
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
+      #### Examples
 
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+      ```javascript
+      // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
+      function setText() {
+          Office.context.document.setSelectedDataAsync("Hello World!",
+              function (asyncResult) {
+                  if (asyncResult.status === "failed")
+                      var error = asyncResult.error;
+                  write(error.name + ": " + error.message);
+              });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```

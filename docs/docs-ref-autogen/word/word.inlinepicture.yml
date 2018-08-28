@@ -41,13 +41,14 @@ items:
       - word.Word.InlinePicture.parentTableCellOrNullObject
       - word.Word.InlinePicture.parentTableOrNullObject
       - word.Word.InlinePicture.select
+      - word.Word.InlinePicture.set
       - word.Word.InlinePicture.toJSON
       - word.Word.InlinePicture.track
       - word.Word.InlinePicture.untrack
       - word.Word.InlinePicture.width
   - uid: word.Word.InlinePicture.altTextDescription
     summary: |-
-      Gets or sets a string that represents the alternative text associated with the inline image.
+      Gets or sets a string that represents the alternative text associated with the inline image
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
@@ -106,24 +107,26 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Word.run(async (context) => {
-              const firstPicture = context.document.body.inlinePictures.getFirst();
-              firstPicture.load("width, height");
+      #### Examples
 
-              await context.sync();
-              console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-              //To get the image encoded as base64:
-              const base64 = firstPicture.getBase64ImageSrc();
+      ```typescript
+      await Word.run(async (context) => {
+          const firstPicture = context.document.body.inlinePictures.getFirst();
+          firstPicture.load("width, height");
 
-              await context.sync();
-              console.log(base64.value);
-          });
-          ```
+          await context.sync();
+          console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+          //To get the image encoded as base64:
+          const base64 = firstPicture.getBase64ImageSrc();
+
+          await context.sync();
+          console.log(base64.value);
+      });
+      ```
   - uid: word.Word.InlinePicture.getNext
     summary: |-
       Gets the next inline image. Throws if this inline image is the last one.
@@ -139,38 +142,40 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // To use this snippet, add an inline picture to the document and assign it an alt text title.
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the first inline picture.
-              var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+      #### Examples
 
-              // Queue a command to load the alternative text title of the picture.
-              context.load(firstPicture, 'altTextTitle');
+      ```javascript
+      // To use this snippet, add an inline picture to the document and assign it an alt text title.
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the first inline picture.
+          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (firstPicture.isNullObject) {
-                      console.log('There are inline pictures in this document.')
-                  } else {
-                      console.log(firstPicture.altTextTitle);
-                  }
-              });   
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          // Queue a command to load the alternative text title of the picture.
+          context.load(firstPicture, 'altTextTitle');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (firstPicture.isNullObject) {
+                  console.log('There are inline pictures in this document.')
+              } else {
+                  console.log(firstPicture.altTextTitle);
               }
-          });
-          ```
+          });   
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.InlinePicture.getNextOrNullObject
     summary: |-
       Gets the next inline image. Returns a null object if this inline image is the last one.
@@ -186,38 +191,40 @@ items:
       return:
         type:
           - word.Word.InlinePicture
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          // To use this snippet, add an inline picture to the document and assign it an alt text title.
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the first inline picture.
-              var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+      #### Examples
 
-              // Queue a command to load the alternative text title of the picture.
-              context.load(firstPicture, 'altTextTitle');
+      ```javascript
+      // To use this snippet, add an inline picture to the document and assign it an alt text title.
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the first inline picture.
+          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (firstPicture.isNullObject) {
-                      console.log('There are inline pictures in this document.')
-                  } else {
-                      console.log(firstPicture.altTextTitle);
-                  }
-              });   
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          // Queue a command to load the alternative text title of the picture.
+          context.load(firstPicture, 'altTextTitle');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (firstPicture.isNullObject) {
+                  console.log('There are inline pictures in this document.')
+              } else {
+                  console.log(firstPicture.altTextTitle);
               }
-          });
-          ```
+          });   
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.InlinePicture.getRange
     summary: |-
       Gets the picture, or the starting or ending point of the picture, as a range.
@@ -236,7 +243,7 @@ items:
         description: ''
       parameters:
         - id: rangeLocation
-          description: 'Optional. The range location can be ''Whole'', ''Start'', or ''End''.'
+          description: 'Optional. The range location can be ''Whole'', ''Start'' or ''End''.'
           type:
             - word.Word.RangeLocation
   - uid: word.Word.InlinePicture.height
@@ -295,7 +302,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertContentControl
     summary: |-
       Wraps the inline picture with a rich text content control.
@@ -336,7 +343,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertHtml
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -361,10 +368,10 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertInlinePictureFromBase64
     summary: >-
-      Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
+      Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or
       'After'.
 
 
@@ -388,9 +395,9 @@ items:
           type:
             - string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
+          description: 'Required. The value can be ''Replace'', ''Before'' or ''After''.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertOoxml
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -415,7 +422,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertParagraph
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -440,7 +447,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertText
     summary: |-
       Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -465,41 +472,27 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
     name: load(option)
     fullName: word.Word.InlinePicture.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.InlinePicture;'
+      content: 'load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
       return:
         type:
           - word.Word.InlinePicture
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - word.Word.Interfaces.InlinePictureLoadOptions
   - uid: word.Word.InlinePicture.lockAspectRatio
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
@@ -644,9 +637,31 @@ items:
         description: ''
       parameters:
         - id: selectionMode
-          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode can be ''Select'', ''Start'' or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.InlinePicture.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: word.Word.InlinePicture.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.InlinePictureUpdateData
+        - id: options
+          description: ''
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.InlinePicture.toJSON
     name: toJSON()
     fullName: word.Word.InlinePicture.toJSON

@@ -24,6 +24,7 @@ items:
       - onenote.OneNote.PageContent.load
       - onenote.OneNote.PageContent.outline
       - onenote.OneNote.PageContent.parentPage
+      - onenote.OneNote.PageContent.set
       - onenote.OneNote.PageContent.toJSON
       - onenote.OneNote.PageContent.top
       - onenote.OneNote.PageContent.track
@@ -44,35 +45,37 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          OneNote.run(function (context) {
+      #### Examples
 
-              var page = context.application.getActivePage();
-              var pageContents = page.contents;
+      ```javascript
+      OneNote.run(function (context) {
 
-              var firstPageContent = pageContents.getItemAt(0);
-              firstPageContent.load('type');
+          var page = context.application.getActivePage();
+          var pageContents = page.contents;
 
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      if(firstPageContent.isNull === false) {
-                          firstPageContent.delete();
-                          return context.sync();
-                      }
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          var firstPageContent = pageContents.getItemAt(0);
+          firstPageContent.load('type');
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                  if(firstPageContent.isNull === false) {
+                      firstPageContent.delete();
+                      return context.sync();
+                  }
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.PageContent.id
     summary: |-
       Gets the ID of the PageContent object. Read-only.
@@ -137,36 +140,22 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
     name: load(option)
     fullName: onenote.OneNote.PageContent.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.PageContent;'
+      content: 'load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;'
       return:
         type:
           - onenote.OneNote.PageContent
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - onenote.OneNote.Interfaces.PageContentLoadOptions
   - uid: onenote.OneNote.PageContent.outline
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
@@ -197,6 +186,37 @@ items:
       return:
         type:
           - onenote.OneNote.Page
+  - uid: onenote.OneNote.PageContent.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.PageContent.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.PageContentUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageContentUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.PageContent.toJSON
     name: toJSON()
     fullName: onenote.OneNote.PageContent.toJSON
@@ -253,10 +273,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
+      content: 'readonly type: string;'
       return:
         type:
-          - OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+          - string
   - uid: onenote.OneNote.PageContent.untrack
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for

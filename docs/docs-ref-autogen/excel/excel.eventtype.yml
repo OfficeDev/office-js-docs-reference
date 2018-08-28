@@ -9,16 +9,12 @@ items:
     type: enum
     package: excel
     children:
-      - excel.Excel.EventType.agaveVisualUpdate
       - excel.Excel.EventType.chartActivated
       - excel.Excel.EventType.chartAdded
       - excel.Excel.EventType.chartDeactivated
       - excel.Excel.EventType.chartDeleted
-      - excel.Excel.EventType.shapeActivated
-      - excel.Excel.EventType.shapeDeactivated
       - excel.Excel.EventType.tableAdded
       - excel.Excel.EventType.tableChanged
-      - excel.Excel.EventType.tableDeleted
       - excel.Excel.EventType.tableSelectionChanged
       - excel.Excel.EventType.visualSelectionChanged
       - excel.Excel.EventType.worksheetActivated
@@ -28,16 +24,6 @@ items:
       - excel.Excel.EventType.worksheetDeactivated
       - excel.Excel.EventType.worksheetDeleted
       - excel.Excel.EventType.worksheetSelectionChanged
-  - uid: excel.Excel.EventType.agaveVisualUpdate
-    summary: >-
-      AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data
-      view following a data change
-    name: agaveVisualUpdate
-    fullName: excel.Excel.EventType.agaveVisualUpdate
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AgaveVisualUpdate"'
   - uid: excel.Excel.EventType.chartActivated
     summary: >-
       ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
@@ -78,22 +64,6 @@ items:
       - typeScript
     type: field
     numericValue: '"ChartDeleted"'
-  - uid: excel.Excel.EventType.shapeActivated
-    summary: 'ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.'
-    name: shapeActivated
-    fullName: excel.Excel.EventType.shapeActivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ShapeActivated"'
-  - uid: excel.Excel.EventType.shapeDeactivated
-    summary: 'ShapeDeactivated represents the type of event that is registered on Shape, and occurs when shape deactivates.'
-    name: shapeDeactivated
-    fullName: excel.Excel.EventType.shapeDeactivated
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ShapeDeactivated"'
   - uid: excel.Excel.EventType.tableAdded
     summary: 'TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.'
     name: tableAdded
@@ -110,16 +80,6 @@ items:
       - typeScript
     type: field
     numericValue: '"TableChanged"'
-  - uid: excel.Excel.EventType.tableDeleted
-    summary: >-
-      TableDeleted represents the type of event that is registered on TableCollection, and occurs when a table is
-      deleted.
-    name: tableDeleted
-    fullName: excel.Excel.EventType.tableDeleted
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TableDeleted"'
   - uid: excel.Excel.EventType.tableSelectionChanged
     summary: 'TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.'
     name: tableSelectionChanged
@@ -130,8 +90,8 @@ items:
     numericValue: '"TableSelectionChanged"'
   - uid: excel.Excel.EventType.visualSelectionChanged
     summary: >-
-      VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual
-      selection changes.
+      ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
+      activates.
     name: visualSelectionChanged
     fullName: excel.Excel.EventType.visualSelectionChanged
     langs:

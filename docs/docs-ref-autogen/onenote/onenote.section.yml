@@ -21,8 +21,6 @@ items:
       - onenote.OneNote.Section.getRestApiId
       - onenote.OneNote.Section.id
       - onenote.OneNote.Section.insertSectionAsSibling
-      - onenote.OneNote.Section.isEncrypted
-      - onenote.OneNote.Section.isLocked
       - onenote.OneNote.Section.load
       - onenote.OneNote.Section.name
       - onenote.OneNote.Section.notebook
@@ -48,42 +46,44 @@ items:
       return:
         type:
           - onenote.OneNote.Page
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-                      
-              // Queue a command to add a page to the current section.
-              var page = context.application.getActiveSection().addPage("Wish list");
-                      
-              // Queue a command to load the id and title of the new page. 
-              // This example loads the new page so it can read its properties later.           
-              page.load('id,title');
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                       
-                      // Display the properties.       
-                      console.log("Page name: " + page.title);
-                      console.log("Page ID: " + page.id);
-
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: title
           description: The title of the new page.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+                  
+          // Queue a command to add a page to the current section.
+          var page = context.application.getActiveSection().addPage("Wish list");
+                  
+          // Queue a command to load the id and title of the new page. 
+          // This example loads the new page so it can read its properties later.           
+          page.load('id,title');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                   
+                  // Display the properties.       
+                  console.log("Page name: " + page.title);
+                  console.log("Page ID: " + page.id);
+
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.clientUrl
     summary: |-
       The client url of the section. Read only
@@ -114,44 +114,46 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-              var app = context.application;
-              
-              // Gets the active Notebook.
-              var notebook = app.getActiveNotebook();
-              
-              // Gets the active Section.
-              var section = app.getActiveSection();
-              
-              var newSection;
-              
-              return context.sync()
-                  .then(function() {
-                      newSection = section.copyToNotebook(notebook);
-                      newSection.load('id');
-                      return context.sync();
-                  })
-                  .then(function() {
-                      console.log(newSection.id);
-                  });
-          })
-          .catch(function (error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: destinationNotebook
           description: The notebook to copy this section to.
           type:
             - onenote.OneNote.Notebook
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+          var app = context.application;
+          
+          // Gets the active Notebook.
+          var notebook = app.getActiveNotebook();
+          
+          // Gets the active Section.
+          var section = app.getActiveSection();
+          
+          var newSection;
+          
+          return context.sync()
+              .then(function() {
+                  newSection = section.copyToNotebook(notebook);
+                  newSection.load('id');
+                  return context.sync();
+              })
+              .then(function() {
+                  console.log(newSection.id);
+              });
+      })
+      .catch(function (error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.copyToSectionGroup
     summary: |-
       Copies this section to specified section group.
@@ -167,50 +169,52 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (ctx) {
-              var app = ctx.application;
-              
-              // Gets the active Notebook.
-              var notebook = app.getActiveNotebook();
-              
-              // Gets the active Section.
-              var section = app.getActiveSection();
-              
-              var newSection;
-              
-              return ctx.sync()
-                  .then(function() {
-                      var firstSectionGroup = notebook.sectionGroups.items[0];
-                      newSection = section.copyToSectionGroup(firstSectionGroup);
-                      newSection.load('id');
-                      return ctx.sync();
-                  })
-                  .then(function() {
-                      console.log(newSection.id);
-                  });
-          })
-          .catch(function (error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: destinationSectionGroup
           description: The section group to copy this section to.
           type:
             - onenote.OneNote.SectionGroup
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (ctx) {
+          var app = ctx.application;
+          
+          // Gets the active Notebook.
+          var notebook = app.getActiveNotebook();
+          
+          // Gets the active Section.
+          var section = app.getActiveSection();
+          
+          var newSection;
+          
+          return ctx.sync()
+              .then(function() {
+                  var firstSectionGroup = notebook.sectionGroups.items[0];
+                  newSection = section.copyToSectionGroup(firstSectionGroup);
+                  newSection.load('id');
+                  return ctx.sync();
+              })
+              .then(function() {
+                  console.log(newSection.id);
+              });
+      })
+      .catch(function (error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.getRestApiId
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: onenote.OneNote.Section.getRestApiId
     langs:
@@ -221,27 +225,26 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current section.         
-              var section = ctx.application.getActiveSection();
-              var restApiId = section.getRestApiId();
+      #### Examples
 
-              return ctx.sync().
-                  then(function(){
-                      console.log("The REST API ID is " + restApiId.value);
-                      // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                      // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                      // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
-                      // OneNote REST API according to the OneNote Development Blog.
-                      // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-                  });
-          });
-          ```
+      ```javascript
+      OneNote.run(function(ctx){
+          // Get the current section.         
+          var section = ctx.application.getActiveSection();
+          var restAPIId = section.getRestApiId();
+
+          return ctx.sync().
+              then(function(){
+                  console.log("The REST API ID is " + restApiId.value);
+                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
+                  // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+              });
+      });
+      ```
   - uid: onenote.OneNote.Section.id
     summary: |-
       Gets the ID of the section. Read-only.
@@ -268,103 +271,77 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertSectionAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Section;'
+      content: 'insertSectionAsSibling(location: string, title: string): OneNote.Section;'
       return:
         type:
           - onenote.OneNote.Section
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-                      
-              // Queue a command to insert a section after the current section.
-              var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
-                      
-              // Queue a command to load the id and name of the new section. 
-              // This example loads the new section so it can read its properties later.           
-              section.load('id,name');
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                       
-                      // Display the properties.       
-                      console.log("Section name: " + section.name);
-                      console.log("Section ID: " + section.id);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: location
           description: The location of the new section relative to the current section.
           type:
-            - onenote.OneNote.InsertLocation
+            - string
         - id: title
           description: The name of the new section.
           type:
             - string
-  - uid: onenote.OneNote.Section.isEncrypted
-    summary: |-
-      True if this section is encrypted with a password. Read only
+    remarks: |
 
-      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
-    name: isEncrypted
-    fullName: onenote.OneNote.Section.isEncrypted
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEncrypted: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: onenote.OneNote.Section.isLocked
-    summary: |-
-      True if this section is locked. Read only
 
-      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
-    name: isLocked
-    fullName: onenote.OneNote.Section.isLocked
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isLocked: boolean;'
-      return:
-        type:
-          - boolean
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+                  
+          // Queue a command to insert a section after the current section.
+          var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
+                  
+          // Queue a command to load the id and name of the new section. 
+          // This example loads the new section so it can read its properties later.           
+          section.load('id,name');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                   
+                  // Display the properties.       
+                  console.log("Section name: " + section.name);
+                  console.log("Section ID: " + section.id);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.Section.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;'
+      return:
+        type:
+          - onenote.OneNote.Section
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.SectionLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function (context) {
               
           // Get the current section.
@@ -380,18 +357,15 @@ items:
                   console.log("Section ID: " + section.id);
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
               
           // Get the current section.
@@ -407,18 +381,15 @@ items:
                   console.log("Parent notebook name: " + section.notebook.name);
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
           // Queue a command to add a page to the current section.
           var section = context.application.getActiveSection();
@@ -436,31 +407,13 @@ items:
                   return context.sync();
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.Section.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.Section;'
-      return:
-        type:
-          - onenote.OneNote.Section
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.Section.name
     summary: |-
       Gets the name of the section. Read-only.

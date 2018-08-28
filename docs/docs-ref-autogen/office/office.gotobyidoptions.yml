@@ -12,7 +12,7 @@ items:
 
 
       In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
-      `Office.SelectionMode.None` doesn't select anything.
+      `Office.SelectionMode.None` Doesn't select anything.
 
 
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text

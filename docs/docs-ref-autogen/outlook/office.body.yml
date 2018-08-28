@@ -12,8 +12,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.Body
     fullName: outlook.Office.Body
     langs:
@@ -41,19 +40,19 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult&lt;Office.Body&gt;) => void): void;`
+      `getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;`
+
 
       #### Examples
 
@@ -78,22 +77,22 @@ items:
       }
 
       ```
-    name: 'getAsync(coerciontype, options, callback)'
+    name: 'getAsync(coercionType, options, callback)'
     fullName: outlook.Office.Body.getAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.Body>) => void): void;
+        getAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: The format for the returned body.
           type:
             - office.Office.CoercionType
         - id: options
@@ -108,7 +107,7 @@ items:
             parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(result: AsyncResult<Office.Body>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -119,17 +118,14 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: 'getTypeAsync(options, callback)'
     fullName: outlook.Office.Body.getTypeAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.CoercionType>) =>
-        void): void;
+      content: 'getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -144,10 +140,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
+            parameter of type AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(result: AsyncResult<Office.CoercionType>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -162,13 +158,12 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
@@ -178,13 +173,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `prependAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `prependAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `prependAsync(data: string): void;`
+
 
       #### Examples
 
@@ -207,8 +203,8 @@ items:
     type: method
     syntax:
       content: >-
-        prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        prependAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -224,14 +220,13 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
-            property.
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setAsync
     summary: >-
       Replaces the entire body with the specified text.
@@ -248,13 +243,12 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
@@ -265,13 +259,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `setAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `setAsync(data: string): void;`
+
 
       #### Examples
 
@@ -310,8 +305,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        setAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -327,14 +322,13 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
-            property.
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -351,13 +345,12 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
@@ -368,13 +361,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`
+
 
       #### Examples
 
@@ -397,8 +391,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -414,11 +408,10 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
-            property.
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'

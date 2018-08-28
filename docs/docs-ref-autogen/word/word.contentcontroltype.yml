@@ -100,7 +100,6 @@ items:
     type: field
     numericValue: '"RepeatingSection"'
   - uid: word.Word.ContentControlType.richText
-    summary: Identifies a rich text content control.
     name: richText
     fullName: word.Word.ContentControlType.richText
     langs:
@@ -122,7 +121,6 @@ items:
     type: field
     numericValue: '"RichTextParagraphs"'
   - uid: word.Word.ContentControlType.richTextTable
-    summary: Contains a whole table.
     name: richTextTable
     fullName: word.Word.ContentControlType.richTextTable
     langs:
@@ -130,7 +128,6 @@ items:
     type: field
     numericValue: '"RichTextTable"'
   - uid: word.Word.ContentControlType.richTextTableCell
-    summary: Contains a whole cell.
     name: richTextTableCell
     fullName: word.Word.ContentControlType.richTextTableCell
     langs:
@@ -138,7 +135,6 @@ items:
     type: field
     numericValue: '"RichTextTableCell"'
   - uid: word.Word.ContentControlType.richTextTableRow
-    summary: Contains a whole row.
     name: richTextTableRow
     fullName: word.Word.ContentControlType.richTextTableRow
     langs:

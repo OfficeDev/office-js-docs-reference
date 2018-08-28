@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.InlinePictureCollection
     summary: |-
-      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+      Contains a collection of \[inlinePicture\](inlinePicture.md) objects.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: Word.InlinePictureCollection
@@ -69,36 +69,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
     name: load(option)
     fullName: word.Word.InlinePictureCollection.load
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.InlinePictureCollection;'
+      content: >-
+        load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.InlinePictureCollection;
       return:
         type:
           - word.Word.InlinePictureCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.InlinePictureCollection.toJSON
     name: toJSON()
     fullName: word.Word.InlinePictureCollection.toJSON

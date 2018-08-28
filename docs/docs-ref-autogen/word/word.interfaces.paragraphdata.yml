@@ -105,7 +105,7 @@ items:
           - word.Word.Interfaces.FontData
   - uid: word.Word.Interfaces.ParagraphData.inlinePictures
     summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
+      Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images.
       Read-only.
 
 
@@ -184,7 +184,7 @@ items:
           - number
   - uid: word.Word.Interfaces.ParagraphData.lineUnitAfter
     summary: |-
-      Gets or sets the amount of spacing, in grid lines, after the paragraph.
+      Gets or sets the amount of spacing, in grid lines. after the paragraph.
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitAfter

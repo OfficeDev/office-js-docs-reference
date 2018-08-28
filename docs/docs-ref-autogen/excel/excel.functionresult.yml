@@ -43,7 +43,7 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): FunctionResult<T>` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): FunctionResult<T>` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
@@ -63,16 +63,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): FunctionResult<T>;'
+      content: 'load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
       return:
         type:
           - FunctionResult<T>
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel.Excel.FunctionResult.toJSON
     name: toJSON()
     fullName: excel.Excel.FunctionResult.toJSON

@@ -34,37 +34,39 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              OfficeHelpers.UI.notify("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-          ```
+        description: ''
       parameters:
         - id: name
           description: Name of the style to be added.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let styles = context.workbook.styles;
+
+          // Add a new style to the style collection.
+          // Styles is in the Home tab ribbon.
+          styles.add("Diagonal Orientation Style");
+                
+          let newStyle = styles.getItem("Diagonal Orientation Style");
+          
+          // The "Diagonal Orientation Style" properties.
+          newStyle.textOrientation = 38;
+          newStyle.autoIndent = true;
+          newStyle.includeProtection = true;
+          newStyle.shrinkToFit = true;
+          newStyle.locked = false;
+          
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+      });
+      ```
   - uid: excel.Excel.StyleCollection.getItem
     summary: |-
       Gets a style by name.
@@ -80,37 +82,39 @@ items:
       return:
         type:
           - excel.Excel.Style
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              OfficeHelpers.UI.notify("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-          ```
+        description: ''
       parameters:
         - id: name
           description: Name of the style to be retrieved.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let styles = context.workbook.styles;
+
+          // Add a new style to the style collection.
+          // Styles is in the Home tab ribbon.
+          styles.add("Diagonal Orientation Style");
+                
+          let newStyle = styles.getItem("Diagonal Orientation Style");
+          
+          // The "Diagonal Orientation Style" properties.
+          newStyle.textOrientation = 38;
+          newStyle.autoIndent = true;
+          newStyle.includeProtection = true;
+          newStyle.shrinkToFit = true;
+          newStyle.locked = false;
+          
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+      });
+      ```
   - uid: excel.Excel.StyleCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -131,6 +135,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.StyleCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -147,16 +155,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.StyleCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.StyleCollection;
       return:
         type:
           - excel.Excel.StyleCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.StyleCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.StyleCollection.toJSON

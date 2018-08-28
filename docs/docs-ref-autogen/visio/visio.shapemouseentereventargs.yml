@@ -31,7 +31,7 @@ items:
           - string
   - uid: visio.Visio.ShapeMouseEnterEventArgs.shapeName
     summary: |-
-      Gets the name of the shape object that raised the ShapeMouseEnter event.
+      Gets the shape object that raised the ShapeMouseEnter event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapeName

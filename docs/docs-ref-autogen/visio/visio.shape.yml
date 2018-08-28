@@ -21,6 +21,7 @@ items:
       - visio.Visio.Shape.load
       - visio.Visio.Shape.name
       - visio.Visio.Shape.select
+      - visio.Visio.Shape.set
       - visio.Visio.Shape.shapeDataItems
       - visio.Visio.Shape.subShapes
       - visio.Visio.Shape.text
@@ -28,7 +29,7 @@ items:
       - visio.Visio.Shape.view
   - uid: visio.Visio.Shape.comments
     summary: |-
-      Returns the Comments Collection. Read-only.
+      Returns the Comments Collection
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
@@ -74,7 +75,7 @@ items:
           - visio.Visio.HyperlinkCollection
   - uid: visio.Visio.Shape.id
     summary: |-
-      Shape's identifier. Read-only.
+      Shape's Identifier.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: id
@@ -91,27 +92,29 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: visio.Visio.Shape.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
+      return:
+        type:
+          - visio.Visio.Shape
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.ShapeLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var activePage = ctx.document.getActivePage();
           var shapeName = "Sample Name";
           var shape = activePage.shapes.getItem(shapeName);
@@ -128,12 +131,10 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           shape.view.highlight = { color: "#E7E7E7", width: 100 };
@@ -144,27 +145,10 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: visio.Visio.Shape.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): Visio.Shape;'
-      return:
-        type:
-          - visio.Visio.Shape
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: visio.Visio.Shape.name
     summary: |-
-      Shape's name. Read-only.
+      Shape's name.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
@@ -192,6 +176,37 @@ items:
       return:
         type:
           - boolean
+  - uid: visio.Visio.Shape.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Shape.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.ShapeUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ShapeUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: visio.Visio.Shape.shapeDataItems
     summary: |-
       Returns the Shape's Data Section. Read-only.
@@ -209,7 +224,7 @@ items:
           - visio.Visio.ShapeDataItemCollection
   - uid: visio.Visio.Shape.subShapes
     summary: |-
-      Gets SubShape Collection. Read-only.
+      Gets SubShape Collection.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: subShapes
@@ -224,7 +239,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Shape.text
     summary: |-
-      Shape's text. Read-only.
+      Shape's Text.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

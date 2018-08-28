@@ -17,11 +17,12 @@ items:
       - visio.Visio.Comment.author
       - visio.Visio.Comment.date
       - visio.Visio.Comment.load
+      - visio.Visio.Comment.set
       - visio.Visio.Comment.text
       - visio.Visio.Comment.toJSON
   - uid: visio.Visio.Comment.author
     summary: |-
-      A string that specifies the name of the author of the comment.
+      A string that specifies the label of the shape data item.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: author
@@ -36,7 +37,7 @@ items:
           - string
   - uid: visio.Visio.Comment.date
     summary: |-
-      A string that specifies the date when the comment was created.
+      A string that specifies the format of the shape data item.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: date
@@ -53,27 +54,29 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: visio.Visio.Comment.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.CommentLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var activePage = ctx.document.getActivePage();
           var shapeName = "Position Belt.41";
           var shape = activePage.shapes.getItem(shapeName);
@@ -94,27 +97,41 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: visio.Visio.Comment.load
+  - uid: visio.Visio.Comment.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Comment.set
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Comment;'
+      content: |-
+        set(properties: Interfaces.CommentUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
-          - visio.Visio.Comment
+          - void
         description: ''
       parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+        - id: properties
+          description: ''
           type:
-            - 'string | string[]'
+            - Interfaces.CommentUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: visio.Visio.Comment.text
     summary: |-
-      A string that contains the comment text.
+      A string that specifies the value of the shape data item.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text

@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.PageViewLoadOptions
+    summary: |-
+      Represents the PageView class.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.PageViewLoadOptions
+    fullName: visio.Visio.Interfaces.PageViewLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.PageViewLoadOptions.zoom
+  - uid: visio.Visio.Interfaces.PageViewLoadOptions.zoom
+    summary: |-
+      Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: zoom
+    fullName: visio.Visio.Interfaces.PageViewLoadOptions.zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom?: boolean;'
+      return:
+        type:
+          - boolean

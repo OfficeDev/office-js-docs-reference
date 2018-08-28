@@ -2,7 +2,7 @@
 items:
   - uid: Outlook_1_2.Office.Appointment
     summary: >-
-      The subclass of [Office.Item](xref:Outlook_1_2.Office.Item) dealing with appointments.
+      The subclass of [Office.Item](xref:Outlook_1_2.Office.Item) dealing with apppointments.
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat

@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.ChartAxisTitle.format
       - excel.Excel.ChartAxisTitle.load
+      - excel.Excel.ChartAxisTitle.set
       - excel.Excel.ChartAxisTitle.text
       - excel.Excel.ChartAxisTitle.toJSON
       - excel.Excel.ChartAxisTitle.visible
@@ -38,8 +39,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a
@@ -52,6 +57,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -75,6 +81,7 @@ items:
       });
 
       ```
+
 
       ```javascript
 
@@ -100,16 +107,46 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxisTitle;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
       return:
         type:
           - excel.Excel.ChartAxisTitle
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
+  - uid: excel.Excel.ChartAxisTitle.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartAxisTitle): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartAxisTitle.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartAxisTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartAxisTitleUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxisTitle.text
     summary: |-
       Represents the axis title.

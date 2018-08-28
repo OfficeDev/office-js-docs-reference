@@ -21,6 +21,7 @@ items:
       - excel.Excel.ChartTrendline.movingAveragePeriod
       - excel.Excel.ChartTrendline.name
       - excel.Excel.ChartTrendline.polynomialOrder
+      - excel.Excel.ChartTrendline.set
       - excel.Excel.ChartTrendline.toJSON
       - excel.Excel.ChartTrendline.type
   - uid: excel.Excel.ChartTrendline.delete
@@ -79,6 +80,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -95,16 +100,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTrendline;'
+      content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
       return:
         type:
           - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartTrendlineLoadOptions
   - uid: excel.Excel.ChartTrendline.movingAveragePeriod
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
@@ -152,6 +157,36 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ChartTrendline.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartTrendline): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartTrendline.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTrendlineUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartTrendlineUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTrendline.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendline.toJSON
@@ -183,22 +218,23 @@ items:
           - >-
             Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
             "Power"
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
+      #### Examples
 
-              let seriesCollection = sheet.charts.getItemAt(0).series;
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
 
-              // Get the trendline for series 1 and load its type property.  
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-              trendline.load("type");
+          let seriesCollection = sheet.charts.getItemAt(0).series;
 
-              await context.sync();
+          // Get the trendline for series 1 and load its type property.  
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+          trendline.load("type");
 
-              console.log("The trendline type is:" + trendline.type);  
-          });
-          ```
+          await context.sync();
+
+          console.log("The trendline type is:" + trendline.type);  
+      });
+      ```

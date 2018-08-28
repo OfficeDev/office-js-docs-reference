@@ -30,6 +30,7 @@ items:
       - onenote.OneNote.Page.load
       - onenote.OneNote.Page.pageLevel
       - onenote.OneNote.Page.parentSection
+      - onenote.OneNote.Page.set
       - onenote.OneNote.Page.title
       - onenote.OneNote.Page.toJSON
       - onenote.OneNote.Page.track
@@ -50,45 +51,7 @@ items:
       return:
         type:
           - onenote.OneNote.Outline
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active page.
-              var page = context.application.getActivePage();
-
-              // Queue a command to add an outline with given html. 
-              var outline = page.addOutline(200, 200,
-          "<p>Images and a table below:</p> \
-           <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
-           <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
-           <table> \
-             <tr> \
-               <td>Jill</td> \
-               <td>Smith</td> \
-               <td>50</td> \
-             </tr> \
-             <tr> \
-               <td>Eve</td> \
-               <td>Jackson</td> \
-               <td>94</td> \
-             </tr> \
-           </table>"     
-                  );
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .catch(function(error) {
-                      console.log("Error: " + error);
-                      if (error instanceof OfficeExtension.Error) {
-                          console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                      }
-                  });
-          });
-          ```
+        description: ''
       parameters:
         - id: left
           description: 'The left position of the top, left corner of the Outline.'
@@ -100,16 +63,56 @@ items:
             - number
         - id: html
           description: >-
-            An HTML string that describes the visual presentation of the Outline. See[Supported
-            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            An HTML string that describes the visual presentation of the Outline. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Gets the active page.
+          var page = context.application.getActivePage();
+
+          // Queue a command to add an outline with given html. 
+          var outline = page.addOutline(200, 200,
+      "<p>Images and a table below:</p> \
+       <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
+       <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
+       <table> \
+         <tr> \
+           <td>Jill</td> \
+           <td>Smith</td> \
+           <td>50</td> \
+         </tr> \
+         <tr> \
+           <td>Eve</td> \
+           <td>Jackson</td> \
+           <td>94</td> \
+         </tr> \
+       </table>"     
+              );
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .catch(function(error) {
+                  console.log("Error: " + error);
+                  if (error instanceof OfficeExtension.Error) {
+                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                  }
+              });
+      });
+      ```
   - uid: onenote.OneNote.Page.analyzePage
     summary: |-
       Return a json string with node id and content in html format.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: analyzePage()
     fullName: onenote.OneNote.Page.analyzePage
     langs:
@@ -202,51 +205,53 @@ items:
       return:
         type:
           - onenote.OneNote.Page
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              
-              // Gets the active notebook.
-              var notebook = app.getActiveNotebook();
-              
-              // Gets the active page.
-              var page = app.getActivePage();
-              
-              // Queue a command to load sections under the notebook.
-              notebook.load('sections');
-              
-              var newPage;
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync()
-                  .then(function() {
-                      var section = notebook.sections.items[0];
-                      
-                      // copy page to the section.
-                      newPage = page.copyToSection(section);
-                      newPage.load('id');
-                      return ctx.sync();
-                  })
-                  .then(function() {
-                      console.log(newPage.id);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: destinationSection
           description: The section to copy this page to.
           type:
             - onenote.OneNote.Section
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          
+          // Gets the active notebook.
+          var notebook = app.getActiveNotebook();
+          
+          // Gets the active page.
+          var page = app.getActivePage();
+          
+          // Queue a command to load sections under the notebook.
+          notebook.load('sections');
+          
+          var newPage;
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync()
+              .then(function() {
+                  var section = notebook.sections.items[0];
+                  
+                  // copy page to the section.
+                  newPage = page.copyToSection(section);
+                  newPage.load('id');
+                  return ctx.sync();
+              })
+              .then(function() {
+                  console.log(newPage.id);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
     summary: |-
       Copies this page to specified section and sets ClassNotebookPageSource.
@@ -272,7 +277,7 @@ items:
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: onenote.OneNote.Page.getRestApiId
     langs:
@@ -283,32 +288,31 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current page.         
-              var page = ctx.application.getActivePage();
-              var restApiId = page.getRestApiId();
+      #### Examples
 
-              return ctx.sync().
-                  then(function(){
-                      console.log("The REST API ID is " + restApiId.value);
-                      // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-                      // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                      // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                      // according to the OneNote Development Blog.
-                      // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-                  });
-          });
-          ```
+      ```javascript
+      OneNote.run(function(ctx){
+          // Get the current page.         
+          var page = ctx.application.getActivePage();
+          var restAPIId = page.getRestApiId();
+
+          return ctx.sync().
+              then(function(){
+                  console.log("The REST API ID is " + restApiId.value);
+                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
+                  // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+              });
+      });
+      ```
   - uid: onenote.OneNote.Page.hasTitleContent
     summary: |-
       Does the page has content title.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: hasTitleContent()
     fullName: onenote.OneNote.Page.hasTitleContent
     langs:
@@ -361,72 +365,76 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertPageAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Page;'
+      content: 'insertPageAsSibling(location: string, title: string): OneNote.Page;'
       return:
         type:
           - onenote.OneNote.Page
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active page.
-              var activePage = context.application.getActivePage();
-
-              // Queue a command to add a new page after the active page. 
-              var newPage = activePage.insertPageAsSibling("After", "Next Page");
-
-              // Queue a command to load the newPage to access its data.
-              context.load(newPage);
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      console.log("page is created with title: " + newPage.title);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: location
           description: The location of the new page relative to the current page.
           type:
-            - onenote.OneNote.InsertLocation
+            - string
         - id: title
           description: The title of the new page.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Gets the active page.
+          var activePage = context.application.getActivePage();
+
+          // Queue a command to add a new page after the active page. 
+          var newPage = activePage.insertPageAsSibling("After", "Next Page");
+
+          // Queue a command to load the newPage to access its data.
+          context.load(newPage);
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function() {
+                  console.log("page is created with title: " + newPage.title);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Page.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.Page.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.PageLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function (context) {
 
           // Gets the active page.
@@ -459,18 +467,15 @@ items:
                   }
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
 
           var app = context.application;
@@ -487,18 +492,15 @@ items:
                   console.log(page.webUrl);
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (ctx) {        
           var app = ctx.application;
           
@@ -514,31 +516,13 @@ items:
                       console.log(page.inkAnalysisOrNull.paragraphs.length);
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.Page.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.Page;'
-      return:
-        type:
-          - onenote.OneNote.Page
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.Page.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.
@@ -569,6 +553,37 @@ items:
       return:
         type:
           - onenote.OneNote.Section
+  - uid: onenote.OneNote.Page.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Page.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.PageUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.Page.title
     summary: |-
       Gets or sets the title of the page.

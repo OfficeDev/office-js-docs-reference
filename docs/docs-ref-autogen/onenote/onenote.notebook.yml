@@ -20,7 +20,6 @@ items:
       - onenote.OneNote.Notebook.clientUrl
       - onenote.OneNote.Notebook.getRestApiId
       - onenote.OneNote.Notebook.id
-      - onenote.OneNote.Notebook.isVirtual
       - onenote.OneNote.Notebook.load
       - onenote.OneNote.Notebook.name
       - onenote.OneNote.Notebook.sectionGroups
@@ -43,40 +42,42 @@ items:
       return:
         type:
           - onenote.OneNote.Section
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active notebook.
-              var notebook = context.application.getActiveNotebook();
-
-              // Queue a command to add a new section. 
-              var section = notebook.addSection("Sample section");
-              
-              // Queue a command to load the new section. This example reads the name property later.
-              section.load("name");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      console.log("New section name is " + section.name);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
+        description: ''
       parameters:
         - id: name
           description: The name of the new section.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Gets the active notebook.
+          var notebook = context.application.getActiveNotebook();
+
+          // Queue a command to add a new section. 
+          var section = notebook.addSection("Sample section");
+          
+          // Queue a command to load the new section. This example reads the name property later.
+          section.load("name");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function() {
+                  console.log("New section name is " + section.name);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      }); 
+      ```
   - uid: onenote.OneNote.Notebook.addSectionGroup
     summary: |-
       Adds a new section group to the end of the notebook.
@@ -92,40 +93,42 @@ items:
       return:
         type:
           - onenote.OneNote.SectionGroup
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active notebook.
-              var notebook = context.application.getActiveNotebook();
-
-              // Queue a command to add a new section group.
-              var sectionGroup = notebook.addSectionGroup("Sample section group");
-
-              // Queue a command to load the new section group.
-              sectionGroup.load();
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      console.log("New section group name is " + sectionGroup.name);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
+        description: ''
       parameters:
         - id: name
           description: The name of the new section.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Gets the active notebook.
+          var notebook = context.application.getActiveNotebook();
+
+          // Queue a command to add a new section group.
+          var sectionGroup = notebook.addSectionGroup("Sample section group");
+
+          // Queue a command to load the new section group.
+          sectionGroup.load();
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function() {
+                  console.log("New section group name is " + sectionGroup.name);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      }); 
+      ```
   - uid: onenote.OneNote.Notebook.baseUrl
     summary: |-
       The url of the site that this notebook is located. Read only
@@ -160,7 +163,7 @@ items:
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: onenote.OneNote.Notebook.getRestApiId
     langs:
@@ -171,27 +174,26 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current notebook.         
-              var notebook = ctx.application.getActiveNotebook();
-              var restApiId = notebook.getRestApiId();
+      #### Examples
 
-              return ctx.sync().
-                  then(function(){
-                      console.log("The REST API ID is " + restApiId.value);
-                      // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                      // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                      // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                      // according to the OneNote Development Blog.
-                      // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-                  });
-          });
-          ```
+      ```javascript
+      OneNote.run(function(ctx){
+          // Get the current notebook.         
+          var notebook = ctx.application.getActiveNotebook();
+          var restAPIId = notebook.getRestApiId();
+
+          return ctx.sync().
+              then(function(){
+                  console.log("The REST API ID is " + restApiId.value);
+                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
+                  // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+              });
+      });
+      ```
   - uid: onenote.OneNote.Notebook.id
     summary: |-
       Gets the ID of the notebook. Read-only.
@@ -207,45 +209,32 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Notebook.isVirtual
-    summary: |-
-      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
-
-      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
-    name: isVirtual
-    fullName: onenote.OneNote.Notebook.isVirtual
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isVirtual: boolean;'
-      return:
-        type:
-          - boolean
   - uid: onenote.OneNote.Notebook.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.Notebook.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;'
+      return:
+        type:
+          - onenote.OneNote.Notebook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.NotebookLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function (context) {
               
           // Get the current notebook.
@@ -259,23 +248,18 @@ items:
           return context.sync()
               .then(function () {
                   console.log("Base url: " + notebook.baseUrl);
-                  // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
-                  // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-                  // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
+                  // This baseUrl should be used to talk to OneNote REST APIs according to https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/ (only required for SharePoint notebooks, will be null for OneDrive notebooks)
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
               
           // Get the current notebook.
@@ -292,18 +276,15 @@ items:
                   
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
               
           // Get the current notebook.
@@ -320,18 +301,15 @@ items:
                   
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
 
           // Get the section groups in the notebook. 
@@ -348,18 +326,15 @@ items:
                   });
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function (context) {
 
           // Gets the active notebook.
@@ -379,31 +354,13 @@ items:
                   });            
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });   
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.Notebook.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.Notebook;'
-      return:
-        type:
-          - onenote.OneNote.Notebook
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.Notebook.name
     summary: |-
       Gets the name of the notebook. Read-only.

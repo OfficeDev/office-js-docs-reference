@@ -35,25 +35,27 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the specified range in top-and-left-most pane of the worksheet.
-              sheet.freezePanes.freezeAt(sheet.getRange("H2:K5"));
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: frozenRange
           description: 'A range that represents the cells to be frozen, or null to remove all frozen panes.'
           type:
             - Range | string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the specified range in top-and-left-most pane of the worksheet.
+          sheet.freezePanes.freezeAt(sheet.getRange("H2:K5"));
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.freezeColumns
     summary: |-
       Freeze the first column(s) of the worksheet in place.
@@ -69,25 +71,27 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the first two columns in the worksheet.
-              sheet.freezePanes.freezeColumns(2);
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: count
           description: 'Optional number of columns to freeze, or zero to unfreeze all columns'
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the first two columns in the worksheet.
+          sheet.freezePanes.freezeColumns(2);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.freezeRows
     summary: |-
       Freeze the top row(s) of the worksheet in place.
@@ -103,25 +107,27 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the top two rows in the worksheet.
-              sheet.freezePanes.freezeRows(2);
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: count
           description: 'Optional number of rows to freeze, or zero to unfreeze all rows'
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the top two rows in the worksheet.
+          sheet.freezePanes.freezeRows(2);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.getLocation
     summary: >-
       Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to
@@ -157,25 +163,27 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const frozenRange = sheet.freezePanes.getLocationOrNullObject();
-              frozenRange.load("address");
+      #### Examples
 
-              await context.sync();
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const frozenRange = sheet.freezePanes.getLocationOrNullObject();
+          frozenRange.load("address");
 
-              if (frozenRange.isNullObject) {
-                  OfficeHelpers.UI.notify(`The worksheet does not contain a frozen pane.`);
-              } else {
-                  OfficeHelpers.UI.notify(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
-              }
-          });
-          ```
+          await context.sync();
+
+          if (frozenRange.isNullObject) {
+              OfficeHelpers.UI.notify(`The worksheet does not contain a frozen pane.`);
+          } else {
+              OfficeHelpers.UI.notify(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
+          }
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.toJSON
     name: toJSON()
     fullName: excel.Excel.WorksheetFreezePanes.toJSON
@@ -206,15 +214,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.freezePanes.unfreeze();
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.freezePanes.unfreeze();
+
+          await context.sync();
+      });
+      ```

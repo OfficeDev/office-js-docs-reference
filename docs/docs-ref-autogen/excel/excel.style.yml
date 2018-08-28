@@ -34,6 +34,7 @@ items:
       - excel.Excel.Style.numberFormat
       - excel.Excel.Style.numberFormatLocal
       - excel.Excel.Style.readingOrder
+      - excel.Excel.Style.set
       - excel.Excel.Style.shrinkToFit
       - excel.Excel.Style.toJSON
       - excel.Excel.Style.verticalAlignment
@@ -83,23 +84,25 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+      #### Examples
 
-              // Delete the diagonal orientation style from the style collection.
-              // Styles are in the Home tab ribbon.
-              style.delete();
+      ```typescript
+      await Excel.run(async (context) => {
+          let style = context.workbook.styles.getItem("Diagonal Orientation Style");
 
-              await context.sync();
+          // Delete the diagonal orientation style from the style collection.
+          // Styles are in the Home tab ribbon.
+          style.delete();
 
-              OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
-          });
-          ```
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+      });
+      ```
   - uid: excel.Excel.Style.fill
     summary: |-
       The Fill of the style.
@@ -130,26 +133,27 @@ items:
       return:
         type:
           - excel.Excel.RangeFont
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              let style = context.workbook.styles.getItem("Normal");
-              style.font.load("bold, color, italic, name, size");
-              style.fill.load("color");
+      #### Examples
 
-              await context.sync();
+      ```typescript
+      await Excel.run(async (context) => {
+          let style = context.workbook.styles.getItem("Normal");
+          style.font.load("bold, color, italic, name, size");
+          style.fill.load("color");
 
-              console.log("Bold: " + style.font.bold);
-              console.log("Font color: " + style.font.color);
-              console.log("Italic: " + style.font.italic);
-              console.log("Name: " + style.font.name);
-              console.log("Size: " + style.font.size);
-              console.log("Fill color: " + style.fill.color);
-          });
-          ```
+          await context.sync();
+
+          console.log("Bold: " + style.font.bold);
+          console.log("Font color: " + style.font.color);
+          console.log("Italic: " + style.font.italic);
+          console.log("Name: " + style.font.name);
+          console.log("Size: " + style.font.size);
+          console.log("Fill color: " + style.fill.color);
+      });
+      ```
   - uid: excel.Excel.Style.formulaHidden
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
@@ -184,23 +188,24 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              let worksheet = context.workbook.worksheets.getItem("Sample");
-              let range = worksheet.getRange("A1:E1");
+      #### Examples
 
-              // Apply built-in style. 
-              // Styles are in the Home tab ribbon.
-              range.style = Excel.BuiltInStyle.neutral;
-              range.format.horizontalAlignment = "Right";
+      ```typescript
+      await Excel.run(async (context) => {
+          let worksheet = context.workbook.worksheets.getItem("Sample");
+          let range = worksheet.getRange("A1:E1");
 
-              await context.sync();
-          });
-          ```
+          // Apply built-in style. 
+          // Styles are in the Home tab ribbon.
+          range.style = Excel.BuiltInStyle.neutral;
+          range.format.horizontalAlignment = "Right";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Style.includeAlignment
     summary: >-
       Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
@@ -316,8 +321,12 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
+    remarks: >
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.Style` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited
@@ -330,6 +339,7 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+
 
       #### Examples
 
@@ -359,16 +369,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Style;'
+      content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
       return:
         type:
           - excel.Excel.Style
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.StyleLoadOptions
   - uid: excel.Excel.Style.locked
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
@@ -444,6 +454,36 @@ items:
       return:
         type:
           - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+  - uid: excel.Excel.Style.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Style): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Style.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.StyleUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Style.shrinkToFit
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.

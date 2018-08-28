@@ -38,14 +38,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        status?: OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
-        "TaskNotSyncedYet" | "TaskRemoved";
+      content: 'status?: string;'
       return:
         type:
-          - >-
-            OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet"
-            | "TaskRemoved"
+          - string
   - uid: onenote.OneNote.Interfaces.NoteTagData.type
     summary: |-
       Gets the type of the NoteTag object. Read-only.
@@ -57,11 +53,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        type?: OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" |
-        "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
+      content: 'type?: string;'
       return:
         type:
-          - >-
-            OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber"
-            | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+          - string

@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions
+    summary: |-
+      Represents a OneNote section. Sections can contain pages.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.SectionLoadOptions
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.SectionLoadOptions.clientUrl
+      - onenote.OneNote.Interfaces.SectionLoadOptions.id
+      - onenote.OneNote.Interfaces.SectionLoadOptions.name
+      - onenote.OneNote.Interfaces.SectionLoadOptions.notebook
+      - onenote.OneNote.Interfaces.SectionLoadOptions.pages
+      - onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroup
+      - onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull
+      - onenote.OneNote.Interfaces.SectionLoadOptions.webUrl
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.clientUrl
+    summary: |-
+      The client url of the section. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: clientUrl
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.id
+    summary: |-
+      Gets the ID of the section. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.name
+    summary: |-
+      Gets the name of the section. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: name
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.notebook
+    summary: |-
+      Gets the notebook that contains the section.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: notebook
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.notebook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.NotebookLoadOptions
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.pages
+    summary: |-
+      The collection of pages in the section. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: pages
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pages?: OneNote.Interfaces.PageCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroup
+    summary: >-
+      Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the
+      notebook.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentSectionGroup
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull
+    summary: |-
+      Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentSectionGroupOrNull
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
+  - uid: onenote.OneNote.Interfaces.SectionLoadOptions.webUrl
+    summary: |-
+      The web url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: webUrl
+    fullName: onenote.OneNote.Interfaces.SectionLoadOptions.webUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'webUrl?: boolean;'
+      return:
+        type:
+          - boolean

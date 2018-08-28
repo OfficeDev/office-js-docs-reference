@@ -23,6 +23,7 @@ items:
       - onenote.OneNote.Image.ocrData
       - onenote.OneNote.Image.pageContent
       - onenote.OneNote.Image.paragraph
+      - onenote.OneNote.Image.set
       - onenote.OneNote.Image.toJSON
       - onenote.OneNote.Image.track
       - onenote.OneNote.Image.untrack
@@ -59,44 +60,46 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
+        description: ''
+    remarks: |
 
-          #### Examples
 
-          ```javascript
+      #### Examples
 
-          var image = null;
-          var imageString;
+      ```javascript
 
-          OneNote.run(function(ctx){
-              // Get the current outline.         
-              var outline = ctx.application.getActiveOutline();
-              
-              // Queue a command to load paragraphs and their types. 
-              outline.load("paragraphs/type")
-              return ctx.sync().
-                  then(function(){
-                      for (var i=0; i < outline.paragraphs.items.length; i++)
+      var image = null;
+      var imageString;
+
+      OneNote.run(function(ctx){
+          // Get the current outline.         
+          var outline = ctx.application.getActiveOutline();
+          
+          // Queue a command to load paragraphs and their types. 
+          outline.load("paragraphs/type")
+          return ctx.sync().
+              then(function(){
+                  for (var i=0; i < outline.paragraphs.items.length; i++)
+                  {
+                      var paragraph = outline.paragraphs.items[i];
+                      if (paragraph.type == "Image")
                       {
-                          var paragraph = outline.paragraphs.items[i];
-                          if (paragraph.type == "Image")
-                          {
-                              image = paragraph.image;
-                          }
+                          image = paragraph.image;
                       }
-                  })
-                  .then(function(){
-                      if (image != null)
-                      {
-                          imageString = image.getBase64Image();
-                          return ctx.sync();
-                      }
-                  })
-                  .then(function(){
-                      console.log(imageString);
-                  });
-          });
-          ```
+                  }
+              })
+              .then(function(){
+                  if (image != null)
+                  {
+                      imageString = image.getBase64Image();
+                      return ctx.sync();
+                  }
+              })
+              .then(function(){
+                  console.log(imageString);
+              });
+      });
+      ```
   - uid: onenote.OneNote.Image.height
     summary: |-
       Gets or sets the height of the Image layout.
@@ -146,26 +149,28 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.Image.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
+      return:
+        type:
+          - onenote.OneNote.Image
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.ImageLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function(ctx){
           // Get the current outline.         
           var outline = ctx.application.getActiveOutline();
@@ -201,13 +206,10 @@ items:
                   }
               });
       });
-
       ```
 
       ```javascript
-
       var image = null;
-
 
       OneNote.run(function(ctx){
           // Get the current outline.
@@ -240,11 +242,9 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function(ctx){
           // Get the current outline.         
           var outline = ctx.application.getActiveOutline();
@@ -282,31 +282,13 @@ items:
                   }
               });
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       }); 
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.Image.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.Image;'
-      return:
-        type:
-          - onenote.OneNote.Image
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.Image.ocrData
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
@@ -356,6 +338,37 @@ items:
       return:
         type:
           - onenote.OneNote.Paragraph
+  - uid: onenote.OneNote.Image.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Image.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.ImageUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ImageUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.Image.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Image.toJSON

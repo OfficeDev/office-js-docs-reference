@@ -17,7 +17,6 @@ items:
     package: outlook
     children:
       - outlook.Office.ItemCompose.addFileAttachmentAsync
-      - outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
       - outlook.Office.ItemCompose.addItemAttachmentAsync
       - outlook.Office.ItemCompose.close
       - outlook.Office.ItemCompose.getInitializationContextAsync
@@ -45,8 +44,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
@@ -61,11 +59,10 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
-      void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -73,8 +70,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -95,7 +92,7 @@ items:
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
+            can provide any object they wish to access in the callback method. inInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
             - office.Office.AsyncContextOptions
@@ -106,73 +103,7 @@ items:
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
-    summary: >-
-      Adds a file to a message or appointment as an attachment.
-
-
-      The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item
-      in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
-
-
-      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
-      session.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
-
-
-      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
-      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
-      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
-      attachments.</td></tr></table>
-    name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
-    fullName: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: base64File
-          description: The base64 encoded content of an image or file to be added to an email or event.
-          type:
-            - string
-        - id: attachmentName
-          description: >-
-            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
-            characters.
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
-            attachment will be shown inline in the message body and should not be displayed in the attachment list.
-          type:
-            - office.Office.AsyncContextOptions
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
-            provides a description of the error.
-          type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -198,8 +129,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
@@ -212,11 +142,10 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
-      void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -224,8 +153,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -250,11 +179,11 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
             property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
             a description of the error.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.close
     summary: >-
       Closes the current item that is being composed
@@ -277,8 +206,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: close()
     fullName: outlook.Office.ItemCompose.close
     langs:
@@ -305,8 +233,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       More information on [actionable
@@ -318,9 +245,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -335,12 +260,11 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. On success, the initialization data is provided in the
-            asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
-            contain an Error object with its code property set to 9020 and its name property set to
-            GenericResponseError.
+            parameter of type AsyncResult. On success, the initialization data is provided in the asyncResult.value
+            property as a string. If there is no initialization context, the asyncResult object will contain an Error
+            object with its code property set to 9020 and its name property set to GenericResponseError.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -354,36 +278,37 @@ items:
       that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
 
 
-      \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-    name: 'getSelectedDataAsync(coerciontype, callback)'
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+    name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.ItemCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;'
+      content: 'getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - office.Office.CoercionType
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
+            of type AsyncResult.
           type:
-            - '(result: AsyncResult<any>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -402,8 +327,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
@@ -415,10 +339,10 @@ items:
       `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+      `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.ItemCompose.removeAttachmentAsync
     langs:
@@ -426,8 +350,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -446,10 +370,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
-            contain an error code with the reason for the failure.
+            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
+            an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
@@ -487,8 +411,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
@@ -500,17 +423,17 @@ items:
       `saveAsync(): void;`
 
 
-      `saveAsync(options: Office.AsyncContextOptions): void;`
+      `saveAsync(options: AsyncContextOptions): void;`
 
 
-      `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+      `saveAsync(callback: (result: AsyncResult) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -525,10 +448,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
-            contain an error code with the reason for the failure.
+            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
+            an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.setSelectedDataAsync
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -545,8 +468,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
@@ -558,10 +480,10 @@ items:
       `setSelectedDataAsync(data: string): void;`
 
 
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.ItemCompose.setSelectedDataAsync
     langs:
@@ -569,8 +491,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -592,13 +514,14 @@ items:
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
+            an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
@@ -613,8 +536,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: outlook.Office.ItemCompose.subject
     langs:

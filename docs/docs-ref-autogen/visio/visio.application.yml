@@ -15,6 +15,7 @@ items:
     package: visio
     children:
       - visio.Visio.Application.load
+      - visio.Visio.Application.set
       - visio.Visio.Application.showBorders
       - visio.Visio.Application.showToolbar
       - visio.Visio.Application.showToolbars
@@ -23,27 +24,29 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: visio.Visio.Application.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
+      return:
+        type:
+          - Visio.Application
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.ApplicationLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
-      Visio.run(session, function (ctx) {
+      Visio.run(function (ctx) { 
           var application = ctx.document.application;
           application.showToolbars = false;
           application.showBorders = false;
@@ -54,27 +57,41 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: visio.Visio.Application.load
+  - uid: visio.Visio.Application.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Application.set
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Application;'
+      content: |-
+        set(properties: Interfaces.ApplicationUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
-          - Visio.Application
+          - void
         description: ''
       parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+        - id: properties
+          description: ''
           type:
-            - 'string | string[]'
+            - Interfaces.ApplicationUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: visio.Visio.Application.showBorders
     summary: |-
-      Show or hide the iFrame application borders.
+      Show/Hide the application borders.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showBorders
@@ -89,7 +106,7 @@ items:
           - boolean
   - uid: visio.Visio.Application.showToolbar
     summary: |-
-      Sets the visibility of a specific toolbar in the application.
+      Show or Hide a particular toolbar.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: 'showToolbar(id, show)'
@@ -98,23 +115,23 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'showToolbar(id: Visio.ToolBarType, show: boolean): void;'
+      content: 'showToolbar(id: string, show: boolean): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: id
-          description: The type of the Toolbar
+          description: ''
           type:
-            - visio.Visio.ToolBarType
+            - string
         - id: show
-          description: Whether the toolbar is visibile or not.
+          description: ''
           type:
             - boolean
   - uid: visio.Visio.Application.showToolbars
     summary: |-
-      Show or hide the standard toolbars.
+      Show or Hide the standard toolbars.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showToolbars

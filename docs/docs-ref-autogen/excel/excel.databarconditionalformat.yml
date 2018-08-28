@@ -21,6 +21,7 @@ items:
       - excel.Excel.DataBarConditionalFormat.lowerBoundRule
       - excel.Excel.DataBarConditionalFormat.negativeFormat
       - excel.Excel.DataBarConditionalFormat.positiveFormat
+      - excel.Excel.DataBarConditionalFormat.set
       - excel.Excel.DataBarConditionalFormat.showDataBarOnly
       - excel.Excel.DataBarConditionalFormat.toJSON
       - excel.Excel.DataBarConditionalFormat.upperBoundRule
@@ -71,27 +72,32 @@ items:
       return:
         type:
           - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B8:E13");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.dataBar);
-              conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.dataBar);
+          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.DataBarConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string
+      or an array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a
@@ -110,16 +116,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataBarConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
       return:
         type:
           - excel.Excel.DataBarConditionalFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
@@ -165,6 +171,36 @@ items:
       return:
         type:
           - excel.Excel.ConditionalDataBarPositiveFormat
+  - uid: excel.Excel.DataBarConditionalFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.DataBarConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.DataBarConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DataBarConditionalFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.DataBarConditionalFormat.showDataBarOnly
     summary: |-
       If true, hides the values from the cells where the data bar is applied.

@@ -31,7 +31,7 @@ items:
           - Visio.Document
   - uid: visio.Visio.DataRefreshCompleteEventArgs.success
     summary: |-
-      Gets the success or failure of the DataRefreshComplete event.
+      Gets the success/failure of the DataRefreshComplete event.
 
       \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: success

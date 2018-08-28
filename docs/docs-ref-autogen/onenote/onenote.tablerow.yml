@@ -98,87 +98,91 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertRowAsSibling(insertLocation: OneNote.InsertLocation, values?: string[]): OneNote.TableRow;'
+      content: 'insertRowAsSibling(insertLocation: string, values?: Array<string>): OneNote.TableRow;'
       return:
         type:
           - OneNote.TableRow
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
-              
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, get table rows.
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          
-                          // Queue a command to load table.rows.
-                          ctx.load(table, "rows");
-                          
-                          // Run the queued commands
-                          return ctx.sync().then(function() {
-                              var rows = table.rows;
-                              rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
-                              return ctx.sync();
-                          });
-                      }
-                  }
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: insertLocation
           description: Where the new rows should be inserted relative to the current row.
           type:
-            - onenote.OneNote.InsertLocation
+            - string
         - id: values
           description: >-
             Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
             Optional.
           type:
-            - 'string[]'
+            - Array<string>
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get table rows.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      
+                      // Queue a command to load table.rows.
+                      ctx.load(table, "rows");
+                      
+                      // Run the queued commands
+                      return ctx.sync().then(function() {
+                          var rows = table.rows;
+                          rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
+                          return ctx.sync();
+                      });
+                  }
+              }
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.TableRow.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.TableRow.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.TableRowLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -213,18 +217,15 @@ items:
               }
           })
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -261,31 +262,13 @@ items:
               }
           })
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.TableRow.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.TableRow;'
-      return:
-        type:
-          - OneNote.TableRow
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.TableRow.parentTable
     summary: |-
       Gets the parent table. Read-only.
@@ -317,10 +300,6 @@ items:
         type:
           - number
   - uid: onenote.OneNote.TableRow.setShadingColor
-    summary: |-
-      Sets the shading color of all cells in the row. The color code to set the cells to.
-
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
     fullName: onenote.OneNote.TableRow.setShadingColor
     langs:

@@ -62,14 +62,14 @@ items:
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
     fullName: onenote.OneNote.Interfaces.InkWordData.wordAlternates
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'wordAlternates?: string[];'
+      content: 'wordAlternates?: Array<string>;'
       return:
         type:
-          - 'string[]'
+          - Array<string>

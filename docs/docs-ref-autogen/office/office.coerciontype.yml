@@ -3,32 +3,11 @@ items:
   - uid: office.Office.CoercionType
     summary: Specifies how to coerce data returned or set by the invoked method.
     remarks: >-
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+
+
       PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and
-      `Office.CoercionType.SlideRange`.
-
-
-      Project supports only `Office.CoercionType.Text`.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this enumeration.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+      `Office.CoercionType.SlideRange`. Project supports only `Office.CoercionType.Text`.
     name: Office.CoercionType
     fullName: office.Office.CoercionType
     langs:
@@ -44,17 +23,16 @@ items:
       - office.Office.CoercionType.Table
       - office.Office.CoercionType.Text
   - uid: office.Office.CoercionType.Html
-    summary: |-
-      Return or set data as HTML.
-
-      Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+    summary: Return or set data as HTML.
+    remarks: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     name: Html
     fullName: office.Office.CoercionType.Html
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Image
-    summary: 'Data is returned or set as an image stream. Note: Only applies to data in Excel, Word and PowerPoint.'
+    summary: Data is returned or set as an image stream.
+    remarks: 'Only applies to data in Excel, Word and PowerPoint.'
     name: Image
     fullName: office.Office.CoercionType.Image
     langs:
@@ -65,19 +43,15 @@ items:
       Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing
       one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1",
       "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
-
-
-      Note: Only applies to data in Excel and Word.
+    remarks: Only applies to data in Excel and Word.
     name: Matrix
     fullName: office.Office.CoercionType.Matrix
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Ooxml
-    summary: |-
-      Return or set data as Office Open XML.
-
-      Note: Only applies to data in Word.
+    summary: Return or set data as Office Open XML.
+    remarks: Only applies to data in Word.
     name: Ooxml
     fullName: office.Office.CoercionType.Ooxml
     langs:
@@ -85,13 +59,12 @@ items:
     type: field
   - uid: office.Office.CoercionType.SlideRange
     summary: >-
-      Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
+      Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example,
       `{"slides":\[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}\]}` for a selection of
       two slides.
-
-
-      Note: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
-      -->.getSelectedData method to get the current slide or selected range of slides.
+    remarks: >-
+      Only applies to data in PowerPoint when calling the Document.getSelectedData method to get the current slide or
+      selected range of slides.
     name: SlideRange
     fullName: office.Office.CoercionType.SlideRange
     langs:
@@ -101,16 +74,14 @@ items:
     summary: >-
       Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with
       optional headers.
-
-
-      Note: Only applies to data in Access, Excel, and Word.
+    remarks: 'Only applies to data in Access, Excel and Word.'
     name: Table
     fullName: office.Office.CoercionType.Table
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Text
-    summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
+    summary: Return or set data as text (string).Data is returned or set as a one-dimensional run of characters.
     name: Text
     fullName: office.Office.CoercionType.Text
     langs:

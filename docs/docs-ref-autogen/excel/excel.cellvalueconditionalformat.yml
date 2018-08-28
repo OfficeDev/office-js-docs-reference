@@ -17,6 +17,7 @@ items:
       - excel.Excel.CellValueConditionalFormat.format
       - excel.Excel.CellValueConditionalFormat.load
       - excel.Excel.CellValueConditionalFormat.rule
+      - excel.Excel.CellValueConditionalFormat.set
       - excel.Excel.CellValueConditionalFormat.toJSON
   - uid: excel.Excel.CellValueConditionalFormat.format
     summary: |-
@@ -33,28 +34,33 @@ items:
       return:
         type:
           - excel.Excel.ConditionalRangeFormat
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CellValueConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.CellValueConditionalFormat` - Where option is a comma-delimited string
+      or an array of strings that specify the properties/relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is
@@ -73,16 +79,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CellValueConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;'
       return:
         type:
           - excel.Excel.CellValueConditionalFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: excel.Excel.CellValueConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format.
@@ -98,22 +104,53 @@ items:
       return:
         type:
           - excel.Excel.ConditionalCellValueRule
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+      #### Examples
 
-              await context.sync();
-          });
-          ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.CellValueConditionalFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.CellValueConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: excel.Excel.CellValueConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.CellValueConditionalFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.CellValueConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.CellValueConditionalFormat.toJSON

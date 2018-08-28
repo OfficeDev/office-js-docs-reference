@@ -60,14 +60,15 @@ items:
       return:
         type:
           - string
-        description: |-
+    remarks: |
 
-          #### Examples
 
-          ```typescript
-          async function onWorksheetAdd(event) {
-              await Excel.run(async (context) => {
-                  console.log("Handler for worksheet onAdded event has been triggered.  Newly added worksheet Id : " + event.worksheetId);
-              });
-          }
-          ```
+      #### Examples
+
+      ```typescript
+      async function onWorksheetAdd(event) {
+          await Excel.run(async (context) => {
+              console.log("Handler for worksheet onAdded event has been triggered.  Newly added worksheet Id : " + event.worksheetId);
+          });
+      }
+      ```

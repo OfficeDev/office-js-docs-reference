@@ -24,6 +24,7 @@ items:
       - word.Word.SearchOptions.matchWildcards
       - word.Word.SearchOptions.matchWildCards
       - word.Word.SearchOptions.newObject
+      - word.Word.SearchOptions.set
       - word.Word.SearchOptions.toJSON
   - uid: word.Word.SearchOptions.ignorePunct
     summary: >-
@@ -63,30 +64,30 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: word.Word.SearchOptions.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
+      return:
+        type:
+          - word.Word.SearchOptions
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.SearchOptionsLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       // Ignore punctuation search
-
       // Run a batch operation against the Word object model.
-
       Word.run(function (context) {
           
           // Queue a command to search the document and ignore punctuation.
@@ -112,22 +113,17 @@ items:
               return context.sync();
           });  
       })
-
       .catch(function (error) {
           console.log('Error: ' + JSON.stringify(error));
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       // Search based on a prefix
-
       // Run a batch operation against the Word object model.
-
       Word.run(function (context) {
           
           // Queue a command to search the document based on a prefix.
@@ -153,22 +149,17 @@ items:
               return context.sync();
           });  
       })
-
       .catch(function (error) {
           console.log('Error: ' + JSON.stringify(error));
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       // Search based on a suffix
-
       // Run a batch operation against the Word object model.
-
       Word.run(function (context) {
 
           // Queue a command to search the document for any string of characters after 'ly'.
@@ -194,22 +185,17 @@ items:
               return context.sync();
           });  
       })
-
       .catch(function (error) {
           console.log('Error: ' + JSON.stringify(error));
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       // Search using a wildcard
-
       // Run a batch operation against the Word object model.
-
       Word.run(function (context) {
           
           // Queue a command to search the document with a wildcard
@@ -236,35 +222,17 @@ items:
               return context.sync();
           });  
       })
-
       .catch(function (error) {
           console.log('Error: ' + JSON.stringify(error));
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: word.Word.SearchOptions.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): Word.SearchOptions;'
-      return:
-        type:
-          - word.Word.SearchOptions
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box.
+      check box in the Find and Replace dialog box (Edit menu).
 
 
       \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
@@ -375,6 +343,28 @@ items:
           description: ''
           type:
             - office.OfficeExtension.ClientRequestContext
+  - uid: word.Word.SearchOptions.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: word.Word.SearchOptions.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.SearchOptionsUpdateData
+        - id: options
+          description: ''
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
     fullName: word.Word.SearchOptions.toJSON

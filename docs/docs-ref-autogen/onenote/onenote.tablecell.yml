@@ -25,6 +25,7 @@ items:
       - onenote.OneNote.TableCell.paragraphs
       - onenote.OneNote.TableCell.parentRow
       - onenote.OneNote.TableCell.rowIndex
+      - onenote.OneNote.TableCell.set
       - onenote.OneNote.TableCell.shadingColor
       - onenote.OneNote.TableCell.toJSON
       - onenote.OneNote.TableCell.track
@@ -44,49 +45,51 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
-              
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, get a table cell at row one and column two and add "Hello".
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                          cell.appendHtml("<p>Hello</p>");
-                      }
-                  }
-                  return ctx.sync();
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: html
           description: >-
-            The HTML string to append. See[Supported
-            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            The HTML string to append. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two and add "Hello".
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      cell.appendHtml("<p>Hello</p>");
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.TableCell.appendImage
     summary: |-
       Adds the specified image to table cell.
@@ -131,47 +134,49 @@ items:
       return:
         type:
           - onenote.OneNote.RichText
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
-              var appendedRichText = null;
-              
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, get a table cell at row one and column two and add "Hello".
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                          appendedRichText = cell.appendRichText("Hello");
-                      }
-                  }
-                  return ctx.sync();
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: paragraphText
           description: HTML string to append.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          var appendedRichText = null;
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two and add "Hello".
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      appendedRichText = cell.appendRichText("Hello");
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.TableCell.appendTable
     summary: |-
       Adds a table with the specified number of rows and columns to table cell.
@@ -183,7 +188,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
+      content: 'appendTable(rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;'
       return:
         type:
           - OneNote.Table
@@ -200,7 +205,7 @@ items:
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - 'string[][]'
+            - Array<Array<string>>
   - uid: onenote.OneNote.TableCell.cellIndex
     summary: |-
       Gets the index of the cell in its row. Read-only.
@@ -251,26 +256,28 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
+    name: load(option)
+    fullName: onenote.OneNote.TableCell.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;'
+      return:
+        type:
+          - onenote.OneNote.TableCell
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.TableCellLoadOptions
+    remarks: |
 
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
 
       #### Examples
 
-
       ```javascript
-
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -301,20 +308,16 @@ items:
               return ctx.sync();
           })
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
 
       ```javascript
-
       ParentTable, ParentRow, Paragraphs
-
       OneNote.run(function(ctx) {
           var app = ctx.application;
           var outline = app.getActiveOutline();
@@ -350,31 +353,13 @@ items:
               return ctx.sync();
           })
       })
-
       .catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
-
       ```
-    name: load(option)
-    fullName: onenote.OneNote.TableCell.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: string | string[]): OneNote.TableCell;'
-      return:
-        type:
-          - onenote.OneNote.TableCell
-        description: ''
-      parameters:
-        - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
-          type:
-            - 'string | string[]'
   - uid: onenote.OneNote.TableCell.paragraphs
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
@@ -420,6 +405,37 @@ items:
       return:
         type:
           - number
+  - uid: onenote.OneNote.TableCell.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.TableCell.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.TableCellUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableCellUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.TableCell.shadingColor
     summary: |-
       Gets and sets the shading color of the cell

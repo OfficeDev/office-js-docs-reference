@@ -1,0 +1,407 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions
+    summary: >-
+      Contains a collection of \[contentControl\](contentControl.md) objects. Content controls are bounded and
+      potentially labeled regions in a document that serve as containers for specific types of content. Individual
+      content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only
+      rich text content controls are supported.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ContentControlCollectionLoadOptions
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.color
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.font
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.id
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentBody
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTable
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableOrNullObject
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.removeWhenEdited
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.style
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.styleBuiltIn
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.subtype
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.tag
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.text
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.title
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.type
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be
+      'boundingBox', 'tags' or 'hidden'.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: appearance
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'appearance?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content
+      control. Mutually exclusive with removeWhenEdited.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: cannotDelete
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cannotDelete?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the
+      content control.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: cannotEdit
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cannotEdit?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.color
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '\#RRGGBB'
+      format or by using the color name.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: color
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.font
+    summary: >-
+      For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name,
+      size, color, and other properties.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.FontLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: id
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentBody
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent body of the content control.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't
+      a parent content control.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object
+      if there isn't a parent content control.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTable
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained
+      in a table.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not
+      contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if
+      it is not contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is
+      not contained in a table.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be
+      displayed when the content control is empty.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: placeholderText
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placeholderText?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.removeWhenEdited
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after
+      it is edited. Mutually exclusive with cannotDelete.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: removeWhenEdited
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.removeWhenEdited
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeWhenEdited?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom
+      styles and localized style names. To use the built-in styles that are portable between locales, see the
+      "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.styleBuiltIn
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property
+      for built-in styles that are portable between locales. To use custom styles or localized style names, see the
+      "style" property.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styleBuiltIn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.subtype
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline',
+      'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: subtype
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.subtype
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtype?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.tag
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: tag
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.tag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tag?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.text
+    summary: |-
+      For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.title
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the title for a content control.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: title
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.type
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported
+      currently. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: type
+    fullName: word.Word.Interfaces.ContentControlCollectionLoadOptions.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

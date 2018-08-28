@@ -35,27 +35,29 @@ items:
       return:
         type:
           - excel.Excel.ChartTrendline
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series;
-
-               // Add a trendline.  
-              seriesCollection.getItemAt(0).trendlines.add("Linear");
-
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: type
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
             - excel.Excel.ChartTrendlineType
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+
+           // Add a trendline.  
+          seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartTrendlineCollection.getCount
     summary: |-
       Returns the number of trendlines in the collection.
@@ -113,6 +115,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string \| string\[\]): Excel.ChartTrendlineCollection` - Where option is a comma-delimited string
+      or an array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -129,16 +135,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTrendlineCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartTrendlineCollection;
       return:
         type:
           - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartTrendlineCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendlineCollection.toJSON
