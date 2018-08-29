@@ -93,7 +93,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type<!-- -->Office.AsyncResult<!-- -->.
+            parameter of type Office.AsyncResult.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.Mailbox.convertToEwsId
@@ -640,8 +640,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. The token is provided as a string in the asyncResult.value
-            property.
+            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Mailbox.getUserIdentityTokenAsync
@@ -677,8 +676,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. The token is provided as a string in the asyncResult.value
-            property.
+            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext
@@ -784,8 +782,8 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. The `value` property of the result is the XML of the EWS request
-            provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.
+            of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
+            string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext

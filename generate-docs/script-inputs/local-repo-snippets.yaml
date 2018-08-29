@@ -2495,7 +2495,7 @@ Office.Auth.getAccessTokenAsync:
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
         if (result.status === "succeeded") {
-            var token = result.value.accessToken;
+            var token = result.value;
             // ...
         } else {
             console.log("Error obtaining token", result.error);
@@ -5509,6 +5509,58 @@ Office.useShortNamespace:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+OfficeExtension.LoadOption:
+  - |-
+    // This example shows how to get the paragraphs in the Word document
+    // along with their text and font size properties.
+
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a commmand to load the text and font properties.
+        // It is best practice to always specify the property set.
+        // Otherwise, all properties are returned on the object.
+        context.load(paragraphs, 'text, font/size');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Insert code that works with the paragraphs loaded by context.load().
+        })
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+OfficeExtension.LoadOption.top:
+  - |-
+    // This OneNote example shows how to get the page title and indentation level
+    // of the top five pages in the current section.
+    OneNote.run(function (context) {
+        // Get the pages in the current section.
+        var pages = context.application.getActiveSection().pages;
+
+        // Queue a command to load the pages.           
+        pages.load({ "select":"title,pageLevel", "top":5, "skip":0 });
+        return context.sync()
+            .then(function() {
+                // Iterate through the collection of pages.    
+                $.each(pages.items, function(index, page) {
+                    // Show some properties.
+                    console.log("Page title: " + page.title);
+                    console.log("Indentation level: " + page.pageLevel);
+                });
+            }).catch(function(error) {
+                console.log("Error: " + error);
+                if (error instanceof OfficeExtension.Error) {
+                    console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                }
+            })
+        });
 OneNote.Application.getActiveNotebook:
   - |-
     OneNote.run(function (context) {

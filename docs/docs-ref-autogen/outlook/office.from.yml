@@ -71,7 +71,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
-            asyncResult, which is an<!-- -->Office.AsyncResult object. The `value` property of the result is message's
-            from value, as an EmailAddressDetails object.
+            asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
+            value, as an EmailAddressDetails object.
           type:
             - '(result: AsyncResult<Office.EmailAddressDetails>) => void'

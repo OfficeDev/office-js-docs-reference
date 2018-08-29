@@ -65,7 +65,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. The `value` property of the result is the subject of the item.
+            of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Subject.setAsync
@@ -129,7 +129,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type<!-- -->Office.AsyncResult<!-- -->. If setting the subject fails, the asyncResult.error property will
-            contain an error code.
+            of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will contain an
+            error code.
           type:
             - '(result: AsyncResult<void>) => void'
