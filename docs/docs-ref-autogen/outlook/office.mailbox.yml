@@ -62,6 +62,29 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.initialize = function (reason) {
+          $(document).ready(function () {
+              Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, function (result) {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                      // Handle error
+                  }
+              });
+          });
+      };
+
+
+      function loadNewItem(eventArgs) {
+          // Load the properties of the newly selected item
+          loadProps(Office.context.mailbox.item);
+      };
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Mailbox.addHandlerAsync
     langs:
@@ -117,6 +140,22 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get an item's ID from a REST API
+
+      var restId = 'AAMkAGVlOTZjNTM3LW...';
+
+
+      // Treat restId as coming from the v2.0 version of the Outlook Mail API
+
+      var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+
+      ```
     name: 'convertToEwsId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToEwsId
     langs:
@@ -198,6 +237,22 @@ items:
       (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the
       [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
       into the proper format for REST.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the currently selected item's ID
+
+      var ewsId = Office.context.mailbox.item.itemId;
+
+
+      // Convert to a REST ID for the v2.0 version of the Outlook Mail API
+
+      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+
+      ```
     name: 'convertToRestId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToRestId
     langs:
@@ -331,6 +386,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.displayAppointmentForm(appointmentId);
+
+      ```
     name: displayAppointmentForm(itemId)
     fullName: outlook.Office.Mailbox.displayAppointmentForm
     langs:
@@ -380,6 +444,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.displayMessageForm(messageId);
+
+      ```
     name: displayMessageForm(itemId)
     fullName: outlook.Office.Mailbox.displayMessageForm
     langs:
@@ -431,6 +504,33 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var start = new Date();
+
+      var end = new Date();
+
+      end.setHours(start.getHours() + 1);
+
+
+      Office.context.mailbox.displayNewAppointmentForm(
+
+      {
+          requiredAttendees: ['bob@contoso.com'],
+          optionalAttendees: ['sam@contoso.com'],
+          start: start,
+          end: end,
+          location: 'Home',
+          resources: ['projector@contoso.com'],
+          subject: 'meeting',
+          body: 'Hello World!'
+      });
+
+      ```
     name: displayNewAppointmentForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewAppointmentForm
     langs:
@@ -468,6 +568,30 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.displayNewMessageForm(
+
+      {
+          toRecipients: Office.context.mailbox.item.to, // Copy the To line from current item
+          ccRecipients: ['sam@contoso.com'],
+          subject: 'Outlook add-ins are cool!',
+          htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
+          attachments: [
+          {
+              type: 'file',
+              name: 'image.png',
+              url: 'http://contoso.com/image.png',
+              isInline: true
+          }
+          ]
+      });
+
+      ```
     name: displayNewMessageForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewMessageForm
     langs:
@@ -616,6 +740,40 @@ items:
 
 
       `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCallbackToken() {
+          var options = {
+              isRest: true,
+              asyncContext: { message: 'Hello World!' }
+          };
+
+          Office.context.mailbox.getCallbackTokenAsync(options, cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
+
+      ```javascript
+
+      function getCallbackToken() {
+          Office.context.mailbox.getCallbackTokenAsync(cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:
@@ -661,6 +819,22 @@ items:
 
       The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
       user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx)<!-- -->.
+
+      #### Examples
+
+
+      ```javascript
+
+      function getIdentityToken() {
+          Office.context.mailbox.getUserIdentityTokenAsync(cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: 'getUserIdentityTokenAsync(callback, userContext)'
     fullName: outlook.Office.Mailbox.getUserIdentityTokenAsync
     langs:
@@ -763,6 +937,55 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getSubjectRequest(id) {
+          // Return a GetItem operation request for the subject of the specified item.
+          var request =
+              '<?xml version="1.0" encoding="utf-8"?>' +
+              '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
+              '               xmlns:xsd="http://www.w3.org/2001/XMLSchema"' +
+              '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
+              '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
+              '  <soap:Header>' +
+              '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+              '  </soap:Header>' +
+              '  <soap:Body>' +
+              '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
+              '      <ItemShape>' +
+              '        <t:BaseShape>IdOnly</t:BaseShape>' +
+              '        <t:AdditionalProperties>' +
+              '            <t:FieldURI FieldURI="item:Subject"/>' +
+              '        </t:AdditionalProperties>' +
+              '      </ItemShape>' +
+              '      <ItemIds><t:ItemId Id="' + id + '"/></ItemIds>' +
+              '    </GetItem>' +
+              '  </soap:Body>' +
+              '</soap:Envelope>';
+
+          return request;
+      }
+
+
+      function sendRequest() {
+          // Create a local variable that contains the mailbox.
+          Office.context.mailbox.makeEwsRequestAsync(
+              getSubjectRequest(mailbox.item.itemId), callback);
+      }
+
+
+      function callback(asyncResult)  {
+          var result = asyncResult.value;
+          var context = asyncResult.asyncContext;
+
+          // Process the returned response here.
+      }
+
+      ```
     name: 'makeEwsRequestAsync(data, callback, userContext)'
     fullName: outlook.Office.Mailbox.makeEwsRequestAsync
     langs:
@@ -841,3 +1064,10 @@ items:
       return:
         type:
           - outlook.Office.UserProfile
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          console.log(Office.context.mailbox.userProfile.accountType);
+          ```

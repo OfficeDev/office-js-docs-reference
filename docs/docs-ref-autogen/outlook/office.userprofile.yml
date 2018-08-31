@@ -49,6 +49,15 @@ items:
       account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
       account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
       account.</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log(Office.context.mailbox.userProfile.accountType);
+
+      ```
     name: accountType
     fullName: outlook.Office.UserProfile.accountType
     langs:
