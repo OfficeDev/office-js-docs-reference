@@ -119,6 +119,142 @@ Office.Item.loadCustomPropertiesAsync:
 
     function saveCallback(asyncResult) {
     }
+Office.Mailbox.addHandlerAsync:
+  - |-
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, function (result) {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                    // Handle error
+                }
+            });
+        });
+    };
+
+    function loadNewItem(eventArgs) {
+        // Load the properties of the newly selected item
+        loadProps(Office.context.mailbox.item);
+    };
+Office.Mailbox.convertToEwsId:
+  - |-
+    // Get an item's ID from a REST API
+    var restId = 'AAMkAGVlOTZjNTM3LW...';
+
+    // Treat restId as coming from the v2.0 version of the Outlook Mail API
+    var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+Office.Mailbox.convertToRestId:
+  - |-
+    // Get the currently selected item's ID
+    var ewsId = Office.context.mailbox.item.itemId;
+
+    // Convert to a REST ID for the v2.0 version of the Outlook Mail API
+    var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+Office.Mailbox.displayNewAppointmentForm:
+  - |-
+    var start = new Date();
+    var end = new Date();
+    end.setHours(start.getHours() + 1);
+
+    Office.context.mailbox.displayNewAppointmentForm(
+    {
+        requiredAttendees: ['bob@contoso.com'],
+        optionalAttendees: ['sam@contoso.com'],
+        start: start,
+        end: end,
+        location: 'Home',
+        resources: ['projector@contoso.com'],
+        subject: 'meeting',
+        body: 'Hello World!'
+    });
+Office.Mailbox.displayNewMessageForm:
+  - |-
+    Office.context.mailbox.displayNewMessageForm(
+    {
+        toRecipients: Office.context.mailbox.item.to, // Copy the To line from current item
+        ccRecipients: ['sam@contoso.com'],
+        subject: 'Outlook add-ins are cool!',
+        htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
+        attachments: [
+        {
+            type: 'file',
+            name: 'image.png',
+            url: 'http://contoso.com/image.png',
+            isInline: true
+        }
+        ]
+    });
+Office.Mailbox.getCallbackTokenAsync:
+  - |-
+    function getCallbackToken() {
+        var options = {
+            isRest: true,
+            asyncContext: { message: 'Hello World!' }
+        };
+
+        Office.context.mailbox.getCallbackTokenAsync(options, cb);
+    }
+
+    function cb(asyncResult) {
+        var token = asyncResult.value;
+    }
+  - |-
+    function getCallbackToken() {
+        Office.context.mailbox.getCallbackTokenAsync(cb);
+    }
+
+    function cb(asyncResult) {
+        var token = asyncResult.value;
+    }
+Office.Mailbox.getUserIdentityTokenAsync:
+  - |-
+    function getIdentityToken() {
+        Office.context.mailbox.getUserIdentityTokenAsync(cb);
+    }
+
+    function cb(asyncResult) {
+        var token = asyncResult.value;
+    }
+Office.Mailbox.makeEwsRequestAsync:
+  - |-
+    function getSubjectRequest(id) {
+        // Return a GetItem operation request for the subject of the specified item.
+        var request =
+            '<?xml version="1.0" encoding="utf-8"?>' +
+            '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
+            '               xmlns:xsd="http://www.w3.org/2001/XMLSchema"' +
+            '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
+            '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
+            '  <soap:Header>' +
+            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '  </soap:Header>' +
+            '  <soap:Body>' +
+            '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
+            '      <ItemShape>' +
+            '        <t:BaseShape>IdOnly</t:BaseShape>' +
+            '        <t:AdditionalProperties>' +
+            '            <t:FieldURI FieldURI="item:Subject"/>' +
+            '        </t:AdditionalProperties>' +
+            '      </ItemShape>' +
+            '      <ItemIds><t:ItemId Id="' + id + '"/></ItemIds>' +
+            '    </GetItem>' +
+            '  </soap:Body>' +
+            '</soap:Envelope>';
+
+        return request;
+    }
+
+    function sendRequest() {
+        // Create a local variable that contains the mailbox.
+        Office.context.mailbox.makeEwsRequestAsync(
+            getSubjectRequest(mailbox.item.itemId), callback);
+    }
+
+    function callback(asyncResult)  {
+        var result = asyncResult.value;
+        var context = asyncResult.asyncContext;
+
+        // Process the returned response here.
+    }
 Office.NotificationMessages.addAsync:
   - |-
     // Create three notifications, each with a different key

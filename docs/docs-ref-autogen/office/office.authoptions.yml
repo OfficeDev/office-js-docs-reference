@@ -17,8 +17,8 @@ items:
       - office.Office.AuthOptions.forceConsent
   - uid: office.Office.AuthOptions.asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
-      is passed to a callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     name: asyncContext
     fullName: office.Office.AuthOptions.asyncContext
     langs:
@@ -48,7 +48,7 @@ items:
         type:
           - string
   - uid: office.Office.AuthOptions.forceAddAccount
-    summary: Prompts the user to add (or to switch if already added) his or her Office account.
+    summary: 'Prompts the user to add their Office account (or to switch to it, if it is already added).'
     name: forceAddAccount
     fullName: office.Office.AuthOptions.forceAddAccount
     langs:

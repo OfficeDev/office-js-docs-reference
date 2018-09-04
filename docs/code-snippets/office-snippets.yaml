@@ -1953,6 +1953,18 @@ Office.MatrixBinding.rowCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.OfficeTheme:
+  - |-
+    function applyOfficeTheme(){
+        // Get office theme colors.
+        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+        // Apply body background color to a CSS class.
+        $('.body').css('background-color', bodyBackgroundColor);
+    }
 Office.Document.getMaxResourceIndexAsync:
   - |-
     // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
