@@ -81,6 +81,56 @@ items:
 
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function callback(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // The values in asyncContext can be accessed in the callback
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
+      }
+
+      ```
+
+      ```javascript
+
+      // The following example adds an image file as an inline attachment and
+
+      // references the attachment in the message body.
+
+      Office.context.mailbox.item.addFileAttachmentAsync
+
+      (
+          "http://i.imgur.com/WJXklif.png",
+          "cute_bird.png",
+          {
+              isInline: true
+          },
+          function (asyncResult) {
+              Office.context.mailbox.item.body.setAsync(
+                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
+                  {
+                      "coercionType": "html"
+                  },
+                  function (asyncResult) {
+                      
+                  });
+          });
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.MessageCompose.addFileAttachmentAsync
     langs:
@@ -149,6 +199,28 @@ items:
       allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
       allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
       attachments.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
+          base64String,
+          "cute_bird.png",
+          {
+              isInline: true
+          },
+          function (asyncResult) {
+              Office.context.mailbox.item.body.setAsync(
+                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
+                  {
+                      "coercionType": "html"
+                  },
+                  function (asyncResult) {
+                  });
+          });
+      ```
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: outlook.Office.MessageCompose.addFileAttachmentFromBase64Async
     langs:
@@ -292,6 +364,37 @@ items:
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example adds an existing Outlook item as an attachment
+
+      // with the name `My Attachment`.
+
+      function callback(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // EWS ID of item to attach
+          // (Shortened for readability)
+          var itemId = "AAMkADI1...AAA=";
+
+          // The values in asyncContext can be accessed in the callback
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+      }
+
+      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.MessageCompose.addItemAttachmentAsync
     langs:
@@ -344,6 +447,24 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.bcc.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfBccRecipients = asyncResult.value;
+      }
+
+      ```
     name: bcc
     fullName: outlook.Office.MessageCompose.bcc
     langs:
@@ -394,6 +515,24 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.cc.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfCcRecipients = asyncResult.value;
+      }
+
+      ```
     name: cc
     fullName: outlook.Office.MessageCompose.cc
     langs:
@@ -538,6 +677,20 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.from.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var from = asyncResult.value;
+      }
+
+      ```
     isPreview: true
     name: from
     fullName: outlook.Office.MessageCompose.from
@@ -621,6 +774,32 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // getting selected data
+
+      Office.initialize = function () {
+          Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
+      }
+
+
+      function getCallback(asyncResult) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+
+          Office.context.mailbox.item.setSelectedDataAsync('Setting ' + prop + ': ' + text, {}, setCallback);
+      }
+
+
+      function setCallback(asyncResult) {
+          // check for errors
+      }
+
+      ```
     name: 'getSelectedDataAsync(coerciontype, callback)'
     fullName: outlook.Office.MessageCompose.getSelectedDataAsync
     langs:
@@ -814,6 +993,24 @@ items:
 
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code removes an attachment with an identifier of '0'.
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          '0',
+          { asyncContext : null },
+          function (asyncResult)
+          {
+              console.log(asyncResult.status);
+          }
+      );
+
+      ```
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.MessageCompose.removeAttachmentAsync
     langs:
@@ -959,6 +1156,33 @@ items:
 
 
       `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.saveAsync(
+          function callback(result) {
+              // Process the result
+          });
+
+      // The following is an example of the
+
+      // `result` parameter passed to the
+
+      // callback function. The `value`
+
+      // property contains the item ID of
+
+      // the item.
+
+      {
+          "value":"AAMkADI5...AAA=",
+          "status":"succeeded"
+      }
+
+      ```
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.MessageCompose.saveAsync
     langs:
@@ -1055,6 +1279,17 @@ items:
 
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.MessageCompose.setSelectedDataAsync
     langs:
@@ -1136,6 +1371,24 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.to.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfToRecipients = asyncResult.value;
+      }
+
+      ```
     name: to
     fullName: outlook.Office.MessageCompose.to
     langs:

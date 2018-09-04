@@ -82,6 +82,30 @@ items:
 
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function callback(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // The values in asyncContext can be accessed in the callback
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
+      }
+
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addFileAttachmentAsync
     langs:
@@ -150,6 +174,28 @@ items:
       allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
       allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
       attachments.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
+          base64String,
+          "cute_bird.png",
+          {
+              isInline: true
+          },
+          function (asyncResult) {
+              Office.context.mailbox.item.body.setAsync(
+                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
+                  {
+                      "coercionType": "html"
+                  },
+                  function (asyncResult) {
+                  });
+          });
+      ```
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async
     langs:
@@ -294,6 +340,37 @@ items:
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example adds an existing Outlook item as an attachment
+
+      // with the name `My Attachment`.
+
+      function callback(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // EWS ID of item to attach
+          // (Shortened for readability)
+          var itemId = "AAMkADI1...AAA=";
+
+          // The values in asyncContext can be accessed in the callback
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+      }
+
+      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addItemAttachmentAsync
     langs:
@@ -463,6 +540,34 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the end time of an appointment in compose mode by
+
+      // using the `setAsync` method of the `Time` object.
+
+      var endTime = new Date("3/14/2015");
+
+      var options = {
+          // Pass information that can be used
+          // in the callback
+          asyncContext: {verb:"Set"}
+      }
+
+      Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync function
+              console.debug("End Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
     name: end
     fullName: outlook.Office.AppointmentCompose.end
     langs:
@@ -547,6 +652,32 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // getting selected data
+
+      Office.initialize = function () {
+          Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
+      }
+
+
+      function getCallback(asyncResult) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+
+          Office.context.mailbox.item.setSelectedDataAsync('Setting ' + prop + ': ' + text, {}, setCallback);
+      }
+
+
+      function setCallback(asyncResult) {
+          // check for errors
+      }
+
+      ```
     name: 'getSelectedDataAsync(coerciontype, options, callback)'
     fullName: outlook.Office.AppointmentCompose.getSelectedDataAsync
     langs:
@@ -671,6 +802,23 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var userContext = { value : 1 };
+
+      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
+
+
+      function callback(asyncResult) {
+          var context = asyncResult.context;
+          var location = asyncResult.value;
+      }
+
+      ```
     name: location
     fullName: outlook.Office.AppointmentCompose.location
     langs:
@@ -720,6 +868,24 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.optionalAttendees.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
+      }
+
+      ```
     name: optionalAttendees
     fullName: outlook.Office.AppointmentCompose.optionalAttendees
     langs:
@@ -748,6 +914,17 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var organizerName = Office.context.mailbox.item.organizer.displayName;
+
+      var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+
+      ```
     isPreview: true
     name: organizer
     fullName: outlook.Office.AppointmentCompose.organizer
@@ -831,6 +1008,24 @@ items:
 
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code removes an attachment with an identifier of '0'.
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          '0',
+          { asyncContext : null },
+          function (asyncResult)
+          {
+              console.log(asyncResult.status);
+          }
+      );
+
+      ```
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeAttachmentAsync
     langs:
@@ -939,6 +1134,24 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.requiredAttendees.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+      }
+
+      ```
     name: requiredAttendees
     fullName: outlook.Office.AppointmentCompose.requiredAttendees
     langs:
@@ -1003,6 +1216,33 @@ items:
 
 
       `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.saveAsync(
+          function callback(result) {
+              // Process the result
+          });
+
+      // The following is an example of the
+
+      // `result` parameter passed to the
+
+      // callback function. The `value`
+
+      // property contains the item ID of
+
+      // the item.
+
+      {
+          "value":"AAMkADI5...AAA=",
+          "status":"succeeded"
+      }
+
+      ```
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.AppointmentCompose.saveAsync
     langs:
@@ -1100,6 +1340,17 @@ items:
 
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.AppointmentCompose.setSelectedDataAsync
     langs:
@@ -1160,6 +1411,34 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the start time of an appointment in compose mode by
+
+      // using the `setAsync` method of the `Time` object.
+
+      var startTime = new Date("3/14/2015");
+
+      var options = {
+          // Pass information that can be used
+          // in the callback
+          asyncContext: {verb:"Set"}
+      }
+
+      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync function
+              console.debug("Start Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
     name: start
     fullName: outlook.Office.AppointmentCompose.start
     langs:
