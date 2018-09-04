@@ -1343,6 +1343,20 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.subject.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var subject = asyncResult.value;
+      }
+
+      ```
     name: subject
     fullName: outlook.Office.MessageCompose.subject
     langs:

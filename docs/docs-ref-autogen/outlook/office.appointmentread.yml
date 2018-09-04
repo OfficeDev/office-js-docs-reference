@@ -1550,6 +1550,31 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following JavaScript code example shows how to access the
+
+      // `subject` property of the current item in Outlook.
+
+
+      // The initialize function is required for all apps.
+
+      Office.initialize = function () {
+          // Checks for the DOM to load using the jQuery ready function.
+          $(document).ready(function () {
+              // After the DOM is loaded, app-specific code can run.
+              var item = Office.context.mailbox.item;
+              var subject = item.subject;
+              // Continue with processing the subject of the current item,
+              // which can be a message or appointment.
+          });
+      }
+
+      ```
     name: subject
     fullName: outlook.Office.AppointmentRead.subject
     langs:

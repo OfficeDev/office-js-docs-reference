@@ -169,6 +169,13 @@ Office.AppointmentCompose.start:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
+Office.AppointmentCompose.subject:
+  - |-
+    Office.context.mailbox.item.subject.getAsync(callback);
+
+    function callback(asyncResult) {
+        var subject = asyncResult.value;
+    }
 Office.AppointmentRead.attachments:
   - |-
     // The following code builds an HTML string with details of all attachments on the current item.
@@ -421,6 +428,22 @@ Office.AppointmentRead.start:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
+Office.AppointmentRead.subject:
+  - |-
+    // The following JavaScript code example shows how to access the
+    // `subject` property of the current item in Outlook.
+
+    // The initialize function is required for all apps.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, app-specific code can run.
+            var item = Office.context.mailbox.item;
+            var subject = item.subject;
+            // Continue with processing the subject of the current item,
+            // which can be a message or appointment.
+        });
+    }
 Office.Body.getAsync:
   - |-
     // This example gets the body of the message in plain text.
@@ -607,19 +630,6 @@ Office.Item.seriesId:
   - |-
     var seriesId = Office.context.mailbox.item.seriesId; 
     var isSeries = (seriesId == null);
-Office.Item.subject:
-  - |-
-    // The initialize function is required for all apps.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, app-specific code can run.
-            var item = Office.context.mailbox.item;
-            var subject = item.subject;
-            // Continue with processing the subject of the current item,
-            // which can be a message or appointment.
-        });
-    }
 Office.Mailbox.addHandlerAsync:
   - |-
     Office.initialize = function (reason) {
@@ -905,6 +915,13 @@ Office.MessageCompose.setSelectedDataAsync:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+Office.MessageCompose.subject:
+  - |-
+    Office.context.mailbox.item.subject.getAsync(callback);
+
+    function callback(asyncResult) {
+        var subject = asyncResult.value;
+    }
 Office.MessageCompose.to:
   - |-
     Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -1130,6 +1147,22 @@ Office.MessageRead.sender:
   - |-
     var senderName = Office.context.mailbox.item.sender.displayName;
     var senderAddress = Office.context.mailbox.item.sender.emailAddress;
+Office.MessageRead.subject:
+  - |-
+    // The following JavaScript code example shows how to access the
+    // `subject` property of the current item in Outlook.
+
+    // The initialize function is required for all apps.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, app-specific code can run.
+            var item = Office.context.mailbox.item;
+            var subject = item.subject;
+            // Continue with processing the subject of the current item,
+            // which can be a message or appointment.
+        });
+    }
 Office.MessageRead.to:
   - |-
     Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
