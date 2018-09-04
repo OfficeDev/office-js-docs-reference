@@ -8400,12 +8400,6 @@ Office.Mailbox.convertToRestId:
 
     // Convert to a REST ID for the v2.0 version of the Outlook Mail API
     var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-Office.Mailbox.displayAppointmentForm:
-  - |-
-    Office.context.mailbox.displayAppointmentForm(appointmentId);
-Office.Mailbox.displayMessageForm:
-  - |-
-    Office.context.mailbox.displayMessageForm(messageId);
 Office.Mailbox.displayNewAppointmentForm:
   - |-
     var start = new Date();
@@ -8512,9 +8506,6 @@ Office.Mailbox.makeEwsRequestAsync:
 
         // Process the returned response here.
     }
-Office.Mailbox.userProfile:
-  - |-
-    console.log(Office.context.mailbox.userProfile.accountType);
 Office.NotificationMessages.addAsync:
   - |-
     // Create three notifications, each with a different key
@@ -8752,9 +8743,6 @@ Office.Time.setAsync:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
-Office.UserProfile.accountType:
-  - |-
-    console.log(Office.context.mailbox.userProfile.accountType);
 Visio.Application.load:
   - |-
     Visio.run(session, function (ctx) {

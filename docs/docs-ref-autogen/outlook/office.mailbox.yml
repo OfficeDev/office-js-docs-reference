@@ -386,15 +386,6 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.displayAppointmentForm(appointmentId);
-
-      ```
     name: displayAppointmentForm(itemId)
     fullName: outlook.Office.Mailbox.displayAppointmentForm
     langs:
@@ -444,15 +435,6 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.displayMessageForm(messageId);
-
-      ```
     name: displayMessageForm(itemId)
     fullName: outlook.Office.Mailbox.displayMessageForm
     langs:
@@ -1064,10 +1046,3 @@ items:
       return:
         type:
           - outlook.Office.UserProfile
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          console.log(Office.context.mailbox.userProfile.accountType);
-          ```
