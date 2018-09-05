@@ -90,6 +90,7 @@ Specifies the event associated with an event handler.
 |---|---|---|---|
 |`AppointmentTimeChanged`| String | The appointment date or time of the selected series has changed. | Preview |
 |`ItemChanged`| String | The selected item has changed. | 1.5 |
+|`OfficeThemeChanged`| String | The selected item has changed. | Preview |
 |`RecipientsChanged`| String | The recipient list of the selected item has changed. | Preview |
 |`RecurrencePatternChanged`| String | The recurrence pattern of the selected series has changed. | Preview |
 

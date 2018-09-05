@@ -30,7 +30,7 @@ The following features are in preview.
 - [Office.MailboxEnums.RecurrenceTimeZone](/javascript/api/outlook/office.mailboxenums.recurrencetimezone) - Added a new enum that specifies the time zone applied to the recurrence.
 - [Office.MailboxEnums.RecurrenceType](/javascript/api/outlook/office.mailboxenums.recurrencetype) - Added a new enum that specifies the type of recurrence.
 - [Office.MailboxEnums.WeekNumber](/javascript/api/outlook/office.mailboxenums.weeknumber) - Added a new enum that specifies the week of the month.
-- [Office.EventType](/javascript/api/office/office.eventtype) - Modified to support RecurrenceChanged, RecipientsChanged, and AppointmentTimeChanged events through addition of `RecurrencePatternChanged`, `RecipientsChanged`, and `AppointmentTimeChanged` entries respectively.
+- [Office.EventType](/javascript/api/office/office.eventtype) - Modified to support RecurrenceChanged, RecipientsChanged, AppointmentTimeChanged, and OfficeThemeChanged events through addition of `RecurrencePatternChanged`, `RecipientsChanged`, `AppointmentTimeChanged`, and `OfficeThemeChanged` entries respectively.
 
 ## See also
 

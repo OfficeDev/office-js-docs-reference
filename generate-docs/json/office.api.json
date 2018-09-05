@@ -31844,7 +31844,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the appointment date or time of the selected series was changed in Outlook."
+                  "text": "Triggers when the appointment date or time of the selected series is changed in Outlook."
                 },
                 {
                   "kind": "paragraph"
@@ -32568,7 +32568,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when Dialog has a event, such as dialog closed, dialog navigation failed."
+                  "text": "Triggers when Dialog has an event, such as dialog closed or dialog navigation failed."
                 }
               ],
               "remarks": [],
@@ -32594,7 +32594,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when a document level selection happens"
+                  "text": "Triggers when a document-level selection happens."
                 },
                 {
                   "kind": "paragraph"
@@ -32861,7 +32861,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the selected Outlook item was changed."
+                  "text": "Triggers when the selected Outlook item is changed."
                 },
                 {
                   "kind": "paragraph"
@@ -32881,7 +32881,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when a customXmlPart node was deleted."
+                  "text": "Triggers when a customXmlPart node is deleted."
                 }
               ],
               "remarks": [],
@@ -32894,7 +32894,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when a customXmlPart node was inserted."
+                  "text": "Triggers when a customXmlPart node is inserted."
                 }
               ],
               "remarks": [],
@@ -32907,11 +32907,31 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when a customXmlPart node was replaced."
+                  "text": "Triggers when a customXmlPart node is replaced."
                 }
               ],
               "remarks": [],
               "isBeta": false
+            },
+            "OfficeThemeChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when the OfficeTheme is changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
             },
             "RecipientsChanged": {
               "kind": "enum value",
@@ -32920,7 +32940,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the recipient list of the selected item was changed in Outlook."
+                  "text": "Triggers when the recipient list of the selected item is changed in Outlook."
                 },
                 {
                   "kind": "paragraph"
@@ -32940,7 +32960,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the recurrence pattern of the selected series was changed in Outlook."
+                  "text": "Triggers when the recurrence pattern of the selected series is changed in Outlook."
                 },
                 {
                   "kind": "paragraph"
