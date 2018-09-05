@@ -13,8 +13,8 @@ items:
       - office.Office.GetFileOptions.sliceSize
   - uid: office.Office.GetFileOptions.asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
-      is passed to a callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     name: asyncContext
     fullName: office.Office.GetFileOptions.asyncContext
     langs:

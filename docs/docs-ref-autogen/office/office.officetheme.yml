@@ -23,6 +23,24 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th></tr> <tr><td><strong>
       Excel </strong></td><td> Y </td></tr> <tr><td><strong> Outlook </strong></td><td> Y </td></tr> <tr><td><strong>
       PowerPoint </strong></td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function applyOfficeTheme(){
+          // Get office theme colors.
+          var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+          var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+          var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+          var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+          // Apply body background color to a CSS class.
+          $('.body').css('background-color', bodyBackgroundColor);
+      }
+
+      ```
     name: Office.OfficeTheme
     fullName: office.Office.OfficeTheme
     langs:

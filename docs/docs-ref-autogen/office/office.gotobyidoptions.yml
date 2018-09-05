@@ -29,8 +29,8 @@ items:
       - office.Office.GoToByIdOptions.selectionMode
   - uid: office.Office.GoToByIdOptions.asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
-      is passed to a callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     name: asyncContext
     fullName: office.Office.GoToByIdOptions.asyncContext
     langs:
