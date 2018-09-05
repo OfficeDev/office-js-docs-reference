@@ -173,7 +173,7 @@ items:
           href: javascript-api-for-office-error-codes.md
         - name: API Reference
           uid: office
-  - name: API open specifications
+  - name: Preview API documentation
     href: openspec.md
   - name: Office Add-in manifest reference
     items:
