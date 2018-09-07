@@ -12,7 +12,6 @@ items:
     type: interface
     package: office
     children:
-      - office.Office.Context.auth
       - office.Office.Context.commerceAllowed
       - office.Office.Context.contentLanguage
       - office.Office.Context.diagnostics
@@ -27,18 +26,6 @@ items:
       - office.Office.Context.roamingSettings
       - office.Office.Context.touchEnabled
       - office.Office.Context.ui
-  - uid: office.Office.Context.auth
-    summary: Provides information and access to the signed-in user.
-    name: auth
-    fullName: office.Office.Context.auth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'auth: Auth;'
-      return:
-        type:
-          - office.Office.Auth
   - uid: office.Office.Context.commerceAllowed
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
