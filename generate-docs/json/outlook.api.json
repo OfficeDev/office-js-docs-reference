@@ -23310,7 +23310,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the only supported event type is Office.EventType.ItemChanged, which is invoked when the user selects a new item. This event is used by add-ins that implement a pinnable taskpane, and allows the add-in to refresh the taskpane UI based on the currently selected item."
+                  "text": "Currently, the supported event types are `Office.EventType.ItemChanged` and `Office.EventType.OfficeThemeChanged`."
                 },
                 {
                   "kind": "paragraph"

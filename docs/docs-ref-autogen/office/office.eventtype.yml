@@ -46,6 +46,7 @@ items:
       - office.Office.EventType.NodeDeleted
       - office.Office.EventType.NodeInserted
       - office.Office.EventType.NodeReplaced
+      - office.Office.EventType.OfficeThemeChanged
       - office.Office.EventType.RecipientsChanged
       - office.Office.EventType.RecurrencePatternChanged
       - office.Office.EventType.ResourceSelectionChanged
@@ -78,7 +79,7 @@ items:
     type: field
   - uid: office.Office.EventType.AppointmentTimeChanged
     summary: |-
-      Triggers when the appointment date or time of the selected series was changed in Outlook.
+      Triggers when the appointment date or time of the selected series is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
     isPreview: true
@@ -140,7 +141,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.DialogEventReceived
-    summary: 'Triggers when Dialog has a event, such as dialog closed, dialog navigation failed.'
+    summary: 'Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.'
     name: DialogEventReceived
     fullName: office.Office.EventType.DialogEventReceived
     langs:
@@ -155,7 +156,7 @@ items:
     type: field
   - uid: office.Office.EventType.DocumentSelectionChanged
     summary: >-
-      Triggers when a document level selection happens
+      Triggers when a document-level selection happens.
 
 
       **Support details**
@@ -179,7 +180,7 @@ items:
     type: field
   - uid: office.Office.EventType.ItemChanged
     summary: |-
-      Triggers when the selected Outlook item was changed.
+      Triggers when the selected Outlook item is changed.
 
       \[ [API set: Mailbox 1.1](/javascript/office/javascript-api-for-office) \]
     name: ItemChanged
@@ -188,29 +189,40 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.NodeDeleted
-    summary: Triggers when a customXmlPart node was deleted.
+    summary: Triggers when a customXmlPart node is deleted.
     name: NodeDeleted
     fullName: office.Office.EventType.NodeDeleted
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.NodeInserted
-    summary: Triggers when a customXmlPart node was inserted.
+    summary: Triggers when a customXmlPart node is inserted.
     name: NodeInserted
     fullName: office.Office.EventType.NodeInserted
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.NodeReplaced
-    summary: Triggers when a customXmlPart node was replaced.
+    summary: Triggers when a customXmlPart node is replaced.
     name: NodeReplaced
     fullName: office.Office.EventType.NodeReplaced
     langs:
       - typeScript
     type: field
+  - uid: office.Office.EventType.OfficeThemeChanged
+    summary: |-
+      Triggers when the OfficeTheme is changed in Outlook.
+
+      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
+    isPreview: true
+    name: OfficeThemeChanged
+    fullName: office.Office.EventType.OfficeThemeChanged
+    langs:
+      - typeScript
+    type: field
   - uid: office.Office.EventType.RecipientsChanged
     summary: |-
-      Triggers when the recipient list of the selected item was changed in Outlook.
+      Triggers when the recipient list of the selected item is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
     isPreview: true
@@ -221,7 +233,7 @@ items:
     type: field
   - uid: office.Office.EventType.RecurrencePatternChanged
     summary: |-
-      Triggers when the recurrence pattern of the selected series was changed in Outlook.
+      Triggers when the recurrence pattern of the selected series is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
     isPreview: true

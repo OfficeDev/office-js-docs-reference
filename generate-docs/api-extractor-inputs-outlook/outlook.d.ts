@@ -7389,9 +7389,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          *
-         * Currently the only supported event type is Office.EventType.ItemChanged, which is invoked when the user selects a new item. 
-         * This event is used by add-ins that implement a pinnable taskpane, and allows the add-in to refresh the taskpane UI based on the currently 
-         * selected item.
+         * Currently, the supported event types are `Office.EventType.ItemChanged` and `Office.EventType.OfficeThemeChanged`.
          *
          * [Api set: Mailbox 1.5]
          *
