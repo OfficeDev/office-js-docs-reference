@@ -122,7 +122,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -147,7 +147,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -405,7 +405,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -430,7 +430,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -993,7 +993,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1018,7 +1018,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2100,7 +2100,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2125,7 +2125,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2208,7 +2208,26 @@
               "text": "[Api set: ExcelApi 1.1]"
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Our "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "how-to guide on working with charts"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts"
+            },
+            {
+              "kind": "text",
+              "text": " has detailed walkthroughs, images, and code samples."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -2551,7 +2570,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2576,7 +2595,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3043,7 +3062,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3068,7 +3087,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3227,7 +3246,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3252,7 +3271,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3607,7 +3626,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3632,7 +3651,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4684,7 +4703,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -4709,7 +4728,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5055,7 +5074,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5080,7 +5099,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5239,7 +5258,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5264,7 +5283,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5456,7 +5475,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5481,7 +5500,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5864,7 +5883,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5889,7 +5908,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5964,7 +5983,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5989,7 +6008,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6344,7 +6363,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6369,7 +6388,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6582,7 +6601,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6607,7 +6626,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7141,7 +7160,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7166,7 +7185,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7353,7 +7372,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7378,7 +7397,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartFormatString` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartFormatString` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7481,7 +7500,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7506,7 +7525,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7637,7 +7656,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7662,7 +7681,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7849,7 +7868,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7874,7 +7893,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8117,7 +8136,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8142,7 +8161,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8341,7 +8360,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8366,7 +8385,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8497,7 +8516,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8522,7 +8541,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8754,7 +8773,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8779,7 +8798,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9186,7 +9205,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -9211,7 +9230,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9482,7 +9501,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -9507,7 +9526,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9706,7 +9725,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -9731,7 +9750,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10005,7 +10024,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -10030,7 +10049,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10747,7 +10766,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -10772,7 +10791,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10903,7 +10922,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -10928,7 +10947,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -11293,7 +11312,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -11318,7 +11337,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -11773,7 +11792,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -11798,7 +11817,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12021,7 +12040,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12046,7 +12065,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12373,7 +12392,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12398,7 +12417,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12501,7 +12520,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12526,7 +12545,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -13425,7 +13444,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -13450,7 +13469,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14119,7 +14138,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -14144,7 +14163,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14359,7 +14378,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -14384,7 +14403,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14941,7 +14960,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -14966,7 +14985,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -15513,7 +15532,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -15538,7 +15557,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16109,7 +16128,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -16134,7 +16153,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16635,7 +16654,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -16660,7 +16679,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16984,7 +17003,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17009,7 +17028,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17307,7 +17326,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17332,7 +17351,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17522,7 +17541,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17547,7 +17566,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17800,7 +17819,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17825,7 +17844,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18240,7 +18259,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18265,7 +18284,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18427,7 +18446,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18452,7 +18471,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18810,7 +18829,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18835,7 +18854,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19000,7 +19019,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19025,7 +19044,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19400,7 +19419,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19425,7 +19444,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19702,7 +19721,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19727,7 +19746,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19886,7 +19905,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19911,7 +19930,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20573,7 +20592,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -20598,7 +20617,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22272,7 +22291,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -22297,7 +22316,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23523,7 +23542,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -23548,7 +23567,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24201,7 +24220,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -24234,7 +24253,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
+                  "text": "` - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24249,7 +24268,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -46591,7 +46610,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -46616,7 +46635,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -70043,7 +70062,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -70068,7 +70087,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -70339,7 +70358,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -70364,7 +70383,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -70781,7 +70800,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -70806,7 +70825,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -70991,7 +71010,26 @@
               "text": "[Api set: ExcelApi 1.3]"
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Our "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "how-to guide on working with PivotTables"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables"
+            },
+            {
+              "kind": "text",
+              "text": " has detailed walkthroughs, images, and code samples."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -71039,7 +71077,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -71064,7 +71102,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -71366,7 +71404,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -71391,7 +71429,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -71525,7 +71563,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -71550,7 +71588,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -71686,7 +71724,26 @@
               "text": "[Api set: ExcelApi 1.1]"
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Our "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "how-to guide on working with ranges"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges"
+            },
+            {
+              "kind": "text",
+              "text": " has detailed walkthroughs, images, and code samples."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -73245,7 +73302,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -73270,7 +73327,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -73866,7 +73923,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -73891,7 +73948,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -74187,7 +74244,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -74212,7 +74269,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -74346,7 +74403,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -74371,7 +74428,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -74530,7 +74587,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -74555,7 +74612,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -74916,7 +74973,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -74941,7 +74998,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -75869,7 +75926,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -75894,7 +75951,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -76233,7 +76290,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -76258,7 +76315,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeViewCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.RangeViewCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -76957,7 +77014,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -76982,7 +77039,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -77281,7 +77338,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -77306,7 +77363,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -78224,7 +78281,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -78249,7 +78306,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -78657,7 +78714,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -78682,7 +78739,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -78737,7 +78794,26 @@
               "text": "[Api set: ExcelApi 1.1]"
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Our "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "how-to guide on working with tables"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables"
+            },
+            {
+              "kind": "text",
+              "text": " has detailed walkthroughs, images, and code samples."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -79086,7 +79162,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -79111,7 +79187,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -80092,7 +80168,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -80117,7 +80193,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -80459,7 +80535,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -80484,7 +80560,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -80895,7 +80971,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -80920,7 +80996,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -81092,7 +81168,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -81117,7 +81193,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -81421,7 +81497,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -81446,7 +81522,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -81813,7 +81889,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -81838,7 +81914,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -82028,7 +82104,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -82053,7 +82129,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -83064,7 +83140,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -83089,7 +83165,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -83448,7 +83524,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -83473,7 +83549,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -83828,7 +83904,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -83853,7 +83929,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -84024,7 +84100,26 @@
               "text": "[Api set: ExcelApi 1.1]"
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Our "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "how-to guide on working with worksheets"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets"
+            },
+            {
+              "kind": "text",
+              "text": " has detailed walkthroughs and code samples."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -84734,7 +84829,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -84759,7 +84854,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -85975,7 +86070,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -86000,7 +86095,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -86693,7 +86788,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -86718,7 +86813,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"

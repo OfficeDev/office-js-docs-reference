@@ -1009,7 +1009,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1034,7 +1034,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3066,7 +3066,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3091,7 +3091,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4324,7 +4324,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -4349,7 +4349,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4708,7 +4708,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -4733,7 +4733,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5158,7 +5158,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5183,7 +5183,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5393,7 +5393,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5418,7 +5418,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5712,7 +5712,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5737,7 +5737,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6342,7 +6342,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6367,7 +6367,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6931,7 +6931,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6956,7 +6956,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8129,7 +8129,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8154,7 +8154,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8675,7 +8675,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -8700,7 +8700,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19379,7 +19379,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19404,7 +19404,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20187,7 +20187,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -20212,7 +20212,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20523,7 +20523,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -20548,7 +20548,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22353,7 +22353,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -22378,7 +22378,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23284,7 +23284,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -23309,7 +23309,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24690,7 +24690,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -24715,7 +24715,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25456,7 +25456,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -25481,7 +25481,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25952,7 +25952,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -25977,7 +25977,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26418,7 +26418,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -26443,7 +26443,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26668,7 +26668,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -26693,7 +26693,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -29221,7 +29221,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -29246,7 +29246,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -30169,7 +30169,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -30194,7 +30194,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -30833,7 +30833,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -30858,7 +30858,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -31316,7 +31316,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -31341,7 +31341,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -31547,7 +31547,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -31572,7 +31572,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32115,7 +32115,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -32140,7 +32140,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32670,7 +32670,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -32695,7 +32695,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"

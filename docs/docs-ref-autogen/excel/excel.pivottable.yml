@@ -5,6 +5,10 @@ items:
       Represents an Excel PivotTable.
 
       \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      PivotTables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has detailed
+      walkthroughs, images, and code samples.
     name: Excel.PivotTable
     fullName: excel.Excel.PivotTable
     langs:
@@ -44,8 +48,8 @@ items:
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable` - Only
@@ -66,7 +70,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.PivotTable.name

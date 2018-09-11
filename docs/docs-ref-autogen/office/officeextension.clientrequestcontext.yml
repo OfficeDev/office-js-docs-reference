@@ -67,7 +67,7 @@ items:
             - office.OfficeExtension.ClientObject
         - id: option
           description: >-
-            A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or
+            A comma-delimited string, or array of strings, that specifies the properties to load, or
             an[OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
           type:
             - 'string | string[] | LoadOption'
