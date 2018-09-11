@@ -76,7 +76,7 @@ items:
       - office.OfficeExtension.LoadOption.skip
       - office.OfficeExtension.LoadOption.top
   - uid: office.OfficeExtension.LoadOption.expand
-    summary: 'A comma-delimited string, or array of strings, that specifies the relationships to load.'
+    summary: 'A comma-delimited string, or array of strings, that specifies the navigation properties to load.'
     name: expand
     fullName: office.OfficeExtension.LoadOption.expand
     langs:
@@ -88,7 +88,7 @@ items:
         type:
           - 'string | string[]'
   - uid: office.OfficeExtension.LoadOption.select
-    summary: 'A comma-delimited string, or array of strings, that specifies the properties/relationships to load.'
+    summary: 'A comma-delimited string, or array of strings, that specifies the properties to load.'
     name: select
     fullName: office.OfficeExtension.LoadOption.select
     langs:

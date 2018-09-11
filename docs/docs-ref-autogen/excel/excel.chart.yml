@@ -5,6 +5,10 @@ items:
       Represents a chart object in a workbook.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      charts](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts) has detailed walkthroughs,
+      images, and code samples.
     name: Excel.Chart
     fullName: excel.Excel.Chart
     langs:
@@ -274,8 +278,8 @@ items:
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Chart` - Only available
@@ -318,7 +322,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.Chart.name
