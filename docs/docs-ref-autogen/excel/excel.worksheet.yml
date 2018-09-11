@@ -5,6 +5,10 @@ items:
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      worksheets](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets) has detailed
+      walkthroughs and code samples.
     name: Excel.Worksheet
     fullName: excel.Excel.Worksheet
     langs:
@@ -583,8 +587,8 @@ items:
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
-      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
-      specifies the relationships to load.
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only
@@ -646,7 +650,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.Worksheet.name

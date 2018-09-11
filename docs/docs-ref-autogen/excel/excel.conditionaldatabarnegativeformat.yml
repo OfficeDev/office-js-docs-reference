@@ -63,8 +63,8 @@ items:
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where
-      option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
-      is a comma-delimited string that specifies the relationships to load.
+      option.select is a comma-delimited string that specifies the properties to load, and options.expand is a
+      comma-delimited string that specifies the navigation properties to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
@@ -85,7 +85,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor

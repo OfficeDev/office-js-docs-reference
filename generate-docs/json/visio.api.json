@@ -50,7 +50,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -75,7 +75,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -455,7 +455,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -480,7 +480,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -679,7 +679,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -704,7 +704,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -919,7 +919,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -944,7 +944,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1483,7 +1483,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1508,7 +1508,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1805,7 +1805,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1830,7 +1830,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2029,7 +2029,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2054,7 +2054,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4754,7 +4754,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -4779,7 +4779,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5062,7 +5062,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5087,7 +5087,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5505,7 +5505,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5530,7 +5530,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5973,7 +5973,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -5998,7 +5998,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6297,7 +6297,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6322,7 +6322,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6661,7 +6661,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6686,7 +6686,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6845,7 +6845,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -6870,7 +6870,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7069,7 +7069,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7094,7 +7094,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7463,7 +7463,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -7488,7 +7488,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"

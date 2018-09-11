@@ -425,7 +425,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -450,7 +450,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -714,7 +714,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -739,7 +739,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1033,7 +1033,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1058,7 +1058,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1402,7 +1402,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1427,7 +1427,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1606,7 +1606,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1631,7 +1631,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1947,7 +1947,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -1972,7 +1972,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2179,7 +2179,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2204,7 +2204,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2464,7 +2464,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2489,7 +2489,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2696,7 +2696,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -2721,7 +2721,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3037,7 +3037,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3062,7 +3062,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3241,7 +3241,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3266,7 +3266,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3526,7 +3526,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3551,7 +3551,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3811,7 +3811,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -3836,7 +3836,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4152,7 +4152,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -4177,7 +4177,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9718,7 +9718,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -9743,7 +9743,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10131,7 +10131,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -10156,7 +10156,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -10307,7 +10307,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -10332,7 +10332,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -11498,7 +11498,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -11523,7 +11523,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12200,7 +12200,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12225,7 +12225,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12641,7 +12641,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12666,7 +12666,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -12932,7 +12932,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -12957,7 +12957,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -13329,7 +13329,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -13354,7 +13354,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14011,7 +14011,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -14036,7 +14036,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -14548,7 +14548,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -14573,7 +14573,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -15048,7 +15048,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -15073,7 +15073,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -15688,7 +15688,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -15713,7 +15713,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16185,7 +16185,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -16210,7 +16210,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -16508,7 +16508,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -16533,7 +16533,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17005,7 +17005,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17030,7 +17030,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -17524,7 +17524,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -17549,7 +17549,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18120,7 +18120,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18145,7 +18145,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18517,7 +18517,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18542,7 +18542,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -18836,7 +18836,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -18861,7 +18861,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19216,7 +19216,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties/relationships to load."
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
                     }
                   ],
                   "isOptional": true,
@@ -19241,7 +19241,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load."
+                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"

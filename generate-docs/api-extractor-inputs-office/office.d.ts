@@ -7371,11 +7371,11 @@ export declare namespace OfficeExtension {
      */
     export interface LoadOption {
         /**
-         * A comma-delimited string, or array of strings, that specifies the properties/relationships to load.
+         * A comma-delimited string, or array of strings, that specifies the properties to load.
          */
         select?: string | string[];
         /**
-         * A comma-delimited string, or array of strings, that specifies the relationships to load.
+         * A comma-delimited string, or array of strings, that specifies the navigation properties to load.
          */
         expand?: string | string[];
         /**
@@ -7442,7 +7442,7 @@ export declare namespace OfficeExtension {
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties. 
          * 
          * @param object - The object whose properties are loaded.
-         * @param option - A  comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an 
+         * @param option - A comma-delimited string, or array of strings, that specifies the properties to load, or an 
          * {@link OfficeExtension.LoadOption} object.
          */
         load(object: ClientObject, option?: string | string[] | LoadOption): void;
