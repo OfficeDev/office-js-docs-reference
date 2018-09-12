@@ -60,7 +60,7 @@ items:
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office hosts and API
-      requirements](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
+      requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
       -->.
 
 
@@ -78,7 +78,7 @@ items:
 
 
       - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the
-      same time from Add-in Commands (custom ribbon buttons or menu items).
+      same time from add-in commands (custom ribbon buttons or menu items).
 
 
       - Every dialog box can be moved and resized by the user.

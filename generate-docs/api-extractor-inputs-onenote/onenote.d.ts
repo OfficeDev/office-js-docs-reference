@@ -1512,7 +1512,7 @@ export declare namespace OneNote {
          *
          * @param left - The left position of the top, left corner of the Outline.
          * @param top - The top position of the top, left corner of the Outline.
-         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         addOutline(left: number, top: number, html: string): OneNote.Outline;
         /**
@@ -1873,7 +1873,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -2076,7 +2076,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;
         /**
@@ -2086,7 +2086,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
         /**
@@ -2840,7 +2840,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -4554,7 +4554,7 @@ export declare namespace OneNote {
     }
     /**
      * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
+     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office Add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
      */
     export function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**

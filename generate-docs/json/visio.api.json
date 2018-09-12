@@ -5728,7 +5728,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in."
+              "text": "The RequestContext object facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in."
             }
           ],
           "remarks": [],

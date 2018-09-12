@@ -485,7 +485,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                  "text": "If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
                 },
                 {
                   "kind": "paragraph"
@@ -12500,7 +12500,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                  "text": "If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
                 },
                 {
                   "kind": "paragraph"
@@ -16794,7 +16794,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web."
+              "text": "Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web."
             },
             {
               "kind": "paragraph"
@@ -18059,7 +18059,7 @@
                       "text": "get attachments from the selected item"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item"
                 },
                 {
                   "kind": "text",
@@ -18239,7 +18239,7 @@
                       "text": "authenticate the add-in and user with a third-party system"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/authentication"
                 },
                 {
                   "kind": "text",
@@ -20138,7 +20138,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                  "text": "If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
                 },
                 {
                   "kind": "paragraph"
@@ -27513,7 +27513,7 @@
             },
             {
               "kind": "text",
-              "text": "While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens."
+              "text": "While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens."
             },
             {
               "kind": "paragraph"

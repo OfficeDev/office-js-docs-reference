@@ -83,7 +83,7 @@ items:
         - id: html
           description: >-
             The HTML string to append. See[Supported
-            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
             for the OneNote add-ins JavaScript API.
           type:
             - string

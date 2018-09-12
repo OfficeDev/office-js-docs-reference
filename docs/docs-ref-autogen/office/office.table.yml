@@ -3,7 +3,7 @@ items:
   - uid: office.Office.Table
     summary: >-
       Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting
-      methods](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+      methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
     remarks: >-
       **Support details**
 

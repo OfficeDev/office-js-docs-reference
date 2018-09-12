@@ -235,7 +235,7 @@ items:
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
-      Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
+      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
 
 

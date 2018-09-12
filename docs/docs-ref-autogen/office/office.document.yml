@@ -144,7 +144,7 @@ items:
       // for Project 2013 by using a text editor."
 
       //
-      https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+      https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
 
@@ -353,7 +353,7 @@ items:
       // see "Create your first task pane add-in for Project by using a text editor."
 
       //
-      https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+      https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'

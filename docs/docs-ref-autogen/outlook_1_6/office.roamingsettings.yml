@@ -7,7 +7,7 @@ items:
       saved.
 
 
-      While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings
+      While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings
       should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They
       should not be used to store sensitive information such as user credentials or security tokens.
 
