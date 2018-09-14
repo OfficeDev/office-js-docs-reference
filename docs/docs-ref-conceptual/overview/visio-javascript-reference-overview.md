@@ -1,8 +1,8 @@
 # Visio JavaScript API overview
 
-You can use the Visio JavaScript APIs to embed Visio diagrams in SharePoint Online. An embedded Visio diagram is a diagram that is stored in a SharePoint document library and displayed on a SharePoint page. To embed a Visio diagram, display it in an HTML &lt;iframe&gt; element. Then you can use Visio JavaScript APIs to programmatically work with the embedded diagram.
+You can use the Visio JavaScript APIs to embed Visio diagrams in SharePoint Online. An embedded Visio diagram is a diagram that is stored in a SharePoint document library and displayed on a SharePoint page. To embed a Visio diagram, display it in an HTML `<iframe>` element. Then you can use Visio JavaScript APIs to programmatically work with the embedded diagram.
 
-<img alt="Visio diagram in iframe on SharePoint page along with script editor web part" src="../images/visio-api-block-diagram.png">
+![Visio diagram in iframe on SharePoint page along with script editor web part](../images/visio-api-block-diagram.png)
 
 You can use the Visio JavaScript APIs to:
 
@@ -27,6 +27,7 @@ session.init().then(function () {
 ## Visio.run(session, function(context) { batch })
 
 **Visio.run()** executes a batch script that performs actions on the Visio object model. The batch commands include definitions of local JavaScript proxy objects and **sync()** methods that synchronize the state between local and Visio objects and promise resolution. The advantage of batching requests in **Visio.run()** is that when the promise is resolved, any tracked page objects that were allocated during the execution will be automatically released. 
+
 The run method takes in session and RequestContext object and returns a promise (typically, just the result of **context.sync()**). It is possible to run the batch operation outside of the **Visio.run()**. However, in such a scenario, any page object references needs to be manually tracked and managed. 
 
 ## RequestContext
@@ -81,6 +82,7 @@ object.load(string: properties); //or object.load(array: properties); //or objec
 
 The following example shows you how to print shape text value from an array shapes object. 
 The **Visio.run()** method contains a batch of instructions. As part of this batch, a proxy object is created that references shapes on the active document.
+
 All these commands are queued and run when **context.sync()** is called. The **sync()** method returns a promise that can be used to chain it with other operations.
 
 ```js
@@ -184,9 +186,7 @@ function getSelectedShapeText() {
 
 After that, all you need is the URL of a Visio diagram that you want to work with. Just upload the Visio diagram to SharePoint Online and open it in Visio Online. From there, open the Embed dialog and use the Embed URL in the above example.
 
-
-<img alt="Copy Visio file URL from Embed dialog" src="../images/Visio-embed-url.png">
-
+![Copy Visio file URL from Embed dialog](../images/Visio-embed-url.png)
 
 If you are using Visio Online in Edit mode, open the Embed dialog by choosing **File** > **Share** > **Embed**. If you are using Visio Online in View mode, open the Embed dialog by choosing '...' and then **Embed**. 
 
