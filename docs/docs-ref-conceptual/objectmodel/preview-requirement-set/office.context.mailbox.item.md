@@ -1473,7 +1473,7 @@ Array.<(String|[Contact](/javascript/api/outlook/office.contact)|[MeetingSuggest
 Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
 
 > [!NOTE]
-> This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
+> This method is only supported by Outlook 2016 and later for Windows (Click-to-Run versions later than 16.0.8413.1000) and Outlook on the web for Office 365.
 
 ##### Parameters:
 |Name|Type|Attributes|Description|
