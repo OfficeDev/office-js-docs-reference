@@ -217,10 +217,14 @@ items:
         href: manifest/iconurl.md
       - name: Id
         href: manifest/id.md
+      - name: manifest/metadata.md
+        href: Metadata
       - name: Method
         href: manifest/method.md
       - name: Methods
         href: manifest/methods.md
+      - name: Namespace
+        href: manifest/namespace.md
       - name: OfficeApp
         href: manifest/officeapp.md
       - name: Override
