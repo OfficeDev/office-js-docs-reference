@@ -31550,11 +31550,11 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],
-              "isBeta": true
+              "isBeta": false
             },
             "BindingDataChanged": {
               "kind": "enum value",
@@ -32630,7 +32630,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true
+              "isBeta": false
             },
             "RecipientsChanged": {
               "kind": "enum value",
@@ -32646,11 +32646,11 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],
-              "isBeta": true
+              "isBeta": false
             },
             "RecurrencePatternChanged": {
               "kind": "enum value",
@@ -32666,11 +32666,11 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],
-              "isBeta": true
+              "isBeta": false
             },
             "ResourceSelectionChanged": {
               "kind": "enum value",

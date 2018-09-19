@@ -1,6 +1,6 @@
 # Outlook add-in API Preview requirement set
 
-The Outlook add-in API subset of the JavaScript API for Office includes objects, methods, properties and events that you can use in an Outlook add-in.
+The Outlook add-in API subset of the JavaScript API for Office includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
 > [!NOTE]
 > This documentation is for a **preview** [requirement set](/javascript/office/requirement-sets/outlook-api-requirement-sets). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest. Methods and properties that are introduced in this requirement set should be individually tested for availability before using them.
@@ -18,6 +18,7 @@ The following features are in preview.
 - [Office.context.mailbox.item.sharedProperties](office.context.mailbox.item.md#sharedProperties) - Added a new property that gets an object which provides methods to get the sharedProperties of an appointment or message item.
 - [Office.context.auth.getAccessTokenAsync](https://docs.microsoft.com/office/dev/add-ins/develop/sso-in-office-add-ins#sso-api-reference) - Added access to `getAccessTokenAsync`, which allows add-ins to [get an access token](https://docs.microsoft.com/outlook/add-ins/authenticate-a-user-with-an-sso-token) for the Microsoft Graph API.
 - [Office.MailboxEnums.DelegatePermissions](/javascript/api/outlook/office.mailboxenums.delegatepermissions) - Added a new bit flag enum that specifies the delegate permissions.
+- [Office.EventType](/javascript/api/office/office.eventtype) - Modified to support OfficeThemeChanged event through addition of `OfficeThemeChanged` entry.
 
 ## See also
 

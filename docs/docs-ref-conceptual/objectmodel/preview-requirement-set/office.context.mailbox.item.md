@@ -39,7 +39,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapioutlookofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipients) | Member |
 | [sender](#sender-emailaddressdetailsjavascriptapioutlookofficeemailaddressdetails) | Member |
 | [seriesId](#nullable-seriesid-string) | Member |
-| [sharedProperties](#sharedproperties-string) | Member |
+| [sharedProperties](#sharedproperties-sharedpropertiesjavascriptapioutlookofficesharedproperties) | Member |
 | [start](#start-datetimejavascriptapioutlookofficetime) | Member |
 | [subject](#subject-stringsubjectjavascriptapioutlookofficesubject) | Member |
 | [to](#to-arrayemailaddressdetailsjavascriptapioutlookofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipients) | Member |
@@ -59,7 +59,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
 | [getSelectedEntities](#getselectedentities--entitiesjavascriptapioutlookofficeentities) | Method |
 | [getSelectedRegExMatches](#getselectedregexmatches--object) | Method |
-| [getSharedPropertiesAsync](#getSharedPropertiesAsync-options-callback) | Method |
+| [getSharedPropertiesAsync](#getsharedpropertiesasyncoptions-callback) | Method |
 | [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
 | [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
 | [removeHandlerAsync](#removehandlerasynceventtype-handler-options-callback) | Method |

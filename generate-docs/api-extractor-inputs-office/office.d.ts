@@ -1807,9 +1807,7 @@ export declare namespace Office {
         /**
          * Triggers when the appointment date or time of the selected series is changed in Outlook.
          * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.7]
          */
         AppointmentTimeChanged,
         /**
@@ -1908,24 +1906,18 @@ export declare namespace Office {
          * Triggers when the OfficeTheme is changed in Outlook.
          * 
          * [Api set: Mailbox Preview]
-         * 
-         * @beta
          */
         OfficeThemeChanged,
         /**
          * Triggers when the recipient list of the selected item is changed in Outlook.
          * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.7]
          */
         RecipientsChanged,
         /**
          * Triggers when the recurrence pattern of the selected series is changed in Outlook.
          * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.7]
          */
         RecurrencePatternChanged,
         /**

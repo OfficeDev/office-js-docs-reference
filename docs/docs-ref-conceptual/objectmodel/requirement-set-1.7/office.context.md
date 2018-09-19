@@ -18,7 +18,7 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 |--------|------|
 | [displayLanguage](#displaylanguage-string) | Member |
 | [officeTheme](#officetheme-object) | Member |
-| [roamingSettings](#roamingsettings-roamingsettingsjavascriptapioutlookofficeroamingsettings) | Member |
+| [roamingSettings](#roamingsettings-roamingsettingsjavascriptapioutlook17officeroamingsettings) | Member |
 
 ### Namespaces
 
@@ -107,7 +107,7 @@ function applyOfficeTheme(){
 }
 ```
 
-####  roamingSettings :[RoamingSettings](/javascript/api/outlook/office.RoamingSettings)
+####  roamingSettings :[RoamingSettings](/javascript/api/outlook_1_7/office.RoamingSettings)
 
 Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -115,7 +115,7 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 
 ##### Type:
 
-*   [RoamingSettings](/javascript/api/outlook/office.RoamingSettings)
+*   [RoamingSettings](/javascript/api/outlook_1_7/office.RoamingSettings)
 
 ##### Requirements
 

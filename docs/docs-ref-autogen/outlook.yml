@@ -29,6 +29,7 @@ items:
       - outlook.Office.Mailbox
       - outlook.Office.MailboxEnums.AttachmentType
       - outlook.Office.MailboxEnums.Days
+      - outlook.Office.MailboxEnums.DelegatePermissions
       - outlook.Office.MailboxEnums.EntityType
       - outlook.Office.MailboxEnums.ItemNotificationMessageType
       - outlook.Office.MailboxEnums.ItemType
@@ -55,6 +56,7 @@ items:
       - outlook.Office.ReplyFormData
       - outlook.Office.RoamingSettings
       - outlook.Office.SeriesTime
+      - outlook.Office.SharedProperties
       - outlook.Office.SourceProperty
       - outlook.Office.Subject
       - outlook.Office.TaskSuggestion
@@ -105,6 +107,8 @@ references:
     name: Office.MailboxEnums.AttachmentType
   - uid: outlook.Office.MailboxEnums.Days
     name: Office.MailboxEnums.Days
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions
+    name: Office.MailboxEnums.DelegatePermissions
   - uid: outlook.Office.MailboxEnums.EntityType
     name: Office.MailboxEnums.EntityType
   - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
@@ -157,6 +161,8 @@ references:
     name: Office.RoamingSettings
   - uid: outlook.Office.SeriesTime
     name: Office.SeriesTime
+  - uid: outlook.Office.SharedProperties
+    name: Office.SharedProperties
   - uid: outlook.Office.SourceProperty
     name: Office.SourceProperty
   - uid: outlook.Office.Subject

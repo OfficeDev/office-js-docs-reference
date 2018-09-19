@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions
+    summary: |-
+      Specifies the permissions (by bit flags) that a delegate has on a shared folder.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    isPreview: true
+    name: Office.MailboxEnums.DelegatePermissions
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
+      - outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+      - outlook.Office.MailboxEnums.DelegatePermissions.EditAll
+      - outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
+      - outlook.Office.MailboxEnums.DelegatePermissions.Read
+      - outlook.Office.MailboxEnums.DelegatePermissions.SendAs
+      - outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
+      - outlook.Office.MailboxEnums.DelegatePermissions.Write
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
+    summary: DeleteAll permission.
+    isPreview: true
+    name: DeleteAll
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '8'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+    summary: DeleteOwn permission.
+    isPreview: true
+    name: DeleteOwn
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '4'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditAll
+    summary: EditAll permission.
+    isPreview: true
+    name: EditAll
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.EditAll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '32'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
+    summary: EditOwn permission.
+    isPreview: true
+    name: EditOwn
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '16'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.Read
+    summary: Read permission.
+    isPreview: true
+    name: Read
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.Read
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.SendAs
+    summary: SendAs permission.
+    isPreview: true
+    name: SendAs
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.SendAs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '128'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
+    summary: SendOnBehalfOf permission.
+    isPreview: true
+    name: SendOnBehalfOf
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '64'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.Write
+    summary: Write permission.
+    isPreview: true
+    name: Write
+    fullName: outlook.Office.MailboxEnums.DelegatePermissions.Write
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'

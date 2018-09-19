@@ -81,8 +81,7 @@ items:
     summary: |-
       Triggers when the appointment date or time of the selected series is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
     name: AppointmentTimeChanged
     fullName: office.Office.EventType.AppointmentTimeChanged
     langs:
@@ -214,7 +213,6 @@ items:
       Triggers when the OfficeTheme is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
     name: OfficeThemeChanged
     fullName: office.Office.EventType.OfficeThemeChanged
     langs:
@@ -224,8 +222,7 @@ items:
     summary: |-
       Triggers when the recipient list of the selected item is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
     name: RecipientsChanged
     fullName: office.Office.EventType.RecipientsChanged
     langs:
@@ -235,8 +232,7 @@ items:
     summary: |-
       Triggers when the recurrence pattern of the selected series is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
     name: RecurrencePatternChanged
     fullName: office.Office.EventType.RecurrencePatternChanged
     langs:

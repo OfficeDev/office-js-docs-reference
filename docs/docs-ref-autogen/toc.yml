@@ -456,6 +456,8 @@ items:
                     uid: outlook.Office.MailboxEnums.AttachmentType
                   - name: Days
                     uid: outlook.Office.MailboxEnums.Days
+                  - name: DelegatePermissions
+                    uid: outlook.Office.MailboxEnums.DelegatePermissions
                   - name: EntityType
                     uid: outlook.Office.MailboxEnums.EntityType
                   - name: ItemNotificationMessageType
@@ -530,6 +532,8 @@ items:
                 uid: outlook.Office.RoamingSettings
               - name: SeriesTime
                 uid: outlook.Office.SeriesTime
+              - name: SharedProperties
+                uid: outlook.Office.SharedProperties
               - name: SourceProperty
                 uid: outlook.Office.SourceProperty
               - name: Subject
@@ -540,6 +544,78 @@ items:
                 uid: outlook.Office.Time
               - name: UserProfile
                 uid: outlook.Office.UserProfile
+          - name: Outlook 1.7
+            uid: Outlook_1_7
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_7.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_7.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_7.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_7.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_7.Office.MailboxEnums.RestVersion
+              - name: AppointmentCompose
+                uid: Outlook_1_7.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_7.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_7.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_7.Office.Body
+              - name: Contact
+                uid: Outlook_1_7.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_7.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_7.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_7.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_7.Office.Entities
+              - name: Item
+                uid: Outlook_1_7.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_7.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_7.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_7.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_7.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_7.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_7.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_7.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_7.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: Outlook_1_7.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_7.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_7.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_7.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_7.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_7.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_7.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_7.Office.UserProfile
           - name: Outlook 1.6
             uid: Outlook_1_6
             items:
