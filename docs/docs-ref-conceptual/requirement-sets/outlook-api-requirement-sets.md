@@ -18,9 +18,9 @@ Setting a minimum requirement set version in the manifest controls which Outlook
 
 ## Using APIs from later requirement sets
 
-Setting a requirement set does not limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set 1.1, but it is running in an Outlook client which support 1.3, the add-in can use APIs from requirement set 1.3\.
+Setting a requirement set does not limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set 1.1, but it is running in an Outlook client which support 1.3, the add-in can use APIs from requirement set 1.3.
 
-To use newer APIs, developers can just check for their existence by using standard JavaScript technique
+To use newer APIs, developers can just check for their existence by using standard JavaScript technique:
 
 ```js
 if (item.somePropertyOrFunction !== undefined) {
@@ -40,7 +40,7 @@ The following clients support Outlook add-ins.
 
 | Client | Supported API requirement sets |
 | --- | --- |
-| Outlook 2016 (Click-to-Run) for Windows | 1.1, 1.2, 1.3, 1.4, 1.5, 1.6 |
+| Outlook 2016 (Click-to-Run) for Windows | 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7 |
 | Outlook 2016 (MSI) for Windows | 1.1, 1.2, 1.3, 1.4 |
 | Outlook 2016 for Mac | 1.1, 1.2, 1.3, 1.4, 1.5, 1.6 |
 | Outlook 2013 for Windows | 1.1, 1.2, 1.3, 1.4 |
@@ -50,5 +50,5 @@ The following clients support Outlook add-ins.
 | Outlook Web App (Exchange 2013 On-Premise) | 1.1 |
 | Outlook Web App (Exchange 2016 On-Premise) | 1.1, 1.2. 1.3 |
 
-> [!NOTE] 
+> [!NOTE]
 > Support for 1.3 in Outlook 2013 was added as part of the [December 8, 2015, update for Outlook 2013 (KB3114349)](https://support.microsoft.com/kb/3114349). Support for 1.4 in Outlook 2013 was added as part of the [September 13, 2016, update for Outlook 2013 (KB3118280)](https://support.microsoft.com/help/3118280).
