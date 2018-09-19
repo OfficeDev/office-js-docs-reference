@@ -9653,6 +9653,13 @@ Office.Item.getInitializationContextAsync:
             }
         }
     );
+Office.Item.getSharedPropertiesAsync:
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+    function callback (asyncResult) {
+        var context=asyncResult.context;
+        var sharedProperties = asyncResult.value;
+    }
 Office.Item.itemType:
   - >-
     if (Office.context.mailbox.item.itemType ==

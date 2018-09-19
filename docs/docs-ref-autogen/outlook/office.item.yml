@@ -288,6 +288,20 @@ items:
 
 
       `getAsync(callback: (result: AsyncResult&lt;Office.SharedProperties&gt;) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
+      function callback (asyncResult) {
+          var context=asyncResult.context;
+          var sharedProperties = asyncResult.value;
+      }
+
+      ```
     isPreview: true
     name: 'getSharedPropertiesAsync(options, callback)'
     fullName: outlook.Office.Item.getSharedPropertiesAsync
