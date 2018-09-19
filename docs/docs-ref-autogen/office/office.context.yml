@@ -283,7 +283,7 @@ items:
           - string
   - uid: office.Office.Context.mailbox
     summary: |-
-      Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+      Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
       Namespaces:
 

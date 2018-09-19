@@ -1285,7 +1285,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -1318,7 +1318,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -1340,7 +1340,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -1364,7 +1364,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2479,7 +2479,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2512,7 +2512,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2534,7 +2534,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2558,7 +2558,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -3533,7 +3533,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -3566,7 +3566,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -3588,7 +3588,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -3612,7 +3612,7 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -4687,7 +4687,7 @@ export declare namespace Office {
         setAsync(location: string, callback: (result: AsyncResult) => void): void;
     }
     /**
-     * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+     * Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
      *
      * Namespaces:
      *
@@ -4741,7 +4741,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
@@ -4845,7 +4845,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
-         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
+         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
          * @param itemId - An item ID formatted for Exchange Web Services (EWS)
          * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
@@ -5066,7 +5066,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
          *
-         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
+         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
@@ -5793,7 +5793,7 @@ export declare namespace Office {
     /**
      * The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.
      *
-     * While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens.
+     * While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens.
      *
      * The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.
      *

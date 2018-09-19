@@ -302,7 +302,7 @@ declare namespace Office {
     function initialize(reason: InitializationReason): void;
     /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
-    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can 
+    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office Add-in, it can 
     * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call 
     * the callback and resolve the promise with "null" for both the host and platform.
     * 
@@ -763,7 +763,7 @@ declare namespace Office {
         */
         license: string;
         /**
-         * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+         * Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
          *
          * Namespaces:
          *
@@ -982,7 +982,7 @@ declare namespace Office {
         * 
         * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
-        * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+        * {@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
         *
         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
         * other domains.
@@ -4828,7 +4828,7 @@ declare namespace Office {
          * Clears formatting on the bound table.
          *
          * @remarks
-         * See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
+         * See {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
          * 
          * **Support details**
          * 
@@ -5121,7 +5121,7 @@ declare namespace Office {
     }
     /**
      * Specifies enumerated values for the `cells` property in the cellFormat parameter of 
-     * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
      *
      * @remarks
      * 
@@ -9714,7 +9714,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -9753,7 +9753,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -9779,7 +9779,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -9807,7 +9807,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -11572,7 +11572,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -11612,7 +11612,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -11638,7 +11638,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -11666,7 +11666,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -13015,7 +13015,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -13055,7 +13055,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -13081,7 +13081,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -13109,7 +13109,7 @@ declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
-         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
+         * If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
          * [Api set: Mailbox 1.1]
@@ -14631,7 +14631,7 @@ declare namespace Office {
         setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;
     }
     /**
-     * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+     * Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
      *
      * Namespaces:
      *
@@ -14693,7 +14693,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
@@ -14808,7 +14808,7 @@ declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
          * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the 
-         * {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. 
+         * {@link https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. 
          * The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
          * @param itemId An item ID formatted for Exchange Web Services (EWS)
@@ -15077,7 +15077,7 @@ declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
          *
          * The getUserIdentityTokenAsync method returns a token that you can use to identify and 
-         * {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
+         * {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
          *
          * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
@@ -16113,7 +16113,7 @@ declare namespace Office {
      * The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. 
      * That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.
      *
-     * While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered 
+     * While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings should not be considered 
      * secure storage. They can be accessed by Exchange Web Services or Extended MAPI. 
      * They should not be used to store sensitive information such as user credentials or security tokens.
      *
@@ -17379,7 +17379,7 @@ declare namespace Excel {
         close(): Promise<void>;
     }
     /**
-     * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
+     * The RequestContext object facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
     class RequestContext extends OfficeCore.RequestContext {
         constructor(url?: string | Session);
@@ -17398,25 +17398,25 @@ declare namespace Excel {
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
-    * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+    * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
     */
     function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
@@ -17435,7 +17435,7 @@ declare namespace Excel {
      * `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
      *
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
@@ -53251,7 +53251,7 @@ declare namespace Word {
 }
 declare namespace Word {
     /**
-     * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
+     * The RequestContext object facilitates requests to the Word application. Since the Office Add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
      */
     class RequestContext extends OfficeCore.RequestContext {
         constructor(url?: string);
@@ -53260,19 +53260,19 @@ declare namespace Word {
     }
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office Add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office Add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office Add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      * 
      * @remarks
      * In addition to this signature, the method also has the following signatures:
@@ -54914,7 +54914,7 @@ declare namespace OneNote {
          *
          * @param left The left position of the top, left corner of the Outline.
          * @param top The top position of the top, left corner of the Outline.
-         * @param html An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         addOutline(left: number, top: number, html: string): OneNote.Outline;
         /**
@@ -55296,7 +55296,7 @@ declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -55514,7 +55514,7 @@ declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation The location of new contents relative to the current Paragraph.
-         * @param html An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;
         /**
@@ -55524,7 +55524,7 @@ declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation The location of new contents relative to the current Paragraph.
-         * @param html An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
         /**
@@ -56333,7 +56333,7 @@ declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -59493,7 +59493,7 @@ declare namespace OneNote {
     }
     /**
      * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
+     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office Add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
      */
     function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**
@@ -62042,7 +62042,7 @@ declare namespace Visio {
 }
 declare namespace Visio {
     /**
-     * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     * The RequestContext object facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
     class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.EmbeddedSession);
@@ -62050,7 +62050,7 @@ declare namespace Visio {
     }
     /**
      * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
     function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
@@ -62062,7 +62062,7 @@ declare namespace Visio {
     /**
      * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
      */
     function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**

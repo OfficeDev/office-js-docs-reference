@@ -31,4 +31,4 @@ The following code samples use the **GetStarted** element:
 
 * [Excel Web Add-in for Manipulating Table and Chart Formatting](https://github.com/OfficeDev/Excel-Add-in-JavaScript-SalesTracker)
 * [Word Add-in JavaScript SpecKit](https://github.com/OfficeDev/Word-Add-in-JS-SpecKit)
-* [Insert Excel charts using Microsoft Graph in a PowerPoint Add-in](https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart)
+* [Insert Excel charts using Microsoft Graph in a PowerPoint add-in](https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart)

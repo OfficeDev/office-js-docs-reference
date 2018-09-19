@@ -3466,7 +3466,7 @@ Office.Document.addHandlerAsync:
     // For a complete code sample that shows how to use a ResourceSelectionChanged
     // event handler in a Project add-in, see "Create your first task pane add-in
     // for Project 2013 by using a text editor."
-    // https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
     // When the task selection changes in the document, it gets the GUID of the
@@ -3635,7 +3635,7 @@ Office.Document.addHandlerAsync:
 
     // For a complete code sample that shows how to use a ViewSelectionChanged event handler in a Project add-in,
     // see "Create your first task pane add-in for Project by using a text editor."
-    // https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.Document.bindings:
   - |-
     function displayAllBindings() {

@@ -290,7 +290,7 @@ export declare namespace Office {
     export function initialize(reason: InitializationReason): void;
     /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise 
-    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can 
+    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office Add-in, it can 
     * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call 
     * the callback and resolve the promise with "null" for both the host and platform.
     * 
@@ -751,7 +751,7 @@ export declare namespace Office {
         */
         license: string;
         /**
-         * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+         * Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
          *
          * Namespaces:
          *
@@ -970,7 +970,7 @@ export declare namespace Office {
         * 
         * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
-        * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
+        * {@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
         *
         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
         * other domains.
@@ -4816,7 +4816,7 @@ export declare namespace Office {
          * Clears formatting on the bound table.
          *
          * @remarks
-         * See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
+         * See {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | Format tables in add-ins for Excel} for more information.
          * 
          * **Support details**
          * 
@@ -5109,7 +5109,7 @@ export declare namespace Office {
     }
     /**
      * Specifies enumerated values for the `cells` property in the cellFormat parameter of 
-     * {@link https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
      *
      * @remarks
      * 

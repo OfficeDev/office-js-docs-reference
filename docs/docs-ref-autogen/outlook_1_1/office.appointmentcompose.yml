@@ -125,7 +125,7 @@ items:
       session.
 
 
-      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
       other than the item that you are editing; however, this is not supported and is not recommended.
 
 

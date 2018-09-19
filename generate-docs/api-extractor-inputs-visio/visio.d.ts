@@ -1961,7 +1961,7 @@ export declare namespace Visio {
 }
 export declare namespace Visio {
     /**
-     * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     * The RequestContext object facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
     export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.EmbeddedSession);
@@ -1969,7 +1969,7 @@ export declare namespace Visio {
     }
     /**
      * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
     export function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
@@ -1981,7 +1981,7 @@ export declare namespace Visio {
     /**
      * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office Add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
      */
     export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**

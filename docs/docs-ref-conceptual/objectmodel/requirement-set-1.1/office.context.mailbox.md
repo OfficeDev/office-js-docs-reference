@@ -3,7 +3,7 @@
 
 ### [Office](Office.md)[.context](Office.context.md). mailbox
 
-Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ##### Requirements
 
@@ -30,7 +30,7 @@ Gets the URL of the Exchange Web Services (EWS) endpoint for this email account.
 > [!NOTE]
 > This member is not supported in Outlook for iOS or Outlook for Android.
 
-The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
+The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item).
 
 ##### Type:
 
@@ -238,7 +238,7 @@ Gets a string that contains a token used to get an attachment or item from an Ex
 
 The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
 
-You can pass the token and an attachment identifier or item identifier to a third-party system. The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) [GetAttachment](https://msdn.microsoft.com/library/office/aa494316.aspx) or [GetItem](https://msdn.microsoft.com/library/office/aa565934.aspx) operation to return an attachment or item. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
+You can pass the token and an attachment identifier or item identifier to a third-party system. The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) [GetAttachment](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation) or [GetItem](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation to return an attachment or item. For example, you can create a remote service to [get attachments from the selected item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item).
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `getCallbackTokenAsync` method.
 
@@ -273,7 +273,7 @@ function cb(asyncResult) {
 
 Gets a token identifying the user and the Office Add-in.
 
-The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in and user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx).
+The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in and user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication).
 
 ##### Parameters:
 
@@ -313,7 +313,7 @@ Makes an asynchronous request to an Exchange Web Services (EWS) service on the E
 > 
 > In these cases, add-ins should [use REST APIs](https://docs.microsoft.com/outlook/add-ins/use-rest-api) to access the user's mailbox instead.
 
-The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange. See [Call web services from an Outlook Add-in](https://docs.microsoft.com/outlook/add-ins/web-services#ews-operations-that-add-ins-support) for a list of the supported EWS operations.
+The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange. See [Call web services from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/web-services#ews-operations-that-add-ins-support) for a list of the supported EWS operations.
 
 You cannot request Folder Associated Items with the `makeEwsRequestAsync` method.
 

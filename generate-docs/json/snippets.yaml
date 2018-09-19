@@ -3844,7 +3844,7 @@ Office.Document.addHandlerAsync:
     // for Project 2013 by using a text editor."
 
     //
-    https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example adds a handler for the TaskSelectionChanged
     event.
@@ -4056,7 +4056,7 @@ Office.Document.addHandlerAsync:
     editor."
 
     //
-    https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.Document.bindings:
   - |-
     function displayAllBindings() {
