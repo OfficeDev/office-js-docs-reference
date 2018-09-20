@@ -42,7 +42,7 @@ call ..\node_modules\.bin\api-extractor run
 
 cd ..\api-extractor-inputs-office-runtime
 
-call ..\node_modeules\.bin\api-extractor run
+call ..\node_modules\.bin\api-extractor run
 
 REM cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_6
 

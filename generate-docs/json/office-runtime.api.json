@@ -1,0 +1,482 @@
+{
+  "kind": "package",
+  "name": "office-runtime",
+  "summary": [],
+  "remarks": [],
+  "exports": {
+    "OfficeRuntime": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "AsyncStorage": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "clear": {
+              "kind": "method",
+              "signature": "clear(callback?: (error?: Error) => void): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(error?: Error) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "getAllKeys": {
+              "kind": "method",
+              "signature": "getAllKeys(callback?: (error?: Error, keys?: string[]) => void): Promise<string[]>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<string[]>",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(error?: Error, keys?: string[]) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "getItem": {
+              "kind": "method",
+              "signature": "getItem(key: string, callback?: (error?: Error, result?: string) => void): Promise<string>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<string>",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(error?: Error, result?: string) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "multiGet": {
+              "kind": "method",
+              "signature": "multiGet(keys: string[], callback?: (errors?: Error[], result?: string[][]) => void): Promise<string[][]>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<string[][]>",
+                "description": []
+              },
+              "parameters": {
+                "keys": {
+                  "name": "keys",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string[]"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(errors?: Error[], result?: string[][]) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "multiRemove": {
+              "kind": "method",
+              "signature": "multiRemove(keys: string[], callback?: (errors?: Error[]) => void): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {
+                "keys": {
+                  "name": "keys",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string[]"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(errors?: Error[]) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "multiSet": {
+              "kind": "method",
+              "signature": "multiSet(keyValuePairs: string[][], callback?: (errors?: Error[]) => void): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {
+                "keyValuePairs": {
+                  "name": "keyValuePairs",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string[][]"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(errors?: Error[]) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "removeItem": {
+              "kind": "method",
+              "signature": "removeItem(key: string, callback?: (error?: Error) => void): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(error?: Error) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "setItem": {
+              "kind": "method",
+              "signature": "setItem(key: string, value: string, callback?: (error?: Error) => void): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "value": {
+                  "name": "value",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(error?: Error) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "Dialog": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "close": {
+              "kind": "method",
+              "signature": "close(): Promise<void>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Promise<void>",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "displayWebDialog": {
+          "kind": "function",
+          "signature": "export function displayWebDialog(url: string, options: DisplayWebDialogOptions): Promise<Dialog>;",
+          "returnValue": {
+            "type": "Promise<Dialog>",
+            "description": []
+          },
+          "parameters": {
+            "url": {
+              "name": "url",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            },
+            "options": {
+              "name": "options",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "DisplayWebDialogOptions"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "DisplayWebDialogOptions": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "displayInIFrame": {
+              "kind": "property",
+              "signature": "displayInIFrame?: boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "height": {
+              "kind": "property",
+              "signature": "height?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "hideTitle": {
+              "kind": "property",
+              "signature": "hideTitle?: boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "onClose": {
+              "kind": "property",
+              "signature": "onClose?: () => void;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "() => void",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "onMessage": {
+              "kind": "method",
+              "signature": "onMessage?(message: string, dialog?: Dialog): void;",
+              "accessModifier": "",
+              "isOptional": true,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "message": {
+                  "name": "message",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "dialog": {
+                  "name": "dialog",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Dialog"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "width": {
+              "kind": "property",
+              "signature": "width?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
