@@ -22,6 +22,10 @@ items:
       - excel.Excel.ChartCollection.getItemOrNullObject
       - excel.Excel.ChartCollection.items
       - excel.Excel.ChartCollection.load
+      - excel.Excel.ChartCollection.onActivated
+      - excel.Excel.ChartCollection.onAdded
+      - excel.Excel.ChartCollection.onDeactivated
+      - excel.Excel.ChartCollection.onDeleted
       - excel.Excel.ChartCollection.toJSON
   - uid: excel.Excel.ChartCollection.add
     summary: |-
@@ -321,6 +325,66 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartCollection.onActivated
+    summary: |-
+      Occurs when a chart is activated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onActivated
+    fullName: excel.Excel.ChartCollection.onActivated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
+  - uid: excel.Excel.ChartCollection.onAdded
+    summary: |-
+      Occurs when a new chart is added to the worksheet.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onAdded
+    fullName: excel.Excel.ChartCollection.onAdded
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
+  - uid: excel.Excel.ChartCollection.onDeactivated
+    summary: |-
+      Occurs when a chart is deactivated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onDeactivated
+    fullName: excel.Excel.ChartCollection.onDeactivated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
+  - uid: excel.Excel.ChartCollection.onDeleted
+    summary: |-
+      Occurs when a chart is deleted.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onDeleted
+    fullName: excel.Excel.ChartCollection.onDeleted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
   - uid: excel.Excel.ChartCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartCollection.toJSON

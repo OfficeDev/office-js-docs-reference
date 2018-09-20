@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.ChartAxisTitle.format
       - excel.Excel.ChartAxisTitle.load
+      - excel.Excel.ChartAxisTitle.setFormula
       - excel.Excel.ChartAxisTitle.text
       - excel.Excel.ChartAxisTitle.toJSON
       - excel.Excel.ChartAxisTitle.visible
@@ -110,6 +111,27 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartAxisTitle.setFormula
+    summary: |-
+      A string value that represents the formula of chart axis title using A1-style notation.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: setFormula(formula)
+    fullName: excel.Excel.ChartAxisTitle.setFormula
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: a string that present the formula to set
+          type:
+            - string
   - uid: excel.Excel.ChartAxisTitle.text
     summary: |-
       Represents the axis title.

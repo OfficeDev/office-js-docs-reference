@@ -14,10 +14,26 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartDataLabelFormat.border
       - excel.Excel.ChartDataLabelFormat.fill
       - excel.Excel.ChartDataLabelFormat.font
       - excel.Excel.ChartDataLabelFormat.load
       - excel.Excel.ChartDataLabelFormat.toJSON
+  - uid: excel.Excel.ChartDataLabelFormat.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.ChartDataLabelFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartDataLabelFormat.fill
     summary: |-
       Represents the fill format of the current chart data label. Read-only.

@@ -16,6 +16,7 @@ items:
       - excel.Excel.Interfaces.RangeData.columnHidden
       - excel.Excel.Interfaces.RangeData.columnIndex
       - excel.Excel.Interfaces.RangeData.conditionalFormats
+      - excel.Excel.Interfaces.RangeData.dataValidation
       - excel.Excel.Interfaces.RangeData.format
       - excel.Excel.Interfaces.RangeData.formulas
       - excel.Excel.Interfaces.RangeData.formulasLocal
@@ -141,6 +142,21 @@ items:
       return:
         type:
           - 'Excel.Interfaces.ConditionalFormatData[]'
+  - uid: excel.Excel.Interfaces.RangeData.dataValidation
+    summary: |-
+      Returns a data validation object.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: excel.Excel.Interfaces.RangeData.dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DataValidationData
   - uid: excel.Excel.Interfaces.RangeData.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
