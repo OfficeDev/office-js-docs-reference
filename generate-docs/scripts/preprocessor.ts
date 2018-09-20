@@ -14,7 +14,7 @@ tryCatch(async () => {
             { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
             { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
             { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }, 
+            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" },
             { name: "Local file [generate-docs\\script-inputs\\custom-functions-runtime.d.ts]", value: ""}
         ]
 
@@ -108,7 +108,7 @@ tryCatch(async () => {
     console.log("create file: custom-functions-runtime.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts',
-        dtsBuilder.extractDtsSection(definitions, "Begin Custom Functions Runtime APIs", "End Custom Functions  Runtime APIs")
+        dtsBuilder.extractDtsSection(definitions, "//", "}")
     );
 
     console.log("\nRemoving old snippets input files...");
