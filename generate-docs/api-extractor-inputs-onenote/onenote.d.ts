@@ -4554,7 +4554,7 @@ export declare namespace OneNote {
     }
     /**
      * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office Add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
+     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
      */
     export function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**

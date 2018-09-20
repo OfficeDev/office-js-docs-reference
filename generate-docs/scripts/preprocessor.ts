@@ -104,6 +104,12 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
+    console.log("create file: custom-functions-runtime.d.ts");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts',
+        dtsBuilder.extractDtsSection(definitions, "Begin Custom Functions Runtime APIs", "End Custom Functions  Runtime APIs")
+    );
+
     console.log("\nRemoving old snippets input files...");
 
     const scriptInputsPath = path.resolve("../script-inputs");

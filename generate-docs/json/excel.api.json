@@ -76413,7 +76413,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The RequestContext object facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in."
+              "text": "The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in."
             }
           ],
           "remarks": [],
@@ -76535,7 +76535,7 @@
               "description": [
                 {
                   "kind": "text",
-                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Excel application. Since the Office Add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in."
+                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in."
                 }
               ],
               "isOptional": false,
