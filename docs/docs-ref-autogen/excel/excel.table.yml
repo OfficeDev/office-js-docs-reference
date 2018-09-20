@@ -29,6 +29,7 @@ items:
       - excel.Excel.Table.highlightFirstColumn
       - excel.Excel.Table.highlightLastColumn
       - excel.Excel.Table.id
+      - excel.Excel.Table.legacyId
       - excel.Excel.Table.load
       - excel.Excel.Table.name
       - excel.Excel.Table.onChanged
@@ -323,6 +324,21 @@ items:
     type: property
     syntax:
       content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Table.legacyId
+    summary: |-
+      Returns a numeric id.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: legacyId
+    fullName: excel.Excel.Table.legacyId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legacyId: string;'
       return:
         type:
           - string

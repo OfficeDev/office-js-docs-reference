@@ -1,0 +1,168 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PivotField
+    summary: |-
+      Represents the Excel PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotField
+    fullName: excel.Excel.PivotField
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.PivotField.id
+      - excel.Excel.PivotField.items
+      - excel.Excel.PivotField.load
+      - excel.Excel.PivotField.name
+      - excel.Excel.PivotField.showAllItems
+      - excel.Excel.PivotField.sortByLabels
+      - excel.Excel.PivotField.subtotals
+      - excel.Excel.PivotField.toJSON
+  - uid: excel.Excel.PivotField.id
+    summary: |-
+      Id of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: excel.Excel.PivotField.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.PivotField.items
+    summary: |-
+      Returns the PivotFields associated with the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: items
+    fullName: excel.Excel.PivotField.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PivotItemCollection;'
+      return:
+        type:
+          - excel.Excel.PivotItemCollection
+  - uid: excel.Excel.PivotField.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.PivotField` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotField` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: excel.Excel.PivotField.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.PivotField;'
+      return:
+        type:
+          - excel.Excel.PivotField
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.PivotField.name
+    summary: |-
+      Name of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.PivotField.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.PivotField.showAllItems
+    summary: |-
+      Determines whether to show all items of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllItems
+    fullName: excel.Excel.PivotField.showAllItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllItems: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.PivotField.sortByLabels
+    summary: >-
+      Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
+      will be based on the PivotField itself.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: sortByLabels(sortby)
+    fullName: excel.Excel.PivotField.sortByLabels
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortby: Excel.SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortby
+          description: Represents whether the sorting is done in an ascending or descending order.
+          type:
+            - excel.Excel.SortBy
+  - uid: excel.Excel.PivotField.subtotals
+    summary: |-
+      Subtotals of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotals
+    fullName: excel.Excel.PivotField.subtotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotals: Excel.Subtotals;'
+      return:
+        type:
+          - excel.Excel.Subtotals
+  - uid: excel.Excel.PivotField.toJSON
+    name: toJSON()
+    fullName: excel.Excel.PivotField.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PivotFieldData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PivotFieldData
+        description: ''

@@ -13,6 +13,7 @@ items:
       - excel.Excel.Interfaces.TableData.highlightFirstColumn
       - excel.Excel.Interfaces.TableData.highlightLastColumn
       - excel.Excel.Interfaces.TableData.id
+      - excel.Excel.Interfaces.TableData.legacyId
       - excel.Excel.Interfaces.TableData.name
       - excel.Excel.Interfaces.TableData.rows
       - excel.Excel.Interfaces.TableData.showBandedColumns
@@ -82,6 +83,21 @@ items:
     type: property
     syntax:
       content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.TableData.legacyId
+    summary: |-
+      Returns a numeric id.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: legacyId
+    fullName: excel.Excel.Interfaces.TableData.legacyId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legacyId?: string;'
       return:
         type:
           - string

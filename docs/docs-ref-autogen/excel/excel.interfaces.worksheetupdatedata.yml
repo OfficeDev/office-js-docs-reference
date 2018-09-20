@@ -11,6 +11,8 @@ items:
     children:
       - excel.Excel.Interfaces.WorksheetUpdateData.name
       - excel.Excel.Interfaces.WorksheetUpdateData.position
+      - excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
+      - excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
       - excel.Excel.Interfaces.WorksheetUpdateData.standardWidth
       - excel.Excel.Interfaces.WorksheetUpdateData.tabColor
       - excel.Excel.Interfaces.WorksheetUpdateData.visibility
@@ -44,6 +46,36 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
+    summary: |-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showGridlines
+    fullName: excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showGridlines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
+    summary: |-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeadings
+    fullName: excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeadings?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.standardWidth
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
