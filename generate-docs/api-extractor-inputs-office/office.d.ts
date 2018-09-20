@@ -1466,7 +1466,7 @@ export declare namespace Office {
      *  <table>
      *   <tr><th>                    </th><th> Office for Windows desktop </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Y (in preview)             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td></tr>
      *  </table>
@@ -1805,7 +1805,7 @@ export declare namespace Office {
          */
         ActiveViewChanged,
         /**
-         * Triggers when the appointment date or time of the selected series is changed in Outlook.
+         * Triggers when any date or time of the selected appointment or series is changed in Outlook.
          * 
          * [Api set: Mailbox 1.7]
          */
@@ -1909,7 +1909,7 @@ export declare namespace Office {
          */
         OfficeThemeChanged,
         /**
-         * Triggers when the recipient list of the selected item is changed in Outlook.
+         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
          * 
          * [Api set: Mailbox 1.7]
          */
@@ -1919,7 +1919,7 @@ export declare namespace Office {
          * 
          * [Api set: Mailbox 1.7]
          */
-        RecurrencePatternChanged,
+        RecurrenceChanged,
         /**
          * Triggers when a Resource selection happens in Project.
          */

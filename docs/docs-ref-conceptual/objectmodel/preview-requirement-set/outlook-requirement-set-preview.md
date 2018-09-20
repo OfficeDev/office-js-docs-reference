@@ -11,7 +11,6 @@ The Preview Requirement set includes all of the features of [Requirement set 1.7
 
 The following features are in preview.
 
-- [SharedProperties](/javascript/api/outlook/office.sharedproperties) - Added a new object that represents the sharedProperties of an appointment or message item.
 - [Event.completed](/javascript/api/office/office.addincommands.event#completed-options-) - A new optional parameter `options`, which is a dictionary with one valid value `allowEvent`. This value is used to cancel execution of an event.
 - [Office.context.mailbox.item.addFileAttachmentFromBase64Async](office.context.mailbox.item.md#addfileattachmentfrombase64asyncbase64file-attachmentname-options-callback) - Added a new method that attaches a file from the base64 encoding to a message or appointment.
 - [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#getinitializationcontextasyncoptions-callback) - Added a new function that returns initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).

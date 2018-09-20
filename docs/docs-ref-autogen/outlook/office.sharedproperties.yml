@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.SharedProperties
     summary: |-
-      Represents the sharedProperties of an appointment or message in an Outlook add-in.
+      Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -37,7 +37,7 @@ items:
         type:
           - outlook.Office.MailboxEnums.DelegatePermissions
   - uid: outlook.Office.SharedProperties.owner
-    summary: The email address and display name of the owner of a shared item.
+    summary: The email address of the owner of a shared item.
     isPreview: true
     name: owner
     fullName: outlook.Office.SharedProperties.owner
@@ -45,12 +45,12 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'owner: EmailUser;'
+      content: 'owner: String;'
       return:
         type:
-          - EmailUser
+          - String
   - uid: outlook.Office.SharedProperties.restUrl
-    summary: The remote REST url related to the delegator’s mailbox.
+    summary: The remote REST url related to the owner’s mailbox.
     isPreview: true
     name: restUrl
     fullName: outlook.Office.SharedProperties.restUrl

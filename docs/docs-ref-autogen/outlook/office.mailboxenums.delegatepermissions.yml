@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.MailboxEnums.DelegatePermissions
     summary: |-
-      Specifies the permissions (by bit flags) that a delegate has on a shared folder.
+      This bit mask represents a delegate's permissions on a shared folder.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -21,11 +21,9 @@ items:
       - outlook.Office.MailboxEnums.DelegatePermissions.EditAll
       - outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
       - outlook.Office.MailboxEnums.DelegatePermissions.Read
-      - outlook.Office.MailboxEnums.DelegatePermissions.SendAs
-      - outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
       - outlook.Office.MailboxEnums.DelegatePermissions.Write
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
-    summary: DeleteAll permission.
+    summary: Delegate has permission to delete any items.
     isPreview: true
     name: DeleteAll
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
@@ -34,7 +32,7 @@ items:
     type: field
     numericValue: '8'
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
-    summary: DeleteOwn permission.
+    summary: Delegate has permission to delete only the items they created.
     isPreview: true
     name: DeleteOwn
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
@@ -43,7 +41,7 @@ items:
     type: field
     numericValue: '4'
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditAll
-    summary: EditAll permission.
+    summary: Delegate has permission to edit any items.
     isPreview: true
     name: EditAll
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.EditAll
@@ -52,7 +50,7 @@ items:
     type: field
     numericValue: '32'
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
-    summary: EditOwn permission.
+    summary: Delegate has permission to edit only they items they created.
     isPreview: true
     name: EditOwn
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
@@ -61,7 +59,7 @@ items:
     type: field
     numericValue: '16'
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.Read
-    summary: Read permission.
+    summary: Delegate has permission to read items.
     isPreview: true
     name: Read
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.Read
@@ -69,26 +67,8 @@ items:
       - typeScript
     type: field
     numericValue: '1'
-  - uid: outlook.Office.MailboxEnums.DelegatePermissions.SendAs
-    summary: SendAs permission.
-    isPreview: true
-    name: SendAs
-    fullName: outlook.Office.MailboxEnums.DelegatePermissions.SendAs
-    langs:
-      - typeScript
-    type: field
-    numericValue: '128'
-  - uid: outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
-    summary: SendOnBehalfOf permission.
-    isPreview: true
-    name: SendOnBehalfOf
-    fullName: outlook.Office.MailboxEnums.DelegatePermissions.SendOnBehalfOf
-    langs:
-      - typeScript
-    type: field
-    numericValue: '64'
   - uid: outlook.Office.MailboxEnums.DelegatePermissions.Write
-    summary: Write permission.
+    summary: Delegate has permission to create and write items.
     isPreview: true
     name: Write
     fullName: outlook.Office.MailboxEnums.DelegatePermissions.Write

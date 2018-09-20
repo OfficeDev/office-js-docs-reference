@@ -1478,7 +1478,7 @@ declare namespace Office {
      *  <table>
      *   <tr><th>                    </th><th> Office for Windows desktop </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Y (in preview)             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td></tr>
      *  </table>
@@ -1817,7 +1817,7 @@ declare namespace Office {
          */
         ActiveViewChanged,
         /**
-         * Triggers when the appointment date or time of the selected series is changed in Outlook.
+         * Triggers when any date or time of the selected appointment or series is changed in Outlook.
          * 
          * [Api set: Mailbox 1.7]
          */
@@ -1921,7 +1921,7 @@ declare namespace Office {
          */
         OfficeThemeChanged,
         /**
-         * Triggers when the recipient list of the selected item is changed in Outlook.
+         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
          * 
          * [Api set: Mailbox 1.7]
          */
@@ -1931,7 +1931,7 @@ declare namespace Office {
          * 
          * [Api set: Mailbox 1.7]
          */
-        RecurrencePatternChanged,
+        RecurrenceChanged,
         /**
          * Triggers when a Resource selection happens in Project.
          */
@@ -7416,7 +7416,7 @@ declare namespace Office {
             Day = "day"
         }
         /**
-         * Specifies the permissions (by bit flags) that a delegate has on a shared folder.
+         * This bit mask represents a delegate's permissions on a shared folder.
          *
          * [Api set: Mailbox Preview]
          *
@@ -7429,37 +7429,29 @@ declare namespace Office {
          */
         enum DelegatePermissions {
             /**
-             * Read permission.
+             * Delegate has permission to read items.
              */
             Read = 1,
             /**
-             * Write permission.
+             * Delegate has permission to create and write items.
              */
             Write = 2,
             /**
-             * DeleteOwn permission.
+             * Delegate has permission to delete only the items they created.
              */
             DeleteOwn = 4,
             /**
-             * DeleteAll permission.
+             * Delegate has permission to delete any items.
              */
             DeleteAll = 8,
             /**
-             * EditOwn permission.
+             * Delegate has permission to edit only they items they created.
              */
             EditOwn = 16,
             /**
-             * EditAll permission.
+             * Delegate has permission to edit any items.
              */
-            EditAll = 32,
-            /**
-             * SendOnBehalfOf permission.
-             */
-            SendOnBehalfOf = 64,
-            /**
-             * SendAs permission.
-             */
-            SendAs = 128
+            EditAll = 32
         }
         /**
          * Specifies an entity's type.
@@ -8567,7 +8559,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<Office.Body>) => void): void;`
          * 
@@ -8634,7 +8626,7 @@ declare namespace Office {
          * 
          * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
          * 
@@ -8733,7 +8725,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
          * 
@@ -8840,7 +8832,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
          * 
@@ -9676,7 +9668,7 @@ declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -9703,7 +9695,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -9742,7 +9734,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
          * 
@@ -10074,7 +10066,7 @@ declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrencePatternChanged`.
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -10100,7 +10092,7 @@ declare namespace Office {
        /**
         * Removes an event handler for a supported event.
         * 
-        * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+        * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -10689,7 +10681,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -10717,7 +10709,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -11070,7 +11062,7 @@ declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrencePatternChanged`.
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -11097,7 +11089,7 @@ declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrencePatternChanged`.
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -11242,24 +11234,9 @@ declare namespace Office {
         seriesId: string;
 
         /**
-         * Gets the sharedProperties of an appointment or message item.
-         * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @remarks
-         * 
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         * 
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
-         * 
-         * @beta
-         */
-        sharedProperties: Office.SharedProperties;
-
-        /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -11286,7 +11263,7 @@ declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -11335,7 +11312,7 @@ declare namespace Office {
         getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
 
        /**
-        * Gets the sharedProperties of an appointment or message.
+        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
         *
         * [Api set: Mailbox Preview]
         *
@@ -11344,7 +11321,7 @@ declare namespace Office {
         *
         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
         * 
-        * In addition to the main signature, this method also has this signature:
+        * In addition to this signature, this method also has the following signature:
         * 
         * `getAsync(callback: (result: AsyncResult<Office.SharedProperties>) => void): void;`
         *
@@ -11352,14 +11329,14 @@ declare namespace Office {
         *        asyncContext: Developers can provide any object they wish to access in the callback method.
         * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
         *                 type Office.AsyncResult.
-        *                 The `value` property of the result is the sharedProperties of the item.
+        *                 The `value` property of the result is the properties of the shared item.
         * 
         * @beta
         */
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.SharedProperties>) => void): void;
 
        /**
-        * Gets the sharedProperties of an appointment or message.
+        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
         *
         * [Api set: Mailbox Preview]
         *
@@ -11370,7 +11347,7 @@ declare namespace Office {
         * 
         * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
         *                 type Office.AsyncResult.
-        *                 The `value` property of the result is the sharedProperties of the item.
+        *                 The `value` property of the result is the properties of the shared item.
         * 
         * @beta
         */
@@ -11406,7 +11383,7 @@ declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrencePatternChanged`.
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -11434,7 +11411,7 @@ declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrencePatternChanged`.
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -11631,7 +11608,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
          * 
@@ -12749,7 +12726,7 @@ declare namespace Office {
          * Gets the email address of the sender of a message.
          *
          * The from and sender properties represent the same person unless the message is sent by a delegate. 
-         * In that case, the from property represents the delegator, and the sender property represents the delegate.
+         * In that case, the from property represents the owner, and the sender property represents the delegate.
          *
          * The from property returns a From object that provides a method to get the from value.
          * 
@@ -13000,7 +12977,7 @@ declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -13027,7 +13004,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -13066,7 +13043,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
          * 
@@ -13404,7 +13381,7 @@ declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -13431,7 +13408,7 @@ declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -14036,7 +14013,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -14064,7 +14041,7 @@ declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -14421,7 +14398,7 @@ declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -14448,7 +14425,7 @@ declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrencePatternChanged`.
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -14716,7 +14693,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
@@ -14831,7 +14808,7 @@ declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          *
          * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the 
-         * {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. 
+         * {@link https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. 
          * The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
          * @param itemId An item ID formatted for Exchange Web Services (EWS)
@@ -15100,7 +15077,7 @@ declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
          *
          * The getUserIdentityTokenAsync method returns a token that you can use to identify and 
-         * {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
+         * {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
          *
          * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
@@ -15356,7 +15333,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;`
          *
@@ -15390,7 +15367,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `removeAsync(key: string): void;`
          * 
@@ -15460,7 +15437,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
          * 
@@ -15589,7 +15566,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
          * 
@@ -15689,7 +15666,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;`
          *
@@ -15739,7 +15716,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
          * 
@@ -15917,7 +15894,7 @@ declare namespace Office {
          * 
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          */
-        recurrenceTimeZone: Office.MailboxEnums.RecurrenceTimeZone;
+        recurrenceTimeZone: RecurrenceTimeZone;
 
         /**
          * Gets or sets the type of the recurring appointment series.
@@ -15960,7 +15937,7 @@ declare namespace Office {
          * 
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAsync(callback?: (result: AsyncResult<Office.Recurrence>) => void): void;`
          * 
@@ -16006,7 +15983,7 @@ declare namespace Office {
          * 
          * <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
          * 
@@ -16041,7 +16018,7 @@ declare namespace Office {
     }
 
     /**
-     * Gets or sets the properties of the recurrence.
+     * Represents the properties of the recurrence.
      * 
      * [Api set: Mailbox 1.7]
      * 
@@ -16081,6 +16058,16 @@ declare namespace Office {
          * Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
          */
         firstDayOfWeek: Office.MailboxEnums.Days;
+    }
+
+    /**
+     * Represents the time zone of the recurrence.
+     */
+    export interface RecurrenceTimeZone {
+        /**
+         * Represents the name of the recurrence time zone.
+         */
+        name: Office.MailboxEnums.RecurrenceTimeZone;
     }
 
     /**
@@ -16322,7 +16309,7 @@ declare namespace Office {
          * 
          * <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `setEndDate(date: string): void;` (Where date is the end date of the recurring appointment series represented in the 
          * {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD").
@@ -16359,7 +16346,7 @@ declare namespace Office {
          * 
          * <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `setStartDate(date: string): void;` (Where date is the start date of the recurring appointment series represented in the {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD").
          *  
@@ -16398,7 +16385,7 @@ declare namespace Office {
          * 
          * <tr><td>Errors</td><td>Invalid time format - The time is not in an acceptable format.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard datetime string format: "THH:mm:ss:mmm").
          * 
@@ -16426,7 +16413,7 @@ declare namespace Office {
     }
 
     /**
-     * Represents the sharedProperties of an appointment or message in an Outlook add-in.
+     * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
      *
      * [Api set: Mailbox Preview]
      *
@@ -16439,11 +16426,11 @@ declare namespace Office {
      */
     interface SharedProperties {
         /**
-         * The email address and display name of the owner of a shared item.
+         * The email address of the owner of a shared item.
          */
-        owner: EmailUser;
+        owner: String;
         /**
-         * The remote REST url related to the delegator’s mailbox.
+         * The remote REST url related to the owner’s mailbox.
          */
         restUrl: String;
         /**
@@ -16475,7 +16462,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAsync(callback: (result: AsyncResult<string>) => void): void;`
          *
@@ -16517,7 +16504,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255 characters.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `setAsync(subject: string): void;`
          * 
@@ -16639,7 +16626,7 @@ declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
          * 
-         * In addition to the main signature, this method also has this signature:
+         * In addition to this signature, this method also has the following signature:
          * 
          * `getAsync(callback: (result: AsyncResult<Date>) => void): void;`
          *
@@ -16683,7 +16670,7 @@ declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start time.</td></tr></table>
          * 
-         * In addition to the main signature, this method also has these signatures:
+         * In addition to this signature, this method also has the following signatures:
          * 
          * `setAsync(dateTime: Date): void;`
          * 
@@ -17220,12 +17207,9 @@ declare namespace OfficeExtension {
 ////////////////////////////////////////////////////////////////
 
 
-
 ////////////////////////////////////////////////////////////////
 
 
-
-////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////// Begin OfficeCore ////////////////////////
 ////////////////////////////////////////////////////////////////

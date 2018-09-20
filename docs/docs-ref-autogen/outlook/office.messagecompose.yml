@@ -267,7 +267,7 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
       \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -353,7 +353,7 @@ items:
       attachments.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
@@ -663,7 +663,7 @@ items:
 
 
       The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
-      the from property represents the delegator, and the sender property represents the delegate.
+      the from property represents the owner, and the sender property represents the delegate.
 
 
       The from property returns a From object that provides a method to get the from value.
@@ -955,7 +955,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.MessageCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -1046,7 +1046,7 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
       \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

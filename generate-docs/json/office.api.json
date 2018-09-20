@@ -31543,7 +31543,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the appointment date or time of the selected series is changed in Outlook."
+                  "text": "Triggers when any date or time of the selected appointment or series is changed in Outlook."
                 },
                 {
                   "kind": "paragraph"
@@ -32639,7 +32639,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the recipient list of the selected item is changed in Outlook."
+                  "text": "Triggers when the recipient list of the selected item or the appointment location is changed in Outlook."
                 },
                 {
                   "kind": "paragraph"
@@ -32652,7 +32652,7 @@
               "remarks": [],
               "isBeta": false
             },
-            "RecurrencePatternChanged": {
+            "RecurrenceChanged": {
               "kind": "enum value",
               "value": "",
               "deprecatedMessage": [],
@@ -40525,7 +40525,7 @@
             },
             {
               "kind": "text",
-              "text": " Y "
+              "text": " Y (in preview) "
             },
             {
               "kind": "html-tag",

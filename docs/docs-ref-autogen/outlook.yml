@@ -52,6 +52,7 @@ items:
       - outlook.Office.Recipients
       - outlook.Office.Recurrence
       - outlook.Office.RecurrenceProperties
+      - outlook.Office.RecurrenceTimeZone
       - outlook.Office.ReplyFormAttachment
       - outlook.Office.ReplyFormData
       - outlook.Office.RoamingSettings
@@ -153,6 +154,8 @@ references:
     name: Office.Recurrence
   - uid: outlook.Office.RecurrenceProperties
     name: Office.RecurrenceProperties
+  - uid: outlook.Office.RecurrenceTimeZone
+    name: Office.RecurrenceTimeZone
   - uid: outlook.Office.ReplyFormAttachment
     name: Office.ReplyFormAttachment
   - uid: outlook.Office.ReplyFormData

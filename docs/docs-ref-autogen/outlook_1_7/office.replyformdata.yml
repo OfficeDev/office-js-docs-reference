@@ -31,17 +31,17 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormData.callback
     summary: >-
       When the reply display call completes, the function passed in the callback parameter is called with a single
-      parameter, asyncResult, which is an AsyncResult object.
+      parameter, asyncResult, which is an Office.AsyncResult object.
     name: callback
     fullName: Outlook_1_7.Office.ReplyFormData.callback
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'callback?: (result: AsyncResult) => void;'
+      content: 'callback?: (result: AsyncResult<any>) => void;'
       return:
         type:
-          - '(result: AsyncResult) => void'
+          - '(result: AsyncResult<any>) => void'
   - uid: Outlook_1_7.Office.ReplyFormData.htmlBody
     summary: >-
       A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32

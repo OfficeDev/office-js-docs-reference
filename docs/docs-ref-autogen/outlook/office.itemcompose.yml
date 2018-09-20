@@ -207,7 +207,7 @@ items:
       attachments.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`

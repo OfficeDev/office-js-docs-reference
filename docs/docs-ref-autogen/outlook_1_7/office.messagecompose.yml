@@ -17,6 +17,7 @@ items:
     package: Outlook_1_7
     children:
       - Outlook_1_7.Office.MessageCompose.addFileAttachmentAsync
+      - Outlook_1_7.Office.MessageCompose.addHandlerAsync
       - Outlook_1_7.Office.MessageCompose.addItemAttachmentAsync
       - Outlook_1_7.Office.MessageCompose.bcc
       - Outlook_1_7.Office.MessageCompose.body
@@ -25,12 +26,16 @@ items:
       - Outlook_1_7.Office.MessageCompose.conversationId
       - Outlook_1_7.Office.MessageCompose.dateTimeCreated
       - Outlook_1_7.Office.MessageCompose.dateTimeModifed
+      - Outlook_1_7.Office.MessageCompose.from
       - Outlook_1_7.Office.MessageCompose.getSelectedDataAsync
       - Outlook_1_7.Office.MessageCompose.itemType
       - Outlook_1_7.Office.MessageCompose.loadCustomPropertiesAsync
       - Outlook_1_7.Office.MessageCompose.notificationMessages
+      - Outlook_1_7.Office.MessageCompose.recurrence
       - Outlook_1_7.Office.MessageCompose.removeAttachmentAsync
+      - Outlook_1_7.Office.MessageCompose.removeHandlerAsync
       - Outlook_1_7.Office.MessageCompose.saveAsync
+      - Outlook_1_7.Office.MessageCompose.seriesId
       - Outlook_1_7.Office.MessageCompose.setSelectedDataAsync
       - Outlook_1_7.Office.MessageCompose.subject
       - Outlook_1_7.Office.MessageCompose.to
@@ -72,7 +77,8 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
+      void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: Outlook_1_7.Office.MessageCompose.addFileAttachmentAsync
     langs:
@@ -81,7 +87,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -109,11 +115,70 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
+  - uid: Outlook_1_7.Office.MessageCompose.addHandlerAsync
+    summary: >-
+      Adds an event handler for a supported event.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_7.Office.MessageCompose.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -129,7 +194,7 @@ items:
       session.
 
 
-      If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
       other than the item that you are editing; however, this is not supported and is not recommended.
 
 
@@ -147,7 +212,7 @@ items:
       attachments.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
@@ -156,7 +221,8 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
+      void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: Outlook_1_7.Office.MessageCompose.addItemAttachmentAsync
     langs:
@@ -165,7 +231,7 @@ items:
     syntax:
       content: >-
         addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -194,7 +260,7 @@ items:
             property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
             a description of the error.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: Outlook_1_7.Office.MessageCompose.bcc
     summary: >-
       Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
@@ -383,6 +449,36 @@ items:
       return:
         type:
           - Date
+  - uid: Outlook_1_7.Office.MessageCompose.from
+    summary: >-
+      Gets the email address of the sender of a message.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the owner, and the sender property represents the delegate.
+
+
+      The from property returns a From object that provides a method to get the from value.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+    name: from
+    fullName: Outlook_1_7.Office.MessageCompose.from
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'from: Office.From;'
+      return:
+        type:
+          - outlook.Office.From
   - uid: Outlook_1_7.Office.MessageCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -410,7 +506,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult) => void): void;'
+      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -423,9 +519,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<any>) => void'
   - uid: Outlook_1_7.Office.MessageCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -483,7 +579,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        void;
       return:
         type:
           - void
@@ -492,9 +590,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -523,6 +621,42 @@ items:
       return:
         type:
           - outlook.Office.NotificationMessages
+  - uid: Outlook_1_7.Office.MessageCompose.recurrence
+    summary: >-
+      Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
+      compose modes for appointment items. Read mode for meeting request items.
+
+
+      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
+      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
+      appointments. `undefined` is returned for messages that are not meeting requests.
+
+
+      Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+
+
+      Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
+      request of a single appointment and NOT a part of a series.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+    name: recurrence
+    fullName: Outlook_1_7.Office.MessageCompose.recurrence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type:
+          - Recurrence
   - uid: Outlook_1_7.Office.MessageCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -557,7 +691,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: Outlook_1_7.Office.MessageCompose.removeAttachmentAsync
     langs:
@@ -566,7 +700,7 @@ items:
     syntax:
       content: >-
         removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult) => void): void;
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -585,10 +719,69 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
+            contain an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
+  - uid: Outlook_1_7.Office.MessageCompose.removeHandlerAsync
+    summary: >-
+      Removes an event handler for a supported event.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_7.Office.MessageCompose.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
@@ -642,14 +835,14 @@ items:
       `saveAsync(options: Office.AsyncContextOptions): void;`
 
 
-      `saveAsync(callback: (result: AsyncResult) => void): void;`
+      `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: Outlook_1_7.Office.MessageCompose.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -664,10 +857,47 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
+  - uid: Outlook_1_7.Office.MessageCompose.seriesId
+    summary: >-
+      Gets the id of the series that an instance belongs to.
+
+
+      In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this
+      item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
+
+
+      Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier.
+      The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API
+      calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see
+      [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!--
+      -->.
+
+
+      The seriesId property returns null for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns undefined for any other items that are not meeting requests.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+    name: seriesId
+    fullName: Outlook_1_7.Office.MessageCompose.seriesId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesId: string;'
+      return:
+        type:
+          - string
   - uid: Outlook_1_7.Office.MessageCompose.setSelectedDataAsync
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -700,7 +930,7 @@ items:
       `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: Outlook_1_7.Office.MessageCompose.setSelectedDataAsync
     langs:
@@ -709,7 +939,7 @@ items:
     syntax:
       content: >-
         setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -735,10 +965,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.

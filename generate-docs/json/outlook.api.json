@@ -760,7 +760,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -1113,7 +1113,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -3435,7 +3435,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -5929,7 +5929,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -10433,7 +10433,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -11664,7 +11664,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -12047,7 +12047,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -12328,7 +12328,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -12609,7 +12609,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -15421,7 +15421,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -16125,7 +16125,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The `value` property of the result is the sharedProperties of the item."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The `value` property of the result is the properties of the shared item."
                     }
                   ],
                   "isOptional": false,
@@ -16137,7 +16137,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the sharedProperties of an appointment or message."
+                  "text": "Gets the properties of an appointment or message in a shared folder, calendar, or mailbox."
                 },
                 {
                   "kind": "paragraph"
@@ -16244,7 +16244,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -16880,7 +16880,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -17156,126 +17156,6 @@
                 }
               ],
               "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "sharedProperties": {
-              "kind": "property",
-              "signature": "sharedProperties: Office.SharedProperties;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Office.SharedProperties",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the sharedProperties of an appointment or message item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Compose or read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "text",
-                  "text": ""
-                }
-              ],
-              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -18138,7 +18018,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -24172,7 +24052,7 @@
                       "text": "Outlook Mail API"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
+                  "targetUrl": "https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations"
                 },
                 {
                   "kind": "text",
@@ -25452,7 +25332,7 @@
                       "text": "get attachments from the selected item"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item"
                 },
                 {
                   "kind": "text",
@@ -25869,7 +25749,7 @@
                       "text": "authenticate the add-in and user with a third-party system"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/authentication"
                 },
                 {
                   "kind": "text",
@@ -26728,7 +26608,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "DeleteAll permission."
+                      "text": "Delegate has permission to delete any items."
                     }
                   ],
                   "remarks": [],
@@ -26741,7 +26621,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "DeleteOwn permission."
+                      "text": "Delegate has permission to delete only the items they created."
                     }
                   ],
                   "remarks": [],
@@ -26754,7 +26634,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "EditAll permission."
+                      "text": "Delegate has permission to edit any items."
                     }
                   ],
                   "remarks": [],
@@ -26767,7 +26647,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "EditOwn permission."
+                      "text": "Delegate has permission to edit only they items they created."
                     }
                   ],
                   "remarks": [],
@@ -26780,33 +26660,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Read permission."
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": true
-                },
-                "SendAs": {
-                  "kind": "enum value",
-                  "value": "128",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "SendAs permission."
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": true
-                },
-                "SendOnBehalfOf": {
-                  "kind": "enum value",
-                  "value": "64",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "SendOnBehalfOf permission."
+                      "text": "Delegate has permission to read items."
                     }
                   ],
                   "remarks": [],
@@ -26819,7 +26673,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Write permission."
+                      "text": "Delegate has permission to create and write items."
                     }
                   ],
                   "remarks": [],
@@ -26830,7 +26684,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the permissions (by bit flags) that a delegate has on a shared folder."
+                  "text": "This bit mask represents a delegate's permissions on a shared folder."
                 },
                 {
                   "kind": "paragraph"
@@ -31313,7 +31167,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -31666,7 +31520,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -32628,7 +32482,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate."
+                  "text": "The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the owner, and the sender property represents the delegate."
                 },
                 {
                   "kind": "paragraph"
@@ -33933,7 +33787,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -35081,7 +34935,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -39576,7 +39430,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
@@ -40954,7 +40808,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -41128,7 +40982,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -41343,7 +41197,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -42199,7 +42053,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -42409,7 +42263,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -42691,7 +42545,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -43465,7 +43319,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -43602,11 +43456,11 @@
             },
             "recurrenceTimeZone": {
               "kind": "property",
-              "signature": "recurrenceTimeZone: Office.MailboxEnums.RecurrenceTimeZone;",
+              "signature": "recurrenceTimeZone: RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "type": "RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -44176,7 +44030,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -44210,7 +44064,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Gets or sets the properties of the recurrence."
+              "text": "Represents the properties of the recurrence."
             },
             {
               "kind": "paragraph"
@@ -44454,6 +44308,45 @@
                 {
                   "kind": "text",
                   "text": "Represents the number of the week in the selected month e.g. 'first' for first week of the month."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "RecurrenceTimeZone": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the time zone of the recurrence."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "name": {
+              "kind": "property",
+              "signature": "name: Office.MailboxEnums.RecurrenceTimeZone;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the name of the recurrence time zone."
                 }
               ],
               "remarks": [],
@@ -46586,7 +46479,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -46809,7 +46702,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -47020,7 +46913,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -47046,7 +46939,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the sharedProperties of an appointment or message in an Outlook add-in."
+              "text": "Represents the properties of an appointment or message in a shared folder, mailbox, or calendar."
             },
             {
               "kind": "paragraph"
@@ -47179,16 +47072,16 @@
             },
             "owner": {
               "kind": "property",
-              "signature": "owner: EmailUser;",
+              "signature": "owner: String;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "EmailUser",
+              "type": "String",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The email address and display name of the owner of a shared item."
+                  "text": "The email address of the owner of a shared item."
                 }
               ],
               "remarks": [],
@@ -47209,7 +47102,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The remote REST url related to the delegator’s mailbox."
+                  "text": "The remote REST url related to the owner’s mailbox."
                 }
               ],
               "remarks": [],
@@ -47529,7 +47422,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -47753,7 +47646,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -48254,7 +48147,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -48485,7 +48378,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"

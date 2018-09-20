@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_7.Office.RecurrenceTimeZone
+    summary: Represents the time zone of the recurrence.
+    name: Office.RecurrenceTimeZone
+    fullName: Outlook_1_7.Office.RecurrenceTimeZone
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_7
+    children:
+      - Outlook_1_7.Office.RecurrenceTimeZone.name
+  - uid: Outlook_1_7.Office.RecurrenceTimeZone.name
+    summary: Represents the name of the recurrence time zone.
+    name: name
+    fullName: Outlook_1_7.Office.RecurrenceTimeZone.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: Office.MailboxEnums.RecurrenceTimeZone;'
+      return:
+        type:
+          - outlook.Office.MailboxEnums.RecurrenceTimeZone

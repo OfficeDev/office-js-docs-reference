@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Recurrence
+  - uid: Outlook_1_7.Office.Recurrence
     summary: >-
       The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the
       recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime,
@@ -29,19 +29,19 @@ items:
       <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
       </tr> </table>
     name: Office.Recurrence
-    fullName: outlook.Office.Recurrence
+    fullName: Outlook_1_7.Office.Recurrence
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: Outlook_1_7
     children:
-      - outlook.Office.Recurrence.getAsync
-      - outlook.Office.Recurrence.recurrenceProperties
-      - outlook.Office.Recurrence.recurrenceTimeZone
-      - outlook.Office.Recurrence.recurrenceType
-      - outlook.Office.Recurrence.seriesTime
-      - outlook.Office.Recurrence.setAsync
-  - uid: outlook.Office.Recurrence.getAsync
+      - Outlook_1_7.Office.Recurrence.getAsync
+      - Outlook_1_7.Office.Recurrence.recurrenceProperties
+      - Outlook_1_7.Office.Recurrence.recurrenceTimeZone
+      - Outlook_1_7.Office.Recurrence.recurrenceType
+      - Outlook_1_7.Office.Recurrence.seriesTime
+      - Outlook_1_7.Office.Recurrence.setAsync
+  - uid: Outlook_1_7.Office.Recurrence.getAsync
     summary: |-
       Returns the current recurrence object of an appointment series.
 
@@ -61,33 +61,8 @@ items:
 
 
       `getAsync(callback?: (result: AsyncResult&lt;Office.Recurrence&gt;) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the recurrence object of an appointment or meeting request item.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getEndDate();
-      }
-
-
-      // The following is an example of the results of the getAsync call.
-
-      Recurrence = {
-          "recurrenceType": "weekly",
-          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-          "seriesTime": {seriesTimeObject}, 
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
-      ```
     name: 'getAsync(options, callback)'
-    fullName: outlook.Office.Recurrence.getAsync
+    fullName: Outlook_1_7.Office.Recurrence.getAsync
     langs:
       - typeScript
     type: method
@@ -113,7 +88,7 @@ items:
             Recurrence object.
           type:
             - '(result: AsyncResult<Office.Recurrence>) => void'
-  - uid: outlook.Office.Recurrence.recurrenceProperties
+  - uid: Outlook_1_7.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
@@ -126,7 +101,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: recurrenceProperties
-    fullName: outlook.Office.Recurrence.recurrenceProperties
+    fullName: Outlook_1_7.Office.Recurrence.recurrenceProperties
     langs:
       - typeScript
     type: property
@@ -135,7 +110,7 @@ items:
       return:
         type:
           - RecurrenceProperties
-  - uid: outlook.Office.Recurrence.recurrenceTimeZone
+  - uid: Outlook_1_7.Office.Recurrence.recurrenceTimeZone
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
@@ -148,7 +123,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: recurrenceTimeZone
-    fullName: outlook.Office.Recurrence.recurrenceTimeZone
+    fullName: Outlook_1_7.Office.Recurrence.recurrenceTimeZone
     langs:
       - typeScript
     type: property
@@ -157,7 +132,7 @@ items:
       return:
         type:
           - RecurrenceTimeZone
-  - uid: outlook.Office.Recurrence.recurrenceType
+  - uid: Outlook_1_7.Office.Recurrence.recurrenceType
     summary: |-
       Gets or sets the type of the recurring appointment series.
 
@@ -170,7 +145,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: recurrenceType
-    fullName: outlook.Office.Recurrence.recurrenceType
+    fullName: Outlook_1_7.Office.Recurrence.recurrenceType
     langs:
       - typeScript
     type: property
@@ -179,10 +154,10 @@ items:
       return:
         type:
           - outlook.Office.MailboxEnums.RecurrenceType
-  - uid: outlook.Office.Recurrence.seriesTime
+  - uid: Outlook_1_7.Office.Recurrence.seriesTime
     summary: >-
-      The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
-      the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
+      The [Office.SeriesTime](xref:Outlook_1_7.Office.SeriesTime) object enables you to manage the start and end dates
+      of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
       time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
       time zone.
 
@@ -196,7 +171,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: seriesTime
-    fullName: outlook.Office.Recurrence.seriesTime
+    fullName: Outlook_1_7.Office.Recurrence.seriesTime
     langs:
       - typeScript
     type: property
@@ -205,7 +180,7 @@ items:
       return:
         type:
           - outlook.Office.SeriesTime
-  - uid: outlook.Office.Recurrence.setAsync
+  - uid: Outlook_1_7.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
@@ -228,41 +203,8 @@ items:
 
 
       `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example sets the recurrence pattern of an appointment series.
-
-      var seriesTimeObject = new SeriesTime(); 
-
-      seriesTimeObject.setStartDate(2017,11,2);  
-
-      seriesTimeObject.setEndDate(2017,12,2); 
-
-      seriesTimeObject.setStartTime(10,30); 
-
-      seriesTimeObject.setDuration(30);
-
-
-      var pattern = {
-          "seriesTime": seriesTimeObject,
-          "type": "weekly",
-          "properties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
-
-      Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
-
-
-      //Result: This created a recurring event from November 2, 2017 to December 2, 2017
-
-      //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
-
-      ```
     name: 'setAsync(recurrencePattern, options, callback)'
-    fullName: outlook.Office.Recurrence.setAsync
+    fullName: Outlook_1_7.Office.Recurrence.setAsync
     langs:
       - typeScript
     type: method

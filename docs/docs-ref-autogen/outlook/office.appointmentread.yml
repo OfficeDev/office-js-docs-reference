@@ -53,7 +53,7 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
       \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -1326,14 +1326,14 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
       \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

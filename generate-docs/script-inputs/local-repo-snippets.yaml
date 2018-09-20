@@ -8789,22 +8789,6 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.Item.addHandlerAsync:
-  - |-
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-                if (result.status === Office.AsyncResultStatus.Failed) {
-                    // Handle error
-                }
-            });
-        });
-    };
-
-    function loadNewItem(eventArgs) {
-        // Load the properties of the newly selected item
-        loadProps(Office.context.mailbox.item);
-    };
 Office.Item.getInitializationContextAsync:
   - |-
     // Get the initialization context (if present)
@@ -8868,22 +8852,6 @@ Office.Item.loadCustomPropertiesAsync:
 
     function saveCallback(asyncResult) {
     }
-Office.Item.removeHandlerAsync:
-  - |-
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
-            Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-                if (result.status === Office.AsyncResultStatus.Failed) {
-                    // Handle error
-                }
-            });
-        });
-    };
-
-    function loadNewItem(eventArgs) {
-        // Load the properties of the newly selected item
-        loadProps(Office.context.mailbox.item);
-    };
 Office.Item.seriesId:
   - |-
     var seriesId = Office.context.mailbox.item.seriesId; 

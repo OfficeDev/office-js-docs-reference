@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.SeriesTime
+  - uid: Outlook_1_7.Office.SeriesTime
     summary: >-
       The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series
       and get the dates and times of meeting requests in a recurring series.
@@ -15,22 +15,22 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: Office.SeriesTime
-    fullName: outlook.Office.SeriesTime
+    fullName: Outlook_1_7.Office.SeriesTime
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: Outlook_1_7
     children:
-      - outlook.Office.SeriesTime.getDuration
-      - outlook.Office.SeriesTime.getEndDate
-      - outlook.Office.SeriesTime.getEndTime
-      - outlook.Office.SeriesTime.getStartDate
-      - outlook.Office.SeriesTime.getStartTime
-      - outlook.Office.SeriesTime.setDuration
-      - outlook.Office.SeriesTime.setEndDate
-      - outlook.Office.SeriesTime.setStartDate
-      - outlook.Office.SeriesTime.setStartTime
-  - uid: outlook.Office.SeriesTime.getDuration
+      - Outlook_1_7.Office.SeriesTime.getDuration
+      - Outlook_1_7.Office.SeriesTime.getEndDate
+      - Outlook_1_7.Office.SeriesTime.getEndTime
+      - Outlook_1_7.Office.SeriesTime.getStartDate
+      - Outlook_1_7.Office.SeriesTime.getStartTime
+      - Outlook_1_7.Office.SeriesTime.setDuration
+      - Outlook_1_7.Office.SeriesTime.setEndDate
+      - Outlook_1_7.Office.SeriesTime.setStartDate
+      - Outlook_1_7.Office.SeriesTime.setStartTime
+  - uid: Outlook_1_7.Office.SeriesTime.getDuration
     summary: |-
       Gets the duration in minutes of a usual instance in a recurring appointment series.
 
@@ -42,25 +42,8 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the duration of a usual instance in a recurring appointment series.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var duration = recurrence.seriesTime.getDuration();
-      }
-
-      ```
     name: getDuration()
-    fullName: outlook.Office.SeriesTime.getDuration
+    fullName: Outlook_1_7.Office.SeriesTime.getDuration
     langs:
       - typeScript
     type: method
@@ -70,7 +53,7 @@ items:
         type:
           - number
         description: ''
-  - uid: outlook.Office.SeriesTime.getEndDate
+  - uid: Outlook_1_7.Office.SeriesTime.getEndDate
     summary: >-
       Gets the end date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
@@ -84,25 +67,8 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the end date of a recurring appointment series.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getEndDate();
-      }
-
-      ```
     name: getEndDate()
-    fullName: outlook.Office.SeriesTime.getEndDate
+    fullName: Outlook_1_7.Office.SeriesTime.getEndDate
     langs:
       - typeScript
     type: method
@@ -112,7 +78,7 @@ items:
         type:
           - string
         description: ''
-  - uid: outlook.Office.SeriesTime.getEndTime
+  - uid: Outlook_1_7.Office.SeriesTime.getEndTime
     summary: >-
       Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
       zone that the user or add-in set the recurrence pattern using the following [ISO
@@ -127,25 +93,8 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the end time of a usual instance in a recurring appointment series.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getEndTime();
-      }
-
-      ```
     name: getEndTime()
-    fullName: outlook.Office.SeriesTime.getEndTime
+    fullName: Outlook_1_7.Office.SeriesTime.getEndTime
     langs:
       - typeScript
     type: method
@@ -155,7 +104,7 @@ items:
         type:
           - string
         description: ''
-  - uid: outlook.Office.SeriesTime.getStartDate
+  - uid: Outlook_1_7.Office.SeriesTime.getStartDate
     summary: >-
       Gets the start date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
@@ -169,25 +118,8 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the start date of a recurring appointment series.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getStartDate();
-      }
-
-      ```
     name: getStartDate()
-    fullName: outlook.Office.SeriesTime.getStartDate
+    fullName: Outlook_1_7.Office.SeriesTime.getStartDate
     langs:
       - typeScript
     type: method
@@ -197,7 +129,7 @@ items:
         type:
           - string
         description: ''
-  - uid: outlook.Office.SeriesTime.getStartTime
+  - uid: Outlook_1_7.Office.SeriesTime.getStartTime
     summary: >-
       Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
       user/add-in set the recurrence pattern using the following [ISO
@@ -212,21 +144,8 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the start time of a usual instance in a recurring appointment series.
-
-      var seriesTimeObject = new SeriesTime()
-
-      seriesTimeObject.setDuration(120);
-
-      ```
     name: getStartTime()
-    fullName: outlook.Office.SeriesTime.getStartTime
+    fullName: Outlook_1_7.Office.SeriesTime.getStartTime
     langs:
       - typeScript
     type: method
@@ -236,7 +155,7 @@ items:
         type:
           - string
         description: ''
-  - uid: outlook.Office.SeriesTime.setDuration
+  - uid: Outlook_1_7.Office.SeriesTime.setDuration
     summary: >-
       Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
       recurrence pattern.
@@ -250,25 +169,8 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example sets the duration of each appointment in a recurring series to 2 hours.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-      function callback(asyncResult){
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getStartTime();
-      }
-
-      ```
     name: setDuration(minutes)
-    fullName: outlook.Office.SeriesTime.setDuration
+    fullName: Outlook_1_7.Office.SeriesTime.setDuration
     langs:
       - typeScript
     type: method
@@ -283,7 +185,7 @@ items:
           description: The length of the appointment in minutes.
           type:
             - number
-  - uid: outlook.Office.SeriesTime.setEndDate
+  - uid: Outlook_1_7.Office.SeriesTime.setEndDate
     summary: |-
       Sets the end date of a recurring appointment series.
 
@@ -305,26 +207,8 @@ items:
 
       `setEndDate(date: string): void;` (Where date is the end date of the recurring appointment series represented in
       the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example sets the end date of a recurring appointment series to November 2, 2017.
-
-      var seriesTimeObject = new SeriesTime()
-
-      seriesTimeObject.setEndDate(2017, 10, 2);
-
-
-      // Alternative: Set the end date using ISO 8601 date standard
-
-      seriesTimeObject.setEndDate("2017-11-02");
-
-      ```
     name: 'setEndDate(year, month, day)'
-    fullName: outlook.Office.SeriesTime.setEndDate
+    fullName: Outlook_1_7.Office.SeriesTime.setEndDate
     langs:
       - typeScript
     type: method
@@ -349,7 +233,7 @@ items:
           description: The day value of the end date.
           type:
             - number
-  - uid: outlook.Office.SeriesTime.setStartDate
+  - uid: Outlook_1_7.Office.SeriesTime.setStartDate
     summary: |-
       Sets the start date of a recurring appointment series.
 
@@ -371,26 +255,8 @@ items:
 
       `setStartDate(date: string): void;` (Where date is the start date of the recurring appointment series represented
       in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example sets the start date of a recurring appointment series to November 2, 2017.
-
-      var seriesTimeObject = new SeriesTime()
-
-      seriesTimeObject.setStartDate(2017, 10, 2);
-
-
-      // Alternative: Set the start date using ISO 8601 date standard
-
-      seriesTimeObject.setStartDate("2017-11-02");
-
-      ```
     name: 'setStartDate(year, month, day)'
-    fullName: outlook.Office.SeriesTime.setStartDate
+    fullName: Outlook_1_7.Office.SeriesTime.setStartDate
     langs:
       - typeScript
     type: method
@@ -415,7 +281,7 @@ items:
           description: The day value of the start date.
           type:
             - number
-  - uid: outlook.Office.SeriesTime.setStartTime
+  - uid: Outlook_1_7.Office.SeriesTime.setStartTime
     summary: >-
       Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
       pattern is set (the item's time zone is used by default).
@@ -439,31 +305,8 @@ items:
 
       `setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard
       datetime string format: "THH:mm:ss:mmm").
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example sets the start time of each instance of a recurring appointment series to 1:30 PM.
-
-      var seriesTimeObject = new SeriesTime()
-
-      seriesTimeObject.setStartTime(13, 30);
-
-
-      // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
-
-      seriesTimeObject.setStartTime(11, 30);
-
-
-      // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
-
-      seriesTimeObject.setStartTime("T23:30:00");
-
-      ```
     name: 'setStartTime(hours, minutes)'
-    fullName: outlook.Office.SeriesTime.setStartTime
+    fullName: Outlook_1_7.Office.SeriesTime.setStartTime
     langs:
       - typeScript
     type: method

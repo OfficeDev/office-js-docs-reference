@@ -16,6 +16,7 @@ items:
       - Appointment
     package: Outlook_1_7
     children:
+      - Outlook_1_7.Office.AppointmentRead.addHandlerAsync
       - Outlook_1_7.Office.AppointmentRead.attachments
       - Outlook_1_7.Office.AppointmentRead.body
       - Outlook_1_7.Office.AppointmentRead.dateTimeCreated
@@ -39,9 +40,72 @@ items:
       - Outlook_1_7.Office.AppointmentRead.notificationMessages
       - Outlook_1_7.Office.AppointmentRead.optionalAttendees
       - Outlook_1_7.Office.AppointmentRead.organizer
+      - Outlook_1_7.Office.AppointmentRead.recurrence
+      - Outlook_1_7.Office.AppointmentRead.removeHandlerAsync
       - Outlook_1_7.Office.AppointmentRead.requiredAttendees
+      - Outlook_1_7.Office.AppointmentRead.seriesId
       - Outlook_1_7.Office.AppointmentRead.start
       - Outlook_1_7.Office.AppointmentRead.subject
+  - uid: Outlook_1_7.Office.AppointmentRead.addHandlerAsync
+    summary: >-
+      Adds an event handler for a supported event.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+      void;`
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_7.Office.AppointmentRead.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>)
+        => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.AppointmentRead.attachments
     summary: |-
       Gets an array of attachments for the item.
@@ -268,7 +332,7 @@ items:
           - Date
   - uid: Outlook_1_7.Office.AppointmentRead.getEntities
     summary: |-
-      Gets the entities found in the selected item.
+      Gets the entities found in the selected item's body.
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
@@ -293,7 +357,7 @@ items:
         description: ''
   - uid: Outlook_1_7.Office.AppointmentRead.getEntitiesByType
     summary: |-
-      Gets an array of all the entities of the specified entity type found in the selected item.
+      Gets an array of all the entities of the specified entity type found in the selected item's body.
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
@@ -331,7 +395,7 @@ items:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
         description: >-
           If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns
-          null. If no entities of the specified type are present on the item, the method returns an empty array.
+          null. If no entities of the specified type are present in the item's body, the method returns an empty array.
           Otherwise, the type of the objects in the returned array depends on the type of entity requested in the
           entityType parameter.
       parameters:
@@ -588,7 +652,8 @@ items:
       Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
       itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
       REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
-      details, see Use the Outlook REST APIs from an Outlook add-in.
+      details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id)<!-- -->.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -666,7 +731,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        void;
       return:
         type:
           - void
@@ -675,9 +742,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -788,7 +855,7 @@ items:
           - 'EmailAddressDetails[]'
   - uid: Outlook_1_7.Office.AppointmentRead.organizer
     summary: |-
-      Gets the email address of the meeting organizer for a specified meeting. Read mode only.
+      Gets the email address of the meeting organizer for a specified meeting.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -808,6 +875,100 @@ items:
       return:
         type:
           - EmailAddressDetails
+  - uid: Outlook_1_7.Office.AppointmentRead.recurrence
+    summary: >-
+      Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
+
+
+      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
+      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
+      appointments.
+
+
+      Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+
+
+      Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
+      request of a single appointment and NOT a part of a series.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
+    name: recurrence
+    fullName: Outlook_1_7.Office.AppointmentRead.recurrence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type:
+          - Recurrence
+  - uid: Outlook_1_7.Office.AppointmentRead.removeHandlerAsync
+    summary: >-
+      Removes an event handler for a supported event.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_7.Office.AppointmentRead.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.AppointmentRead.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
@@ -837,6 +998,44 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
+  - uid: Outlook_1_7.Office.AppointmentRead.seriesId
+    summary: >-
+      Gets the id of the series that an instance belongs to.
+
+
+      In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this
+      item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
+
+
+      Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier.
+      The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API
+      calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see
+      [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!--
+      -->.
+
+
+      The seriesId property returns null for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns undefined for any other items that are not meeting requests.
+
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
+    name: seriesId
+    fullName: Outlook_1_7.Office.AppointmentRead.seriesId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesId: string;'
+      return:
+        type:
+          - string
   - uid: Outlook_1_7.Office.AppointmentRead.start
     summary: >-
       Gets the date and time that the appointment is to begin.

@@ -128,7 +128,7 @@ items:
       read</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `getAllAsync(callback: (result: AsyncResult&lt;Office.NotificationMessageDetails[]&gt;) => void): void;`
@@ -193,7 +193,7 @@ items:
       read</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `removeAsync(key: string): void;`
@@ -260,7 +260,7 @@ items:
       read</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`

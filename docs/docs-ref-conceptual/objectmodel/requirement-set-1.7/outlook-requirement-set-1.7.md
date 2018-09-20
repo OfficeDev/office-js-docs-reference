@@ -8,6 +8,7 @@ Requirement set 1.7 includes all of the features of [Requirement set 1.6](../req
 
 - Added new APIs regarding the recurrence pattern on appointments and messages that are meeting requests.
 - Modified the item.from property to also be available in Compose mode.
+- Added support for RecurrenceChanged, RecipientsChanged, and AppointmentTimeChanged events.
 
 ### Change log
 
@@ -26,7 +27,7 @@ Requirement set 1.7 includes all of the features of [Requirement set 1.6](../req
 - Added [Office.MailboxEnums.RecurrenceTimeZone](/javascript/api/outlook_1_7/office.mailboxenums.recurrencetimezone): Adds a new enum that specifies the time zone applied to the recurrence.
 - Added [Office.MailboxEnums.RecurrenceType](/javascript/api/outlook_1_7/office.mailboxenums.recurrencetype): Adds a new enum that specifies the type of recurrence.
 - Added [Office.MailboxEnums.WeekNumber](/javascript/api/outlook_1_7/office.mailboxenums.weeknumber): Adds a new enum that specifies the week of the month.
-- Modified [Office.EventType](/javascript/api/office/office.eventtype): Modifies to support RecurrenceChanged, RecipientsChanged, and AppointmentTimeChanged events through addition of `RecurrencePatternChanged`, `RecipientsChanged`, and `AppointmentTimeChanged` entries respectively.
+- Modified [Office.EventType](/javascript/api/office/office.eventtype): Modifies to support RecurrenceChanged, RecipientsChanged, and AppointmentTimeChanged events through addition of `RecurrenceChanged`, `RecipientsChanged`, and `AppointmentTimeChanged` entries respectively.
 
 ## See also
 

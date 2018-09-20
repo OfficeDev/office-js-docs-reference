@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.RecurrenceProperties
+  - uid: Outlook_1_7.Office.RecurrenceProperties
     summary: |-
       Represents the properties of the recurrence.
 
@@ -13,23 +13,23 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: Office.RecurrenceProperties
-    fullName: outlook.Office.RecurrenceProperties
+    fullName: Outlook_1_7.Office.RecurrenceProperties
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: Outlook_1_7
     children:
-      - outlook.Office.RecurrenceProperties.dayOfMonth
-      - outlook.Office.RecurrenceProperties.dayOfWeek
-      - outlook.Office.RecurrenceProperties.days
-      - outlook.Office.RecurrenceProperties.firstDayOfWeek
-      - outlook.Office.RecurrenceProperties.interval
-      - outlook.Office.RecurrenceProperties.month
-      - outlook.Office.RecurrenceProperties.weekNumber
-  - uid: outlook.Office.RecurrenceProperties.dayOfMonth
+      - Outlook_1_7.Office.RecurrenceProperties.dayOfMonth
+      - Outlook_1_7.Office.RecurrenceProperties.dayOfWeek
+      - Outlook_1_7.Office.RecurrenceProperties.days
+      - Outlook_1_7.Office.RecurrenceProperties.firstDayOfWeek
+      - Outlook_1_7.Office.RecurrenceProperties.interval
+      - Outlook_1_7.Office.RecurrenceProperties.month
+      - Outlook_1_7.Office.RecurrenceProperties.weekNumber
+  - uid: Outlook_1_7.Office.RecurrenceProperties.dayOfMonth
     summary: Represents the day of the month.
     name: dayOfMonth
-    fullName: outlook.Office.RecurrenceProperties.dayOfMonth
+    fullName: Outlook_1_7.Office.RecurrenceProperties.dayOfMonth
     langs:
       - typeScript
     type: property
@@ -38,10 +38,10 @@ items:
       return:
         type:
           - number
-  - uid: outlook.Office.RecurrenceProperties.dayOfWeek
+  - uid: Outlook_1_7.Office.RecurrenceProperties.dayOfWeek
     summary: 'Represents the day of the week or type of day, for example, weekend day vs weekday.'
     name: dayOfWeek
-    fullName: outlook.Office.RecurrenceProperties.dayOfWeek
+    fullName: Outlook_1_7.Office.RecurrenceProperties.dayOfWeek
     langs:
       - typeScript
     type: property
@@ -50,12 +50,12 @@ items:
       return:
         type:
           - outlook.Office.MailboxEnums.Days
-  - uid: outlook.Office.RecurrenceProperties.days
+  - uid: Outlook_1_7.Office.RecurrenceProperties.days
     summary: >-
       Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and
       'Sun'.
     name: days
-    fullName: outlook.Office.RecurrenceProperties.days
+    fullName: Outlook_1_7.Office.RecurrenceProperties.days
     langs:
       - typeScript
     type: property
@@ -64,12 +64,12 @@ items:
       return:
         type:
           - 'Office.MailboxEnums.Days[]'
-  - uid: outlook.Office.RecurrenceProperties.firstDayOfWeek
+  - uid: Outlook_1_7.Office.RecurrenceProperties.firstDayOfWeek
     summary: >-
       Represents your chosen first day of the week otherwise the default is the value in the current user's settings.
       Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     name: firstDayOfWeek
-    fullName: outlook.Office.RecurrenceProperties.firstDayOfWeek
+    fullName: Outlook_1_7.Office.RecurrenceProperties.firstDayOfWeek
     langs:
       - typeScript
     type: property
@@ -78,10 +78,10 @@ items:
       return:
         type:
           - outlook.Office.MailboxEnums.Days
-  - uid: outlook.Office.RecurrenceProperties.interval
+  - uid: Outlook_1_7.Office.RecurrenceProperties.interval
     summary: Represents the period between instances of the same recurring series.
     name: interval
-    fullName: outlook.Office.RecurrenceProperties.interval
+    fullName: Outlook_1_7.Office.RecurrenceProperties.interval
     langs:
       - typeScript
     type: property
@@ -90,10 +90,10 @@ items:
       return:
         type:
           - number
-  - uid: outlook.Office.RecurrenceProperties.month
+  - uid: Outlook_1_7.Office.RecurrenceProperties.month
     summary: Represents the month.
     name: month
-    fullName: outlook.Office.RecurrenceProperties.month
+    fullName: Outlook_1_7.Office.RecurrenceProperties.month
     langs:
       - typeScript
     type: property
@@ -102,10 +102,10 @@ items:
       return:
         type:
           - outlook.Office.MailboxEnums.Month
-  - uid: outlook.Office.RecurrenceProperties.weekNumber
+  - uid: Outlook_1_7.Office.RecurrenceProperties.weekNumber
     summary: Represents the number of the week in the selected month e.g. 'first' for first week of the month.
     name: weekNumber
-    fullName: outlook.Office.RecurrenceProperties.weekNumber
+    fullName: Outlook_1_7.Office.RecurrenceProperties.weekNumber
     langs:
       - typeScript
     type: property

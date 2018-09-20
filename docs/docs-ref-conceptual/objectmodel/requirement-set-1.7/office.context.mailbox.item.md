@@ -43,7 +43,6 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [subject](#subject-stringsubjectjavascriptapioutlook17officesubject) | Member |
 | [to](#to-arrayemailaddressdetailsjavascriptapioutlook17officeemailaddressdetailsrecipientsjavascriptapioutlook17officerecipients) | Member |
 | [addFileAttachmentAsync](#addfileattachmentasyncuri-attachmentname-options-callback) | Method |
-| [addFileAttachmentFromBase64Async](#addfileattachmentfrombase64asyncbase64file-attachmentname-options-callback) | Method |
 | [addHandlerAsync](#addhandlerasynceventtype-handler-options-callback) | Method |
 | [addItemAttachmentAsync](#additemattachmentasyncitemid-attachmentname-options-callback) | Method |
 | [close](#close) | Method |
@@ -52,7 +51,6 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [getEntities](#getentities--entitiesjavascriptapioutlook17officeentities) | Method |
 | [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapioutlook17officecontactmeetingsuggestionjavascriptapioutlook17officemeetingsuggestionphonenumberjavascriptapioutlook17officephonenumbertasksuggestionjavascriptapioutlook17officetasksuggestion) | Method |
 | [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactjavascriptapioutlook17officecontactmeetingsuggestionjavascriptapioutlook17officemeetingsuggestionphonenumberjavascriptapioutlook17officephonenumbertasksuggestionjavascriptapioutlook17officetasksuggestion) | Method |
-| [getInitializationContextAsync](#getinitializationcontextasyncoptions-callback) | Method |
 | [getRegExMatches](#getregexmatches--object) | Method |
 | [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array-string-) | Method |
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
@@ -360,7 +358,7 @@ function callback(asyncResult) {
 
 |Requirement|||
 |---|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Read|Compose|
 
@@ -610,7 +608,7 @@ The `organizer` property returns an [Organizer](/javascript/api/outlook_1_7/offi
 
 |Requirement|||
 |---|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Read|Compose|
 
@@ -637,7 +635,7 @@ The `recurrence` property returns a [recurrence](/javascript/api/outlook_1_7/off
 
 |Requirement|Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
 
@@ -724,7 +722,7 @@ The `seriesId` property returns `null` for items that do not have parent items s
 
 |Requirement|Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
 
@@ -938,67 +936,11 @@ Office.context.mailbox.item.addFileAttachmentAsync
 );
 ```
 
-#### addFileAttachmentFromBase64Async(base64File, attachmentName, [options], [callback])
-
-Adds a file from the base64 encoding to a message or appointment as an attachment.
-
-The `addFileAttachmentFromBase64Async` method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
-
-You can subsequently use the identifier with the [`removeAttachmentAsync`](#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
-
-##### Parameters:
-|Name|Type|Attributes|Description|
-|---|---|---|---|
-|`base64File`|String||The base64 encoded content of an image or file to be added to an email or event.|
-|`attachmentName`|String||The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`options.isInline`|Boolean|&lt;optional&gt;|If `true`, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object. <br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.|
-
-##### Errors
-
-|Error code|Description|
-|------------|-------------|
-|`AttachmentSizeExceeded`|The attachment is larger than allowed.|
-|`FileTypeNotSupported`|The attachment has an extension that is not allowed.|
-|`NumberOfAttachmentsExceeded`|The message or appointment has too many attachments.|
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose|
-
-##### Examples
-
-```js
-Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-  base64String,
-  "cute_bird.png",
-  {
-    isInline: true
-  },
-  function (asyncResult) {
-    Office.context.mailbox.item.body.setAsync(
-      "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
-      {
-        "coercionType": "html"
-      },
-      function (asyncResult) {
-      }
-    );
-  }
-);
-```
-
 ####  addHandlerAsync(eventType, handler, [options], [callback])
 
 Adds an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1014,7 +956,7 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
 
@@ -1023,7 +965,7 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 ```
 Office.initialize = function (reason) {
   $(document).ready(function () {
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrenceChanged, loadNewItem, function (result) {
       if (result.status === Office.AsyncResultStatus.Failed) {
         // Handle error
       }
@@ -1468,55 +1410,6 @@ If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` 
 Type:
 Array.<(String|[Contact](/javascript/api/outlook_1_7/office.contact)|[MeetingSuggestion](/javascript/api/outlook_1_7/office.meetingsuggestion)|[PhoneNumber](/javascript/api/outlook_1_7/office.phonenumber)|[TaskSuggestion](/javascript/api/outlook_1_7/office.tasksuggestion))>
 
-#### getInitializationContextAsync([options], [callback])
-
-Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
-
-> [!NOTE]
-> This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
-
-##### Parameters:
-|Name|Type|Attributes|Description|
-|---|---|---|---|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object. <br/>On success, the initialization data is provided in the `asyncResult.value` property as a string.<br/>If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to `9020` and its `name` property set to `GenericResponseError`.|
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Read|
-
-##### Example
-
-```
-// Get the initialization context (if present)
-Office.context.mailbox.item.getInitializationContextAsync(
-  function(asyncResult) {
-    if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
-      if (asyncResult.value != null && asyncResult.value.length > 0) {
-        // The value is a string, parse to an object
-        var context = JSON.parse(asyncResult.value);
-        // Do something with context
-      } else {
-        // Empty context, treat as no context
-      }
-    } else {
-      if (asyncResult.error.code == 9020) {
-        // GenericResponseError returned when there is
-        // no context
-        // Treat as no context
-      } else {
-        // Handle the error
-      }
-    }
-  }
-);
-```
-
 #### getRegExMatches() → {Object}
 
 Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -1856,7 +1749,7 @@ Office.context.mailbox.item.removeAttachmentAsync(
 
 Removes an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1872,7 +1765,7 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
 
@@ -1881,7 +1774,7 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 ```
 Office.initialize = function (reason) {
   $(document).ready(function () {
-    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
+    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrenceChanged, loadNewItem, function (result) {
       if (result.status === Office.AsyncResultStatus.Failed) {
         // Handle error
       }

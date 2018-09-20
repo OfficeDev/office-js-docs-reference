@@ -36,9 +36,9 @@ cd ..\api-extractor-inputs-outlook
 
 call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
+cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
 REM cd ..\Outlook_1_6
 
@@ -64,7 +64,7 @@ REM cd ..\Outlook_1_1
 
 REM call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..
+cd ..
 
 cd ..
 

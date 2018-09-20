@@ -622,6 +622,8 @@ items:
                 uid: outlook.Office.Recurrence
               - name: RecurrenceProperties
                 uid: outlook.Office.RecurrenceProperties
+              - name: RecurrenceTimeZone
+                uid: outlook.Office.RecurrenceTimeZone
               - name: RoamingSettings
                 uid: outlook.Office.RoamingSettings
               - name: SeriesTime
@@ -645,6 +647,8 @@ items:
                 items:
                   - name: AttachmentType
                     uid: Outlook_1_7.Office.MailboxEnums.AttachmentType
+                  - name: Days
+                    uid: Outlook_1_7.Office.MailboxEnums.Days
                   - name: EntityType
                     uid: Outlook_1_7.Office.MailboxEnums.EntityType
                   - name: ItemNotificationMessageType
@@ -652,12 +656,22 @@ items:
                       Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_7.Office.MailboxEnums.ItemType
+                  - name: Month
+                    uid: Outlook_1_7.Office.MailboxEnums.Month
+                  - name: OWAView
+                    uid: Outlook_1_7.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_7.Office.MailboxEnums.RecipientType
+                  - name: RecurrenceTimeZone
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceTimeZone
+                  - name: RecurrenceType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType
                   - name: ResponseType
                     uid: Outlook_1_7.Office.MailboxEnums.ResponseType
                   - name: RestVersion
                     uid: Outlook_1_7.Office.MailboxEnums.RestVersion
+                  - name: WeekNumber
+                    uid: Outlook_1_7.Office.MailboxEnums.WeekNumber
               - name: AppointmentCompose
                 uid: Outlook_1_7.Office.AppointmentCompose
               - name: AppointmentRead
@@ -676,6 +690,8 @@ items:
                 uid: Outlook_1_7.Office.EmailUser
               - name: Entities
                 uid: Outlook_1_7.Office.Entities
+              - name: From
+                uid: Outlook_1_7.Office.From
               - name: Item
                 uid: Outlook_1_7.Office.Item
               - name: LocalClientTime
@@ -694,12 +710,22 @@ items:
                 uid: Outlook_1_7.Office.NotificationMessageDetails
               - name: NotificationMessages
                 uid: Outlook_1_7.Office.NotificationMessages
+              - name: Organizer
+                uid: Outlook_1_7.Office.Organizer
               - name: PhoneNumber
                 uid: Outlook_1_7.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_7.Office.Recipients
+              - name: Recurrence
+                uid: Outlook_1_7.Office.Recurrence
+              - name: RecurrenceProperties
+                uid: Outlook_1_7.Office.RecurrenceProperties
+              - name: RecurrenceTimeZone
+                uid: Outlook_1_7.Office.RecurrenceTimeZone
               - name: RoamingSettings
                 uid: Outlook_1_7.Office.RoamingSettings
+              - name: SeriesTime
+                uid: Outlook_1_7.Office.SeriesTime
               - name: SourceProperty
                 uid: Outlook_1_7.Office.SourceProperty
               - name: Subject

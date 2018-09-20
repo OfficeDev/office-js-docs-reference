@@ -39,7 +39,6 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapioutlookofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipients) | Member |
 | [sender](#sender-emailaddressdetailsjavascriptapioutlookofficeemailaddressdetails) | Member |
 | [seriesId](#nullable-seriesid-string) | Member |
-| [sharedProperties](#sharedproperties-sharedpropertiesjavascriptapioutlookofficesharedproperties) | Member |
 | [start](#start-datetimejavascriptapioutlookofficetime) | Member |
 | [subject](#subject-stringsubjectjavascriptapioutlookofficesubject) | Member |
 | [to](#to-arrayemailaddressdetailsjavascriptapioutlookofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipients) | Member |
@@ -737,22 +736,6 @@ var seriesId = Office.context.mailbox.item.seriesId;
 var isSeries = (seriesId == null);
 ```
 
-#### sharedProperties :[SharedProperties](/javascript/api/outlook/office.sharedproperties)
-
-Gets the id of the series that an instance belongs to.
-
-##### Type:
-
-* [SharedProperties](/javascript/api/outlook/office.sharedproperties)
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
-
 ####  start :Date|[Time](/javascript/api/outlook/office.time)
 
 Gets or sets the date and time that the appointment is to begin.
@@ -1016,7 +999,7 @@ Office.context.mailbox.item.addFileAttachmentFromBase64Async(
 
 Adds an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1035,25 +1018,6 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
-```
 
 ####  addItemAttachmentAsync(itemId, attachmentName, [options], [callback])
 
@@ -1780,7 +1744,7 @@ var veggies = selectedMatches.veggies;
 
 #### getSharedPropertiesAsync([options], callback)
 
-Gets the sharedProperties of the selected appointment or message.
+Gets the properties of the selected appointment or message in a shared folder, calendar, or mailbox.
 
 ##### Parameters:
 
@@ -1904,7 +1868,7 @@ Office.context.mailbox.item.removeAttachmentAsync(
 
 Removes an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1923,25 +1887,6 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
-```
 
 ####  saveAsync([options], callback)
 

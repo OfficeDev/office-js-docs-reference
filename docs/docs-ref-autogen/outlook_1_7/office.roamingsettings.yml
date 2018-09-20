@@ -7,7 +7,7 @@ items:
       saved.
 
 
-      While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings
+      While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings
       should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They
       should not be used to store sensitive information such as user credentials or security tokens.
 
@@ -125,7 +125,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -133,10 +133,10 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional? When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.RoamingSettings.set
     summary: >-
       Sets or creates the specified setting.
