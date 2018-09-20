@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTrendlineLabelFormat
+    summary: |-
+      Encapsulates the format properties for the chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTrendlineLabelFormat
+    fullName: excel.Excel.ChartTrendlineLabelFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartTrendlineLabelFormat.border
+      - excel.Excel.ChartTrendlineLabelFormat.fill
+      - excel.Excel.ChartTrendlineLabelFormat.font
+      - excel.Excel.ChartTrendlineLabelFormat.load
+      - excel.Excel.ChartTrendlineLabelFormat.toJSON
+  - uid: excel.Excel.ChartTrendlineLabelFormat.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.ChartTrendlineLabelFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
+  - uid: excel.Excel.ChartTrendlineLabelFormat.fill
+    summary: |-
+      Represents the fill format of the current chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: excel.Excel.ChartTrendlineLabelFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - excel.Excel.ChartFill
+  - uid: excel.Excel.ChartTrendlineLabelFormat.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: excel.Excel.ChartTrendlineLabelFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - excel.Excel.ChartFont
+  - uid: excel.Excel.ChartTrendlineLabelFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.ChartTrendlineLabelFormat` - Only available on collection types. It is similar to the preceding signature.
+      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
+      the result set will start after skipping the specified number of items.
+    name: load(option)
+    fullName: excel.Excel.ChartTrendlineLabelFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineLabelFormat
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ChartTrendlineLabelFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartTrendlineLabelFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineLabelFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineLabelFormatData
+        description: ''

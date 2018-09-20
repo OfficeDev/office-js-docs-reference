@@ -16,6 +16,8 @@ items:
       - excel.Excel.Interfaces.WorksheetData.pivotTables
       - excel.Excel.Interfaces.WorksheetData.position
       - excel.Excel.Interfaces.WorksheetData.protection
+      - excel.Excel.Interfaces.WorksheetData.showGridlines
+      - excel.Excel.Interfaces.WorksheetData.showHeadings
       - excel.Excel.Interfaces.WorksheetData.standardHeight
       - excel.Excel.Interfaces.WorksheetData.standardWidth
       - excel.Excel.Interfaces.WorksheetData.tabColor
@@ -128,6 +130,36 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.WorksheetProtectionData
+  - uid: excel.Excel.Interfaces.WorksheetData.showGridlines
+    summary: |-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showGridlines
+    fullName: excel.Excel.Interfaces.WorksheetData.showGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showGridlines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorksheetData.showHeadings
+    summary: |-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeadings
+    fullName: excel.Excel.Interfaces.WorksheetData.showHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeadings?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.WorksheetData.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.

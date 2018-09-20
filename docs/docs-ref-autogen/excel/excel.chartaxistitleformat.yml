@@ -14,9 +14,41 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartAxisTitleFormat.border
+      - excel.Excel.ChartAxisTitleFormat.fill
       - excel.Excel.ChartAxisTitleFormat.font
       - excel.Excel.ChartAxisTitleFormat.load
       - excel.Excel.ChartAxisTitleFormat.toJSON
+  - uid: excel.Excel.ChartAxisTitleFormat.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.ChartAxisTitleFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
+  - uid: excel.Excel.ChartAxisTitleFormat.fill
+    summary: |-
+      Represents chart fill formatting.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: excel.Excel.ChartAxisTitleFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAxisTitleFormat.font
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.

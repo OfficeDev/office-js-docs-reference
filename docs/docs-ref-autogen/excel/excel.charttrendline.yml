@@ -14,15 +14,35 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartTrendline.backwardPeriod
       - excel.Excel.ChartTrendline.delete
       - excel.Excel.ChartTrendline.format
+      - excel.Excel.ChartTrendline.forwardPeriod
       - excel.Excel.ChartTrendline.intercept
+      - excel.Excel.ChartTrendline.label
       - excel.Excel.ChartTrendline.load
       - excel.Excel.ChartTrendline.movingAveragePeriod
       - excel.Excel.ChartTrendline.name
       - excel.Excel.ChartTrendline.polynomialOrder
+      - excel.Excel.ChartTrendline.showEquation
+      - excel.Excel.ChartTrendline.showRSquared
       - excel.Excel.ChartTrendline.toJSON
       - excel.Excel.ChartTrendline.type
+  - uid: excel.Excel.ChartTrendline.backwardPeriod
+    summary: |-
+      Represents the number of periods that the trendline extends backward.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: backwardPeriod
+    fullName: excel.Excel.ChartTrendline.backwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backwardPeriod: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartTrendline.delete
     summary: |-
       Delete the trendline object.
@@ -54,6 +74,21 @@ items:
       return:
         type:
           - excel.Excel.ChartTrendlineFormat
+  - uid: excel.Excel.ChartTrendline.forwardPeriod
+    summary: |-
+      Represents the number of periods that the trendline extends forward.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: forwardPeriod
+    fullName: excel.Excel.ChartTrendline.forwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forwardPeriod: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartTrendline.intercept
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
@@ -71,6 +106,21 @@ items:
       return:
         type:
           - any
+  - uid: excel.Excel.ChartTrendline.label
+    summary: |-
+      Represents the label of a chart trendline.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: label
+    fullName: excel.Excel.ChartTrendline.label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly label: Excel.ChartTrendlineLabel;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineLabel
   - uid: excel.Excel.ChartTrendline.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -152,6 +202,36 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ChartTrendline.showEquation
+    summary: |-
+      True if the equation for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showEquation
+    fullName: excel.Excel.ChartTrendline.showEquation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showEquation: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartTrendline.showRSquared
+    summary: |-
+      True if the R-squared for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showRSquared
+    fullName: excel.Excel.ChartTrendline.showRSquared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRSquared: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartTrendline.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendline.toJSON

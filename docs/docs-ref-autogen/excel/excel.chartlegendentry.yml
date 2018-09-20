@@ -14,9 +14,59 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartLegendEntry.height
+      - excel.Excel.ChartLegendEntry.index
+      - excel.Excel.ChartLegendEntry.left
       - excel.Excel.ChartLegendEntry.load
       - excel.Excel.ChartLegendEntry.toJSON
+      - excel.Excel.ChartLegendEntry.top
       - excel.Excel.ChartLegendEntry.visible
+      - excel.Excel.ChartLegendEntry.width
+  - uid: excel.Excel.ChartLegendEntry.height
+    summary: |-
+      Represents the height of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.ChartLegendEntry.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartLegendEntry.index
+    summary: |-
+      Represents the index of the LegendEntry in the Chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: excel.Excel.ChartLegendEntry.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartLegendEntry.left
+    summary: |-
+      Represents the left of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.ChartLegendEntry.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartLegendEntry.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -63,6 +113,21 @@ items:
         type:
           - excel.Excel.Interfaces.ChartLegendEntryData
         description: ''
+  - uid: excel.Excel.ChartLegendEntry.top
+    summary: |-
+      Represents the top of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.ChartLegendEntry.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartLegendEntry.visible
     summary: |-
       Represents the visible of a chart legend entry.
@@ -78,3 +143,18 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.ChartLegendEntry.width
+    summary: |-
+      Represents the width of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.ChartLegendEntry.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

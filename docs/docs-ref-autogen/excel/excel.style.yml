@@ -14,6 +14,7 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.Style.autoIndent
       - excel.Excel.Style.borders
       - excel.Excel.Style.builtIn
       - excel.Excel.Style.delete
@@ -35,9 +36,25 @@ items:
       - excel.Excel.Style.numberFormatLocal
       - excel.Excel.Style.readingOrder
       - excel.Excel.Style.shrinkToFit
+      - excel.Excel.Style.textOrientation
       - excel.Excel.Style.toJSON
       - excel.Excel.Style.verticalAlignment
       - excel.Excel.Style.wrapText
+  - uid: excel.Excel.Style.autoIndent
+    summary: |-
+      Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: excel.Excel.Style.autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Style.borders
     summary: |-
       A Border collection of four Border objects that represent the style of the four borders.
@@ -459,6 +476,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Style.textOrientation
+    summary: |-
+      The text orientation for the style.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: excel.Excel.Style.textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Style.toJSON
     name: toJSON()
     fullName: excel.Excel.Style.toJSON

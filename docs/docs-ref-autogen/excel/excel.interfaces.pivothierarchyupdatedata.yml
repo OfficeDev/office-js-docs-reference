@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PivotHierarchyUpdateData
+    summary: 'An interface for updating data on the PivotHierarchy object, for use in "pivotHierarchy.set({ ... })".'
+    name: Excel.Interfaces.PivotHierarchyUpdateData
+    fullName: excel.Excel.Interfaces.PivotHierarchyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PivotHierarchyUpdateData.name
+  - uid: excel.Excel.Interfaces.PivotHierarchyUpdateData.name
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.PivotHierarchyUpdateData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

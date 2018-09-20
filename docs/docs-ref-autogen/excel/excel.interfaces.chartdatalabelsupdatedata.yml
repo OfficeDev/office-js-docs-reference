@@ -9,7 +9,10 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.separator
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
@@ -18,6 +21,23 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.textOrientation
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
+    summary: |-
+      Represents whether data labels automatically generates appropriate text based on context.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: autoText
+    fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting.
@@ -33,6 +53,40 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment
+    summary: >-
+      Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      property is valid only when TextOrientation of data label is 0.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
+    summary: |-
+      Represents the format code for data labels.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
@@ -159,3 +213,37 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.textOrientation
+    summary: >-
+      Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for
+      vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment
+    summary: >-
+      Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
+      property is valid only when TextOrientation of data label is 90, -90 or 180.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"

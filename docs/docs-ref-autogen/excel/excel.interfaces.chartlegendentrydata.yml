@@ -9,7 +9,72 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartLegendEntryData.height
+      - excel.Excel.Interfaces.ChartLegendEntryData.index
+      - excel.Excel.Interfaces.ChartLegendEntryData.left
+      - excel.Excel.Interfaces.ChartLegendEntryData.top
       - excel.Excel.Interfaces.ChartLegendEntryData.visible
+      - excel.Excel.Interfaces.ChartLegendEntryData.width
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData.height
+    summary: |-
+      Represents the height of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.Interfaces.ChartLegendEntryData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData.index
+    summary: |-
+      Represents the index of the LegendEntry in the Chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: excel.Excel.Interfaces.ChartLegendEntryData.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData.left
+    summary: |-
+      Represents the left of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.Interfaces.ChartLegendEntryData.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData.top
+    summary: |-
+      Represents the top of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.Interfaces.ChartLegendEntryData.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.visible
     summary: |-
       Represents the visible of a chart legend entry.
@@ -25,3 +90,18 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData.width
+    summary: |-
+      Represents the width of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.Interfaces.ChartLegendEntryData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number
