@@ -2,6 +2,13 @@ items:
   - name: API reference
     href: ~/docs-ref-autogen/overview/office.md
     items:
+      - name: Custom-functions-runtime
+        uid: custom-functions-runtime
+        items:
+          - name: CancelableHandler
+            uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+          - name: StreamingHandler
+            uid: custom-functions-runtime.CustomFunctions.StreamingHandler
       - name: Excel
         uid: excel
         items:
@@ -352,6 +359,15 @@ items:
             uid: excel.Excel.WorksheetFreezePanes
           - name: WorksheetProtection
             uid: excel.Excel.WorksheetProtection
+      - name: Office-runtime
+        uid: office-runtime
+        items:
+          - name: AsyncStorage
+            uid: office-runtime.OfficeRuntime.AsyncStorage
+          - name: Dialog
+            uid: office-runtime.OfficeRuntime.Dialog
+          - name: DisplayWebDialogOptions
+            uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
       - name: OneNote
         uid: onenote
         items:
