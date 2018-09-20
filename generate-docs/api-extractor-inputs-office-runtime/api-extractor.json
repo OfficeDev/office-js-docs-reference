@@ -11,7 +11,7 @@
       "missingReleaseTags": "allow"
     },
     "project": {
-      "entryPointSourceFile": "custom-functions-runtime.d.ts"
+      "entryPointSourceFile": "office-runtime.d.ts"
     },
     "apiReviewFile": {
       "enabled": false

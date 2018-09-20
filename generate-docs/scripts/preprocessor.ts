@@ -33,6 +33,16 @@ tryCatch(async () => {
         ]
     });
 
+    console.log('\n');
+    //include custom functions and office run time
+    const includeCfAndORun = await promptFromList({
+        message: `Do you want to include custom-functions-runtime and office-runtime in the generated docs?`,
+        choices: [
+            { name: "Yes", value: "y" },
+            { name: "No", value: "n" }
+        ]
+    });
+
     if (urlToCopyOfficeJsFrom.length > 0) {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
@@ -105,12 +115,6 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
-    console.log("create file: custom-functions-runtime.d.ts");
-    fsx.writeFileSync(
-        '../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts',
-        dtsBuilder.extractDtsSection(definitions, "//", "}")
-    );
-
     console.log("\nRemoving old snippets input files...");
 
     const scriptInputsPath = path.resolve("../script-inputs");
@@ -156,7 +160,60 @@ tryCatch(async () => {
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
-    fsx.writeFileSync("../json/snippets.yaml", yaml.dump(snippets));
+    const dtsForCfs = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts"
+    const dtsForORun = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts"
+
+    if (includeCfAndORun === "y") {
+        //Start of Custom Functions section
+        fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(dtsForCfs, "text"));
+        console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
+        let definitionsforCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
+
+        console.log("\nFixing issues with d.ts file...");
+        // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
+        // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
+        // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
+        definitionsforCfs = definitionsforCfs.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
+            .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
+            .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
+            .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+
+        console.log("create file: custom-functions-runtime.d.ts");
+        fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsforCfs);
+
+        //Start of Office Runtime section
+        fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(dtsForORun, "text"));
+        console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
+        let definitionsforORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
+
+        console.log("\nFixing issues with d.ts file...");
+        // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
+        // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
+        // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
+        definitionsforORun = definitionsforORun.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
+            .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
+            .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
+            .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+
+        console.log("create file: office-runtime.d.ts");
+        fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsforORun);
+    }
 
     console.log("\nPreprocessor script complete!");
 
