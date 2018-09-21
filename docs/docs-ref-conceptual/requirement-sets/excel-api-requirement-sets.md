@@ -37,7 +37,7 @@ The Excel JavaScript API requirement set 1.8 features include APIs for PivotTabl
 
 ### PivotTable
 
-Wave 2 of the PivotTable APIs gives to control over the hierarchies in a PivotTable. Control the data and how it is aggregated. Our [PivotTable article](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has more on the new PivotTable functionality.
+Wave 2 of the PivotTable APIs lets add-ins set the hierarchies of a PivotTable. You can now control the data and how it is aggregated. Our [PivotTable article](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has more on the new PivotTable functionality.
 
 ### Data Validation
 
@@ -52,16 +52,16 @@ Another round of Chart APIs brings even greater programmatic control over chart 
 More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events) have been added for charts. Have your add-in react to users interacting with the chart. You can also [toggle events](https://docs.microsoft.com/office/dev/add-ins/excel/performance#enable-and-disable-events) firing across the entire workbook.
 
 
-|Object| What is new| Description|Feedback|
+|Object| What's new| Description|Requirement Set|
 |:----|:----|:----|:----|
 |[application](/javascript/api/excel/excel.application)|_Method_ > [createWorkbook(base64File: string)](/javascript/api/excel/excel.application)|Creates a new hidden workbook by using an optional base64 encoded .xlsx file.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Property_ > formula1|Gets or sets the Formula1, i.e. minimum value or value depending of the operator.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Property_ > formula2|Gets or sets the Formula2, i.e. maximum value or value depending of the operator.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Relationship_ > operator|The operator to use for validating the data.|1.8|
-|[chart](/javascript/api/excel/excel.chart)|_Property_ > categoryLabelLevel|Returns or sets a ChartCategoryLabelLevel enumeration constant referring to|1.8|
+|[chart](/javascript/api/excel/excel.chart)|_Property_ > categoryLabelLevel|Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are being sourced from. Read/Write.|1.8|
 |[chart](/javascript/api/excel/excel.chart)|_Property_ > plotVisibleOnly|True if only visible cells are plotted. False if both visible and hidden cells are plotted. ReadWrite.|1.8|
-|[chart](/javascript/api/excel/excel.chart)|_Property_ > seriesNameLevel|Returns or sets a ChartSeriesNameLevel enumeration constant referring to|1.8|
-|[chart](/javascript/api/excel/excel.chart)|_Property_ > showDataLabelsOverMaximum|Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.|1.8|
+|[chart](/javascript/api/excel/excel.chart)|_Property_ > seriesNameLevel|Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being sourced from. Read/Write.|1.8|
+|[chart](/javascript/api/excel/excel.chart)|_Property_ > showDataLabelsOverMaximum|Represents whether to show the data labels when the value is greater than the maximum value on the value axis.|1.8|
 |[chart](/javascript/api/excel/excel.chart)|_Property_ > style|Returns or sets the chart style for the chart. ReadWrite.|1.8|
 |[chart](/javascript/api/excel/excel.chart)|_Relationship_ > displayBlanksAs|Returns or sets the way that blank cells are plotted on a chart. ReadWrite.|1.8|
 |[chart](/javascript/api/excel/excel.chart)|_Relationship_ > plotArea|Represents the plotArea for the chart. Read-only.|1.8|
@@ -77,7 +77,7 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > multiLevel|Represents whether an axis is multilevel or not.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > numberFormat|Represents the format code for the axis tick label.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > offset|Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.|1.8|
-|[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > positionAt|Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method. Read-only.|1.8|
+|[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > positionAt|Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property. Read-only.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > textOrientation|Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Relationship_ > alignment|Represents the alignment for the specified axis tick label.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Relationship_ > position|Represents the specified axis position where the other axis crosses.|1.8|
@@ -100,9 +100,9 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[chartDataLabel](/javascript/api/excel/excel.chartdatalabel)|_Relationship_ > horizontalAlignment|Represents the horizontal alignment for chart data label.|1.8|
 |[chartDataLabel](/javascript/api/excel/excel.chartdatalabel)|_Relationship_ > verticalAlignment|Represents the vertical alignment of chart data label.|1.8|
 |[chartDataLabelFormat](/javascript/api/excel/excel.chartdatalabelformat)|_Relationship_ > border|Represents the border format, which includes color, linestyle, and weight. Read-only.|1.8|
-|[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Property_ > autoText|Represents whether data labels automatically generates appropriate text based on context.|1.8|
+|[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Property_ > autoText|Represents whether data labels automatically generate appropriate text based on context.|1.8|
 |[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Property_ > numberFormat|Represents the format code for data labels.|1.8|
-|[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Property_ > textOrientation|Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.|1.8|
+|[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Property_ > textOrientation|Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 0 to 180 for vertically-oriented text.|1.8|
 |[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Relationship_ > horizontalAlignment|Represents the horizontal alignment for chart data label.|1.8|
 |[chartDataLabels](/javascript/api/excel/excel.chartdatalabels)|_Relationship_ > verticalAlignment|Represents the vertical alignment of chart data label.|1.8|
 |[chartDeactivatedEventArgs](/javascript/api/excel/excel.chartdeactivatedeventargs)|_Property_ > chartId|Gets the id of the chart that is deactivated.|1.8|
@@ -112,8 +112,8 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[chartDeletedEventArgs](/javascript/api/excel/excel.chartdeletedeventargs)|_Property_ > type|Gets the type of the event.|1.8|
 |[chartDeletedEventArgs](/javascript/api/excel/excel.chartdeletedeventargs)|_Property_ > worksheetId|Gets the id of the worksheet in which the chart is deleted.|1.8|
 |[chartDeletedEventArgs](/javascript/api/excel/excel.chartdeletedeventargs)|_Relationship_ > source|Gets the source of the event.|1.8|
-|[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > height|Represents the height of the legendEntry on the chart Legend. Read-only.|1.8|
-|[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > index|Represents the index of the LegendEntry in the Chart Legend. Read-only.|1.8|
+|[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > height|Represents the height of the legendEntry on the chart legend. Read-only.|1.8|
+|[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > index|Represents the index of the legendEntry in the chart legend. Read-only.|1.8|
 |[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > left|Represents the left of a chart legendEntry. Read-only.|1.8|
 |[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > top|Represents the top of a chart legendEntry. Read-only.|1.8|
 |[chartLegendEntry](/javascript/api/excel/excel.chartlegendentry)|_Property_ > width|Represents the width of the legendEntry on the chart Legend. Read-only.|1.8|
@@ -129,11 +129,11 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[chartPlotArea](/javascript/api/excel/excel.chartplotarea)|_Relationship_ > format|Represents the formatting of a chart plotArea. Read-only.|1.8|
 |[chartPlotArea](/javascript/api/excel/excel.chartplotarea)|_Relationship_ > position|Represents the position of plotArea.|1.8|
 |[chartPlotAreaFormat](/javascript/api/excel/excel.chartplotareaformat)|_Relationship_ > border|Represents the border attributes of a chart plotArea. Read-only.|1.8|
-|[chartPlotAreaFormat](/javascript/api/excel/excel.chartplotareaformat)|_Relationship_ > fill|Represents the fill format of an object, which includes background formating information. Read-only.|1.8|
+|[chartPlotAreaFormat](/javascript/api/excel/excel.chartplotareaformat)|_Relationship_ > fill|Represents the fill format of an object, which includes background formatting information. Read-only.|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > explosion|Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). ReadWrite.|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > firstSliceAngle|Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. ReadWrite|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > invertIfNegative|True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. ReadWrite.|1.8|
-|[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > overlap|Specifies how bars and columns are positioned. Can be a value between 100 and 100. Applies only to 2-D bar and 2-D column charts. ReadWrite.|1.8|
+|[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > overlap|Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts. ReadWrite.|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > secondPlotSize|Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. ReadWrite.|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Property_ > varyByCategories|True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. ReadWrite.|1.8|
 |[chartSeries](/javascript/api/excel/excel.chartseries)|_Relationship_ > axisGroup|Returns or sets the group for the specified series. ReadWrite|1.8|
@@ -162,13 +162,13 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[createWorkbookPostProcessAction](/javascript/api/excel/excel.createworkbookpostprocessaction)|_Property_ > fakeFileId|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
 |[createWorkbookPostProcessAction](/javascript/api/excel/excel.createworkbookpostprocessaction)|_Property_ > fileBase64|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
 |[createWorkbookPostProcessAction](/javascript/api/excel/excel.createworkbookpostprocessaction)|_Relationship_ > actionType|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
-|[custataValidation](/javascript/api/excel/excel.custatavalidation)|_Property_ > formula|Custom data validation formula, it is to create special rules, such as preventing duplicates, or limiting the total in a range of cells.|1.8|
+|[custataValidation](/javascript/api/excel/excel.customdatavalidation)|_Property_ > formula| A custom data validation formula. This creates special input rules, such as preventing duplicates or limiting the total in a range of cells.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Property_ > id|Id of the DataPivotHierarchy. Read-only.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Property_ > name|Name of the DataPivotHierarchy.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Property_ > numberFormat|Number format of the DataPivotHierarchy.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Property_ > position|Position of the DataPivotHierarchy.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > field|Returns the PivotFields associated with the DataPivotHierarchy. Read-only.|1.8|
-|[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > showAs|Determines whether the data should be sown as a specific summary calculation or not.|1.8|
+|[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > showAs|Determines whether the data should be shown as a specific summary calculation or not.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > summarizeBy|Determines whether to show all items of the DataPivotHierarchy.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.datapivothierarchy#settodefault)|Reset the DataPivotHierarchy back to its default values.|1.8|
 |[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Property_ > items|A collection of dataPivotHierarchy objects. Read-only.|1.8|
@@ -180,16 +180,16 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Property_ > ignoreBlanks|Ignore blanks: no data validation will be performed on blank cells, it defaults to true.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Property_ > valid|Represents if all cell values are valid according to the data validation rules. Read-only.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > errorAlert|Error alert when user enters invalid data.|1.8|
-|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > prompt|Prompt when users select a cell.|1.8|
-|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > rule|Data Validation rule that contains different type of data validation criteria.|1.8|
-|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > type|Type of the data validation, see Excel.DataValidationType for details. Read-only.|1.8|
+|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > prompt|Prompt when users selects a cell.|1.8|
+|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > rule|Data validation rule that contains different types of data validation criteria.|1.8|
+|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > type|Type of the data validation, see [Excel.DataValidationType](/javascript/api/excel/excel.datavalidationtype) for details. Read-only.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Method_ > [clear()](/javascript/api/excel/excel.datavalidation)|Clears the data validation from the current range.|1.8|
 |[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > message|Represents error alert message.|1.8|
-|[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > showAlert|It determines show error alert dialog or not when users enter invalid data, it defaults to true.|1.8|
+|[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > showAlert|Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.|1.8|
 |[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > title|Represents error alert dialog title.|1.8|
-|[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Relationship_ > style|Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details.|1.8|
+|[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Relationship_ > style|Represents data validation alert type, please see [Excel.DataValidationAlertStyle](/javascript/api/excel/excel.datavalidationalertstyle) for details.|1.8|
 |[dataValidationPrompt](/javascript/api/excel/excel.datavalidationprompt)|_Property_ > message|Represents the message of the prompt.|1.8|
-|[dataValidationPrompt](/javascript/api/excel/excel.datavalidationprompt)|_Property_ > showPrompt|It determines showing the prompt or not when user selects a cell with the data validation.|1.8|
+|[dataValidationPrompt](/javascript/api/excel/excel.datavalidationprompt)|_Property_ > showPrompt|Determines whether or not to show the prompt when user selects a cell with data validation.|1.8|
 |[dataValidationPrompt](/javascript/api/excel/excel.datavalidationprompt)|_Property_ > title|Represents the title for the prompt.|1.8|
 |[dataValidationRule](/javascript/api/excel/excel.datavalidationrule)|_Relationship_ > custom|Custom data validation criteria.|1.8|
 |[dataValidationRule](/javascript/api/excel/excel.datavalidationrule)|_Relationship_ > date|Date data validation criteria.|1.8|
@@ -198,8 +198,8 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[dataValidationRule](/javascript/api/excel/excel.datavalidationrule)|_Relationship_ > textLength|TextLength data validation criteria.|1.8|
 |[dataValidationRule](/javascript/api/excel/excel.datavalidationrule)|_Relationship_ > time|Time data validation criteria.|1.8|
 |[dataValidationRule](/javascript/api/excel/excel.datavalidationrule)|_Relationship_ > wholeNumber|WholeNumber data validation criteria.|1.8|
-|[dateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation)|_Property_ > formula1|Gets or sets the Formula1, i.e. minimum value or value depending of the operator.|1.8|
-|[dateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation)|_Property_ > formula2|Gets or sets the Formula2, i.e. maximum value or value depending of the operator.|1.8|
+|[dateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation)|_Property_ > formula1|Gets or sets the Formula1, i.e. minimum value or value depending on the operator.|1.8|
+|[dateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation)|_Property_ > formula2|Gets or sets the Formula2, i.e. maximum value or value depending on the operator.|1.8|
 |[dateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation)|_Relationship_ > operator|The operator to use for validating the data.|1.8|
 |[enableEventsPostProcessAction](/javascript/api/excel/excel.enableeventspostprocessaction)|_Property_ > isEnableEvents{|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
 |[enableEventsPostProcessAction](/javascript/api/excel/excel.enableeventspostprocessaction)|_Relationship_ > actionType|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
@@ -211,7 +211,7 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Relationship_ > fields|Returns the PivotFields associated with the FilterPivotHierarchy. Read-only.|1.8|
 |[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.filterpivothierarchy)|Reset the FilterPivotHierarchy back to its default values.|1.8|
 |[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Property_ > items|A collection of filterPivotHierarchy objects. Read-only.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter axis, it will be removed from that location.|1.8|
 |[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets the number of pivot hierarchies in the collection.|1.8|
 |[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets a FilterPivotHierarchy by its name or id.|1.8|
 |[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.|1.8|
@@ -274,32 +274,28 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Gets a RowColumnPivotHierarchy by its name or id.|1.8|
 |[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.|1.8|
 |[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [remove(rowColumnPivotHierarchy: RowColumnPivotHierarchy)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Removes the PivotHierarchy from the current axis.|1.8|
-|[runtime](/javascript/api/excel/excel.runtime)|_Property_ > enableEvents|Turn onoff JavaScript events in current taskpane or content add-in.|1.8|
-|[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseField|The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.|1.8|
-|[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseItem|The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.|1.8|
+|[runtime](/javascript/api/excel/excel.runtime)|_Property_ > enableEvents|Toggle JavaScript events in the current taskpane or content add-in.|1.8|
+|[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseField|The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.|1.8|
+|[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseItem|The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.|1.8|
 |[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > calculation|The ShowAs Calculation to use for the Data PivotField.|1.8|
-|[style](/javascript/api/excel/excel.style)|_Property_ > addIndent|Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.|1.8|
 |[style](/javascript/api/excel/excel.style)|_Property_ > autoIndent|Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.|1.8|
-|[style](/javascript/api/excel/excel.style)|_Property_ > orientation|The text orientation for the style.|1.8|
 |[style](/javascript/api/excel/excel.style)|_Property_ > textOrientation|The text orientation for the style.|1.8|
 |[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > automatic|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > average|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > count|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > countNumbers|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > max|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > min|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > product|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > standardDeviation|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > standardDeviationP|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > sum|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > variance|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
-|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > varianceP|If Automatic is set to true, then all other values will be ignored when setting the Subtotals.|1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > average| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > count| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > countNumbers| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > max| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > min| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > product| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > standardDeviation| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > standardDeviationP| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > sum| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > variance| |1.8|
+|[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > varianceP| |1.8|
 |[table](/javascript/api/excel/excel.table)|_Property_ > legacyId|Returns a numeric id. Read-only.|1.8|
 |[workbook](/javascript/api/excel/excel.workbook)|_Property_ > readOnly|True if the workbook is open in Read-only mode. Read-only.|1.8|
 |[workbookCreated](/javascript/api/excel/excel.workbookcreated)|_Property_ > id|Returns a value that uniquely identifies the WorkbookCreated object. Read-only.|1.8|
 |[workbookCreated](/javascript/api/excel/excel.workbookcreated)|_Method_ > [open()](/javascript/api/excel/excel.workbookcreated)|Open the workbook.|1.8|
-|[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > gridlines|Gets or sets the worksheet's gridlines flag.|1.8|
-|[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > headings|Gets or sets the worksheet's headings flag.|1.8|
 |[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > showGridlines|Gets or sets the worksheet's gridlines flag.|1.8|
 |[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > showHeadings|Gets or sets the worksheet's headings flag.|1.8|
 |[worksheetCalculatedEventArgs](/javascript/api/excel/excel.worksheetcalculatedeventargs)|_Property_ > type|Gets the type of the event.|1.8|
