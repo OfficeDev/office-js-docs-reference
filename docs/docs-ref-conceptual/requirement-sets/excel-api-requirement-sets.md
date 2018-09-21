@@ -12,7 +12,7 @@ Excel add-ins run across multiple versions of Office, including Office 2016 for 
 |  Requirement set  |  Office 365 for Windows\*  |  Office 365 for iPad  |  Office 365 for Mac  | Office Online  |  Office Online Server  |
 |:-----|-----|:-----|:-----|:-----|:-----|
 | Beta  | Please [visit our Excel JavaScript API open specification page](https://github.com/OfficeDev/office-js-docs/tree/ExcelJs_OpenSpec)! |
-| ExcelApi1.8  | Version 1807 (Build 10325.20118) or later | 2.15 or later | 16.15 or later | June 2018 | Coming soon |
+| ExcelApi1.8  | Version 1808 (Build 10730.20102) or later | 2.17 or later | 16.17 or later | September 2018 | Coming soon |
 | ExcelApi1.7  | Version 1801 (Build 9001.2171) or later   | 2.9 or later | 16.9 or later | April 2018 | Coming soon |
 | ExcelApi1.6  | Version 1704 (Build 8201.2001) or later   | 2.2 or later |15.36 or later| April 2017 | Coming soon|
 | ExcelApi1.5  | Version 1703 (Build 8067.2070) or later   | 2.2 or later |15.36 or later| March 2017 | Coming soon|
