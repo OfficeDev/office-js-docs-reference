@@ -132,6 +132,7 @@ tryCatch(async () => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
                 const packageName = packageItem.name === 'onenote' ? 'OneNote' : packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1);
+                packageName.replace('Office-runtime', 'Office runtime');
                 if (packageItem.items.length === 1) {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
