@@ -15,6 +15,8 @@ items:
           - name: Enums
             uid: ''
             items:
+              - name: AggregationFunction
+                uid: excel.Excel.AggregationFunction
               - name: BindingType
                 uid: excel.Excel.BindingType
               - name: BorderIndex
@@ -47,6 +49,8 @@ items:
                 uid: excel.Excel.ChartAxisTimeUnit
               - name: ChartAxisType
                 uid: excel.Excel.ChartAxisType
+              - name: ChartColorScheme
+                uid: excel.Excel.ChartColorScheme
               - name: ChartDataLabelPosition
                 uid: excel.Excel.ChartDataLabelPosition
               - name: ChartLegendPosition
@@ -55,12 +59,18 @@ items:
                 uid: excel.Excel.ChartLineStyle
               - name: ChartMarkerStyle
                 uid: excel.Excel.ChartMarkerStyle
+              - name: ChartPlotAreaPosition
+                uid: excel.Excel.ChartPlotAreaPosition
+              - name: ChartPlotBy
+                uid: excel.Excel.ChartPlotBy
               - name: ChartSeriesBy
                 uid: excel.Excel.ChartSeriesBy
               - name: ChartTextHorizontalAlignment
                 uid: excel.Excel.ChartTextHorizontalAlignment
               - name: ChartTextVerticalAlignment
                 uid: excel.Excel.ChartTextVerticalAlignment
+              - name: ChartTickLabelAlignment
+                uid: excel.Excel.ChartTickLabelAlignment
               - name: ChartTitlePosition
                 uid: excel.Excel.ChartTitlePosition
               - name: ChartTrendlineType
@@ -103,6 +113,12 @@ items:
                 uid: excel.Excel.ConditionalTopBottomCriterionType
               - name: DataChangeType
                 uid: excel.Excel.DataChangeType
+              - name: DataValidationAlertStyle
+                uid: excel.Excel.DataValidationAlertStyle
+              - name: DataValidationOperator
+                uid: excel.Excel.DataValidationOperator
+              - name: DataValidationType
+                uid: excel.Excel.DataValidationType
               - name: DeleteShiftDirection
                 uid: excel.Excel.DeleteShiftDirection
               - name: DocumentPropertyItem
@@ -137,6 +153,8 @@ items:
                 uid: excel.Excel.NamedItemType
               - name: PageOrientation
                 uid: excel.Excel.PageOrientation
+              - name: PivotLayoutType
+                uid: excel.Excel.PivotLayoutType
               - name: ProtectionSelectionMode
                 uid: excel.Excel.ProtectionSelectionMode
               - name: RangeUnderlineStyle
@@ -147,6 +165,10 @@ items:
                 uid: excel.Excel.ReadingOrder
               - name: SheetVisibility
                 uid: excel.Excel.SheetVisibility
+              - name: ShowAsCalculation
+                uid: excel.Excel.ShowAsCalculation
+              - name: SortBy
+                uid: excel.Excel.SortBy
               - name: SortDataOption
                 uid: excel.Excel.SortDataOption
               - name: SortMethod
@@ -155,12 +177,12 @@ items:
                 uid: excel.Excel.SortOn
               - name: SortOrientation
                 uid: excel.Excel.SortOrientation
+              - name: SubtotalLocationType
+                uid: excel.Excel.SubtotalLocationType
               - name: VerticalAlignment
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
-          - name: AggregationFunction
-            uid: excel.Excel.AggregationFunction
           - name: Application
             uid: excel.Excel.Application
           - name: BasicDataValidation
@@ -173,10 +195,6 @@ items:
             uid: excel.Excel.CellValueConditionalFormat
           - name: Chart
             uid: excel.Excel.Chart
-          - name: ChartActivatedEventArgs
-            uid: excel.Excel.ChartActivatedEventArgs
-          - name: ChartAddedEventArgs
-            uid: excel.Excel.ChartAddedEventArgs
           - name: ChartAreaFormat
             uid: excel.Excel.ChartAreaFormat
           - name: ChartAxes
@@ -193,18 +211,12 @@ items:
             uid: excel.Excel.ChartBorder
           - name: ChartCollection
             uid: excel.Excel.ChartCollection
-          - name: ChartColorScheme
-            uid: excel.Excel.ChartColorScheme
           - name: ChartDataLabel
             uid: excel.Excel.ChartDataLabel
           - name: ChartDataLabelFormat
             uid: excel.Excel.ChartDataLabelFormat
           - name: ChartDataLabels
             uid: excel.Excel.ChartDataLabels
-          - name: ChartDeactivatedEventArgs
-            uid: excel.Excel.ChartDeactivatedEventArgs
-          - name: ChartDeletedEventArgs
-            uid: excel.Excel.ChartDeletedEventArgs
           - name: ChartDisplayBlanksAs
             uid: excel.Excel.ChartDisplayBlanksAs
           - name: ChartFill
@@ -231,10 +243,6 @@ items:
             uid: excel.Excel.ChartPlotArea
           - name: ChartPlotAreaFormat
             uid: excel.Excel.ChartPlotAreaFormat
-          - name: ChartPlotAreaPosition
-            uid: excel.Excel.ChartPlotAreaPosition
-          - name: ChartPlotBy
-            uid: excel.Excel.ChartPlotBy
           - name: ChartPoint
             uid: excel.Excel.ChartPoint
           - name: ChartPointFormat
@@ -249,8 +257,6 @@ items:
             uid: excel.Excel.ChartSeriesFormat
           - name: ChartSplitStype
             uid: excel.Excel.ChartSplitStype
-          - name: ChartTickLabelAlignment
-            uid: excel.Excel.ChartTickLabelAlignment
           - name: ChartTitle
             uid: excel.Excel.ChartTitle
           - name: ChartTitleFormat
@@ -311,18 +317,12 @@ items:
             uid: excel.Excel.DataPivotHierarchyCollection
           - name: DataValidation
             uid: excel.Excel.DataValidation
-          - name: DataValidationAlertStyle
-            uid: excel.Excel.DataValidationAlertStyle
           - name: DataValidationErrorAlert
             uid: excel.Excel.DataValidationErrorAlert
-          - name: DataValidationOperator
-            uid: excel.Excel.DataValidationOperator
           - name: DataValidationPrompt
             uid: excel.Excel.DataValidationPrompt
           - name: DataValidationRule
             uid: excel.Excel.DataValidationRule
-          - name: DataValidationType
-            uid: excel.Excel.DataValidationType
           - name: DateTimeDataValidation
             uid: excel.Excel.DateTimeDataValidation
           - name: DocumentProperties
@@ -365,8 +365,6 @@ items:
             uid: excel.Excel.PivotItemCollection
           - name: PivotLayout
             uid: excel.Excel.PivotLayout
-          - name: PivotLayoutType
-            uid: excel.Excel.PivotLayoutType
           - name: PivotTable
             uid: excel.Excel.PivotTable
           - name: PivotTableCollection
@@ -405,18 +403,12 @@ items:
             uid: excel.Excel.Setting
           - name: SettingCollection
             uid: excel.Excel.SettingCollection
-          - name: ShowAsCalculation
-            uid: excel.Excel.ShowAsCalculation
           - name: ShowAsRule
             uid: excel.Excel.ShowAsRule
-          - name: SortBy
-            uid: excel.Excel.SortBy
           - name: Style
             uid: excel.Excel.Style
           - name: StyleCollection
             uid: excel.Excel.StyleCollection
-          - name: SubtotalLocationType
-            uid: excel.Excel.SubtotalLocationType
           - name: Subtotals
             uid: excel.Excel.Subtotals
           - name: Table
@@ -445,8 +437,6 @@ items:
             uid: excel.Excel.WorkbookProtection
           - name: Worksheet
             uid: excel.Excel.Worksheet
-          - name: WorksheetCalculatedEventArgs
-            uid: excel.Excel.WorksheetCalculatedEventArgs
           - name: WorksheetCollection
             uid: excel.Excel.WorksheetCollection
           - name: WorksheetFreezePanes
