@@ -37,11 +37,11 @@ The Excel JavaScript API requirement set 1.8 features include APIs for PivotTabl
 
 ### PivotTable
 
-Wave 2 of the PivotTable APIs gives to control over the hierarchies in a PivotTable. Control the data and how it is aggregated. Our [PivotTable article]( https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-pivottables) has more on the new PivotTable functionality.
+Wave 2 of the PivotTable APIs gives to control over the hierarchies in a PivotTable. Control the data and how it is aggregated. Our [PivotTable article](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has more on the new PivotTable functionality.
 
 ### Data Validation
 
-Data validation gives you control of what a user enters in a worksheet. You can limit cells to pre-defined answer sets or give pop-up warnings about undesirable input. Learn more about [adding data validation to ranges](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-data-validation) today.
+Data validation gives you control of what a user enters in a worksheet. You can limit cells to pre-defined answer sets or give pop-up warnings about undesirable input. Learn more about [adding data validation to ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation) today.
 
 ### Charts
 
@@ -49,7 +49,7 @@ Another round of Chart APIs brings even greater programmatic control over chart 
 
 ### Events
 
-More [events](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-events) have been added for charts. Have your add-in react to users interacting with the chart. You can also [toggle events](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/performance#enable-and-disable-events) firing across the entire workbook.
+More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events) have been added for charts. Have your add-in react to users interacting with the chart. You can also [toggle events](https://docs.microsoft.com/office/dev/add-ins/excel/performance#enable-and-disable-events) firing across the entire workbook.
 
 
 |Object| What is new| Description|Feedback|
