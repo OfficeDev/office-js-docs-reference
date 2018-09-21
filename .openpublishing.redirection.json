@@ -173,10 +173,6 @@
             "redirect_url": "/javascript/api/office/office.documentselectionchangedeventargs"
         },
         {
-            "source_path": "docs/docs-ref-autogen/outlook/office.RecurrenceTimeZone.md",
-            "redirect_url": "/javascript/api/outlook/office.mailboxenums.recurrencetimezone"
-        },
-        {
             "source_path": "docs/docs-ref-autogen/excel/excel.showcardpostprocessaction.md",
             "redirect_url": "/javascript/api/excel"
         },
