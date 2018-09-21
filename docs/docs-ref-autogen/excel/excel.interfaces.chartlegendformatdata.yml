@@ -9,7 +9,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartLegendFormatData.border
       - excel.Excel.Interfaces.ChartLegendFormatData.font
+  - uid: excel.Excel.Interfaces.ChartLegendFormatData.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.Interfaces.ChartLegendFormatData.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderData
   - uid: excel.Excel.Interfaces.ChartLegendFormatData.font
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.

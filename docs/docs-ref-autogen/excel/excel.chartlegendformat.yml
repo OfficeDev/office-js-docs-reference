@@ -14,10 +14,26 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartLegendFormat.border
       - excel.Excel.ChartLegendFormat.fill
       - excel.Excel.ChartLegendFormat.font
       - excel.Excel.ChartLegendFormat.load
       - excel.Excel.ChartLegendFormat.toJSON
+  - uid: excel.Excel.ChartLegendFormat.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: excel.Excel.ChartLegendFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartLegendFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formating information. Read-only.

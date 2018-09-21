@@ -14,6 +14,7 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartAxis.alignment
       - excel.Excel.ChartAxis.axisGroup
       - excel.Excel.ChartAxis.baseTimeUnit
       - excel.Excel.ChartAxis.categoryType
@@ -21,6 +22,7 @@ items:
       - excel.Excel.ChartAxis.displayUnit
       - excel.Excel.ChartAxis.format
       - excel.Excel.ChartAxis.height
+      - excel.Excel.ChartAxis.isBetweenCategories
       - excel.Excel.ChartAxis.left
       - excel.Excel.ChartAxis.load
       - excel.Excel.ChartAxis.logBase
@@ -34,11 +36,18 @@ items:
       - excel.Excel.ChartAxis.minorTickMark
       - excel.Excel.ChartAxis.minorTimeUnitScale
       - excel.Excel.ChartAxis.minorUnit
+      - excel.Excel.ChartAxis.multiLevel
+      - excel.Excel.ChartAxis.numberFormat
+      - excel.Excel.ChartAxis.offset
+      - excel.Excel.ChartAxis.position
+      - excel.Excel.ChartAxis.positionAt
       - excel.Excel.ChartAxis.reversePlotOrder
       - excel.Excel.ChartAxis.scaleType
       - excel.Excel.ChartAxis.setCategoryNames
       - excel.Excel.ChartAxis.setCustomDisplayUnit
+      - excel.Excel.ChartAxis.setPositionAt
       - excel.Excel.ChartAxis.showDisplayUnitLabel
+      - excel.Excel.ChartAxis.textOrientation
       - excel.Excel.ChartAxis.tickLabelPosition
       - excel.Excel.ChartAxis.tickLabelSpacing
       - excel.Excel.ChartAxis.tickMarkSpacing
@@ -48,6 +57,21 @@ items:
       - excel.Excel.ChartAxis.type
       - excel.Excel.ChartAxis.visible
       - excel.Excel.ChartAxis.width
+  - uid: excel.Excel.ChartAxis.alignment
+    summary: |-
+      Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: alignment
+    fullName: excel.Excel.ChartAxis.alignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alignment: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";'
+      return:
+        type:
+          - Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right"
   - uid: excel.Excel.ChartAxis.axisGroup
     summary: |-
       Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
@@ -179,6 +203,21 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ChartAxis.isBetweenCategories
+    summary: |-
+      Represents whether value axis crosses the category axis between categories.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: isBetweenCategories
+    fullName: excel.Excel.ChartAxis.isBetweenCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBetweenCategories: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartAxis.left
     summary: >-
       Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
@@ -452,6 +491,85 @@ items:
       return:
         type:
           - any
+  - uid: excel.Excel.ChartAxis.multiLevel
+    summary: |-
+      Represents whether an axis is multilevel or not.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: multiLevel
+    fullName: excel.Excel.ChartAxis.multiLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiLevel: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartAxis.numberFormat
+    summary: |-
+      Represents the format code for the axis tick label.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: excel.Excel.ChartAxis.numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartAxis.offset
+    summary: >-
+      Represents the distance between the levels of labels, and the distance between the first level and the axis line.
+      The value should be an integer from 0 to 1000.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: offset
+    fullName: excel.Excel.ChartAxis.offset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offset: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartAxis.position
+    summary: |-
+      Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: excel.Excel.ChartAxis.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";'
+      return:
+        type:
+          - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
+  - uid: excel.Excel.ChartAxis.positionAt
+    summary: >-
+      Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use
+      SetPositionAt(double) method.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: positionAt
+    fullName: excel.Excel.ChartAxis.positionAt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly positionAt: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartAxis.reversePlotOrder
     summary: |-
       Represents whether Microsoft Excel plots data points from last to first.
@@ -524,6 +642,27 @@ items:
           description: Custom value of the display unit.
           type:
             - number
+  - uid: excel.Excel.ChartAxis.setPositionAt
+    summary: |-
+      Set the specified axis position where the other axis crosses at.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: setPositionAt(value)
+    fullName: excel.Excel.ChartAxis.setPositionAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPositionAt(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: Custom value of the crosses at
+          type:
+            - number
   - uid: excel.Excel.ChartAxis.showDisplayUnitLabel
     summary: |-
       Represents whether the axis display unit label is visible.
@@ -556,6 +695,23 @@ items:
               await context.sync();
           });
           ```
+  - uid: excel.Excel.ChartAxis.textOrientation
+    summary: >-
+      Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or
+      180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: excel.Excel.ChartAxis.textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: any;'
+      return:
+        type:
+          - any
   - uid: excel.Excel.ChartAxis.tickLabelPosition
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for

@@ -6,7 +6,7 @@ items:
       and get the dates and times of meeting requests in a recurring series.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -14,7 +14,6 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-    isPreview: true
     name: Office.SeriesTime
     fullName: outlook.Office.SeriesTime
     langs:
@@ -35,7 +34,7 @@ items:
     summary: |-
       Gets the duration in minutes of a usual instance in a recurring appointment series.
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -60,7 +59,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getDuration()
     fullName: outlook.Office.SeriesTime.getDuration
     langs:
@@ -78,7 +76,7 @@ items:
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -103,7 +101,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getEndDate()
     fullName: outlook.Office.SeriesTime.getEndDate
     langs:
@@ -122,7 +119,7 @@ items:
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -147,7 +144,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getEndTime()
     fullName: outlook.Office.SeriesTime.getEndTime
     langs:
@@ -165,7 +161,7 @@ items:
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -190,7 +186,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getStartDate()
     fullName: outlook.Office.SeriesTime.getStartDate
     langs:
@@ -209,7 +204,7 @@ items:
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -230,7 +225,6 @@ items:
       seriesTimeObject.setDuration(120);
 
       ```
-    isPreview: true
     name: getStartTime()
     fullName: outlook.Office.SeriesTime.getStartTime
     langs:
@@ -248,7 +242,7 @@ items:
       recurrence pattern.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -273,7 +267,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: setDuration(minutes)
     fullName: outlook.Office.SeriesTime.setDuration
     langs:
@@ -294,7 +287,7 @@ items:
     summary: |-
       Sets the end date of a recurring appointment series.
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -307,7 +300,7 @@ items:
       <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `setEndDate(date: string): void;` (Where date is the end date of the recurring appointment series represented in
@@ -330,7 +323,6 @@ items:
       seriesTimeObject.setEndDate("2017-11-02");
 
       ```
-    isPreview: true
     name: 'setEndDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setEndDate
     langs:
@@ -361,7 +353,7 @@ items:
     summary: |-
       Sets the start date of a recurring appointment series.
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -374,7 +366,7 @@ items:
       <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `setStartDate(date: string): void;` (Where date is the start date of the recurring appointment series represented
@@ -397,7 +389,6 @@ items:
       seriesTimeObject.setStartDate("2017-11-02");
 
       ```
-    isPreview: true
     name: 'setStartDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setStartDate
     langs:
@@ -430,7 +421,7 @@ items:
       pattern is set (the item's time zone is used by default).
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -443,7 +434,7 @@ items:
       <tr><td>Errors</td><td>Invalid time format - The time is not in an acceptable format.</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard
@@ -471,7 +462,6 @@ items:
       seriesTimeObject.setStartTime("T23:30:00");
 
       ```
-    isPreview: true
     name: 'setStartTime(hours, minutes)'
     fullName: outlook.Office.SeriesTime.setStartTime
     langs:

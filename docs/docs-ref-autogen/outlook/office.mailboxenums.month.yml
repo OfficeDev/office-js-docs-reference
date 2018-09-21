@@ -4,11 +4,10 @@ items:
     summary: |-
       Specifies the month.
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
-    isPreview: true
     name: Office.MailboxEnums.Month
     fullName: outlook.Office.MailboxEnums.Month
     langs:
@@ -30,7 +29,6 @@ items:
       - outlook.Office.MailboxEnums.Month.Sep
   - uid: outlook.Office.MailboxEnums.Month.Apr
     summary: April
-    isPreview: true
     name: Apr
     fullName: outlook.Office.MailboxEnums.Month.Apr
     langs:
@@ -39,7 +37,6 @@ items:
     numericValue: '"apr"'
   - uid: outlook.Office.MailboxEnums.Month.Aug
     summary: August
-    isPreview: true
     name: Aug
     fullName: outlook.Office.MailboxEnums.Month.Aug
     langs:
@@ -48,7 +45,6 @@ items:
     numericValue: '"aug"'
   - uid: outlook.Office.MailboxEnums.Month.Dec
     summary: December
-    isPreview: true
     name: Dec
     fullName: outlook.Office.MailboxEnums.Month.Dec
     langs:
@@ -57,7 +53,6 @@ items:
     numericValue: '"dec"'
   - uid: outlook.Office.MailboxEnums.Month.Feb
     summary: February
-    isPreview: true
     name: Feb
     fullName: outlook.Office.MailboxEnums.Month.Feb
     langs:
@@ -66,7 +61,6 @@ items:
     numericValue: '"feb"'
   - uid: outlook.Office.MailboxEnums.Month.Jan
     summary: January
-    isPreview: true
     name: Jan
     fullName: outlook.Office.MailboxEnums.Month.Jan
     langs:
@@ -75,7 +69,6 @@ items:
     numericValue: '"jan"'
   - uid: outlook.Office.MailboxEnums.Month.Jul
     summary: July
-    isPreview: true
     name: Jul
     fullName: outlook.Office.MailboxEnums.Month.Jul
     langs:
@@ -84,7 +77,6 @@ items:
     numericValue: '"jul"'
   - uid: outlook.Office.MailboxEnums.Month.Jun
     summary: June
-    isPreview: true
     name: Jun
     fullName: outlook.Office.MailboxEnums.Month.Jun
     langs:
@@ -93,7 +85,6 @@ items:
     numericValue: '"jun"'
   - uid: outlook.Office.MailboxEnums.Month.Mar
     summary: March
-    isPreview: true
     name: Mar
     fullName: outlook.Office.MailboxEnums.Month.Mar
     langs:
@@ -102,7 +93,6 @@ items:
     numericValue: '"mar"'
   - uid: outlook.Office.MailboxEnums.Month.May
     summary: May
-    isPreview: true
     name: May
     fullName: outlook.Office.MailboxEnums.Month.May
     langs:
@@ -111,7 +101,6 @@ items:
     numericValue: '"may"'
   - uid: outlook.Office.MailboxEnums.Month.Nov
     summary: November
-    isPreview: true
     name: Nov
     fullName: outlook.Office.MailboxEnums.Month.Nov
     langs:
@@ -120,7 +109,6 @@ items:
     numericValue: '"nov"'
   - uid: outlook.Office.MailboxEnums.Month.Oct
     summary: October
-    isPreview: true
     name: Oct
     fullName: outlook.Office.MailboxEnums.Month.Oct
     langs:
@@ -129,7 +117,6 @@ items:
     numericValue: '"oct"'
   - uid: outlook.Office.MailboxEnums.Month.Sep
     summary: September
-    isPreview: true
     name: Sep
     fullName: outlook.Office.MailboxEnums.Month.Sep
     langs:

@@ -1,0 +1,162 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Subtotals
+    summary: |-
+      Subtotals for the Pivot Field.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Subtotals
+    fullName: excel.Excel.Subtotals
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Subtotals.automatic
+      - excel.Excel.Subtotals.average
+      - excel.Excel.Subtotals.count
+      - excel.Excel.Subtotals.countNumbers
+      - excel.Excel.Subtotals.max
+      - excel.Excel.Subtotals.min
+      - excel.Excel.Subtotals.product
+      - excel.Excel.Subtotals.standardDeviation
+      - excel.Excel.Subtotals.standardDeviationP
+      - excel.Excel.Subtotals.sum
+      - excel.Excel.Subtotals.variance
+      - excel.Excel.Subtotals.varianceP
+  - uid: excel.Excel.Subtotals.automatic
+    summary: |-
+      If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: automatic
+    fullName: excel.Excel.Subtotals.automatic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'automatic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.average
+    name: average
+    fullName: excel.Excel.Subtotals.average
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'average?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.count
+    name: count
+    fullName: excel.Excel.Subtotals.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.countNumbers
+    name: countNumbers
+    fullName: excel.Excel.Subtotals.countNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'countNumbers?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.max
+    name: max
+    fullName: excel.Excel.Subtotals.max
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'max?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.min
+    name: min
+    fullName: excel.Excel.Subtotals.min
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'min?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.product
+    name: product
+    fullName: excel.Excel.Subtotals.product
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'product?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.standardDeviation
+    name: standardDeviation
+    fullName: excel.Excel.Subtotals.standardDeviation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.standardDeviationP
+    name: standardDeviationP
+    fullName: excel.Excel.Subtotals.standardDeviationP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviationP?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.sum
+    name: sum
+    fullName: excel.Excel.Subtotals.sum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sum?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.variance
+    name: variance
+    fullName: excel.Excel.Subtotals.variance
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variance?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Subtotals.varianceP
+    name: varianceP
+    fullName: excel.Excel.Subtotals.varianceP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'varianceP?: boolean;'
+      return:
+        type:
+          - boolean

@@ -196,6 +196,7 @@ items:
                   });
           });
       ```
+    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async
     langs:
@@ -241,10 +242,10 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -259,7 +260,6 @@ items:
 
 
       `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
-    isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addHandlerAsync
     langs:
@@ -311,7 +311,7 @@ items:
       session.
 
 
-      If your Office Add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
       other than the item that you are editing; however, this is not supported and is not recommended.
 
 
@@ -329,7 +329,7 @@ items:
       attachments.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
@@ -905,7 +905,7 @@ items:
       the organizer value.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -925,7 +925,6 @@ items:
       var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
 
       ```
-    isPreview: true
     name: organizer
     fullName: outlook.Office.AppointmentCompose.organizer
     langs:
@@ -953,7 +952,7 @@ items:
       request of a single appointment and NOT a part of a series.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -962,7 +961,6 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
-    isPreview: true
     name: recurrence
     fullName: outlook.Office.AppointmentCompose.recurrence
     langs:
@@ -972,7 +970,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -1063,10 +1061,10 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`,
-      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`.
+      `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1081,7 +1079,6 @@ items:
 
 
       `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
-    isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeHandlerAsync
     langs:
@@ -1287,7 +1284,7 @@ items:
       items, or meeting requests and returns undefined for any other items that are not meeting requests.
 
 
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1296,7 +1293,6 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
-    isPreview: true
     name: seriesId
     fullName: outlook.Office.AppointmentCompose.seriesId
     langs:

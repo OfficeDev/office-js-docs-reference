@@ -14,6 +14,7 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.PivotTableCollection.add
       - excel.Excel.PivotTableCollection.getCount
       - excel.Excel.PivotTableCollection.getItem
       - excel.Excel.PivotTableCollection.getItemOrNullObject
@@ -21,6 +22,39 @@ items:
       - excel.Excel.PivotTableCollection.load
       - excel.Excel.PivotTableCollection.refreshAll
       - excel.Excel.PivotTableCollection.toJSON
+  - uid: excel.Excel.PivotTableCollection.add
+    summary: |-
+      Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(name, source, destination)'
+    fullName: excel.Excel.PivotTableCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, source: Range | string | Table, destination: Range | string): Excel.PivotTable;'
+      return:
+        type:
+          - excel.Excel.PivotTable
+        description: Returns the newly inserted PivotTable.
+      parameters:
+        - id: name
+          description: The name of the new PivotTable.
+          type:
+            - string
+        - id: source
+          description: >-
+            The source data for the new PivotTable, this can either be a range (or string address including the
+            worksheet name) or a table.
+          type:
+            - Range | string | Table
+        - id: destination
+          description: >-
+            The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet
+            where the resulting report will be placed).
+          type:
+            - Range | string
   - uid: excel.Excel.PivotTableCollection.getCount
     summary: |-
       Gets the number of pivot tables in the collection.

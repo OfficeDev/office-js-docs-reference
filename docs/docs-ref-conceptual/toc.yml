@@ -41,6 +41,23 @@ items:
                 href: objectmodel/preview-requirement-set/Office.context.mailbox.userProfile.md
               - name: API Reference
                 uid: outlook
+            - name: Requirement Set 1.7
+              href: objectmodel/requirement-set-1.7/outlook-requirement-set-1.7.md
+              items:
+              - name: Office
+                href: objectmodel/requirement-set-1.7/office.md
+              - name: Office.context
+                href: objectmodel/requirement-set-1.7/Office.context.md
+              - name: Office.context.mailbox
+                href: objectmodel/requirement-set-1.7/Office.context.mailbox.md
+              - name: Office.context.mailbox.diagnostics
+                href: objectmodel/requirement-set-1.7/Office.context.mailbox.diagnostics.md
+              - name: Office.context.mailbox.item
+                href: objectmodel/requirement-set-1.7/Office.context.mailbox.item.md
+              - name: Office.context.mailbox.userProfile
+                href: objectmodel/requirement-set-1.7/Office.context.mailbox.userProfile.md
+              - name: API Reference
+                uid: Outlook_1_7
             - name: Requirement Set 1.6
               href: objectmodel/requirement-set-1.6/outlook-requirement-set-1.6.md
               items:

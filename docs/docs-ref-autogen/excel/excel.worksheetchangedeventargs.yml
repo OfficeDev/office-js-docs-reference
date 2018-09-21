@@ -57,7 +57,7 @@ items:
     summary: |-
       Gets the range that represents the changed area of a specific worksheet.
 
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(ctx)
     fullName: excel.Excel.WorksheetChangedEventArgs.getRange
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Gets the range that represents the changed area of a specific worksheet. It might return null object.
 
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject(ctx)
     fullName: excel.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
     langs:

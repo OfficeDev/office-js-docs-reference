@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber
+    summary: |-
+      Specifies the week of the month.
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    name: Office.MailboxEnums.WeekNumber
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber
+    langs:
+      - typeScript
+    type: enum
+    package: Outlook_1_7
+    children:
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber.First
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber.Fourth
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber.Last
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber.Second
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber.Third
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber.First
+    summary: First week of the month.
+    name: First
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber.First
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"first"'
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber.Fourth
+    summary: Fourth week of the month.
+    name: Fourth
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber.Fourth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"fourth"'
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber.Last
+    summary: Last week of the month.
+    name: Last
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber.Last
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"last"'
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber.Second
+    summary: Second week of the month.
+    name: Second
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber.Second
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"second"'
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber.Third
+    summary: Third week of the month.
+    name: Third
+    fullName: Outlook_1_7.Office.MailboxEnums.WeekNumber.Third
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"third"'
