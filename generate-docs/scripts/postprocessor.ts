@@ -131,11 +131,12 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
-                const packageName = packageItem.name === 'onenote' ? 'OneNote' : packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1);
+                const packageName = packageItem.name === 'onenote' ? 'OneNote' : (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
                 if (packageItem.items.length === 1) {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
                     });
+
                     // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
                         if (!rootPushed) { // add root in alphabetical order

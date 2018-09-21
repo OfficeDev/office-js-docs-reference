@@ -36,6 +36,14 @@ cd ..\api-extractor-inputs-outlook
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-custom-functions-runtime
+
+call ..\node_modules\.bin\api-extractor run
+
+cd ..\api-extractor-inputs-office-runtime
+
+call ..\node_modules\.bin\api-extractor run
+
 cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
 
 call ..\..\node_modules\.bin\api-extractor run
