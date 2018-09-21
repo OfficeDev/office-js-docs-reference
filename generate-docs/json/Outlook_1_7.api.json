@@ -40905,11 +40905,11 @@
             },
             "recurrenceProperties": {
               "kind": "property",
-              "signature": "recurrenceProperties: RecurrenceProperties;",
+              "signature": "recurrenceProperties: Office.RecurrenceProperties;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "RecurrenceProperties",
+              "type": "Office.RecurrenceProperties",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -41025,11 +41025,11 @@
             },
             "recurrenceTimeZone": {
               "kind": "property",
-              "signature": "recurrenceTimeZone: RecurrenceTimeZone;",
+              "signature": "recurrenceTimeZone: Office.RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "RecurrenceTimeZone",
+              "type": "Office.RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {

@@ -8118,7 +8118,7 @@ export declare namespace Office {
          * 
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          */
-        recurrenceProperties: RecurrenceProperties;
+        recurrenceProperties: Office.RecurrenceProperties;
         /**
          * Gets or sets the properties of the recurring appointment series.
          * 
@@ -8130,7 +8130,7 @@ export declare namespace Office {
          * 
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
          */
-        recurrenceTimeZone: RecurrenceTimeZone;
+        recurrenceTimeZone: Office.RecurrenceTimeZone;
 
         /**
          * Gets or sets the type of the recurring appointment series.
