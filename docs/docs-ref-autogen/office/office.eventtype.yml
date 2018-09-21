@@ -48,7 +48,7 @@ items:
       - office.Office.EventType.NodeReplaced
       - office.Office.EventType.OfficeThemeChanged
       - office.Office.EventType.RecipientsChanged
-      - office.Office.EventType.RecurrencePatternChanged
+      - office.Office.EventType.RecurrenceChanged
       - office.Office.EventType.ResourceSelectionChanged
       - office.Office.EventType.SettingsChanged
       - office.Office.EventType.TaskSelectionChanged
@@ -79,10 +79,9 @@ items:
     type: field
   - uid: office.Office.EventType.AppointmentTimeChanged
     summary: |-
-      Triggers when the appointment date or time of the selected series is changed in Outlook.
+      Triggers when any date or time of the selected appointment or series is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
     name: AppointmentTimeChanged
     fullName: office.Office.EventType.AppointmentTimeChanged
     langs:
@@ -214,7 +213,6 @@ items:
       Triggers when the OfficeTheme is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
     name: OfficeThemeChanged
     fullName: office.Office.EventType.OfficeThemeChanged
     langs:
@@ -222,23 +220,21 @@ items:
     type: field
   - uid: office.Office.EventType.RecipientsChanged
     summary: |-
-      Triggers when the recipient list of the selected item is changed in Outlook.
+      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
     name: RecipientsChanged
     fullName: office.Office.EventType.RecipientsChanged
     langs:
       - typeScript
     type: field
-  - uid: office.Office.EventType.RecurrencePatternChanged
+  - uid: office.Office.EventType.RecurrenceChanged
     summary: |-
       Triggers when the recurrence pattern of the selected series is changed in Outlook.
 
-      \[ [API set: Mailbox Preview](/javascript/office/javascript-api-for-office) \]
-    isPreview: true
-    name: RecurrencePatternChanged
-    fullName: office.Office.EventType.RecurrencePatternChanged
+      \[ [API set: Mailbox 1.7](/javascript/office/javascript-api-for-office) \]
+    name: RecurrenceChanged
+    fullName: office.Office.EventType.RecurrenceChanged
     langs:
       - typeScript
     type: field

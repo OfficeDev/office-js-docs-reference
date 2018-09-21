@@ -684,7 +684,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -760,14 +760,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -881,7 +881,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -1113,7 +1113,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -2887,7 +2887,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -2983,7 +2983,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -3028,7 +3028,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -3124,7 +3124,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -3435,14 +3435,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -3556,7 +3556,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -4010,7 +4010,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -4106,7 +4106,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -5929,14 +5929,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -6050,7 +6050,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -10260,7 +10260,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10356,7 +10356,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -10433,14 +10433,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10554,7 +10554,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -10758,7 +10758,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10854,7 +10854,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -11664,7 +11664,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -12047,7 +12047,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -12328,7 +12328,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -12609,7 +12609,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -14931,7 +14931,7 @@
             },
             {
               "kind": "text",
-              "text": "[Api set: Mailbox Preview]"
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -15031,7 +15031,7 @@
               "text": ""
             }
           ],
-          "isBeta": true,
+          "isBeta": false,
           "isSealed": false,
           "members": {
             "getAsync": {
@@ -15114,7 +15114,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -15224,7 +15224,7 @@
                   "text": "`getAsync(callback?: (result: AsyncResult<Office.EmailAddressDetails>) => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -15421,14 +15421,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -15542,7 +15542,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -16097,6 +16097,168 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "getSharedPropertiesAsync": {
+              "kind": "method",
+              "signature": "getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.SharedProperties>) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The `value` property of the result is the properties of the shared item."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult<Office.SharedProperties>) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the properties of an appointment or message in a shared folder, calendar, or mailbox."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`getAsync(callback: (result: AsyncResult<Office.SharedProperties>) => void): void;`"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "itemType": {
               "kind": "property",
               "signature": "itemType: Office.MailboxEnums.ItemType;",
@@ -16545,7 +16707,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -16641,7 +16803,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -16718,14 +16880,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -16839,7 +17001,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -16897,7 +17059,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -16993,7 +17155,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -17624,7 +17786,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -17856,7 +18018,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -23890,7 +24052,7 @@
                       "text": "Outlook Mail API"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
+                  "targetUrl": "https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations"
                 },
                 {
                   "kind": "text",
@@ -25170,7 +25332,7 @@
                       "text": "get attachments from the selected item"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item"
                 },
                 {
                   "kind": "text",
@@ -25587,7 +25749,7 @@
                       "text": "authenticate the add-in and user with a third-party system"
                     }
                   ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/authentication"
                 },
                 {
                   "kind": "text",
@@ -26236,7 +26398,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Fri": {
                   "kind": "enum value",
@@ -26249,7 +26411,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Mon": {
                   "kind": "enum value",
@@ -26262,7 +26424,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Sat": {
                   "kind": "enum value",
@@ -26275,7 +26437,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Sun": {
                   "kind": "enum value",
@@ -26288,7 +26450,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Thu": {
                   "kind": "enum value",
@@ -26301,7 +26463,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Tue": {
                   "kind": "enum value",
@@ -26314,7 +26476,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Wed": {
                   "kind": "enum value",
@@ -26327,7 +26489,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Weekday": {
                   "kind": "enum value",
@@ -26340,7 +26502,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "WeekendDay": {
                   "kind": "enum value",
@@ -26353,7 +26515,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 }
               },
               "deprecatedMessage": [],
@@ -26361,6 +26523,168 @@
                 {
                   "kind": "text",
                   "text": "Specifies the day of week or type of day."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": ""
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "isBeta": false
+            },
+            "DelegatePermissions": {
+              "kind": "enum",
+              "values": {
+                "DeleteAll": {
+                  "kind": "enum value",
+                  "value": "8",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to delete any items."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "DeleteOwn": {
+                  "kind": "enum value",
+                  "value": "4",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to delete only the items they created."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "EditAll": {
+                  "kind": "enum value",
+                  "value": "32",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to edit any items."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "EditOwn": {
+                  "kind": "enum value",
+                  "value": "16",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to edit only they items they created."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "Read": {
+                  "kind": "enum value",
+                  "value": "1",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to read items."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "Write": {
+                  "kind": "enum value",
+                  "value": "2",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Delegate has permission to create and write items."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "This bit mask represents a delegate's permissions on a shared folder."
                 },
                 {
                   "kind": "paragraph"
@@ -26858,7 +27182,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Aug": {
                   "kind": "enum value",
@@ -26871,7 +27195,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Dec": {
                   "kind": "enum value",
@@ -26884,7 +27208,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Feb": {
                   "kind": "enum value",
@@ -26897,7 +27221,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Jan": {
                   "kind": "enum value",
@@ -26910,7 +27234,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Jul": {
                   "kind": "enum value",
@@ -26923,7 +27247,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Jun": {
                   "kind": "enum value",
@@ -26936,7 +27260,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Mar": {
                   "kind": "enum value",
@@ -26949,7 +27273,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "May": {
                   "kind": "enum value",
@@ -26962,7 +27286,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Nov": {
                   "kind": "enum value",
@@ -26975,7 +27299,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Oct": {
                   "kind": "enum value",
@@ -26988,7 +27312,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Sep": {
                   "kind": "enum value",
@@ -27001,7 +27325,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 }
               },
               "deprecatedMessage": [],
@@ -27015,7 +27339,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -27082,7 +27406,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true
+              "isBeta": false
             },
             "OWAView": {
               "kind": "enum",
@@ -27287,7 +27611,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AlaskanStandardTime": {
                   "kind": "enum value",
@@ -27300,7 +27624,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AleutianStandardTime": {
                   "kind": "enum value",
@@ -27313,7 +27637,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AltaiStandardTime": {
                   "kind": "enum value",
@@ -27326,7 +27650,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ArabianStandardTime": {
                   "kind": "enum value",
@@ -27339,7 +27663,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ArabicStandardTime": {
                   "kind": "enum value",
@@ -27352,7 +27676,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ArabStandardTime": {
                   "kind": "enum value",
@@ -27365,7 +27689,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ArgentinaStandardTime": {
                   "kind": "enum value",
@@ -27378,7 +27702,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AstrakhanStandardTime": {
                   "kind": "enum value",
@@ -27391,7 +27715,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AtlanticStandardTime": {
                   "kind": "enum value",
@@ -27404,7 +27728,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AUSCentralStandardTime": {
                   "kind": "enum value",
@@ -27417,7 +27741,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AusCentralW_StandardTime": {
                   "kind": "enum value",
@@ -27430,7 +27754,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AUSEasternStandardTime": {
                   "kind": "enum value",
@@ -27443,7 +27767,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AzerbaijanStandardTime": {
                   "kind": "enum value",
@@ -27456,7 +27780,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "AzoresStandardTime": {
                   "kind": "enum value",
@@ -27469,7 +27793,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "BahiaStandardTime": {
                   "kind": "enum value",
@@ -27482,7 +27806,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "BangladeshStandardTime": {
                   "kind": "enum value",
@@ -27495,7 +27819,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "BelarusStandardTime": {
                   "kind": "enum value",
@@ -27508,7 +27832,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "BougainvilleStandardTime": {
                   "kind": "enum value",
@@ -27521,7 +27845,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CanadaCentralStandardTime": {
                   "kind": "enum value",
@@ -27534,7 +27858,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CapeVerdeStandardTime": {
                   "kind": "enum value",
@@ -27547,7 +27871,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CaucasusStandardTime": {
                   "kind": "enum value",
@@ -27560,7 +27884,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CenAustraliaStandardTime": {
                   "kind": "enum value",
@@ -27573,7 +27897,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralAmericaStandardTime": {
                   "kind": "enum value",
@@ -27586,7 +27910,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralAsiaStandardTime": {
                   "kind": "enum value",
@@ -27599,7 +27923,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralBrazilianStandardTime": {
                   "kind": "enum value",
@@ -27612,7 +27936,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralEuropeanStandardTime": {
                   "kind": "enum value",
@@ -27625,7 +27949,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralEuropeStandardTime": {
                   "kind": "enum value",
@@ -27638,7 +27962,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralPacificStandardTime": {
                   "kind": "enum value",
@@ -27651,7 +27975,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralStandardTime": {
                   "kind": "enum value",
@@ -27664,7 +27988,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CentralStandardTime_Mexico": {
                   "kind": "enum value",
@@ -27677,7 +28001,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ChathamIslandsStandardTime": {
                   "kind": "enum value",
@@ -27690,7 +28014,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ChinaStandardTime": {
                   "kind": "enum value",
@@ -27703,7 +28027,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "CubaStandardTime": {
                   "kind": "enum value",
@@ -27716,7 +28040,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "DatelineStandardTime": {
                   "kind": "enum value",
@@ -27729,7 +28053,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "E_AfricaStandardTime": {
                   "kind": "enum value",
@@ -27742,7 +28066,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "E_AustraliaStandardTime": {
                   "kind": "enum value",
@@ -27755,7 +28079,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "E_EuropeStandardTime": {
                   "kind": "enum value",
@@ -27768,7 +28092,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "E_SouthAmericaStandardTime": {
                   "kind": "enum value",
@@ -27781,7 +28105,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "EasterIslandStandardTime": {
                   "kind": "enum value",
@@ -27794,7 +28118,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "EasternStandardTime": {
                   "kind": "enum value",
@@ -27807,7 +28131,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "EasternStandardTime_Mexico": {
                   "kind": "enum value",
@@ -27820,7 +28144,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "EgyptStandardTime": {
                   "kind": "enum value",
@@ -27833,7 +28157,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "EkaterinburgStandardTime": {
                   "kind": "enum value",
@@ -27846,7 +28170,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "FijiStandardTime": {
                   "kind": "enum value",
@@ -27859,7 +28183,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "FLEStandardTime": {
                   "kind": "enum value",
@@ -27872,7 +28196,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "GeorgianStandardTime": {
                   "kind": "enum value",
@@ -27885,7 +28209,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "GMTStandardTime": {
                   "kind": "enum value",
@@ -27898,7 +28222,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "GreenlandStandardTime": {
                   "kind": "enum value",
@@ -27911,7 +28235,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "GreenwichStandardTime": {
                   "kind": "enum value",
@@ -27924,7 +28248,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "GTBStandardTime": {
                   "kind": "enum value",
@@ -27937,7 +28261,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "HaitiStandardTime": {
                   "kind": "enum value",
@@ -27950,7 +28274,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "HawaiianStandardTime": {
                   "kind": "enum value",
@@ -27963,7 +28287,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "IndiaStandardTime": {
                   "kind": "enum value",
@@ -27976,7 +28300,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "IranStandardTime": {
                   "kind": "enum value",
@@ -27989,7 +28313,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "IsraelStandardTime": {
                   "kind": "enum value",
@@ -28002,7 +28326,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "JordanStandardTime": {
                   "kind": "enum value",
@@ -28015,7 +28339,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "KaliningradStandardTime": {
                   "kind": "enum value",
@@ -28028,7 +28352,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "KamchatkaStandardTime": {
                   "kind": "enum value",
@@ -28041,7 +28365,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "KoreaStandardTime": {
                   "kind": "enum value",
@@ -28054,7 +28378,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "LibyaStandardTime": {
                   "kind": "enum value",
@@ -28067,7 +28391,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "LineIslandsStandardTime": {
                   "kind": "enum value",
@@ -28080,7 +28404,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "LordHoweStandardTime": {
                   "kind": "enum value",
@@ -28093,7 +28417,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MagadanStandardTime": {
                   "kind": "enum value",
@@ -28106,7 +28430,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MagallanesStandardTime": {
                   "kind": "enum value",
@@ -28119,7 +28443,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MarquesasStandardTime": {
                   "kind": "enum value",
@@ -28132,7 +28456,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MauritiusStandardTime": {
                   "kind": "enum value",
@@ -28145,7 +28469,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MidAtlanticStandardTime": {
                   "kind": "enum value",
@@ -28158,7 +28482,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MiddleEastStandardTime": {
                   "kind": "enum value",
@@ -28171,7 +28495,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MontevideoStandardTime": {
                   "kind": "enum value",
@@ -28184,7 +28508,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MoroccoStandardTime": {
                   "kind": "enum value",
@@ -28197,7 +28521,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MountainStandardTime": {
                   "kind": "enum value",
@@ -28210,7 +28534,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MountainStandardTime_Mexico": {
                   "kind": "enum value",
@@ -28223,7 +28547,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "MyanmarStandardTime": {
                   "kind": "enum value",
@@ -28236,7 +28560,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "N_CentralAsiaStandardTime": {
                   "kind": "enum value",
@@ -28249,7 +28573,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NamibiaStandardTime": {
                   "kind": "enum value",
@@ -28262,7 +28586,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NepalStandardTime": {
                   "kind": "enum value",
@@ -28275,7 +28599,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NewfoundlandStandardTime": {
                   "kind": "enum value",
@@ -28288,7 +28612,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NewZealandStandardTime": {
                   "kind": "enum value",
@@ -28301,7 +28625,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NorfolkStandardTime": {
                   "kind": "enum value",
@@ -28314,7 +28638,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NorthAsiaEastStandardTime": {
                   "kind": "enum value",
@@ -28327,7 +28651,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NorthAsiaStandardTime": {
                   "kind": "enum value",
@@ -28340,7 +28664,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "NorthKoreaStandardTime": {
                   "kind": "enum value",
@@ -28353,7 +28677,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "OmskStandardTime": {
                   "kind": "enum value",
@@ -28366,7 +28690,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "PacificSAStandardTime": {
                   "kind": "enum value",
@@ -28379,7 +28703,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "PacificStandardTime": {
                   "kind": "enum value",
@@ -28392,7 +28716,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "PacificStandardTimeMexico": {
                   "kind": "enum value",
@@ -28405,7 +28729,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "PakistanStandardTime": {
                   "kind": "enum value",
@@ -28418,7 +28742,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "ParaguayStandardTime": {
                   "kind": "enum value",
@@ -28431,7 +28755,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "RomanceStandardTime": {
                   "kind": "enum value",
@@ -28444,7 +28768,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "RussianStandardTime": {
                   "kind": "enum value",
@@ -28457,7 +28781,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "RussiaTimeZone10": {
                   "kind": "enum value",
@@ -28470,7 +28794,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "RussiaTimeZone11": {
                   "kind": "enum value",
@@ -28483,7 +28807,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "RussiaTimeZone3": {
                   "kind": "enum value",
@@ -28496,7 +28820,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SAEasternStandardTime": {
                   "kind": "enum value",
@@ -28509,7 +28833,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SaintPierreStandardTime": {
                   "kind": "enum value",
@@ -28522,7 +28846,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SakhalinStandardTime": {
                   "kind": "enum value",
@@ -28535,7 +28859,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SamoaStandardTime": {
                   "kind": "enum value",
@@ -28548,7 +28872,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SAPacificStandardTime": {
                   "kind": "enum value",
@@ -28561,7 +28885,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SaratovStandardTime": {
                   "kind": "enum value",
@@ -28574,7 +28898,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SAWesternStandardTime": {
                   "kind": "enum value",
@@ -28587,7 +28911,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SEAsiaStandardTime": {
                   "kind": "enum value",
@@ -28600,7 +28924,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SingaporeStandardTime": {
                   "kind": "enum value",
@@ -28613,7 +28937,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SouthAfricaStandardTime": {
                   "kind": "enum value",
@@ -28626,7 +28950,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SriLankaStandardTime": {
                   "kind": "enum value",
@@ -28639,7 +28963,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SudanStandardTime": {
                   "kind": "enum value",
@@ -28652,7 +28976,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "SyriaStandardTime": {
                   "kind": "enum value",
@@ -28665,7 +28989,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TaipeiStandardTime": {
                   "kind": "enum value",
@@ -28678,7 +29002,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TasmaniaStandardTime": {
                   "kind": "enum value",
@@ -28691,7 +29015,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TocantinsStandardTime": {
                   "kind": "enum value",
@@ -28704,7 +29028,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TokyoStandardTime": {
                   "kind": "enum value",
@@ -28717,7 +29041,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TomskStandardTime": {
                   "kind": "enum value",
@@ -28730,7 +29054,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TongaStandardTime": {
                   "kind": "enum value",
@@ -28743,7 +29067,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TransbaikalStandardTime": {
                   "kind": "enum value",
@@ -28756,7 +29080,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TurkeyStandardTime": {
                   "kind": "enum value",
@@ -28769,7 +29093,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "TurksAndCaicosStandardTime": {
                   "kind": "enum value",
@@ -28782,7 +29106,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UlaanbaatarStandardTime": {
                   "kind": "enum value",
@@ -28795,7 +29119,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "USEasternStandardTime": {
                   "kind": "enum value",
@@ -28808,7 +29132,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "USMountainStandardTime": {
                   "kind": "enum value",
@@ -28821,7 +29145,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTC": {
                   "kind": "enum value",
@@ -28834,7 +29158,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCMINUS02": {
                   "kind": "enum value",
@@ -28847,7 +29171,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCMINUS08": {
                   "kind": "enum value",
@@ -28860,7 +29184,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCMINUS09": {
                   "kind": "enum value",
@@ -28873,7 +29197,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCMINUS11": {
                   "kind": "enum value",
@@ -28886,7 +29210,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCPLUS12": {
                   "kind": "enum value",
@@ -28899,7 +29223,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "UTCPLUS13": {
                   "kind": "enum value",
@@ -28912,7 +29236,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "VenezuelaStandardTime": {
                   "kind": "enum value",
@@ -28925,7 +29249,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "VladivostokStandardTime": {
                   "kind": "enum value",
@@ -28938,7 +29262,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "W_AustraliaStandardTime": {
                   "kind": "enum value",
@@ -28951,7 +29275,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "W_CentralAfricaStandardTime": {
                   "kind": "enum value",
@@ -28964,7 +29288,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "W_EuropeStandardTime": {
                   "kind": "enum value",
@@ -28977,7 +29301,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "W_MongoliaStandardTime": {
                   "kind": "enum value",
@@ -28990,7 +29314,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "WestAsiaStandardTime": {
                   "kind": "enum value",
@@ -29003,7 +29327,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "WestBankStandardTime": {
                   "kind": "enum value",
@@ -29016,7 +29340,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "WestPacificStandardTime": {
                   "kind": "enum value",
@@ -29029,7 +29353,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "YakutskStandardTime": {
                   "kind": "enum value",
@@ -29042,7 +29366,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 }
               },
               "deprecatedMessage": [],
@@ -29056,7 +29380,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -29123,7 +29447,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true
+              "isBeta": false
             },
             "RecurrenceType": {
               "kind": "enum",
@@ -29139,7 +29463,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Monthly": {
                   "kind": "enum value",
@@ -29152,7 +29476,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Weekday": {
                   "kind": "enum value",
@@ -29165,7 +29489,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Weekly": {
                   "kind": "enum value",
@@ -29178,7 +29502,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Yearly": {
                   "kind": "enum value",
@@ -29191,7 +29515,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 }
               },
               "deprecatedMessage": [],
@@ -29205,7 +29529,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -29272,7 +29596,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true
+              "isBeta": false
             },
             "ResponseType": {
               "kind": "enum",
@@ -29560,7 +29884,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Fourth": {
                   "kind": "enum value",
@@ -29573,7 +29897,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Last": {
                   "kind": "enum value",
@@ -29586,7 +29910,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Second": {
                   "kind": "enum value",
@@ -29599,7 +29923,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 },
                 "Third": {
                   "kind": "enum value",
@@ -29612,7 +29936,7 @@
                     }
                   ],
                   "remarks": [],
-                  "isBeta": true
+                  "isBeta": false
                 }
               },
               "deprecatedMessage": [],
@@ -29626,7 +29950,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -29693,7 +30017,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true
+              "isBeta": false
             }
           }
         },
@@ -30767,7 +31091,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -30843,14 +31167,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -30964,7 +31288,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -31196,7 +31520,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -32158,7 +32482,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate."
+                  "text": "The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the owner, and the sender property represents the delegate."
                 },
                 {
                   "kind": "paragraph"
@@ -32172,7 +32496,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -32268,7 +32592,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -33056,7 +33380,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -33152,7 +33476,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -33463,14 +33787,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -33584,7 +33908,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -33899,7 +34223,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -33995,7 +34319,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -34611,14 +34935,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -34732,7 +35056,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -38933,7 +39257,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -39029,7 +39353,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -39106,14 +39430,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`."
+                  "text": "Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -39227,7 +39551,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -39419,7 +39743,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -39515,7 +39839,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -40484,7 +40808,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -40658,7 +40982,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -40873,7 +41197,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -40928,7 +41252,7 @@
             },
             {
               "kind": "text",
-              "text": "[Api set: Mailbox Preview]"
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -41028,7 +41352,7 @@
               "text": ""
             }
           ],
-          "isBeta": true,
+          "isBeta": false,
           "isSealed": false,
           "members": {
             "getAsync": {
@@ -41097,7 +41421,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -41197,7 +41521,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -41729,7 +42053,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -41939,7 +42263,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -42221,7 +42545,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -42276,7 +42600,7 @@
             },
             {
               "kind": "text",
-              "text": "[Api set: Mailbox Preview]"
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -42842,7 +43166,7 @@
               "text": ""
             }
           ],
-          "isBeta": true,
+          "isBeta": false,
           "isSealed": false,
           "members": {
             "getAsync": {
@@ -42899,7 +43223,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -42995,7 +43319,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -43005,18 +43329,18 @@
                   "text": "`getAsync(callback?: (result: AsyncResult<Office.Recurrence>) => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
             },
             "recurrenceProperties": {
               "kind": "property",
-              "signature": "recurrenceProperties: RecurrenceProperties;",
+              "signature": "recurrenceProperties: Office.RecurrenceProperties;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "RecurrenceProperties",
+              "type": "Office.RecurrenceProperties",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -43028,7 +43352,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43124,7 +43448,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43132,11 +43456,11 @@
             },
             "recurrenceTimeZone": {
               "kind": "property",
-              "signature": "recurrenceTimeZone: Office.MailboxEnums.RecurrenceTimeZone;",
+              "signature": "recurrenceTimeZone: Office.RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "type": "Office.RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -43148,7 +43472,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43244,7 +43568,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43268,7 +43592,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43364,7 +43688,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43407,7 +43731,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43503,7 +43827,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43575,7 +43899,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43706,7 +44030,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -43724,7 +44048,7 @@
                   "text": ") => void): void;`"
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -43740,14 +44064,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Gets or sets the properties of the recurrence."
+              "text": "Represents the properties of the recurrence."
             },
             {
               "kind": "paragraph"
             },
             {
               "kind": "text",
-              "text": "[Api set: Mailbox Preview]"
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -43843,7 +44167,7 @@
               "text": ""
             }
           ],
-          "isBeta": true,
+          "isBeta": false,
           "isSealed": false,
           "members": {
             "dayOfMonth": {
@@ -43861,7 +44185,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43882,7 +44206,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43903,7 +44227,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43924,7 +44248,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43945,7 +44269,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43966,7 +44290,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -43987,7 +44311,166 @@
                 }
               ],
               "remarks": [],
-              "isBeta": true,
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "RecurrenceTimeZone": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the time zone of the recurrence."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose or read"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "text",
+              "text": ""
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "name": {
+              "kind": "property",
+              "signature": "name: Office.MailboxEnums.RecurrenceTimeZone;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the name of the recurrence time zone."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "offset": {
+              "kind": "property",
+              "signature": "offset: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -44988,7 +45471,7 @@
             },
             {
               "kind": "text",
-              "text": "[Api set: Mailbox Preview]"
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -45088,7 +45571,7 @@
               "text": ""
             }
           ],
-          "isBeta": true,
+          "isBeta": false,
           "isSealed": false,
           "members": {
             "getDuration": {
@@ -45113,7 +45596,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45213,7 +45696,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45254,7 +45737,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45354,7 +45837,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45395,7 +45878,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45495,7 +45978,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45536,7 +46019,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45636,7 +46119,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45677,7 +46160,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45777,7 +46260,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45817,7 +46300,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45917,7 +46400,7 @@
                   "text": ""
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -45981,7 +46464,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46116,7 +46599,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -46140,7 +46623,7 @@
                   "text": " date format: \"YYYY-MM-DD\")."
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -46204,7 +46687,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46339,7 +46822,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -46363,7 +46846,7 @@
                   "text": " date format: \"YYYY-MM-DD\")."
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -46415,7 +46898,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46550,7 +47033,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -46560,10 +47043,194 @@
                   "text": "`setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard datetime string format: \"THH:mm:ss:mmm\")."
                 }
               ],
-              "isBeta": true,
+              "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            }
+          }
+        },
+        "SharedProperties": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the properties of an appointment or message in a shared folder, mailbox, or calendar."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": ""
+            },
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose or read"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "text",
+              "text": ""
+            }
+          ],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "delegatePermissions": {
+              "kind": "property",
+              "signature": "delegatePermissions: Office.MailboxEnums.DelegatePermissions;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.DelegatePermissions",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The permissions that the delegate has on a shared folder."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "owner": {
+              "kind": "property",
+              "signature": "owner: String;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "String",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The email address of the owner of a shared item."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "restUrl": {
+              "kind": "property",
+              "signature": "restUrl: String;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "String",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The remote REST url related to the owner’s mailbox."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -46875,7 +47542,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -47099,7 +47766,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"
@@ -47600,7 +48267,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has this signature:"
+                  "text": "In addition to this signature, this method also has the following signature:"
                 },
                 {
                   "kind": "paragraph"
@@ -47831,7 +48498,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In addition to the main signature, this method also has these signatures:"
+                  "text": "In addition to this signature, this method also has the following signatures:"
                 },
                 {
                   "kind": "paragraph"

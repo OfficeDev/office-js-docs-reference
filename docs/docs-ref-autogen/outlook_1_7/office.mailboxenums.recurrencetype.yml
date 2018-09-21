@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+    summary: |-
+      Specifies the type of recurrence.
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    name: Office.MailboxEnums.RecurrenceType
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+    langs:
+      - typeScript
+    type: enum
+    package: Outlook_1_7
+    children:
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType.Daily
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType.Monthly
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekday
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekly
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType.Yearly
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Daily
+    summary: Daily.
+    name: Daily
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Daily
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"daily"'
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Monthly
+    summary: Monthly.
+    name: Monthly
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Monthly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"monthly"'
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekday
+    summary: Weekday.
+    name: Weekday
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekday"'
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekly
+    summary: Weekly.
+    name: Weekly
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"weekly"'
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Yearly
+    summary: Yearly.
+    name: Yearly
+    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Yearly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"yearly"'
