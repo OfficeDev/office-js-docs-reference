@@ -1,0 +1,77 @@
+{
+  "kind": "package",
+  "name": "custom-functions-runtime",
+  "summary": [],
+  "remarks": [],
+  "exports": {
+    "CustomFunctions": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "CancelableHandler": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "onCanceled": {
+              "kind": "property",
+              "signature": "onCanceled: () => void;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "() => void",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "StreamingHandler": {
+          "kind": "interface",
+          "extends": "CancelableHandler",
+          "implements": "",
+          "typeParameters": [
+            "T"
+          ],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "setResult": {
+              "kind": "property",
+              "signature": "setResult: (value: T) => void;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "(value: T) => void",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

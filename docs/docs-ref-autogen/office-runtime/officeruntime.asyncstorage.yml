@@ -1,0 +1,182 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-runtime.OfficeRuntime.AsyncStorage
+    name: OfficeRuntime.AsyncStorage
+    fullName: office-runtime.OfficeRuntime.AsyncStorage
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime
+    children:
+      - office-runtime.OfficeRuntime.AsyncStorage.clear
+      - office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
+      - office-runtime.OfficeRuntime.AsyncStorage.getItem
+      - office-runtime.OfficeRuntime.AsyncStorage.multiGet
+      - office-runtime.OfficeRuntime.AsyncStorage.multiRemove
+      - office-runtime.OfficeRuntime.AsyncStorage.multiSet
+      - office-runtime.OfficeRuntime.AsyncStorage.removeItem
+      - office-runtime.OfficeRuntime.AsyncStorage.setItem
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.clear
+    name: clear(callback)
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(callback?: (error?: Error) => void): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(error?: Error) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
+    name: getAllKeys(callback)
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllKeys(callback?: (error?: Error, keys?: string[]) => void): Promise<string[]>;'
+      return:
+        type:
+          - 'Promise<string[]>'
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(error?: Error, keys?: string[]) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.getItem
+    name: 'getItem(key, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string, callback?: (error?: Error, result?: string) => void): Promise<string>;'
+      return:
+        type:
+          - Promise<string>
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
+          type:
+            - '(error?: Error, result?: string) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.multiGet
+    name: 'multiGet(keys, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.multiGet
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'multiGet(keys: string[], callback?: (errors?: Error[], result?: string[][]) => void): Promise<string[][]>;'
+      return:
+        type:
+          - 'Promise<string[][]>'
+        description: ''
+      parameters:
+        - id: keys
+          description: ''
+          type:
+            - 'string[]'
+        - id: callback
+          description: ''
+          type:
+            - '(errors?: Error[], result?: string[][]) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
+    name: 'multiRemove(keys, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'multiRemove(keys: string[], callback?: (errors?: Error[]) => void): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''
+      parameters:
+        - id: keys
+          description: ''
+          type:
+            - 'string[]'
+        - id: callback
+          description: ''
+          type:
+            - '(errors?: Error[]) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.multiSet
+    name: 'multiSet(keyValuePairs, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.multiSet
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'multiSet(keyValuePairs: string[][], callback?: (errors?: Error[]) => void): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''
+      parameters:
+        - id: keyValuePairs
+          description: ''
+          type:
+            - 'string[][]'
+        - id: callback
+          description: ''
+          type:
+            - '(errors?: Error[]) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.removeItem
+    name: 'removeItem(key, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.removeItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeItem(key: string, callback?: (error?: Error) => void): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
+          type:
+            - '(error?: Error) => void'
+  - uid: office-runtime.OfficeRuntime.AsyncStorage.setItem
+    name: 'setItem(key, value, callback)'
+    fullName: office-runtime.OfficeRuntime.AsyncStorage.setItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItem(key: string, value: string, callback?: (error?: Error) => void): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
+          type:
+            - '(error?: Error) => void'
