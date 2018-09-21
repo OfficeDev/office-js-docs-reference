@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetCalculatedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the Calculated event.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetCalculatedEventArgs
+    fullName: excel.Excel.WorksheetCalculatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetCalculatedEventArgs.type
+      - excel.Excel.WorksheetCalculatedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetCalculatedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: excel.Excel.WorksheetCalculatedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetCalculated";'
+      return:
+        type:
+          - '"WorksheetCalculated"'
+  - uid: excel.Excel.WorksheetCalculatedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet that is calculated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: excel.Excel.WorksheetCalculatedEventArgs.worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

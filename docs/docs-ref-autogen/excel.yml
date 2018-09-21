@@ -7,7 +7,9 @@ items:
       - typeScript
     type: package
     children:
+      - excel.Excel.AggregationFunction
       - excel.Excel.Application
+      - excel.Excel.BasicDataValidation
       - excel.Excel.Binding
       - excel.Excel.BindingCollection
       - excel.Excel.BindingDataChangedEventArgs
@@ -21,6 +23,8 @@ items:
       - excel.Excel.CalculationType
       - excel.Excel.CellValueConditionalFormat
       - excel.Excel.Chart
+      - excel.Excel.ChartActivatedEventArgs
+      - excel.Excel.ChartAddedEventArgs
       - excel.Excel.ChartAreaFormat
       - excel.Excel.ChartAxes
       - excel.Excel.ChartAxis
@@ -38,10 +42,14 @@ items:
       - excel.Excel.ChartAxisType
       - excel.Excel.ChartBorder
       - excel.Excel.ChartCollection
+      - excel.Excel.ChartColorScheme
       - excel.Excel.ChartDataLabel
       - excel.Excel.ChartDataLabelFormat
       - excel.Excel.ChartDataLabelPosition
       - excel.Excel.ChartDataLabels
+      - excel.Excel.ChartDeactivatedEventArgs
+      - excel.Excel.ChartDeletedEventArgs
+      - excel.Excel.ChartDisplayBlanksAs
       - excel.Excel.ChartFill
       - excel.Excel.ChartFont
       - excel.Excel.ChartFormatString
@@ -55,6 +63,10 @@ items:
       - excel.Excel.ChartLineFormat
       - excel.Excel.ChartLineStyle
       - excel.Excel.ChartMarkerStyle
+      - excel.Excel.ChartPlotArea
+      - excel.Excel.ChartPlotAreaFormat
+      - excel.Excel.ChartPlotAreaPosition
+      - excel.Excel.ChartPlotBy
       - excel.Excel.ChartPoint
       - excel.Excel.ChartPointFormat
       - excel.Excel.ChartPointsCollection
@@ -62,14 +74,18 @@ items:
       - excel.Excel.ChartSeriesBy
       - excel.Excel.ChartSeriesCollection
       - excel.Excel.ChartSeriesFormat
+      - excel.Excel.ChartSplitStype
       - excel.Excel.ChartTextHorizontalAlignment
       - excel.Excel.ChartTextVerticalAlignment
+      - excel.Excel.ChartTickLabelAlignment
       - excel.Excel.ChartTitle
       - excel.Excel.ChartTitleFormat
       - excel.Excel.ChartTitlePosition
       - excel.Excel.ChartTrendline
       - excel.Excel.ChartTrendlineCollection
       - excel.Excel.ChartTrendlineFormat
+      - excel.Excel.ChartTrendlineLabel
+      - excel.Excel.ChartTrendlineLabelFormat
       - excel.Excel.ChartTrendlineType
       - excel.Excel.ChartType
       - excel.Excel.ChartUnderlineStyle
@@ -108,7 +124,9 @@ items:
       - excel.Excel.ConditionalTextOperator
       - excel.Excel.ConditionalTopBottomCriterionType
       - excel.Excel.ConditionalTopBottomRule
+      - excel.Excel.createWorkbook
       - excel.Excel.CustomConditionalFormat
+      - excel.Excel.CustomDataValidation
       - excel.Excel.CustomProperty
       - excel.Excel.CustomPropertyCollection
       - excel.Excel.CustomXmlPart
@@ -117,6 +135,16 @@ items:
       - excel.Excel.DataBarConditionalFormat
       - excel.Excel.DataChangeType
       - excel.Excel.DataConnectionCollection
+      - excel.Excel.DataPivotHierarchy
+      - excel.Excel.DataPivotHierarchyCollection
+      - excel.Excel.DataValidation
+      - excel.Excel.DataValidationAlertStyle
+      - excel.Excel.DataValidationErrorAlert
+      - excel.Excel.DataValidationOperator
+      - excel.Excel.DataValidationPrompt
+      - excel.Excel.DataValidationRule
+      - excel.Excel.DataValidationType
+      - excel.Excel.DateTimeDataValidation
       - excel.Excel.DeleteShiftDirection
       - excel.Excel.DocumentProperties
       - excel.Excel.DocumentPropertyItem
@@ -131,6 +159,8 @@ items:
       - excel.Excel.FilterDatetimeSpecificity
       - excel.Excel.FilterOn
       - excel.Excel.FilterOperator
+      - excel.Excel.FilterPivotHierarchy
+      - excel.Excel.FilterPivotHierarchyCollection
       - excel.Excel.FiveArrowsGraySet
       - excel.Excel.FiveArrowsSet
       - excel.Excel.FiveBoxesSet
@@ -199,6 +229,10 @@ items:
       - excel.Excel.Interfaces.ChartLegendUpdateData
       - excel.Excel.Interfaces.ChartLineFormatData
       - excel.Excel.Interfaces.ChartLineFormatUpdateData
+      - excel.Excel.Interfaces.ChartPlotAreaData
+      - excel.Excel.Interfaces.ChartPlotAreaFormatData
+      - excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+      - excel.Excel.Interfaces.ChartPlotAreaUpdateData
       - excel.Excel.Interfaces.ChartPointData
       - excel.Excel.Interfaces.ChartPointFormatData
       - excel.Excel.Interfaces.ChartPointFormatUpdateData
@@ -220,6 +254,10 @@ items:
       - excel.Excel.Interfaces.ChartTrendlineData
       - excel.Excel.Interfaces.ChartTrendlineFormatData
       - excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
+      - excel.Excel.Interfaces.ChartTrendlineLabelData
+      - excel.Excel.Interfaces.ChartTrendlineLabelFormatData
+      - excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+      - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
       - excel.Excel.Interfaces.ChartTrendlineUpdateData
       - excel.Excel.Interfaces.ChartUpdateData
       - excel.Excel.Interfaces.ColorScaleConditionalFormatData
@@ -257,9 +295,19 @@ items:
       - excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
       - excel.Excel.Interfaces.DataBarConditionalFormatData
       - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+      - excel.Excel.Interfaces.DataPivotHierarchyData
+      - excel.Excel.Interfaces.DataPivotHierarchyUpdateData
+      - excel.Excel.Interfaces.DataValidationData
+      - excel.Excel.Interfaces.DataValidationUpdateData
       - excel.Excel.Interfaces.DocumentPropertiesData
       - excel.Excel.Interfaces.DocumentPropertiesUpdateData
       - excel.Excel.Interfaces.FilterData
+      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+      - excel.Excel.Interfaces.FilterPivotHierarchyData
+      - excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
       - excel.Excel.Interfaces.FormatProtectionData
       - excel.Excel.Interfaces.FormatProtectionUpdateData
       - excel.Excel.Interfaces.FunctionResultData
@@ -270,6 +318,20 @@ items:
       - excel.Excel.Interfaces.NamedItemCollectionUpdateData
       - excel.Excel.Interfaces.NamedItemData
       - excel.Excel.Interfaces.NamedItemUpdateData
+      - excel.Excel.Interfaces.PivotFieldCollectionData
+      - excel.Excel.Interfaces.PivotFieldCollectionUpdateData
+      - excel.Excel.Interfaces.PivotFieldData
+      - excel.Excel.Interfaces.PivotFieldUpdateData
+      - excel.Excel.Interfaces.PivotHierarchyCollectionData
+      - excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData
+      - excel.Excel.Interfaces.PivotHierarchyData
+      - excel.Excel.Interfaces.PivotHierarchyUpdateData
+      - excel.Excel.Interfaces.PivotItemCollectionData
+      - excel.Excel.Interfaces.PivotItemCollectionUpdateData
+      - excel.Excel.Interfaces.PivotItemData
+      - excel.Excel.Interfaces.PivotItemUpdateData
+      - excel.Excel.Interfaces.PivotLayoutData
+      - excel.Excel.Interfaces.PivotLayoutUpdateData
       - excel.Excel.Interfaces.PivotTableCollectionData
       - excel.Excel.Interfaces.PivotTableCollectionUpdateData
       - excel.Excel.Interfaces.PivotTableData
@@ -292,6 +354,12 @@ items:
       - excel.Excel.Interfaces.RangeViewCollectionUpdateData
       - excel.Excel.Interfaces.RangeViewData
       - excel.Excel.Interfaces.RangeViewUpdateData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+      - excel.Excel.Interfaces.RuntimeData
+      - excel.Excel.Interfaces.RuntimeUpdateData
       - excel.Excel.Interfaces.SettingCollectionData
       - excel.Excel.Interfaces.SettingCollectionUpdateData
       - excel.Excel.Interfaces.SettingData
@@ -317,6 +385,7 @@ items:
       - excel.Excel.Interfaces.TextConditionalFormatUpdateData
       - excel.Excel.Interfaces.TopBottomConditionalFormatData
       - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+      - excel.Excel.Interfaces.WorkbookCreatedData
       - excel.Excel.Interfaces.WorkbookData
       - excel.Excel.Interfaces.WorkbookProtectionData
       - excel.Excel.Interfaces.WorkbookUpdateData
@@ -325,12 +394,21 @@ items:
       - excel.Excel.Interfaces.WorksheetData
       - excel.Excel.Interfaces.WorksheetProtectionData
       - excel.Excel.Interfaces.WorksheetUpdateData
+      - excel.Excel.ListDataValidation
       - excel.Excel.NamedItem
       - excel.Excel.NamedItemArrayValues
       - excel.Excel.NamedItemCollection
       - excel.Excel.NamedItemScope
       - excel.Excel.NamedItemType
       - excel.Excel.PageOrientation
+      - excel.Excel.PivotField
+      - excel.Excel.PivotFieldCollection
+      - excel.Excel.PivotHierarchy
+      - excel.Excel.PivotHierarchyCollection
+      - excel.Excel.PivotItem
+      - excel.Excel.PivotItemCollection
+      - excel.Excel.PivotLayout
+      - excel.Excel.PivotLayoutType
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
       - excel.Excel.PresetCriteriaConditionalFormat
@@ -350,6 +428,8 @@ items:
       - excel.Excel.RangeViewCollection
       - excel.Excel.ReadingOrder
       - excel.Excel.RequestContext
+      - excel.Excel.RowColumnPivotHierarchy
+      - excel.Excel.RowColumnPivotHierarchyCollection
       - excel.Excel.run
       - excel.Excel.RunOptions
       - excel.Excel.Runtime
@@ -359,6 +439,9 @@ items:
       - excel.Excel.SettingCollection
       - excel.Excel.SettingsChangedEventArgs
       - excel.Excel.SheetVisibility
+      - excel.Excel.ShowAsCalculation
+      - excel.Excel.ShowAsRule
+      - excel.Excel.SortBy
       - excel.Excel.SortDataOption
       - excel.Excel.SortField
       - excel.Excel.SortMethod
@@ -366,6 +449,8 @@ items:
       - excel.Excel.SortOrientation
       - excel.Excel.Style
       - excel.Excel.StyleCollection
+      - excel.Excel.SubtotalLocationType
+      - excel.Excel.Subtotals
       - excel.Excel.Table
       - excel.Excel.TableChangedEventArgs
       - excel.Excel.TableCollection
@@ -389,10 +474,12 @@ items:
       - excel.Excel.TopBottomConditionalFormat
       - excel.Excel.VerticalAlignment
       - excel.Excel.Workbook
+      - excel.Excel.WorkbookCreated
       - excel.Excel.WorkbookProtection
       - excel.Excel.Worksheet
       - excel.Excel.WorksheetActivatedEventArgs
       - excel.Excel.WorksheetAddedEventArgs
+      - excel.Excel.WorksheetCalculatedEventArgs
       - excel.Excel.WorksheetChangedEventArgs
       - excel.Excel.WorksheetCollection
       - excel.Excel.WorksheetDeactivatedEventArgs
@@ -402,6 +489,27 @@ items:
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
       - excel.Excel.WorksheetSelectionChangedEventArgs
+  - uid: excel.Excel.createWorkbook
+    summary: |-
+      Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: createWorkbook(base64)
+    fullName: excel.Excel.createWorkbook
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function createWorkbook(base64?: string): Promise<object>;'
+      return:
+        type:
+          - Promise<object>
+        description: ''
+      parameters:
+        - id: base64
+          description: ''
+          type:
+            - string
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -451,8 +559,12 @@ items:
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
 references:
+  - uid: excel.Excel.AggregationFunction
+    name: Excel.AggregationFunction
   - uid: excel.Excel.Application
     name: Excel.Application
+  - uid: excel.Excel.BasicDataValidation
+    name: Excel.BasicDataValidation
   - uid: excel.Excel.Binding
     name: Excel.Binding
   - uid: excel.Excel.BindingCollection
@@ -479,6 +591,10 @@ references:
     name: Excel.CellValueConditionalFormat
   - uid: excel.Excel.Chart
     name: Excel.Chart
+  - uid: excel.Excel.ChartActivatedEventArgs
+    name: Excel.ChartActivatedEventArgs
+  - uid: excel.Excel.ChartAddedEventArgs
+    name: Excel.ChartAddedEventArgs
   - uid: excel.Excel.ChartAreaFormat
     name: Excel.ChartAreaFormat
   - uid: excel.Excel.ChartAxes
@@ -513,6 +629,8 @@ references:
     name: Excel.ChartBorder
   - uid: excel.Excel.ChartCollection
     name: Excel.ChartCollection
+  - uid: excel.Excel.ChartColorScheme
+    name: Excel.ChartColorScheme
   - uid: excel.Excel.ChartDataLabel
     name: Excel.ChartDataLabel
   - uid: excel.Excel.ChartDataLabelFormat
@@ -521,6 +639,12 @@ references:
     name: Excel.ChartDataLabelPosition
   - uid: excel.Excel.ChartDataLabels
     name: Excel.ChartDataLabels
+  - uid: excel.Excel.ChartDeactivatedEventArgs
+    name: Excel.ChartDeactivatedEventArgs
+  - uid: excel.Excel.ChartDeletedEventArgs
+    name: Excel.ChartDeletedEventArgs
+  - uid: excel.Excel.ChartDisplayBlanksAs
+    name: Excel.ChartDisplayBlanksAs
   - uid: excel.Excel.ChartFill
     name: Excel.ChartFill
   - uid: excel.Excel.ChartFont
@@ -547,6 +671,14 @@ references:
     name: Excel.ChartLineStyle
   - uid: excel.Excel.ChartMarkerStyle
     name: Excel.ChartMarkerStyle
+  - uid: excel.Excel.ChartPlotArea
+    name: Excel.ChartPlotArea
+  - uid: excel.Excel.ChartPlotAreaFormat
+    name: Excel.ChartPlotAreaFormat
+  - uid: excel.Excel.ChartPlotAreaPosition
+    name: Excel.ChartPlotAreaPosition
+  - uid: excel.Excel.ChartPlotBy
+    name: Excel.ChartPlotBy
   - uid: excel.Excel.ChartPoint
     name: Excel.ChartPoint
   - uid: excel.Excel.ChartPointFormat
@@ -561,10 +693,14 @@ references:
     name: Excel.ChartSeriesCollection
   - uid: excel.Excel.ChartSeriesFormat
     name: Excel.ChartSeriesFormat
+  - uid: excel.Excel.ChartSplitStype
+    name: Excel.ChartSplitStype
   - uid: excel.Excel.ChartTextHorizontalAlignment
     name: Excel.ChartTextHorizontalAlignment
   - uid: excel.Excel.ChartTextVerticalAlignment
     name: Excel.ChartTextVerticalAlignment
+  - uid: excel.Excel.ChartTickLabelAlignment
+    name: Excel.ChartTickLabelAlignment
   - uid: excel.Excel.ChartTitle
     name: Excel.ChartTitle
   - uid: excel.Excel.ChartTitleFormat
@@ -577,6 +713,10 @@ references:
     name: Excel.ChartTrendlineCollection
   - uid: excel.Excel.ChartTrendlineFormat
     name: Excel.ChartTrendlineFormat
+  - uid: excel.Excel.ChartTrendlineLabel
+    name: Excel.ChartTrendlineLabel
+  - uid: excel.Excel.ChartTrendlineLabelFormat
+    name: Excel.ChartTrendlineLabelFormat
   - uid: excel.Excel.ChartTrendlineType
     name: Excel.ChartTrendlineType
   - uid: excel.Excel.ChartType
@@ -655,6 +795,8 @@ references:
     name: Excel.ConditionalTopBottomRule
   - uid: excel.Excel.CustomConditionalFormat
     name: Excel.CustomConditionalFormat
+  - uid: excel.Excel.CustomDataValidation
+    name: Excel.CustomDataValidation
   - uid: excel.Excel.CustomProperty
     name: Excel.CustomProperty
   - uid: excel.Excel.CustomPropertyCollection
@@ -671,6 +813,26 @@ references:
     name: Excel.DataChangeType
   - uid: excel.Excel.DataConnectionCollection
     name: Excel.DataConnectionCollection
+  - uid: excel.Excel.DataPivotHierarchy
+    name: Excel.DataPivotHierarchy
+  - uid: excel.Excel.DataPivotHierarchyCollection
+    name: Excel.DataPivotHierarchyCollection
+  - uid: excel.Excel.DataValidation
+    name: Excel.DataValidation
+  - uid: excel.Excel.DataValidationAlertStyle
+    name: Excel.DataValidationAlertStyle
+  - uid: excel.Excel.DataValidationErrorAlert
+    name: Excel.DataValidationErrorAlert
+  - uid: excel.Excel.DataValidationOperator
+    name: Excel.DataValidationOperator
+  - uid: excel.Excel.DataValidationPrompt
+    name: Excel.DataValidationPrompt
+  - uid: excel.Excel.DataValidationRule
+    name: Excel.DataValidationRule
+  - uid: excel.Excel.DataValidationType
+    name: Excel.DataValidationType
+  - uid: excel.Excel.DateTimeDataValidation
+    name: Excel.DateTimeDataValidation
   - uid: excel.Excel.DeleteShiftDirection
     name: Excel.DeleteShiftDirection
   - uid: excel.Excel.DocumentProperties
@@ -699,6 +861,10 @@ references:
     name: Excel.FilterOn
   - uid: excel.Excel.FilterOperator
     name: Excel.FilterOperator
+  - uid: excel.Excel.FilterPivotHierarchy
+    name: Excel.FilterPivotHierarchy
+  - uid: excel.Excel.FilterPivotHierarchyCollection
+    name: Excel.FilterPivotHierarchyCollection
   - uid: excel.Excel.FiveArrowsGraySet
     name: Excel.FiveArrowsGraySet
   - uid: excel.Excel.FiveArrowsSet
@@ -835,6 +1001,14 @@ references:
     name: Excel.Interfaces.ChartLineFormatData
   - uid: excel.Excel.Interfaces.ChartLineFormatUpdateData
     name: Excel.Interfaces.ChartLineFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaData
+    name: Excel.Interfaces.ChartPlotAreaData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatData
+    name: Excel.Interfaces.ChartPlotAreaFormatData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaUpdateData
+    name: Excel.Interfaces.ChartPlotAreaUpdateData
   - uid: excel.Excel.Interfaces.ChartPointData
     name: Excel.Interfaces.ChartPointData
   - uid: excel.Excel.Interfaces.ChartPointFormatData
@@ -877,6 +1051,14 @@ references:
     name: Excel.Interfaces.ChartTrendlineFormatData
   - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
     name: Excel.Interfaces.ChartTrendlineFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData
+    name: Excel.Interfaces.ChartTrendlineLabelData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatData
+    name: Excel.Interfaces.ChartTrendlineLabelFormatData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+    name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
+    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
   - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData
     name: Excel.Interfaces.ChartTrendlineUpdateData
   - uid: excel.Excel.Interfaces.ChartUpdateData
@@ -951,12 +1133,32 @@ references:
     name: Excel.Interfaces.DataBarConditionalFormatData
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
     name: Excel.Interfaces.DataBarConditionalFormatUpdateData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionData
+    name: Excel.Interfaces.DataPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+    name: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyData
+    name: Excel.Interfaces.DataPivotHierarchyData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData
+    name: Excel.Interfaces.DataPivotHierarchyUpdateData
+  - uid: excel.Excel.Interfaces.DataValidationData
+    name: Excel.Interfaces.DataValidationData
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData
+    name: Excel.Interfaces.DataValidationUpdateData
   - uid: excel.Excel.Interfaces.DocumentPropertiesData
     name: Excel.Interfaces.DocumentPropertiesData
   - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData
     name: Excel.Interfaces.DocumentPropertiesUpdateData
   - uid: excel.Excel.Interfaces.FilterData
     name: Excel.Interfaces.FilterData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionData
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData
+    name: Excel.Interfaces.FilterPivotHierarchyData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
+    name: Excel.Interfaces.FilterPivotHierarchyUpdateData
   - uid: excel.Excel.Interfaces.FormatProtectionData
     name: Excel.Interfaces.FormatProtectionData
   - uid: excel.Excel.Interfaces.FormatProtectionUpdateData
@@ -977,6 +1179,34 @@ references:
     name: Excel.Interfaces.NamedItemData
   - uid: excel.Excel.Interfaces.NamedItemUpdateData
     name: Excel.Interfaces.NamedItemUpdateData
+  - uid: excel.Excel.Interfaces.PivotFieldCollectionData
+    name: Excel.Interfaces.PivotFieldCollectionData
+  - uid: excel.Excel.Interfaces.PivotFieldCollectionUpdateData
+    name: Excel.Interfaces.PivotFieldCollectionUpdateData
+  - uid: excel.Excel.Interfaces.PivotFieldData
+    name: Excel.Interfaces.PivotFieldData
+  - uid: excel.Excel.Interfaces.PivotFieldUpdateData
+    name: Excel.Interfaces.PivotFieldUpdateData
+  - uid: excel.Excel.Interfaces.PivotHierarchyCollectionData
+    name: Excel.Interfaces.PivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData
+    name: Excel.Interfaces.PivotHierarchyCollectionUpdateData
+  - uid: excel.Excel.Interfaces.PivotHierarchyData
+    name: Excel.Interfaces.PivotHierarchyData
+  - uid: excel.Excel.Interfaces.PivotHierarchyUpdateData
+    name: Excel.Interfaces.PivotHierarchyUpdateData
+  - uid: excel.Excel.Interfaces.PivotItemCollectionData
+    name: Excel.Interfaces.PivotItemCollectionData
+  - uid: excel.Excel.Interfaces.PivotItemCollectionUpdateData
+    name: Excel.Interfaces.PivotItemCollectionUpdateData
+  - uid: excel.Excel.Interfaces.PivotItemData
+    name: Excel.Interfaces.PivotItemData
+  - uid: excel.Excel.Interfaces.PivotItemUpdateData
+    name: Excel.Interfaces.PivotItemUpdateData
+  - uid: excel.Excel.Interfaces.PivotLayoutData
+    name: Excel.Interfaces.PivotLayoutData
+  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData
+    name: Excel.Interfaces.PivotLayoutUpdateData
   - uid: excel.Excel.Interfaces.PivotTableCollectionData
     name: Excel.Interfaces.PivotTableCollectionData
   - uid: excel.Excel.Interfaces.PivotTableCollectionUpdateData
@@ -1021,6 +1251,18 @@ references:
     name: Excel.Interfaces.RangeViewData
   - uid: excel.Excel.Interfaces.RangeViewUpdateData
     name: Excel.Interfaces.RangeViewUpdateData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData
+    name: Excel.Interfaces.RowColumnPivotHierarchyData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+  - uid: excel.Excel.Interfaces.RuntimeData
+    name: Excel.Interfaces.RuntimeData
+  - uid: excel.Excel.Interfaces.RuntimeUpdateData
+    name: Excel.Interfaces.RuntimeUpdateData
   - uid: excel.Excel.Interfaces.SettingCollectionData
     name: Excel.Interfaces.SettingCollectionData
   - uid: excel.Excel.Interfaces.SettingCollectionUpdateData
@@ -1071,6 +1313,8 @@ references:
     name: Excel.Interfaces.TopBottomConditionalFormatData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
     name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+  - uid: excel.Excel.Interfaces.WorkbookCreatedData
+    name: Excel.Interfaces.WorkbookCreatedData
   - uid: excel.Excel.Interfaces.WorkbookData
     name: Excel.Interfaces.WorkbookData
   - uid: excel.Excel.Interfaces.WorkbookProtectionData
@@ -1087,6 +1331,8 @@ references:
     name: Excel.Interfaces.WorksheetProtectionData
   - uid: excel.Excel.Interfaces.WorksheetUpdateData
     name: Excel.Interfaces.WorksheetUpdateData
+  - uid: excel.Excel.ListDataValidation
+    name: Excel.ListDataValidation
   - uid: excel.Excel.NamedItem
     name: Excel.NamedItem
   - uid: excel.Excel.NamedItemArrayValues
@@ -1099,6 +1345,22 @@ references:
     name: Excel.NamedItemType
   - uid: excel.Excel.PageOrientation
     name: Excel.PageOrientation
+  - uid: excel.Excel.PivotField
+    name: Excel.PivotField
+  - uid: excel.Excel.PivotFieldCollection
+    name: Excel.PivotFieldCollection
+  - uid: excel.Excel.PivotHierarchy
+    name: Excel.PivotHierarchy
+  - uid: excel.Excel.PivotHierarchyCollection
+    name: Excel.PivotHierarchyCollection
+  - uid: excel.Excel.PivotItem
+    name: Excel.PivotItem
+  - uid: excel.Excel.PivotItemCollection
+    name: Excel.PivotItemCollection
+  - uid: excel.Excel.PivotLayout
+    name: Excel.PivotLayout
+  - uid: excel.Excel.PivotLayoutType
+    name: Excel.PivotLayoutType
   - uid: excel.Excel.PivotTable
     name: Excel.PivotTable
   - uid: excel.Excel.PivotTableCollection
@@ -1137,6 +1399,10 @@ references:
     name: Excel.ReadingOrder
   - uid: excel.Excel.RequestContext
     name: Excel.RequestContext
+  - uid: excel.Excel.RowColumnPivotHierarchy
+    name: Excel.RowColumnPivotHierarchy
+  - uid: excel.Excel.RowColumnPivotHierarchyCollection
+    name: Excel.RowColumnPivotHierarchyCollection
   - uid: excel.Excel.RunOptions
     name: Excel.RunOptions
   - uid: excel.Excel.Runtime
@@ -1153,6 +1419,12 @@ references:
     name: Excel.SettingsChangedEventArgs
   - uid: excel.Excel.SheetVisibility
     name: Excel.SheetVisibility
+  - uid: excel.Excel.ShowAsCalculation
+    name: Excel.ShowAsCalculation
+  - uid: excel.Excel.ShowAsRule
+    name: Excel.ShowAsRule
+  - uid: excel.Excel.SortBy
+    name: Excel.SortBy
   - uid: excel.Excel.SortDataOption
     name: Excel.SortDataOption
   - uid: excel.Excel.SortField
@@ -1167,6 +1439,10 @@ references:
     name: Excel.Style
   - uid: excel.Excel.StyleCollection
     name: Excel.StyleCollection
+  - uid: excel.Excel.SubtotalLocationType
+    name: Excel.SubtotalLocationType
+  - uid: excel.Excel.Subtotals
+    name: Excel.Subtotals
   - uid: excel.Excel.Table
     name: Excel.Table
   - uid: excel.Excel.TableChangedEventArgs
@@ -1213,6 +1489,8 @@ references:
     name: Excel.VerticalAlignment
   - uid: excel.Excel.Workbook
     name: Excel.Workbook
+  - uid: excel.Excel.WorkbookCreated
+    name: Excel.WorkbookCreated
   - uid: excel.Excel.WorkbookProtection
     name: Excel.WorkbookProtection
   - uid: excel.Excel.Worksheet
@@ -1221,6 +1499,8 @@ references:
     name: Excel.WorksheetActivatedEventArgs
   - uid: excel.Excel.WorksheetAddedEventArgs
     name: Excel.WorksheetAddedEventArgs
+  - uid: excel.Excel.WorksheetCalculatedEventArgs
+    name: Excel.WorksheetCalculatedEventArgs
   - uid: excel.Excel.WorksheetChangedEventArgs
     name: Excel.WorksheetChangedEventArgs
   - uid: excel.Excel.WorksheetCollection

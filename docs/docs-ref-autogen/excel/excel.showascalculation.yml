@@ -1,0 +1,160 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShowAsCalculation
+    summary: |-
+      The ShowAs Calculation function for the Data Pivot Field.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShowAsCalculation
+    fullName: excel.Excel.ShowAsCalculation
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShowAsCalculation.differenceFrom
+      - excel.Excel.ShowAsCalculation.index
+      - excel.Excel.ShowAsCalculation.none
+      - excel.Excel.ShowAsCalculation.percentDifferenceFrom
+      - excel.Excel.ShowAsCalculation.percentOf
+      - excel.Excel.ShowAsCalculation.percentOfColumnTotal
+      - excel.Excel.ShowAsCalculation.percentOfGrandTotal
+      - excel.Excel.ShowAsCalculation.percentOfParentColumnTotal
+      - excel.Excel.ShowAsCalculation.percentOfParentRowTotal
+      - excel.Excel.ShowAsCalculation.percentOfParentTotal
+      - excel.Excel.ShowAsCalculation.percentOfRowTotal
+      - excel.Excel.ShowAsCalculation.percentRunningTotal
+      - excel.Excel.ShowAsCalculation.rankAscending
+      - excel.Excel.ShowAsCalculation.rankDecending
+      - excel.Excel.ShowAsCalculation.runningTotal
+      - excel.Excel.ShowAsCalculation.unknown
+  - uid: excel.Excel.ShowAsCalculation.differenceFrom
+    summary: Difference from the specified Base Field and Base Item.
+    name: differenceFrom
+    fullName: excel.Excel.ShowAsCalculation.differenceFrom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DifferenceFrom"'
+  - uid: excel.Excel.ShowAsCalculation.index
+    summary: >-
+      Calculates the values as follows: ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand
+      Column Total))
+    name: index
+    fullName: excel.Excel.ShowAsCalculation.index
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Index"'
+  - uid: excel.Excel.ShowAsCalculation.none
+    summary: No calculation is applied.
+    name: none
+    fullName: excel.Excel.ShowAsCalculation.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.ShowAsCalculation.percentDifferenceFrom
+    summary: Difference from the specified Base Field and Base Item.
+    name: percentDifferenceFrom
+    fullName: excel.Excel.ShowAsCalculation.percentDifferenceFrom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentDifferenceFrom"'
+  - uid: excel.Excel.ShowAsCalculation.percentOf
+    summary: Percent of the specified Base Field and Base Item.
+    name: percentOf
+    fullName: excel.Excel.ShowAsCalculation.percentOf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOf"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfColumnTotal
+    summary: Percent of the column total.
+    name: percentOfColumnTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfColumnTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfColumnTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfGrandTotal
+    summary: Percent of the grand total.
+    name: percentOfGrandTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfGrandTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfGrandTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfParentColumnTotal
+    summary: Percent of the column total for the specified Base Field.
+    name: percentOfParentColumnTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfParentColumnTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentColumnTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfParentRowTotal
+    summary: Percent of the row total for the specified Base Field.
+    name: percentOfParentRowTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfParentRowTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentRowTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfParentTotal
+    summary: Percent of the grand total for the specified Base Field.
+    name: percentOfParentTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfParentTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfParentTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentOfRowTotal
+    summary: Percent of the row total.
+    name: percentOfRowTotal
+    fullName: excel.Excel.ShowAsCalculation.percentOfRowTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentOfRowTotal"'
+  - uid: excel.Excel.ShowAsCalculation.percentRunningTotal
+    summary: Percent Running Total of the specified Base Field.
+    name: percentRunningTotal
+    fullName: excel.Excel.ShowAsCalculation.percentRunningTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PercentRunningTotal"'
+  - uid: excel.Excel.ShowAsCalculation.rankAscending
+    summary: Ascending Rank of the specified Base Field.
+    name: rankAscending
+    fullName: excel.Excel.ShowAsCalculation.rankAscending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RankAscending"'
+  - uid: excel.Excel.ShowAsCalculation.rankDecending
+    summary: Descending Rank of the specified Base Field.
+    name: rankDecending
+    fullName: excel.Excel.ShowAsCalculation.rankDecending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RankDecending"'
+  - uid: excel.Excel.ShowAsCalculation.runningTotal
+    summary: Running Total of the specified Base Field.
+    name: runningTotal
+    fullName: excel.Excel.ShowAsCalculation.runningTotal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RunningTotal"'
+  - uid: excel.Excel.ShowAsCalculation.unknown
+    summary: Calculation is unknown or unsupported.
+    name: unknown
+    fullName: excel.Excel.ShowAsCalculation.unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
