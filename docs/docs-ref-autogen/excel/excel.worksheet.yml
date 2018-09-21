@@ -38,12 +38,15 @@ items:
       - excel.Excel.Worksheet.name
       - excel.Excel.Worksheet.names
       - excel.Excel.Worksheet.onActivated
+      - excel.Excel.Worksheet.onCalculated
       - excel.Excel.Worksheet.onChanged
       - excel.Excel.Worksheet.onDeactivated
       - excel.Excel.Worksheet.onSelectionChanged
       - excel.Excel.Worksheet.pivotTables
       - excel.Excel.Worksheet.position
       - excel.Excel.Worksheet.protection
+      - excel.Excel.Worksheet.showGridlines
+      - excel.Excel.Worksheet.showHeadings
       - excel.Excel.Worksheet.standardHeight
       - excel.Excel.Worksheet.standardWidth
       - excel.Excel.Worksheet.tabColor
@@ -698,6 +701,21 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+  - uid: excel.Excel.Worksheet.onCalculated
+    summary: |-
+      Occurs when the worksheet is calculated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onCalculated
+    fullName: excel.Excel.Worksheet.onCalculated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel.Excel.Worksheet.onChanged
     summary: |-
       Occurs when data changed on a specific worksheet.
@@ -802,6 +820,48 @@ items:
       return:
         type:
           - excel.Excel.WorksheetProtection
+  - uid: excel.Excel.Worksheet.showGridlines
+    summary: |-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showGridlines
+    fullName: excel.Excel.Worksheet.showGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showGridlines: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.showGridlines = true;
+
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.Worksheet.showHeadings
+    summary: |-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeadings
+    fullName: excel.Excel.Worksheet.showHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeadings: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Worksheet.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.

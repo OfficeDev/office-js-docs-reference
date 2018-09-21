@@ -19,9 +19,11 @@ items:
     package: excel
     children:
       - excel.Excel.Chart.axes
+      - excel.Excel.Chart.categoryLabelLevel
       - excel.Excel.Chart.chartType
       - excel.Excel.Chart.dataLabels
       - excel.Excel.Chart.delete
+      - excel.Excel.Chart.displayBlanksAs
       - excel.Excel.Chart.format
       - excel.Excel.Chart.getImage
       - excel.Excel.Chart.height
@@ -30,10 +32,18 @@ items:
       - excel.Excel.Chart.legend
       - excel.Excel.Chart.load
       - excel.Excel.Chart.name
+      - excel.Excel.Chart.onActivated
+      - excel.Excel.Chart.onDeactivated
+      - excel.Excel.Chart.plotArea
+      - excel.Excel.Chart.plotBy
+      - excel.Excel.Chart.plotVisibleOnly
       - excel.Excel.Chart.series
+      - excel.Excel.Chart.seriesNameLevel
       - excel.Excel.Chart.setData
       - excel.Excel.Chart.setPosition
       - excel.Excel.Chart.showAllFieldButtons
+      - excel.Excel.Chart.showDataLabelsOverMaximum
+      - excel.Excel.Chart.style
       - excel.Excel.Chart.title
       - excel.Excel.Chart.toJSON
       - excel.Excel.Chart.top
@@ -54,6 +64,23 @@ items:
       return:
         type:
           - excel.Excel.ChartAxes
+  - uid: excel.Excel.Chart.categoryLabelLevel
+    summary: >-
+      Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
+      are being sourced from. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryLabelLevel
+    fullName: excel.Excel.Chart.categoryLabelLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryLabelLevel: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Chart.chartType
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
@@ -79,7 +106,7 @@ items:
         "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
         "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
         "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
-        "Histogram" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
       return:
         type:
           - >-
@@ -96,8 +123,8 @@ items:
             | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
             "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
-            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Pareto" | "RegionMap" |
-            "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
+            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
       Represents the datalabels on the chart. Read-only.
@@ -144,6 +171,21 @@ items:
               }
           });
           ```
+  - uid: excel.Excel.Chart.displayBlanksAs
+    summary: |-
+      Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: displayBlanksAs
+    fullName: excel.Excel.Chart.displayBlanksAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayBlanksAs: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";'
+      return:
+        type:
+          - Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
   - uid: excel.Excel.Chart.format
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
@@ -362,6 +404,81 @@ items:
               }
           });
           ```
+  - uid: excel.Excel.Chart.onActivated
+    summary: |-
+      Occurs when the chart is activated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onActivated
+    fullName: excel.Excel.Chart.onActivated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
+  - uid: excel.Excel.Chart.onDeactivated
+    summary: |-
+      Occurs when the chart is deactivated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onDeactivated
+    fullName: excel.Excel.Chart.onDeactivated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
+  - uid: excel.Excel.Chart.plotArea
+    summary: |-
+      Represents the plotArea for the chart.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: plotArea
+    fullName: excel.Excel.Chart.plotArea
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly plotArea: Excel.ChartPlotArea;'
+      return:
+        type:
+          - excel.Excel.ChartPlotArea
+  - uid: excel.Excel.Chart.plotBy
+    summary: |-
+      Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: plotBy
+    fullName: excel.Excel.Chart.plotBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotBy: Excel.ChartPlotBy | "Rows" | "Columns";'
+      return:
+        type:
+          - Excel.ChartPlotBy | "Rows" | "Columns"
+  - uid: excel.Excel.Chart.plotVisibleOnly
+    summary: |-
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: plotVisibleOnly
+    fullName: excel.Excel.Chart.plotVisibleOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotVisibleOnly: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Chart.series
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
@@ -377,6 +494,23 @@ items:
       return:
         type:
           - excel.Excel.ChartSeriesCollection
+  - uid: excel.Excel.Chart.seriesNameLevel
+    summary: >-
+      Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
+      being sourced from. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesNameLevel
+    fullName: excel.Excel.Chart.seriesNameLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesNameLevel: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -486,6 +620,39 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Chart.showDataLabelsOverMaximum
+    summary: >-
+      Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+      If value axis became smaller than the size of data points, you can use this property to set whether to show the
+      data labels. This property applies to 2-D charts only.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showDataLabelsOverMaximum
+    fullName: excel.Excel.Chart.showDataLabelsOverMaximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDataLabelsOverMaximum: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Chart.style
+    summary: |-
+      Returns or sets the chart style for the chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: excel.Excel.Chart.style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Chart.title
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formating of the title.

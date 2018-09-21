@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorkbookCreated
+    summary: >-
+      The WorkbookCreated object is the top level object created by Application.CreateWorkbook. A WorkbookCreated object
+      is a special Workbook object.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorkbookCreated
+    fullName: excel.Excel.WorkbookCreated
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.WorkbookCreated.load
+      - excel.Excel.WorkbookCreated.toJSON
+  - uid: excel.Excel.WorkbookCreated.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.WorkbookCreated` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookCreated` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: excel.Excel.WorkbookCreated.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.WorkbookCreated;'
+      return:
+        type:
+          - excel.Excel.WorkbookCreated
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.WorkbookCreated.toJSON
+    name: toJSON()
+    fullName: excel.Excel.WorkbookCreated.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorkbookCreatedData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookCreatedData
+        description: ''

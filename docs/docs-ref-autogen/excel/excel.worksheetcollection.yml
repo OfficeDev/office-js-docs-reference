@@ -25,6 +25,7 @@ items:
       - excel.Excel.WorksheetCollection.load
       - excel.Excel.WorksheetCollection.onActivated
       - excel.Excel.WorksheetCollection.onAdded
+      - excel.Excel.WorksheetCollection.onCalculated
       - excel.Excel.WorksheetCollection.onDeactivated
       - excel.Excel.WorksheetCollection.onDeleted
       - excel.Excel.WorksheetCollection.toJSON
@@ -397,6 +398,21 @@ items:
                   "Try adding a worksheet, and watch the console output.");
           });
           ```
+  - uid: excel.Excel.WorksheetCollection.onCalculated
+    summary: |-
+      Occurs when any worksheet in the workbook is calculated.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: onCalculated
+    fullName: excel.Excel.WorksheetCollection.onCalculated
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onDeactivated
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.

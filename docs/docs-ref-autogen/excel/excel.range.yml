@@ -27,6 +27,7 @@ items:
       - excel.Excel.Range.columnHidden
       - excel.Excel.Range.columnIndex
       - excel.Excel.Range.conditionalFormats
+      - excel.Excel.Range.dataValidation
       - excel.Excel.Range.delete
       - excel.Excel.Range.format
       - excel.Excel.Range.formulas
@@ -241,6 +242,21 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormatCollection
+  - uid: excel.Excel.Range.dataValidation
+    summary: |-
+      Returns a data validation object.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: excel.Excel.Range.dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataValidation: Excel.DataValidation;'
+      return:
+        type:
+          - excel.Excel.DataValidation
   - uid: excel.Excel.Range.delete
     summary: |-
       Deletes the cells associated with the range.

@@ -78,7 +78,7 @@ items:
 
 
       - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the
-      same time from add-in commands (custom ribbon buttons or menu items).
+      same time from Add-in Commands (custom ribbon buttons or menu items).
 
 
       - Every dialog box can be moved and resized by the user.

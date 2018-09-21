@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData
+    summary: 'An interface for updating data on the DataValidation object, for use in "dataValidation.set({ ... })".'
+    name: Excel.Interfaces.DataValidationUpdateData
+    fullName: excel.Excel.Interfaces.DataValidationUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.DataValidationUpdateData.errorAlert
+      - excel.Excel.Interfaces.DataValidationUpdateData.ignoreBlanks
+      - excel.Excel.Interfaces.DataValidationUpdateData.prompt
+      - excel.Excel.Interfaces.DataValidationUpdateData.rule
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData.errorAlert
+    summary: |-
+      Error alert when user enters invalid data.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: errorAlert
+    fullName: excel.Excel.Interfaces.DataValidationUpdateData.errorAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorAlert?: Excel.DataValidationErrorAlert;'
+      return:
+        type:
+          - excel.Excel.DataValidationErrorAlert
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData.ignoreBlanks
+    summary: |-
+      Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: ignoreBlanks
+    fullName: excel.Excel.Interfaces.DataValidationUpdateData.ignoreBlanks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreBlanks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData.prompt
+    summary: |-
+      Prompt when users select a cell.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: prompt
+    fullName: excel.Excel.Interfaces.DataValidationUpdateData.prompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'prompt?: Excel.DataValidationPrompt;'
+      return:
+        type:
+          - excel.Excel.DataValidationPrompt
+  - uid: excel.Excel.Interfaces.DataValidationUpdateData.rule
+    summary: |-
+      Data Validation rule that contains different type of data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.DataValidationUpdateData.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.DataValidationRule;'
+      return:
+        type:
+          - excel.Excel.DataValidationRule

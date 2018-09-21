@@ -14,10 +14,26 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartAxisFormat.fill
       - excel.Excel.ChartAxisFormat.font
       - excel.Excel.ChartAxisFormat.line
       - excel.Excel.ChartAxisFormat.load
       - excel.Excel.ChartAxisFormat.toJSON
+  - uid: excel.Excel.ChartAxisFormat.fill
+    summary: |-
+      Represents chart fill formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: excel.Excel.ChartAxisFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAxisFormat.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
