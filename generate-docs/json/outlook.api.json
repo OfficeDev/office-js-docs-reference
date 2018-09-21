@@ -44355,6 +44355,27 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "offset": {
+              "kind": "property",
+              "signature": "offset: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },

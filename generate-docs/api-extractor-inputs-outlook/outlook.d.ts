@@ -8733,6 +8733,11 @@ export declare namespace Office {
          * Represents the name of the recurrence time zone.
          */
         name: Office.MailboxEnums.RecurrenceTimeZone;
+
+        /**
+         * Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began.
+         */
+        offset: number;
     }
 
     /**

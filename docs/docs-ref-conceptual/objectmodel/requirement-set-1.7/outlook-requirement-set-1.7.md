@@ -15,6 +15,7 @@ Requirement set 1.7 includes all of the features of [Requirement set 1.6](../req
 - Added [From](/javascript/api/outlook_1_7/office.from): Adds a new object that provides a method to get the from value.
 - Added [Organizer](/javascript/api/outlook_1_7/office.organizer): Adds a new object that provides a method to get the organizer value.
 - Added [Recurrence](/javascript/api/outlook_1_7/office.recurrence): Adds a new object that provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of messages that are meeting requests.
+- Added [RecurrenceTimeZone](/javascript/api/outlook_1_7/office.recurrencetimezone): Adds a new object that represents the time zone configuration of the recurrence pattern.
 - Added [SeriesTime](/javascript/api/outlook_1_7/office.seriestime): Adds a new object that provides methods to get and set the dates and times of appointments in a recurring series and to get the dates and times of meeting requests in a recurring series.
 - Added [Office.context.mailbox.item.addHandlerAsync](office.context.mailbox.item.md#addhandlerasynceventtype-handler-options-callback): Adds a new method that adds an event handler for a supported event.
 - Modified [Office.context.mailbox.item.from](office.context.mailbox.item.md#from-emailaddressdetailsjavascriptapioutlook17officeemailaddressdetailsfromjavascriptapioutlook17officefrom): Modifies to get the from value in Compose mode.
