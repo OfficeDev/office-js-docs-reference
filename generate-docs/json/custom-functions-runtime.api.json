@@ -30,9 +30,14 @@
               "isStatic": false,
               "type": "() => void",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Handles what should occur when a custom function is canceled."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -61,9 +66,14 @@
               "isStatic": false,
               "type": "(value: T) => void",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets the returned result for a streaming custom function."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,

@@ -12,6 +12,8 @@ items:
     children:
       - custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
   - uid: custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
+    summary: Sets the returned result for a streaming custom function.
+    isPreview: true
     name: setResult
     fullName: custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
     langs:

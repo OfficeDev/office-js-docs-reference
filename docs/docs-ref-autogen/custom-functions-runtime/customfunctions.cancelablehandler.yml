@@ -10,6 +10,8 @@ items:
     children:
       - custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
+    summary: Handles what should occur when a custom function is canceled.
+    isPreview: true
     name: onCanceled
     fullName: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
     langs:
