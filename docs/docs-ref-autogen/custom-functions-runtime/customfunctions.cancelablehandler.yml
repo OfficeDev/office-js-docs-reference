@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+    name: CustomFunctions.CancelableHandler
+    fullName: custom-functions-runtime.CustomFunctions.CancelableHandler
+    langs:
+      - typeScript
+    type: interface
+    package: custom-functions-runtime
+    children:
+      - custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
+  - uid: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
+    name: onCanceled
+    fullName: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onCanceled: () => void;'
+      return:
+        type:
+          - () => void
