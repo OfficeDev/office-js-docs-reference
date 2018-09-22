@@ -117,7 +117,7 @@ tryCatch(async () => {
     console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
     let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
 
-    console.log("\nFixing issues with d.ts file...");
+    console.log("Fixing issues with d.ts file...");
     definitionsForCfs = definitionsForCfs.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -139,7 +139,7 @@ tryCatch(async () => {
     console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
     let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
 
-    console.log("\nFixing issues with d.ts file...");
+    console.log("Fixing issues with d.ts file...");
     definitionsForORun = definitionsForORun.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
