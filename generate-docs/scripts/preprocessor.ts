@@ -7,6 +7,9 @@ import * as fsx from 'fs-extra';
 import yaml = require('js-yaml');
 
 tryCatch(async () => {
+    // ----
+    // Display prompts
+    // ----
     console.log('\n\n');
     const urlToCopyOfficeJsFrom = await promptFromList({
         message: `What is the source of the office.d.ts file that should be used to generate the docs?`,
@@ -34,7 +37,9 @@ tryCatch(async () => {
 
     console.log("\nStarting preprocessor script...");
 
-    // process office.d.ts
+    // ----
+    // Process office.d.ts
+    // ----
     if (urlToCopyOfficeJsFrom.length > 0) {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
@@ -104,7 +109,9 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
-    // process Custom Functions d.ts
+    // ----
+    // Process Custom Functions d.ts
+    // ----
     const dtsForCfs = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
     fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(dtsForCfs, "text"));
     console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
@@ -124,7 +131,9 @@ tryCatch(async () => {
     console.log("create file: custom-functions-runtime.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs);
 
-    // process Office Runtime d.ts
+    // ----
+    // Process Office Runtime d.ts
+    // ----
     const dtsForORun = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
     fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(dtsForORun, "text"));
     console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
@@ -144,6 +153,9 @@ tryCatch(async () => {
     console.log("create file: office-runtime.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun);
 
+    // ----
+    // Process Snippets
+    // ----
     console.log("\nRemoving old snippets input files...");
 
     const scriptInputsPath = path.resolve("../script-inputs");
