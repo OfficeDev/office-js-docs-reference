@@ -58,6 +58,7 @@ The `item` namespace is used to access the currently selected message, meeting r
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
 | [getSelectedEntities](#getselectedentities--entitiesjavascriptapioutlookofficeentities) | Method |
 | [getSelectedRegExMatches](#getselectedregexmatches--object) | Method |
+| [getSharedPropertiesAsync](#getsharedpropertiesasyncoptions-callback) | Method |
 | [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
 | [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
 | [removeHandlerAsync](#removehandlerasynceventtype-handler-options-callback) | Method |
@@ -360,7 +361,7 @@ function callback(asyncResult) {
 
 |Requirement|||
 |---|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Read|Compose|
 
@@ -610,7 +611,7 @@ The `organizer` property returns an [Organizer](/javascript/api/outlook/office.o
 
 |Requirement|||
 |---|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.0|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|ReadWriteItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Read|Compose|
 
@@ -637,7 +638,7 @@ The `recurrence` property returns a [recurrence](/javascript/api/outlook/office.
 
 |Requirement|Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
 
@@ -724,14 +725,14 @@ The `seriesId` property returns `null` for items that do not have parent items s
 
 |Requirement|Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|1.7|
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
 
 ##### Example
 
 ```
-var seriesId = Office.context.mailbox.item.seriesId; 
+var seriesId = Office.context.mailbox.item.seriesId;
 var isSeries = (seriesId == null);
 ```
 
@@ -998,7 +999,7 @@ Office.context.mailbox.item.addFileAttachmentFromBase64Async(
 
 Adds an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1014,28 +1015,9 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
-```
 
 ####  addItemAttachmentAsync(itemId, attachmentName, [options], [callback])
 
@@ -1760,6 +1742,36 @@ var fruits = selectedMatches.fruits;
 var veggies = selectedMatches.veggies;
 ```
 
+#### getSharedPropertiesAsync([options], callback)
+
+Gets the properties of the selected appointment or message in a shared folder, calendar, or mailbox.
+
+##### Parameters:
+
+|Name|Type|Attributes|Description|
+|---|---|---|---|
+|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`callback`|function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office.asyncresult) object.<br/><br/>The shared properties are provided as a [`SharedProperties`](/javascript/api/outlook/office.sharedproperties) object in the `asyncResult.value` property. This object can be used to get the item's shared properties.|
+
+##### Requirements
+
+|Requirement|Value|
+|---|---|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)|Preview|
+|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
+|[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)|Compose or read|
+
+##### Example
+
+```js
+Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+function callback (asyncResult) {
+  var context=asyncResult.context;
+  var sharedProperties = asyncResult.value;
+}
+```
+
 ####  loadCustomPropertiesAsync(callback, [userContext])
 
 Asynchronously loads custom properties for this add-in on the selected item.
@@ -1856,7 +1868,7 @@ Office.context.mailbox.item.removeAttachmentAsync(
 
 Removes an event handler for a supported event.
 
-Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrencePatternChanged`
+Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`
 
 ##### Parameters:
 
@@ -1872,28 +1884,9 @@ Currently the supported event types are `Office.EventType.AppointmentTimeChanged
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| Preview |
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.7 |
 |[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem |
 |[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
-```
 
 ####  saveAsync([options], callback)
 

@@ -50,7 +50,7 @@ items:
       read</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult&lt;Office.Body&gt;) => void): void;`
@@ -175,7 +175,7 @@ items:
       characters.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `prependAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
@@ -262,7 +262,7 @@ items:
       Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `setAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
@@ -365,7 +365,7 @@ items:
       Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`

@@ -134,6 +134,7 @@ items:
       allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
       allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
       attachments.</td></tr></table>
+    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
     langs:
@@ -206,7 +207,7 @@ items:
       attachments.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
