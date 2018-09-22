@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+    summary: Provides options for how a dialog is displayed.
     name: OfficeRuntime.DisplayWebDialogOptions
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions
     langs:
@@ -15,6 +16,7 @@ items:
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    isPreview: true
     name: displayInIFrame
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
     langs:
@@ -26,6 +28,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+    isPreview: true
     name: height
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
     langs:
@@ -37,6 +40,7 @@ items:
         type:
           - string
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    isPreview: true
     name: hideTitle
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
     langs:
@@ -80,6 +84,7 @@ items:
           type:
             - Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+    isPreview: true
     name: width
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
     langs:

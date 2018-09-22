@@ -255,8 +255,6 @@ items:
             uid: excel.Excel.ChartSeriesCollection
           - name: ChartSeriesFormat
             uid: excel.Excel.ChartSeriesFormat
-          - name: ChartSplitStype
-            uid: excel.Excel.ChartSplitStype
           - name: ChartTitle
             uid: excel.Excel.ChartTitle
           - name: ChartTitleFormat
