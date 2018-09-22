@@ -10,6 +10,7 @@ items:
     children:
       - office-runtime.OfficeRuntime.Dialog.close
   - uid: office-runtime.OfficeRuntime.Dialog.close
+    isPreview: true
     name: close()
     fullName: office-runtime.OfficeRuntime.Dialog.close
     langs:

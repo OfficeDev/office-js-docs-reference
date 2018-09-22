@@ -74,7 +74,6 @@ items:
       - excel.Excel.ChartSeriesBy
       - excel.Excel.ChartSeriesCollection
       - excel.Excel.ChartSeriesFormat
-      - excel.Excel.ChartSplitStype
       - excel.Excel.ChartTextHorizontalAlignment
       - excel.Excel.ChartTextVerticalAlignment
       - excel.Excel.ChartTickLabelAlignment
@@ -693,8 +692,6 @@ references:
     name: Excel.ChartSeriesCollection
   - uid: excel.Excel.ChartSeriesFormat
     name: Excel.ChartSeriesFormat
-  - uid: excel.Excel.ChartSplitStype
-    name: Excel.ChartSplitStype
   - uid: excel.Excel.ChartTextHorizontalAlignment
     name: Excel.ChartTextHorizontalAlignment
   - uid: excel.Excel.ChartTextVerticalAlignment

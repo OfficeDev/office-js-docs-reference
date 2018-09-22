@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.AsyncStorage
+    summary: 'Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.'
+    remarks: |-
+      Each add-in instance has its own storage partition, unique to a user and their device.
+
+      The default amount of total storage allowed per add-in is 5MB.
+
+      Each method listed below returns a Promise object.
+    isPreview: true
     name: OfficeRuntime.AsyncStorage
     fullName: office-runtime.OfficeRuntime.AsyncStorage
     langs:
@@ -17,6 +25,7 @@ items:
       - office-runtime.OfficeRuntime.AsyncStorage.removeItem
       - office-runtime.OfficeRuntime.AsyncStorage.setItem
   - uid: office-runtime.OfficeRuntime.AsyncStorage.clear
+    isPreview: true
     name: clear(callback)
     fullName: office-runtime.OfficeRuntime.AsyncStorage.clear
     langs:
@@ -34,6 +43,7 @@ items:
           type:
             - '(error?: Error) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
+    isPreview: true
     name: getAllKeys(callback)
     fullName: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
     langs:
@@ -51,6 +61,7 @@ items:
           type:
             - '(error?: Error, keys?: string[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getItem
+    isPreview: true
     name: 'getItem(key, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.getItem
     langs:
@@ -72,6 +83,7 @@ items:
           type:
             - '(error?: Error, result?: string) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiGet
+    isPreview: true
     name: 'multiGet(keys, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiGet
     langs:
@@ -93,6 +105,7 @@ items:
           type:
             - '(errors?: Error[], result?: string[][]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
+    isPreview: true
     name: 'multiRemove(keys, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
     langs:
@@ -114,6 +127,7 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiSet
+    isPreview: true
     name: 'multiSet(keyValuePairs, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiSet
     langs:
@@ -135,6 +149,7 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.removeItem
+    isPreview: true
     name: 'removeItem(key, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.removeItem
     langs:
@@ -156,6 +171,7 @@ items:
           type:
             - '(error?: Error) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.setItem
+    isPreview: true
     name: 'setItem(key, value, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.setItem
     langs:
