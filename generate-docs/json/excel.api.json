@@ -13712,11 +13712,11 @@
             },
             "splitType": {
               "kind": "property",
-              "signature": "splitType: Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
+              "signature": "splitType: \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
+              "type": "\"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -14300,52 +14300,6 @@
               "isOverride": false
             }
           }
-        },
-        "ChartSplitStype": {
-          "kind": "enum",
-          "values": {
-            "splitByCustomSplit": {
-              "kind": "enum value",
-              "value": "\"SplitByCustomSplit\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "splitByPercentValue": {
-              "kind": "enum value",
-              "value": "\"SplitByPercentValue\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "splitByPosition": {
-              "kind": "enum value",
-              "value": "\"SplitByPosition\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "splitByValue": {
-              "kind": "enum value",
-              "value": "\"SplitByValue\"",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "[Api set: ExcelApi 1.8]"
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
         },
         "ChartTextHorizontalAlignment": {
           "kind": "enum",
@@ -63737,11 +63691,11 @@
                 },
                 "splitType": {
                   "kind": "property",
-                  "signature": "splitType?: Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
+                  "signature": "splitType?: \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
                   "isOptional": true,
                   "isReadOnly": false,
                   "isStatic": false,
-                  "type": "Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
+                  "type": "\"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
                   "deprecatedMessage": [],
                   "summary": [
                     {
@@ -64519,11 +64473,11 @@
                 },
                 "splitType": {
                   "kind": "property",
-                  "signature": "splitType?: Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
+                  "signature": "splitType?: \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\";",
                   "isOptional": true,
                   "isReadOnly": false,
                   "isStatic": false,
-                  "type": "Excel.ChartSplitStype | \"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
+                  "type": "\"SplitByPosition\" | \"SplitByValue\" | \"SplitByPercentValue\" | \"SplitByCustomSplit\"",
                   "deprecatedMessage": [],
                   "summary": [
                     {

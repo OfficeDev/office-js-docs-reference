@@ -403,12 +403,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        splitType?: Excel.ChartSplitStype | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
-        "SplitByCustomSplit";
+      content: 'splitType?: "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";'
       return:
         type:
-          - Excel.ChartSplitStype | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
+          - '"SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.varyByCategories
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
