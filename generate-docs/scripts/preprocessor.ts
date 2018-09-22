@@ -32,12 +32,12 @@ tryCatch(async () => {
         ]
     });
 
+    console.log("\nStarting preprocessor script...");
+
+    // process office.d.ts
     if (urlToCopyOfficeJsFrom.length > 0) {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
-
-    console.log("\nStarting preprocessor script...");
-
     console.log(`\nReading from ${path.resolve("../script-inputs/office.d.ts")}`);
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
@@ -104,6 +104,46 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
+    // process Custom Functions d.ts
+    const dtsForCfs = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
+    fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(dtsForCfs, "text"));
+    console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
+    let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
+
+    console.log("\nFixing issues with d.ts file...");
+    definitionsForCfs = definitionsForCfs.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+
+    console.log("create file: custom-functions-runtime.d.ts");
+    fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs);
+
+    // process Office Runtime d.ts
+    const dtsForORun = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
+    fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(dtsForORun, "text"));
+    console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
+    let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
+
+    console.log("\nFixing issues with d.ts file...");
+    definitionsForORun = definitionsForORun.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+
+    console.log("create file: office-runtime.d.ts");
+    fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun);
+
     console.log("\nRemoving old snippets input files...");
 
     const scriptInputsPath = path.resolve("../script-inputs");
@@ -148,46 +188,6 @@ tryCatch(async () => {
     }
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
-
-    // process Custom Functions d.ts
-    const dtsForCfs = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
-    fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(dtsForCfs, "text"));
-    console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
-    let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
-
-    console.log("\nFixing issues with d.ts file...");
-    definitionsForCfs = definitionsForCfs.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-
-    console.log("create file: custom-functions-runtime.d.ts");
-    fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs);
-
-    // process Office Runtime d.ts
-    const dtsForORun = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
-    fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(dtsForORun, "text"));
-    console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
-    let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
-
-    console.log("\nFixing issues with d.ts file...");
-    definitionsForORun = definitionsForORun.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-
-    console.log("create file: office-runtime.d.ts");
-    fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun);
 
     console.log("\nPreprocessor script complete!");
 
