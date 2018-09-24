@@ -14,11 +14,28 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartBorder.clear
       - excel.Excel.ChartBorder.color
       - excel.Excel.ChartBorder.lineStyle
       - excel.Excel.ChartBorder.load
       - excel.Excel.ChartBorder.toJSON
       - excel.Excel.ChartBorder.weight
+  - uid: excel.Excel.ChartBorder.clear
+    summary: |-
+      Clear the border format of a chart element.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: excel.Excel.ChartBorder.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.ChartBorder.color
     summary: |-
       HTML color code representing the color of borders in the chart.

@@ -19,7 +19,9 @@ items:
       - excel.Excel.EventType.tableAdded
       - excel.Excel.EventType.tableChanged
       - excel.Excel.EventType.tableDeleted
+      - excel.Excel.EventType.tableFiltered
       - excel.Excel.EventType.tableSelectionChanged
+      - excel.Excel.EventType.visualChange
       - excel.Excel.EventType.visualSelectionChanged
       - excel.Excel.EventType.worksheetActivated
       - excel.Excel.EventType.worksheetAdded
@@ -27,6 +29,7 @@ items:
       - excel.Excel.EventType.worksheetChanged
       - excel.Excel.EventType.worksheetDeactivated
       - excel.Excel.EventType.worksheetDeleted
+      - excel.Excel.EventType.worksheetFiltered
       - excel.Excel.EventType.worksheetSelectionChanged
   - uid: excel.Excel.EventType.agaveVisualUpdate
     summary: >-
@@ -120,6 +123,16 @@ items:
       - typeScript
     type: field
     numericValue: '"TableDeleted"'
+  - uid: excel.Excel.EventType.tableFiltered
+    summary: >-
+      TableFiltered represents the type of event registered on table or TableCollection, and occurs when data of table
+      is filtered.
+    name: tableFiltered
+    fullName: excel.Excel.EventType.tableFiltered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableFiltered"'
   - uid: excel.Excel.EventType.tableSelectionChanged
     summary: 'TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.'
     name: tableSelectionChanged
@@ -128,6 +141,14 @@ items:
       - typeScript
     type: field
     numericValue: '"TableSelectionChanged"'
+  - uid: excel.Excel.EventType.visualChange
+    summary: 'VisualChange represents the type of event registered on Visual, and occurs when there is a visual change.'
+    name: visualChange
+    fullName: excel.Excel.EventType.visualChange
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"VisualChange"'
   - uid: excel.Excel.EventType.visualSelectionChanged
     summary: >-
       VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual
@@ -198,6 +219,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetDeleted"'
+  - uid: excel.Excel.EventType.worksheetFiltered
+    summary: >-
+      WorksheetFiltered represents the type of event registered on worksheet or WorksheetCollection, and occurs when
+      data of autofilter in the worksheet is filtered.
+    name: worksheetFiltered
+    fullName: excel.Excel.EventType.worksheetFiltered
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetFiltered"'
   - uid: excel.Excel.EventType.worksheetSelectionChanged
     summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged

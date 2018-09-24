@@ -28,6 +28,7 @@ items:
       - excel.Excel.Workbook.pivotTables
       - excel.Excel.Workbook.properties
       - excel.Excel.Workbook.protection
+      - excel.Excel.Workbook.readOnly
       - excel.Excel.Workbook.settings
       - excel.Excel.Workbook.styles
       - excel.Excel.Workbook.tables
@@ -328,6 +329,21 @@ items:
       return:
         type:
           - excel.Excel.WorkbookProtection
+  - uid: excel.Excel.Workbook.readOnly
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: excel.Excel.Workbook.readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Workbook.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.

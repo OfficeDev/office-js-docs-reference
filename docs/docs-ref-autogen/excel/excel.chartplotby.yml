@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartPlotBy
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartPlotBy
+    fullName: excel.Excel.ChartPlotBy
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartPlotBy.columns
+      - excel.Excel.ChartPlotBy.rows
+  - uid: excel.Excel.ChartPlotBy.columns
+    name: columns
+    fullName: excel.Excel.ChartPlotBy.columns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Columns"'
+  - uid: excel.Excel.ChartPlotBy.rows
+    name: rows
+    fullName: excel.Excel.ChartPlotBy.rows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Rows"'

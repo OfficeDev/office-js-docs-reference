@@ -41,7 +41,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `getAsync(callback: (result: AsyncResult<Date>) => void): void;`
@@ -96,7 +96,7 @@ items:
       time.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `setAsync(dateTime: Date): void;`

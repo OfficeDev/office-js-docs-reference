@@ -2,12 +2,21 @@ items:
   - name: API reference
     href: ~/docs-ref-autogen/overview/office.md
     items:
+      - name: Custom functions runtime
+        uid: custom-functions-runtime
+        items:
+          - name: CancelableHandler
+            uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+          - name: StreamingHandler
+            uid: custom-functions-runtime.CustomFunctions.StreamingHandler
       - name: Excel
         uid: excel
         items:
           - name: Enums
             uid: ''
             items:
+              - name: AggregationFunction
+                uid: excel.Excel.AggregationFunction
               - name: BindingType
                 uid: excel.Excel.BindingType
               - name: BorderIndex
@@ -40,6 +49,8 @@ items:
                 uid: excel.Excel.ChartAxisTimeUnit
               - name: ChartAxisType
                 uid: excel.Excel.ChartAxisType
+              - name: ChartColorScheme
+                uid: excel.Excel.ChartColorScheme
               - name: ChartDataLabelPosition
                 uid: excel.Excel.ChartDataLabelPosition
               - name: ChartLegendPosition
@@ -48,12 +59,18 @@ items:
                 uid: excel.Excel.ChartLineStyle
               - name: ChartMarkerStyle
                 uid: excel.Excel.ChartMarkerStyle
+              - name: ChartPlotAreaPosition
+                uid: excel.Excel.ChartPlotAreaPosition
+              - name: ChartPlotBy
+                uid: excel.Excel.ChartPlotBy
               - name: ChartSeriesBy
                 uid: excel.Excel.ChartSeriesBy
               - name: ChartTextHorizontalAlignment
                 uid: excel.Excel.ChartTextHorizontalAlignment
               - name: ChartTextVerticalAlignment
                 uid: excel.Excel.ChartTextVerticalAlignment
+              - name: ChartTickLabelAlignment
+                uid: excel.Excel.ChartTickLabelAlignment
               - name: ChartTitlePosition
                 uid: excel.Excel.ChartTitlePosition
               - name: ChartTrendlineType
@@ -96,6 +113,12 @@ items:
                 uid: excel.Excel.ConditionalTopBottomCriterionType
               - name: DataChangeType
                 uid: excel.Excel.DataChangeType
+              - name: DataValidationAlertStyle
+                uid: excel.Excel.DataValidationAlertStyle
+              - name: DataValidationOperator
+                uid: excel.Excel.DataValidationOperator
+              - name: DataValidationType
+                uid: excel.Excel.DataValidationType
               - name: DeleteShiftDirection
                 uid: excel.Excel.DeleteShiftDirection
               - name: DocumentPropertyItem
@@ -130,6 +153,8 @@ items:
                 uid: excel.Excel.NamedItemType
               - name: PageOrientation
                 uid: excel.Excel.PageOrientation
+              - name: PivotLayoutType
+                uid: excel.Excel.PivotLayoutType
               - name: ProtectionSelectionMode
                 uid: excel.Excel.ProtectionSelectionMode
               - name: RangeUnderlineStyle
@@ -140,6 +165,10 @@ items:
                 uid: excel.Excel.ReadingOrder
               - name: SheetVisibility
                 uid: excel.Excel.SheetVisibility
+              - name: ShowAsCalculation
+                uid: excel.Excel.ShowAsCalculation
+              - name: SortBy
+                uid: excel.Excel.SortBy
               - name: SortDataOption
                 uid: excel.Excel.SortDataOption
               - name: SortMethod
@@ -148,12 +177,16 @@ items:
                 uid: excel.Excel.SortOn
               - name: SortOrientation
                 uid: excel.Excel.SortOrientation
+              - name: SubtotalLocationType
+                uid: excel.Excel.SubtotalLocationType
               - name: VerticalAlignment
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
           - name: Application
             uid: excel.Excel.Application
+          - name: BasicDataValidation
+            uid: excel.Excel.BasicDataValidation
           - name: Binding
             uid: excel.Excel.Binding
           - name: BindingCollection
@@ -184,6 +217,8 @@ items:
             uid: excel.Excel.ChartDataLabelFormat
           - name: ChartDataLabels
             uid: excel.Excel.ChartDataLabels
+          - name: ChartDisplayBlanksAs
+            uid: excel.Excel.ChartDisplayBlanksAs
           - name: ChartFill
             uid: excel.Excel.ChartFill
           - name: ChartFont
@@ -204,6 +239,10 @@ items:
             uid: excel.Excel.ChartLegendFormat
           - name: ChartLineFormat
             uid: excel.Excel.ChartLineFormat
+          - name: ChartPlotArea
+            uid: excel.Excel.ChartPlotArea
+          - name: ChartPlotAreaFormat
+            uid: excel.Excel.ChartPlotAreaFormat
           - name: ChartPoint
             uid: excel.Excel.ChartPoint
           - name: ChartPointFormat
@@ -216,6 +255,8 @@ items:
             uid: excel.Excel.ChartSeriesCollection
           - name: ChartSeriesFormat
             uid: excel.Excel.ChartSeriesFormat
+          - name: ChartSplitStype
+            uid: excel.Excel.ChartSplitStype
           - name: ChartTitle
             uid: excel.Excel.ChartTitle
           - name: ChartTitleFormat
@@ -226,6 +267,10 @@ items:
             uid: excel.Excel.ChartTrendlineCollection
           - name: ChartTrendlineFormat
             uid: excel.Excel.ChartTrendlineFormat
+          - name: ChartTrendlineLabel
+            uid: excel.Excel.ChartTrendlineLabel
+          - name: ChartTrendlineLabelFormat
+            uid: excel.Excel.ChartTrendlineLabelFormat
           - name: ColorScaleConditionalFormat
             uid: excel.Excel.ColorScaleConditionalFormat
           - name: ConditionalDataBarNegativeFormat
@@ -250,6 +295,8 @@ items:
             uid: excel.Excel.ConditionalRangeFormat
           - name: CustomConditionalFormat
             uid: excel.Excel.CustomConditionalFormat
+          - name: CustomDataValidation
+            uid: excel.Excel.CustomDataValidation
           - name: CustomProperty
             uid: excel.Excel.CustomProperty
           - name: CustomPropertyCollection
@@ -264,12 +311,30 @@ items:
             uid: excel.Excel.DataBarConditionalFormat
           - name: DataConnectionCollection
             uid: excel.Excel.DataConnectionCollection
+          - name: DataPivotHierarchy
+            uid: excel.Excel.DataPivotHierarchy
+          - name: DataPivotHierarchyCollection
+            uid: excel.Excel.DataPivotHierarchyCollection
+          - name: DataValidation
+            uid: excel.Excel.DataValidation
+          - name: DataValidationErrorAlert
+            uid: excel.Excel.DataValidationErrorAlert
+          - name: DataValidationPrompt
+            uid: excel.Excel.DataValidationPrompt
+          - name: DataValidationRule
+            uid: excel.Excel.DataValidationRule
+          - name: DateTimeDataValidation
+            uid: excel.Excel.DateTimeDataValidation
           - name: DocumentProperties
             uid: excel.Excel.DocumentProperties
           - name: Filter
             uid: excel.Excel.Filter
           - name: FilterCriteria
             uid: excel.Excel.FilterCriteria
+          - name: FilterPivotHierarchy
+            uid: excel.Excel.FilterPivotHierarchy
+          - name: FilterPivotHierarchyCollection
+            uid: excel.Excel.FilterPivotHierarchyCollection
           - name: FormatProtection
             uid: excel.Excel.FormatProtection
           - name: FunctionResult
@@ -278,12 +343,28 @@ items:
             uid: excel.Excel.Functions
           - name: IconSetConditionalFormat
             uid: excel.Excel.IconSetConditionalFormat
+          - name: ListDataValidation
+            uid: excel.Excel.ListDataValidation
           - name: NamedItem
             uid: excel.Excel.NamedItem
           - name: NamedItemArrayValues
             uid: excel.Excel.NamedItemArrayValues
           - name: NamedItemCollection
             uid: excel.Excel.NamedItemCollection
+          - name: PivotField
+            uid: excel.Excel.PivotField
+          - name: PivotFieldCollection
+            uid: excel.Excel.PivotFieldCollection
+          - name: PivotHierarchy
+            uid: excel.Excel.PivotHierarchy
+          - name: PivotHierarchyCollection
+            uid: excel.Excel.PivotHierarchyCollection
+          - name: PivotItem
+            uid: excel.Excel.PivotItem
+          - name: PivotItemCollection
+            uid: excel.Excel.PivotItemCollection
+          - name: PivotLayout
+            uid: excel.Excel.PivotLayout
           - name: PivotTable
             uid: excel.Excel.PivotTable
           - name: PivotTableCollection
@@ -310,6 +391,10 @@ items:
             uid: excel.Excel.RangeViewCollection
           - name: RequestContext
             uid: excel.Excel.RequestContext
+          - name: RowColumnPivotHierarchy
+            uid: excel.Excel.RowColumnPivotHierarchy
+          - name: RowColumnPivotHierarchyCollection
+            uid: excel.Excel.RowColumnPivotHierarchyCollection
           - name: Runtime
             uid: excel.Excel.Runtime
           - name: Session
@@ -318,10 +403,14 @@ items:
             uid: excel.Excel.Setting
           - name: SettingCollection
             uid: excel.Excel.SettingCollection
+          - name: ShowAsRule
+            uid: excel.Excel.ShowAsRule
           - name: Style
             uid: excel.Excel.Style
           - name: StyleCollection
             uid: excel.Excel.StyleCollection
+          - name: Subtotals
+            uid: excel.Excel.Subtotals
           - name: Table
             uid: excel.Excel.Table
           - name: TableCollection
@@ -342,6 +431,8 @@ items:
             uid: excel.Excel.TopBottomConditionalFormat
           - name: Workbook
             uid: excel.Excel.Workbook
+          - name: WorkbookCreated
+            uid: excel.Excel.WorkbookCreated
           - name: WorkbookProtection
             uid: excel.Excel.WorkbookProtection
           - name: Worksheet
@@ -352,6 +443,15 @@ items:
             uid: excel.Excel.WorksheetFreezePanes
           - name: WorksheetProtection
             uid: excel.Excel.WorksheetProtection
+      - name: Office runtime
+        uid: office-runtime
+        items:
+          - name: AsyncStorage
+            uid: office-runtime.OfficeRuntime.AsyncStorage
+          - name: Dialog
+            uid: office-runtime.OfficeRuntime.Dialog
+          - name: DisplayWebDialogOptions
+            uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
       - name: OneNote
         uid: onenote
         items:
@@ -456,6 +556,8 @@ items:
                     uid: outlook.Office.MailboxEnums.AttachmentType
                   - name: Days
                     uid: outlook.Office.MailboxEnums.Days
+                  - name: DelegatePermissions
+                    uid: outlook.Office.MailboxEnums.DelegatePermissions
                   - name: EntityType
                     uid: outlook.Office.MailboxEnums.EntityType
                   - name: ItemNotificationMessageType
@@ -526,10 +628,14 @@ items:
                 uid: outlook.Office.Recurrence
               - name: RecurrenceProperties
                 uid: outlook.Office.RecurrenceProperties
+              - name: RecurrenceTimeZone
+                uid: outlook.Office.RecurrenceTimeZone
               - name: RoamingSettings
                 uid: outlook.Office.RoamingSettings
               - name: SeriesTime
                 uid: outlook.Office.SeriesTime
+              - name: SharedProperties
+                uid: outlook.Office.SharedProperties
               - name: SourceProperty
                 uid: outlook.Office.SourceProperty
               - name: Subject
@@ -540,6 +646,102 @@ items:
                 uid: outlook.Office.Time
               - name: UserProfile
                 uid: outlook.Office.UserProfile
+          - name: Outlook 1.7
+            uid: Outlook_1_7
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_7.Office.MailboxEnums.AttachmentType
+                  - name: Days
+                    uid: Outlook_1_7.Office.MailboxEnums.Days
+                  - name: EntityType
+                    uid: Outlook_1_7.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_7.Office.MailboxEnums.ItemType
+                  - name: Month
+                    uid: Outlook_1_7.Office.MailboxEnums.Month
+                  - name: OWAView
+                    uid: Outlook_1_7.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecipientType
+                  - name: RecurrenceTimeZone
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceTimeZone
+                  - name: RecurrenceType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+                  - name: ResponseType
+                    uid: Outlook_1_7.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_7.Office.MailboxEnums.RestVersion
+                  - name: WeekNumber
+                    uid: Outlook_1_7.Office.MailboxEnums.WeekNumber
+              - name: AppointmentCompose
+                uid: Outlook_1_7.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_7.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_7.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_7.Office.Body
+              - name: Contact
+                uid: Outlook_1_7.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_7.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_7.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_7.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_7.Office.Entities
+              - name: From
+                uid: Outlook_1_7.Office.From
+              - name: Item
+                uid: Outlook_1_7.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_7.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_7.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_7.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_7.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_7.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_7.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_7.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_7.Office.NotificationMessages
+              - name: Organizer
+                uid: Outlook_1_7.Office.Organizer
+              - name: PhoneNumber
+                uid: Outlook_1_7.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_7.Office.Recipients
+              - name: Recurrence
+                uid: Outlook_1_7.Office.Recurrence
+              - name: RecurrenceProperties
+                uid: Outlook_1_7.Office.RecurrenceProperties
+              - name: RecurrenceTimeZone
+                uid: Outlook_1_7.Office.RecurrenceTimeZone
+              - name: RoamingSettings
+                uid: Outlook_1_7.Office.RoamingSettings
+              - name: SeriesTime
+                uid: Outlook_1_7.Office.SeriesTime
+              - name: SourceProperty
+                uid: Outlook_1_7.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_7.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_7.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_7.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_7.Office.UserProfile
           - name: Outlook 1.6
             uid: Outlook_1_6
             items:

@@ -18,12 +18,95 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.PivotTable.columnHierarchies
+      - excel.Excel.PivotTable.dataHierarchies
+      - excel.Excel.PivotTable.delete
+      - excel.Excel.PivotTable.filterHierarchies
+      - excel.Excel.PivotTable.hierarchies
       - excel.Excel.PivotTable.id
+      - excel.Excel.PivotTable.layout
       - excel.Excel.PivotTable.load
       - excel.Excel.PivotTable.name
       - excel.Excel.PivotTable.refresh
+      - excel.Excel.PivotTable.rowHierarchies
       - excel.Excel.PivotTable.toJSON
       - excel.Excel.PivotTable.worksheet
+  - uid: excel.Excel.PivotTable.columnHierarchies
+    summary: |-
+      The Column Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHierarchies
+    fullName: excel.Excel.PivotTable.columnHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnHierarchies: Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.RowColumnPivotHierarchyCollection
+  - uid: excel.Excel.PivotTable.dataHierarchies
+    summary: |-
+      The Data Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataHierarchies
+    fullName: excel.Excel.PivotTable.dataHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataHierarchies: Excel.DataPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.DataPivotHierarchyCollection
+  - uid: excel.Excel.PivotTable.delete
+    summary: |-
+      Deletes the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: excel.Excel.PivotTable.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.PivotTable.filterHierarchies
+    summary: |-
+      The Filter Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: filterHierarchies
+    fullName: excel.Excel.PivotTable.filterHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filterHierarchies: Excel.FilterPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.FilterPivotHierarchyCollection
+  - uid: excel.Excel.PivotTable.hierarchies
+    summary: |-
+      The Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: hierarchies
+    fullName: excel.Excel.PivotTable.hierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hierarchies: Excel.PivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.PivotHierarchyCollection
   - uid: excel.Excel.PivotTable.id
     summary: |-
       Id of the PivotTable. Read-only.
@@ -39,6 +122,21 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.PivotTable.layout
+    summary: |-
+      The PivotLayout describing the layout and visual structure of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: layout
+    fullName: excel.Excel.PivotTable.layout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly layout: Excel.PivotLayout;'
+      return:
+        type:
+          - excel.Excel.PivotLayout
   - uid: excel.Excel.PivotTable.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -104,6 +202,21 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.PivotTable.rowHierarchies
+    summary: |-
+      The Row Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHierarchies
+    fullName: excel.Excel.PivotTable.rowHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowHierarchies: Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.RowColumnPivotHierarchyCollection
   - uid: excel.Excel.PivotTable.toJSON
     name: toJSON()
     fullName: excel.Excel.PivotTable.toJSON

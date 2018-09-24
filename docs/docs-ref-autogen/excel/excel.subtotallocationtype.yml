@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SubtotalLocationType
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SubtotalLocationType
+    fullName: excel.Excel.SubtotalLocationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SubtotalLocationType.atBottom
+      - excel.Excel.SubtotalLocationType.atTop
+      - excel.Excel.SubtotalLocationType.off
+  - uid: excel.Excel.SubtotalLocationType.atBottom
+    summary: Subtotals are at the bottom.
+    name: atBottom
+    fullName: excel.Excel.SubtotalLocationType.atBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AtBottom"'
+  - uid: excel.Excel.SubtotalLocationType.atTop
+    summary: Subtotals are at the top.
+    name: atTop
+    fullName: excel.Excel.SubtotalLocationType.atTop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AtTop"'
+  - uid: excel.Excel.SubtotalLocationType.off
+    summary: Subtotals are off.
+    name: 'off'
+    fullName: excel.Excel.SubtotalLocationType.off
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Off"'

@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.RecurrenceTimeZone
+    summary: |-
+      Represents the time zone of the recurrence.
+
+      \[ [API set: Mailbox 1.7](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    name: Office.RecurrenceTimeZone
+    fullName: outlook.Office.RecurrenceTimeZone
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.RecurrenceTimeZone.name
+      - outlook.Office.RecurrenceTimeZone.offset
+  - uid: outlook.Office.RecurrenceTimeZone.name
+    summary: Represents the name of the recurrence time zone.
+    name: name
+    fullName: outlook.Office.RecurrenceTimeZone.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: Office.MailboxEnums.RecurrenceTimeZone;'
+      return:
+        type:
+          - outlook.Office.MailboxEnums.RecurrenceTimeZone
+  - uid: outlook.Office.RecurrenceTimeZone.offset
+    summary: >-
+      Integer value representing the difference in minutes between the local time zone and UTC at the date that the
+      meeting series began.
+    name: offset
+    fullName: outlook.Office.RecurrenceTimeZone.offset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offset: number;'
+      return:
+        type:
+          - number

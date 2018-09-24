@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PivotHierarchyData
+    summary: An interface describing the data returned by calling "pivotHierarchy.toJSON()".
+    name: Excel.Interfaces.PivotHierarchyData
+    fullName: excel.Excel.Interfaces.PivotHierarchyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PivotHierarchyData.fields
+      - excel.Excel.Interfaces.PivotHierarchyData.id
+      - excel.Excel.Interfaces.PivotHierarchyData.name
+  - uid: excel.Excel.Interfaces.PivotHierarchyData.fields
+    summary: |-
+      Returns the PivotFields associated with the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: excel.Excel.Interfaces.PivotHierarchyData.fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fields?: Excel.Interfaces.PivotFieldData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PivotFieldData[]'
+  - uid: excel.Excel.Interfaces.PivotHierarchyData.id
+    summary: |-
+      Id of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: excel.Excel.Interfaces.PivotHierarchyData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.PivotHierarchyData.name
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.PivotHierarchyData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

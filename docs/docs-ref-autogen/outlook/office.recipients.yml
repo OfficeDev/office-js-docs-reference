@@ -45,7 +45,7 @@ items:
       entries.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
@@ -137,7 +137,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
       `getAsync(callback: (result: AsyncResult&lt;Office.EmailAddressDetails[]&gt;) => void): void;`
@@ -216,7 +216,7 @@ items:
       entries.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`

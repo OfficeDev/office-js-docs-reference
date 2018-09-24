@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+    name: CustomFunctions.StreamingHandler
+    fullName: custom-functions-runtime.CustomFunctions.StreamingHandler
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - CancelableHandler
+    package: custom-functions-runtime
+    children:
+      - custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
+  - uid: custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
+    summary: Sets the returned result for a streaming custom function.
+    isPreview: true
+    name: setResult
+    fullName: custom-functions-runtime.CustomFunctions.StreamingHandler.setResult
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'setResult: (value: T) => void;'
+      return:
+        type:
+          - '(value: T) => void'

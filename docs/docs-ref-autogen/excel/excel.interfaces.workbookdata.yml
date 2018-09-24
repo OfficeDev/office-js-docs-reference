@@ -17,6 +17,7 @@ items:
       - excel.Excel.Interfaces.WorkbookData.pivotTables
       - excel.Excel.Interfaces.WorkbookData.properties
       - excel.Excel.Interfaces.WorkbookData.protection
+      - excel.Excel.Interfaces.WorkbookData.readOnly
       - excel.Excel.Interfaces.WorkbookData.settings
       - excel.Excel.Interfaces.WorkbookData.styles
       - excel.Excel.Interfaces.WorkbookData.tables
@@ -141,6 +142,21 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.WorkbookProtectionData
+  - uid: excel.Excel.Interfaces.WorkbookData.readOnly
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: excel.Excel.Interfaces.WorkbookData.readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.WorkbookData.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.

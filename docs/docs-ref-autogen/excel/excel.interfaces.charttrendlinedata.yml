@@ -9,12 +9,32 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartTrendlineData.backwardPeriod
       - excel.Excel.Interfaces.ChartTrendlineData.format
+      - excel.Excel.Interfaces.ChartTrendlineData.forwardPeriod
       - excel.Excel.Interfaces.ChartTrendlineData.intercept
+      - excel.Excel.Interfaces.ChartTrendlineData.label
       - excel.Excel.Interfaces.ChartTrendlineData.movingAveragePeriod
       - excel.Excel.Interfaces.ChartTrendlineData.name
       - excel.Excel.Interfaces.ChartTrendlineData.polynomialOrder
+      - excel.Excel.Interfaces.ChartTrendlineData.showEquation
+      - excel.Excel.Interfaces.ChartTrendlineData.showRSquared
       - excel.Excel.Interfaces.ChartTrendlineData.type
+  - uid: excel.Excel.Interfaces.ChartTrendlineData.backwardPeriod
+    summary: |-
+      Represents the number of periods that the trendline extends backward.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: backwardPeriod
+    fullName: excel.Excel.Interfaces.ChartTrendlineData.backwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backwardPeriod?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.ChartTrendlineData.format
     summary: |-
       Represents the formatting of a chart trendline.
@@ -30,6 +50,21 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartTrendlineFormatData
+  - uid: excel.Excel.Interfaces.ChartTrendlineData.forwardPeriod
+    summary: |-
+      Represents the number of periods that the trendline extends forward.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: forwardPeriod
+    fullName: excel.Excel.Interfaces.ChartTrendlineData.forwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forwardPeriod?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.ChartTrendlineData.intercept
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
@@ -47,6 +82,21 @@ items:
       return:
         type:
           - any
+  - uid: excel.Excel.Interfaces.ChartTrendlineData.label
+    summary: |-
+      Represents the label of a chart trendline.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: label
+    fullName: excel.Excel.Interfaces.ChartTrendlineData.label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'label?: Excel.Interfaces.ChartTrendlineLabelData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineLabelData
   - uid: excel.Excel.Interfaces.ChartTrendlineData.movingAveragePeriod
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
@@ -94,6 +144,36 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Interfaces.ChartTrendlineData.showEquation
+    summary: |-
+      True if the equation for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showEquation
+    fullName: excel.Excel.Interfaces.ChartTrendlineData.showEquation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showEquation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineData.showRSquared
+    summary: |-
+      True if the R-squared for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showRSquared
+    fullName: excel.Excel.Interfaces.ChartTrendlineData.showRSquared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRSquared?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartTrendlineData.type
     summary: |-
       Represents the type of a chart trendline.

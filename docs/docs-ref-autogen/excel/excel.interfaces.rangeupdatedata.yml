@@ -10,6 +10,7 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.RangeUpdateData.columnHidden
+      - excel.Excel.Interfaces.RangeUpdateData.dataValidation
       - excel.Excel.Interfaces.RangeUpdateData.format
       - excel.Excel.Interfaces.RangeUpdateData.formulas
       - excel.Excel.Interfaces.RangeUpdateData.formulasLocal
@@ -35,6 +36,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeUpdateData.dataValidation
+    summary: |-
+      Returns a data validation object.
+
+      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: excel.Excel.Interfaces.RangeUpdateData.dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DataValidationUpdateData
   - uid: excel.Excel.Interfaces.RangeUpdateData.format
     summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
