@@ -8,9 +8,9 @@ Defines the ribbon tab on which your add-in command appears. This can either be 
 |:-----|:-----|:-----|
 |  Group      | Yes |  Defines a group of commands. You can add only one group per add-in to the default tab.  |
 
-The following are valid tab `id` values by host. Values in **bold** are supported in both desktop and online (for example, Word 2016 for Windows and Word Online). 
+The following are valid tab `id` values by host. Values in **bold** are supported in both desktop and online (for example, Word 2016 or later for Windows and Word Online).
 
-### Outlook 
+### Outlook
 
 - **TabDefault**
 
