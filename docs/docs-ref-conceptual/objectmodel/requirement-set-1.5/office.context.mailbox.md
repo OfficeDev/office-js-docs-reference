@@ -78,7 +78,7 @@ Your app must have the **ReadItem** permission specified in its manifest to call
 In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method before you can use the `restUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 > [!NOTE]
-> Outlook clients connected to on-premises installations of Exchange 2016 and later with a custom REST URL configured will return an invalid value for `restUrl`.
+> Outlook clients connected to on-premises installations of Exchange 2016 or later with a custom REST URL configured will return an invalid value for `restUrl`.
 
 ##### Type:
 
