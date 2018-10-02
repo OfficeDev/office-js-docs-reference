@@ -27,6 +27,24 @@ tryCatch(async () => {
     });
 
     console.log('\n');
+    const urlToCopyCustomFunctionsRuntimeFrom = await promptFromList({
+        message: `What is the source of the Custom Functions Runtime TypeScript definition file that should be used to generate the docs?`,
+        choices: [
+            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts" },
+            { name: "Local file [generate-docs\\script-inputs\\custom-functions-runtime.d.ts]", value: "" }
+        ]
+    });
+
+    console.log('\n');
+    const urlToCopyOfficeRuntimeFrom = await promptFromList({
+        message: `What is the source of the Office Runtime TypeScript definition file that should be used to generate the docs?`,
+        choices: [
+            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts" },
+            { name: "Local file [generate-docs\\script-inputs\\office-runtime.d.ts]", value: "" }
+        ]
+    });
+
+    console.log('\n');
     const includeScriptLabSnippets = await promptFromList({
         message: `Do you want to include Script Lab code snippets in the generated docs?`,
         choices: [
@@ -50,21 +68,13 @@ tryCatch(async () => {
     // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
     // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
     // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
-    definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
+    definitions = applyRegularExpressions(
+        definitions.replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
         .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?;/gm, '')
         .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
         .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
         .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`));
 
     const dtsBuilder = new DtsBuilder();
 
@@ -112,21 +122,14 @@ tryCatch(async () => {
     // ----
     // Process Custom Functions d.ts
     // ----
-    const dtsForCfs = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
-    fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(dtsForCfs, "text"));
+    if (urlToCopyCustomFunctionsRuntimeFrom.length > 0) {
+        fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(urlToCopyCustomFunctionsRuntimeFrom, "text"));
+    }
     console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
     let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
 
     console.log("Fixing issues with d.ts file...");
-    definitionsForCfs = definitionsForCfs.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+    definitionsForCfs = applyRegularExpressions(definitionsForCfs);
 
     console.log("create file: custom-functions-runtime.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs);
@@ -134,24 +137,32 @@ tryCatch(async () => {
     // ----
     // Process Office Runtime d.ts
     // ----
-    const dtsForORun = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
-    fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(dtsForORun, "text"));
+    if (urlToCopyOfficeRuntimeFrom.length > 0) {
+        fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(urlToCopyOfficeRuntimeFrom, "text"));
+    }
     console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
     let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
 
     console.log("Fixing issues with d.ts file...");
-    definitionsForORun = definitionsForORun.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+    definitionsForORun = applyRegularExpressions(definitionsForORun);
 
     console.log("create file: office-runtime.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun);
+
+    // ----
+    // Helper function to apply regular expressions to d.ts file contents
+    // ----
+    function applyRegularExpressions (definitionsIn) {
+        return definitionsIn.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+            .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+            .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+    }
 
     // ----
     // Process Snippets
@@ -205,7 +216,6 @@ tryCatch(async () => {
 
     process.exit(0);
 });
-
 
 async function tryCatch(call: () => Promise<void>) {
     try {
