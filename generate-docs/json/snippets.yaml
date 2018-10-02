@@ -10629,12 +10629,12 @@ Visio.CommentCollection.load:
 Visio.DataRefreshCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
-      var document1= ctx.document;
-                   var page = document1.getActivePage();
-             eventResult1 = document1.onDataRefreshComplete.add(
-        function (args){
-               console.log("Data Refresh Result: "+args.success);
-        });
+        var document1= ctx.document;
+        var page = document1.getActivePage();
+        eventResult1 = document1.onDataRefreshComplete.add(
+            function (args){
+                console.log("Data Refresh Result: "+args.success);
+            });
 
         return ctx.sync().then(function () {
            console.log("Success");
@@ -10642,7 +10642,7 @@ Visio.DataRefreshCompleteEventArgs:
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
-        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
 Visio.Document.getActivePage:
@@ -10652,8 +10652,8 @@ Visio.Document.getActivePage:
         var activePage = document.getActivePage();
         activePage.load();
         return ctx.sync().then(function () {
-        console.log("pageName: " +activePage.name);
-          });   
+            console.log("pageName: " +activePage.name);
+        });   
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {

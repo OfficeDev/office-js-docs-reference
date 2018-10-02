@@ -17,12 +17,12 @@ items:
 
       ```javascript
       Visio.run(session, function (ctx) {
-        var document1= ctx.document;
-                     var page = document1.getActivePage();
-               eventResult1 = document1.onDataRefreshComplete.add(
-          function (args){
-                 console.log("Data Refresh Result: "+args.success);
-          });
+          var document1= ctx.document;
+          var page = document1.getActivePage();
+          eventResult1 = document1.onDataRefreshComplete.add(
+              function (args){
+                  console.log("Data Refresh Result: "+args.success);
+              });
 
           return ctx.sync().then(function () {
              console.log("Success");
@@ -30,7 +30,7 @@ items:
       }).catch(function(error) {
           console.log("Error: " + error);
           if (error instanceof OfficeExtension.Error) {
-          console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
       ```
