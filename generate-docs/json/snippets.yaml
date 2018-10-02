@@ -10626,7 +10626,7 @@ Visio.CommentCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.DataRefreshCompleteEventArgs.load:
+Visio.DataRefreshCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
       var document1= ctx.document;
@@ -10721,7 +10721,7 @@ Visio.Document.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.DocumentLoadCompleteEventArgs.load:
+Visio.DocumentLoadCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1 = ctx.document;
@@ -10807,7 +10807,7 @@ Visio.PageCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageLoadCompleteEventArgs.load:
+Visio.PageLoadCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
@@ -10851,7 +10851,7 @@ Visio.PageView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.SelectionChangedEventArgs.load:
+Visio.SelectionChangedEventArgs:
   - >-
     var eventResult; //Global Variable to store the EventHandlerResult returned
     on attaching handler.
@@ -10989,7 +10989,7 @@ Visio.ShapeDataItemCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeMouseEnterEventArgs.load:
+Visio.ShapeMouseEnterEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
@@ -11007,7 +11007,7 @@ Visio.ShapeMouseEnterEventArgs.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeMouseLeaveEventArgs.load:
+Visio.ShapeMouseLeaveEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;

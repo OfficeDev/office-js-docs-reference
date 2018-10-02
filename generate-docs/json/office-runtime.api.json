@@ -7,7 +7,12 @@
     "OfficeRuntime": {
       "kind": "namespace",
       "deprecatedMessage": [],
-      "summary": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Office Runtime namespace"
+        }
+      ],
       "remarks": [],
       "isBeta": false,
       "exports": {
@@ -17,9 +22,33 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
-          "isBeta": false,
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Each add-in instance has its own storage partition, unique to a user and their device."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The default amount of total storage allowed per add-in is 5MB."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Each method listed below returns a Promise object."
+            }
+          ],
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "clear": {
@@ -44,7 +73,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -71,7 +100,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -105,7 +134,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -139,7 +168,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -173,7 +202,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -207,7 +236,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -241,7 +270,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -282,7 +311,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -314,7 +343,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -331,7 +360,12 @@
           "parameters": {
             "url": {
               "name": "url",
-              "description": [],
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "*"
+                }
+              ],
               "isOptional": false,
               "isSpread": false,
               "type": "string"
@@ -345,7 +379,12 @@
             }
           },
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Enables you to pop up a web dialog box."
+            }
+          ],
           "remarks": [],
           "isBeta": false
         },
@@ -355,7 +394,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides options for how a dialog is displayed."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -370,7 +414,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -386,7 +430,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -402,7 +446,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -458,6 +502,40 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "onRuntimeError": {
+              "kind": "method",
+              "signature": "onRuntimeError?(message: string, dialog?: Dialog): void;",
+              "accessModifier": "",
+              "isOptional": true,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "message": {
+                  "name": "message",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "dialog": {
+                  "name": "dialog",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Dialog"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "width": {
               "kind": "property",
               "signature": "width?: string;",
@@ -468,7 +546,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,

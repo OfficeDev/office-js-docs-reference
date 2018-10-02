@@ -60,11 +60,11 @@
           "members": {
             "setResult": {
               "kind": "property",
-              "signature": "setResult: (value: T) => void;",
+              "signature": "setResult: (value: T | Error) => void;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(value: T) => void",
+              "type": "(value: T | Error) => void",
               "deprecatedMessage": [],
               "summary": [
                 {
