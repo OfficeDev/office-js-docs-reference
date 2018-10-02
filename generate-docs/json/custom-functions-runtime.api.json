@@ -7,7 +7,12 @@
     "CustomFunctions": {
       "kind": "namespace",
       "deprecatedMessage": [],
-      "summary": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "CustomFunctions namespace, used by Excel Custom Functions"
+        }
+      ],
       "remarks": [],
       "isBeta": false,
       "exports": {
@@ -17,7 +22,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "CancelableHandler interface"
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -53,7 +63,12 @@
             "T"
           ],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "StreamingHandler interface"
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,

@@ -10739,12 +10739,13 @@ Visio.DocumentLoadCompleteEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Highlight.load:
+Visio.Highlight:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        shape.view.highlight = { color: "#E7E7E7", width: 100 };
+        shape.view.highlight.color = "#E7E7E7";
+        shape.view.highlight.width = 100;
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);

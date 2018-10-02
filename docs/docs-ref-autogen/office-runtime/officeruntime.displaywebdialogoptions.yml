@@ -53,6 +53,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+    isPreview: true
     name: onClose
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
     langs:
@@ -64,6 +65,7 @@ items:
         type:
           - () => void
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    isPreview: true
     name: 'onMessage(message, dialog)'
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
     langs:
@@ -85,22 +87,22 @@ items:
           type:
             - Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
-    name: 'onRuntimeError(message, dialog)'
+    name: 'onRuntimeError(error, dialog)'
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'onRuntimeError?(message: string, dialog?: Dialog): void;'
+      content: 'onRuntimeError?(error: Error, dialog?: Dialog): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: message
+        - id: error
           description: ''
           type:
-            - string
+            - Error
         - id: dialog
           description: ''
           type:

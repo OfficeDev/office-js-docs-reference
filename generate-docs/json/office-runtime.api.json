@@ -326,7 +326,7 @@
           "deprecatedMessage": [],
           "summary": [],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "close": {
@@ -462,7 +462,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -497,14 +497,14 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
             },
             "onRuntimeError": {
               "kind": "method",
-              "signature": "onRuntimeError?(message: string, dialog?: Dialog): void;",
+              "signature": "onRuntimeError?(error: Error, dialog?: Dialog): void;",
               "accessModifier": "",
               "isOptional": true,
               "isStatic": false,
@@ -513,12 +513,12 @@
                 "description": []
               },
               "parameters": {
-                "message": {
-                  "name": "message",
+                "error": {
+                  "name": "error",
                   "description": [],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string"
+                  "type": "Error"
                 },
                 "dialog": {
                   "name": "dialog",

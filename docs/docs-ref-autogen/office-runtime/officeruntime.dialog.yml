@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.Dialog
+    isPreview: true
     name: OfficeRuntime.Dialog
     fullName: office-runtime.OfficeRuntime.Dialog
     langs:

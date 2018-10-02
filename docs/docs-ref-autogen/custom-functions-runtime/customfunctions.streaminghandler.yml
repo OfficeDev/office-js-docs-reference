@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+    summary: StreamingHandler interface
     name: CustomFunctions.StreamingHandler
     fullName: custom-functions-runtime.CustomFunctions.StreamingHandler
     langs:
