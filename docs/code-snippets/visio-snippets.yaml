@@ -170,7 +170,7 @@ Visio.DocumentLoadCompleteEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Highlight:
+Visio.Highlight.color:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
