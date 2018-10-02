@@ -212,6 +212,8 @@ tryCatch(async () => {
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
+    fsx.writeFileSync("../json/snippets.yaml", yaml.dump(snippets));
+
     console.log("\nPreprocessor script complete!");
 
     process.exit(0);
