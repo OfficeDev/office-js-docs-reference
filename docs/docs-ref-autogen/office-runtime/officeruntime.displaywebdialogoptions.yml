@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+    summary: Provides options for how a dialog is displayed.
     name: OfficeRuntime.DisplayWebDialogOptions
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions
     langs:
@@ -13,8 +14,10 @@ items:
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    isPreview: true
     name: displayInIFrame
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
     langs:
@@ -26,6 +29,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+    isPreview: true
     name: height
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
     langs:
@@ -37,6 +41,7 @@ items:
         type:
           - string
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    isPreview: true
     name: hideTitle
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
     langs:
@@ -48,6 +53,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+    isPreview: true
     name: onClose
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
     langs:
@@ -59,6 +65,7 @@ items:
         type:
           - () => void
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    isPreview: true
     name: 'onMessage(message, dialog)'
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
     langs:
@@ -79,7 +86,29 @@ items:
           description: ''
           type:
             - Dialog
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    name: 'onRuntimeError(error, dialog)'
+    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'onRuntimeError?(error: Error, dialog?: Dialog): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: error
+          description: ''
+          type:
+            - Error
+        - id: dialog
+          description: ''
+          type:
+            - Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+    isPreview: true
     name: width
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
     langs:

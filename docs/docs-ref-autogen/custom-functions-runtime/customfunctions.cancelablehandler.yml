@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+    summary: CancelableHandler interface
     name: CustomFunctions.CancelableHandler
     fullName: custom-functions-runtime.CustomFunctions.CancelableHandler
     langs:
