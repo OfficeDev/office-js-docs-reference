@@ -6,7 +6,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 |  Requirement set  | Office 2013 for Windows | Office 365 for Windows   |  Office 365 for iPad  |  Office 365 for Mac  | Office Online  | SharePoint Online | OneDrive.com |Outlook.com & Exchange Online|
 |:-----|-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| IdentityAPI 1.1  | N/A | Preview**&#42;** | Coming soon | Preview**&#42;**| Available | Available| Coming soon | Coming soon |
+| IdentityAPI 1.1  | N/A | Preview**&#42;** | Coming soon | Preview**&#42;**| Preview | Preview| Coming soon | Coming soon |
 
 > **&#42;** During the preview phase, the Identity API is supported on Windows 2016 and Mac only for users in the Insiders program using the Fast option. To join the Insiders program, see [Be an Office Insider](https://products.office.com/office-insider?tab=tab-1). To switch to the Fast track, see [Insider Fast](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_officeinsider-mso_win10-msoinsider_reg/its-here-office-insider-fast-for-office-2016-on/dbe8e7bb-9523-44a4-948b-9436fedfd961).
 
