@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+    summary: StreamingHandler interface
     name: CustomFunctions.StreamingHandler
     fullName: custom-functions-runtime.CustomFunctions.StreamingHandler
     langs:
@@ -20,7 +21,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'setResult: (value: T) => void;'
+      content: 'setResult: (value: T | Error) => void;'
       return:
         type:
-          - '(value: T) => void'
+          - '(value: T | Error) => void'
