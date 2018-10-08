@@ -54,7 +54,7 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 
 |Object| What's new| Description|Requirement Set|
 |:----|:----|:----|:----|
-|[application](/javascript/api/excel/excel.application)|_Method_ > [createWorkbook(base64File: string)](/javascript/api/excel/excel.application)|Creates a new hidden workbook by using an optional base64 encoded .xlsx file.|1.8|
+|[Excel](/javascript/api/excel)|_Method_ > [createWorkbook(base64File: string)](/javascript/api/excel#createworkbook-base64-)|Creates a new hidden workbook by using an optional base64 encoded .xlsx file.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Property_ > formula1|Gets or sets the Formula1, i.e. minimum value or value depending of the operator.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Property_ > formula2|Gets or sets the Formula2, i.e. maximum value or value depending of the operator.|1.8|
 |[basicDataValidation](/javascript/api/excel/excel.basicdatavalidation)|_Relationship_ > operator|The operator to use for validating the data.|1.8|
@@ -81,12 +81,12 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Property_ > textOrientation|Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Relationship_ > alignment|Represents the alignment for the specified axis tick label.|1.8|
 |[chartAxis](/javascript/api/excel/excel.chartaxis)|_Relationship_ > position|Represents the specified axis position where the other axis crosses.|1.8|
-|[chartAxis](/javascript/api/excel/excel.chartaxis)|_Method_ > [setPositionAt(value: double)](/javascript/api/excel/excel.chartaxis)|Set the specified axis position where the other axis crosses at.|1.8|
+|[chartAxis](/javascript/api/excel/excel.chartaxis)|_Method_ > [setPositionAt(value: double)](/javascript/api/excel/excel.chartaxis#setpositionat-value-)|Set the specified axis position where the other axis crosses at.|1.8|
 |[chartAxisFormat](/javascript/api/excel/excel.chartaxisformat)|_Relationship_ > fill|Represents chart fill formatting. Read-only.|1.8|
-|[chartAxisTitle](/javascript/api/excel/excel.chartaxistitle)|_Method_ > [setFormula(formula: string)](/javascript/api/excel/excel.chartaxistitle)|A string value that represents the formula of chart axis title using A1-style notation.|1.8|
+|[chartAxisTitle](/javascript/api/excel/excel.chartaxistitle)|_Method_ > [setFormula(formula: string)](/javascript/api/excel/excel.chartaxistitle#setformula-formula-)|A string value that represents the formula of chart axis title using A1-style notation.|1.8|
 |[chartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat)|_Relationship_ > border|Represents the border format, which includes color, linestyle, and weight. Read-only.|1.8|
 |[chartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat)|_Relationship_ > fill|Represents chart fill formatting. Read-only.|1.8|
-|[chartBorder](/javascript/api/excel/excel.chartborder)|_Method_ > [clear()](/javascript/api/excel/excel.chartborder)|Clear the border format of a chart element.|1.8|
+|[chartBorder](/javascript/api/excel/excel.chartborder)|_Method_ > [clear()](/javascript/api/excel/excel.chartborder#clear--)|Clear the border format of a chart element.|1.8|
 |[chartDataLabel](/javascript/api/excel/excel.chartdatalabel)|_Property_ > autoText|Boolean value representing if data label automatically generates appropriate text based on context.|1.8|
 |[chartDataLabel](/javascript/api/excel/excel.chartdatalabel)|_Property_ > formula|String value that represents the formula of chart data label using A1-style notation.|1.8|
 |[chartDataLabel](/javascript/api/excel/excel.chartdatalabel)|_Property_ > height|Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible. Read-only.|1.8|
@@ -170,20 +170,20 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > field|Returns the PivotFields associated with the DataPivotHierarchy. Read-only.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > showAs|Determines whether the data should be shown as a specific summary calculation or not.|1.8|
 |[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Relationship_ > summarizeBy|Determines whether to show all items of the DataPivotHierarchy.|1.8|
-|[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.datapivothierarchy#settodefault)|Reset the DataPivotHierarchy back to its default values.|1.8|
+|[dataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.datapivothierarchy#settodefault--)|Reset the DataPivotHierarchy back to its default values.|1.8|
 |[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Property_ > items|A collection of dataPivotHierarchy objects. Read-only.|1.8|
-|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.datapivothierarchycollection)|Adds the PivotHierarchy to the current axis.|1.8|
-|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.datapivothierarchycollection)|Gets the number of pivot hierarchies in the collection.|1.8|
-|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.datapivothierarchycollection)|Gets a DataPivotHierarchy by its name or id.|1.8|
-|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.datapivothierarchycollection)|Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.|1.8|
-|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [remove(DataPivotHierarchy: DataPivotHierarchy)](/javascript/api/excel/excel.datapivothierarchycollection)|Removes the PivotHierarchy from the current axis.|1.8|
+|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.datapivothierarchycollection#add-pivothierarchy-)|Adds the PivotHierarchy to the current axis.|1.8|
+|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.datapivothierarchycollection#getcount--)|Gets the number of pivot hierarchies in the collection.|1.8|
+|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.datapivothierarchycollection#getitem-name-)|Gets a DataPivotHierarchy by its name or id.|1.8|
+|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.datapivothierarchycollection#getitemornullobject-name-)|Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.|1.8|
+|[dataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection)|_Method_ > [remove(DataPivotHierarchy: DataPivotHierarchy)](/javascript/api/excel/excel.datapivothierarchycollection#remove-datapivothierarchy-)|Removes the PivotHierarchy from the current axis.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Property_ > ignoreBlanks|Ignore blanks: no data validation will be performed on blank cells, it defaults to true.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Property_ > valid|Represents if all cell values are valid according to the data validation rules. Read-only.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > errorAlert|Error alert when user enters invalid data.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > prompt|Prompt when users selects a cell.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > rule|Data validation rule that contains different types of data validation criteria.|1.8|
 |[dataValidation](/javascript/api/excel/excel.datavalidation)|_Relationship_ > type|Type of the data validation, see [Excel.DataValidationType](/javascript/api/excel/excel.datavalidationtype) for details. Read-only.|1.8|
-|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Method_ > [clear()](/javascript/api/excel/excel.datavalidation)|Clears the data validation from the current range.|1.8|
+|[dataValidation](/javascript/api/excel/excel.datavalidation)|_Method_ > [clear()](/javascript/api/excel/excel.datavalidation#clear--)|Clears the data validation from the current range.|1.8|
 |[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > message|Represents error alert message.|1.8|
 |[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > showAlert|Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.|1.8|
 |[dataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert)|_Property_ > title|Represents error alert dialog title.|1.8|
@@ -209,13 +209,13 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Property_ > name|Name of the FilterPivotHierarchy.|1.8|
 |[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Property_ > position|Position of the FilterPivotHierarchy.|1.8|
 |[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Relationship_ > fields|Returns the PivotFields associated with the FilterPivotHierarchy. Read-only.|1.8|
-|[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.filterpivothierarchy)|Reset the FilterPivotHierarchy back to its default values.|1.8|
+|[filterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.filterpivothierarchy#settodefault--)|Reset the FilterPivotHierarchy back to its default values.|1.8|
 |[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Property_ > items|A collection of filterPivotHierarchy objects. Read-only.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter axis, it will be removed from that location.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets the number of pivot hierarchies in the collection.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets a FilterPivotHierarchy by its name or id.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection)|Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.|1.8|
-|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [remove(filterPivotHierarchy: FilterPivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection)|Removes the PivotHierarchy from the current axis.|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection#add-pivothierarchy-)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter axis, it will be removed from that location.|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.filterpivothierarchycollection#getcount--)|Gets the number of pivot hierarchies in the collection.|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection#getitem-name-)|Gets a FilterPivotHierarchy by its name or id.|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.filterpivothierarchycollection#getitemornullobject-name-)|Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.|1.8|
+|[filterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection)|_Method_ > [remove(filterPivotHierarchy: FilterPivotHierarchy)](/javascript/api/excel/excel.filterpivothierarchycollection#remove-filterpivothierarchy-)|Removes the PivotHierarchy from the current axis.|1.8|
 |[listDataValidation](/javascript/api/excel/excel.listdatavalidation)|_Property_ > inCellDropDown|Displays the list in cell drop down or not, it defaults to true.|1.8|
 |[listDataValidation](/javascript/api/excel/excel.listdatavalidation)|_Property_ > source|Source of the list for data validation|1.8|
 |[openWorkbookPostProcessAction](/javascript/api/excel/excel.openworkbookpostprocessaction)|_Property_ > fakeFileId|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent.|1.8|
@@ -225,18 +225,18 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[pivotField](/javascript/api/excel/excel.pivotfield)|_Property_ > showAllItems|Determines whether to show all items of the PivotField.|1.8|
 |[pivotField](/javascript/api/excel/excel.pivotfield)|_Relationship_ > items|Returns the PivotFields associated with the PivotField. Read-only.|1.8|
 |[pivotField](/javascript/api/excel/excel.pivotfield)|_Relationship_ > subtotals|Subtotals of the PivotField.|1.8|
-|[pivotField](/javascript/api/excel/excel.pivotfield)|_Method_ > [sortByLabels(sortby: SortBy)](/javascript/api/excel/excel.pivotfield)|Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.|1.8|
+|[pivotField](/javascript/api/excel/excel.pivotfield)|_Method_ > [sortByLabels(sortby: SortBy)](/javascript/api/excel/excel.pivotfield#sortbylabels-sortby-)|Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.|1.8|
 |[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Property_ > items|A collection of pivotField objects. Read-only.|1.8|
-|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getCount()](/javascript/api/excel/excel.pivotfieldcollection)|Gets the number of pivot hierarchies in the collection.|1.8|
-|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.pivotfieldcollection)|Gets a PivotHierarchy by its name or id.|1.8|
-|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivotfieldcollection)|Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.|1.8|
+|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getCount()](/javascript/api/excel/excel.pivotfieldcollection#getcount--)|Gets the number of pivot hierarchies in the collection.|1.8|
+|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.pivotfieldcollection#getitem-name-)|Gets a PivotHierarchy by its name or id.|1.8|
+|[pivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivotfieldcollection#getitemornullobject-name-)|Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.|1.8|
 |[pivotHierarchy](/javascript/api/excel/excel.pivothierarchy)|_Property_ > id|Id of the PivotHierarchy. Read-only.|1.8|
 |[pivotHierarchy](/javascript/api/excel/excel.pivothierarchy)|_Property_ > name|Name of the PivotHierarchy.|1.8|
 |[pivotHierarchy](/javascript/api/excel/excel.pivothierarchy)|_Relationship_ > fields|Returns the PivotFields associated with the PivotHierarchy. Read-only.|1.8|
 |[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Property_ > items|A collection of pivotHierarchy objects. Read-only.|1.8|
-|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.pivothierarchycollection)|Gets the number of pivot hierarchies in the collection.|1.8|
-|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.pivothierarchycollection)|Gets a PivotHierarchy by its name or id.|1.8|
-|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivothierarchycollection)|Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.|1.8|
+|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.pivothierarchycollection#getcount--)|Gets the number of pivot hierarchies in the collection.|1.8|
+|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.pivothierarchycollection#getitem-name-)|Gets a PivotHierarchy by its name or id.|1.8|
+|[pivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.pivothierarchycollection#getitemornullobject-name-)|Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.|1.8|
 |[pivotItem](/javascript/api/excel/excel.pivotitem)|_Property_ > id|Id of the PivotItem. Read-only.|1.8|
 |[pivotItem](/javascript/api/excel/excel.pivotitem)|_Property_ > isExpanded|Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.|1.8|
 |[pivotItem](/javascript/api/excel/excel.pivotitem)|_Property_ > name|Name of the PivotItem.|1.8|
@@ -249,31 +249,31 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Property_ > showRowGrandTotals|True if the PivotTable report shows grand totals for rows.|1.8|
 |[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Property_ > subtotalLocation|This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states, this will be null. Possible values are: AtTop, AtBottom.|1.8|
 |[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Relationship_ > layoutType|This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.|1.8|
-|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getColumnLabelRange()](/javascript/api/excel/excel.pivotlayout)|Returns the range where the PivotTable's column labels reside.|1.8|
-|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getDataBodyRange()](/javascript/api/excel/excel.pivotlayout)|Returns the range where the PivotTable's data values reside.|1.8|
-|[pivotLayout](/javascript/api/excel/excel.pivotlayout.md)|_Method_ > [getFilterAxisRange()](/javascript/api/excel/excel.pivotlayout)|Returns the range of the PivotTable's filter area.|1.8|
-|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getRange()](/javascript/api/excel/excel.pivotlayout)|Returns the range the PivotTable exists on, excluding the filter area.|1.8|
-|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getRowLabelRange()](/javascript/api/excel/excel.pivotlayout)|Returns the range where the PivotTable's row labels reside.|1.8|
+|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getColumnLabelRange()](/javascript/api/excel/excel.pivotlayout#getcolumnlabelrange--)|Returns the range where the PivotTable's column labels reside.|1.8|
+|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getDataBodyRange()](/javascript/api/excel/excel.pivotlayout#getdatabodyrange--)|Returns the range where the PivotTable's data values reside.|1.8|
+|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getFilterAxisRange()](/javascript/api/excel/excel.pivotlayout#getfilteraxisrange--)|Returns the range of the PivotTable's filter area.|1.8|
+|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getRange()](/javascript/api/excel/excel.pivotlayout#getrange--)|Returns the range the PivotTable exists on, excluding the filter area.|1.8|
+|[pivotLayout](/javascript/api/excel/excel.pivotlayout)|_Method_ > [getRowLabelRange()](/javascript/api/excel/excel.pivotlayout#getrowlabelrange--)|Returns the range where the PivotTable's row labels reside.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > columnHierarchies|The Column Pivot Hierarchies of the PivotTable. Read-only.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > dataHierarchies|The Data Pivot Hierarchies of the PivotTable. Read-only.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > filterHierarchies|The Filter Pivot Hierarchies of the PivotTable. Read-only.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > hierarchies|The Pivot Hierarchies of the PivotTable. Read-only.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > layout|The PivotLayout describing the layout and visual structure of the PivotTable. Read-only.|1.8|
 |[pivotTable](/javascript/api/excel/excel.pivottable)|_Relationship_ > rowHierarchies|The Row Pivot Hierarchies of the PivotTable. Read-only.|1.8|
-|[pivotTable](/javascript/api/excel/excel.pivottable)|_Method_ > [delete()](/javascript/api/excel/excel.pivottable)|Deletes the PivotTable.|1.8|
-|[pivotTableCollection](/javascript/api/excel/excel.pivottablecollection)|_Method_ > [add(name: string, source: object, destination: object)](/javascript/api/excel/excel.pivottablecollection)|Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.|1.8|
+|[pivotTable](/javascript/api/excel/excel.pivottable)|_Method_ > [delete()](/javascript/api/excel/excel.pivottable#delete--)|Deletes the PivotTable.|1.8|
+|[pivotTableCollection](/javascript/api/excel/excel.pivottablecollection)|_Method_ > [add(name: string, source: object, destination: object)](/javascript/api/excel/excel.pivottablecollection#add-name--source--destination-)|Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.|1.8|
 |[range](/javascript/api/excel/excel.range)|_Relationship_ > dataValidation|Returns a data validation object. Read-only.|1.8|
 |[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Property_ > id|Id of the RowColumnPivotHierarchy. Read-only.|1.8|
 |[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Property_ > name|Name of the RowColumnPivotHierarchy.|1.8|
 |[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Property_ > position|Position of the RowColumnPivotHierarchy.|1.8|
 |[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Relationship_ > fields|Returns the PivotFields associated with the RowColumnPivotHierarchy. Read-only.|1.8|
-|[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.rowcolumnpivothierarchy)|Reset the RowColumnPivotHierarchy back to its default values.|1.8|
+|[rowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy)|_Method_ > [setToDefault()](/javascript/api/excel/excel.rowcolumnpivothierarchy#settodefault--)|Reset the RowColumnPivotHierarchy back to its default values.|1.8|
 |[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Property_ > items|A collection of rowColumnPivotHierarchy objects. Read-only.|1.8|
-|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,|1.8|
-|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Gets the number of pivot hierarchies in the collection.|1.8|
-|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Gets a RowColumnPivotHierarchy by its name or id.|1.8|
-|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.|1.8|
-|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [remove(rowColumnPivotHierarchy: RowColumnPivotHierarchy)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|Removes the PivotHierarchy from the current axis.|1.8|
+|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [add(pivotHierarchy: PivotHierarchy)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#add-pivothierarchy-)|Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,|1.8|
+|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getCount()](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#getcount--)|Gets the number of pivot hierarchies in the collection.|1.8|
+|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItem(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#getitem-name-)|Gets a RowColumnPivotHierarchy by its name or id.|1.8|
+|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [getItemOrNullObject(name: string)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#getitemornullobject-name-)|Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.|1.8|
+|[rowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection)|_Method_ > [remove(rowColumnPivotHierarchy: RowColumnPivotHierarchy)](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#remove-rowcolumnpivothierarchy-)|Removes the PivotHierarchy from the current axis.|1.8|
 |[runtime](/javascript/api/excel/excel.runtime)|_Property_ > enableEvents|Toggle JavaScript events in the current taskpane or content add-in.|1.8|
 |[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseField|The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.|1.8|
 |[showAsRule](/javascript/api/excel/excel.showasrule)|_Relationship_ > baseItem|The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.|1.8|
@@ -294,8 +294,6 @@ More [events](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-
 |[subtotals](/javascript/api/excel/excel.subtotals)|_Property_ > varianceP| |1.8|
 |[table](/javascript/api/excel/excel.table)|_Property_ > legacyId|Returns a numeric id. Read-only.|1.8|
 |[workbook](/javascript/api/excel/excel.workbook)|_Property_ > readOnly|True if the workbook is open in Read-only mode. Read-only.|1.8|
-|[workbookCreated](/javascript/api/excel/excel.workbookcreated)|_Property_ > id|Returns a value that uniquely identifies the WorkbookCreated object. Read-only.|1.8|
-|[workbookCreated](/javascript/api/excel/excel.workbookcreated)|_Method_ > [open()](/javascript/api/excel/excel.workbookcreated)|Open the workbook.|1.8|
 |[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > showGridlines|Gets or sets the worksheet's gridlines flag.|1.8|
 |[worksheet](/javascript/api/excel/excel.worksheet)|_Property_ > showHeadings|Gets or sets the worksheet's headings flag.|1.8|
 |[worksheetCalculatedEventArgs](/javascript/api/excel/excel.worksheetcalculatedeventargs)|_Property_ > type|Gets the type of the event.|1.8|
