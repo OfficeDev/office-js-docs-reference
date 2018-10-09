@@ -1,3 +1,7 @@
+---
+product: ["word"]
+---
+
 # Word JavaScript API requirement sets
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office host supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](https://docs.microsoft.com/office/dev/add-ins/develop/office-versions-and-requirement-sets).
@@ -29,7 +33,7 @@ To find out more about versions, build numbers, and Office Online Server, see:
 
 For information about common API requirement sets, see [Office common API requirement sets](office-add-in-requirement-sets.md).
 
-## What's new in Word JavaScript API 1.3 
+## What's new in Word JavaScript API 1.3
 
 The following are the new additions to the Word JavaScript APIs in requirement set 1.3. 
 

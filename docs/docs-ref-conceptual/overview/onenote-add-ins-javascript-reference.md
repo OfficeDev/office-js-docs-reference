@@ -1,3 +1,7 @@
+---
+product: ["onenote"]
+---
+
 # OneNote JavaScript API overview
 
 Applies to: OneNote Online
