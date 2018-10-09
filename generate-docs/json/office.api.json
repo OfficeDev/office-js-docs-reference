@@ -51140,7 +51140,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "[{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]",
+                  "text": "[\\{cells: Office.Table.Data, format: \\{fontColor: \"yellow\"\\}\\}, \\{cells: \\{row: 3, column: 4\\}, format: \\{borderColor: \"white\", fontStyle: \"bold\"\\}\\}]",
                   "highlighter": "plain"
                 }
               ],
@@ -58519,7 +58519,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "{cells:{ cell_range }, format:{ format_definition }}",
+                  "text": "\\{cells:\\{ cell_range \\}, format:\\{ format_definition \\}\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -59759,7 +59759,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "{cells:{ cell_range }, format:{ format_definition }}",
+                  "text": "\\{cells:\\{ cell_range \\}, format:\\{ format_definition \\}\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -60197,7 +60197,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: {fontColor : \"green\", fontSize : 15}",
+                  "text": "format: \\{fontColor : \"green\", fontSize : 15\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -60213,7 +60213,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: {borderStyle: \"dotted\", borderColor: \"blue\"}",
+                  "text": "format: \\{borderStyle: \"dotted\", borderColor: \"blue\"\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -60229,7 +60229,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: {backgroundColor: \"red\", alignHorizontal: \"center\"}",
+                  "text": "format: \\{backgroundColor: \"red\", alignHorizontal: \"center\"\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -60253,7 +60253,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: {numberFormat:\"0.00%\"}",
+                  "text": "format: \\{numberFormat:\"0.00%\"\\}",
                   "highlighter": "plain"
                 },
                 {
@@ -61480,7 +61480,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an empty array ``, if there are no rows."
+                  "text": "Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an empty array if there are no rows."
                 }
               ],
               "remarks": [

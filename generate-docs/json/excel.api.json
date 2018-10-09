@@ -5085,7 +5085,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method."
+                  "text": "Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property."
                 },
                 {
                   "kind": "paragraph"
@@ -8623,7 +8623,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents whether data labels automatically generates appropriate text based on context."
+                  "text": "Represents whether data labels automatically generate appropriate text based on context."
                 },
                 {
                   "kind": "paragraph"
@@ -9072,7 +9072,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This property is valid only when TextOrientation of data label is 90, -90 or 180."
+                  "text": "Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This property is valid only when TextOrientation of data label is -90, 90, or 180."
                 },
                 {
                   "kind": "paragraph"

@@ -906,7 +906,7 @@ items:
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      `<?xml version="1.0" encoding="iso-8859-1"?>`
+      `\<?xml version="1.0" encoding="iso-8859-1"?\>`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
