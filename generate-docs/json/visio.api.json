@@ -74,15 +74,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Application",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -479,15 +489,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Comment",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -703,15 +723,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.CommentCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -943,15 +973,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Document",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1507,15 +1547,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.DocumentView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1829,15 +1879,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Hyperlink",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -2053,15 +2113,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -4778,15 +4848,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Page",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5086,15 +5166,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5529,15 +5619,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.PageView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5842,94 +5942,25 @@
               "kind": "paragraph"
             },
             {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
+              "kind": "code",
+              "text": "run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
+              "highlighter": "plain"
             },
             {
               "kind": "paragraph"
             },
             {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
+              "kind": "code",
+              "text": "run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
+              "highlighter": "plain"
             },
             {
               "kind": "paragraph"
             },
             {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
+              "kind": "code",
+              "text": "run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
+              "highlighter": "plain"
             }
           ],
           "isBeta": false
@@ -5997,15 +6028,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Selection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Selection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Selection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -6321,15 +6362,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.Shape",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -6685,15 +6736,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -6869,15 +6930,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -7093,15 +7164,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -7487,15 +7568,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Visio.ShapeView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
