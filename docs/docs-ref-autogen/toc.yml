@@ -1335,7 +1335,7 @@ items:
             uid: word.Word.TableRow
           - name: TableRowCollection
             uid: word.Word.TableRowCollection
-      - name: Shared API
+      - name: Common API
         uid: office
         items:
           - name: Office

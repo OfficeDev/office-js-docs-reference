@@ -60,10 +60,7 @@
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
-      "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json?view=office-js",
-      "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
-      "ConceptualTOCUrl": "/javascript/office/toc.json?view=office-js"
-
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ],
   "notification_subscribers": [],
