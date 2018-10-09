@@ -17,6 +17,9 @@ items:
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    summary: >-
+      Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only
+      applicable to custom functions running on Excel Online.
     isPreview: true
     name: displayInIFrame
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
@@ -29,6 +32,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+    summary: Defines the height of the dialog box as a percentage of the current display.
     isPreview: true
     name: height
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
@@ -41,6 +45,7 @@ items:
         type:
           - string
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    summary: True if title is hidden from the dialog box.
     isPreview: true
     name: hideTitle
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
@@ -53,6 +58,7 @@ items:
         type:
           - boolean
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+    summary: Callback that is run when the dialog box is closed.
     isPreview: true
     name: onClose
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
@@ -65,6 +71,7 @@ items:
         type:
           - () => void
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    summary: Callback that is run when the dialog sends a message to its parent.
     isPreview: true
     name: 'onMessage(message, dialog)'
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
@@ -108,6 +115,7 @@ items:
           type:
             - Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+    summary: Defines the width of the dialog box as a percentage of the current display.
     isPreview: true
     name: width
     fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width

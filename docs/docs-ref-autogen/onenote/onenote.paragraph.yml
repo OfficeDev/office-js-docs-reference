@@ -237,7 +237,7 @@ items:
             - onenote.OneNote.InsertLocation
         - id: html
           description: >-
-            An HTML string that describes the visual presentation of the content. See[Supported
+            An HTML string that describes the visual presentation of the content. See [ Supported
             HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
             the OneNote add-ins JavaScript API.
           type:

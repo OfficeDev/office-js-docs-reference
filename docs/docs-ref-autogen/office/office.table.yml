@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Table
     summary: >-
-      Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting
+      Specifies enumerated values for the `cells` property in the cellFormat parameter of [ table formatting
       methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
     remarks: >-
       **Support details**
@@ -12,7 +12,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

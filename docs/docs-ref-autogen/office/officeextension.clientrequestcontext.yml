@@ -67,8 +67,8 @@ items:
             - office.OfficeExtension.ClientObject
         - id: option
           description: >-
-            A comma-delimited string, or array of strings, that specifies the properties to load, or
-            an[OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
+            A comma-delimited string, or array of strings, that specifies the properties to load, or an
+            [OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
           type:
             - 'string | string[] | LoadOption'
   - uid: office.OfficeExtension.ClientRequestContext.loadRecursive
@@ -96,8 +96,8 @@ items:
             - office.OfficeExtension.ClientObject
         - id: options
           description: >-
-            The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables",
-            "Worksheet": "tables", "Tables": "name" }`
+            The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables", 
+            "Worksheet": "tables",  "Tables": "name" }`
           type:
             - '{ [typeName: string]: string | string[] | LoadOption }'
         - id: maxDepth
