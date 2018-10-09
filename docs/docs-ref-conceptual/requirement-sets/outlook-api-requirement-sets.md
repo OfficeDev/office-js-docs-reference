@@ -1,5 +1,5 @@
 ---
-product: outlook
+product: ["outlook"]
 ---
 
 # Outlook JavaScript API requirement sets
