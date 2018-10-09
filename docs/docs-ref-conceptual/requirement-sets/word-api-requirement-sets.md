@@ -1,5 +1,5 @@
 ---
-product: word
+product: ["word"]
 ---
 
 # Word JavaScript API requirement sets

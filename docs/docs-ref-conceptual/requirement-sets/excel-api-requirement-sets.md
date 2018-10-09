@@ -1,5 +1,5 @@
 ---
-product: excel
+product: ["excel"]
 ---
 
 # Excel JavaScript API requirement sets

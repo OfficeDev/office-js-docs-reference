@@ -1,5 +1,5 @@
 ---
-product: onenote
+product: ["onenote"]
 ---
 
 # OneNote JavaScript API overview

@@ -1,5 +1,5 @@
 ---
-product: visio
+product: ["visio"]
 ---
 
 # Visio JavaScript API overview
