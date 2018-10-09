@@ -107,7 +107,6 @@
       "extendBreadcrumb": true,
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
-      "ms.date": "08/15/2018",
       "author": "o365devx",
       "ms.prod": "office 365",
       "ms.technology": "add-ins",
@@ -140,6 +139,51 @@
       },
       "feedback_product_url":{
         "docs-ref-conceptual/**/*": "https://officespdev.uservoice.com/"
+      },
+      "product": {
+        "docs-ref-conceptual/objectmodel/**": [
+          "outlook"
+        ],
+        "docs-ref-autogen/custom-functions-runtime/**": [
+          "excel",
+          "custom functions"
+        ],
+        "docs-ref-autogen/excel/**": [
+          "excel"
+        ],
+        "docs-ref-autogen/onenote/**": [
+          "onenote"
+        ],
+        "docs-ref-autogen/outlook/**": [
+          "outlook preview"
+        ],
+        "docs-ref-autogen/outlook_1_1/**": [
+          "outlook 1.1"
+        ],
+        "docs-ref-autogen/outlook_1_2/**": [
+          "outlook 1.2"
+        ],
+        "docs-ref-autogen/outlook_1_3/**": [
+          "outlook 1.3"
+        ],
+        "docs-ref-autogen/outlook_1_4/**": [
+          "outlook 1.4"
+        ],
+        "docs-ref-autogen/outlook_1_5/**": [
+          "outlook 1.5"
+        ],
+        "docs-ref-autogen/outlook_1_6/**": [
+          "outlook 1.6"
+        ],
+        "docs-ref-autogen/outlook_1_7/**": [
+          "outlook 1.7"
+        ],
+        "docs-ref-autogen/visio/**": [
+          "visio"
+        ],
+        "docs-ref-autogen/word/**": [
+          "word"
+        ]
       }
     },
     "template": [],
