@@ -3,11 +3,11 @@ items:
   - uid: office.Office.CoercionType
     summary: Specifies how to coerce data returned or set by the invoked method.
     remarks: >-
-      PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and
-      `Office.CoercionType.SlideRange`.
+      PowerPoint supports only `Office.CoercionType.Text`<!-- -->, `Office.CoercionType.Image`<!-- -->, and
+      `Office.CoercionType.SlideRange`<!-- -->.
 
 
-      Project supports only `Office.CoercionType.Text`.
+      Project supports only `Office.CoercionType.Text`<!-- -->.
 
 
       **Support details**
@@ -17,7 +17,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -86,11 +86,11 @@ items:
   - uid: office.Office.CoercionType.SlideRange
     summary: >-
       Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
-      `{"slides":\[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}\]}` for a selection of
+      `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
       two slides.
 
 
-      Note: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
+      Note: Only applies to data in PowerPoint when calling the [ Document](xref:office.Office.Document)<!--
       -->.getSelectedData method to get the current slide or selected range of slides.
     name: SlideRange
     fullName: office.Office.CoercionType.SlideRange

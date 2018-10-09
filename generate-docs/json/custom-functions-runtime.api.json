@@ -14,7 +14,7 @@
         }
       ],
       "remarks": [],
-      "isBeta": false,
+      "isBeta": true,
       "exports": {
         "CancelableHandler": {
           "kind": "interface",
@@ -29,7 +29,7 @@
             }
           ],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "onCanceled": {
@@ -66,11 +66,11 @@
           "summary": [
             {
               "kind": "text",
-              "text": "StreamingHandler interface"
+              "text": "A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming."
             }
           ],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "setResult": {

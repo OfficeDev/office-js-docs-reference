@@ -54,7 +54,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -373,15 +373,15 @@ items:
         - id: eventType
           description: >-
             For a Document object event, the eventType parameter can be specified as
-            `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`, or the
-            corresponding text value of this enumeration.
+            `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
+            the corresponding text value of this enumeration.
           type:
             - Office.EventType
         - id: handler
           description: >-
-            The event handler function to add, whose only parameter is of
-            type[Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!--
-            -->. Required.
+            The event handler function to add, whose only parameter is of type
+            [Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!-- -->.
+            Required.
           type:
             - any
         - id: options
@@ -390,8 +390,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.bindings
@@ -408,7 +408,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -460,7 +460,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -513,7 +513,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -560,8 +560,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
             corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
             corresponds to either Slide Show or Reading View.
@@ -588,15 +588,15 @@ items:
       Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
 
 
-      PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`,
+      PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`<!-- -->,
       `Office.FileType.Pdf`
 
 
-      Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`,
-      `Office.FileType.Text`
+      Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`<!-- -->,
+      `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
 
 
-      Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`
+      Word on iPad: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Text`
 
 
       **Support details**
@@ -606,7 +606,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -736,9 +736,9 @@ items:
             - office.Office.GetFileOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            File object.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the File
+            object.
           type:
             - '(result: AsyncResult<Office.File>) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
@@ -747,7 +747,7 @@ items:
       <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
-      You get the file's URL with the url property `asyncResult.value.url`.
+      You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
 
 
       **Support details**
@@ -757,7 +757,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -815,9 +815,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            file's properties (with the URL found at `asyncResult.value.url`).
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
           type:
             - '(result: AsyncResult<Office.FileProperties>) => void'
   - uid: office.Office.Document.getMaxResourceIndexAsync
@@ -833,7 +833,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -948,8 +948,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             highest index number in the current project's resource collection.
           type:
             - '(result: AsyncResult<number>) => void'
@@ -966,7 +966,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1082,8 +1082,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             highest index number in the current project's task collection.
           type:
             - '(result: AsyncResult<number>) => void'
@@ -1097,7 +1097,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1204,9 +1204,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
-            contains the `fieldValue` property, which represents the value of the specified field.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the `fieldValue` property, which represents the value of the specified field.
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getResourceByIndexAsync
@@ -1222,7 +1222,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1341,9 +1341,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            GUID of the resource as a string.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getResourceFieldAsync
@@ -1356,7 +1356,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1493,9 +1493,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            GUID of the resource as a string.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedDataAsync
@@ -1535,7 +1535,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1693,9 +1693,9 @@ items:
             - office.Office.GetSelectedDataOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            data in the current selection. This is returned in the data structure or format you specified with the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the data
+            in the current selection. This is returned in the data structure or format you specified with the
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
@@ -1709,7 +1709,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1838,9 +1838,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            GUID of the resource as a string.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
@@ -1853,7 +1853,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -1960,9 +1960,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            GUID of the resource as a string.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedViewAsync
@@ -1975,7 +1975,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2054,10 +2054,10 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
-            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
-            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` -
+            The type of view, as the integer value of a ProjectViewTypes constant.
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync
@@ -2070,7 +2070,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2183,12 +2183,11 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
-            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
-            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
-            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
-            task.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the
+            synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value
+            is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskByIndexAsync
@@ -2204,7 +2203,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2326,9 +2325,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            GUID of the task as a string.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the task as a string.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getTaskFieldAsync
@@ -2341,7 +2340,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2473,9 +2472,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
-            contains the `fieldValue` property, which represents the value of the specified field.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the `fieldValue` property, which represents the value of the specified field.
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getWSSUrlAsync
@@ -2488,7 +2487,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2512,10 +2511,10 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result
-            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
-            `serverUrl` - the URL of the synchronized SharePoint task list.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the
+            URL of the synchronized SharePoint task list.
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.goToByIdAsync
@@ -2551,7 +2550,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2724,8 +2723,8 @@ items:
             - office.Office.GoToByIdOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             current view.
           type:
             - '(result: AsyncResult<any>) => void'
@@ -2739,7 +2738,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2832,7 +2831,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -2955,8 +2954,8 @@ items:
             - office.Office.RemoveHandlerOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setResourceFieldAsync
@@ -2972,7 +2971,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -3105,8 +3104,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setSelectedDataAsync
@@ -3141,14 +3140,14 @@ items:
       overwritten.</td></tr> <tr><td></td><td></td><td>If `data` is a TableData object, a new Excel table with the
       specified set of rows and headers is inserted, if no other data in surrounding cells will be
       overwritten.</td></tr> <tr><td></td><td>If multiple cells are selected</td><td>If the shape does not match the
-      shape of `data`, an error is returned.</td></tr> <tr><td></td><td></td><td>If the shape of the selection exactly
-      matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td></tr>
-      <tr><td></td><td>Insert images</td><td>Inserted images are floating. The position imageLeft and imageTop
-      parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and
-      possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both
-      imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is
-      given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
-      <tr><td></td><td>All other cases</td><td>An error is returned.</td></tr>
+      shape of `data`<!-- -->, an error is returned.</td></tr> <tr><td></td><td></td><td>If the shape of the selection
+      exactly matches the shape of `data`<!-- -->, the values of the selected cells are updated based on the values in
+      `data`<!-- -->.</td></tr> <tr><td></td><td>Insert images</td><td>Inserted images are floating. The position
+      imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop
+      values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio
+      is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and
+      imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect
+      ratio.</td></tr> <tr><td></td><td>All other cases</td><td>An error is returned.</td></tr>
 
 
       <tr><td>Excel Online</td><td>In addition to the behaviors described for Excel above, these limits apply when
@@ -3186,7 +3185,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -3339,8 +3338,8 @@ items:
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or[Office.CoercionType](xref:office.Office.CoercionType) value, 2d array
-            or TableData object.
+            The data to be set. Either a string or [Office.CoercionType](xref:office.Office.CoercionType) value, 2d
+            array or TableData object.
 
 
             If the value passed for `data` is:
@@ -3381,9 +3380,9 @@ items:
             - office.Office.SetSelectedDataOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always
-            returns undefined because there is no object or data to retrieve.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always returns
+            undefined because there is no object or data to retrieve.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setTaskFieldAsync
@@ -3399,7 +3398,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -3532,8 +3531,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.settings
@@ -3548,7 +3547,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -3577,7 +3576,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

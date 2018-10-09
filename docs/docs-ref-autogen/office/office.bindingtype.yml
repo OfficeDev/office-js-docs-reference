@@ -10,7 +10,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -38,7 +38,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Table
-    summary: 'Tabular data with a header row. Data is returned as a [TableData](xref:office.Office.TableData) object.'
+    summary: 'Tabular data with a header row. Data is returned as a [ TableData](xref:office.Office.TableData) object.'
     name: Table
     fullName: office.Office.BindingType.Table
     langs:
