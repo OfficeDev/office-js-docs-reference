@@ -2,14 +2,14 @@
 items:
   - uid: office.Office.ProjectResourceFields
     summary: >-
-      Specifies the resource fields that are available as a parameter for the
-      [Document](xref:office.Office.Document)<!-- -->.getResourceFieldAsync method.
+      Specifies the resource fields that are available as a parameter for the [
+      Document](xref:office.Office.Document)<!-- -->.getResourceFieldAsync method.
     remarks: >-
-      A ProjectResourceFields constant can be used as a parameter of the [Document](xref:office.Office.Document)<!--
+      A ProjectResourceFields constant can be used as a parameter of the [ Document](xref:office.Office.Document)<!--
       -->.getResourceFieldAsync method.
 
 
-      For more information about working with fields in Project, see [Available
+      For more information about working with fields in Project, see [ Available
       fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
       reference. In Project Help, search for Available fields.
 
@@ -21,7 +21,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

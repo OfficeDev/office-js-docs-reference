@@ -6,7 +6,7 @@ items:
       your Office Add-ins.
 
 
-      Visit "[Use the Dialog API in your Office
+      Visit "[ Use the Dialog API in your Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
       information.
     name: Office.UI
@@ -58,8 +58,8 @@ items:
 
 
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
-      Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
-      [Specify Office hosts and API
+      Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see [
+      Specify Office hosts and API
       requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
       -->.
 
@@ -105,7 +105,7 @@ items:
       Do not use a dialog box to interact with a document. Use a task pane instead.
 
 
-      For a design pattern that you can use to create a dialog box, see [Client
+      For a design pattern that you can use to create a dialog box, see [ Client
       Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md) in
       the Office Add-in UX Design Patterns repository on GitHub.
 
@@ -151,7 +151,7 @@ items:
             - string
         - id: options
           description: >-
-            Optional. Accepts an[Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
+            Optional. Accepts an [Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
             display.
           type:
             - office.Office.DialogOptions

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.AsyncResultStatus
     summary: Specifies the result of an asynchronous call.
     remarks: >-
-      Returned by the `status` property of the [AsyncResult](xref:office.Office.AsyncResult) object.
+      Returned by the `status` property of the [ AsyncResult](xref:office.Office.AsyncResult) object.
 
 
       **Support details**
@@ -13,7 +13,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

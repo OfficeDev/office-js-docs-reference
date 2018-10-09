@@ -2,6 +2,7 @@
 items:
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
     summary: CancelableHandler interface
+    isPreview: true
     name: CustomFunctions.CancelableHandler
     fullName: custom-functions-runtime.CustomFunctions.CancelableHandler
     langs:

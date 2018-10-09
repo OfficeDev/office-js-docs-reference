@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.Dialog
+    summary: Object representing the dialog box.
     isPreview: true
     name: OfficeRuntime.Dialog
     fullName: office-runtime.OfficeRuntime.Dialog
@@ -11,6 +12,7 @@ items:
     children:
       - office-runtime.OfficeRuntime.Dialog.close
   - uid: office-runtime.OfficeRuntime.Dialog.close
+    summary: Method that closes a dialog box.
     isPreview: true
     name: close()
     fullName: office-runtime.OfficeRuntime.Dialog.close

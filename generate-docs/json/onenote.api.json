@@ -449,15 +449,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Application",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -738,15 +748,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1057,15 +1077,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Image",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1426,15 +1456,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1630,15 +1670,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLine",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLine` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -1971,15 +2021,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLineCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -2203,15 +2263,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -2488,15 +2558,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -2720,15 +2800,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -3061,15 +3151,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWordCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -3265,15 +3365,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkStroke",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStroke",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStroke` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -3550,15 +3660,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -3835,15 +3955,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkWord",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -4176,15 +4306,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -9742,15 +9882,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Notebook",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -10155,15 +10305,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -10331,15 +10491,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.NoteTag",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -11201,14 +11371,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The HTML string to append. See"
+                      "text": "The HTML string to append. See "
                     },
                     {
                       "kind": "web-link",
                       "elements": [
                         {
                           "kind": "text",
-                          "text": "Supported HTML"
+                          "text": " Supported HTML"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
@@ -11522,15 +11692,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Outline",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -11726,14 +11906,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "An HTML string that describes the visual presentation of the Outline. See"
+                      "text": "An HTML string that describes the visual presentation of the Outline. See "
                     },
                     {
                       "kind": "web-link",
                       "elements": [
                         {
                           "kind": "text",
-                          "text": "Supported HTML"
+                          "text": " Supported HTML"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
@@ -12224,15 +12404,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Page",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -12665,15 +12855,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -12956,15 +13156,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.PageContent",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -13353,15 +13563,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContentCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -13737,14 +13957,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "An HTML string that describes the visual presentation of the content. See"
+                      "text": "An HTML string that describes the visual presentation of the content. See "
                     },
                     {
                       "kind": "web-link",
                       "elements": [
                         {
                           "kind": "text",
-                          "text": "Supported HTML"
+                          "text": " Supported HTML"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
@@ -14035,15 +14255,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Paragraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -14572,15 +14802,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.ParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -15072,15 +15312,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.RichText",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.RichText",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.RichText` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -15262,63 +15512,17 @@
               "kind": "paragraph"
             },
             {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(batch: (context: OneNote.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
+              "kind": "code",
+              "text": "run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
+              "highlighter": "plain"
             },
             {
               "kind": "paragraph"
             },
             {
-              "kind": "text",
-              "text": "`run"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": "): Promise"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<T>"
-            },
-            {
-              "kind": "text",
-              "text": ";`"
+              "kind": "code",
+              "text": "run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
+              "highlighter": "plain"
             }
           ],
           "isBeta": false
@@ -15717,15 +15921,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Section",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -16214,15 +16428,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -16537,15 +16761,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -17034,15 +17268,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroupCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroupCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -17553,15 +17797,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.Table",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -17800,14 +18054,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The HTML string to append. See"
+                      "text": "The HTML string to append. See "
                     },
                     {
                       "kind": "web-link",
                       "elements": [
                         {
                           "kind": "text",
-                          "text": "Supported HTML"
+                          "text": " Supported HTML"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
@@ -18149,15 +18403,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.TableCell",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -18546,15 +18810,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -18865,15 +19139,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.TableRow",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -19245,15 +19529,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRowCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,

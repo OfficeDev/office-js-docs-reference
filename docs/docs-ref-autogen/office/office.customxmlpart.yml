@@ -13,7 +13,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this interface.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -126,13 +126,14 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
-            `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+            `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
+            `Office.EventType.NodeReplaced`<!-- -->.
           type:
             - Office.EventType
         - id: handler
           description: >-
-            The event handler function to add, whose only parameter is of
-            type[Office.NodeDeletedEventArgs](xref:office.Office.NodeDeletedEventArgs)<!-- -->,
+            The event handler function to add, whose only parameter is of type
+            [Office.NodeDeletedEventArgs](xref:office.Office.NodeDeletedEventArgs)<!-- -->,
             [Office.NodeInsertedEventArgs](xref:office.Office.NodeInsertedEventArgs)<!-- -->, or
             [Office.NodeReplacedEventArgs](xref:office.Office.NodeReplacedEventArgs)
           type:
@@ -143,8 +144,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlPart.builtIn
@@ -215,8 +216,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlPart.getNodesAsync
@@ -266,10 +267,10 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
-            array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the
-            xPath parameter.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
+            of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath
+            parameter.
           type:
             - '(result: AsyncResult<CustomXmlNode[]>) => void'
   - uid: office.Office.CustomXmlPart.getXmlAsync
@@ -310,9 +311,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            string that contains the XML of the referenced CustomXmlPart object.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the XML of the referenced CustomXmlPart object.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlPart.id
@@ -404,7 +405,8 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
-            as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
+            as `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
+            `Office.EventType.NodeReplaced`<!-- -->.
           type:
             - Office.EventType
         - id: handler
@@ -417,7 +419,7 @@ items:
             - office.Office.RemoveHandlerOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'

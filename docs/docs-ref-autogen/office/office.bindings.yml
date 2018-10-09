@@ -56,7 +56,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -160,7 +160,7 @@ items:
             - string
         - id: bindingType
           description: >-
-            The[Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
+            The [Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
             selected object cannot be coerced into the specified type.
           type:
             - BindingType
@@ -170,8 +170,8 @@ items:
             - office.Office.AddBindingFromNamedItemOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             Binding object that represents the specified named item.
           type:
             - '(result: AsyncResult<Binding>) => void'
@@ -192,7 +192,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -247,8 +247,8 @@ items:
             - office.Office.AddBindingFromPromptOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
@@ -276,7 +276,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -331,8 +331,8 @@ items:
             - office.Office.AddBindingFromSelectionOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
@@ -348,7 +348,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -379,7 +379,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -428,9 +428,9 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
-            array that contains each binding created for the referenced Bindings object.
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
+            that contains each binding created for the referenced Bindings object.
           type:
             - '(result: AsyncResult<Binding[]>) => void'
   - uid: office.Office.Bindings.getByIdAsync
@@ -450,7 +450,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -501,8 +501,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             Binding object specified by the id in the call.
           type:
             - '(result: AsyncResult<Binding>) => void'
@@ -522,7 +522,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -571,7 +571,7 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
