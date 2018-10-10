@@ -1,5 +1,5 @@
 // Type definitions for Office.js
-// Project: http://dev.office.com
+// Project: https://github.com/OfficeDev/office-js
 // Definitions by: OfficeDev <https://github.com/OfficeDev>, Lance Austin <https://github.com/LanceEA>, Michael Zlatkovsky <https://github.com/Zlatkovsky>, Kim Brandl <https://github.com/kbrandl>, Ricky Kirkham <https://github.com/Rick-Kirkham>, Alex Jerabek <https://github.com/AlexJerabek>, Elizabeth Samuel <https://github.com/ElizabethSamuel-MSFT>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
@@ -15095,7 +15095,7 @@ declare namespace Office {
          *
          * You cannot request Folder Associated Items with the makeEwsRequestAsync method.
          *
-         * The XML request must specify UTF-8 encoding. <?xml version="1.0" encoding="utf-8"?>
+         * The XML request must specify UTF-8 encoding. \<?xml version="1.0" encoding="utf-8"?\>
          *
          * Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. 
          * For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, 
@@ -15118,7 +15118,7 @@ declare namespace Office {
          * When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set 
          * the encoding value to ISO-8859-1.
          *
-         * `\<?xml version="1.0" encoding="iso-8859-1"?\>`
+         * `<?xml version="1.0" encoding="iso-8859-1"?>`
          *
          * You do not need to set the encoding value when your mail app is running in Outlook on the web. 
          * You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. 
@@ -16205,7 +16205,7 @@ declare namespace Office {
          * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name. 
          * The value is stored in the document as the serialized JSON representation of its data type.
          *
-         * A maximum of 2MB is available for the settings of each add-in, and each individual setting is limited to 32KB.
+         * A maximum of 32KB is available for the settings of each add-in.
          *
          * Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called.
          *
