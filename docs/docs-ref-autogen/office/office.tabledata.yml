@@ -85,7 +85,7 @@ items:
   - uid: office.Office.TableData.rows
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
-      empty array ``, if there are no rows.
+      empty array if there are no rows.
     remarks: >-
       <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
