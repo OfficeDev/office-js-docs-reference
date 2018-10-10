@@ -205,14 +205,6 @@
             "redirect_url": "/office/dev/add-ins/what's-changed-in-the-javascript-api-for-office"
         },
         {
-            "source_path": "docs/docs-ref-conceptual/images/visio-api-block-diagram.png",
-            "redirect_url": "/office/dev/add-ins/images/visio-api-block-diagram.png"
-        },
-        {
-            "source_path": "docs/docs-ref-conceptual/images/Visio-embed-url.png",
-            "redirect_url": "/office/dev/add-ins/images/Visio-embed-url.png"
-        },
-        {
             "source_path": "docs/docs-ref-conceptual/manifest/action.md",
             "redirect_url": "/office/dev/add-ins/reference/manifest/action"
         },
