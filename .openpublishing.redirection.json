@@ -189,8 +189,8 @@
             "redirect_url": "/javascript/api/office/office.settingschangedeventargs"
         },
         {
-            "source_path": "docs/docs-ref-conceptual/requirement-sets/excel-api-requirement-sets.md#whats-new-in-excel-javascript-api-18",
-            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets#whats-new-in-excel-javascript-api-18"
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/excel-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/outlook-requirement-set-1.7.md",
