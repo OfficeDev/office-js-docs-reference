@@ -7759,7 +7759,7 @@ export declare namespace Office {
          *
          * You cannot request Folder Associated Items with the makeEwsRequestAsync method.
          *
-         * The XML request must specify UTF-8 encoding. <?xml version="1.0" encoding="utf-8"?>
+         * The XML request must specify UTF-8 encoding. \<?xml version="1.0" encoding="utf-8"?\>
          *
          * Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. 
          * For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, 

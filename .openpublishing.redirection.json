@@ -190,19 +190,19 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/javascript-api-for-office.md",
-            "redirect_url": "/office/dev/add-ins/javascript-api-for-office"
+            "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office"
         },
         {
             "source_path": "docs/docs-ref-conceptual/javascript-api-for-office-error-codes.md",
-            "redirect_url": "/office/dev/add-ins/javascript-api-for-office-error-codes"
+            "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office-error-codes"
         },
         {
             "source_path": "docs/docs-ref-conceptual/openspec.md",
-            "redirect_url": "/office/dev/add-ins/openspec"
+            "redirect_url": "/office/dev/add-ins/reference/openspec"
         },
         {
             "source_path": "docs/docs-ref-conceptual/what's-changed-in-the-javascript-api-for-office.md",
-            "redirect_url": "/office/dev/add-ins/what's-changed-in-the-javascript-api-for-office"
+            "redirect_url": "/office/dev/add-ins/reference/what's-changed-in-the-javascript-api-for-office"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/action.md",
