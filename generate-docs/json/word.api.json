@@ -1033,15 +1033,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Body",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -3090,15 +3100,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.ContentControl",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -4348,15 +4368,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -4732,15 +4762,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.CustomProperty",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomProperty",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5182,15 +5222,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomPropertyCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5417,15 +5467,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Document",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -5736,15 +5796,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.DocumentCreated",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -6366,15 +6436,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.DocumentProperties",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -6955,15 +7035,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Font",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -8153,15 +8243,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.InlinePicture",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -8699,15 +8799,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -19403,15 +19513,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.List",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -20211,15 +20331,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.ListCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -20547,15 +20677,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.ListItem",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListItem",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -22377,15 +22517,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Paragraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -23308,15 +23458,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -24714,15 +24874,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Range",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -25480,15 +25650,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.RangeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -25909,15 +26089,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.SearchOptions",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -26375,15 +26565,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Section",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -26625,15 +26825,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.SectionCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -29178,15 +29388,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.Table",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Table",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -30126,15 +30346,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableBorder",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableBorder",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -30790,15 +31020,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableCell",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -31273,15 +31513,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableCellCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCellCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -31504,15 +31754,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -32072,15 +32332,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableRow",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,
@@ -32627,15 +32897,25 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; }): Word.TableRowCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
+                  "text": " - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "code",
+                  "text": "load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRowCollection",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
-                  "text": "`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                  "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
                 }
               ],
               "isBeta": false,

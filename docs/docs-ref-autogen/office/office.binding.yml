@@ -26,7 +26,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this interface.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -51,7 +51,8 @@ items:
   - uid: office.Office.Binding.addHandlerAsync
     summary: >-
       Adds an event handler to the object for the specified [Office.EventType](xref:office.Office.EventType)<!-- -->.
-      Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`.
+      Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!--
+      -->.
     remarks: >-
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
@@ -128,13 +129,13 @@ items:
         - id: eventType
           description: >-
             The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`.
+            `Office.EventType.BindingSelectionChanged`<!-- -->.
           type:
             - Office.EventType
         - id: handler
           description: >-
-            The event handler function to add, whose only parameter is of
-            type[Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs) or
+            The event handler function to add, whose only parameter is of type
+            [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs) or
             [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
           type:
             - any
@@ -144,8 +145,8 @@ items:
             - office.Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: office.Office.Binding.document
@@ -286,8 +287,8 @@ items:
             - office.Office.GetBindingDataOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             values in the specified binding. If the `coercionType` parameter is specified (and the call is successful),
             the data is returned in the format described in the CoercionType enumeration topic.
           type:
@@ -349,7 +350,7 @@ items:
         - id: eventType
           description: >-
             The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`.
+            `Office.EventType.BindingSelectionChanged`<!-- -->.
           type:
             - Office.EventType
         - id: options
@@ -358,8 +359,8 @@ items:
             - office.Office.RemoveHandlerOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Binding.setDataAsync
@@ -375,8 +376,8 @@ items:
       <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything
       that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td>
       <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can
-      pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of
-      three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`.</td> </tr> <tr> <td>An
+      pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`<!-- -->. To write a single
+      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>An
       [Office.TableData](xref:office.Office.TableData) object</td> <td>A table with headers will be written.</td> </tr>
       </table>
 
@@ -576,14 +577,16 @@ items:
         description: ''
       parameters:
         - id: data
-          description: >-
-            The data to be set in the current selection. Possible data types by host: string: Excel, Excel Online, Word,
-            and Word Online only array of arrays: Excel and Word
-            only[Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
+          description: |-
+            The data to be set in the current selection. Possible data types by host:
 
+            string: Excel, Excel Online, Word, and Word Online only
+
+            array of arrays: Excel and Word only
+
+            [Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
 
             HTML: Word and Word Online only
-
 
             Office Open XML: Word only
           type:
@@ -594,8 +597,8 @@ items:
             - office.Office.SetBindingDataOptions
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns, whose only parameter is of
-            type[Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Binding.type

@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.AsyncStorage
+    summary: 'Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.'
+    remarks: |-
+      Each add-in instance has its own storage partition, unique to a user and their device.
+
+      The default amount of total storage allowed per add-in is 5MB.
+
+      Each method listed below returns a Promise object.
+    isPreview: true
     name: OfficeRuntime.AsyncStorage
     fullName: office-runtime.OfficeRuntime.AsyncStorage
     langs:
@@ -8,7 +16,6 @@ items:
     type: interface
     package: office-runtime
     children:
-      - office-runtime.OfficeRuntime.AsyncStorage.clear
       - office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
       - office-runtime.OfficeRuntime.AsyncStorage.getItem
       - office-runtime.OfficeRuntime.AsyncStorage.multiGet
@@ -16,24 +23,9 @@ items:
       - office-runtime.OfficeRuntime.AsyncStorage.multiSet
       - office-runtime.OfficeRuntime.AsyncStorage.removeItem
       - office-runtime.OfficeRuntime.AsyncStorage.setItem
-  - uid: office-runtime.OfficeRuntime.AsyncStorage.clear
-    name: clear(callback)
-    fullName: office-runtime.OfficeRuntime.AsyncStorage.clear
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(callback?: (error?: Error) => void): Promise<void>;'
-      return:
-        type:
-          - Promise<void>
-        description: ''
-      parameters:
-        - id: callback
-          description: ''
-          type:
-            - '(error?: Error) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
+    summary: Returns a Promise with all keys.
+    isPreview: true
     name: getAllKeys(callback)
     fullName: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
     langs:
@@ -51,6 +43,8 @@ items:
           type:
             - '(error?: Error, keys?: string[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getItem
+    summary: Retrieves an object based on a key and invokes a callback when finished. Returns a Promise.
+    isPreview: true
     name: 'getItem(key, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.getItem
     langs:
@@ -72,6 +66,8 @@ items:
           type:
             - '(error?: Error, result?: string) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiGet
+    summary: 'Fetches a batch of keys, specified in the `keys` array. When a key doesn''t exist, returns null.'
+    isPreview: true
     name: 'multiGet(keys, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiGet
     langs:
@@ -93,6 +89,8 @@ items:
           type:
             - '(errors?: Error[], result?: string[][]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
+    summary: 'Deletes a batch of keys, specified in the `keys` array.'
+    isPreview: true
     name: 'multiRemove(keys, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
     langs:
@@ -114,6 +112,8 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiSet
+    summary: 'Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn''t exist, returns null.'
+    isPreview: true
     name: 'multiSet(keyValuePairs, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.multiSet
     langs:
@@ -135,6 +135,8 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.removeItem
+    summary: Removes an item for specified key and invokes a callback when finished. Returns a Promise.
+    isPreview: true
     name: 'removeItem(key, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.removeItem
     langs:
@@ -156,6 +158,8 @@ items:
           type:
             - '(error?: Error) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.setItem
+    summary: Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise.
+    isPreview: true
     name: 'setItem(key, value, callback)'
     fullName: office-runtime.OfficeRuntime.AsyncStorage.setItem
     langs:

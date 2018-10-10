@@ -24,7 +24,7 @@ items:
       This method also has the following signature:
 
 
-      `add(objects: ClientObject\[\]): void;` Where objects is an array of objects to be tracked.
+      `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
     name: add(object)
     fullName: office.OfficeExtension.TrackedObjects.add
     langs:
@@ -51,7 +51,7 @@ items:
       This method also has the following signature:
 
 
-      `remove(objects: ClientObject\[\]): void;` Where objects is an array of objects to be removed.
+      `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
     name: remove(object)
     fullName: office.OfficeExtension.TrackedObjects.remove
     langs:

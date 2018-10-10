@@ -32614,7 +32614,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "A maximum of 2MB is available for the settings of each add-in, and each individual setting is limited to 32KB."
+                  "text": "A maximum of 32KB is available for the settings of each add-in."
                 },
                 {
                   "kind": "paragraph"

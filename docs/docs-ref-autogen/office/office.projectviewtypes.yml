@@ -2,10 +2,10 @@
 items:
   - uid: office.Office.ProjectViewTypes
     summary: >-
-      Specifies the types of views that the [Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method
+      Specifies the types of views that the [ Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method
       can recognize.
     remarks: >-
-      The [Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method returns the ProjectViewTypes
+      The [ Document](xref:office.Office.Document)<!-- -->.getSelectedViewAsync method returns the ProjectViewTypes
       constant value and name that corresponds to the active view.
 
 
@@ -16,7 +16,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office host application and server requirements, see [ Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

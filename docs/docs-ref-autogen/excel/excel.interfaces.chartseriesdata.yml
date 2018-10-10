@@ -420,12 +420,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        splitType?: Excel.ChartSplitStype | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
-        "SplitByCustomSplit";
+      content: 'splitType?: "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";'
       return:
         type:
-          - Excel.ChartSplitStype | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
+          - '"SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
   - uid: excel.Excel.Interfaces.ChartSeriesData.trendlines
     summary: |-
       Represents a collection of trendlines in the series. Read-only.

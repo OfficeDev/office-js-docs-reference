@@ -7,9 +7,14 @@
     "CustomFunctions": {
       "kind": "namespace",
       "deprecatedMessage": [],
-      "summary": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "CustomFunctions namespace, used by Excel Custom Functions"
+        }
+      ],
       "remarks": [],
-      "isBeta": false,
+      "isBeta": true,
       "exports": {
         "CancelableHandler": {
           "kind": "interface",
@@ -17,9 +22,14 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "CancelableHandler interface"
+            }
+          ],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "onCanceled": {
@@ -53,18 +63,23 @@
             "T"
           ],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming."
+            }
+          ],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "setResult": {
               "kind": "property",
-              "signature": "setResult: (value: T) => void;",
+              "signature": "setResult: (value: T | Error) => void;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(value: T) => void",
+              "type": "(value: T | Error) => void",
               "deprecatedMessage": [],
               "summary": [
                 {

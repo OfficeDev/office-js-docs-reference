@@ -7,7 +7,12 @@
     "OfficeRuntime": {
       "kind": "namespace",
       "deprecatedMessage": [],
-      "summary": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Office Runtime namespace"
+        }
+      ],
       "remarks": [],
       "isBeta": false,
       "exports": {
@@ -17,38 +22,35 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
-          "isBeta": false,
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Each add-in instance has its own storage partition, unique to a user and their device."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The default amount of total storage allowed per add-in is 5MB."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Each method listed below returns a Promise object."
+            }
+          ],
+          "isBeta": true,
           "isSealed": false,
           "members": {
-            "clear": {
-              "kind": "method",
-              "signature": "clear(callback?: (error?: Error) => void): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error?: Error) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "getAllKeys": {
               "kind": "method",
               "signature": "getAllKeys(callback?: (error?: Error, keys?: string[]) => void): Promise<string[]>;",
@@ -69,9 +71,14 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns a Promise with all keys."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -103,9 +110,14 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Retrieves an object based on a key and invokes a callback when finished. Returns a Promise."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -137,9 +149,23 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Fetches a batch of keys, specified in the "
+                },
+                {
+                  "kind": "code",
+                  "text": "keys",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " array. When a key doesn't exist, returns null."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -171,9 +197,23 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Deletes a batch of keys, specified in the "
+                },
+                {
+                  "kind": "code",
+                  "text": "keys",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " array."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -205,9 +245,14 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn't exist, returns null."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -239,9 +284,14 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes an item for specified key and invokes a callback when finished. Returns a Promise."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -280,9 +330,14 @@
                 }
               },
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -295,9 +350,14 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Object representing the dialog box."
+            }
+          ],
           "remarks": [],
-          "isBeta": false,
+          "isBeta": true,
           "isSealed": false,
           "members": {
             "close": {
@@ -312,9 +372,14 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Method that closes a dialog box."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
@@ -331,7 +396,12 @@
           "parameters": {
             "url": {
               "name": "url",
-              "description": [],
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "*"
+                }
+              ],
               "isOptional": false,
               "isSpread": false,
               "type": "string"
@@ -345,7 +415,12 @@
             }
           },
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Enables you to pop up a web dialog box."
+            }
+          ],
           "remarks": [],
           "isBeta": false
         },
@@ -355,7 +430,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides options for how a dialog is displayed."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -368,9 +448,14 @@
               "isStatic": false,
               "type": "boolean",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -384,9 +469,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Defines the height of the dialog box as a percentage of the current display."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -400,9 +490,14 @@
               "isStatic": false,
               "type": "boolean",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "True if title is hidden from the dialog box."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -416,9 +511,14 @@
               "isStatic": false,
               "type": "() => void",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Callback that is run when the dialog box is closed."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -451,6 +551,45 @@
                 }
               },
               "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Callback that is run when the dialog sends a message to its parent."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "onRuntimeError": {
+              "kind": "method",
+              "signature": "onRuntimeError?(error: Error, dialog?: Dialog): void;",
+              "accessModifier": "",
+              "isOptional": true,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "error": {
+                  "name": "error",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Error"
+                },
+                "dialog": {
+                  "name": "dialog",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Dialog"
+                }
+              },
+              "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
               "isBeta": false,
@@ -466,9 +605,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Defines the width of the dialog box as a percentage of the current display."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,

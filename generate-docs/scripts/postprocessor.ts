@@ -112,7 +112,7 @@ tryCatch(async () => {
     let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let wordEnumFilter : string [] = ["Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
 
-    // create folders for shared API subcategories
+    // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let sharedEnumFilter : string [] = ["ActiveView", "AsyncResultStatus", "BindingType", "CoercionType", "CustomXMLNodeType", "DocumentMode", "EventType", "FileType", "FilterType", "GoToType", "HostType", "InitializationReason", "PlatformType", "ProjectProjectFields", "ProjectResourceFields", "ProjectTaskFields", "ProjectViewTypes", "SelectionMode", "Table", "ValueFormat"];
 
@@ -127,7 +127,7 @@ tryCatch(async () => {
     oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter).concat(oneNoteInterfaceFilter);
     let visioFilter: string[] = ["Interfaces"];
 
-    // process all packages except 'office' (Shared API)
+    // process all packages except 'office' (Common "Shared" API)
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
@@ -250,7 +250,7 @@ tryCatch(async () => {
     outlookRoot.items.reverse();
     outlookRoot.items.unshift(outlookRoot.items.pop());
 
-    // process 'office' (Shared API) package
+    // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name === 'office') {
@@ -268,7 +268,7 @@ tryCatch(async () => {
                     }
                 });
                 newToc.items[0].items.push({
-                    "name": 'Shared API',
+                    "name": 'Common API',
                     "uid": packageItem.uid,
                     "items": packageItem.items
                 });

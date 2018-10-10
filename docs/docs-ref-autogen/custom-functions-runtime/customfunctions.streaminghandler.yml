@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+    summary: >-
+      A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can
+      use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when
+      the function stops streaming.
+    isPreview: true
     name: CustomFunctions.StreamingHandler
     fullName: custom-functions-runtime.CustomFunctions.StreamingHandler
     langs:
@@ -20,7 +25,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'setResult: (value: T) => void;'
+      content: 'setResult: (value: T | Error) => void;'
       return:
         type:
-          - '(value: T) => void'
+          - '(value: T | Error) => void'

@@ -68,8 +68,8 @@ items:
               var activePage = document.getActivePage();
               activePage.load();
               return ctx.sync().then(function () {
-              console.log("pageName: " +activePage.name);
-                });   
+                  console.log("pageName: " +activePage.name);
+              });   
           }).catch(function(error) {
               console.log("Error: " + error);
               if (error instanceof OfficeExtension.Error) {
