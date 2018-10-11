@@ -18,7 +18,6 @@ items:
       ```javascript
       Visio.run(session, function (ctx) {
           var document1= ctx.document;
-          var page = document1.getActivePage();
           eventResult2 = document1.onShapeMouseLeave.add(
               function (args){            
                   console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));

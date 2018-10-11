@@ -10630,7 +10630,6 @@ Visio.DataRefreshCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
-        var page = document1.getActivePage();
         eventResult1 = document1.onDataRefreshComplete.add(
             function (args){
                 console.log("Data Refresh Result: "+args.success);
@@ -10812,7 +10811,6 @@ Visio.PageLoadCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
-        var page = document1.getActivePage();
         eventResult1 = document1.onPageLoadComplete.add(
             function (args){
                 console.log("Page name: "+args.pageName);
@@ -10994,7 +10992,6 @@ Visio.ShapeMouseEnterEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
-        var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseEnter.add(
         function (args) {            
             console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
@@ -11012,7 +11009,6 @@ Visio.ShapeMouseLeaveEventArgs:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
-        var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseLeave.add(
             function (args){            
                 console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));
