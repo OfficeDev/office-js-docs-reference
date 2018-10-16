@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the title of a chart axis.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTitle
     fullName: excel.Excel.ChartAxisTitle
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the formatting of chart axis title. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartAxisTitle.format
     langs:
@@ -115,7 +115,7 @@ items:
     summary: |-
       A string value that represents the formula of chart axis title using A1-style notation.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setFormula(formula)
     fullName: excel.Excel.ChartAxisTitle.setFormula
     langs:
@@ -136,7 +136,7 @@ items:
     summary: |-
       Represents the axis title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.ChartAxisTitle.text
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       A boolean that specifies the visibility of an axis title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.ChartAxisTitle.visible
     langs:

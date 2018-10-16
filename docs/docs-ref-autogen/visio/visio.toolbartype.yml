@@ -4,7 +4,7 @@ items:
     summary: |-
       Toolbar IDs of the app
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ToolBarType
     fullName: visio.Visio.ToolBarType
     langs:

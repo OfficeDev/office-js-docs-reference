@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a group of ink strokes.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.FloatingInk
     fullName: onenote.OneNote.FloatingInk
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.FloatingInk.id
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets the strokes of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokes
     fullName: onenote.OneNote.FloatingInk.inkStrokes
     langs:
@@ -135,7 +135,7 @@ items:
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: onenote.OneNote.FloatingInk.pageContent
     langs:

@@ -16,7 +16,7 @@ items:
     summary: |-
       Gets the key of the custom property. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: excel.Excel.Interfaces.CustomPropertyData.key
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets the value type of the custom property. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.Interfaces.CustomPropertyData.type
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Gets or sets the value of the custom property.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.Interfaces.CustomPropertyData.value
     langs:

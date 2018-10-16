@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a cell value conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellValueConditionalFormat
     fullName: excel.Excel.CellValueConditionalFormat
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.CellValueConditionalFormat.format
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Represents the Rule object on this conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: excel.Excel.CellValueConditionalFormat.rule
     langs:

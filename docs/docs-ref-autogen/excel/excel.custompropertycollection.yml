@@ -4,7 +4,7 @@ items:
     summary: |-
       Contains the collection of customProperty objects.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomPropertyCollection
     fullName: excel.Excel.CustomPropertyCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Creates a new or sets an existing custom property.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: excel.Excel.CustomPropertyCollection.add
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Deletes all custom properties in this collection.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: deleteAll()
     fullName: excel.Excel.CustomPropertyCollection.deleteAll
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Gets the count of custom properties.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.CustomPropertyCollection.getCount
     langs:
@@ -83,7 +83,7 @@ items:
     summary: |-
       Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: excel.Excel.CustomPropertyCollection.getItem
     langs:
@@ -106,7 +106,7 @@ items:
       does not exist.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.CustomPropertyCollection.getItemOrNullObject
     langs:

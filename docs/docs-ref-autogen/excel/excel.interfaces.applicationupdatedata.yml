@@ -18,7 +18,8 @@ items:
       requests it.
 
 
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
     fullName: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
     langs:

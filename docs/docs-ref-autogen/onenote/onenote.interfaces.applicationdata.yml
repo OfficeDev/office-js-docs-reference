@@ -16,7 +16,7 @@ items:
       notebook at a time is open in the application instance. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebooks
     fullName: onenote.OneNote.Interfaces.ApplicationData.notebooks
     langs:

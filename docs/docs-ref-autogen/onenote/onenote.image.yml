@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Image
     fullName: onenote.OneNote.Image
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets or sets the description of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: description
     fullName: onenote.OneNote.Image.description
     langs:
@@ -48,7 +48,7 @@ items:
       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getBase64Image()
     fullName: onenote.OneNote.Image.getBase64Image
     langs:
@@ -101,7 +101,7 @@ items:
     summary: |-
       Gets or sets the height of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: height
     fullName: onenote.OneNote.Image.height
     langs:
@@ -116,7 +116,7 @@ items:
     summary: |-
       Gets or sets the hyperlink of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hyperlink
     fullName: onenote.OneNote.Image.hyperlink
     langs:
@@ -131,7 +131,7 @@ items:
     summary: |-
       Gets the ID of the Image object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Image.id
     langs:
@@ -311,7 +311,7 @@ items:
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ocrData
     fullName: onenote.OneNote.Image.ocrData
     langs:
@@ -328,7 +328,7 @@ items:
       This object defines the position of the Image on the page. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: onenote.OneNote.Image.pageContent
     langs:
@@ -345,7 +345,7 @@ items:
       Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.Image.paragraph
     langs:
@@ -407,7 +407,7 @@ items:
     summary: |-
       Gets or sets the width of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: width
     fullName: onenote.OneNote.Image.width
     langs:

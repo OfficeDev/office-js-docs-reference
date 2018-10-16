@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the chart axis title formatting.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTitleFormat
     fullName: excel.Excel.ChartAxisTitleFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.ChartAxisTitleFormat.border
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents chart fill formatting.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.ChartAxisTitleFormat.fill
     langs:
@@ -53,7 +53,7 @@ items:
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.ChartAxisTitleFormat.font
     langs:

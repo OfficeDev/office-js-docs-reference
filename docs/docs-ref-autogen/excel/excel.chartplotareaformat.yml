@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format properties for chart plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotAreaFormat
     fullName: excel.Excel.ChartPlotAreaFormat
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Represents the border attributes of a chart plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.ChartPlotAreaFormat.border
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Represents the fill format of an object, which includes background formating information.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.ChartPlotAreaFormat.fill
     langs:

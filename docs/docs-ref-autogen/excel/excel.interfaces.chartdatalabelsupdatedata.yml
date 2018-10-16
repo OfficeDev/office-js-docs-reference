@@ -27,7 +27,7 @@ items:
     summary: |-
       Represents whether data labels automatically generates appropriate text based on context.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
     langs:
@@ -59,7 +59,7 @@ items:
       property is valid only when TextOrientation of data label is 0.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Represents the format code for data labels.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
     langs:
@@ -93,7 +93,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       String representing the separator used for the data labels on a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: separator
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.separator
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showCategoryName
     langs:
@@ -157,7 +157,7 @@ items:
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showLegendKey
     langs:
@@ -172,7 +172,7 @@ items:
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
     langs:
@@ -187,7 +187,7 @@ items:
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
     langs:
@@ -202,7 +202,7 @@ items:
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
     langs:
@@ -219,7 +219,7 @@ items:
       vertically-oriented text.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.textOrientation
     langs:
@@ -236,7 +236,7 @@ items:
       property is valid only when TextOrientation of data label is 90, -90 or 180.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: excel.Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment
     langs:

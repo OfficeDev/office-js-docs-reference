@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the binding that raised the DataChanged event.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingDataChangedEventArgs
     fullName: excel.Excel.BindingDataChangedEventArgs
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the Binding object that represents the binding that raised the DataChanged event.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
     fullName: excel.Excel.BindingDataChangedEventArgs.binding
     langs:

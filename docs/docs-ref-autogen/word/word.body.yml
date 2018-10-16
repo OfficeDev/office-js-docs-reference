@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the body of a document or a section.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Body
     fullName: word.Word.Body
     langs:
@@ -53,7 +53,7 @@ items:
     summary: |-
       Clears the contents of the body object. The user can perform the undo operation on the cleared content.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: clear()
     fullName: word.Word.Body.clear
     langs:
@@ -99,7 +99,7 @@ items:
     summary: |-
       Gets the collection of rich text content control objects in the body. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: word.Word.Body.contentControls
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: word.Word.Body.font
     langs:
@@ -129,7 +129,7 @@ items:
     summary: |-
       Gets the HTML representation of the body object.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
     fullName: word.Word.Body.getHtml
     langs:
@@ -171,7 +171,7 @@ items:
     summary: |-
       Gets the OOXML (Office Open XML) representation of the body object.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getOoxml()
     fullName: word.Word.Body.getOoxml
     langs:
@@ -213,7 +213,7 @@ items:
     summary: |-
       Gets the whole body, or the starting or ending point of the body, as a range.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getRange(rangeLocation)
     fullName: word.Word.Body.getRange
     langs:
@@ -236,7 +236,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
     fullName: word.Word.Body.inlinePictures
     langs:
@@ -251,7 +251,7 @@ items:
     summary: |-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
     fullName: word.Word.Body.insertBreak
     langs:
@@ -302,7 +302,7 @@ items:
     summary: |-
       Wraps the body object with a Rich Text content control.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: insertContentControl()
     fullName: word.Word.Body.insertContentControl
     langs:
@@ -346,7 +346,7 @@ items:
       'End'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
     fullName: word.Word.Body.insertFileFromBase64
     langs:
@@ -398,7 +398,7 @@ items:
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
     fullName: word.Word.Body.insertHtml
     langs:
@@ -450,7 +450,7 @@ items:
     summary: |-
       Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
 
-      \[ [API set: WordApi 1.2](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     fullName: word.Word.Body.insertInlinePictureFromBase64
     langs:
@@ -509,7 +509,7 @@ items:
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
     fullName: word.Word.Body.insertOoxml
     langs:
@@ -534,7 +534,7 @@ items:
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
     fullName: word.Word.Body.insertParagraph
     langs:
@@ -630,7 +630,7 @@ items:
     summary: |-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     fullName: word.Word.Body.insertTable
     langs:
@@ -680,7 +680,7 @@ items:
       'End'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
     fullName: word.Word.Body.insertText
     langs:
@@ -731,7 +731,7 @@ items:
     summary: |-
       Gets the collection of list objects in the body. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lists
     fullName: word.Word.Body.lists
     langs:
@@ -850,7 +850,7 @@ items:
     summary: |-
       Gets the collection of paragraph objects in the body. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
     fullName: word.Word.Body.paragraphs
     langs:
@@ -867,7 +867,7 @@ items:
       isn't a parent body. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: word.Word.Body.parentBody
     langs:
@@ -884,7 +884,7 @@ items:
       object if there isn't a parent body. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBodyOrNullObject
     fullName: word.Word.Body.parentBodyOrNullObject
     langs:
@@ -899,7 +899,7 @@ items:
     summary: |-
       Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: word.Word.Body.parentContentControl
     langs:
@@ -916,7 +916,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: word.Word.Body.parentContentControlOrNullObject
     langs:
@@ -931,7 +931,7 @@ items:
     summary: |-
       Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentSection
     fullName: word.Word.Body.parentSection
     langs:
@@ -946,7 +946,7 @@ items:
     summary: |-
       Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentSectionOrNullObject
     fullName: word.Word.Body.parentSectionOrNullObject
     langs:
@@ -963,7 +963,7 @@ items:
       collection of range objects.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'search(searchText, searchOptions)'
     fullName: word.Word.Body.search
     langs:
@@ -1084,7 +1084,7 @@ items:
     summary: |-
       Selects the body and navigates the Word UI to it.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: select(selectionMode)
     fullName: word.Word.Body.select
     langs:
@@ -1134,7 +1134,7 @@ items:
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: word.Word.Body.style
     langs:
@@ -1151,7 +1151,7 @@ items:
       locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: word.Word.Body.styleBuiltIn
     langs:
@@ -1230,7 +1230,7 @@ items:
     summary: |-
       Gets the collection of table objects in the body. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
     fullName: word.Word.Body.tables
     langs:
@@ -1245,7 +1245,7 @@ items:
     summary: |-
       Gets the text of the body. Use the insertText method to insert text. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
     fullName: word.Word.Body.text
     langs:
@@ -1290,7 +1290,7 @@ items:
     summary: |-
       Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: type
     fullName: word.Word.Body.type
     langs:

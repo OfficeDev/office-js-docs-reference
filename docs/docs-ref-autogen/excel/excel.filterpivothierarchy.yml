@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterPivotHierarchy
     fullName: excel.Excel.FilterPivotHierarchy
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Determines whether to allow multiple filter items.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
     fullName: excel.Excel.FilterPivotHierarchy.enableMultipleFilterItems
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Returns the PivotFields associated with the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: excel.Excel.FilterPivotHierarchy.fields
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Id of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.FilterPivotHierarchy.id
     langs:
@@ -105,7 +105,7 @@ items:
     summary: |-
       Name of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.FilterPivotHierarchy.name
     langs:
@@ -120,7 +120,7 @@ items:
     summary: |-
       Position of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.FilterPivotHierarchy.position
     langs:
@@ -135,7 +135,7 @@ items:
     summary: |-
       Reset the FilterPivotHierarchy back to its default values.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
     fullName: excel.Excel.FilterPivotHierarchy.setToDefault
     langs:

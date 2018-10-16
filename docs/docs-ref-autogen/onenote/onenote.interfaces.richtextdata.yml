@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.RichTextData.id
     langs:
@@ -32,7 +32,7 @@ items:
     summary: |-
       The language id of the text. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
     fullName: onenote.OneNote.Interfaces.RichTextData.languageId
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.Interfaces.RichTextData.paragraph
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets the text content of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: text
     fullName: onenote.OneNote.Interfaces.RichTextData.text
     langs:

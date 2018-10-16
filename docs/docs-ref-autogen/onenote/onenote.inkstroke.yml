@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a single stroke of ink.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkStroke
     fullName: onenote.OneNote.InkStroke
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: floatingInk
     fullName: onenote.OneNote.InkStroke.floatingInk
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.InkStroke.id
     langs:

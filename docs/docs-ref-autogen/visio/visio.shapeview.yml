@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeView class.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeView
     fullName: visio.Visio.ShapeView
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Adds an overlay on top of the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     fullName: visio.Visio.ShapeView.addOverlay
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Represents the highlight around the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
     fullName: visio.Visio.ShapeView.highlight
     langs:
@@ -167,7 +167,7 @@ items:
     summary: |-
       Removes particular overlay or all overlays on the Shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: removeOverlay(OverlayId)
     fullName: visio.Visio.ShapeView.removeOverlay
     langs:

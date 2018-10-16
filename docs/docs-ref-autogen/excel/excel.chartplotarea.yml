@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the attributes for a chart plotArea object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotArea
     fullName: excel.Excel.ChartPlotArea
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Represents the formatting of a chart plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartPlotArea.format
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Represents the height value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: excel.Excel.ChartPlotArea.height
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Represents the insideHeight value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
     fullName: excel.Excel.ChartPlotArea.insideHeight
     langs:
@@ -75,7 +75,7 @@ items:
     summary: |-
       Represents the insideLeft value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
     fullName: excel.Excel.ChartPlotArea.insideLeft
     langs:
@@ -90,7 +90,7 @@ items:
     summary: |-
       Represents the insideTop value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
     fullName: excel.Excel.ChartPlotArea.insideTop
     langs:
@@ -105,7 +105,7 @@ items:
     summary: |-
       Represents the insideWidth value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
     fullName: excel.Excel.ChartPlotArea.insideWidth
     langs:
@@ -120,7 +120,7 @@ items:
     summary: |-
       Represents the left value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.ChartPlotArea.left
     langs:
@@ -169,7 +169,7 @@ items:
     summary: |-
       Represents the position of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.ChartPlotArea.position
     langs:
@@ -196,7 +196,7 @@ items:
     summary: |-
       Represents the top value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.ChartPlotArea.top
     langs:
@@ -211,7 +211,7 @@ items:
     summary: |-
       Represents the width value of plotArea.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: excel.Excel.ChartPlotArea.width
     langs:

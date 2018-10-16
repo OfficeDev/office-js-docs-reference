@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the worksheet that raised the Deleted event.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetDeletedEventArgs
     fullName: excel.Excel.WorksheetDeletedEventArgs
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: excel.Excel.WorksheetDeletedEventArgs.source
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.WorksheetDeletedEventArgs.type
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets the id of the worksheet that is deleted from the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: excel.Excel.WorksheetDeletedEventArgs.worksheetId
     langs:

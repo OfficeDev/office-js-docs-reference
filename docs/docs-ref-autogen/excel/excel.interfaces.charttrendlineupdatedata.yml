@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the number of periods that the trendline extends backward.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: backwardPeriod
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.backwardPeriod
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the formatting of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.format
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Represents the number of periods that the trendline extends forward.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: forwardPeriod
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.forwardPeriod
     langs:
@@ -71,7 +71,7 @@ items:
       values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: intercept
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.intercept
     langs:
@@ -86,7 +86,7 @@ items:
     summary: |-
       Represents the label of a chart trendline.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: label
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.label
     langs:
@@ -101,7 +101,7 @@ items:
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: movingAveragePeriod
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.movingAveragePeriod
     langs:
@@ -118,7 +118,7 @@ items:
       automatic values. The returned value is always a string
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.name
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: polynomialOrder
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.polynomialOrder
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       True if the equation for the trendline is displayed on the chart.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showEquation
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.showEquation
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       True if the R-squared for the trendline is displayed on the chart.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRSquared
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.showRSquared
     langs:
@@ -178,7 +178,7 @@ items:
     summary: |-
       Represents the type of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.type
     langs:

@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cellCount
     fullName: word.Word.Interfaces.TableRowData.cellCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets cells. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cells
     fullName: word.Word.Interfaces.TableRowData.cells
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: word.Word.Interfaces.TableRowData.font
     langs:
@@ -71,7 +71,7 @@ items:
       'Justified'.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: word.Word.Interfaces.TableRowData.horizontalAlignment
     langs:
@@ -88,7 +88,7 @@ items:
       Table object.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isHeader
     fullName: word.Word.Interfaces.TableRowData.isHeader
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Gets parent table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.Interfaces.TableRowData.parentTable
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       Gets and sets the preferred height of the row in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: preferredHeight
     fullName: word.Word.Interfaces.TableRowData.preferredHeight
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowIndex
     fullName: word.Word.Interfaces.TableRowData.rowIndex
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: word.Word.Interfaces.TableRowData.shadingColor
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: values
     fullName: word.Word.Interfaces.TableRowData.values
     langs:
@@ -178,7 +178,7 @@ items:
     summary: |-
       Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: word.Word.Interfaces.TableRowData.verticalAlignment
     langs:

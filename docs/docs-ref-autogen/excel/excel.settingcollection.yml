@@ -6,7 +6,7 @@ items:
       per file and add-in (task-pane or content) combination.
 
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettingCollection
     fullName: excel.Excel.SettingCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Sets or adds the specified setting to the workbook.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: excel.Excel.SettingCollection.add
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Gets the number of Settings in the collection.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.SettingCollection.getCount
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       Gets a Setting entry via the key.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: excel.Excel.SettingCollection.getItem
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.SettingCollection.getItemOrNullObject
     langs:
@@ -190,7 +190,7 @@ items:
     summary: |-
       Occurs when the Settings in the document are changed.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSettingsChanged
     fullName: excel.Excel.SettingCollection.onSettingsChanged
     langs:

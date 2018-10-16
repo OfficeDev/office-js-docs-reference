@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents formatting object for chart points.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointFormat
     fullName: excel.Excel.ChartPointFormat
     langs:
@@ -24,7 +24,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.ChartPointFormat.border
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the fill format of a chart, which includes background formating information. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.ChartPointFormat.fill
     langs:

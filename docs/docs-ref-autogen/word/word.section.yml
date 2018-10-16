@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a section in a Word document.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Section
     fullName: word.Word.Section
     langs:
@@ -29,7 +29,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: word.Word.Section.body
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Gets one of the section's footers.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFooter(type)
     fullName: word.Word.Section.getFooter
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Gets one of the section's headers.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHeader(type)
     fullName: word.Word.Section.getHeader
     langs:
@@ -184,7 +184,7 @@ items:
     summary: |-
       Gets the next section. Throws if this section is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
     fullName: word.Word.Section.getNext
     langs:
@@ -200,7 +200,7 @@ items:
     summary: |-
       Gets the next section. Returns a null object if this section is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
     fullName: word.Word.Section.getNextOrNullObject
     langs:

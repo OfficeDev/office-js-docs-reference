@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the data labels on a chart point.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartDataLabels
     fullName: excel.Excel.ChartDataLabels
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Represents whether data labels automatically generate appropriate text based on context.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
     fullName: excel.Excel.ChartDataLabels.autoText
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartDataLabels.format
     langs:
@@ -66,7 +66,7 @@ items:
       property is valid only when TextOrientation of data label is 0.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: excel.Excel.ChartDataLabels.horizontalAlignment
     langs:
@@ -141,7 +141,7 @@ items:
     summary: |-
       Represents the format code for data labels.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.ChartDataLabels.numberFormat
     langs:
@@ -158,7 +158,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.ChartDataLabels.position
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       String representing the separator used for the data labels on a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: separator
     fullName: excel.Excel.ChartDataLabels.separator
     langs:
@@ -192,7 +192,7 @@ items:
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
     fullName: excel.Excel.ChartDataLabels.showBubbleSize
     langs:
@@ -207,7 +207,7 @@ items:
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
     fullName: excel.Excel.ChartDataLabels.showCategoryName
     langs:
@@ -222,7 +222,7 @@ items:
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
     fullName: excel.Excel.ChartDataLabels.showLegendKey
     langs:
@@ -237,7 +237,7 @@ items:
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
     fullName: excel.Excel.ChartDataLabels.showPercentage
     langs:
@@ -252,7 +252,7 @@ items:
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
     fullName: excel.Excel.ChartDataLabels.showSeriesName
     langs:
@@ -267,7 +267,7 @@ items:
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue
     fullName: excel.Excel.ChartDataLabels.showValue
     langs:
@@ -284,7 +284,7 @@ items:
       vertically-oriented text.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: excel.Excel.ChartDataLabels.textOrientation
     langs:
@@ -313,7 +313,7 @@ items:
       property is valid only when TextOrientation of data label is -90, 90, or 180.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: excel.Excel.ChartDataLabels.verticalAlignment
     langs:

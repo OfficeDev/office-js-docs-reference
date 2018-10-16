@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the necessary strings to get/set a hyperlink (XHL) object.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeHyperlink
     fullName: excel.Excel.RangeHyperlink
     langs:
@@ -20,7 +20,7 @@ items:
     summary: |-
       Represents the url target for the hyperlink.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: excel.Excel.RangeHyperlink.address
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Represents the document reference target for the hyperlink.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: documentReference
     fullName: excel.Excel.RangeHyperlink.documentReference
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Represents the string displayed when hovering over the hyperlink.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: screenTip
     fullName: excel.Excel.RangeHyperlink.screenTip
     langs:
@@ -161,7 +161,7 @@ items:
     summary: |-
       Represents the string that is displayed in the top left most cell in the range.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textToDisplay
     fullName: excel.Excel.RangeHyperlink.textToDisplay
     langs:

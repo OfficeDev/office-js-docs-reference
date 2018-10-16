@@ -15,7 +15,7 @@ items:
     summary: |-
       Represents the types for each item in the named item array
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: types
     fullName: excel.Excel.Interfaces.NamedItemArrayValuesData.types
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Represents the values of each item in the named item array.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.NamedItemArrayValuesData.values
     langs:

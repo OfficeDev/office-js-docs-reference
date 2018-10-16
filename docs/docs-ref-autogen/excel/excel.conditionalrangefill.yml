@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a conditional range object.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFill
     fullName: excel.Excel.ConditionalRangeFill
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Resets the fill.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFill.clear
     langs:
@@ -40,7 +40,7 @@ items:
       (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.ConditionalRangeFill.color
     langs:

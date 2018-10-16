@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.RangeValueType
     summary: >-
       \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
-      RichValue](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeValueType
     fullName: excel.Excel.RangeValueType
     langs:

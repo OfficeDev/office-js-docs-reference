@@ -19,7 +19,7 @@ items:
     summary: |-
       Error alert when user enters invalid data.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
     fullName: excel.Excel.Interfaces.DataValidationData.errorAlert
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
     fullName: excel.Excel.Interfaces.DataValidationData.ignoreBlanks
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Prompt when users select a cell.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
     fullName: excel.Excel.Interfaces.DataValidationData.prompt
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Data Validation rule that contains different type of data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: excel.Excel.Interfaces.DataValidationData.rule
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Type of the data validation, see Excel.DataValidationType for details.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.Interfaces.DataValidationData.type
     langs:
@@ -101,7 +101,7 @@ items:
       within the range.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valid
     fullName: excel.Excel.Interfaces.DataValidationData.valid
     langs:

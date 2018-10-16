@@ -4,7 +4,7 @@ items:
     summary: |-
       Manages sorting operations on Table objects.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableSort
     fullName: excel.Excel.TableSort
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Perform a sort operation.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, method)'
     fullName: excel.Excel.TableSort.apply
     langs:
@@ -78,7 +78,7 @@ items:
       state of the header buttons.
 
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: excel.Excel.TableSort.clear
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: excel.Excel.TableSort.fields
     langs:
@@ -143,7 +143,7 @@ items:
     summary: |-
       Represents whether the casing impacted the last sort of the table. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
     fullName: excel.Excel.TableSort.matchCase
     langs:
@@ -158,7 +158,7 @@ items:
     summary: |-
       Represents Chinese character ordering method last used to sort the table. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method
     fullName: excel.Excel.TableSort.method
     langs:
@@ -173,7 +173,7 @@ items:
     summary: |-
       Reapplies the current sorting parameters to the table.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapply()
     fullName: excel.Excel.TableSort.reapply
     langs:

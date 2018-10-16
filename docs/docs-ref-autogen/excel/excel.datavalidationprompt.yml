@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the user prompt properties for the data validation.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationPrompt
     fullName: excel.Excel.DataValidationPrompt
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       Represents the message of the prompt.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
     fullName: excel.Excel.DataValidationPrompt.message
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       It determines showing the prompt or not when user selects a cell with the data validation.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPrompt
     fullName: excel.Excel.DataValidationPrompt.showPrompt
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Represents the title for the prompt.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: excel.Excel.DataValidationPrompt.title
     langs:

@@ -16,7 +16,7 @@ items:
     summary: |-
       A string that specifies the name of the author of the comment.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: author
     fullName: visio.Visio.Interfaces.CommentData.author
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       A string that specifies the date when the comment was created.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: date
     fullName: visio.Visio.Interfaces.CommentData.date
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       A string that contains the comment text.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: visio.Visio.Interfaces.CommentData.text
     langs:

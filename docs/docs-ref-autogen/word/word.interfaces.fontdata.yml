@@ -26,7 +26,7 @@ items:
       false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: bold
     fullName: word.Word.Interfaces.FontData.bold
     langs:
@@ -43,7 +43,7 @@ items:
       name.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
     fullName: word.Word.Interfaces.FontData.color
     langs:
@@ -60,7 +60,7 @@ items:
       double strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: doubleStrikeThrough
     fullName: word.Word.Interfaces.FontData.doubleStrikeThrough
     langs:
@@ -78,7 +78,7 @@ items:
       string for mixed highlight colors, or null for no highlight color.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: highlightColor
     fullName: word.Word.Interfaces.FontData.highlightColor
     langs:
@@ -95,7 +95,7 @@ items:
       false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: italic
     fullName: word.Word.Interfaces.FontData.italic
     langs:
@@ -110,7 +110,7 @@ items:
     summary: |-
       Gets or sets a value that represents the name of the font.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: name
     fullName: word.Word.Interfaces.FontData.name
     langs:
@@ -125,7 +125,7 @@ items:
     summary: |-
       Gets or sets a value that represents the font size in points.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: size
     fullName: word.Word.Interfaces.FontData.size
     langs:
@@ -142,7 +142,7 @@ items:
       strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: strikeThrough
     fullName: word.Word.Interfaces.FontData.strikeThrough
     langs:
@@ -159,7 +159,7 @@ items:
       otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subscript
     fullName: word.Word.Interfaces.FontData.subscript
     langs:
@@ -176,7 +176,7 @@ items:
       superscript, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: superscript
     fullName: word.Word.Interfaces.FontData.superscript
     langs:
@@ -191,7 +191,7 @@ items:
     summary: |-
       Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: underline
     fullName: word.Word.Interfaces.FontData.underline
     langs:

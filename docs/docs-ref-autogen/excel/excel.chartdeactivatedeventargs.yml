@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the chart that raised the Deactivated event.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartDeactivatedEventArgs
     fullName: excel.Excel.ChartDeactivatedEventArgs
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       Gets the id of the chart that is deactivated.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartId
     fullName: excel.Excel.ChartDeactivatedEventArgs.chartId
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ChartDeactivatedEventArgs.type
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets the id of the worksheet in which the chart is deactivated.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: excel.Excel.ChartDeactivatedEventArgs.worksheetId
     langs:

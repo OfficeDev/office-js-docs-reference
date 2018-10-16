@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of worksheet objects that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetCollection
     fullName: excel.Excel.WorksheetCollection
     langs:
@@ -35,7 +35,7 @@ items:
       to activate the newly added worksheet, call ".activate() on it.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
     fullName: excel.Excel.WorksheetCollection.add
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Gets the currently active worksheet in the workbook.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
     fullName: excel.Excel.WorksheetCollection.getActiveWorksheet
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       Gets the number of worksheets in the collection.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getCount
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       Gets the first worksheet in the collection.
 
-      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getFirst
     langs:
@@ -180,7 +180,7 @@ items:
     summary: |-
       Gets a worksheet object using its Name or ID.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: excel.Excel.WorksheetCollection.getItem
     langs:
@@ -201,7 +201,7 @@ items:
     summary: |-
       Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.WorksheetCollection.getItemOrNullObject
     langs:
@@ -222,7 +222,7 @@ items:
     summary: |-
       Gets the last worksheet in the collection.
 
-      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getLast
     langs:
@@ -342,7 +342,7 @@ items:
     summary: |-
       Occurs when any worksheet in the workbook is activated.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
     fullName: excel.Excel.WorksheetCollection.onActivated
     langs:
@@ -372,7 +372,7 @@ items:
     summary: |-
       Occurs when a new worksheet is added to the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: excel.Excel.WorksheetCollection.onAdded
     langs:
@@ -402,7 +402,7 @@ items:
     summary: |-
       Occurs when any worksheet in the workbook is calculated.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onCalculated
     fullName: excel.Excel.WorksheetCollection.onCalculated
     langs:
@@ -417,7 +417,7 @@ items:
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
     fullName: excel.Excel.WorksheetCollection.onDeactivated
     langs:
@@ -447,7 +447,7 @@ items:
     summary: |-
       Occurs when a worksheet is deleted from the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: excel.Excel.WorksheetCollection.onDeleted
     langs:

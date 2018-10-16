@@ -20,7 +20,8 @@ items:
       etc.. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: body
     fullName: word.Word.Interfaces.DocumentCreatedData.body
     langs:
@@ -37,7 +38,8 @@ items:
       document, headers, footers, textboxes, etc.. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: contentControls
     fullName: word.Word.Interfaces.DocumentCreatedData.contentControls
     langs:
@@ -49,10 +51,12 @@ items:
         type:
           - 'Word.Interfaces.ContentControlData[]'
   - uid: word.Word.Interfaces.DocumentCreatedData.properties
-    summary: |-
+    summary: >-
       Gets the properties of the document. Read-only.
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: properties
     fullName: word.Word.Interfaces.DocumentCreatedData.properties
     langs:
@@ -69,7 +73,8 @@ items:
       changed since it was saved. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: saved
     fullName: word.Word.Interfaces.DocumentCreatedData.saved
     langs:
@@ -81,10 +86,12 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentCreatedData.sections
-    summary: |-
+    summary: >-
       Gets the collection of section objects in the document. Read-only.
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: sections
     fullName: word.Word.Interfaces.DocumentCreatedData.sections
     langs:

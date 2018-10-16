@@ -22,7 +22,7 @@ items:
     summary: |-
       All shapes in the Page, including subshapes. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: allShapes
     fullName: visio.Visio.Interfaces.PageData.allShapes
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Returns the Comments Collection. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: comments
     fullName: visio.Visio.Interfaces.PageData.comments
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Returns the height of the page. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: height
     fullName: visio.Visio.Interfaces.PageData.height
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Index of the Page. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: index
     fullName: visio.Visio.Interfaces.PageData.index
     langs:
@@ -82,7 +82,7 @@ items:
     summary: |-
       Whether the page is a background page or not. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: isBackground
     fullName: visio.Visio.Interfaces.PageData.isBackground
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Page name. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: visio.Visio.Interfaces.PageData.name
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       All top-level shapes in the Page.Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
     fullName: visio.Visio.Interfaces.PageData.shapes
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Returns the view of the page. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: visio.Visio.Interfaces.PageData.view
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Returns the width of the page. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: width
     fullName: visio.Visio.Interfaces.PageData.width
     langs:

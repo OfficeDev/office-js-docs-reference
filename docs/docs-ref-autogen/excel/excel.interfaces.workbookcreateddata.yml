@@ -14,7 +14,7 @@ items:
     summary: |-
       Returns a value that uniquely identifies the WorkbookCreated object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.Interfaces.WorkbookCreatedData.id
     langs:

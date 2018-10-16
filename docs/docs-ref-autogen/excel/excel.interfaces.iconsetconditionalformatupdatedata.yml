@@ -22,7 +22,7 @@ items:
       set.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reverseIconOrder
     fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       If true, hides the values and only shows icons.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showIconOnly
     fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       If set, displays the IconSet option for the conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
     langs:

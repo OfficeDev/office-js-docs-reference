@@ -16,7 +16,7 @@ items:
       (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.Interfaces.ConditionalRangeFillUpdateData.color
     langs:

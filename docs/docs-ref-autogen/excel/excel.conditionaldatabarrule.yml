@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a rule-type for a Data Bar.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarRule
     fullName: excel.Excel.ConditionalDataBarRule
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the databar rule on.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.ConditionalDataBarRule.formula
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       The type of rule for the databar.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ConditionalDataBarRule.type
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the legendEntry in legendEntryCollection.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntry
     fullName: excel.Excel.ChartLegendEntry
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Represents the height of the legendEntry on the chart Legend.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: excel.Excel.ChartLegendEntry.height
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Represents the index of the LegendEntry in the Chart Legend.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.ChartLegendEntry.index
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Represents the left of a chart legendEntry.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.ChartLegendEntry.left
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Represents the top of a chart legendEntry.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.ChartLegendEntry.top
     langs:
@@ -132,7 +132,7 @@ items:
     summary: |-
       Represents the visible of a chart legend entry.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.ChartLegendEntry.visible
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Represents the width of the legendEntry on the chart Legend.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: excel.Excel.ChartLegendEntry.width
     langs:

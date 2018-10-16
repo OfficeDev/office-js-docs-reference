@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a string reference of the form SheetName!A1:B5, or a global or local named range.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeReference
     fullName: excel.Excel.RangeReference
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets or sets the address of the range; for example 'SheetName!A1:B5'.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: excel.Excel.RangeReference.address
     langs:

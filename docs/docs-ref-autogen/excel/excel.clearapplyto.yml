@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ClearApplyTo
     summary: >-
       \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
-      HyperlinksAndFormats.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ClearApplyTo
     fullName: excel.Excel.ClearApplyTo
     langs:

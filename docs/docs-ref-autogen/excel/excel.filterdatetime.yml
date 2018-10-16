@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents how to filter a date when filtering on values.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterDatetime
     fullName: excel.Excel.FilterDatetime
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       The date in ISO8601 format used to filter data.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: date
     fullName: excel.Excel.FilterDatetime.date
     langs:
@@ -35,7 +35,7 @@ items:
       to "month", the filter operation will keep all rows with a date in the month of april 2009.
 
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: specificity
     fullName: excel.Excel.FilterDatetime.specificity
     langs:

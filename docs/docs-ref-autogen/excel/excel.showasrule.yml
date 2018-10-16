@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShowAsRule
-    summary: '\[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ShowAsRule
     fullName: excel.Excel.ShowAsRule
     langs:
@@ -16,7 +16,7 @@ items:
     summary: |-
       The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseField
     fullName: excel.Excel.ShowAsRule.baseField
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseItem
     fullName: excel.Excel.ShowAsRule.baseItem
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculation
     fullName: excel.Excel.ShowAsRule.calculation
     langs:

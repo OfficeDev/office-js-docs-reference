@@ -40,7 +40,7 @@ items:
       processing of the event.
 
 
-      \[ [API set: Mailbox 1.3](/javascript/office/javascript-api-for-office) \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: >-
       <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
