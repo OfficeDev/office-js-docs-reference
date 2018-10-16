@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the operator for each icon criteria.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalIconCriterionOperator
     fullName: excel.Excel.ConditionalIconCriterionOperator
     langs:

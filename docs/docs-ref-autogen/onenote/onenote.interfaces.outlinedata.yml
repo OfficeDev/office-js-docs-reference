@@ -16,7 +16,7 @@ items:
     summary: |-
       Gets the ID of the Outline object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.OutlineData.id
     langs:
@@ -33,7 +33,7 @@ items:
       page. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: onenote.OneNote.Interfaces.OutlineData.pageContent
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: onenote.OneNote.Interfaces.OutlineData.paragraphs
     langs:

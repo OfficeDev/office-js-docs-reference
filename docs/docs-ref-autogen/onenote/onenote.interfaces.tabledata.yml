@@ -19,7 +19,7 @@ items:
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
     fullName: onenote.OneNote.Interfaces.TableData.borderVisible
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Gets the number of columns in the table.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: columnCount
     fullName: onenote.OneNote.Interfaces.TableData.columnCount
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets the ID of the table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.TableData.id
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.Interfaces.TableData.paragraph
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowCount
     fullName: onenote.OneNote.Interfaces.TableData.rowCount
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Gets all of the table rows. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rows
     fullName: onenote.OneNote.Interfaces.TableData.rows
     langs:

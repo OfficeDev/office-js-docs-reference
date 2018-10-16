@@ -16,7 +16,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: word.Word.Interfaces.SectionData.body
     langs:

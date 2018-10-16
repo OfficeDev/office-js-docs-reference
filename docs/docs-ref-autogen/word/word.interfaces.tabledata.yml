@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
     fullName: word.Word.Interfaces.TableData.alignment
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: word.Word.Interfaces.TableData.font
     langs:
@@ -70,7 +70,7 @@ items:
     summary: |-
       Gets and sets the number of header rows.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: headerRowCount
     fullName: word.Word.Interfaces.TableData.headerRowCount
     langs:
@@ -87,7 +87,7 @@ items:
       or 'Justified'.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: word.Word.Interfaces.TableData.horizontalAlignment
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Indicates whether all of the table rows are uniform. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isUniform
     fullName: word.Word.Interfaces.TableData.isUniform
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: nestingLevel
     fullName: word.Word.Interfaces.TableData.nestingLevel
     langs:
@@ -132,7 +132,7 @@ items:
     summary: |-
       Gets the parent body of the table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: word.Word.Interfaces.TableData.parentBody
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: word.Word.Interfaces.TableData.parentContentControl
     langs:
@@ -164,7 +164,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: word.Word.Interfaces.TableData.parentContentControlOrNullObject
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.Interfaces.TableData.parentTable
     langs:
@@ -194,7 +194,7 @@ items:
     summary: |-
       Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: word.Word.Interfaces.TableData.parentTableCell
     langs:
@@ -211,7 +211,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: word.Word.Interfaces.TableData.parentTableCellOrNullObject
     langs:
@@ -226,7 +226,7 @@ items:
     summary: |-
       Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: word.Word.Interfaces.TableData.parentTableOrNullObject
     langs:
@@ -241,7 +241,7 @@ items:
     summary: |-
       Gets the number of rows in the table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowCount
     fullName: word.Word.Interfaces.TableData.rowCount
     langs:
@@ -256,7 +256,7 @@ items:
     summary: |-
       Gets all of the table rows. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rows
     fullName: word.Word.Interfaces.TableData.rows
     langs:
@@ -271,7 +271,7 @@ items:
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: word.Word.Interfaces.TableData.shadingColor
     langs:
@@ -288,7 +288,7 @@ items:
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: word.Word.Interfaces.TableData.style
     langs:
@@ -303,7 +303,7 @@ items:
     summary: |-
       Gets and sets whether the table has banded columns.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedColumns
     fullName: word.Word.Interfaces.TableData.styleBandedColumns
     langs:
@@ -318,7 +318,7 @@ items:
     summary: |-
       Gets and sets whether the table has banded rows.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedRows
     fullName: word.Word.Interfaces.TableData.styleBandedRows
     langs:
@@ -335,7 +335,7 @@ items:
       between locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: word.Word.Interfaces.TableData.styleBuiltIn
     langs:
@@ -414,7 +414,7 @@ items:
     summary: |-
       Gets and sets whether the table has a first column with a special style.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleFirstColumn
     fullName: word.Word.Interfaces.TableData.styleFirstColumn
     langs:
@@ -429,7 +429,7 @@ items:
     summary: |-
       Gets and sets whether the table has a last column with a special style.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleLastColumn
     fullName: word.Word.Interfaces.TableData.styleLastColumn
     langs:
@@ -444,7 +444,7 @@ items:
     summary: |-
       Gets and sets whether the table has a total (last) row with a special style.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleTotalRow
     fullName: word.Word.Interfaces.TableData.styleTotalRow
     langs:
@@ -459,7 +459,7 @@ items:
     summary: |-
       Gets the child tables nested one level deeper. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
     fullName: word.Word.Interfaces.TableData.tables
     langs:
@@ -474,7 +474,7 @@ items:
     summary: |-
       Gets and sets the text values in the table, as a 2D Javascript array.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: values
     fullName: word.Word.Interfaces.TableData.values
     langs:
@@ -489,7 +489,7 @@ items:
     summary: |-
       Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: word.Word.Interfaces.TableData.verticalAlignment
     langs:
@@ -504,7 +504,7 @@ items:
     summary: |-
       Gets and sets the width of the table in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: word.Word.Interfaces.TableData.width
     langs:

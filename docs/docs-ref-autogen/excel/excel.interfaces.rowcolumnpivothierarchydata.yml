@@ -17,7 +17,7 @@ items:
     summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyData.fields
     langs:
@@ -32,7 +32,7 @@ items:
     summary: |-
       Id of the RowColumnPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyData.id
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Name of the RowColumnPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyData.name
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Position of the RowColumnPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyData.position
     langs:

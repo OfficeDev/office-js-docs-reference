@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel application that manages the workbook.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Application
     fullName: excel.Excel.Application
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Recalculate all currently opened workbooks in Excel.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
     fullName: excel.Excel.Application.calculate
     langs:
@@ -62,7 +62,8 @@ items:
       requests it.
 
 
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
+      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
     fullName: excel.Excel.Application.calculationMode
     langs:
@@ -133,7 +134,7 @@ items:
       re-calc the workbook, to ensure that any dependencies are propagated.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
     fullName: excel.Excel.Application.suspendApiCalculationUntilNextSync
     langs:

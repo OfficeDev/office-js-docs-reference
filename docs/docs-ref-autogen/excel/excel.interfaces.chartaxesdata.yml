@@ -16,7 +16,7 @@ items:
     summary: |-
       Represents the category axis in a chart. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
     fullName: excel.Excel.Interfaces.ChartAxesData.categoryAxis
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
     fullName: excel.Excel.Interfaces.ChartAxesData.seriesAxis
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Represents the value axis in an axis. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis
     fullName: excel.Excel.Interfaces.ChartAxesData.valueAxis
     langs:

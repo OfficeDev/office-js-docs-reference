@@ -6,7 +6,7 @@ items:
       an iconset.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalIconCriterion
     fullName: excel.Excel.ConditionalIconCriterion
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       The custom icon for the current criterion if different from the default IconSet, else null will be returned.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customIcon
     fullName: excel.Excel.ConditionalIconCriterion.customIcon
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       A number or a formula depending on the type.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.ConditionalIconCriterion.formula
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: excel.Excel.ConditionalIconCriterion.operator
     langs:
@@ -167,7 +167,7 @@ items:
     summary: |-
       What the icon conditional formula should be based on.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ConditionalIconCriterion.type
     langs:

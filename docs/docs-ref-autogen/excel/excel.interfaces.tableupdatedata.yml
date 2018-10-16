@@ -22,7 +22,7 @@ items:
     summary: |-
       Indicates whether the first column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightFirstColumn
     fullName: excel.Excel.Interfaces.TableUpdateData.highlightFirstColumn
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Indicates whether the last column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightLastColumn
     fullName: excel.Excel.Interfaces.TableUpdateData.highlightLastColumn
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Name of the table.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.TableUpdateData.name
     langs:
@@ -69,7 +69,7 @@ items:
       ones to make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedColumns
     fullName: excel.Excel.Interfaces.TableUpdateData.showBandedColumns
     langs:
@@ -86,7 +86,7 @@ items:
       make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedRows
     fullName: excel.Excel.Interfaces.TableUpdateData.showBandedRows
     langs:
@@ -103,7 +103,7 @@ items:
       the table contains a header row.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showFilterButton
     fullName: excel.Excel.Interfaces.TableUpdateData.showFilterButton
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
     fullName: excel.Excel.Interfaces.TableUpdateData.showHeaders
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals
     fullName: excel.Excel.Interfaces.TableUpdateData.showTotals
     langs:
@@ -151,7 +151,7 @@ items:
       style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Interfaces.TableUpdateData.style
     langs:

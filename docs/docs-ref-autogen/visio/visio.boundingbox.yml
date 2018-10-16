@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the BoundingBox of the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.BoundingBox
     fullName: visio.Visio.BoundingBox
     langs:
@@ -22,7 +22,7 @@ items:
       associated with the shape.
 
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: height
     fullName: visio.Visio.BoundingBox.height
     langs:
@@ -39,7 +39,7 @@ items:
       associated with the shape.
 
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: width
     fullName: visio.Visio.BoundingBox.width
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       An integer that specifies the x-coordinate of the bounding box.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: x
     fullName: visio.Visio.BoundingBox.x
     langs:
@@ -69,7 +69,7 @@ items:
     summary: |-
       An integer that specifies the y-coordinate of the bounding box.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'y'
     fullName: visio.Visio.BoundingBox.y
     langs:

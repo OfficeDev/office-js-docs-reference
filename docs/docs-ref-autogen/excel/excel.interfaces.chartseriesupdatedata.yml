@@ -36,7 +36,7 @@ items:
     summary: |-
       Returns or sets the group for the specified series. Read/Write
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.axisGroup
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.chartType
     langs:
@@ -95,7 +95,7 @@ items:
     summary: |-
       Represents a collection of all dataLabels in the series.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.dataLabels
     langs:
@@ -112,7 +112,7 @@ items:
       invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: doughnutHoleSize
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.doughnutHoleSize
     langs:
@@ -129,7 +129,7 @@ items:
       explosion (the tip of the slice is in the center of the pie). Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: explosion
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.explosion
     langs:
@@ -144,7 +144,7 @@ items:
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.filtered
     langs:
@@ -161,7 +161,7 @@ items:
       Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: firstSliceAngle
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.firstSliceAngle
     langs:
@@ -176,7 +176,7 @@ items:
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.format
     langs:
@@ -193,7 +193,7 @@ items:
       line and pie charts. Throws an invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gapWidth
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.gapWidth
     langs:
@@ -208,7 +208,7 @@ items:
     summary: |-
       Boolean value representing if the series has data labels or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.hasDataLabels
     langs:
@@ -223,7 +223,7 @@ items:
     summary: |-
       True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertIfNegative
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.invertIfNegative
     langs:
@@ -238,7 +238,7 @@ items:
     summary: |-
       Represents markers background color of a chart series.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.markerBackgroundColor
     langs:
@@ -253,7 +253,7 @@ items:
     summary: |-
       Represents markers foreground color of a chart series.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.markerForegroundColor
     langs:
@@ -268,7 +268,7 @@ items:
     summary: |-
       Represents marker size of a chart series.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.markerSize
     langs:
@@ -283,7 +283,7 @@ items:
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.markerStyle
     langs:
@@ -302,7 +302,7 @@ items:
     summary: |-
       Represents the name of a series in a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.name
     langs:
@@ -319,7 +319,7 @@ items:
       2-D column charts. Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlap
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.overlap
     langs:
@@ -334,7 +334,7 @@ items:
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.plotOrder
     langs:
@@ -351,7 +351,7 @@ items:
       percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: secondPlotSize
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.secondPlotSize
     langs:
@@ -366,7 +366,7 @@ items:
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.showShadow
     langs:
@@ -381,7 +381,7 @@ items:
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.smooth
     langs:
@@ -396,7 +396,7 @@ items:
     summary: |-
       Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitType
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.splitType
     langs:
@@ -413,7 +413,7 @@ items:
       series. Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varyByCategories
     fullName: excel.Excel.Interfaces.ChartSeriesUpdateData.varyByCategories
     langs:

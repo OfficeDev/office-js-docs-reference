@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Application.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Application
     fullName: visio.Visio.Application
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Show or hide the iFrame application borders.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showBorders
     fullName: visio.Visio.Application.showBorders
     langs:
@@ -91,7 +91,7 @@ items:
     summary: |-
       Sets the visibility of a specific toolbar in the application.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'showToolbar(id, show)'
     fullName: visio.Visio.Application.showToolbar
     langs:
@@ -116,7 +116,7 @@ items:
     summary: |-
       Show or hide the standard toolbars.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showToolbars
     fullName: visio.Visio.Application.showToolbars
     langs:

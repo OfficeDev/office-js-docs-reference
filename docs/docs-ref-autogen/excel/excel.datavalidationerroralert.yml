@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the error alert properties for the data validation.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationErrorAlert
     fullName: excel.Excel.DataValidationErrorAlert
     langs:
@@ -20,7 +20,7 @@ items:
     summary: |-
       Represents error alert message.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
     fullName: excel.Excel.DataValidationErrorAlert.message
     langs:
@@ -35,7 +35,7 @@ items:
     summary: |-
       It determines show error alert dialog or not when users enter invalid data, it defaults to true.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAlert
     fullName: excel.Excel.DataValidationErrorAlert.showAlert
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.DataValidationErrorAlert.style
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Represents error alert dialog title.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: excel.Excel.DataValidationErrorAlert.title
     langs:

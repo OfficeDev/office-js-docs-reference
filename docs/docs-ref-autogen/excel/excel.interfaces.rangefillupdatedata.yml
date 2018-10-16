@@ -16,7 +16,7 @@ items:
       color (e.g. "orange")
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.Interfaces.RangeFillUpdateData.color
     langs:

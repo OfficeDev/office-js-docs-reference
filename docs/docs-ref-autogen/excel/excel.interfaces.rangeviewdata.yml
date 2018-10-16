@@ -25,7 +25,7 @@ items:
     summary: |-
       Represents the cell addresses of the RangeView. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellAddresses
     fullName: excel.Excel.Interfaces.RangeViewData.cellAddresses
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Returns the number of visible columns. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
     fullName: excel.Excel.Interfaces.RangeViewData.columnCount
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Represents the formula in A1-style notation.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
     fullName: excel.Excel.Interfaces.RangeViewData.formulas
     langs:
@@ -72,7 +72,7 @@ items:
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
     fullName: excel.Excel.Interfaces.RangeViewData.formulasLocal
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Represents the formula in R1C1-style notation.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
     fullName: excel.Excel.Interfaces.RangeViewData.formulasR1C1
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Returns a value that represents the index of the RangeView. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.Interfaces.RangeViewData.index
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Represents Excel's number format code for the given cell.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Interfaces.RangeViewData.numberFormat
     langs:
@@ -132,7 +132,7 @@ items:
     summary: |-
       Returns the number of visible rows. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
     fullName: excel.Excel.Interfaces.RangeViewData.rowCount
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Represents a collection of range views associated with the range. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
     fullName: excel.Excel.Interfaces.RangeViewData.rows
     langs:
@@ -164,7 +164,7 @@ items:
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.Interfaces.RangeViewData.text
     langs:
@@ -181,7 +181,7 @@ items:
       boolean. Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.RangeViewData.values
     langs:
@@ -196,7 +196,7 @@ items:
     summary: |-
       Represents the type of data of each cell. Read-only.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
     fullName: excel.Excel.Interfaces.RangeViewData.valueTypes
     langs:

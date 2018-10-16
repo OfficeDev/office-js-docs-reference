@@ -17,7 +17,7 @@ items:
     summary: |-
       Disable Hyperlinks.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableHyperlinks
     fullName: visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
     langs:
@@ -32,7 +32,7 @@ items:
     summary: |-
       Disable Pan.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disablePan
     fullName: visio.Visio.Interfaces.DocumentViewData.disablePan
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Disable Zoom.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableZoom
     fullName: visio.Visio.Interfaces.DocumentViewData.disableZoom
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Hide Diagram Boundary.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: hideDiagramBoundary
     fullName: visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
     langs:

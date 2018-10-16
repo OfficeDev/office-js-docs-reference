@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for the chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineLabelFormat
     fullName: excel.Excel.ChartTrendlineLabelFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.ChartTrendlineLabelFormat.border
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents the fill format of the current chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.ChartTrendlineLabelFormat.fill
     langs:
@@ -53,7 +53,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.ChartTrendlineLabelFormat.font
     langs:

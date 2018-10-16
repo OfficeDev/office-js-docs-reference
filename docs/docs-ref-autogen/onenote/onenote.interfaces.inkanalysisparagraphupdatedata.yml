@@ -14,7 +14,7 @@ items:
     summary: |-
       Reference to the parent InkAnalysisPage.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysis
     fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData.inkAnalysis
     langs:

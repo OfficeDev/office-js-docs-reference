@@ -21,7 +21,7 @@ items:
     summary: |-
       The client url of the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: onenote.OneNote.Interfaces.SectionGroupData.clientUrl
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Gets the ID of the section group. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.SectionGroupData.id
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Gets the name of the section group. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: onenote.OneNote.Interfaces.SectionGroupData.name
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the notebook that contains the section group. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebook
     fullName: onenote.OneNote.Interfaces.SectionGroupData.notebook
     langs:
@@ -83,7 +83,7 @@ items:
       of the notebook. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroup
     fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
     langs:
@@ -100,7 +100,7 @@ items:
       notebook. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroupOrNull
     fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
     langs:
@@ -115,7 +115,7 @@ items:
     summary: |-
       The collection of section groups in the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       The collection of sections in the section group. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: onenote.OneNote.Interfaces.SectionGroupData.sections
     langs:

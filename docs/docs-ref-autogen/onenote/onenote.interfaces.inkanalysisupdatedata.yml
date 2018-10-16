@@ -14,7 +14,7 @@ items:
     summary: |-
       Gets the parent page object.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: page
     fullName: onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataPivotHierarchy
     fullName: excel.Excel.DataPivotHierarchy
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: field
     fullName: excel.Excel.DataPivotHierarchy.field
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Id of the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.DataPivotHierarchy.id
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Name of the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.DataPivotHierarchy.name
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Number format of the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.DataPivotHierarchy.numberFormat
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       Position of the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.DataPivotHierarchy.position
     langs:
@@ -137,7 +137,7 @@ items:
     summary: |-
       Reset the DataPivotHierarchy back to its default values.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
     fullName: excel.Excel.DataPivotHierarchy.setToDefault
     langs:
@@ -153,7 +153,7 @@ items:
     summary: |-
       Determines whether the data should be sown as a specific summary calculation or not.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
     fullName: excel.Excel.DataPivotHierarchy.showAs
     langs:
@@ -168,7 +168,7 @@ items:
     summary: |-
       Determines whether to show all items of the DataPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy
     fullName: excel.Excel.DataPivotHierarchy.summarizeBy
     langs:

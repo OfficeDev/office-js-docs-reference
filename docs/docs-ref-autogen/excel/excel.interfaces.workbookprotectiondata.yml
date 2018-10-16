@@ -14,7 +14,7 @@ items:
     summary: |-
       Indicates if the workbook is protected. Read-Only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: excel.Excel.Interfaces.WorkbookProtectionData.protected
     langs:

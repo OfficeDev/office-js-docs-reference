@@ -22,7 +22,7 @@ items:
     summary: |-
       Gets or sets the author of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.author
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Gets or sets the category of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.category
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Gets or sets the comments of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.comments
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Gets or sets the company of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.company
     langs:
@@ -82,7 +82,7 @@ items:
     summary: |-
       Gets or sets the keywords of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.keywords
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Gets or sets the manager of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.manager
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Gets the revision number of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: revisionNumber
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.revisionNumber
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Gets or sets the subject of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.subject
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Gets or sets the title of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.title
     langs:

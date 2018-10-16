@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the attributes for a chart trendline lable object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineLabel
     fullName: excel.Excel.ChartTrendlineLabel
     langs:
@@ -32,7 +32,7 @@ items:
     summary: |-
       Boolean value representing if trendline label automatically generates appropriate text based on context.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
     fullName: excel.Excel.ChartTrendlineLabel.autoText
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Represents the format of chart trendline label.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartTrendlineLabel.format
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       String value that represents the formula of chart trendline label using A1-style notation.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.ChartTrendlineLabel.formula
     langs:
@@ -79,7 +79,7 @@ items:
       visible.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: excel.Excel.ChartTrendlineLabel.height
     langs:
@@ -96,7 +96,7 @@ items:
       This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: excel.Excel.ChartTrendlineLabel.horizontalAlignment
     langs:
@@ -115,7 +115,7 @@ items:
       Null if chart trendline label is not visible.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.ChartTrendlineLabel.left
     langs:
@@ -164,7 +164,7 @@ items:
     summary: |-
       String value that represents the format code for trendline label.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.ChartTrendlineLabel.numberFormat
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       String representing the text of the trendline label on a chart.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.ChartTrendlineLabel.text
     langs:
@@ -196,7 +196,7 @@ items:
       180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: excel.Excel.ChartTrendlineLabel.textOrientation
     langs:
@@ -225,7 +225,7 @@ items:
       chart trendline label is not visible.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.ChartTrendlineLabel.top
     langs:
@@ -242,7 +242,7 @@ items:
       property is valid only when TextOrientation of trendline label is 0.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: excel.Excel.ChartTrendlineLabel.verticalAlignment
     langs:
@@ -259,7 +259,7 @@ items:
       visible.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: excel.Excel.ChartTrendlineLabel.width
     langs:

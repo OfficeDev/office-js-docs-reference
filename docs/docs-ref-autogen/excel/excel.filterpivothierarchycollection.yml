@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterPivotHierarchyCollection
     fullName: excel.Excel.FilterPivotHierarchyCollection
     langs:
@@ -28,7 +28,7 @@ items:
       axis, it will be removed from that location.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
     fullName: excel.Excel.FilterPivotHierarchyCollection.add
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets the number of pivot hierarchies in the collection.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.FilterPivotHierarchyCollection.getCount
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Gets a FilterPivotHierarchy by its name or id.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: excel.Excel.FilterPivotHierarchyCollection.getItem
     langs:
@@ -86,7 +86,7 @@ items:
     summary: |-
       Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.FilterPivotHierarchyCollection.getItemOrNullObject
     langs:
@@ -153,7 +153,7 @@ items:
     summary: |-
       Removes the PivotHierarchy from the current axis.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(filterPivotHierarchy)
     fullName: excel.Excel.FilterPivotHierarchyCollection.remove
     langs:

@@ -18,7 +18,7 @@ items:
     summary: |-
       Represents the formula in A1-style notation.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
     fullName: excel.Excel.Interfaces.RangeViewUpdateData.formulas
     langs:
@@ -35,7 +35,7 @@ items:
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
     fullName: excel.Excel.Interfaces.RangeViewUpdateData.formulasLocal
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Represents the formula in R1C1-style notation.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
     fullName: excel.Excel.Interfaces.RangeViewUpdateData.formulasR1C1
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Represents Excel's number format code for the given cell.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Interfaces.RangeViewUpdateData.numberFormat
     langs:
@@ -82,7 +82,7 @@ items:
       boolean. Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.RangeViewUpdateData.values
     langs:

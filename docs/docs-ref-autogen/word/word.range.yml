@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a contiguous area in a document.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Range
     fullName: word.Word.Range
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Clears the contents of the range object. The user can perform the undo operation on the cleared content.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: clear()
     fullName: word.Word.Range.clear
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       Compares this range's location with another range's location.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: compareLocationWith(range)
     fullName: word.Word.Range.compareLocationWith
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       Gets the collection of content control objects in the range. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: word.Word.Range.contentControls
     langs:
@@ -145,7 +145,7 @@ items:
     summary: |-
       Deletes the range and its content from the document.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: delete()
     fullName: word.Word.Range.delete
     langs:
@@ -190,7 +190,7 @@ items:
       changed. Throws if the two ranges do not have a union.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: expandTo(range)
     fullName: word.Word.Range.expandTo
     langs:
@@ -213,7 +213,7 @@ items:
       changed. Returns a null object if the two ranges do not have a union.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: expandToOrNullObject(range)
     fullName: word.Word.Range.expandToOrNullObject
     langs:
@@ -236,7 +236,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: word.Word.Range.font
     langs:
@@ -251,7 +251,7 @@ items:
     summary: |-
       Gets the HTML representation of the range object.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
     fullName: word.Word.Range.getHtml
     langs:
@@ -294,7 +294,7 @@ items:
     summary: |-
       Gets hyperlink child ranges within the range.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHyperlinkRanges()
     fullName: word.Word.Range.getHyperlinkRanges
     langs:
@@ -312,7 +312,7 @@ items:
       last one.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getNextTextRange(endingMarks, trimSpacing)'
     fullName: word.Word.Range.getNextTextRange
     langs:
@@ -342,7 +342,7 @@ items:
       range is the last one.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getNextTextRangeOrNullObject(endingMarks, trimSpacing)'
     fullName: word.Word.Range.getNextTextRangeOrNullObject
     langs:
@@ -370,7 +370,7 @@ items:
     summary: |-
       Gets the OOXML representation of the range object.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getOoxml()
     fullName: word.Word.Range.getOoxml
     langs:
@@ -413,7 +413,7 @@ items:
     summary: |-
       Clones the range, or gets the starting or ending point of the range as a new range.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getRange(rangeLocation)
     fullName: word.Word.Range.getRange
     langs:
@@ -434,7 +434,7 @@ items:
     summary: |-
       Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getTextRanges(endingMarks, trimSpacing)'
     fullName: word.Word.Range.getTextRanges
     langs:
@@ -465,7 +465,7 @@ items:
       part.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
     fullName: word.Word.Range.hyperlink
     langs:
@@ -480,7 +480,7 @@ items:
     summary: |-
       Gets the collection of inline picture objects in the range. Read-only.
 
-      \[ [API set: WordApi 1.2](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
     fullName: word.Word.Range.inlinePictures
     langs:
@@ -497,7 +497,7 @@ items:
       'After'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
     fullName: word.Word.Range.insertBreak
     langs:
@@ -549,7 +549,7 @@ items:
     summary: |-
       Wraps the range object with a rich text content control.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: insertContentControl()
     fullName: word.Word.Range.insertContentControl
     langs:
@@ -618,7 +618,7 @@ items:
       or 'After'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
     fullName: word.Word.Range.insertFileFromBase64
     langs:
@@ -673,7 +673,7 @@ items:
       'After'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
     fullName: word.Word.Range.insertHtml
     langs:
@@ -727,7 +727,7 @@ items:
       or 'After'.
 
 
-      \[ [API set: WordApi 1.2](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     fullName: word.Word.Range.insertInlinePictureFromBase64
     langs:
@@ -756,7 +756,7 @@ items:
       'After'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
     fullName: word.Word.Range.insertOoxml
     langs:
@@ -811,7 +811,7 @@ items:
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
     fullName: word.Word.Range.insertParagraph
     langs:
@@ -865,7 +865,7 @@ items:
       'After'.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     fullName: word.Word.Range.insertTable
     langs:
@@ -902,7 +902,7 @@ items:
       'After'.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
     fullName: word.Word.Range.insertText
     langs:
@@ -956,7 +956,7 @@ items:
       two ranges are not overlapped or adjacent.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: intersectWith(range)
     fullName: word.Word.Range.intersectWith
     langs:
@@ -979,7 +979,7 @@ items:
       null object if the two ranges are not overlapped or adjacent.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: intersectWithOrNullObject(range)
     fullName: word.Word.Range.intersectWithOrNullObject
     langs:
@@ -1000,7 +1000,7 @@ items:
     summary: |-
       Checks whether the range length is zero. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isEmpty
     fullName: word.Word.Range.isEmpty
     langs:
@@ -1015,7 +1015,7 @@ items:
     summary: |-
       Gets the collection of list objects in the range. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lists
     fullName: word.Word.Range.lists
     langs:
@@ -1064,7 +1064,7 @@ items:
     summary: |-
       Gets the collection of paragraph objects in the range. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
     fullName: word.Word.Range.paragraphs
     langs:
@@ -1079,7 +1079,7 @@ items:
     summary: |-
       Gets the parent body of the range. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: word.Word.Range.parentBody
     langs:
@@ -1094,7 +1094,7 @@ items:
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: word.Word.Range.parentContentControl
     langs:
@@ -1111,7 +1111,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: word.Word.Range.parentContentControlOrNullObject
     langs:
@@ -1126,7 +1126,7 @@ items:
     summary: |-
       Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.Range.parentTable
     langs:
@@ -1141,7 +1141,7 @@ items:
     summary: |-
       Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: word.Word.Range.parentTableCell
     langs:
@@ -1158,7 +1158,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: word.Word.Range.parentTableCellOrNullObject
     langs:
@@ -1173,7 +1173,7 @@ items:
     summary: |-
       Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: word.Word.Range.parentTableOrNullObject
     langs:
@@ -1190,7 +1190,7 @@ items:
       collection of range objects.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'search(searchText, searchOptions)'
     fullName: word.Word.Range.search
     langs:
@@ -1233,7 +1233,7 @@ items:
     summary: |-
       Selects and navigates the Word UI to the range.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: select(selectionMode)
     fullName: word.Word.Range.select
     langs:
@@ -1284,7 +1284,7 @@ items:
     summary: |-
       Splits the range into child ranges by using delimiters.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
     fullName: word.Word.Range.split
     langs:
@@ -1328,7 +1328,7 @@ items:
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: word.Word.Range.style
     langs:
@@ -1345,7 +1345,7 @@ items:
       between locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: word.Word.Range.styleBuiltIn
     langs:
@@ -1424,7 +1424,7 @@ items:
     summary: |-
       Gets the collection of table objects in the range. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
     fullName: word.Word.Range.tables
     langs:
@@ -1439,7 +1439,7 @@ items:
     summary: |-
       Gets the text of the range. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
     fullName: word.Word.Range.text
     langs:

@@ -15,7 +15,7 @@ items:
     summary: |-
       Represents the formatting of chart gridlines. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartGridlinesData.format
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.Interfaces.ChartGridlinesData.visible
     langs:

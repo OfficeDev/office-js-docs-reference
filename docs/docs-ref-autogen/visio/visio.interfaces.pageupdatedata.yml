@@ -14,7 +14,7 @@ items:
     summary: |-
       Returns the view of the page.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: visio.Visio.Interfaces.PageUpdateData.view
     langs:

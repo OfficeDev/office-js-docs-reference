@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the list's id.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: id
     fullName: word.Word.Interfaces.ListData.id
     langs:
@@ -34,7 +34,7 @@ items:
       is at least one list item at that level. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: levelExistences
     fullName: word.Word.Interfaces.ListData.levelExistences
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: levelTypes
     fullName: word.Word.Interfaces.ListData.levelTypes
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Gets paragraphs in the list. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
     fullName: word.Word.Interfaces.ListData.paragraphs
     langs:

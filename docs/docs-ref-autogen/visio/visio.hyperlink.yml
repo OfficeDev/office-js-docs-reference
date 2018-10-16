@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Hyperlink.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Hyperlink
     fullName: visio.Visio.Hyperlink
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the address of the Hyperlink object. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: address
     fullName: visio.Visio.Hyperlink.address
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the description of a hyperlink. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: description
     fullName: visio.Visio.Hyperlink.description
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: extraInfo
     fullName: visio.Visio.Hyperlink.extraInfo
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       Gets the sub-address of the Hyperlink object. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: subAddress
     fullName: visio.Visio.Hyperlink.subAddress
     langs:

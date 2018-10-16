@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border objects that make up range border.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeBorderCollection
     fullName: excel.Excel.ConditionalRangeBorderCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets the bottom border. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: excel.Excel.ConditionalRangeBorderCollection.bottom
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Number of border objects in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.ConditionalRangeBorderCollection.count
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Gets a border object using its name.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItem
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Gets a border object using its index.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Gets the left border. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.ConditionalRangeBorderCollection.left
     langs:
@@ -161,7 +161,7 @@ items:
     summary: |-
       Gets the right border. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: excel.Excel.ConditionalRangeBorderCollection.right
     langs:
@@ -188,7 +188,7 @@ items:
     summary: |-
       Gets the top border. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.ConditionalRangeBorderCollection.top
     langs:

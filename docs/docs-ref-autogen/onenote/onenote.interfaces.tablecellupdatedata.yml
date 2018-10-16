@@ -14,7 +14,7 @@ items:
     summary: |-
       Gets and sets the shading color of the cell
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
     langs:

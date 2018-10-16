@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Basic Type data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BasicDataValidation
     fullName: excel.Excel.BasicDataValidation
     langs:
@@ -23,7 +23,7 @@ items:
       returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: excel.Excel.BasicDataValidation.formula1
     langs:
@@ -42,7 +42,7 @@ items:
       returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: excel.Excel.BasicDataValidation.formula2
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       The operator to use for validating the data.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: excel.Excel.BasicDataValidation.operator
     langs:

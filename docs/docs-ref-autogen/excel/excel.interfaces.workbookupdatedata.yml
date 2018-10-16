@@ -14,7 +14,7 @@ items:
     summary: |-
       Gets the workbook properties.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
     fullName: excel.Excel.Interfaces.WorkbookUpdateData.properties
     langs:

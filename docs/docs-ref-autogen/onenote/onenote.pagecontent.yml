@@ -6,7 +6,7 @@ items:
       can be assigned an XY position.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.PageContent
     fullName: onenote.OneNote.PageContent
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Deletes the PageContent object.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: delete()
     fullName: onenote.OneNote.PageContent.delete
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Gets the ID of the PageContent object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.PageContent.id
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
     fullName: onenote.OneNote.PageContent.image
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ink
     fullName: onenote.OneNote.PageContent.ink
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: left
     fullName: onenote.OneNote.PageContent.left
     langs:
@@ -171,7 +171,7 @@ items:
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: outline
     fullName: onenote.OneNote.PageContent.outline
     langs:
@@ -186,7 +186,7 @@ items:
     summary: |-
       Gets the page that contains the PageContent object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentPage
     fullName: onenote.OneNote.PageContent.parentPage
     langs:
@@ -213,7 +213,7 @@ items:
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: top
     fullName: onenote.OneNote.PageContent.top
     langs:
@@ -246,7 +246,7 @@ items:
     summary: |-
       Gets the type of the PageContent object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: onenote.OneNote.PageContent.type
     langs:

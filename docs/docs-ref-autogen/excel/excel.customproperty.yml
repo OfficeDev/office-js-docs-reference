@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a custom property.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomProperty
     fullName: excel.Excel.CustomProperty
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Deletes the custom property.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.CustomProperty.delete
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets the key of the custom property. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: excel.Excel.CustomProperty.key
     langs:
@@ -101,7 +101,7 @@ items:
     summary: |-
       Gets the value type of the custom property. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.CustomProperty.type
     langs:
@@ -116,7 +116,7 @@ items:
     summary: |-
       Gets or sets the value of the custom property.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.CustomProperty.value
     langs:

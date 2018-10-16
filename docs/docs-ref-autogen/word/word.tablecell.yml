@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a table cell in a Word document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.TableCell
     fullName: word.Word.TableCell
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Gets the body object of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: word.Word.TableCell.body
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cellIndex
     fullName: word.Word.TableCell.cellIndex
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: columnWidth
     fullName: word.Word.TableCell.columnWidth
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Deletes the column containing this cell. This is applicable to uniform tables.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteColumn()
     fullName: word.Word.TableCell.deleteColumn
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Deletes the row containing this cell.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteRow()
     fullName: word.Word.TableCell.deleteRow
     langs:
@@ -119,7 +119,7 @@ items:
     summary: |-
       Gets the border style for the specified border.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getBorder(borderLocation)
     fullName: word.Word.TableCell.getBorder
     langs:
@@ -140,7 +140,7 @@ items:
     summary: |-
       Gets cell padding in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCellPadding(cellPaddingLocation)
     fullName: word.Word.TableCell.getCellPadding
     langs:
@@ -161,7 +161,7 @@ items:
     summary: |-
       Gets the next cell. Throws if this cell is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
     fullName: word.Word.TableCell.getNext
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Gets the next cell. Returns a null object if this cell is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
     fullName: word.Word.TableCell.getNextOrNullObject
     langs:
@@ -193,7 +193,7 @@ items:
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: word.Word.TableCell.horizontalAlignment
     langs:
@@ -210,7 +210,7 @@ items:
       uniform tables. The string values, if specified, are set in the newly inserted rows.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertColumns(insertLocation, columnCount, values)'
     fullName: word.Word.TableCell.insertColumns
     langs:
@@ -241,7 +241,7 @@ items:
       in the newly inserted rows.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertRows(insertLocation, rowCount, values)'
     fullName: word.Word.TableCell.insertRows
     langs:
@@ -304,7 +304,7 @@ items:
     summary: |-
       Gets the parent row of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentRow
     fullName: word.Word.TableCell.parentRow
     langs:
@@ -319,7 +319,7 @@ items:
     summary: |-
       Gets the parent table of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.TableCell.parentTable
     langs:
@@ -334,7 +334,7 @@ items:
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowIndex
     fullName: word.Word.TableCell.rowIndex
     langs:
@@ -349,7 +349,7 @@ items:
     summary: |-
       Sets cell padding in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setCellPadding(cellPaddingLocation, cellPadding)'
     fullName: word.Word.TableCell.setCellPadding
     langs:
@@ -374,7 +374,7 @@ items:
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: word.Word.TableCell.shadingColor
     langs:
@@ -436,7 +436,7 @@ items:
     summary: |-
       Gets and sets the text of the cell.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
     fullName: word.Word.TableCell.value
     langs:
@@ -451,7 +451,7 @@ items:
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: word.Word.TableCell.verticalAlignment
     langs:
@@ -466,7 +466,7 @@ items:
     summary: |-
       Gets the width of the cell in points. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: word.Word.TableCell.width
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorksheetFreezePanes
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.WorksheetFreezePanes
     fullName: excel.Excel.WorksheetFreezePanes
     langs:
@@ -24,7 +24,7 @@ items:
       the top- and left-most pane.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeAt(frozenRange)
     fullName: excel.Excel.WorksheetFreezePanes.freezeAt
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Freeze the first column(s) of the worksheet in place.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeColumns(count)
     fullName: excel.Excel.WorksheetFreezePanes.freezeColumns
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Freeze the top row(s) of the worksheet in place.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeRows(count)
     fullName: excel.Excel.WorksheetFreezePanes.freezeRows
     langs:
@@ -128,7 +128,7 @@ items:
       cells that are frozen in the top- and left-most pane.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLocation()
     fullName: excel.Excel.WorksheetFreezePanes.getLocation
     langs:
@@ -146,7 +146,7 @@ items:
       cells that are frozen in the top- and left-most pane. If there is no frozen pane, returns a null object.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLocationOrNullObject()
     fullName: excel.Excel.WorksheetFreezePanes.getLocationOrNullObject
     langs:
@@ -195,7 +195,7 @@ items:
     summary: |-
       Removes all frozen panes in the worksheet.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unfreeze()
     fullName: excel.Excel.WorksheetFreezePanes.unfreeze
     langs:

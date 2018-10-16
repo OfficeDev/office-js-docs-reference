@@ -20,7 +20,7 @@ items:
     summary: |-
       Gets the bottom border.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Gets the left border.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Gets the right border.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Gets the top border.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
     langs:

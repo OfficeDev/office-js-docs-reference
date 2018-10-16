@@ -16,7 +16,7 @@ items:
     summary: |-
       Represents the formatting of chart axis title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Represents the axis title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       A boolean that specifies the visibility of an axis title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
     langs:

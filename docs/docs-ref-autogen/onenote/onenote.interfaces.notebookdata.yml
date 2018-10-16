@@ -20,7 +20,7 @@ items:
     summary: |-
       The url of the site that this notebook is located. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
     fullName: onenote.OneNote.Interfaces.NotebookData.baseUrl
     langs:
@@ -35,7 +35,7 @@ items:
     summary: |-
       The client url of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: onenote.OneNote.Interfaces.NotebookData.clientUrl
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Gets the ID of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.NotebookData.id
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
 
-      \[ [API set: OneNoteApi 1.2](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
     fullName: onenote.OneNote.Interfaces.NotebookData.isVirtual
     langs:
@@ -80,7 +80,7 @@ items:
     summary: |-
       Gets the name of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: onenote.OneNote.Interfaces.NotebookData.name
     langs:
@@ -95,7 +95,7 @@ items:
     summary: |-
       The section groups in the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: onenote.OneNote.Interfaces.NotebookData.sectionGroups
     langs:
@@ -110,7 +110,7 @@ items:
     summary: |-
       The the sections of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: onenote.OneNote.Interfaces.NotebookData.sections
     langs:

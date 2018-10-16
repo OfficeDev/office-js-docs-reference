@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: appearance
     fullName: word.Word.Interfaces.ContentControlData.appearance
     langs:
@@ -57,7 +57,7 @@ items:
       removeWhenEdited.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cannotDelete
     fullName: word.Word.Interfaces.ContentControlData.cannotDelete
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cannotEdit
     fullName: word.Word.Interfaces.ContentControlData.cannotEdit
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
     fullName: word.Word.Interfaces.ContentControlData.color
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Gets the collection of content control objects in the content control. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: word.Word.Interfaces.ContentControlData.contentControls
     langs:
@@ -119,7 +119,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: word.Word.Interfaces.ContentControlData.font
     langs:
@@ -134,7 +134,7 @@ items:
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: id
     fullName: word.Word.Interfaces.ContentControlData.id
     langs:
@@ -151,7 +151,7 @@ items:
       images. Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
     fullName: word.Word.Interfaces.ContentControlData.inlinePictures
     langs:
@@ -166,7 +166,7 @@ items:
     summary: |-
       Gets the collection of list objects in the content control. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lists
     fullName: word.Word.Interfaces.ContentControlData.lists
     langs:
@@ -181,7 +181,7 @@ items:
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
     fullName: word.Word.Interfaces.ContentControlData.paragraphs
     langs:
@@ -196,7 +196,7 @@ items:
     summary: |-
       Gets the parent body of the content control. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: word.Word.Interfaces.ContentControlData.parentBody
     langs:
@@ -213,7 +213,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: word.Word.Interfaces.ContentControlData.parentContentControl
     langs:
@@ -230,7 +230,7 @@ items:
       control. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: word.Word.Interfaces.ContentControlData.parentContentControlOrNullObject
     langs:
@@ -245,7 +245,7 @@ items:
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.Interfaces.ContentControlData.parentTable
     langs:
@@ -260,7 +260,7 @@ items:
     summary: |-
       Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: word.Word.Interfaces.ContentControlData.parentTableCell
     langs:
@@ -277,7 +277,7 @@ items:
       cell. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: word.Word.Interfaces.ContentControlData.parentTableCellOrNullObject
     langs:
@@ -294,7 +294,7 @@ items:
       Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: word.Word.Interfaces.ContentControlData.parentTableOrNullObject
     langs:
@@ -311,7 +311,7 @@ items:
       is empty.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: placeholderText
     fullName: word.Word.Interfaces.ContentControlData.placeholderText
     langs:
@@ -328,7 +328,7 @@ items:
       with cannotDelete.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: removeWhenEdited
     fullName: word.Word.Interfaces.ContentControlData.removeWhenEdited
     langs:
@@ -345,7 +345,7 @@ items:
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: word.Word.Interfaces.ContentControlData.style
     langs:
@@ -362,7 +362,7 @@ items:
       portable between locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: word.Word.Interfaces.ContentControlData.styleBuiltIn
     langs:
@@ -443,7 +443,7 @@ items:
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subtype
     fullName: word.Word.Interfaces.ContentControlData.subtype
     langs:
@@ -466,7 +466,7 @@ items:
     summary: |-
       Gets the collection of table objects in the content control. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
     fullName: word.Word.Interfaces.ContentControlData.tables
     langs:
@@ -481,7 +481,7 @@ items:
     summary: |-
       Gets or sets a tag to identify a content control.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tag
     fullName: word.Word.Interfaces.ContentControlData.tag
     langs:
@@ -496,7 +496,7 @@ items:
     summary: |-
       Gets the text of the content control. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
     fullName: word.Word.Interfaces.ContentControlData.text
     langs:
@@ -511,7 +511,7 @@ items:
     summary: |-
       Gets or sets the title for a content control.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: title
     fullName: word.Word.Interfaces.ContentControlData.title
     langs:
@@ -526,7 +526,7 @@ items:
     summary: |-
       Gets the content control type. Only rich text content controls are supported currently. Read-only.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: type
     fullName: word.Word.Interfaces.ContentControlData.type
     langs:

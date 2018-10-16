@@ -8,7 +8,7 @@ items:
       information such as user information and password.
 
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Setting
     fullName: excel.Excel.Setting
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Deletes the setting.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.Setting.delete
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: excel.Excel.Setting.key
     langs:
@@ -125,7 +125,7 @@ items:
     summary: |-
       Represents the value stored for this setting.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.Setting.value
     langs:

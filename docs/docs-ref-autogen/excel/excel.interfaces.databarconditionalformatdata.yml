@@ -23,7 +23,7 @@ items:
       color (e.g. "orange"). "" (empty string) if no axis is present or set.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisColor
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.axisColor
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Representation of how the axis is determined for an Excel data bar.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisFormat
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.axisFormat
     langs:
@@ -53,7 +53,7 @@ items:
     summary: |-
       Represents the direction that the data bar graphic should be based on.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: barDirection
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.barDirection
     langs:
@@ -68,7 +68,7 @@ items:
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lowerBoundRule
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule
     langs:
@@ -83,7 +83,7 @@ items:
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: negativeFormat
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.negativeFormat
     langs:
@@ -98,7 +98,7 @@ items:
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positiveFormat
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.positiveFormat
     langs:
@@ -113,7 +113,7 @@ items:
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataBarOnly
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.showDataBarOnly
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: upperBoundRule
     fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule
     langs:

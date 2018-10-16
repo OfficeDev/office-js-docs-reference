@@ -20,7 +20,7 @@ items:
       color (e.g. "orange"). "" (empty string) if no border is present or set.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borderColor
     fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.borderColor
     langs:
@@ -37,7 +37,7 @@ items:
       "orange").
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fillColor
     fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.fillColor
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientFill
     fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.gradientFill
     langs:

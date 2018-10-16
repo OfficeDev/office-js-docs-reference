@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the worksheet that raised the Activated event.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetActivatedEventArgs
     fullName: excel.Excel.WorksheetActivatedEventArgs
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.WorksheetActivatedEventArgs.type
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Gets the id of the worksheet that is activated.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: excel.Excel.WorksheetActivatedEventArgs.worksheetId
     langs:

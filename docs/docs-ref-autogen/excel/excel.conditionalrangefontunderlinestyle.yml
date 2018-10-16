@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeFontUnderlineStyle
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ConditionalRangeFontUnderlineStyle
     fullName: excel.Excel.ConditionalRangeFontUnderlineStyle
     langs:

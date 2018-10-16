@@ -18,7 +18,7 @@ items:
     summary: |-
       Determines whether to allow multiple filter items.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.enableMultipleFilterItems
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Returns the PivotFields associated with the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.fields
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Id of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.id
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       Name of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.name
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Position of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.position
     langs:

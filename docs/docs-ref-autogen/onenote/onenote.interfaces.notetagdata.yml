@@ -16,7 +16,7 @@ items:
     summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.NoteTagData.id
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets the status of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: status
     fullName: onenote.OneNote.Interfaces.NoteTagData.status
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Gets the type of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: onenote.OneNote.Interfaces.NoteTagData.type
     langs:
