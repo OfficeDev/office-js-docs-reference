@@ -19,7 +19,7 @@ items:
       will be null.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
     fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       True if the PivotTable report shows grand totals for columns.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
     fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       True if the PivotTable report shows grand totals for rows.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
     fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
     langs:
@@ -66,7 +66,7 @@ items:
       this will be null.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
     fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
     langs:

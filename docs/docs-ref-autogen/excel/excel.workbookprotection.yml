@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the protection of a workbook object.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookProtection
     fullName: excel.Excel.WorkbookProtection
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Protects a workbook. Fails if the workbook has been protected.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protect(password)
     fullName: excel.Excel.WorkbookProtection.protect
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Indicates if the workbook is protected. Read-Only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: excel.Excel.WorkbookProtection.protected
     langs:
@@ -134,7 +134,7 @@ items:
     summary: |-
       Unprotects a workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unprotect(password)
     fullName: excel.Excel.WorkbookProtection.unprotect
     langs:

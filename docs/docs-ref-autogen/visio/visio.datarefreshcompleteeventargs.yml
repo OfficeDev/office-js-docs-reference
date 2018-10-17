@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the document that raised the DataRefreshComplete event.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.DataRefreshCompleteEventArgs
     fullName: visio.Visio.DataRefreshCompleteEventArgs
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets the document object that raised the DataRefreshComplete event.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: document
     fullName: visio.Visio.DataRefreshCompleteEventArgs.document
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Gets the success or failure of the DataRefreshComplete event.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: success
     fullName: visio.Visio.DataRefreshCompleteEventArgs.success
     langs:

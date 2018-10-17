@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the success or failure of the DocumentLoadComplete event.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.DocumentLoadCompleteEventArgs
     fullName: visio.Visio.DocumentLoadCompleteEventArgs
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the success or failure of the DocumentLoadComplete event.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: success
     fullName: visio.Visio.DocumentLoadCompleteEventArgs.success
     langs:

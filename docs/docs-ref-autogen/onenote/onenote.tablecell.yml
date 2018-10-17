@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a cell in a OneNote table.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableCell
     fullName: onenote.OneNote.TableCell
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Adds the specified HTML to the bottom of the TableCell.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
     fullName: onenote.OneNote.TableCell.appendHtml
     langs:
@@ -91,7 +91,7 @@ items:
     summary: |-
       Adds the specified image to table cell.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
     fullName: onenote.OneNote.TableCell.appendImage
     langs:
@@ -120,7 +120,7 @@ items:
     summary: |-
       Adds the specified text to table cell.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
     fullName: onenote.OneNote.TableCell.appendRichText
     langs:
@@ -176,7 +176,7 @@ items:
     summary: |-
       Adds a table with the specified number of rows and columns to table cell.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
     fullName: onenote.OneNote.TableCell.appendTable
     langs:
@@ -205,7 +205,7 @@ items:
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
     fullName: onenote.OneNote.TableCell.cellIndex
     langs:
@@ -220,7 +220,7 @@ items:
     summary: |-
       Clears the contents of the cell.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: onenote.OneNote.TableCell.clear
     langs:
@@ -236,7 +236,7 @@ items:
     summary: |-
       Gets the ID of the cell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.TableCell.id
     langs:
@@ -379,7 +379,7 @@ items:
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: onenote.OneNote.TableCell.paragraphs
     langs:
@@ -394,7 +394,7 @@ items:
     summary: |-
       Gets the parent row of the cell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
     fullName: onenote.OneNote.TableCell.parentRow
     langs:
@@ -409,7 +409,7 @@ items:
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: onenote.OneNote.TableCell.rowIndex
     langs:
@@ -424,7 +424,7 @@ items:
     summary: |-
       Gets and sets the shading color of the cell
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: onenote.OneNote.TableCell.shadingColor
     langs:

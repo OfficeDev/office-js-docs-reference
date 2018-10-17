@@ -15,7 +15,7 @@ items:
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.Interfaces.ChartDataLabelFormatUpdateData.border
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart data label.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.Interfaces.ChartDataLabelFormatUpdateData.font
     langs:

@@ -15,7 +15,7 @@ items:
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.Interfaces.TableRowData.index
     langs:
@@ -32,7 +32,7 @@ items:
       Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.TableRowData.values
     langs:

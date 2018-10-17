@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Date data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DateTimeDataValidation
     fullName: excel.Excel.DateTimeDataValidation
     langs:
@@ -23,7 +23,7 @@ items:
       always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: excel.Excel.DateTimeDataValidation.formula1
     langs:
@@ -42,7 +42,7 @@ items:
       be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: excel.Excel.DateTimeDataValidation.formula2
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       The operator to use for validating the data.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: excel.Excel.DateTimeDataValidation.operator
     langs:

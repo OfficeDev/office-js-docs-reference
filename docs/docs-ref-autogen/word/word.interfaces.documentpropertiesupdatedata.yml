@@ -22,7 +22,7 @@ items:
     summary: |-
       Gets or sets the author of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: author
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.author
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Gets or sets the category of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: category
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.category
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Gets or sets the comments of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: comments
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.comments
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Gets or sets the company of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: company
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.company
     langs:
@@ -82,7 +82,7 @@ items:
     summary: |-
       Gets or sets the format of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: format
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.format
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Gets or sets the keywords of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: keywords
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.keywords
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Gets or sets the manager of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: manager
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.manager
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Gets or sets the subject of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subject
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.subject
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Gets or sets the title of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: title
     fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.title
     langs:

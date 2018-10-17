@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the List data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ListDataValidation
     fullName: excel.Excel.ListDataValidation
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       Displays the list in cell drop down or not, it defaults to true.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: inCellDropDown
     fullName: excel.Excel.ListDataValidation.inCellDropDown
     langs:
@@ -35,7 +35,7 @@ items:
       string that contains comma separated number, boolean or date.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: excel.Excel.ListDataValidation.source
     langs:

@@ -16,7 +16,7 @@ items:
     summary: |-
       Represents the comment associated with this name.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
     fullName: excel.Excel.Interfaces.NamedItemUpdateData.comment
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets or sets the formula of the named item. Formula always starts with a '=' sign.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.Interfaces.NamedItemUpdateData.formula
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Specifies whether the object is visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.Interfaces.NamedItemUpdateData.visible
     langs:

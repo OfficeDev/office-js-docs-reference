@@ -4,7 +4,7 @@ items:
     summary: |-
       Specifies the type of the category axis.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisCategoryType
     fullName: excel.Excel.ChartAxisCategoryType
     langs:

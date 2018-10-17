@@ -15,7 +15,7 @@ items:
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: select
     fullName: visio.Visio.Interfaces.ShapeUpdateData.select
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Returns the view of the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: visio.Visio.Interfaces.ShapeUpdateData.view
     langs:

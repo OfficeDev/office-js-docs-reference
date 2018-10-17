@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a column in a table.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableColumn
     fullName: excel.Excel.TableColumn
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Deletes the column from the table.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.TableColumn.delete
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Retrieve the filter applied to the column. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filter
     fullName: excel.Excel.TableColumn.filter
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Gets the range object associated with the data body of the column.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: excel.Excel.TableColumn.getDataBodyRange
     langs:
@@ -111,7 +111,7 @@ items:
     summary: |-
       Gets the range object associated with the header row of the column.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
     fullName: excel.Excel.TableColumn.getHeaderRowRange
     langs:
@@ -146,7 +146,7 @@ items:
     summary: |-
       Gets the range object associated with the entire column.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.TableColumn.getRange
     langs:
@@ -181,7 +181,7 @@ items:
     summary: |-
       Gets the range object associated with the totals row of the column.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
     fullName: excel.Excel.TableColumn.getTotalRowRange
     langs:
@@ -216,7 +216,7 @@ items:
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.TableColumn.id
     langs:
@@ -231,7 +231,7 @@ items:
     summary: |-
       Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.TableColumn.index
     langs:
@@ -324,7 +324,7 @@ items:
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.TableColumn.name
     langs:
@@ -353,7 +353,7 @@ items:
       Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.TableColumn.values
     langs:

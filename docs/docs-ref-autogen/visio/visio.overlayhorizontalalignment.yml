@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Horizontal Alignment of the Overlay relative to the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.OverlayHorizontalAlignment
     fullName: visio.Visio.OverlayHorizontalAlignment
     langs:

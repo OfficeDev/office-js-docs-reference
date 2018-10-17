@@ -16,7 +16,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formula
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in the user's language.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
     fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
     fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
     langs:

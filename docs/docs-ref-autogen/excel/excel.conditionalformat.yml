@@ -4,7 +4,7 @@ items:
     summary: |-
       An object encapsulating a conditional format's range, format, rule, and other properties.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormat
     fullName: excel.Excel.ConditionalFormat
     langs:
@@ -45,7 +45,7 @@ items:
       example to format all cells between 5 and 10. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValue
     fullName: excel.Excel.ConditionalFormat.cellValue
     langs:
@@ -78,7 +78,7 @@ items:
       example to format all cells between 5 and 10. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValueOrNullObject
     fullName: excel.Excel.ConditionalFormat.cellValueOrNullObject
     langs:
@@ -95,7 +95,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScale
     fullName: excel.Excel.ConditionalFormat.colorScale
     langs:
@@ -132,7 +132,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScaleOrNullObject
     fullName: excel.Excel.ConditionalFormat.colorScaleOrNullObject
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
     fullName: excel.Excel.ConditionalFormat.custom
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customOrNullObject
     fullName: excel.Excel.ConditionalFormat.customOrNullObject
     langs:
@@ -192,7 +192,7 @@ items:
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBar
     fullName: excel.Excel.ConditionalFormat.dataBar
     langs:
@@ -222,7 +222,7 @@ items:
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBarOrNullObject
     fullName: excel.Excel.ConditionalFormat.dataBarOrNullObject
     langs:
@@ -237,7 +237,7 @@ items:
     summary: |-
       Deletes this conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.ConditionalFormat.delete
     langs:
@@ -255,7 +255,7 @@ items:
       multiple ranges. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.ConditionalFormat.getRange
     langs:
@@ -310,7 +310,7 @@ items:
       multiple ranges. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
     fullName: excel.Excel.ConditionalFormat.getRangeOrNullObject
     langs:
@@ -326,7 +326,7 @@ items:
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSet
     fullName: excel.Excel.ConditionalFormat.iconSet
     langs:
@@ -385,7 +385,7 @@ items:
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSetOrNullObject
     fullName: excel.Excel.ConditionalFormat.iconSetOrNullObject
     langs:
@@ -400,7 +400,7 @@ items:
     summary: |-
       The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.ConditionalFormat.id
     langs:
@@ -449,7 +449,7 @@ items:
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: preset
     fullName: excel.Excel.ConditionalFormat.preset
     langs:
@@ -480,7 +480,7 @@ items:
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: presetOrNullObject
     fullName: excel.Excel.ConditionalFormat.presetOrNullObject
     langs:
@@ -500,7 +500,7 @@ items:
       object at that new priority location if you want to make further changes to it. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: priority
     fullName: excel.Excel.ConditionalFormat.priority
     langs:
@@ -517,7 +517,7 @@ items:
       Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stopIfTrue
     fullName: excel.Excel.ConditionalFormat.stopIfTrue
     langs:
@@ -534,7 +534,7 @@ items:
       example to format cells matching the word "Text". Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparison
     fullName: excel.Excel.ConditionalFormat.textComparison
     langs:
@@ -567,7 +567,7 @@ items:
       example to format cells matching the word "Text". Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparisonOrNullObject
     fullName: excel.Excel.ConditionalFormat.textComparisonOrNullObject
     langs:
@@ -596,7 +596,7 @@ items:
       example to format the top 10% or bottom 10 items. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottom
     fullName: excel.Excel.ConditionalFormat.topBottom
     langs:
@@ -613,7 +613,7 @@ items:
       example to format the top 10% or bottom 10 items. Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottomOrNullObject
     fullName: excel.Excel.ConditionalFormat.topBottomOrNullObject
     langs:
@@ -628,7 +628,7 @@ items:
     summary: |-
       A type of conditional format. Only one can be set at a time. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ConditionalFormat.type
     langs:

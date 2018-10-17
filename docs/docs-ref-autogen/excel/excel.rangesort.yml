@@ -4,7 +4,7 @@ items:
     summary: |-
       Manages sorting operations on Range objects.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeSort
     fullName: excel.Excel.RangeSort
     langs:
@@ -20,7 +20,7 @@ items:
     summary: |-
       Perform a sort operation.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     fullName: excel.Excel.RangeSort.apply
     langs:

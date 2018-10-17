@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel PivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchy
     fullName: excel.Excel.PivotHierarchy
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the PivotFields associated with the PivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: excel.Excel.PivotHierarchy.fields
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Id of the PivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.PivotHierarchy.id
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Name of the PivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.PivotHierarchy.name
     langs:

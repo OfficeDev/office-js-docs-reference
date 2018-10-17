@@ -14,7 +14,7 @@ items:
     summary: |-
       Represents the value stored for this setting.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.Interfaces.SettingUpdateData.value
     langs:

@@ -16,7 +16,7 @@ items:
     summary: |-
       Determines whether to allow multiple filter items.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.enableMultipleFilterItems
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Name of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.name
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Position of the FilterPivotHierarchy.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.position
     langs:

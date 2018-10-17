@@ -18,7 +18,7 @@ items:
       document even if this document is untitled. True to close, false otherwise.
 
 
-      \[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: allowCloseOnUntitled
     fullName: word.Word.Interfaces.DocumentUpdateData.allowCloseOnUntitled
     langs:
@@ -35,7 +35,7 @@ items:
       etc..
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: word.Word.Interfaces.DocumentUpdateData.body
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Gets the properties of the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: properties
     fullName: word.Word.Interfaces.DocumentUpdateData.properties
     langs:

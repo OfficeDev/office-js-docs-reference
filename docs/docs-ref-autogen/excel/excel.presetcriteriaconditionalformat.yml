@@ -6,7 +6,7 @@ items:
       contains blank, nonblank, error, and noerror.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PresetCriteriaConditionalFormat
     fullName: excel.Excel.PresetCriteriaConditionalFormat
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.PresetCriteriaConditionalFormat.format
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       The rule of the conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: excel.Excel.PresetCriteriaConditionalFormat.rule
     langs:

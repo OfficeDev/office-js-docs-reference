@@ -41,7 +41,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: excel.Excel.Interfaces.RangeData.address
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: excel.Excel.Interfaces.RangeData.addressLocal
     langs:
@@ -71,7 +71,7 @@ items:
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
     fullName: excel.Excel.Interfaces.RangeData.cellCount
     langs:
@@ -86,7 +86,7 @@ items:
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
     fullName: excel.Excel.Interfaces.RangeData.columnCount
     langs:
@@ -101,7 +101,7 @@ items:
     summary: |-
       Represents if all columns of the current range are hidden.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHidden
     fullName: excel.Excel.Interfaces.RangeData.columnHidden
     langs:
@@ -116,7 +116,7 @@ items:
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
     fullName: excel.Excel.Interfaces.RangeData.columnIndex
     langs:
@@ -131,7 +131,7 @@ items:
     summary: |-
       Collection of ConditionalFormats that intersect the range. Read-only.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
     fullName: excel.Excel.Interfaces.RangeData.conditionalFormats
     langs:
@@ -146,7 +146,7 @@ items:
     summary: |-
       Returns a data validation object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataValidation
     fullName: excel.Excel.Interfaces.RangeData.dataValidation
     langs:
@@ -163,7 +163,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.RangeData.format
     langs:
@@ -181,7 +181,7 @@ items:
       cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
     fullName: excel.Excel.Interfaces.RangeData.formulas
     langs:
@@ -200,7 +200,7 @@ items:
       value, it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
     fullName: excel.Excel.Interfaces.RangeData.formulasLocal
     langs:
@@ -218,7 +218,7 @@ items:
       cells in the range.
 
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
     fullName: excel.Excel.Interfaces.RangeData.formulasR1C1
     langs:
@@ -233,7 +233,7 @@ items:
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: excel.Excel.Interfaces.RangeData.hidden
     langs:
@@ -248,7 +248,7 @@ items:
     summary: |-
       Represents the hyperlink for the current range.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
     fullName: excel.Excel.Interfaces.RangeData.hyperlink
     langs:
@@ -263,7 +263,7 @@ items:
     summary: |-
       Represents if the current range is an entire column. Read-only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
     fullName: excel.Excel.Interfaces.RangeData.isEntireColumn
     langs:
@@ -278,7 +278,7 @@ items:
     summary: |-
       Represents if the current range is an entire row. Read-only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
     fullName: excel.Excel.Interfaces.RangeData.isEntireRow
     langs:
@@ -296,7 +296,7 @@ items:
       will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Interfaces.RangeData.numberFormat
     langs:
@@ -314,7 +314,7 @@ items:
       array. If the argument is a single value, it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
     fullName: excel.Excel.Interfaces.RangeData.numberFormatLocal
     langs:
@@ -329,7 +329,7 @@ items:
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
     fullName: excel.Excel.Interfaces.RangeData.rowCount
     langs:
@@ -344,7 +344,7 @@ items:
     summary: |-
       Represents if all rows of the current range are hidden.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
     fullName: excel.Excel.Interfaces.RangeData.rowHidden
     langs:
@@ -359,7 +359,7 @@ items:
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: excel.Excel.Interfaces.RangeData.rowIndex
     langs:
@@ -377,7 +377,7 @@ items:
       BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Interfaces.RangeData.style
     langs:
@@ -394,7 +394,7 @@ items:
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.Interfaces.RangeData.text
     langs:
@@ -413,7 +413,7 @@ items:
       value, it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.RangeData.values
     langs:
@@ -428,7 +428,7 @@ items:
     summary: |-
       Represents the type of data of each cell. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
     fullName: excel.Excel.Interfaces.RangeData.valueTypes
     langs:
@@ -443,7 +443,7 @@ items:
     summary: |-
       The worksheet containing the current range. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: excel.Excel.Interfaces.RangeData.worksheet
     langs:

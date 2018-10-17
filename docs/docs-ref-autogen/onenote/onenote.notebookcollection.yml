@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of notebooks.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.NotebookCollection
     fullName: onenote.OneNote.NotebookCollection
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Returns the number of notebooks in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: onenote.OneNote.NotebookCollection.count
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Gets the collection of notebooks with the specified name that are open in the application instance.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getByName(name)
     fullName: onenote.OneNote.NotebookCollection.getByName
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       Gets a notebook by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: onenote.OneNote.NotebookCollection.getItem
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Gets a notebook on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.NotebookCollection.getItemAt
     langs:

@@ -33,7 +33,7 @@ items:
     summary: |-
       Represents chart axes.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axes
     fullName: excel.Excel.Interfaces.ChartUpdateData.axes
     langs:
@@ -50,7 +50,7 @@ items:
       are being sourced from. Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryLabelLevel
     fullName: excel.Excel.Interfaces.ChartUpdateData.categoryLabelLevel
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
     fullName: excel.Excel.Interfaces.ChartUpdateData.chartType
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       Represents the datalabels on the chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
     fullName: excel.Excel.Interfaces.ChartUpdateData.dataLabels
     langs:
@@ -124,7 +124,7 @@ items:
     summary: |-
       Returns or sets the way that blank cells are plotted on a chart. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayBlanksAs
     fullName: excel.Excel.Interfaces.ChartUpdateData.displayBlanksAs
     langs:
@@ -139,7 +139,7 @@ items:
     summary: |-
       Encapsulates the format properties for the chart area.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartUpdateData.format
     langs:
@@ -154,7 +154,7 @@ items:
     summary: |-
       Represents the height, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: excel.Excel.Interfaces.ChartUpdateData.height
     langs:
@@ -169,7 +169,7 @@ items:
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.Interfaces.ChartUpdateData.left
     langs:
@@ -184,7 +184,7 @@ items:
     summary: |-
       Represents the legend for the chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legend
     fullName: excel.Excel.Interfaces.ChartUpdateData.legend
     langs:
@@ -199,7 +199,7 @@ items:
     summary: |-
       Represents the name of a chart object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.ChartUpdateData.name
     langs:
@@ -214,7 +214,7 @@ items:
     summary: |-
       Represents the plotArea for the chart.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotArea
     fullName: excel.Excel.Interfaces.ChartUpdateData.plotArea
     langs:
@@ -229,7 +229,7 @@ items:
     summary: |-
       Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotBy
     fullName: excel.Excel.Interfaces.ChartUpdateData.plotBy
     langs:
@@ -244,7 +244,7 @@ items:
     summary: |-
       True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotVisibleOnly
     fullName: excel.Excel.Interfaces.ChartUpdateData.plotVisibleOnly
     langs:
@@ -261,7 +261,7 @@ items:
       being sourced from. Read/Write.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesNameLevel
     fullName: excel.Excel.Interfaces.ChartUpdateData.seriesNameLevel
     langs:
@@ -276,7 +276,7 @@ items:
     summary: |-
       Represents whether to display all field buttons on a PivotChart.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
     fullName: excel.Excel.Interfaces.ChartUpdateData.showAllFieldButtons
     langs:
@@ -294,7 +294,7 @@ items:
       data labels. This property applies to 2-D charts only.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataLabelsOverMaximum
     fullName: excel.Excel.Interfaces.ChartUpdateData.showDataLabelsOverMaximum
     langs:
@@ -309,7 +309,7 @@ items:
     summary: |-
       Returns or sets the chart style for the chart. Read/Write.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Interfaces.ChartUpdateData.style
     langs:
@@ -324,7 +324,7 @@ items:
     summary: |-
       Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: excel.Excel.Interfaces.ChartUpdateData.title
     langs:
@@ -341,7 +341,7 @@ items:
       top of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.Interfaces.ChartUpdateData.top
     langs:
@@ -356,7 +356,7 @@ items:
     summary: |-
       Represents the width, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: excel.Excel.Interfaces.ChartUpdateData.width
     langs:

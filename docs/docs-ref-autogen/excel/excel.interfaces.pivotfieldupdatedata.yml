@@ -16,7 +16,7 @@ items:
     summary: |-
       Name of the PivotField.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.PivotFieldUpdateData.name
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Determines whether to show all items of the PivotField.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
     fullName: excel.Excel.Interfaces.PivotFieldUpdateData.showAllItems
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Subtotals of the PivotField.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
     fullName: excel.Excel.Interfaces.PivotFieldUpdateData.subtotals
     langs:

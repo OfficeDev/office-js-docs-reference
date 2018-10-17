@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InsertLocation
-    summary: '\[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]'
+    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.InsertLocation
     fullName: onenote.OneNote.InsertLocation
     langs:

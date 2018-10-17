@@ -14,7 +14,7 @@ items:
     summary: |-
       The currently applied filter on the given column. Read-only.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: excel.Excel.Interfaces.FilterData.criteria
     langs:

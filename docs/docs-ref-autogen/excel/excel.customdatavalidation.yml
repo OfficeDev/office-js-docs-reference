@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Custom data validation criteria.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomDataValidation
     fullName: excel.Excel.CustomDataValidation
     langs:
@@ -19,7 +19,7 @@ items:
       total in a range of cells.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.CustomDataValidation.formula
     langs:

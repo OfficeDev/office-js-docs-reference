@@ -4,7 +4,7 @@ items:
     summary: |-
       The ShowAs Calculation function for the Data Pivot Field.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShowAsCalculation
     fullName: excel.Excel.ShowAsCalculation
     langs:

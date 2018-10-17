@@ -19,7 +19,7 @@ items:
       color (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.Interfaces.RangeBorderData.color
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
     fullName: excel.Excel.Interfaces.RangeBorderData.sideIndex
     langs:
@@ -55,7 +55,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Interfaces.RangeBorderData.style
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: excel.Excel.Interfaces.RangeBorderData.weight
     langs:

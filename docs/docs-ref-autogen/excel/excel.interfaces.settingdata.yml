@@ -15,7 +15,7 @@ items:
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: excel.Excel.Interfaces.SettingData.key
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Represents the value stored for this setting.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.Interfaces.SettingData.value
     langs:

@@ -16,7 +16,7 @@ items:
       Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Interfaces.TableRowUpdateData.values
     langs:

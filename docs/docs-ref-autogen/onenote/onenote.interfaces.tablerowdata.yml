@@ -18,7 +18,7 @@ items:
     summary: |-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellCount
     fullName: onenote.OneNote.Interfaces.TableRowData.cellCount
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Gets the cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cells
     fullName: onenote.OneNote.Interfaces.TableRowData.cells
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Gets the ID of the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.TableRowData.id
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       Gets the parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTable
     fullName: onenote.OneNote.Interfaces.TableRowData.parentTable
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: onenote.OneNote.Interfaces.TableRowData.rowIndex
     langs:

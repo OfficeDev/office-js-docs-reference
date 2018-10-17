@@ -4,7 +4,7 @@ items:
     summary: |-
       Subtotals for the Pivot Field.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Subtotals
     fullName: excel.Excel.Subtotals
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: automatic
     fullName: excel.Excel.Subtotals.automatic
     langs:

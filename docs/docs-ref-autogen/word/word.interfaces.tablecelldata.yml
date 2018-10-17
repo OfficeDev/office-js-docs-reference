@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the body object of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: word.Word.Interfaces.TableCellData.body
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cellIndex
     fullName: word.Word.Interfaces.TableCellData.cellIndex
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: columnWidth
     fullName: word.Word.Interfaces.TableCellData.columnWidth
     langs:
@@ -69,7 +69,7 @@ items:
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: word.Word.Interfaces.TableCellData.horizontalAlignment
     langs:
@@ -84,7 +84,7 @@ items:
     summary: |-
       Gets the parent row of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentRow
     fullName: word.Word.Interfaces.TableCellData.parentRow
     langs:
@@ -99,7 +99,7 @@ items:
     summary: |-
       Gets the parent table of the cell. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: word.Word.Interfaces.TableCellData.parentTable
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowIndex
     fullName: word.Word.Interfaces.TableCellData.rowIndex
     langs:
@@ -129,7 +129,7 @@ items:
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: word.Word.Interfaces.TableCellData.shadingColor
     langs:
@@ -144,7 +144,7 @@ items:
     summary: |-
       Gets and sets the text of the cell.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
     fullName: word.Word.Interfaces.TableCellData.value
     langs:
@@ -159,7 +159,7 @@ items:
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: word.Word.Interfaces.TableCellData.verticalAlignment
     langs:
@@ -174,7 +174,7 @@ items:
     summary: |-
       Gets the width of the cell in points. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: word.Word.Interfaces.TableCellData.width
     langs:

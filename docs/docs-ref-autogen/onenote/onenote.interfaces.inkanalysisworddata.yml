@@ -18,7 +18,7 @@ items:
     summary: |-
       Gets the ID of the InkAnalysisWord object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.id
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       The id of the recognized language in this inkAnalysisWord. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.languageId
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Reference to the parent InkAnalysisLine. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: line
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.line
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: strokePointers
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.strokePointers
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.wordAlternates
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border of an object.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeBorder
     fullName: excel.Excel.ConditionalRangeBorder
     langs:
@@ -25,7 +25,7 @@ items:
       color (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.ConditionalRangeBorder.color
     langs:
@@ -76,7 +76,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
     fullName: excel.Excel.ConditionalRangeBorder.sideIndex
     langs:
@@ -93,7 +93,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.ConditionalRangeBorder.style
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of DataPivotHierarchy items associated with the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataPivotHierarchyCollection
     fullName: excel.Excel.DataPivotHierarchyCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Adds the PivotHierarchy to the current axis.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
     fullName: excel.Excel.DataPivotHierarchyCollection.add
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Gets the number of pivot hierarchies in the collection.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.DataPivotHierarchyCollection.getCount
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       Gets a DataPivotHierarchy by its name or id.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: excel.Excel.DataPivotHierarchyCollection.getItem
     langs:
@@ -84,7 +84,7 @@ items:
     summary: |-
       Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.DataPivotHierarchyCollection.getItemOrNullObject
     langs:
@@ -151,7 +151,7 @@ items:
     summary: |-
       Removes the PivotHierarchy from the current axis.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(DataPivotHierarchy)
     fullName: excel.Excel.DataPivotHierarchyCollection.remove
     langs:

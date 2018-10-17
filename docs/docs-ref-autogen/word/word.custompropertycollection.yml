@@ -4,7 +4,7 @@ items:
     summary: |-
       Contains the collection of [Word.CustomProperty](xref:word.Word.CustomProperty) objects.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.CustomPropertyCollection
     fullName: word.Word.CustomPropertyCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Creates a new or sets an existing custom property.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: word.Word.CustomPropertyCollection.add
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Deletes all custom properties in this collection.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteAll()
     fullName: word.Word.CustomPropertyCollection.deleteAll
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       Gets the count of custom properties.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCount()
     fullName: word.Word.CustomPropertyCollection.getCount
     langs:
@@ -104,7 +104,7 @@ items:
     summary: |-
       Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItem(key)
     fullName: word.Word.CustomPropertyCollection.getItem
     langs:
@@ -127,7 +127,7 @@ items:
       does not exist.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: word.Word.CustomPropertyCollection.getItemOrNullObject
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of sections.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.SectionCollection
     fullName: onenote.OneNote.SectionCollection
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Returns the number of sections in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: onenote.OneNote.SectionCollection.count
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Gets the collection of sections with the specified name.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getByName(name)
     fullName: onenote.OneNote.SectionCollection.getByName
     langs:
@@ -100,7 +100,7 @@ items:
     summary: |-
       Gets a section by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: onenote.OneNote.SectionCollection.getItem
     langs:
@@ -121,7 +121,7 @@ items:
     summary: |-
       Gets a section on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.SectionCollection.getItemAt
     langs:

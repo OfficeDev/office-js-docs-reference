@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of Paragraph objects.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphCollection
     fullName: onenote.OneNote.ParagraphCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Returns the number of paragraphs in the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: onenote.OneNote.ParagraphCollection.count
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets a Paragraph object by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: onenote.OneNote.ParagraphCollection.getItem
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets a paragraph on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.ParagraphCollection.getItemAt
     langs:

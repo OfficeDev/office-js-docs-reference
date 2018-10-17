@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the operator of the text conditional format type.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTextOperator
     fullName: excel.Excel.ConditionalTextOperator
     langs:

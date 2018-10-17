@@ -16,7 +16,7 @@ items:
     summary: |-
       HTML color code representing the color of lines in the chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.Interfaces.ChartLineFormatUpdateData.color
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Represents the line style. See Excel.ChartLineStyle for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
     fullName: excel.Excel.Interfaces.ChartLineFormatUpdateData.lineStyle
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Represents weight of the line, in points.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: excel.Excel.Interfaces.ChartLineFormatUpdateData.weight
     langs:

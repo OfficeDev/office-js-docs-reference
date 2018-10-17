@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets or sets the description of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: description
     fullName: onenote.OneNote.Interfaces.ImageUpdateData.description
     langs:
@@ -32,7 +32,7 @@ items:
     summary: |-
       Gets or sets the height of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: height
     fullName: onenote.OneNote.Interfaces.ImageUpdateData.height
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Gets or sets the hyperlink of the Image.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hyperlink
     fullName: onenote.OneNote.Interfaces.ImageUpdateData.hyperlink
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets or sets the width of the Image layout.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: width
     fullName: onenote.OneNote.Interfaces.ImageUpdateData.width
     langs:

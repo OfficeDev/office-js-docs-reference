@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Top/Bottom conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TopBottomConditionalFormat
     fullName: excel.Excel.TopBottomConditionalFormat
     langs:
@@ -24,7 +24,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.TopBottomConditionalFormat.format
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       The criteria of the Top/Bottom conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: excel.Excel.TopBottomConditionalFormat.rule
     langs:

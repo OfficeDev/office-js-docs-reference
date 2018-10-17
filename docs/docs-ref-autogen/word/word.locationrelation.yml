@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.LocationRelation
-    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.LocationRelation
     fullName: word.Word.LocationRelation
     langs:

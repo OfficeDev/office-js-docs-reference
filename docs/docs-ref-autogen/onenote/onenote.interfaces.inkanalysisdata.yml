@@ -16,7 +16,7 @@ items:
     summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Interfaces.InkAnalysisData.id
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets the parent page object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: page
     fullName: onenote.OneNote.Interfaces.InkAnalysisData.page
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Gets the ink analysis paragraphs in this page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
     langs:

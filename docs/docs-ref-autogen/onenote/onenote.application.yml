@@ -6,7 +6,7 @@ items:
       active notebook, and the active section.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Application
     fullName: onenote.OneNote.Application
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebook()
     fullName: onenote.OneNote.Application.getActiveNotebook
     langs:
@@ -84,7 +84,7 @@ items:
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, returns null.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebookOrNull()
     fullName: onenote.OneNote.Application.getActiveNotebookOrNull
     langs:
@@ -131,7 +131,7 @@ items:
     summary: |-
       Gets the active outline if one exists, If no outline is active, throws ItemNotFound.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutline()
     fullName: onenote.OneNote.Application.getActiveOutline
     langs:
@@ -174,7 +174,7 @@ items:
     summary: |-
       Gets the active outline if one exists, otherwise returns null.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutlineOrNull()
     fullName: onenote.OneNote.Application.getActiveOutlineOrNull
     langs:
@@ -218,7 +218,7 @@ items:
     summary: |-
       Gets the active page if one exists. If no page is active, throws ItemNotFound.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePage()
     fullName: onenote.OneNote.Application.getActivePage
     langs:
@@ -264,7 +264,7 @@ items:
     summary: |-
       Gets the active page if one exists. If no page is active, returns null.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePageOrNull()
     fullName: onenote.OneNote.Application.getActivePageOrNull
     langs:
@@ -311,7 +311,7 @@ items:
     summary: |-
       Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraph()
     fullName: onenote.OneNote.Application.getActiveParagraph
     langs:
@@ -327,7 +327,7 @@ items:
     summary: |-
       Gets the active Paragraph if one exists, otherwise returns null.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraphOrNull()
     fullName: onenote.OneNote.Application.getActiveParagraphOrNull
     langs:
@@ -343,7 +343,7 @@ items:
     summary: |-
       Gets the active section if one exists. If no section is active, throws ItemNotFound.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSection()
     fullName: onenote.OneNote.Application.getActiveSection
     langs:
@@ -389,7 +389,7 @@ items:
     summary: |-
       Gets the active section if one exists. If no section is active, returns null.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSectionOrNull()
     fullName: onenote.OneNote.Application.getActiveSectionOrNull
     langs:
@@ -510,7 +510,7 @@ items:
     summary: |-
       Opens the specified page in the application instance.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPage(page)
     fullName: onenote.OneNote.Application.navigateToPage
     langs:
@@ -565,7 +565,7 @@ items:
     summary: |-
       Gets the specified page, and opens it in the application instance.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPageWithClientUrl(url)
     fullName: onenote.OneNote.Application.navigateToPageWithClientUrl
     langs:
@@ -622,7 +622,7 @@ items:
       notebook at a time is open in the application instance. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebooks
     fullName: onenote.OneNote.Application.notebooks
     langs:

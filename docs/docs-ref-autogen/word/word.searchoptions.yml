@@ -4,7 +4,7 @@ items:
     summary: |-
       Specifies the options to be included in a search operation.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.SearchOptions
     fullName: word.Word.SearchOptions
     langs:
@@ -31,7 +31,7 @@ items:
       Ignore punctuation check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignorePunct
     fullName: word.Word.SearchOptions.ignorePunct
     langs:
@@ -48,7 +48,7 @@ items:
       whitespace characters check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignoreSpace
     fullName: word.Word.SearchOptions.ignoreSpace
     langs:
@@ -267,7 +267,7 @@ items:
       check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchCase
     fullName: word.Word.SearchOptions.matchCase
     langs:
@@ -284,7 +284,7 @@ items:
       Match prefix check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchPrefix
     fullName: word.Word.SearchOptions.matchPrefix
     langs:
@@ -301,7 +301,7 @@ items:
       Match suffix check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchSuffix
     fullName: word.Word.SearchOptions.matchSuffix
     langs:
@@ -318,7 +318,7 @@ items:
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWholeWord
     fullName: word.Word.SearchOptions.matchWholeWord
     langs:
@@ -335,7 +335,7 @@ items:
       Corresponds to the Use wildcards check box in the Find and Replace dialog box.
 
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWildcards
     fullName: word.Word.SearchOptions.matchWildcards
     langs:

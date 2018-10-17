@@ -4,7 +4,7 @@ items:
     summary: |-
       List information for paragraph.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphInfo
     fullName: onenote.OneNote.ParagraphInfo
     langs:
@@ -20,7 +20,7 @@ items:
     summary: |-
       // Bullet list type of paragraph
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: bulletType
     fullName: onenote.OneNote.ParagraphInfo.bulletType
     langs:
@@ -35,7 +35,7 @@ items:
     summary: |-
       // Index of paragraph in list
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: index
     fullName: onenote.OneNote.ParagraphInfo.index
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       // Type of list in paragraph
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: listType
     fullName: onenote.OneNote.ParagraphInfo.listType
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       // number list type of paragraph
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: numberType
     fullName: onenote.OneNote.ParagraphInfo.numberType
     langs:

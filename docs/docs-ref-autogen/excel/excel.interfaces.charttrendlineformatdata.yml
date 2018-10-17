@@ -14,7 +14,7 @@ items:
     summary: |-
       Represents chart line formatting. Read-only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: excel.Excel.Interfaces.ChartTrendlineFormatData.line
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of legendEntries.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntryCollection
     fullName: excel.Excel.ChartLegendEntryCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of legendEntry in the collection.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.ChartLegendEntryCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Returns a legendEntry at the given index.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartLegendEntryCollection.getItemAt
     langs:

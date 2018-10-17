@@ -14,7 +14,7 @@ items:
     summary: |-
       Gets the Shapes of the Selection. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
     fullName: visio.Visio.Interfaces.SelectionData.shapes
     langs:

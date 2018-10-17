@@ -15,7 +15,7 @@ items:
     summary: |-
       Show or hide the iFrame application borders.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showBorders
     fullName: visio.Visio.Interfaces.ApplicationData.showBorders
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Show or hide the standard toolbars.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showToolbars
     fullName: visio.Visio.Interfaces.ApplicationData.showToolbars
     langs:

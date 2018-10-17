@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the visual layout of the PivotTable.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotLayout
     fullName: excel.Excel.PivotLayout
     langs:
@@ -29,7 +29,7 @@ items:
     summary: |-
       Returns the range where the PivotTable's column labels reside.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnLabelRange()
     fullName: excel.Excel.PivotLayout.getColumnLabelRange
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Returns the range where the PivotTable's data values reside.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: excel.Excel.PivotLayout.getDataBodyRange
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Returns the range of the PivotTable's filter area.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilterAxisRange()
     fullName: excel.Excel.PivotLayout.getFilterAxisRange
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Returns the range the PivotTable exists on, excluding the filter area.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.PivotLayout.getRange
     langs:
@@ -93,7 +93,7 @@ items:
     summary: |-
       Returns the range where the PivotTable's row labels reside.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowLabelRange()
     fullName: excel.Excel.PivotLayout.getRowLabelRange
     langs:
@@ -111,7 +111,7 @@ items:
       will be null.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
     fullName: excel.Excel.PivotLayout.layoutType
     langs:
@@ -160,7 +160,7 @@ items:
     summary: |-
       True if the PivotTable report shows grand totals for columns.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
     fullName: excel.Excel.PivotLayout.showColumnGrandTotals
     langs:
@@ -175,7 +175,7 @@ items:
     summary: |-
       True if the PivotTable report shows grand totals for rows.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
     fullName: excel.Excel.PivotLayout.showRowGrandTotals
     langs:
@@ -192,7 +192,7 @@ items:
       this will be null.
 
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
     fullName: excel.Excel.PivotLayout.subtotalLocation
     langs:

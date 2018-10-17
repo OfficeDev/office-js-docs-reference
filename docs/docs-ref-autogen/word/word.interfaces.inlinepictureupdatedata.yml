@@ -19,7 +19,7 @@ items:
     summary: |-
       Gets or sets a string that represents the alternative text associated with the inline image.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
     fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Gets or sets a string that contains the title for the inline image.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
     fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Gets or sets a number that describes the height of the inline image.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
     fullName: word.Word.Interfaces.InlinePictureUpdateData.height
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
     fullName: word.Word.Interfaces.InlinePictureUpdateData.hyperlink
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
     fullName: word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Gets or sets a number that describes the width of the inline image.
 
-      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: word.Word.Interfaces.InlinePictureUpdateData.width
     langs:

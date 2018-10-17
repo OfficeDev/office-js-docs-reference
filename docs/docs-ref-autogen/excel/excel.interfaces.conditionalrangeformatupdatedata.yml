@@ -19,7 +19,7 @@ items:
     summary: |-
       Collection of border objects that apply to the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.borders
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Returns the fill object defined on the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.fill
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Returns the font object defined on the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.font
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.numberFormat
     langs:

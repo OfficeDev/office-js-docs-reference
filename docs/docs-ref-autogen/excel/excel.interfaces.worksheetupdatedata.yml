@@ -20,7 +20,7 @@ items:
     summary: |-
       The display name of the worksheet.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.name
     langs:
@@ -35,7 +35,7 @@ items:
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.position
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
     langs:
@@ -83,7 +83,7 @@ items:
       (zero) is used.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardWidth
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.standardWidth
     langs:
@@ -102,7 +102,7 @@ items:
       to set an "auto" color, or a real color otherwise.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tabColor
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.tabColor
     langs:
@@ -119,7 +119,7 @@ items:
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visibility
     fullName: excel.Excel.Interfaces.WorksheetUpdateData.visibility
     langs:

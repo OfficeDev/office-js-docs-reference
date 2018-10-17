@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.format
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the horizontal alignment for chart title.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment
     langs:
@@ -58,7 +58,7 @@ items:
       chart title is not visible.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.left
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.overlay
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       Represents the position of chart title. See Excel.ChartTitlePosition for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.position
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Represents a boolean value that determines if the chart title has a shadow.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.showShadow
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       Represents the title text of a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.text
     langs:
@@ -135,7 +135,7 @@ items:
       vertically-oriented text.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.textOrientation
     langs:
@@ -152,7 +152,7 @@ items:
       is not visible.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.top
     langs:
@@ -167,7 +167,7 @@ items:
     summary: |-
       Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.verticalAlignment
     langs:
@@ -182,7 +182,7 @@ items:
     summary: |-
       A boolean value the represents the visibility of a chart title object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.Interfaces.ChartTitleUpdateData.visible
     langs:

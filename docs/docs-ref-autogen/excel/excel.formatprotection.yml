@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format protection of a range object.
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FormatProtection
     fullName: excel.Excel.FormatProtection
     langs:
@@ -24,7 +24,7 @@ items:
       doesn't have uniform formula hidden setting.
 
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
     fullName: excel.Excel.FormatProtection.formulaHidden
     langs:
@@ -75,7 +75,7 @@ items:
       uniform lock setting.
 
 
-      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
     fullName: excel.Excel.FormatProtection.locked
     langs:

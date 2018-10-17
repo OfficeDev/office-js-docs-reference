@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFont
     fullName: excel.Excel.RangeFont
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Represents the bold status of font.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: excel.Excel.RangeFont.bold
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.RangeFont.color
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Represents the italic status of the font.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: excel.Excel.RangeFont.italic
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       Font name (e.g. "Calibri")
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.RangeFont.name
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Font size.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
     fullName: excel.Excel.RangeFont.size
     langs:
@@ -190,7 +190,7 @@ items:
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: excel.Excel.RangeFont.underline
     langs:

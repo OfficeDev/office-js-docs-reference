@@ -16,7 +16,7 @@ items:
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysisOrNull
     fullName: onenote.OneNote.Interfaces.PageUpdateData.inkAnalysisOrNull
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Gets or sets the indentation level of the page.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageLevel
     fullName: onenote.OneNote.Interfaces.PageUpdateData.pageLevel
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Gets or sets the title of the page.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: title
     fullName: onenote.OneNote.Interfaces.PageUpdateData.title
     langs:

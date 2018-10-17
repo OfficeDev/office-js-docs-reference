@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the PivotTables that are part of the workbook or worksheet.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotTableCollection
     fullName: excel.Excel.PivotTableCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
 
-      \[ [API set: ExcelApi 1.8](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, source, destination)'
     fullName: excel.Excel.PivotTableCollection.add
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Gets the number of pivot tables in the collection.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.PivotTableCollection.getCount
     langs:
@@ -75,7 +75,7 @@ items:
     summary: |-
       Gets a PivotTable by name.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: excel.Excel.PivotTableCollection.getItem
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.PivotTableCollection.getItemOrNullObject
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Refreshes all the pivot tables in the collection.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refreshAll()
     fullName: excel.Excel.PivotTableCollection.refreshAll
     langs:

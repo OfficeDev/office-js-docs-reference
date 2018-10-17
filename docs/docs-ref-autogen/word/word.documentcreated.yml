@@ -6,7 +6,7 @@ items:
       is a special Document object.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.DocumentCreated
     fullName: word.Word.DocumentCreated
     langs:
@@ -33,7 +33,8 @@ items:
       etc.. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: body
     fullName: word.Word.DocumentCreated.body
     langs:
@@ -50,7 +51,8 @@ items:
       document, headers, footers, textboxes, etc.. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: contentControls
     fullName: word.Word.DocumentCreated.contentControls
     langs:
@@ -99,7 +101,7 @@ items:
     summary: |-
       Opens the document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: open()
     fullName: word.Word.DocumentCreated.open
     langs:
@@ -112,10 +114,12 @@ items:
           - void
         description: ''
   - uid: word.Word.DocumentCreated.properties
-    summary: |-
+    summary: >-
       Gets the properties of the document. Read-only.
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: properties
     fullName: word.Word.DocumentCreated.properties
     langs:
@@ -132,7 +136,8 @@ items:
       before.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: save()
     fullName: word.Word.DocumentCreated.save
     langs:
@@ -150,7 +155,8 @@ items:
       changed since it was saved. Read-only.
 
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: saved
     fullName: word.Word.DocumentCreated.saved
     langs:
@@ -162,10 +168,12 @@ items:
         type:
           - boolean
   - uid: word.Word.DocumentCreated.sections
-    summary: |-
+    summary: >-
       Gets the collection of section objects in the document. Read-only.
 
-      \[ [API set: WordApiHiddenDocument 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     name: sections
     fullName: word.Word.DocumentCreated.sections
     langs:
