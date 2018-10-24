@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
     summary: >-
       An interface for updating data on the InkAnalysisParagraphCollection object, for use in
-      "inkAnalysisParagraphCollection.set({ ... })".
+      "inkAnalysisParagraphCollection.set(\[object Object\] ... \[object Object\])".
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
     fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
     langs:

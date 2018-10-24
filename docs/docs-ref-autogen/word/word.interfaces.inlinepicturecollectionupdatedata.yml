@@ -2,8 +2,8 @@
 items:
   - uid: word.Word.Interfaces.InlinePictureCollectionUpdateData
     summary: >-
-      An interface for updating data on the InlinePictureCollection object, for use in "inlinePictureCollection.set({
-      ... })".
+      An interface for updating data on the InlinePictureCollection object, for use in
+      "inlinePictureCollection.set(\[object Object\] ... \[object Object\])".
     name: Word.Interfaces.InlinePictureCollectionUpdateData
     fullName: word.Word.Interfaces.InlinePictureCollectionUpdateData
     langs:

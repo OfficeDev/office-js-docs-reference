@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartAxesUpdateData
-    summary: 'An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartAxes object, for use in "chartAxes.set(\[object Object\] ... \[object
+      Object\])".
     name: Excel.Interfaces.ChartAxesUpdateData
     fullName: excel.Excel.Interfaces.ChartAxesUpdateData
     langs:

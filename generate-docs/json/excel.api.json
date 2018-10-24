@@ -14909,7 +14909,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Get the substring of a chart title. Line break '\\n' also counts one character."
+                  "text": "Get the substring of a chart title. Line break '[object Object]n' also counts one character."
                 },
                 {
                   "kind": "paragraph"
@@ -29153,7 +29153,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The first criterion used to filter data. Used as an operator in the case of \"custom\" filtering. For example \">50\" for number greater than 50 or \"=*s\" for values ending in \"s\"."
+                  "text": "The first criterion used to filter data. Used as an operator in the case of \"custom\" filtering. For example \"[object Object]50\" for number greater than 50 or \"=*s\" for values ending in \"s\"."
                 },
                 {
                   "kind": "paragraph"
@@ -54271,7 +54271,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Application object, for use in \"application.set({ ... })\"."
+                  "text": "An interface for updating data on the Application object, for use in \"application.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -54378,7 +54378,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the BindingCollection object, for use in \"bindingCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the BindingCollection object, for use in \"bindingCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -54560,7 +54560,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CellValueConditionalFormat object, for use in \"cellValueConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the CellValueConditionalFormat object, for use in \"cellValueConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -54708,7 +54708,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAreaFormat object, for use in \"chartAreaFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAreaFormat object, for use in \"chartAreaFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -54884,7 +54884,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAxes object, for use in \"chartAxes.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAxes object, for use in \"chartAxes.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -56216,7 +56216,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAxisFormat object, for use in \"chartAxisFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAxisFormat object, for use in \"chartAxisFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -56466,7 +56466,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAxisTitleFormat object, for use in \"chartAxisTitleFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAxisTitleFormat object, for use in \"chartAxisTitleFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -56540,7 +56540,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAxisTitle object, for use in \"chartAxisTitle.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAxisTitle object, for use in \"chartAxisTitle.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -56642,7 +56642,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartAxis object, for use in \"chartAxis.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartAxis object, for use in \"chartAxis.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -57639,7 +57639,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartBorder object, for use in \"chartBorder.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartBorder object, for use in \"chartBorder.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -57775,7 +57775,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartCollection object, for use in \"chartCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartCollection object, for use in \"chartCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -59123,7 +59123,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartDataLabelFormat object, for use in \"chartDataLabelFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartDataLabelFormat object, for use in \"chartDataLabelFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -59607,7 +59607,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartDataLabels object, for use in \"chartDataLabels.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartDataLabels object, for use in \"chartDataLabels.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -60017,7 +60017,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartDataLabel object, for use in \"chartDataLabel.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartDataLabel object, for use in \"chartDataLabel.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -60725,7 +60725,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartFont object, for use in \"chartFont.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartFont object, for use in \"chartFont.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -60957,7 +60957,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartFormatString object, for use in \"chartFormatString.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartFormatString object, for use in \"chartFormatString.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61123,7 +61123,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartGridlinesFormat object, for use in \"chartGridlinesFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartGridlinesFormat object, for use in \"chartGridlinesFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61169,7 +61169,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartGridlines object, for use in \"chartGridlines.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartGridlines object, for use in \"chartGridlines.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61575,7 +61575,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartLegendEntryCollection object, for use in \"chartLegendEntryCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartLegendEntryCollection object, for use in \"chartLegendEntryCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61795,7 +61795,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartLegendEntry object, for use in \"chartLegendEntry.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartLegendEntry object, for use in \"chartLegendEntry.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61915,7 +61915,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartLegendFormat object, for use in \"chartLegendFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartLegendFormat object, for use in \"chartLegendFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -61989,7 +61989,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartLegend object, for use in \"chartLegend.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartLegend object, for use in \"chartLegend.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -62361,7 +62361,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartLineFormat object, for use in \"chartLineFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartLineFormat object, for use in \"chartLineFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -62807,7 +62807,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartPlotAreaFormat object, for use in \"chartPlotAreaFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartPlotAreaFormat object, for use in \"chartPlotAreaFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -62853,7 +62853,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartPlotArea object, for use in \"chartPlotArea.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartPlotArea object, for use in \"chartPlotArea.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -63439,7 +63439,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartPointFormat object, for use in \"chartPointFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartPointFormat object, for use in \"chartPointFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -63519,7 +63519,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartPointsCollection object, for use in \"chartPointsCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartPointsCollection object, for use in \"chartPointsCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -63553,7 +63553,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartPoint object, for use in \"chartPoint.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartPoint object, for use in \"chartPoint.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -63801,7 +63801,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartSeriesCollection object, for use in \"chartSeriesCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartSeriesCollection object, for use in \"chartSeriesCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -64599,7 +64599,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartSeriesFormat object, for use in \"chartSeriesFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartSeriesFormat object, for use in \"chartSeriesFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -64645,7 +64645,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartSeries object, for use in \"chartSeries.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartSeries object, for use in \"chartSeries.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -65763,7 +65763,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTitleFormat object, for use in \"chartTitleFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTitleFormat object, for use in \"chartTitleFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -65837,7 +65837,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTitle object, for use in \"chartTitle.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTitle object, for use in \"chartTitle.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -66197,7 +66197,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTrendlineCollection object, for use in \"chartTrendlineCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTrendlineCollection object, for use in \"chartTrendlineCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -66603,7 +66603,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTrendlineFormat object, for use in \"chartTrendlineFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTrendlineFormat object, for use in \"chartTrendlineFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -67077,7 +67077,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTrendlineLabelFormat object, for use in \"chartTrendlineLabelFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTrendlineLabelFormat object, for use in \"chartTrendlineLabelFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -67151,7 +67151,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTrendlineLabel object, for use in \"chartTrendlineLabel.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTrendlineLabel object, for use in \"chartTrendlineLabel.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -67449,7 +67449,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ChartTrendline object, for use in \"chartTrendline.set({ ... })\"."
+                  "text": "An interface for updating data on the ChartTrendline object, for use in \"chartTrendline.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -67775,7 +67775,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Chart object, for use in \"chart.set({ ... })\"."
+                  "text": "An interface for updating data on the Chart object, for use in \"chart.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -68427,7 +68427,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ColorScaleConditionalFormat object, for use in \"colorScaleConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ColorScaleConditionalFormat object, for use in \"colorScaleConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -68603,7 +68603,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in \"conditionalDataBarNegativeFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in \"conditionalDataBarNegativeFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -68835,7 +68835,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in \"conditionalDataBarPositiveFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in \"conditionalDataBarPositiveFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -68971,7 +68971,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalFormatCollection object, for use in \"conditionalFormatCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalFormatCollection object, for use in \"conditionalFormatCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -69685,7 +69685,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalFormatRule object, for use in \"conditionalFormatRule.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalFormatRule object, for use in \"conditionalFormatRule.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -69787,7 +69787,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalFormat object, for use in \"conditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalFormat object, for use in \"conditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -70343,7 +70343,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalRangeBorderCollection object, for use in \"conditionalRangeBorderCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalRangeBorderCollection object, for use in \"conditionalRangeBorderCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -70591,7 +70591,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalRangeBorder object, for use in \"conditionalRangeBorder.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalRangeBorder object, for use in \"conditionalRangeBorder.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -70711,7 +70711,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalRangeFill object, for use in \"conditionalRangeFill.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalRangeFill object, for use in \"conditionalRangeFill.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -70915,7 +70915,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalRangeFont object, for use in \"conditionalRangeFont.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalRangeFont object, for use in \"conditionalRangeFont.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71203,7 +71203,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ConditionalRangeFormat object, for use in \"conditionalRangeFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the ConditionalRangeFormat object, for use in \"conditionalRangeFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71407,7 +71407,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomConditionalFormat object, for use in \"customConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomConditionalFormat object, for use in \"customConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71515,7 +71515,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomPropertyCollection object, for use in \"customPropertyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomPropertyCollection object, for use in \"customPropertyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71651,7 +71651,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomProperty object, for use in \"customProperty.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomProperty object, for use in \"customProperty.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71731,7 +71731,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomXmlPartCollection object, for use in \"customXmlPartCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomXmlPartCollection object, for use in \"customXmlPartCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -71873,7 +71873,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomXmlPartScopedCollection object, for use in \"customXmlPartScopedCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomXmlPartScopedCollection object, for use in \"customXmlPartScopedCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -72149,7 +72149,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DataBarConditionalFormat object, for use in \"dataBarConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the DataBarConditionalFormat object, for use in \"dataBarConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -72425,7 +72425,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DataPivotHierarchyCollection object, for use in \"dataPivotHierarchyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the DataPivotHierarchyCollection object, for use in \"dataPivotHierarchyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -72673,7 +72673,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DataPivotHierarchy object, for use in \"dataPivotHierarchy.set({ ... })\"."
+                  "text": "An interface for updating data on the DataPivotHierarchy object, for use in \"dataPivotHierarchy.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -73045,7 +73045,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DataValidation object, for use in \"dataValidation.set({ ... })\"."
+                  "text": "An interface for updating data on the DataValidation object, for use in \"dataValidation.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -73529,7 +73529,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DocumentProperties object, for use in \"documentProperties.set({ ... })\"."
+                  "text": "An interface for updating data on the DocumentProperties object, for use in \"documentProperties.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -73879,7 +73879,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the FilterPivotHierarchyCollection object, for use in \"filterPivotHierarchyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the FilterPivotHierarchyCollection object, for use in \"filterPivotHierarchyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -74071,7 +74071,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the FilterPivotHierarchy object, for use in \"filterPivotHierarchy.set({ ... })\"."
+                  "text": "An interface for updating data on the FilterPivotHierarchy object, for use in \"filterPivotHierarchy.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -74247,7 +74247,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the FormatProtection object, for use in \"formatProtection.set({ ... })\"."
+                  "text": "An interface for updating data on the FormatProtection object, for use in \"formatProtection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -74527,7 +74527,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the IconSetConditionalFormat object, for use in \"iconSetConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the IconSetConditionalFormat object, for use in \"iconSetConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -74765,7 +74765,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the NamedItemCollection object, for use in \"namedItemCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the NamedItemCollection object, for use in \"namedItemCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75097,7 +75097,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the NamedItem object, for use in \"namedItem.set({ ... })\"."
+                  "text": "An interface for updating data on the NamedItem object, for use in \"namedItem.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75233,7 +75233,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotFieldCollection object, for use in \"pivotFieldCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotFieldCollection object, for use in \"pivotFieldCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75425,7 +75425,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotField object, for use in \"pivotField.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotField object, for use in \"pivotField.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75561,7 +75561,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotHierarchyCollection object, for use in \"pivotHierarchyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotHierarchyCollection object, for use in \"pivotHierarchyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75697,7 +75697,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotHierarchy object, for use in \"pivotHierarchy.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotHierarchy object, for use in \"pivotHierarchy.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75777,7 +75777,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotItemCollection object, for use in \"pivotItemCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotItemCollection object, for use in \"pivotItemCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -75941,7 +75941,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotItem object, for use in \"pivotItem.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotItem object, for use in \"pivotItem.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -76173,7 +76173,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotLayout object, for use in \"pivotLayout.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotLayout object, for use in \"pivotLayout.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -76337,7 +76337,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotTableCollection object, for use in \"pivotTableCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotTableCollection object, for use in \"pivotTableCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -76641,7 +76641,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PivotTable object, for use in \"pivotTable.set({ ... })\"."
+                  "text": "An interface for updating data on the PivotTable object, for use in \"pivotTable.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -76761,7 +76761,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PresetCriteriaConditionalFormat object, for use in \"presetCriteriaConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the PresetCriteriaConditionalFormat object, for use in \"presetCriteriaConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -76869,7 +76869,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeBorderCollection object, for use in \"rangeBorderCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeBorderCollection object, for use in \"rangeBorderCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -77033,7 +77033,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeBorder object, for use in \"rangeBorder.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeBorder object, for use in \"rangeBorder.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -77927,7 +77927,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeFill object, for use in \"rangeFill.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeFill object, for use in \"rangeFill.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -78159,7 +78159,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeFont object, for use in \"rangeFont.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeFont object, for use in \"rangeFont.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -78699,7 +78699,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeFormat object, for use in \"rangeFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeFormat object, for use in \"rangeFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -79025,7 +79025,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Range object, for use in \"range.set({ ... })\"."
+                  "text": "An interface for updating data on the Range object, for use in \"range.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -79413,7 +79413,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeViewCollection object, for use in \"rangeViewCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeViewCollection object, for use in \"rangeViewCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -79801,7 +79801,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeView object, for use in \"rangeView.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeView object, for use in \"rangeView.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -79993,7 +79993,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in \"rowColumnPivotHierarchyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in \"rowColumnPivotHierarchyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -80157,7 +80157,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RowColumnPivotHierarchy object, for use in \"rowColumnPivotHierarchy.set({ ... })\"."
+                  "text": "An interface for updating data on the RowColumnPivotHierarchy object, for use in \"rowColumnPivotHierarchy.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -80277,7 +80277,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Runtime object, for use in \"runtime.set({ ... })\"."
+                  "text": "An interface for updating data on the Runtime object, for use in \"runtime.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -80357,7 +80357,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the SettingCollection object, for use in \"settingCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the SettingCollection object, for use in \"settingCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -80465,7 +80465,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Setting object, for use in \"setting.set({ ... })\"."
+                  "text": "An interface for updating data on the Setting object, for use in \"setting.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -80545,7 +80545,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the StyleCollection object, for use in \"styleCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the StyleCollection object, for use in \"styleCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -81241,7 +81241,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Style object, for use in \"style.set({ ... })\"."
+                  "text": "An interface for updating data on the Style object, for use in \"style.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -81853,7 +81853,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCollection object, for use in \"tableCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCollection object, for use in \"tableCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -81921,7 +81921,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableColumnCollection object, for use in \"tableColumnCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableColumnCollection object, for use in \"tableColumnCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -82113,7 +82113,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableColumn object, for use in \"tableColumn.set({ ... })\"."
+                  "text": "An interface for updating data on the TableColumn object, for use in \"tableColumn.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -82659,7 +82659,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -82767,7 +82767,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableRow object, for use in \"tableRow.set({ ... })\"."
+                  "text": "An interface for updating data on the TableRow object, for use in \"tableRow.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -82915,7 +82915,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Table object, for use in \"table.set({ ... })\"."
+                  "text": "An interface for updating data on the Table object, for use in \"table.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -83259,7 +83259,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TextConditionalFormat object, for use in \"textConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the TextConditionalFormat object, for use in \"textConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -83407,7 +83407,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TopBottomConditionalFormat object, for use in \"topBottomConditionalFormat.set({ ... })\"."
+                  "text": "An interface for updating data on the TopBottomConditionalFormat object, for use in \"topBottomConditionalFormat.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -83955,7 +83955,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Workbook object, for use in \"workbook.set({ ... })\"."
+                  "text": "An interface for updating data on the Workbook object, for use in \"workbook.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -84035,7 +84035,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the WorksheetCollection object, for use in \"worksheetCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the WorksheetCollection object, for use in \"worksheetCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -84553,7 +84553,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Worksheet object, for use in \"worksheet.set({ ... })\"."
+                  "text": "An interface for updating data on the Worksheet object, for use in \"worksheet.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],

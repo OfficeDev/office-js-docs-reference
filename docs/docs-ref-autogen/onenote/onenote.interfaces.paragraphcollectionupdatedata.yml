@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionUpdateData
-    summary: 'An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(\[object
+      Object\] ... \[object Object\])".
     name: OneNote.Interfaces.ParagraphCollectionUpdateData
     fullName: onenote.OneNote.Interfaces.ParagraphCollectionUpdateData
     langs:

@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.BindingCollectionUpdateData
-    summary: 'An interface for updating data on the BindingCollection object, for use in "bindingCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the BindingCollection object, for use in "bindingCollection.set(\[object
+      Object\] ... \[object Object\])".
     name: Excel.Interfaces.BindingCollectionUpdateData
     fullName: excel.Excel.Interfaces.BindingCollectionUpdateData
     langs:

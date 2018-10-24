@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
     summary: >-
       An interface for updating data on the CellValueConditionalFormat object, for use in
-      "cellValueConditionalFormat.set({ ... })".
+      "cellValueConditionalFormat.set(\[object Object\] ... \[object Object\])".
     name: Excel.Interfaces.CellValueConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
     langs:

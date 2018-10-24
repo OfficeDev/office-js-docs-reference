@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.ListItemUpdateData
-    summary: 'An interface for updating data on the ListItem object, for use in "listItem.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ListItem object, for use in "listItem.set(\[object Object\] ... \[object
+      Object\])".
     name: Word.Interfaces.ListItemUpdateData
     fullName: word.Word.Interfaces.ListItemUpdateData
     langs:

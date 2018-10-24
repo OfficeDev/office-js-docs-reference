@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartFontUpdateData
-    summary: 'An interface for updating data on the ChartFont object, for use in "chartFont.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartFont object, for use in "chartFont.set(\[object Object\] ... \[object
+      Object\])".
     name: Excel.Interfaces.ChartFontUpdateData
     fullName: excel.Excel.Interfaces.ChartFontUpdateData
     langs:

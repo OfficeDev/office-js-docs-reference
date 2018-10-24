@@ -48,7 +48,7 @@ items:
           - excel.Excel.ChartTitleFormat
   - uid: excel.Excel.ChartTitle.getSubstring
     summary: |-
-      Get the substring of a chart title. Line break '\\n' also counts one character.
+      Get the substring of a chart title. Line break '\[object Object\]n' also counts one character.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSubstring(start, length)'

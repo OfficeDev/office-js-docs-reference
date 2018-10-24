@@ -2,8 +2,8 @@
 items:
   - uid: onenote.OneNote.Interfaces.PageContentCollectionUpdateData
     summary: >-
-      An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set({ ...
-      })".
+      An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set(\[object
+      Object\] ... \[object Object\])".
     name: OneNote.Interfaces.PageContentCollectionUpdateData
     fullName: onenote.OneNote.Interfaces.PageContentCollectionUpdateData
     langs:

@@ -9462,7 +9462,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Body object, for use in \"body.set({ ... })\"."
+                  "text": "An interface for updating data on the Body object, for use in \"body.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -9598,7 +9598,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ContentControlCollection object, for use in \"contentControlCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ContentControlCollection object, for use in \"contentControlCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -10406,7 +10406,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ContentControl object, for use in \"contentControl.set({ ... })\"."
+                  "text": "An interface for updating data on the ContentControl object, for use in \"contentControl.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -10766,7 +10766,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomPropertyCollection object, for use in \"customPropertyCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomPropertyCollection object, for use in \"customPropertyCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -10902,7 +10902,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CustomProperty object, for use in \"customProperty.set({ ... })\"."
+                  "text": "An interface for updating data on the CustomProperty object, for use in \"customProperty.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -11106,7 +11106,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DocumentCreated object, for use in \"documentCreated.set({ ... })\"."
+                  "text": "An interface for updating data on the DocumentCreated object, for use in \"documentCreated.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -11888,7 +11888,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DocumentProperties object, for use in \"documentProperties.set({ ... })\"."
+                  "text": "An interface for updating data on the DocumentProperties object, for use in \"documentProperties.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -12158,7 +12158,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Document object, for use in \"document.set({ ... })\"."
+                  "text": "An interface for updating data on the Document object, for use in \"document.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -12586,7 +12586,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Font object, for use in \"font.set({ ... })\"."
+                  "text": "An interface for updating data on the Font object, for use in \"font.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -12946,7 +12946,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InlinePictureCollection object, for use in \"inlinePictureCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InlinePictureCollection object, for use in \"inlinePictureCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -13362,7 +13362,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InlinePicture object, for use in \"inlinePicture.set({ ... })\"."
+                  "text": "An interface for updating data on the InlinePicture object, for use in \"inlinePicture.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -13582,7 +13582,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ListCollection object, for use in \"listCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ListCollection object, for use in \"listCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -13848,7 +13848,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ListItem object, for use in \"listItem.set({ ... })\"."
+                  "text": "An interface for updating data on the ListItem object, for use in \"listItem.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -13928,7 +13928,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ParagraphCollection object, for use in \"paragraphCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ParagraphCollection object, for use in \"paragraphCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -14820,7 +14820,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Paragraph object, for use in \"paragraph.set({ ... })\"."
+                  "text": "An interface for updating data on the Paragraph object, for use in \"paragraph.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -15292,7 +15292,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the RangeCollection object, for use in \"rangeCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the RangeCollection object, for use in \"rangeCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -15848,7 +15848,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Range object, for use in \"range.set({ ... })\"."
+                  "text": "An interface for updating data on the Range object, for use in \"range.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -16192,7 +16192,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the SearchOptions object, for use in \"searchOptions.set({ ... })\"."
+                  "text": "An interface for updating data on the SearchOptions object, for use in \"searchOptions.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -16440,7 +16440,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the SectionCollection object, for use in \"sectionCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the SectionCollection object, for use in \"sectionCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -16520,7 +16520,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Section object, for use in \"section.set({ ... })\"."
+                  "text": "An interface for updating data on the Section object, for use in \"section.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -16668,7 +16668,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableBorder object, for use in \"tableBorder.set({ ... })\"."
+                  "text": "An interface for updating data on the TableBorder object, for use in \"tableBorder.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -16804,7 +16804,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCellCollection object, for use in \"tableCellCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCellCollection object, for use in \"tableCellCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -17164,7 +17164,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCell object, for use in \"tableCell.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCell object, for use in \"tableCell.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -17384,7 +17384,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCollection object, for use in \"tableCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCollection object, for use in \"tableCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -18226,7 +18226,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -18586,7 +18586,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableRow object, for use in \"tableRow.set({ ... })\"."
+                  "text": "An interface for updating data on the TableRow object, for use in \"tableRow.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -18772,7 +18772,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Table object, for use in \"table.set({ ... })\"."
+                  "text": "An interface for updating data on the Table object, for use in \"table.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],

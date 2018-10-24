@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.TableCollectionUpdateData
-    summary: 'An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the TableCollection object, for use in "tableCollection.set(\[object Object\]
+      ... \[object Object\])".
     name: Word.Interfaces.TableCollectionUpdateData
     fullName: word.Word.Interfaces.TableCollectionUpdateData
     langs:

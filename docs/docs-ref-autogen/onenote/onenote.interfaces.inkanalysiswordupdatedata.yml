@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
-    summary: 'An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set({ ... })".'
+    summary: >-
+      An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set(\[object Object\]
+      ... \[object Object\])".
     name: OneNote.Interfaces.InkAnalysisWordUpdateData
     fullName: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
     langs:

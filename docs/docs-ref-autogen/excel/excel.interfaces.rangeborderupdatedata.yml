@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData
-    summary: 'An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })".'
+    summary: >-
+      An interface for updating data on the RangeBorder object, for use in "rangeBorder.set(\[object Object\] ...
+      \[object Object\])".
     name: Excel.Interfaces.RangeBorderUpdateData
     fullName: excel.Excel.Interfaces.RangeBorderUpdateData
     langs:

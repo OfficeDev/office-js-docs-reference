@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
     summary: >-
       An interface for updating data on the TopBottomConditionalFormat object, for use in
-      "topBottomConditionalFormat.set({ ... })".
+      "topBottomConditionalFormat.set(\[object Object\] ... \[object Object\])".
     name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
     langs:

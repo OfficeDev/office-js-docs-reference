@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartPointUpdateData
-    summary: 'An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartPoint object, for use in "chartPoint.set(\[object Object\] ... \[object
+      Object\])".
     name: Excel.Interfaces.ChartPointUpdateData
     fullName: excel.Excel.Interfaces.ChartPointUpdateData
     langs:

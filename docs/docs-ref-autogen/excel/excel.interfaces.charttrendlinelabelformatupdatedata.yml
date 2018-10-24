@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
     summary: >-
       An interface for updating data on the ChartTrendlineLabelFormat object, for use in
-      "chartTrendlineLabelFormat.set({ ... })".
+      "chartTrendlineLabelFormat.set(\[object Object\] ... \[object Object\])".
     name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
     fullName: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
     langs:

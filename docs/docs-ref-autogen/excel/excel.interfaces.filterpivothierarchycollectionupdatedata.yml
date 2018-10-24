@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
     summary: >-
       An interface for updating data on the FilterPivotHierarchyCollection object, for use in
-      "filterPivotHierarchyCollection.set({ ... })".
+      "filterPivotHierarchyCollection.set(\[object Object\] ... \[object Object\])".
     name: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
     langs:

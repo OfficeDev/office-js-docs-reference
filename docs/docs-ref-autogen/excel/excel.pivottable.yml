@@ -46,6 +46,29 @@ items:
       return:
         type:
           - excel.Excel.RowColumnPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
+
+              // check if the PivotTable already has a column
+              const column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
+              column.load("id");
+              await context.sync();
+
+              if (column.isNullObject) {
+                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
+              } else {
+                  pivotTable.columnHierarchies.remove(column);
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PivotTable.dataHierarchies
     summary: |-
       The Data Pivot Hierarchies of the PivotTable.
@@ -61,6 +84,19 @@ items:
       return:
         type:
           - excel.Excel.DataPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PivotTable.delete
     summary: |-
       Deletes the PivotTable.
@@ -76,7 +112,17 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PivotTable.filterHierarchies
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
@@ -92,6 +138,27 @@ items:
       return:
         type:
           - excel.Excel.FilterPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          async function filter(functionType: Excel.AggregationFunction) {
+              await Excel.run(async (context) => {
+                  const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+                  const filters = pivotTable.filterHierarchies;
+                  const filter = filters.getItemOrNullObject("Classification");
+                  filter.load();
+                  await context.sync();
+
+                  // add the Classification hierarchy to the filter, if it's not already there
+                  if (filter.isNullObject) {
+                      filters.add(pivotTable.hierarchies.getItem("Classification"));
+                      await context.sync();
+                  }
+              });
+          }
+          ```
   - uid: excel.Excel.PivotTable.hierarchies
     summary: |-
       The Pivot Hierarchies of the PivotTable.
@@ -137,6 +204,28 @@ items:
       return:
         type:
           - excel.Excel.PivotLayout
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.layout.load("layoutType");
+              await context.sync();
+
+              // cycle between the three layout types
+              if (pivotTable.layout.layoutType === "Compact") {
+                  pivotTable.layout.layoutType = "Outline";
+              } else if (pivotTable.layout.layoutType === "Outline") {
+                  pivotTable.layout.layoutType = "Tabular";
+              } else {
+                  pivotTable.layout.layoutType = "Compact";
+              }
+              await context.sync();
+              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          });
+          ```
   - uid: excel.Excel.PivotTable.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.WorksheetCollectionUpdateData
-    summary: 'An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set(\[object
+      Object\] ... \[object Object\])".
     name: Excel.Interfaces.WorksheetCollectionUpdateData
     fullName: excel.Excel.Interfaces.WorksheetCollectionUpdateData
     langs:

@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
-    summary: 'An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set(\[object
+      Object\] ... \[object Object\])".
     name: Visio.Interfaces.HyperlinkCollectionUpdateData
     fullName: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
     langs:

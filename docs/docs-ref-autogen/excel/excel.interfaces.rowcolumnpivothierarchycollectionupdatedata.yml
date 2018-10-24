@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
     summary: >-
       An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in
-      "rowColumnPivotHierarchyCollection.set({ ... })".
+      "rowColumnPivotHierarchyCollection.set(\[object Object\] ... \[object Object\])".
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
     fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
     langs:

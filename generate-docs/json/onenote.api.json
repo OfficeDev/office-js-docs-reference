@@ -4837,7 +4837,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Image object, for use in \"image.set({ ... })\"."
+                  "text": "An interface for updating data on the Image object, for use in \"image.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5103,7 +5103,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisLineCollection object, for use in \"inkAnalysisLineCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisLineCollection object, for use in \"inkAnalysisLineCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5239,7 +5239,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisLine object, for use in \"inkAnalysisLine.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisLine object, for use in \"inkAnalysisLine.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5319,7 +5319,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisParagraphCollection object, for use in \"inkAnalysisParagraphCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisParagraphCollection object, for use in \"inkAnalysisParagraphCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5455,7 +5455,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisParagraph object, for use in \"inkAnalysisParagraph.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisParagraph object, for use in \"inkAnalysisParagraph.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5501,7 +5501,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysis object, for use in \"inkAnalysis.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysis object, for use in \"inkAnalysis.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5581,7 +5581,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisWordCollection object, for use in \"inkAnalysisWordCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisWordCollection object, for use in \"inkAnalysisWordCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5773,7 +5773,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkAnalysisWord object, for use in \"inkAnalysisWord.set({ ... })\"."
+                  "text": "An interface for updating data on the InkAnalysisWord object, for use in \"inkAnalysisWord.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5853,7 +5853,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkStrokeCollection object, for use in \"inkStrokeCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InkStrokeCollection object, for use in \"inkStrokeCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -5995,7 +5995,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the InkWordCollection object, for use in \"inkWordCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the InkWordCollection object, for use in \"inkWordCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -6193,7 +6193,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the NotebookCollection object, for use in \"notebookCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the NotebookCollection object, for use in \"notebookCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -6679,7 +6679,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PageCollection object, for use in \"pageCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PageCollection object, for use in \"pageCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -6747,7 +6747,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PageContentCollection object, for use in \"pageContentCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PageContentCollection object, for use in \"pageContentCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -7023,7 +7023,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PageContent object, for use in \"pageContent.set({ ... })\"."
+                  "text": "An interface for updating data on the PageContent object, for use in \"pageContent.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -7395,7 +7395,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Page object, for use in \"page.set({ ... })\"."
+                  "text": "An interface for updating data on the Page object, for use in \"page.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -7531,7 +7531,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ParagraphCollection object, for use in \"paragraphCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ParagraphCollection object, for use in \"paragraphCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -7919,7 +7919,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Paragraph object, for use in \"paragraph.set({ ... })\"."
+                  "text": "An interface for updating data on the Paragraph object, for use in \"paragraph.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -8157,7 +8157,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the SectionCollection object, for use in \"sectionCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the SectionCollection object, for use in \"sectionCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -8523,7 +8523,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the SectionGroupCollection object, for use in \"sectionGroupCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the SectionGroupCollection object, for use in \"sectionGroupCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -8833,7 +8833,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCellCollection object, for use in \"tableCellCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCellCollection object, for use in \"tableCellCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -9053,7 +9053,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableCell object, for use in \"tableCell.set({ ... })\"."
+                  "text": "An interface for updating data on the TableCell object, for use in \"tableCell.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -9319,7 +9319,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -9511,7 +9511,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Table object, for use in \"table.set({ ... })\"."
+                  "text": "An interface for updating data on the Table object, for use in \"table.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],

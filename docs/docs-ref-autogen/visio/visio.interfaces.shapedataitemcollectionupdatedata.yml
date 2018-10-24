@@ -2,8 +2,8 @@
 items:
   - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
     summary: >-
-      An interface for updating data on the ShapeDataItemCollection object, for use in "shapeDataItemCollection.set({
-      ... })".
+      An interface for updating data on the ShapeDataItemCollection object, for use in
+      "shapeDataItemCollection.set(\[object Object\] ... \[object Object\])".
     name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
     fullName: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
     langs:

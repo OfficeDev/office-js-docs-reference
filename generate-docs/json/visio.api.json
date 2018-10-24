@@ -2250,7 +2250,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Application object, for use in \"application.set({ ... })\"."
+                  "text": "An interface for updating data on the Application object, for use in \"application.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -2358,7 +2358,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the CommentCollection object, for use in \"commentCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the CommentCollection object, for use in \"commentCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -2494,7 +2494,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Comment object, for use in \"comment.set({ ... })\"."
+                  "text": "An interface for updating data on the Comment object, for use in \"comment.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -2698,7 +2698,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Document object, for use in \"document.set({ ... })\"."
+                  "text": "An interface for updating data on the Document object, for use in \"document.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -2902,7 +2902,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the DocumentView object, for use in \"documentView.set({ ... })\"."
+                  "text": "An interface for updating data on the DocumentView object, for use in \"documentView.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -3066,7 +3066,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the HyperlinkCollection object, for use in \"hyperlinkCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the HyperlinkCollection object, for use in \"hyperlinkCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -3264,7 +3264,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PageCollection object, for use in \"pageCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the PageCollection object, for use in \"pageCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -3568,7 +3568,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Page object, for use in \"page.set({ ... })\"."
+                  "text": "An interface for updating data on the Page object, for use in \"page.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -3660,7 +3660,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the PageView object, for use in \"pageView.set({ ... })\"."
+                  "text": "An interface for updating data on the PageView object, for use in \"pageView.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -3786,7 +3786,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ShapeCollection object, for use in \"shapeCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ShapeCollection object, for use in \"shapeCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -4124,7 +4124,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ShapeDataItemCollection object, for use in \"shapeDataItemCollection.set({ ... })\"."
+                  "text": "An interface for updating data on the ShapeDataItemCollection object, for use in \"shapeDataItemCollection.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -4288,7 +4288,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the Shape object, for use in \"shape.set({ ... })\"."
+                  "text": "An interface for updating data on the Shape object, for use in \"shape.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
@@ -4408,7 +4408,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An interface for updating data on the ShapeView object, for use in \"shapeView.set({ ... })\"."
+                  "text": "An interface for updating data on the ShapeView object, for use in \"shapeView.set([object Object] ... [object Object])\"."
                 }
               ],
               "remarks": [],
