@@ -34,6 +34,7 @@ items:
       - outlook.Office.MessageRead.getRegExMatchesByName
       - outlook.Office.MessageRead.getSelectedEntities
       - outlook.Office.MessageRead.getSelectedRegExMatches
+      - outlook.Office.MessageRead.internetHeaders
       - outlook.Office.MessageRead.internetMessageId
       - outlook.Office.MessageRead.itemClass
       - outlook.Office.MessageRead.itemId
@@ -53,7 +54,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -108,7 +110,7 @@ items:
             - '(result: AsyncResult<void>) => void'
   - uid: outlook.Office.MessageRead.attachments
     summary: |-
-      Gets an array of attachments for the item.
+      Gets the item's attachments as an array.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1026,6 +1028,34 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+  - uid: outlook.Office.MessageRead.internetHeaders
+    summary: >-
+      Gets the internet headers of a message.
+
+
+      The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet
+      headers on the message.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Read</td></tr></table>
+    isPreview: true
+    name: internetHeaders
+    fullName: outlook.Office.MessageRead.internetHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'internetHeaders: Office.InternetHeaders;'
+      return:
+        type:
+          - outlook.Office.InternetHeaders
   - uid: outlook.Office.MessageRead.internetMessageId
     summary: |-
       Gets the Internet message identifier for an email message.
@@ -1314,7 +1344,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

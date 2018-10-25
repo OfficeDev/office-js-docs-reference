@@ -9162,7 +9162,7 @@ Office.MessageCompose.from:
     function callback(asyncResult) {
         var from = asyncResult.value;
     }
-Office.MessageCompose.getAttachmentSAsync:
+Office.MessageCompose.getAttachmentsAsync:
   - |-
     var item = Office.context.mailbox.item;
     var outputString = "";

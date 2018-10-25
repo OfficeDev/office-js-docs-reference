@@ -1811,6 +1811,14 @@ export declare namespace Office {
          */
         AppointmentTimeChanged,
         /**
+         * Triggers when an attachment is added to or removed from an item.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        AttachmentsChanged,
+        /**
          * Occurs when data within the binding is changed. 
          * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
@@ -1906,6 +1914,8 @@ export declare namespace Office {
          * Triggers when the OfficeTheme is changed in Outlook.
          * 
          * [Api set: Mailbox Preview]
+         * 
+         * @beta
          */
         OfficeThemeChanged,
         /**

@@ -32166,6 +32166,26 @@
               "remarks": [],
               "isBeta": false
             },
+            "AttachmentsChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when an attachment is added to or removed from an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
+            },
             "BindingDataChanged": {
               "kind": "enum value",
               "value": "",
@@ -33228,7 +33248,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": true
             },
             "RecipientsChanged": {
               "kind": "enum value",

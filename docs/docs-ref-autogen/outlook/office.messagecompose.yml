@@ -28,8 +28,10 @@ items:
       - outlook.Office.MessageCompose.dateTimeCreated
       - outlook.Office.MessageCompose.dateTimeModifed
       - outlook.Office.MessageCompose.from
+      - outlook.Office.MessageCompose.getAttachmentsAsync
       - outlook.Office.MessageCompose.getInitializationContextAsync
       - outlook.Office.MessageCompose.getSelectedDataAsync
+      - outlook.Office.MessageCompose.internetHeaders
       - outlook.Office.MessageCompose.itemType
       - outlook.Office.MessageCompose.loadCustomPropertiesAsync
       - outlook.Office.MessageCompose.notificationMessages
@@ -267,7 +269,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -701,6 +704,74 @@ items:
       return:
         type:
           - outlook.Office.From
+  - uid: outlook.Office.MessageCompose.getAttachmentsAsync
+    summary: |-
+      Gets the item's attachments as an array.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      var outputString = "";
+
+      item.getAttachmentsAsync(callback);  
+
+      function callback(result) {
+          if (result.value.length > 0) {
+              for (i = 0 ; i < result.value.length ; i++) {
+                  var _att = result.value [i];
+                  outputString += "<BR>" + i + ". Name: ";
+                  outputString += _att.name;
+                  outputString += "<BR>ID: " + _att.id;
+                  outputString += "<BR>contentType: " + _att.contentType;
+                  outputString += "<BR>size: " + _att.size;
+                  outputString += "<BR>attachmentType: " + _att.attachmentType;
+                  outputString += "<BR>isInline: " + _att.isInline;
+              }
+          }
+      }
+
+      ```
+    isPreview: true
+    name: 'getAttachmentsAsync(options, callback)'
+    fullName: outlook.Office.MessageCompose.getAttachmentsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.AttachmentDetails[]>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and
+            error code with the reason for the failure.
+          type:
+            - '(result: AsyncResult<Office.AttachmentDetails[]>) => void'
   - uid: outlook.Office.MessageCompose.getInitializationContextAsync
     summary: >-
       Gets initialization data passed when the add-in is activated by an actionable message.
@@ -821,6 +892,34 @@ items:
             of type Office.AsyncResult.
           type:
             - '(result: AsyncResult<any>) => void'
+  - uid: outlook.Office.MessageCompose.internetHeaders
+    summary: >-
+      Sets the internet headers of a message.
+
+
+      The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet
+      headers on the message.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Compose</td></tr></table>
+    isPreview: true
+    name: internetHeaders
+    fullName: outlook.Office.MessageCompose.internetHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'internetHeaders: Office.InternetHeaders;'
+      return:
+        type:
+          - outlook.Office.InternetHeaders
   - uid: outlook.Office.MessageCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -964,8 +1063,8 @@ items:
       The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
       that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing in
-      an inline form and subsequently pops out the inline form to continue in a separate window.
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1046,7 +1145,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
