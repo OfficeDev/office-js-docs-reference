@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData
-    summary: >-
-      An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })".'
     name: Excel.Interfaces.ConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.ConditionalFormatUpdateData
     langs:

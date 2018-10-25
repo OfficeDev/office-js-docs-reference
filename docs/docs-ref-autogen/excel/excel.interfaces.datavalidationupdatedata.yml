@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.DataValidationUpdateData
-    summary: >-
-      An interface for updating data on the DataValidation object, for use in "dataValidation.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the DataValidation object, for use in "dataValidation.set({ ... })".'
     name: Excel.Interfaces.DataValidationUpdateData
     fullName: excel.Excel.Interfaces.DataValidationUpdateData
     langs:

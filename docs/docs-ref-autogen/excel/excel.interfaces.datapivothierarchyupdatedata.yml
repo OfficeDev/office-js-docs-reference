@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData
-    summary: >-
-      An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set({ ... })".'
     name: Excel.Interfaces.DataPivotHierarchyUpdateData
     fullName: excel.Excel.Interfaces.DataPivotHierarchyUpdateData
     langs:

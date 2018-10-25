@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.CommentCollectionUpdateData
-    summary: >-
-      An interface for updating data on the CommentCollection object, for use in "commentCollection.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the CommentCollection object, for use in "commentCollection.set({ ... })".'
     name: Visio.Interfaces.CommentCollectionUpdateData
     fullName: visio.Visio.Interfaces.CommentCollectionUpdateData
     langs:

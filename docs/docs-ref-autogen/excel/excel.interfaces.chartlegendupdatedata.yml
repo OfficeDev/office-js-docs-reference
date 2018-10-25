@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartLegendUpdateData
-    summary: >-
-      An interface for updating data on the ChartLegend object, for use in "chartLegend.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the ChartLegend object, for use in "chartLegend.set({ ... })".'
     name: Excel.Interfaces.ChartLegendUpdateData
     fullName: excel.Excel.Interfaces.ChartLegendUpdateData
     langs:

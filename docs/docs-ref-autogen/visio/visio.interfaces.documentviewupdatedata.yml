@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.DocumentViewUpdateData
-    summary: >-
-      An interface for updating data on the DocumentView object, for use in "documentView.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the DocumentView object, for use in "documentView.set({ ... })".'
     name: Visio.Interfaces.DocumentViewUpdateData
     fullName: visio.Visio.Interfaces.DocumentViewUpdateData
     langs:

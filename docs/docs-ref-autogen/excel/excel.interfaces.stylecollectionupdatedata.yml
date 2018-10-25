@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.StyleCollectionUpdateData
-    summary: >-
-      An interface for updating data on the StyleCollection object, for use in "styleCollection.set(\[object Object\]
-      ... \[object Object\])".
+    summary: 'An interface for updating data on the StyleCollection object, for use in "styleCollection.set({ ... })".'
     name: Excel.Interfaces.StyleCollectionUpdateData
     fullName: excel.Excel.Interfaces.StyleCollectionUpdateData
     langs:

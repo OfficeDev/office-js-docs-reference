@@ -2,8 +2,8 @@
 items:
   - uid: word.Word.Interfaces.CustomPropertyCollectionUpdateData
     summary: >-
-      An interface for updating data on the CustomPropertyCollection object, for use in
-      "customPropertyCollection.set(\[object Object\] ... \[object Object\])".
+      An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({
+      ... })".
     name: Word.Interfaces.CustomPropertyCollectionUpdateData
     fullName: word.Word.Interfaces.CustomPropertyCollectionUpdateData
     langs:

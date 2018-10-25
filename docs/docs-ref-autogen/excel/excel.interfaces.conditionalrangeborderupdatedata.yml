@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
     summary: >-
-      An interface for updating data on the ConditionalRangeBorder object, for use in
-      "conditionalRangeBorder.set(\[object Object\] ... \[object Object\])".
+      An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set({ ...
+      })".
     name: Excel.Interfaces.ConditionalRangeBorderUpdateData
     fullName: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
     langs:

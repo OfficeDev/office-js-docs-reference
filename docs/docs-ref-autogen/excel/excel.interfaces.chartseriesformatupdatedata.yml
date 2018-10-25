@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
-    summary: >-
-      An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })".'
     name: Excel.Interfaces.ChartSeriesFormatUpdateData
     fullName: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
     langs:

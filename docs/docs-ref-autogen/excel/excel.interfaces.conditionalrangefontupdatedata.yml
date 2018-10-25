@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData
-    summary: >-
-      An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set({ ... })".'
     name: Excel.Interfaces.ConditionalRangeFontUpdateData
     fullName: excel.Excel.Interfaces.ConditionalRangeFontUpdateData
     langs:

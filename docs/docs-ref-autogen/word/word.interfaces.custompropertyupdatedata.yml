@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.CustomPropertyUpdateData
-    summary: >-
-      An interface for updating data on the CustomProperty object, for use in "customProperty.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })".'
     name: Word.Interfaces.CustomPropertyUpdateData
     fullName: word.Word.Interfaces.CustomPropertyUpdateData
     langs:

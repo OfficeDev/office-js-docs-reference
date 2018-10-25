@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.PageCollectionUpdateData
-    summary: >-
-      An interface for updating data on the PageCollection object, for use in "pageCollection.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the PageCollection object, for use in "pageCollection.set({ ... })".'
     name: OneNote.Interfaces.PageCollectionUpdateData
     fullName: onenote.OneNote.Interfaces.PageCollectionUpdateData
     langs:

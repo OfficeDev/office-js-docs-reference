@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.ImageUpdateData
-    summary: >-
-      An interface for updating data on the Image object, for use in "image.set(\[object Object\] ... \[object
-      Object\])".
+    summary: 'An interface for updating data on the Image object, for use in "image.set({ ... })".'
     name: OneNote.Interfaces.ImageUpdateData
     fullName: onenote.OneNote.Interfaces.ImageUpdateData
     langs:

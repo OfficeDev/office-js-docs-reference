@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
-    summary: >-
-      An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set({ ... })".'
     name: Excel.Interfaces.ChartAxisTitleFormatUpdateData
     fullName: excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
     langs:

@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.PageCollectionUpdateData
-    summary: >-
-      An interface for updating data on the PageCollection object, for use in "pageCollection.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the PageCollection object, for use in "pageCollection.set({ ... })".'
     name: Visio.Interfaces.PageCollectionUpdateData
     fullName: visio.Visio.Interfaces.PageCollectionUpdateData
     langs:

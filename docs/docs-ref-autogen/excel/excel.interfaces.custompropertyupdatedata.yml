@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.CustomPropertyUpdateData
-    summary: >-
-      An interface for updating data on the CustomProperty object, for use in "customProperty.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })".'
     name: Excel.Interfaces.CustomPropertyUpdateData
     fullName: excel.Excel.Interfaces.CustomPropertyUpdateData
     langs:

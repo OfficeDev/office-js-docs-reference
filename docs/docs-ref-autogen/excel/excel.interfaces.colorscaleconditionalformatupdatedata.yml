@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     summary: >-
       An interface for updating data on the ColorScaleConditionalFormat object, for use in
-      "colorScaleConditionalFormat.set(\[object Object\] ... \[object Object\])".
+      "colorScaleConditionalFormat.set({ ... })".
     name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     langs:

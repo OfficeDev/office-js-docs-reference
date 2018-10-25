@@ -2,8 +2,8 @@
 items:
   - uid: word.Word.Interfaces.ContentControlCollectionUpdateData
     summary: >-
-      An interface for updating data on the ContentControlCollection object, for use in
-      "contentControlCollection.set(\[object Object\] ... \[object Object\])".
+      An interface for updating data on the ContentControlCollection object, for use in "contentControlCollection.set({
+      ... })".
     name: Word.Interfaces.ContentControlCollectionUpdateData
     fullName: word.Word.Interfaces.ContentControlCollectionUpdateData
     langs:

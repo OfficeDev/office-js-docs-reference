@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData
     summary: >-
-      An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set(\[object
-      Object\] ... \[object Object\])".
+      An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set({ ...
+      })".
     name: Excel.Interfaces.TextConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.TextConditionalFormatUpdateData
     langs:

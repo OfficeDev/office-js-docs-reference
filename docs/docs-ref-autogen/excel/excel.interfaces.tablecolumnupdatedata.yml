@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.TableColumnUpdateData
-    summary: >-
-      An interface for updating data on the TableColumn object, for use in "tableColumn.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })".'
     name: Excel.Interfaces.TableColumnUpdateData
     fullName: excel.Excel.Interfaces.TableColumnUpdateData
     langs:

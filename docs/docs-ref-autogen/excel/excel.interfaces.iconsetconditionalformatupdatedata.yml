@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
     summary: >-
-      An interface for updating data on the IconSetConditionalFormat object, for use in
-      "iconSetConditionalFormat.set(\[object Object\] ... \[object Object\])".
+      An interface for updating data on the IconSetConditionalFormat object, for use in "iconSetConditionalFormat.set({
+      ... })".
     name: Excel.Interfaces.IconSetConditionalFormatUpdateData
     fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
     langs:

@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartBorderUpdateData
-    summary: >-
-      An interface for updating data on the ChartBorder object, for use in "chartBorder.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })".'
     name: Excel.Interfaces.ChartBorderUpdateData
     fullName: excel.Excel.Interfaces.ChartBorderUpdateData
     langs:

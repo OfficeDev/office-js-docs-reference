@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.WorkbookUpdateData
-    summary: >-
-      An interface for updating data on the Workbook object, for use in "workbook.set(\[object Object\] ... \[object
-      Object\])".
+    summary: 'An interface for updating data on the Workbook object, for use in "workbook.set({ ... })".'
     name: Excel.Interfaces.WorkbookUpdateData
     fullName: excel.Excel.Interfaces.WorkbookUpdateData
     langs:

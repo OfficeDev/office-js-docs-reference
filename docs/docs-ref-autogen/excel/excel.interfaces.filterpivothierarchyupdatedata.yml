@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
-    summary: >-
-      An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set({ ... })".'
     name: Excel.Interfaces.FilterPivotHierarchyUpdateData
     fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
     langs:

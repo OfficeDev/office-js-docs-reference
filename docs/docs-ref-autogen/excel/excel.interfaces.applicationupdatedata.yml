@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ApplicationUpdateData
-    summary: >-
-      An interface for updating data on the Application object, for use in "application.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the Application object, for use in "application.set({ ... })".'
     name: Excel.Interfaces.ApplicationUpdateData
     fullName: excel.Excel.Interfaces.ApplicationUpdateData
     langs:

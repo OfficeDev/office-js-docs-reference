@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData
-    summary: >-
-      An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(\[object
-      Object\] ... \[object Object\])".
+    summary: 'An interface for updating data on the SectionCollection object, for use in "sectionCollection.set({ ... })".'
     name: OneNote.Interfaces.SectionCollectionUpdateData
     fullName: onenote.OneNote.Interfaces.SectionCollectionUpdateData
     langs:

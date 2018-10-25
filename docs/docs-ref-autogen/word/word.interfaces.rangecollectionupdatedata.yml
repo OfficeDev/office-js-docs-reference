@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.RangeCollectionUpdateData
-    summary: >-
-      An interface for updating data on the RangeCollection object, for use in "rangeCollection.set(\[object Object\]
-      ... \[object Object\])".
+    summary: 'An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })".'
     name: Word.Interfaces.RangeCollectionUpdateData
     fullName: word.Word.Interfaces.RangeCollectionUpdateData
     langs:

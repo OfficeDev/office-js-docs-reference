@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.FontUpdateData
-    summary: 'An interface for updating data on the Font object, for use in "font.set(\[object Object\] ... \[object Object\])".'
+    summary: 'An interface for updating data on the Font object, for use in "font.set({ ... })".'
     name: Word.Interfaces.FontUpdateData
     fullName: word.Word.Interfaces.FontUpdateData
     langs:

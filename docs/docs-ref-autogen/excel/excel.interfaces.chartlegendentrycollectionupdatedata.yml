@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
     summary: >-
       An interface for updating data on the ChartLegendEntryCollection object, for use in
-      "chartLegendEntryCollection.set(\[object Object\] ... \[object Object\])".
+      "chartLegendEntryCollection.set({ ... })".
     name: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
     fullName: excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
     langs:

@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeFontUpdateData
-    summary: >-
-      An interface for updating data on the RangeFont object, for use in "rangeFont.set(\[object Object\] ... \[object
-      Object\])".
+    summary: 'An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })".'
     name: Excel.Interfaces.RangeFontUpdateData
     fullName: excel.Excel.Interfaces.RangeFontUpdateData
     langs:

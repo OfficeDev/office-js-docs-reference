@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData
-    summary: >-
-      An interface for updating data on the SearchOptions object, for use in "searchOptions.set(\[object Object\] ...
-      \[object Object\])".
+    summary: 'An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })".'
     name: Word.Interfaces.SearchOptionsUpdateData
     fullName: word.Word.Interfaces.SearchOptionsUpdateData
     langs:
