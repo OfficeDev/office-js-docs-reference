@@ -42,6 +42,36 @@ items:
       return:
         type:
           - excel.Excel.PivotItem
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");
+              const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+              farmDataHierarchy.load("showAs");
+              wholesaleDataHierarchy.load("showAs");
+              await context.sync();
+
+              // show the difference between crate sales of the "A Farms" and the other farms
+              // this difference is both aggregated and shown for individual fruit types (where applicable)
+              let farmShowAs = farmDataHierarchy.showAs;
+              farmShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
+              farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
+              farmShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
+              farmDataHierarchy.showAs = farmShowAs;
+
+              let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+              wholesaleShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
+              wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
+              wholesaleShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
+              wholesaleDataHierarchy.showAs = wholesaleShowAs;
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ShowAsRule.calculation
     summary: |-
       The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.

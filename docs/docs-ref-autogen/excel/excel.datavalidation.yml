@@ -54,6 +54,39 @@ items:
       return:
         type:
           - excel.Excel.DataValidationErrorAlert
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Decision");
+              const commentsRange = 
+                  sheet.tables.getItem("NameOptionsTable").columns.getItem("Comments").getDataBodyRange();
+
+              // When you are developing, it is a good practice to
+              // clear the dataValidation object with each run of your code.
+              commentsRange.dataValidation.clear();   
+
+              // If the value of A2 is contained in the value of C2, then 
+              // SEARCH(A2,C2) returns the number where it begins. Otherwise,
+              // it does not return a number.
+              let redundantStringRule = {
+                  custom: {
+                      formula: "=NOT(ISNUMBER(SEARCH(A2,C2)))"
+                  }
+              };
+              commentsRange.dataValidation.rule = redundantStringRule;
+              commentsRange.dataValidation.errorAlert = {
+                  message: "It is redundant to include the baby name in the comment.",
+                  showAlert: true,
+                  style: "Information",
+                  title: "Baby Name in Comment"
+              };
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.DataValidation.ignoreBlanks
     summary: |-
       Ignore blanks: no data validation will be performed on blank cells, it defaults to true.

@@ -103,6 +103,21 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
+              dataHierarchies.load("no-properties-needed");
+              await context.sync();
+
+              dataHierarchies.items[0].name = "Farm Sales";
+              dataHierarchies.items[1].name = "Wholesale";
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.DataPivotHierarchy.numberFormat
     summary: |-
       Number format of the DataPivotHierarchy.
@@ -164,6 +179,33 @@ items:
       return:
         type:
           - excel.Excel.ShowAsRule
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
+              const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+              farmDataHierarchy.load("showAs");
+              wholesaleDataHierarchy.load("showAs");
+              await context.sync();
+
+              // show the crates of each fruit type sold at the farm as a percentage of the column's total
+              let farmShowAs = farmDataHierarchy.showAs;
+              farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+              farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+              farmDataHierarchy.showAs = farmShowAs;
+
+              let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+              wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+              wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+              wholesaleDataHierarchy.showAs = wholesaleShowAs;
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.DataPivotHierarchy.summarizeBy
     summary: |-
       Determines whether to show all items of the DataPivotHierarchy.

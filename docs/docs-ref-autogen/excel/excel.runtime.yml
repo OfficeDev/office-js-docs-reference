@@ -32,6 +32,26 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.runtime.load("enableEvents");
+              await context.sync();
+
+              // check if events are enabled and toggle accordingly
+              const eventBoolean = !context.runtime.enableEvents
+              context.runtime.enableEvents = eventBoolean;
+              if (eventBoolean) {
+                  console.log("Events are currently on.");
+              } else {
+                  console.log("Events are currently off.");
+              }
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Runtime.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
