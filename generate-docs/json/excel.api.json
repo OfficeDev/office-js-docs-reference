@@ -84813,16 +84813,25 @@
             },
             "source": {
               "kind": "property",
-              "signature": "source: string | Range;",
+              "signature": "source: string;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "string | Range",
+              "type": "string",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a string that contains comma separated number, boolean or date."
+                  "text": "The source of the list for data validation. The value is a string, which can either be a range reference (e.g. "
+                },
+                {
+                  "kind": "code",
+                  "text": "\"=Names!$A$1:$A$3\"",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") or a comma-separated list of the values themselves."
                 },
                 {
                   "kind": "paragraph"

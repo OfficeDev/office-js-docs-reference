@@ -11,6 +11,7 @@ items:
       - outlook.Office.AppointmentCompose
       - outlook.Office.AppointmentForm
       - outlook.Office.AppointmentRead
+      - outlook.Office.AttachmentContent
       - outlook.Office.AttachmentDetails
       - outlook.Office.Body
       - outlook.Office.CoercionTypeOptions
@@ -21,12 +22,15 @@ items:
       - outlook.Office.EmailUser
       - outlook.Office.Entities
       - outlook.Office.From
+      - outlook.Office.InternetHeaders
       - outlook.Office.Item
       - outlook.Office.ItemCompose
       - outlook.Office.ItemRead
       - outlook.Office.LocalClientTime
       - outlook.Office.Location
       - outlook.Office.Mailbox
+      - outlook.Office.MailboxEnums.AttachmentContentFormat
+      - outlook.Office.MailboxEnums.AttachmentStatus
       - outlook.Office.MailboxEnums.AttachmentType
       - outlook.Office.MailboxEnums.Days
       - outlook.Office.MailboxEnums.DelegatePermissions
@@ -72,6 +76,8 @@ references:
     name: Office.AppointmentForm
   - uid: outlook.Office.AppointmentRead
     name: Office.AppointmentRead
+  - uid: outlook.Office.AttachmentContent
+    name: Office.AttachmentContent
   - uid: outlook.Office.AttachmentDetails
     name: Office.AttachmentDetails
   - uid: outlook.Office.Body
@@ -92,6 +98,8 @@ references:
     name: Office.Entities
   - uid: outlook.Office.From
     name: Office.From
+  - uid: outlook.Office.InternetHeaders
+    name: Office.InternetHeaders
   - uid: outlook.Office.Item
     name: Office.Item
   - uid: outlook.Office.ItemCompose
@@ -104,6 +112,10 @@ references:
     name: Office.Location
   - uid: outlook.Office.Mailbox
     name: Office.Mailbox
+  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+    name: Office.MailboxEnums.AttachmentContentFormat
+  - uid: outlook.Office.MailboxEnums.AttachmentStatus
+    name: Office.MailboxEnums.AttachmentStatus
   - uid: outlook.Office.MailboxEnums.AttachmentType
     name: Office.MailboxEnums.AttachmentType
   - uid: outlook.Office.MailboxEnums.Days

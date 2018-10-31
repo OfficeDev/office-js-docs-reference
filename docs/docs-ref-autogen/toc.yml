@@ -550,6 +550,10 @@ items:
             items:
               - name: MailboxEnums
                 items:
+                  - name: AttachmentContentFormat
+                    uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+                  - name: AttachmentStatus
+                    uid: outlook.Office.MailboxEnums.AttachmentStatus
                   - name: AttachmentType
                     uid: outlook.Office.MailboxEnums.AttachmentType
                   - name: Days
@@ -582,6 +586,8 @@ items:
                 uid: outlook.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: outlook.Office.AppointmentRead
+              - name: AttachmentContent
+                uid: outlook.Office.AttachmentContent
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body
@@ -598,6 +604,8 @@ items:
                 uid: outlook.Office.Entities
               - name: From
                 uid: outlook.Office.From
+              - name: InternetHeaders
+                uid: outlook.Office.InternetHeaders
               - name: Item
                 uid: outlook.Office.Item
               - name: LocalClientTime

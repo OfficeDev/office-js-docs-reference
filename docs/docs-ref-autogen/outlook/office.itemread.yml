@@ -33,7 +33,7 @@ items:
       - outlook.Office.ItemRead.subject
   - uid: outlook.Office.ItemRead.attachments
     summary: |-
-      Gets an array of attachments for the item.
+      Gets the item's attachments as an array.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

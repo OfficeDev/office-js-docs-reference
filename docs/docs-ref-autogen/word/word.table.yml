@@ -318,11 +318,11 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
-              firstCell.load("text");
+            let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+            firstCell.load("text");
 
-              await context.sync();
-              console.log("First cell text is " + firstCell.text);
+            await context.sync();
+            console.log("First cell text is " + firstCell.text);
           });
           ```
       parameters:

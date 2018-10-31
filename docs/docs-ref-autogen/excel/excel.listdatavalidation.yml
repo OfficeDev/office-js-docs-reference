@@ -31,8 +31,8 @@ items:
           - boolean
   - uid: excel.Excel.ListDataValidation.source
     summary: >-
-      Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a
-      string that contains comma separated number, boolean or date.
+      The source of the list for data validation. The value is a string, which can either be a range reference (e.g.
+      `"=Names!$A$1:$A$3"`<!-- -->) or a comma-separated list of the values themselves.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -42,7 +42,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'source: string | Range;'
+      content: 'source: string;'
       return:
         type:
-          - string | Range
+          - string

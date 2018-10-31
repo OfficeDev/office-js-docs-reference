@@ -8323,6 +8323,25 @@ Office.AppointmentCompose.end:
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
+Office.AppointmentCompose.getAttachmentsAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var outputString = "";
+    item.getAttachmentsAsync(callback);  
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var _att = result.value [i];
+                outputString += "<BR>" + i + ". Name: ";
+                outputString += _att.name;
+                outputString += "<BR>ID: " + _att.id;
+                outputString += "<BR>contentType: " + _att.contentType;
+                outputString += "<BR>size: " + _att.size;
+                outputString += "<BR>attachmentType: " + _att.attachmentType;
+                outputString += "<BR>isInline: " + _att.isInline;
+            }
+        }
+    }
 Office.AppointmentCompose.getSelectedDataAsync:
   - |-
     // getting selected data
@@ -8789,6 +8808,56 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
+Office.InternetHeaders.getAsync:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+    function callback(asyncResult) { 
+        var dictionary = asyncResult.value; 
+        var header1_value = dictionary["header1"]; 
+    }
+Office.InternetHeaders.removeAsync:
+  - |-
+    Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
+Office.InternetHeaders.setAsync:
+  - |-
+    Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
+Office.Item.addHandlerAsync:
+  - |-
+    function myHandlerFunction(eventarg) { 
+        if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
+            var _att = eventarg.attachmentDetails; 
+            showMessage("Event Fired and Attachment Added!"); 
+            getAttachmentContentAsync(_att.id, options, callback); 
+        } 
+    } 
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.Item.getAttachmentContentAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var listOfAttachments = [];
+    item.getAttachmentsAsync(callback);
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var options = {asyncContext: {type: result.value[i].attachmentType}};
+                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        //parse string to be a url, an .eml file, or a base64 encoded string
+        if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+            //handle file attachment
+        }
+        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+            //handle item attachment
+        }
+        else {
+            //handle cloud attachment  
+        }
+    }
 Office.Item.getInitializationContextAsync:
   - |-
     // Get the initialization context (if present)
@@ -9092,6 +9161,25 @@ Office.MessageCompose.from:
 
     function callback(asyncResult) {
         var from = asyncResult.value;
+    }
+Office.MessageCompose.getAttachmentsAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var outputString = "";
+    item.getAttachmentsAsync(callback);  
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var _att = result.value [i];
+                outputString += "<BR>" + i + ". Name: ";
+                outputString += _att.name;
+                outputString += "<BR>ID: " + _att.id;
+                outputString += "<BR>contentType: " + _att.contentType;
+                outputString += "<BR>size: " + _att.size;
+                outputString += "<BR>attachmentType: " + _att.attachmentType;
+                outputString += "<BR>isInline: " + _att.isInline;
+            }
+        }
     }
 Office.MessageCompose.getSelectedDataAsync:
   - |-

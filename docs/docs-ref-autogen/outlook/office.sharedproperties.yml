@@ -50,7 +50,7 @@ items:
         type:
           - String
   - uid: outlook.Office.SharedProperties.restUrl
-    summary: The remote REST url related to the owner’s mailbox.
+    summary: The remote REST URL related to the owner’s mailbox.
     isPreview: true
     name: restUrl
     fullName: outlook.Office.SharedProperties.restUrl
