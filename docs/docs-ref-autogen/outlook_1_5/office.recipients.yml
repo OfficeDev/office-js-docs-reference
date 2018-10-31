@@ -3,11 +3,11 @@ items:
   - uid: Outlook_1_5.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Recipients
     fullName: Outlook_1_5.Office.Recipients
@@ -33,11 +33,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
@@ -45,7 +45,7 @@ items:
       entries.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
@@ -54,8 +54,8 @@ items:
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
-      void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
+      void): void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: Outlook_1_5.Office.Recipients.addAsync
     langs:
@@ -64,7 +64,7 @@ items:
     syntax:
       content: >-
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -83,40 +83,42 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If adding the recipients fails, the asyncResult.error property will contain
-            an error code.
+            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
+            contain an error code.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_5.Office.Recipients.getAsync
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
-      When the call completes, the asyncResult.value property will contain an array
-      of[Office.EmailAddressDetails](xref:Outlook_1_5.Office.EmailAddressDetails) objects.
+      When the call completes, the asyncResult.value property will contain an array of
+      [Office.EmailAddressDetails](xref:Outlook_1_5.Office.EmailAddressDetails) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult) => void): void;`
+      `getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: Outlook_1_5.Office.Recipients.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails[]>) =>
+        void): void;
       return:
         type:
           - void
@@ -131,9 +133,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.EmailAddressDetails[]>) => void'
   - uid: Outlook_1_5.Office.Recipients.setAsync
     summary: |-
       Sets a recipient list for an appointment or message.
@@ -150,11 +152,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
@@ -162,7 +164,7 @@ items:
       entries.</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
@@ -171,8 +173,8 @@ items:
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void):
-      void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
+      void): void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: Outlook_1_5.Office.Recipients.setAsync
     langs:
@@ -181,7 +183,7 @@ items:
     syntax:
       content: >-
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -200,7 +202,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
-            code that indicates any error that occurred while adding the data.
+            parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

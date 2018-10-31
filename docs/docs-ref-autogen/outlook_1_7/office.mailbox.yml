@@ -14,12 +14,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: Office.Mailbox
     fullName: Outlook_1_7.Office.Mailbox
     langs:
@@ -42,22 +42,23 @@ items:
       - Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync
       - Outlook_1_7.Office.Mailbox.item
       - Outlook_1_7.Office.Mailbox.makeEwsRequestAsync
+      - Outlook_1_7.Office.Mailbox.removeHandlerAsync
       - Outlook_1_7.Office.Mailbox.restUrl
       - Outlook_1_7.Office.Mailbox.userProfile
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync
     summary: |-
       Adds an event handler for a supported event.
 
-      Currently, the supported event types are `Office.EventType.ItemChanged` and `Office.EventType.OfficeThemeChanged`.
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: Outlook_1_7.Office.Mailbox.addHandlerAsync
     langs:
@@ -107,12 +108,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'convertToEwsId(itemId, restVersion)'
     fullName: Outlook_1_7.Office.Mailbox.convertToEwsId
     langs:
@@ -152,12 +153,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
     fullName: Outlook_1_7.Office.Mailbox.convertToLocalClientTime
     langs:
@@ -182,19 +183,19 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
-      (such as the [Outlook Mail
+      (such as the [ Outlook Mail
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
-      into the proper format for REST.
+      the [ Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
+      ID into the proper format for REST.
     name: 'convertToRestId(itemId, restVersion)'
     fullName: Outlook_1_7.Office.Mailbox.convertToRestId
     langs:
@@ -226,12 +227,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: convertToUtcClientTime(input)
     fullName: Outlook_1_7.Office.Mailbox.convertToUtcClientTime
     langs:
@@ -278,12 +279,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: diagnostics
     fullName: Outlook_1_7.Office.Mailbox.diagnostics
     langs:
@@ -322,12 +323,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: displayAppointmentForm(itemId)
     fullName: Outlook_1_7.Office.Mailbox.displayAppointmentForm
     langs:
@@ -371,12 +372,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: displayMessageForm(itemId)
     fullName: Outlook_1_7.Office.Mailbox.displayMessageForm
     langs:
@@ -422,11 +423,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayNewAppointmentForm(parameters)
     fullName: Outlook_1_7.Office.Mailbox.displayNewAppointmentForm
@@ -459,11 +460,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayNewMessageForm(parameters)
     fullName: Outlook_1_7.Office.Mailbox.displayNewMessageForm
@@ -480,9 +481,12 @@ items:
         - id: parameters
           description: >-
             A dictionary containing all values to be filled in for the user in the new form. All parameters are
-            optional. toRecipients: An array of strings containing the email addresses or an array containing
-            an[Office.EmailAddressDetails](xref:Outlook_1_7.Office.EmailAddressDetails) object for each of the
-            recipients on the To line. The array is limited to a maximum of 100 entries.
+            optional.
+
+
+            toRecipients: An array of strings containing the email addresses or an array containing an
+            [Office.EmailAddressDetails](xref:Outlook_1_7.Office.EmailAddressDetails) object for each of the recipients
+            on the To line. The array is limited to a maximum of 100 entries.
 
 
             ccRecipients: An array of strings containing the email addresses or an array containing an
@@ -537,16 +541,16 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
       The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
-      create a remote service to [get attachments from the selected
+      create a remote service to [ get attachments from the selected
       item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
 
 
@@ -598,11 +602,11 @@ items:
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
 
 
@@ -648,16 +652,16 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
 
 
-      The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
-      user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
+      The getUserIdentityTokenAsync method returns a token that you can use to identify and [ authenticate the add-in
+      and user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
     name: 'getUserIdentityTokenAsync(callback, userContext)'
     fullName: Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync
     langs:
@@ -684,7 +688,8 @@ items:
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
       you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
+      `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
+      `AppointmentCompose`<!-- -->, `AppointmentRead`
     name: item
     fullName: Outlook_1_7.Office.Mailbox.item
     langs:
@@ -715,7 +720,7 @@ items:
 
       Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about
       using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync
-      method, see [Specify permissions for mail add-in access to the user's
+      method, see [ Specify permissions for mail add-in access to the user's
       mailbox](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->.
 
 
@@ -743,7 +748,7 @@ items:
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      `&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;`
+      `<?xml version="1.0" encoding="iso-8859-1"?>`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
@@ -754,11 +759,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
     name: 'makeEwsRequestAsync(data, callback, userContext)'
     fullName: Outlook_1_7.Office.Mailbox.makeEwsRequestAsync
@@ -787,6 +792,54 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
+  - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync
+    summary: |-
+      Removes an event handler for a supported event.
+
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_7.Office.Mailbox.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should revoke the handler.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - '(type: EventType) => void'
+        - id: options
+          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.restUrl
     summary: >-
       Gets the URL of the REST endpoint for this email account.
@@ -801,15 +854,15 @@ items:
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
-      The restUrl value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
+      The restUrl value can be used to make [ REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
       mailbox.
     name: restUrl
     fullName: Outlook_1_7.Office.Mailbox.restUrl
@@ -824,7 +877,7 @@ items:
   - uid: Outlook_1_7.Office.Mailbox.userProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
-      adddress, and time zone.
+      address, and time zone.
 
 
       More information is under [Office.UserProfile](xref:Outlook_1_7.Office.UserProfile)

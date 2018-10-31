@@ -2267,7 +2267,8 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2537,8 +2538,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2571,8 +2572,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2593,8 +2594,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2618,8 +2619,8 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. 
          * In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -2655,7 +2656,7 @@ export declare namespace Office {
         * 
         * `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -2667,7 +2668,8 @@ export declare namespace Office {
        /**
         * Removes an event handler for a supported event.
         * 
-        * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+        * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+        * `Office.EventType.RecurrenceChanged`.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -2677,7 +2679,7 @@ export declare namespace Office {
         *
         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -2952,7 +2954,7 @@ export declare namespace Office {
      */
     export interface AppointmentRead extends Appointment, ItemRead {
         /**
-         * Gets an array of attachments for the item.
+         * Gets the item's attachments as an array.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3600,7 +3602,7 @@ export declare namespace Office {
         * 
         * `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -3623,7 +3625,7 @@ export declare namespace Office {
         *
         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -3760,7 +3762,8 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3787,7 +3790,8 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3804,7 +3808,7 @@ export declare namespace Office {
          *                 asyncResult, which is an Office.AsyncResult object.
          */
         addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;
-		
+
        /**
         * Asynchronously loads custom properties for this add-in on the selected item.
         *
@@ -3849,7 +3853,7 @@ export declare namespace Office {
         * 
         * `removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -3873,7 +3877,7 @@ export declare namespace Office {
         *
         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
         * 
-        * @param eventType - The event that should invoke the handler.
+        * @param eventType - The event that should revoke the handler.
         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
         *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -4214,8 +4218,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -4249,8 +4253,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -4271,8 +4275,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -4295,8 +4299,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -4588,7 +4592,7 @@ export declare namespace Office {
      */
     export interface ItemRead extends Item {
         /**
-         * Gets an array of attachments for the item.
+         * Gets the item's attachments as an array.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -5294,7 +5298,8 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and `Office.EventType.RecurrenceChanged`.
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+         * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -5567,8 +5572,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5602,8 +5607,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5624,8 +5629,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5648,8 +5653,8 @@ export declare namespace Office {
          * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. 
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
-         * A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form 
-         * to continue in a separate window.
+         * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+         * continue in a separate window.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5685,7 +5690,7 @@ export declare namespace Office {
          * 
          * `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
          * 
-         * @param eventType - The event that should invoke the handler.
+         * @param eventType - The event that should revoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
          *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -5708,7 +5713,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
          * 
-         * @param eventType - The event that should invoke the handler.
+         * @param eventType - The event that should revoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
          *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -5983,7 +5988,7 @@ export declare namespace Office {
      */
     export interface MessageRead extends Message, ItemRead {
         /**
-         * Gets an array of attachments for the item.
+         * Gets the item's attachments as an array.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -6648,7 +6653,7 @@ export declare namespace Office {
          * 
          * `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
          * 
-         * @param eventType - The event that should invoke the handler.
+         * @param eventType - The event that should revoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
          *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -6671,7 +6676,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
          * 
-         * @param eventType - The event that should invoke the handler.
+         * @param eventType - The event that should revoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
          *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -6960,7 +6965,7 @@ export declare namespace Office {
          */
         restUrl: string;
         /**
-         * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+         * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
          * 
          * More information is under {@link Office.UserProfile}
          */
@@ -6968,7 +6973,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          *
-         * Currently, the supported event types are `Office.EventType.ItemChanged` and `Office.EventType.OfficeThemeChanged`.
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -7374,6 +7379,27 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;
+        /**
+         * Removes an event handler for a supported event.
+         *
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         *
+         * [Api set: Mailbox 1.5]
+         *
+         * @remarks
+         *
+         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+         *
+         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+         *
+         * @param eventType - The event that should revoke the handler.
+         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
+         *                The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+         * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+         *                 type Office.AsyncResult.
+         */
+        removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
     }
 
     /**

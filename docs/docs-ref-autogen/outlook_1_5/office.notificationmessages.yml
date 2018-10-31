@@ -6,12 +6,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: Office.NotificationMessages
     fullName: Outlook_1_5.Office.NotificationMessages
     langs:
@@ -31,12 +31,12 @@ items:
       There are a maximum of 5 notifications per message. Setting more will return a
       NumberOfNotificationMessagesExceeded error.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -48,7 +48,8 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void):
+      void;`
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.addAsync
     langs:
@@ -57,7 +58,7 @@ items:
     syntax:
       content: >-
         addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult) => void): void;
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -84,34 +85,39 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. \[Api set: Mailbox 1.3\]
+            parameter of type Office.AsyncResult.
+
+
+            \[Api set: Mailbox 1.3\]
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_5.Office.NotificationMessages.getAllAsync
     summary: |-
       Returns all keys and messages for an item.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
-      In addition to the main signature, this method also has this signature:
+      In addition to this signature, this method also has the following signature:
 
 
-      `getAllAsync(callback: (result: AsyncResult) => void): void;`
+      `getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;`
     name: 'getAllAsync(options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.getAllAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        getAllAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.NotificationMessageDetails[]>) => void): void;
       return:
         type:
           - void
@@ -126,24 +132,25 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type Office.AsyncResult. The `value` property of the result is an array of
+            NotificationMessageDetails objects.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<Office.NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_5.Office.NotificationMessages.removeAsync
     summary: |-
       Removes a notification message for an item.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `removeAsync(key: string): void;`
@@ -152,14 +159,16 @@ items:
       `removeAsync(key: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAsync(key: string, callback: (result: AsyncResult) => void): void;`
+      `removeAsync(key: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAsync(key, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.removeAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -178,9 +187,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_5.Office.NotificationMessages.replaceAsync
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -189,15 +198,15 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
-      In addition to the main signature, this method also has these signatures:
+      In addition to this signature, this method also has the following signatures:
 
 
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
@@ -206,8 +215,8 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
 
 
-      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void):
-      void;`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) =>
+      void): void;`
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.replaceAsync
     langs:
@@ -216,7 +225,7 @@ items:
     syntax:
       content: >-
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -241,6 +250,6 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

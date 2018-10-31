@@ -30,6 +30,7 @@ items:
       - Outlook_1_5.Office.MailboxEnums.EntityType
       - Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
       - Outlook_1_5.Office.MailboxEnums.ItemType
+      - Outlook_1_5.Office.MailboxEnums.OWAView
       - Outlook_1_5.Office.MailboxEnums.RecipientType
       - Outlook_1_5.Office.MailboxEnums.ResponseType
       - Outlook_1_5.Office.MailboxEnums.RestVersion
@@ -96,6 +97,8 @@ references:
     name: Office.MailboxEnums.ItemNotificationMessageType
   - uid: Outlook_1_5.Office.MailboxEnums.ItemType
     name: Office.MailboxEnums.ItemType
+  - uid: Outlook_1_5.Office.MailboxEnums.OWAView
+    name: Office.MailboxEnums.OWAView
   - uid: Outlook_1_5.Office.MailboxEnums.RecipientType
     name: Office.MailboxEnums.RecipientType
   - uid: Outlook_1_5.Office.MailboxEnums.ResponseType

@@ -2,11 +2,11 @@
 items:
   - uid: Outlook_1_7.Office.ItemRead
     summary: >-
-      The read mode of [Office.context.mailbox.item](xref:Outlook_1_7.Office.Item)<!-- -->.
+      The read mode of [ Office.context.mailbox.item](xref:Outlook_1_7.Office.Item)<!-- -->.
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+      this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
     name: Office.ItemRead
     fullName: Outlook_1_7.Office.ItemRead
     langs:
@@ -32,20 +32,20 @@ items:
       - Outlook_1_7.Office.ItemRead.subject
   - uid: Outlook_1_7.Office.ItemRead.attachments
     summary: |-
-      Gets an array of attachments for the item.
+      Gets the item's attachments as an array.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
 
 
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, see [Blocked attachments in
+      returned. For more information, see [ Blocked attachments in
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
     name: attachments
@@ -81,11 +81,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: Outlook_1_7.Office.ItemRead.displayReplyAllForm
@@ -102,7 +102,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An[Office.ReplyFormData](xref:Outlook_1_7.Office.ReplyFormData) object that contains body or
+            to 32 KB OR An [Office.ReplyFormData](xref:Outlook_1_7.Office.ReplyFormData) object that contains body or
             attachment data and a callback function
           type:
             - string | ReplyFormData
@@ -129,11 +129,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: Outlook_1_7.Office.ItemRead.displayReplyForm
@@ -150,7 +150,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An[Office.ReplyFormData](xref:Outlook_1_7.Office.ReplyFormData) object that contains body or
+            to 32 KB. OR An [Office.ReplyFormData](xref:Outlook_1_7.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -162,11 +162,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getEntities()
     fullName: Outlook_1_7.Office.ItemRead.getEntities
@@ -187,11 +187,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
 
 
@@ -241,11 +241,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: Outlook_1_7.Office.ItemRead.getFilteredEntitiesByName
@@ -290,11 +290,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getRegExMatches()
     fullName: Outlook_1_7.Office.ItemRead.getRegExMatches
@@ -330,11 +330,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: Outlook_1_7.Office.ItemRead.getRegExMatchesByName
@@ -363,11 +363,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getSelectedEntities()
     fullName: Outlook_1_7.Office.ItemRead.getSelectedEntities
@@ -403,11 +403,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: Outlook_1_7.Office.ItemRead.getSelectedRegExMatches
@@ -434,11 +434,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
 
 
@@ -476,17 +476,17 @@ items:
       Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
       itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
       REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
-      details, see [Use the Outlook REST APIs from an Outlook
+      details, see [ Use the Outlook REST APIs from an Outlook
       add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id)<!-- -->.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: itemId
     fullName: Outlook_1_7.Office.ItemRead.itemId
@@ -509,11 +509,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: normalizedSubject
     fullName: Outlook_1_7.Office.ItemRead.normalizedSubject
@@ -539,12 +539,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: subject
     fullName: Outlook_1_7.Office.ItemRead.subject
     langs:
