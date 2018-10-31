@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.MailboxEnums.AttachmentContentFormat
     summary: |-
-      Specifies which string formatting to apply to an attachment's content.
+      Specifies the formatting that applies to an attachment's content.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

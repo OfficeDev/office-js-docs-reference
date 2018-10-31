@@ -644,7 +644,7 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: The event that should invoke the handler.
+          description: The event that should revoke the handler.
           type:
             - Office.EventType
         - id: handler

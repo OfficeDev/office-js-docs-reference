@@ -3492,7 +3492,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event that should invoke the handler."
+                      "text": "The event that should revoke the handler."
                     }
                   ],
                   "isOptional": false,
@@ -10396,7 +10396,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event that should invoke the handler."
+                      "text": "The event that should revoke the handler."
                     }
                   ],
                   "isOptional": false,
@@ -17758,7 +17758,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event that should invoke the handler."
+                      "text": "The event that should revoke the handler."
                     }
                   ],
                   "isOptional": false,
@@ -24442,7 +24442,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Currently, the supported event types are "
+                  "text": "Currently, the only supported event type is "
                 },
                 {
                   "kind": "code",
@@ -24451,7 +24451,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " and "
+                  "text": ". In Preview, "
                 },
                 {
                   "kind": "code",
@@ -24460,7 +24460,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "."
+                  "text": " is also supported."
                 },
                 {
                   "kind": "paragraph"
@@ -27051,6 +27051,199 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "removeHandlerAsync": {
+              "kind": "method",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "eventType": {
+                  "name": "eventType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The event that should revoke the handler."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.EventType"
+                },
+                "handler": {
+                  "name": "handler",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(type: EventType) => void"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult<void>) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes an event handler for a supported event."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Currently, the only supported event type is "
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.EventType.ItemChanged",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". In Preview, "
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.EventType.OfficeThemeChanged",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": " Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": " Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "restUrl": {
               "kind": "property",
               "signature": "restUrl: string;",
@@ -27301,7 +27494,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies which string formatting to apply to an attachment's content."
+                  "text": "Specifies the formatting that applies to an attachment's content."
                 },
                 {
                   "kind": "paragraph"
@@ -35079,7 +35272,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event that should invoke the handler."
+                      "text": "The event that should revoke the handler."
                     }
                   ],
                   "isOptional": false,
@@ -40804,7 +40997,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event that should invoke the handler."
+                      "text": "The event that should revoke the handler."
                     }
                   ],
                   "isOptional": false,

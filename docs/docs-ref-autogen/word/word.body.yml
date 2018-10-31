@@ -649,12 +649,16 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              // We need a 2D array to hold the initial table values
-              let data = [["Apple", "Orange", "Pineapple"], ["Tokyo", "Beijing", "Seattle"]];
-              let table = context.document.body.insertTable(3, 3, "Start", data);
-              table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+            // We need a 2D array to hold the initial table values
+            let data = [
+              ["Tokyo", "Beijing", "Seattle"],
+              ["Apple", "Orange", "Pineapple"]
+            ];
+            let table = context.document.body.insertTable(2, 3, "Start", data);
+            table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+            table.styleFirstColumn = false;
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:

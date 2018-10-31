@@ -547,7 +547,7 @@ items:
 
               await context.sync();
 
-              //  Expands the range to the end of the paragraph to get all the complete sentences.
+              // Expands the range to the end of the paragraph to get all the complete sentences.
               let sentencesToTheEndOfParagraph = sentences.items[0].getRange()
                   .expandTo(context.document.getSelection().paragraphs
                       .getFirst().getRange("End")).getTextRanges(["."], false /* Don't trim spaces*/);
@@ -966,33 +966,20 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              // Insert first sentence. Then we adjust the formatting.
-              // Note that replace affects the calling object, in this case the entire document body.
-              // A similar method can also be used at the range level.
-              let firstSentence = context.document.body.insertText("This is some formatted text!", "Replace");
-              firstSentence.font.set({
-                  name: "Courier New",
-                  bold: true,
-                  size: 18
-              });;
+            // Second sentence, let's insert it as a paragraph after the previously inserted one.
+            let secondSentence = context.document.body.insertParagraph(
+              "This is the first text with a custom style.",
+              "End"
+            );
+            secondSentence.font.set({
+              bold: false,
+              italic: true,
+              name: "Berlin Sans FB",
+              color: "blue",
+              size: 30
+            });
 
-              // Second sentence, let's insert it as a paragraph after the previously inserted one.
-              let secondSentence = context.document.body.insertParagraph("This is other formatted text.", "End");
-              secondSentence.font.set({
-                  bold: false,
-                  italic: true,
-                  name: 'Berlin Sans FB',
-                  color: 'blue',
-                  size: 30
-              });;
-
-              // You can also use pre-exsiting styles.
-              let lastSentence = context.document.body.insertParagraph("To be or not to be", "End");
-
-              // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use range.style = "name of your style";
-              lastSentence.styleBuiltIn = Word.Style.intenseReference;
-
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:

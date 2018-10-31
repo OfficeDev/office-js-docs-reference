@@ -62863,7 +62863,7 @@
             },
             "messageParent": {
               "kind": "method",
-              "signature": "messageParent(messageObject: any): void;",
+              "signature": "messageParent(message: boolean | string): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -62872,17 +62872,17 @@
                 "description": []
               },
               "parameters": {
-                "messageObject": {
-                  "name": "messageObject",
+                "message": {
+                  "name": "message",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Accepts a message from the dialog to deliver to the add-in."
+                      "text": "Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "any"
+                  "type": "boolean | string"
                 }
               },
               "deprecatedMessage": [],
