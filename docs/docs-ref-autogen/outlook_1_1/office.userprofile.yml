@@ -3,7 +3,7 @@ items:
   - uid: Outlook_1_1.Office.UserProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
-      adddress, and time zone.
+      address, and time zone.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

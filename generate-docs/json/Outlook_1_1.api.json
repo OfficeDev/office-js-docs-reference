@@ -8018,15 +8018,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor ("
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<a>"
-                },
-                {
-                  "kind": "text",
-                  "text": ") to \"LPNoLP\" (please see the Examples section for a sample)."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -8262,15 +8254,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor ("
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<a>"
-                },
-                {
-                  "kind": "text",
-                  "text": ") to \"LPNoLP\" (please see the Examples section for a sample)."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -27947,7 +27931,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone."
             },
             {
               "kind": "paragraph"
