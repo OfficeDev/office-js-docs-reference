@@ -880,14 +880,14 @@ items:
       `saveAsync(options: Office.AsyncContextOptions): void;`
 
 
-      `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+      `saveAsync(callback: (result: AsyncResult<string>) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: Outlook_1_7.Office.AppointmentCompose.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -904,7 +904,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: Outlook_1_7.Office.AppointmentCompose.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

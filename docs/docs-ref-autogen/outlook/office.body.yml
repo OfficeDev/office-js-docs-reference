@@ -53,7 +53,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<Office.Body>) => void): void;`
+      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
 
       #### Examples
 
@@ -86,7 +86,7 @@ items:
     syntax:
       content: >-
         getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.Body>) => void): void;
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -108,7 +108,7 @@ items:
             parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(result: AsyncResult<Office.Body>) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -158,7 +158,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<a>) to "LPNoLP" (please see the Examples section for a sample).
+      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -244,7 +244,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<a>) to "LPNoLP" (please see the Examples section for a sample).
+      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -347,7 +347,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<a>) to "LPNoLP" (please see the Examples section for a sample).
+      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

@@ -73,7 +73,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<a>) to "LPNoLP" (please see the Examples section for a sample).
+      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -144,7 +144,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<a>) to "LPNoLP" (please see the Examples section for a sample).
+      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

@@ -410,7 +410,7 @@ export declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -444,7 +444,7 @@ export declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -468,7 +468,7 @@ export declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -489,7 +489,7 @@ export declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -509,7 +509,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -544,7 +544,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -569,7 +569,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -593,7 +593,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -4674,7 +4674,7 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
-    
+
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
@@ -4990,7 +4990,7 @@ export declare namespace Office {
 
     }
     /**
-     * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+     * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
      * 
      * [Api set: Mailbox 1.0]
      *

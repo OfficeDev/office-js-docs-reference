@@ -2510,7 +2510,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2541,7 +2541,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -2751,7 +2751,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "saveAsync(callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "saveAsync(callback: (result: AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -8833,7 +8833,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Body>) => void): void;",
+              "signature": "getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8871,7 +8871,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.Body>) => void"
+                  "type": "(result: AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -9002,7 +9002,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<Office.Body>) => void): void;",
+                  "text": "getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -9221,15 +9221,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor ("
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<a>"
-                },
-                {
-                  "kind": "text",
-                  "text": ") to \"LPNoLP\" (please see the Examples section for a sample)."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -9465,15 +9457,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor ("
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<a>"
-                },
-                {
-                  "kind": "text",
-                  "text": ") to \"LPNoLP\" (please see the Examples section for a sample)."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -9737,15 +9721,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor ("
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<a>"
-                },
-                {
-                  "kind": "text",
-                  "text": ") to \"LPNoLP\" (please see the Examples section for a sample)."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -33742,7 +33718,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone."
             },
             {
               "kind": "paragraph"
