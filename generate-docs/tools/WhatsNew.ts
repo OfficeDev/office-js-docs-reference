@@ -5,6 +5,12 @@ import { readFileSync } from "fs";
 import * as fsx from "fs-extra";
 import * as ts from "typescript";
 
+enum ClassType {
+    Class = "Class",
+    Interface = "Interface",
+    Enum = "Enum"
+}
+
 enum FieldType {
     Property = "Property",
     Method = "Method",
@@ -199,10 +205,11 @@ let betaFile: ts.SourceFile = ts.createSourceFile(
     true
 );
 
+let topClass: ClassStruct = null;
 let lastItem: ClassStruct | FieldStruct = null;
 
-parseDTS(releaseFile, releaseAPI, null);
-parseDTS(betaFile, betaAPI, null);
+parseDTS(releaseFile, releaseAPI);
+parseDTS(betaFile, betaAPI);
 
 let diffAPI : APISet = betaAPI.diff(releaseAPI);
 
@@ -210,51 +217,53 @@ let relativePath: string = process.argv[4];
 fsx.writeFileSync("WhatsNew.d.ts", diffAPI.getAsDTS());
 fsx.writeFileSync("WhatsNew.md", diffAPI.getAsMarkdown(relativePath));
 
-function parseDTS(node: ts.Node, allClasses: APISet, topClass: ClassStruct): void {
+function parseDTS(node: ts.Node, allClasses: APISet): void {
     switch (node.kind) {
         case ts.SyntaxKind.InterfaceDeclaration:
-        let interfaceDeclaration : ts.InterfaceDeclaration = <ts.InterfaceDeclaration>node;
-        topClass = new ClassStruct("export interface " + interfaceDeclaration.name.text, "");
-        allClasses.addClass(topClass);
-        lastItem = topClass;
-        break;
+            parseDTSTopLevelItem(<ts.InterfaceDeclaration>node, allClasses, ClassType.Interface);
+            break;
         case ts.SyntaxKind.ClassDeclaration:
-        let classDeclaration : ts.ClassDeclaration = <ts.ClassDeclaration>node;
-        topClass = new ClassStruct("export class " + classDeclaration.name.text, "");
-        allClasses.addClass(topClass);
-        lastItem = topClass;
-        break;
+            parseDTSTopLevelItem(<ts.ClassDeclaration>node, allClasses, ClassType.Class);
+            break;
         case ts.SyntaxKind.EnumDeclaration:
-        let enumDeclaration : ts.EnumDeclaration = <ts.EnumDeclaration>node;
-        topClass = new ClassStruct("export enum " + enumDeclaration.name.text, "");
-        allClasses.addClass(topClass);
-        lastItem = topClass;
-        break;
+            parseDTSTopLevelItem(<ts.EnumDeclaration>node, allClasses, ClassType.Enum);
+            break;
+        case ts.SyntaxKind.PropertySignature:
+            parseDTSFieldItem(<ts.PropertySignature>node, FieldType.Property);
+            break;
         case ts.SyntaxKind.PropertyDeclaration:
-        let propSignature : ts.PropertyDeclaration = <ts.PropertyDeclaration>node;
-        let newProp: FieldStruct = new FieldStruct(propSignature.getText(), "", FieldType.Property);
-        topClass.fields.push(newProp);
-        lastItem = newProp;
-        break;
+            parseDTSFieldItem(<ts.PropertyDeclaration>node, FieldType.Property);
+            break;
         case ts.SyntaxKind.EnumMember:
-        let enumSignature: ts.EnumMember = <ts.EnumMember>node;
-        let newEnum: FieldStruct = new FieldStruct(enumSignature.getText(), "", FieldType.Enum);
-        topClass.fields.push(newEnum);
-        lastItem = newEnum;
-        break;
+            parseDTSFieldItem(<ts.EnumMember>node, FieldType.Enum);
+            break;
         case ts.SyntaxKind.MethodSignature:
-        let methodSignature : ts.MethodSignature = <ts.MethodSignature>node;
-        let newMethod: FieldStruct = new FieldStruct(methodSignature.getText(), "", FieldType.Method);
-        topClass.fields.push(newMethod);
-        lastItem = newMethod;
-        break;
+            parseDTSFieldItem(<ts.MethodSignature>node, FieldType.Method);
+            break;
         default:
-        if (node.getText().indexOf("/**") >= 0 && node.getText().indexOf("*/") && lastItem !== null && lastItem.comment === "") {
-            lastItem.comment = node.getText().replace(/    \*/g, "*");
-        }
+            if (node.getText().indexOf("/**") >= 0 && node.getText().indexOf("*/") && lastItem !== null && lastItem.comment === "") {
+                lastItem.comment = node.getText().replace(/    \*/g, "*");
+            }
     }
     node.getChildren().forEach(element => {
-        parseDTS(element, allClasses, topClass);
+        parseDTS(element, allClasses);
     });
+}
+
+function parseDTSTopLevelItem(
+  node: ts.InterfaceDeclaration | ts.ClassDeclaration | ts.EnumDeclaration,
+  allClasses: APISet,
+  type: ClassType): void {
+    topClass = new ClassStruct("export " + type.toLowerCase() + " " + node.name.text, "");
+    allClasses.addClass(topClass);
+    lastItem = topClass;
+}
+
+function parseDTSFieldItem(
+  node: ts.PropertySignature | ts.PropertyDeclaration | ts.EnumMember | ts.MethodSignature,
+  type: FieldType): void {
+    let newField: FieldStruct = new FieldStruct(node.getText(), "", type);
+    topClass.fields.push(newField);
+    lastItem = newField;
 }
 
