@@ -8648,7 +8648,7 @@ declare namespace Office {
          * 
          * In addition to this signature, this method also has the following signature:
          * 
-         * `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<Office.Body>) => void): void;`
+         * `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
          * 
          * @param coercionType The format for the returned body.
          * @param options Optional. An object literal that contains one or more of the following properties:
@@ -8656,7 +8656,7 @@ declare namespace Office {
          * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
          *                  The body is provided in the requested format in the asyncResult.value property.
          */
-        getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Body>) => void): void;
+        getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Returns the current body in a specified format.
          *
@@ -8677,7 +8677,7 @@ declare namespace Office {
          * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          *                  The body is provided in the requested format in the asyncResult.value property.
          */
-        getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<Office.Body>) => void): void;
+        getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;
 
         /**
          * Gets a value that indicates whether the content is in HTML or text format.
@@ -8701,7 +8701,7 @@ declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8735,7 +8735,7 @@ declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8759,7 +8759,7 @@ declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8780,7 +8780,7 @@ declare namespace Office {
          * The prependAsync method inserts the specified string at the beginning of the item body. 
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8800,7 +8800,7 @@ declare namespace Office {
          * The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method 
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.3]
@@ -8835,7 +8835,7 @@ declare namespace Office {
          * The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method 
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.3]
@@ -8860,7 +8860,7 @@ declare namespace Office {
          * The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method 
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.3]
@@ -8884,7 +8884,7 @@ declare namespace Office {
          *  The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method 
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.3]
@@ -8907,7 +8907,7 @@ declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8942,7 +8942,7 @@ declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8967,7 +8967,7 @@ declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -8991,7 +8991,7 @@ declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the 
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" 
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
          * (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
@@ -10403,13 +10403,13 @@ declare namespace Office {
          * 
          * `saveAsync(options: Office.AsyncContextOptions): void;`
          * 
-         * `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+         * `saveAsync(callback: (result: AsyncResult<string>) => void): void;`
          *
          * @param options Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
          */
-        saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Asynchronously saves an item.
          *
@@ -10510,7 +10510,7 @@ declare namespace Office {
          *
          * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          */
-        saveAsync(callback: (result: AsyncResult<void>) => void): void;
+        saveAsync(callback: (result: AsyncResult<string>) => void): void;
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
