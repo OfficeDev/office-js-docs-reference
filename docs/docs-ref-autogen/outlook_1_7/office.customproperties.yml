@@ -15,12 +15,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: Office.CustomProperties
     fullName: Outlook_1_7.Office.CustomProperties
     langs:
@@ -35,12 +35,12 @@ items:
   - uid: Outlook_1_7.Office.CustomProperties.get
     summary: Returns the value of the specified custom property.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: get(name)
     fullName: Outlook_1_7.Office.CustomProperties.get
     langs:
@@ -66,12 +66,12 @@ items:
 
       To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: remove(name)
     fullName: Outlook_1_7.Office.CustomProperties.remove
     langs:
@@ -85,7 +85,10 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'The name of the property to be removed. \[Api set: Mailbox 1.0\]'
+          description: |-
+            The name of the property to be removed.
+
+            \[Api set: Mailbox 1.0\]
           type:
             - string
   - uid: Outlook_1_7.Office.CustomProperties.saveAsync
@@ -102,12 +105,12 @@ items:
       becomes disconnected. If the add-in calls saveAsync while in the disconnected state, saveAsync would return an
       error. Your callback method should handle this error accordingly.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'saveAsync(callback, asyncContext)'
     fullName: Outlook_1_7.Office.CustomProperties.saveAsync
     langs:
@@ -127,7 +130,10 @@ items:
           type:
             - '(result: AsyncResult<void>) => void'
         - id: asyncContext
-          description: 'Optional. Any state data that is passed to the callback method. \[Api set: Mailbox 1.0\]'
+          description: |-
+            Optional. Any state data that is passed to the callback method.
+
+            \[Api set: Mailbox 1.0\]
           type:
             - any
   - uid: Outlook_1_7.Office.CustomProperties.set
@@ -146,12 +152,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'set(name, value)'
     fullName: Outlook_1_7.Office.CustomProperties.set
     langs:

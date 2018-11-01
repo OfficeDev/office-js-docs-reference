@@ -762,6 +762,8 @@ items:
                       Outlook_1_6.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_6.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_6.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_6.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -834,6 +836,8 @@ items:
                       Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_5.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_5.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_5.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -906,6 +910,8 @@ items:
                       Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_4.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_4.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_4.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -978,6 +984,8 @@ items:
                       Outlook_1_3.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_3.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_3.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_3.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -1047,6 +1055,8 @@ items:
                     uid: Outlook_1_2.Office.MailboxEnums.EntityType
                   - name: ItemType
                     uid: Outlook_1_2.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_2.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_2.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -1110,6 +1120,8 @@ items:
                     uid: Outlook_1_1.Office.MailboxEnums.EntityType
                   - name: ItemType
                     uid: Outlook_1_1.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_1.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_1.Office.MailboxEnums.RecipientType
                   - name: ResponseType

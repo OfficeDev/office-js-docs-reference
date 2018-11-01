@@ -2,7 +2,7 @@
 items:
   - uid: Outlook_1_6.Office.Mailbox
     summary: |-
-      Provides access to the Outlook add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+      Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
       Namespaces:
 
@@ -14,12 +14,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: Office.Mailbox
     fullName: Outlook_1_6.Office.Mailbox
     langs:
@@ -42,26 +42,23 @@ items:
       - Outlook_1_6.Office.Mailbox.getUserIdentityTokenAsync
       - Outlook_1_6.Office.Mailbox.item
       - Outlook_1_6.Office.Mailbox.makeEwsRequestAsync
+      - Outlook_1_6.Office.Mailbox.removeHandlerAsync
       - Outlook_1_6.Office.Mailbox.restUrl
       - Outlook_1_6.Office.Mailbox.userProfile
   - uid: Outlook_1_6.Office.Mailbox.addHandlerAsync
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event.
 
-
-      Currently the only supported event type is Office.EventType.ItemChanged, which is invoked when the user selects a
-      new item. This event is used by add-ins that implement a pinnable taskpane, and allows the add-in to refresh the
-      taskpane UI based on the currently selected item.
-
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: Outlook_1_6.Office.Mailbox.addHandlerAsync
     langs:
@@ -70,7 +67,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -93,9 +90,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult.
+            parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -111,12 +108,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: 'convertToEwsId(itemId, restVersion)'
     fullName: Outlook_1_6.Office.Mailbox.convertToEwsId
     langs:
@@ -156,12 +153,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
     fullName: Outlook_1_6.Office.Mailbox.convertToLocalClientTime
     langs:
@@ -186,19 +183,19 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
-      (such as the [Outlook Mail
+      (such as the [ Outlook Mail
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
-      into the proper format for REST.
+      the [ Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
+      ID into the proper format for REST.
     name: 'convertToRestId(itemId, restVersion)'
     fullName: Outlook_1_6.Office.Mailbox.convertToRestId
     langs:
@@ -230,12 +227,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: convertToUtcClientTime(input)
     fullName: Outlook_1_6.Office.Mailbox.convertToUtcClientTime
     langs:
@@ -270,11 +267,11 @@ items:
       Exchange Server. An example is the string 15.0.468.0.
 
 
-      - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not
-      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn -
-      displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed
-      when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns
-      that can be displayed.
+      - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of
+      Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in
+      undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
+      displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the
+      width of the screen and the window, and the number of columns that can be displayed.
 
 
       More information is under [Office.Diagnostics](xref:Outlook_1_6.Office.Diagnostics)<!-- -->.
@@ -282,12 +279,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: diagnostics
     fullName: Outlook_1_6.Office.Mailbox.diagnostics
     langs:
@@ -326,12 +323,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: displayAppointmentForm(itemId)
     fullName: Outlook_1_6.Office.Mailbox.displayAppointmentForm
     langs:
@@ -375,12 +372,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
     name: displayMessageForm(itemId)
     fullName: Outlook_1_6.Office.Mailbox.displayMessageForm
     langs:
@@ -426,11 +423,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayNewAppointmentForm(parameters)
     fullName: Outlook_1_6.Office.Mailbox.displayNewAppointmentForm
@@ -463,11 +460,11 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayNewMessageForm(parameters)
     fullName: Outlook_1_6.Office.Mailbox.displayNewMessageForm
@@ -484,24 +481,50 @@ items:
         - id: parameters
           description: >-
             A dictionary containing all values to be filled in for the user in the new form. All parameters are
-            optional. toRecipients: An array of strings containing the email addresses or an array containing
-            an[Office.EmailAddressDetails](xref:Outlook_1_6.Office.EmailAddressDetails) object for each of the
-            recipients on the To line. The array is limited to a maximum of 100 entries. ccRecipients: An array of
-            strings containing the email addresses or an array containing an
+            optional.
+
+
+            toRecipients: An array of strings containing the email addresses or an array containing an
             [Office.EmailAddressDetails](xref:Outlook_1_6.Office.EmailAddressDetails) object for each of the recipients
-            on the Cc line. The array is limited to a maximum of 100 entries. bccRecipients: An array of strings
-            containing the email addresses or an array containing an
+            on the To line. The array is limited to a maximum of 100 entries.
+
+
+            ccRecipients: An array of strings containing the email addresses or an array containing an
             [Office.EmailAddressDetails](xref:Outlook_1_6.Office.EmailAddressDetails) object for each of the recipients
-            on the Bcc line. The array is limited to a maximum of 100 entries. subject: A string containing the subject
-            of the message. The string is limited to a maximum of 255 characters. htmlBody: The HTML body of the
-            message. The body content is limited to a maximum size of 32 KB. attachments: An array of JSON objects that
-            are either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a
-            file attachment or item for an item attachment. attachments.name: A string that contains the name of the
-            attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of
-            the location for the file. attachments.isInline: Only used if type is set to file. If true, indicates that
-            the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
-            attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up
-            to 100 characters.
+            on the Cc line. The array is limited to a maximum of 100 entries.
+
+
+            bccRecipients: An array of strings containing the email addresses or an array containing an
+            [Office.EmailAddressDetails](xref:Outlook_1_6.Office.EmailAddressDetails) object for each of the recipients
+            on the Bcc line. The array is limited to a maximum of 100 entries.
+
+
+            subject: A string containing the subject of the message. The string is limited to a maximum of 255
+            characters.
+
+
+            htmlBody: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
+
+
+            attachments: An array of JSON objects that are either file or item attachments.
+
+
+            attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item
+            attachment.
+
+
+            attachments.name: A string that contains the name of the attachment, up to 255 characters in length.
+
+
+            attachments.url: Only used if type is set to file. The URI of the location for the file.
+
+
+            attachments.isInline: Only used if type is set to file. If true, indicates that the attachment will be shown
+            inline in the message body, and should not be displayed in the attachment list.
+
+
+            attachments.itemId: Only used if type is set to item. The EWS item id of the existing e-mail you want to
+            attach to the new message. This is a string up to 100 characters.
           type:
             - any
   - uid: Outlook_1_6.Office.Mailbox.ewsUrl
@@ -518,16 +541,16 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
       The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
-      create a remote service to [get attachments from the selected
+      create a remote service to [ get attachments from the selected
       item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
 
 
@@ -579,28 +602,30 @@ items:
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
 
 
       In addition to this signature, the method has the following signatures:
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) => void): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;`
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: Outlook_1_6.Office.Mailbox.getCallbackTokenAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
+        AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -612,13 +637,13 @@ items:
             provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
             asyncContext: Any state data that is passed to the asynchronous method.
           type:
-            - office.Office.AsyncContextOptions
+            - 'Office.AsyncContextOptions & { isRest?: boolean }'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Mailbox.getUserIdentityTokenAsync
     summary: |-
       Gets a token identifying the user and the Office Add-in.
@@ -627,23 +652,23 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
 
 
-      The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
-      user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
+      The getUserIdentityTokenAsync method returns a token that you can use to identify and [ authenticate the add-in
+      and user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
     name: 'getUserIdentityTokenAsync(callback, userContext)'
     fullName: Outlook_1_6.Office.Mailbox.getUserIdentityTokenAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -652,9 +677,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -663,7 +688,8 @@ items:
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
       you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
+      `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
+      `AppointmentCompose`<!-- -->, `AppointmentRead`
     name: item
     fullName: Outlook_1_6.Office.Mailbox.item
     langs:
@@ -694,15 +720,21 @@ items:
 
       Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about
       using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync
-      method, see Specify permissions for mail add-in access to the user's mailbox.
+      method, see [ Specify permissions for mail add-in access to the user's
+      mailbox](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->.
 
 
       The XML result of the EWS call is provided as a string in the asyncResult.value property. If the result exceeds 1
       MB in size, an error message is returned instead.
 
 
-      Note: This method is not supported in the following scenarios. - In Outlook for iOS or Outlook for Android - When
-      the add-in is loaded in a Gmail mailbox
+      Note: This method is not supported in the following scenarios:
+
+
+      - In Outlook for iOS or Outlook for Android.
+
+
+      - When the add-in is loaded in a Gmail mailbox.
 
 
       Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to
@@ -716,7 +748,7 @@ items:
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      `&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;`
+      `<?xml version="1.0" encoding="iso-8859-1"?>`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
@@ -727,11 +759,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
     name: 'makeEwsRequestAsync(data, callback, userContext)'
     fullName: Outlook_1_6.Office.Mailbox.makeEwsRequestAsync
@@ -739,7 +771,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult) => void, userContext?: any): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -752,13 +784,62 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult.
+            of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
+            string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
+  - uid: Outlook_1_6.Office.Mailbox.removeHandlerAsync
+    summary: |-
+      Removes an event handler for a supported event.
+
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    fullName: Outlook_1_6.Office.Mailbox.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should revoke the handler.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - '(type: EventType) => void'
+        - id: options
+          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.restUrl
     summary: >-
       Gets the URL of the REST endpoint for this email account.
@@ -773,15 +854,15 @@ items:
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr></table>
 
 
-      The restUrl value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
+      The restUrl value can be used to make [ REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
       mailbox.
     name: restUrl
     fullName: Outlook_1_6.Office.Mailbox.restUrl
@@ -796,7 +877,7 @@ items:
   - uid: Outlook_1_6.Office.Mailbox.userProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
-      adddress, and time zone.
+      address, and time zone.
 
 
       More information is under [Office.UserProfile](xref:Outlook_1_6.Office.UserProfile)

@@ -29,6 +29,7 @@ items:
       - Outlook_1_2.Office.MailboxEnums.AttachmentType
       - Outlook_1_2.Office.MailboxEnums.EntityType
       - Outlook_1_2.Office.MailboxEnums.ItemType
+      - Outlook_1_2.Office.MailboxEnums.OWAView
       - Outlook_1_2.Office.MailboxEnums.RecipientType
       - Outlook_1_2.Office.MailboxEnums.ResponseType
       - Outlook_1_2.Office.MeetingSuggestion
@@ -90,6 +91,8 @@ references:
     name: Office.MailboxEnums.EntityType
   - uid: Outlook_1_2.Office.MailboxEnums.ItemType
     name: Office.MailboxEnums.ItemType
+  - uid: Outlook_1_2.Office.MailboxEnums.OWAView
+    name: Office.MailboxEnums.OWAView
   - uid: Outlook_1_2.Office.MailboxEnums.RecipientType
     name: Office.MailboxEnums.RecipientType
   - uid: Outlook_1_2.Office.MailboxEnums.ResponseType
