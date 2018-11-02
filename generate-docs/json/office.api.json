@@ -32166,6 +32166,26 @@
               "remarks": [],
               "isBeta": false
             },
+            "AttachmentsChanged": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Triggers when an attachment is added to or removed from an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": true
+            },
             "BindingDataChanged": {
               "kind": "enum value",
               "value": "",
@@ -33228,7 +33248,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": true
             },
             "RecipientsChanged": {
               "kind": "enum value",
@@ -62843,7 +62863,7 @@
             },
             "messageParent": {
               "kind": "method",
-              "signature": "messageParent(messageObject: any): void;",
+              "signature": "messageParent(message: boolean | string): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -62852,17 +62872,17 @@
                 "description": []
               },
               "parameters": {
-                "messageObject": {
-                  "name": "messageObject",
+                "message": {
+                  "name": "message",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Accepts a message from the dialog to deliver to the add-in."
+                      "text": "Accepts a message from the dialog to deliver to the add-in. In addition to a boolean, anything that can serialized to a string including JSON and XML can be sent."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "any"
+                  "type": "boolean | string"
                 }
               },
               "deprecatedMessage": [],

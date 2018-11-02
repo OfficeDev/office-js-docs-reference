@@ -9091,6 +9091,25 @@ Office.AppointmentCompose.end:
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
+Office.AppointmentCompose.getAttachmentsAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var outputString = "";
+    item.getAttachmentsAsync(callback);  
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var _att = result.value [i];
+                outputString += "<BR>" + i + ". Name: ";
+                outputString += _att.name;
+                outputString += "<BR>ID: " + _att.id;
+                outputString += "<BR>contentType: " + _att.contentType;
+                outputString += "<BR>size: " + _att.size;
+                outputString += "<BR>attachmentType: " + _att.attachmentType;
+                outputString += "<BR>isInline: " + _att.isInline;
+            }
+        }
+    }
 Office.AppointmentCompose.getSelectedDataAsync:
   - |-
     // getting selected data
@@ -9614,6 +9633,62 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
+Office.InternetHeaders.getAsync:
+  - >-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
+    callback); 
+
+
+    function callback(asyncResult) { 
+        var dictionary = asyncResult.value; 
+        var header1_value = dictionary["header1"]; 
+    }
+Office.InternetHeaders.removeAsync:
+  - >-
+    Office.context.mailbox.item.internetHeaders.removeAsync(["header1",
+    "header2"]);
+Office.InternetHeaders.setAsync:
+  - >-
+    Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
+    "header2": "value2"});
+Office.Item.addHandlerAsync:
+  - >-
+    function myHandlerFunction(eventarg) { 
+        if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
+            var _att = eventarg.attachmentDetails; 
+            showMessage("Event Fired and Attachment Added!"); 
+            getAttachmentContentAsync(_att.id, options, callback); 
+        } 
+    } 
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
+Office.Item.getAttachmentContentAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var listOfAttachments = [];
+    item.getAttachmentsAsync(callback);
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var options = {asyncContext: {type: result.value[i].attachmentType}};
+                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        //parse string to be a url, an .eml file, or a base64 encoded string
+        if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+            //handle file attachment
+        }
+        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+            //handle item attachment
+        }
+        else {
+            //handle cloud attachment  
+        }
+    }
 Office.Item.getInitializationContextAsync:
   - |-
     // Get the initialization context (if present)
@@ -9950,6 +10025,25 @@ Office.MessageCompose.from:
 
     function callback(asyncResult) {
         var from = asyncResult.value;
+    }
+Office.MessageCompose.getAttachmentsAsync:
+  - |-
+    var item = Office.context.mailbox.item;
+    var outputString = "";
+    item.getAttachmentsAsync(callback);  
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var _att = result.value [i];
+                outputString += "<BR>" + i + ". Name: ";
+                outputString += _att.name;
+                outputString += "<BR>ID: " + _att.id;
+                outputString += "<BR>contentType: " + _att.contentType;
+                outputString += "<BR>size: " + _att.size;
+                outputString += "<BR>attachmentType: " + _att.attachmentType;
+                outputString += "<BR>isInline: " + _att.isInline;
+            }
+        }
     }
 Office.MessageCompose.getSelectedDataAsync:
   - |-
@@ -12101,7 +12195,7 @@ Word.ContentControlCollection.getByTag:
         await context.sync();
 
         for (let i = 0; i < contentControls.items.length; i++) {
-            contentControls.items[i].insertText("Fabrikam", "Replace");
+          contentControls.items[i].insertText("Fabrikam", "Replace");
         }
 
         await context.sync();
@@ -13002,33 +13096,20 @@ Word.Paragraph.insertParagraph:
     });
   - |-
     await Word.run(async (context) => {
-        // Insert first sentence. Then we adjust the formatting.
-        // Note that replace affects the calling object, in this case the entire document body.
-        // A similar method can also be used at the range level.
-        let firstSentence = context.document.body.insertText("This is some formatted text!", "Replace");
-        firstSentence.font.set({
-            name: "Courier New",
-            bold: true,
-            size: 18
-        });;
+      // Second sentence, let's insert it as a paragraph after the previously inserted one.
+      let secondSentence = context.document.body.insertParagraph(
+        "This is the first text with a custom style.",
+        "End"
+      );
+      secondSentence.font.set({
+        bold: false,
+        italic: true,
+        name: "Berlin Sans FB",
+        color: "blue",
+        size: 30
+      });
 
-        // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        let secondSentence = context.document.body.insertParagraph("This is other formatted text.", "End");
-        secondSentence.font.set({
-            bold: false,
-            italic: true,
-            name: 'Berlin Sans FB',
-            color: 'blue',
-            size: 30
-        });;
-
-        // You can also use pre-exsiting styles.
-        let lastSentence = context.document.body.insertParagraph("To be or not to be", "End");
-
-        // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use range.style = "name of your style";
-        lastSentence.styleBuiltIn = Word.Style.intenseReference;
-
-        await context.sync();
+      await context.sync();
     });
 Word.Paragraph.insertText:
   - |-
@@ -13310,15 +13391,19 @@ Word.Range.insertContentControl:
         let results = context.document.body.search("Contractor");
         results.load("font/bold");
 
+        // check to make sure we haven't added these content controls yet
+        let customerContentControls = context.document.contentControls.getByTag("customer");
+        customerContentControls.load("text");
         await context.sync();
 
+      if (customerContentControls.items.length === 0) {
         for (var i = 0; i < results.items.length; i++) { 
             results.items[i].font.bold = true;
             var cc = results.items[i].insertContentControl();
             cc.tag = "customer";  // This value is used in the next step of this sample.
-            cc.title = "Customer Name";
+            cc.title = "Customer Name " + i;
         }
-
+      }
         await context.sync();
     });
 Word.Range.insertFileFromBase64:
@@ -13739,10 +13824,10 @@ Word.Section.getFooter:
     });
   - |-
     await Word.run(async (context) => {
-        context.document.sections.getFirst()
-            .getFooter("Primary").insertParagraph("Confidential", "End");
+      context.document.sections.getFirst().getFooter("Primary")
+        .insertParagraph("This is a footer", "End");
 
-        await context.sync();
+      await context.sync();
     });
 Word.Section.getHeader:
   - |-
@@ -13784,10 +13869,10 @@ Word.Section.getHeader:
     });
   - |-
     await Word.run(async (context) => {
-        context.document.sections.getFirst()
-            .getHeader("Primary").insertText("This is a header", "Start");
+      context.document.sections.getFirst().getHeader("Primary")
+        .insertParagraph("This is a header", "End");
 
-        await context.sync();
+      await context.sync();
     });
 Word.Setting.delete:
   - |-
@@ -16250,7 +16335,7 @@ Word.Paragraph.getTextRanges:
 
         await context.sync();
 
-        //  Expands the range to the end of the paragraph to get all the complete sentences.
+        // Expands the range to the end of the paragraph to get all the complete sentences.
         let sentencesToTheEndOfParagraph = sentences.items[0].getRange()
             .expandTo(context.document.getSelection().paragraphs
                 .getFirst().getRange("End")).getTextRanges(["."], false /* Don't trim spaces*/);
@@ -16382,21 +16467,25 @@ Word.Paragraph.split:
 Word.Table.getCell:
   - |-
     await Word.run(async (context) => {
-        let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
-        firstCell.load("text");
+      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      firstCell.load("text");
 
-        await context.sync();
-        console.log("First cell text is " + firstCell.text);
+      await context.sync();
+      console.log("First cell text is " + firstCell.text);
     });
 Word.Body.insertTable:
   - |-
     await Word.run(async (context) => {
-        // We need a 2D array to hold the initial table values
-        let data = [["Apple", "Orange", "Pineapple"], ["Tokyo", "Beijing", "Seattle"]];
-        let table = context.document.body.insertTable(3, 3, "Start", data);
-        table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+      // We need a 2D array to hold the initial table values
+      let data = [
+        ["Tokyo", "Beijing", "Seattle"],
+        ["Apple", "Orange", "Pineapple"]
+      ];
+      let table = context.document.body.insertTable(2, 3, "Start", data);
+      table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+      table.styleFirstColumn = false;
 
-        await context.sync();
+      await context.sync();
     });
 Word.Paragraph.startNewList:
   - |-
@@ -16458,26 +16547,26 @@ Word.Document.properties:
 Word.Paragraph.set:
   - |-
     await Word.run(async (context) => {
-        const paragraph = context.document.body.paragraphs.getFirst();
-        paragraph.set({
-            leftIndent: 30,
-            font: {
-                bold: true,
-                color: "red"
-            }
-        });
+      const paragraph = context.document.body.paragraphs.getFirst();
+      paragraph.set({
+        leftIndent: 30,
+        font: {
+          bold: true,
+          color: "red"
+        }
+      });
 
-        await context.sync();
+      await context.sync();
     });
   - |-
     await Word.run(async (context) => {
-        const firstParagraph = context.document.body.paragraphs.getFirst();
-        const secondParagraph = firstParagraph.getNext();
-        firstParagraph.load("text, font/color, font/bold, leftIndent");
+      const firstParagraph = context.document.body.paragraphs.getFirst();
+      const secondParagraph = firstParagraph.getNext();
+      firstParagraph.load("text, font/color, font/bold, leftIndent");
 
-        await context.sync();
+      await context.sync();
 
-        secondParagraph.set(firstParagraph);
+      secondParagraph.set(firstParagraph);
 
-        await context.sync();
+      await context.sync();
     });

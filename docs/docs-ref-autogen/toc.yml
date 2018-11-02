@@ -550,6 +550,10 @@ items:
             items:
               - name: MailboxEnums
                 items:
+                  - name: AttachmentContentFormat
+                    uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+                  - name: AttachmentStatus
+                    uid: outlook.Office.MailboxEnums.AttachmentStatus
                   - name: AttachmentType
                     uid: outlook.Office.MailboxEnums.AttachmentType
                   - name: Days
@@ -582,6 +586,8 @@ items:
                 uid: outlook.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: outlook.Office.AppointmentRead
+              - name: AttachmentContent
+                uid: outlook.Office.AttachmentContent
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body
@@ -598,6 +604,8 @@ items:
                 uid: outlook.Office.Entities
               - name: From
                 uid: outlook.Office.From
+              - name: InternetHeaders
+                uid: outlook.Office.InternetHeaders
               - name: Item
                 uid: outlook.Office.Item
               - name: LocalClientTime
@@ -754,6 +762,8 @@ items:
                       Outlook_1_6.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_6.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_6.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_6.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -826,6 +836,8 @@ items:
                       Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_5.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_5.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_5.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -898,6 +910,8 @@ items:
                       Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_4.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_4.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_4.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -970,6 +984,8 @@ items:
                       Outlook_1_3.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_3.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_3.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_3.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -1039,6 +1055,8 @@ items:
                     uid: Outlook_1_2.Office.MailboxEnums.EntityType
                   - name: ItemType
                     uid: Outlook_1_2.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_2.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_2.Office.MailboxEnums.RecipientType
                   - name: ResponseType
@@ -1102,6 +1120,8 @@ items:
                     uid: Outlook_1_1.Office.MailboxEnums.EntityType
                   - name: ItemType
                     uid: Outlook_1_1.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_1.Office.MailboxEnums.OWAView
                   - name: RecipientType
                     uid: Outlook_1_1.Office.MailboxEnums.RecipientType
                   - name: ResponseType

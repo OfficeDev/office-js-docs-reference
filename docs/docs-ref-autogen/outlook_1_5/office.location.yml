@@ -6,11 +6,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Location
     fullName: Outlook_1_5.Office.Location
@@ -29,25 +29,25 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult) => void): void;`
+      `getAsync(callback: (result: AsyncResult<string>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: Outlook_1_5.Office.Location.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -62,9 +62,12 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. \[Api set: Mailbox 1.1\]
+            parameter of type Office.AsyncResult.
+
+
+            \[Api set: Mailbox 1.1\]
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<string>) => void'
   - uid: Outlook_1_5.Office.Location.setAsync
     summary: >-
       Sets the location of an appointment.
@@ -73,11 +76,11 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table><tr><td>[ Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[Applicable Outlook
+      <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 
@@ -94,7 +97,7 @@ items:
       `setAsync(location: string, options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(location: string, callback: (result: AsyncResult) => void): void;`
+      `setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setAsync(location, options, callback)'
     fullName: Outlook_1_5.Office.Location.setAsync
     langs:
@@ -102,8 +105,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult) => void):
-        void;
+        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -122,7 +125,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If setting the location fails, the asyncResult.error property will contain an
-            error code. \[Api set: Mailbox 1.1\]
+            parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will
+            contain an error code.
+
+
+            \[Api set: Mailbox 1.1\]
           type:
-            - '(result: AsyncResult) => void'
+            - '(result: AsyncResult<void>) => void'

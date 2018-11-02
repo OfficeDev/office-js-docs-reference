@@ -99,10 +99,10 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              context.document.sections.getFirst()
-                  .getFooter("Primary").insertParagraph("Confidential", "End");
+            context.document.sections.getFirst().getFooter("Primary")
+              .insertParagraph("This is a footer", "End");
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:
@@ -169,10 +169,10 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              context.document.sections.getFirst()
-                  .getHeader("Primary").insertText("This is a header", "Start");
+            context.document.sections.getFirst().getHeader("Primary")
+              .insertParagraph("This is a header", "End");
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:

@@ -37,6 +37,7 @@ items:
     children:
       - office.Office.EventType.ActiveViewChanged
       - office.Office.EventType.AppointmentTimeChanged
+      - office.Office.EventType.AttachmentsChanged
       - office.Office.EventType.BindingDataChanged
       - office.Office.EventType.BindingSelectionChanged
       - office.Office.EventType.DialogEventReceived
@@ -84,6 +85,17 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: AppointmentTimeChanged
     fullName: office.Office.EventType.AppointmentTimeChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.AttachmentsChanged
+    summary: |-
+      Triggers when an attachment is added to or removed from an item.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    isPreview: true
+    name: AttachmentsChanged
+    fullName: office.Office.EventType.AttachmentsChanged
     langs:
       - typeScript
     type: field
@@ -213,6 +225,7 @@ items:
       Triggers when the OfficeTheme is changed in Outlook.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    isPreview: true
     name: OfficeThemeChanged
     fullName: office.Office.EventType.OfficeThemeChanged
     langs:

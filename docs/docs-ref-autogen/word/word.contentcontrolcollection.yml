@@ -220,7 +220,7 @@ items:
               await context.sync();
 
               for (let i = 0; i < contentControls.items.length; i++) {
-                  contentControls.items[i].insertText("Fabrikam", "Replace");
+                contentControls.items[i].insertText("Fabrikam", "Replace");
               }
 
               await context.sync();

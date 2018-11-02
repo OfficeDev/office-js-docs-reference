@@ -25,6 +25,7 @@ items:
       - outlook.Office.Item.body
       - outlook.Office.Item.dateTimeCreated
       - outlook.Office.Item.dateTimeModifed
+      - outlook.Office.Item.getAttachmentContentAsync
       - outlook.Office.Item.getInitializationContextAsync
       - outlook.Office.Item.getSharedPropertiesAsync
       - outlook.Office.Item.itemType
@@ -39,7 +40,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -57,6 +59,23 @@ items:
 
       `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
       void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function myHandlerFunction(eventarg) { 
+          if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
+              var _att = eventarg.attachmentDetails; 
+              showMessage("Event Fired and Attachment Added!"); 
+              getAttachmentContentAsync(_att.id, options, callback); 
+          } 
+      } 
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.addHandlerAsync
     langs:
@@ -162,6 +181,97 @@ items:
       return:
         type:
           - Date
+  - uid: outlook.Office.Item.getAttachmentContentAsync
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an `Office.AttachmentContent` object.
+
+
+      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
+      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
+      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook Web App and OWA for Devices, the
+      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
+      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[ Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
+      or read</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      var listOfAttachments = [];
+
+      item.getAttachmentsAsync(callback);
+
+      function callback(result) {
+          if (result.value.length > 0) {
+              for (i = 0 ; i < result.value.length ; i++) {
+                  var options = {asyncContext: {type: result.value[i].attachmentType}};
+                  getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+              }
+          }
+      }
+
+
+      function handleAttachmentsCallback(result) {
+          //parse string to be a url, an .eml file, or a base64 encoded string
+          if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+              //handle file attachment
+          }
+          else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+              //handle item attachment
+          }
+          else {
+              //handle cloud attachment  
+          }
+      }
+
+      ```
+    isPreview: true
+    name: 'getAttachmentContentAsync(attachmentId, options, callback)'
+    fullName: outlook.Office.Item.getAttachmentContentAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.AttachmentContent>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment you want to get. The maximum length of the string is 100 characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
+            property will contain and error code with the reason for the failure.
+          type:
+            - '(result: AsyncResult<Office.AttachmentContent>) => void'
   - uid: outlook.Office.Item.getInitializationContextAsync
     summary: >-
       Gets initialization data passed when the add-in is [ activated by an actionable
@@ -500,7 +610,8 @@ items:
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` is also supported.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -533,7 +644,7 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: The event that should invoke the handler.
+          description: The event that should revoke the handler.
           type:
             - Office.EventType
         - id: handler
