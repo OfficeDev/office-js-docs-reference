@@ -8622,11 +8622,11 @@
           "members": {
             "addresses": {
               "kind": "property",
-              "signature": "addresses: Array<string>;",
+              "signature": "addresses: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -8664,11 +8664,11 @@
             },
             "emailAddresses": {
               "kind": "property",
-              "signature": "emailAddresses: Array<string>;",
+              "signature": "emailAddresses: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -8706,11 +8706,11 @@
             },
             "phoneNumbers": {
               "kind": "property",
-              "signature": "phoneNumbers: Array<PhoneNumber>;",
+              "signature": "phoneNumbers: PhoneNumber[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<PhoneNumber>",
+              "type": "PhoneNumber[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -8727,11 +8727,11 @@
             },
             "urls": {
               "kind": "property",
-              "signature": "urls: Array<string>;",
+              "signature": "urls: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {

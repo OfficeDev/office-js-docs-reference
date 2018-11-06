@@ -9678,15 +9678,18 @@ Office.Item.getAttachmentContentAsync:
     }
 
     function handleAttachmentsCallback(result) {
-        //parse string to be a url, an .eml file, or a base64 encoded string
+        // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
         if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
-            //handle file attachment
+            // handle file attachment
         }
         else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
-            //handle item attachment
+            // handle item attachment
+        }
+        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+            // handle .icalender attachment
         }
         else {
-            //handle cloud attachment  
+            // handle cloud attachment  
         }
     }
 Office.Item.getInitializationContextAsync:
@@ -16533,7 +16536,7 @@ Word.CustomPropertyCollection.items:
 
         await context.sync();
         for (var i = 0; i < properties.items.length; i++)
-            console.log("Property Name:" + properties.items[i].key + ";Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+            console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
     });
 Word.Document.properties:
   - |-

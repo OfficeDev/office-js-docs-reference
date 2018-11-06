@@ -126,10 +126,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'traceMessages: Array<string>;'
+      content: 'traceMessages: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
         description: |-
 
           #### Examples

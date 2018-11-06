@@ -46,10 +46,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cellFormat?: Array<RangeFormatConfiguration>;'
+      content: 'cellFormat?: RangeFormatConfiguration[];'
       return:
         type:
-          - Array<RangeFormatConfiguration>
+          - 'RangeFormatConfiguration[]'
   - uid: office.Office.SetSelectedDataOptions.coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     name: coercionType

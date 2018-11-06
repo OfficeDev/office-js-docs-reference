@@ -35,7 +35,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
+      content: 'add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;'
       return:
         type:
           - excel.Excel.Setting
@@ -60,7 +60,7 @@ items:
         - id: value
           description: The Value for the new setting.
           type:
-            - string | number | boolean | Date | Array<any> | any
+            - 'string | number | boolean | Date | any[] | any'
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.

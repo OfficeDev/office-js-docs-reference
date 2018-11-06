@@ -1023,6 +1023,10 @@ export declare namespace Office {
         *     <td>12007</td>
         *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
         *   </tr>
+        *   <tr>
+        *     <td>12009</td>
+        *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
+        *   </tr>
         * </table>
         * 
         * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the 
@@ -1200,7 +1204,7 @@ export declare namespace Office {
          * 
          * Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
          */
-        cellFormat?: Array<RangeFormatConfiguration>
+        cellFormat?: RangeFormatConfiguration[]
         /**
          * Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
          */
@@ -1208,7 +1212,7 @@ export declare namespace Office {
         /**
         * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
         */
-        columns?: Array<string>
+        columns?: string[]
         /**
         * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
         */
@@ -1322,7 +1326,7 @@ export declare namespace Office {
         /**
          * The names of the columns involved in the binding.
          */
-        columns?: Array<string>
+        columns?: string[]
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
@@ -1395,7 +1399,7 @@ export declare namespace Office {
          * 
          * Example: `[\{cells: Office.Table.Data, format: \{fontColor: "yellow"\}\}, \{cells: \{row: 3, column: 4\}, format: \{borderColor: "white", fontStyle: "bold"\}\}]`
          */
-        cellFormat?: Array<RangeFormatConfiguration>
+        cellFormat?: RangeFormatConfiguration[]
         /**
          * Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
          */
@@ -7568,7 +7572,7 @@ export declare namespace OfficeExtension {
          * If there was an error, this contains all trace messages that were executed before the error occurred. 
          * These messages can help you monitor the program execution sequence and detect the case of the error.
          */
-        traceMessages: Array<string>;
+        traceMessages: string[];
         /** Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`). */
         debugInfo: DebugInfo;
         /** Inner error, if applicable. */
