@@ -171,6 +171,8 @@ class APISet {
                             break;
                     }
 
+                    tableLine += newItemText + "|";
+
                     const firstSentenceIndex: number = field.comment.indexOf("* ") + 2;
                     let endIndex: number = field.comment.indexOf("\n", firstSentenceIndex);
                     if (endIndex === -1) {
@@ -178,8 +180,7 @@ class APISet {
                         endIndex = field.comment.indexOf("\*/");
                     }
 
-                    tableLine += newItemText + "|";
-                    tableLine += field.comment.substring(firstSentenceIndex, endIndex) + "|";
+                    tableLine += field.comment.substring(firstSentenceIndex, endIndex).trim() + "|";
                     output += tableLine + "\n";
                 });
             }
