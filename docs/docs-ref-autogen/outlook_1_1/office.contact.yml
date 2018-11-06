@@ -39,10 +39,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'addresses: Array<string>;'
+      content: 'addresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: Outlook_1_1.Office.Contact.businessName
     summary: A string containing the name of the business associated with the contact. Nullable.
     name: businessName
@@ -63,10 +63,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'emailAddresses: Array<string>;'
+      content: 'emailAddresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: Outlook_1_1.Office.Contact.personName
     summary: A string containing the name of the person associated with the contact. Nullable.
     name: personName
@@ -87,10 +87,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'phoneNumbers: Array<PhoneNumber>;'
+      content: 'phoneNumbers: PhoneNumber[];'
       return:
         type:
-          - Array<PhoneNumber>
+          - 'PhoneNumber[]'
   - uid: Outlook_1_1.Office.Contact.urls
     summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     name: urls
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'urls: Array<string>;'
+      content: 'urls: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
