@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotFieldData
     summary: An interface describing the data returned by calling "pivotField.toJSON()".
     name: Excel.Interfaces.PivotFieldData
-    fullName: excel.Excel.Interfaces.PivotFieldData
+    fullName: Excel.Interfaces.PivotFieldData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.PivotFieldData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items
-    fullName: excel.Excel.Interfaces.PivotFieldData.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.PivotFieldData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
-    fullName: excel.Excel.Interfaces.PivotFieldData.showAllItems
+    fullName: showAllItems
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
-    fullName: excel.Excel.Interfaces.PivotFieldData.subtotals
+    fullName: subtotals
     langs:
       - typeScript
     type: property

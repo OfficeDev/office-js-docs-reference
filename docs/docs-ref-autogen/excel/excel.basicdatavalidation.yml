@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BasicDataValidation
-    fullName: excel.Excel.BasicDataValidation
+    fullName: Excel.BasicDataValidation
     langs:
       - typeScript
     type: interface
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
-    fullName: excel.Excel.BasicDataValidation.formula1
+    fullName: formula1
     langs:
       - typeScript
     type: property
@@ -44,7 +44,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
-    fullName: excel.Excel.BasicDataValidation.formula2
+    fullName: formula2
     langs:
       - typeScript
     type: property
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
-    fullName: excel.Excel.BasicDataValidation.operator
+    fullName: operator
     langs:
       - typeScript
     type: property

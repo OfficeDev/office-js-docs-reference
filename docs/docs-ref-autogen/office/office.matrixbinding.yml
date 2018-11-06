@@ -25,7 +25,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
       </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: Office.MatrixBinding
-    fullName: office.Office.MatrixBinding
+    fullName: Office.MatrixBinding
     langs:
       - typeScript
     type: interface
@@ -55,7 +55,7 @@ items:
       }
       ```
     name: columnCount
-    fullName: office.Office.MatrixBinding.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
       }
       ```
     name: rowCount
-    fullName: office.Office.MatrixBinding.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property

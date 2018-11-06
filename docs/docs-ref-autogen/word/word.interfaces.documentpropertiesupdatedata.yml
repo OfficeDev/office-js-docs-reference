@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.DocumentPropertiesUpdateData
     summary: 'An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })".'
     name: Word.Interfaces.DocumentPropertiesUpdateData
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData
+    fullName: Word.Interfaces.DocumentPropertiesUpdateData
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: author
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.author
+    fullName: author
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: category
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.category
+    fullName: category
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: comments
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.comments
+    fullName: comments
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: company
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.company
+    fullName: company
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: format
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: keywords
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.keywords
+    fullName: keywords
     langs:
       - typeScript
     type: property
@@ -114,7 +114,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: manager
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.manager
+    fullName: manager
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subject
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -144,7 +144,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: title
-    fullName: word.Word.Interfaces.DocumentPropertiesUpdateData.title
+    fullName: title
     langs:
       - typeScript
     type: property

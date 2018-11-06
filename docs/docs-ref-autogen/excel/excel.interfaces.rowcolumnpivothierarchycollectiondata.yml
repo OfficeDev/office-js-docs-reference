@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     summary: An interface describing the data returned by calling "rowColumnPivotHierarchyCollection.toJSON()".
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
-    fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items
     name: items
-    fullName: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

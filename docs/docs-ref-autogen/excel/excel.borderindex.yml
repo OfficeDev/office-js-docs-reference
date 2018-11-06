@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.BorderIndex
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BorderIndex
-    fullName: excel.Excel.BorderIndex
+    fullName: Excel.BorderIndex
     langs:
       - typeScript
     type: enum
@@ -19,56 +19,56 @@ items:
       - excel.Excel.BorderIndex.insideVertical
   - uid: excel.Excel.BorderIndex.diagonalDown
     name: diagonalDown
-    fullName: excel.Excel.BorderIndex.diagonalDown
+    fullName: diagonalDown
     langs:
       - typeScript
     type: field
     numericValue: '"DiagonalDown"'
   - uid: excel.Excel.BorderIndex.diagonalUp
     name: diagonalUp
-    fullName: excel.Excel.BorderIndex.diagonalUp
+    fullName: diagonalUp
     langs:
       - typeScript
     type: field
     numericValue: '"DiagonalUp"'
   - uid: excel.Excel.BorderIndex.edgeBottom
     name: edgeBottom
-    fullName: excel.Excel.BorderIndex.edgeBottom
+    fullName: edgeBottom
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeBottom"'
   - uid: excel.Excel.BorderIndex.edgeLeft
     name: edgeLeft
-    fullName: excel.Excel.BorderIndex.edgeLeft
+    fullName: edgeLeft
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeLeft"'
   - uid: excel.Excel.BorderIndex.edgeRight
     name: edgeRight
-    fullName: excel.Excel.BorderIndex.edgeRight
+    fullName: edgeRight
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeRight"'
   - uid: excel.Excel.BorderIndex.edgeTop
     name: edgeTop
-    fullName: excel.Excel.BorderIndex.edgeTop
+    fullName: edgeTop
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeTop"'
   - uid: excel.Excel.BorderIndex.insideHorizontal
     name: insideHorizontal
-    fullName: excel.Excel.BorderIndex.insideHorizontal
+    fullName: insideHorizontal
     langs:
       - typeScript
     type: field
     numericValue: '"InsideHorizontal"'
   - uid: excel.Excel.BorderIndex.insideVertical
     name: insideVertical
-    fullName: excel.Excel.BorderIndex.insideVertical
+    fullName: insideVertical
     langs:
       - typeScript
     type: field

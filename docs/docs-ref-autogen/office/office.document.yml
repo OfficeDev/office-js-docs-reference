@@ -4,7 +4,7 @@ items:
     summary: An abstract class that represents the document the add-in is interacting with.
     remarks: '<table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr></table>'
     name: Office.Document
-    fullName: office.Office.Document
+    fullName: Office.Document
     langs:
       - typeScript
     type: interface
@@ -357,7 +357,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: office.Office.Document.addHandlerAsync
+    fullName: addHandlerAsync
     langs:
       - typeScript
     type: method
@@ -441,7 +441,7 @@ items:
 
       ```
     name: bindings
-    fullName: office.Office.Document.bindings
+    fullName: bindings
     langs:
       - typeScript
     type: property
@@ -488,7 +488,7 @@ items:
 
       ```
     name: customXmlParts
-    fullName: office.Office.Document.customXmlParts
+    fullName: customXmlParts
     langs:
       - typeScript
     type: property
@@ -541,7 +541,7 @@ items:
 
       ```
     name: 'getActiveViewAsync(options, callback)'
-    fullName: office.Office.Document.getActiveViewAsync
+    fullName: getActiveViewAsync
     langs:
       - typeScript
     type: method
@@ -713,7 +713,7 @@ items:
 
       ```
     name: 'getFileAsync(fileType, options, callback)'
-    fullName: office.Office.Document.getFileAsync
+    fullName: getFileAsync
     langs:
       - typeScript
     type: method
@@ -796,7 +796,7 @@ items:
 
       ```
     name: 'getFilePropertiesAsync(options, callback)'
-    fullName: office.Office.Document.getFilePropertiesAsync
+    fullName: getFilePropertiesAsync
     langs:
       - typeScript
     type: method
@@ -929,7 +929,7 @@ items:
 
       ```
     name: 'getMaxResourceIndexAsync(options, callback)'
-    fullName: office.Office.Document.getMaxResourceIndexAsync
+    fullName: getMaxResourceIndexAsync
     langs:
       - typeScript
     type: method
@@ -1063,7 +1063,7 @@ items:
 
       ```
     name: 'getMaxTaskIndexAsync(options, callback)'
-    fullName: office.Office.Document.getMaxTaskIndexAsync
+    fullName: getMaxTaskIndexAsync
     langs:
       - typeScript
     type: method
@@ -1181,7 +1181,7 @@ items:
 
       ```
     name: 'getProjectFieldAsync(fieldId, options, callback)'
-    fullName: office.Office.Document.getProjectFieldAsync
+    fullName: getProjectFieldAsync
     langs:
       - typeScript
     type: method
@@ -1318,7 +1318,7 @@ items:
 
       ```
     name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
-    fullName: office.Office.Document.getResourceByIndexAsync
+    fullName: getResourceByIndexAsync
     langs:
       - typeScript
     type: method
@@ -1466,7 +1466,7 @@ items:
 
       ```
     name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
-    fullName: office.Office.Document.getResourceFieldAsync
+    fullName: getResourceFieldAsync
     langs:
       - typeScript
     type: method
@@ -1670,7 +1670,7 @@ items:
 
       ```
     name: 'getSelectedDataAsync(coerciontype, options, callback)'
-    fullName: office.Office.Document.getSelectedDataAsync
+    fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -1819,7 +1819,7 @@ items:
 
       ```
     name: 'getSelectedResourceAsync(options, callback)'
-    fullName: office.Office.Document.getSelectedResourceAsync
+    fullName: getSelectedResourceAsync
     langs:
       - typeScript
     type: method
@@ -1941,7 +1941,7 @@ items:
 
       ```
     name: 'getSelectedTaskAsync(options, callback)'
-    fullName: office.Office.Document.getSelectedTaskAsync
+    fullName: getSelectedTaskAsync
     langs:
       - typeScript
     type: method
@@ -2037,7 +2037,7 @@ items:
 
       ```
     name: 'getSelectedViewAsync(options, callback)'
-    fullName: office.Office.Document.getSelectedViewAsync
+    fullName: getSelectedViewAsync
     langs:
       - typeScript
     type: method
@@ -2160,7 +2160,7 @@ items:
 
       ```
     name: 'getTaskAsync(taskId, options, callback)'
-    fullName: office.Office.Document.getTaskAsync
+    fullName: getTaskAsync
     langs:
       - typeScript
     type: method
@@ -2302,7 +2302,7 @@ items:
 
       ```
     name: 'getTaskByIndexAsync(taskIndex, options, callback)'
-    fullName: office.Office.Document.getTaskByIndexAsync
+    fullName: getTaskByIndexAsync
     langs:
       - typeScript
     type: method
@@ -2445,7 +2445,7 @@ items:
 
       ```
     name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
-    fullName: office.Office.Document.getTaskFieldAsync
+    fullName: getTaskFieldAsync
     langs:
       - typeScript
     type: method
@@ -2494,7 +2494,7 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
       browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getWSSUrlAsync(options, callback)'
-    fullName: office.Office.Document.getWSSUrlAsync
+    fullName: getWSSUrlAsync
     langs:
       - typeScript
     type: method
@@ -2696,7 +2696,7 @@ items:
 
       ```
     name: 'goToByIdAsync(id, goToType, options, callback)'
-    fullName: office.Office.Document.goToByIdAsync
+    fullName: goToByIdAsync
     langs:
       - typeScript
     type: method
@@ -2809,7 +2809,7 @@ items:
 
       ```
     name: mode
-    fullName: office.Office.Document.mode
+    fullName: mode
     langs:
       - typeScript
     type: property
@@ -2931,7 +2931,7 @@ items:
 
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: office.Office.Document.removeHandlerAsync
+    fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
@@ -3073,7 +3073,7 @@ items:
 
       ```
     name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
-    fullName: office.Office.Document.setResourceFieldAsync
+    fullName: setResourceFieldAsync
     langs:
       - typeScript
     type: method
@@ -3323,7 +3323,7 @@ items:
 
       ```
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: office.Office.Document.setSelectedDataAsync
+    fullName: setSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -3500,7 +3500,7 @@ items:
 
       ```
     name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
-    fullName: office.Office.Document.setTaskFieldAsync
+    fullName: setTaskFieldAsync
     langs:
       - typeScript
     type: method
@@ -3557,7 +3557,7 @@ items:
       PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y
       </td><td> Y </td><td> Y </td></tr> </table>
     name: settings
-    fullName: office.Office.Document.settings
+    fullName: settings
     langs:
       - typeScript
     type: property
@@ -3604,7 +3604,7 @@ items:
 
       ```
     name: url
-    fullName: office.Office.Document.url
+    fullName: url
     langs:
       - typeScript
     type: property

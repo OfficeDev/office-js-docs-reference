@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TextConditionalFormat
-    fullName: excel.Excel.TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.TextConditionalFormat.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.TextConditionalFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -91,7 +91,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.TextConditionalFormat.rule
+    fullName: rule
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
           ```
   - uid: excel.Excel.TextConditionalFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.TextConditionalFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

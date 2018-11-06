@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartPlotAreaPosition
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartPlotAreaPosition
-    fullName: excel.Excel.ChartPlotAreaPosition
+    fullName: Excel.ChartPlotAreaPosition
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.ChartPlotAreaPosition.custom
   - uid: excel.Excel.ChartPlotAreaPosition.automatic
     name: automatic
-    fullName: excel.Excel.ChartPlotAreaPosition.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.ChartPlotAreaPosition.custom
     name: custom
-    fullName: excel.Excel.ChartPlotAreaPosition.custom
+    fullName: custom
     langs:
       - typeScript
     type: field

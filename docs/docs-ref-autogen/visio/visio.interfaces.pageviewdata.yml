@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.PageViewData
     summary: An interface describing the data returned by calling "pageView.toJSON()".
     name: Visio.Interfaces.PageViewData
-    fullName: visio.Visio.Interfaces.PageViewData
+    fullName: Visio.Interfaces.PageViewData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: zoom
-    fullName: visio.Visio.Interfaces.PageViewData.zoom
+    fullName: zoom
     langs:
       - typeScript
     type: property

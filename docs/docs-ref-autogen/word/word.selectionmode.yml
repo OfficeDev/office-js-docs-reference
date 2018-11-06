@@ -3,7 +3,7 @@ items:
   - uid: word.Word.SelectionMode
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.SelectionMode
-    fullName: word.Word.SelectionMode
+    fullName: Word.SelectionMode
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - word.Word.SelectionMode.start
   - uid: word.Word.SelectionMode.end
     name: end
-    fullName: word.Word.SelectionMode.end
+    fullName: end
     langs:
       - typeScript
     type: field
     numericValue: '"End"'
   - uid: word.Word.SelectionMode.select
     name: select
-    fullName: word.Word.SelectionMode.select
+    fullName: select
     langs:
       - typeScript
     type: field
     numericValue: '"Select"'
   - uid: word.Word.SelectionMode.start
     name: start
-    fullName: word.Word.SelectionMode.start
+    fullName: start
     langs:
       - typeScript
     type: field

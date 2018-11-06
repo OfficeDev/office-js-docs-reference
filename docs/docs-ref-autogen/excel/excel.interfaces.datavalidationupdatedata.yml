@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.DataValidationUpdateData
     summary: 'An interface for updating data on the DataValidation object, for use in "dataValidation.set({ ... })".'
     name: Excel.Interfaces.DataValidationUpdateData
-    fullName: excel.Excel.Interfaces.DataValidationUpdateData
+    fullName: Excel.Interfaces.DataValidationUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
-    fullName: excel.Excel.Interfaces.DataValidationUpdateData.errorAlert
+    fullName: errorAlert
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
-    fullName: excel.Excel.Interfaces.DataValidationUpdateData.ignoreBlanks
+    fullName: ignoreBlanks
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
-    fullName: excel.Excel.Interfaces.DataValidationUpdateData.prompt
+    fullName: prompt
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.DataValidationUpdateData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

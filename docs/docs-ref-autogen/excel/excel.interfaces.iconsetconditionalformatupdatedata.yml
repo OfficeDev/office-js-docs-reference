@@ -5,7 +5,7 @@ items:
       An interface for updating data on the IconSetConditionalFormat object, for use in "iconSetConditionalFormat.set({
       ... })".
     name: Excel.Interfaces.IconSetConditionalFormatUpdateData
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reverseIconOrder
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
+    fullName: reverseIconOrder
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showIconOnly
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
+    fullName: showIconOnly
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
+    fullName: style
     langs:
       - typeScript
     type: property

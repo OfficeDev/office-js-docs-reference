@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Application
-    fullName: excel.Excel.Application
+    fullName: Excel.Application
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
-    fullName: excel.Excel.Application.calculate
+    fullName: calculate
     langs:
       - typeScript
     type: method
@@ -65,7 +65,7 @@ items:
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
-    fullName: excel.Excel.Application.calculationMode
+    fullName: calculationMode
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.Application.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -136,7 +136,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
-    fullName: excel.Excel.Application.suspendApiCalculationUntilNextSync
+    fullName: suspendApiCalculationUntilNextSync
     langs:
       - typeScript
     type: method
@@ -148,7 +148,7 @@ items:
         description: ''
   - uid: excel.Excel.Application.toJSON
     name: toJSON()
-    fullName: excel.Excel.Application.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

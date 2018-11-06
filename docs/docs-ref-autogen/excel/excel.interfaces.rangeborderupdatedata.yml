@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData
     summary: 'An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })".'
     name: Excel.Interfaces.RangeBorderUpdateData
-    fullName: excel.Excel.Interfaces.RangeBorderUpdateData
+    fullName: Excel.Interfaces.RangeBorderUpdateData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.RangeBorderUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.RangeBorderUpdateData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.Interfaces.RangeBorderUpdateData.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisData
     summary: An interface describing the data returned by calling "inkAnalysis.toJSON()".
     name: OneNote.Interfaces.InkAnalysisData
-    fullName: onenote.OneNote.Interfaces.InkAnalysisData
+    fullName: OneNote.Interfaces.InkAnalysisData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.InkAnalysisData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: page
-    fullName: onenote.OneNote.Interfaces.InkAnalysisData.page
+    fullName: page
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
-    fullName: onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property

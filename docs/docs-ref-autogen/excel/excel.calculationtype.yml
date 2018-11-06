@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.CalculationType
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.CalculationType
-    fullName: excel.Excel.CalculationType
+    fullName: Excel.CalculationType
     langs:
       - typeScript
     type: enum
@@ -15,7 +15,7 @@ items:
   - uid: excel.Excel.CalculationType.full
     summary: This will mark all cells as dirty and then recalculate them.
     name: full
-    fullName: excel.Excel.CalculationType.full
+    fullName: full
     langs:
       - typeScript
     type: field
@@ -23,7 +23,7 @@ items:
   - uid: excel.Excel.CalculationType.fullRebuild
     summary: 'This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.'
     name: fullRebuild
-    fullName: excel.Excel.CalculationType.fullRebuild
+    fullName: fullRebuild
     langs:
       - typeScript
     type: field
@@ -33,7 +33,7 @@ items:
       Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells
       programmatically marked as dirty.
     name: recalculate
-    fullName: excel.Excel.CalculationType.recalculate
+    fullName: recalculate
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ContentControlType
-    fullName: word.Word.ContentControlType
+    fullName: Word.ContentControlType
     langs:
       - typeScript
     type: enum
@@ -31,70 +31,70 @@ items:
       - word.Word.ContentControlType.unknown
   - uid: word.Word.ContentControlType.buildingBlockGallery
     name: buildingBlockGallery
-    fullName: word.Word.ContentControlType.buildingBlockGallery
+    fullName: buildingBlockGallery
     langs:
       - typeScript
     type: field
     numericValue: '"BuildingBlockGallery"'
   - uid: word.Word.ContentControlType.checkBox
     name: checkBox
-    fullName: word.Word.ContentControlType.checkBox
+    fullName: checkBox
     langs:
       - typeScript
     type: field
     numericValue: '"CheckBox"'
   - uid: word.Word.ContentControlType.comboBox
     name: comboBox
-    fullName: word.Word.ContentControlType.comboBox
+    fullName: comboBox
     langs:
       - typeScript
     type: field
     numericValue: '"ComboBox"'
   - uid: word.Word.ContentControlType.datePicker
     name: datePicker
-    fullName: word.Word.ContentControlType.datePicker
+    fullName: datePicker
     langs:
       - typeScript
     type: field
     numericValue: '"DatePicker"'
   - uid: word.Word.ContentControlType.dropDownList
     name: dropDownList
-    fullName: word.Word.ContentControlType.dropDownList
+    fullName: dropDownList
     langs:
       - typeScript
     type: field
     numericValue: '"DropDownList"'
   - uid: word.Word.ContentControlType.picture
     name: picture
-    fullName: word.Word.ContentControlType.picture
+    fullName: picture
     langs:
       - typeScript
     type: field
     numericValue: '"Picture"'
   - uid: word.Word.ContentControlType.plainText
     name: plainText
-    fullName: word.Word.ContentControlType.plainText
+    fullName: plainText
     langs:
       - typeScript
     type: field
     numericValue: '"PlainText"'
   - uid: word.Word.ContentControlType.plainTextInline
     name: plainTextInline
-    fullName: word.Word.ContentControlType.plainTextInline
+    fullName: plainTextInline
     langs:
       - typeScript
     type: field
     numericValue: '"PlainTextInline"'
   - uid: word.Word.ContentControlType.plainTextParagraph
     name: plainTextParagraph
-    fullName: word.Word.ContentControlType.plainTextParagraph
+    fullName: plainTextParagraph
     langs:
       - typeScript
     type: field
     numericValue: '"PlainTextParagraph"'
   - uid: word.Word.ContentControlType.repeatingSection
     name: repeatingSection
-    fullName: word.Word.ContentControlType.repeatingSection
+    fullName: repeatingSection
     langs:
       - typeScript
     type: field
@@ -102,21 +102,21 @@ items:
   - uid: word.Word.ContentControlType.richText
     summary: Identifies a rich text content control.
     name: richText
-    fullName: word.Word.ContentControlType.richText
+    fullName: richText
     langs:
       - typeScript
     type: field
     numericValue: '"RichText"'
   - uid: word.Word.ContentControlType.richTextInline
     name: richTextInline
-    fullName: word.Word.ContentControlType.richTextInline
+    fullName: richTextInline
     langs:
       - typeScript
     type: field
     numericValue: '"RichTextInline"'
   - uid: word.Word.ContentControlType.richTextParagraphs
     name: richTextParagraphs
-    fullName: word.Word.ContentControlType.richTextParagraphs
+    fullName: richTextParagraphs
     langs:
       - typeScript
     type: field
@@ -124,7 +124,7 @@ items:
   - uid: word.Word.ContentControlType.richTextTable
     summary: Contains a whole table.
     name: richTextTable
-    fullName: word.Word.ContentControlType.richTextTable
+    fullName: richTextTable
     langs:
       - typeScript
     type: field
@@ -132,7 +132,7 @@ items:
   - uid: word.Word.ContentControlType.richTextTableCell
     summary: Contains a whole cell.
     name: richTextTableCell
-    fullName: word.Word.ContentControlType.richTextTableCell
+    fullName: richTextTableCell
     langs:
       - typeScript
     type: field
@@ -140,14 +140,14 @@ items:
   - uid: word.Word.ContentControlType.richTextTableRow
     summary: Contains a whole row.
     name: richTextTableRow
-    fullName: word.Word.ContentControlType.richTextTableRow
+    fullName: richTextTableRow
     langs:
       - typeScript
     type: field
     numericValue: '"RichTextTableRow"'
   - uid: word.Word.ContentControlType.unknown
     name: unknown
-    fullName: word.Word.ContentControlType.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field

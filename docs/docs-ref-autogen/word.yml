@@ -122,7 +122,7 @@ items:
       Executes a batch script that performs actions on the Word object model, using the RequestContext of
       previously-created API objects.
     name: 'run(objects, batch)'
-    fullName: word.Word.run
+    fullName: Word.run
     langs:
       - typeScript
     type: function

@@ -3,7 +3,7 @@ items:
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo
     summary: Request URL and headers
     name: OfficeExtension.RequestUrlAndHeaderInfo
-    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo
+    fullName: OfficeExtension.RequestUrlAndHeaderInfo
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo.headers
     summary: Request headers
     name: headers
-    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo.headers
+    fullName: headers
     langs:
       - typeScript
     type: property
@@ -29,7 +29,7 @@ items:
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo.url
     summary: Request URL
     name: url
-    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo.url
+    fullName: url
     langs:
       - typeScript
     type: property

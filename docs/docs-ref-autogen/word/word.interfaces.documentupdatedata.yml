@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.DocumentUpdateData
     summary: 'An interface for updating data on the Document object, for use in "document.set({ ... })".'
     name: Word.Interfaces.DocumentUpdateData
-    fullName: word.Word.Interfaces.DocumentUpdateData
+    fullName: Word.Interfaces.DocumentUpdateData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: allowCloseOnUntitled
-    fullName: word.Word.Interfaces.DocumentUpdateData.allowCloseOnUntitled
+    fullName: allowCloseOnUntitled
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
-    fullName: word.Word.Interfaces.DocumentUpdateData.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: properties
-    fullName: word.Word.Interfaces.DocumentUpdateData.properties
+    fullName: properties
     langs:
       - typeScript
     type: property

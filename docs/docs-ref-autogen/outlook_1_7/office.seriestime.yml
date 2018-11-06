@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.SeriesTime
-    fullName: Outlook_1_7.Office.SeriesTime
+    fullName: Office.SeriesTime
     langs:
       - typeScript
     type: interface
@@ -43,7 +43,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: getDuration()
-    fullName: Outlook_1_7.Office.SeriesTime.getDuration
+    fullName: getDuration
     langs:
       - typeScript
     type: method
@@ -68,7 +68,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: getEndDate()
-    fullName: Outlook_1_7.Office.SeriesTime.getEndDate
+    fullName: getEndDate
     langs:
       - typeScript
     type: method
@@ -94,7 +94,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: getEndTime()
-    fullName: Outlook_1_7.Office.SeriesTime.getEndTime
+    fullName: getEndTime
     langs:
       - typeScript
     type: method
@@ -119,7 +119,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: getStartDate()
-    fullName: Outlook_1_7.Office.SeriesTime.getStartDate
+    fullName: getStartDate
     langs:
       - typeScript
     type: method
@@ -145,7 +145,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: getStartTime()
-    fullName: Outlook_1_7.Office.SeriesTime.getStartTime
+    fullName: getStartTime
     langs:
       - typeScript
     type: method
@@ -170,7 +170,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: setDuration(minutes)
-    fullName: Outlook_1_7.Office.SeriesTime.setDuration
+    fullName: setDuration
     langs:
       - typeScript
     type: method
@@ -208,7 +208,7 @@ items:
       `setEndDate(date: string): void;` (Where date is the end date of the recurring appointment series represented in
       the [ ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
     name: 'setEndDate(year, month, day)'
-    fullName: Outlook_1_7.Office.SeriesTime.setEndDate
+    fullName: setEndDate
     langs:
       - typeScript
     type: method
@@ -256,7 +256,7 @@ items:
       `setStartDate(date: string): void;` (Where date is the start date of the recurring appointment series represented
       in the [ ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
     name: 'setStartDate(year, month, day)'
-    fullName: Outlook_1_7.Office.SeriesTime.setStartDate
+    fullName: setStartDate
     langs:
       - typeScript
     type: method
@@ -306,7 +306,7 @@ items:
       `setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard
       datetime string format: "THH:mm:ss:mmm").
     name: 'setStartTime(hours, minutes)'
-    fullName: Outlook_1_7.Office.SeriesTime.setStartTime
+    fullName: setStartTime
     langs:
       - typeScript
     type: method

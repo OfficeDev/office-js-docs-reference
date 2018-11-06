@@ -3,7 +3,7 @@ items:
   - uid: office.Office.SetSelectedDataOptions
     summary: Provides options for how to insert data to the selection.
     name: Office.SetSelectedDataOptions
-    fullName: office.Office.SetSelectedDataOptions
+    fullName: Office.SetSelectedDataOptions
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.SetSelectedDataOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
       Example: `[\{cells: Office.Table.Data, format: \{fontColor: "yellow"\}\}, \{cells: \{row: 3, column: 4\}, format:
       \{borderColor: "white", fontStyle: "bold"\}\}]`
     name: cellFormat
-    fullName: office.Office.SetSelectedDataOptions.cellFormat
+    fullName: cellFormat
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
   - uid: office.Office.SetSelectedDataOptions.coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     name: coercionType
-    fullName: office.Office.SetSelectedDataOptions.coercionType
+    fullName: coercionType
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
       provided, the image will be resized accordingly. If neither the image height or width is provided, the default
       image size and aspect ratio will be used. This value is in points.
     name: imageHeight
-    fullName: office.Office.SetSelectedDataOptions.imageHeight
+    fullName: imageHeight
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
       slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word.
       This value is in points.
     name: imageLeft
-    fullName: office.Office.SetSelectedDataOptions.imageLeft
+    fullName: imageLeft
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
       for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This
       value is in points.
     name: imageTop
-    fullName: office.Office.SetSelectedDataOptions.imageTop
+    fullName: imageTop
     langs:
       - typeScript
     type: property
@@ -115,7 +115,7 @@ items:
       provided, the image will be resized accordingly. If neither the image height or width is provided, the default
       image size and aspect ratio will be used. This value is in points.
     name: imageWidth
-    fullName: office.Office.SetSelectedDataOptions.imageWidth
+    fullName: imageWidth
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
       row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
     name: tableOptions
-    fullName: office.Office.SetSelectedDataOptions.tableOptions
+    fullName: tableOptions
     langs:
       - typeScript
     type: property

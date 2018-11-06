@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.SearchOptions
-    fullName: word.Word.SearchOptions
+    fullName: Word.SearchOptions
     langs:
       - typeScript
     type: class
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignorePunct
-    fullName: word.Word.SearchOptions.ignorePunct
+    fullName: ignorePunct
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignoreSpace
-    fullName: word.Word.SearchOptions.ignoreSpace
+    fullName: ignoreSpace
     langs:
       - typeScript
     type: property
@@ -246,7 +246,7 @@ items:
 
       ```
     name: load(option)
-    fullName: word.Word.SearchOptions.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -269,7 +269,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchCase
-    fullName: word.Word.SearchOptions.matchCase
+    fullName: matchCase
     langs:
       - typeScript
     type: property
@@ -286,7 +286,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchPrefix
-    fullName: word.Word.SearchOptions.matchPrefix
+    fullName: matchPrefix
     langs:
       - typeScript
     type: property
@@ -303,7 +303,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchSuffix
-    fullName: word.Word.SearchOptions.matchSuffix
+    fullName: matchSuffix
     langs:
       - typeScript
     type: property
@@ -320,7 +320,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWholeWord
-    fullName: word.Word.SearchOptions.matchWholeWord
+    fullName: matchWholeWord
     langs:
       - typeScript
     type: property
@@ -337,7 +337,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWildcards
-    fullName: word.Word.SearchOptions.matchWildcards
+    fullName: matchWildcards
     langs:
       - typeScript
     type: property
@@ -348,7 +348,7 @@ items:
           - boolean
   - uid: word.Word.SearchOptions.matchWildCards
     name: matchWildCards
-    fullName: word.Word.SearchOptions.matchWildCards
+    fullName: matchWildCards
     langs:
       - typeScript
     type: property
@@ -360,7 +360,7 @@ items:
   - uid: word.Word.SearchOptions.newObject
     summary: Create a new instance of Word.SearchOptions object
     name: newObject(context)
-    fullName: word.Word.SearchOptions.newObject
+    fullName: newObject
     langs:
       - typeScript
     type: method
@@ -377,7 +377,7 @@ items:
             - office.OfficeExtension.ClientRequestContext
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
-    fullName: word.Word.SearchOptions.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

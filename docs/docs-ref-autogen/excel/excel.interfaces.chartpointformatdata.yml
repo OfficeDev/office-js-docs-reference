@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartPointFormatData
     summary: An interface describing the data returned by calling "chartPointFormat.toJSON()".
     name: Excel.Interfaces.ChartPointFormatData
-    fullName: excel.Excel.Interfaces.ChartPointFormatData
+    fullName: Excel.Interfaces.ChartPointFormatData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
-    fullName: excel.Excel.Interfaces.ChartPointFormatData.border
+    fullName: border
     langs:
       - typeScript
     type: property

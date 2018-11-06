@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ColorScaleConditionalFormat object, for use in
       "colorScaleConditionalFormat.set({ ... })".
     name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-    fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property

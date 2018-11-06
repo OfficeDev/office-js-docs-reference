@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTitleFormatUpdateData
     summary: 'An interface for updating data on the ChartTitleFormat object, for use in "chartTitleFormat.set({ ... })".'
     name: Excel.Interfaces.ChartTitleFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartTitleFormatUpdateData
+    fullName: Excel.Interfaces.ChartTitleFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
-    fullName: excel.Excel.Interfaces.ChartTitleFormatUpdateData.border
+    fullName: border
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.ChartTitleFormatUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property

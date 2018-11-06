@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeView
-    fullName: excel.Excel.RangeView
+    fullName: Excel.RangeView
     langs:
       - typeScript
     type: class
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellAddresses
-    fullName: excel.Excel.RangeView.cellAddresses
+    fullName: cellAddresses
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
-    fullName: excel.Excel.RangeView.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
-    fullName: excel.Excel.RangeView.formulas
+    fullName: formulas
     langs:
       - typeScript
     type: property
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
-    fullName: excel.Excel.RangeView.formulasLocal
+    fullName: formulasLocal
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
-    fullName: excel.Excel.RangeView.formulasR1C1
+    fullName: formulasR1C1
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: excel.Excel.RangeView.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -128,7 +128,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.RangeView.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -156,7 +156,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.RangeView.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -177,7 +177,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.RangeView.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
-    fullName: excel.Excel.RangeView.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -207,7 +207,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
-    fullName: excel.Excel.RangeView.rows
+    fullName: rows
     langs:
       - typeScript
     type: property
@@ -224,7 +224,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.RangeView.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -235,7 +235,7 @@ items:
           - 'string[][]'
   - uid: excel.Excel.RangeView.toJSON
     name: toJSON()
-    fullName: excel.Excel.RangeView.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -253,7 +253,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.RangeView.values
+    fullName: values
     langs:
       - typeScript
     type: property
@@ -268,7 +268,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
-    fullName: excel.Excel.RangeView.valueTypes
+    fullName: valueTypes
     langs:
       - typeScript
     type: property

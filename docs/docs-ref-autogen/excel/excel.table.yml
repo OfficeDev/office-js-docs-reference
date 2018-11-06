@@ -10,7 +10,7 @@ items:
       tables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables) has detailed walkthroughs,
       images, and code samples.
     name: Excel.Table
-    fullName: excel.Excel.Table
+    fullName: Excel.Table
     langs:
       - typeScript
     type: class
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilters()
-    fullName: excel.Excel.Table.clearFilters
+    fullName: clearFilters
     langs:
       - typeScript
     type: method
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columns
-    fullName: excel.Excel.Table.columns
+    fullName: columns
     langs:
       - typeScript
     type: property
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertToRange()
-    fullName: excel.Excel.Table.convertToRange
+    fullName: convertToRange
     langs:
       - typeScript
     type: method
@@ -114,7 +114,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.Table.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -146,7 +146,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: excel.Excel.Table.getDataBodyRange
+    fullName: getDataBodyRange
     langs:
       - typeScript
     type: method
@@ -181,7 +181,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
-    fullName: excel.Excel.Table.getHeaderRowRange
+    fullName: getHeaderRowRange
     langs:
       - typeScript
     type: method
@@ -216,7 +216,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: excel.Excel.Table.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -251,7 +251,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
-    fullName: excel.Excel.Table.getTotalRowRange
+    fullName: getTotalRowRange
     langs:
       - typeScript
     type: method
@@ -286,7 +286,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightFirstColumn
-    fullName: excel.Excel.Table.highlightFirstColumn
+    fullName: highlightFirstColumn
     langs:
       - typeScript
     type: property
@@ -301,7 +301,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightLastColumn
-    fullName: excel.Excel.Table.highlightLastColumn
+    fullName: highlightLastColumn
     langs:
       - typeScript
     type: property
@@ -318,7 +318,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Table.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -333,7 +333,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legacyId
-    fullName: excel.Excel.Table.legacyId
+    fullName: legacyId
     langs:
       - typeScript
     type: property
@@ -427,7 +427,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.Table.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -448,7 +448,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Table.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -463,7 +463,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
-    fullName: excel.Excel.Table.onChanged
+    fullName: onChanged
     langs:
       - typeScript
     type: event
@@ -493,7 +493,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
-    fullName: excel.Excel.Table.onSelectionChanged
+    fullName: onSelectionChanged
     langs:
       - typeScript
     type: event
@@ -523,7 +523,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapplyFilters()
-    fullName: excel.Excel.Table.reapplyFilters
+    fullName: reapplyFilters
     langs:
       - typeScript
     type: method
@@ -539,7 +539,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
-    fullName: excel.Excel.Table.rows
+    fullName: rows
     langs:
       - typeScript
     type: property
@@ -556,7 +556,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedColumns
-    fullName: excel.Excel.Table.showBandedColumns
+    fullName: showBandedColumns
     langs:
       - typeScript
     type: property
@@ -573,7 +573,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedRows
-    fullName: excel.Excel.Table.showBandedRows
+    fullName: showBandedRows
     langs:
       - typeScript
     type: property
@@ -590,7 +590,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showFilterButton
-    fullName: excel.Excel.Table.showFilterButton
+    fullName: showFilterButton
     langs:
       - typeScript
     type: property
@@ -605,7 +605,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
-    fullName: excel.Excel.Table.showHeaders
+    fullName: showHeaders
     langs:
       - typeScript
     type: property
@@ -620,7 +620,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals
-    fullName: excel.Excel.Table.showTotals
+    fullName: showTotals
     langs:
       - typeScript
     type: property
@@ -635,7 +635,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
-    fullName: excel.Excel.Table.sort
+    fullName: sort
     langs:
       - typeScript
     type: property
@@ -653,7 +653,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Table.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -664,7 +664,7 @@ items:
           - string
   - uid: excel.Excel.Table.toJSON
     name: toJSON()
-    fullName: excel.Excel.Table.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -680,7 +680,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
-    fullName: excel.Excel.Table.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: property

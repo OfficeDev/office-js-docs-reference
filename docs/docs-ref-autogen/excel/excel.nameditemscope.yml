@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.NamedItemScope
     summary: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.NamedItemScope
-    fullName: excel.Excel.NamedItemScope
+    fullName: Excel.NamedItemScope
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.NamedItemScope.worksheet
   - uid: excel.Excel.NamedItemScope.workbook
     name: workbook
-    fullName: excel.Excel.NamedItemScope.workbook
+    fullName: workbook
     langs:
       - typeScript
     type: field
     numericValue: '"Workbook"'
   - uid: excel.Excel.NamedItemScope.worksheet
     name: worksheet
-    fullName: excel.Excel.NamedItemScope.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: field

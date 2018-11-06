@@ -3,7 +3,7 @@ items:
   - uid: word.Word.ListBullet
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.ListBullet
-    fullName: word.Word.ListBullet
+    fullName: Word.ListBullet
     langs:
       - typeScript
     type: enum
@@ -18,49 +18,49 @@ items:
       - word.Word.ListBullet.square
   - uid: word.Word.ListBullet.arrow
     name: arrow
-    fullName: word.Word.ListBullet.arrow
+    fullName: arrow
     langs:
       - typeScript
     type: field
     numericValue: '"Arrow"'
   - uid: word.Word.ListBullet.checkmark
     name: checkmark
-    fullName: word.Word.ListBullet.checkmark
+    fullName: checkmark
     langs:
       - typeScript
     type: field
     numericValue: '"Checkmark"'
   - uid: word.Word.ListBullet.custom
     name: custom
-    fullName: word.Word.ListBullet.custom
+    fullName: custom
     langs:
       - typeScript
     type: field
     numericValue: '"Custom"'
   - uid: word.Word.ListBullet.diamonds
     name: diamonds
-    fullName: word.Word.ListBullet.diamonds
+    fullName: diamonds
     langs:
       - typeScript
     type: field
     numericValue: '"Diamonds"'
   - uid: word.Word.ListBullet.hollow
     name: hollow
-    fullName: word.Word.ListBullet.hollow
+    fullName: hollow
     langs:
       - typeScript
     type: field
     numericValue: '"Hollow"'
   - uid: word.Word.ListBullet.solid
     name: solid
-    fullName: word.Word.ListBullet.solid
+    fullName: solid
     langs:
       - typeScript
     type: field
     numericValue: '"Solid"'
   - uid: word.Word.ListBullet.square
     name: square
-    fullName: word.Word.ListBullet.square
+    fullName: square
     langs:
       - typeScript
     type: field

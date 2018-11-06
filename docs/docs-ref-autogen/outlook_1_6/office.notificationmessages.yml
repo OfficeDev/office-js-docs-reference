@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.NotificationMessages
-    fullName: Outlook_1_6.Office.NotificationMessages
+    fullName: Office.NotificationMessages
     langs:
       - typeScript
     type: interface
@@ -51,7 +51,7 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void):
       void;`
     name: 'addAsync(key, JSONmessage, options, callback)'
-    fullName: Outlook_1_6.Office.NotificationMessages.addAsync
+    fullName: addAsync
     langs:
       - typeScript
     type: method
@@ -110,7 +110,7 @@ items:
 
       `getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;`
     name: 'getAllAsync(options, callback)'
-    fullName: Outlook_1_6.Office.NotificationMessages.getAllAsync
+    fullName: getAllAsync
     langs:
       - typeScript
     type: method
@@ -161,7 +161,7 @@ items:
 
       `removeAsync(key: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAsync(key, options, callback)'
-    fullName: Outlook_1_6.Office.NotificationMessages.removeAsync
+    fullName: removeAsync
     langs:
       - typeScript
     type: method
@@ -218,7 +218,7 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) =>
       void): void;`
     name: 'replaceAsync(key, JSONmessage, options, callback)'
-    fullName: Outlook_1_6.Office.NotificationMessages.replaceAsync
+    fullName: replaceAsync
     langs:
       - typeScript
     type: method

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TableCollectionUpdateData
     summary: 'An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })".'
     name: Excel.Interfaces.TableCollectionUpdateData
-    fullName: excel.Excel.Interfaces.TableCollectionUpdateData
+    fullName: Excel.Interfaces.TableCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.TableCollectionUpdateData.items
   - uid: excel.Excel.Interfaces.TableCollectionUpdateData.items
     name: items
-    fullName: excel.Excel.Interfaces.TableCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

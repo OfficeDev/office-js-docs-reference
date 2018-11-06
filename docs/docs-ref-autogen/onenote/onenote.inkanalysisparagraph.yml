@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisParagraph
-    fullName: onenote.OneNote.InkAnalysisParagraph
+    fullName: OneNote.InkAnalysisParagraph
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.InkAnalysisParagraph.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysis
-    fullName: onenote.OneNote.InkAnalysisParagraph.inkAnalysis
+    fullName: inkAnalysis
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: lines
-    fullName: onenote.OneNote.InkAnalysisParagraph.lines
+    fullName: lines
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.InkAnalysisParagraph.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -139,7 +139,7 @@ items:
             - 'string | string[]'
   - uid: onenote.OneNote.InkAnalysisParagraph.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.InkAnalysisParagraph.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -157,7 +157,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.InkAnalysisParagraph.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -174,7 +174,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.InkAnalysisParagraph.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

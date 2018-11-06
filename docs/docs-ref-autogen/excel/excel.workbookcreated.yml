@@ -8,7 +8,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookCreated
-    fullName: excel.Excel.WorkbookCreated
+    fullName: Excel.WorkbookCreated
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.WorkbookCreated.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -54,7 +54,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.WorkbookCreated.toJSON
     name: toJSON()
-    fullName: excel.Excel.WorkbookCreated.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

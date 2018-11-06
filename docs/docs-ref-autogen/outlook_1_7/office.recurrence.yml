@@ -29,7 +29,7 @@ items:
       <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
       </tr> </table>
     name: Office.Recurrence
-    fullName: Outlook_1_7.Office.Recurrence
+    fullName: Office.Recurrence
     langs:
       - typeScript
     type: interface
@@ -62,7 +62,7 @@ items:
 
       `getAsync(callback?: (result: AsyncResult<Office.Recurrence>) => void): void;`
     name: 'getAsync(options, callback)'
-    fullName: Outlook_1_7.Office.Recurrence.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -101,7 +101,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: recurrenceProperties
-    fullName: Outlook_1_7.Office.Recurrence.recurrenceProperties
+    fullName: recurrenceProperties
     langs:
       - typeScript
     type: property
@@ -123,7 +123,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: recurrenceTimeZone
-    fullName: Outlook_1_7.Office.Recurrence.recurrenceTimeZone
+    fullName: recurrenceTimeZone
     langs:
       - typeScript
     type: property
@@ -145,7 +145,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: recurrenceType
-    fullName: Outlook_1_7.Office.Recurrence.recurrenceType
+    fullName: recurrenceType
     langs:
       - typeScript
     type: property
@@ -171,7 +171,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: seriesTime
-    fullName: Outlook_1_7.Office.Recurrence.seriesTime
+    fullName: seriesTime
     langs:
       - typeScript
     type: property
@@ -204,7 +204,7 @@ items:
 
       `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
     name: 'setAsync(recurrencePattern, options, callback)'
-    fullName: Outlook_1_7.Office.Recurrence.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method

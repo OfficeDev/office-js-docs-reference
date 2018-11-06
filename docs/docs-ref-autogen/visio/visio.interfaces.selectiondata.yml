@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.SelectionData
     summary: An interface describing the data returned by calling "selection.toJSON()".
     name: Visio.Interfaces.SelectionData
-    fullName: visio.Visio.Interfaces.SelectionData
+    fullName: Visio.Interfaces.SelectionData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
-    fullName: visio.Visio.Interfaces.SelectionData.shapes
+    fullName: shapes
     langs:
       - typeScript
     type: property

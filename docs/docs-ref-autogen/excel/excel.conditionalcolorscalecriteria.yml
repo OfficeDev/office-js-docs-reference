@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalColorScaleCriteria
-    fullName: excel.Excel.ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maximum
-    fullName: excel.Excel.ConditionalColorScaleCriteria.maximum
+    fullName: maximum
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: midpoint
-    fullName: excel.Excel.ConditionalColorScaleCriteria.midpoint
+    fullName: midpoint
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minimum
-    fullName: excel.Excel.ConditionalColorScaleCriteria.minimum
+    fullName: minimum
     langs:
       - typeScript
     type: property

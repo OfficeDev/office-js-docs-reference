@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartDeletedEventArgs
-    fullName: excel.Excel.ChartDeletedEventArgs
+    fullName: Excel.ChartDeletedEventArgs
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartId
-    fullName: excel.Excel.ChartDeletedEventArgs.chartId
+    fullName: chartId
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
-    fullName: excel.Excel.ChartDeletedEventArgs.source
+    fullName: source
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.ChartDeletedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
-    fullName: excel.Excel.ChartDeletedEventArgs.worksheetId
+    fullName: worksheetId
     langs:
       - typeScript
     type: property

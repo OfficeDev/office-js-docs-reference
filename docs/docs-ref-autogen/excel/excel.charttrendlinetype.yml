@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartTrendlineType
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartTrendlineType
-    fullName: excel.Excel.ChartTrendlineType
+    fullName: Excel.ChartTrendlineType
     langs:
       - typeScript
     type: enum
@@ -17,42 +17,42 @@ items:
       - excel.Excel.ChartTrendlineType.power
   - uid: excel.Excel.ChartTrendlineType.exponential
     name: exponential
-    fullName: excel.Excel.ChartTrendlineType.exponential
+    fullName: exponential
     langs:
       - typeScript
     type: field
     numericValue: '"Exponential"'
   - uid: excel.Excel.ChartTrendlineType.linear
     name: linear
-    fullName: excel.Excel.ChartTrendlineType.linear
+    fullName: linear
     langs:
       - typeScript
     type: field
     numericValue: '"Linear"'
   - uid: excel.Excel.ChartTrendlineType.logarithmic
     name: logarithmic
-    fullName: excel.Excel.ChartTrendlineType.logarithmic
+    fullName: logarithmic
     langs:
       - typeScript
     type: field
     numericValue: '"Logarithmic"'
   - uid: excel.Excel.ChartTrendlineType.movingAverage
     name: movingAverage
-    fullName: excel.Excel.ChartTrendlineType.movingAverage
+    fullName: movingAverage
     langs:
       - typeScript
     type: field
     numericValue: '"MovingAverage"'
   - uid: excel.Excel.ChartTrendlineType.polynomial
     name: polynomial
-    fullName: excel.Excel.ChartTrendlineType.polynomial
+    fullName: polynomial
     langs:
       - typeScript
     type: field
     numericValue: '"Polynomial"'
   - uid: excel.Excel.ChartTrendlineType.power
     name: power
-    fullName: excel.Excel.ChartTrendlineType.power
+    fullName: power
     langs:
       - typeScript
     type: field

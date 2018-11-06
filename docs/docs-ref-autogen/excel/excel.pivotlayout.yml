@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotLayout
-    fullName: excel.Excel.PivotLayout
+    fullName: Excel.PivotLayout
     langs:
       - typeScript
     type: class
@@ -31,7 +31,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnLabelRange()
-    fullName: excel.Excel.PivotLayout.getColumnLabelRange
+    fullName: getColumnLabelRange
     langs:
       - typeScript
     type: method
@@ -47,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: excel.Excel.PivotLayout.getDataBodyRange
+    fullName: getDataBodyRange
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilterAxisRange()
-    fullName: excel.Excel.PivotLayout.getFilterAxisRange
+    fullName: getFilterAxisRange
     langs:
       - typeScript
     type: method
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: excel.Excel.PivotLayout.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowLabelRange()
-    fullName: excel.Excel.PivotLayout.getRowLabelRange
+    fullName: getRowLabelRange
     langs:
       - typeScript
     type: method
@@ -134,7 +134,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
-    fullName: excel.Excel.PivotLayout.layoutType
+    fullName: layoutType
     langs:
       - typeScript
     type: property
@@ -162,7 +162,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotLayout.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -183,7 +183,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
-    fullName: excel.Excel.PivotLayout.showColumnGrandTotals
+    fullName: showColumnGrandTotals
     langs:
       - typeScript
     type: property
@@ -198,7 +198,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
-    fullName: excel.Excel.PivotLayout.showRowGrandTotals
+    fullName: showRowGrandTotals
     langs:
       - typeScript
     type: property
@@ -215,7 +215,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
-    fullName: excel.Excel.PivotLayout.subtotalLocation
+    fullName: subtotalLocation
     langs:
       - typeScript
     type: property
@@ -226,7 +226,7 @@ items:
           - Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
   - uid: excel.Excel.PivotLayout.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotLayout.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

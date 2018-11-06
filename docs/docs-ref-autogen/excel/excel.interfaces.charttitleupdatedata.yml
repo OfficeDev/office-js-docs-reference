@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData
     summary: 'An interface for updating data on the ChartTitle object, for use in "chartTitle.set({ ... })".'
     name: Excel.Interfaces.ChartTitleUpdateData
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData
+    fullName: Excel.Interfaces.ChartTitleUpdateData
     langs:
       - typeScript
     type: interface
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.overlay
+    fullName: overlay
     langs:
       - typeScript
     type: property
@@ -90,7 +90,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -105,7 +105,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.showShadow
+    fullName: showShadow
     langs:
       - typeScript
     type: property
@@ -120,7 +120,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -154,7 +154,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -169,7 +169,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -184,7 +184,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.ChartTitleUpdateData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

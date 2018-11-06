@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntryCollection
-    fullName: excel.Excel.ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.ChartLegendEntryCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.ChartLegendEntryCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -59,7 +59,7 @@ items:
   - uid: excel.Excel.ChartLegendEntryCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.ChartLegendEntryCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -87,7 +87,7 @@ items:
       specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
       the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartLegendEntryCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -104,7 +104,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartLegendEntryCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartLegendEntryCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

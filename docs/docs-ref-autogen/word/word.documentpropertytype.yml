@@ -3,7 +3,7 @@ items:
   - uid: word.Word.DocumentPropertyType
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.DocumentPropertyType
-    fullName: word.Word.DocumentPropertyType
+    fullName: Word.DocumentPropertyType
     langs:
       - typeScript
     type: enum
@@ -15,28 +15,28 @@ items:
       - word.Word.DocumentPropertyType.string
   - uid: word.Word.DocumentPropertyType.boolean
     name: boolean
-    fullName: word.Word.DocumentPropertyType.boolean
+    fullName: boolean
     langs:
       - typeScript
     type: field
     numericValue: '"Boolean"'
   - uid: word.Word.DocumentPropertyType.date
     name: date
-    fullName: word.Word.DocumentPropertyType.date
+    fullName: date
     langs:
       - typeScript
     type: field
     numericValue: '"Date"'
   - uid: word.Word.DocumentPropertyType.number
     name: number
-    fullName: word.Word.DocumentPropertyType.number
+    fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
   - uid: word.Word.DocumentPropertyType.string
     name: string
-    fullName: word.Word.DocumentPropertyType.string
+    fullName: string
     langs:
       - typeScript
     type: field

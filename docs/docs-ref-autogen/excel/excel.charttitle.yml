@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTitle
-    fullName: excel.Excel.ChartTitle
+    fullName: Excel.ChartTitle
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartTitle.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSubstring(start, length)'
-    fullName: excel.Excel.ChartTitle.getSubstring
+    fullName: getSubstring
     langs:
       - typeScript
     type: method
@@ -77,7 +77,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.ChartTitle.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -92,7 +92,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.ChartTitle.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -111,7 +111,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.ChartTitle.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -186,7 +186,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartTitle.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -207,7 +207,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
-    fullName: excel.Excel.ChartTitle.overlay
+    fullName: overlay
     langs:
       - typeScript
     type: property
@@ -222,7 +222,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.ChartTitle.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -237,7 +237,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setFormula(formula)
-    fullName: excel.Excel.ChartTitle.setFormula
+    fullName: setFormula
     langs:
       - typeScript
     type: method
@@ -258,7 +258,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
-    fullName: excel.Excel.ChartTitle.showShadow
+    fullName: showShadow
     langs:
       - typeScript
     type: property
@@ -273,7 +273,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.ChartTitle.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -290,7 +290,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.ChartTitle.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -301,7 +301,7 @@ items:
           - number
   - uid: excel.Excel.ChartTitle.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartTitle.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -319,7 +319,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.ChartTitle.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -334,7 +334,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.ChartTitle.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -349,7 +349,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.ChartTitle.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -364,7 +364,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.ChartTitle.width
+    fullName: width
     langs:
       - typeScript
     type: property

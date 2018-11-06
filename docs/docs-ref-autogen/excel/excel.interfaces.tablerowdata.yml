@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TableRowData
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
     name: Excel.Interfaces.TableRowData
-    fullName: excel.Excel.Interfaces.TableRowData
+    fullName: Excel.Interfaces.TableRowData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.Interfaces.TableRowData.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.Interfaces.TableRowData.values
+    fullName: values
     langs:
       - typeScript
     type: property

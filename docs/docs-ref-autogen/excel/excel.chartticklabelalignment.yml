@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartTickLabelAlignment
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartTickLabelAlignment
-    fullName: excel.Excel.ChartTickLabelAlignment
+    fullName: Excel.ChartTickLabelAlignment
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.ChartTickLabelAlignment.right
   - uid: excel.Excel.ChartTickLabelAlignment.center
     name: center
-    fullName: excel.Excel.ChartTickLabelAlignment.center
+    fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.ChartTickLabelAlignment.left
     name: left
-    fullName: excel.Excel.ChartTickLabelAlignment.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.ChartTickLabelAlignment.right
     name: right
-    fullName: excel.Excel.ChartTickLabelAlignment.right
+    fullName: right
     langs:
       - typeScript
     type: field

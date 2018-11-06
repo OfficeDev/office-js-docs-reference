@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartPointsCollectionData
     summary: An interface describing the data returned by calling "chartPointsCollection.toJSON()".
     name: Excel.Interfaces.ChartPointsCollectionData
-    fullName: excel.Excel.Interfaces.ChartPointsCollectionData
+    fullName: Excel.Interfaces.ChartPointsCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.ChartPointsCollectionData.items
   - uid: excel.Excel.Interfaces.ChartPointsCollectionData.items
     name: items
-    fullName: excel.Excel.Interfaces.ChartPointsCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

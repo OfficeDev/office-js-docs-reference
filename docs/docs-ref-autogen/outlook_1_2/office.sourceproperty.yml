@@ -2,7 +2,7 @@
 items:
   - uid: Outlook_1_2.Office.SourceProperty
     name: Office.SourceProperty
-    fullName: Outlook_1_2.Office.SourceProperty
+    fullName: Office.SourceProperty
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
   - uid: Outlook_1_2.Office.SourceProperty.Body
     summary: The source of the data is from the body of the message.
     name: Body
-    fullName: Outlook_1_2.Office.SourceProperty.Body
+    fullName: Body
     langs:
       - typeScript
     type: field
   - uid: Outlook_1_2.Office.SourceProperty.Subject
     summary: The source of the data is from the subject of the message.
     name: Subject
-    fullName: Outlook_1_2.Office.SourceProperty.Subject
+    fullName: Subject
     langs:
       - typeScript
     type: field

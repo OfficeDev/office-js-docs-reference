@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.FourArrowsGraySet
     name: Excel.FourArrowsGraySet
-    fullName: excel.Excel.FourArrowsGraySet
+    fullName: Excel.FourArrowsGraySet
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
       - excel.Excel.FourArrowsGraySet.grayUpInclineArrow
   - uid: excel.Excel.FourArrowsGraySet.__index
     name: __index(index)
-    fullName: excel.Excel.FourArrowsGraySet.__index
+    fullName: __index
     langs:
       - typeScript
     type: method
@@ -32,7 +32,7 @@ items:
             - number
   - uid: excel.Excel.FourArrowsGraySet.grayDownArrow
     name: grayDownArrow
-    fullName: excel.Excel.FourArrowsGraySet.grayDownArrow
+    fullName: grayDownArrow
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayDownInclineArrow
     name: grayDownInclineArrow
-    fullName: excel.Excel.FourArrowsGraySet.grayDownInclineArrow
+    fullName: grayDownInclineArrow
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayUpArrow
     name: grayUpArrow
-    fullName: excel.Excel.FourArrowsGraySet.grayUpArrow
+    fullName: grayUpArrow
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayUpInclineArrow
     name: grayUpInclineArrow
-    fullName: excel.Excel.FourArrowsGraySet.grayUpInclineArrow
+    fullName: grayUpInclineArrow
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphCollection
-    fullName: onenote.OneNote.ParagraphCollection
+    fullName: OneNote.ParagraphCollection
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
-    fullName: onenote.OneNote.ParagraphCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
-    fullName: onenote.OneNote.ParagraphCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: onenote.OneNote.ParagraphCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -117,7 +117,7 @@ items:
   - uid: onenote.OneNote.ParagraphCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: onenote.OneNote.ParagraphCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -245,7 +245,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.ParagraphCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -262,7 +262,7 @@ items:
             - 'string | string[]'
   - uid: onenote.OneNote.ParagraphCollection.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.ParagraphCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -280,7 +280,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.ParagraphCollection.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -297,7 +297,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.ParagraphCollection.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

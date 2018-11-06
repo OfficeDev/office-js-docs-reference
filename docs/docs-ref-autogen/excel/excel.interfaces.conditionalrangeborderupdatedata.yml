@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set({ ...
       })".
     name: Excel.Interfaces.ConditionalRangeBorderUpdateData
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.style
+    fullName: style
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.ParagraphUpdateData
     summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })".'
     name: OneNote.Interfaces.ParagraphUpdateData
-    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData
+    fullName: OneNote.Interfaces.ParagraphUpdateData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
-    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData.image
+    fullName: image
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: table
-    fullName: onenote.OneNote.Interfaces.ParagraphUpdateData.table
+    fullName: table
     langs:
       - typeScript
     type: property

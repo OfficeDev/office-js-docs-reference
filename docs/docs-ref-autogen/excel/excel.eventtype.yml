@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.EventType
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.EventType
-    fullName: excel.Excel.EventType
+    fullName: Excel.EventType
     langs:
       - typeScript
     type: enum
@@ -36,7 +36,7 @@ items:
       AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data
       view following a data change
     name: agaveVisualUpdate
-    fullName: excel.Excel.EventType.agaveVisualUpdate
+    fullName: agaveVisualUpdate
     langs:
       - typeScript
     type: field
@@ -46,7 +46,7 @@ items:
       ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
       activates.
     name: chartActivated
-    fullName: excel.Excel.EventType.chartActivated
+    fullName: chartActivated
     langs:
       - typeScript
     type: field
@@ -56,7 +56,7 @@ items:
       ChartAdded represents the type of event registered on ChartCollection, and occurs when a new chart is added to the
       worksheet.
     name: chartAdded
-    fullName: excel.Excel.EventType.chartAdded
+    fullName: chartAdded
     langs:
       - typeScript
     type: field
@@ -66,7 +66,7 @@ items:
       ChartDeactivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
       deactivates.
     name: chartDeactivated
-    fullName: excel.Excel.EventType.chartDeactivated
+    fullName: chartDeactivated
     langs:
       - typeScript
     type: field
@@ -76,7 +76,7 @@ items:
       ChartDeleted represents the type of event registered on ChartCollection, and occurs when a chart is deleted from
       the worksheet.
     name: chartDeleted
-    fullName: excel.Excel.EventType.chartDeleted
+    fullName: chartDeleted
     langs:
       - typeScript
     type: field
@@ -84,7 +84,7 @@ items:
   - uid: excel.Excel.EventType.shapeActivated
     summary: 'ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.'
     name: shapeActivated
-    fullName: excel.Excel.EventType.shapeActivated
+    fullName: shapeActivated
     langs:
       - typeScript
     type: field
@@ -92,7 +92,7 @@ items:
   - uid: excel.Excel.EventType.shapeDeactivated
     summary: 'ShapeDeactivated represents the type of event that is registered on Shape, and occurs when shape deactivates.'
     name: shapeDeactivated
-    fullName: excel.Excel.EventType.shapeDeactivated
+    fullName: shapeDeactivated
     langs:
       - typeScript
     type: field
@@ -100,7 +100,7 @@ items:
   - uid: excel.Excel.EventType.tableAdded
     summary: 'TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.'
     name: tableAdded
-    fullName: excel.Excel.EventType.tableAdded
+    fullName: tableAdded
     langs:
       - typeScript
     type: field
@@ -108,7 +108,7 @@ items:
   - uid: excel.Excel.EventType.tableChanged
     summary: 'TableChanged represents the type of event registered on Table, and occurs when data changes.'
     name: tableChanged
-    fullName: excel.Excel.EventType.tableChanged
+    fullName: tableChanged
     langs:
       - typeScript
     type: field
@@ -118,7 +118,7 @@ items:
       TableDeleted represents the type of event that is registered on TableCollection, and occurs when a table is
       deleted.
     name: tableDeleted
-    fullName: excel.Excel.EventType.tableDeleted
+    fullName: tableDeleted
     langs:
       - typeScript
     type: field
@@ -128,7 +128,7 @@ items:
       TableFiltered represents the type of event registered on table or TableCollection, and occurs when data of table
       is filtered.
     name: tableFiltered
-    fullName: excel.Excel.EventType.tableFiltered
+    fullName: tableFiltered
     langs:
       - typeScript
     type: field
@@ -136,7 +136,7 @@ items:
   - uid: excel.Excel.EventType.tableSelectionChanged
     summary: 'TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.'
     name: tableSelectionChanged
-    fullName: excel.Excel.EventType.tableSelectionChanged
+    fullName: tableSelectionChanged
     langs:
       - typeScript
     type: field
@@ -144,7 +144,7 @@ items:
   - uid: excel.Excel.EventType.visualChange
     summary: 'VisualChange represents the type of event registered on Visual, and occurs when there is a visual change.'
     name: visualChange
-    fullName: excel.Excel.EventType.visualChange
+    fullName: visualChange
     langs:
       - typeScript
     type: field
@@ -154,7 +154,7 @@ items:
       VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual
       selection changes.
     name: visualSelectionChanged
-    fullName: excel.Excel.EventType.visualSelectionChanged
+    fullName: visualSelectionChanged
     langs:
       - typeScript
     type: field
@@ -164,7 +164,7 @@ items:
       WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
       worksheet activates.
     name: worksheetActivated
-    fullName: excel.Excel.EventType.worksheetActivated
+    fullName: worksheetActivated
     langs:
       - typeScript
     type: field
@@ -174,7 +174,7 @@ items:
       WorksheetAdded represents the type of event registered on WorksheetCollection, and occurs when a new worksheet is
       added to the workbook.
     name: worksheetAdded
-    fullName: excel.Excel.EventType.worksheetAdded
+    fullName: worksheetAdded
     langs:
       - typeScript
     type: field
@@ -184,7 +184,7 @@ items:
       WorksheetCalculated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when a
       worksheet is calculated.
     name: worksheetCalculated
-    fullName: excel.Excel.EventType.worksheetCalculated
+    fullName: worksheetCalculated
     langs:
       - typeScript
     type: field
@@ -194,7 +194,7 @@ items:
       WorksheetChanged represents the type of event registered on Worksheet or WorksheetCollection, and occurs when data
       changes.
     name: worksheetChanged
-    fullName: excel.Excel.EventType.worksheetChanged
+    fullName: worksheetChanged
     langs:
       - typeScript
     type: field
@@ -204,7 +204,7 @@ items:
       WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
       worksheet deactivates.
     name: worksheetDeactivated
-    fullName: excel.Excel.EventType.worksheetDeactivated
+    fullName: worksheetDeactivated
     langs:
       - typeScript
     type: field
@@ -214,7 +214,7 @@ items:
       WorksheetDeleted represents the type of event registered on WorksheetCollection, and occurs when a worksheet is
       deleted from the workbook.
     name: worksheetDeleted
-    fullName: excel.Excel.EventType.worksheetDeleted
+    fullName: worksheetDeleted
     langs:
       - typeScript
     type: field
@@ -224,7 +224,7 @@ items:
       WorksheetFiltered represents the type of event registered on worksheet or WorksheetCollection, and occurs when
       data of autofilter in the worksheet is filtered.
     name: worksheetFiltered
-    fullName: excel.Excel.EventType.worksheetFiltered
+    fullName: worksheetFiltered
     langs:
       - typeScript
     type: field
@@ -232,7 +232,7 @@ items:
   - uid: excel.Excel.EventType.worksheetSelectionChanged
     summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged
-    fullName: excel.Excel.EventType.worksheetSelectionChanged
+    fullName: worksheetSelectionChanged
     langs:
       - typeScript
     type: field

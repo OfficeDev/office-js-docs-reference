@@ -21,7 +21,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y
       </td></tr> </table>
     name: Office.CustomXmlPrefixMappings
-    fullName: office.Office.CustomXmlPrefixMappings
+    fullName: Office.CustomXmlPrefixMappings
     langs:
       - typeScript
     type: interface
@@ -34,7 +34,7 @@ items:
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: 'If no namespace is assigned to the requested prefix, the method returns an empty string ("").'
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
-    fullName: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
+    fullName: addNamespaceAsync
     langs:
       - typeScript
     type: method
@@ -71,7 +71,7 @@ items:
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
       except when the prefix is one added or used by the data store internally, in which case it will return an error.
     name: 'getNamespaceAsync(prefix, options, callback)'
-    fullName: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
+    fullName: getNamespaceAsync
     langs:
       - typeScript
     type: method
@@ -106,7 +106,7 @@ items:
       multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
       supplied namespace.
     name: 'getPrefixAsync(ns, options, callback)'
-    fullName: office.Office.CustomXmlPrefixMappings.getPrefixAsync
+    fullName: getPrefixAsync
     langs:
       - typeScript
     type: method

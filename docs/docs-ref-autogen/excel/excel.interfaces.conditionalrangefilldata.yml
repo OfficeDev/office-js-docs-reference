@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFillData
     summary: An interface describing the data returned by calling "conditionalRangeFill.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFillData
-    fullName: excel.Excel.Interfaces.ConditionalRangeFillData
+    fullName: Excel.Interfaces.ConditionalRangeFillData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ConditionalRangeFillData.color
+    fullName: color
     langs:
       - typeScript
     type: property

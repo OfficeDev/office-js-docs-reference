@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ShapeDataItemCollection object, for use in "shapeDataItemCollection.set({
       ... })".
     name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
-    fullName: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
+    fullName: Visio.Interfaces.ShapeDataItemCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
   - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
     name: items
-    fullName: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

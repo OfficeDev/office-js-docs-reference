@@ -19,7 +19,7 @@ items:
       </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Word
       </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
     name: Office.FilterType
-    fullName: office.Office.FilterType
+    fullName: Office.FilterType
     langs:
       - typeScript
     type: enum
@@ -30,14 +30,14 @@ items:
   - uid: office.Office.FilterType.All
     summary: Return all data (not filtered by the host application).
     name: All
-    fullName: office.Office.FilterType.All
+    fullName: All
     langs:
       - typeScript
     type: field
   - uid: office.Office.FilterType.OnlyVisible
     summary: Return only the visible data (as filtered by the host application).
     name: OnlyVisible
-    fullName: office.Office.FilterType.OnlyVisible
+    fullName: OnlyVisible
     langs:
       - typeScript
     type: field

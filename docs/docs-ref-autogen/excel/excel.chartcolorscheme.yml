@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartColorScheme
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartColorScheme
-    fullName: excel.Excel.ChartColorScheme
+    fullName: Excel.ChartColorScheme
     langs:
       - typeScript
     type: enum
@@ -28,119 +28,119 @@ items:
       - excel.Excel.ChartColorScheme.monochromaticPalette9
   - uid: excel.Excel.ChartColorScheme.colorfulPalette1
     name: colorfulPalette1
-    fullName: excel.Excel.ChartColorScheme.colorfulPalette1
+    fullName: colorfulPalette1
     langs:
       - typeScript
     type: field
     numericValue: '"ColorfulPalette1"'
   - uid: excel.Excel.ChartColorScheme.colorfulPalette2
     name: colorfulPalette2
-    fullName: excel.Excel.ChartColorScheme.colorfulPalette2
+    fullName: colorfulPalette2
     langs:
       - typeScript
     type: field
     numericValue: '"ColorfulPalette2"'
   - uid: excel.Excel.ChartColorScheme.colorfulPalette3
     name: colorfulPalette3
-    fullName: excel.Excel.ChartColorScheme.colorfulPalette3
+    fullName: colorfulPalette3
     langs:
       - typeScript
     type: field
     numericValue: '"ColorfulPalette3"'
   - uid: excel.Excel.ChartColorScheme.colorfulPalette4
     name: colorfulPalette4
-    fullName: excel.Excel.ChartColorScheme.colorfulPalette4
+    fullName: colorfulPalette4
     langs:
       - typeScript
     type: field
     numericValue: '"ColorfulPalette4"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette1
     name: monochromaticPalette1
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette1
+    fullName: monochromaticPalette1
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette1"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette10
     name: monochromaticPalette10
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette10
+    fullName: monochromaticPalette10
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette10"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette11
     name: monochromaticPalette11
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette11
+    fullName: monochromaticPalette11
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette11"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette12
     name: monochromaticPalette12
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette12
+    fullName: monochromaticPalette12
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette12"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette13
     name: monochromaticPalette13
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette13
+    fullName: monochromaticPalette13
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette13"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette2
     name: monochromaticPalette2
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette2
+    fullName: monochromaticPalette2
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette2"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette3
     name: monochromaticPalette3
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette3
+    fullName: monochromaticPalette3
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette3"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette4
     name: monochromaticPalette4
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette4
+    fullName: monochromaticPalette4
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette4"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette5
     name: monochromaticPalette5
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette5
+    fullName: monochromaticPalette5
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette5"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette6
     name: monochromaticPalette6
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette6
+    fullName: monochromaticPalette6
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette6"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette7
     name: monochromaticPalette7
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette7
+    fullName: monochromaticPalette7
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette7"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette8
     name: monochromaticPalette8
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette8
+    fullName: monochromaticPalette8
     langs:
       - typeScript
     type: field
     numericValue: '"MonochromaticPalette8"'
   - uid: excel.Excel.ChartColorScheme.monochromaticPalette9
     name: monochromaticPalette9
-    fullName: excel.Excel.ChartColorScheme.monochromaticPalette9
+    fullName: monochromaticPalette9
     langs:
       - typeScript
     type: field

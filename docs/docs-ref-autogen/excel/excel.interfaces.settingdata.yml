@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.SettingData
     summary: An interface describing the data returned by calling "setting.toJSON()".
     name: Excel.Interfaces.SettingData
-    fullName: excel.Excel.Interfaces.SettingData
+    fullName: Excel.Interfaces.SettingData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
-    fullName: excel.Excel.Interfaces.SettingData.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.Interfaces.SettingData.value
+    fullName: value
     langs:
       - typeScript
     type: property

@@ -172,7 +172,7 @@ items:
 
       ```
     name: initialize(reason)
-    fullName: office.Office.initialize
+    fullName: Office.initialize
     langs:
       - typeScript
     type: function
@@ -195,7 +195,7 @@ items:
       Office.js determines that it is running outside of an Office host application, it will call the callback and
       resolve the promise with "null" for both the host and platform.
     name: onReady(callback)
-    fullName: office.Office.onReady
+    fullName: Office.onReady
     langs:
       - typeScript
     type: function
@@ -253,7 +253,7 @@ items:
 
       ```
     name: 'select(expression, callback)'
-    fullName: office.Office.select
+    fullName: Office.select
     langs:
       - typeScript
     type: function
@@ -334,7 +334,7 @@ items:
 
       ```
     name: useShortNamespace(useShortNamespace)
-    fullName: office.Office.useShortNamespace
+    fullName: Office.useShortNamespace
     langs:
       - typeScript
     type: function

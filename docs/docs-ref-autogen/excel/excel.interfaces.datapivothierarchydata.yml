@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.DataPivotHierarchyData
     summary: An interface describing the data returned by calling "dataPivotHierarchy.toJSON()".
     name: Excel.Interfaces.DataPivotHierarchyData
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData
+    fullName: Excel.Interfaces.DataPivotHierarchyData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: field
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.field
+    fullName: field
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.showAs
+    fullName: showAs
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy
-    fullName: excel.Excel.Interfaces.DataPivotHierarchyData.summarizeBy
+    fullName: summarizeBy
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetChangedEventArgs
-    fullName: excel.Excel.WorksheetChangedEventArgs
+    fullName: Excel.WorksheetChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
-    fullName: excel.Excel.WorksheetChangedEventArgs.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: changeType
-    fullName: excel.Excel.WorksheetChangedEventArgs.changeType
+    fullName: changeType
     langs:
       - typeScript
     type: property
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(ctx)
-    fullName: excel.Excel.WorksheetChangedEventArgs.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject(ctx)
-    fullName: excel.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
+    fullName: getRangeOrNullObject
     langs:
       - typeScript
     type: method
@@ -101,7 +101,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
-    fullName: excel.Excel.WorksheetChangedEventArgs.source
+    fullName: source
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.WorksheetChangedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -131,7 +131,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
-    fullName: excel.Excel.WorksheetChangedEventArgs.worksheetId
+    fullName: worksheetId
     langs:
       - typeScript
     type: property

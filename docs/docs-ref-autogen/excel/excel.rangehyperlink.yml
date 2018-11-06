@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeHyperlink
-    fullName: excel.Excel.RangeHyperlink
+    fullName: Excel.RangeHyperlink
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
-    fullName: excel.Excel.RangeHyperlink.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: documentReference
-    fullName: excel.Excel.RangeHyperlink.documentReference
+    fullName: documentReference
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: screenTip
-    fullName: excel.Excel.RangeHyperlink.screenTip
+    fullName: screenTip
     langs:
       - typeScript
     type: property
@@ -163,7 +163,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textToDisplay
-    fullName: excel.Excel.RangeHyperlink.textToDisplay
+    fullName: textToDisplay
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartPlotAreaData
     summary: An interface describing the data returned by calling "chartPlotArea.toJSON()".
     name: Excel.Interfaces.ChartPlotAreaData
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData
+    fullName: Excel.Interfaces.ChartPlotAreaData
     langs:
       - typeScript
     type: interface
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.insideHeight
+    fullName: insideHeight
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.insideLeft
+    fullName: insideLeft
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.insideTop
+    fullName: insideTop
     langs:
       - typeScript
     type: property
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.insideWidth
+    fullName: insideWidth
     langs:
       - typeScript
     type: property
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -130,7 +130,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -145,7 +145,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -160,7 +160,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.Interfaces.ChartPlotAreaData.width
+    fullName: width
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.GetSelectedDataOptions
     summary: Provides options for customizing what data is returned and how it is formatted.
     name: Office.GetSelectedDataOptions
-    fullName: office.Office.GetSelectedDataOptions
+    fullName: Office.GetSelectedDataOptions
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.GetSelectedDataOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
       Use [Office.FilterType](xref:office.Office.FilterType) or string equivalent. This parameter is ignored in Word
       documents.
     name: filterType
-    fullName: office.Office.GetSelectedDataOptions.filterType
+    fullName: filterType
     langs:
       - typeScript
     type: property
@@ -44,7 +44,7 @@ items:
   - uid: office.Office.GetSelectedDataOptions.valueFormat
     summary: Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
     name: valueFormat
-    fullName: office.Office.GetSelectedDataOptions.valueFormat
+    fullName: valueFormat
     langs:
       - typeScript
     type: property

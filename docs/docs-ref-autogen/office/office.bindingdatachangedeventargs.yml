@@ -4,7 +4,7 @@ items:
     summary: Provides information about the binding that raised the DataChanged event.
     remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.BindingDataChangedEventArgs
-    fullName: office.Office.BindingDataChangedEventArgs
+    fullName: Office.BindingDataChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
       Gets an [Office.Binding](xref:office.Office.Binding) object that represents the binding that raised the
       DataChanged event.
     name: binding
-    fullName: office.Office.BindingDataChangedEventArgs.binding
+    fullName: binding
     langs:
       - typeScript
     type: property
@@ -31,7 +31,7 @@ items:
       Gets an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
       was raised.
     name: type
-    fullName: office.Office.BindingDataChangedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property

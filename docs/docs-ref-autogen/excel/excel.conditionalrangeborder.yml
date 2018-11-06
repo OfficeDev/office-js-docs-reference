@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeBorder
-    fullName: excel.Excel.ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.ConditionalRangeBorder.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ConditionalRangeBorder.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
-    fullName: excel.Excel.ConditionalRangeBorder.sideIndex
+    fullName: sideIndex
     langs:
       - typeScript
     type: property
@@ -95,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.ConditionalRangeBorder.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
           - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
   - uid: excel.Excel.ConditionalRangeBorder.toJSON
     name: toJSON()
-    fullName: excel.Excel.ConditionalRangeBorder.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

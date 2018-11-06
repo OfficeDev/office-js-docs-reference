@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.RangeUnderlineStyle
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.RangeUnderlineStyle
-    fullName: excel.Excel.RangeUnderlineStyle
+    fullName: Excel.RangeUnderlineStyle
     langs:
       - typeScript
     type: enum
@@ -16,35 +16,35 @@ items:
       - excel.Excel.RangeUnderlineStyle.singleAccountant
   - uid: excel.Excel.RangeUnderlineStyle.double
     name: double
-    fullName: excel.Excel.RangeUnderlineStyle.double
+    fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
   - uid: excel.Excel.RangeUnderlineStyle.doubleAccountant
     name: doubleAccountant
-    fullName: excel.Excel.RangeUnderlineStyle.doubleAccountant
+    fullName: doubleAccountant
     langs:
       - typeScript
     type: field
     numericValue: '"DoubleAccountant"'
   - uid: excel.Excel.RangeUnderlineStyle.none
     name: none
-    fullName: excel.Excel.RangeUnderlineStyle.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.RangeUnderlineStyle.single
     name: single
-    fullName: excel.Excel.RangeUnderlineStyle.single
+    fullName: single
     langs:
       - typeScript
     type: field
     numericValue: '"Single"'
   - uid: excel.Excel.RangeUnderlineStyle.singleAccountant
     name: singleAccountant
-    fullName: excel.Excel.RangeUnderlineStyle.singleAccountant
+    fullName: singleAccountant
     langs:
       - typeScript
     type: field

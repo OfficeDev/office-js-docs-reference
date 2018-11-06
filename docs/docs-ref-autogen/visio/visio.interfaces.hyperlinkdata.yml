@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.HyperlinkData
     summary: An interface describing the data returned by calling "hyperlink.toJSON()".
     name: Visio.Interfaces.HyperlinkData
-    fullName: visio.Visio.Interfaces.HyperlinkData
+    fullName: Visio.Interfaces.HyperlinkData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: address
-    fullName: visio.Visio.Interfaces.HyperlinkData.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: description
-    fullName: visio.Visio.Interfaces.HyperlinkData.description
+    fullName: description
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: extraInfo
-    fullName: visio.Visio.Interfaces.HyperlinkData.extraInfo
+    fullName: extraInfo
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: subAddress
-    fullName: visio.Visio.Interfaces.HyperlinkData.subAddress
+    fullName: subAddress
     langs:
       - typeScript
     type: property

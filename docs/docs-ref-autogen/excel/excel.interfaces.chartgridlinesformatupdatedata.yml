@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
     summary: 'An interface for updating data on the ChartGridlinesFormat object, for use in "chartGridlinesFormat.set({ ... })".'
     name: Excel.Interfaces.ChartGridlinesFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartGridlinesFormatUpdateData.line
+    fullName: line
     langs:
       - typeScript
     type: property

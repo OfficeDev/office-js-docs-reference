@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.TableRowData
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
     name: OneNote.Interfaces.TableRowData
-    fullName: onenote.OneNote.Interfaces.TableRowData
+    fullName: OneNote.Interfaces.TableRowData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellCount
-    fullName: onenote.OneNote.Interfaces.TableRowData.cellCount
+    fullName: cellCount
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cells
-    fullName: onenote.OneNote.Interfaces.TableRowData.cells
+    fullName: cells
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.TableRowData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTable
-    fullName: onenote.OneNote.Interfaces.TableRowData.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
-    fullName: onenote.OneNote.Interfaces.TableRowData.rowIndex
+    fullName: rowIndex
     langs:
       - typeScript
     type: property

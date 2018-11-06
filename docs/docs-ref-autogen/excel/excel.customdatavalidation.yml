@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomDataValidation
-    fullName: excel.Excel.CustomDataValidation
+    fullName: Excel.CustomDataValidation
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.CustomDataValidation.formula
+    fullName: formula
     langs:
       - typeScript
     type: property

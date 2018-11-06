@@ -3,7 +3,7 @@ items:
   - uid: office.Office.DialogOptions
     summary: Provides options for how a dialog is displayed.
     name: Office.DialogOptions
-    fullName: office.Office.DialogOptions
+    fullName: Office.DialogOptions
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.DialogOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
       browser window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the
       dialog will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
     name: displayInIframe
-    fullName: office.Office.DialogOptions.displayInIframe
+    fullName: displayInIframe
     langs:
       - typeScript
     type: property
@@ -46,7 +46,7 @@ items:
   - uid: office.Office.DialogOptions.height
     summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
     name: height
-    fullName: office.Office.DialogOptions.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
   - uid: office.Office.DialogOptions.width
     summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     name: width
-    fullName: office.Office.DialogOptions.width
+    fullName: width
     langs:
       - typeScript
     type: property

@@ -4,7 +4,7 @@ items:
     summary: CancelableHandler interface
     isPreview: true
     name: CustomFunctions.CancelableHandler
-    fullName: custom-functions-runtime.CustomFunctions.CancelableHandler
+    fullName: CustomFunctions.CancelableHandler
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
     summary: Handles what should occur when a custom function is canceled.
     isPreview: true
     name: onCanceled
-    fullName: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
+    fullName: onCanceled
     langs:
       - typeScript
     type: property

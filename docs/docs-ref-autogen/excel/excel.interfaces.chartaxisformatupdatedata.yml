@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartAxisFormatUpdateData
     summary: 'An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })".'
     name: Excel.Interfaces.ChartAxisFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartAxisFormatUpdateData
+    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.ChartAxisFormatUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartAxisFormatUpdateData.line
+    fullName: line
     langs:
       - typeScript
     type: property

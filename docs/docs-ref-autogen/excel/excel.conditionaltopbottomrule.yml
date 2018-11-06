@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTopBottomRule
-    fullName: excel.Excel.ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rank
-    fullName: excel.Excel.ConditionalTopBottomRule.rank
+    fullName: rank
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.ConditionalTopBottomRule.type
+    fullName: type
     langs:
       - typeScript
     type: property

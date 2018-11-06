@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ReadingOrder
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ReadingOrder
-    fullName: excel.Excel.ReadingOrder
+    fullName: Excel.ReadingOrder
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
       is entered first, reading order is right to left. If a left-to-right language character is entered first, reading
       order is left to right.
     name: context
-    fullName: excel.Excel.ReadingOrder.context
+    fullName: context
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: excel.Excel.ReadingOrder.leftToRight
     summary: Left to right reading order
     name: leftToRight
-    fullName: excel.Excel.ReadingOrder.leftToRight
+    fullName: leftToRight
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: excel.Excel.ReadingOrder.rightToLeft
     summary: Right to left reading order
     name: rightToLeft
-    fullName: excel.Excel.ReadingOrder.rightToLeft
+    fullName: rightToLeft
     langs:
       - typeScript
     type: field

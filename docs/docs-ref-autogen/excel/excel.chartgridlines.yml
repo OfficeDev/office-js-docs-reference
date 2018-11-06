@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGridlines
-    fullName: excel.Excel.ChartGridlines
+    fullName: Excel.ChartGridlines
     langs:
       - typeScript
     type: class
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartGridlines.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartGridlines.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartGridlines.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartGridlines.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -127,7 +127,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.ChartGridlines.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

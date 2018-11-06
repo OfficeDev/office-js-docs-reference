@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Selection
-    fullName: visio.Visio.Selection
+    fullName: Visio.Selection
     langs:
       - typeScript
     type: class
@@ -36,7 +36,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: visio.Visio.Selection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
-    fullName: visio.Visio.Selection.shapes
+    fullName: shapes
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Selection.toJSON
     name: toJSON()
-    fullName: visio.Visio.Selection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

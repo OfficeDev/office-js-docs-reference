@@ -8,7 +8,7 @@ items:
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
     name: Office.AppointmentCompose
-    fullName: Outlook_1_1.Office.AppointmentCompose
+    fullName: Office.AppointmentCompose
     langs:
       - typeScript
     type: interface
@@ -71,7 +71,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
-    fullName: Outlook_1_1.Office.AppointmentCompose.addFileAttachmentAsync
+    fullName: addFileAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -156,7 +156,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
-    fullName: Outlook_1_1.Office.AppointmentCompose.addItemAttachmentAsync
+    fullName: addItemAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -207,7 +207,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: body
-    fullName: Outlook_1_1.Office.AppointmentCompose.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -230,7 +230,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: dateTimeCreated
-    fullName: Outlook_1_1.Office.AppointmentCompose.dateTimeCreated
+    fullName: dateTimeCreated
     langs:
       - typeScript
     type: property
@@ -256,7 +256,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
-    fullName: Outlook_1_1.Office.AppointmentCompose.dateTimeModifed
+    fullName: dateTimeModifed
     langs:
       - typeScript
     type: property
@@ -289,7 +289,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: end
-    fullName: Outlook_1_1.Office.AppointmentCompose.end
+    fullName: end
     langs:
       - typeScript
     type: property
@@ -317,7 +317,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: itemType
-    fullName: Outlook_1_1.Office.AppointmentCompose.itemType
+    fullName: itemType
     langs:
       - typeScript
     type: property
@@ -352,7 +352,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: Outlook_1_1.Office.AppointmentCompose.loadCustomPropertiesAsync
+    fullName: loadCustomPropertiesAsync
     langs:
       - typeScript
     type: method
@@ -393,7 +393,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: location
-    fullName: Outlook_1_1.Office.AppointmentCompose.location
+    fullName: location
     langs:
       - typeScript
     type: property
@@ -420,7 +420,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: optionalAttendees
-    fullName: Outlook_1_1.Office.AppointmentCompose.optionalAttendees
+    fullName: optionalAttendees
     langs:
       - typeScript
     type: property
@@ -465,7 +465,7 @@ items:
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
-    fullName: Outlook_1_1.Office.AppointmentCompose.removeAttachmentAsync
+    fullName: removeAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -513,7 +513,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: requiredAttendees
-    fullName: Outlook_1_1.Office.AppointmentCompose.requiredAttendees
+    fullName: requiredAttendees
     langs:
       - typeScript
     type: property
@@ -546,7 +546,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: start
-    fullName: Outlook_1_1.Office.AppointmentCompose.start
+    fullName: start
     langs:
       - typeScript
     type: property
@@ -573,7 +573,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
     name: subject
-    fullName: Outlook_1_1.Office.AppointmentCompose.subject
+    fullName: subject
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterPivotHierarchy
-    fullName: excel.Excel.FilterPivotHierarchy
+    fullName: Excel.FilterPivotHierarchy
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
-    fullName: excel.Excel.FilterPivotHierarchy.enableMultipleFilterItems
+    fullName: enableMultipleFilterItems
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
-    fullName: excel.Excel.FilterPivotHierarchy.fields
+    fullName: fields
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.FilterPivotHierarchy.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -86,7 +86,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.FilterPivotHierarchy.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -107,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.FilterPivotHierarchy.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.FilterPivotHierarchy.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
-    fullName: excel.Excel.FilterPivotHierarchy.setToDefault
+    fullName: setToDefault
     langs:
       - typeScript
     type: method
@@ -149,7 +149,7 @@ items:
         description: ''
   - uid: excel.Excel.FilterPivotHierarchy.toJSON
     name: toJSON()
-    fullName: excel.Excel.FilterPivotHierarchy.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

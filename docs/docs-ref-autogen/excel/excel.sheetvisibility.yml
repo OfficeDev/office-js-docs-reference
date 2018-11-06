@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.SheetVisibility
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SheetVisibility
-    fullName: excel.Excel.SheetVisibility
+    fullName: Excel.SheetVisibility
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.SheetVisibility.visible
   - uid: excel.Excel.SheetVisibility.hidden
     name: hidden
-    fullName: excel.Excel.SheetVisibility.hidden
+    fullName: hidden
     langs:
       - typeScript
     type: field
     numericValue: '"Hidden"'
   - uid: excel.Excel.SheetVisibility.veryHidden
     name: veryHidden
-    fullName: excel.Excel.SheetVisibility.veryHidden
+    fullName: veryHidden
     langs:
       - typeScript
     type: field
     numericValue: '"VeryHidden"'
   - uid: excel.Excel.SheetVisibility.visible
     name: visible
-    fullName: excel.Excel.SheetVisibility.visible
+    fullName: visible
     langs:
       - typeScript
     type: field

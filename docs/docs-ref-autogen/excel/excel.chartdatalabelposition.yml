@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartDataLabelPosition
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartDataLabelPosition
-    fullName: excel.Excel.ChartDataLabelPosition
+    fullName: Excel.ChartDataLabelPosition
     langs:
       - typeScript
     type: enum
@@ -23,84 +23,84 @@ items:
       - excel.Excel.ChartDataLabelPosition.top
   - uid: excel.Excel.ChartDataLabelPosition.bestFit
     name: bestFit
-    fullName: excel.Excel.ChartDataLabelPosition.bestFit
+    fullName: bestFit
     langs:
       - typeScript
     type: field
     numericValue: '"BestFit"'
   - uid: excel.Excel.ChartDataLabelPosition.bottom
     name: bottom
-    fullName: excel.Excel.ChartDataLabelPosition.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
   - uid: excel.Excel.ChartDataLabelPosition.callout
     name: callout
-    fullName: excel.Excel.ChartDataLabelPosition.callout
+    fullName: callout
     langs:
       - typeScript
     type: field
     numericValue: '"Callout"'
   - uid: excel.Excel.ChartDataLabelPosition.center
     name: center
-    fullName: excel.Excel.ChartDataLabelPosition.center
+    fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.ChartDataLabelPosition.insideBase
     name: insideBase
-    fullName: excel.Excel.ChartDataLabelPosition.insideBase
+    fullName: insideBase
     langs:
       - typeScript
     type: field
     numericValue: '"InsideBase"'
   - uid: excel.Excel.ChartDataLabelPosition.insideEnd
     name: insideEnd
-    fullName: excel.Excel.ChartDataLabelPosition.insideEnd
+    fullName: insideEnd
     langs:
       - typeScript
     type: field
     numericValue: '"InsideEnd"'
   - uid: excel.Excel.ChartDataLabelPosition.invalid
     name: invalid
-    fullName: excel.Excel.ChartDataLabelPosition.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ChartDataLabelPosition.left
     name: left
-    fullName: excel.Excel.ChartDataLabelPosition.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.ChartDataLabelPosition.none
     name: none
-    fullName: excel.Excel.ChartDataLabelPosition.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.ChartDataLabelPosition.outsideEnd
     name: outsideEnd
-    fullName: excel.Excel.ChartDataLabelPosition.outsideEnd
+    fullName: outsideEnd
     langs:
       - typeScript
     type: field
     numericValue: '"OutsideEnd"'
   - uid: excel.Excel.ChartDataLabelPosition.right
     name: right
-    fullName: excel.Excel.ChartDataLabelPosition.right
+    fullName: right
     langs:
       - typeScript
     type: field
     numericValue: '"Right"'
   - uid: excel.Excel.ChartDataLabelPosition.top
     name: top
-    fullName: excel.Excel.ChartDataLabelPosition.top
+    fullName: top
     langs:
       - typeScript
     type: field

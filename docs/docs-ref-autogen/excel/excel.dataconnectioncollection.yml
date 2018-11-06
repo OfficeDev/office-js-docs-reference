@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataConnectionCollection
-    fullName: excel.Excel.DataConnectionCollection
+    fullName: Excel.DataConnectionCollection
     langs:
       - typeScript
     type: class
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refreshAll()
-    fullName: excel.Excel.DataConnectionCollection.refreshAll
+    fullName: refreshAll
     langs:
       - typeScript
     type: method
@@ -34,7 +34,7 @@ items:
         description: ''
   - uid: excel.Excel.DataConnectionCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.DataConnectionCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

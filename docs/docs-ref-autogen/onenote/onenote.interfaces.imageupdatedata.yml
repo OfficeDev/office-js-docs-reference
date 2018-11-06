@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.ImageUpdateData
     summary: 'An interface for updating data on the Image object, for use in "image.set({ ... })".'
     name: OneNote.Interfaces.ImageUpdateData
-    fullName: onenote.OneNote.Interfaces.ImageUpdateData
+    fullName: OneNote.Interfaces.ImageUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: description
-    fullName: onenote.OneNote.Interfaces.ImageUpdateData.description
+    fullName: description
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: height
-    fullName: onenote.OneNote.Interfaces.ImageUpdateData.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hyperlink
-    fullName: onenote.OneNote.Interfaces.ImageUpdateData.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: width
-    fullName: onenote.OneNote.Interfaces.ImageUpdateData.width
+    fullName: width
     langs:
       - typeScript
     type: property

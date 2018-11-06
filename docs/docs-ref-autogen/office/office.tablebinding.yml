@@ -13,7 +13,7 @@ items:
       For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically
       included in the binding and rowCount increases.
     name: Office.TableBinding
-    fullName: office.Office.TableBinding
+    fullName: Office.TableBinding
     langs:
       - typeScript
     type: interface
@@ -119,7 +119,7 @@ items:
 
       ```
     name: 'addColumnsAsync(tableData, options, callback)'
-    fullName: office.Office.TableBinding.addColumnsAsync
+    fullName: addColumnsAsync
     langs:
       - typeScript
     type: method
@@ -202,7 +202,7 @@ items:
 
       ```
     name: 'addRowsAsync(rows, options, callback)'
-    fullName: office.Office.TableBinding.addRowsAsync
+    fullName: addRowsAsync
     langs:
       - typeScript
     type: method
@@ -265,7 +265,7 @@ items:
 
       ```
     name: 'clearFormatsAsync(options, callback)'
-    fullName: office.Office.TableBinding.clearFormatsAsync
+    fullName: clearFormatsAsync
     langs:
       - typeScript
     type: method
@@ -324,7 +324,7 @@ items:
 
       ```
     name: columnCount
-    fullName: office.Office.TableBinding.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -369,7 +369,7 @@ items:
 
       ```
     name: 'deleteAllDataValuesAsync(options, callback)'
-    fullName: office.Office.TableBinding.deleteAllDataValuesAsync
+    fullName: deleteAllDataValuesAsync
     langs:
       - typeScript
     type: method
@@ -420,7 +420,7 @@ items:
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
       dialog box in Excel (Right-click &gt; Format Cells or Home &gt; Format &gt; Format Cells).
     name: 'getFormatsAsync(cellReference, formats, options, callback)'
-    fullName: office.Office.TableBinding.getFormatsAsync
+    fullName: getFormatsAsync
     langs:
       - typeScript
     type: method
@@ -490,7 +490,7 @@ items:
 
       ```
     name: hasHeaders
-    fullName: office.Office.TableBinding.hasHeaders
+    fullName: hasHeaders
     langs:
       - typeScript
     type: property
@@ -558,7 +558,7 @@ items:
 
       ```
     name: rowCount
-    fullName: office.Office.TableBinding.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -725,7 +725,7 @@ items:
           function (asyncResult){});
       ```
     name: 'setFormatsAsync(cellFormat, options, callback)'
-    fullName: office.Office.TableBinding.setFormatsAsync
+    fullName: setFormatsAsync
     langs:
       - typeScript
     type: method
@@ -811,7 +811,7 @@ items:
 
       ```
     name: 'setTableOptionsAsync(tableOptions, options, callback)'
-    fullName: office.Office.TableBinding.setTableOptionsAsync
+    fullName: setTableOptionsAsync
     langs:
       - typeScript
     type: method

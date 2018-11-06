@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.StyleCollection
-    fullName: excel.Excel.StyleCollection
+    fullName: Excel.StyleCollection
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: excel.Excel.StyleCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -71,7 +71,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: excel.Excel.StyleCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -114,7 +114,7 @@ items:
   - uid: excel.Excel.StyleCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.StyleCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -142,7 +142,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.StyleCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -159,7 +159,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.StyleCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.StyleCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

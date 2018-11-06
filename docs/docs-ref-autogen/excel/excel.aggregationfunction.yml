@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.AggregationFunction
-    fullName: excel.Excel.AggregationFunction
+    fullName: Excel.AggregationFunction
     langs:
       - typeScript
     type: enum
@@ -28,7 +28,7 @@ items:
   - uid: excel.Excel.AggregationFunction.automatic
     summary: Excel will automatically select the aggregation based on the data items.
     name: automatic
-    fullName: excel.Excel.AggregationFunction.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
@@ -36,7 +36,7 @@ items:
   - uid: excel.Excel.AggregationFunction.average
     summary: 'Aggregate using the average of the data, equivalent to the AVERAGE function.'
     name: average
-    fullName: excel.Excel.AggregationFunction.average
+    fullName: average
     langs:
       - typeScript
     type: field
@@ -44,7 +44,7 @@ items:
   - uid: excel.Excel.AggregationFunction.count
     summary: 'Aggregate using the count of items in the data, equivalent to the COUNTA function.'
     name: count
-    fullName: excel.Excel.AggregationFunction.count
+    fullName: count
     langs:
       - typeScript
     type: field
@@ -52,7 +52,7 @@ items:
   - uid: excel.Excel.AggregationFunction.countNumbers
     summary: 'Aggregate using the count of numbers in the data, equivalent to the COUNTA function.'
     name: countNumbers
-    fullName: excel.Excel.AggregationFunction.countNumbers
+    fullName: countNumbers
     langs:
       - typeScript
     type: field
@@ -60,7 +60,7 @@ items:
   - uid: excel.Excel.AggregationFunction.max
     summary: 'Aggregate using the maximum value of the data, equivalent to the MAX function.'
     name: max
-    fullName: excel.Excel.AggregationFunction.max
+    fullName: max
     langs:
       - typeScript
     type: field
@@ -68,7 +68,7 @@ items:
   - uid: excel.Excel.AggregationFunction.min
     summary: 'Aggregate using the minimum value of the data, equivalent to the MIN function.'
     name: min
-    fullName: excel.Excel.AggregationFunction.min
+    fullName: min
     langs:
       - typeScript
     type: field
@@ -76,7 +76,7 @@ items:
   - uid: excel.Excel.AggregationFunction.product
     summary: 'Aggregate using the product of the data, equivalent to the PRODUCT function.'
     name: product
-    fullName: excel.Excel.AggregationFunction.product
+    fullName: product
     langs:
       - typeScript
     type: field
@@ -84,7 +84,7 @@ items:
   - uid: excel.Excel.AggregationFunction.standardDeviation
     summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEV function.'
     name: standardDeviation
-    fullName: excel.Excel.AggregationFunction.standardDeviation
+    fullName: standardDeviation
     langs:
       - typeScript
     type: field
@@ -92,7 +92,7 @@ items:
   - uid: excel.Excel.AggregationFunction.standardDeviationP
     summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEVP function.'
     name: standardDeviationP
-    fullName: excel.Excel.AggregationFunction.standardDeviationP
+    fullName: standardDeviationP
     langs:
       - typeScript
     type: field
@@ -100,7 +100,7 @@ items:
   - uid: excel.Excel.AggregationFunction.sum
     summary: 'Aggregate using the sum of the data, equivalent to the SUM function.'
     name: sum
-    fullName: excel.Excel.AggregationFunction.sum
+    fullName: sum
     langs:
       - typeScript
     type: field
@@ -108,7 +108,7 @@ items:
   - uid: excel.Excel.AggregationFunction.unknown
     summary: Aggregation function is unknown or unsupported.
     name: unknown
-    fullName: excel.Excel.AggregationFunction.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field
@@ -116,7 +116,7 @@ items:
   - uid: excel.Excel.AggregationFunction.variance
     summary: 'Aggregate using the variance of the data, equivalent to the VAR function.'
     name: variance
-    fullName: excel.Excel.AggregationFunction.variance
+    fullName: variance
     langs:
       - typeScript
     type: field
@@ -124,7 +124,7 @@ items:
   - uid: excel.Excel.AggregationFunction.varianceP
     summary: 'Aggregate using the variance of the data, equivalent to the VARP function.'
     name: varianceP
-    fullName: excel.Excel.AggregationFunction.varianceP
+    fullName: varianceP
     langs:
       - typeScript
     type: field

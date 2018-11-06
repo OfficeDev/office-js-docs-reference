@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.FileProperties
     name: Office.FileProperties
-    fullName: office.Office.FileProperties
+    fullName: Office.FileProperties
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
   - uid: office.Office.FileProperties.url
     summary: File's URL
     name: url
-    fullName: office.Office.FileProperties.url
+    fullName: url
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowColumnPivotHierarchyCollection
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -106,7 +106,7 @@ items:
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -134,7 +134,7 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -155,7 +155,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(rowColumnPivotHierarchy)
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.remove
+    fullName: remove
     langs:
       - typeScript
     type: method
@@ -172,7 +172,7 @@ items:
             - excel.Excel.RowColumnPivotHierarchy
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.RowColumnPivotHierarchyCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

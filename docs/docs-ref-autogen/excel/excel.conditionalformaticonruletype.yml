@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatIconRuleType
-    fullName: excel.Excel.ConditionalFormatIconRuleType
+    fullName: Excel.ConditionalFormatIconRuleType
     langs:
       - typeScript
     type: enum
@@ -19,35 +19,35 @@ items:
       - excel.Excel.ConditionalFormatIconRuleType.percentile
   - uid: excel.Excel.ConditionalFormatIconRuleType.formula
     name: formula
-    fullName: excel.Excel.ConditionalFormatIconRuleType.formula
+    fullName: formula
     langs:
       - typeScript
     type: field
     numericValue: '"Formula"'
   - uid: excel.Excel.ConditionalFormatIconRuleType.invalid
     name: invalid
-    fullName: excel.Excel.ConditionalFormatIconRuleType.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ConditionalFormatIconRuleType.number
     name: number
-    fullName: excel.Excel.ConditionalFormatIconRuleType.number
+    fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
   - uid: excel.Excel.ConditionalFormatIconRuleType.percent
     name: percent
-    fullName: excel.Excel.ConditionalFormatIconRuleType.percent
+    fullName: percent
     langs:
       - typeScript
     type: field
     numericValue: '"Percent"'
   - uid: excel.Excel.ConditionalFormatIconRuleType.percentile
     name: percentile
-    fullName: excel.Excel.ConditionalFormatIconRuleType.percentile
+    fullName: percentile
     langs:
       - typeScript
     type: field

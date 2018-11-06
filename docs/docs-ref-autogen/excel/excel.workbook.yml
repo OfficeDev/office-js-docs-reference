@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Workbook
-    fullName: excel.Excel.Workbook
+    fullName: Excel.Workbook
     langs:
       - typeScript
     type: class
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: application
-    fullName: excel.Excel.Workbook.application
+    fullName: application
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
-    fullName: excel.Excel.Workbook.bindings
+    fullName: bindings
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customXmlParts
-    fullName: excel.Excel.Workbook.customXmlParts
+    fullName: customXmlParts
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataConnections
-    fullName: excel.Excel.Workbook.dataConnections
+    fullName: dataConnections
     langs:
       - typeScript
     type: property
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: functions
-    fullName: excel.Excel.Workbook.functions
+    fullName: functions
     langs:
       - typeScript
     type: property
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveCell()
-    fullName: excel.Excel.Workbook.getActiveCell
+    fullName: getActiveCell
     langs:
       - typeScript
     type: method
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()
-    fullName: excel.Excel.Workbook.getSelectedRange
+    fullName: getSelectedRange
     langs:
       - typeScript
     type: method
@@ -194,7 +194,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.Workbook.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -215,7 +215,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Workbook.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -230,7 +230,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
-    fullName: excel.Excel.Workbook.names
+    fullName: names
     langs:
       - typeScript
     type: property
@@ -245,7 +245,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
-    fullName: excel.Excel.Workbook.onSelectionChanged
+    fullName: onSelectionChanged
     langs:
       - typeScript
     type: event
@@ -260,7 +260,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
-    fullName: excel.Excel.Workbook.pivotTables
+    fullName: pivotTables
     langs:
       - typeScript
     type: property
@@ -275,7 +275,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
-    fullName: excel.Excel.Workbook.properties
+    fullName: properties
     langs:
       - typeScript
     type: property
@@ -320,7 +320,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
-    fullName: excel.Excel.Workbook.protection
+    fullName: protection
     langs:
       - typeScript
     type: property
@@ -335,7 +335,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
-    fullName: excel.Excel.Workbook.readOnly
+    fullName: readOnly
     langs:
       - typeScript
     type: property
@@ -350,7 +350,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: settings
-    fullName: excel.Excel.Workbook.settings
+    fullName: settings
     langs:
       - typeScript
     type: property
@@ -365,7 +365,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: styles
-    fullName: excel.Excel.Workbook.styles
+    fullName: styles
     langs:
       - typeScript
     type: property
@@ -380,7 +380,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
-    fullName: excel.Excel.Workbook.tables
+    fullName: tables
     langs:
       - typeScript
     type: property
@@ -391,7 +391,7 @@ items:
           - excel.Excel.TableCollection
   - uid: excel.Excel.Workbook.toJSON
     name: toJSON()
-    fullName: excel.Excel.Workbook.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -407,7 +407,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets
-    fullName: excel.Excel.Workbook.worksheets
+    fullName: worksheets
     langs:
       - typeScript
     type: property

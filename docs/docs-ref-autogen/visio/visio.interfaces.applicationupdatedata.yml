@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.ApplicationUpdateData
     summary: 'An interface for updating data on the Application object, for use in "application.set({ ... })".'
     name: Visio.Interfaces.ApplicationUpdateData
-    fullName: visio.Visio.Interfaces.ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showBorders
-    fullName: visio.Visio.Interfaces.ApplicationUpdateData.showBorders
+    fullName: showBorders
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showToolbars
-    fullName: visio.Visio.Interfaces.ApplicationUpdateData.showToolbars
+    fullName: showToolbars
     langs:
       - typeScript
     type: property

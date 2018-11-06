@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalIconCriterionOperator
-    fullName: excel.Excel.ConditionalIconCriterionOperator
+    fullName: Excel.ConditionalIconCriterionOperator
     langs:
       - typeScript
     type: enum
@@ -17,21 +17,21 @@ items:
       - excel.Excel.ConditionalIconCriterionOperator.invalid
   - uid: excel.Excel.ConditionalIconCriterionOperator.greaterThan
     name: greaterThan
-    fullName: excel.Excel.ConditionalIconCriterionOperator.greaterThan
+    fullName: greaterThan
     langs:
       - typeScript
     type: field
     numericValue: '"GreaterThan"'
   - uid: excel.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
     name: greaterThanOrEqual
-    fullName: excel.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
+    fullName: greaterThanOrEqual
     langs:
       - typeScript
     type: field
     numericValue: '"GreaterThanOrEqual"'
   - uid: excel.Excel.ConditionalIconCriterionOperator.invalid
     name: invalid
-    fullName: excel.Excel.ConditionalIconCriterionOperator.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field

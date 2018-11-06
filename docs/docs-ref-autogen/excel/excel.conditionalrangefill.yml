@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFill
-    fullName: excel.Excel.ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
     langs:
       - typeScript
     type: class
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.ConditionalRangeFill.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.ConditionalRangeFill.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ConditionalRangeFill.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -87,7 +87,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ConditionalRangeFill.toJSON
     name: toJSON()
-    fullName: excel.Excel.ConditionalRangeFill.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

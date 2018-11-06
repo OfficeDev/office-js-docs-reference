@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegend
-    fullName: excel.Excel.ChartLegend
+    fullName: Excel.ChartLegend
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartLegend.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.ChartLegend.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.ChartLegend.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -77,7 +77,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legendEntries
-    fullName: excel.Excel.ChartLegend.legendEntries
+    fullName: legendEntries
     langs:
       - typeScript
     type: property
@@ -149,7 +149,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartLegend.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -170,7 +170,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
-    fullName: excel.Excel.ChartLegend.overlay
+    fullName: overlay
     langs:
       - typeScript
     type: property
@@ -185,7 +185,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.ChartLegend.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -200,7 +200,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
-    fullName: excel.Excel.ChartLegend.showShadow
+    fullName: showShadow
     langs:
       - typeScript
     type: property
@@ -211,7 +211,7 @@ items:
           - boolean
   - uid: excel.Excel.ChartLegend.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartLegend.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -227,7 +227,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.ChartLegend.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -242,7 +242,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.ChartLegend.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -257,7 +257,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.ChartLegend.width
+    fullName: width
     langs:
       - typeScript
     type: property

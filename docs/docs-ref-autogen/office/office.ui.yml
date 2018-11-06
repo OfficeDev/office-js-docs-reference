@@ -10,7 +10,7 @@ items:
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
       information.
     name: Office.UI
-    fullName: office.Office.UI
+    fullName: Office.UI
     langs:
       - typeScript
     type: interface
@@ -38,7 +38,7 @@ items:
 
       - Called from a module extension: No effect.
     name: closeContainer()
-    fullName: office.Office.UI.closeContainer
+    fullName: closeContainer
     langs:
       - typeScript
     type: method
@@ -134,7 +134,7 @@ items:
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
       passed one as the asyncContext parameter.</td> </tr> </table>
     name: 'displayDialogAsync(startAddress, options, callback)'
-    fullName: office.Office.UI.displayDialogAsync
+    fullName: displayDialogAsync
     langs:
       - typeScript
     type: method
@@ -168,7 +168,7 @@ items:
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
       domain as the parent.
     name: messageParent(message)
-    fullName: office.Office.UI.messageParent
+    fullName: messageParent
     langs:
       - typeScript
     type: method

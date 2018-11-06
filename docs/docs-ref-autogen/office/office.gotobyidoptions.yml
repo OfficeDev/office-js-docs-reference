@@ -19,7 +19,7 @@ items:
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
     name: Office.GoToByIdOptions
-    fullName: office.Office.GoToByIdOptions
+    fullName: Office.GoToByIdOptions
     langs:
       - typeScript
     type: interface
@@ -32,7 +32,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.GoToByIdOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
       [Office.SelectionMode](xref:office.Office.SelectionMode) or string equivalent. See the Remarks for more
       information.
     name: selectionMode
-    fullName: office.Office.GoToByIdOptions.selectionMode
+    fullName: selectionMode
     langs:
       - typeScript
     type: property

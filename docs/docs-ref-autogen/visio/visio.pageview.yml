@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.PageView
-    fullName: visio.Visio.PageView
+    fullName: Visio.PageView
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: centerViewportOnShape(ShapeId)
-    fullName: visio.Visio.PageView.centerViewportOnShape
+    fullName: centerViewportOnShape
     langs:
       - typeScript
     type: method
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: fitToWindow()
-    fullName: visio.Visio.PageView.fitToWindow
+    fullName: fitToWindow
     langs:
       - typeScript
     type: method
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getPosition()
-    fullName: visio.Visio.PageView.getPosition
+    fullName: getPosition
     langs:
       - typeScript
     type: method
@@ -98,7 +98,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getSelection()
-    fullName: visio.Visio.PageView.getSelection
+    fullName: getSelection
     langs:
       - typeScript
     type: method
@@ -114,7 +114,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: isShapeInViewport(Shape)
-    fullName: visio.Visio.PageView.isShapeInViewport
+    fullName: isShapeInViewport
     langs:
       - typeScript
     type: method
@@ -166,7 +166,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.PageView.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -187,7 +187,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: setPosition(Position)
-    fullName: visio.Visio.PageView.setPosition
+    fullName: setPosition
     langs:
       - typeScript
     type: method
@@ -204,7 +204,7 @@ items:
             - visio.Visio.Position
   - uid: visio.Visio.PageView.toJSON
     name: toJSON()
-    fullName: visio.Visio.PageView.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -220,7 +220,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: zoom
-    fullName: visio.Visio.PageView.zoom
+    fullName: zoom
     langs:
       - typeScript
     type: property

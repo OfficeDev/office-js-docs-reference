@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTrendlineCollectionData
     summary: An interface describing the data returned by calling "chartTrendlineCollection.toJSON()".
     name: Excel.Interfaces.ChartTrendlineCollectionData
-    fullName: excel.Excel.Interfaces.ChartTrendlineCollectionData
+    fullName: Excel.Interfaces.ChartTrendlineCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.ChartTrendlineCollectionData.items
   - uid: excel.Excel.Interfaces.ChartTrendlineCollectionData.items
     name: items
-    fullName: excel.Excel.Interfaces.ChartTrendlineCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

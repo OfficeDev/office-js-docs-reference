@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.IconSetConditionalFormat
-    fullName: excel.Excel.IconSetConditionalFormat
+    fullName: Excel.IconSetConditionalFormat
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.IconSetConditionalFormat.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property
@@ -101,7 +101,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.IconSetConditionalFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reverseIconOrder
-    fullName: excel.Excel.IconSetConditionalFormat.reverseIconOrder
+    fullName: reverseIconOrder
     langs:
       - typeScript
     type: property
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showIconOnly
-    fullName: excel.Excel.IconSetConditionalFormat.showIconOnly
+    fullName: showIconOnly
     langs:
       - typeScript
     type: property
@@ -152,7 +152,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.IconSetConditionalFormat.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -215,7 +215,7 @@ items:
           ```
   - uid: excel.Excel.IconSetConditionalFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.IconSetConditionalFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

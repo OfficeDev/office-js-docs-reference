@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemArrayValues
-    fullName: excel.Excel.NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.NamedItemArrayValues.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -54,7 +54,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.NamedItemArrayValues.toJSON
     name: toJSON()
-    fullName: excel.Excel.NamedItemArrayValues.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: types
-    fullName: excel.Excel.NamedItemArrayValues.types
+    fullName: types
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.NamedItemArrayValues.values
+    fullName: values
     langs:
       - typeScript
     type: property

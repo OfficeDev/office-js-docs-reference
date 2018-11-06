@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ColorScaleConditionalFormat
-    fullName: excel.Excel.ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
     langs:
       - typeScript
     type: class
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.ColorScaleConditionalFormat.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
       specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
       the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ColorScaleConditionalFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -95,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: threeColorScale
-    fullName: excel.Excel.ColorScaleConditionalFormat.threeColorScale
+    fullName: threeColorScale
     langs:
       - typeScript
     type: property
@@ -106,7 +106,7 @@ items:
           - boolean
   - uid: excel.Excel.ColorScaleConditionalFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ColorScaleConditionalFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

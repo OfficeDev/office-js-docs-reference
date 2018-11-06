@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.ContentControlCollectionData
     summary: An interface describing the data returned by calling "contentControlCollection.toJSON()".
     name: Word.Interfaces.ContentControlCollectionData
-    fullName: word.Word.Interfaces.ContentControlCollectionData
+    fullName: Word.Interfaces.ContentControlCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - word.Word.Interfaces.ContentControlCollectionData.items
   - uid: word.Word.Interfaces.ContentControlCollectionData.items
     name: items
-    fullName: word.Word.Interfaces.ContentControlCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

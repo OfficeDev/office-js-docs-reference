@@ -3,7 +3,7 @@ items:
   - uid: word.Word.BorderLocation
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.BorderLocation
-    fullName: word.Word.BorderLocation
+    fullName: Word.BorderLocation
     langs:
       - typeScript
     type: enum
@@ -20,63 +20,63 @@ items:
       - word.Word.BorderLocation.top
   - uid: word.Word.BorderLocation.all
     name: all
-    fullName: word.Word.BorderLocation.all
+    fullName: all
     langs:
       - typeScript
     type: field
     numericValue: '"All"'
   - uid: word.Word.BorderLocation.bottom
     name: bottom
-    fullName: word.Word.BorderLocation.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
   - uid: word.Word.BorderLocation.inside
     name: inside
-    fullName: word.Word.BorderLocation.inside
+    fullName: inside
     langs:
       - typeScript
     type: field
     numericValue: '"Inside"'
   - uid: word.Word.BorderLocation.insideHorizontal
     name: insideHorizontal
-    fullName: word.Word.BorderLocation.insideHorizontal
+    fullName: insideHorizontal
     langs:
       - typeScript
     type: field
     numericValue: '"InsideHorizontal"'
   - uid: word.Word.BorderLocation.insideVertical
     name: insideVertical
-    fullName: word.Word.BorderLocation.insideVertical
+    fullName: insideVertical
     langs:
       - typeScript
     type: field
     numericValue: '"InsideVertical"'
   - uid: word.Word.BorderLocation.left
     name: left
-    fullName: word.Word.BorderLocation.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: word.Word.BorderLocation.outside
     name: outside
-    fullName: word.Word.BorderLocation.outside
+    fullName: outside
     langs:
       - typeScript
     type: field
     numericValue: '"Outside"'
   - uid: word.Word.BorderLocation.right
     name: right
-    fullName: word.Word.BorderLocation.right
+    fullName: right
     langs:
       - typeScript
     type: field
     numericValue: '"Right"'
   - uid: word.Word.BorderLocation.top
     name: top
-    fullName: word.Word.BorderLocation.top
+    fullName: top
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.ListType
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.ListType
-    fullName: onenote.OneNote.ListType
+    fullName: OneNote.ListType
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - onenote.OneNote.ListType.number
   - uid: onenote.OneNote.ListType.bullet
     name: bullet
-    fullName: onenote.OneNote.ListType.bullet
+    fullName: bullet
     langs:
       - typeScript
     type: field
     numericValue: '"Bullet"'
   - uid: onenote.OneNote.ListType.none
     name: none
-    fullName: onenote.OneNote.ListType.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: onenote.OneNote.ListType.number
     name: number
-    fullName: onenote.OneNote.ListType.number
+    fullName: number
     langs:
       - typeScript
     type: field

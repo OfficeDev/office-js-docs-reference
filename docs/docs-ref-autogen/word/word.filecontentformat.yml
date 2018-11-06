@@ -3,7 +3,7 @@ items:
   - uid: word.Word.FileContentFormat
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.FileContentFormat
-    fullName: word.Word.FileContentFormat
+    fullName: Word.FileContentFormat
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - word.Word.FileContentFormat.ooxml
   - uid: word.Word.FileContentFormat.base64
     name: base64
-    fullName: word.Word.FileContentFormat.base64
+    fullName: base64
     langs:
       - typeScript
     type: field
     numericValue: '"Base64"'
   - uid: word.Word.FileContentFormat.html
     name: html
-    fullName: word.Word.FileContentFormat.html
+    fullName: html
     langs:
       - typeScript
     type: field
     numericValue: '"Html"'
   - uid: word.Word.FileContentFormat.ooxml
     name: ooxml
-    fullName: word.Word.FileContentFormat.ooxml
+    fullName: ooxml
     langs:
       - typeScript
     type: field

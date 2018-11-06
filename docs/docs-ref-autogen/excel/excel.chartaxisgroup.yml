@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartAxisGroup
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisGroup
-    fullName: excel.Excel.ChartAxisGroup
+    fullName: Excel.ChartAxisGroup
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.ChartAxisGroup.secondary
   - uid: excel.Excel.ChartAxisGroup.primary
     name: primary
-    fullName: excel.Excel.ChartAxisGroup.primary
+    fullName: primary
     langs:
       - typeScript
     type: field
     numericValue: '"Primary"'
   - uid: excel.Excel.ChartAxisGroup.secondary
     name: secondary
-    fullName: excel.Excel.ChartAxisGroup.secondary
+    fullName: secondary
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderData
     summary: An interface describing the data returned by calling "conditionalRangeBorder.toJSON()".
     name: Excel.Interfaces.ConditionalRangeBorderData
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderData
+    fullName: Excel.Interfaces.ConditionalRangeBorderData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderData.sideIndex
+    fullName: sideIndex
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.ConditionalRangeBorderData.style
+    fullName: style
     langs:
       - typeScript
     type: property

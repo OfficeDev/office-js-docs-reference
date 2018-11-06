@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RuntimeData
     summary: An interface describing the data returned by calling "runtime.toJSON()".
     name: Excel.Interfaces.RuntimeData
-    fullName: excel.Excel.Interfaces.RuntimeData
+    fullName: Excel.Interfaces.RuntimeData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableEvents
-    fullName: excel.Excel.Interfaces.RuntimeData.enableEvents
+    fullName: enableEvents
     langs:
       - typeScript
     type: property

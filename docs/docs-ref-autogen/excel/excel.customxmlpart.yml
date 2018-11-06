@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPart
-    fullName: excel.Excel.CustomXmlPart
+    fullName: Excel.CustomXmlPart
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.CustomXmlPart.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getXml()
-    fullName: excel.Excel.CustomXmlPart.getXml
+    fullName: getXml
     langs:
       - typeScript
     type: method
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.CustomXmlPart.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -169,7 +169,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.CustomXmlPart.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -190,7 +190,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri
-    fullName: excel.Excel.CustomXmlPart.namespaceUri
+    fullName: namespaceUri
     langs:
       - typeScript
     type: property
@@ -205,7 +205,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXml(xml)
-    fullName: excel.Excel.CustomXmlPart.setXml
+    fullName: setXml
     langs:
       - typeScript
     type: method
@@ -247,7 +247,7 @@ items:
             - string
   - uid: excel.Excel.CustomXmlPart.toJSON
     name: toJSON()
-    fullName: excel.Excel.CustomXmlPart.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

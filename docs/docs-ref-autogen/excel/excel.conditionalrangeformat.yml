@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFormat
-    fullName: excel.Excel.ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
-    fullName: excel.Excel.ConditionalRangeFormat.borders
+    fullName: borders
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.ConditionalRangeFormat.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.ConditionalRangeFormat.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ConditionalRangeFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -105,7 +105,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.ConditionalRangeFormat.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
           - any
   - uid: excel.Excel.ConditionalRangeFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ConditionalRangeFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkWordData
     summary: An interface describing the data returned by calling "inkWord.toJSON()".
     name: OneNote.Interfaces.InkWordData
-    fullName: onenote.OneNote.Interfaces.InkWordData
+    fullName: OneNote.Interfaces.InkWordData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.InkWordData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
-    fullName: onenote.OneNote.Interfaces.InkWordData.languageId
+    fullName: languageId
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
-    fullName: onenote.OneNote.Interfaces.InkWordData.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
-    fullName: onenote.OneNote.Interfaces.InkWordData.wordAlternates
+    fullName: wordAlternates
     langs:
       - typeScript
     type: property

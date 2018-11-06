@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.PageContentType
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.PageContentType
-    fullName: onenote.OneNote.PageContentType
+    fullName: OneNote.PageContentType
     langs:
       - typeScript
     type: enum
@@ -15,28 +15,28 @@ items:
       - onenote.OneNote.PageContentType.outline
   - uid: onenote.OneNote.PageContentType.image
     name: image
-    fullName: onenote.OneNote.PageContentType.image
+    fullName: image
     langs:
       - typeScript
     type: field
     numericValue: '"Image"'
   - uid: onenote.OneNote.PageContentType.ink
     name: ink
-    fullName: onenote.OneNote.PageContentType.ink
+    fullName: ink
     langs:
       - typeScript
     type: field
     numericValue: '"Ink"'
   - uid: onenote.OneNote.PageContentType.other
     name: other
-    fullName: onenote.OneNote.PageContentType.other
+    fullName: other
     langs:
       - typeScript
     type: field
     numericValue: '"Other"'
   - uid: onenote.OneNote.PageContentType.outline
     name: outline
-    fullName: onenote.OneNote.PageContentType.outline
+    fullName: outline
     langs:
       - typeScript
     type: field

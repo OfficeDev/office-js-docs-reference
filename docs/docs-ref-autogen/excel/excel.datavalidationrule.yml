@@ -8,7 +8,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationRule
-    fullName: excel.Excel.DataValidationRule
+    fullName: Excel.DataValidationRule
     langs:
       - typeScript
     type: interface
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
-    fullName: excel.Excel.DataValidationRule.custom
+    fullName: custom
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: date
-    fullName: excel.Excel.DataValidationRule.date
+    fullName: date
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: decimal
-    fullName: excel.Excel.DataValidationRule.decimal
+    fullName: decimal
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: list
-    fullName: excel.Excel.DataValidationRule.list
+    fullName: list
     langs:
       - typeScript
     type: property
@@ -114,7 +114,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textLength
-    fullName: excel.Excel.DataValidationRule.textLength
+    fullName: textLength
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: time
-    fullName: excel.Excel.DataValidationRule.time
+    fullName: time
     langs:
       - typeScript
     type: property
@@ -144,7 +144,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wholeNumber
-    fullName: excel.Excel.DataValidationRule.wholeNumber
+    fullName: wholeNumber
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeDataItem
-    fullName: visio.Visio.ShapeDataItem
+    fullName: Visio.ShapeDataItem
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: format
-    fullName: visio.Visio.ShapeDataItem.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: formattedValue
-    fullName: visio.Visio.ShapeDataItem.formattedValue
+    fullName: formattedValue
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: label
-    fullName: visio.Visio.ShapeDataItem.label
+    fullName: label
     langs:
       - typeScript
     type: property
@@ -107,7 +107,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.ShapeDataItem.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -124,7 +124,7 @@ items:
             - 'string | string[]'
   - uid: visio.Visio.ShapeDataItem.toJSON
     name: toJSON()
-    fullName: visio.Visio.ShapeDataItem.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -140,7 +140,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: value
-    fullName: visio.Visio.ShapeDataItem.value
+    fullName: value
     langs:
       - typeScript
     type: property

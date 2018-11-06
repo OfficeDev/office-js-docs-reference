@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionData
     summary: An interface describing the data returned by calling "chartLegendEntryCollection.toJSON()".
     name: Excel.Interfaces.ChartLegendEntryCollectionData
-    fullName: excel.Excel.Interfaces.ChartLegendEntryCollectionData
+    fullName: Excel.Interfaces.ChartLegendEntryCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.ChartLegendEntryCollectionData.items
   - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionData.items
     name: items
-    fullName: excel.Excel.Interfaces.ChartLegendEntryCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

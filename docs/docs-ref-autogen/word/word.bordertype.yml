@@ -3,7 +3,7 @@ items:
   - uid: word.Word.BorderType
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.BorderType
-    fullName: word.Word.BorderType
+    fullName: Word.BorderType
     langs:
       - typeScript
     type: enum
@@ -35,168 +35,168 @@ items:
       - word.Word.BorderType.wave
   - uid: word.Word.BorderType.dashDotStroked
     name: dashDotStroked
-    fullName: word.Word.BorderType.dashDotStroked
+    fullName: dashDotStroked
     langs:
       - typeScript
     type: field
     numericValue: '"DashDotStroked"'
   - uid: word.Word.BorderType.dashed
     name: dashed
-    fullName: word.Word.BorderType.dashed
+    fullName: dashed
     langs:
       - typeScript
     type: field
     numericValue: '"Dashed"'
   - uid: word.Word.BorderType.dashedSmall
     name: dashedSmall
-    fullName: word.Word.BorderType.dashedSmall
+    fullName: dashedSmall
     langs:
       - typeScript
     type: field
     numericValue: '"DashedSmall"'
   - uid: word.Word.BorderType.dot2Dashed
     name: dot2Dashed
-    fullName: word.Word.BorderType.dot2Dashed
+    fullName: dot2Dashed
     langs:
       - typeScript
     type: field
     numericValue: '"Dot2Dashed"'
   - uid: word.Word.BorderType.dotDashed
     name: dotDashed
-    fullName: word.Word.BorderType.dotDashed
+    fullName: dotDashed
     langs:
       - typeScript
     type: field
     numericValue: '"DotDashed"'
   - uid: word.Word.BorderType.dotted
     name: dotted
-    fullName: word.Word.BorderType.dotted
+    fullName: dotted
     langs:
       - typeScript
     type: field
     numericValue: '"Dotted"'
   - uid: word.Word.BorderType.double
     name: double
-    fullName: word.Word.BorderType.double
+    fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
   - uid: word.Word.BorderType.doubleWave
     name: doubleWave
-    fullName: word.Word.BorderType.doubleWave
+    fullName: doubleWave
     langs:
       - typeScript
     type: field
     numericValue: '"DoubleWave"'
   - uid: word.Word.BorderType.mixed
     name: mixed
-    fullName: word.Word.BorderType.mixed
+    fullName: mixed
     langs:
       - typeScript
     type: field
     numericValue: '"Mixed"'
   - uid: word.Word.BorderType.none
     name: none
-    fullName: word.Word.BorderType.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: word.Word.BorderType.single
     name: single
-    fullName: word.Word.BorderType.single
+    fullName: single
     langs:
       - typeScript
     type: field
     numericValue: '"Single"'
   - uid: word.Word.BorderType.thickThinLarge
     name: thickThinLarge
-    fullName: word.Word.BorderType.thickThinLarge
+    fullName: thickThinLarge
     langs:
       - typeScript
     type: field
     numericValue: '"ThickThinLarge"'
   - uid: word.Word.BorderType.thickThinMed
     name: thickThinMed
-    fullName: word.Word.BorderType.thickThinMed
+    fullName: thickThinMed
     langs:
       - typeScript
     type: field
     numericValue: '"ThickThinMed"'
   - uid: word.Word.BorderType.thickThinSmall
     name: thickThinSmall
-    fullName: word.Word.BorderType.thickThinSmall
+    fullName: thickThinSmall
     langs:
       - typeScript
     type: field
     numericValue: '"ThickThinSmall"'
   - uid: word.Word.BorderType.thinThickLarge
     name: thinThickLarge
-    fullName: word.Word.BorderType.thinThickLarge
+    fullName: thinThickLarge
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickLarge"'
   - uid: word.Word.BorderType.thinThickMed
     name: thinThickMed
-    fullName: word.Word.BorderType.thinThickMed
+    fullName: thinThickMed
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickMed"'
   - uid: word.Word.BorderType.thinThickSmall
     name: thinThickSmall
-    fullName: word.Word.BorderType.thinThickSmall
+    fullName: thinThickSmall
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickSmall"'
   - uid: word.Word.BorderType.thinThickThinLarge
     name: thinThickThinLarge
-    fullName: word.Word.BorderType.thinThickThinLarge
+    fullName: thinThickThinLarge
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickThinLarge"'
   - uid: word.Word.BorderType.thinThickThinMed
     name: thinThickThinMed
-    fullName: word.Word.BorderType.thinThickThinMed
+    fullName: thinThickThinMed
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickThinMed"'
   - uid: word.Word.BorderType.thinThickThinSmall
     name: thinThickThinSmall
-    fullName: word.Word.BorderType.thinThickThinSmall
+    fullName: thinThickThinSmall
     langs:
       - typeScript
     type: field
     numericValue: '"ThinThickThinSmall"'
   - uid: word.Word.BorderType.threeDEmboss
     name: threeDEmboss
-    fullName: word.Word.BorderType.threeDEmboss
+    fullName: threeDEmboss
     langs:
       - typeScript
     type: field
     numericValue: '"ThreeDEmboss"'
   - uid: word.Word.BorderType.threeDEngrave
     name: threeDEngrave
-    fullName: word.Word.BorderType.threeDEngrave
+    fullName: threeDEngrave
     langs:
       - typeScript
     type: field
     numericValue: '"ThreeDEngrave"'
   - uid: word.Word.BorderType.triple
     name: triple
-    fullName: word.Word.BorderType.triple
+    fullName: triple
     langs:
       - typeScript
     type: field
     numericValue: '"Triple"'
   - uid: word.Word.BorderType.wave
     name: wave
-    fullName: word.Word.BorderType.wave
+    fullName: wave
     langs:
       - typeScript
     type: field

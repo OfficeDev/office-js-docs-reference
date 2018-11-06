@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.RecipientType
-    fullName: Outlook_1_4.Office.MailboxEnums.RecipientType
+    fullName: Office.MailboxEnums.RecipientType
     langs:
       - typeScript
     type: enum
@@ -22,7 +22,7 @@ items:
   - uid: Outlook_1_4.Office.MailboxEnums.RecipientType.DistributionList
     summary: Specifies that the recipient is a distribution list containing a list of email addresses.
     name: DistributionList
-    fullName: Outlook_1_4.Office.MailboxEnums.RecipientType.DistributionList
+    fullName: DistributionList
     langs:
       - typeScript
     type: field
@@ -30,7 +30,7 @@ items:
   - uid: Outlook_1_4.Office.MailboxEnums.RecipientType.ExternalUser
     summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
     name: ExternalUser
-    fullName: Outlook_1_4.Office.MailboxEnums.RecipientType.ExternalUser
+    fullName: ExternalUser
     langs:
       - typeScript
     type: field
@@ -38,7 +38,7 @@ items:
   - uid: Outlook_1_4.Office.MailboxEnums.RecipientType.Other
     summary: Specifies that the recipient is not one of the other recipient types.
     name: Other
-    fullName: Outlook_1_4.Office.MailboxEnums.RecipientType.Other
+    fullName: Other
     langs:
       - typeScript
     type: field
@@ -46,7 +46,7 @@ items:
   - uid: Outlook_1_4.Office.MailboxEnums.RecipientType.User
     summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
     name: User
-    fullName: Outlook_1_4.Office.MailboxEnums.RecipientType.User
+    fullName: User
     langs:
       - typeScript
     type: field

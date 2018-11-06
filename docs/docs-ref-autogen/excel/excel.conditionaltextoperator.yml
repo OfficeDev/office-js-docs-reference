@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTextOperator
-    fullName: excel.Excel.ConditionalTextOperator
+    fullName: Excel.ConditionalTextOperator
     langs:
       - typeScript
     type: enum
@@ -19,35 +19,35 @@ items:
       - excel.Excel.ConditionalTextOperator.notContains
   - uid: excel.Excel.ConditionalTextOperator.beginsWith
     name: beginsWith
-    fullName: excel.Excel.ConditionalTextOperator.beginsWith
+    fullName: beginsWith
     langs:
       - typeScript
     type: field
     numericValue: '"BeginsWith"'
   - uid: excel.Excel.ConditionalTextOperator.contains
     name: contains
-    fullName: excel.Excel.ConditionalTextOperator.contains
+    fullName: contains
     langs:
       - typeScript
     type: field
     numericValue: '"Contains"'
   - uid: excel.Excel.ConditionalTextOperator.endsWith
     name: endsWith
-    fullName: excel.Excel.ConditionalTextOperator.endsWith
+    fullName: endsWith
     langs:
       - typeScript
     type: field
     numericValue: '"EndsWith"'
   - uid: excel.Excel.ConditionalTextOperator.invalid
     name: invalid
-    fullName: excel.Excel.ConditionalTextOperator.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ConditionalTextOperator.notContains
     name: notContains
-    fullName: excel.Excel.ConditionalTextOperator.notContains
+    fullName: notContains
     langs:
       - typeScript
     type: field

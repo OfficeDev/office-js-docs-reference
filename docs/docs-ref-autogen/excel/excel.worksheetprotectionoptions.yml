@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetProtectionOptions
-    fullName: excel.Excel.WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions
     langs:
       - typeScript
     type: interface
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowAutoFilter
-    fullName: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
+    fullName: allowAutoFilter
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowDeleteColumns
-    fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    fullName: allowDeleteColumns
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowDeleteRows
-    fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
+    fullName: allowDeleteRows
     langs:
       - typeScript
     type: property
@@ -77,7 +77,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowEditObjects
-    fullName: excel.Excel.WorksheetProtectionOptions.allowEditObjects
+    fullName: allowEditObjects
     langs:
       - typeScript
     type: property
@@ -92,7 +92,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowEditScenarios
-    fullName: excel.Excel.WorksheetProtectionOptions.allowEditScenarios
+    fullName: allowEditScenarios
     langs:
       - typeScript
     type: property
@@ -107,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatCells
-    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatCells
+    fullName: allowFormatCells
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatColumns
-    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
+    fullName: allowFormatColumns
     langs:
       - typeScript
     type: property
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatRows
-    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatRows
+    fullName: allowFormatRows
     langs:
       - typeScript
     type: property
@@ -152,7 +152,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertColumns
-    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
+    fullName: allowInsertColumns
     langs:
       - typeScript
     type: property
@@ -167,7 +167,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertHyperlinks
-    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    fullName: allowInsertHyperlinks
     langs:
       - typeScript
     type: property
@@ -182,7 +182,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertRows
-    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertRows
+    fullName: allowInsertRows
     langs:
       - typeScript
     type: property
@@ -197,7 +197,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowPivotTables
-    fullName: excel.Excel.WorksheetProtectionOptions.allowPivotTables
+    fullName: allowPivotTables
     langs:
       - typeScript
     type: property
@@ -212,7 +212,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowSort
-    fullName: excel.Excel.WorksheetProtectionOptions.allowSort
+    fullName: allowSort
     langs:
       - typeScript
     type: property
@@ -227,7 +227,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: selectionMode
-    fullName: excel.Excel.WorksheetProtectionOptions.selectionMode
+    fullName: selectionMode
     langs:
       - typeScript
     type: property

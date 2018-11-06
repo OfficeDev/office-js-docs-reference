@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ConditionalRangeFontUnderlineStyle
     summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ConditionalRangeFontUnderlineStyle
-    fullName: excel.Excel.ConditionalRangeFontUnderlineStyle
+    fullName: Excel.ConditionalRangeFontUnderlineStyle
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.ConditionalRangeFontUnderlineStyle.single
   - uid: excel.Excel.ConditionalRangeFontUnderlineStyle.double
     name: double
-    fullName: excel.Excel.ConditionalRangeFontUnderlineStyle.double
+    fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
   - uid: excel.Excel.ConditionalRangeFontUnderlineStyle.none
     name: none
-    fullName: excel.Excel.ConditionalRangeFontUnderlineStyle.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.ConditionalRangeFontUnderlineStyle.single
     name: single
-    fullName: excel.Excel.ConditionalRangeFontUnderlineStyle.single
+    fullName: single
     langs:
       - typeScript
     type: field

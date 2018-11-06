@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Alignment
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.Alignment
-    fullName: word.Word.Alignment
+    fullName: Word.Alignment
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
   - uid: word.Word.Alignment.centered
     summary: Alignment to the center.
     name: centered
-    fullName: word.Word.Alignment.centered
+    fullName: centered
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: word.Word.Alignment.justified
     summary: Fully justified alignment.
     name: justified
-    fullName: word.Word.Alignment.justified
+    fullName: justified
     langs:
       - typeScript
     type: field
@@ -34,14 +34,14 @@ items:
   - uid: word.Word.Alignment.left
     summary: Alignment to the left.
     name: left
-    fullName: word.Word.Alignment.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: word.Word.Alignment.mixed
     name: mixed
-    fullName: word.Word.Alignment.mixed
+    fullName: mixed
     langs:
       - typeScript
     type: field
@@ -49,7 +49,7 @@ items:
   - uid: word.Word.Alignment.right
     summary: Alignment to the right.
     name: right
-    fullName: word.Word.Alignment.right
+    fullName: right
     langs:
       - typeScript
     type: field
@@ -57,7 +57,7 @@ items:
   - uid: word.Word.Alignment.unknown
     summary: Unknown alignment.
     name: unknown
-    fullName: word.Word.Alignment.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field

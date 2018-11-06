@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData
     summary: 'An interface for updating data on the ChartTrendline object, for use in "chartTrendline.set({ ... })".'
     name: Excel.Interfaces.ChartTrendlineUpdateData
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineUpdateData
     langs:
       - typeScript
     type: interface
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: backwardPeriod
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.backwardPeriod
+    fullName: backwardPeriod
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: forwardPeriod
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.forwardPeriod
+    fullName: forwardPeriod
     langs:
       - typeScript
     type: property
@@ -73,7 +73,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: intercept
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.intercept
+    fullName: intercept
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: label
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.label
+    fullName: label
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: movingAveragePeriod
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.movingAveragePeriod
+    fullName: movingAveragePeriod
     langs:
       - typeScript
     type: property
@@ -120,7 +120,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -135,7 +135,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: polynomialOrder
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.polynomialOrder
+    fullName: polynomialOrder
     langs:
       - typeScript
     type: property
@@ -150,7 +150,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showEquation
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.showEquation
+    fullName: showEquation
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRSquared
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.showRSquared
+    fullName: showRSquared
     langs:
       - typeScript
     type: property
@@ -180,7 +180,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.Interfaces.ChartTrendlineUpdateData.type
+    fullName: type
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeDataItemCollection
-    fullName: visio.Visio.ShapeDataItemCollection
+    fullName: Visio.ShapeDataItemCollection
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
-    fullName: visio.Visio.ShapeDataItemCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
-    fullName: visio.Visio.ShapeDataItemCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -59,7 +59,7 @@ items:
   - uid: visio.Visio.ShapeDataItemCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: visio.Visio.ShapeDataItemCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.ShapeDataItemCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -130,7 +130,7 @@ items:
             - 'string | string[]'
   - uid: visio.Visio.ShapeDataItemCollection.toJSON
     name: toJSON()
-    fullName: visio.Visio.ShapeDataItemCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

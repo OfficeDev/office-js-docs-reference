@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.BodyUpdateData
     summary: 'An interface for updating data on the Body object, for use in "body.set({ ... })".'
     name: Word.Interfaces.BodyUpdateData
-    fullName: word.Word.Interfaces.BodyUpdateData
+    fullName: Word.Interfaces.BodyUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
-    fullName: word.Word.Interfaces.BodyUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
-    fullName: word.Word.Interfaces.BodyUpdateData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
-    fullName: word.Word.Interfaces.BodyUpdateData.styleBuiltIn
+    fullName: styleBuiltIn
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.NoteTagType
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.NoteTagType
-    fullName: onenote.OneNote.NoteTagType
+    fullName: OneNote.NoteTagType
     langs:
       - typeScript
     type: enum
@@ -23,84 +23,84 @@ items:
       - onenote.OneNote.NoteTagType.website
   - uid: onenote.OneNote.NoteTagType.address
     name: address
-    fullName: onenote.OneNote.NoteTagType.address
+    fullName: address
     langs:
       - typeScript
     type: field
     numericValue: '"Address"'
   - uid: onenote.OneNote.NoteTagType.contact
     name: contact
-    fullName: onenote.OneNote.NoteTagType.contact
+    fullName: contact
     langs:
       - typeScript
     type: field
     numericValue: '"Contact"'
   - uid: onenote.OneNote.NoteTagType.critical
     name: critical
-    fullName: onenote.OneNote.NoteTagType.critical
+    fullName: critical
     langs:
       - typeScript
     type: field
     numericValue: '"Critical"'
   - uid: onenote.OneNote.NoteTagType.idea
     name: idea
-    fullName: onenote.OneNote.NoteTagType.idea
+    fullName: idea
     langs:
       - typeScript
     type: field
     numericValue: '"Idea"'
   - uid: onenote.OneNote.NoteTagType.important
     name: important
-    fullName: onenote.OneNote.NoteTagType.important
+    fullName: important
     langs:
       - typeScript
     type: field
     numericValue: '"Important"'
   - uid: onenote.OneNote.NoteTagType.phoneNumber
     name: phoneNumber
-    fullName: onenote.OneNote.NoteTagType.phoneNumber
+    fullName: phoneNumber
     langs:
       - typeScript
     type: field
     numericValue: '"PhoneNumber"'
   - uid: onenote.OneNote.NoteTagType.question
     name: question
-    fullName: onenote.OneNote.NoteTagType.question
+    fullName: question
     langs:
       - typeScript
     type: field
     numericValue: '"Question"'
   - uid: onenote.OneNote.NoteTagType.toDo
     name: toDo
-    fullName: onenote.OneNote.NoteTagType.toDo
+    fullName: toDo
     langs:
       - typeScript
     type: field
     numericValue: '"ToDo"'
   - uid: onenote.OneNote.NoteTagType.toDoPriority1
     name: toDoPriority1
-    fullName: onenote.OneNote.NoteTagType.toDoPriority1
+    fullName: toDoPriority1
     langs:
       - typeScript
     type: field
     numericValue: '"ToDoPriority1"'
   - uid: onenote.OneNote.NoteTagType.toDoPriority2
     name: toDoPriority2
-    fullName: onenote.OneNote.NoteTagType.toDoPriority2
+    fullName: toDoPriority2
     langs:
       - typeScript
     type: field
     numericValue: '"ToDoPriority2"'
   - uid: onenote.OneNote.NoteTagType.unknown
     name: unknown
-    fullName: onenote.OneNote.NoteTagType.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field
     numericValue: '"Unknown"'
   - uid: onenote.OneNote.NoteTagType.website
     name: website
-    fullName: onenote.OneNote.NoteTagType.website
+    fullName: website
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.ParagraphType
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.ParagraphType
-    fullName: onenote.OneNote.ParagraphType
+    fullName: OneNote.ParagraphType
     langs:
       - typeScript
     type: enum
@@ -16,35 +16,35 @@ items:
       - onenote.OneNote.ParagraphType.table
   - uid: onenote.OneNote.ParagraphType.image
     name: image
-    fullName: onenote.OneNote.ParagraphType.image
+    fullName: image
     langs:
       - typeScript
     type: field
     numericValue: '"Image"'
   - uid: onenote.OneNote.ParagraphType.ink
     name: ink
-    fullName: onenote.OneNote.ParagraphType.ink
+    fullName: ink
     langs:
       - typeScript
     type: field
     numericValue: '"Ink"'
   - uid: onenote.OneNote.ParagraphType.other
     name: other
-    fullName: onenote.OneNote.ParagraphType.other
+    fullName: other
     langs:
       - typeScript
     type: field
     numericValue: '"Other"'
   - uid: onenote.OneNote.ParagraphType.richText
     name: richText
-    fullName: onenote.OneNote.ParagraphType.richText
+    fullName: richText
     langs:
       - typeScript
     type: field
     numericValue: '"RichText"'
   - uid: onenote.OneNote.ParagraphType.table
     name: table
-    fullName: onenote.OneNote.ParagraphType.table
+    fullName: table
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.PageContentUpdateData
     summary: 'An interface for updating data on the PageContent object, for use in "pageContent.set({ ... })".'
     name: OneNote.Interfaces.PageContentUpdateData
-    fullName: onenote.OneNote.Interfaces.PageContentUpdateData
+    fullName: OneNote.Interfaces.PageContentUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
-    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.image
+    fullName: image
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: left
-    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: top
-    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.top
+    fullName: top
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.NumberType
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.NumberType
-    fullName: onenote.OneNote.NumberType
+    fullName: OneNote.NumberType
     langs:
       - typeScript
     type: enum
@@ -73,434 +73,434 @@ items:
       - onenote.OneNote.NumberType.zodiac3
   - uid: onenote.OneNote.NumberType.aiueo
     name: aiueo
-    fullName: onenote.OneNote.NumberType.aiueo
+    fullName: aiueo
     langs:
       - typeScript
     type: field
     numericValue: '"Aiueo"'
   - uid: onenote.OneNote.NumberType.arabic
     name: arabic
-    fullName: onenote.OneNote.NumberType.arabic
+    fullName: arabic
     langs:
       - typeScript
     type: field
     numericValue: '"Arabic"'
   - uid: onenote.OneNote.NumberType.arabic1
     name: arabic1
-    fullName: onenote.OneNote.NumberType.arabic1
+    fullName: arabic1
     langs:
       - typeScript
     type: field
     numericValue: '"Arabic1"'
   - uid: onenote.OneNote.NumberType.arabic2
     name: arabic2
-    fullName: onenote.OneNote.NumberType.arabic2
+    fullName: arabic2
     langs:
       - typeScript
     type: field
     numericValue: '"Arabic2"'
   - uid: onenote.OneNote.NumberType.arabicLZ
     name: arabicLZ
-    fullName: onenote.OneNote.NumberType.arabicLZ
+    fullName: arabicLZ
     langs:
       - typeScript
     type: field
     numericValue: '"ArabicLZ"'
   - uid: onenote.OneNote.NumberType.bullet
     name: bullet
-    fullName: onenote.OneNote.NumberType.bullet
+    fullName: bullet
     langs:
       - typeScript
     type: field
     numericValue: '"Bullet"'
   - uid: onenote.OneNote.NumberType.cardtext
     name: cardtext
-    fullName: onenote.OneNote.NumberType.cardtext
+    fullName: cardtext
     langs:
       - typeScript
     type: field
     numericValue: '"Cardtext"'
   - uid: onenote.OneNote.NumberType.chiManSty
     name: chiManSty
-    fullName: onenote.OneNote.NumberType.chiManSty
+    fullName: chiManSty
     langs:
       - typeScript
     type: field
     numericValue: '"ChiManSty"'
   - uid: onenote.OneNote.NumberType.chnDbNum1
     name: chnDbNum1
-    fullName: onenote.OneNote.NumberType.chnDbNum1
+    fullName: chnDbNum1
     langs:
       - typeScript
     type: field
     numericValue: '"ChnDbNum1"'
   - uid: onenote.OneNote.NumberType.chnDbNum2
     name: chnDbNum2
-    fullName: onenote.OneNote.NumberType.chnDbNum2
+    fullName: chnDbNum2
     langs:
       - typeScript
     type: field
     numericValue: '"ChnDbNum2"'
   - uid: onenote.OneNote.NumberType.chnDbNum3
     name: chnDbNum3
-    fullName: onenote.OneNote.NumberType.chnDbNum3
+    fullName: chnDbNum3
     langs:
       - typeScript
     type: field
     numericValue: '"ChnDbNum3"'
   - uid: onenote.OneNote.NumberType.chnDbNum4
     name: chnDbNum4
-    fullName: onenote.OneNote.NumberType.chnDbNum4
+    fullName: chnDbNum4
     langs:
       - typeScript
     type: field
     numericValue: '"ChnDbNum4"'
   - uid: onenote.OneNote.NumberType.chosung
     name: chosung
-    fullName: onenote.OneNote.NumberType.chosung
+    fullName: chosung
     langs:
       - typeScript
     type: field
     numericValue: '"Chosung"'
   - uid: onenote.OneNote.NumberType.circlenum
     name: circlenum
-    fullName: onenote.OneNote.NumberType.circlenum
+    fullName: circlenum
     langs:
       - typeScript
     type: field
     numericValue: '"Circlenum"'
   - uid: onenote.OneNote.NumberType.custom
     name: custom
-    fullName: onenote.OneNote.NumberType.custom
+    fullName: custom
     langs:
       - typeScript
     type: field
     numericValue: '"Custom"'
   - uid: onenote.OneNote.NumberType.daiueo
     name: daiueo
-    fullName: onenote.OneNote.NumberType.daiueo
+    fullName: daiueo
     langs:
       - typeScript
     type: field
     numericValue: '"DAiueo"'
   - uid: onenote.OneNote.NumberType.darabic
     name: darabic
-    fullName: onenote.OneNote.NumberType.darabic
+    fullName: darabic
     langs:
       - typeScript
     type: field
     numericValue: '"DArabic"'
   - uid: onenote.OneNote.NumberType.dbChar
     name: dbChar
-    fullName: onenote.OneNote.NumberType.dbChar
+    fullName: dbChar
     langs:
       - typeScript
     type: field
     numericValue: '"DbChar"'
   - uid: onenote.OneNote.NumberType.dbNum1
     name: dbNum1
-    fullName: onenote.OneNote.NumberType.dbNum1
+    fullName: dbNum1
     langs:
       - typeScript
     type: field
     numericValue: '"DbNum1"'
   - uid: onenote.OneNote.NumberType.dbNum2
     name: dbNum2
-    fullName: onenote.OneNote.NumberType.dbNum2
+    fullName: dbNum2
     langs:
       - typeScript
     type: field
     numericValue: '"DbNum2"'
   - uid: onenote.OneNote.NumberType.dbNum3
     name: dbNum3
-    fullName: onenote.OneNote.NumberType.dbNum3
+    fullName: dbNum3
     langs:
       - typeScript
     type: field
     numericValue: '"DbNum3"'
   - uid: onenote.OneNote.NumberType.dbNum4
     name: dbNum4
-    fullName: onenote.OneNote.NumberType.dbNum4
+    fullName: dbNum4
     langs:
       - typeScript
     type: field
     numericValue: '"DbNum4"'
   - uid: onenote.OneNote.NumberType.diroha
     name: diroha
-    fullName: onenote.OneNote.NumberType.diroha
+    fullName: diroha
     langs:
       - typeScript
     type: field
     numericValue: '"DIroha"'
   - uid: onenote.OneNote.NumberType.ganada
     name: ganada
-    fullName: onenote.OneNote.NumberType.ganada
+    fullName: ganada
     langs:
       - typeScript
     type: field
     numericValue: '"Ganada"'
   - uid: onenote.OneNote.NumberType.gb1
     name: gb1
-    fullName: onenote.OneNote.NumberType.gb1
+    fullName: gb1
     langs:
       - typeScript
     type: field
     numericValue: '"GB1"'
   - uid: onenote.OneNote.NumberType.gb2
     name: gb2
-    fullName: onenote.OneNote.NumberType.gb2
+    fullName: gb2
     langs:
       - typeScript
     type: field
     numericValue: '"GB2"'
   - uid: onenote.OneNote.NumberType.gb3
     name: gb3
-    fullName: onenote.OneNote.NumberType.gb3
+    fullName: gb3
     langs:
       - typeScript
     type: field
     numericValue: '"GB3"'
   - uid: onenote.OneNote.NumberType.gb4
     name: gb4
-    fullName: onenote.OneNote.NumberType.gb4
+    fullName: gb4
     langs:
       - typeScript
     type: field
     numericValue: '"GB4"'
   - uid: onenote.OneNote.NumberType.hebrew1
     name: hebrew1
-    fullName: onenote.OneNote.NumberType.hebrew1
+    fullName: hebrew1
     langs:
       - typeScript
     type: field
     numericValue: '"Hebrew1"'
   - uid: onenote.OneNote.NumberType.hebrew2
     name: hebrew2
-    fullName: onenote.OneNote.NumberType.hebrew2
+    fullName: hebrew2
     langs:
       - typeScript
     type: field
     numericValue: '"Hebrew2"'
   - uid: onenote.OneNote.NumberType.hex
     name: hex
-    fullName: onenote.OneNote.NumberType.hex
+    fullName: hex
     langs:
       - typeScript
     type: field
     numericValue: '"Hex"'
   - uid: onenote.OneNote.NumberType.hindi1
     name: hindi1
-    fullName: onenote.OneNote.NumberType.hindi1
+    fullName: hindi1
     langs:
       - typeScript
     type: field
     numericValue: '"Hindi1"'
   - uid: onenote.OneNote.NumberType.hindi2
     name: hindi2
-    fullName: onenote.OneNote.NumberType.hindi2
+    fullName: hindi2
     langs:
       - typeScript
     type: field
     numericValue: '"Hindi2"'
   - uid: onenote.OneNote.NumberType.hindi3
     name: hindi3
-    fullName: onenote.OneNote.NumberType.hindi3
+    fullName: hindi3
     langs:
       - typeScript
     type: field
     numericValue: '"Hindi3"'
   - uid: onenote.OneNote.NumberType.iroha
     name: iroha
-    fullName: onenote.OneNote.NumberType.iroha
+    fullName: iroha
     langs:
       - typeScript
     type: field
     numericValue: '"Iroha"'
   - uid: onenote.OneNote.NumberType.korDbNum1
     name: korDbNum1
-    fullName: onenote.OneNote.NumberType.korDbNum1
+    fullName: korDbNum1
     langs:
       - typeScript
     type: field
     numericValue: '"KorDbNum1"'
   - uid: onenote.OneNote.NumberType.korDbNum2
     name: korDbNum2
-    fullName: onenote.OneNote.NumberType.korDbNum2
+    fullName: korDbNum2
     langs:
       - typeScript
     type: field
     numericValue: '"KorDbNum2"'
   - uid: onenote.OneNote.NumberType.korDbNum3
     name: korDbNum3
-    fullName: onenote.OneNote.NumberType.korDbNum3
+    fullName: korDbNum3
     langs:
       - typeScript
     type: field
     numericValue: '"KorDbNum3"'
   - uid: onenote.OneNote.NumberType.korDbNum4
     name: korDbNum4
-    fullName: onenote.OneNote.NumberType.korDbNum4
+    fullName: korDbNum4
     langs:
       - typeScript
     type: field
     numericValue: '"KorDbNum4"'
   - uid: onenote.OneNote.NumberType.lcgreek
     name: lcgreek
-    fullName: onenote.OneNote.NumberType.lcgreek
+    fullName: lcgreek
     langs:
       - typeScript
     type: field
     numericValue: '"LCGreek"'
   - uid: onenote.OneNote.NumberType.lcletter
     name: lcletter
-    fullName: onenote.OneNote.NumberType.lcletter
+    fullName: lcletter
     langs:
       - typeScript
     type: field
     numericValue: '"LCLetter"'
   - uid: onenote.OneNote.NumberType.lcroman
     name: lcroman
-    fullName: onenote.OneNote.NumberType.lcroman
+    fullName: lcroman
     langs:
       - typeScript
     type: field
     numericValue: '"LCRoman"'
   - uid: onenote.OneNote.NumberType.lcrus
     name: lcrus
-    fullName: onenote.OneNote.NumberType.lcrus
+    fullName: lcrus
     langs:
       - typeScript
     type: field
     numericValue: '"LCRus"'
   - uid: onenote.OneNote.NumberType.lim
     name: lim
-    fullName: onenote.OneNote.NumberType.lim
+    fullName: lim
     langs:
       - typeScript
     type: field
     numericValue: '"Lim"'
   - uid: onenote.OneNote.NumberType.none
     name: none
-    fullName: onenote.OneNote.NumberType.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: onenote.OneNote.NumberType.numInDash
     name: numInDash
-    fullName: onenote.OneNote.NumberType.numInDash
+    fullName: numInDash
     langs:
       - typeScript
     type: field
     numericValue: '"NumInDash"'
   - uid: onenote.OneNote.NumberType.ordinal
     name: ordinal
-    fullName: onenote.OneNote.NumberType.ordinal
+    fullName: ordinal
     langs:
       - typeScript
     type: field
     numericValue: '"Ordinal"'
   - uid: onenote.OneNote.NumberType.ordtext
     name: ordtext
-    fullName: onenote.OneNote.NumberType.ordtext
+    fullName: ordtext
     langs:
       - typeScript
     type: field
     numericValue: '"Ordtext"'
   - uid: onenote.OneNote.NumberType.sbChar
     name: sbChar
-    fullName: onenote.OneNote.NumberType.sbChar
+    fullName: sbChar
     langs:
       - typeScript
     type: field
     numericValue: '"SbChar"'
   - uid: onenote.OneNote.NumberType.thai1
     name: thai1
-    fullName: onenote.OneNote.NumberType.thai1
+    fullName: thai1
     langs:
       - typeScript
     type: field
     numericValue: '"Thai1"'
   - uid: onenote.OneNote.NumberType.thai2
     name: thai2
-    fullName: onenote.OneNote.NumberType.thai2
+    fullName: thai2
     langs:
       - typeScript
     type: field
     numericValue: '"Thai2"'
   - uid: onenote.OneNote.NumberType.tpeDbNum1
     name: tpeDbNum1
-    fullName: onenote.OneNote.NumberType.tpeDbNum1
+    fullName: tpeDbNum1
     langs:
       - typeScript
     type: field
     numericValue: '"TpeDbNum1"'
   - uid: onenote.OneNote.NumberType.tpeDbNum2
     name: tpeDbNum2
-    fullName: onenote.OneNote.NumberType.tpeDbNum2
+    fullName: tpeDbNum2
     langs:
       - typeScript
     type: field
     numericValue: '"TpeDbNum2"'
   - uid: onenote.OneNote.NumberType.tpeDbNum3
     name: tpeDbNum3
-    fullName: onenote.OneNote.NumberType.tpeDbNum3
+    fullName: tpeDbNum3
     langs:
       - typeScript
     type: field
     numericValue: '"TpeDbNum3"'
   - uid: onenote.OneNote.NumberType.tpeDbNum4
     name: tpeDbNum4
-    fullName: onenote.OneNote.NumberType.tpeDbNum4
+    fullName: tpeDbNum4
     langs:
       - typeScript
     type: field
     numericValue: '"TpeDbNum4"'
   - uid: onenote.OneNote.NumberType.ucgreek
     name: ucgreek
-    fullName: onenote.OneNote.NumberType.ucgreek
+    fullName: ucgreek
     langs:
       - typeScript
     type: field
     numericValue: '"UCGreek"'
   - uid: onenote.OneNote.NumberType.ucletter
     name: ucletter
-    fullName: onenote.OneNote.NumberType.ucletter
+    fullName: ucletter
     langs:
       - typeScript
     type: field
     numericValue: '"UCLetter"'
   - uid: onenote.OneNote.NumberType.ucroman
     name: ucroman
-    fullName: onenote.OneNote.NumberType.ucroman
+    fullName: ucroman
     langs:
       - typeScript
     type: field
     numericValue: '"UCRoman"'
   - uid: onenote.OneNote.NumberType.ucrus
     name: ucrus
-    fullName: onenote.OneNote.NumberType.ucrus
+    fullName: ucrus
     langs:
       - typeScript
     type: field
     numericValue: '"UCRus"'
   - uid: onenote.OneNote.NumberType.zodiac1
     name: zodiac1
-    fullName: onenote.OneNote.NumberType.zodiac1
+    fullName: zodiac1
     langs:
       - typeScript
     type: field
     numericValue: '"Zodiac1"'
   - uid: onenote.OneNote.NumberType.zodiac2
     name: zodiac2
-    fullName: onenote.OneNote.NumberType.zodiac2
+    fullName: zodiac2
     langs:
       - typeScript
     type: field
     numericValue: '"Zodiac2"'
   - uid: onenote.OneNote.NumberType.zodiac3
     name: zodiac3
-    fullName: onenote.OneNote.NumberType.zodiac3
+    fullName: zodiac3
     langs:
       - typeScript
     type: field

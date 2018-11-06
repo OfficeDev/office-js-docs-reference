@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
     summary: 'An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })".'
     name: Excel.Interfaces.ChartSeriesFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
+    fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartSeriesFormatUpdateData.line
+    fullName: line
     langs:
       - typeScript
     type: property

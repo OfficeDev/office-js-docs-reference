@@ -3,7 +3,7 @@ items:
   - uid: office.Office.RemoveHandlerOptions
     summary: Provides options to determine which event handler or handlers are removed.
     name: Office.RemoveHandlerOptions
-    fullName: office.Office.RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.RemoveHandlerOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -28,7 +28,7 @@ items:
   - uid: office.Office.RemoveHandlerOptions.handler
     summary: The handler to be removed. If not specified all handlers for the specified event type are removed.
     name: handler
-    fullName: office.Office.RemoveHandlerOptions.handler
+    fullName: handler
     langs:
       - typeScript
     type: property

@@ -8,7 +8,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableCollection
-    fullName: excel.Excel.TableCollection
+    fullName: Excel.TableCollection
     langs:
       - typeScript
     type: class
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(address, hasHeaders)'
-    fullName: excel.Excel.TableCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.TableCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.TableCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: excel.Excel.TableCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -168,7 +168,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.TableCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -206,7 +206,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: excel.Excel.TableCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -224,7 +224,7 @@ items:
   - uid: excel.Excel.TableCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.TableCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -295,7 +295,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.TableCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -316,7 +316,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
-    fullName: excel.Excel.TableCollection.onChanged
+    fullName: onChanged
     langs:
       - typeScript
     type: event
@@ -342,7 +342,7 @@ items:
           ```
   - uid: excel.Excel.TableCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.TableCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

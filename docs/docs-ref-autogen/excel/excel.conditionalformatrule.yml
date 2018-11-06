@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatRule
-    fullName: excel.Excel.ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.ConditionalFormatRule.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
-    fullName: excel.Excel.ConditionalFormatRule.formulaLocal
+    fullName: formulaLocal
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
-    fullName: excel.Excel.ConditionalFormatRule.formulaR1C1
+    fullName: formulaR1C1
     langs:
       - typeScript
     type: property
@@ -98,7 +98,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ConditionalFormatRule.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -115,7 +115,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ConditionalFormatRule.toJSON
     name: toJSON()
-    fullName: excel.Excel.ConditionalFormatRule.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

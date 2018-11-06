@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.InlinePictureUpdateData
     summary: 'An interface for updating data on the InlinePicture object, for use in "inlinePicture.set({ ... })".'
     name: Word.Interfaces.InlinePictureUpdateData
-    fullName: word.Word.Interfaces.InlinePictureUpdateData
+    fullName: Word.Interfaces.InlinePictureUpdateData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
+    fullName: altTextDescription
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
+    fullName: altTextTitle
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
+    fullName: lockAspectRatio
     langs:
       - typeScript
     type: property
@@ -96,7 +96,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.Interfaces.InlinePictureUpdateData.width
+    fullName: width
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.GetFileOptions
     summary: Provides options for setting the size of slices that the document will be divided into.
     name: Office.GetFileOptions
-    fullName: office.Office.GetFileOptions
+    fullName: Office.GetFileOptions
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.GetFileOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -28,7 +28,7 @@ items:
   - uid: office.Office.GetFileOptions.sliceSize
     summary: The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
     name: sliceSize
-    fullName: office.Office.GetFileOptions.sliceSize
+    fullName: sliceSize
     langs:
       - typeScript
     type: property

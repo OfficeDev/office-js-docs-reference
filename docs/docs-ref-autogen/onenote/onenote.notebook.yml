@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Notebook
-    fullName: onenote.OneNote.Notebook
+    fullName: OneNote.Notebook
     langs:
       - typeScript
     type: class
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: addSection(name)
-    fullName: onenote.OneNote.Notebook.addSection
+    fullName: addSection
     langs:
       - typeScript
     type: method
@@ -83,7 +83,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: addSectionGroup(name)
-    fullName: onenote.OneNote.Notebook.addSectionGroup
+    fullName: addSectionGroup
     langs:
       - typeScript
     type: method
@@ -132,7 +132,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
-    fullName: onenote.OneNote.Notebook.baseUrl
+    fullName: baseUrl
     langs:
       - typeScript
     type: property
@@ -147,7 +147,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
-    fullName: onenote.OneNote.Notebook.clientUrl
+    fullName: clientUrl
     langs:
       - typeScript
     type: property
@@ -162,7 +162,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
-    fullName: onenote.OneNote.Notebook.getRestApiId
+    fullName: getRestApiId
     langs:
       - typeScript
     type: method
@@ -198,7 +198,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Notebook.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -213,7 +213,7 @@ items:
 
       \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
-    fullName: onenote.OneNote.Notebook.isVirtual
+    fullName: isVirtual
     langs:
       - typeScript
     type: property
@@ -389,7 +389,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.Notebook.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -410,7 +410,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
-    fullName: onenote.OneNote.Notebook.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -425,7 +425,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
-    fullName: onenote.OneNote.Notebook.sectionGroups
+    fullName: sectionGroups
     langs:
       - typeScript
     type: property
@@ -440,7 +440,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
-    fullName: onenote.OneNote.Notebook.sections
+    fullName: sections
     langs:
       - typeScript
     type: property
@@ -451,7 +451,7 @@ items:
           - onenote.OneNote.SectionCollection
   - uid: onenote.OneNote.Notebook.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.Notebook.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -469,7 +469,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.Notebook.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -486,7 +486,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.Notebook.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

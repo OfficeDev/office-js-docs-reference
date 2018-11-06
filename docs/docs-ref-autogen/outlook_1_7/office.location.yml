@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Location
-    fullName: Outlook_1_7.Office.Location
+    fullName: Office.Location
     langs:
       - typeScript
     type: interface
@@ -42,7 +42,7 @@ items:
 
       `getAsync(callback: (result: AsyncResult<string>) => void): void;`
     name: 'getAsync(options, callback)'
-    fullName: Outlook_1_7.Office.Location.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -99,7 +99,7 @@ items:
 
       `setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setAsync(location, options, callback)'
-    fullName: Outlook_1_7.Office.Location.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method

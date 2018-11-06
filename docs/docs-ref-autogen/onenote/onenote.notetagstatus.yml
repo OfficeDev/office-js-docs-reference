@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.NoteTagStatus
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.NoteTagStatus
-    fullName: onenote.OneNote.NoteTagStatus
+    fullName: OneNote.NoteTagStatus
     langs:
       - typeScript
     type: enum
@@ -18,49 +18,49 @@ items:
       - onenote.OneNote.NoteTagStatus.unknown
   - uid: onenote.OneNote.NoteTagStatus.completed
     name: completed
-    fullName: onenote.OneNote.NoteTagStatus.completed
+    fullName: completed
     langs:
       - typeScript
     type: field
     numericValue: '"Completed"'
   - uid: onenote.OneNote.NoteTagStatus.disabled
     name: disabled
-    fullName: onenote.OneNote.NoteTagStatus.disabled
+    fullName: disabled
     langs:
       - typeScript
     type: field
     numericValue: '"Disabled"'
   - uid: onenote.OneNote.NoteTagStatus.normal
     name: normal
-    fullName: onenote.OneNote.NoteTagStatus.normal
+    fullName: normal
     langs:
       - typeScript
     type: field
     numericValue: '"Normal"'
   - uid: onenote.OneNote.NoteTagStatus.outlookTask
     name: outlookTask
-    fullName: onenote.OneNote.NoteTagStatus.outlookTask
+    fullName: outlookTask
     langs:
       - typeScript
     type: field
     numericValue: '"OutlookTask"'
   - uid: onenote.OneNote.NoteTagStatus.taskNotSyncedYet
     name: taskNotSyncedYet
-    fullName: onenote.OneNote.NoteTagStatus.taskNotSyncedYet
+    fullName: taskNotSyncedYet
     langs:
       - typeScript
     type: field
     numericValue: '"TaskNotSyncedYet"'
   - uid: onenote.OneNote.NoteTagStatus.taskRemoved
     name: taskRemoved
-    fullName: onenote.OneNote.NoteTagStatus.taskRemoved
+    fullName: taskRemoved
     langs:
       - typeScript
     type: field
     numericValue: '"TaskRemoved"'
   - uid: onenote.OneNote.NoteTagStatus.unknown
     name: unknown
-    fullName: onenote.OneNote.NoteTagStatus.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field

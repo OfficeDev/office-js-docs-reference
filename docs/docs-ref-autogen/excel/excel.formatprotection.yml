@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FormatProtection
-    fullName: excel.Excel.FormatProtection
+    fullName: Excel.FormatProtection
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
-    fullName: excel.Excel.FormatProtection.formulaHidden
+    fullName: formulaHidden
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.FormatProtection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -77,7 +77,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
-    fullName: excel.Excel.FormatProtection.locked
+    fullName: locked
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
           - boolean
   - uid: excel.Excel.FormatProtection.toJSON
     name: toJSON()
-    fullName: excel.Excel.FormatProtection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

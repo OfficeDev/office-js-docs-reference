@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.HorizontalAlignment
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.HorizontalAlignment
-    fullName: excel.Excel.HorizontalAlignment
+    fullName: Excel.HorizontalAlignment
     langs:
       - typeScript
     type: enum
@@ -19,56 +19,56 @@ items:
       - excel.Excel.HorizontalAlignment.right
   - uid: excel.Excel.HorizontalAlignment.center
     name: center
-    fullName: excel.Excel.HorizontalAlignment.center
+    fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.HorizontalAlignment.centerAcrossSelection
     name: centerAcrossSelection
-    fullName: excel.Excel.HorizontalAlignment.centerAcrossSelection
+    fullName: centerAcrossSelection
     langs:
       - typeScript
     type: field
     numericValue: '"CenterAcrossSelection"'
   - uid: excel.Excel.HorizontalAlignment.distributed
     name: distributed
-    fullName: excel.Excel.HorizontalAlignment.distributed
+    fullName: distributed
     langs:
       - typeScript
     type: field
     numericValue: '"Distributed"'
   - uid: excel.Excel.HorizontalAlignment.fill
     name: fill
-    fullName: excel.Excel.HorizontalAlignment.fill
+    fullName: fill
     langs:
       - typeScript
     type: field
     numericValue: '"Fill"'
   - uid: excel.Excel.HorizontalAlignment.general
     name: general
-    fullName: excel.Excel.HorizontalAlignment.general
+    fullName: general
     langs:
       - typeScript
     type: field
     numericValue: '"General"'
   - uid: excel.Excel.HorizontalAlignment.justify
     name: justify
-    fullName: excel.Excel.HorizontalAlignment.justify
+    fullName: justify
     langs:
       - typeScript
     type: field
     numericValue: '"Justify"'
   - uid: excel.Excel.HorizontalAlignment.left
     name: left
-    fullName: excel.Excel.HorizontalAlignment.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.HorizontalAlignment.right
     name: right
-    fullName: excel.Excel.HorizontalAlignment.right
+    fullName: right
     langs:
       - typeScript
     type: field

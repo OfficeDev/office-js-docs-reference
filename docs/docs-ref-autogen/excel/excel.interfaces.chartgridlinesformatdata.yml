@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartGridlinesFormatData
     summary: An interface describing the data returned by calling "chartGridlinesFormat.toJSON()".
     name: Excel.Interfaces.ChartGridlinesFormatData
-    fullName: excel.Excel.Interfaces.ChartGridlinesFormatData
+    fullName: Excel.Interfaces.ChartGridlinesFormatData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartGridlinesFormatData.line
+    fullName: line
     langs:
       - typeScript
     type: property

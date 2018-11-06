@@ -43,7 +43,7 @@ items:
 
       ```
     name: Office.OfficeTheme
-    fullName: office.Office.OfficeTheme
+    fullName: Office.OfficeTheme
     langs:
       - typeScript
     type: interface
@@ -56,7 +56,7 @@ items:
   - uid: office.Office.OfficeTheme.bodyBackgroundColor
     summary: Gets the Office theme body background color as a hexadecimal color triplet (e.g. "FFA500").
     name: bodyBackgroundColor
-    fullName: office.Office.OfficeTheme.bodyBackgroundColor
+    fullName: bodyBackgroundColor
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
   - uid: office.Office.OfficeTheme.bodyForegroundColor
     summary: Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. "FFA500").
     name: bodyForegroundColor
-    fullName: office.Office.OfficeTheme.bodyForegroundColor
+    fullName: bodyForegroundColor
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
   - uid: office.Office.OfficeTheme.controlBackgroundColor
     summary: Gets the Office theme control background color as a hexadecimal color triplet (e.g. "FFA500").
     name: controlBackgroundColor
-    fullName: office.Office.OfficeTheme.controlBackgroundColor
+    fullName: controlBackgroundColor
     langs:
       - typeScript
     type: property
@@ -92,7 +92,7 @@ items:
   - uid: office.Office.OfficeTheme.controlForegroundColor
     summary: Gets the Office theme body control color as a hexadecimal color triplet (e.g. "FFA500").
     name: controlForegroundColor
-    fullName: office.Office.OfficeTheme.controlForegroundColor
+    fullName: controlForegroundColor
     langs:
       - typeScript
     type: property

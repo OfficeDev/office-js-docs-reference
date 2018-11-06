@@ -26,7 +26,7 @@ items:
       </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Word
       </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
     name: Office.ValueFormat
-    fullName: office.Office.ValueFormat
+    fullName: Office.ValueFormat
     langs:
       - typeScript
     type: enum
@@ -37,14 +37,14 @@ items:
   - uid: office.Office.ValueFormat.Formatted
     summary: Return formatted data.
     name: Formatted
-    fullName: office.Office.ValueFormat.Formatted
+    fullName: Formatted
     langs:
       - typeScript
     type: field
   - uid: office.Office.ValueFormat.Unformatted
     summary: Return unformatted data.
     name: Unformatted
-    fullName: office.Office.ValueFormat.Unformatted
+    fullName: Unformatted
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationType
-    fullName: excel.Excel.DataValidationType
+    fullName: Excel.DataValidationType
     langs:
       - typeScript
     type: enum
@@ -25,7 +25,7 @@ items:
   - uid: excel.Excel.DataValidationType.custom
     summary: Custom data validation type
     name: custom
-    fullName: excel.Excel.DataValidationType.custom
+    fullName: custom
     langs:
       - typeScript
     type: field
@@ -33,7 +33,7 @@ items:
   - uid: excel.Excel.DataValidationType.date
     summary: Date data validation type
     name: date
-    fullName: excel.Excel.DataValidationType.date
+    fullName: date
     langs:
       - typeScript
     type: field
@@ -41,7 +41,7 @@ items:
   - uid: excel.Excel.DataValidationType.decimal
     summary: Decimal data validation type
     name: decimal
-    fullName: excel.Excel.DataValidationType.decimal
+    fullName: decimal
     langs:
       - typeScript
     type: field
@@ -49,7 +49,7 @@ items:
   - uid: excel.Excel.DataValidationType.inconsistent
     summary: Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
     name: inconsistent
-    fullName: excel.Excel.DataValidationType.inconsistent
+    fullName: inconsistent
     langs:
       - typeScript
     type: field
@@ -57,7 +57,7 @@ items:
   - uid: excel.Excel.DataValidationType.list
     summary: List data validation type
     name: list
-    fullName: excel.Excel.DataValidationType.list
+    fullName: list
     langs:
       - typeScript
     type: field
@@ -65,7 +65,7 @@ items:
   - uid: excel.Excel.DataValidationType.mixedCriteria
     summary: MixedCriteria means that the range has data validation present on some but not all cells
     name: mixedCriteria
-    fullName: excel.Excel.DataValidationType.mixedCriteria
+    fullName: mixedCriteria
     langs:
       - typeScript
     type: field
@@ -73,7 +73,7 @@ items:
   - uid: excel.Excel.DataValidationType.none
     summary: None means allow any value and so there is no data validation in the range.
     name: none
-    fullName: excel.Excel.DataValidationType.none
+    fullName: none
     langs:
       - typeScript
     type: field
@@ -81,7 +81,7 @@ items:
   - uid: excel.Excel.DataValidationType.textLength
     summary: Text length data validation type
     name: textLength
-    fullName: excel.Excel.DataValidationType.textLength
+    fullName: textLength
     langs:
       - typeScript
     type: field
@@ -89,7 +89,7 @@ items:
   - uid: excel.Excel.DataValidationType.time
     summary: Time data validation type
     name: time
-    fullName: excel.Excel.DataValidationType.time
+    fullName: time
     langs:
       - typeScript
     type: field
@@ -97,7 +97,7 @@ items:
   - uid: excel.Excel.DataValidationType.wholeNumber
     summary: Whole number data validation type
     name: wholeNumber
-    fullName: excel.Excel.DataValidationType.wholeNumber
+    fullName: wholeNumber
     langs:
       - typeScript
     type: field

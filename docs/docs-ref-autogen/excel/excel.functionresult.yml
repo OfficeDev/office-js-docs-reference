@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FunctionResult
-    fullName: excel.Excel.FunctionResult
+    fullName: Excel.FunctionResult
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: error
-    fullName: excel.Excel.FunctionResult.error
+    fullName: error
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.FunctionResult.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -75,7 +75,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.FunctionResult.toJSON
     name: toJSON()
-    fullName: excel.Excel.FunctionResult.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.FunctionResult.value
+    fullName: value
     langs:
       - typeScript
     type: property

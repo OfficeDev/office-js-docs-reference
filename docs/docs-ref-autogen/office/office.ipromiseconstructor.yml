@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.IPromiseConstructor
     name: Office.IPromiseConstructor
-    fullName: office.Office.IPromiseConstructor
+    fullName: Office.IPromiseConstructor
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
   - uid: office.Office.IPromiseConstructor.__new
     summary: Creates a new Promise.
     name: __new(executor)
-    fullName: office.Office.IPromiseConstructor.__new
+    fullName: __new
     langs:
       - typeScript
     type: method
@@ -42,7 +42,7 @@ items:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     name: all(values)
-    fullName: office.Office.IPromiseConstructor.all
+    fullName: all
     langs:
       - typeScript
     type: method
@@ -67,7 +67,7 @@ items:
   - uid: office.Office.IPromiseConstructor.prototype
     summary: A reference to the prototype.
     name: prototype
-    fullName: office.Office.IPromiseConstructor.prototype
+    fullName: prototype
     langs:
       - typeScript
     type: property
@@ -79,7 +79,7 @@ items:
   - uid: office.Office.IPromiseConstructor.race
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
-    fullName: office.Office.IPromiseConstructor.race
+    fullName: race
     langs:
       - typeScript
     type: method
@@ -104,7 +104,7 @@ items:
   - uid: office.Office.IPromiseConstructor.reject
     summary: Creates a new rejected promise for the provided reason.
     name: reject(reason)
-    fullName: office.Office.IPromiseConstructor.reject
+    fullName: reject
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
   - uid: office.Office.IPromiseConstructor.resolve
     summary: Creates a new resolved promise for the provided value.
     name: resolve(value)
-    fullName: office.Office.IPromiseConstructor.resolve
+    fullName: resolve
     langs:
       - typeScript
     type: method

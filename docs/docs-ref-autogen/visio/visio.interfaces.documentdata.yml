@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.DocumentData
     summary: An interface describing the data returned by calling "document.toJSON()".
     name: Visio.Interfaces.DocumentData
-    fullName: visio.Visio.Interfaces.DocumentData
+    fullName: Visio.Interfaces.DocumentData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: application
-    fullName: visio.Visio.Interfaces.DocumentData.application
+    fullName: application
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pages
-    fullName: visio.Visio.Interfaces.DocumentData.pages
+    fullName: pages
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
-    fullName: visio.Visio.Interfaces.DocumentData.view
+    fullName: view
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ImageFittingMode
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ImageFittingMode
-    fullName: excel.Excel.ImageFittingMode
+    fullName: Excel.ImageFittingMode
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.ImageFittingMode.fitAndCenter
   - uid: excel.Excel.ImageFittingMode.fill
     name: fill
-    fullName: excel.Excel.ImageFittingMode.fill
+    fullName: fill
     langs:
       - typeScript
     type: field
     numericValue: '"Fill"'
   - uid: excel.Excel.ImageFittingMode.fit
     name: fit
-    fullName: excel.Excel.ImageFittingMode.fit
+    fullName: fit
     langs:
       - typeScript
     type: field
     numericValue: '"Fit"'
   - uid: excel.Excel.ImageFittingMode.fitAndCenter
     name: fitAndCenter
-    fullName: excel.Excel.ImageFittingMode.fitAndCenter
+    fullName: fitAndCenter
     langs:
       - typeScript
     type: field

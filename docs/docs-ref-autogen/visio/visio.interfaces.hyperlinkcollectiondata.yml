@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.HyperlinkCollectionData
     summary: An interface describing the data returned by calling "hyperlinkCollection.toJSON()".
     name: Visio.Interfaces.HyperlinkCollectionData
-    fullName: visio.Visio.Interfaces.HyperlinkCollectionData
+    fullName: Visio.Interfaces.HyperlinkCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - visio.Visio.Interfaces.HyperlinkCollectionData.items
   - uid: visio.Visio.Interfaces.HyperlinkCollectionData.items
     name: items
-    fullName: visio.Visio.Interfaces.HyperlinkCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

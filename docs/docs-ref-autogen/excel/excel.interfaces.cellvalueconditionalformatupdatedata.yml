@@ -5,7 +5,7 @@ items:
       An interface for updating data on the CellValueConditionalFormat object, for use in
       "cellValueConditionalFormat.set({ ... })".
     name: Excel.Interfaces.CellValueConditionalFormatUpdateData
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+    fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

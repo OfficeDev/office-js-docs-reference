@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotTableUpdateData
     summary: 'An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })".'
     name: Excel.Interfaces.PivotTableUpdateData
-    fullName: excel.Excel.Interfaces.PivotTableUpdateData
+    fullName: Excel.Interfaces.PivotTableUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.PivotTableUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property

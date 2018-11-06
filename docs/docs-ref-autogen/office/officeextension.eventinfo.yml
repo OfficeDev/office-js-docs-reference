@@ -2,7 +2,7 @@
 items:
   - uid: office.OfficeExtension.EventInfo
     name: OfficeExtension.EventInfo
-    fullName: office.OfficeExtension.EventInfo
+    fullName: OfficeExtension.EventInfo
     langs:
       - typeScript
     type: interface
@@ -13,7 +13,7 @@ items:
       - office.OfficeExtension.EventInfo.unregisterFunc
   - uid: office.OfficeExtension.EventInfo.eventArgsTransformFunc
     name: eventArgsTransformFunc
-    fullName: office.OfficeExtension.EventInfo.eventArgsTransformFunc
+    fullName: eventArgsTransformFunc
     langs:
       - typeScript
     type: property
@@ -24,7 +24,7 @@ items:
           - '(args: any) => Promise<T>'
   - uid: office.OfficeExtension.EventInfo.registerFunc
     name: registerFunc
-    fullName: office.OfficeExtension.EventInfo.registerFunc
+    fullName: registerFunc
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
           - '(callback: (args: any) => void) => Promise<any>'
   - uid: office.OfficeExtension.EventInfo.unregisterFunc
     name: unregisterFunc
-    fullName: office.OfficeExtension.EventInfo.unregisterFunc
+    fullName: unregisterFunc
     langs:
       - typeScript
     type: property

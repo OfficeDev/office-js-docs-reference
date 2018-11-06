@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Page
-    fullName: onenote.OneNote.Page
+    fullName: OneNote.Page
     langs:
       - typeScript
     type: class
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addOutline(left, top, html)'
-    fullName: onenote.OneNote.Page.addOutline
+    fullName: addOutline
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: analyzePage()
-    fullName: onenote.OneNote.Page.analyzePage
+    fullName: analyzePage
     langs:
       - typeScript
     type: method
@@ -127,7 +127,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: applyTranslation(translatedContent)
-    fullName: onenote.OneNote.Page.applyTranslation
+    fullName: applyTranslation
     langs:
       - typeScript
     type: method
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: classNotebookPageSource
-    fullName: onenote.OneNote.Page.classNotebookPageSource
+    fullName: classNotebookPageSource
     langs:
       - typeScript
     type: property
@@ -163,7 +163,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
-    fullName: onenote.OneNote.Page.clientUrl
+    fullName: clientUrl
     langs:
       - typeScript
     type: property
@@ -178,7 +178,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contents
-    fullName: onenote.OneNote.Page.contents
+    fullName: contents
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSection(destinationSection)
-    fullName: onenote.OneNote.Page.copyToSection
+    fullName: copyToSection
     langs:
       - typeScript
     type: method
@@ -253,7 +253,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSectionAndSetClassNotebookPageSource(destinationSection)
-    fullName: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
+    fullName: copyToSectionAndSetClassNotebookPageSource
     langs:
       - typeScript
     type: method
@@ -274,7 +274,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
-    fullName: onenote.OneNote.Page.getRestApiId
+    fullName: getRestApiId
     langs:
       - typeScript
     type: method
@@ -310,7 +310,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hasTitleContent()
-    fullName: onenote.OneNote.Page.hasTitleContent
+    fullName: hasTitleContent
     langs:
       - typeScript
     type: method
@@ -326,7 +326,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Page.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -341,7 +341,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysisOrNull
-    fullName: onenote.OneNote.Page.inkAnalysisOrNull
+    fullName: inkAnalysisOrNull
     langs:
       - typeScript
     type: property
@@ -356,7 +356,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertPageAsSibling(location, title)'
-    fullName: onenote.OneNote.Page.insertPageAsSibling
+    fullName: insertPageAsSibling
     langs:
       - typeScript
     type: method
@@ -524,7 +524,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.Page.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -545,7 +545,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageLevel
-    fullName: onenote.OneNote.Page.pageLevel
+    fullName: pageLevel
     langs:
       - typeScript
     type: property
@@ -560,7 +560,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSection
-    fullName: onenote.OneNote.Page.parentSection
+    fullName: parentSection
     langs:
       - typeScript
     type: property
@@ -575,7 +575,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: title
-    fullName: onenote.OneNote.Page.title
+    fullName: title
     langs:
       - typeScript
     type: property
@@ -586,7 +586,7 @@ items:
           - string
   - uid: onenote.OneNote.Page.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.Page.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -604,7 +604,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.Page.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -621,7 +621,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.Page.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -637,7 +637,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: webUrl
-    fullName: onenote.OneNote.Page.webUrl
+    fullName: webUrl
     langs:
       - typeScript
     type: property

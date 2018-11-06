@@ -2,7 +2,7 @@
 items:
   - uid: onenote.OneNote.RequestContext
     name: OneNote.RequestContext
-    fullName: onenote.OneNote.RequestContext
+    fullName: OneNote.RequestContext
     langs:
       - typeScript
     type: class
@@ -15,7 +15,7 @@ items:
   - uid: onenote.OneNote.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:onenote.OneNote.RequestContext) class'
     name: constructor(url)
-    fullName: onenote.OneNote.RequestContext.constructor
+    fullName: constructor
     langs:
       - typeScript
     type: constructor
@@ -28,7 +28,7 @@ items:
             - string
   - uid: onenote.OneNote.RequestContext.application
     name: application
-    fullName: onenote.OneNote.RequestContext.application
+    fullName: application
     langs:
       - typeScript
     type: property

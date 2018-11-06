@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set({ ...
       })".
     name: Excel.Interfaces.ConditionalFormatRuleUpdateData
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
+    fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaLocal
+    fullName: formulaLocal
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaR1C1
+    fullName: formulaR1C1
     langs:
       - typeScript
     type: property

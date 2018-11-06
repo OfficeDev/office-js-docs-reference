@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Comment
-    fullName: visio.Visio.Comment
+    fullName: Visio.Comment
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: author
-    fullName: visio.Visio.Comment.author
+    fullName: author
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: date
-    fullName: visio.Visio.Comment.date
+    fullName: date
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.Comment.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
-    fullName: visio.Visio.Comment.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
           - string
   - uid: visio.Visio.Comment.toJSON
     name: toJSON()
-    fullName: visio.Visio.Comment.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

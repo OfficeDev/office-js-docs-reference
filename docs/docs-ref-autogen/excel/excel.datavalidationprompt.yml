@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationPrompt
-    fullName: excel.Excel.DataValidationPrompt
+    fullName: Excel.DataValidationPrompt
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
-    fullName: excel.Excel.DataValidationPrompt.message
+    fullName: message
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPrompt
-    fullName: excel.Excel.DataValidationPrompt.showPrompt
+    fullName: showPrompt
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
-    fullName: excel.Excel.DataValidationPrompt.title
+    fullName: title
     langs:
       - typeScript
     type: property

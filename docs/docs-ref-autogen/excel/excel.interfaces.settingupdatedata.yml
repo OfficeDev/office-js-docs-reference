@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.SettingUpdateData
     summary: 'An interface for updating data on the Setting object, for use in "setting.set({ ... })".'
     name: Excel.Interfaces.SettingUpdateData
-    fullName: excel.Excel.Interfaces.SettingUpdateData
+    fullName: Excel.Interfaces.SettingUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.Interfaces.SettingUpdateData.value
+    fullName: value
     langs:
       - typeScript
     type: property

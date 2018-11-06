@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.RichText
-    fullName: onenote.OneNote.RichText
+    fullName: OneNote.RichText
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getHtml()
-    fullName: onenote.OneNote.RichText.getHtml
+    fullName: getHtml
     langs:
       - typeScript
     type: method
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.RichText.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
-    fullName: onenote.OneNote.RichText.languageId
+    fullName: languageId
     langs:
       - typeScript
     type: property
@@ -154,7 +154,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.RichText.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -175,7 +175,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
-    fullName: onenote.OneNote.RichText.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -190,7 +190,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: text
-    fullName: onenote.OneNote.RichText.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -201,7 +201,7 @@ items:
           - string
   - uid: onenote.OneNote.RichText.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.RichText.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -219,7 +219,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.RichText.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -236,7 +236,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.RichText.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

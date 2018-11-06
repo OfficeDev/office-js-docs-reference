@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchy
-    fullName: excel.Excel.PivotHierarchy
+    fullName: Excel.PivotHierarchy
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
-    fullName: excel.Excel.PivotHierarchy.fields
+    fullName: fields
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.PivotHierarchy.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotHierarchy.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -89,7 +89,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.PivotHierarchy.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -100,7 +100,7 @@ items:
           - string
   - uid: excel.Excel.PivotHierarchy.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotHierarchy.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

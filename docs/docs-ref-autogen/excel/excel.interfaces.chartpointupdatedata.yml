@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartPointUpdateData
     summary: 'An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })".'
     name: Excel.Interfaces.ChartPointUpdateData
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData
+    fullName: Excel.Interfaces.ChartPointUpdateData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabel
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.dataLabel
+    fullName: dataLabel
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabel
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.hasDataLabel
+    fullName: hasDataLabel
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerBackgroundColor
+    fullName: markerBackgroundColor
     langs:
       - typeScript
     type: property
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerForegroundColor
+    fullName: markerForegroundColor
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerSize
+    fullName: markerSize
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
-    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerStyle
+    fullName: markerStyle
     langs:
       - typeScript
     type: property

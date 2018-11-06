@@ -8,7 +8,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettingCollection
-    fullName: excel.Excel.SettingCollection
+    fullName: Excel.SettingCollection
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
-    fullName: excel.Excel.SettingCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.SettingCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -83,7 +83,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: excel.Excel.SettingCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -104,7 +104,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: excel.Excel.SettingCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -143,7 +143,7 @@ items:
   - uid: excel.Excel.SettingCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.SettingCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -171,7 +171,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.SettingCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSettingsChanged
-    fullName: excel.Excel.SettingCollection.onSettingsChanged
+    fullName: onSettingsChanged
     langs:
       - typeScript
     type: event
@@ -216,7 +216,7 @@ items:
           ```
   - uid: excel.Excel.SettingCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.SettingCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartPointFormatUpdateData
     summary: 'An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set({ ... })".'
     name: Excel.Interfaces.ChartPointFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartPointFormatUpdateData
+    fullName: Excel.Interfaces.ChartPointFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
-    fullName: excel.Excel.Interfaces.ChartPointFormatUpdateData.border
+    fullName: border
     langs:
       - typeScript
     type: property

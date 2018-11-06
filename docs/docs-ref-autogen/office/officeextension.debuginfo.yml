@@ -3,7 +3,7 @@ items:
   - uid: office.OfficeExtension.DebugInfo
     summary: Provides information about an error.
     name: OfficeExtension.DebugInfo
-    fullName: office.OfficeExtension.DebugInfo
+    fullName: OfficeExtension.DebugInfo
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
   - uid: office.OfficeExtension.DebugInfo.code
     summary: 'Error code string, such as "InvalidArgument".'
     name: code
-    fullName: office.OfficeExtension.DebugInfo.code
+    fullName: code
     langs:
       - typeScript
     type: property
@@ -31,7 +31,7 @@ items:
   - uid: office.OfficeExtension.DebugInfo.errorLocation
     summary: 'The object type and property or method name (or similar information), if available.'
     name: errorLocation
-    fullName: office.OfficeExtension.DebugInfo.errorLocation
+    fullName: errorLocation
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       These statements may not match the code exactly as written, but will be a close approximation.
     name: fullStatements
-    fullName: office.OfficeExtension.DebugInfo.fullStatements
+    fullName: fullStatements
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
   - uid: office.OfficeExtension.DebugInfo.innerError
     summary: 'Inner error, if applicable.'
     name: innerError
-    fullName: office.OfficeExtension.DebugInfo.innerError
+    fullName: innerError
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
   - uid: office.OfficeExtension.DebugInfo.message
     summary: The error message passed through from the host Office application.
     name: message
-    fullName: office.OfficeExtension.DebugInfo.message
+    fullName: message
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
       This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     name: statements
-    fullName: office.OfficeExtension.DebugInfo.statements
+    fullName: statements
     langs:
       - typeScript
     type: property
@@ -106,7 +106,7 @@ items:
       These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     name: surroundingStatements
-    fullName: office.OfficeExtension.DebugInfo.surroundingStatements
+    fullName: surroundingStatements
     langs:
       - typeScript
     type: property

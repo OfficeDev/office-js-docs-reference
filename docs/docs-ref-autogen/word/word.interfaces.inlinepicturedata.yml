@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.InlinePictureData
     summary: An interface describing the data returned by calling "inlinePicture.toJSON()".
     name: Word.Interfaces.InlinePictureData
-    fullName: word.Word.Interfaces.InlinePictureData
+    fullName: Word.Interfaces.InlinePictureData
     langs:
       - typeScript
     type: interface
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
-    fullName: word.Word.Interfaces.InlinePictureData.altTextDescription
+    fullName: altTextDescription
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
-    fullName: word.Word.Interfaces.InlinePictureData.altTextTitle
+    fullName: altTextTitle
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
-    fullName: word.Word.Interfaces.InlinePictureData.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -73,7 +73,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
-    fullName: word.Word.Interfaces.InlinePictureData.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
-    fullName: word.Word.Interfaces.InlinePictureData.lockAspectRatio
+    fullName: lockAspectRatio
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraph
-    fullName: word.Word.Interfaces.InlinePictureData.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -120,7 +120,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
-    fullName: word.Word.Interfaces.InlinePictureData.parentContentControl
+    fullName: parentContentControl
     langs:
       - typeScript
     type: property
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
-    fullName: word.Word.Interfaces.InlinePictureData.parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
     langs:
       - typeScript
     type: property
@@ -152,7 +152,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.Interfaces.InlinePictureData.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -167,7 +167,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
-    fullName: word.Word.Interfaces.InlinePictureData.parentTableCell
+    fullName: parentTableCell
     langs:
       - typeScript
     type: property
@@ -184,7 +184,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
-    fullName: word.Word.Interfaces.InlinePictureData.parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
     langs:
       - typeScript
     type: property
@@ -199,7 +199,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
-    fullName: word.Word.Interfaces.InlinePictureData.parentTableOrNullObject
+    fullName: parentTableOrNullObject
     langs:
       - typeScript
     type: property
@@ -214,7 +214,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.Interfaces.InlinePictureData.width
+    fullName: width
     langs:
       - typeScript
     type: property

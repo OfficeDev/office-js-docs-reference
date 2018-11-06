@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: Office.AttachmentDetails
-    fullName: Outlook_1_3.Office.AttachmentDetails
+    fullName: Office.AttachmentDetails
     langs:
       - typeScript
     type: interface
@@ -30,7 +30,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.attachmentType
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
-    fullName: Outlook_1_3.Office.AttachmentDetails.attachmentType
+    fullName: attachmentType
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.contentType
     summary: Gets the MIME content type of the attachment.
     name: contentType
-    fullName: Outlook_1_3.Office.AttachmentDetails.contentType
+    fullName: contentType
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.id
     summary: Gets the Exchange attachment ID of the attachment.
     name: id
-    fullName: Outlook_1_3.Office.AttachmentDetails.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.isInline
     summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     name: isInline
-    fullName: Outlook_1_3.Office.AttachmentDetails.isInline
+    fullName: isInline
     langs:
       - typeScript
     type: property
@@ -78,7 +78,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.name
     summary: Gets the name of the attachment.
     name: name
-    fullName: Outlook_1_3.Office.AttachmentDetails.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -90,7 +90,7 @@ items:
   - uid: Outlook_1_3.Office.AttachmentDetails.size
     summary: Gets the size of the attachment in bytes.
     name: size
-    fullName: Outlook_1_3.Office.AttachmentDetails.size
+    fullName: size
     langs:
       - typeScript
     type: property
