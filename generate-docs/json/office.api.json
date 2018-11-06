@@ -432,11 +432,11 @@
             },
             "columns": {
               "kind": "property",
-              "signature": "columns?: Array<string>;",
+              "signature": "columns?: string[];",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -50937,11 +50937,11 @@
             },
             "cellFormat": {
               "kind": "property",
-              "signature": "cellFormat?: Array<RangeFormatConfiguration>;",
+              "signature": "cellFormat?: RangeFormatConfiguration[];",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<RangeFormatConfiguration>",
+              "type": "RangeFormatConfiguration[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -50991,11 +50991,11 @@
             },
             "columns": {
               "kind": "property",
-              "signature": "columns?: Array<string>;",
+              "signature": "columns?: string[];",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -51140,11 +51140,11 @@
             },
             "cellFormat": {
               "kind": "property",
-              "signature": "cellFormat?: Array<RangeFormatConfiguration>;",
+              "signature": "cellFormat?: RangeFormatConfiguration[];",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<RangeFormatConfiguration>",
+              "type": "RangeFormatConfiguration[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -62591,6 +62591,54 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "12009"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</table>"
                 },
                 {
@@ -65053,11 +65101,11 @@
             },
             "traceMessages": {
               "kind": "property",
-              "signature": "traceMessages: Array<string>;",
+              "signature": "traceMessages: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {

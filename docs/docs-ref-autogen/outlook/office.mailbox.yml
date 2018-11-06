@@ -1088,7 +1088,7 @@ items:
   - uid: outlook.Office.Mailbox.userProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
-      adddress, and time zone.
+      address, and time zone.
 
 
       More information is under [Office.UserProfile](xref:outlook.Office.UserProfile)

@@ -30,7 +30,12 @@ export declare namespace Office {
             /**
              * The content of the attachment is returned as a string representing an .eml formatted file.
              */
-            Eml = "eml"
+            Eml = "eml",
+
+            /**
+             * The content of the attachment is returned as a string representing an .icalendar formatted file.
+             */
+            ICalendar = "iCalendar"
         }
         /**
          * Specifies whether an attachment was added to or removed from an item.
@@ -1228,8 +1233,13 @@ export declare namespace Office {
         content: string;
         /**
          * The string format to use for an attachment's content.
-         * For file attachments, the formatting is a base64-encoded string. 
-         * For item attachments that represent messages, the formatting is a string representing an .eml formatted file. 
+         * 
+         * For file attachments, the formatting is a base64-encoded string.
+         * 
+         * For item attachments that represent messages, the formatting is a string representing an .eml formatted file.
+         * 
+         * For item attachments that represent calendar items, the formatting is a string representing an .icalendar file.
+         * 
          * For cloud attachments, the formatting is a URL string.
          */
         format: Office.MailboxEnums.AttachmentContentFormat;
@@ -1678,7 +1688,7 @@ export declare namespace Office {
         /**
          * An array of strings containing the mailing and street addresses associated with the contact. Nullable.
          */
-        addresses: Array<string>;
+        addresses: string[];
         /**
          * A string containing the name of the business associated with the contact. Nullable.
          */
@@ -1686,7 +1696,7 @@ export declare namespace Office {
         /**
          * An array of strings containing the SMTP email addresses associated with the contact. Nullable,
          */
-        emailAddresses: Array<string>;
+        emailAddresses: string[];
         /**
          * A string containing the name of the person associated with the contact. Nullable.
          */
@@ -1694,11 +1704,11 @@ export declare namespace Office {
         /**
          * An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
          */
-        phoneNumbers: Array<PhoneNumber>;
+        phoneNumbers: PhoneNumber[];
         /**
          * An array of strings containing the Internet URLs associated with the contact. Nullable.
          */
-        urls: Array<string>;
+        urls: string[];
     }
     /**
      * The CustomProperties object represents custom properties that are specific to a particular item and specific to a mail add-in for Outlook. 
@@ -7740,7 +7750,7 @@ export declare namespace Office {
          */
         restUrl: string;
         /**
-         * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+         * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
          * 
          * More information is under {@link Office.UserProfile}
          */
@@ -9804,7 +9814,7 @@ export declare namespace Office {
 
     }
     /**
-     * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+     * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
      * 
      * [Api set: Mailbox 1.0]
      *

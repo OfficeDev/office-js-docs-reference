@@ -47,10 +47,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cellFormat?: Array<RangeFormatConfiguration>;'
+      content: 'cellFormat?: RangeFormatConfiguration[];'
       return:
         type:
-          - Array<RangeFormatConfiguration>
+          - 'RangeFormatConfiguration[]'
   - uid: office.Office.SetBindingDataOptions.coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     name: coercionType
@@ -71,10 +71,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'columns?: Array<string>;'
+      content: 'columns?: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: office.Office.SetBindingDataOptions.rows
     summary: >-
       Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in

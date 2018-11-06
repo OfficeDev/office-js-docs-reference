@@ -36,10 +36,16 @@ items:
         type:
           - string
   - uid: outlook.Office.AttachmentContent.format
-    summary: >-
-      The string format to use for an attachment's content. For file attachments, the formatting is a base64-encoded
-      string. For item attachments that represent messages, the formatting is a string representing an .eml formatted
-      file. For cloud attachments, the formatting is a URL string.
+    summary: |-
+      The string format to use for an attachment's content.
+
+      For file attachments, the formatting is a base64-encoded string.
+
+      For item attachments that represent messages, the formatting is a string representing an .eml formatted file.
+
+      For item attachments that represent calendar items, the formatting is a string representing an .icalendar file.
+
+      For cloud attachments, the formatting is a URL string.
     isPreview: true
     name: format
     fullName: outlook.Office.AttachmentContent.format

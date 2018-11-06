@@ -95063,7 +95063,7 @@
           "members": {
             "add": {
               "kind": "method",
-              "signature": "add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;",
+              "signature": "add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -95094,7 +95094,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "string | number | boolean | Date | Array<any> | any"
+                  "type": "string | number | boolean | Date | any[] | any"
                 }
               },
               "deprecatedMessage": [],
