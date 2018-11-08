@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartLegendEntryData
     summary: An interface describing the data returned by calling "chartLegendEntry.toJSON()".
     name: Excel.Interfaces.ChartLegendEntryData
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData
+    fullName: Excel.Interfaces.ChartLegendEntryData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -96,7 +96,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.Interfaces.ChartLegendEntryData.width
+    fullName: width
     langs:
       - typeScript
     type: property

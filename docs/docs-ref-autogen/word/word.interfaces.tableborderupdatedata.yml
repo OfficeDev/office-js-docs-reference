@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.TableBorderUpdateData
     summary: 'An interface for updating data on the TableBorder object, for use in "tableBorder.set({ ... })".'
     name: Word.Interfaces.TableBorderUpdateData
-    fullName: word.Word.Interfaces.TableBorderUpdateData
+    fullName: Word.Interfaces.TableBorderUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
-    fullName: word.Word.Interfaces.TableBorderUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: type
-    fullName: word.Word.Interfaces.TableBorderUpdateData.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.Interfaces.TableBorderUpdateData.width
+    fullName: width
     langs:
       - typeScript
     type: property

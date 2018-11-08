@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatRuleType
-    fullName: excel.Excel.ConditionalFormatRuleType
+    fullName: Excel.ConditionalFormatRuleType
     langs:
       - typeScript
     type: enum
@@ -22,56 +22,56 @@ items:
       - excel.Excel.ConditionalFormatRuleType.percentile
   - uid: excel.Excel.ConditionalFormatRuleType.automatic
     name: automatic
-    fullName: excel.Excel.ConditionalFormatRuleType.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.ConditionalFormatRuleType.formula
     name: formula
-    fullName: excel.Excel.ConditionalFormatRuleType.formula
+    fullName: formula
     langs:
       - typeScript
     type: field
     numericValue: '"Formula"'
   - uid: excel.Excel.ConditionalFormatRuleType.highestValue
     name: highestValue
-    fullName: excel.Excel.ConditionalFormatRuleType.highestValue
+    fullName: highestValue
     langs:
       - typeScript
     type: field
     numericValue: '"HighestValue"'
   - uid: excel.Excel.ConditionalFormatRuleType.invalid
     name: invalid
-    fullName: excel.Excel.ConditionalFormatRuleType.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ConditionalFormatRuleType.lowestValue
     name: lowestValue
-    fullName: excel.Excel.ConditionalFormatRuleType.lowestValue
+    fullName: lowestValue
     langs:
       - typeScript
     type: field
     numericValue: '"LowestValue"'
   - uid: excel.Excel.ConditionalFormatRuleType.number
     name: number
-    fullName: excel.Excel.ConditionalFormatRuleType.number
+    fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
   - uid: excel.Excel.ConditionalFormatRuleType.percent
     name: percent
-    fullName: excel.Excel.ConditionalFormatRuleType.percent
+    fullName: percent
     langs:
       - typeScript
     type: field
     numericValue: '"Percent"'
   - uid: excel.Excel.ConditionalFormatRuleType.percentile
     name: percentile
-    fullName: excel.Excel.ConditionalFormatRuleType.percentile
+    fullName: percentile
     langs:
       - typeScript
     type: field

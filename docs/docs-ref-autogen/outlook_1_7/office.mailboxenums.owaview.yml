@@ -3,7 +3,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.OWAView
     summary: Represents the current view of Outlook Web App.
     name: Office.MailboxEnums.OWAView
-    fullName: Outlook_1_7.Office.MailboxEnums.OWAView
+    fullName: Office.MailboxEnums.OWAView
     langs:
       - typeScript
     type: enum
@@ -17,7 +17,7 @@ items:
       One column view. Displayed when the screen is narrow. Outlook Web App uses this single-column layout on the entire
       screen of a smartphone.
     name: OneColumn
-    fullName: Outlook_1_7.Office.MailboxEnums.OWAView.OneColumn
+    fullName: OneColumn
     langs:
       - typeScript
     type: field
@@ -27,7 +27,7 @@ items:
       Three column view. Displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen
       window on a desktop computer.
     name: ThreeColumns
-    fullName: Outlook_1_7.Office.MailboxEnums.OWAView.ThreeColumns
+    fullName: ThreeColumns
     langs:
       - typeScript
     type: field
@@ -35,7 +35,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.OWAView.TwoColumns
     summary: Two column view. Displayed when the screen is wider. Outlook Web App uses this view on most tablets.
     name: TwoColumns
-    fullName: Outlook_1_7.Office.MailboxEnums.OWAView.TwoColumns
+    fullName: TwoColumns
     langs:
       - typeScript
     type: field

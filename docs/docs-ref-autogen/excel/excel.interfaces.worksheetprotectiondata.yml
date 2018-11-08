@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.WorksheetProtectionData
     summary: An interface describing the data returned by calling "worksheetProtection.toJSON()".
     name: Excel.Interfaces.WorksheetProtectionData
-    fullName: excel.Excel.Interfaces.WorksheetProtectionData
+    fullName: Excel.Interfaces.WorksheetProtectionData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
-    fullName: excel.Excel.Interfaces.WorksheetProtectionData.options
+    fullName: options
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
-    fullName: excel.Excel.Interfaces.WorksheetProtectionData.protected
+    fullName: protected
     langs:
       - typeScript
     type: property

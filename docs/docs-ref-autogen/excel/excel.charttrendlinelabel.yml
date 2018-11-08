@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineLabel
-    fullName: excel.Excel.ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
     langs:
       - typeScript
     type: class
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
-    fullName: excel.Excel.ChartTrendlineLabel.autoText
+    fullName: autoText
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartTrendlineLabel.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.ChartTrendlineLabel.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.ChartTrendlineLabel.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -98,7 +98,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.ChartTrendlineLabel.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -117,7 +117,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.ChartTrendlineLabel.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -145,7 +145,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartTrendlineLabel.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -166,7 +166,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.ChartTrendlineLabel.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -181,7 +181,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.ChartTrendlineLabel.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -198,7 +198,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.ChartTrendlineLabel.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -209,7 +209,7 @@ items:
           - number
   - uid: excel.Excel.ChartTrendlineLabel.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartTrendlineLabel.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -227,7 +227,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.ChartTrendlineLabel.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -244,7 +244,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.ChartTrendlineLabel.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -261,7 +261,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.ChartTrendlineLabel.width
+    fullName: width
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTopBottomCriterionType
-    fullName: excel.Excel.ConditionalTopBottomCriterionType
+    fullName: Excel.ConditionalTopBottomCriterionType
     langs:
       - typeScript
     type: enum
@@ -19,35 +19,35 @@ items:
       - excel.Excel.ConditionalTopBottomCriterionType.topPercent
   - uid: excel.Excel.ConditionalTopBottomCriterionType.bottomItems
     name: bottomItems
-    fullName: excel.Excel.ConditionalTopBottomCriterionType.bottomItems
+    fullName: bottomItems
     langs:
       - typeScript
     type: field
     numericValue: '"BottomItems"'
   - uid: excel.Excel.ConditionalTopBottomCriterionType.bottomPercent
     name: bottomPercent
-    fullName: excel.Excel.ConditionalTopBottomCriterionType.bottomPercent
+    fullName: bottomPercent
     langs:
       - typeScript
     type: field
     numericValue: '"BottomPercent"'
   - uid: excel.Excel.ConditionalTopBottomCriterionType.invalid
     name: invalid
-    fullName: excel.Excel.ConditionalTopBottomCriterionType.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ConditionalTopBottomCriterionType.topItems
     name: topItems
-    fullName: excel.Excel.ConditionalTopBottomCriterionType.topItems
+    fullName: topItems
     langs:
       - typeScript
     type: field
     numericValue: '"TopItems"'
   - uid: excel.Excel.ConditionalTopBottomCriterionType.topPercent
     name: topPercent
-    fullName: excel.Excel.ConditionalTopBottomCriterionType.topPercent
+    fullName: topPercent
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Application
-    fullName: word.Word.Application
+    fullName: Word.Application
     langs:
       - typeScript
     type: class
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: createDocument(base64File)
-    fullName: word.Word.Application.createDocument
+    fullName: createDocument
     langs:
       - typeScript
     type: method
@@ -41,7 +41,7 @@ items:
   - uid: word.Word.Application.newObject
     summary: Create a new instance of Word.Application object
     name: newObject(context)
-    fullName: word.Word.Application.newObject
+    fullName: newObject
     langs:
       - typeScript
     type: method
@@ -58,7 +58,7 @@ items:
             - office.OfficeExtension.ClientRequestContext
   - uid: word.Word.Application.toJSON
     name: toJSON()
-    fullName: word.Word.Application.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalCellValueRule
-    fullName: excel.Excel.ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
-    fullName: excel.Excel.ConditionalCellValueRule.formula1
+    fullName: formula1
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
-    fullName: excel.Excel.ConditionalCellValueRule.formula2
+    fullName: formula2
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
-    fullName: excel.Excel.ConditionalCellValueRule.operator
+    fullName: operator
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.PageCollectionData
     summary: An interface describing the data returned by calling "pageCollection.toJSON()".
     name: OneNote.Interfaces.PageCollectionData
-    fullName: onenote.OneNote.Interfaces.PageCollectionData
+    fullName: OneNote.Interfaces.PageCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - onenote.OneNote.Interfaces.PageCollectionData.items
   - uid: onenote.OneNote.Interfaces.PageCollectionData.items
     name: items
-    fullName: onenote.OneNote.Interfaces.PageCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

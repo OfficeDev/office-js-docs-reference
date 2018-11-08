@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData
     summary: 'An interface for updating data on the SectionCollection object, for use in "sectionCollection.set({ ... })".'
     name: OneNote.Interfaces.SectionCollectionUpdateData
-    fullName: onenote.OneNote.Interfaces.SectionCollectionUpdateData
+    fullName: OneNote.Interfaces.SectionCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - onenote.OneNote.Interfaces.SectionCollectionUpdateData.items
   - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData.items
     name: items
-    fullName: onenote.OneNote.Interfaces.SectionCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

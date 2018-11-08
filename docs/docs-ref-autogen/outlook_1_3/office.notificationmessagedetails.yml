@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.NotificationMessageDetails
-    fullName: Outlook_1_3.Office.NotificationMessageDetails
+    fullName: Office.NotificationMessageDetails
     langs:
       - typeScript
     type: interface
@@ -30,7 +30,7 @@ items:
       It is only applicable if the type is InformationalMessage. Specifying this parameter for an unsupported type
       results in an exception.
     name: icon
-    fullName: Outlook_1_3.Office.NotificationMessageDetails.icon
+    fullName: icon
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
   - uid: Outlook_1_3.Office.NotificationMessageDetails.key
     summary: The identifier for the notification message.
     name: key
-    fullName: Outlook_1_3.Office.NotificationMessageDetails.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
       The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer
       string, an ArgumentOutOfRange exception is thrown.
     name: message
-    fullName: Outlook_1_3.Office.NotificationMessageDetails.message
+    fullName: message
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
       notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type
       throws an exception.
     name: persistent
-    fullName: Outlook_1_3.Office.NotificationMessageDetails.persistent
+    fullName: persistent
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
       valid for these types of messages. Including them will result in an ArgumentException. If type is
       ProgressIndicator, the developer should remove or replace the progress indicator when the action is complete.
     name: type
-    fullName: Outlook_1_3.Office.NotificationMessageDetails.type
+    fullName: type
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.RequirementSetSupport
     summary: Provides information about what Requirement Sets are supported in current environment.
     name: Office.RequirementSetSupport
-    fullName: office.Office.RequirementSetSupport
+    fullName: Office.RequirementSetSupport
     langs:
       - typeScript
     type: interface
@@ -13,7 +13,7 @@ items:
   - uid: office.Office.RequirementSetSupport.isSetSupported
     summary: Check if the specified requirement set is supported by the host Office application.
     name: 'isSetSupported(name, minVersion)'
-    fullName: office.Office.RequirementSetSupport.isSetSupported
+    fullName: isSetSupported
     langs:
       - typeScript
     type: method

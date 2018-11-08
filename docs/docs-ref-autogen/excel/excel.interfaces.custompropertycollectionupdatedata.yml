@@ -5,7 +5,7 @@ items:
       An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({
       ... })".
     name: Excel.Interfaces.CustomPropertyCollectionUpdateData
-    fullName: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
+    fullName: Excel.Interfaces.CustomPropertyCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
   - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
     name: items
-    fullName: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

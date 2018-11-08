@@ -3,7 +3,7 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormAttachment
     summary: A file or item attachment. Used when displaying a reply form.
     name: Office.ReplyFormAttachment
-    fullName: Outlook_1_7.Office.ReplyFormAttachment
+    fullName: Office.ReplyFormAttachment
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
       Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
       and should not be displayed in the attachment list.
     name: inLine
-    fullName: Outlook_1_7.Office.ReplyFormAttachment.inLine
+    fullName: inLine
     langs:
       - typeScript
     type: property
@@ -31,7 +31,7 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormAttachment.itemId
     summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
     name: itemId
-    fullName: Outlook_1_7.Office.ReplyFormAttachment.itemId
+    fullName: itemId
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormAttachment.name
     summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
     name: name
-    fullName: Outlook_1_7.Office.ReplyFormAttachment.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormAttachment.type
     summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
     name: type
-    fullName: Outlook_1_7.Office.ReplyFormAttachment.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
   - uid: Outlook_1_7.Office.ReplyFormAttachment.url
     summary: Only used if type is set to file. The URI of the location for the file.
     name: url
-    fullName: Outlook_1_7.Office.ReplyFormAttachment.url
+    fullName: url
     langs:
       - typeScript
     type: property

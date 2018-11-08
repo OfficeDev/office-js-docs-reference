@@ -11297,7 +11297,35 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The string format to use for an attachment's content. For file attachments, the formatting is a base64-encoded string. For item attachments that represent messages, the formatting is a string representing an .eml formatted file. For cloud attachments, the formatting is a URL string."
+                  "text": "The string format to use for an attachment's content."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For file attachments, the formatting is a base64-encoded string."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For item attachments that represent messages, the formatting is a string representing an .eml formatted file."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For item attachments that represent calendar items, the formatting is a string representing an .icalendar file."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For cloud attachments, the formatting is a URL string."
                 }
               ],
               "remarks": [],
@@ -12924,11 +12952,11 @@
           "members": {
             "addresses": {
               "kind": "property",
-              "signature": "addresses: Array<string>;",
+              "signature": "addresses: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -12966,11 +12994,11 @@
             },
             "emailAddresses": {
               "kind": "property",
-              "signature": "emailAddresses: Array<string>;",
+              "signature": "emailAddresses: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -13008,11 +13036,11 @@
             },
             "phoneNumbers": {
               "kind": "property",
-              "signature": "phoneNumbers: Array<PhoneNumber>;",
+              "signature": "phoneNumbers: PhoneNumber[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<PhoneNumber>",
+              "type": "PhoneNumber[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -13029,11 +13057,11 @@
             },
             "urls": {
               "kind": "property",
-              "signature": "urls: Array<string>;",
+              "signature": "urls: string[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Array<string>",
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -27382,7 +27410,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+                  "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone."
                 },
                 {
                   "kind": "paragraph"
@@ -27447,6 +27475,19 @@
                     {
                       "kind": "text",
                       "text": "The content of the attachment is returned as a string representing an .eml formatted file."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "ICalendar": {
+                  "kind": "enum value",
+                  "value": "\"iCalendar\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The content of the attachment is returned as a string representing an .icalendar formatted file."
                     }
                   ],
                   "remarks": [],
@@ -49920,7 +49961,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone."
             },
             {
               "kind": "paragraph"

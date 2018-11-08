@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTextHorizontalAlignment
-    fullName: excel.Excel.ChartTextHorizontalAlignment
+    fullName: Excel.ChartTextHorizontalAlignment
     langs:
       - typeScript
     type: enum
@@ -19,35 +19,35 @@ items:
       - excel.Excel.ChartTextHorizontalAlignment.right
   - uid: excel.Excel.ChartTextHorizontalAlignment.center
     name: center
-    fullName: excel.Excel.ChartTextHorizontalAlignment.center
+    fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.ChartTextHorizontalAlignment.distributed
     name: distributed
-    fullName: excel.Excel.ChartTextHorizontalAlignment.distributed
+    fullName: distributed
     langs:
       - typeScript
     type: field
     numericValue: '"Distributed"'
   - uid: excel.Excel.ChartTextHorizontalAlignment.justify
     name: justify
-    fullName: excel.Excel.ChartTextHorizontalAlignment.justify
+    fullName: justify
     langs:
       - typeScript
     type: field
     numericValue: '"Justify"'
   - uid: excel.Excel.ChartTextHorizontalAlignment.left
     name: left
-    fullName: excel.Excel.ChartTextHorizontalAlignment.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.ChartTextHorizontalAlignment.right
     name: right
-    fullName: excel.Excel.ChartTextHorizontalAlignment.right
+    fullName: right
     langs:
       - typeScript
     type: field

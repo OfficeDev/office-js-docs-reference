@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.InsertLocation
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.InsertLocation
-    fullName: onenote.OneNote.InsertLocation
+    fullName: OneNote.InsertLocation
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - onenote.OneNote.InsertLocation.before
   - uid: onenote.OneNote.InsertLocation.after
     name: after
-    fullName: onenote.OneNote.InsertLocation.after
+    fullName: after
     langs:
       - typeScript
     type: field
     numericValue: '"After"'
   - uid: onenote.OneNote.InsertLocation.before
     name: before
-    fullName: onenote.OneNote.InsertLocation.before
+    fullName: before
     langs:
       - typeScript
     type: field

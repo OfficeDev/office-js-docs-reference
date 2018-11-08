@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFont
-    fullName: excel.Excel.RangeFont
+    fullName: Excel.RangeFont
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
-    fullName: excel.Excel.RangeFont.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.RangeFont.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
-    fullName: excel.Excel.RangeFont.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.RangeFont.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -150,7 +150,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.RangeFont.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
-    fullName: excel.Excel.RangeFont.size
+    fullName: size
     langs:
       - typeScript
     type: property
@@ -176,7 +176,7 @@ items:
           - number
   - uid: excel.Excel.RangeFont.toJSON
     name: toJSON()
-    fullName: excel.Excel.RangeFont.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
-    fullName: excel.Excel.RangeFont.underline
+    fullName: underline
     langs:
       - typeScript
     type: property

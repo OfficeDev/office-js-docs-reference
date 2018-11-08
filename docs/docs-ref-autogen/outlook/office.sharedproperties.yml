@@ -14,7 +14,7 @@ items:
       or read</td></tr></table>
     isPreview: true
     name: Office.SharedProperties
-    fullName: outlook.Office.SharedProperties
+    fullName: Office.SharedProperties
     langs:
       - typeScript
     type: interface
@@ -27,7 +27,7 @@ items:
     summary: The permissions that the delegate has on a shared folder.
     isPreview: true
     name: delegatePermissions
-    fullName: outlook.Office.SharedProperties.delegatePermissions
+    fullName: delegatePermissions
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
     summary: The email address of the owner of a shared item.
     isPreview: true
     name: owner
-    fullName: outlook.Office.SharedProperties.owner
+    fullName: owner
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
     summary: The remote REST URL related to the owner’s mailbox.
     isPreview: true
     name: restUrl
-    fullName: outlook.Office.SharedProperties.restUrl
+    fullName: restUrl
     langs:
       - typeScript
     type: property

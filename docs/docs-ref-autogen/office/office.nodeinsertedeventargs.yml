@@ -18,7 +18,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y
       </td></tr> </table>
     name: Office.NodeInsertedEventArgs
-    fullName: office.Office.NodeInsertedEventArgs
+    fullName: Office.NodeInsertedEventArgs
     langs:
       - typeScript
     type: interface
@@ -29,7 +29,7 @@ items:
   - uid: office.Office.NodeInsertedEventArgs.isUndoRedo
     summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
     name: isUndoRedo
-    fullName: office.Office.NodeInsertedEventArgs.isUndoRedo
+    fullName: isUndoRedo
     langs:
       - typeScript
     type: property
@@ -44,7 +44,7 @@ items:
 
       Note that this node may have children, if a subtree was just added to the document.
     name: newNode
-    fullName: office.Office.NodeInsertedEventArgs.newNode
+    fullName: newNode
     langs:
       - typeScript
     type: property

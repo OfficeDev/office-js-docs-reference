@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Organizer
-    fullName: Outlook_1_7.Office.Organizer
+    fullName: Office.Organizer
     langs:
       - typeScript
     type: interface
@@ -37,7 +37,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: 'getAsync(options, callback)'
-    fullName: Outlook_1_7.Office.Organizer.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method

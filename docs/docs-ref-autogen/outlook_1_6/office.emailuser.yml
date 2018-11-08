@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: Office.EmailUser
-    fullName: Outlook_1_6.Office.EmailUser
+    fullName: Office.EmailUser
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
   - uid: Outlook_1_6.Office.EmailUser.displayName
     summary: Gets the display name associated with an email address.
     name: displayName
-    fullName: Outlook_1_6.Office.EmailUser.displayName
+    fullName: displayName
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
   - uid: Outlook_1_6.Office.EmailUser.emailAddress
     summary: Gets the SMTP email address.
     name: emailAddress
-    fullName: Outlook_1_6.Office.EmailUser.emailAddress
+    fullName: emailAddress
     langs:
       - typeScript
     type: property

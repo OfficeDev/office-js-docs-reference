@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFont
-    fullName: excel.Excel.ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
-    fullName: excel.Excel.ConditionalRangeFont.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.ConditionalRangeFont.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.ConditionalRangeFont.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -74,7 +74,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
-    fullName: excel.Excel.ConditionalRangeFont.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -102,7 +102,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ConditionalRangeFont.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -123,7 +123,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
-    fullName: excel.Excel.ConditionalRangeFont.strikethrough
+    fullName: strikethrough
     langs:
       - typeScript
     type: property
@@ -134,7 +134,7 @@ items:
           - boolean
   - uid: excel.Excel.ConditionalRangeFont.toJSON
     name: toJSON()
-    fullName: excel.Excel.ConditionalRangeFont.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -150,7 +150,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
-    fullName: excel.Excel.ConditionalRangeFont.underline
+    fullName: underline
     langs:
       - typeScript
     type: property

@@ -19,7 +19,7 @@ items:
       </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
       </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: Office.BindingType
-    fullName: office.Office.BindingType
+    fullName: Office.BindingType
     langs:
       - typeScript
     type: enum
@@ -33,21 +33,21 @@ items:
       Tabular data without a header row. Data is returned as an array of arrays, for example in this form:
       \[\[row1column1, row1column2\],\[row2column1, row2column2\]\]
     name: Matrix
-    fullName: office.Office.BindingType.Matrix
+    fullName: Matrix
     langs:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Table
     summary: 'Tabular data with a header row. Data is returned as a [ TableData](xref:office.Office.TableData) object.'
     name: Table
-    fullName: office.Office.BindingType.Table
+    fullName: Table
     langs:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Text
     summary: Plain text. Data is returned as a run of characters.
     name: Text
-    fullName: office.Office.BindingType.Text
+    fullName: Text
     langs:
       - typeScript
     type: field

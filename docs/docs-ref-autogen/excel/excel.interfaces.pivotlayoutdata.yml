@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotLayoutData
     summary: An interface describing the data returned by calling "pivotLayout.toJSON()".
     name: Excel.Interfaces.PivotLayoutData
-    fullName: excel.Excel.Interfaces.PivotLayoutData
+    fullName: Excel.Interfaces.PivotLayoutData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
-    fullName: excel.Excel.Interfaces.PivotLayoutData.layoutType
+    fullName: layoutType
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
-    fullName: excel.Excel.Interfaces.PivotLayoutData.showColumnGrandTotals
+    fullName: showColumnGrandTotals
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
-    fullName: excel.Excel.Interfaces.PivotLayoutData.showRowGrandTotals
+    fullName: showRowGrandTotals
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
-    fullName: excel.Excel.Interfaces.PivotLayoutData.subtotalLocation
+    fullName: subtotalLocation
     langs:
       - typeScript
     type: property

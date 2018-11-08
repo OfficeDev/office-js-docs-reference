@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.StyleUpdateData
     summary: 'An interface for updating data on the Style object, for use in "style.set({ ... })".'
     name: Excel.Interfaces.StyleUpdateData
-    fullName: excel.Excel.Interfaces.StyleUpdateData
+    fullName: Excel.Interfaces.StyleUpdateData
     langs:
       - typeScript
     type: interface
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
-    fullName: excel.Excel.Interfaces.StyleUpdateData.autoIndent
+    fullName: autoIndent
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.Interfaces.StyleUpdateData.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.StyleUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
-    fullName: excel.Excel.Interfaces.StyleUpdateData.formulaHidden
+    fullName: formulaHidden
     langs:
       - typeScript
     type: property
@@ -95,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.Interfaces.StyleUpdateData.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeAlignment
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includeAlignment
+    fullName: includeAlignment
     langs:
       - typeScript
     type: property
@@ -131,7 +131,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeBorder
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includeBorder
+    fullName: includeBorder
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeFont
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includeFont
+    fullName: includeFont
     langs:
       - typeScript
     type: property
@@ -163,7 +163,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includeNumber
+    fullName: includeNumber
     langs:
       - typeScript
     type: property
@@ -180,7 +180,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includePatterns
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includePatterns
+    fullName: includePatterns
     langs:
       - typeScript
     type: property
@@ -195,7 +195,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeProtection
-    fullName: excel.Excel.Interfaces.StyleUpdateData.includeProtection
+    fullName: includeProtection
     langs:
       - typeScript
     type: property
@@ -210,7 +210,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
-    fullName: excel.Excel.Interfaces.StyleUpdateData.indentLevel
+    fullName: indentLevel
     langs:
       - typeScript
     type: property
@@ -225,7 +225,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
-    fullName: excel.Excel.Interfaces.StyleUpdateData.locked
+    fullName: locked
     langs:
       - typeScript
     type: property
@@ -240,7 +240,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.Interfaces.StyleUpdateData.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -255,7 +255,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
-    fullName: excel.Excel.Interfaces.StyleUpdateData.numberFormatLocal
+    fullName: numberFormatLocal
     langs:
       - typeScript
     type: property
@@ -270,7 +270,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
-    fullName: excel.Excel.Interfaces.StyleUpdateData.readingOrder
+    fullName: readingOrder
     langs:
       - typeScript
     type: property
@@ -285,7 +285,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
-    fullName: excel.Excel.Interfaces.StyleUpdateData.shrinkToFit
+    fullName: shrinkToFit
     langs:
       - typeScript
     type: property
@@ -300,7 +300,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.Interfaces.StyleUpdateData.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -315,7 +315,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.Interfaces.StyleUpdateData.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -330,7 +330,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
-    fullName: excel.Excel.Interfaces.StyleUpdateData.wrapText
+    fullName: wrapText
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.RichTextData
     summary: An interface describing the data returned by calling "richText.toJSON()".
     name: OneNote.Interfaces.RichTextData
-    fullName: onenote.OneNote.Interfaces.RichTextData
+    fullName: OneNote.Interfaces.RichTextData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.RichTextData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
-    fullName: onenote.OneNote.Interfaces.RichTextData.languageId
+    fullName: languageId
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
-    fullName: onenote.OneNote.Interfaces.RichTextData.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: text
-    fullName: onenote.OneNote.Interfaces.RichTextData.text
+    fullName: text
     langs:
       - typeScript
     type: property

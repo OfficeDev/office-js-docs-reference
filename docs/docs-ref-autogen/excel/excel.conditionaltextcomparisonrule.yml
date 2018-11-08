@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTextComparisonRule
-    fullName: excel.Excel.ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
-    fullName: excel.Excel.ConditionalTextComparisonRule.operator
+    fullName: operator
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.ConditionalTextComparisonRule.text
+    fullName: text
     langs:
       - typeScript
     type: property

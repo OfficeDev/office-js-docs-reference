@@ -3,7 +3,7 @@ items:
   - uid: office.Office.AsyncContextOptions
     summary: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
     name: Office.AsyncContextOptions
-    fullName: office.Office.AsyncContextOptions
+    fullName: Office.AsyncContextOptions
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.AsyncContextOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property

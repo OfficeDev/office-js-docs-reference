@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.NoteTagData
     summary: An interface describing the data returned by calling "noteTag.toJSON()".
     name: OneNote.Interfaces.NoteTagData
-    fullName: onenote.OneNote.Interfaces.NoteTagData
+    fullName: OneNote.Interfaces.NoteTagData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.NoteTagData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: status
-    fullName: onenote.OneNote.Interfaces.NoteTagData.status
+    fullName: status
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
-    fullName: onenote.OneNote.Interfaces.NoteTagData.type
+    fullName: type
     langs:
       - typeScript
     type: property

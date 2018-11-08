@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatData
     summary: An interface describing the data returned by calling "conditionalRangeFormat.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFormatData
-    fullName: excel.Excel.Interfaces.ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
-    fullName: excel.Excel.Interfaces.ConditionalRangeFormatData.borders
+    fullName: borders
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.Interfaces.ConditionalRangeFormatData.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.ConditionalRangeFormatData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.Interfaces.ConditionalRangeFormatData.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property

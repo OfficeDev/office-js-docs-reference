@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.ItemNotificationMessageType
-    fullName: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
+    fullName: Office.MailboxEnums.ItemNotificationMessageType
     langs:
       - typeScript
     type: enum
@@ -21,7 +21,7 @@ items:
   - uid: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
     summary: The notificationMessage is an error message.
     name: ErrorMessage
-    fullName: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
+    fullName: ErrorMessage
     langs:
       - typeScript
     type: field
@@ -29,7 +29,7 @@ items:
   - uid: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
     summary: The notificationMessage is an informational message.
     name: InformationalMessage
-    fullName: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
+    fullName: InformationalMessage
     langs:
       - typeScript
     type: field
@@ -37,7 +37,7 @@ items:
   - uid: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
     summary: The notificationMessage is a progress indicator.
     name: ProgressIndicator
-    fullName: Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
+    fullName: ProgressIndicator
     langs:
       - typeScript
     type: field

@@ -51,7 +51,7 @@ items:
 
       ```
     name: Office.AsyncResult
-    fullName: office.Office.AsyncResult
+    fullName: Office.AsyncResult
     langs:
       - typeScript
     type: interface
@@ -114,7 +114,7 @@ items:
 
       ```
     name: asyncContext
-    fullName: office.Office.AsyncResult.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -172,7 +172,7 @@ items:
 
       ```
     name: error
-    fullName: office.Office.AsyncResult.error
+    fullName: error
     langs:
       - typeScript
     type: property
@@ -228,7 +228,7 @@ items:
 
       ```
     name: status
-    fullName: office.Office.AsyncResult.status
+    fullName: status
     langs:
       - typeScript
     type: property
@@ -294,7 +294,7 @@ items:
 
       ```
     name: value
-    fullName: office.Office.AsyncResult.value
+    fullName: value
     langs:
       - typeScript
     type: property

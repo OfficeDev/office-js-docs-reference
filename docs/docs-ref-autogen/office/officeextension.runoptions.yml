@@ -3,7 +3,7 @@ items:
   - uid: office.OfficeExtension.RunOptions
     summary: 'Additional options passed into `{Host}.run(...)`<!-- -->.'
     name: OfficeExtension.RunOptions
-    fullName: office.OfficeExtension.RunOptions
+    fullName: OfficeExtension.RunOptions
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
       the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`<!--
       -->.
     name: previousObjects
-    fullName: office.OfficeExtension.RunOptions.previousObjects
+    fullName: previousObjects
     langs:
       - typeScript
     type: property
@@ -29,7 +29,7 @@ items:
   - uid: office.OfficeExtension.RunOptions.session
     summary: The URL of the remote workbook and the request headers to be sent.
     name: session
-    fullName: office.OfficeExtension.RunOptions.session
+    fullName: session
     langs:
       - typeScript
     type: property

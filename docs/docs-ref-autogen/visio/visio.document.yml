@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Document
-    fullName: visio.Visio.Document
+    fullName: Visio.Document
     langs:
       - typeScript
     type: class
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: application
-    fullName: visio.Visio.Document.application
+    fullName: application
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getActivePage()
-    fullName: visio.Visio.Document.getActivePage
+    fullName: getActivePage
     langs:
       - typeScript
     type: method
@@ -146,7 +146,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.Document.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -167,7 +167,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onDataRefreshComplete
-    fullName: visio.Visio.Document.onDataRefreshComplete
+    fullName: onDataRefreshComplete
     langs:
       - typeScript
     type: event
@@ -182,7 +182,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onDocumentLoadComplete
-    fullName: visio.Visio.Document.onDocumentLoadComplete
+    fullName: onDocumentLoadComplete
     langs:
       - typeScript
     type: event
@@ -197,7 +197,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onPageLoadComplete
-    fullName: visio.Visio.Document.onPageLoadComplete
+    fullName: onPageLoadComplete
     langs:
       - typeScript
     type: event
@@ -212,7 +212,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onSelectionChanged
-    fullName: visio.Visio.Document.onSelectionChanged
+    fullName: onSelectionChanged
     langs:
       - typeScript
     type: event
@@ -227,7 +227,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onShapeMouseEnter
-    fullName: visio.Visio.Document.onShapeMouseEnter
+    fullName: onShapeMouseEnter
     langs:
       - typeScript
     type: event
@@ -242,7 +242,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onShapeMouseLeave
-    fullName: visio.Visio.Document.onShapeMouseLeave
+    fullName: onShapeMouseLeave
     langs:
       - typeScript
     type: event
@@ -257,7 +257,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pages
-    fullName: visio.Visio.Document.pages
+    fullName: pages
     langs:
       - typeScript
     type: property
@@ -272,7 +272,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: setActivePage(PageName)
-    fullName: visio.Visio.Document.setActivePage
+    fullName: setActivePage
     langs:
       - typeScript
     type: method
@@ -309,7 +309,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: startDataRefresh()
-    fullName: visio.Visio.Document.startDataRefresh
+    fullName: startDataRefresh
     langs:
       - typeScript
     type: method
@@ -336,7 +336,7 @@ items:
           ```
   - uid: visio.Visio.Document.toJSON
     name: toJSON()
-    fullName: visio.Visio.Document.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -352,7 +352,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
-    fullName: visio.Visio.Document.view
+    fullName: view
     langs:
       - typeScript
     type: property

@@ -7,7 +7,7 @@ items:
 
       <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
     name: Office.TableData
-    fullName: office.Office.TableData
+    fullName: Office.TableData
     langs:
       - typeScript
     type: class
@@ -19,7 +19,7 @@ items:
   - uid: office.Office.TableData.constructor
     summary: 'Constructs a new instance of the [TableData](xref:office.Office.TableData) class'
     name: 'constructor(rows, headers)'
-    fullName: office.Office.TableData.constructor
+    fullName: constructor
     langs:
       - typeScript
     type: constructor
@@ -73,7 +73,7 @@ items:
 
       ```
     name: headers
-    fullName: office.Office.TableData.headers
+    fullName: headers
     langs:
       - typeScript
     type: property
@@ -123,7 +123,7 @@ items:
 
       ```
     name: rows
-    fullName: office.Office.TableData.rows
+    fullName: rows
     langs:
       - typeScript
     type: property

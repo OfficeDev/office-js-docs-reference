@@ -4,7 +4,7 @@ items:
     summary: Object representing the dialog box.
     isPreview: true
     name: OfficeRuntime.Dialog
-    fullName: office-runtime.OfficeRuntime.Dialog
+    fullName: OfficeRuntime.Dialog
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
     summary: Method that closes a dialog box.
     isPreview: true
     name: close()
-    fullName: office-runtime.OfficeRuntime.Dialog.close
+    fullName: close
     langs:
       - typeScript
     type: method

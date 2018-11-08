@@ -4,7 +4,7 @@ items:
     summary: Provides options for how to set the data in a binding.
     remarks: 'If the rows option is used, the value must be "thisRow".'
     name: Office.SetBindingDataOptions
-    fullName: office.Office.SetBindingDataOptions
+    fullName: Office.SetBindingDataOptions
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.SetBindingDataOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -42,19 +42,19 @@ items:
       Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
       {borderColor: "white", fontStyle: "bold"}}]`
     name: cellFormat
-    fullName: office.Office.SetBindingDataOptions.cellFormat
+    fullName: cellFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'cellFormat?: Array<RangeFormatConfiguration>;'
+      content: 'cellFormat?: RangeFormatConfiguration[];'
       return:
         type:
-          - Array<RangeFormatConfiguration>
+          - 'RangeFormatConfiguration[]'
   - uid: office.Office.SetBindingDataOptions.coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     name: coercionType
-    fullName: office.Office.SetBindingDataOptions.coercionType
+    fullName: coercionType
     langs:
       - typeScript
     type: property
@@ -66,21 +66,21 @@ items:
   - uid: office.Office.SetBindingDataOptions.columns
     summary: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
     name: columns
-    fullName: office.Office.SetBindingDataOptions.columns
+    fullName: columns
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'columns?: Array<string>;'
+      content: 'columns?: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: office.Office.SetBindingDataOptions.rows
     summary: >-
       Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
       the currently selected row.
     name: rows
-    fullName: office.Office.SetBindingDataOptions.rows
+    fullName: rows
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
       Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted,
       data is set starting in the first column.
     name: startColumn
-    fullName: office.Office.SetBindingDataOptions.startColumn
+    fullName: startColumn
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
       Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings.
       If omitted, data is set starting in the first row.
     name: startRow
-    fullName: office.Office.SetBindingDataOptions.startRow
+    fullName: startRow
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
       row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
     name: tableOptions
-    fullName: office.Office.SetBindingDataOptions.tableOptions
+    fullName: tableOptions
     langs:
       - typeScript
     type: property

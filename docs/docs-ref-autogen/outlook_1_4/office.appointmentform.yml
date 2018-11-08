@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.AppointmentForm
-    fullName: Outlook_1_4.Office.AppointmentForm
+    fullName: Office.AppointmentForm
     langs:
       - typeScript
     type: interface
@@ -40,7 +40,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: body
-    fullName: Outlook_1_4.Office.AppointmentForm.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: end
-    fullName: Outlook_1_4.Office.AppointmentForm.end
+    fullName: end
     langs:
       - typeScript
     type: property
@@ -117,7 +117,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: location
-    fullName: Outlook_1_4.Office.AppointmentForm.location
+    fullName: location
     langs:
       - typeScript
     type: property
@@ -155,7 +155,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: optionalAttendees
-    fullName: Outlook_1_4.Office.AppointmentForm.optionalAttendees
+    fullName: optionalAttendees
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: requiredAttendees
-    fullName: Outlook_1_4.Office.AppointmentForm.requiredAttendees
+    fullName: requiredAttendees
     langs:
       - typeScript
     type: property
@@ -204,7 +204,7 @@ items:
           - 'string[] | EmailAddressDetails[]'
   - uid: Outlook_1_4.Office.AppointmentForm.resources
     name: resources
-    fullName: Outlook_1_4.Office.AppointmentForm.resources
+    fullName: resources
     langs:
       - typeScript
     type: property
@@ -247,7 +247,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: start
-    fullName: Outlook_1_4.Office.AppointmentForm.start
+    fullName: start
     langs:
       - typeScript
     type: property
@@ -286,7 +286,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: subject
-    fullName: Outlook_1_4.Office.AppointmentForm.subject
+    fullName: subject
     langs:
       - typeScript
     type: property

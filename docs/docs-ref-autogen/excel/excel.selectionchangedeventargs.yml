@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SelectionChangedEventArgs
-    fullName: excel.Excel.SelectionChangedEventArgs
+    fullName: Excel.SelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: workbook
-    fullName: excel.Excel.SelectionChangedEventArgs.workbook
+    fullName: workbook
     langs:
       - typeScript
     type: property

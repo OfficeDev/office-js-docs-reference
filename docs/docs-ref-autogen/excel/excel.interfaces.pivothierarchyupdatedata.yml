@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotHierarchyUpdateData
     summary: 'An interface for updating data on the PivotHierarchy object, for use in "pivotHierarchy.set({ ... })".'
     name: Excel.Interfaces.PivotHierarchyUpdateData
-    fullName: excel.Excel.Interfaces.PivotHierarchyUpdateData
+    fullName: Excel.Interfaces.PivotHierarchyUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.PivotHierarchyUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property

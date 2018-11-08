@@ -3,7 +3,7 @@ items:
   - uid: office.Office.ContextInformation
     summary: Provides information about the environment in which the add-in is running.
     name: Office.ContextInformation
-    fullName: office.Office.ContextInformation
+    fullName: Office.ContextInformation
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
   - uid: office.Office.ContextInformation.host
     summary: Gets the Office application host in which the add-in is running.
     name: host
-    fullName: office.Office.ContextInformation.host
+    fullName: host
     langs:
       - typeScript
     type: property
@@ -27,7 +27,7 @@ items:
   - uid: office.Office.ContextInformation.platform
     summary: Gets the platform on which the add-in is running.
     name: platform
-    fullName: office.Office.ContextInformation.platform
+    fullName: platform
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
   - uid: office.Office.ContextInformation.version
     summary: Gets the version of Office on which the add-in is running.
     name: version
-    fullName: office.Office.ContextInformation.version
+    fullName: version
     langs:
       - typeScript
     type: property

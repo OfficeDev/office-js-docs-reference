@@ -5,7 +5,7 @@ items:
       Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
       information.
     name: OfficeExtension.TrackedObjects
-    fullName: office.OfficeExtension.TrackedObjects
+    fullName: OfficeExtension.TrackedObjects
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
     name: add(object)
-    fullName: office.OfficeExtension.TrackedObjects.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -53,7 +53,7 @@ items:
 
       `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
     name: remove(object)
-    fullName: office.OfficeExtension.TrackedObjects.remove
+    fullName: remove
     langs:
       - typeScript
     type: method

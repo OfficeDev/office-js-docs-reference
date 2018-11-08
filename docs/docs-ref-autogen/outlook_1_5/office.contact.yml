@@ -19,7 +19,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: Office.Contact
-    fullName: Outlook_1_5.Office.Contact
+    fullName: Office.Contact
     langs:
       - typeScript
     type: interface
@@ -34,19 +34,19 @@ items:
   - uid: Outlook_1_5.Office.Contact.addresses
     summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     name: addresses
-    fullName: Outlook_1_5.Office.Contact.addresses
+    fullName: addresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'addresses: Array<string>;'
+      content: 'addresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: Outlook_1_5.Office.Contact.businessName
     summary: A string containing the name of the business associated with the contact. Nullable.
     name: businessName
-    fullName: Outlook_1_5.Office.Contact.businessName
+    fullName: businessName
     langs:
       - typeScript
     type: property
@@ -58,19 +58,19 @@ items:
   - uid: Outlook_1_5.Office.Contact.emailAddresses
     summary: 'An array of strings containing the SMTP email addresses associated with the contact. Nullable,'
     name: emailAddresses
-    fullName: Outlook_1_5.Office.Contact.emailAddresses
+    fullName: emailAddresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'emailAddresses: Array<string>;'
+      content: 'emailAddresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: Outlook_1_5.Office.Contact.personName
     summary: A string containing the name of the person associated with the contact. Nullable.
     name: personName
-    fullName: Outlook_1_5.Office.Contact.personName
+    fullName: personName
     langs:
       - typeScript
     type: property
@@ -82,24 +82,24 @@ items:
   - uid: Outlook_1_5.Office.Contact.phoneNumbers
     summary: An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
     name: phoneNumbers
-    fullName: Outlook_1_5.Office.Contact.phoneNumbers
+    fullName: phoneNumbers
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'phoneNumbers: Array<PhoneNumber>;'
+      content: 'phoneNumbers: PhoneNumber[];'
       return:
         type:
-          - Array<PhoneNumber>
+          - 'PhoneNumber[]'
   - uid: Outlook_1_5.Office.Contact.urls
     summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     name: urls
-    fullName: Outlook_1_5.Office.Contact.urls
+    fullName: urls
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'urls: Array<string>;'
+      content: 'urls: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'

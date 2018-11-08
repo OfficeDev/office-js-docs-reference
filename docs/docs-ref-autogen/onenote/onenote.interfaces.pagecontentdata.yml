@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.PageContentData
     summary: An interface describing the data returned by calling "pageContent.toJSON()".
     name: OneNote.Interfaces.PageContentData
-    fullName: onenote.OneNote.Interfaces.PageContentData
+    fullName: OneNote.Interfaces.PageContentData
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.PageContentData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
-    fullName: onenote.OneNote.Interfaces.PageContentData.image
+    fullName: image
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ink
-    fullName: onenote.OneNote.Interfaces.PageContentData.ink
+    fullName: ink
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: left
-    fullName: onenote.OneNote.Interfaces.PageContentData.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: outline
-    fullName: onenote.OneNote.Interfaces.PageContentData.outline
+    fullName: outline
     langs:
       - typeScript
     type: property
@@ -98,7 +98,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentPage
-    fullName: onenote.OneNote.Interfaces.PageContentData.parentPage
+    fullName: parentPage
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: top
-    fullName: onenote.OneNote.Interfaces.PageContentData.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -128,7 +128,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
-    fullName: onenote.OneNote.Interfaces.PageContentData.type
+    fullName: type
     langs:
       - typeScript
     type: property

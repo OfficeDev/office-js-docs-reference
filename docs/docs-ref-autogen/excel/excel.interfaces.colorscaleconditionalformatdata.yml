@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatData
     summary: An interface describing the data returned by calling "colorScaleConditionalFormat.toJSON()".
     name: Excel.Interfaces.ColorScaleConditionalFormatData
-    fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatData.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: threeColorScale
-    fullName: excel.Excel.Interfaces.ColorScaleConditionalFormatData.threeColorScale
+    fullName: threeColorScale
     langs:
       - typeScript
     type: property

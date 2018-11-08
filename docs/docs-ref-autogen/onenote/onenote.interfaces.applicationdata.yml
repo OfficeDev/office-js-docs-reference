@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.ApplicationData
     summary: An interface describing the data returned by calling "application.toJSON()".
     name: OneNote.Interfaces.ApplicationData
-    fullName: onenote.OneNote.Interfaces.ApplicationData
+    fullName: OneNote.Interfaces.ApplicationData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebooks
-    fullName: onenote.OneNote.Interfaces.ApplicationData.notebooks
+    fullName: notebooks
     langs:
       - typeScript
     type: property

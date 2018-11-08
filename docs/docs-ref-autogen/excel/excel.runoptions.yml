@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.RunOptions
     name: Excel.RunOptions
-    fullName: excel.Excel.RunOptions
+    fullName: Excel.RunOptions
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
       automatically fail. When true, the batch request will be executed immediately if the user is not in cell edit
       mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
     name: delayForCellEdit
-    fullName: excel.Excel.RunOptions.delayForCellEdit
+    fullName: delayForCellEdit
     langs:
       - typeScript
     type: property

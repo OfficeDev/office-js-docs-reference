@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.SectionGroupData
     summary: An interface describing the data returned by calling "sectionGroup.toJSON()".
     name: OneNote.Interfaces.SectionGroupData
-    fullName: onenote.OneNote.Interfaces.SectionGroupData
+    fullName: OneNote.Interfaces.SectionGroupData
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.clientUrl
+    fullName: clientUrl
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebook
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.notebook
+    fullName: notebook
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroup
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
+    fullName: parentSectionGroup
     langs:
       - typeScript
     type: property
@@ -102,7 +102,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroupOrNull
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
+    fullName: parentSectionGroupOrNull
     langs:
       - typeScript
     type: property
@@ -117,7 +117,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
+    fullName: sectionGroups
     langs:
       - typeScript
     type: property
@@ -132,7 +132,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
-    fullName: onenote.OneNote.Interfaces.SectionGroupData.sections
+    fullName: sections
     langs:
       - typeScript
     type: property

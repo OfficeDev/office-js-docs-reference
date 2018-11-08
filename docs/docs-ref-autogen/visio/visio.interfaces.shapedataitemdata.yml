@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.ShapeDataItemData
     summary: An interface describing the data returned by calling "shapeDataItem.toJSON()".
     name: Visio.Interfaces.ShapeDataItemData
-    fullName: visio.Visio.Interfaces.ShapeDataItemData
+    fullName: Visio.Interfaces.ShapeDataItemData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: format
-    fullName: visio.Visio.Interfaces.ShapeDataItemData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: formattedValue
-    fullName: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
+    fullName: formattedValue
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: label
-    fullName: visio.Visio.Interfaces.ShapeDataItemData.label
+    fullName: label
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: value
-    fullName: visio.Visio.Interfaces.ShapeDataItemData.value
+    fullName: value
     langs:
       - typeScript
     type: property

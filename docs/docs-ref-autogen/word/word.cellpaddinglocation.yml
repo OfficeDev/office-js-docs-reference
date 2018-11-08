@@ -3,7 +3,7 @@ items:
   - uid: word.Word.CellPaddingLocation
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.CellPaddingLocation
-    fullName: word.Word.CellPaddingLocation
+    fullName: Word.CellPaddingLocation
     langs:
       - typeScript
     type: enum
@@ -15,28 +15,28 @@ items:
       - word.Word.CellPaddingLocation.top
   - uid: word.Word.CellPaddingLocation.bottom
     name: bottom
-    fullName: word.Word.CellPaddingLocation.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
   - uid: word.Word.CellPaddingLocation.left
     name: left
-    fullName: word.Word.CellPaddingLocation.left
+    fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
   - uid: word.Word.CellPaddingLocation.right
     name: right
-    fullName: word.Word.CellPaddingLocation.right
+    fullName: right
     langs:
       - typeScript
     type: field
     numericValue: '"Right"'
   - uid: word.Word.CellPaddingLocation.top
     name: top
-    fullName: word.Word.CellPaddingLocation.top
+    fullName: top
     langs:
       - typeScript
     type: field

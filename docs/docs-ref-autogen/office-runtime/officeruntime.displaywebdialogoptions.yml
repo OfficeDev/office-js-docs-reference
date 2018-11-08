@@ -3,7 +3,7 @@ items:
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
     summary: Provides options for how a dialog is displayed.
     name: OfficeRuntime.DisplayWebDialogOptions
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+    fullName: OfficeRuntime.DisplayWebDialogOptions
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
       applicable to custom functions running on Excel Online.
     isPreview: true
     name: displayInIFrame
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    fullName: displayInIFrame
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
     summary: Defines the height of the dialog box as a percentage of the current display.
     isPreview: true
     name: height
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
     summary: True if title is hidden from the dialog box.
     isPreview: true
     name: hideTitle
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    fullName: hideTitle
     langs:
       - typeScript
     type: property
@@ -61,7 +61,7 @@ items:
     summary: Callback that is run when the dialog box is closed.
     isPreview: true
     name: onClose
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+    fullName: onClose
     langs:
       - typeScript
     type: property
@@ -74,7 +74,7 @@ items:
     summary: Callback that is run when the dialog sends a message to its parent.
     isPreview: true
     name: 'onMessage(message, dialog)'
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    fullName: onMessage
     langs:
       - typeScript
     type: method
@@ -95,7 +95,7 @@ items:
             - Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
     name: 'onRuntimeError(error, dialog)'
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    fullName: onRuntimeError
     langs:
       - typeScript
     type: method
@@ -118,7 +118,7 @@ items:
     summary: Defines the width of the dialog box as a percentage of the current display.
     isPreview: true
     name: width
-    fullName: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+    fullName: width
     langs:
       - typeScript
     type: property

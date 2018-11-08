@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TableSortData
     summary: An interface describing the data returned by calling "tableSort.toJSON()".
     name: Excel.Interfaces.TableSortData
-    fullName: excel.Excel.Interfaces.TableSortData
+    fullName: Excel.Interfaces.TableSortData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
-    fullName: excel.Excel.Interfaces.TableSortData.fields
+    fullName: fields
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
-    fullName: excel.Excel.Interfaces.TableSortData.matchCase
+    fullName: matchCase
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method
-    fullName: excel.Excel.Interfaces.TableSortData.method
+    fullName: method
     langs:
       - typeScript
     type: property

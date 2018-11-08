@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ListCollection
-    fullName: word.Word.ListCollection
+    fullName: Word.ListCollection
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getById(id)
-    fullName: word.Word.ListCollection.getById
+    fullName: getById
     langs:
       - typeScript
     type: method
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByIdOrNullObject(id)
-    fullName: word.Word.ListCollection.getByIdOrNullObject
+    fullName: getByIdOrNullObject
     langs:
       - typeScript
     type: method
@@ -72,7 +72,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
-    fullName: word.Word.ListCollection.getFirst
+    fullName: getFirst
     langs:
       - typeScript
     type: method
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
-    fullName: word.Word.ListCollection.getFirstOrNullObject
+    fullName: getFirstOrNullObject
     langs:
       - typeScript
     type: method
@@ -104,7 +104,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItem(index)
-    fullName: word.Word.ListCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
   - uid: word.Word.ListCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: word.Word.ListCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -150,7 +150,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: word.Word.ListCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -167,7 +167,7 @@ items:
             - 'string | string[]'
   - uid: word.Word.ListCollection.toJSON
     name: toJSON()
-    fullName: word.Word.ListCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -185,7 +185,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.ListCollection.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -202,7 +202,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.ListCollection.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

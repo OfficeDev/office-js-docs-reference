@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.ListCollectionUpdateData
     summary: 'An interface for updating data on the ListCollection object, for use in "listCollection.set({ ... })".'
     name: Word.Interfaces.ListCollectionUpdateData
-    fullName: word.Word.Interfaces.ListCollectionUpdateData
+    fullName: Word.Interfaces.ListCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - word.Word.Interfaces.ListCollectionUpdateData.items
   - uid: word.Word.Interfaces.ListCollectionUpdateData.items
     name: items
-    fullName: word.Word.Interfaces.ListCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

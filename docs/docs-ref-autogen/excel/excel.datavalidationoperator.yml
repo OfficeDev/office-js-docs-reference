@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationOperator
-    fullName: excel.Excel.DataValidationOperator
+    fullName: Excel.DataValidationOperator
     langs:
       - typeScript
     type: enum
@@ -22,56 +22,56 @@ items:
       - excel.Excel.DataValidationOperator.notEqualTo
   - uid: excel.Excel.DataValidationOperator.between
     name: between
-    fullName: excel.Excel.DataValidationOperator.between
+    fullName: between
     langs:
       - typeScript
     type: field
     numericValue: '"Between"'
   - uid: excel.Excel.DataValidationOperator.equalTo
     name: equalTo
-    fullName: excel.Excel.DataValidationOperator.equalTo
+    fullName: equalTo
     langs:
       - typeScript
     type: field
     numericValue: '"EqualTo"'
   - uid: excel.Excel.DataValidationOperator.greaterThan
     name: greaterThan
-    fullName: excel.Excel.DataValidationOperator.greaterThan
+    fullName: greaterThan
     langs:
       - typeScript
     type: field
     numericValue: '"GreaterThan"'
   - uid: excel.Excel.DataValidationOperator.greaterThanOrEqualTo
     name: greaterThanOrEqualTo
-    fullName: excel.Excel.DataValidationOperator.greaterThanOrEqualTo
+    fullName: greaterThanOrEqualTo
     langs:
       - typeScript
     type: field
     numericValue: '"GreaterThanOrEqualTo"'
   - uid: excel.Excel.DataValidationOperator.lessThan
     name: lessThan
-    fullName: excel.Excel.DataValidationOperator.lessThan
+    fullName: lessThan
     langs:
       - typeScript
     type: field
     numericValue: '"LessThan"'
   - uid: excel.Excel.DataValidationOperator.lessThanOrEqualTo
     name: lessThanOrEqualTo
-    fullName: excel.Excel.DataValidationOperator.lessThanOrEqualTo
+    fullName: lessThanOrEqualTo
     langs:
       - typeScript
     type: field
     numericValue: '"LessThanOrEqualTo"'
   - uid: excel.Excel.DataValidationOperator.notBetween
     name: notBetween
-    fullName: excel.Excel.DataValidationOperator.notBetween
+    fullName: notBetween
     langs:
       - typeScript
     type: field
     numericValue: '"NotBetween"'
   - uid: excel.Excel.DataValidationOperator.notEqualTo
     name: notEqualTo
-    fullName: excel.Excel.DataValidationOperator.notEqualTo
+    fullName: notEqualTo
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ListItem
-    fullName: word.Word.ListItem
+    fullName: Word.ListItem
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestor(parentOnly)
-    fullName: word.Word.ListItem.getAncestor
+    fullName: getAncestor
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestorOrNullObject(parentOnly)
-    fullName: word.Word.ListItem.getAncestorOrNullObject
+    fullName: getAncestorOrNullObject
     langs:
       - typeScript
     type: method
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getDescendants(directChildrenOnly)
-    fullName: word.Word.ListItem.getDescendants
+    fullName: getDescendants
     langs:
       - typeScript
     type: method
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: level
-    fullName: word.Word.ListItem.level
+    fullName: level
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listString
-    fullName: word.Word.ListItem.listString
+    fullName: listString
     langs:
       - typeScript
     type: property
@@ -146,7 +146,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: word.Word.ListItem.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -167,7 +167,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: siblingIndex
-    fullName: word.Word.ListItem.siblingIndex
+    fullName: siblingIndex
     langs:
       - typeScript
     type: property
@@ -178,7 +178,7 @@ items:
           - number
   - uid: word.Word.ListItem.toJSON
     name: toJSON()
-    fullName: word.Word.ListItem.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -196,7 +196,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.ListItem.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -213,7 +213,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.ListItem.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

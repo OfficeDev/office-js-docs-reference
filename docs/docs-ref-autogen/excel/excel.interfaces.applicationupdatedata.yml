@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ApplicationUpdateData
     summary: 'An interface for updating data on the Application object, for use in "application.set({ ... })".'
     name: Excel.Interfaces.ApplicationUpdateData
-    fullName: excel.Excel.Interfaces.ApplicationUpdateData
+    fullName: Excel.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
-    fullName: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+    fullName: calculationMode
     langs:
       - typeScript
     type: property

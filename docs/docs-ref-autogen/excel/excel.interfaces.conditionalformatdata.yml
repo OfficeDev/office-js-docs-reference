@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalFormatData
     summary: An interface describing the data returned by calling "conditionalFormat.toJSON()".
     name: Excel.Interfaces.ConditionalFormatData
-    fullName: excel.Excel.Interfaces.ConditionalFormatData
+    fullName: Excel.Interfaces.ConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValue
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.cellValue
+    fullName: cellValue
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValueOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.cellValueOrNullObject
+    fullName: cellValueOrNullObject
     langs:
       - typeScript
     type: property
@@ -71,7 +71,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScale
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.colorScale
+    fullName: colorScale
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScaleOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.colorScaleOrNullObject
+    fullName: colorScaleOrNullObject
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.custom
+    fullName: custom
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.customOrNullObject
+    fullName: customOrNullObject
     langs:
       - typeScript
     type: property
@@ -133,7 +133,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBar
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.dataBar
+    fullName: dataBar
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBarOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.dataBarOrNullObject
+    fullName: dataBarOrNullObject
     langs:
       - typeScript
     type: property
@@ -163,7 +163,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSet
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.iconSet
+    fullName: iconSet
     langs:
       - typeScript
     type: property
@@ -178,7 +178,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSetOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.iconSetOrNullObject
+    fullName: iconSetOrNullObject
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -208,7 +208,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: preset
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.preset
+    fullName: preset
     langs:
       - typeScript
     type: property
@@ -223,7 +223,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: presetOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.presetOrNullObject
+    fullName: presetOrNullObject
     langs:
       - typeScript
     type: property
@@ -243,7 +243,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: priority
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.priority
+    fullName: priority
     langs:
       - typeScript
     type: property
@@ -260,7 +260,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stopIfTrue
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.stopIfTrue
+    fullName: stopIfTrue
     langs:
       - typeScript
     type: property
@@ -277,7 +277,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparison
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.textComparison
+    fullName: textComparison
     langs:
       - typeScript
     type: property
@@ -294,7 +294,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparisonOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.textComparisonOrNullObject
+    fullName: textComparisonOrNullObject
     langs:
       - typeScript
     type: property
@@ -311,7 +311,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottom
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.topBottom
+    fullName: topBottom
     langs:
       - typeScript
     type: property
@@ -328,7 +328,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottomOrNullObject
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.topBottomOrNullObject
+    fullName: topBottomOrNullObject
     langs:
       - typeScript
     type: property
@@ -343,7 +343,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.Interfaces.ConditionalFormatData.type
+    fullName: type
     langs:
       - typeScript
     type: property

@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.Body
-    fullName: Outlook_1_3.Office.Body
+    fullName: Office.Body
     langs:
       - typeScript
     type: interface
@@ -55,7 +55,7 @@ items:
 
       `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
     name: 'getAsync(coerciontype, options, callback)'
-    fullName: Outlook_1_3.Office.Body.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -98,7 +98,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: 'getTypeAsync(options, callback)'
-    fullName: Outlook_1_3.Office.Body.getTypeAsync
+    fullName: getTypeAsync
     langs:
       - typeScript
     type: method
@@ -162,7 +162,7 @@ items:
 
       `prependAsync(data: string): void;`
     name: 'prependAsync(data, options, callback)'
-    fullName: Outlook_1_3.Office.Body.prependAsync
+    fullName: prependAsync
     langs:
       - typeScript
     type: method
@@ -234,7 +234,7 @@ items:
 
       `setAsync(data: string): void;`
     name: 'setAsync(data, options, callback)'
-    fullName: Outlook_1_3.Office.Body.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method
@@ -306,7 +306,7 @@ items:
 
       `setSelectedDataAsync(data: string): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: Outlook_1_3.Office.Body.setSelectedDataAsync
+    fullName: setSelectedDataAsync
     langs:
       - typeScript
     type: method

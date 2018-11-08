@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData
     summary: An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()".
     name: Excel.Interfaces.TopBottomConditionalFormatData
-    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatData
+    fullName: Excel.Interfaces.TopBottomConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

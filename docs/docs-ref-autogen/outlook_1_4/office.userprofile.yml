@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.UserProfile
-    fullName: Outlook_1_4.Office.UserProfile
+    fullName: Office.UserProfile
     langs:
       - typeScript
     type: interface
@@ -37,7 +37,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: displayName
-    fullName: Outlook_1_4.Office.UserProfile.displayName
+    fullName: displayName
     langs:
       - typeScript
     type: property
@@ -59,7 +59,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: emailAddress
-    fullName: Outlook_1_4.Office.UserProfile.emailAddress
+    fullName: emailAddress
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: timeZone
-    fullName: Outlook_1_4.Office.UserProfile.timeZone
+    fullName: timeZone
     langs:
       - typeScript
     type: property

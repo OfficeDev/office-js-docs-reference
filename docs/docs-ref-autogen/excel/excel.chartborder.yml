@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartBorder
-    fullName: excel.Excel.ChartBorder
+    fullName: Excel.ChartBorder
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.ChartBorder.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.ChartBorder.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
-    fullName: excel.Excel.ChartBorder.lineStyle
+    fullName: lineStyle
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartBorder.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -106,7 +106,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartBorder.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartBorder.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.ChartBorder.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

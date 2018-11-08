@@ -21,7 +21,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y
       </td></tr> </table>
     name: Office.CustomXMLNodeType
-    fullName: office.Office.CustomXMLNodeType
+    fullName: Office.CustomXMLNodeType
     langs:
       - typeScript
     type: enum
@@ -37,49 +37,49 @@ items:
   - uid: office.Office.CustomXMLNodeType.Attribute
     summary: The node is an attribute.
     name: Attribute
-    fullName: office.Office.CustomXMLNodeType.Attribute
+    fullName: Attribute
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.CData
     summary: The node is CData.
     name: CData
-    fullName: office.Office.CustomXMLNodeType.CData
+    fullName: CData
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.Element
     summary: The node is an element.
     name: Element
-    fullName: office.Office.CustomXMLNodeType.Element
+    fullName: Element
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.NodeComment
     summary: The node is a comment.
     name: NodeComment
-    fullName: office.Office.CustomXMLNodeType.NodeComment
+    fullName: NodeComment
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.NodeDocument
     summary: The node is a Document element.
     name: NodeDocument
-    fullName: office.Office.CustomXMLNodeType.NodeDocument
+    fullName: NodeDocument
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.ProcessingInstruction
     summary: The node is a processing instruction.
     name: ProcessingInstruction
-    fullName: office.Office.CustomXMLNodeType.ProcessingInstruction
+    fullName: ProcessingInstruction
     langs:
       - typeScript
     type: field
   - uid: office.Office.CustomXMLNodeType.Text
     summary: The node is text.
     name: Text
-    fullName: office.Office.CustomXMLNodeType.Text
+    fullName: Text
     langs:
       - typeScript
     type: field

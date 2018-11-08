@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeFillData
     summary: An interface describing the data returned by calling "rangeFill.toJSON()".
     name: Excel.Interfaces.RangeFillData
-    fullName: excel.Excel.Interfaces.RangeFillData
+    fullName: Excel.Interfaces.RangeFillData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.RangeFillData.color
+    fullName: color
     langs:
       - typeScript
     type: property

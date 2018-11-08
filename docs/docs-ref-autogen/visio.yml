@@ -88,7 +88,7 @@ items:
       `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
       Promise<T>;`
     name: 'run(contextObject, batch)'
-    fullName: visio.Visio.run
+    fullName: Visio.run
     langs:
       - typeScript
     type: function

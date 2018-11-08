@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TableColumnUpdateData
     summary: 'An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })".'
     name: Excel.Interfaces.TableColumnUpdateData
-    fullName: excel.Excel.Interfaces.TableColumnUpdateData
+    fullName: Excel.Interfaces.TableColumnUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.TableColumnUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.Interfaces.TableColumnUpdateData.values
+    fullName: values
     langs:
       - typeScript
     type: property

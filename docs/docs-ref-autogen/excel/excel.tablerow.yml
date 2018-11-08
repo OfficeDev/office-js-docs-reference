@@ -12,7 +12,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableRow
-    fullName: excel.Excel.TableRow
+    fullName: Excel.TableRow
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.TableRow.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: excel.Excel.TableRow.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -99,7 +99,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.TableRow.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -169,7 +169,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.TableRow.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -186,7 +186,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.TableRow.toJSON
     name: toJSON()
-    fullName: excel.Excel.TableRow.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -204,7 +204,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.TableRow.values
+    fullName: values
     langs:
       - typeScript
     type: property

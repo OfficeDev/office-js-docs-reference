@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatData
     summary: An interface describing the data returned by calling "dataBarConditionalFormat.toJSON()".
     name: Excel.Interfaces.DataBarConditionalFormatData
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData
+    fullName: Excel.Interfaces.DataBarConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisColor
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.axisColor
+    fullName: axisColor
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisFormat
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.axisFormat
+    fullName: axisFormat
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: barDirection
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.barDirection
+    fullName: barDirection
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lowerBoundRule
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.lowerBoundRule
+    fullName: lowerBoundRule
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: negativeFormat
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.negativeFormat
+    fullName: negativeFormat
     langs:
       - typeScript
     type: property
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positiveFormat
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.positiveFormat
+    fullName: positiveFormat
     langs:
       - typeScript
     type: property
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataBarOnly
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.showDataBarOnly
+    fullName: showDataBarOnly
     langs:
       - typeScript
     type: property
@@ -130,7 +130,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: upperBoundRule
-    fullName: excel.Excel.Interfaces.DataBarConditionalFormatData.upperBoundRule
+    fullName: upperBoundRule
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.OutlineData
     summary: An interface describing the data returned by calling "outline.toJSON()".
     name: OneNote.Interfaces.OutlineData
-    fullName: onenote.OneNote.Interfaces.OutlineData
+    fullName: OneNote.Interfaces.OutlineData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.OutlineData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
-    fullName: onenote.OneNote.Interfaces.OutlineData.pageContent
+    fullName: pageContent
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
-    fullName: onenote.OneNote.Interfaces.OutlineData.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property

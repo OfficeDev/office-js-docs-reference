@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.TableData
     summary: An interface describing the data returned by calling "table.toJSON()".
     name: Word.Interfaces.TableData
-    fullName: word.Word.Interfaces.TableData
+    fullName: Word.Interfaces.TableData
     langs:
       - typeScript
     type: interface
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
-    fullName: word.Word.Interfaces.TableData.alignment
+    fullName: alignment
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
-    fullName: word.Word.Interfaces.TableData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: headerRowCount
-    fullName: word.Word.Interfaces.TableData.headerRowCount
+    fullName: headerRowCount
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: word.Word.Interfaces.TableData.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -104,7 +104,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isUniform
-    fullName: word.Word.Interfaces.TableData.isUniform
+    fullName: isUniform
     langs:
       - typeScript
     type: property
@@ -119,7 +119,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: nestingLevel
-    fullName: word.Word.Interfaces.TableData.nestingLevel
+    fullName: nestingLevel
     langs:
       - typeScript
     type: property
@@ -134,7 +134,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
-    fullName: word.Word.Interfaces.TableData.parentBody
+    fullName: parentBody
     langs:
       - typeScript
     type: property
@@ -149,7 +149,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
-    fullName: word.Word.Interfaces.TableData.parentContentControl
+    fullName: parentContentControl
     langs:
       - typeScript
     type: property
@@ -166,7 +166,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
-    fullName: word.Word.Interfaces.TableData.parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
     langs:
       - typeScript
     type: property
@@ -181,7 +181,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.Interfaces.TableData.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -196,7 +196,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
-    fullName: word.Word.Interfaces.TableData.parentTableCell
+    fullName: parentTableCell
     langs:
       - typeScript
     type: property
@@ -213,7 +213,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
-    fullName: word.Word.Interfaces.TableData.parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
     langs:
       - typeScript
     type: property
@@ -228,7 +228,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
-    fullName: word.Word.Interfaces.TableData.parentTableOrNullObject
+    fullName: parentTableOrNullObject
     langs:
       - typeScript
     type: property
@@ -243,7 +243,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowCount
-    fullName: word.Word.Interfaces.TableData.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -258,7 +258,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rows
-    fullName: word.Word.Interfaces.TableData.rows
+    fullName: rows
     langs:
       - typeScript
     type: property
@@ -273,7 +273,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
-    fullName: word.Word.Interfaces.TableData.shadingColor
+    fullName: shadingColor
     langs:
       - typeScript
     type: property
@@ -290,7 +290,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
-    fullName: word.Word.Interfaces.TableData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -305,7 +305,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedColumns
-    fullName: word.Word.Interfaces.TableData.styleBandedColumns
+    fullName: styleBandedColumns
     langs:
       - typeScript
     type: property
@@ -320,7 +320,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedRows
-    fullName: word.Word.Interfaces.TableData.styleBandedRows
+    fullName: styleBandedRows
     langs:
       - typeScript
     type: property
@@ -337,7 +337,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
-    fullName: word.Word.Interfaces.TableData.styleBuiltIn
+    fullName: styleBuiltIn
     langs:
       - typeScript
     type: property
@@ -416,7 +416,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleFirstColumn
-    fullName: word.Word.Interfaces.TableData.styleFirstColumn
+    fullName: styleFirstColumn
     langs:
       - typeScript
     type: property
@@ -431,7 +431,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleLastColumn
-    fullName: word.Word.Interfaces.TableData.styleLastColumn
+    fullName: styleLastColumn
     langs:
       - typeScript
     type: property
@@ -446,7 +446,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleTotalRow
-    fullName: word.Word.Interfaces.TableData.styleTotalRow
+    fullName: styleTotalRow
     langs:
       - typeScript
     type: property
@@ -461,7 +461,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
-    fullName: word.Word.Interfaces.TableData.tables
+    fullName: tables
     langs:
       - typeScript
     type: property
@@ -476,7 +476,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: values
-    fullName: word.Word.Interfaces.TableData.values
+    fullName: values
     langs:
       - typeScript
     type: property
@@ -491,7 +491,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: word.Word.Interfaces.TableData.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -506,7 +506,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.Interfaces.TableData.width
+    fullName: width
     langs:
       - typeScript
     type: property

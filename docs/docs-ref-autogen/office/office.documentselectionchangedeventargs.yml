@@ -3,7 +3,7 @@ items:
   - uid: office.Office.DocumentSelectionChangedEventArgs
     summary: Provides information about the document that raised the SelectionChanged event.
     name: Office.DocumentSelectionChangedEventArgs
-    fullName: office.Office.DocumentSelectionChangedEventArgs
+    fullName: Office.DocumentSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       Gets an [Office.Document](xref:office.Office.Document) object that represents the document that raised the
       SelectionChanged event.
     name: document
-    fullName: office.Office.DocumentSelectionChangedEventArgs.document
+    fullName: document
     langs:
       - typeScript
     type: property
@@ -30,7 +30,7 @@ items:
       Get an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
       was raised.
     name: type
-    fullName: office.Office.DocumentSelectionChangedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesCollection
-    fullName: excel.Excel.ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, index)'
-    fullName: excel.Excel.ChartSeriesCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.ChartSeriesCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.ChartSeriesCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.ChartSeriesCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -121,7 +121,7 @@ items:
   - uid: excel.Excel.ChartSeriesCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.ChartSeriesCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartSeriesCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -210,7 +210,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartSeriesCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartSeriesCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

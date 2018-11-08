@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.WorksheetFreezePanes
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.WorksheetFreezePanes
-    fullName: excel.Excel.WorksheetFreezePanes
+    fullName: Excel.WorksheetFreezePanes
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeAt(frozenRange)
-    fullName: excel.Excel.WorksheetFreezePanes.freezeAt
+    fullName: freezeAt
     langs:
       - typeScript
     type: method
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeColumns(count)
-    fullName: excel.Excel.WorksheetFreezePanes.freezeColumns
+    fullName: freezeColumns
     langs:
       - typeScript
     type: method
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeRows(count)
-    fullName: excel.Excel.WorksheetFreezePanes.freezeRows
+    fullName: freezeRows
     langs:
       - typeScript
     type: method
@@ -130,7 +130,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLocation()
-    fullName: excel.Excel.WorksheetFreezePanes.getLocation
+    fullName: getLocation
     langs:
       - typeScript
     type: method
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLocationOrNullObject()
-    fullName: excel.Excel.WorksheetFreezePanes.getLocationOrNullObject
+    fullName: getLocationOrNullObject
     langs:
       - typeScript
     type: method
@@ -178,7 +178,7 @@ items:
           ```
   - uid: excel.Excel.WorksheetFreezePanes.toJSON
     name: toJSON()
-    fullName: excel.Excel.WorksheetFreezePanes.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -197,7 +197,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unfreeze()
-    fullName: excel.Excel.WorksheetFreezePanes.unfreeze
+    fullName: unfreeze
     langs:
       - typeScript
     type: method

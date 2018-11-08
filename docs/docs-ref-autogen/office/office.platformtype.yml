@@ -24,7 +24,7 @@ items:
       </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
       </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
     name: Office.PlatformType
-    fullName: office.Office.PlatformType
+    fullName: Office.PlatformType
     langs:
       - typeScript
     type: enum
@@ -39,42 +39,42 @@ items:
   - uid: office.Office.PlatformType.Android
     summary: The platform is an Android device.
     name: Android
-    fullName: office.Office.PlatformType.Android
+    fullName: Android
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.iOS
     summary: The platform an iOS device.
     name: iOS
-    fullName: office.Office.PlatformType.iOS
+    fullName: iOS
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.Mac
     summary: The platform is Mac.
     name: Mac
-    fullName: office.Office.PlatformType.Mac
+    fullName: Mac
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.OfficeOnline
     summary: The platform is Office Online.
     name: OfficeOnline
-    fullName: office.Office.PlatformType.OfficeOnline
+    fullName: OfficeOnline
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.PC
     summary: The platform is PC (Windows).
     name: PC
-    fullName: office.Office.PlatformType.PC
+    fullName: PC
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.Universal
     summary: The platform is WinRT.
     name: Universal
-    fullName: office.Office.PlatformType.Universal
+    fullName: Universal
     langs:
       - typeScript
     type: field

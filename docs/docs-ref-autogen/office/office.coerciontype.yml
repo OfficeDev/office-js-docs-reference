@@ -30,7 +30,7 @@ items:
       </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
       </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
     name: Office.CoercionType
-    fullName: office.Office.CoercionType
+    fullName: Office.CoercionType
     langs:
       - typeScript
     type: enum
@@ -49,14 +49,14 @@ items:
 
       Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     name: Html
-    fullName: office.Office.CoercionType.Html
+    fullName: Html
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Image
     summary: 'Data is returned or set as an image stream. Note: Only applies to data in Excel, Word and PowerPoint.'
     name: Image
-    fullName: office.Office.CoercionType.Image
+    fullName: Image
     langs:
       - typeScript
     type: field
@@ -69,7 +69,7 @@ items:
 
       Note: Only applies to data in Excel and Word.
     name: Matrix
-    fullName: office.Office.CoercionType.Matrix
+    fullName: Matrix
     langs:
       - typeScript
     type: field
@@ -79,7 +79,7 @@ items:
 
       Note: Only applies to data in Word.
     name: Ooxml
-    fullName: office.Office.CoercionType.Ooxml
+    fullName: Ooxml
     langs:
       - typeScript
     type: field
@@ -93,7 +93,7 @@ items:
       Note: Only applies to data in PowerPoint when calling the [ Document](xref:office.Office.Document)<!--
       -->.getSelectedData method to get the current slide or selected range of slides.
     name: SlideRange
-    fullName: office.Office.CoercionType.SlideRange
+    fullName: SlideRange
     langs:
       - typeScript
     type: field
@@ -105,14 +105,14 @@ items:
 
       Note: Only applies to data in Access, Excel, and Word.
     name: Table
-    fullName: office.Office.CoercionType.Table
+    fullName: Table
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Text
     summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
     name: Text
-    fullName: office.Office.CoercionType.Text
+    fullName: Text
     langs:
       - typeScript
     type: field

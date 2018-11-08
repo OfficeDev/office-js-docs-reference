@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.InlinePicture
-    fullName: word.Word.InlinePicture
+    fullName: Word.InlinePicture
     langs:
       - typeScript
     type: class
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
-    fullName: word.Word.InlinePicture.altTextDescription
+    fullName: altTextDescription
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
-    fullName: word.Word.InlinePicture.altTextTitle
+    fullName: altTextTitle
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: delete()
-    fullName: word.Word.InlinePicture.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getBase64ImageSrc()
-    fullName: word.Word.InlinePicture.getBase64ImageSrc
+    fullName: getBase64ImageSrc
     langs:
       - typeScript
     type: method
@@ -130,7 +130,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
-    fullName: word.Word.InlinePicture.getNext
+    fullName: getNext
     langs:
       - typeScript
     type: method
@@ -177,7 +177,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
-    fullName: word.Word.InlinePicture.getNextOrNullObject
+    fullName: getNextOrNullObject
     langs:
       - typeScript
     type: method
@@ -224,7 +224,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getRange(rangeLocation)
-    fullName: word.Word.InlinePicture.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -245,7 +245,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
-    fullName: word.Word.InlinePicture.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -260,7 +260,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
-    fullName: word.Word.InlinePicture.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -277,7 +277,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
-    fullName: word.Word.InlinePicture.insertBreak
+    fullName: insertBreak
     langs:
       - typeScript
     type: method
@@ -302,7 +302,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: insertContentControl()
-    fullName: word.Word.InlinePicture.insertContentControl
+    fullName: insertContentControl
     langs:
       - typeScript
     type: method
@@ -318,7 +318,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
-    fullName: word.Word.InlinePicture.insertFileFromBase64
+    fullName: insertFileFromBase64
     langs:
       - typeScript
     type: method
@@ -343,7 +343,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
-    fullName: word.Word.InlinePicture.insertHtml
+    fullName: insertHtml
     langs:
       - typeScript
     type: method
@@ -370,7 +370,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
-    fullName: word.Word.InlinePicture.insertInlinePictureFromBase64
+    fullName: insertInlinePictureFromBase64
     langs:
       - typeScript
     type: method
@@ -397,7 +397,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
-    fullName: word.Word.InlinePicture.insertOoxml
+    fullName: insertOoxml
     langs:
       - typeScript
     type: method
@@ -422,7 +422,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
-    fullName: word.Word.InlinePicture.insertParagraph
+    fullName: insertParagraph
     langs:
       - typeScript
     type: method
@@ -447,7 +447,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
-    fullName: word.Word.InlinePicture.insertText
+    fullName: insertText
     langs:
       - typeScript
     type: method
@@ -485,7 +485,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: word.Word.InlinePicture.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -506,7 +506,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
-    fullName: word.Word.InlinePicture.lockAspectRatio
+    fullName: lockAspectRatio
     langs:
       - typeScript
     type: property
@@ -521,7 +521,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraph
-    fullName: word.Word.InlinePicture.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -538,7 +538,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
-    fullName: word.Word.InlinePicture.parentContentControl
+    fullName: parentContentControl
     langs:
       - typeScript
     type: property
@@ -555,7 +555,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
-    fullName: word.Word.InlinePicture.parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
     langs:
       - typeScript
     type: property
@@ -570,7 +570,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.InlinePicture.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -585,7 +585,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
-    fullName: word.Word.InlinePicture.parentTableCell
+    fullName: parentTableCell
     langs:
       - typeScript
     type: property
@@ -602,7 +602,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
-    fullName: word.Word.InlinePicture.parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
     langs:
       - typeScript
     type: property
@@ -617,7 +617,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
-    fullName: word.Word.InlinePicture.parentTableOrNullObject
+    fullName: parentTableOrNullObject
     langs:
       - typeScript
     type: property
@@ -632,7 +632,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: select(selectionMode)
-    fullName: word.Word.InlinePicture.select
+    fullName: select
     langs:
       - typeScript
     type: method
@@ -649,7 +649,7 @@ items:
             - Word.SelectionMode
   - uid: word.Word.InlinePicture.toJSON
     name: toJSON()
-    fullName: word.Word.InlinePicture.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -667,7 +667,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.InlinePicture.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -684,7 +684,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.InlinePicture.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -700,7 +700,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.InlinePicture.width
+    fullName: width
     langs:
       - typeScript
     type: property

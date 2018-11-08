@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.ListCollectionData
     summary: An interface describing the data returned by calling "listCollection.toJSON()".
     name: Word.Interfaces.ListCollectionData
-    fullName: word.Word.Interfaces.ListCollectionData
+    fullName: Word.Interfaces.ListCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - word.Word.Interfaces.ListCollectionData.items
   - uid: word.Word.Interfaces.ListCollectionData.items
     name: items
-    fullName: word.Word.Interfaces.ListCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

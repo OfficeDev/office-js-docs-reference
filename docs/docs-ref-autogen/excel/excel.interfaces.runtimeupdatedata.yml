@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RuntimeUpdateData
     summary: 'An interface for updating data on the Runtime object, for use in "runtime.set({ ... })".'
     name: Excel.Interfaces.RuntimeUpdateData
-    fullName: excel.Excel.Interfaces.RuntimeUpdateData
+    fullName: Excel.Interfaces.RuntimeUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableEvents
-    fullName: excel.Excel.Interfaces.RuntimeUpdateData.enableEvents
+    fullName: enableEvents
     langs:
       - typeScript
     type: property

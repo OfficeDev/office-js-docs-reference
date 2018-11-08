@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.CommentUpdateData
     summary: 'An interface for updating data on the Comment object, for use in "comment.set({ ... })".'
     name: Visio.Interfaces.CommentUpdateData
-    fullName: visio.Visio.Interfaces.CommentUpdateData
+    fullName: Visio.Interfaces.CommentUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: author
-    fullName: visio.Visio.Interfaces.CommentUpdateData.author
+    fullName: author
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: date
-    fullName: visio.Visio.Interfaces.CommentUpdateData.date
+    fullName: date
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
-    fullName: visio.Visio.Interfaces.CommentUpdateData.text
+    fullName: text
     langs:
       - typeScript
     type: property

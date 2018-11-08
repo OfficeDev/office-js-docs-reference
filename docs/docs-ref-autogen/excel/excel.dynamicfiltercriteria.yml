@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.DynamicFilterCriteria
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.DynamicFilterCriteria
-    fullName: excel.Excel.DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
     langs:
       - typeScript
     type: enum
@@ -46,245 +46,245 @@ items:
       - excel.Excel.DynamicFilterCriteria.yesterday
   - uid: excel.Excel.DynamicFilterCriteria.aboveAverage
     name: aboveAverage
-    fullName: excel.Excel.DynamicFilterCriteria.aboveAverage
+    fullName: aboveAverage
     langs:
       - typeScript
     type: field
     numericValue: '"AboveAverage"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodApril
     name: allDatesInPeriodApril
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodApril"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodAugust
     name: allDatesInPeriodAugust
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodAugust"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodDecember
     name: allDatesInPeriodDecember
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodDecember"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodFebruray
     name: allDatesInPeriodFebruray
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodFebruray
+    fullName: allDatesInPeriodFebruray
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodFebruray"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJanuary
     name: allDatesInPeriodJanuary
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodJanuary"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJuly
     name: allDatesInPeriodJuly
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodJuly"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJune
     name: allDatesInPeriodJune
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodJune"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodMarch
     name: allDatesInPeriodMarch
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodMarch"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodMay
     name: allDatesInPeriodMay
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodMay"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodNovember
     name: allDatesInPeriodNovember
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodNovember"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodOctober
     name: allDatesInPeriodOctober
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodOctober"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1
     name: allDatesInPeriodQuarter1
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodQuarter1"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2
     name: allDatesInPeriodQuarter2
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodQuarter2"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3
     name: allDatesInPeriodQuarter3
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodQuarter3"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4
     name: allDatesInPeriodQuarter4
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodQuarter4"'
   - uid: excel.Excel.DynamicFilterCriteria.allDatesInPeriodSeptember
     name: allDatesInPeriodSeptember
-    fullName: excel.Excel.DynamicFilterCriteria.allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
     langs:
       - typeScript
     type: field
     numericValue: '"AllDatesInPeriodSeptember"'
   - uid: excel.Excel.DynamicFilterCriteria.belowAverage
     name: belowAverage
-    fullName: excel.Excel.DynamicFilterCriteria.belowAverage
+    fullName: belowAverage
     langs:
       - typeScript
     type: field
     numericValue: '"BelowAverage"'
   - uid: excel.Excel.DynamicFilterCriteria.lastMonth
     name: lastMonth
-    fullName: excel.Excel.DynamicFilterCriteria.lastMonth
+    fullName: lastMonth
     langs:
       - typeScript
     type: field
     numericValue: '"LastMonth"'
   - uid: excel.Excel.DynamicFilterCriteria.lastQuarter
     name: lastQuarter
-    fullName: excel.Excel.DynamicFilterCriteria.lastQuarter
+    fullName: lastQuarter
     langs:
       - typeScript
     type: field
     numericValue: '"LastQuarter"'
   - uid: excel.Excel.DynamicFilterCriteria.lastWeek
     name: lastWeek
-    fullName: excel.Excel.DynamicFilterCriteria.lastWeek
+    fullName: lastWeek
     langs:
       - typeScript
     type: field
     numericValue: '"LastWeek"'
   - uid: excel.Excel.DynamicFilterCriteria.lastYear
     name: lastYear
-    fullName: excel.Excel.DynamicFilterCriteria.lastYear
+    fullName: lastYear
     langs:
       - typeScript
     type: field
     numericValue: '"LastYear"'
   - uid: excel.Excel.DynamicFilterCriteria.nextMonth
     name: nextMonth
-    fullName: excel.Excel.DynamicFilterCriteria.nextMonth
+    fullName: nextMonth
     langs:
       - typeScript
     type: field
     numericValue: '"NextMonth"'
   - uid: excel.Excel.DynamicFilterCriteria.nextQuarter
     name: nextQuarter
-    fullName: excel.Excel.DynamicFilterCriteria.nextQuarter
+    fullName: nextQuarter
     langs:
       - typeScript
     type: field
     numericValue: '"NextQuarter"'
   - uid: excel.Excel.DynamicFilterCriteria.nextWeek
     name: nextWeek
-    fullName: excel.Excel.DynamicFilterCriteria.nextWeek
+    fullName: nextWeek
     langs:
       - typeScript
     type: field
     numericValue: '"NextWeek"'
   - uid: excel.Excel.DynamicFilterCriteria.nextYear
     name: nextYear
-    fullName: excel.Excel.DynamicFilterCriteria.nextYear
+    fullName: nextYear
     langs:
       - typeScript
     type: field
     numericValue: '"NextYear"'
   - uid: excel.Excel.DynamicFilterCriteria.thisMonth
     name: thisMonth
-    fullName: excel.Excel.DynamicFilterCriteria.thisMonth
+    fullName: thisMonth
     langs:
       - typeScript
     type: field
     numericValue: '"ThisMonth"'
   - uid: excel.Excel.DynamicFilterCriteria.thisQuarter
     name: thisQuarter
-    fullName: excel.Excel.DynamicFilterCriteria.thisQuarter
+    fullName: thisQuarter
     langs:
       - typeScript
     type: field
     numericValue: '"ThisQuarter"'
   - uid: excel.Excel.DynamicFilterCriteria.thisWeek
     name: thisWeek
-    fullName: excel.Excel.DynamicFilterCriteria.thisWeek
+    fullName: thisWeek
     langs:
       - typeScript
     type: field
     numericValue: '"ThisWeek"'
   - uid: excel.Excel.DynamicFilterCriteria.thisYear
     name: thisYear
-    fullName: excel.Excel.DynamicFilterCriteria.thisYear
+    fullName: thisYear
     langs:
       - typeScript
     type: field
     numericValue: '"ThisYear"'
   - uid: excel.Excel.DynamicFilterCriteria.today
     name: today
-    fullName: excel.Excel.DynamicFilterCriteria.today
+    fullName: today
     langs:
       - typeScript
     type: field
     numericValue: '"Today"'
   - uid: excel.Excel.DynamicFilterCriteria.tomorrow
     name: tomorrow
-    fullName: excel.Excel.DynamicFilterCriteria.tomorrow
+    fullName: tomorrow
     langs:
       - typeScript
     type: field
     numericValue: '"Tomorrow"'
   - uid: excel.Excel.DynamicFilterCriteria.unknown
     name: unknown
-    fullName: excel.Excel.DynamicFilterCriteria.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field
     numericValue: '"Unknown"'
   - uid: excel.Excel.DynamicFilterCriteria.yearToDate
     name: yearToDate
-    fullName: excel.Excel.DynamicFilterCriteria.yearToDate
+    fullName: yearToDate
     langs:
       - typeScript
     type: field
     numericValue: '"YearToDate"'
   - uid: excel.Excel.DynamicFilterCriteria.yesterday
     name: yesterday
-    fullName: excel.Excel.DynamicFilterCriteria.yesterday
+    fullName: yesterday
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisLine
-    fullName: onenote.OneNote.InkAnalysisLine
+    fullName: OneNote.InkAnalysisLine
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.InkAnalysisLine.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.InkAnalysisLine.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -110,7 +110,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
-    fullName: onenote.OneNote.InkAnalysisLine.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -121,7 +121,7 @@ items:
           - onenote.OneNote.InkAnalysisParagraph
   - uid: onenote.OneNote.InkAnalysisLine.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.InkAnalysisLine.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -139,7 +139,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.InkAnalysisLine.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -156,7 +156,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.InkAnalysisLine.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -172,7 +172,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: words
-    fullName: onenote.OneNote.InkAnalysisLine.words
+    fullName: words
     langs:
       - typeScript
     type: property

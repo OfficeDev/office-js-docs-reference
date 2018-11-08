@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeBorder
-    fullName: excel.Excel.RangeBorder
+    fullName: Excel.RangeBorder
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.RangeBorder.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.RangeBorder.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
-    fullName: excel.Excel.RangeBorder.sideIndex
+    fullName: sideIndex
     langs:
       - typeScript
     type: property
@@ -150,7 +150,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.RangeBorder.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
             "SlantDashDot"
   - uid: excel.Excel.RangeBorder.toJSON
     name: toJSON()
-    fullName: excel.Excel.RangeBorder.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -181,7 +181,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.RangeBorder.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

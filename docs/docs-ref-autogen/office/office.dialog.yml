@@ -5,7 +5,7 @@ items:
       The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event
       handlers and closing the dialog.
     name: Office.Dialog
-    fullName: office.Office.Dialog
+    fullName: Office.Dialog
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
     name: 'addEventHandler(eventType, handler)'
-    fullName: office.Office.Dialog.addEventHandler
+    fullName: addEventHandler
     langs:
       - typeScript
     type: method
@@ -44,7 +44,7 @@ items:
   - uid: office.Office.Dialog.close
     summary: Called from a parent page to close the corresponding dialog box.
     name: close()
-    fullName: office.Office.Dialog.close
+    fullName: close
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
   - uid: office.Office.Dialog.sendMessage
     summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     name: sendMessage(name)
-    fullName: office.Office.Dialog.sendMessage
+    fullName: sendMessage
     langs:
       - typeScript
     type: method

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Hyperlink
-    fullName: visio.Visio.Hyperlink
+    fullName: Visio.Hyperlink
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: address
-    fullName: visio.Visio.Hyperlink.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: description
-    fullName: visio.Visio.Hyperlink.description
+    fullName: description
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: extraInfo
-    fullName: visio.Visio.Hyperlink.extraInfo
+    fullName: extraInfo
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.Hyperlink.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -130,7 +130,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: subAddress
-    fullName: visio.Visio.Hyperlink.subAddress
+    fullName: subAddress
     langs:
       - typeScript
     type: property
@@ -141,7 +141,7 @@ items:
           - string
   - uid: visio.Visio.Hyperlink.toJSON
     name: toJSON()
-    fullName: visio.Visio.Hyperlink.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

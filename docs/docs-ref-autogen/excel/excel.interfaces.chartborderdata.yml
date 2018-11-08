@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartBorderData
     summary: An interface describing the data returned by calling "chartBorder.toJSON()".
     name: Excel.Interfaces.ChartBorderData
-    fullName: excel.Excel.Interfaces.ChartBorderData
+    fullName: Excel.Interfaces.ChartBorderData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ChartBorderData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
-    fullName: excel.Excel.Interfaces.ChartBorderData.lineStyle
+    fullName: lineStyle
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.Interfaces.ChartBorderData.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

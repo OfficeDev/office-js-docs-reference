@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.OverlayVerticalAlignment
-    fullName: visio.Visio.OverlayVerticalAlignment
+    fullName: Visio.OverlayVerticalAlignment
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
   - uid: visio.Visio.OverlayVerticalAlignment.bottom
     summary: bottom
     name: bottom
-    fullName: visio.Visio.OverlayVerticalAlignment.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: visio.Visio.OverlayVerticalAlignment.middle
     summary: middle
     name: middle
-    fullName: visio.Visio.OverlayVerticalAlignment.middle
+    fullName: middle
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: visio.Visio.OverlayVerticalAlignment.top
     summary: top
     name: top
-    fullName: visio.Visio.OverlayVerticalAlignment.top
+    fullName: top
     langs:
       - typeScript
     type: field

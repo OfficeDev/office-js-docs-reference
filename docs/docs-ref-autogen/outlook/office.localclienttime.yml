@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: Office.LocalClientTime
-    fullName: outlook.Office.LocalClientTime
+    fullName: Office.LocalClientTime
     langs:
       - typeScript
     type: interface
@@ -30,7 +30,7 @@ items:
   - uid: outlook.Office.LocalClientTime.date
     summary: Integer value representing the day of the month.
     name: date
-    fullName: outlook.Office.LocalClientTime.date
+    fullName: date
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
   - uid: outlook.Office.LocalClientTime.hours
     summary: Integer value representing the hour on a 24-hour clock.
     name: hours
-    fullName: outlook.Office.LocalClientTime.hours
+    fullName: hours
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
   - uid: outlook.Office.LocalClientTime.milliseconds
     summary: Integer value representing the milliseconds.
     name: milliseconds
-    fullName: outlook.Office.LocalClientTime.milliseconds
+    fullName: milliseconds
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
   - uid: outlook.Office.LocalClientTime.minutes
     summary: Integer value representing the minutes.
     name: minutes
-    fullName: outlook.Office.LocalClientTime.minutes
+    fullName: minutes
     langs:
       - typeScript
     type: property
@@ -78,7 +78,7 @@ items:
   - uid: outlook.Office.LocalClientTime.month
     summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
     name: month
-    fullName: outlook.Office.LocalClientTime.month
+    fullName: month
     langs:
       - typeScript
     type: property
@@ -90,7 +90,7 @@ items:
   - uid: outlook.Office.LocalClientTime.seconds
     summary: Integer value representing the seconds.
     name: seconds
-    fullName: outlook.Office.LocalClientTime.seconds
+    fullName: seconds
     langs:
       - typeScript
     type: property
@@ -102,7 +102,7 @@ items:
   - uid: outlook.Office.LocalClientTime.timezoneOffset
     summary: Integer value representing the number of minutes difference between the local time zone and UTC.
     name: timezoneOffset
-    fullName: outlook.Office.LocalClientTime.timezoneOffset
+    fullName: timezoneOffset
     langs:
       - typeScript
     type: property
@@ -114,7 +114,7 @@ items:
   - uid: outlook.Office.LocalClientTime.year
     summary: Integer value repesenting the year.
     name: year
-    fullName: outlook.Office.LocalClientTime.year
+    fullName: year
     langs:
       - typeScript
     type: property

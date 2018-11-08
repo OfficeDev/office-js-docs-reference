@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.FloatingInk
-    fullName: onenote.OneNote.FloatingInk
+    fullName: OneNote.FloatingInk
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.FloatingInk.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokes
-    fullName: onenote.OneNote.FloatingInk.inkStrokes
+    fullName: inkStrokes
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.FloatingInk.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -137,7 +137,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
-    fullName: onenote.OneNote.FloatingInk.pageContent
+    fullName: pageContent
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
           - onenote.OneNote.PageContent
   - uid: onenote.OneNote.FloatingInk.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.FloatingInk.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -166,7 +166,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.FloatingInk.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -183,7 +183,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.FloatingInk.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

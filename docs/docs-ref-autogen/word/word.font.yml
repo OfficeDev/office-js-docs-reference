@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Font
-    fullName: word.Word.Font
+    fullName: Word.Font
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: bold
-    fullName: word.Word.Font.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
-    fullName: word.Word.Font.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -71,7 +71,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: doubleStrikeThrough
-    fullName: word.Word.Font.doubleStrikeThrough
+    fullName: doubleStrikeThrough
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: highlightColor
-    fullName: word.Word.Font.highlightColor
+    fullName: highlightColor
     langs:
       - typeScript
     type: property
@@ -106,7 +106,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: italic
-    fullName: word.Word.Font.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -347,7 +347,7 @@ items:
 
       ```
     name: load(option)
-    fullName: word.Word.Font.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -368,7 +368,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: name
-    fullName: word.Word.Font.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -383,7 +383,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: size
-    fullName: word.Word.Font.size
+    fullName: size
     langs:
       - typeScript
     type: property
@@ -400,7 +400,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: strikeThrough
-    fullName: word.Word.Font.strikeThrough
+    fullName: strikeThrough
     langs:
       - typeScript
     type: property
@@ -417,7 +417,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subscript
-    fullName: word.Word.Font.subscript
+    fullName: subscript
     langs:
       - typeScript
     type: property
@@ -434,7 +434,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: superscript
-    fullName: word.Word.Font.superscript
+    fullName: superscript
     langs:
       - typeScript
     type: property
@@ -445,7 +445,7 @@ items:
           - boolean
   - uid: word.Word.Font.toJSON
     name: toJSON()
-    fullName: word.Word.Font.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -463,7 +463,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.Font.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -479,7 +479,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: underline
-    fullName: word.Word.Font.underline
+    fullName: underline
     langs:
       - typeScript
     type: property
@@ -502,7 +502,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.Font.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

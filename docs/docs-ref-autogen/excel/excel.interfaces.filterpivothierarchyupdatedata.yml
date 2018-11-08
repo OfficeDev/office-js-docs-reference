@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
     summary: 'An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set({ ... })".'
     name: Excel.Interfaces.FilterPivotHierarchyUpdateData
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.enableMultipleFilterItems
+    fullName: enableMultipleFilterItems
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData.position
+    fullName: position
     langs:
       - typeScript
     type: property

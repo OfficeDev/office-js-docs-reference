@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.SelectionChangedEventArgs
-    fullName: visio.Visio.SelectionChangedEventArgs
+    fullName: Visio.SelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pageName
-    fullName: visio.Visio.SelectionChangedEventArgs.pageName
+    fullName: pageName
     langs:
       - typeScript
     type: property
@@ -90,7 +90,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapeNames
-    fullName: visio.Visio.SelectionChangedEventArgs.shapeNames
+    fullName: shapeNames
     langs:
       - typeScript
     type: property

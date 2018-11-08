@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.WorksheetPositionType
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.WorksheetPositionType
-    fullName: excel.Excel.WorksheetPositionType
+    fullName: Excel.WorksheetPositionType
     langs:
       - typeScript
     type: enum
@@ -16,35 +16,35 @@ items:
       - excel.Excel.WorksheetPositionType.none
   - uid: excel.Excel.WorksheetPositionType.after
     name: after
-    fullName: excel.Excel.WorksheetPositionType.after
+    fullName: after
     langs:
       - typeScript
     type: field
     numericValue: '"After"'
   - uid: excel.Excel.WorksheetPositionType.before
     name: before
-    fullName: excel.Excel.WorksheetPositionType.before
+    fullName: before
     langs:
       - typeScript
     type: field
     numericValue: '"Before"'
   - uid: excel.Excel.WorksheetPositionType.beginning
     name: beginning
-    fullName: excel.Excel.WorksheetPositionType.beginning
+    fullName: beginning
     langs:
       - typeScript
     type: field
     numericValue: '"Beginning"'
   - uid: excel.Excel.WorksheetPositionType.end
     name: end
-    fullName: excel.Excel.WorksheetPositionType.end
+    fullName: end
     langs:
       - typeScript
     type: field
     numericValue: '"End"'
   - uid: excel.Excel.WorksheetPositionType.none
     name: none
-    fullName: excel.Excel.WorksheetPositionType.none
+    fullName: none
     langs:
       - typeScript
     type: field

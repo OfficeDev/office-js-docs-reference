@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.SectionData
     summary: An interface describing the data returned by calling "section.toJSON()".
     name: Word.Interfaces.SectionData
-    fullName: word.Word.Interfaces.SectionData
+    fullName: Word.Interfaces.SectionData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
-    fullName: word.Word.Interfaces.SectionData.body
+    fullName: body
     langs:
       - typeScript
     type: property

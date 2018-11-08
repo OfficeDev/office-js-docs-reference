@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.VerticalAlignment
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.VerticalAlignment
-    fullName: excel.Excel.VerticalAlignment
+    fullName: Excel.VerticalAlignment
     langs:
       - typeScript
     type: enum
@@ -16,35 +16,35 @@ items:
       - excel.Excel.VerticalAlignment.top
   - uid: excel.Excel.VerticalAlignment.bottom
     name: bottom
-    fullName: excel.Excel.VerticalAlignment.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
   - uid: excel.Excel.VerticalAlignment.center
     name: center
-    fullName: excel.Excel.VerticalAlignment.center
+    fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.VerticalAlignment.distributed
     name: distributed
-    fullName: excel.Excel.VerticalAlignment.distributed
+    fullName: distributed
     langs:
       - typeScript
     type: field
     numericValue: '"Distributed"'
   - uid: excel.Excel.VerticalAlignment.justify
     name: justify
-    fullName: excel.Excel.VerticalAlignment.justify
+    fullName: justify
     langs:
       - typeScript
     type: field
     numericValue: '"Justify"'
   - uid: excel.Excel.VerticalAlignment.top
     name: top
-    fullName: excel.Excel.VerticalAlignment.top
+    fullName: top
     langs:
       - typeScript
     type: field

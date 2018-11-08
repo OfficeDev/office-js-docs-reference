@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ListDataValidation
-    fullName: excel.Excel.ListDataValidation
+    fullName: Excel.ListDataValidation
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: inCellDropDown
-    fullName: excel.Excel.ListDataValidation.inCellDropDown
+    fullName: inCellDropDown
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
-    fullName: excel.Excel.ListDataValidation.source
+    fullName: source
     langs:
       - typeScript
     type: property

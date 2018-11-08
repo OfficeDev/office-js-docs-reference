@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingDataChangedEventArgs
-    fullName: excel.Excel.BindingDataChangedEventArgs
+    fullName: Excel.BindingDataChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
-    fullName: excel.Excel.BindingDataChangedEventArgs.binding
+    fullName: binding
     langs:
       - typeScript
     type: property

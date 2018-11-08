@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.NotebookCollectionData
     summary: An interface describing the data returned by calling "notebookCollection.toJSON()".
     name: OneNote.Interfaces.NotebookCollectionData
-    fullName: onenote.OneNote.Interfaces.NotebookCollectionData
+    fullName: OneNote.Interfaces.NotebookCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - onenote.OneNote.Interfaces.NotebookCollectionData.items
   - uid: onenote.OneNote.Interfaces.NotebookCollectionData.items
     name: items
-    fullName: onenote.OneNote.Interfaces.NotebookCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

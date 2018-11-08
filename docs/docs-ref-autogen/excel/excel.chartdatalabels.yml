@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartDataLabels
-    fullName: excel.Excel.ChartDataLabels
+    fullName: Excel.ChartDataLabels
     langs:
       - typeScript
     type: class
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
-    fullName: excel.Excel.ChartDataLabels.autoText
+    fullName: autoText
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartDataLabels.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.ChartDataLabels.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartDataLabels.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -143,7 +143,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.ChartDataLabels.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -160,7 +160,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.ChartDataLabels.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -179,7 +179,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: separator
-    fullName: excel.Excel.ChartDataLabels.separator
+    fullName: separator
     langs:
       - typeScript
     type: property
@@ -194,7 +194,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
-    fullName: excel.Excel.ChartDataLabels.showBubbleSize
+    fullName: showBubbleSize
     langs:
       - typeScript
     type: property
@@ -209,7 +209,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
-    fullName: excel.Excel.ChartDataLabels.showCategoryName
+    fullName: showCategoryName
     langs:
       - typeScript
     type: property
@@ -224,7 +224,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
-    fullName: excel.Excel.ChartDataLabels.showLegendKey
+    fullName: showLegendKey
     langs:
       - typeScript
     type: property
@@ -239,7 +239,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
-    fullName: excel.Excel.ChartDataLabels.showPercentage
+    fullName: showPercentage
     langs:
       - typeScript
     type: property
@@ -254,7 +254,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
-    fullName: excel.Excel.ChartDataLabels.showSeriesName
+    fullName: showSeriesName
     langs:
       - typeScript
     type: property
@@ -269,7 +269,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue
-    fullName: excel.Excel.ChartDataLabels.showValue
+    fullName: showValue
     langs:
       - typeScript
     type: property
@@ -286,7 +286,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.ChartDataLabels.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -297,7 +297,7 @@ items:
           - number
   - uid: excel.Excel.ChartDataLabels.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartDataLabels.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -315,7 +315,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.ChartDataLabels.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property

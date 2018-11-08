@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxis
-    fullName: excel.Excel.ChartAxis
+    fullName: Excel.ChartAxis
     langs:
       - typeScript
     type: class
@@ -63,7 +63,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: alignment
-    fullName: excel.Excel.ChartAxis.alignment
+    fullName: alignment
     langs:
       - typeScript
     type: property
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
-    fullName: excel.Excel.ChartAxis.axisGroup
+    fullName: axisGroup
     langs:
       - typeScript
     type: property
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseTimeUnit
-    fullName: excel.Excel.ChartAxis.baseTimeUnit
+    fullName: baseTimeUnit
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryType
-    fullName: excel.Excel.ChartAxis.categoryType
+    fullName: categoryType
     langs:
       - typeScript
     type: property
@@ -125,7 +125,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customDisplayUnit
-    fullName: excel.Excel.ChartAxis.customDisplayUnit
+    fullName: customDisplayUnit
     langs:
       - typeScript
     type: property
@@ -140,7 +140,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayUnit
-    fullName: excel.Excel.ChartAxis.displayUnit
+    fullName: displayUnit
     langs:
       - typeScript
     type: property
@@ -179,7 +179,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartAxis.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -194,7 +194,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.ChartAxis.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -209,7 +209,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isBetweenCategories
-    fullName: excel.Excel.ChartAxis.isBetweenCategories
+    fullName: isBetweenCategories
     langs:
       - typeScript
     type: property
@@ -226,7 +226,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.ChartAxis.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -299,7 +299,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartAxis.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -320,7 +320,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: logBase
-    fullName: excel.Excel.ChartAxis.logBase
+    fullName: logBase
     langs:
       - typeScript
     type: property
@@ -335,7 +335,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorGridlines
-    fullName: excel.Excel.ChartAxis.majorGridlines
+    fullName: majorGridlines
     langs:
       - typeScript
     type: property
@@ -350,7 +350,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTickMark
-    fullName: excel.Excel.ChartAxis.majorTickMark
+    fullName: majorTickMark
     langs:
       - typeScript
     type: property
@@ -367,7 +367,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTimeUnitScale
-    fullName: excel.Excel.ChartAxis.majorTimeUnitScale
+    fullName: majorTimeUnitScale
     langs:
       - typeScript
     type: property
@@ -384,7 +384,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorUnit
-    fullName: excel.Excel.ChartAxis.majorUnit
+    fullName: majorUnit
     langs:
       - typeScript
     type: property
@@ -401,7 +401,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maximum
-    fullName: excel.Excel.ChartAxis.maximum
+    fullName: maximum
     langs:
       - typeScript
     type: property
@@ -418,7 +418,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minimum
-    fullName: excel.Excel.ChartAxis.minimum
+    fullName: minimum
     langs:
       - typeScript
     type: property
@@ -433,7 +433,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorGridlines
-    fullName: excel.Excel.ChartAxis.minorGridlines
+    fullName: minorGridlines
     langs:
       - typeScript
     type: property
@@ -448,7 +448,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTickMark
-    fullName: excel.Excel.ChartAxis.minorTickMark
+    fullName: minorTickMark
     langs:
       - typeScript
     type: property
@@ -465,7 +465,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTimeUnitScale
-    fullName: excel.Excel.ChartAxis.minorTimeUnitScale
+    fullName: minorTimeUnitScale
     langs:
       - typeScript
     type: property
@@ -482,7 +482,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorUnit
-    fullName: excel.Excel.ChartAxis.minorUnit
+    fullName: minorUnit
     langs:
       - typeScript
     type: property
@@ -497,7 +497,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: multiLevel
-    fullName: excel.Excel.ChartAxis.multiLevel
+    fullName: multiLevel
     langs:
       - typeScript
     type: property
@@ -512,7 +512,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.ChartAxis.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -529,7 +529,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: offset
-    fullName: excel.Excel.ChartAxis.offset
+    fullName: offset
     langs:
       - typeScript
     type: property
@@ -544,7 +544,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.ChartAxis.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -561,7 +561,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positionAt
-    fullName: excel.Excel.ChartAxis.positionAt
+    fullName: positionAt
     langs:
       - typeScript
     type: property
@@ -576,7 +576,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reversePlotOrder
-    fullName: excel.Excel.ChartAxis.reversePlotOrder
+    fullName: reversePlotOrder
     langs:
       - typeScript
     type: property
@@ -591,7 +591,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scaleType
-    fullName: excel.Excel.ChartAxis.scaleType
+    fullName: scaleType
     langs:
       - typeScript
     type: property
@@ -606,7 +606,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCategoryNames(sourceData)
-    fullName: excel.Excel.ChartAxis.setCategoryNames
+    fullName: setCategoryNames
     langs:
       - typeScript
     type: method
@@ -627,7 +627,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCustomDisplayUnit(value)
-    fullName: excel.Excel.ChartAxis.setCustomDisplayUnit
+    fullName: setCustomDisplayUnit
     langs:
       - typeScript
     type: method
@@ -648,7 +648,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPositionAt(value)
-    fullName: excel.Excel.ChartAxis.setPositionAt
+    fullName: setPositionAt
     langs:
       - typeScript
     type: method
@@ -669,7 +669,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDisplayUnitLabel
-    fullName: excel.Excel.ChartAxis.showDisplayUnitLabel
+    fullName: showDisplayUnitLabel
     langs:
       - typeScript
     type: property
@@ -703,7 +703,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.ChartAxis.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -720,7 +720,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickLabelPosition
-    fullName: excel.Excel.ChartAxis.tickLabelPosition
+    fullName: tickLabelPosition
     langs:
       - typeScript
     type: property
@@ -737,7 +737,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickLabelSpacing
-    fullName: excel.Excel.ChartAxis.tickLabelSpacing
+    fullName: tickLabelSpacing
     langs:
       - typeScript
     type: property
@@ -752,7 +752,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickMarkSpacing
-    fullName: excel.Excel.ChartAxis.tickMarkSpacing
+    fullName: tickMarkSpacing
     langs:
       - typeScript
     type: property
@@ -767,7 +767,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
-    fullName: excel.Excel.ChartAxis.title
+    fullName: title
     langs:
       - typeScript
     type: property
@@ -778,7 +778,7 @@ items:
           - excel.Excel.ChartAxisTitle
   - uid: excel.Excel.ChartAxis.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartAxis.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -796,7 +796,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.ChartAxis.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -811,7 +811,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.ChartAxis.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -826,7 +826,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.ChartAxis.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -841,7 +841,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.ChartAxis.width
+    fullName: width
     langs:
       - typeScript
     type: property

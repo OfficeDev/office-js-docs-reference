@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetProtection
-    fullName: excel.Excel.WorksheetProtection
+    fullName: Excel.WorksheetProtection
     langs:
       - typeScript
     type: class
@@ -39,7 +39,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.WorksheetProtection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
-    fullName: excel.Excel.WorksheetProtection.options
+    fullName: options
     langs:
       - typeScript
     type: property
@@ -77,7 +77,7 @@ items:
       \[ [API set: ExcelApi 1.2 for options; 1.7 for
       password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'protect(options, password)'
-    fullName: excel.Excel.WorksheetProtection.protect
+    fullName: protect
     langs:
       - typeScript
     type: method
@@ -150,7 +150,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
-    fullName: excel.Excel.WorksheetProtection.protected
+    fullName: protected
     langs:
       - typeScript
     type: property
@@ -161,7 +161,7 @@ items:
           - boolean
   - uid: excel.Excel.WorksheetProtection.toJSON
     name: toJSON()
-    fullName: excel.Excel.WorksheetProtection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -179,7 +179,7 @@ items:
       \[ [API set: ExcelApi 1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     name: unprotect(password)
-    fullName: excel.Excel.WorksheetProtection.unprotect
+    fullName: unprotect
     langs:
       - typeScript
     type: method

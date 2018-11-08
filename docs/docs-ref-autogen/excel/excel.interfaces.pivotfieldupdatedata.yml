@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotFieldUpdateData
     summary: 'An interface for updating data on the PivotField object, for use in "pivotField.set({ ... })".'
     name: Excel.Interfaces.PivotFieldUpdateData
-    fullName: excel.Excel.Interfaces.PivotFieldUpdateData
+    fullName: Excel.Interfaces.PivotFieldUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.PivotFieldUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
-    fullName: excel.Excel.Interfaces.PivotFieldUpdateData.showAllItems
+    fullName: showAllItems
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
-    fullName: excel.Excel.Interfaces.PivotFieldUpdateData.subtotals
+    fullName: subtotals
     langs:
       - typeScript
     type: property

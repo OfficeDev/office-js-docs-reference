@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableColumnCollection
-    fullName: excel.Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
       (null or -1) and will append a column at the end; 1.4 allows name parameter at creation
       time.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values, name)'
-    fullName: excel.Excel.TableColumnCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.TableColumnCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.TableColumnCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -115,7 +115,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: excel.Excel.TableColumnCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -167,7 +167,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.TableColumnCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -205,7 +205,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: excel.Excel.TableColumnCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -223,7 +223,7 @@ items:
   - uid: excel.Excel.TableColumnCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.TableColumnCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -275,7 +275,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.TableColumnCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -292,7 +292,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.TableColumnCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.TableColumnCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

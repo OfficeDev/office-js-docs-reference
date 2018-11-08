@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.WeekNumber
-    fullName: outlook.Office.MailboxEnums.WeekNumber
+    fullName: Office.MailboxEnums.WeekNumber
     langs:
       - typeScript
     type: enum
@@ -23,7 +23,7 @@ items:
   - uid: outlook.Office.MailboxEnums.WeekNumber.First
     summary: First week of the month.
     name: First
-    fullName: outlook.Office.MailboxEnums.WeekNumber.First
+    fullName: First
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: outlook.Office.MailboxEnums.WeekNumber.Fourth
     summary: Fourth week of the month.
     name: Fourth
-    fullName: outlook.Office.MailboxEnums.WeekNumber.Fourth
+    fullName: Fourth
     langs:
       - typeScript
     type: field
@@ -39,7 +39,7 @@ items:
   - uid: outlook.Office.MailboxEnums.WeekNumber.Last
     summary: Last week of the month.
     name: Last
-    fullName: outlook.Office.MailboxEnums.WeekNumber.Last
+    fullName: Last
     langs:
       - typeScript
     type: field
@@ -47,7 +47,7 @@ items:
   - uid: outlook.Office.MailboxEnums.WeekNumber.Second
     summary: Second week of the month.
     name: Second
-    fullName: outlook.Office.MailboxEnums.WeekNumber.Second
+    fullName: Second
     langs:
       - typeScript
     type: field
@@ -55,7 +55,7 @@ items:
   - uid: outlook.Office.MailboxEnums.WeekNumber.Third
     summary: Third week of the month.
     name: Third
-    fullName: outlook.Office.MailboxEnums.WeekNumber.Third
+    fullName: Third
     langs:
       - typeScript
     type: field

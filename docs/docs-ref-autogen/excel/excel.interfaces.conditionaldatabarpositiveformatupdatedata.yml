@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in
       "conditionalDataBarPositiveFormat.set({ ... })".
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
-    fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borderColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.borderColor
+    fullName: borderColor
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fillColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.fillColor
+    fullName: fillColor
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientFill
-    fullName: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData.gradientFill
+    fullName: gradientFill
     langs:
       - typeScript
     type: property

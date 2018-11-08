@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
     summary: 'An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set({ ... })".'
     name: OneNote.Interfaces.InkAnalysisWordUpdateData
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
+    fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: line
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData.line
+    fullName: line
     langs:
       - typeScript
     type: property

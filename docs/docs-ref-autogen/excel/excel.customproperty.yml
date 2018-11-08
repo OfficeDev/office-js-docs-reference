@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomProperty
-    fullName: excel.Excel.CustomProperty
+    fullName: Excel.CustomProperty
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.CustomProperty.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
-    fullName: excel.Excel.CustomProperty.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.CustomProperty.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -87,7 +87,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.CustomProperty.toJSON
     name: toJSON()
-    fullName: excel.Excel.CustomProperty.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.CustomProperty.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.CustomProperty.value
+    fullName: value
     langs:
       - typeScript
     type: property

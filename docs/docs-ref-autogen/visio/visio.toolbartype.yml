@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ToolBarType
-    fullName: visio.Visio.ToolBarType
+    fullName: Visio.ToolBarType
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
   - uid: visio.Visio.ToolBarType.commandBar
     summary: CommandBar
     name: commandBar
-    fullName: visio.Visio.ToolBarType.commandBar
+    fullName: commandBar
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: visio.Visio.ToolBarType.pageNavigationBar
     summary: PageNavigationBar
     name: pageNavigationBar
-    fullName: visio.Visio.ToolBarType.pageNavigationBar
+    fullName: pageNavigationBar
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: visio.Visio.ToolBarType.statusBar
     summary: StatusBar
     name: statusBar
-    fullName: visio.Visio.ToolBarType.statusBar
+    fullName: statusBar
     langs:
       - typeScript
     type: field

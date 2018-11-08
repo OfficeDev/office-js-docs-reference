@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalFormatRuleData
     summary: An interface describing the data returned by calling "conditionalFormatRule.toJSON()".
     name: Excel.Interfaces.ConditionalFormatRuleData
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleData
+    fullName: Excel.Interfaces.ConditionalFormatRuleData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
+    fullName: formulaLocal
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
-    fullName: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
+    fullName: formulaR1C1
     langs:
       - typeScript
     type: property

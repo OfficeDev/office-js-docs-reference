@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisFormat
-    fullName: excel.Excel.ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.ChartAxisFormat.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.ChartAxisFormat.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.ChartAxisFormat.line
+    fullName: line
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartAxisFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -100,7 +100,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartAxisFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartAxisFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

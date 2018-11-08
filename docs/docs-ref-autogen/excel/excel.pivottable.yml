@@ -10,7 +10,7 @@ items:
       PivotTables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has detailed
       walkthroughs, images, and code samples.
     name: Excel.PivotTable
-    fullName: excel.Excel.PivotTable
+    fullName: Excel.PivotTable
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHierarchies
-    fullName: excel.Excel.PivotTable.columnHierarchies
+    fullName: columnHierarchies
     langs:
       - typeScript
     type: property
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataHierarchies
-    fullName: excel.Excel.PivotTable.dataHierarchies
+    fullName: dataHierarchies
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.PivotTable.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filterHierarchies
-    fullName: excel.Excel.PivotTable.filterHierarchies
+    fullName: filterHierarchies
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hierarchies
-    fullName: excel.Excel.PivotTable.hierarchies
+    fullName: hierarchies
     langs:
       - typeScript
     type: property
@@ -180,7 +180,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.PivotTable.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -195,7 +195,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layout
-    fullName: excel.Excel.PivotTable.layout
+    fullName: layout
     langs:
       - typeScript
     type: property
@@ -245,7 +245,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotTable.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -266,7 +266,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.PivotTable.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -281,7 +281,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refresh()
-    fullName: excel.Excel.PivotTable.refresh
+    fullName: refresh
     langs:
       - typeScript
     type: method
@@ -297,7 +297,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHierarchies
-    fullName: excel.Excel.PivotTable.rowHierarchies
+    fullName: rowHierarchies
     langs:
       - typeScript
     type: property
@@ -308,7 +308,7 @@ items:
           - excel.Excel.RowColumnPivotHierarchyCollection
   - uid: excel.Excel.PivotTable.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotTable.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -324,7 +324,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
-    fullName: excel.Excel.PivotTable.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: property

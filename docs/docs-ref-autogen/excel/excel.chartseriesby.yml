@@ -9,7 +9,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesBy
-    fullName: excel.Excel.ChartSeriesBy
+    fullName: Excel.ChartSeriesBy
     langs:
       - typeScript
     type: enum
@@ -23,21 +23,21 @@ items:
       On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by
       rows or columns; on Excel Online, "auto" will simply default to "columns".
     name: auto
-    fullName: excel.Excel.ChartSeriesBy.auto
+    fullName: auto
     langs:
       - typeScript
     type: field
     numericValue: '"Auto"'
   - uid: excel.Excel.ChartSeriesBy.columns
     name: columns
-    fullName: excel.Excel.ChartSeriesBy.columns
+    fullName: columns
     langs:
       - typeScript
     type: field
     numericValue: '"Columns"'
   - uid: excel.Excel.ChartSeriesBy.rows
     name: rows
-    fullName: excel.Excel.ChartSeriesBy.rows
+    fullName: rows
     langs:
       - typeScript
     type: field

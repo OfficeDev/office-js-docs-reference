@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData
     summary: 'An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set({ ... })".'
     name: Excel.Interfaces.ChartLegendEntryUpdateData
-    fullName: excel.Excel.Interfaces.ChartLegendEntryUpdateData
+    fullName: Excel.Interfaces.ChartLegendEntryUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

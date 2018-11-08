@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.ListItemData
     summary: An interface describing the data returned by calling "listItem.toJSON()".
     name: Word.Interfaces.ListItemData
-    fullName: word.Word.Interfaces.ListItemData
+    fullName: Word.Interfaces.ListItemData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: level
-    fullName: word.Word.Interfaces.ListItemData.level
+    fullName: level
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listString
-    fullName: word.Word.Interfaces.ListItemData.listString
+    fullName: listString
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: siblingIndex
-    fullName: word.Word.Interfaces.ListItemData.siblingIndex
+    fullName: siblingIndex
     langs:
       - typeScript
     type: property

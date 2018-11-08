@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartPlotBy
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartPlotBy
-    fullName: excel.Excel.ChartPlotBy
+    fullName: Excel.ChartPlotBy
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.ChartPlotBy.rows
   - uid: excel.Excel.ChartPlotBy.columns
     name: columns
-    fullName: excel.Excel.ChartPlotBy.columns
+    fullName: columns
     langs:
       - typeScript
     type: field
     numericValue: '"Columns"'
   - uid: excel.Excel.ChartPlotBy.rows
     name: rows
-    fullName: excel.Excel.ChartPlotBy.rows
+    fullName: rows
     langs:
       - typeScript
     type: field

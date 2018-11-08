@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphInfo
-    fullName: onenote.OneNote.ParagraphInfo
+    fullName: OneNote.ParagraphInfo
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: bulletType
-    fullName: onenote.OneNote.ParagraphInfo.bulletType
+    fullName: bulletType
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: index
-    fullName: onenote.OneNote.ParagraphInfo.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: listType
-    fullName: onenote.OneNote.ParagraphInfo.listType
+    fullName: listType
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: numberType
-    fullName: onenote.OneNote.ParagraphInfo.numberType
+    fullName: numberType
     langs:
       - typeScript
     type: property

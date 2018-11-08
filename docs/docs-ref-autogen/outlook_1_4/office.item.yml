@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.Item
-    fullName: Outlook_1_4.Office.Item
+    fullName: Office.Item
     langs:
       - typeScript
     type: interface
@@ -40,7 +40,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: body
-    fullName: Outlook_1_4.Office.Item.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: dateTimeCreated
-    fullName: Outlook_1_4.Office.Item.dateTimeCreated
+    fullName: dateTimeCreated
     langs:
       - typeScript
     type: property
@@ -87,7 +87,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
-    fullName: Outlook_1_4.Office.Item.dateTimeModifed
+    fullName: dateTimeModifed
     langs:
       - typeScript
     type: property
@@ -114,7 +114,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: itemType
-    fullName: Outlook_1_4.Office.Item.itemType
+    fullName: itemType
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: Outlook_1_4.Office.Item.loadCustomPropertiesAsync
+    fullName: loadCustomPropertiesAsync
     langs:
       - typeScript
     type: method
@@ -186,7 +186,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: notificationMessages
-    fullName: Outlook_1_4.Office.Item.notificationMessages
+    fullName: notificationMessages
     langs:
       - typeScript
     type: property

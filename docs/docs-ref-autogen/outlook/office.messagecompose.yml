@@ -8,7 +8,7 @@ items:
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
-    fullName: outlook.Office.MessageCompose
+    fullName: Office.MessageCompose
     langs:
       - typeScript
     type: interface
@@ -134,7 +134,7 @@ items:
           });
       ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
-    fullName: outlook.Office.MessageCompose.addFileAttachmentAsync
+    fullName: addFileAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -225,7 +225,7 @@ items:
       ```
     isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
-    fullName: outlook.Office.MessageCompose.addFileAttachmentFromBase64Async
+    fullName: addFileAttachmentFromBase64Async
     langs:
       - typeScript
     type: method
@@ -288,7 +288,7 @@ items:
 
       `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: outlook.Office.MessageCompose.addHandlerAsync
+    fullName: addHandlerAsync
     langs:
       - typeScript
     type: method
@@ -399,7 +399,7 @@ items:
 
       ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
-    fullName: outlook.Office.MessageCompose.addItemAttachmentAsync
+    fullName: addItemAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -469,7 +469,7 @@ items:
 
       ```
     name: bcc
-    fullName: outlook.Office.MessageCompose.bcc
+    fullName: bcc
     langs:
       - typeScript
     type: property
@@ -491,7 +491,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: body
-    fullName: outlook.Office.MessageCompose.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -537,7 +537,7 @@ items:
 
       ```
     name: cc
-    fullName: outlook.Office.MessageCompose.cc
+    fullName: cc
     langs:
       - typeScript
     type: property
@@ -571,7 +571,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: close()
-    fullName: outlook.Office.MessageCompose.close
+    fullName: close
     langs:
       - typeScript
     type: method
@@ -604,7 +604,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: conversationId
-    fullName: outlook.Office.MessageCompose.conversationId
+    fullName: conversationId
     langs:
       - typeScript
     type: property
@@ -626,7 +626,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: dateTimeCreated
-    fullName: outlook.Office.MessageCompose.dateTimeCreated
+    fullName: dateTimeCreated
     langs:
       - typeScript
     type: property
@@ -651,7 +651,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
-    fullName: outlook.Office.MessageCompose.dateTimeModifed
+    fullName: dateTimeModifed
     langs:
       - typeScript
     type: property
@@ -695,7 +695,7 @@ items:
 
       ```
     name: from
-    fullName: outlook.Office.MessageCompose.from
+    fullName: from
     langs:
       - typeScript
     type: property
@@ -746,7 +746,7 @@ items:
       ```
     isPreview: true
     name: 'getAttachmentsAsync(options, callback)'
-    fullName: outlook.Office.MessageCompose.getAttachmentsAsync
+    fullName: getAttachmentsAsync
     langs:
       - typeScript
     type: method
@@ -795,7 +795,7 @@ items:
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
-    fullName: outlook.Office.MessageCompose.getInitializationContextAsync
+    fullName: getInitializationContextAsync
     langs:
       - typeScript
     type: method
@@ -871,7 +871,7 @@ items:
 
       ```
     name: 'getSelectedDataAsync(coerciontype, callback)'
-    fullName: outlook.Office.MessageCompose.getSelectedDataAsync
+    fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -911,7 +911,7 @@ items:
       Compose</td></tr></table>
     isPreview: true
     name: internetHeaders
-    fullName: outlook.Office.MessageCompose.internetHeaders
+    fullName: internetHeaders
     langs:
       - typeScript
     type: property
@@ -938,7 +938,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: itemType
-    fullName: outlook.Office.MessageCompose.itemType
+    fullName: itemType
     langs:
       - typeScript
     type: property
@@ -972,7 +972,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: outlook.Office.MessageCompose.loadCustomPropertiesAsync
+    fullName: loadCustomPropertiesAsync
     langs:
       - typeScript
     type: method
@@ -1010,7 +1010,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: notificationMessages
-    fullName: outlook.Office.MessageCompose.notificationMessages
+    fullName: notificationMessages
     langs:
       - typeScript
     type: property
@@ -1046,7 +1046,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: recurrence
-    fullName: outlook.Office.MessageCompose.recurrence
+    fullName: recurrence
     langs:
       - typeScript
     type: property
@@ -1109,7 +1109,7 @@ items:
 
       ```
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
-    fullName: outlook.Office.MessageCompose.removeAttachmentAsync
+    fullName: removeAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -1164,7 +1164,7 @@ items:
 
       `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
-    fullName: outlook.Office.MessageCompose.removeHandlerAsync
+    fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
@@ -1281,7 +1281,7 @@ items:
 
       ```
     name: 'saveAsync(options, callback)'
-    fullName: outlook.Office.MessageCompose.saveAsync
+    fullName: saveAsync
     langs:
       - typeScript
     type: method
@@ -1333,7 +1333,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: seriesId
-    fullName: outlook.Office.MessageCompose.seriesId
+    fullName: seriesId
     langs:
       - typeScript
     type: property
@@ -1387,7 +1387,7 @@ items:
 
       ```
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: outlook.Office.MessageCompose.setSelectedDataAsync
+    fullName: setSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -1454,7 +1454,7 @@ items:
 
       ```
     name: subject
-    fullName: outlook.Office.MessageCompose.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -1500,7 +1500,7 @@ items:
 
       ```
     name: to
-    fullName: outlook.Office.MessageCompose.to
+    fullName: to
     langs:
       - typeScript
     type: property

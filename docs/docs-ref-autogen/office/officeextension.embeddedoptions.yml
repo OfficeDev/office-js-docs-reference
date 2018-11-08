@@ -2,7 +2,7 @@
 items:
   - uid: office.OfficeExtension.EmbeddedOptions
     name: OfficeExtension.EmbeddedOptions
-    fullName: office.OfficeExtension.EmbeddedOptions
+    fullName: OfficeExtension.EmbeddedOptions
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       - office.OfficeExtension.EmbeddedOptions.width
   - uid: office.OfficeExtension.EmbeddedOptions.container
     name: container
-    fullName: office.OfficeExtension.EmbeddedOptions.container
+    fullName: container
     langs:
       - typeScript
     type: property
@@ -27,7 +27,7 @@ items:
           - HTMLElement
   - uid: office.OfficeExtension.EmbeddedOptions.height
     name: height
-    fullName: office.OfficeExtension.EmbeddedOptions.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
           - string
   - uid: office.OfficeExtension.EmbeddedOptions.id
     name: id
-    fullName: office.OfficeExtension.EmbeddedOptions.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
           - string
   - uid: office.OfficeExtension.EmbeddedOptions.sessionKey
     name: sessionKey
-    fullName: office.OfficeExtension.EmbeddedOptions.sessionKey
+    fullName: sessionKey
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
           - string
   - uid: office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
     name: timeoutInMilliseconds
-    fullName: office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
+    fullName: timeoutInMilliseconds
     langs:
       - typeScript
     type: property
@@ -71,7 +71,7 @@ items:
           - number
   - uid: office.OfficeExtension.EmbeddedOptions.width
     name: width
-    fullName: office.OfficeExtension.EmbeddedOptions.width
+    fullName: width
     langs:
       - typeScript
     type: property

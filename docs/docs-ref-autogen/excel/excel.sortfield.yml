@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SortField
-    fullName: excel.Excel.SortField
+    fullName: Excel.SortField
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ascending
-    fullName: excel.Excel.SortField.ascending
+    fullName: ascending
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.SortField.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataOption
-    fullName: excel.Excel.SortField.dataOption
+    fullName: dataOption
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: icon
-    fullName: excel.Excel.SortField.icon
+    fullName: icon
     langs:
       - typeScript
     type: property
@@ -86,7 +86,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
-    fullName: excel.Excel.SortField.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -101,7 +101,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortOn
-    fullName: excel.Excel.SortField.sortOn
+    fullName: sortOn
     langs:
       - typeScript
     type: property

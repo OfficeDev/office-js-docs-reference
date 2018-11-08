@@ -21,7 +21,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y
       </td></tr> </table>
     name: Office.CustomXmlNode
-    fullName: office.Office.CustomXmlNode
+    fullName: Office.CustomXmlNode
     langs:
       - typeScript
     type: interface
@@ -62,7 +62,7 @@ items:
       }
       ```
     name: baseName
-    fullName: office.Office.CustomXmlNode.baseName
+    fullName: baseName
     langs:
       - typeScript
     type: property
@@ -98,7 +98,7 @@ items:
       }
       ```
     name: 'getNodesAsync(xPath, options, callback)'
-    fullName: office.Office.CustomXmlNode.getNodesAsync
+    fullName: getNodesAsync
     langs:
       - typeScript
     type: method
@@ -154,7 +154,7 @@ items:
       }
       ```
     name: 'getNodeValueAsync(options, callback)'
-    fullName: office.Office.CustomXmlNode.getNodeValueAsync
+    fullName: getNodeValueAsync
     langs:
       - typeScript
     type: method
@@ -218,7 +218,7 @@ items:
       });
       ```
     name: 'getTextAsync(options, callback)'
-    fullName: office.Office.CustomXmlNode.getTextAsync
+    fullName: getTextAsync
     langs:
       - typeScript
     type: method
@@ -267,7 +267,7 @@ items:
       }
       ```
     name: 'getXmlAsync(options, callback)'
-    fullName: office.Office.CustomXmlNode.getXmlAsync
+    fullName: getXmlAsync
     langs:
       - typeScript
     type: method
@@ -314,7 +314,7 @@ items:
       }
       ```
     name: namespaceUri
-    fullName: office.Office.CustomXmlNode.namespaceUri
+    fullName: namespaceUri
     langs:
       - typeScript
     type: property
@@ -348,7 +348,7 @@ items:
       }
       ```
     name: nodeType
-    fullName: office.Office.CustomXmlNode.nodeType
+    fullName: nodeType
     langs:
       - typeScript
     type: property
@@ -383,7 +383,7 @@ items:
       }
       ```
     name: 'setNodeValueAsync(value, options, callback)'
-    fullName: office.Office.CustomXmlNode.setNodeValueAsync
+    fullName: setNodeValueAsync
     langs:
       - typeScript
     type: method
@@ -461,7 +461,7 @@ items:
       });
       ```
     name: 'setTextAsync(text, options, callback)'
-    fullName: office.Office.CustomXmlNode.setTextAsync
+    fullName: setTextAsync
     langs:
       - typeScript
     type: method
@@ -509,7 +509,7 @@ items:
       }
       ```
     name: 'setXmlAsync(xml, options, callback)'
-    fullName: office.Office.CustomXmlNode.setXmlAsync
+    fullName: setXmlAsync
     langs:
       - typeScript
     type: method

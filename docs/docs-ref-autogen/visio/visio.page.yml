@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Page
-    fullName: visio.Visio.Page
+    fullName: Visio.Page
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: activate()
-    fullName: visio.Visio.Page.activate
+    fullName: activate
     langs:
       - typeScript
     type: method
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: allShapes
-    fullName: visio.Visio.Page.allShapes
+    fullName: allShapes
     langs:
       - typeScript
     type: property
@@ -63,7 +63,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: comments
-    fullName: visio.Visio.Page.comments
+    fullName: comments
     langs:
       - typeScript
     type: property
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: height
-    fullName: visio.Visio.Page.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: index
-    fullName: visio.Visio.Page.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: isBackground
-    fullName: visio.Visio.Page.isBackground
+    fullName: isBackground
     langs:
       - typeScript
     type: property
@@ -136,7 +136,7 @@ items:
       included in the result. If option.top is specified, the result set will start after skipping the specified number
       of items.
     name: load(option)
-    fullName: visio.Visio.Page.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -157,7 +157,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: name
-    fullName: visio.Visio.Page.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -172,7 +172,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
-    fullName: visio.Visio.Page.shapes
+    fullName: shapes
     langs:
       - typeScript
     type: property
@@ -183,7 +183,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Page.toJSON
     name: toJSON()
-    fullName: visio.Visio.Page.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -199,7 +199,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
-    fullName: visio.Visio.Page.view
+    fullName: view
     langs:
       - typeScript
     type: property
@@ -214,7 +214,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: width
-    fullName: visio.Visio.Page.width
+    fullName: width
     langs:
       - typeScript
     type: property

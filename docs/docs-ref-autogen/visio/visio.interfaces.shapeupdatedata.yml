@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.ShapeUpdateData
     summary: 'An interface for updating data on the Shape object, for use in "shape.set({ ... })".'
     name: Visio.Interfaces.ShapeUpdateData
-    fullName: visio.Visio.Interfaces.ShapeUpdateData
+    fullName: Visio.Interfaces.ShapeUpdateData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: select
-    fullName: visio.Visio.Interfaces.ShapeUpdateData.select
+    fullName: select
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
-    fullName: visio.Visio.Interfaces.ShapeUpdateData.view
+    fullName: view
     langs:
       - typeScript
     type: property

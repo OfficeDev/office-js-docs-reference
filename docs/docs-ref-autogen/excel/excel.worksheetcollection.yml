@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetCollection
-    fullName: excel.Excel.WorksheetCollection
+    fullName: Excel.WorksheetCollection
     langs:
       - typeScript
     type: class
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: excel.Excel.WorksheetCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
-    fullName: excel.Excel.WorksheetCollection.getActiveWorksheet
+    fullName: getActiveWorksheet
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
-    fullName: excel.Excel.WorksheetCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -132,7 +132,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
-    fullName: excel.Excel.WorksheetCollection.getFirst
+    fullName: getFirst
     langs:
       - typeScript
     type: method
@@ -182,7 +182,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: excel.Excel.WorksheetCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -203,7 +203,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: excel.Excel.WorksheetCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -224,7 +224,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
-    fullName: excel.Excel.WorksheetCollection.getLast
+    fullName: getLast
     langs:
       - typeScript
     type: method
@@ -271,7 +271,7 @@ items:
   - uid: excel.Excel.WorksheetCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.WorksheetCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -323,7 +323,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.WorksheetCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -344,7 +344,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
-    fullName: excel.Excel.WorksheetCollection.onActivated
+    fullName: onActivated
     langs:
       - typeScript
     type: event
@@ -374,7 +374,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
-    fullName: excel.Excel.WorksheetCollection.onAdded
+    fullName: onAdded
     langs:
       - typeScript
     type: event
@@ -404,7 +404,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onCalculated
-    fullName: excel.Excel.WorksheetCollection.onCalculated
+    fullName: onCalculated
     langs:
       - typeScript
     type: event
@@ -419,7 +419,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
-    fullName: excel.Excel.WorksheetCollection.onDeactivated
+    fullName: onDeactivated
     langs:
       - typeScript
     type: event
@@ -449,7 +449,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
-    fullName: excel.Excel.WorksheetCollection.onDeleted
+    fullName: onDeleted
     langs:
       - typeScript
     type: event
@@ -460,7 +460,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.WorksheetCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

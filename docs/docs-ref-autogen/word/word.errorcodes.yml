@@ -2,7 +2,7 @@
 items:
   - uid: word.Word.ErrorCodes
     name: Word.ErrorCodes
-    fullName: word.Word.ErrorCodes
+    fullName: Word.ErrorCodes
     langs:
       - typeScript
     type: enum
@@ -15,35 +15,35 @@ items:
       - word.Word.ErrorCodes.notImplemented
   - uid: word.Word.ErrorCodes.accessDenied
     name: accessDenied
-    fullName: word.Word.ErrorCodes.accessDenied
+    fullName: accessDenied
     langs:
       - typeScript
     type: field
     numericValue: '"AccessDenied"'
   - uid: word.Word.ErrorCodes.generalException
     name: generalException
-    fullName: word.Word.ErrorCodes.generalException
+    fullName: generalException
     langs:
       - typeScript
     type: field
     numericValue: '"GeneralException"'
   - uid: word.Word.ErrorCodes.invalidArgument
     name: invalidArgument
-    fullName: word.Word.ErrorCodes.invalidArgument
+    fullName: invalidArgument
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidArgument"'
   - uid: word.Word.ErrorCodes.itemNotFound
     name: itemNotFound
-    fullName: word.Word.ErrorCodes.itemNotFound
+    fullName: itemNotFound
     langs:
       - typeScript
     type: field
     numericValue: '"ItemNotFound"'
   - uid: word.Word.ErrorCodes.notImplemented
     name: notImplemented
-    fullName: word.Word.ErrorCodes.notImplemented
+    fullName: notImplemented
     langs:
       - typeScript
     type: field

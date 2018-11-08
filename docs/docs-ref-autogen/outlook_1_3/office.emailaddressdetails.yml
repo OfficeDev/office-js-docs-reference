@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.EmailAddressDetails
-    fullName: Outlook_1_3.Office.EmailAddressDetails
+    fullName: Office.EmailAddressDetails
     langs:
       - typeScript
     type: interface
@@ -29,7 +29,7 @@ items:
       appointment, as represented by the optionalAttendees or requiredAttendees property. This property returns
       undefined in other scenarios.
     name: appointmentResponse
-    fullName: Outlook_1_3.Office.EmailAddressDetails.appointmentResponse
+    fullName: appointmentResponse
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
   - uid: Outlook_1_3.Office.EmailAddressDetails.displayName
     summary: Gets the display name associated with an email address.
     name: displayName
-    fullName: Outlook_1_3.Office.EmailAddressDetails.displayName
+    fullName: displayName
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
   - uid: Outlook_1_3.Office.EmailAddressDetails.emailAddress
     summary: Gets the SMTP email address.
     name: emailAddress
-    fullName: Outlook_1_3.Office.EmailAddressDetails.emailAddress
+    fullName: emailAddress
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
   - uid: Outlook_1_3.Office.EmailAddressDetails.recipientType
     summary: Gets the email address type of a recipient.
     name: recipientType
-    fullName: Outlook_1_3.Office.EmailAddressDetails.recipientType
+    fullName: recipientType
     langs:
       - typeScript
     type: property

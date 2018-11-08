@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Outline
-    fullName: onenote.OneNote.Outline
+    fullName: OneNote.Outline
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
-    fullName: onenote.OneNote.Outline.appendHtml
+    fullName: appendHtml
     langs:
       - typeScript
     type: method
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
-    fullName: onenote.OneNote.Outline.appendImage
+    fullName: appendImage
     langs:
       - typeScript
     type: method
@@ -123,7 +123,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
-    fullName: onenote.OneNote.Outline.appendRichText
+    fullName: appendRichText
     langs:
       - typeScript
     type: method
@@ -144,7 +144,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
-    fullName: onenote.OneNote.Outline.appendTable
+    fullName: appendTable
     langs:
       - typeScript
     type: method
@@ -210,7 +210,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Outline.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -225,7 +225,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isTitle()
-    fullName: onenote.OneNote.Outline.isTitle
+    fullName: isTitle
     langs:
       - typeScript
     type: method
@@ -254,7 +254,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: onenote.OneNote.Outline.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -277,7 +277,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
-    fullName: onenote.OneNote.Outline.pageContent
+    fullName: pageContent
     langs:
       - typeScript
     type: property
@@ -292,7 +292,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
-    fullName: onenote.OneNote.Outline.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property
@@ -303,7 +303,7 @@ items:
           - onenote.OneNote.ParagraphCollection
   - uid: onenote.OneNote.Outline.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.Outline.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -321,7 +321,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.Outline.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -338,7 +338,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.Outline.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.RangeFormatConfiguration
     summary: Specifies a range and its formatting.
     name: Office.RangeFormatConfiguration
-    fullName: office.Office.RangeFormatConfiguration
+    fullName: Office.RangeFormatConfiguration
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates:
       {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
     name: cells
-    fullName: office.Office.RangeFormatConfiguration.cells
+    fullName: cells
     langs:
       - typeScript
     type: property
@@ -28,7 +28,7 @@ items:
   - uid: office.Office.RangeFormatConfiguration.format
     summary: 'Specifies the formatting as key-value pairs. Example: {borderColor: "white", fontStyle: "bold"}'
     name: format
-    fullName: office.Office.RangeFormatConfiguration.format
+    fullName: format
     langs:
       - typeScript
     type: property

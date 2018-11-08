@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableCell
-    fullName: onenote.OneNote.TableCell
+    fullName: OneNote.TableCell
     langs:
       - typeScript
     type: class
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
-    fullName: onenote.OneNote.TableCell.appendHtml
+    fullName: appendHtml
     langs:
       - typeScript
     type: method
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
-    fullName: onenote.OneNote.TableCell.appendImage
+    fullName: appendImage
     langs:
       - typeScript
     type: method
@@ -122,7 +122,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
-    fullName: onenote.OneNote.TableCell.appendRichText
+    fullName: appendRichText
     langs:
       - typeScript
     type: method
@@ -178,7 +178,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
-    fullName: onenote.OneNote.TableCell.appendTable
+    fullName: appendTable
     langs:
       - typeScript
     type: method
@@ -207,7 +207,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
-    fullName: onenote.OneNote.TableCell.cellIndex
+    fullName: cellIndex
     langs:
       - typeScript
     type: property
@@ -222,7 +222,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
-    fullName: onenote.OneNote.TableCell.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -238,7 +238,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.TableCell.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -360,7 +360,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.TableCell.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -381,7 +381,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
-    fullName: onenote.OneNote.TableCell.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property
@@ -396,7 +396,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
-    fullName: onenote.OneNote.TableCell.parentRow
+    fullName: parentRow
     langs:
       - typeScript
     type: property
@@ -411,7 +411,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
-    fullName: onenote.OneNote.TableCell.rowIndex
+    fullName: rowIndex
     langs:
       - typeScript
     type: property
@@ -426,7 +426,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
-    fullName: onenote.OneNote.TableCell.shadingColor
+    fullName: shadingColor
     langs:
       - typeScript
     type: property
@@ -437,7 +437,7 @@ items:
           - string
   - uid: onenote.OneNote.TableCell.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.TableCell.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -455,7 +455,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.TableCell.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -472,7 +472,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.TableCell.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

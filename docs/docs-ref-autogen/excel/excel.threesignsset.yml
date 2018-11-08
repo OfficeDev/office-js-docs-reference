@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ThreeSignsSet
     name: Excel.ThreeSignsSet
-    fullName: excel.Excel.ThreeSignsSet
+    fullName: Excel.ThreeSignsSet
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - excel.Excel.ThreeSignsSet.yellowTriangle
   - uid: excel.Excel.ThreeSignsSet.__index
     name: __index(index)
-    fullName: excel.Excel.ThreeSignsSet.__index
+    fullName: __index
     langs:
       - typeScript
     type: method
@@ -31,7 +31,7 @@ items:
             - number
   - uid: excel.Excel.ThreeSignsSet.greenCircle
     name: greenCircle
-    fullName: excel.Excel.ThreeSignsSet.greenCircle
+    fullName: greenCircle
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.ThreeSignsSet.redDiamond
     name: redDiamond
-    fullName: excel.Excel.ThreeSignsSet.redDiamond
+    fullName: redDiamond
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.ThreeSignsSet.yellowTriangle
     name: yellowTriangle
-    fullName: excel.Excel.ThreeSignsSet.yellowTriangle
+    fullName: yellowTriangle
     langs:
       - typeScript
     type: property

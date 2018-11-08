@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.TableCellUpdateData
     summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })".'
     name: OneNote.Interfaces.TableCellUpdateData
-    fullName: onenote.OneNote.Interfaces.TableCellUpdateData
+    fullName: OneNote.Interfaces.TableCellUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
-    fullName: onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
+    fullName: shadingColor
     langs:
       - typeScript
     type: property

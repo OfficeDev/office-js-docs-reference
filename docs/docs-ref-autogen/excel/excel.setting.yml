@@ -10,7 +10,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Setting
-    fullName: excel.Excel.Setting
+    fullName: Excel.Setting
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.Setting.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
-    fullName: excel.Excel.Setting.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.Setting.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.Setting.toJSON
     name: toJSON()
-    fullName: excel.Excel.Setting.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -127,7 +127,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.Setting.value
+    fullName: value
     langs:
       - typeScript
     type: property

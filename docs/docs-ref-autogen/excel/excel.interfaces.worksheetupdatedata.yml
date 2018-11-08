@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.WorksheetUpdateData
     summary: 'An interface for updating data on the Worksheet object, for use in "worksheet.set({ ... })".'
     name: Excel.Interfaces.WorksheetUpdateData
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData
+    fullName: Excel.Interfaces.WorksheetUpdateData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
+    fullName: showGridlines
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
+    fullName: showHeadings
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardWidth
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.standardWidth
+    fullName: standardWidth
     langs:
       - typeScript
     type: property
@@ -104,7 +104,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tabColor
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.tabColor
+    fullName: tabColor
     langs:
       - typeScript
     type: property
@@ -121,7 +121,7 @@ items:
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visibility
-    fullName: excel.Excel.Interfaces.WorksheetUpdateData.visibility
+    fullName: visibility
     langs:
       - typeScript
     type: property

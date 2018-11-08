@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.NamedItemUpdateData
     summary: 'An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })".'
     name: Excel.Interfaces.NamedItemUpdateData
-    fullName: excel.Excel.Interfaces.NamedItemUpdateData
+    fullName: Excel.Interfaces.NamedItemUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
-    fullName: excel.Excel.Interfaces.NamedItemUpdateData.comment
+    fullName: comment
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.Interfaces.NamedItemUpdateData.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.NamedItemUpdateData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

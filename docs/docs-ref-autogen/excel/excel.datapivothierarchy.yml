@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataPivotHierarchy
-    fullName: excel.Excel.DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: field
-    fullName: excel.Excel.DataPivotHierarchy.field
+    fullName: field
     langs:
       - typeScript
     type: property
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.DataPivotHierarchy.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -73,7 +73,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.DataPivotHierarchy.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.DataPivotHierarchy.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -124,7 +124,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.DataPivotHierarchy.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -139,7 +139,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.DataPivotHierarchy.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -154,7 +154,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
-    fullName: excel.Excel.DataPivotHierarchy.setToDefault
+    fullName: setToDefault
     langs:
       - typeScript
     type: method
@@ -170,7 +170,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
-    fullName: excel.Excel.DataPivotHierarchy.showAs
+    fullName: showAs
     langs:
       - typeScript
     type: property
@@ -212,7 +212,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy
-    fullName: excel.Excel.DataPivotHierarchy.summarizeBy
+    fullName: summarizeBy
     langs:
       - typeScript
     type: property
@@ -227,7 +227,7 @@ items:
             "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"
   - uid: excel.Excel.DataPivotHierarchy.toJSON
     name: toJSON()
-    fullName: excel.Excel.DataPivotHierarchy.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

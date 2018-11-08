@@ -3,7 +3,7 @@ items:
   - uid: office.Office.SaveSettingsOptions
     summary: Provides options for saving settings.
     name: Office.SaveSettingsOptions
-    fullName: office.Office.SaveSettingsOptions
+    fullName: Office.SaveSettingsOptions
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.SaveSettingsOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -28,7 +28,7 @@ items:
   - uid: office.Office.SaveSettingsOptions.overwriteIfStale
     summary: Indicates whether the setting will be replaced if stale.
     name: overwriteIfStale
-    fullName: office.Office.SaveSettingsOptions.overwriteIfStale
+    fullName: overwriteIfStale
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.SortDataOption
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SortDataOption
-    fullName: excel.Excel.SortDataOption
+    fullName: Excel.SortDataOption
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.SortDataOption.textAsNumber
   - uid: excel.Excel.SortDataOption.normal
     name: normal
-    fullName: excel.Excel.SortDataOption.normal
+    fullName: normal
     langs:
       - typeScript
     type: field
     numericValue: '"Normal"'
   - uid: excel.Excel.SortDataOption.textAsNumber
     name: textAsNumber
-    fullName: excel.Excel.SortDataOption.textAsNumber
+    fullName: textAsNumber
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTimeUnit
-    fullName: excel.Excel.ChartAxisTimeUnit
+    fullName: Excel.ChartAxisTimeUnit
     langs:
       - typeScript
     type: enum
@@ -17,21 +17,21 @@ items:
       - excel.Excel.ChartAxisTimeUnit.years
   - uid: excel.Excel.ChartAxisTimeUnit.days
     name: days
-    fullName: excel.Excel.ChartAxisTimeUnit.days
+    fullName: days
     langs:
       - typeScript
     type: field
     numericValue: '"Days"'
   - uid: excel.Excel.ChartAxisTimeUnit.months
     name: months
-    fullName: excel.Excel.ChartAxisTimeUnit.months
+    fullName: months
     langs:
       - typeScript
     type: field
     numericValue: '"Months"'
   - uid: excel.Excel.ChartAxisTimeUnit.years
     name: years
-    fullName: excel.Excel.ChartAxisTimeUnit.years
+    fullName: years
     langs:
       - typeScript
     type: field

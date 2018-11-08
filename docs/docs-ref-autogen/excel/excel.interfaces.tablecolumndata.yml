@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TableColumnData
     summary: An interface describing the data returned by calling "tableColumn.toJSON()".
     name: Excel.Interfaces.TableColumnData
-    fullName: excel.Excel.Interfaces.TableColumnData
+    fullName: Excel.Interfaces.TableColumnData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filter
-    fullName: excel.Excel.Interfaces.TableColumnData.filter
+    fullName: filter
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.TableColumnData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.Interfaces.TableColumnData.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.TableColumnData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.Interfaces.TableColumnData.values
+    fullName: values
     langs:
       - typeScript
     type: property

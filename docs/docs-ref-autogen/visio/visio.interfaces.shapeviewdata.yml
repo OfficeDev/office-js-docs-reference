@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.ShapeViewData
     summary: An interface describing the data returned by calling "shapeView.toJSON()".
     name: Visio.Interfaces.ShapeViewData
-    fullName: visio.Visio.Interfaces.ShapeViewData
+    fullName: Visio.Interfaces.ShapeViewData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
-    fullName: visio.Visio.Interfaces.ShapeViewData.highlight
+    fullName: highlight
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPoint
-    fullName: excel.Excel.ChartPoint
+    fullName: Excel.ChartPoint
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabel
-    fullName: excel.Excel.ChartPoint.dataLabel
+    fullName: dataLabel
     langs:
       - typeScript
     type: property
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartPoint.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabel
-    fullName: excel.Excel.ChartPoint.hasDataLabel
+    fullName: hasDataLabel
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartPoint.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -109,7 +109,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
-    fullName: excel.Excel.ChartPoint.markerBackgroundColor
+    fullName: markerBackgroundColor
     langs:
       - typeScript
     type: property
@@ -124,7 +124,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
-    fullName: excel.Excel.ChartPoint.markerForegroundColor
+    fullName: markerForegroundColor
     langs:
       - typeScript
     type: property
@@ -139,7 +139,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
-    fullName: excel.Excel.ChartPoint.markerSize
+    fullName: markerSize
     langs:
       - typeScript
     type: property
@@ -154,7 +154,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
-    fullName: excel.Excel.ChartPoint.markerStyle
+    fullName: markerStyle
     langs:
       - typeScript
     type: property
@@ -169,7 +169,7 @@ items:
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - uid: excel.Excel.ChartPoint.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartPoint.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -185,7 +185,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.ChartPoint.value
+    fullName: value
     langs:
       - typeScript
     type: property

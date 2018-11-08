@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGridlinesFormat
-    fullName: excel.Excel.ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat
     langs:
       - typeScript
     type: class
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.ChartGridlinesFormat.line
+    fullName: line
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartGridlinesFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -68,7 +68,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartGridlinesFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartGridlinesFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

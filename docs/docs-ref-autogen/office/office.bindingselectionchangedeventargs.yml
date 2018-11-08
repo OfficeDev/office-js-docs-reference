@@ -4,7 +4,7 @@ items:
     summary: Provides information about the binding that raised the SelectionChanged event.
     remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.BindingSelectionChangedEventArgs
-    fullName: office.Office.BindingSelectionChangedEventArgs
+    fullName: Office.BindingSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
       Gets an [Office.Binding](xref:office.Office.Binding) object that represents the binding that raised the
       SelectionChanged event.
     name: binding
-    fullName: office.Office.BindingSelectionChangedEventArgs.binding
+    fullName: binding
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: columnCount
-    fullName: office.Office.BindingSelectionChangedEventArgs.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -102,7 +102,7 @@ items:
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: rowCount
-    fullName: office.Office.BindingSelectionChangedEventArgs.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -161,7 +161,7 @@ items:
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: startColumn
-    fullName: office.Office.BindingSelectionChangedEventArgs.startColumn
+    fullName: startColumn
     langs:
       - typeScript
     type: property
@@ -220,7 +220,7 @@ items:
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: startRow
-    fullName: office.Office.BindingSelectionChangedEventArgs.startRow
+    fullName: startRow
     langs:
       - typeScript
     type: property
@@ -271,7 +271,7 @@ items:
       Gets an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
       was raised.
     name: type
-    fullName: office.Office.BindingSelectionChangedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property

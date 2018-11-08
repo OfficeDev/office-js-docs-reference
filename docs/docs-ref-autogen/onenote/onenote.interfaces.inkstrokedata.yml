@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkStrokeData
     summary: An interface describing the data returned by calling "inkStroke.toJSON()".
     name: OneNote.Interfaces.InkStrokeData
-    fullName: onenote.OneNote.Interfaces.InkStrokeData
+    fullName: OneNote.Interfaces.InkStrokeData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: floatingInk
-    fullName: onenote.OneNote.Interfaces.InkStrokeData.floatingInk
+    fullName: floatingInk
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.InkStrokeData.id
+    fullName: id
     langs:
       - typeScript
     type: property

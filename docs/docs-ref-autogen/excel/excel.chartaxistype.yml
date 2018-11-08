@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartAxisType
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisType
-    fullName: excel.Excel.ChartAxisType
+    fullName: Excel.ChartAxisType
     langs:
       - typeScript
     type: enum
@@ -16,14 +16,14 @@ items:
   - uid: excel.Excel.ChartAxisType.category
     summary: Axis displays categories.
     name: category
-    fullName: excel.Excel.ChartAxisType.category
+    fullName: category
     langs:
       - typeScript
     type: field
     numericValue: '"Category"'
   - uid: excel.Excel.ChartAxisType.invalid
     name: invalid
-    fullName: excel.Excel.ChartAxisType.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: excel.Excel.ChartAxisType.series
     summary: Axis displays data series.
     name: series
-    fullName: excel.Excel.ChartAxisType.series
+    fullName: series
     langs:
       - typeScript
     type: field
@@ -39,7 +39,7 @@ items:
   - uid: excel.Excel.ChartAxisType.value
     summary: Axis displays values.
     name: value
-    fullName: excel.Excel.ChartAxisType.value
+    fullName: value
     langs:
       - typeScript
     type: field

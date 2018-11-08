@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntry
-    fullName: excel.Excel.ChartLegendEntry
+    fullName: Excel.ChartLegendEntry
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.ChartLegendEntry.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
-    fullName: excel.Excel.ChartLegendEntry.index
+    fullName: index
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.ChartLegendEntry.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -86,7 +86,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartLegendEntry.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -103,7 +103,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartLegendEntry.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartLegendEntry.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -119,7 +119,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.ChartLegendEntry.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -134,7 +134,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.ChartLegendEntry.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -149,7 +149,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.ChartLegendEntry.width
+    fullName: width
     langs:
       - typeScript
     type: property

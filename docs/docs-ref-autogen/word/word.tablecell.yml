@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.TableCell
-    fullName: word.Word.TableCell
+    fullName: Word.TableCell
     langs:
       - typeScript
     type: class
@@ -44,7 +44,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
-    fullName: word.Word.TableCell.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cellIndex
-    fullName: word.Word.TableCell.cellIndex
+    fullName: cellIndex
     langs:
       - typeScript
     type: property
@@ -74,7 +74,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: columnWidth
-    fullName: word.Word.TableCell.columnWidth
+    fullName: columnWidth
     langs:
       - typeScript
     type: property
@@ -89,7 +89,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteColumn()
-    fullName: word.Word.TableCell.deleteColumn
+    fullName: deleteColumn
     langs:
       - typeScript
     type: method
@@ -105,7 +105,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteRow()
-    fullName: word.Word.TableCell.deleteRow
+    fullName: deleteRow
     langs:
       - typeScript
     type: method
@@ -121,7 +121,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getBorder(borderLocation)
-    fullName: word.Word.TableCell.getBorder
+    fullName: getBorder
     langs:
       - typeScript
     type: method
@@ -142,7 +142,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCellPadding(cellPaddingLocation)
-    fullName: word.Word.TableCell.getCellPadding
+    fullName: getCellPadding
     langs:
       - typeScript
     type: method
@@ -163,7 +163,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
-    fullName: word.Word.TableCell.getNext
+    fullName: getNext
     langs:
       - typeScript
     type: method
@@ -179,7 +179,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
-    fullName: word.Word.TableCell.getNextOrNullObject
+    fullName: getNextOrNullObject
     langs:
       - typeScript
     type: method
@@ -195,7 +195,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: word.Word.TableCell.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -212,7 +212,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertColumns(insertLocation, columnCount, values)'
-    fullName: word.Word.TableCell.insertColumns
+    fullName: insertColumns
     langs:
       - typeScript
     type: method
@@ -243,7 +243,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertRows(insertLocation, rowCount, values)'
-    fullName: word.Word.TableCell.insertRows
+    fullName: insertRows
     langs:
       - typeScript
     type: method
@@ -285,7 +285,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: word.Word.TableCell.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -306,7 +306,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentRow
-    fullName: word.Word.TableCell.parentRow
+    fullName: parentRow
     langs:
       - typeScript
     type: property
@@ -321,7 +321,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.TableCell.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -336,7 +336,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowIndex
-    fullName: word.Word.TableCell.rowIndex
+    fullName: rowIndex
     langs:
       - typeScript
     type: property
@@ -351,7 +351,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    fullName: word.Word.TableCell.setCellPadding
+    fullName: setCellPadding
     langs:
       - typeScript
     type: method
@@ -376,7 +376,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
-    fullName: word.Word.TableCell.shadingColor
+    fullName: shadingColor
     langs:
       - typeScript
     type: property
@@ -387,7 +387,7 @@ items:
           - string
   - uid: word.Word.TableCell.toJSON
     name: toJSON()
-    fullName: word.Word.TableCell.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -405,7 +405,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.TableCell.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -422,7 +422,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.TableCell.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -438,7 +438,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
-    fullName: word.Word.TableCell.value
+    fullName: value
     langs:
       - typeScript
     type: property
@@ -453,7 +453,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: word.Word.TableCell.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -468,7 +468,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.TableCell.width
+    fullName: width
     langs:
       - typeScript
     type: property
