@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionData
     summary: An interface describing the data returned by calling "styleCollection.toJSON()".
     name: Excel.Interfaces.StyleCollectionData
-    fullName: excel.Excel.Interfaces.StyleCollectionData
+    fullName: Excel.Interfaces.StyleCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.StyleCollectionData.items
   - uid: excel.Excel.Interfaces.StyleCollectionData.items
     name: items
-    fullName: excel.Excel.Interfaces.StyleCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

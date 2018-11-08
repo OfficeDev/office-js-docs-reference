@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.DataValidationData
     summary: An interface describing the data returned by calling "dataValidation.toJSON()".
     name: Excel.Interfaces.DataValidationData
-    fullName: excel.Excel.Interfaces.DataValidationData
+    fullName: Excel.Interfaces.DataValidationData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
-    fullName: excel.Excel.Interfaces.DataValidationData.errorAlert
+    fullName: errorAlert
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
-    fullName: excel.Excel.Interfaces.DataValidationData.ignoreBlanks
+    fullName: ignoreBlanks
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
-    fullName: excel.Excel.Interfaces.DataValidationData.prompt
+    fullName: prompt
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.DataValidationData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.Interfaces.DataValidationData.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valid
-    fullName: excel.Excel.Interfaces.DataValidationData.valid
+    fullName: valid
     langs:
       - typeScript
     type: property

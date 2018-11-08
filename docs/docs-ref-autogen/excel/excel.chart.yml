@@ -10,7 +10,7 @@ items:
       charts](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts) has detailed walkthroughs,
       images, and code samples.
     name: Excel.Chart
-    fullName: excel.Excel.Chart
+    fullName: Excel.Chart
     langs:
       - typeScript
     type: class
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axes
-    fullName: excel.Excel.Chart.axes
+    fullName: axes
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryLabelLevel
-    fullName: excel.Excel.Chart.categoryLabelLevel
+    fullName: categoryLabelLevel
     langs:
       - typeScript
     type: property
@@ -87,7 +87,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
-    fullName: excel.Excel.Chart.chartType
+    fullName: chartType
     langs:
       - typeScript
     type: property
@@ -131,7 +131,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
-    fullName: excel.Excel.Chart.dataLabels
+    fullName: dataLabels
     langs:
       - typeScript
     type: property
@@ -146,7 +146,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.Chart.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -177,7 +177,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayBlanksAs
-    fullName: excel.Excel.Chart.displayBlanksAs
+    fullName: displayBlanksAs
     langs:
       - typeScript
     type: property
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Chart.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -209,7 +209,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getImage(width, height, fittingMode)'
-    fullName: excel.Excel.Chart.getImage
+    fullName: getImage
     langs:
       - typeScript
     type: method
@@ -257,7 +257,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
-    fullName: excel.Excel.Chart.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -272,7 +272,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Chart.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -287,7 +287,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
-    fullName: excel.Excel.Chart.left
+    fullName: left
     langs:
       - typeScript
     type: property
@@ -302,7 +302,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legend
-    fullName: excel.Excel.Chart.legend
+    fullName: legend
     langs:
       - typeScript
     type: property
@@ -352,7 +352,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.Chart.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -373,7 +373,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Chart.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -410,7 +410,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
-    fullName: excel.Excel.Chart.onActivated
+    fullName: onActivated
     langs:
       - typeScript
     type: event
@@ -425,7 +425,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
-    fullName: excel.Excel.Chart.onDeactivated
+    fullName: onDeactivated
     langs:
       - typeScript
     type: event
@@ -440,7 +440,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotArea
-    fullName: excel.Excel.Chart.plotArea
+    fullName: plotArea
     langs:
       - typeScript
     type: property
@@ -455,7 +455,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotBy
-    fullName: excel.Excel.Chart.plotBy
+    fullName: plotBy
     langs:
       - typeScript
     type: property
@@ -470,7 +470,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotVisibleOnly
-    fullName: excel.Excel.Chart.plotVisibleOnly
+    fullName: plotVisibleOnly
     langs:
       - typeScript
     type: property
@@ -485,7 +485,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: series
-    fullName: excel.Excel.Chart.series
+    fullName: series
     langs:
       - typeScript
     type: property
@@ -502,7 +502,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesNameLevel
-    fullName: excel.Excel.Chart.seriesNameLevel
+    fullName: seriesNameLevel
     langs:
       - typeScript
     type: property
@@ -517,7 +517,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setData(sourceData, seriesBy)'
-    fullName: excel.Excel.Chart.setData
+    fullName: setData
     langs:
       - typeScript
     type: method
@@ -561,7 +561,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setPosition(startCell, endCell)'
-    fullName: excel.Excel.Chart.setPosition
+    fullName: setPosition
     langs:
       - typeScript
     type: method
@@ -611,7 +611,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
-    fullName: excel.Excel.Chart.showAllFieldButtons
+    fullName: showAllFieldButtons
     langs:
       - typeScript
     type: property
@@ -629,7 +629,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataLabelsOverMaximum
-    fullName: excel.Excel.Chart.showDataLabelsOverMaximum
+    fullName: showDataLabelsOverMaximum
     langs:
       - typeScript
     type: property
@@ -644,7 +644,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Chart.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -661,7 +661,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
-    fullName: excel.Excel.Chart.title
+    fullName: title
     langs:
       - typeScript
     type: property
@@ -672,7 +672,7 @@ items:
           - excel.Excel.ChartTitle
   - uid: excel.Excel.Chart.toJSON
     name: toJSON()
-    fullName: excel.Excel.Chart.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -690,7 +690,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
-    fullName: excel.Excel.Chart.top
+    fullName: top
     langs:
       - typeScript
     type: property
@@ -705,7 +705,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
-    fullName: excel.Excel.Chart.width
+    fullName: width
     langs:
       - typeScript
     type: property
@@ -720,7 +720,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
-    fullName: excel.Excel.Chart.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: property

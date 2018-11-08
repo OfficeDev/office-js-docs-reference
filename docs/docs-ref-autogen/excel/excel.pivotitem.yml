@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotItem
-    fullName: excel.Excel.PivotItem
+    fullName: Excel.PivotItem
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.PivotItem.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isExpanded
-    fullName: excel.Excel.PivotItem.isExpanded
+    fullName: isExpanded
     langs:
       - typeScript
     type: property
@@ -69,7 +69,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotItem.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -90,7 +90,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.PivotItem.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -101,7 +101,7 @@ items:
           - string
   - uid: excel.Excel.PivotItem.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotItem.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -117,7 +117,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.PivotItem.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

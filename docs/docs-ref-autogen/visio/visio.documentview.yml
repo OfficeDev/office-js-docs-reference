@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.DocumentView
-    fullName: visio.Visio.DocumentView
+    fullName: Visio.DocumentView
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableHyperlinks
-    fullName: visio.Visio.DocumentView.disableHyperlinks
+    fullName: disableHyperlinks
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disablePan
-    fullName: visio.Visio.DocumentView.disablePan
+    fullName: disablePan
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableZoom
-    fullName: visio.Visio.DocumentView.disableZoom
+    fullName: disableZoom
     langs:
       - typeScript
     type: property
@@ -71,7 +71,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: hideDiagramBoundary
-    fullName: visio.Visio.DocumentView.hideDiagramBoundary
+    fullName: hideDiagramBoundary
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: visio.Visio.DocumentView.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -116,7 +116,7 @@ items:
             - 'string | string[]'
   - uid: visio.Visio.DocumentView.toJSON
     name: toJSON()
-    fullName: visio.Visio.DocumentView.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

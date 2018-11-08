@@ -10,7 +10,7 @@ items:
       </td><td>Compose or read</td></tr></table>
     isPreview: true
     name: Office.MailboxEnums.AttachmentContentFormat
-    fullName: outlook.Office.MailboxEnums.AttachmentContentFormat
+    fullName: Office.MailboxEnums.AttachmentContentFormat
     langs:
       - typeScript
     type: enum
@@ -24,7 +24,7 @@ items:
     summary: The content of the attachment is returned as a base64-encoded string.
     isPreview: true
     name: Base64
-    fullName: outlook.Office.MailboxEnums.AttachmentContentFormat.Base64
+    fullName: Base64
     langs:
       - typeScript
     type: field
@@ -33,7 +33,7 @@ items:
     summary: The content of the attachment is returned as a string representing an .eml formatted file.
     isPreview: true
     name: Eml
-    fullName: outlook.Office.MailboxEnums.AttachmentContentFormat.Eml
+    fullName: Eml
     langs:
       - typeScript
     type: field
@@ -42,7 +42,7 @@ items:
     summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
     isPreview: true
     name: ICalendar
-    fullName: outlook.Office.MailboxEnums.AttachmentContentFormat.ICalendar
+    fullName: ICalendar
     langs:
       - typeScript
     type: field
@@ -51,7 +51,7 @@ items:
     summary: The content of the attachment is returned as a string representing a URL.
     isPreview: true
     name: Url
-    fullName: outlook.Office.MailboxEnums.AttachmentContentFormat.Url
+    fullName: Url
     langs:
       - typeScript
     type: field

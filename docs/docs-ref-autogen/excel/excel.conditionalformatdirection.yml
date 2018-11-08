@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatDirection
-    fullName: excel.Excel.ConditionalFormatDirection
+    fullName: Excel.ConditionalFormatDirection
     langs:
       - typeScript
     type: enum
@@ -16,14 +16,14 @@ items:
       - excel.Excel.ConditionalFormatDirection.top
   - uid: excel.Excel.ConditionalFormatDirection.bottom
     name: bottom
-    fullName: excel.Excel.ConditionalFormatDirection.bottom
+    fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
   - uid: excel.Excel.ConditionalFormatDirection.top
     name: top
-    fullName: excel.Excel.ConditionalFormatDirection.top
+    fullName: top
     langs:
       - typeScript
     type: field

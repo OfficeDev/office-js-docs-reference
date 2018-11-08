@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.FiveRatingSet
     name: Excel.FiveRatingSet
-    fullName: excel.Excel.FiveRatingSet
+    fullName: Excel.FiveRatingSet
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
       - excel.Excel.FiveRatingSet.twoBars
   - uid: excel.Excel.FiveRatingSet.__index
     name: __index(index)
-    fullName: excel.Excel.FiveRatingSet.__index
+    fullName: __index
     langs:
       - typeScript
     type: method
@@ -33,7 +33,7 @@ items:
             - number
   - uid: excel.Excel.FiveRatingSet.fourBars
     name: fourBars
-    fullName: excel.Excel.FiveRatingSet.fourBars
+    fullName: fourBars
     langs:
       - typeScript
     type: property
@@ -44,7 +44,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FiveRatingSet.noBars
     name: noBars
-    fullName: excel.Excel.FiveRatingSet.noBars
+    fullName: noBars
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FiveRatingSet.oneBar
     name: oneBar
-    fullName: excel.Excel.FiveRatingSet.oneBar
+    fullName: oneBar
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FiveRatingSet.threeBars
     name: threeBars
-    fullName: excel.Excel.FiveRatingSet.threeBars
+    fullName: threeBars
     langs:
       - typeScript
     type: property
@@ -77,7 +77,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.FiveRatingSet.twoBars
     name: twoBars
-    fullName: excel.Excel.FiveRatingSet.twoBars
+    fullName: twoBars
     langs:
       - typeScript
     type: property

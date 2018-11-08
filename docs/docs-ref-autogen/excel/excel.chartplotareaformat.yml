@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotAreaFormat
-    fullName: excel.Excel.ChartPlotAreaFormat
+    fullName: Excel.ChartPlotAreaFormat
     langs:
       - typeScript
     type: class
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
-    fullName: excel.Excel.ChartPlotAreaFormat.border
+    fullName: border
     langs:
       - typeScript
     type: property
@@ -39,7 +39,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.ChartPlotAreaFormat.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartPlotAreaFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -84,7 +84,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartPlotAreaFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartPlotAreaFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

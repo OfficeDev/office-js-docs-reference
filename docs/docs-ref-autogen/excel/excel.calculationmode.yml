@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.CalculationMode
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.CalculationMode
-    fullName: excel.Excel.CalculationMode
+    fullName: Excel.CalculationMode
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.CalculationMode.manual
   - uid: excel.Excel.CalculationMode.automatic
     name: automatic
-    fullName: excel.Excel.CalculationMode.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.CalculationMode.automaticExceptTables
     name: automaticExceptTables
-    fullName: excel.Excel.CalculationMode.automaticExceptTables
+    fullName: automaticExceptTables
     langs:
       - typeScript
     type: field
     numericValue: '"AutomaticExceptTables"'
   - uid: excel.Excel.CalculationMode.manual
     name: manual
-    fullName: excel.Excel.CalculationMode.manual
+    fullName: manual
     langs:
       - typeScript
     type: field

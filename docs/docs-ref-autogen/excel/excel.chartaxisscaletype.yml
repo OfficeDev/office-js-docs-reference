@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartAxisScaleType
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisScaleType
-    fullName: excel.Excel.ChartAxisScaleType
+    fullName: Excel.ChartAxisScaleType
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.ChartAxisScaleType.logarithmic
   - uid: excel.Excel.ChartAxisScaleType.linear
     name: linear
-    fullName: excel.Excel.ChartAxisScaleType.linear
+    fullName: linear
     langs:
       - typeScript
     type: field
     numericValue: '"Linear"'
   - uid: excel.Excel.ChartAxisScaleType.logarithmic
     name: logarithmic
-    fullName: excel.Excel.ChartAxisScaleType.logarithmic
+    fullName: logarithmic
     langs:
       - typeScript
     type: field

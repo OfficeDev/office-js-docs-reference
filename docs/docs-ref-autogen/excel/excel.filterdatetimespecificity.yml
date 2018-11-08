@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.FilterDatetimeSpecificity
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FilterDatetimeSpecificity
-    fullName: excel.Excel.FilterDatetimeSpecificity
+    fullName: Excel.FilterDatetimeSpecificity
     langs:
       - typeScript
     type: enum
@@ -17,42 +17,42 @@ items:
       - excel.Excel.FilterDatetimeSpecificity.year
   - uid: excel.Excel.FilterDatetimeSpecificity.day
     name: day
-    fullName: excel.Excel.FilterDatetimeSpecificity.day
+    fullName: day
     langs:
       - typeScript
     type: field
     numericValue: '"Day"'
   - uid: excel.Excel.FilterDatetimeSpecificity.hour
     name: hour
-    fullName: excel.Excel.FilterDatetimeSpecificity.hour
+    fullName: hour
     langs:
       - typeScript
     type: field
     numericValue: '"Hour"'
   - uid: excel.Excel.FilterDatetimeSpecificity.minute
     name: minute
-    fullName: excel.Excel.FilterDatetimeSpecificity.minute
+    fullName: minute
     langs:
       - typeScript
     type: field
     numericValue: '"Minute"'
   - uid: excel.Excel.FilterDatetimeSpecificity.month
     name: month
-    fullName: excel.Excel.FilterDatetimeSpecificity.month
+    fullName: month
     langs:
       - typeScript
     type: field
     numericValue: '"Month"'
   - uid: excel.Excel.FilterDatetimeSpecificity.second
     name: second
-    fullName: excel.Excel.FilterDatetimeSpecificity.second
+    fullName: second
     langs:
       - typeScript
     type: field
     numericValue: '"Second"'
   - uid: excel.Excel.FilterDatetimeSpecificity.year
     name: year
-    fullName: excel.Excel.FilterDatetimeSpecificity.year
+    fullName: year
     langs:
       - typeScript
     type: field

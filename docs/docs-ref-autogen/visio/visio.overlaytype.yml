@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.OverlayType
-    fullName: visio.Visio.OverlayType
+    fullName: Visio.OverlayType
     langs:
       - typeScript
     type: enum
@@ -17,7 +17,7 @@ items:
   - uid: visio.Visio.OverlayType.image
     summary: image
     name: image
-    fullName: visio.Visio.OverlayType.image
+    fullName: image
     langs:
       - typeScript
     type: field
@@ -25,7 +25,7 @@ items:
   - uid: visio.Visio.OverlayType.text
     summary: text
     name: text
-    fullName: visio.Visio.OverlayType.text
+    fullName: text
     langs:
       - typeScript
     type: field

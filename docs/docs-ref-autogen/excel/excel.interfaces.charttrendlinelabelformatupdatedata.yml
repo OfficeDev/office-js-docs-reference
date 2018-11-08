@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ChartTrendlineLabelFormat object, for use in
       "chartTrendlineLabelFormat.set({ ... })".
     name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
-    fullName: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.border
+    fullName: border
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property

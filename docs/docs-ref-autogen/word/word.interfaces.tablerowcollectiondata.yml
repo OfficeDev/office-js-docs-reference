@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.TableRowCollectionData
     summary: An interface describing the data returned by calling "tableRowCollection.toJSON()".
     name: Word.Interfaces.TableRowCollectionData
-    fullName: word.Word.Interfaces.TableRowCollectionData
+    fullName: Word.Interfaces.TableRowCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - word.Word.Interfaces.TableRowCollectionData.items
   - uid: word.Word.Interfaces.TableRowCollectionData.items
     name: items
-    fullName: word.Word.Interfaces.TableRowCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

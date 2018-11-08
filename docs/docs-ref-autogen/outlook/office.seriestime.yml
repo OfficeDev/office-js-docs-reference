@@ -15,7 +15,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.SeriesTime
-    fullName: outlook.Office.SeriesTime
+    fullName: Office.SeriesTime
     langs:
       - typeScript
     type: interface
@@ -60,7 +60,7 @@ items:
 
       ```
     name: getDuration()
-    fullName: outlook.Office.SeriesTime.getDuration
+    fullName: getDuration
     langs:
       - typeScript
     type: method
@@ -102,7 +102,7 @@ items:
 
       ```
     name: getEndDate()
-    fullName: outlook.Office.SeriesTime.getEndDate
+    fullName: getEndDate
     langs:
       - typeScript
     type: method
@@ -145,7 +145,7 @@ items:
 
       ```
     name: getEndTime()
-    fullName: outlook.Office.SeriesTime.getEndTime
+    fullName: getEndTime
     langs:
       - typeScript
     type: method
@@ -187,7 +187,7 @@ items:
 
       ```
     name: getStartDate()
-    fullName: outlook.Office.SeriesTime.getStartDate
+    fullName: getStartDate
     langs:
       - typeScript
     type: method
@@ -226,7 +226,7 @@ items:
 
       ```
     name: getStartTime()
-    fullName: outlook.Office.SeriesTime.getStartTime
+    fullName: getStartTime
     langs:
       - typeScript
     type: method
@@ -268,7 +268,7 @@ items:
 
       ```
     name: setDuration(minutes)
-    fullName: outlook.Office.SeriesTime.setDuration
+    fullName: setDuration
     langs:
       - typeScript
     type: method
@@ -324,7 +324,7 @@ items:
 
       ```
     name: 'setEndDate(year, month, day)'
-    fullName: outlook.Office.SeriesTime.setEndDate
+    fullName: setEndDate
     langs:
       - typeScript
     type: method
@@ -390,7 +390,7 @@ items:
 
       ```
     name: 'setStartDate(year, month, day)'
-    fullName: outlook.Office.SeriesTime.setStartDate
+    fullName: setStartDate
     langs:
       - typeScript
     type: method
@@ -463,7 +463,7 @@ items:
 
       ```
     name: 'setStartTime(hours, minutes)'
-    fullName: outlook.Office.SeriesTime.setStartTime
+    fullName: setStartTime
     langs:
       - typeScript
     type: method

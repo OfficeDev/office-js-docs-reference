@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.CellValueConditionalFormatData
     summary: An interface describing the data returned by calling "cellValueConditionalFormat.toJSON()".
     name: Excel.Interfaces.CellValueConditionalFormatData
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatData
+    fullName: Excel.Interfaces.CellValueConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.CellValueConditionalFormatData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

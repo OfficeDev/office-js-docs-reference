@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.InsertShiftDirection
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.InsertShiftDirection
-    fullName: excel.Excel.InsertShiftDirection
+    fullName: Excel.InsertShiftDirection
     langs:
       - typeScript
     type: enum
@@ -13,14 +13,14 @@ items:
       - excel.Excel.InsertShiftDirection.right
   - uid: excel.Excel.InsertShiftDirection.down
     name: down
-    fullName: excel.Excel.InsertShiftDirection.down
+    fullName: down
     langs:
       - typeScript
     type: field
     numericValue: '"Down"'
   - uid: excel.Excel.InsertShiftDirection.right
     name: right
-    fullName: excel.Excel.InsertShiftDirection.right
+    fullName: right
     langs:
       - typeScript
     type: field

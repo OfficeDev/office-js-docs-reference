@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.TableCollection
-    fullName: word.Word.TableCollection
+    fullName: Word.TableCollection
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
-    fullName: word.Word.TableCollection.getFirst
+    fullName: getFirst
     langs:
       - typeScript
     type: method
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
-    fullName: word.Word.TableCollection.getFirstOrNullObject
+    fullName: getFirstOrNullObject
     langs:
       - typeScript
     type: method
@@ -56,7 +56,7 @@ items:
   - uid: word.Word.TableCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: word.Word.TableCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -84,7 +84,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: word.Word.TableCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -101,7 +101,7 @@ items:
             - 'string | string[]'
   - uid: word.Word.TableCollection.toJSON
     name: toJSON()
-    fullName: word.Word.TableCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -119,7 +119,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.TableCollection.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -136,7 +136,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.TableCollection.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

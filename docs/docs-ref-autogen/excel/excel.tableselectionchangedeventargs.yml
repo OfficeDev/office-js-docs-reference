@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableSelectionChangedEventArgs
-    fullName: excel.Excel.TableSelectionChangedEventArgs
+    fullName: Excel.TableSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
-    fullName: excel.Excel.TableSelectionChangedEventArgs.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isInsideTable
-    fullName: excel.Excel.TableSelectionChangedEventArgs.isInsideTable
+    fullName: isInsideTable
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableId
-    fullName: excel.Excel.TableSelectionChangedEventArgs.tableId
+    fullName: tableId
     langs:
       - typeScript
     type: property
@@ -79,7 +79,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.TableSelectionChangedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
-    fullName: excel.Excel.TableSelectionChangedEventArgs.worksheetId
+    fullName: worksheetId
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ConditionalRangeBorderLineStyle
     summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ConditionalRangeBorderLineStyle
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle
+    fullName: Excel.ConditionalRangeBorderLineStyle
     langs:
       - typeScript
     type: enum
@@ -17,42 +17,42 @@ items:
       - excel.Excel.ConditionalRangeBorderLineStyle.none
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.continuous
     name: continuous
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.continuous
+    fullName: continuous
     langs:
       - typeScript
     type: field
     numericValue: '"Continuous"'
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.dash
     name: dash
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dash
+    fullName: dash
     langs:
       - typeScript
     type: field
     numericValue: '"Dash"'
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.dashDot
     name: dashDot
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dashDot
+    fullName: dashDot
     langs:
       - typeScript
     type: field
     numericValue: '"DashDot"'
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.dashDotDot
     name: dashDotDot
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+    fullName: dashDotDot
     langs:
       - typeScript
     type: field
     numericValue: '"DashDotDot"'
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.dot
     name: dot
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dot
+    fullName: dot
     langs:
       - typeScript
     type: field
     numericValue: '"Dot"'
   - uid: excel.Excel.ConditionalRangeBorderLineStyle.none
     name: none
-    fullName: excel.Excel.ConditionalRangeBorderLineStyle.none
+    fullName: none
     langs:
       - typeScript
     type: field

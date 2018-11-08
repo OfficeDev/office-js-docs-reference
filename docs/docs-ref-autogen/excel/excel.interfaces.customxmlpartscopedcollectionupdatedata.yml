@@ -5,7 +5,7 @@ items:
       An interface for updating data on the CustomXmlPartScopedCollection object, for use in
       "customXmlPartScopedCollection.set({ ... })".
     name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
-    fullName: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
   - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
     name: items
-    fullName: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

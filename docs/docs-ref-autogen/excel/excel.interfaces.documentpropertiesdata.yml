@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.DocumentPropertiesData
     summary: An interface describing the data returned by calling "documentProperties.toJSON()".
     name: Excel.Interfaces.DocumentPropertiesData
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData
     langs:
       - typeScript
     type: interface
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.author
+    fullName: author
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.category
+    fullName: category
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.comments
+    fullName: comments
     langs:
       - typeScript
     type: property
@@ -72,7 +72,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.company
+    fullName: company
     langs:
       - typeScript
     type: property
@@ -87,7 +87,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.creationDate
+    fullName: creationDate
     langs:
       - typeScript
     type: property
@@ -102,7 +102,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.custom
+    fullName: custom
     langs:
       - typeScript
     type: property
@@ -117,7 +117,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.keywords
+    fullName: keywords
     langs:
       - typeScript
     type: property
@@ -132,7 +132,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lastAuthor
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.lastAuthor
+    fullName: lastAuthor
     langs:
       - typeScript
     type: property
@@ -147,7 +147,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.manager
+    fullName: manager
     langs:
       - typeScript
     type: property
@@ -162,7 +162,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: revisionNumber
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.revisionNumber
+    fullName: revisionNumber
     langs:
       - typeScript
     type: property
@@ -177,7 +177,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
-    fullName: excel.Excel.Interfaces.DocumentPropertiesData.title
+    fullName: title
     langs:
       - typeScript
     type: property

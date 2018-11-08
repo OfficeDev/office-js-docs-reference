@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.FontUpdateData
     summary: 'An interface for updating data on the Font object, for use in "font.set({ ... })".'
     name: Word.Interfaces.FontUpdateData
-    fullName: word.Word.Interfaces.FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
     langs:
       - typeScript
     type: interface
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: bold
-    fullName: word.Word.Interfaces.FontUpdateData.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
-    fullName: word.Word.Interfaces.FontUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: doubleStrikeThrough
-    fullName: word.Word.Interfaces.FontUpdateData.doubleStrikeThrough
+    fullName: doubleStrikeThrough
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: highlightColor
-    fullName: word.Word.Interfaces.FontUpdateData.highlightColor
+    fullName: highlightColor
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: italic
-    fullName: word.Word.Interfaces.FontUpdateData.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: name
-    fullName: word.Word.Interfaces.FontUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -127,7 +127,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: size
-    fullName: word.Word.Interfaces.FontUpdateData.size
+    fullName: size
     langs:
       - typeScript
     type: property
@@ -144,7 +144,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: strikeThrough
-    fullName: word.Word.Interfaces.FontUpdateData.strikeThrough
+    fullName: strikeThrough
     langs:
       - typeScript
     type: property
@@ -161,7 +161,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subscript
-    fullName: word.Word.Interfaces.FontUpdateData.subscript
+    fullName: subscript
     langs:
       - typeScript
     type: property
@@ -178,7 +178,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: superscript
-    fullName: word.Word.Interfaces.FontUpdateData.superscript
+    fullName: superscript
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: underline
-    fullName: word.Word.Interfaces.FontUpdateData.underline
+    fullName: underline
     langs:
       - typeScript
     type: property

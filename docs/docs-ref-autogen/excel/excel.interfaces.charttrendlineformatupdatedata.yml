@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
     summary: 'An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set({ ... })".'
     name: Excel.Interfaces.ChartTrendlineFormatUpdateData
-    fullName: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData.line
+    fullName: line
     langs:
       - typeScript
     type: property

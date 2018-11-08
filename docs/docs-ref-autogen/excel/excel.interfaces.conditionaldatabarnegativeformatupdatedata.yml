@@ -5,7 +5,7 @@ items:
       An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
       "conditionalDataBarNegativeFormat.set({ ... })".
     name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
-    fullName: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borderColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.borderColor
+    fullName: borderColor
     langs:
       - typeScript
     type: property
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fillColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.fillColor
+    fullName: fillColor
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveBorderColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.matchPositiveBorderColor
+    fullName: matchPositiveBorderColor
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveFillColor
-    fullName: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.matchPositiveFillColor
+    fullName: matchPositiveFillColor
     langs:
       - typeScript
     type: property

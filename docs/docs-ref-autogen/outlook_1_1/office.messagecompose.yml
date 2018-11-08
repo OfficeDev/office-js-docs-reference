@@ -8,7 +8,7 @@ items:
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
-    fullName: Outlook_1_1.Office.MessageCompose
+    fullName: Office.MessageCompose
     langs:
       - typeScript
     type: interface
@@ -70,7 +70,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
-    fullName: Outlook_1_1.Office.MessageCompose.addFileAttachmentAsync
+    fullName: addFileAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -155,7 +155,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
-    fullName: Outlook_1_1.Office.MessageCompose.addItemAttachmentAsync
+    fullName: addItemAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -207,7 +207,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: bcc
-    fullName: Outlook_1_1.Office.MessageCompose.bcc
+    fullName: bcc
     langs:
       - typeScript
     type: property
@@ -229,7 +229,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: body
-    fullName: Outlook_1_1.Office.MessageCompose.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -257,7 +257,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: cc
-    fullName: Outlook_1_1.Office.MessageCompose.cc
+    fullName: cc
     langs:
       - typeScript
     type: property
@@ -289,7 +289,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: conversationId
-    fullName: Outlook_1_1.Office.MessageCompose.conversationId
+    fullName: conversationId
     langs:
       - typeScript
     type: property
@@ -311,7 +311,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: dateTimeCreated
-    fullName: Outlook_1_1.Office.MessageCompose.dateTimeCreated
+    fullName: dateTimeCreated
     langs:
       - typeScript
     type: property
@@ -336,7 +336,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
-    fullName: Outlook_1_1.Office.MessageCompose.dateTimeModifed
+    fullName: dateTimeModifed
     langs:
       - typeScript
     type: property
@@ -363,7 +363,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: itemType
-    fullName: Outlook_1_1.Office.MessageCompose.itemType
+    fullName: itemType
     langs:
       - typeScript
     type: property
@@ -397,7 +397,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: Outlook_1_1.Office.MessageCompose.loadCustomPropertiesAsync
+    fullName: loadCustomPropertiesAsync
     langs:
       - typeScript
     type: method
@@ -458,7 +458,7 @@ items:
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
-    fullName: Outlook_1_1.Office.MessageCompose.removeAttachmentAsync
+    fullName: removeAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -505,7 +505,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: subject
-    fullName: Outlook_1_1.Office.MessageCompose.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -533,7 +533,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
     name: to
-    fullName: Outlook_1_1.Office.MessageCompose.to
+    fullName: to
     langs:
       - typeScript
     type: property

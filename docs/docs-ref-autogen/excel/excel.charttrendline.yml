@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendline
-    fullName: excel.Excel.ChartTrendline
+    fullName: Excel.ChartTrendline
     langs:
       - typeScript
     type: class
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: backwardPeriod
-    fullName: excel.Excel.ChartTrendline.backwardPeriod
+    fullName: backwardPeriod
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.ChartTrendline.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.ChartTrendline.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: forwardPeriod
-    fullName: excel.Excel.ChartTrendline.forwardPeriod
+    fullName: forwardPeriod
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: intercept
-    fullName: excel.Excel.ChartTrendline.intercept
+    fullName: intercept
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: label
-    fullName: excel.Excel.ChartTrendline.label
+    fullName: label
     langs:
       - typeScript
     type: property
@@ -140,7 +140,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartTrendline.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -161,7 +161,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: movingAveragePeriod
-    fullName: excel.Excel.ChartTrendline.movingAveragePeriod
+    fullName: movingAveragePeriod
     langs:
       - typeScript
     type: property
@@ -178,7 +178,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.ChartTrendline.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: polynomialOrder
-    fullName: excel.Excel.ChartTrendline.polynomialOrder
+    fullName: polynomialOrder
     langs:
       - typeScript
     type: property
@@ -208,7 +208,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showEquation
-    fullName: excel.Excel.ChartTrendline.showEquation
+    fullName: showEquation
     langs:
       - typeScript
     type: property
@@ -223,7 +223,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRSquared
-    fullName: excel.Excel.ChartTrendline.showRSquared
+    fullName: showRSquared
     langs:
       - typeScript
     type: property
@@ -234,7 +234,7 @@ items:
           - boolean
   - uid: excel.Excel.ChartTrendline.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartTrendline.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -250,7 +250,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.ChartTrendline.type
+    fullName: type
     langs:
       - typeScript
     type: property

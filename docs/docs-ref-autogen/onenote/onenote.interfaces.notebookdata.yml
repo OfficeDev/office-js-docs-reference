@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.NotebookData
     summary: An interface describing the data returned by calling "notebook.toJSON()".
     name: OneNote.Interfaces.NotebookData
-    fullName: onenote.OneNote.Interfaces.NotebookData
+    fullName: OneNote.Interfaces.NotebookData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
-    fullName: onenote.OneNote.Interfaces.NotebookData.baseUrl
+    fullName: baseUrl
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
-    fullName: onenote.OneNote.Interfaces.NotebookData.clientUrl
+    fullName: clientUrl
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.NotebookData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
-    fullName: onenote.OneNote.Interfaces.NotebookData.isVirtual
+    fullName: isVirtual
     langs:
       - typeScript
     type: property
@@ -82,7 +82,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
-    fullName: onenote.OneNote.Interfaces.NotebookData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -97,7 +97,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
-    fullName: onenote.OneNote.Interfaces.NotebookData.sectionGroups
+    fullName: sectionGroups
     langs:
       - typeScript
     type: property
@@ -112,7 +112,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
-    fullName: onenote.OneNote.Interfaces.NotebookData.sections
+    fullName: sections
     langs:
       - typeScript
     type: property

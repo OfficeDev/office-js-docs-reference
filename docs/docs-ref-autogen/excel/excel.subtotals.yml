@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Subtotals
-    fullName: excel.Excel.Subtotals
+    fullName: Excel.Subtotals
     langs:
       - typeScript
     type: interface
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: automatic
-    fullName: excel.Excel.Subtotals.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.average
     name: average
-    fullName: excel.Excel.Subtotals.average
+    fullName: average
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.count
     name: count
-    fullName: excel.Excel.Subtotals.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -63,7 +63,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.countNumbers
     name: countNumbers
-    fullName: excel.Excel.Subtotals.countNumbers
+    fullName: countNumbers
     langs:
       - typeScript
     type: property
@@ -74,7 +74,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.max
     name: max
-    fullName: excel.Excel.Subtotals.max
+    fullName: max
     langs:
       - typeScript
     type: property
@@ -85,7 +85,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.min
     name: min
-    fullName: excel.Excel.Subtotals.min
+    fullName: min
     langs:
       - typeScript
     type: property
@@ -96,7 +96,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.product
     name: product
-    fullName: excel.Excel.Subtotals.product
+    fullName: product
     langs:
       - typeScript
     type: property
@@ -107,7 +107,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.standardDeviation
     name: standardDeviation
-    fullName: excel.Excel.Subtotals.standardDeviation
+    fullName: standardDeviation
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.standardDeviationP
     name: standardDeviationP
-    fullName: excel.Excel.Subtotals.standardDeviationP
+    fullName: standardDeviationP
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.sum
     name: sum
-    fullName: excel.Excel.Subtotals.sum
+    fullName: sum
     langs:
       - typeScript
     type: property
@@ -140,7 +140,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.variance
     name: variance
-    fullName: excel.Excel.Subtotals.variance
+    fullName: variance
     langs:
       - typeScript
     type: property
@@ -151,7 +151,7 @@ items:
           - boolean
   - uid: excel.Excel.Subtotals.varianceP
     name: varianceP
-    fullName: excel.Excel.Subtotals.varianceP
+    fullName: varianceP
     langs:
       - typeScript
     type: property

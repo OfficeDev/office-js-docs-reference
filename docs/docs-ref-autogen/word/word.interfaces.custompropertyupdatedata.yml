@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.CustomPropertyUpdateData
     summary: 'An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })".'
     name: Word.Interfaces.CustomPropertyUpdateData
-    fullName: word.Word.Interfaces.CustomPropertyUpdateData
+    fullName: Word.Interfaces.CustomPropertyUpdateData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
-    fullName: word.Word.Interfaces.CustomPropertyUpdateData.value
+    fullName: value
     langs:
       - typeScript
     type: property

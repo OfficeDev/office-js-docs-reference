@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.TableUpdateData
     summary: 'An interface for updating data on the Table object, for use in "table.set({ ... })".'
     name: OneNote.Interfaces.TableUpdateData
-    fullName: onenote.OneNote.Interfaces.TableUpdateData
+    fullName: OneNote.Interfaces.TableUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
-    fullName: onenote.OneNote.Interfaces.TableUpdateData.borderVisible
+    fullName: borderVisible
     langs:
       - typeScript
     type: property

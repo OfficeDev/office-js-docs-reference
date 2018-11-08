@@ -6,7 +6,7 @@ items:
       application run in two different processes, the request context is required to get access to the Visio object
       model from the add-in.
     name: Visio.RequestContext
-    fullName: visio.Visio.RequestContext
+    fullName: Visio.RequestContext
     langs:
       - typeScript
     type: class
@@ -19,7 +19,7 @@ items:
   - uid: visio.Visio.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:visio.Visio.RequestContext) class'
     name: constructor(url)
-    fullName: visio.Visio.RequestContext.constructor
+    fullName: constructor
     langs:
       - typeScript
     type: constructor
@@ -32,7 +32,7 @@ items:
             - string | OfficeExtension.EmbeddedSession
   - uid: visio.Visio.RequestContext.document
     name: document
-    fullName: visio.Visio.RequestContext.document
+    fullName: document
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyData
     summary: An interface describing the data returned by calling "filterPivotHierarchy.toJSON()".
     name: Excel.Interfaces.FilterPivotHierarchyData
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData
+    fullName: Excel.Interfaces.FilterPivotHierarchyData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.enableMultipleFilterItems
+    fullName: enableMultipleFilterItems
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.fields
+    fullName: fields
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyData.position
+    fullName: position
     langs:
       - typeScript
     type: property

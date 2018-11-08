@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ErrorCodes
     name: Excel.ErrorCodes
-    fullName: excel.Excel.ErrorCodes
+    fullName: Excel.ErrorCodes
     langs:
       - typeScript
     type: enum
@@ -25,105 +25,105 @@ items:
       - excel.Excel.ErrorCodes.unsupportedOperation
   - uid: excel.Excel.ErrorCodes.accessDenied
     name: accessDenied
-    fullName: excel.Excel.ErrorCodes.accessDenied
+    fullName: accessDenied
     langs:
       - typeScript
     type: field
     numericValue: '"AccessDenied"'
   - uid: excel.Excel.ErrorCodes.apiNotFound
     name: apiNotFound
-    fullName: excel.Excel.ErrorCodes.apiNotFound
+    fullName: apiNotFound
     langs:
       - typeScript
     type: field
     numericValue: '"ApiNotFound"'
   - uid: excel.Excel.ErrorCodes.conflict
     name: conflict
-    fullName: excel.Excel.ErrorCodes.conflict
+    fullName: conflict
     langs:
       - typeScript
     type: field
     numericValue: '"Conflict"'
   - uid: excel.Excel.ErrorCodes.generalException
     name: generalException
-    fullName: excel.Excel.ErrorCodes.generalException
+    fullName: generalException
     langs:
       - typeScript
     type: field
     numericValue: '"GeneralException"'
   - uid: excel.Excel.ErrorCodes.insertDeleteConflict
     name: insertDeleteConflict
-    fullName: excel.Excel.ErrorCodes.insertDeleteConflict
+    fullName: insertDeleteConflict
     langs:
       - typeScript
     type: field
     numericValue: '"InsertDeleteConflict"'
   - uid: excel.Excel.ErrorCodes.invalidArgument
     name: invalidArgument
-    fullName: excel.Excel.ErrorCodes.invalidArgument
+    fullName: invalidArgument
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidArgument"'
   - uid: excel.Excel.ErrorCodes.invalidBinding
     name: invalidBinding
-    fullName: excel.Excel.ErrorCodes.invalidBinding
+    fullName: invalidBinding
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidBinding"'
   - uid: excel.Excel.ErrorCodes.invalidOperation
     name: invalidOperation
-    fullName: excel.Excel.ErrorCodes.invalidOperation
+    fullName: invalidOperation
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidOperation"'
   - uid: excel.Excel.ErrorCodes.invalidOperationInCellEditMode
     name: invalidOperationInCellEditMode
-    fullName: excel.Excel.ErrorCodes.invalidOperationInCellEditMode
+    fullName: invalidOperationInCellEditMode
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidOperationInCellEditMode"'
   - uid: excel.Excel.ErrorCodes.invalidReference
     name: invalidReference
-    fullName: excel.Excel.ErrorCodes.invalidReference
+    fullName: invalidReference
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidReference"'
   - uid: excel.Excel.ErrorCodes.invalidSelection
     name: invalidSelection
-    fullName: excel.Excel.ErrorCodes.invalidSelection
+    fullName: invalidSelection
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidSelection"'
   - uid: excel.Excel.ErrorCodes.itemAlreadyExists
     name: itemAlreadyExists
-    fullName: excel.Excel.ErrorCodes.itemAlreadyExists
+    fullName: itemAlreadyExists
     langs:
       - typeScript
     type: field
     numericValue: '"ItemAlreadyExists"'
   - uid: excel.Excel.ErrorCodes.itemNotFound
     name: itemNotFound
-    fullName: excel.Excel.ErrorCodes.itemNotFound
+    fullName: itemNotFound
     langs:
       - typeScript
     type: field
     numericValue: '"ItemNotFound"'
   - uid: excel.Excel.ErrorCodes.notImplemented
     name: notImplemented
-    fullName: excel.Excel.ErrorCodes.notImplemented
+    fullName: notImplemented
     langs:
       - typeScript
     type: field
     numericValue: '"NotImplemented"'
   - uid: excel.Excel.ErrorCodes.unsupportedOperation
     name: unsupportedOperation
-    fullName: excel.Excel.ErrorCodes.unsupportedOperation
+    fullName: unsupportedOperation
     langs:
       - typeScript
     type: field

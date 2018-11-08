@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeView
-    fullName: visio.Visio.ShapeView
+    fullName: Visio.ShapeView
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
-    fullName: visio.Visio.ShapeView.addOverlay
+    fullName: addOverlay
     langs:
       - typeScript
     type: method
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
-    fullName: visio.Visio.ShapeView.highlight
+    fullName: highlight
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
 
       ```
     name: load(option)
-    fullName: visio.Visio.ShapeView.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -169,7 +169,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: removeOverlay(OverlayId)
-    fullName: visio.Visio.ShapeView.removeOverlay
+    fullName: removeOverlay
     langs:
       - typeScript
     type: method
@@ -186,7 +186,7 @@ items:
             - number
   - uid: visio.Visio.ShapeView.toJSON
     name: toJSON()
-    fullName: visio.Visio.ShapeView.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -21,7 +21,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.Mailbox
-    fullName: Outlook_1_4.Office.Mailbox
+    fullName: Office.Mailbox
     langs:
       - typeScript
     type: interface
@@ -63,7 +63,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: 'convertToEwsId(itemId, restVersion)'
-    fullName: Outlook_1_4.Office.Mailbox.convertToEwsId
+    fullName: convertToEwsId
     langs:
       - typeScript
     type: method
@@ -108,7 +108,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
-    fullName: Outlook_1_4.Office.Mailbox.convertToLocalClientTime
+    fullName: convertToLocalClientTime
     langs:
       - typeScript
     type: method
@@ -145,7 +145,7 @@ items:
       the [ Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
       ID into the proper format for REST.
     name: 'convertToRestId(itemId, restVersion)'
-    fullName: Outlook_1_4.Office.Mailbox.convertToRestId
+    fullName: convertToRestId
     langs:
       - typeScript
     type: method
@@ -182,7 +182,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: convertToUtcClientTime(input)
-    fullName: Outlook_1_4.Office.Mailbox.convertToUtcClientTime
+    fullName: convertToUtcClientTime
     langs:
       - typeScript
     type: method
@@ -234,7 +234,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: diagnostics
-    fullName: Outlook_1_4.Office.Mailbox.diagnostics
+    fullName: diagnostics
     langs:
       - typeScript
     type: property
@@ -278,7 +278,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: displayAppointmentForm(itemId)
-    fullName: Outlook_1_4.Office.Mailbox.displayAppointmentForm
+    fullName: displayAppointmentForm
     langs:
       - typeScript
     type: method
@@ -327,7 +327,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: displayMessageForm(itemId)
-    fullName: Outlook_1_4.Office.Mailbox.displayMessageForm
+    fullName: displayMessageForm
     langs:
       - typeScript
     type: method
@@ -378,7 +378,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
     name: displayNewAppointmentForm(parameters)
-    fullName: Outlook_1_4.Office.Mailbox.displayNewAppointmentForm
+    fullName: displayNewAppointmentForm
     langs:
       - typeScript
     type: method
@@ -422,7 +422,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: ewsUrl
-    fullName: Outlook_1_4.Office.Mailbox.ewsUrl
+    fullName: ewsUrl
     langs:
       - typeScript
     type: property
@@ -463,7 +463,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
     name: 'getCallbackTokenAsync(callback, userContext)'
-    fullName: Outlook_1_4.Office.Mailbox.getCallbackTokenAsync
+    fullName: getCallbackTokenAsync
     langs:
       - typeScript
     type: method
@@ -503,7 +503,7 @@ items:
       The getUserIdentityTokenAsync method returns a token that you can use to identify and [ authenticate the add-in
       and user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
     name: 'getUserIdentityTokenAsync(callback, userContext)'
-    fullName: Outlook_1_4.Office.Mailbox.getUserIdentityTokenAsync
+    fullName: getUserIdentityTokenAsync
     langs:
       - typeScript
     type: method
@@ -531,7 +531,7 @@ items:
       `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
       `AppointmentCompose`<!-- -->, `AppointmentRead`
     name: item
-    fullName: Outlook_1_4.Office.Mailbox.item
+    fullName: item
     langs:
       - typeScript
     type: property
@@ -606,7 +606,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
     name: 'makeEwsRequestAsync(data, callback, userContext)'
-    fullName: Outlook_1_4.Office.Mailbox.makeEwsRequestAsync
+    fullName: makeEwsRequestAsync
     langs:
       - typeScript
     type: method
@@ -640,7 +640,7 @@ items:
 
       More information is under [Office.UserProfile](xref:Outlook_1_4.Office.UserProfile)
     name: userProfile
-    fullName: Outlook_1_4.Office.Mailbox.userProfile
+    fullName: userProfile
     langs:
       - typeScript
     type: property

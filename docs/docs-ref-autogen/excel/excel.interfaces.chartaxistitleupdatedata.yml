@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData
     summary: 'An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })".'
     name: Excel.Interfaces.ChartAxisTitleUpdateData
-    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData
+    fullName: Excel.Interfaces.ChartAxisTitleUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointsCollection
-    fullName: excel.Excel.ChartPointsCollection
+    fullName: Excel.ChartPointsCollection
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.ChartPointsCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.ChartPointsCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.ChartPointsCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -93,7 +93,7 @@ items:
   - uid: excel.Excel.ChartPointsCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.ChartPointsCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -164,7 +164,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartPointsCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -181,7 +181,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartPointsCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartPointsCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

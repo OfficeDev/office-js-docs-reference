@@ -8,7 +8,7 @@ items:
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
     name: Office.ItemCompose
-    fullName: outlook.Office.ItemCompose
+    fullName: Office.ItemCompose
     langs:
       - typeScript
     type: interface
@@ -68,7 +68,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
-    fullName: outlook.Office.ItemCompose.addFileAttachmentAsync
+    fullName: addFileAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -137,7 +137,7 @@ items:
       attachments.</td></tr></table>
     isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
-    fullName: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
+    fullName: addFileAttachmentFromBase64Async
     langs:
       - typeScript
     type: method
@@ -220,7 +220,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
       void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
-    fullName: outlook.Office.ItemCompose.addItemAttachmentAsync
+    fullName: addItemAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -282,7 +282,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: close()
-    fullName: outlook.Office.ItemCompose.close
+    fullName: close
     langs:
       - typeScript
     type: method
@@ -306,7 +306,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     isPreview: true
     name: 'getAttachmentsAsync(options, callback)'
-    fullName: outlook.Office.ItemCompose.getAttachmentsAsync
+    fullName: getAttachmentsAsync
     langs:
       - typeScript
     type: method
@@ -355,7 +355,7 @@ items:
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
-    fullName: outlook.Office.ItemCompose.getInitializationContextAsync
+    fullName: getInitializationContextAsync
     langs:
       - typeScript
     type: method
@@ -405,7 +405,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: 'getSelectedDataAsync(coerciontype, callback)'
-    fullName: outlook.Office.ItemCompose.getSelectedDataAsync
+    fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -462,7 +462,7 @@ items:
 
       `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
-    fullName: outlook.Office.ItemCompose.removeAttachmentAsync
+    fullName: removeAttachmentAsync
     langs:
       - typeScript
     type: method
@@ -547,7 +547,7 @@ items:
 
       `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
     name: 'saveAsync(options, callback)'
-    fullName: outlook.Office.ItemCompose.saveAsync
+    fullName: saveAsync
     langs:
       - typeScript
     type: method
@@ -605,7 +605,7 @@ items:
 
       `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: outlook.Office.ItemCompose.setSelectedDataAsync
+    fullName: setSelectedDataAsync
     langs:
       - typeScript
     type: method
@@ -658,7 +658,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: subject
-    fullName: outlook.Office.ItemCompose.subject
+    fullName: subject
     langs:
       - typeScript
     type: property

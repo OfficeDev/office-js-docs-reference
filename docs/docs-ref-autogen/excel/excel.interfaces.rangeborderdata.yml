@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderData
     summary: An interface describing the data returned by calling "rangeBorder.toJSON()".
     name: Excel.Interfaces.RangeBorderData
-    fullName: excel.Excel.Interfaces.RangeBorderData
+    fullName: Excel.Interfaces.RangeBorderData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.RangeBorderData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
-    fullName: excel.Excel.Interfaces.RangeBorderData.sideIndex
+    fullName: sideIndex
     langs:
       - typeScript
     type: property
@@ -57,7 +57,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.RangeBorderData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -76,7 +76,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.Interfaces.RangeBorderData.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

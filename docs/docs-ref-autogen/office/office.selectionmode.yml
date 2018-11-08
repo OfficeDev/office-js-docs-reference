@@ -21,7 +21,7 @@ items:
       </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Word
       </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
     name: Office.SelectionMode
-    fullName: office.Office.SelectionMode
+    fullName: Office.SelectionMode
     langs:
       - typeScript
     type: enum
@@ -32,21 +32,21 @@ items:
       - office.Office.SelectionMode.Selected
   - uid: office.Office.SelectionMode.Default
     name: Default
-    fullName: office.Office.SelectionMode.Default
+    fullName: Default
     langs:
       - typeScript
     type: field
   - uid: office.Office.SelectionMode.None
     summary: The cursor is moved to the beginning of the location.
     name: None
-    fullName: office.Office.SelectionMode.None
+    fullName: None
     langs:
       - typeScript
     type: field
   - uid: office.Office.SelectionMode.Selected
     summary: The location will be selected (highlighted).
     name: Selected
-    fullName: office.Office.SelectionMode.Selected
+    fullName: Selected
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.BuiltInStyle
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BuiltInStyle
-    fullName: excel.Excel.BuiltInStyle
+    fullName: Excel.BuiltInStyle
     langs:
       - typeScript
     type: enum
@@ -63,364 +63,364 @@ items:
       - excel.Excel.BuiltInStyle.wholeDollar
   - uid: excel.Excel.BuiltInStyle.accent1
     name: accent1
-    fullName: excel.Excel.BuiltInStyle.accent1
+    fullName: accent1
     langs:
       - typeScript
     type: field
     numericValue: '"Accent1"'
   - uid: excel.Excel.BuiltInStyle.accent1_20
     name: accent1_20
-    fullName: excel.Excel.BuiltInStyle.accent1_20
+    fullName: accent1_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent1_20"'
   - uid: excel.Excel.BuiltInStyle.accent1_40
     name: accent1_40
-    fullName: excel.Excel.BuiltInStyle.accent1_40
+    fullName: accent1_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent1_40"'
   - uid: excel.Excel.BuiltInStyle.accent1_60
     name: accent1_60
-    fullName: excel.Excel.BuiltInStyle.accent1_60
+    fullName: accent1_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent1_60"'
   - uid: excel.Excel.BuiltInStyle.accent2
     name: accent2
-    fullName: excel.Excel.BuiltInStyle.accent2
+    fullName: accent2
     langs:
       - typeScript
     type: field
     numericValue: '"Accent2"'
   - uid: excel.Excel.BuiltInStyle.accent2_20
     name: accent2_20
-    fullName: excel.Excel.BuiltInStyle.accent2_20
+    fullName: accent2_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent2_20"'
   - uid: excel.Excel.BuiltInStyle.accent2_40
     name: accent2_40
-    fullName: excel.Excel.BuiltInStyle.accent2_40
+    fullName: accent2_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent2_40"'
   - uid: excel.Excel.BuiltInStyle.accent2_60
     name: accent2_60
-    fullName: excel.Excel.BuiltInStyle.accent2_60
+    fullName: accent2_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent2_60"'
   - uid: excel.Excel.BuiltInStyle.accent3
     name: accent3
-    fullName: excel.Excel.BuiltInStyle.accent3
+    fullName: accent3
     langs:
       - typeScript
     type: field
     numericValue: '"Accent3"'
   - uid: excel.Excel.BuiltInStyle.accent3_20
     name: accent3_20
-    fullName: excel.Excel.BuiltInStyle.accent3_20
+    fullName: accent3_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent3_20"'
   - uid: excel.Excel.BuiltInStyle.accent3_40
     name: accent3_40
-    fullName: excel.Excel.BuiltInStyle.accent3_40
+    fullName: accent3_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent3_40"'
   - uid: excel.Excel.BuiltInStyle.accent3_60
     name: accent3_60
-    fullName: excel.Excel.BuiltInStyle.accent3_60
+    fullName: accent3_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent3_60"'
   - uid: excel.Excel.BuiltInStyle.accent4
     name: accent4
-    fullName: excel.Excel.BuiltInStyle.accent4
+    fullName: accent4
     langs:
       - typeScript
     type: field
     numericValue: '"Accent4"'
   - uid: excel.Excel.BuiltInStyle.accent4_20
     name: accent4_20
-    fullName: excel.Excel.BuiltInStyle.accent4_20
+    fullName: accent4_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent4_20"'
   - uid: excel.Excel.BuiltInStyle.accent4_40
     name: accent4_40
-    fullName: excel.Excel.BuiltInStyle.accent4_40
+    fullName: accent4_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent4_40"'
   - uid: excel.Excel.BuiltInStyle.accent4_60
     name: accent4_60
-    fullName: excel.Excel.BuiltInStyle.accent4_60
+    fullName: accent4_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent4_60"'
   - uid: excel.Excel.BuiltInStyle.accent5
     name: accent5
-    fullName: excel.Excel.BuiltInStyle.accent5
+    fullName: accent5
     langs:
       - typeScript
     type: field
     numericValue: '"Accent5"'
   - uid: excel.Excel.BuiltInStyle.accent5_20
     name: accent5_20
-    fullName: excel.Excel.BuiltInStyle.accent5_20
+    fullName: accent5_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent5_20"'
   - uid: excel.Excel.BuiltInStyle.accent5_40
     name: accent5_40
-    fullName: excel.Excel.BuiltInStyle.accent5_40
+    fullName: accent5_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent5_40"'
   - uid: excel.Excel.BuiltInStyle.accent5_60
     name: accent5_60
-    fullName: excel.Excel.BuiltInStyle.accent5_60
+    fullName: accent5_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent5_60"'
   - uid: excel.Excel.BuiltInStyle.accent6
     name: accent6
-    fullName: excel.Excel.BuiltInStyle.accent6
+    fullName: accent6
     langs:
       - typeScript
     type: field
     numericValue: '"Accent6"'
   - uid: excel.Excel.BuiltInStyle.accent6_20
     name: accent6_20
-    fullName: excel.Excel.BuiltInStyle.accent6_20
+    fullName: accent6_20
     langs:
       - typeScript
     type: field
     numericValue: '"Accent6_20"'
   - uid: excel.Excel.BuiltInStyle.accent6_40
     name: accent6_40
-    fullName: excel.Excel.BuiltInStyle.accent6_40
+    fullName: accent6_40
     langs:
       - typeScript
     type: field
     numericValue: '"Accent6_40"'
   - uid: excel.Excel.BuiltInStyle.accent6_60
     name: accent6_60
-    fullName: excel.Excel.BuiltInStyle.accent6_60
+    fullName: accent6_60
     langs:
       - typeScript
     type: field
     numericValue: '"Accent6_60"'
   - uid: excel.Excel.BuiltInStyle.bad
     name: bad
-    fullName: excel.Excel.BuiltInStyle.bad
+    fullName: bad
     langs:
       - typeScript
     type: field
     numericValue: '"Bad"'
   - uid: excel.Excel.BuiltInStyle.calculation
     name: calculation
-    fullName: excel.Excel.BuiltInStyle.calculation
+    fullName: calculation
     langs:
       - typeScript
     type: field
     numericValue: '"Calculation"'
   - uid: excel.Excel.BuiltInStyle.checkCell
     name: checkCell
-    fullName: excel.Excel.BuiltInStyle.checkCell
+    fullName: checkCell
     langs:
       - typeScript
     type: field
     numericValue: '"CheckCell"'
   - uid: excel.Excel.BuiltInStyle.comma
     name: comma
-    fullName: excel.Excel.BuiltInStyle.comma
+    fullName: comma
     langs:
       - typeScript
     type: field
     numericValue: '"Comma"'
   - uid: excel.Excel.BuiltInStyle.currency
     name: currency
-    fullName: excel.Excel.BuiltInStyle.currency
+    fullName: currency
     langs:
       - typeScript
     type: field
     numericValue: '"Currency"'
   - uid: excel.Excel.BuiltInStyle.emphasis1
     name: emphasis1
-    fullName: excel.Excel.BuiltInStyle.emphasis1
+    fullName: emphasis1
     langs:
       - typeScript
     type: field
     numericValue: '"Emphasis1"'
   - uid: excel.Excel.BuiltInStyle.emphasis2
     name: emphasis2
-    fullName: excel.Excel.BuiltInStyle.emphasis2
+    fullName: emphasis2
     langs:
       - typeScript
     type: field
     numericValue: '"Emphasis2"'
   - uid: excel.Excel.BuiltInStyle.emphasis3
     name: emphasis3
-    fullName: excel.Excel.BuiltInStyle.emphasis3
+    fullName: emphasis3
     langs:
       - typeScript
     type: field
     numericValue: '"Emphasis3"'
   - uid: excel.Excel.BuiltInStyle.explanatoryText
     name: explanatoryText
-    fullName: excel.Excel.BuiltInStyle.explanatoryText
+    fullName: explanatoryText
     langs:
       - typeScript
     type: field
     numericValue: '"ExplanatoryText"'
   - uid: excel.Excel.BuiltInStyle.good
     name: good
-    fullName: excel.Excel.BuiltInStyle.good
+    fullName: good
     langs:
       - typeScript
     type: field
     numericValue: '"Good"'
   - uid: excel.Excel.BuiltInStyle.heading1
     name: heading1
-    fullName: excel.Excel.BuiltInStyle.heading1
+    fullName: heading1
     langs:
       - typeScript
     type: field
     numericValue: '"Heading1"'
   - uid: excel.Excel.BuiltInStyle.heading2
     name: heading2
-    fullName: excel.Excel.BuiltInStyle.heading2
+    fullName: heading2
     langs:
       - typeScript
     type: field
     numericValue: '"Heading2"'
   - uid: excel.Excel.BuiltInStyle.heading3
     name: heading3
-    fullName: excel.Excel.BuiltInStyle.heading3
+    fullName: heading3
     langs:
       - typeScript
     type: field
     numericValue: '"Heading3"'
   - uid: excel.Excel.BuiltInStyle.heading4
     name: heading4
-    fullName: excel.Excel.BuiltInStyle.heading4
+    fullName: heading4
     langs:
       - typeScript
     type: field
     numericValue: '"Heading4"'
   - uid: excel.Excel.BuiltInStyle.hlink
     name: hlink
-    fullName: excel.Excel.BuiltInStyle.hlink
+    fullName: hlink
     langs:
       - typeScript
     type: field
     numericValue: '"Hlink"'
   - uid: excel.Excel.BuiltInStyle.hlinkTrav
     name: hlinkTrav
-    fullName: excel.Excel.BuiltInStyle.hlinkTrav
+    fullName: hlinkTrav
     langs:
       - typeScript
     type: field
     numericValue: '"HlinkTrav"'
   - uid: excel.Excel.BuiltInStyle.input
     name: input
-    fullName: excel.Excel.BuiltInStyle.input
+    fullName: input
     langs:
       - typeScript
     type: field
     numericValue: '"Input"'
   - uid: excel.Excel.BuiltInStyle.linkedCell
     name: linkedCell
-    fullName: excel.Excel.BuiltInStyle.linkedCell
+    fullName: linkedCell
     langs:
       - typeScript
     type: field
     numericValue: '"LinkedCell"'
   - uid: excel.Excel.BuiltInStyle.neutral
     name: neutral
-    fullName: excel.Excel.BuiltInStyle.neutral
+    fullName: neutral
     langs:
       - typeScript
     type: field
     numericValue: '"Neutral"'
   - uid: excel.Excel.BuiltInStyle.normal
     name: normal
-    fullName: excel.Excel.BuiltInStyle.normal
+    fullName: normal
     langs:
       - typeScript
     type: field
     numericValue: '"Normal"'
   - uid: excel.Excel.BuiltInStyle.note
     name: note
-    fullName: excel.Excel.BuiltInStyle.note
+    fullName: note
     langs:
       - typeScript
     type: field
     numericValue: '"Note"'
   - uid: excel.Excel.BuiltInStyle.output
     name: output
-    fullName: excel.Excel.BuiltInStyle.output
+    fullName: output
     langs:
       - typeScript
     type: field
     numericValue: '"Output"'
   - uid: excel.Excel.BuiltInStyle.percent
     name: percent
-    fullName: excel.Excel.BuiltInStyle.percent
+    fullName: percent
     langs:
       - typeScript
     type: field
     numericValue: '"Percent"'
   - uid: excel.Excel.BuiltInStyle.sheetTitle
     name: sheetTitle
-    fullName: excel.Excel.BuiltInStyle.sheetTitle
+    fullName: sheetTitle
     langs:
       - typeScript
     type: field
     numericValue: '"SheetTitle"'
   - uid: excel.Excel.BuiltInStyle.total
     name: total
-    fullName: excel.Excel.BuiltInStyle.total
+    fullName: total
     langs:
       - typeScript
     type: field
     numericValue: '"Total"'
   - uid: excel.Excel.BuiltInStyle.warningText
     name: warningText
-    fullName: excel.Excel.BuiltInStyle.warningText
+    fullName: warningText
     langs:
       - typeScript
     type: field
     numericValue: '"WarningText"'
   - uid: excel.Excel.BuiltInStyle.wholeComma
     name: wholeComma
-    fullName: excel.Excel.BuiltInStyle.wholeComma
+    fullName: wholeComma
     langs:
       - typeScript
     type: field
     numericValue: '"WholeComma"'
   - uid: excel.Excel.BuiltInStyle.wholeDollar
     name: wholeDollar
-    fullName: excel.Excel.BuiltInStyle.wholeDollar
+    fullName: wholeDollar
     langs:
       - typeScript
     type: field

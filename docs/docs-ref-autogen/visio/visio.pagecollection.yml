@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.PageCollection
-    fullName: visio.Visio.PageCollection
+    fullName: Visio.PageCollection
     langs:
       - typeScript
     type: class
@@ -25,7 +25,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
-    fullName: visio.Visio.PageCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
-    fullName: visio.Visio.PageCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -75,7 +75,7 @@ items:
   - uid: visio.Visio.PageCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: visio.Visio.PageCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: visio.Visio.PageCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -120,7 +120,7 @@ items:
             - 'string | string[]'
   - uid: visio.Visio.PageCollection.toJSON
     name: toJSON()
-    fullName: visio.Visio.PageCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

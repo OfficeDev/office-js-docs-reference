@@ -5,7 +5,7 @@ items:
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemType
-    fullName: excel.Excel.NamedItemType
+    fullName: Excel.NamedItemType
     langs:
       - typeScript
     type: enum
@@ -20,49 +20,49 @@ items:
       - excel.Excel.NamedItemType.string
   - uid: excel.Excel.NamedItemType.array
     name: array
-    fullName: excel.Excel.NamedItemType.array
+    fullName: array
     langs:
       - typeScript
     type: field
     numericValue: '"Array"'
   - uid: excel.Excel.NamedItemType.boolean
     name: boolean
-    fullName: excel.Excel.NamedItemType.boolean
+    fullName: boolean
     langs:
       - typeScript
     type: field
     numericValue: '"Boolean"'
   - uid: excel.Excel.NamedItemType.double
     name: double
-    fullName: excel.Excel.NamedItemType.double
+    fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
   - uid: excel.Excel.NamedItemType.error
     name: error
-    fullName: excel.Excel.NamedItemType.error
+    fullName: error
     langs:
       - typeScript
     type: field
     numericValue: '"Error"'
   - uid: excel.Excel.NamedItemType.integer
     name: integer
-    fullName: excel.Excel.NamedItemType.integer
+    fullName: integer
     langs:
       - typeScript
     type: field
     numericValue: '"Integer"'
   - uid: excel.Excel.NamedItemType.range
     name: range
-    fullName: excel.Excel.NamedItemType.range
+    fullName: range
     langs:
       - typeScript
     type: field
     numericValue: '"Range"'
   - uid: excel.Excel.NamedItemType.string
     name: string
-    fullName: excel.Excel.NamedItemType.string
+    fullName: string
     langs:
       - typeScript
     type: field

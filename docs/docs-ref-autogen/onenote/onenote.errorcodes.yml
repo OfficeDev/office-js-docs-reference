@@ -2,7 +2,7 @@
 items:
   - uid: onenote.OneNote.ErrorCodes
     name: OneNote.ErrorCodes
-    fullName: onenote.OneNote.ErrorCodes
+    fullName: OneNote.ErrorCodes
     langs:
       - typeScript
     type: enum
@@ -11,7 +11,7 @@ items:
       - onenote.OneNote.ErrorCodes.generalException
   - uid: onenote.OneNote.ErrorCodes.generalException
     name: generalException
-    fullName: onenote.OneNote.ErrorCodes.generalException
+    fullName: generalException
     langs:
       - typeScript
     type: field

@@ -25,7 +25,7 @@ items:
       The developer is responsible for calling the saveAsync method after adding or deleting settings to save the
       settings in the document.
     name: Office.Settings
-    fullName: office.Office.Settings
+    fullName: Office.Settings
     langs:
       - typeScript
     type: interface
@@ -78,7 +78,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: office.Office.Settings.addHandlerAsync
+    fullName: addHandlerAsync
     langs:
       - typeScript
     type: method
@@ -177,7 +177,7 @@ items:
 
       ```
     name: get(name)
-    fullName: office.Office.Settings.get
+    fullName: get
     langs:
       - typeScript
     type: method
@@ -255,7 +255,7 @@ items:
 
       ```
     name: refreshAsync(callback)
-    fullName: office.Office.Settings.refreshAsync
+    fullName: refreshAsync
     langs:
       - typeScript
     type: method
@@ -317,7 +317,7 @@ items:
 
       ```
     name: remove(name)
-    fullName: office.Office.Settings.remove
+    fullName: remove
     langs:
       - typeScript
     type: method
@@ -390,7 +390,7 @@ items:
 
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: office.Office.Settings.removeHandlerAsync
+    fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
@@ -476,7 +476,7 @@ items:
 
       ```
     name: 'saveAsync(options, callback)'
-    fullName: office.Office.Settings.saveAsync
+    fullName: saveAsync
     langs:
       - typeScript
     type: method
@@ -544,7 +544,7 @@ items:
 
       ```
     name: 'set(name, value)'
-    fullName: office.Office.Settings.set
+    fullName: set
     langs:
       - typeScript
     type: method

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxes
-    fullName: excel.Excel.ChartAxes
+    fullName: Excel.ChartAxes
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
-    fullName: excel.Excel.ChartAxes.categoryAxis
+    fullName: categoryAxis
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getItem(type, group)'
-    fullName: excel.Excel.ChartAxes.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -79,7 +79,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartAxes.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
-    fullName: excel.Excel.ChartAxes.seriesAxis
+    fullName: seriesAxis
     langs:
       - typeScript
     type: property
@@ -111,7 +111,7 @@ items:
           - excel.Excel.ChartAxis
   - uid: excel.Excel.ChartAxes.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartAxes.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -127,7 +127,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis
-    fullName: excel.Excel.ChartAxes.valueAxis
+    fullName: valueAxis
     langs:
       - typeScript
     type: property

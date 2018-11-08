@@ -23,7 +23,7 @@ items:
       </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong>
       Word </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: Office.FileType
-    fullName: office.Office.FileType
+    fullName: Office.FileType
     langs:
       - typeScript
     type: enum
@@ -35,21 +35,21 @@ items:
   - uid: office.Office.FileType.Compressed
     summary: 'Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.'
     name: Compressed
-    fullName: office.Office.FileType.Compressed
+    fullName: Compressed
     langs:
       - typeScript
     type: field
   - uid: office.Office.FileType.Pdf
     summary: Returns the entire document in PDF format as a byte array.
     name: Pdf
-    fullName: office.Office.FileType.Pdf
+    fullName: Pdf
     langs:
       - typeScript
     type: field
   - uid: office.Office.FileType.Text
     summary: Returns only the text of the document as a string. (Word only)
     name: Text
-    fullName: office.Office.FileType.Text
+    fullName: Text
     langs:
       - typeScript
     type: field

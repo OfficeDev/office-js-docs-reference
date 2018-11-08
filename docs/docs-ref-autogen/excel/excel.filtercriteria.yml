@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterCriteria
-    fullName: excel.Excel.FilterCriteria
+    fullName: Excel.FilterCriteria
     langs:
       - typeScript
     type: interface
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.FilterCriteria.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criterion1
-    fullName: excel.Excel.FilterCriteria.criterion1
+    fullName: criterion1
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criterion2
-    fullName: excel.Excel.FilterCriteria.criterion2
+    fullName: criterion2
     langs:
       - typeScript
     type: property
@@ -79,7 +79,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dynamicCriteria
-    fullName: excel.Excel.FilterCriteria.dynamicCriteria
+    fullName: dynamicCriteria
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filterOn
-    fullName: excel.Excel.FilterCriteria.filterOn
+    fullName: filterOn
     langs:
       - typeScript
     type: property
@@ -128,7 +128,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: icon
-    fullName: excel.Excel.FilterCriteria.icon
+    fullName: icon
     langs:
       - typeScript
     type: property
@@ -143,7 +143,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
-    fullName: excel.Excel.FilterCriteria.operator
+    fullName: operator
     langs:
       - typeScript
     type: property
@@ -158,7 +158,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.FilterCriteria.values
+    fullName: values
     langs:
       - typeScript
     type: property

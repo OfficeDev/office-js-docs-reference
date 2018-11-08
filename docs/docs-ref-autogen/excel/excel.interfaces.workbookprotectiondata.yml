@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookProtectionData
     summary: An interface describing the data returned by calling "workbookProtection.toJSON()".
     name: Excel.Interfaces.WorkbookProtectionData
-    fullName: excel.Excel.Interfaces.WorkbookProtectionData
+    fullName: Excel.Interfaces.WorkbookProtectionData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
-    fullName: excel.Excel.Interfaces.WorkbookProtectionData.protected
+    fullName: protected
     langs:
       - typeScript
     type: property

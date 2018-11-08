@@ -6,7 +6,7 @@ items:
       context exists as a property of Office. It is accessed using `Office.context`<!-- -->.
     remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>'
     name: Office.Context
-    fullName: office.Office.Context
+    fullName: Office.Context
     langs:
       - typeScript
     type: interface
@@ -49,7 +49,7 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for iPad </th></tr> <tr><td><strong> Excel
       </strong></td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td></tr> </table>
     name: commerceAllowed
-    fullName: office.Office.Context.commerceAllowed
+    fullName: commerceAllowed
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
 
       ```
     name: contentLanguage
-    fullName: office.Office.Context.contentLanguage
+    fullName: contentLanguage
     langs:
       - typeScript
     type: property
@@ -125,7 +125,7 @@ items:
   - uid: office.Office.Context.diagnostics
     summary: Gets information about the environment in which the add-in is running.
     name: diagnostics
-    fullName: office.Office.Context.diagnostics
+    fullName: diagnostics
     langs:
       - typeScript
     type: property
@@ -195,7 +195,7 @@ items:
 
       ```
     name: displayLanguage
-    fullName: office.Office.Context.displayLanguage
+    fullName: displayLanguage
     langs:
       - typeScript
     type: property
@@ -248,7 +248,7 @@ items:
 
       ```
     name: document
-    fullName: office.Office.Context.document
+    fullName: document
     langs:
       - typeScript
     type: property
@@ -260,7 +260,7 @@ items:
   - uid: office.Office.Context.host
     summary: Contains the Office application host in which the add-in is running.
     name: host
-    fullName: office.Office.Context.host
+    fullName: host
     langs:
       - typeScript
     type: property
@@ -272,7 +272,7 @@ items:
   - uid: office.Office.Context.license
     summary: Gets the license information for the user's Office installation.
     name: license
-    fullName: office.Office.Context.license
+    fullName: license
     langs:
       - typeScript
     type: property
@@ -313,7 +313,7 @@ items:
 
       ```
     name: mailbox
-    fullName: office.Office.Context.mailbox
+    fullName: mailbox
     langs:
       - typeScript
     type: property
@@ -325,7 +325,7 @@ items:
   - uid: office.Office.Context.officeTheme
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
-    fullName: office.Office.Context.officeTheme
+    fullName: officeTheme
     langs:
       - typeScript
     type: property
@@ -353,7 +353,7 @@ items:
   - uid: office.Office.Context.platform
     summary: Provides the platform on which the add-in is running.
     name: platform
-    fullName: office.Office.Context.platform
+    fullName: platform
     langs:
       - typeScript
     type: property
@@ -365,7 +365,7 @@ items:
   - uid: office.Office.Context.requirements
     summary: Provides a method for determining what requirement sets are supported on the current host and platform.
     name: requirements
-    fullName: office.Office.Context.requirements
+    fullName: requirements
     langs:
       - typeScript
     type: property
@@ -392,7 +392,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: roamingSettings
-    fullName: office.Office.Context.roamingSettings
+    fullName: roamingSettings
     langs:
       - typeScript
     type: property
@@ -425,7 +425,7 @@ items:
       </strong></td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td></tr> <tr><td><strong> Word
       </strong></td><td> Y </td></tr> </table>
     name: touchEnabled
-    fullName: office.Office.Context.touchEnabled
+    fullName: touchEnabled
     langs:
       - typeScript
     type: property
@@ -437,7 +437,7 @@ items:
   - uid: office.Office.Context.ui
     summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
     name: ui
-    fullName: office.Office.Context.ui
+    fullName: ui
     langs:
       - typeScript
     type: property

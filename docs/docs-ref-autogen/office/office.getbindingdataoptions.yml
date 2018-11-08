@@ -4,7 +4,7 @@ items:
     summary: Provides options for how to get the data in a binding.
     remarks: 'If the rows option is used, the value must be "thisRow".'
     name: Office.GetBindingDataOptions
-    fullName: office.Office.GetBindingDataOptions
+    fullName: Office.GetBindingDataOptions
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     name: asyncContext
-    fullName: office.Office.GetBindingDataOptions.asyncContext
+    fullName: asyncContext
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
       The expected shape of the selection. Use [Office.CoercionType](xref:office.Office.CoercionType) or text value.
       Default: The original, uncoerced type of the binding.
     name: coercionType
-    fullName: office.Office.GetBindingDataOptions.coercionType
+    fullName: coercionType
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
       For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
       subsequent columns.
     name: columnCount
-    fullName: office.Office.GetBindingDataOptions.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
       Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
       data. Use Office.FilterType or text value.
     name: filterType
-    fullName: office.Office.GetBindingDataOptions.filterType
+    fullName: filterType
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
       For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
       rows.
     name: rowCount
-    fullName: office.Office.GetBindingDataOptions.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
       Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
       the currently selected row.
     name: rows
-    fullName: office.Office.GetBindingDataOptions.rows
+    fullName: rows
     langs:
       - typeScript
     type: property
@@ -108,7 +108,7 @@ items:
       For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
       Default is first column.
     name: startColumn
-    fullName: office.Office.GetBindingDataOptions.startColumn
+    fullName: startColumn
     langs:
       - typeScript
     type: property
@@ -122,7 +122,7 @@ items:
       For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
       Default is first row.
     name: startRow
-    fullName: office.Office.GetBindingDataOptions.startRow
+    fullName: startRow
     langs:
       - typeScript
     type: property
@@ -136,7 +136,7 @@ items:
       Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
       Office.ValueFormat or text value. Default: Unformatted data.
     name: valueFormat
-    fullName: office.Office.GetBindingDataOptions.valueFormat
+    fullName: valueFormat
     langs:
       - typeScript
     type: property

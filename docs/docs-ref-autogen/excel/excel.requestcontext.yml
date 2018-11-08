@@ -6,7 +6,7 @@ items:
       application run in two different processes, the request context is required to get access to the Excel object
       model from the add-in.
     name: Excel.RequestContext
-    fullName: excel.Excel.RequestContext
+    fullName: Excel.RequestContext
     langs:
       - typeScript
     type: class
@@ -21,7 +21,7 @@ items:
   - uid: excel.Excel.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:excel.Excel.RequestContext) class'
     name: constructor(url)
-    fullName: excel.Excel.RequestContext.constructor
+    fullName: constructor
     langs:
       - typeScript
     type: constructor
@@ -34,7 +34,7 @@ items:
             - string | Session
   - uid: excel.Excel.RequestContext.application
     name: application
-    fullName: excel.Excel.RequestContext.application
+    fullName: application
     langs:
       - typeScript
     type: property
@@ -45,7 +45,7 @@ items:
           - Application
   - uid: excel.Excel.RequestContext.runtime
     name: runtime
-    fullName: excel.Excel.RequestContext.runtime
+    fullName: runtime
     langs:
       - typeScript
     type: property
@@ -56,7 +56,7 @@ items:
           - excel.Excel.Runtime
   - uid: excel.Excel.RequestContext.workbook
     name: workbook
-    fullName: excel.Excel.RequestContext.workbook
+    fullName: workbook
     langs:
       - typeScript
     type: property

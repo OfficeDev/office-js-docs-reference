@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatData
     summary: An interface describing the data returned by calling "iconSetConditionalFormat.toJSON()".
     name: Excel.Interfaces.IconSetConditionalFormatData
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatData
+    fullName: Excel.Interfaces.IconSetConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatData.criteria
+    fullName: criteria
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reverseIconOrder
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatData.reverseIconOrder
+    fullName: reverseIconOrder
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showIconOnly
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatData.showIconOnly
+    fullName: showIconOnly
     langs:
       - typeScript
     type: property
@@ -67,7 +67,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.IconSetConditionalFormatData.style
+    fullName: style
     langs:
       - typeScript
     type: property

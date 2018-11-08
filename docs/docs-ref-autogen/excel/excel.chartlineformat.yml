@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLineFormat
-    fullName: excel.Excel.ChartLineFormat
+    fullName: Excel.ChartLineFormat
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.ChartLineFormat.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.ChartLineFormat.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
-    fullName: excel.Excel.ChartLineFormat.lineStyle
+    fullName: lineStyle
     langs:
       - typeScript
     type: property
@@ -129,7 +129,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartLineFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -146,7 +146,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartLineFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartLineFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -162,7 +162,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.ChartLineFormat.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

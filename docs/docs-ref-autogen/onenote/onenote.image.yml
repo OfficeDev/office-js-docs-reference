@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Image
-    fullName: onenote.OneNote.Image
+    fullName: OneNote.Image
     langs:
       - typeScript
     type: class
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: description
-    fullName: onenote.OneNote.Image.description
+    fullName: description
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getBase64Image()
-    fullName: onenote.OneNote.Image.getBase64Image
+    fullName: getBase64Image
     langs:
       - typeScript
     type: method
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: height
-    fullName: onenote.OneNote.Image.height
+    fullName: height
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hyperlink
-    fullName: onenote.OneNote.Image.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -133,7 +133,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Image.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -292,7 +292,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.Image.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -313,7 +313,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ocrData
-    fullName: onenote.OneNote.Image.ocrData
+    fullName: ocrData
     langs:
       - typeScript
     type: property
@@ -330,7 +330,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
-    fullName: onenote.OneNote.Image.pageContent
+    fullName: pageContent
     langs:
       - typeScript
     type: property
@@ -347,7 +347,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
-    fullName: onenote.OneNote.Image.paragraph
+    fullName: paragraph
     langs:
       - typeScript
     type: property
@@ -358,7 +358,7 @@ items:
           - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Image.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.Image.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -376,7 +376,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.Image.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -393,7 +393,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.Image.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -409,7 +409,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: width
-    fullName: onenote.OneNote.Image.width
+    fullName: width
     langs:
       - typeScript
     type: property

@@ -8,7 +8,7 @@ items:
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageRead
-    fullName: Outlook_1_4.Office.MessageRead
+    fullName: Office.MessageRead
     langs:
       - typeScript
     type: interface
@@ -59,7 +59,7 @@ items:
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
     name: attachments
-    fullName: Outlook_1_4.Office.MessageRead.attachments
+    fullName: attachments
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: body
-    fullName: Outlook_1_4.Office.MessageRead.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: cc
-    fullName: Outlook_1_4.Office.MessageRead.cc
+    fullName: cc
     langs:
       - typeScript
     type: property
@@ -141,7 +141,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: conversationId
-    fullName: Outlook_1_4.Office.MessageRead.conversationId
+    fullName: conversationId
     langs:
       - typeScript
     type: property
@@ -163,7 +163,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: dateTimeCreated
-    fullName: Outlook_1_4.Office.MessageRead.dateTimeCreated
+    fullName: dateTimeCreated
     langs:
       - typeScript
     type: property
@@ -188,7 +188,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
-    fullName: Outlook_1_4.Office.MessageRead.dateTimeModifed
+    fullName: dateTimeModifed
     langs:
       - typeScript
     type: property
@@ -227,7 +227,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: displayReplyAllForm(formData)
-    fullName: Outlook_1_4.Office.MessageRead.displayReplyAllForm
+    fullName: displayReplyAllForm
     langs:
       - typeScript
     type: method
@@ -275,7 +275,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: displayReplyForm(formData)
-    fullName: Outlook_1_4.Office.MessageRead.displayReplyForm
+    fullName: displayReplyForm
     langs:
       - typeScript
     type: method
@@ -317,7 +317,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: from
-    fullName: Outlook_1_4.Office.MessageRead.from
+    fullName: from
     langs:
       - typeScript
     type: property
@@ -341,7 +341,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: getEntities()
-    fullName: Outlook_1_4.Office.MessageRead.getEntities
+    fullName: getEntities
     langs:
       - typeScript
     type: method
@@ -378,7 +378,7 @@ items:
       <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
       <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
     name: getEntitiesByType(entityType)
-    fullName: Outlook_1_4.Office.MessageRead.getEntitiesByType
+    fullName: getEntitiesByType
     langs:
       - typeScript
     type: method
@@ -420,7 +420,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
-    fullName: Outlook_1_4.Office.MessageRead.getFilteredEntitiesByName
+    fullName: getFilteredEntitiesByName
     langs:
       - typeScript
     type: method
@@ -469,7 +469,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: getRegExMatches()
-    fullName: Outlook_1_4.Office.MessageRead.getRegExMatches
+    fullName: getRegExMatches
     langs:
       - typeScript
     type: method
@@ -509,7 +509,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: getRegExMatchesByName(name)
-    fullName: Outlook_1_4.Office.MessageRead.getRegExMatchesByName
+    fullName: getRegExMatchesByName
     langs:
       - typeScript
     type: method
@@ -537,7 +537,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: internetMessageId
-    fullName: Outlook_1_4.Office.MessageRead.internetMessageId
+    fullName: internetMessageId
     langs:
       - typeScript
     type: property
@@ -577,7 +577,7 @@ items:
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
     name: itemClass
-    fullName: Outlook_1_4.Office.MessageRead.itemClass
+    fullName: itemClass
     langs:
       - typeScript
     type: property
@@ -612,7 +612,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: itemId
-    fullName: Outlook_1_4.Office.MessageRead.itemId
+    fullName: itemId
     langs:
       - typeScript
     type: property
@@ -639,7 +639,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: itemType
-    fullName: Outlook_1_4.Office.MessageRead.itemType
+    fullName: itemType
     langs:
       - typeScript
     type: property
@@ -673,7 +673,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: Outlook_1_4.Office.MessageRead.loadCustomPropertiesAsync
+    fullName: loadCustomPropertiesAsync
     langs:
       - typeScript
     type: method
@@ -716,7 +716,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: normalizedSubject
-    fullName: Outlook_1_4.Office.MessageRead.normalizedSubject
+    fullName: normalizedSubject
     langs:
       - typeScript
     type: property
@@ -738,7 +738,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: notificationMessages
-    fullName: Outlook_1_4.Office.MessageRead.notificationMessages
+    fullName: notificationMessages
     langs:
       - typeScript
     type: property
@@ -768,7 +768,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: sender
-    fullName: Outlook_1_4.Office.MessageRead.sender
+    fullName: sender
     langs:
       - typeScript
     type: property
@@ -798,7 +798,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: subject
-    fullName: Outlook_1_4.Office.MessageRead.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -826,7 +826,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
     name: to
-    fullName: Outlook_1_4.Office.MessageRead.to
+    fullName: to
     langs:
       - typeScript
     type: property

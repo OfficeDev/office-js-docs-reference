@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeFillUpdateData
     summary: 'An interface for updating data on the RangeFill object, for use in "rangeFill.set({ ... })".'
     name: Excel.Interfaces.RangeFillUpdateData
-    fullName: excel.Excel.Interfaces.RangeFillUpdateData
+    fullName: Excel.Interfaces.RangeFillUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.RangeFillUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property

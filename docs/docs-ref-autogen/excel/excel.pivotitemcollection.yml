@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotItemCollection
-    fullName: excel.Excel.PivotItemCollection
+    fullName: Excel.PivotItemCollection
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.PivotItemCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: excel.Excel.PivotItemCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -63,7 +63,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: excel.Excel.PivotItemCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -81,7 +81,7 @@ items:
   - uid: excel.Excel.PivotItemCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.PivotItemCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotItemCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -126,7 +126,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.PivotItemCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotItemCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

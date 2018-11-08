@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPartCollection
-    fullName: excel.Excel.CustomXmlPartCollection
+    fullName: Excel.CustomXmlPartCollection
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(xml)
-    fullName: excel.Excel.CustomXmlPartCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getByNamespace(namespaceUri)
-    fullName: excel.Excel.CustomXmlPartCollection.getByNamespace
+    fullName: getByNamespace
     langs:
       - typeScript
     type: method
@@ -128,7 +128,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.CustomXmlPartCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -144,7 +144,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
-    fullName: excel.Excel.CustomXmlPartCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
-    fullName: excel.Excel.CustomXmlPartCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -210,7 +210,7 @@ items:
   - uid: excel.Excel.CustomXmlPartCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.CustomXmlPartCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -238,7 +238,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.CustomXmlPartCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -255,7 +255,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.CustomXmlPartCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.CustomXmlPartCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

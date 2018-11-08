@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.RangeData
     summary: An interface describing the data returned by calling "range.toJSON()".
     name: Word.Interfaces.RangeData
-    fullName: word.Word.Interfaces.RangeData
+    fullName: Word.Interfaces.RangeData
     langs:
       - typeScript
     type: interface
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
-    fullName: word.Word.Interfaces.RangeData.contentControls
+    fullName: contentControls
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
-    fullName: word.Word.Interfaces.RangeData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
-    fullName: word.Word.Interfaces.RangeData.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
-    fullName: word.Word.Interfaces.RangeData.inlinePictures
+    fullName: inlinePictures
     langs:
       - typeScript
     type: property
@@ -98,7 +98,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isEmpty
-    fullName: word.Word.Interfaces.RangeData.isEmpty
+    fullName: isEmpty
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lists
-    fullName: word.Word.Interfaces.RangeData.lists
+    fullName: lists
     langs:
       - typeScript
     type: property
@@ -128,7 +128,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
-    fullName: word.Word.Interfaces.RangeData.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property
@@ -143,7 +143,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
-    fullName: word.Word.Interfaces.RangeData.parentBody
+    fullName: parentBody
     langs:
       - typeScript
     type: property
@@ -158,7 +158,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
-    fullName: word.Word.Interfaces.RangeData.parentContentControl
+    fullName: parentContentControl
     langs:
       - typeScript
     type: property
@@ -175,7 +175,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
-    fullName: word.Word.Interfaces.RangeData.parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
     langs:
       - typeScript
     type: property
@@ -190,7 +190,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.Interfaces.RangeData.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -205,7 +205,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
-    fullName: word.Word.Interfaces.RangeData.parentTableCell
+    fullName: parentTableCell
     langs:
       - typeScript
     type: property
@@ -222,7 +222,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
-    fullName: word.Word.Interfaces.RangeData.parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
     langs:
       - typeScript
     type: property
@@ -237,7 +237,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
-    fullName: word.Word.Interfaces.RangeData.parentTableOrNullObject
+    fullName: parentTableOrNullObject
     langs:
       - typeScript
     type: property
@@ -254,7 +254,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
-    fullName: word.Word.Interfaces.RangeData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -271,7 +271,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
-    fullName: word.Word.Interfaces.RangeData.styleBuiltIn
+    fullName: styleBuiltIn
     langs:
       - typeScript
     type: property
@@ -350,7 +350,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tables
-    fullName: word.Word.Interfaces.RangeData.tables
+    fullName: tables
     langs:
       - typeScript
     type: property
@@ -365,7 +365,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
-    fullName: word.Word.Interfaces.RangeData.text
+    fullName: text
     langs:
       - typeScript
     type: property

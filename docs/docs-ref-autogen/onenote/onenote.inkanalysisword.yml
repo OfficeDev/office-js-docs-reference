@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisWord
-    fullName: onenote.OneNote.InkAnalysisWord
+    fullName: OneNote.InkAnalysisWord
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.InkAnalysisWord.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -44,7 +44,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
-    fullName: onenote.OneNote.InkAnalysisWord.languageId
+    fullName: languageId
     langs:
       - typeScript
     type: property
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: line
-    fullName: onenote.OneNote.InkAnalysisWord.line
+    fullName: line
     langs:
       - typeScript
     type: property
@@ -130,7 +130,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.InkAnalysisWord.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -151,7 +151,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: strokePointers
-    fullName: onenote.OneNote.InkAnalysisWord.strokePointers
+    fullName: strokePointers
     langs:
       - typeScript
     type: property
@@ -162,7 +162,7 @@ items:
           - 'OneNote.InkStrokePointer[]'
   - uid: onenote.OneNote.InkAnalysisWord.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.InkAnalysisWord.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -180,7 +180,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.InkAnalysisWord.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -197,7 +197,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.InkAnalysisWord.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method
@@ -213,7 +213,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
-    fullName: onenote.OneNote.InkAnalysisWord.wordAlternates
+    fullName: wordAlternates
     langs:
       - typeScript
     type: property

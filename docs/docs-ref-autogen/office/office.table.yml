@@ -20,7 +20,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
       </td></tr> </table>
     name: Office.Table
-    fullName: office.Office.Table
+    fullName: Office.Table
     langs:
       - typeScript
     type: enum
@@ -32,21 +32,21 @@ items:
   - uid: office.Office.Table.All
     summary: 'The entire table, including column headers, data, and totals (if any).'
     name: All
-    fullName: office.Office.Table.All
+    fullName: All
     langs:
       - typeScript
     type: field
   - uid: office.Office.Table.Data
     summary: Only the data (no headers and totals).
     name: Data
-    fullName: office.Office.Table.Data
+    fullName: Data
     langs:
       - typeScript
     type: field
   - uid: office.Office.Table.Headers
     summary: Only the header row.
     name: Headers
-    fullName: office.Office.Table.Headers
+    fullName: Headers
     langs:
       - typeScript
     type: field

@@ -5,7 +5,7 @@ items:
       A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
       form.
     name: Office.ReplyFormData
-    fullName: Outlook_1_6.Office.ReplyFormData
+    fullName: Office.ReplyFormData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
       An array of [Office.ReplyFormAttachment](xref:Outlook_1_6.Office.ReplyFormAttachment) that are either file or item
       attachments.
     name: attachments
-    fullName: Outlook_1_6.Office.ReplyFormData.attachments
+    fullName: attachments
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
       When the reply display call completes, the function passed in the callback parameter is called with a single
       parameter, asyncResult, which is an Office.AsyncResult object.
     name: callback
-    fullName: Outlook_1_6.Office.ReplyFormData.callback
+    fullName: callback
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
       A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
       KB.
     name: htmlBody
-    fullName: Outlook_1_6.Office.ReplyFormData.htmlBody
+    fullName: htmlBody
     langs:
       - typeScript
     type: property

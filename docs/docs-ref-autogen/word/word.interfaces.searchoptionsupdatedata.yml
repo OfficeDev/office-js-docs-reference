@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData
     summary: 'An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })".'
     name: Word.Interfaces.SearchOptionsUpdateData
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData
+    fullName: Word.Interfaces.SearchOptionsUpdateData
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignorePunct
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.ignorePunct
+    fullName: ignorePunct
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignoreSpace
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.ignoreSpace
+    fullName: ignoreSpace
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchCase
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.matchCase
+    fullName: matchCase
     langs:
       - typeScript
     type: property
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchPrefix
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.matchPrefix
+    fullName: matchPrefix
     langs:
       - typeScript
     type: property
@@ -92,7 +92,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchSuffix
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.matchSuffix
+    fullName: matchSuffix
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWholeWord
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.matchWholeWord
+    fullName: matchWholeWord
     langs:
       - typeScript
     type: property
@@ -126,7 +126,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWildcards
-    fullName: word.Word.Interfaces.SearchOptionsUpdateData.matchWildcards
+    fullName: matchWildcards
     langs:
       - typeScript
     type: property

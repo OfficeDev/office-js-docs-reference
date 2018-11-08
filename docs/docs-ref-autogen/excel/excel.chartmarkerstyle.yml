@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartMarkerStyle
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartMarkerStyle
-    fullName: excel.Excel.ChartMarkerStyle
+    fullName: Excel.ChartMarkerStyle
     langs:
       - typeScript
     type: enum
@@ -24,91 +24,91 @@ items:
       - excel.Excel.ChartMarkerStyle.x
   - uid: excel.Excel.ChartMarkerStyle.automatic
     name: automatic
-    fullName: excel.Excel.ChartMarkerStyle.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.ChartMarkerStyle.circle
     name: circle
-    fullName: excel.Excel.ChartMarkerStyle.circle
+    fullName: circle
     langs:
       - typeScript
     type: field
     numericValue: '"Circle"'
   - uid: excel.Excel.ChartMarkerStyle.dash
     name: dash
-    fullName: excel.Excel.ChartMarkerStyle.dash
+    fullName: dash
     langs:
       - typeScript
     type: field
     numericValue: '"Dash"'
   - uid: excel.Excel.ChartMarkerStyle.diamond
     name: diamond
-    fullName: excel.Excel.ChartMarkerStyle.diamond
+    fullName: diamond
     langs:
       - typeScript
     type: field
     numericValue: '"Diamond"'
   - uid: excel.Excel.ChartMarkerStyle.dot
     name: dot
-    fullName: excel.Excel.ChartMarkerStyle.dot
+    fullName: dot
     langs:
       - typeScript
     type: field
     numericValue: '"Dot"'
   - uid: excel.Excel.ChartMarkerStyle.invalid
     name: invalid
-    fullName: excel.Excel.ChartMarkerStyle.invalid
+    fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.ChartMarkerStyle.none
     name: none
-    fullName: excel.Excel.ChartMarkerStyle.none
+    fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.ChartMarkerStyle.picture
     name: picture
-    fullName: excel.Excel.ChartMarkerStyle.picture
+    fullName: picture
     langs:
       - typeScript
     type: field
     numericValue: '"Picture"'
   - uid: excel.Excel.ChartMarkerStyle.plus
     name: plus
-    fullName: excel.Excel.ChartMarkerStyle.plus
+    fullName: plus
     langs:
       - typeScript
     type: field
     numericValue: '"Plus"'
   - uid: excel.Excel.ChartMarkerStyle.square
     name: square
-    fullName: excel.Excel.ChartMarkerStyle.square
+    fullName: square
     langs:
       - typeScript
     type: field
     numericValue: '"Square"'
   - uid: excel.Excel.ChartMarkerStyle.star
     name: star
-    fullName: excel.Excel.ChartMarkerStyle.star
+    fullName: star
     langs:
       - typeScript
     type: field
     numericValue: '"Star"'
   - uid: excel.Excel.ChartMarkerStyle.triangle
     name: triangle
-    fullName: excel.Excel.ChartMarkerStyle.triangle
+    fullName: triangle
     langs:
       - typeScript
     type: field
     numericValue: '"Triangle"'
   - uid: excel.Excel.ChartMarkerStyle.x
     name: x
-    fullName: excel.Excel.ChartMarkerStyle.x
+    fullName: x
     langs:
       - typeScript
     type: field

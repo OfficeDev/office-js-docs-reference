@@ -23,7 +23,7 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
       browser) </th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: Office.ProjectProjectFields
-    fullName: office.Office.ProjectProjectFields
+    fullName: Office.ProjectProjectFields
     langs:
       - typeScript
     type: enum
@@ -45,14 +45,14 @@ items:
   - uid: office.Office.ProjectProjectFields.CurrencyDigits
     summary: The number of digits after the decimal for the currency.
     name: CurrencyDigits
-    fullName: office.Office.ProjectProjectFields.CurrencyDigits
+    fullName: CurrencyDigits
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.CurrencySymbol
     summary: The currency symbol.
     name: CurrencySymbol
-    fullName: office.Office.ProjectProjectFields.CurrencySymbol
+    fullName: CurrencySymbol
     langs:
       - typeScript
     type: field
@@ -61,76 +61,76 @@ items:
       The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value
       with no space (0$) = 1; Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
     name: CurrencySymbolPosition
-    fullName: office.Office.ProjectProjectFields.CurrencySymbolPosition
+    fullName: CurrencySymbolPosition
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.DurationUnits
     name: DurationUnits
-    fullName: office.Office.ProjectProjectFields.DurationUnits
+    fullName: DurationUnits
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.Finish
     summary: The project finish date.
     name: Finish
-    fullName: office.Office.ProjectProjectFields.Finish
+    fullName: Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.GUID
     summary: The GUID of the project.
     name: GUID
-    fullName: office.Office.ProjectProjectFields.GUID
+    fullName: GUID
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.ProjectServerUrl
     summary: 'The Project Web App URL, for projects that are stored in Project Server.'
     name: ProjectServerUrl
-    fullName: office.Office.ProjectProjectFields.ProjectServerUrl
+    fullName: ProjectServerUrl
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.ReadOnly
     summary: Specifies whether the project is read-only.
     name: ReadOnly
-    fullName: office.Office.ProjectProjectFields.ReadOnly
+    fullName: ReadOnly
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.Start
     summary: The project start date.
     name: Start
-    fullName: office.Office.ProjectProjectFields.Start
+    fullName: Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.VERSION
     summary: The project version.
     name: VERSION
-    fullName: office.Office.ProjectProjectFields.VERSION
+    fullName: VERSION
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.WorkUnits
     summary: 'The work units of the project, such as days or hours.'
     name: WorkUnits
-    fullName: office.Office.ProjectProjectFields.WorkUnits
+    fullName: WorkUnits
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.WSSList
     summary: 'The name of the SharePoint list, for projects that are synchronized with a tasks list.'
     name: WSSList
-    fullName: office.Office.ProjectProjectFields.WSSList
+    fullName: WSSList
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectProjectFields.WSSUrl
     summary: 'The SharePoint URL, for projects that are synchronized with a SharePoint list.'
     name: WSSUrl
-    fullName: office.Office.ProjectProjectFields.WSSUrl
+    fullName: WSSUrl
     langs:
       - typeScript
     type: field

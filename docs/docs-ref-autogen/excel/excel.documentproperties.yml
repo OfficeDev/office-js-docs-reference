@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DocumentProperties
-    fullName: excel.Excel.DocumentProperties
+    fullName: Excel.DocumentProperties
     langs:
       - typeScript
     type: class
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
-    fullName: excel.Excel.DocumentProperties.author
+    fullName: author
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
-    fullName: excel.Excel.DocumentProperties.category
+    fullName: category
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
-    fullName: excel.Excel.DocumentProperties.comments
+    fullName: comments
     langs:
       - typeScript
     type: property
@@ -79,7 +79,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
-    fullName: excel.Excel.DocumentProperties.company
+    fullName: company
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
-    fullName: excel.Excel.DocumentProperties.creationDate
+    fullName: creationDate
     langs:
       - typeScript
     type: property
@@ -109,7 +109,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
-    fullName: excel.Excel.DocumentProperties.custom
+    fullName: custom
     langs:
       - typeScript
     type: property
@@ -124,7 +124,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
-    fullName: excel.Excel.DocumentProperties.keywords
+    fullName: keywords
     langs:
       - typeScript
     type: property
@@ -139,7 +139,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lastAuthor
-    fullName: excel.Excel.DocumentProperties.lastAuthor
+    fullName: lastAuthor
     langs:
       - typeScript
     type: property
@@ -167,7 +167,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.DocumentProperties.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -188,7 +188,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
-    fullName: excel.Excel.DocumentProperties.manager
+    fullName: manager
     langs:
       - typeScript
     type: property
@@ -203,7 +203,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: revisionNumber
-    fullName: excel.Excel.DocumentProperties.revisionNumber
+    fullName: revisionNumber
     langs:
       - typeScript
     type: property
@@ -218,7 +218,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
-    fullName: excel.Excel.DocumentProperties.subject
+    fullName: subject
     langs:
       - typeScript
     type: property
@@ -233,7 +233,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
-    fullName: excel.Excel.DocumentProperties.title
+    fullName: title
     langs:
       - typeScript
     type: property
@@ -244,7 +244,7 @@ items:
           - string
   - uid: excel.Excel.DocumentProperties.toJSON
     name: toJSON()
-    fullName: excel.Excel.DocumentProperties.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

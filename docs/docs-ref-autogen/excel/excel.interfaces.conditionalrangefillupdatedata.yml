@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFillUpdateData
     summary: 'An interface for updating data on the ConditionalRangeFill object, for use in "conditionalRangeFill.set({ ... })".'
     name: Excel.Interfaces.ConditionalRangeFillUpdateData
-    fullName: excel.Excel.Interfaces.ConditionalRangeFillUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ConditionalRangeFillUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property

@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.CoercionTypeOptions
     name: Office.CoercionTypeOptions
-    fullName: outlook.Office.CoercionTypeOptions
+    fullName: Office.CoercionTypeOptions
     langs:
       - typeScript
     type: interface
@@ -11,7 +11,7 @@ items:
       - outlook.Office.CoercionTypeOptions.coercionType
   - uid: outlook.Office.CoercionTypeOptions.coercionType
     name: coercionType
-    fullName: outlook.Office.CoercionTypeOptions.coercionType
+    fullName: coercionType
     langs:
       - typeScript
     type: property

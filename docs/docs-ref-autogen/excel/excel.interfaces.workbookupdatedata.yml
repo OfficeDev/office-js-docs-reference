@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookUpdateData
     summary: 'An interface for updating data on the Workbook object, for use in "workbook.set({ ... })".'
     name: Excel.Interfaces.WorkbookUpdateData
-    fullName: excel.Excel.Interfaces.WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
-    fullName: excel.Excel.Interfaces.WorkbookUpdateData.properties
+    fullName: properties
     langs:
       - typeScript
     type: property

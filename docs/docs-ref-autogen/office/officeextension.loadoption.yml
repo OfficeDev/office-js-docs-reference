@@ -65,7 +65,7 @@ items:
 
       ```
     name: OfficeExtension.LoadOption
-    fullName: office.OfficeExtension.LoadOption
+    fullName: OfficeExtension.LoadOption
     langs:
       - typeScript
     type: interface
@@ -78,7 +78,7 @@ items:
   - uid: office.OfficeExtension.LoadOption.expand
     summary: 'A comma-delimited string, or array of strings, that specifies the navigation properties to load.'
     name: expand
-    fullName: office.OfficeExtension.LoadOption.expand
+    fullName: expand
     langs:
       - typeScript
     type: property
@@ -90,7 +90,7 @@ items:
   - uid: office.OfficeExtension.LoadOption.select
     summary: 'A comma-delimited string, or array of strings, that specifies the properties to load.'
     name: select
-    fullName: office.OfficeExtension.LoadOption.select
+    fullName: select
     langs:
       - typeScript
     type: property
@@ -105,7 +105,7 @@ items:
       included in the result. If top is specified, the result set will start after skipping the specified number of
       items.
     name: skip
-    fullName: office.OfficeExtension.LoadOption.skip
+    fullName: skip
     langs:
       - typeScript
     type: property
@@ -119,7 +119,7 @@ items:
       Only usable on collection types. Specifies the maximum number of collection items that can be included in the
       result.
     name: top
-    fullName: office.OfficeExtension.LoadOption.top
+    fullName: top
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PivotLayoutUpdateData
     summary: 'An interface for updating data on the PivotLayout object, for use in "pivotLayout.set({ ... })".'
     name: Excel.Interfaces.PivotLayoutUpdateData
-    fullName: excel.Excel.Interfaces.PivotLayoutUpdateData
+    fullName: Excel.Interfaces.PivotLayoutUpdateData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
-    fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
+    fullName: layoutType
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
-    fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
+    fullName: showColumnGrandTotals
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
-    fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
+    fullName: showRowGrandTotals
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
-    fullName: excel.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
+    fullName: subtotalLocation
     langs:
       - typeScript
     type: property

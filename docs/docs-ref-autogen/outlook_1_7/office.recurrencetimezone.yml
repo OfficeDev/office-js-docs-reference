@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.RecurrenceTimeZone
-    fullName: Outlook_1_7.Office.RecurrenceTimeZone
+    fullName: Office.RecurrenceTimeZone
     langs:
       - typeScript
     type: interface
@@ -24,7 +24,7 @@ items:
   - uid: Outlook_1_7.Office.RecurrenceTimeZone.name
     summary: Represents the name of the recurrence time zone.
     name: name
-    fullName: Outlook_1_7.Office.RecurrenceTimeZone.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
       Integer value representing the difference in minutes between the local time zone and UTC at the date that the
       meeting series began.
     name: offset
-    fullName: Outlook_1_7.Office.RecurrenceTimeZone.offset
+    fullName: offset
     langs:
       - typeScript
     type: property

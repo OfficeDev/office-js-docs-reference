@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.CustomXmlPartData
     summary: An interface describing the data returned by calling "customXmlPart.toJSON()".
     name: Excel.Interfaces.CustomXmlPartData
-    fullName: excel.Excel.Interfaces.CustomXmlPartData
+    fullName: Excel.Interfaces.CustomXmlPartData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.CustomXmlPartData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri
-    fullName: excel.Excel.Interfaces.CustomXmlPartData.namespaceUri
+    fullName: namespaceUri
     langs:
       - typeScript
     type: property

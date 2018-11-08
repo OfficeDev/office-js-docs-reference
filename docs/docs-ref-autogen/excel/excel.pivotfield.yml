@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotField
-    fullName: excel.Excel.PivotField
+    fullName: Excel.PivotField
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.PivotField.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items
-    fullName: excel.Excel.PivotField.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -71,7 +71,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.PivotField.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -92,7 +92,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.PivotField.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -107,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
-    fullName: excel.Excel.PivotField.showAllItems
+    fullName: showAllItems
     langs:
       - typeScript
     type: property
@@ -124,7 +124,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortByLabels(sortby)
-    fullName: excel.Excel.PivotField.sortByLabels
+    fullName: sortByLabels
     langs:
       - typeScript
     type: method
@@ -145,7 +145,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
-    fullName: excel.Excel.PivotField.subtotals
+    fullName: subtotals
     langs:
       - typeScript
     type: property
@@ -156,7 +156,7 @@ items:
           - excel.Excel.Subtotals
   - uid: excel.Excel.PivotField.toJSON
     name: toJSON()
-    fullName: excel.Excel.PivotField.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -9,7 +9,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItem
-    fullName: excel.Excel.NamedItem
+    fullName: Excel.NamedItem
     langs:
       - typeScript
     type: class
@@ -38,7 +38,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: arrayValues
-    fullName: excel.Excel.NamedItem.arrayValues
+    fullName: arrayValues
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
-    fullName: excel.Excel.NamedItem.comment
+    fullName: comment
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: excel.Excel.NamedItem.delete
+    fullName: delete
     langs:
       - typeScript
     type: method
@@ -107,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
-    fullName: excel.Excel.NamedItem.formula
+    fullName: formula
     langs:
       - typeScript
     type: property
@@ -153,7 +153,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: excel.Excel.NamedItem.getRange
+    fullName: getRange
     langs:
       - typeScript
     type: method
@@ -192,7 +192,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
-    fullName: excel.Excel.NamedItem.getRangeOrNullObject
+    fullName: getRangeOrNullObject
     langs:
       - typeScript
     type: method
@@ -242,7 +242,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.NamedItem.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -263,7 +263,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.NamedItem.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -280,7 +280,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scope
-    fullName: excel.Excel.NamedItem.scope
+    fullName: scope
     langs:
       - typeScript
     type: property
@@ -291,7 +291,7 @@ items:
           - Excel.NamedItemScope | "Worksheet" | "Workbook"
   - uid: excel.Excel.NamedItem.toJSON
     name: toJSON()
-    fullName: excel.Excel.NamedItem.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -309,7 +309,7 @@ items:
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.NamedItem.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -324,7 +324,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.NamedItem.value
+    fullName: value
     langs:
       - typeScript
     type: property
@@ -339,7 +339,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.NamedItem.visible
+    fullName: visible
     langs:
       - typeScript
     type: property
@@ -356,7 +356,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
-    fullName: excel.Excel.NamedItem.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: property
@@ -373,7 +373,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetOrNullObject
-    fullName: excel.Excel.NamedItem.worksheetOrNullObject
+    fullName: worksheetOrNullObject
     langs:
       - typeScript
     type: property

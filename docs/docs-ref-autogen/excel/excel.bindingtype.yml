@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.BindingType
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BindingType
-    fullName: excel.Excel.BindingType
+    fullName: Excel.BindingType
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.BindingType.text
   - uid: excel.Excel.BindingType.range
     name: range
-    fullName: excel.Excel.BindingType.range
+    fullName: range
     langs:
       - typeScript
     type: field
     numericValue: '"Range"'
   - uid: excel.Excel.BindingType.table
     name: table
-    fullName: excel.Excel.BindingType.table
+    fullName: table
     langs:
       - typeScript
     type: field
     numericValue: '"Table"'
   - uid: excel.Excel.BindingType.text
     name: text
-    fullName: excel.Excel.BindingType.text
+    fullName: text
     langs:
       - typeScript
     type: field

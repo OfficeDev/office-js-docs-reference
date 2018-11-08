@@ -21,7 +21,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y
       </td></tr> </table>
     name: Office.CustomXmlParts
-    fullName: office.Office.CustomXmlParts
+    fullName: Office.CustomXmlParts
     langs:
       - typeScript
     type: interface
@@ -33,7 +33,7 @@ items:
   - uid: office.Office.CustomXmlParts.addAsync
     summary: Asynchronously adds a new custom XML part to a file.
     name: 'addAsync(xml, options, callback)'
-    fullName: office.Office.CustomXmlParts.addAsync
+    fullName: addAsync
     langs:
       - typeScript
     type: method
@@ -90,7 +90,7 @@ items:
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
     name: 'getByIdAsync(id, options, callback)'
-    fullName: office.Office.CustomXmlParts.getByIdAsync
+    fullName: getByIdAsync
     langs:
       - typeScript
     type: method
@@ -140,7 +140,7 @@ items:
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     name: 'getByNamespaceAsync(ns, options, callback)'
-    fullName: office.Office.CustomXmlParts.getByNamespaceAsync
+    fullName: getByNamespaceAsync
     langs:
       - typeScript
     type: method

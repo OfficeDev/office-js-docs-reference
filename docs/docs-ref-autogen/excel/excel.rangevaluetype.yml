@@ -5,7 +5,7 @@ items:
       \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
       RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeValueType
-    fullName: excel.Excel.RangeValueType
+    fullName: Excel.RangeValueType
     langs:
       - typeScript
     type: enum
@@ -21,56 +21,56 @@ items:
       - excel.Excel.RangeValueType.unknown
   - uid: excel.Excel.RangeValueType.boolean
     name: boolean
-    fullName: excel.Excel.RangeValueType.boolean
+    fullName: boolean
     langs:
       - typeScript
     type: field
     numericValue: '"Boolean"'
   - uid: excel.Excel.RangeValueType.double
     name: double
-    fullName: excel.Excel.RangeValueType.double
+    fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
   - uid: excel.Excel.RangeValueType.empty
     name: empty
-    fullName: excel.Excel.RangeValueType.empty
+    fullName: empty
     langs:
       - typeScript
     type: field
     numericValue: '"Empty"'
   - uid: excel.Excel.RangeValueType.error
     name: error
-    fullName: excel.Excel.RangeValueType.error
+    fullName: error
     langs:
       - typeScript
     type: field
     numericValue: '"Error"'
   - uid: excel.Excel.RangeValueType.integer
     name: integer
-    fullName: excel.Excel.RangeValueType.integer
+    fullName: integer
     langs:
       - typeScript
     type: field
     numericValue: '"Integer"'
   - uid: excel.Excel.RangeValueType.richValue
     name: richValue
-    fullName: excel.Excel.RangeValueType.richValue
+    fullName: richValue
     langs:
       - typeScript
     type: field
     numericValue: '"RichValue"'
   - uid: excel.Excel.RangeValueType.string
     name: string
-    fullName: excel.Excel.RangeValueType.string
+    fullName: string
     langs:
       - typeScript
     type: field
     numericValue: '"String"'
   - uid: excel.Excel.RangeValueType.unknown
     name: unknown
-    fullName: excel.Excel.RangeValueType.unknown
+    fullName: unknown
     langs:
       - typeScript
     type: field

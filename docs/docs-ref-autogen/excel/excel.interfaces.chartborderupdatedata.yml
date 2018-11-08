@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartBorderUpdateData
     summary: 'An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })".'
     name: Excel.Interfaces.ChartBorderUpdateData
-    fullName: excel.Excel.Interfaces.ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
-    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.lineStyle
+    fullName: lineStyle
     langs:
       - typeScript
     type: property
@@ -52,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
-    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.weight
+    fullName: weight
     langs:
       - typeScript
     type: property

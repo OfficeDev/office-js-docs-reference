@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.RestVersion
-    fullName: Outlook_1_6.Office.MailboxEnums.RestVersion
+    fullName: Office.MailboxEnums.RestVersion
     langs:
       - typeScript
     type: enum
@@ -21,7 +21,7 @@ items:
   - uid: Outlook_1_6.Office.MailboxEnums.RestVersion.Beta
     summary: Beta.
     name: Beta
-    fullName: Outlook_1_6.Office.MailboxEnums.RestVersion.Beta
+    fullName: Beta
     langs:
       - typeScript
     type: field
@@ -29,7 +29,7 @@ items:
   - uid: Outlook_1_6.Office.MailboxEnums.RestVersion.v1_0
     summary: Version 1.0.
     name: v1_0
-    fullName: Outlook_1_6.Office.MailboxEnums.RestVersion.v1_0
+    fullName: v1_0
     langs:
       - typeScript
     type: field
@@ -37,7 +37,7 @@ items:
   - uid: Outlook_1_6.Office.MailboxEnums.RestVersion.v2_0
     summary: Version 2.0.
     name: v2_0
-    fullName: Outlook_1_6.Office.MailboxEnums.RestVersion.v2_0
+    fullName: v2_0
     langs:
       - typeScript
     type: field

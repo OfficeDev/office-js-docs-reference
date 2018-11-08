@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.TextConditionalFormatData
     summary: An interface describing the data returned by calling "textConditionalFormat.toJSON()".
     name: Excel.Interfaces.TextConditionalFormatData
-    fullName: excel.Excel.Interfaces.TextConditionalFormatData
+    fullName: Excel.Interfaces.TextConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.TextConditionalFormatData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.TextConditionalFormatData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

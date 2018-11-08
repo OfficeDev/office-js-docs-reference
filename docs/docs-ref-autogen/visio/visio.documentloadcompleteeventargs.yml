@@ -6,7 +6,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.DocumentLoadCompleteEventArgs
-    fullName: visio.Visio.DocumentLoadCompleteEventArgs
+    fullName: Visio.DocumentLoadCompleteEventArgs
     langs:
       - typeScript
     type: interface
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: success
-    fullName: visio.Visio.DocumentLoadCompleteEventArgs.success
+    fullName: success
     langs:
       - typeScript
     type: property

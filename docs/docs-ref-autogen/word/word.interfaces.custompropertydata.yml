@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.CustomPropertyData
     summary: An interface describing the data returned by calling "customProperty.toJSON()".
     name: Word.Interfaces.CustomPropertyData
-    fullName: word.Word.Interfaces.CustomPropertyData
+    fullName: Word.Interfaces.CustomPropertyData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: key
-    fullName: word.Word.Interfaces.CustomPropertyData.key
+    fullName: key
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: type
-    fullName: word.Word.Interfaces.CustomPropertyData.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
-    fullName: word.Word.Interfaces.CustomPropertyData.value
+    fullName: value
     langs:
       - typeScript
     type: property

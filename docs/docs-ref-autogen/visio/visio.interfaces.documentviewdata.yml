@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.DocumentViewData
     summary: An interface describing the data returned by calling "documentView.toJSON()".
     name: Visio.Interfaces.DocumentViewData
-    fullName: visio.Visio.Interfaces.DocumentViewData
+    fullName: Visio.Interfaces.DocumentViewData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableHyperlinks
-    fullName: visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
+    fullName: disableHyperlinks
     langs:
       - typeScript
     type: property
@@ -34,7 +34,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disablePan
-    fullName: visio.Visio.Interfaces.DocumentViewData.disablePan
+    fullName: disablePan
     langs:
       - typeScript
     type: property
@@ -49,7 +49,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableZoom
-    fullName: visio.Visio.Interfaces.DocumentViewData.disableZoom
+    fullName: disableZoom
     langs:
       - typeScript
     type: property
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: hideDiagramBoundary
-    fullName: visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
+    fullName: hideDiagramBoundary
     langs:
       - typeScript
     type: property

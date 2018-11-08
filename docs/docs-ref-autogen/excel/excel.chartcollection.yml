@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartCollection
-    fullName: excel.Excel.ChartCollection
+    fullName: Excel.ChartCollection
     langs:
       - typeScript
     type: class
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(type, sourceData, seriesBy)'
-    fullName: excel.Excel.ChartCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.ChartCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -100,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.ChartCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: excel.Excel.ChartCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -182,7 +182,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.ChartCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -222,7 +222,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: excel.Excel.ChartCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -240,7 +240,7 @@ items:
   - uid: excel.Excel.ChartCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.ChartCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -310,7 +310,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.ChartCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -331,7 +331,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
-    fullName: excel.Excel.ChartCollection.onActivated
+    fullName: onActivated
     langs:
       - typeScript
     type: event
@@ -346,7 +346,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
-    fullName: excel.Excel.ChartCollection.onAdded
+    fullName: onAdded
     langs:
       - typeScript
     type: event
@@ -361,7 +361,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
-    fullName: excel.Excel.ChartCollection.onDeactivated
+    fullName: onDeactivated
     langs:
       - typeScript
     type: event
@@ -376,7 +376,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
-    fullName: excel.Excel.ChartCollection.onDeleted
+    fullName: onDeleted
     langs:
       - typeScript
     type: event
@@ -387,7 +387,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
   - uid: excel.Excel.ChartCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -3,7 +3,7 @@ items:
   - uid: word.Word.ListLevelType
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.ListLevelType
-    fullName: word.Word.ListLevelType
+    fullName: Word.ListLevelType
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - word.Word.ListLevelType.picture
   - uid: word.Word.ListLevelType.bullet
     name: bullet
-    fullName: word.Word.ListLevelType.bullet
+    fullName: bullet
     langs:
       - typeScript
     type: field
     numericValue: '"Bullet"'
   - uid: word.Word.ListLevelType.number
     name: number
-    fullName: word.Word.ListLevelType.number
+    fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
   - uid: word.Word.ListLevelType.picture
     name: picture
-    fullName: word.Word.ListLevelType.picture
+    fullName: picture
     langs:
       - typeScript
     type: field

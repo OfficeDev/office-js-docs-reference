@@ -12,7 +12,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableRowCollection
-    fullName: excel.Excel.TableRowCollection
+    fullName: Excel.TableRowCollection
     langs:
       - typeScript
     type: class
@@ -40,7 +40,7 @@ items:
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
       rows.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values)'
-    fullName: excel.Excel.TableRowCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.TableRowCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.TableRowCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -125,7 +125,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.TableRowCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -160,7 +160,7 @@ items:
   - uid: excel.Excel.TableRowCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.TableRowCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -235,7 +235,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.TableRowCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -252,7 +252,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.TableRowCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.TableRowCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

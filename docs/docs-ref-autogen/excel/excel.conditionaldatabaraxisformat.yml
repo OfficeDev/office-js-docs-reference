@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarAxisFormat
-    fullName: excel.Excel.ConditionalDataBarAxisFormat
+    fullName: Excel.ConditionalDataBarAxisFormat
     langs:
       - typeScript
     type: enum
@@ -17,21 +17,21 @@ items:
       - excel.Excel.ConditionalDataBarAxisFormat.none
   - uid: excel.Excel.ConditionalDataBarAxisFormat.automatic
     name: automatic
-    fullName: excel.Excel.ConditionalDataBarAxisFormat.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.ConditionalDataBarAxisFormat.cellMidPoint
     name: cellMidPoint
-    fullName: excel.Excel.ConditionalDataBarAxisFormat.cellMidPoint
+    fullName: cellMidPoint
     langs:
       - typeScript
     type: field
     numericValue: '"CellMidPoint"'
   - uid: excel.Excel.ConditionalDataBarAxisFormat.none
     name: none
-    fullName: excel.Excel.ConditionalDataBarAxisFormat.none
+    fullName: none
     langs:
       - typeScript
     type: field

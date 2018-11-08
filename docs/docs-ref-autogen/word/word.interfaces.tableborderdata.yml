@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.TableBorderData
     summary: An interface describing the data returned by calling "tableBorder.toJSON()".
     name: Word.Interfaces.TableBorderData
-    fullName: word.Word.Interfaces.TableBorderData
+    fullName: Word.Interfaces.TableBorderData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
-    fullName: word.Word.Interfaces.TableBorderData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: type
-    fullName: word.Word.Interfaces.TableBorderData.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
-    fullName: word.Word.Interfaces.TableBorderData.width
+    fullName: width
     langs:
       - typeScript
     type: property

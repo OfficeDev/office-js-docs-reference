@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeFontUpdateData
     summary: 'An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })".'
     name: Excel.Interfaces.RangeFontUpdateData
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData
+    fullName: Excel.Interfaces.RangeFontUpdateData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.size
+    fullName: size
     langs:
       - typeScript
     type: property
@@ -96,7 +96,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
-    fullName: excel.Excel.Interfaces.RangeFontUpdateData.underline
+    fullName: underline
     langs:
       - typeScript
     type: property

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ShowAsRule
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ShowAsRule
-    fullName: excel.Excel.ShowAsRule
+    fullName: Excel.ShowAsRule
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseField
-    fullName: excel.Excel.ShowAsRule.baseField
+    fullName: baseField
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseItem
-    fullName: excel.Excel.ShowAsRule.baseItem
+    fullName: baseItem
     langs:
       - typeScript
     type: property
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculation
-    fullName: excel.Excel.ShowAsRule.calculation
+    fullName: calculation
     langs:
       - typeScript
     type: property

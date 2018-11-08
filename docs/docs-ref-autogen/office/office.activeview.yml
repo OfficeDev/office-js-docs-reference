@@ -18,7 +18,7 @@ items:
       browser) </th><th> Office for iPad </th></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
       </td><td> Y </td></tr> </table>
     name: Office.ActiveView
-    fullName: office.Office.ActiveView
+    fullName: Office.ActiveView
     langs:
       - typeScript
     type: enum
@@ -29,14 +29,14 @@ items:
   - uid: office.Office.ActiveView.Edit
     summary: The active view of the host application lets the user edit the content in the document.
     name: Edit
-    fullName: office.Office.ActiveView.Edit
+    fullName: Edit
     langs:
       - typeScript
     type: field
   - uid: office.Office.ActiveView.Read
     summary: The active view of the host application only lets the user read the content in the document.
     name: Read
-    fullName: office.Office.ActiveView.Read
+    fullName: Read
     langs:
       - typeScript
     type: field

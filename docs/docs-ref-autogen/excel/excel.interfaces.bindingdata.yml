@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.BindingData
     summary: An interface describing the data returned by calling "binding.toJSON()".
     name: Excel.Interfaces.BindingData
-    fullName: excel.Excel.Interfaces.BindingData
+    fullName: Excel.Interfaces.BindingData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.Interfaces.BindingData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.Interfaces.BindingData.type
+    fullName: type
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.InsertLocation
-    fullName: word.Word.InsertLocation
+    fullName: Word.InsertLocation
     langs:
       - typeScript
     type: enum
@@ -20,7 +20,7 @@ items:
   - uid: word.Word.InsertLocation.after
     summary: Add content after the contents of the calling object.
     name: after
-    fullName: word.Word.InsertLocation.after
+    fullName: after
     langs:
       - typeScript
     type: field
@@ -28,7 +28,7 @@ items:
   - uid: word.Word.InsertLocation.before
     summary: Add content before the contents of the calling object.
     name: before
-    fullName: word.Word.InsertLocation.before
+    fullName: before
     langs:
       - typeScript
     type: field
@@ -36,7 +36,7 @@ items:
   - uid: word.Word.InsertLocation.end
     summary: Append content to the contents of the calling object.
     name: end
-    fullName: word.Word.InsertLocation.end
+    fullName: end
     langs:
       - typeScript
     type: field
@@ -44,7 +44,7 @@ items:
   - uid: word.Word.InsertLocation.replace
     summary: Replace the contents of the current object.
     name: replace
-    fullName: word.Word.InsertLocation.replace
+    fullName: replace
     langs:
       - typeScript
     type: field
@@ -52,7 +52,7 @@ items:
   - uid: word.Word.InsertLocation.start
     summary: Prepend content to the contents of the calling object.
     name: start
-    fullName: word.Word.InsertLocation.start
+    fullName: start
     langs:
       - typeScript
     type: field

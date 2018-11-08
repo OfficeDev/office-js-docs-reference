@@ -13,7 +13,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Time
-    fullName: Outlook_1_5.Office.Time
+    fullName: Office.Time
     langs:
       - typeScript
     type: interface
@@ -46,7 +46,7 @@ items:
 
       `getAsync(callback: (result: AsyncResult<Date>) => void): void;`
     name: 'getAsync(options, callback)'
-    fullName: Outlook_1_5.Office.Time.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -107,7 +107,7 @@ items:
 
       `setAsync(dateTime: Date, callback: (result: AsyncResult<void>) => void): void;`
     name: 'setAsync(dateTime, options, callback)'
-    fullName: Outlook_1_5.Office.Time.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method

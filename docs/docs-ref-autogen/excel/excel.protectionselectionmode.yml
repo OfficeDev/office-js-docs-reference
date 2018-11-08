@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ProtectionSelectionMode
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ProtectionSelectionMode
-    fullName: excel.Excel.ProtectionSelectionMode
+    fullName: Excel.ProtectionSelectionMode
     langs:
       - typeScript
     type: enum
@@ -15,7 +15,7 @@ items:
   - uid: excel.Excel.ProtectionSelectionMode.none
     summary: Selection is not allowed for all cells.
     name: none
-    fullName: excel.Excel.ProtectionSelectionMode.none
+    fullName: none
     langs:
       - typeScript
     type: field
@@ -23,7 +23,7 @@ items:
   - uid: excel.Excel.ProtectionSelectionMode.normal
     summary: Selection is allowed for all cells.
     name: normal
-    fullName: excel.Excel.ProtectionSelectionMode.normal
+    fullName: normal
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: excel.Excel.ProtectionSelectionMode.unlocked
     summary: Selection is allowed only for cells that are not locked.
     name: unlocked
-    fullName: excel.Excel.ProtectionSelectionMode.unlocked
+    fullName: unlocked
     langs:
       - typeScript
     type: field

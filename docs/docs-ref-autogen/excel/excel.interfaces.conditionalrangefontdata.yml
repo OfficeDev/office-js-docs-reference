@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFontData
     summary: An interface describing the data returned by calling "conditionalRangeFont.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFontData
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData
+    fullName: Excel.Interfaces.ConditionalRangeFontData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData.bold
+    fullName: bold
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData.color
+    fullName: color
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData.italic
+    fullName: italic
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData.strikethrough
+    fullName: strikethrough
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
-    fullName: excel.Excel.Interfaces.ConditionalRangeFontData.underline
+    fullName: underline
     langs:
       - typeScript
     type: property

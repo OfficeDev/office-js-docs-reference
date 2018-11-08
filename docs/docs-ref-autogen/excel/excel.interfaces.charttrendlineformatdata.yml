@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartTrendlineFormatData
     summary: An interface describing the data returned by calling "chartTrendlineFormat.toJSON()".
     name: Excel.Interfaces.ChartTrendlineFormatData
-    fullName: excel.Excel.Interfaces.ChartTrendlineFormatData
+    fullName: Excel.Interfaces.ChartTrendlineFormatData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.Interfaces.ChartTrendlineFormatData.line
+    fullName: line
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetAddedEventArgs
-    fullName: excel.Excel.WorksheetAddedEventArgs
+    fullName: Excel.WorksheetAddedEventArgs
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
-    fullName: excel.Excel.WorksheetAddedEventArgs.source
+    fullName: source
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.WorksheetAddedEventArgs.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
-    fullName: excel.Excel.WorksheetAddedEventArgs.worksheetId
+    fullName: worksheetId
     langs:
       - typeScript
     type: property

@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.AttachmentType
-    fullName: outlook.Office.MailboxEnums.AttachmentType
+    fullName: Office.MailboxEnums.AttachmentType
     langs:
       - typeScript
     type: enum
@@ -23,7 +23,7 @@ items:
       The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL
       to the file.
     name: Cloud
-    fullName: outlook.Office.MailboxEnums.AttachmentType.Cloud
+    fullName: Cloud
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: outlook.Office.MailboxEnums.AttachmentType.File
     summary: The attachment is a file
     name: File
-    fullName: outlook.Office.MailboxEnums.AttachmentType.File
+    fullName: File
     langs:
       - typeScript
     type: field
@@ -39,7 +39,7 @@ items:
   - uid: outlook.Office.MailboxEnums.AttachmentType.Item
     summary: The attachment is an Exchange item
     name: Item
-    fullName: outlook.Office.MailboxEnums.AttachmentType.Item
+    fullName: Item
     langs:
       - typeScript
     type: field

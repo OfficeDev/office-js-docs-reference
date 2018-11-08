@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ThreeArrowsSet
     name: Excel.ThreeArrowsSet
-    fullName: excel.Excel.ThreeArrowsSet
+    fullName: Excel.ThreeArrowsSet
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - excel.Excel.ThreeArrowsSet.yellowSideArrow
   - uid: excel.Excel.ThreeArrowsSet.__index
     name: __index(index)
-    fullName: excel.Excel.ThreeArrowsSet.__index
+    fullName: __index
     langs:
       - typeScript
     type: method
@@ -31,7 +31,7 @@ items:
             - number
   - uid: excel.Excel.ThreeArrowsSet.greenUpArrow
     name: greenUpArrow
-    fullName: excel.Excel.ThreeArrowsSet.greenUpArrow
+    fullName: greenUpArrow
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.ThreeArrowsSet.redDownArrow
     name: redDownArrow
-    fullName: excel.Excel.ThreeArrowsSet.redDownArrow
+    fullName: redDownArrow
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
           - excel.Excel.Icon
   - uid: excel.Excel.ThreeArrowsSet.yellowSideArrow
     name: yellowSideArrow
-    fullName: excel.Excel.ThreeArrowsSet.yellowSideArrow
+    fullName: yellowSideArrow
     langs:
       - typeScript
     type: property

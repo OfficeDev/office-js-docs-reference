@@ -5,7 +5,7 @@ items:
       Provides an option for suppressing an error when the object that is used to set multiple properties tries to set
       read-only properties.
     name: OfficeExtension.UpdateOptions
-    fullName: office.OfficeExtension.UpdateOptions
+    fullName: OfficeExtension.UpdateOptions
     langs:
       - typeScript
     type: interface
@@ -15,7 +15,7 @@ items:
   - uid: office.OfficeExtension.UpdateOptions.throwOnReadOnly
     summary: Throw an error if the passed-in property list includes read-only properties (default = true).
     name: throwOnReadOnly
-    fullName: office.OfficeExtension.UpdateOptions.throwOnReadOnly
+    fullName: throwOnReadOnly
     langs:
       - typeScript
     type: property

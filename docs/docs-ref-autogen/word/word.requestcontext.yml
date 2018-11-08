@@ -6,7 +6,7 @@ items:
       application run in two different processes, the request context is required to get access to the Word object model
       from the add-in.
     name: Word.RequestContext
-    fullName: word.Word.RequestContext
+    fullName: Word.RequestContext
     langs:
       - typeScript
     type: class
@@ -112,7 +112,7 @@ items:
   - uid: word.Word.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:word.Word.RequestContext) class'
     name: constructor(url)
-    fullName: word.Word.RequestContext.constructor
+    fullName: constructor
     langs:
       - typeScript
     type: constructor
@@ -125,7 +125,7 @@ items:
             - string
   - uid: word.Word.RequestContext.application
     name: application
-    fullName: word.Word.RequestContext.application
+    fullName: application
     langs:
       - typeScript
     type: property
@@ -136,7 +136,7 @@ items:
           - Application
   - uid: word.Word.RequestContext.document
     name: document
-    fullName: word.Word.RequestContext.document
+    fullName: document
     langs:
       - typeScript
     type: property

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeSort
-    fullName: excel.Excel.RangeSort
+    fullName: Excel.RangeSort
     langs:
       - typeScript
     type: class
@@ -22,7 +22,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
-    fullName: excel.Excel.RangeSort.apply
+    fullName: apply
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
             - excel.Excel.SortMethod
   - uid: excel.Excel.RangeSort.toJSON
     name: toJSON()
-    fullName: excel.Excel.RangeSort.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataBarConditionalFormat
-    fullName: excel.Excel.DataBarConditionalFormat
+    fullName: Excel.DataBarConditionalFormat
     langs:
       - typeScript
     type: class
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisColor
-    fullName: excel.Excel.DataBarConditionalFormat.axisColor
+    fullName: axisColor
     langs:
       - typeScript
     type: property
@@ -47,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisFormat
-    fullName: excel.Excel.DataBarConditionalFormat.axisFormat
+    fullName: axisFormat
     langs:
       - typeScript
     type: property
@@ -62,7 +62,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: barDirection
-    fullName: excel.Excel.DataBarConditionalFormat.barDirection
+    fullName: barDirection
     langs:
       - typeScript
     type: property
@@ -105,7 +105,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.DataBarConditionalFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -126,7 +126,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lowerBoundRule
-    fullName: excel.Excel.DataBarConditionalFormat.lowerBoundRule
+    fullName: lowerBoundRule
     langs:
       - typeScript
     type: property
@@ -141,7 +141,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: negativeFormat
-    fullName: excel.Excel.DataBarConditionalFormat.negativeFormat
+    fullName: negativeFormat
     langs:
       - typeScript
     type: property
@@ -156,7 +156,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positiveFormat
-    fullName: excel.Excel.DataBarConditionalFormat.positiveFormat
+    fullName: positiveFormat
     langs:
       - typeScript
     type: property
@@ -171,7 +171,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataBarOnly
-    fullName: excel.Excel.DataBarConditionalFormat.showDataBarOnly
+    fullName: showDataBarOnly
     langs:
       - typeScript
     type: property
@@ -182,7 +182,7 @@ items:
           - boolean
   - uid: excel.Excel.DataBarConditionalFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.DataBarConditionalFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -198,7 +198,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: upperBoundRule
-    fullName: excel.Excel.DataBarConditionalFormat.upperBoundRule
+    fullName: upperBoundRule
     langs:
       - typeScript
     type: property

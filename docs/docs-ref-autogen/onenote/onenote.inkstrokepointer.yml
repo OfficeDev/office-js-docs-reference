@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkStrokePointer
-    fullName: onenote.OneNote.InkStrokePointer
+    fullName: OneNote.InkStrokePointer
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contentId
-    fullName: onenote.OneNote.InkStrokePointer.contentId
+    fullName: contentId
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokeId
-    fullName: onenote.OneNote.InkStrokePointer.inkStrokeId
+    fullName: inkStrokeId
     langs:
       - typeScript
     type: property

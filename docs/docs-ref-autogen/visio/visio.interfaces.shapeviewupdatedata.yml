@@ -3,7 +3,7 @@ items:
   - uid: visio.Visio.Interfaces.ShapeViewUpdateData
     summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })".'
     name: Visio.Interfaces.ShapeViewUpdateData
-    fullName: visio.Visio.Interfaces.ShapeViewUpdateData
+    fullName: Visio.Interfaces.ShapeViewUpdateData
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
-    fullName: visio.Visio.Interfaces.ShapeViewUpdateData.highlight
+    fullName: highlight
     langs:
       - typeScript
     type: property

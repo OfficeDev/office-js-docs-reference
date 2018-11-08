@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisCategoryType
-    fullName: excel.Excel.ChartAxisCategoryType
+    fullName: Excel.ChartAxisCategoryType
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
   - uid: excel.Excel.ChartAxisCategoryType.automatic
     summary: Excel controls the axis type.
     name: automatic
-    fullName: excel.Excel.ChartAxisCategoryType.automatic
+    fullName: automatic
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: excel.Excel.ChartAxisCategoryType.dateAxis
     summary: Axis groups data on a time scale.
     name: dateAxis
-    fullName: excel.Excel.ChartAxisCategoryType.dateAxis
+    fullName: dateAxis
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: excel.Excel.ChartAxisCategoryType.textAxis
     summary: Axis groups data by an arbitrary set of categories.
     name: textAxis
-    fullName: excel.Excel.ChartAxisCategoryType.textAxis
+    fullName: textAxis
     langs:
       - typeScript
     type: field

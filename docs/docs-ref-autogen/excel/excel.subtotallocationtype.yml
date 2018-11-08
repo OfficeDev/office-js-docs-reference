@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.SubtotalLocationType
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SubtotalLocationType
-    fullName: excel.Excel.SubtotalLocationType
+    fullName: Excel.SubtotalLocationType
     langs:
       - typeScript
     type: enum
@@ -15,7 +15,7 @@ items:
   - uid: excel.Excel.SubtotalLocationType.atBottom
     summary: Subtotals are at the bottom.
     name: atBottom
-    fullName: excel.Excel.SubtotalLocationType.atBottom
+    fullName: atBottom
     langs:
       - typeScript
     type: field
@@ -23,7 +23,7 @@ items:
   - uid: excel.Excel.SubtotalLocationType.atTop
     summary: Subtotals are at the top.
     name: atTop
-    fullName: excel.Excel.SubtotalLocationType.atTop
+    fullName: atTop
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: excel.Excel.SubtotalLocationType.off
     summary: Subtotals are off.
     name: 'off'
-    fullName: excel.Excel.SubtotalLocationType.off
+    fullName: 'off'
     langs:
       - typeScript
     type: field

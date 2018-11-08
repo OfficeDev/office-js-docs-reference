@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysis
-    fullName: onenote.OneNote.InkAnalysis
+    fullName: OneNote.InkAnalysis
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.InkAnalysis.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
 
       ```
     name: load(option)
-    fullName: onenote.OneNote.InkAnalysis.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -104,7 +104,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: page
-    fullName: onenote.OneNote.InkAnalysis.page
+    fullName: page
     langs:
       - typeScript
     type: property
@@ -115,7 +115,7 @@ items:
           - onenote.OneNote.Page
   - uid: onenote.OneNote.InkAnalysis.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.InkAnalysis.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -133,7 +133,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.InkAnalysis.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -150,7 +150,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.InkAnalysis.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

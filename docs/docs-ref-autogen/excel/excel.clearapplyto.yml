@@ -5,7 +5,7 @@ items:
       \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
       HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ClearApplyTo
-    fullName: excel.Excel.ClearApplyTo
+    fullName: Excel.ClearApplyTo
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
       - excel.Excel.ClearApplyTo.removeHyperlinks
   - uid: excel.Excel.ClearApplyTo.all
     name: all
-    fullName: excel.Excel.ClearApplyTo.all
+    fullName: all
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: excel.Excel.ClearApplyTo.contents
     summary: Clears the contents of the range.
     name: contents
-    fullName: excel.Excel.ClearApplyTo.contents
+    fullName: contents
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: excel.Excel.ClearApplyTo.formats
     summary: Clears all formatting for the range.
     name: formats
-    fullName: excel.Excel.ClearApplyTo.formats
+    fullName: formats
     langs:
       - typeScript
     type: field
@@ -42,7 +42,7 @@ items:
   - uid: excel.Excel.ClearApplyTo.hyperlinks
     summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
     name: hyperlinks
-    fullName: excel.Excel.ClearApplyTo.hyperlinks
+    fullName: hyperlinks
     langs:
       - typeScript
     type: field
@@ -52,7 +52,7 @@ items:
       Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
       intact.
     name: removeHyperlinks
-    fullName: excel.Excel.ClearApplyTo.removeHyperlinks
+    fullName: removeHyperlinks
     langs:
       - typeScript
     type: field

@@ -6,7 +6,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.NoteTag
-    fullName: onenote.OneNote.NoteTag
+    fullName: OneNote.NoteTag
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.NoteTag.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: onenote.OneNote.NoteTag.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -76,7 +76,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: status
-    fullName: onenote.OneNote.NoteTag.status
+    fullName: status
     langs:
       - typeScript
     type: property
@@ -91,7 +91,7 @@ items:
             | "TaskRemoved"
   - uid: onenote.OneNote.NoteTag.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.NoteTag.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -109,7 +109,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: onenote.OneNote.NoteTag.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -125,7 +125,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
-    fullName: onenote.OneNote.NoteTag.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -145,7 +145,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: onenote.OneNote.NoteTag.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

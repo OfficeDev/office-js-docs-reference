@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.FunctionResultData
     summary: An interface describing the data returned by calling "functionResult.toJSON()".
     name: Excel.Interfaces.FunctionResultData
-    fullName: excel.Excel.Interfaces.FunctionResultData
+    fullName: Excel.Interfaces.FunctionResultData
     langs:
       - typeScript
     type: interface
@@ -19,7 +19,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: error
-    fullName: excel.Excel.Interfaces.FunctionResultData.error
+    fullName: error
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
-    fullName: excel.Excel.Interfaces.FunctionResultData.value
+    fullName: value
     langs:
       - typeScript
     type: property

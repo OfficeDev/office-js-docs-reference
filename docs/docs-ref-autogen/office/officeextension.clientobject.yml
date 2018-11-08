@@ -6,7 +6,7 @@ items:
       context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
       proxy object state with the document by calling `context.sync()`<!-- -->.
     name: OfficeExtension.ClientObject
-    fullName: office.OfficeExtension.ClientObject
+    fullName: OfficeExtension.ClientObject
     langs:
       - typeScript
     type: class
@@ -17,7 +17,7 @@ items:
   - uid: office.OfficeExtension.ClientObject.context
     summary: The request context associated with the object
     name: context
-    fullName: office.OfficeExtension.ClientObject.context
+    fullName: context
     langs:
       - typeScript
     type: property
@@ -31,7 +31,7 @@ items:
       Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()`
       before reading the isNullObject property.
     name: isNullObject
-    fullName: office.OfficeExtension.ClientObject.isNullObject
+    fullName: isNullObject
     langs:
       - typeScript
     type: property

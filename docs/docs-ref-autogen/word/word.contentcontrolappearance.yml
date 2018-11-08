@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ContentControlAppearance
-    fullName: word.Word.ContentControlAppearance
+    fullName: Word.ContentControlAppearance
     langs:
       - typeScript
     type: enum
@@ -18,7 +18,7 @@ items:
   - uid: word.Word.ContentControlAppearance.boundingBox
     summary: Represents a content control shown as a shaded rectangle or bounding box (with optional title).
     name: boundingBox
-    fullName: word.Word.ContentControlAppearance.boundingBox
+    fullName: boundingBox
     langs:
       - typeScript
     type: field
@@ -26,7 +26,7 @@ items:
   - uid: word.Word.ContentControlAppearance.hidden
     summary: Represents a content control that is not shown.
     name: hidden
-    fullName: word.Word.ContentControlAppearance.hidden
+    fullName: hidden
     langs:
       - typeScript
     type: field
@@ -34,7 +34,7 @@ items:
   - uid: word.Word.ContentControlAppearance.tags
     summary: Represents a content control shown as start and end markers.
     name: tags
-    fullName: word.Word.ContentControlAppearance.tags
+    fullName: tags
     langs:
       - typeScript
     type: field

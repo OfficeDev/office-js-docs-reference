@@ -5,7 +5,7 @@ items:
       An interface for updating data on the FilterPivotHierarchyCollection object, for use in
       "filterPivotHierarchyCollection.set({ ... })".
     name: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+    fullName: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
     langs:
       - typeScript
     type: interface
@@ -14,7 +14,7 @@ items:
       - excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items
     name: items
-    fullName: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items
+    fullName: items
     langs:
       - typeScript
     type: property

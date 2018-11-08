@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomPropertyCollection
-    fullName: excel.Excel.CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection
     langs:
       - typeScript
     type: class
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
-    fullName: excel.Excel.CustomPropertyCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -53,7 +53,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: deleteAll()
-    fullName: excel.Excel.CustomPropertyCollection.deleteAll
+    fullName: deleteAll
     langs:
       - typeScript
     type: method
@@ -69,7 +69,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.CustomPropertyCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -85,7 +85,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: excel.Excel.CustomPropertyCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -108,7 +108,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: excel.Excel.CustomPropertyCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -126,7 +126,7 @@ items:
   - uid: excel.Excel.CustomPropertyCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.CustomPropertyCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -154,7 +154,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.CustomPropertyCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -171,7 +171,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.CustomPropertyCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.CustomPropertyCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

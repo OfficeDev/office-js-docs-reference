@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeData
     summary: An interface describing the data returned by calling "range.toJSON()".
     name: Excel.Interfaces.RangeData
-    fullName: excel.Excel.Interfaces.RangeData
+    fullName: Excel.Interfaces.RangeData
     langs:
       - typeScript
     type: interface
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
-    fullName: excel.Excel.Interfaces.RangeData.address
+    fullName: address
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
-    fullName: excel.Excel.Interfaces.RangeData.addressLocal
+    fullName: addressLocal
     langs:
       - typeScript
     type: property
@@ -73,7 +73,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
-    fullName: excel.Excel.Interfaces.RangeData.cellCount
+    fullName: cellCount
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
-    fullName: excel.Excel.Interfaces.RangeData.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -103,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHidden
-    fullName: excel.Excel.Interfaces.RangeData.columnHidden
+    fullName: columnHidden
     langs:
       - typeScript
     type: property
@@ -118,7 +118,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
-    fullName: excel.Excel.Interfaces.RangeData.columnIndex
+    fullName: columnIndex
     langs:
       - typeScript
     type: property
@@ -133,7 +133,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
-    fullName: excel.Excel.Interfaces.RangeData.conditionalFormats
+    fullName: conditionalFormats
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataValidation
-    fullName: excel.Excel.Interfaces.RangeData.dataValidation
+    fullName: dataValidation
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.RangeData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -183,7 +183,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
-    fullName: excel.Excel.Interfaces.RangeData.formulas
+    fullName: formulas
     langs:
       - typeScript
     type: property
@@ -202,7 +202,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
-    fullName: excel.Excel.Interfaces.RangeData.formulasLocal
+    fullName: formulasLocal
     langs:
       - typeScript
     type: property
@@ -220,7 +220,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
-    fullName: excel.Excel.Interfaces.RangeData.formulasR1C1
+    fullName: formulasR1C1
     langs:
       - typeScript
     type: property
@@ -235,7 +235,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
-    fullName: excel.Excel.Interfaces.RangeData.hidden
+    fullName: hidden
     langs:
       - typeScript
     type: property
@@ -250,7 +250,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
-    fullName: excel.Excel.Interfaces.RangeData.hyperlink
+    fullName: hyperlink
     langs:
       - typeScript
     type: property
@@ -265,7 +265,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
-    fullName: excel.Excel.Interfaces.RangeData.isEntireColumn
+    fullName: isEntireColumn
     langs:
       - typeScript
     type: property
@@ -280,7 +280,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
-    fullName: excel.Excel.Interfaces.RangeData.isEntireRow
+    fullName: isEntireRow
     langs:
       - typeScript
     type: property
@@ -298,7 +298,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
-    fullName: excel.Excel.Interfaces.RangeData.numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
@@ -316,7 +316,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
-    fullName: excel.Excel.Interfaces.RangeData.numberFormatLocal
+    fullName: numberFormatLocal
     langs:
       - typeScript
     type: property
@@ -331,7 +331,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
-    fullName: excel.Excel.Interfaces.RangeData.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -346,7 +346,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
-    fullName: excel.Excel.Interfaces.RangeData.rowHidden
+    fullName: rowHidden
     langs:
       - typeScript
     type: property
@@ -361,7 +361,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
-    fullName: excel.Excel.Interfaces.RangeData.rowIndex
+    fullName: rowIndex
     langs:
       - typeScript
     type: property
@@ -379,7 +379,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
-    fullName: excel.Excel.Interfaces.RangeData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -396,7 +396,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.Interfaces.RangeData.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -415,7 +415,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
-    fullName: excel.Excel.Interfaces.RangeData.values
+    fullName: values
     langs:
       - typeScript
     type: property
@@ -430,7 +430,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
-    fullName: excel.Excel.Interfaces.RangeData.valueTypes
+    fullName: valueTypes
     langs:
       - typeScript
     type: property
@@ -445,7 +445,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
-    fullName: excel.Excel.Interfaces.RangeData.worksheet
+    fullName: worksheet
     langs:
       - typeScript
     type: property

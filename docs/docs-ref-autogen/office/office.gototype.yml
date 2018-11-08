@@ -19,7 +19,7 @@ items:
       </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong>
       Word </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
     name: Office.GoToType
-    fullName: office.Office.GoToType
+    fullName: Office.GoToType
     langs:
       - typeScript
     type: enum
@@ -35,7 +35,7 @@ items:
 
       Supported hosts: Excel, Word
     name: Binding
-    fullName: office.Office.GoToType.Binding
+    fullName: Binding
     langs:
       - typeScript
     type: field
@@ -45,7 +45,7 @@ items:
 
       Supported hosts: PowerPoint
     name: Index
-    fullName: office.Office.GoToType.Index
+    fullName: Index
     langs:
       - typeScript
     type: field
@@ -57,7 +57,7 @@ items:
 
       Supported hosts: Excel
     name: NamedItem
-    fullName: office.Office.GoToType.NamedItem
+    fullName: NamedItem
     langs:
       - typeScript
     type: field
@@ -67,7 +67,7 @@ items:
 
       Supported hosts: PowerPoint
     name: Slide
-    fullName: office.Office.GoToType.Slide
+    fullName: Slide
     langs:
       - typeScript
     type: field

@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartAxisTitleData
     summary: An interface describing the data returned by calling "chartAxisTitle.toJSON()".
     name: Excel.Interfaces.ChartAxisTitleData
-    fullName: excel.Excel.Interfaces.ChartAxisTitleData
+    fullName: Excel.Interfaces.ChartAxisTitleData
     langs:
       - typeScript
     type: interface
@@ -18,7 +18,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartAxisTitleData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -33,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
-    fullName: excel.Excel.Interfaces.ChartAxisTitleData.text
+    fullName: text
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
-    fullName: excel.Excel.Interfaces.ChartAxisTitleData.visible
+    fullName: visible
     langs:
       - typeScript
     type: property

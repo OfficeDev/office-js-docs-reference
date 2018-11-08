@@ -10,7 +10,7 @@ items:
       <tr><td>[ Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Recipients
-    fullName: Outlook_1_4.Office.Recipients
+    fullName: Office.Recipients
     langs:
       - typeScript
     type: interface
@@ -57,7 +57,7 @@ items:
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
       void): void;`
     name: 'addAsync(recipients, options, callback)'
-    fullName: Outlook_1_4.Office.Recipients.addAsync
+    fullName: addAsync
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
 
       `getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;`
     name: 'getAsync(options, callback)'
-    fullName: Outlook_1_4.Office.Recipients.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -176,7 +176,7 @@ items:
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
       void): void;`
     name: 'setAsync(recipients, options, callback)'
-    fullName: Outlook_1_4.Office.Recipients.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method

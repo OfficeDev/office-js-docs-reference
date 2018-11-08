@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
     summary: An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()".
     name: Excel.Interfaces.PresetCriteriaConditionalFormatData
-    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
+    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
     langs:
       - typeScript
     type: interface
@@ -17,7 +17,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -32,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.rule
+    fullName: rule
     langs:
       - typeScript
     type: property

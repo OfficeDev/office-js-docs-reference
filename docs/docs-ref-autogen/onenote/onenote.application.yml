@@ -8,7 +8,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Application
-    fullName: onenote.OneNote.Application
+    fullName: OneNote.Application
     langs:
       - typeScript
     type: class
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebook()
-    fullName: onenote.OneNote.Application.getActiveNotebook
+    fullName: getActiveNotebook
     langs:
       - typeScript
     type: method
@@ -86,7 +86,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebookOrNull()
-    fullName: onenote.OneNote.Application.getActiveNotebookOrNull
+    fullName: getActiveNotebookOrNull
     langs:
       - typeScript
     type: method
@@ -133,7 +133,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutline()
-    fullName: onenote.OneNote.Application.getActiveOutline
+    fullName: getActiveOutline
     langs:
       - typeScript
     type: method
@@ -176,7 +176,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutlineOrNull()
-    fullName: onenote.OneNote.Application.getActiveOutlineOrNull
+    fullName: getActiveOutlineOrNull
     langs:
       - typeScript
     type: method
@@ -220,7 +220,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePage()
-    fullName: onenote.OneNote.Application.getActivePage
+    fullName: getActivePage
     langs:
       - typeScript
     type: method
@@ -266,7 +266,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePageOrNull()
-    fullName: onenote.OneNote.Application.getActivePageOrNull
+    fullName: getActivePageOrNull
     langs:
       - typeScript
     type: method
@@ -313,7 +313,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraph()
-    fullName: onenote.OneNote.Application.getActiveParagraph
+    fullName: getActiveParagraph
     langs:
       - typeScript
     type: method
@@ -329,7 +329,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraphOrNull()
-    fullName: onenote.OneNote.Application.getActiveParagraphOrNull
+    fullName: getActiveParagraphOrNull
     langs:
       - typeScript
     type: method
@@ -345,7 +345,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSection()
-    fullName: onenote.OneNote.Application.getActiveSection
+    fullName: getActiveSection
     langs:
       - typeScript
     type: method
@@ -391,7 +391,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSectionOrNull()
-    fullName: onenote.OneNote.Application.getActiveSectionOrNull
+    fullName: getActiveSectionOrNull
     langs:
       - typeScript
     type: method
@@ -433,7 +433,7 @@ items:
           ```
   - uid: onenote.OneNote.Application.getWindowSize
     name: getWindowSize()
-    fullName: onenote.OneNote.Application.getWindowSize
+    fullName: getWindowSize
     langs:
       - typeScript
     type: method
@@ -445,7 +445,7 @@ items:
         description: ''
   - uid: onenote.OneNote.Application.insertHtmlAtCurrentPosition
     name: insertHtmlAtCurrentPosition(html)
-    fullName: onenote.OneNote.Application.insertHtmlAtCurrentPosition
+    fullName: insertHtmlAtCurrentPosition
     langs:
       - typeScript
     type: method
@@ -462,7 +462,7 @@ items:
             - string
   - uid: onenote.OneNote.Application.isViewingDeletedNotes
     name: isViewingDeletedNotes()
-    fullName: onenote.OneNote.Application.isViewingDeletedNotes
+    fullName: isViewingDeletedNotes
     langs:
       - typeScript
     type: method
@@ -491,7 +491,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: onenote.OneNote.Application.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -512,7 +512,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPage(page)
-    fullName: onenote.OneNote.Application.navigateToPage
+    fullName: navigateToPage
     langs:
       - typeScript
     type: method
@@ -567,7 +567,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPageWithClientUrl(url)
-    fullName: onenote.OneNote.Application.navigateToPageWithClientUrl
+    fullName: navigateToPageWithClientUrl
     langs:
       - typeScript
     type: method
@@ -624,7 +624,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebooks
-    fullName: onenote.OneNote.Application.notebooks
+    fullName: notebooks
     langs:
       - typeScript
     type: property
@@ -635,7 +635,7 @@ items:
           - onenote.OneNote.NotebookCollection
   - uid: onenote.OneNote.Application.toJSON
     name: toJSON()
-    fullName: onenote.OneNote.Application.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

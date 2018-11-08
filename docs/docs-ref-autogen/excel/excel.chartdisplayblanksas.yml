@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartDisplayBlanksAs
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartDisplayBlanksAs
-    fullName: excel.Excel.ChartDisplayBlanksAs
+    fullName: Excel.ChartDisplayBlanksAs
     langs:
       - typeScript
     type: enum
@@ -14,21 +14,21 @@ items:
       - excel.Excel.ChartDisplayBlanksAs.zero
   - uid: excel.Excel.ChartDisplayBlanksAs.interplotted
     name: interplotted
-    fullName: excel.Excel.ChartDisplayBlanksAs.interplotted
+    fullName: interplotted
     langs:
       - typeScript
     type: field
     numericValue: '"Interplotted"'
   - uid: excel.Excel.ChartDisplayBlanksAs.notPlotted
     name: notPlotted
-    fullName: excel.Excel.ChartDisplayBlanksAs.notPlotted
+    fullName: notPlotted
     langs:
       - typeScript
     type: field
     numericValue: '"NotPlotted"'
   - uid: excel.Excel.ChartDisplayBlanksAs.zero
     name: zero
-    fullName: excel.Excel.ChartDisplayBlanksAs.zero
+    fullName: zero
     langs:
       - typeScript
     type: field

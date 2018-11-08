@@ -21,7 +21,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: Office.Mailbox
-    fullName: outlook.Office.Mailbox
+    fullName: Office.Mailbox
     langs:
       - typeScript
     type: interface
@@ -86,7 +86,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: outlook.Office.Mailbox.addHandlerAsync
+    fullName: addHandlerAsync
     langs:
       - typeScript
     type: method
@@ -157,7 +157,7 @@ items:
 
       ```
     name: 'convertToEwsId(itemId, restVersion)'
-    fullName: outlook.Office.Mailbox.convertToEwsId
+    fullName: convertToEwsId
     langs:
       - typeScript
     type: method
@@ -202,7 +202,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
-    fullName: outlook.Office.Mailbox.convertToLocalClientTime
+    fullName: convertToLocalClientTime
     langs:
       - typeScript
     type: method
@@ -255,7 +255,7 @@ items:
 
       ```
     name: 'convertToRestId(itemId, restVersion)'
-    fullName: outlook.Office.Mailbox.convertToRestId
+    fullName: convertToRestId
     langs:
       - typeScript
     type: method
@@ -292,7 +292,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: convertToUtcClientTime(input)
-    fullName: outlook.Office.Mailbox.convertToUtcClientTime
+    fullName: convertToUtcClientTime
     langs:
       - typeScript
     type: method
@@ -344,7 +344,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: diagnostics
-    fullName: outlook.Office.Mailbox.diagnostics
+    fullName: diagnostics
     langs:
       - typeScript
     type: property
@@ -388,7 +388,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: displayAppointmentForm(itemId)
-    fullName: outlook.Office.Mailbox.displayAppointmentForm
+    fullName: displayAppointmentForm
     langs:
       - typeScript
     type: method
@@ -437,7 +437,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: displayMessageForm(itemId)
-    fullName: outlook.Office.Mailbox.displayMessageForm
+    fullName: displayMessageForm
     langs:
       - typeScript
     type: method
@@ -515,7 +515,7 @@ items:
 
       ```
     name: displayNewAppointmentForm(parameters)
-    fullName: outlook.Office.Mailbox.displayNewAppointmentForm
+    fullName: displayNewAppointmentForm
     langs:
       - typeScript
     type: method
@@ -576,7 +576,7 @@ items:
 
       ```
     name: displayNewMessageForm(parameters)
-    fullName: outlook.Office.Mailbox.displayNewMessageForm
+    fullName: displayNewMessageForm
     langs:
       - typeScript
     type: method
@@ -665,7 +665,7 @@ items:
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: ewsUrl
-    fullName: outlook.Office.Mailbox.ewsUrl
+    fullName: ewsUrl
     langs:
       - typeScript
     type: property
@@ -761,7 +761,7 @@ items:
 
       ```
     name: 'getCallbackTokenAsync(options, callback)'
-    fullName: outlook.Office.Mailbox.getCallbackTokenAsync
+    fullName: getCallbackTokenAsync
     langs:
       - typeScript
     type: method
@@ -822,7 +822,7 @@ items:
 
       ```
     name: 'getUserIdentityTokenAsync(callback, userContext)'
-    fullName: outlook.Office.Mailbox.getUserIdentityTokenAsync
+    fullName: getUserIdentityTokenAsync
     langs:
       - typeScript
     type: method
@@ -850,7 +850,7 @@ items:
       `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
       `AppointmentCompose`<!-- -->, `AppointmentRead`
     name: item
-    fullName: outlook.Office.Mailbox.item
+    fullName: item
     langs:
       - typeScript
     type: property
@@ -974,7 +974,7 @@ items:
 
       ```
     name: 'makeEwsRequestAsync(data, callback, userContext)'
-    fullName: outlook.Office.Mailbox.makeEwsRequestAsync
+    fullName: makeEwsRequestAsync
     langs:
       - typeScript
     type: method
@@ -1018,7 +1018,7 @@ items:
       <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       or read</td></tr></table>
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
-    fullName: outlook.Office.Mailbox.removeHandlerAsync
+    fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
@@ -1076,7 +1076,7 @@ items:
       The restUrl value can be used to make [ REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
       mailbox.
     name: restUrl
-    fullName: outlook.Office.Mailbox.restUrl
+    fullName: restUrl
     langs:
       - typeScript
     type: property
@@ -1093,7 +1093,7 @@ items:
 
       More information is under [Office.UserProfile](xref:outlook.Office.UserProfile)
     name: userProfile
-    fullName: outlook.Office.Mailbox.userProfile
+    fullName: userProfile
     langs:
       - typeScript
     type: property

@@ -125,7 +125,7 @@ items:
       `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>):
       Promise<T>;`
     name: 'run(object, batch)'
-    fullName: onenote.OneNote.run
+    fullName: OneNote.run
     langs:
       - typeScript
     type: function

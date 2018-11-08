@@ -6,7 +6,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.CustomPropertyCollection
-    fullName: word.Word.CustomPropertyCollection
+    fullName: Word.CustomPropertyCollection
     langs:
       - typeScript
     type: class
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'add(key, value)'
-    fullName: word.Word.CustomPropertyCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -74,7 +74,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteAll()
-    fullName: word.Word.CustomPropertyCollection.deleteAll
+    fullName: deleteAll
     langs:
       - typeScript
     type: method
@@ -90,7 +90,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCount()
-    fullName: word.Word.CustomPropertyCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -106,7 +106,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItem(key)
-    fullName: word.Word.CustomPropertyCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -129,7 +129,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: word.Word.CustomPropertyCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -147,7 +147,7 @@ items:
   - uid: word.Word.CustomPropertyCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: word.Word.CustomPropertyCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -189,7 +189,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: word.Word.CustomPropertyCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -206,7 +206,7 @@ items:
             - 'string | string[]'
   - uid: word.Word.CustomPropertyCollection.toJSON
     name: toJSON()
-    fullName: word.Word.CustomPropertyCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -224,7 +224,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: word.Word.CustomPropertyCollection.track
+    fullName: track
     langs:
       - typeScript
     type: method
@@ -241,7 +241,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: word.Word.CustomPropertyCollection.untrack
+    fullName: untrack
     langs:
       - typeScript
     type: method

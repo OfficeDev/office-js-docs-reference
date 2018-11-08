@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.ChartAxisTickLabelPosition
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisTickLabelPosition
-    fullName: excel.Excel.ChartAxisTickLabelPosition
+    fullName: Excel.ChartAxisTickLabelPosition
     langs:
       - typeScript
     type: enum
@@ -15,28 +15,28 @@ items:
       - excel.Excel.ChartAxisTickLabelPosition.none
   - uid: excel.Excel.ChartAxisTickLabelPosition.high
     name: high
-    fullName: excel.Excel.ChartAxisTickLabelPosition.high
+    fullName: high
     langs:
       - typeScript
     type: field
     numericValue: '"High"'
   - uid: excel.Excel.ChartAxisTickLabelPosition.low
     name: low
-    fullName: excel.Excel.ChartAxisTickLabelPosition.low
+    fullName: low
     langs:
       - typeScript
     type: field
     numericValue: '"Low"'
   - uid: excel.Excel.ChartAxisTickLabelPosition.nextToAxis
     name: nextToAxis
-    fullName: excel.Excel.ChartAxisTickLabelPosition.nextToAxis
+    fullName: nextToAxis
     langs:
       - typeScript
     type: field
     numericValue: '"NextToAxis"'
   - uid: excel.Excel.ChartAxisTickLabelPosition.none
     name: none
-    fullName: excel.Excel.ChartAxisTickLabelPosition.none
+    fullName: none
     langs:
       - typeScript
     type: field

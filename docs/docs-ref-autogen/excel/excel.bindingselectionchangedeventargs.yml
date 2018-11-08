@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingSelectionChangedEventArgs
-    fullName: excel.Excel.BindingSelectionChangedEventArgs
+    fullName: Excel.BindingSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
-    fullName: excel.Excel.BindingSelectionChangedEventArgs.binding
+    fullName: binding
     langs:
       - typeScript
     type: property
@@ -38,7 +38,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
-    fullName: excel.Excel.BindingSelectionChangedEventArgs.columnCount
+    fullName: columnCount
     langs:
       - typeScript
     type: property
@@ -53,7 +53,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
-    fullName: excel.Excel.BindingSelectionChangedEventArgs.rowCount
+    fullName: rowCount
     langs:
       - typeScript
     type: property
@@ -68,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: startColumn
-    fullName: excel.Excel.BindingSelectionChangedEventArgs.startColumn
+    fullName: startColumn
     langs:
       - typeScript
     type: property
@@ -83,7 +83,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: startRow
-    fullName: excel.Excel.BindingSelectionChangedEventArgs.startRow
+    fullName: startRow
     langs:
       - typeScript
     type: property

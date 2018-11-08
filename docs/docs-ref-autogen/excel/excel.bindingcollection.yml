@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingCollection
-    fullName: excel.Excel.BindingCollection
+    fullName: Excel.BindingCollection
     langs:
       - typeScript
     type: class
@@ -31,7 +31,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(range, bindingType, id)'
-    fullName: excel.Excel.BindingCollection.add
+    fullName: add
     langs:
       - typeScript
     type: method
@@ -64,7 +64,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFromNamedItem(name, bindingType, id)'
-    fullName: excel.Excel.BindingCollection.addFromNamedItem
+    fullName: addFromNamedItem
     langs:
       - typeScript
     type: method
@@ -95,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFromSelection(bindingType, id)'
-    fullName: excel.Excel.BindingCollection.addFromSelection
+    fullName: addFromSelection
     langs:
       - typeScript
     type: method
@@ -120,7 +120,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.BindingCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -135,7 +135,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: excel.Excel.BindingCollection.getCount
+    fullName: getCount
     langs:
       - typeScript
     type: method
@@ -151,7 +151,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
-    fullName: excel.Excel.BindingCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -232,7 +232,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.BindingCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -271,7 +271,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
-    fullName: excel.Excel.BindingCollection.getItemOrNullObject
+    fullName: getItemOrNullObject
     langs:
       - typeScript
     type: method
@@ -289,7 +289,7 @@ items:
   - uid: excel.Excel.BindingCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.BindingCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -359,7 +359,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.BindingCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -376,7 +376,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.BindingCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.BindingCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

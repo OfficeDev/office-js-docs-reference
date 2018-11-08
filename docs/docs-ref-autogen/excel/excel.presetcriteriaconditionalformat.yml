@@ -8,7 +8,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PresetCriteriaConditionalFormat
-    fullName: excel.Excel.PresetCriteriaConditionalFormat
+    fullName: Excel.PresetCriteriaConditionalFormat
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.PresetCriteriaConditionalFormat.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -54,7 +54,7 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: excel.Excel.PresetCriteriaConditionalFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -75,7 +75,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.PresetCriteriaConditionalFormat.rule
+    fullName: rule
     langs:
       - typeScript
     type: property
@@ -113,7 +113,7 @@ items:
           ```
   - uid: excel.Excel.PresetCriteriaConditionalFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.PresetCriteriaConditionalFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

@@ -14,7 +14,7 @@ items:
       or read</td></tr></table>
     isPreview: true
     name: Office.AttachmentContent
-    fullName: outlook.Office.AttachmentContent
+    fullName: Office.AttachmentContent
     langs:
       - typeScript
     type: interface
@@ -26,7 +26,7 @@ items:
     summary: The content of an attachment as a string.
     isPreview: true
     name: content
-    fullName: outlook.Office.AttachmentContent.content
+    fullName: content
     langs:
       - typeScript
     type: property
@@ -48,7 +48,7 @@ items:
       For cloud attachments, the formatting is a URL string.
     isPreview: true
     name: format
-    fullName: outlook.Office.AttachmentContent.format
+    fullName: format
     langs:
       - typeScript
     type: property

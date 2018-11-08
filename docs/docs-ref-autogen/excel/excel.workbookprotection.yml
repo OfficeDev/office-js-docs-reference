@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookProtection
-    fullName: excel.Excel.WorkbookProtection
+    fullName: Excel.WorkbookProtection
     langs:
       - typeScript
     type: class
@@ -38,7 +38,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.WorkbookProtection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -59,7 +59,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protect(password)
-    fullName: excel.Excel.WorkbookProtection.protect
+    fullName: protect
     langs:
       - typeScript
     type: method
@@ -109,7 +109,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
-    fullName: excel.Excel.WorkbookProtection.protected
+    fullName: protected
     langs:
       - typeScript
     type: property
@@ -120,7 +120,7 @@ items:
           - boolean
   - uid: excel.Excel.WorkbookProtection.toJSON
     name: toJSON()
-    fullName: excel.Excel.WorkbookProtection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -136,7 +136,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unprotect(password)
-    fullName: excel.Excel.WorkbookProtection.unprotect
+    fullName: unprotect
     langs:
       - typeScript
     type: method

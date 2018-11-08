@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.RangeCollectionData
     summary: An interface describing the data returned by calling "rangeCollection.toJSON()".
     name: Word.Interfaces.RangeCollectionData
-    fullName: word.Word.Interfaces.RangeCollectionData
+    fullName: Word.Interfaces.RangeCollectionData
     langs:
       - typeScript
     type: interface
@@ -12,7 +12,7 @@ items:
       - word.Word.Interfaces.RangeCollectionData.items
   - uid: word.Word.Interfaces.RangeCollectionData.items
     name: items
-    fullName: word.Word.Interfaces.RangeCollectionData.items
+    fullName: items
     langs:
       - typeScript
     type: property

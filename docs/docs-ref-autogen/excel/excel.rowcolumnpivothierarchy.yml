@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowColumnPivotHierarchy
-    fullName: excel.Excel.RowColumnPivotHierarchy
+    fullName: Excel.RowColumnPivotHierarchy
     langs:
       - typeScript
     type: class
@@ -27,7 +27,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
-    fullName: excel.Excel.RowColumnPivotHierarchy.fields
+    fullName: fields
     langs:
       - typeScript
     type: property
@@ -42,7 +42,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
-    fullName: excel.Excel.RowColumnPivotHierarchy.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -70,7 +70,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.RowColumnPivotHierarchy.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -91,7 +91,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.RowColumnPivotHierarchy.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -106,7 +106,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
-    fullName: excel.Excel.RowColumnPivotHierarchy.position
+    fullName: position
     langs:
       - typeScript
     type: property
@@ -121,7 +121,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
-    fullName: excel.Excel.RowColumnPivotHierarchy.setToDefault
+    fullName: setToDefault
     langs:
       - typeScript
     type: method
@@ -133,7 +133,7 @@ items:
         description: ''
   - uid: excel.Excel.RowColumnPivotHierarchy.toJSON
     name: toJSON()
-    fullName: excel.Excel.RowColumnPivotHierarchy.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

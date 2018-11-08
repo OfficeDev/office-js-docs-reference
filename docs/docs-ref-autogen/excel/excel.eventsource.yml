@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.EventSource
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.EventSource
-    fullName: excel.Excel.EventSource
+    fullName: Excel.EventSource
     langs:
       - typeScript
     type: enum
@@ -14,7 +14,7 @@ items:
   - uid: excel.Excel.EventSource.local
     summary: Local means event comes from local user session.
     name: local
-    fullName: excel.Excel.EventSource.local
+    fullName: local
     langs:
       - typeScript
     type: field
@@ -22,7 +22,7 @@ items:
   - uid: excel.Excel.EventSource.remote
     summary: Remote means event comes from remote user session.
     name: remote
-    fullName: excel.Excel.EventSource.remote
+    fullName: remote
     langs:
       - typeScript
     type: field

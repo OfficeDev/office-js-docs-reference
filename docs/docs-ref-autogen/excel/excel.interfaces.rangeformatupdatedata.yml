@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeFormatUpdateData
     summary: 'An interface for updating data on the RangeFormat object, for use in "rangeFormat.set({ ... })".'
     name: Excel.Interfaces.RangeFormatUpdateData
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData
+    fullName: Excel.Interfaces.RangeFormatUpdateData
     langs:
       - typeScript
     type: interface
@@ -28,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.columnWidth
+    fullName: columnWidth
     langs:
       - typeScript
     type: property
@@ -43,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.fill
+    fullName: fill
     langs:
       - typeScript
     type: property
@@ -58,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -73,7 +73,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment
+    fullName: horizontalAlignment
     langs:
       - typeScript
     type: property
@@ -92,7 +92,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.protection
+    fullName: protection
     langs:
       - typeScript
     type: property
@@ -107,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.rowHeight
+    fullName: rowHeight
     langs:
       - typeScript
     type: property
@@ -125,7 +125,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.textOrientation
+    fullName: textOrientation
     langs:
       - typeScript
     type: property
@@ -143,7 +143,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardHeight
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.useStandardHeight
+    fullName: useStandardHeight
     langs:
       - typeScript
     type: property
@@ -161,7 +161,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardWidth
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.useStandardWidth
+    fullName: useStandardWidth
     langs:
       - typeScript
     type: property
@@ -176,7 +176,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.verticalAlignment
+    fullName: verticalAlignment
     langs:
       - typeScript
     type: property
@@ -193,7 +193,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
-    fullName: excel.Excel.Interfaces.RangeFormatUpdateData.wrapText
+    fullName: wrapText
     langs:
       - typeScript
     type: property

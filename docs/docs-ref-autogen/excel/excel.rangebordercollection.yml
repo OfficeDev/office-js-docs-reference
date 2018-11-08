@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeBorderCollection
-    fullName: excel.Excel.RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
     langs:
       - typeScript
     type: class
@@ -26,7 +26,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
-    fullName: excel.Excel.RangeBorderCollection.count
+    fullName: count
     langs:
       - typeScript
     type: property
@@ -41,7 +41,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
-    fullName: excel.Excel.RangeBorderCollection.getItem
+    fullName: getItem
     langs:
       - typeScript
     type: method
@@ -102,7 +102,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: excel.Excel.RangeBorderCollection.getItemAt
+    fullName: getItemAt
     langs:
       - typeScript
     type: method
@@ -141,7 +141,7 @@ items:
   - uid: excel.Excel.RangeBorderCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
-    fullName: excel.Excel.RangeBorderCollection.items
+    fullName: items
     langs:
       - typeScript
     type: property
@@ -221,7 +221,7 @@ items:
 
       ```
     name: load(option)
-    fullName: excel.Excel.RangeBorderCollection.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -238,7 +238,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.RangeBorderCollection.toJSON
     name: toJSON()
-    fullName: excel.Excel.RangeBorderCollection.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

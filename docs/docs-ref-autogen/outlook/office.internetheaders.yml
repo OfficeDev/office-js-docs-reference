@@ -19,7 +19,7 @@ items:
       or read</td></tr></table>
     isPreview: true
     name: Office.InternetHeaders
-    fullName: outlook.Office.InternetHeaders
+    fullName: Office.InternetHeaders
     langs:
       - typeScript
     type: interface
@@ -66,7 +66,7 @@ items:
       ```
     isPreview: true
     name: 'getAsync(names, options, callback)'
-    fullName: outlook.Office.InternetHeaders.getAsync
+    fullName: getAsync
     langs:
       - typeScript
     type: method
@@ -126,7 +126,7 @@ items:
       ```
     isPreview: true
     name: 'removeAsync(names, options, callback)'
-    fullName: outlook.Office.InternetHeaders.removeAsync
+    fullName: removeAsync
     langs:
       - typeScript
     type: method
@@ -189,7 +189,7 @@ items:
       ```
     isPreview: true
     name: 'setAsync(headers, options, callback)'
-    fullName: outlook.Office.InternetHeaders.setAsync
+    fullName: setAsync
     langs:
       - typeScript
     type: method

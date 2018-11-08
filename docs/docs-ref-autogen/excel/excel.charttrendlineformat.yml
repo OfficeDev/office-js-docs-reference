@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineFormat
-    fullName: excel.Excel.ChartTrendlineFormat
+    fullName: Excel.ChartTrendlineFormat
     langs:
       - typeScript
     type: class
@@ -23,7 +23,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
-    fullName: excel.Excel.ChartTrendlineFormat.line
+    fullName: line
     langs:
       - typeScript
     type: property
@@ -88,7 +88,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: excel.Excel.ChartTrendlineFormat.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -105,7 +105,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ChartTrendlineFormat.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartTrendlineFormat.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

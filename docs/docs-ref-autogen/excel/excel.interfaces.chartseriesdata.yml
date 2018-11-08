@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesData
     summary: An interface describing the data returned by calling "chartSeries.toJSON()".
     name: Excel.Interfaces.ChartSeriesData
-    fullName: excel.Excel.Interfaces.ChartSeriesData
+    fullName: Excel.Interfaces.ChartSeriesData
     langs:
       - typeScript
     type: interface
@@ -40,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
-    fullName: excel.Excel.Interfaces.ChartSeriesData.axisGroup
+    fullName: axisGroup
     langs:
       - typeScript
     type: property
@@ -55,7 +55,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
-    fullName: excel.Excel.Interfaces.ChartSeriesData.chartType
+    fullName: chartType
     langs:
       - typeScript
     type: property
@@ -99,7 +99,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
-    fullName: excel.Excel.Interfaces.ChartSeriesData.dataLabels
+    fullName: dataLabels
     langs:
       - typeScript
     type: property
@@ -116,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: doughnutHoleSize
-    fullName: excel.Excel.Interfaces.ChartSeriesData.doughnutHoleSize
+    fullName: doughnutHoleSize
     langs:
       - typeScript
     type: property
@@ -133,7 +133,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: explosion
-    fullName: excel.Excel.Interfaces.ChartSeriesData.explosion
+    fullName: explosion
     langs:
       - typeScript
     type: property
@@ -148,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
-    fullName: excel.Excel.Interfaces.ChartSeriesData.filtered
+    fullName: filtered
     langs:
       - typeScript
     type: property
@@ -165,7 +165,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: firstSliceAngle
-    fullName: excel.Excel.Interfaces.ChartSeriesData.firstSliceAngle
+    fullName: firstSliceAngle
     langs:
       - typeScript
     type: property
@@ -180,7 +180,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
-    fullName: excel.Excel.Interfaces.ChartSeriesData.format
+    fullName: format
     langs:
       - typeScript
     type: property
@@ -197,7 +197,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gapWidth
-    fullName: excel.Excel.Interfaces.ChartSeriesData.gapWidth
+    fullName: gapWidth
     langs:
       - typeScript
     type: property
@@ -212,7 +212,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
-    fullName: excel.Excel.Interfaces.ChartSeriesData.hasDataLabels
+    fullName: hasDataLabels
     langs:
       - typeScript
     type: property
@@ -227,7 +227,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertIfNegative
-    fullName: excel.Excel.Interfaces.ChartSeriesData.invertIfNegative
+    fullName: invertIfNegative
     langs:
       - typeScript
     type: property
@@ -242,7 +242,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
-    fullName: excel.Excel.Interfaces.ChartSeriesData.markerBackgroundColor
+    fullName: markerBackgroundColor
     langs:
       - typeScript
     type: property
@@ -257,7 +257,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
-    fullName: excel.Excel.Interfaces.ChartSeriesData.markerForegroundColor
+    fullName: markerForegroundColor
     langs:
       - typeScript
     type: property
@@ -272,7 +272,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
-    fullName: excel.Excel.Interfaces.ChartSeriesData.markerSize
+    fullName: markerSize
     langs:
       - typeScript
     type: property
@@ -287,7 +287,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
-    fullName: excel.Excel.Interfaces.ChartSeriesData.markerStyle
+    fullName: markerStyle
     langs:
       - typeScript
     type: property
@@ -306,7 +306,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
-    fullName: excel.Excel.Interfaces.ChartSeriesData.name
+    fullName: name
     langs:
       - typeScript
     type: property
@@ -323,7 +323,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlap
-    fullName: excel.Excel.Interfaces.ChartSeriesData.overlap
+    fullName: overlap
     langs:
       - typeScript
     type: property
@@ -338,7 +338,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
-    fullName: excel.Excel.Interfaces.ChartSeriesData.plotOrder
+    fullName: plotOrder
     langs:
       - typeScript
     type: property
@@ -353,7 +353,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points
-    fullName: excel.Excel.Interfaces.ChartSeriesData.points
+    fullName: points
     langs:
       - typeScript
     type: property
@@ -370,7 +370,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: secondPlotSize
-    fullName: excel.Excel.Interfaces.ChartSeriesData.secondPlotSize
+    fullName: secondPlotSize
     langs:
       - typeScript
     type: property
@@ -385,7 +385,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
-    fullName: excel.Excel.Interfaces.ChartSeriesData.showShadow
+    fullName: showShadow
     langs:
       - typeScript
     type: property
@@ -400,7 +400,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
-    fullName: excel.Excel.Interfaces.ChartSeriesData.smooth
+    fullName: smooth
     langs:
       - typeScript
     type: property
@@ -415,7 +415,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitType
-    fullName: excel.Excel.Interfaces.ChartSeriesData.splitType
+    fullName: splitType
     langs:
       - typeScript
     type: property
@@ -430,7 +430,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: trendlines
-    fullName: excel.Excel.Interfaces.ChartSeriesData.trendlines
+    fullName: trendlines
     langs:
       - typeScript
     type: property
@@ -447,7 +447,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varyByCategories
-    fullName: excel.Excel.Interfaces.ChartSeriesData.varyByCategories
+    fullName: varyByCategories
     langs:
       - typeScript
     type: property

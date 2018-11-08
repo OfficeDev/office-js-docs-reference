@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.DocumentCreatedUpdateData
     summary: 'An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })".'
     name: Word.Interfaces.DocumentCreatedUpdateData
-    fullName: word.Word.Interfaces.DocumentCreatedUpdateData
+    fullName: Word.Interfaces.DocumentCreatedUpdateData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
     name: body
-    fullName: word.Word.Interfaces.DocumentCreatedUpdateData.body
+    fullName: body
     langs:
       - typeScript
     type: property
@@ -37,7 +37,7 @@ items:
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
     name: properties
-    fullName: word.Word.Interfaces.DocumentCreatedUpdateData.properties
+    fullName: properties
     langs:
       - typeScript
     type: property

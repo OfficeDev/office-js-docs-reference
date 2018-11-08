@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.TableCellData
     summary: An interface describing the data returned by calling "tableCell.toJSON()".
     name: OneNote.Interfaces.TableCellData
-    fullName: onenote.OneNote.Interfaces.TableCellData
+    fullName: OneNote.Interfaces.TableCellData
     langs:
       - typeScript
     type: interface
@@ -21,7 +21,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
-    fullName: onenote.OneNote.Interfaces.TableCellData.cellIndex
+    fullName: cellIndex
     langs:
       - typeScript
     type: property
@@ -36,7 +36,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.TableCellData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -51,7 +51,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
-    fullName: onenote.OneNote.Interfaces.TableCellData.paragraphs
+    fullName: paragraphs
     langs:
       - typeScript
     type: property
@@ -66,7 +66,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
-    fullName: onenote.OneNote.Interfaces.TableCellData.parentRow
+    fullName: parentRow
     langs:
       - typeScript
     type: property
@@ -81,7 +81,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
-    fullName: onenote.OneNote.Interfaces.TableCellData.rowIndex
+    fullName: rowIndex
     langs:
       - typeScript
     type: property
@@ -96,7 +96,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
-    fullName: onenote.OneNote.Interfaces.TableCellData.shadingColor
+    fullName: shadingColor
     langs:
       - typeScript
     type: property

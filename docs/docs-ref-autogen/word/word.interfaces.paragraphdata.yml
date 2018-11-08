@@ -3,7 +3,7 @@ items:
   - uid: word.Word.Interfaces.ParagraphData
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
     name: Word.Interfaces.ParagraphData
-    fullName: word.Word.Interfaces.ParagraphData
+    fullName: Word.Interfaces.ParagraphData
     langs:
       - typeScript
     type: interface
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
-    fullName: word.Word.Interfaces.ParagraphData.alignment
+    fullName: alignment
     langs:
       - typeScript
     type: property
@@ -60,7 +60,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
-    fullName: word.Word.Interfaces.ParagraphData.contentControls
+    fullName: contentControls
     langs:
       - typeScript
     type: property
@@ -77,7 +77,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: firstLineIndent
-    fullName: word.Word.Interfaces.ParagraphData.firstLineIndent
+    fullName: firstLineIndent
     langs:
       - typeScript
     type: property
@@ -94,7 +94,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
-    fullName: word.Word.Interfaces.ParagraphData.font
+    fullName: font
     langs:
       - typeScript
     type: property
@@ -111,7 +111,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
-    fullName: word.Word.Interfaces.ParagraphData.inlinePictures
+    fullName: inlinePictures
     langs:
       - typeScript
     type: property
@@ -126,7 +126,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isLastParagraph
-    fullName: word.Word.Interfaces.ParagraphData.isLastParagraph
+    fullName: isLastParagraph
     langs:
       - typeScript
     type: property
@@ -141,7 +141,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isListItem
-    fullName: word.Word.Interfaces.ParagraphData.isListItem
+    fullName: isListItem
     langs:
       - typeScript
     type: property
@@ -156,7 +156,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: leftIndent
-    fullName: word.Word.Interfaces.ParagraphData.leftIndent
+    fullName: leftIndent
     langs:
       - typeScript
     type: property
@@ -173,7 +173,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineSpacing
-    fullName: word.Word.Interfaces.ParagraphData.lineSpacing
+    fullName: lineSpacing
     langs:
       - typeScript
     type: property
@@ -188,7 +188,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitAfter
-    fullName: word.Word.Interfaces.ParagraphData.lineUnitAfter
+    fullName: lineUnitAfter
     langs:
       - typeScript
     type: property
@@ -203,7 +203,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitBefore
-    fullName: word.Word.Interfaces.ParagraphData.lineUnitBefore
+    fullName: lineUnitBefore
     langs:
       - typeScript
     type: property
@@ -218,7 +218,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: list
-    fullName: word.Word.Interfaces.ParagraphData.list
+    fullName: list
     langs:
       - typeScript
     type: property
@@ -233,7 +233,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listItem
-    fullName: word.Word.Interfaces.ParagraphData.listItem
+    fullName: listItem
     langs:
       - typeScript
     type: property
@@ -248,7 +248,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listItemOrNullObject
-    fullName: word.Word.Interfaces.ParagraphData.listItemOrNullObject
+    fullName: listItemOrNullObject
     langs:
       - typeScript
     type: property
@@ -263,7 +263,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listOrNullObject
-    fullName: word.Word.Interfaces.ParagraphData.listOrNullObject
+    fullName: listOrNullObject
     langs:
       - typeScript
     type: property
@@ -278,7 +278,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: outlineLevel
-    fullName: word.Word.Interfaces.ParagraphData.outlineLevel
+    fullName: outlineLevel
     langs:
       - typeScript
     type: property
@@ -293,7 +293,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
-    fullName: word.Word.Interfaces.ParagraphData.parentBody
+    fullName: parentBody
     langs:
       - typeScript
     type: property
@@ -308,7 +308,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
-    fullName: word.Word.Interfaces.ParagraphData.parentContentControl
+    fullName: parentContentControl
     langs:
       - typeScript
     type: property
@@ -325,7 +325,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
-    fullName: word.Word.Interfaces.ParagraphData.parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
     langs:
       - typeScript
     type: property
@@ -340,7 +340,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
-    fullName: word.Word.Interfaces.ParagraphData.parentTable
+    fullName: parentTable
     langs:
       - typeScript
     type: property
@@ -355,7 +355,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
-    fullName: word.Word.Interfaces.ParagraphData.parentTableCell
+    fullName: parentTableCell
     langs:
       - typeScript
     type: property
@@ -372,7 +372,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
-    fullName: word.Word.Interfaces.ParagraphData.parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
     langs:
       - typeScript
     type: property
@@ -387,7 +387,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
-    fullName: word.Word.Interfaces.ParagraphData.parentTableOrNullObject
+    fullName: parentTableOrNullObject
     langs:
       - typeScript
     type: property
@@ -402,7 +402,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rightIndent
-    fullName: word.Word.Interfaces.ParagraphData.rightIndent
+    fullName: rightIndent
     langs:
       - typeScript
     type: property
@@ -417,7 +417,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: spaceAfter
-    fullName: word.Word.Interfaces.ParagraphData.spaceAfter
+    fullName: spaceAfter
     langs:
       - typeScript
     type: property
@@ -432,7 +432,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: spaceBefore
-    fullName: word.Word.Interfaces.ParagraphData.spaceBefore
+    fullName: spaceBefore
     langs:
       - typeScript
     type: property
@@ -449,7 +449,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
-    fullName: word.Word.Interfaces.ParagraphData.style
+    fullName: style
     langs:
       - typeScript
     type: property
@@ -466,7 +466,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
-    fullName: word.Word.Interfaces.ParagraphData.styleBuiltIn
+    fullName: styleBuiltIn
     langs:
       - typeScript
     type: property
@@ -545,7 +545,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tableNestingLevel
-    fullName: word.Word.Interfaces.ParagraphData.tableNestingLevel
+    fullName: tableNestingLevel
     langs:
       - typeScript
     type: property
@@ -560,7 +560,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
-    fullName: word.Word.Interfaces.ParagraphData.text
+    fullName: text
     langs:
       - typeScript
     type: property

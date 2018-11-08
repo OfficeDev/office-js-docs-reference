@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidation
-    fullName: excel.Excel.DataValidation
+    fullName: Excel.DataValidation
     langs:
       - typeScript
     type: class
@@ -29,7 +29,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.DataValidation.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -45,7 +45,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
-    fullName: excel.Excel.DataValidation.errorAlert
+    fullName: errorAlert
     langs:
       - typeScript
     type: property
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
-    fullName: excel.Excel.DataValidation.ignoreBlanks
+    fullName: ignoreBlanks
     langs:
       - typeScript
     type: property
@@ -121,7 +121,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: excel.Excel.DataValidation.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -142,7 +142,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
-    fullName: excel.Excel.DataValidation.prompt
+    fullName: prompt
     langs:
       - typeScript
     type: property
@@ -157,7 +157,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
-    fullName: excel.Excel.DataValidation.rule
+    fullName: rule
     langs:
       - typeScript
     type: property
@@ -168,7 +168,7 @@ items:
           - excel.Excel.DataValidationRule
   - uid: excel.Excel.DataValidation.toJSON
     name: toJSON()
-    fullName: excel.Excel.DataValidation.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method
@@ -184,7 +184,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
-    fullName: excel.Excel.DataValidation.type
+    fullName: type
     langs:
       - typeScript
     type: property
@@ -206,7 +206,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valid
-    fullName: excel.Excel.DataValidation.valid
+    fullName: valid
     langs:
       - typeScript
     type: property

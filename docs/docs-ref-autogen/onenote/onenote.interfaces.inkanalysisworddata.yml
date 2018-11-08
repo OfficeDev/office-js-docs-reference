@@ -3,7 +3,7 @@ items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordData
     summary: An interface describing the data returned by calling "inkAnalysisWord.toJSON()".
     name: OneNote.Interfaces.InkAnalysisWordData
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData
+    fullName: OneNote.Interfaces.InkAnalysisWordData
     langs:
       - typeScript
     type: interface
@@ -20,7 +20,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.id
+    fullName: id
     langs:
       - typeScript
     type: property
@@ -35,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.languageId
+    fullName: languageId
     langs:
       - typeScript
     type: property
@@ -50,7 +50,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: line
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.line
+    fullName: line
     langs:
       - typeScript
     type: property
@@ -65,7 +65,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: strokePointers
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.strokePointers
+    fullName: strokePointers
     langs:
       - typeScript
     type: property
@@ -80,7 +80,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
-    fullName: onenote.OneNote.Interfaces.InkAnalysisWordData.wordAlternates
+    fullName: wordAlternates
     langs:
       - typeScript
     type: property

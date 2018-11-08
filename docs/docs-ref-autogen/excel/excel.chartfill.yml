@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartFill
-    fullName: excel.Excel.ChartFill
+    fullName: Excel.ChartFill
     langs:
       - typeScript
     type: class
@@ -24,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: excel.Excel.ChartFill.clear
+    fullName: clear
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     name: load(option)
-    fullName: excel.Excel.ChartFill.load
+    fullName: load
     langs:
       - typeScript
     type: method
@@ -78,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setSolidColor(color)
-    fullName: excel.Excel.ChartFill.setSolidColor
+    fullName: setSolidColor
     langs:
       - typeScript
     type: method
@@ -131,7 +131,7 @@ items:
             - string
   - uid: excel.Excel.ChartFill.toJSON
     name: toJSON()
-    fullName: excel.Excel.ChartFill.toJSON
+    fullName: toJSON
     langs:
       - typeScript
     type: method

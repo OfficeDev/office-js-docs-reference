@@ -9,7 +9,7 @@ items:
       <table><tr><td> [ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
       </td><td>Compose or read</td></tr></table>
     name: Office.MailboxEnums.RecurrenceType
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+    fullName: Office.MailboxEnums.RecurrenceType
     langs:
       - typeScript
     type: enum
@@ -23,7 +23,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Daily
     summary: Daily.
     name: Daily
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Daily
+    fullName: Daily
     langs:
       - typeScript
     type: field
@@ -31,7 +31,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Monthly
     summary: Monthly.
     name: Monthly
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Monthly
+    fullName: Monthly
     langs:
       - typeScript
     type: field
@@ -39,7 +39,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekday
     summary: Weekday.
     name: Weekday
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekday
+    fullName: Weekday
     langs:
       - typeScript
     type: field
@@ -47,7 +47,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekly
     summary: Weekly.
     name: Weekly
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Weekly
+    fullName: Weekly
     langs:
       - typeScript
     type: field
@@ -55,7 +55,7 @@ items:
   - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Yearly
     summary: Yearly.
     name: Yearly
-    fullName: Outlook_1_7.Office.MailboxEnums.RecurrenceType.Yearly
+    fullName: Yearly
     langs:
       - typeScript
     type: field
