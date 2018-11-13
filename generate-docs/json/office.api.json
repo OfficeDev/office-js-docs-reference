@@ -33178,14 +33178,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the selected Outlook item is changed."
+                  "text": "Triggers when a different Outlook item is selected for viewing while the task pane is pinned."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.1]"
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [],
