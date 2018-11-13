@@ -17,7 +17,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -90,7 +90,7 @@ items:
       two slides.
 
 
-      Note: Only applies to data in PowerPoint when calling the [ Document](xref:office.Office.Document)<!--
+      Note: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
       -->.getSelectedData method to get the current slide or selected range of slides.
     name: SlideRange
     fullName: SlideRange

@@ -27,12 +27,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
-      or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
 
       #### Examples
 
@@ -69,12 +69,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
-      or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     name: get(name)
     fullName: get
     langs:
@@ -97,12 +97,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
-      or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     name: remove(name)
     fullName: remove
     langs:
@@ -132,12 +132,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
-      or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     name: saveAsync(callback)
     fullName: saveAsync
     langs:
@@ -175,12 +175,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      <tr><td>[ Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
-      or read</td></tr></table>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
     name: 'set(name, value)'
     fullName: set
     langs:

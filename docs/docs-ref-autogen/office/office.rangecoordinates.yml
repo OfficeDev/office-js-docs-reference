@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.RangeCoordinates
     summary: >-
-      Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: {row: 3, column: 4}
+      Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}`
       specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
     name: Office.RangeCoordinates
     fullName: Office.RangeCoordinates

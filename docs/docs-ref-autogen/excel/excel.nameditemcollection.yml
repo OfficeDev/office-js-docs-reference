@@ -64,32 +64,9 @@ items:
           ```typescript
           try {
               await Excel.run(async (context) => {
-
-                  await OfficeHelpers.ExcelUtilities.forceCreateSheet(context.workbook, "Sample");
-
                   const sheet = context.workbook.worksheets.getItem("Sample");
-
-                  let expensesTable = sheet.tables.add("A1:D1", true);
-                  expensesTable.name = "ExpensesTable";
-
-                  expensesTable.getHeaderRowRange().values = [["DATE", "MERCHANT", "CATEGORY", "AMOUNT"]];
-
-                  let newData = transactions.map(item =>
-                      [item.DATE, item.MERCHANT, item.CATEGORY, item.AMOUNT]);
-
-                  expensesTable.rows.add(null, newData);
-
                   sheet.names.add("TotalAmount", "=SUM(ExpensesTable[AMOUNT])");
-
                   sheet.getRange("D11").values = [["=TotalAmount"]];
-
-                  if (Office.context.requirements.isSetSupported("ExcelApi", 1.2)) {
-                      sheet.getUsedRange().format.autofitColumns();
-                      sheet.getUsedRange().format.autofitRows();
-                  }
-
-                  sheet.activate();
-
                   await context.sync();
               });
           }

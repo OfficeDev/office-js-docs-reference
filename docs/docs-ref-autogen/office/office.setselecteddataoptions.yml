@@ -38,8 +38,8 @@ items:
       that range.
 
 
-      Example: `[\{cells: Office.Table.Data, format: \{fontColor: "yellow"\}\}, \{cells: \{row: 3, column: 4\}, format:
-      \{borderColor: "white", fontStyle: "bold"\}\}]`
+      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
+      {borderColor: "white", fontStyle: "bold"}}]`
     name: cellFormat
     fullName: cellFormat
     langs:

@@ -72,7 +72,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -546,7 +546,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -587,7 +587,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -690,7 +690,7 @@
                       "elements": [
                         {
                           "kind": "text",
-                          "text": " Minimum permission level"
+                          "text": "Minimum permission level"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -731,7 +731,7 @@
                       "elements": [
                         {
                           "kind": "text",
-                          "text": " Applicable Outlook mode"
+                          "text": "Applicable Outlook mode"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -786,7 +786,7 @@
                       "elements": [
                         {
                           "kind": "text",
-                          "text": " Requirements for running Office Add-ins"
+                          "text": "Requirements for running Office Add-ins"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -1191,7 +1191,7 @@
                       "elements": [
                         {
                           "kind": "text",
-                          "text": " Requirements for running Office Add-ins"
+                          "text": "Requirements for running Office Add-ins"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -1577,7 +1577,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -2305,7 +2305,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -3033,7 +3033,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -3746,7 +3746,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Document"
+                      "text": "Document"
                     }
                   ],
                   "target": {
@@ -3793,7 +3793,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -4522,7 +4522,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " AsyncResult"
+                  "text": "AsyncResult"
                 }
               ],
               "target": {
@@ -4562,7 +4562,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -5379,7 +5379,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -7875,7 +7875,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -8330,7 +8330,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -8724,7 +8724,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -9079,7 +9079,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -9516,7 +9516,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -9971,7 +9971,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -10417,7 +10417,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -11102,7 +11102,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " TableData"
+                      "text": "TableData"
                     }
                   ],
                   "target": {
@@ -11165,7 +11165,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -11566,7 +11566,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Document"
+                      "text": "Document"
                     }
                   ],
                   "target": {
@@ -11699,7 +11699,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -12477,7 +12477,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -12706,7 +12706,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -13482,7 +13482,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -14191,7 +14191,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -14735,7 +14735,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14776,7 +14776,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14921,7 +14921,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14962,7 +14962,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -15043,7 +15043,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -15429,7 +15429,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -16837,7 +16837,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -17094,7 +17094,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -17947,7 +17947,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -18455,7 +18455,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -19394,7 +19394,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -19814,7 +19814,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -20151,7 +20151,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -20459,7 +20459,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -21024,7 +21024,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -21485,7 +21485,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -21885,7 +21885,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -22125,7 +22125,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -22379,7 +22379,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -22631,7 +22631,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -22888,7 +22888,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -23832,7 +23832,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -24361,7 +24361,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -24594,7 +24594,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -24845,7 +24845,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -25117,7 +25117,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -25369,7 +25369,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -25635,7 +25635,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -25886,7 +25886,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -26257,7 +26257,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -26593,7 +26593,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -27101,7 +27101,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -27528,7 +27528,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -29179,7 +29179,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -29674,7 +29674,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -29850,7 +29850,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -30255,7 +30255,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -30671,7 +30671,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -30711,7 +30711,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -31215,7 +31215,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -31986,7 +31986,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -32239,7 +32239,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -32587,7 +32587,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -32943,7 +32943,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -33338,7 +33338,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -33838,7 +33838,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -34312,7 +34312,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -35505,7 +35505,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -35861,7 +35861,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -36569,7 +36569,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " options.selectionMode"
+                  "text": "options.selectionMode"
                 }
               ],
               "target": {
@@ -36859,7 +36859,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -37280,7 +37280,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -38126,7 +38126,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -38346,7 +38346,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -38739,7 +38739,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -39731,7 +39731,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -40191,7 +40191,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -40497,7 +40497,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -40744,7 +40744,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -41026,7 +41026,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -41505,7 +41505,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -42443,7 +42443,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -42468,7 +42468,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -42508,7 +42508,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -45258,7 +45258,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -45283,7 +45283,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -45309,7 +45309,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Available fields"
+                  "text": "Available fields"
                 }
               ],
               "targetUrl": "https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460"
@@ -45344,7 +45344,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -49163,7 +49163,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -49188,7 +49188,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -49214,7 +49214,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Available fields"
+                  "text": "Available fields"
                 }
               ],
               "targetUrl": "https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460"
@@ -49249,7 +49249,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -49607,7 +49607,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -49632,7 +49632,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -49672,7 +49672,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -49816,7 +49816,16 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column."
+              "text": "Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: "
+            },
+            {
+              "kind": "code",
+              "text": "{row: 3, column: 4}",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column."
             }
           ],
           "remarks": [],
@@ -49912,7 +49921,16 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column."
+                  "text": "Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: "
+                },
+                {
+                  "kind": "code",
+                  "text": "{row: 3, column: 4}",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column."
                 }
               ],
               "remarks": [],
@@ -49933,7 +49951,12 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the formatting as key-value pairs. Example: {borderColor: \"white\", fontStyle: \"bold\"}"
+                  "text": "Specifies the formatting as key-value pairs. Example: "
+                },
+                {
+                  "kind": "code",
+                  "text": "{borderColor: \"white\", fontStyle: \"bold\"}",
+                  "highlighter": "plain"
                 }
               ],
               "remarks": [],
@@ -50215,7 +50238,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -50559,7 +50582,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Document"
+                  "text": "Document"
                 }
               ],
               "target": {
@@ -50598,7 +50621,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -51160,7 +51183,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "[\\{cells: Office.Table.Data, format: \\{fontColor: \"yellow\"\\}\\}, \\{cells: \\{row: 3, column: 4\\}, format: \\{borderColor: \"white\", fontStyle: \"bold\"\\}\\}]",
+                  "text": "[{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]",
                   "highlighter": "plain"
                 }
               ],
@@ -51797,7 +51820,7 @@
                       "elements": [
                         {
                           "kind": "text",
-                          "text": " Requirements for running Office Add-ins"
+                          "text": "Requirements for running Office Add-ins"
                         }
                       ],
                       "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -52125,7 +52148,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -52905,7 +52928,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -53378,7 +53401,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -53906,7 +53929,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -54559,7 +54582,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -55044,7 +55067,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -55538,7 +55561,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -55934,7 +55957,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -56313,7 +56336,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " table formatting methods"
+                  "text": "table formatting methods"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table"
@@ -56347,7 +56370,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -56772,7 +56795,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -57135,7 +57158,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -57505,7 +57528,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Format tables in add-ins for Excel"
+                      "text": "Format tables in add-ins for Excel"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table"
@@ -57540,7 +57563,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -57740,7 +57763,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -58132,7 +58155,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -58539,7 +58562,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "\\{cells:\\{ cell_range \\}, format:\\{ format_definition \\}\\}",
+                  "text": "{cells:{ cell_range }, format:{ format_definition }}",
                   "highlighter": "plain"
                 },
                 {
@@ -58637,8 +58660,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{row: n}"
+                  "kind": "code",
+                  "text": "{row: n}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58685,8 +58709,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{column: n}"
+                  "kind": "code",
+                  "text": "{column: n}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58733,8 +58758,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{row: i, column: j}"
+                  "kind": "code",
+                  "text": "{row: i, column: j}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58781,8 +58807,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.All"
+                  "kind": "code",
+                  "text": "Office.Table.All",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58829,8 +58856,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.Data"
+                  "kind": "code",
+                  "text": "Office.Table.Data",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58877,8 +58905,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.Headers"
+                  "kind": "code",
+                  "text": "Office.Table.Headers",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -58976,7 +59005,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -59367,7 +59396,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -59779,7 +59808,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "\\{cells:\\{ cell_range \\}, format:\\{ format_definition \\}\\}",
+                  "text": "{cells:{ cell_range }, format:{ format_definition }}",
                   "highlighter": "plain"
                 },
                 {
@@ -59877,8 +59906,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{row: n}"
+                  "kind": "code",
+                  "text": "{row: n}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -59925,8 +59955,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{column: n}"
+                  "kind": "code",
+                  "text": "{column: n}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -59973,8 +60004,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "{row: i, column: j}"
+                  "kind": "code",
+                  "text": "{row: i, column: j}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -60021,8 +60053,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.All"
+                  "kind": "code",
+                  "text": "Office.Table.All",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -60069,8 +60102,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.Data"
+                  "kind": "code",
+                  "text": "Office.Table.Data",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -60117,8 +60151,9 @@
                   "token": "<td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "Office.Table.Headers"
+                  "kind": "code",
+                  "text": "Office.Table.Headers",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -60217,7 +60252,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: \\{fontColor : \"green\", fontSize : 15\\}",
+                  "text": "format: {fontColor : \"green\", fontSize : 15}",
                   "highlighter": "plain"
                 },
                 {
@@ -60233,7 +60268,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: \\{borderStyle: \"dotted\", borderColor: \"blue\"\\}",
+                  "text": "format: {borderStyle: \"dotted\", borderColor: \"blue\"}",
                   "highlighter": "plain"
                 },
                 {
@@ -60249,7 +60284,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: \\{backgroundColor: \"red\", alignHorizontal: \"center\"\\}",
+                  "text": "format: {backgroundColor: \"red\", alignHorizontal: \"center\"}",
                   "highlighter": "plain"
                 },
                 {
@@ -60273,7 +60308,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "format: \\{numberFormat:\"0.00%\"\\}",
+                  "text": "format: {numberFormat:\"0.00%\"}",
                   "highlighter": "plain"
                 },
                 {
@@ -60288,7 +60323,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Create a custom number format"
+                      "text": "Create a custom number format"
                     }
                   ],
                   "targetUrl": "https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4"
@@ -60407,7 +60442,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " How to format tables in add-ins for Excel"
+                      "text": "How to format tables in add-ins for Excel"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table"
@@ -60442,7 +60477,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -61042,7 +61077,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Requirements for running Office Add-ins"
+                      "text": "Requirements for running Office Add-ins"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -61721,7 +61756,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -61972,7 +62007,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Use the Dialog API in your Office Add-ins"
+                  "text": "Use the Dialog API in your Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins"
@@ -62241,7 +62276,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Specify Office hosts and API requirements"
+                      "text": "Specify Office hosts and API requirements"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements"
@@ -62362,7 +62397,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Client Dialog"
+                      "text": "Client Dialog"
                     }
                   ],
                   "targetUrl": "https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md"
@@ -63018,7 +63053,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
@@ -63753,7 +63788,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Requirements for running Office Add-ins"
+                  "text": "Requirements for running Office Add-ins"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"

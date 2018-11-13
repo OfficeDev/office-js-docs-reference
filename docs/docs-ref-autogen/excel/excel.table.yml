@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: >-
-      Our [ how-to guide on working with
+      Our [how-to guide on working with
       tables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables) has detailed walkthroughs,
       images, and code samples.
     name: Excel.Table
