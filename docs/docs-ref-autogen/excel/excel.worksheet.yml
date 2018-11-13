@@ -6,7 +6,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: >-
-      Our [ how-to guide on working with
+      Our [how-to guide on working with
       worksheets](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets) has detailed
       walkthroughs and code samples.
     name: Excel.Worksheet

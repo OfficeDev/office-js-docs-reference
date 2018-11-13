@@ -2,10 +2,10 @@
 items:
   - uid: office.Office.ProjectProjectFields
     summary: >-
-      Specifies the project fields that are available as a parameter for the [
-      Document](xref:office.Office.Document)<!-- -->.getProjectFieldAsync method.
+      Specifies the project fields that are available as a parameter for the [Document](xref:office.Office.Document)<!--
+      -->.getProjectFieldAsync method.
     remarks: >-
-      A ProjectProjectFields constant can be used as a parameter of the [ Document](xref:office.Office.Document)<!--
+      A ProjectProjectFields constant can be used as a parameter of the [Document](xref:office.Office.Document)<!--
       -->.getProjectFieldAsync method.
 
 
@@ -16,7 +16,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this enumeration.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

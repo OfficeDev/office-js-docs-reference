@@ -14,7 +14,7 @@ items:
   - uid: office.Office.RangeFormatConfiguration.cells
     summary: >-
       Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates:
-      {row: 3, column: 4} specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
+      `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
     name: cells
     fullName: cells
     langs:
@@ -26,7 +26,7 @@ items:
         type:
           - Office.Table | RangeCoordinates
   - uid: office.Office.RangeFormatConfiguration.format
-    summary: 'Specifies the formatting as key-value pairs. Example: {borderColor: "white", fontStyle: "bold"}'
+    summary: 'Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`'
     name: format
     fullName: format
     langs:
