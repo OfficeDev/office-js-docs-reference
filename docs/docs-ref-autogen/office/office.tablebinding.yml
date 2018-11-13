@@ -67,7 +67,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -179,7 +179,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -234,7 +234,7 @@ items:
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
     remarks: >-
-      See [ Format tables in add-ins for
+      See [Format tables in add-ins for
       Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
 
@@ -246,7 +246,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -296,7 +296,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -346,7 +346,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -408,13 +408,13 @@ items:
       **Supported ranges in cells property**
 
 
-      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>{row: n}</td> <td>Specifies the
-      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>{column: n}</td> <td>Specifies the
-      range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>{row: i, column: j}</td>
+      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>`{row: n}`</td> <td>Specifies the
+      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>`{column: n}`</td> <td>Specifies
+      the range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>`{row: i, column: j}`</td>
       <td>Specifies the single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td>Office.Table.All</td> <td>Specifies the entire table, including column headers, data, and totals (if
-      any).</td> </tr> <tr> <td>Office.Table.Data</td> <td>Specifies only the data in the table (no headers and
-      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>Specifies only the header row.</td> </tr> </table>
+      <td>`Office.Table.All`</td> <td>Specifies the entire table, including column headers, data, and totals (if
+      any).</td> </tr> <tr> <td>`Office.Table.Data`</td> <td>Specifies only the data in the table (no headers and
+      totals).</td> </tr> <tr> <td>`Office.Table.Headers`</td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -462,7 +462,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -530,7 +530,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -589,13 +589,13 @@ items:
       **Supported ranges in cells property**
 
 
-      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>{row: n}</td> <td>Specifies the
-      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>{column: n}</td> <td>Specifies the
-      range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>{row: i, column: j}</td>
+      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>`{row: n}`</td> <td>Specifies the
+      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>`{column: n}`</td> <td>Specifies
+      the range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>`{row: i, column: j}`</td>
       <td>Specifies the single cell that is the ith row and jth column of the table.</td> </tr> <tr>
-      <td>Office.Table.All</td> <td>Specifies the entire table, including column headers, data, and totals (if
-      any).</td> </tr> <tr> <td>Office.Table.Data</td> <td>Specifies only the data in the table (no headers and
-      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>Specifies only the header row.</td> </tr> </table>
+      <td>`Office.Table.All`</td> <td>Specifies the entire table, including column headers, data, and totals (if
+      any).</td> </tr> <tr> <td>`Office.Table.Data`</td> <td>Specifies only the data in the table (no headers and
+      totals).</td> </tr> <tr> <td>`Office.Table.Headers`</td> <td>Specifies only the header row.</td> </tr> </table>
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
@@ -638,7 +638,7 @@ items:
       `format: {numberFormat:"0.00%"}`
 
 
-      For more detail, see how to [ Create a custom number
+      For more detail, see how to [Create a custom number
       format](https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4)<!--
       -->.
 
@@ -662,7 +662,7 @@ items:
       - To clear formatting, use the `TableBinding.clearFormats` method.
 
 
-      For more details and examples, see [ How to format tables in add-ins for
+      For more details and examples, see [How to format tables in add-ins for
       Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
 
 
@@ -673,7 +673,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
@@ -782,7 +782,7 @@ items:
       application. An empty cell indicates that the Office host application doesn't support this method.
 
 
-      For more information about Office host application and server requirements, see [ Requirements for running Office
+      For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 

@@ -2584,7 +2584,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " how-to guide on working with charts"
+                  "text": "how-to guide on working with charts"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts"
@@ -87934,7 +87934,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " how-to guide on working with PivotTables"
+                  "text": "how-to guide on working with PivotTables"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables"
@@ -88950,7 +88950,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " how-to guide on working with ranges"
+                  "text": "how-to guide on working with ranges"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges"
@@ -97485,7 +97485,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " how-to guide on working with tables"
+                  "text": "how-to guide on working with tables"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables"
@@ -103067,7 +103067,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " how-to guide on working with worksheets"
+                  "text": "how-to guide on working with worksheets"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets"
