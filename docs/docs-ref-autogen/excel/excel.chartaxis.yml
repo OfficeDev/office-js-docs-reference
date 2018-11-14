@@ -158,7 +158,7 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async (context) => {
+          await Excel.run(async context => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
               let chart = sheet.charts.getItemAt(0);
@@ -167,10 +167,12 @@ items:
 
               // Load to get display unit.
               valueAxis.load("displayUnit");
-             
+
               await context.sync();
 
-              OfficeHelpers.UI.notify("The vertical axis display unit is: " +  valueAxis.displayUnit);
+              OfficeHelpers.UI.notify(
+              "The vertical axis display unit is: " + valueAxis.displayUnit
+              );
           });
           ```
   - uid: excel.Excel.ChartAxis.format
@@ -683,9 +685,8 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async (context) => {
+          await Excel.run(async context => {
               const sheet = context.workbook.worksheets.getItem("Sample");
-
               let chart = sheet.charts.getItemAt(0);
               let axis = chart.axes.valueAxis;
 

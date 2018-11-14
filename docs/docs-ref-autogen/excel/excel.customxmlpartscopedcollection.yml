@@ -118,10 +118,10 @@ items:
           ```typescript
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;
-              const xmlPartIDSetting = settings.getItem("ContosoReviewXmlPartId").load("value");
-
+              const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
               await context.sync();
-              
+
+              if (xmlPartIDSetting.value) {   
               let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
               const xmlBlob = customXmlPart.getXml();
               customXmlPart.delete();
@@ -141,6 +141,7 @@ items:
               }
 
               await context.sync();
+              }
           });
           ```
       parameters:

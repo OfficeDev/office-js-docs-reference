@@ -61,7 +61,20 @@ items:
       return:
         type:
           - excel.Excel.ChartFormatString
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async context => {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let chart = sheet.charts.getItemAt(0);
+
+              // Get first seven characters of the title and color them green.
+              chart.title.getSubstring(0, 7).font.color = "Yellow";
+              await context.sync();
+          });
+          ```
       parameters:
         - id: start
           description: Start position of substring to be retrieved. Position start with 0.
@@ -299,6 +312,19 @@ items:
       return:
         type:
           - number
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async context => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const title = sheet.charts.getItemAt(0).title;
+              title.textOrientation = -45;
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartTitle.toJSON
     name: toJSON()
     fullName: toJSON
