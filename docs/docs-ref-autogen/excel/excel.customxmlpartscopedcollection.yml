@@ -122,25 +122,25 @@ items:
               await context.sync();
 
               if (xmlPartIDSetting.value) {   
-              let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
-              const xmlBlob = customXmlPart.getXml();
-              customXmlPart.delete();
-              customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+                  let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+                  const xmlBlob = customXmlPart.getXml();
+                  customXmlPart.delete();
+                  customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
 
-              await context.sync();
+                  await context.sync();
 
-              if (customXmlPart.isNullObject) {
-                  $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+                  if (customXmlPart.isNullObject) {
+                      $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
 
-                  // Delete the unneeded setting too.
-                  xmlPartIDSetting.delete();            
-              } else {
-                  const readableXml = addLineBreaksToXML(xmlBlob.value);
-                  const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
-                  $("#display-xml").text(strangeMessage);
-              }
+                      // Delete the unneeded setting too.
+                      xmlPartIDSetting.delete();            
+                  } else {
+                      const readableXml = addLineBreaksToXML(xmlBlob.value);
+                      const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+                      $("#display-xml").text(strangeMessage);
+                  }
 
-              await context.sync();
+                  await context.sync();
               }
           });
           ```

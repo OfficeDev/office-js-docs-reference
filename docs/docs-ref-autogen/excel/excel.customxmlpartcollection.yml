@@ -162,19 +162,19 @@ items:
               const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
               await context.sync();
 
-          if (xmlPartIDSetting.value) {   
-              const customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+              if (xmlPartIDSetting.value) {   
+                  const customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
 
-              // The setXml method does a whole-for-whole replacement 
-              // of the entire XML.
-              customXmlPart.setXml("<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>John</Reviewer><Reviewer>Hitomi</Reviewer></Reviewers>");
-              const xmlBlob = customXmlPart.getXml();
-              await context.sync();
+                  // The setXml method does a whole-for-whole replacement 
+                  // of the entire XML.
+                  customXmlPart.setXml("<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>John</Reviewer><Reviewer>Hitomi</Reviewer></Reviewers>");
+                  const xmlBlob = customXmlPart.getXml();
+                  await context.sync();
 
-              const readableXml = addLineBreaksToXML(xmlBlob.value);
-              $("#display-xml").text(readableXml);
-              await context.sync();
-          }
+                  const readableXml = addLineBreaksToXML(xmlBlob.value);
+                  $("#display-xml").text(readableXml);
+                  await context.sync();
+              }
           });
           ```
       parameters:

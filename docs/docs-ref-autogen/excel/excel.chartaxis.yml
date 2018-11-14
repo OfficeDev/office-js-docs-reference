@@ -170,9 +170,7 @@ items:
 
               await context.sync();
 
-              OfficeHelpers.UI.notify(
-              "The vertical axis display unit is: " + valueAxis.displayUnit
-              );
+              OfficeHelpers.UI.notify("The vertical axis display unit is: " + valueAxis.displayUnit);
           });
           ```
   - uid: excel.Excel.ChartAxis.format
