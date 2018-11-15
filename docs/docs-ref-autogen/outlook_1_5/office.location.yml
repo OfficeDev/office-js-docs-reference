@@ -6,11 +6,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[ Applicable Outlook
+      <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
     name: Office.Location
     fullName: Office.Location
@@ -29,11 +29,11 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[ Applicable Outlook
+      <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
 
@@ -76,11 +76,11 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      <table><tr><td>[ Minimum permission
+      <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>[ Applicable Outlook
+      <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
 
 

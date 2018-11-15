@@ -69,7 +69,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -210,7 +210,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -251,7 +251,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -521,7 +521,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -562,7 +562,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -702,7 +702,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -743,7 +743,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -843,7 +843,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -884,7 +884,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -958,7 +958,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -999,7 +999,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1074,7 +1074,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1115,7 +1115,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1230,7 +1230,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1271,7 +1271,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1401,7 +1401,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1442,7 +1442,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1523,7 +1523,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1564,7 +1564,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1682,7 +1682,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1723,7 +1723,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1816,7 +1816,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1857,7 +1857,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -1932,7 +1932,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -1973,7 +1973,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -2067,7 +2067,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -2108,7 +2108,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -2231,7 +2231,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -2272,7 +2272,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -2431,7 +2431,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -2472,7 +2472,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -2618,7 +2618,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -2659,7 +2659,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -2847,7 +2847,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -2888,7 +2888,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3061,7 +3061,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3102,7 +3102,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3191,7 +3191,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3232,7 +3232,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3307,7 +3307,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3348,7 +3348,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3420,7 +3420,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3461,7 +3461,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3578,7 +3578,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3619,7 +3619,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3722,7 +3722,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3764,7 +3764,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -3867,7 +3867,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -3908,7 +3908,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4011,7 +4011,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4052,7 +4052,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4185,7 +4185,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4226,7 +4226,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4336,7 +4336,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4377,7 +4377,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4431,7 +4431,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -4496,7 +4496,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4537,7 +4537,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4578,7 +4578,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Blocked attachments in Outlook"
+                      "text": "Blocked attachments in Outlook"
                     }
                   ],
                   "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
@@ -4633,7 +4633,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4674,7 +4674,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4749,7 +4749,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4790,7 +4790,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -4865,7 +4865,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -4906,7 +4906,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -5052,7 +5052,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -5093,7 +5093,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -5231,7 +5231,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -5272,7 +5272,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -5360,7 +5360,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -5401,7 +5401,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -5487,7 +5487,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -5528,7 +5528,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -5631,7 +5631,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -5672,7 +5672,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -6316,7 +6316,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -6357,7 +6357,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -6461,7 +6461,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -6502,7 +6502,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -6619,7 +6619,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -6660,7 +6660,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -6741,7 +6741,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -6782,7 +6782,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7064,7 +7064,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Use the Outlook REST APIs from an Outlook add-in"
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
@@ -7099,7 +7099,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7140,7 +7140,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7222,7 +7222,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7263,7 +7263,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7381,7 +7381,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7422,7 +7422,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7503,7 +7503,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7544,7 +7544,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7626,7 +7626,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7667,7 +7667,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7742,7 +7742,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7783,7 +7783,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -7884,7 +7884,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -7925,7 +7925,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8000,7 +8000,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8041,7 +8041,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8142,7 +8142,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8183,7 +8183,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8265,7 +8265,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8306,7 +8306,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8395,7 +8395,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8436,7 +8436,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8518,7 +8518,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8559,7 +8559,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8757,7 +8757,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8798,7 +8798,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -8920,7 +8920,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -8961,7 +8961,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -9079,7 +9079,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -9120,7 +9120,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -9249,7 +9249,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -9290,7 +9290,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -9485,7 +9485,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -9526,7 +9526,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -9749,7 +9749,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -9790,7 +9790,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10013,7 +10013,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10054,7 +10054,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10259,7 +10259,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10300,7 +10300,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10394,7 +10394,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10435,7 +10435,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10533,7 +10533,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10574,7 +10574,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10691,7 +10691,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10732,7 +10732,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10849,7 +10849,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -10890,7 +10890,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -10964,7 +10964,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11005,7 +11005,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11084,7 +11084,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11125,7 +11125,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11207,7 +11207,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11248,7 +11248,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11365,7 +11365,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11406,7 +11406,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11481,7 +11481,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11522,7 +11522,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11678,7 +11678,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11719,7 +11719,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -11875,7 +11875,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -11916,7 +11916,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12144,7 +12144,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12185,7 +12185,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12257,7 +12257,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12298,7 +12298,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12373,7 +12373,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12414,7 +12414,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12489,7 +12489,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12530,7 +12530,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12619,7 +12619,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12660,7 +12660,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12778,7 +12778,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12819,7 +12819,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12893,7 +12893,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -12934,7 +12934,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -12988,7 +12988,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -13129,7 +13129,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -13170,7 +13170,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -13432,7 +13432,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -13473,7 +13473,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -13638,7 +13638,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -13679,7 +13679,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -13796,7 +13796,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -13837,7 +13837,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -13959,7 +13959,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14000,7 +14000,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14211,7 +14211,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14252,7 +14252,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14440,7 +14440,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14481,7 +14481,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14635,7 +14635,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14676,7 +14676,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14730,7 +14730,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -14804,7 +14804,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -14845,7 +14845,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -14886,7 +14886,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Blocked attachments in Outlook"
+                      "text": "Blocked attachments in Outlook"
                     }
                   ],
                   "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
@@ -15005,7 +15005,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -15046,7 +15046,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -15184,7 +15184,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -15225,7 +15225,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -15310,7 +15310,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -15351,7 +15351,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -15454,7 +15454,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -15495,7 +15495,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -16139,7 +16139,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -16180,7 +16180,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -16284,7 +16284,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -16325,7 +16325,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -16442,7 +16442,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -16483,7 +16483,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -16564,7 +16564,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -16605,7 +16605,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -16887,7 +16887,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Use the Outlook REST APIs from an Outlook add-in"
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
@@ -16922,7 +16922,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -16963,7 +16963,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17045,7 +17045,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17086,7 +17086,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17175,7 +17175,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17216,7 +17216,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17291,7 +17291,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17332,7 +17332,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17572,7 +17572,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17613,7 +17613,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17721,7 +17721,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17762,7 +17762,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -17899,7 +17899,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -17940,7 +17940,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18108,7 +18108,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18149,7 +18149,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18290,7 +18290,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18331,7 +18331,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18448,7 +18448,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18489,7 +18489,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18594,7 +18594,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18635,7 +18635,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18745,7 +18745,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18786,7 +18786,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -18827,7 +18827,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Outlook Mail API"
+                      "text": "Outlook Mail API"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations"
@@ -18841,7 +18841,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Microsoft Graph"
+                      "text": "Microsoft Graph"
                     }
                   ],
                   "targetUrl": "http://graph.microsoft.io/"
@@ -18924,7 +18924,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -18965,7 +18965,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19093,7 +19093,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19134,7 +19134,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19261,7 +19261,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19302,7 +19302,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19428,7 +19428,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19469,7 +19469,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19595,7 +19595,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19636,7 +19636,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19724,7 +19724,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19765,7 +19765,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -19806,7 +19806,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " get attachments from the selected item"
+                      "text": "get attachments from the selected item"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item"
@@ -19953,7 +19953,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -19994,7 +19994,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -20127,7 +20127,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -20168,7 +20168,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -20209,7 +20209,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " authenticate the add-in and user with a third-party system"
+                      "text": "authenticate the add-in and user with a third-party system"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/authentication"
@@ -20398,7 +20398,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Specify permissions for mail add-in access to the user's mailbox"
+                      "text": "Specify permissions for mail add-in access to the user's mailbox"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -20497,7 +20497,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -20538,7 +20538,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -20681,7 +20681,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -20722,7 +20722,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -20810,7 +20810,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -20851,7 +20851,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -20892,7 +20892,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " REST API"
+                      "text": "REST API"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/rest/"
@@ -21039,7 +21039,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21206,7 +21206,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21321,7 +21321,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21423,7 +21423,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21604,7 +21604,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21745,7 +21745,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21860,7 +21860,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -21949,7 +21949,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -21990,7 +21990,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -22255,7 +22255,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -22296,7 +22296,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -22350,7 +22350,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -22491,7 +22491,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -22532,7 +22532,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -22802,7 +22802,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -22843,7 +22843,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -22983,7 +22983,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23024,7 +23024,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23099,7 +23099,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23140,7 +23140,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23241,7 +23241,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23282,7 +23282,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23382,7 +23382,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23423,7 +23423,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23511,7 +23511,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23552,7 +23552,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23627,7 +23627,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23668,7 +23668,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23743,7 +23743,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23784,7 +23784,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -23909,7 +23909,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -23950,7 +23950,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24031,7 +24031,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24072,7 +24072,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24190,7 +24190,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24231,7 +24231,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24305,7 +24305,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24346,7 +24346,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24469,7 +24469,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24510,7 +24510,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24721,7 +24721,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24762,7 +24762,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -24950,7 +24950,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -24991,7 +24991,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25145,7 +25145,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25186,7 +25186,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25268,7 +25268,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25309,7 +25309,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25363,7 +25363,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Office.context.mailbox.item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -25428,7 +25428,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25469,7 +25469,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25510,7 +25510,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Blocked attachments in Outlook"
+                      "text": "Blocked attachments in Outlook"
                     }
                   ],
                   "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
@@ -25565,7 +25565,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25606,7 +25606,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25688,7 +25688,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25729,7 +25729,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25818,7 +25818,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25859,7 +25859,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -25934,7 +25934,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -25975,7 +25975,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26050,7 +26050,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26091,7 +26091,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26237,7 +26237,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26278,7 +26278,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26416,7 +26416,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26457,7 +26457,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26552,7 +26552,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26593,7 +26593,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26679,7 +26679,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26720,7 +26720,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -26823,7 +26823,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -26864,7 +26864,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -27508,7 +27508,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -27549,7 +27549,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -27653,7 +27653,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -27694,7 +27694,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -27811,7 +27811,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -27852,7 +27852,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -27926,7 +27926,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -27967,7 +27967,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28049,7 +28049,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28090,7 +28090,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28372,7 +28372,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Use the Outlook REST APIs from an Outlook add-in"
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id"
@@ -28407,7 +28407,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28448,7 +28448,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28530,7 +28530,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28571,7 +28571,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28689,7 +28689,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28730,7 +28730,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28811,7 +28811,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28852,7 +28852,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -28927,7 +28927,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -28968,7 +28968,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29057,7 +29057,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29098,7 +29098,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29187,7 +29187,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29228,7 +29228,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29310,7 +29310,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29351,7 +29351,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29426,7 +29426,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29467,7 +29467,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29644,7 +29644,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29685,7 +29685,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -29817,7 +29817,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -29858,7 +29858,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30001,7 +30001,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30042,7 +30042,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30172,7 +30172,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30213,7 +30213,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30378,7 +30378,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30419,7 +30419,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30531,7 +30531,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30572,7 +30572,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30700,7 +30700,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30741,7 +30741,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -30882,7 +30882,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -30923,7 +30923,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -31127,7 +31127,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -31168,7 +31168,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -31371,7 +31371,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -31412,7 +31412,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -31803,7 +31803,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -31844,7 +31844,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -31938,7 +31938,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -31979,7 +31979,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32070,7 +32070,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32111,7 +32111,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32209,7 +32209,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32250,7 +32250,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32374,7 +32374,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32415,7 +32415,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32524,7 +32524,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32565,7 +32565,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32682,7 +32682,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32723,7 +32723,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -32860,7 +32860,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -32901,7 +32901,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33027,7 +33027,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Entities"
+                  "text": "Entities"
                 }
               ],
               "target": {
@@ -33067,7 +33067,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33108,7 +33108,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33222,7 +33222,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33263,7 +33263,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33380,7 +33380,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33421,7 +33421,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33565,7 +33565,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33606,7 +33606,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33746,7 +33746,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Minimum permission level"
+                  "text": "Minimum permission level"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33787,7 +33787,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": " Applicable Outlook mode"
+                  "text": "Applicable Outlook mode"
                 }
               ],
               "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33859,7 +33859,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -33900,7 +33900,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -33975,7 +33975,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -34016,7 +34016,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
@@ -34091,7 +34091,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Minimum permission level"
+                      "text": "Minimum permission level"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
@@ -34132,7 +34132,7 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": " Applicable Outlook mode"
+                      "text": "Applicable Outlook mode"
                     }
                   ],
                   "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
