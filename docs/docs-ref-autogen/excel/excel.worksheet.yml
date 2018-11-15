@@ -736,7 +736,7 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async (context) => {
+          await Excel.run(async context => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onChanged.add(onChange);
 

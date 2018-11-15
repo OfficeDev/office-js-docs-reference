@@ -47,7 +47,7 @@ items:
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
               settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
+              OfficeHelpers.UI.notify("Settings changed handler registered", "Press the next button to change the setting, then watch the console.");
 
               await context.sync();
           });
@@ -209,7 +209,7 @@ items:
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
               settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
+              OfficeHelpers.UI.notify("Settings changed handler registered", "Press the next button to change the setting, then watch the console.");
 
               await context.sync();
           });

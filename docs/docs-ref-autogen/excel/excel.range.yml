@@ -1205,22 +1205,30 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async (context) => {
-
-              const sheet = context.workbook.worksheets.getItem("Sample");    
+          await Excel.run(async context => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
               const salesTable = sheet.tables.getItem("SalesTable");
               const dataRange = salesTable.getDataBodyRange();
 
-              // Pass true so only cells with values count as used 
-              const usedDataRange = dataRange.getUsedRangeOrNullObject(true /* valuesOnly */);
+              // Pass true so only cells with values count as used
+              const usedDataRange = dataRange.getUsedRangeOrNullObject(
+                  true /* valuesOnly */
+              );
 
               //Must sync before reading value returned from *OrNullObject method/property.
               await context.sync();
 
               if (usedDataRange.isNullObject) {
-                  OfficeHelpers.UI.notify("Need Data to Make Chart", "To create a meaningful chart, add names to the Product column and numbers to some of the other cells. Then press 'Try to create chart' again.");            
-              } else {            
-                  const chart = sheet.charts.add(Excel.ChartType.columnClustered, dataRange, "Columns");
+                  OfficeHelpers.UI.notify(
+                      "Need Data to Make Chart",
+                      "To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again."
+                  );
+              } else {
+                  const chart = sheet.charts.add(
+                      Excel.ChartType.columnClustered,
+                      dataRange,
+                      "Columns"
+                  );
                   chart.setPosition("A15", "F30");
                   chart.title.text = "Quarterly sales chart";
                   chart.legend.position = "Right";

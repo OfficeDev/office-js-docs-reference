@@ -62099,7 +62099,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the taskpane supports pinning and was pinned by the user, it will be un-pinned."
+                  "text": "- Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. If the task pane supports pinning and was pinned by the user, it will be un-pinned."
                 },
                 {
                   "kind": "paragraph"
