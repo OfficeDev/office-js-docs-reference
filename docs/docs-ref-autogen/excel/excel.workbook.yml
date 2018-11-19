@@ -311,7 +311,7 @@ items:
 
               await context.sync();
 
-              OfficeHelpers.UI.notify("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
           });
           ```
   - uid: excel.Excel.Workbook.protection

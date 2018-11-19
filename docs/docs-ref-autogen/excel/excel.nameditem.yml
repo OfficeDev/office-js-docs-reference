@@ -82,7 +82,7 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async context => {
+          await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const totalName = sheet.names.getItemOrNullObject("TotalAmount");
               totalName.load();
@@ -129,14 +129,14 @@ items:
               await context.sync();
 
               if (myNamedItem.isNullObject) {
-                  OfficeHelpers.UI.notify(`There is no named item with the name "MyRange".`);
+                  OfficeHelpers.UI.notify(`There is no named item. Create it with "Add named item for a range" first.`);
               } else {                    
                   // Update named item to point to the second range
                   myNamedItem.formula = "=Sample!$B$10:$D$14";
                   sheet.getRange("B10:D14").select();
                   await context.sync();
 
-                  OfficeHelpers.UI.notify(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
+                  console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
               }
           });
           ```

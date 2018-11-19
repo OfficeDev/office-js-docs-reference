@@ -784,7 +784,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Mailbox.getUserIdentityTokenAsync
@@ -836,7 +838,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext

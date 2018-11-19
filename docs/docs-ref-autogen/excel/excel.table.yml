@@ -482,9 +482,7 @@ items:
               table.onChanged.add(onChange);
 
               await context.sync();
-
-              OfficeHelpers.UI.notify("A handler has been registered for the onChanged event",
-                  "Try changing a cell value in the table, and watch the console output.");
+              console.log("A handler has been registered for the onChanged event");
           });
           ```
   - uid: excel.Excel.Table.onSelectionChanged
@@ -512,9 +510,7 @@ items:
               table.onSelectionChanged.add(onSelectionChange);
 
               await context.sync();
-
-              OfficeHelpers.UI.notify("A handler has been registered for table onSelectionChanged event",
-                  "Try changing a range selection in the table, and watch the console output.");
+              console.log("A handler has been registered for table onSelectionChanged event");
           });
           ```
   - uid: excel.Excel.Table.reapplyFilters

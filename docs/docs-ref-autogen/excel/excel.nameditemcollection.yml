@@ -44,7 +44,7 @@ items:
           #### Examples
 
           ```typescript
-          await Excel.run(async context => {
+          await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const headerRange = sheet.getRange("A1:D1");
 

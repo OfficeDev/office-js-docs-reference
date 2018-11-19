@@ -49,6 +49,7 @@ items:
               } else {
                   console.log("Events are currently off.");
               }
+
               await context.sync();
           });
           ```

@@ -139,7 +139,7 @@ items:
 
                   await context.sync();
 
-                  console.log("Handler for table collection onChanged event has been triggered.  Data changed address : " + event.address);
+                  console.log("Handler for table collection onChanged event has been triggered. Data changed address: " + event.address);
                   console.log("Table Id : " + event.tableId);
                   console.log("Worksheet Id : " + worksheet.name);
               });
@@ -188,7 +188,7 @@ items:
 
                   await context.sync();
 
-                  console.log("Handler for table collection onChanged event has been triggered.  Data changed address : " + event.address);
+                  console.log("Handler for table collection onChanged event has been triggered. Data changed address: " + event.address);
                   console.log("Table Id : " + event.tableId);
                   console.log("Worksheet Id : " + worksheet.name);
               });
