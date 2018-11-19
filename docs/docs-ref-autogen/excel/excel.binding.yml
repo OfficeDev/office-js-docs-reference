@@ -237,7 +237,7 @@ items:
               const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
               salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
 
-              OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+              console.log("The data changed handler is registered.");
 
               await context.sync();
           });

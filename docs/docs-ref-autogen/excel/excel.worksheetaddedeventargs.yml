@@ -66,9 +66,9 @@ items:
 
           ```typescript
           async function onWorksheetAdd(event) {
-              await Excel.run(async context => {
+              await Excel.run(async (context) => {
                   console.log(
-                      "Handler for worksheet onAdded event has been triggered.  Newly added worksheet Id : " +
+                      "Handler for worksheet onAdded event has been triggered. Newly added worksheet Id : " +
                       event.worksheetId
                   );
               });

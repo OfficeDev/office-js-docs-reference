@@ -114,7 +114,7 @@ items:
 
               await context.sync();
 
-              OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+              console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
           });
           ```
   - uid: excel.Excel.Style.fill

@@ -26339,7 +26339,34 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.value",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property. If there was an error, then the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.error",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " and "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.diagnostics",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " properties may provide additional information."
                     }
                   ],
                   "isOptional": false,
@@ -26550,7 +26577,34 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.value",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property. If there was an error, then the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.error",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " and "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.diagnostics",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " properties may provide additional information."
                     }
                   ],
                   "isOptional": false,
