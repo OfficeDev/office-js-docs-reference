@@ -54,7 +54,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Image
-    summary: 'Data is returned or set as an image stream. Note: Only applies to data in Excel, Word and PowerPoint.'
+    summary: 'Data is returned or set as an image stream. Note: Only applies to data in Excel, Word, and PowerPoint.'
     name: Image
     fullName: Image
     langs:
