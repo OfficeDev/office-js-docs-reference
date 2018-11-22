@@ -240,7 +240,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -276,7 +276,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -314,7 +314,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -344,7 +344,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -378,7 +378,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
@@ -409,7 +409,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td> Y               </td><td>                </td></tr>
@@ -464,7 +464,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td> Y               </td><td>                </td></tr>
@@ -528,7 +528,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
         *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -539,7 +539,7 @@ export declare namespace Office {
         */
         asyncContext: any;
         /**
-        * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
+        * Gets an object that may provide additional information if an error occurred.
         *
         * @remarks
         * 
@@ -554,6 +554,37 @@ export declare namespace Office {
         * *Supported hosts, by platform*
         *  <table>
         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+        *   <tr><td><strong>Outlook</strong></td><td> Y (Mailbox Preview)    </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
+        *  </table>
+        * 
+        * *Supported APIs*
+        * 
+        * `Office.context.mailbox.item.getCallbackTokenAsync`, `Office.context.mailbox.item.getUserIdentityTokenAsync`
+        * 
+        * *Supported errors*
+        * <table>
+        *   <tr><th>`AsyncResult.error.name`            </th><th>`AsyncResult.error.message`                                                                       </th><th>Description of diagnostics object returned                                                                                          </th></tr>
+        *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., `{"HTTPCode":"401"}`                                                                     </td></tr>
+        *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
+        * </table>
+        */
+       diagnostics: any;
+       /**
+        * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
+        *
+        * @remarks
+        * 
+        * **Support details**
+        * 
+        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
+        * An empty cell indicates that the Office host application doesn't support this enumeration.
+        * 
+        * For more information about Office host application and server requirements, see 
+        * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+        * 
+        * *Supported hosts, by platform*
+        *  <table>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -608,7 +639,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -645,9 +676,9 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for iPad </th></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y               </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y               </td></tr>
+        *   <tr><th>                        </th><th> Office for iPad </th></tr>
+        *   <tr><td><strong> Excel </strong></td><td> Y               </td></tr>
+        *   <tr><td><strong> Word  </strong></td><td> Y               </td></tr>
         *  </table>
         */
         commerceAllowed: boolean;
@@ -670,7 +701,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -708,7 +739,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
         *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -733,7 +764,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
@@ -813,7 +844,7 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for iPad </th></tr>
+        *   <tr><th>                             </th><th> Office for iPad </th></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y               </td></tr>
         *   <tr><td><strong> PowerPoint </strong></td><td> Y               </td></tr>
         *   <tr><td><strong> Word       </strong></td><td> Y               </td></tr>
@@ -842,7 +873,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -893,8 +924,8 @@ export declare namespace Office {
              * 
              * *Supported hosts, by platform*
              *  <table>
-             *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-             *   <tr><td><strong> Outlook    </strong></td><td> Y (Mailbox 1.3)            </td><td>                            </td><td>                 </td></tr>
+             *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+             *   <tr><td><strong> Outlook </strong></td><td> Y (Mailbox 1.3)            </td><td>                            </td><td>                 </td></tr>
              *  </table>
              */
             source:Source;
@@ -926,7 +957,7 @@ export declare namespace Office {
              * 
              * *Supported hosts, by platform*
              *  <table>
-             *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+             *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
              *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
              *   <tr><td><strong> Outlook    </strong></td><td> Y (Mailbox 1.3)            </td><td>                            </td><td>                 </td></tr>
              *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
@@ -1075,8 +1106,8 @@ export declare namespace Office {
          *
          * - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
          *
-         * - Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. 
-         * If the taskpane supports pinning and was pinned by the user, it will be un-pinned.
+         * - Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. 
+         * If the task pane supports pinning and was pinned by the user, it will be un-pinned.
          *
          * - Called from a module extension: No effect.
          */
@@ -1468,7 +1499,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y (in preview)             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td></tr>
@@ -1535,10 +1566,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+     *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
      *  </table>
      */
     export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;
@@ -1557,8 +1588,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum ActiveView {
@@ -1585,10 +1616,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Access </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+     *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum BindingType {
@@ -1624,7 +1655,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
      *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
@@ -1673,7 +1704,7 @@ export declare namespace Office {
         SlideRange,
         /**
         * Data is returned or set as an image stream.
-        * Note: Only applies to data in Excel, Word and PowerPoint.
+        * Note: Only applies to data in Excel, Word, and PowerPoint.
         */
         Image
     }
@@ -1694,11 +1725,11 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum DocumentMode {
@@ -1727,8 +1758,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum CustomXMLNodeType {
@@ -1781,7 +1812,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
@@ -1803,7 +1834,7 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
          *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          */
@@ -1839,10 +1870,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          */
         BindingDataChanged,
@@ -1862,10 +1893,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *  </table>
          */
         BindingSelectionChanged,
@@ -1890,16 +1921,16 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
          *  </table>
          */
         DocumentSelectionChanged,
         /**
-         * Triggers when the selected Outlook item is changed.
+         * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
          * 
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.5]
          */
         ItemChanged,
         /**
@@ -1951,7 +1982,7 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
          *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
          *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
@@ -1984,10 +2015,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum FileType {
@@ -2019,10 +2050,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><td><strong> Excel   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><td><strong> Word    </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
      *  </table>
      */
     enum FilterType {
@@ -2050,7 +2081,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
@@ -2098,7 +2129,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *  </table>
      */
@@ -2135,7 +2166,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
@@ -2170,10 +2201,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><td><strong> Excel   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
+     *   <tr><td><strong> Word    </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
      *  </table>
      */
     enum ValueFormat {
@@ -2191,7 +2222,7 @@ export declare namespace Office {
     * Represents a binding to a section of the document.
     *
     * @remarks
-    * <table><tr><td>Requirement Sets</td><td>MatrixBinding, TableBinding, TextBinding</td></tr></table>
+    * <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
     *
     * The Binding object exposes the functionality possessed by all bindings regardless of type.
     *
@@ -2211,10 +2242,10 @@ export declare namespace Office {
     * 
     * *Supported hosts, by platform*
     *  <table>
-    *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+    *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+    *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+    *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
     *  </table>
     */
     export interface Binding {
@@ -2498,10 +2529,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          */
         document: Document;
@@ -2539,10 +2570,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          * @param itemName - Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
          * @param bindingType - The {@link Office.BindingType} for the data. The method returns null if the selected object cannot be coerced into the specified type.
@@ -2570,9 +2601,9 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param bindingType - Specifies the type of the binding object to create. Required. 
@@ -2605,10 +2636,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param bindingType - Specifies the type of the binding object to create. Required. 
@@ -2634,10 +2665,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -2663,10 +2694,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param id - Specifies the unique name of the binding object. Required.
@@ -2693,10 +2724,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param id - Specifies the unique name to be used to identify the binding object. Required.
@@ -2721,8 +2752,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface CustomXmlNode {
@@ -2844,8 +2875,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface CustomXmlPart {
@@ -2936,8 +2967,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface NodeDeletedEventArgs {
@@ -2973,8 +3004,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface NodeInsertedEventArgs  {
@@ -3004,8 +3035,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface NodeReplacedEventArgs  {
@@ -3044,8 +3075,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface CustomXmlParts {
@@ -3095,8 +3126,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                       </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Word </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface CustomXmlPrefixMappings {
@@ -3165,10 +3196,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          */
         bindings: Bindings;
@@ -3187,8 +3218,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          */
         customXmlParts: CustomXmlParts;
@@ -3207,11 +3238,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          */
         mode: DocumentMode;
@@ -3230,11 +3261,12 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+         *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td><</tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
          *  </table>
          */
         settings: Settings;
@@ -3253,7 +3285,7 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
          *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
          *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
          *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
@@ -3279,11 +3311,12 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param eventType - For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
@@ -3311,10 +3344,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3338,13 +3369,13 @@ export declare namespace Office {
          * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
          * the host:
          *
-         * Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
+         * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+         * 
+         * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+         * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
-         *
-         * Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`
+         * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
          * 
          * **Support details**
          * 
@@ -3356,10 +3387,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -3386,10 +3417,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3437,15 +3468,15 @@ export declare namespace Office {
          *     <th>Supported coercionType</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+         *     <td>Excel, PowerPoint, Project, and Word</td>
          *     <td>`Office.CoercionType.Text` (string)</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel, Word, and Word Online</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, Word, and Word Online</td>
+         *     <td>Access, Excel, and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3453,7 +3484,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Html`</td>
          *   </tr>
          *   <tr>
-         *     <td>Word and Word Online </td>
+         *     <td>Word</td>
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
@@ -3472,12 +3503,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          * 
          * @param coercionType - The type of data structure to return. See the remarks section for each host's supported coercion types.
@@ -3519,10 +3549,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param id - The identifier of the object or location to go to.
@@ -3548,10 +3578,12 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param eventType - The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -3600,15 +3632,15 @@ export declare namespace Office {
          *     <th>Supported coercionType</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+         *     <td>Excel, PowerPoint, Project, and Word</td>
          *     <td>`Office.CoercionType.Text` (string)</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel, Word, and Word Online</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, Word, and Word Online</td>
+         *     <td>Access, Excel, and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3616,7 +3648,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Html`</td>
          *   </tr>
          *   <tr>
-         *     <td>Word and Word Online </td>
+         *     <td>Word</td>
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
@@ -3635,11 +3667,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          * 
          * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3691,8 +3723,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
@@ -3716,8 +3748,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -3739,8 +3771,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -3762,8 +3794,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -3787,8 +3819,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
@@ -3814,8 +3846,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
@@ -3839,8 +3871,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
@@ -3864,8 +3896,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;
@@ -3916,8 +3948,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void): void;
@@ -3943,8 +3975,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -3970,8 +4002,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -3998,8 +4030,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
@@ -4026,8 +4058,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+         *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+         *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
          *  </table>
          */
         setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
@@ -4061,9 +4093,10 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface File {
@@ -4179,9 +4212,9 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface MatrixBinding extends Binding {
@@ -4274,8 +4307,9 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
          *  </table>
          */
         addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
@@ -4295,11 +4329,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param settingName - The case-sensitive name of the setting to retrieve.
@@ -4355,11 +4389,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
          *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
          *  </table>
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -4388,11 +4422,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param settingName - The case-sensitive name of the setting to remove.
@@ -4424,10 +4458,9 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
          *  </table>
          *
          * @param eventType - Specifies the type of event to remove. Required.
@@ -4481,11 +4514,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          * 
          * @param options - Provides options for saving settings.
@@ -4517,11 +4550,11 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          * 
          * @param settingName - The case-sensitive name of the setting to set or create.
@@ -4560,9 +4593,9 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
+     *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><td><strong> Excel </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
+     *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
      *  </table>
      */
     export interface SettingsChangedEventArgs {
@@ -4593,7 +4626,7 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
      *  </table>
@@ -4645,10 +4678,10 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+        *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+        *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+        *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+        *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
         *  </table>
         */
         columnCount: number;
@@ -4667,10 +4700,10 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+        *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+        *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+        *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+        *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
         *  </table>
         */
         hasHeaders: boolean;
@@ -4702,10 +4735,10 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+        *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+        *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+        *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+        *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
         *  </table>
         */
         rowCount: number;
@@ -4735,15 +4768,16 @@ export declare namespace Office {
          * 
          * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
          * An empty cell indicates that the Office host application doesn't support this method.
-        * 
+         * 
          * For more information about Office host application and server requirements, see 
          * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
          *  </table>
          *
          * @param tableData - An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
@@ -4780,10 +4814,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
          *  </table>
          *
          * @param rows - An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.
@@ -4808,10 +4842,10 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+         *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+         *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -4834,8 +4868,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -5000,8 +5034,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param cellFormat - An array that contains one or more JavaScript objects that specify which cells to target and the formatting to apply to them.
@@ -5052,8 +5086,8 @@ export declare namespace Office {
          * 
          * *Supported hosts, by platform*
          *  <table>
-         *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+         *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+         *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
          *  </table>
          *
          * @param tableOptions - An object literal containing a list of property name-value pairs that define the table options to apply.
@@ -5130,8 +5164,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     enum Table {
@@ -5167,9 +5201,9 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+     *   <tr><th>                        </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+     *   <tr><td><strong> Excel </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
      *  </table>
      */
     export interface TextBinding extends Binding { }
@@ -5190,8 +5224,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
      *  </table>
      */
     enum ProjectProjectFields {
@@ -5266,8 +5300,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
      *  </table>
      */
     enum ProjectResourceFields {
@@ -6093,8 +6127,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
      *  </table>
      */
     enum ProjectTaskFields {
@@ -7255,8 +7289,8 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td></tr>
+     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
      *  </table>
      */
     enum ProjectViewTypes {

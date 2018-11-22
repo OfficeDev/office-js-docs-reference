@@ -52,9 +52,9 @@ items:
               await context.sync();
 
               if (needsReview.isNullObject) {
-                  OfficeHelpers.UI.notify("The setting has been deleted");
+                  console.log("The setting has been deleted");
               } else {
-                  OfficeHelpers.UI.notify("The setting was not deleted");
+                  console.log("The setting was not deleted");
               }
 
               await context.sync();

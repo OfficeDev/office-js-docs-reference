@@ -47,9 +47,9 @@ items:
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
               settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
 
               await context.sync();
+              console.log("Settings changed handler registered.");
           });
           ```
       parameters:
@@ -127,9 +127,9 @@ items:
               await context.sync();
 
               if (needsReview.isNullObject) {
-                  OfficeHelpers.UI.notify("The setting has been deleted");
+                  console.log("The setting has been deleted");
               } else {
-                  OfficeHelpers.UI.notify("The setting was not deleted");
+                  console.log("The setting was not deleted");
               }
 
               await context.sync();
@@ -209,9 +209,9 @@ items:
           await Excel.run(async (context) => {
               const settings = context.workbook.settings; 
               settings.onSettingsChanged.add(onChangedSetting);
-              OfficeHelpers.UI.notify("Handler registered", "");
 
               await context.sync();
+              console.log("Settings changed handler registered.");
           });
           ```
   - uid: excel.Excel.SettingCollection.toJSON

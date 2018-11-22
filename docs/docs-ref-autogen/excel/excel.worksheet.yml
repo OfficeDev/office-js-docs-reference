@@ -299,7 +299,7 @@ items:
 
               let firstYear = firstSheet.name.substr(5, 4);
               let lastYear = lastSheet.name.substr(5, 4);
-              OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
 
               await context.sync();
           });
@@ -368,7 +368,7 @@ items:
 
               let currentYear = currentSheet.name.substr(5, 4);
               let previousYear = previousYearSheet.name.substr(5, 4);
-              OfficeHelpers.UI.notify("Two Year Tax Due Comparison", `Tax due for ${currentYear} was ${currentTaxDueRange.text[0][0]}\nTax due for ${previousYear} was ${previousTaxDueRange.text[0][0]}`)
+              console.log("Two Year Tax Due Comparison", `Tax due for ${currentYear} was ${currentTaxDueRange.text[0][0]}\nTax due for ${previousYear} was ${previousTaxDueRange.text[0][0]}`)
 
               await context.sync();
           });
@@ -741,8 +741,7 @@ items:
               sheet.onChanged.add(onChange);
 
               await context.sync();
-
-              OfficeHelpers.UI.notify("A handler has been registered for the onChanged event.");
+              console.log("A handler has been registered for the onChanged event.");
           });
           ```
   - uid: excel.Excel.Worksheet.onDeactivated

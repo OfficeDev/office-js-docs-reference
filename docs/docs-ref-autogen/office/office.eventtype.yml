@@ -191,9 +191,9 @@ items:
     type: field
   - uid: office.Office.EventType.ItemChanged
     summary: |-
-      Triggers when the selected Outlook item is changed.
+      Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
 
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: ItemChanged
     fullName: ItemChanged
     langs:

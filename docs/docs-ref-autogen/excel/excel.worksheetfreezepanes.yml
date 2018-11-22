@@ -172,7 +172,7 @@ items:
               if (frozenRange.isNullObject) {
                   OfficeHelpers.UI.notify(`The worksheet does not contain a frozen pane.`);
               } else {
-                  OfficeHelpers.UI.notify(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
+                  console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
               }
           });
           ```

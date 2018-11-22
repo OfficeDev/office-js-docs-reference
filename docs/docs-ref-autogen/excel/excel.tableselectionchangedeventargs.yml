@@ -39,7 +39,7 @@ items:
           ```typescript
           async function onSelectionChange(args) {
               await Excel.run(async (context) => {
-                  console.log("Handler for table onSelectionChanged event has been triggered.  The new selection is : " + args.address);
+                  console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
               });
           }
           ```

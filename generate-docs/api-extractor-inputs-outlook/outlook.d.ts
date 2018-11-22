@@ -8031,7 +8031,8 @@ export declare namespace Office {
          *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
          *        asyncContext: Any state data that is passed to the asynchronous method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+         *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
+         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          */
         getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result: AsyncResult<string>) => void): void;
         /**
@@ -8058,7 +8059,8 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
-         *                 The token is provided as a string in the asyncResult.value property.
+         *                 The token is provided as a string in the `asyncResult.value` property.
+         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          */
         getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;
         /**
@@ -8085,7 +8087,8 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+         *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
+         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;
@@ -8107,7 +8110,8 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
-         *                 The token is provided as a string in the asyncResult.value property.
+         *                 The token is provided as a string in the `asyncResult.value` property.
+         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
          */
         getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;

@@ -150,6 +150,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -175,6 +187,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -2224,6 +2248,486 @@
                 {
                   "kind": "text",
                   "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "diagnostics": {
+              "kind": "property",
+              "signature": "diagnostics: any;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "any",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an object that may provide additional information if an error occurred."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "**Support details**"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For more information about Office host application and server requirements, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Requirements for running Office Add-ins"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "*Supported hosts, by platform* "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Windows desktop "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office Online (in browser) "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for iPad "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " OWA for Devices "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Outlook"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y (Mailbox Preview) "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "*Supported APIs*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.context.mailbox.item.getCallbackTokenAsync",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", "
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.context.mailbox.item.getUserIdentityTokenAsync",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "*Supported errors* "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "code",
+                  "text": "AsyncResult.error.name",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "code",
+                  "text": "AsyncResult.error.message",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Description of diagnostics object returned "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": "HTTPRequestFailure"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "The request has failed. Please look at the diagnostics object for the HTTP error code. "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "The HTTP error code in a JSON object e.g., "
+                },
+                {
+                  "kind": "code",
+                  "text": "{\"HTTPCode\":\"401\"}",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InternalServerError"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "The Exchange server returned an error. Please look at the diagnostics object for more information."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "The error message from the Exchange server in a JSON object e.g., "
+                },
+                {
+                  "kind": "code",
+                  "text": "{\"ErrorText\": \"The mailbox database is temporarily unavailable\"}",
+                  "highlighter": "plain"
                 },
                 {
                   "kind": "html-tag",
@@ -5268,7 +5772,7 @@
             },
             {
               "kind": "text",
-              "text": "MatrixBinding, TableBinding, TextBinding"
+              "text": "MatrixBindings, TableBindings, TextBindings"
             },
             {
               "kind": "html-tag",
@@ -5457,6 +5961,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -5506,6 +6022,18 @@
             {
               "kind": "text",
               "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
             },
             {
               "kind": "html-tag",
@@ -5593,6 +6121,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -5618,6 +6158,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -7953,6 +8505,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8002,6 +8566,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -8089,6 +8665,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8114,6 +8702,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -8408,6 +9008,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8476,6 +9088,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8501,6 +9125,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -8802,6 +9438,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8851,6 +9499,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -8938,6 +9598,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -8963,6 +9635,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -9157,6 +9841,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -9206,6 +9902,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -9293,6 +10001,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -9318,6 +10038,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -9594,6 +10326,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -9643,6 +10387,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -9730,6 +10486,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -9755,6 +10523,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -10049,6 +10829,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -10098,6 +10890,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -10185,6 +10989,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -10210,6 +11026,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -10495,6 +11323,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -10544,6 +11384,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -10631,6 +11483,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -10656,6 +11520,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -11243,6 +12119,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -11311,6 +12199,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -11336,6 +12236,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -11447,6 +12359,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -11490,7 +12414,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Data is returned or set as an image stream. Note: Only applies to data in Excel, Word and PowerPoint."
+                  "text": "Data is returned or set as an image stream. Note: Only applies to data in Excel, Word, and PowerPoint."
                 }
               ],
               "remarks": [],
@@ -15507,6 +16431,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -15532,6 +16468,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -16915,6 +17863,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -16940,6 +17900,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -17172,6 +18144,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -17197,6 +18181,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -18025,6 +19021,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -18074,6 +19082,18 @@
             {
               "kind": "text",
               "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -18533,6 +19553,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -18581,7 +19613,19 @@
             },
             {
               "kind": "text",
-              "text": " "
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -19472,6 +20516,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -19540,6 +20596,98 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " OneNote "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -19565,6 +20713,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -19676,6 +20836,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -19701,6 +20873,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -19892,6 +21076,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -19941,6 +21137,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -20028,6 +21236,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -20053,6 +21273,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -20229,6 +21461,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -20277,7 +21521,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -20537,71 +21793,15 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "</tr>"
+                  "token": "<th>"
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Office for Mac "
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<strong>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Excel "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</strong>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
+                  "token": "</th>"
                 },
                 {
                   "kind": "html-tag",
@@ -20666,62 +21866,6 @@
                 {
                   "kind": "text",
                   "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<strong>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Word "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</strong>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -20919,7 +22063,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel Online, Win32, Mac, and iOS: "
+                  "text": "Excel for Windows desktop, iPad, and Excel Online: "
                 },
                 {
                   "kind": "code",
@@ -20931,7 +22075,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: "
+                  "text": "Excel for Mac: "
                 },
                 {
                   "kind": "code",
@@ -20952,7 +22096,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Word on Windows desktop, Word on Mac, and Word Online: "
+                  "text": "PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: "
                 },
                 {
                   "kind": "code",
@@ -20969,24 +22113,24 @@
                   "highlighter": "plain"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Word for Windows desktop, Mac, iPad, and Word Online: "
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.FileType.Compressed",
+                  "highlighter": "plain"
+                },
+                {
                   "kind": "text",
                   "text": ", "
                 },
                 {
                   "kind": "code",
-                  "text": "Office.FileType.Text",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Word on iPad: "
-                },
-                {
-                  "kind": "code",
-                  "text": "Office.FileType.Compressed",
+                  "text": "Office.FileType.Pdf",
                   "highlighter": "plain"
                 },
                 {
@@ -21102,6 +22246,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -21150,7 +22306,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -21162,7 +22318,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -21195,6 +22363,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -21286,7 +22466,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -21563,6 +22755,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -21588,6 +22792,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -21699,6 +22915,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -21724,6 +22952,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -23506,7 +24746,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online"
+                  "text": "Excel, PowerPoint, Project, and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -23559,7 +24799,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Word, and Word Online"
+                  "text": "Excel and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -23612,7 +24852,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Access, Excel, Word, and Word Online"
+                  "text": "Access, Excel, and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -23714,7 +24954,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Word and Word Online "
+                  "text": "Word"
                 },
                 {
                   "kind": "html-tag",
@@ -23910,71 +25150,15 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "</tr>"
+                  "token": "<th>"
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Office for Mac "
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<strong>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Access "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</strong>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
+                  "token": "</th>"
                 },
                 {
                   "kind": "html-tag",
@@ -24003,6 +25187,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -24114,6 +25310,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -24162,7 +25370,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -24230,7 +25450,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -26335,6 +27567,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -26360,6 +27604,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -26471,6 +27727,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -26520,6 +27788,18 @@
                 {
                   "kind": "text",
                   "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -26671,6 +27951,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -26739,6 +28031,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -26764,6 +28068,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -26875,6 +28191,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -26900,6 +28228,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -27179,6 +28519,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -27240,6 +28592,98 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " OneNote "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -27315,6 +28759,98 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Project "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -27340,6 +28876,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -28853,7 +30401,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online"
+                  "text": "Excel, PowerPoint, Project, and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -28906,7 +30454,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Word, and Word Online"
+                  "text": "Excel and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -28959,7 +30507,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Access, Excel, Word, and Word Online"
+                  "text": "Access, Excel, and Word"
                 },
                 {
                   "kind": "html-tag",
@@ -29061,7 +30609,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Word and Word Online "
+                  "text": "Word"
                 },
                 {
                   "kind": "html-tag",
@@ -29257,71 +30805,15 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "</tr>"
+                  "token": "<th>"
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Office for Mac "
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<strong>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Access "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</strong>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
+                  "token": "</th>"
                 },
                 {
                   "kind": "html-tag",
@@ -29350,6 +30842,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -29461,6 +30965,98 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Project "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -29486,6 +31082,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -29928,6 +31536,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -29977,6 +31597,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -30064,6 +31696,106 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " OneNote "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -30132,6 +31864,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -30197,6 +31945,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -30789,6 +32553,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -30814,6 +32590,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -30925,6 +32713,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -30962,6 +32762,18 @@
             {
               "kind": "text",
               "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
             },
             {
               "kind": "html-tag",
@@ -31042,6 +32854,18 @@
             {
               "kind": "text",
               "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -33178,14 +35002,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the selected Outlook item is changed."
+                  "text": "Triggers when a different Outlook item is selected for viewing while the task pane is pinned."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.1]"
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [],
@@ -34390,6 +36214,98 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<strong>"
+            },
+            {
+              "kind": "text",
+              "text": " Excel "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -34458,6 +36374,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -34483,6 +36411,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -35583,6 +37523,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -35608,6 +37560,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -35719,6 +37683,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -35744,6 +37720,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -39809,6 +41797,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -39877,6 +41877,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -39902,6 +41914,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -40269,6 +42293,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -40317,7 +42353,19 @@
             },
             {
               "kind": "text",
-              "text": " "
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -40575,6 +42623,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -40623,7 +42683,19 @@
             },
             {
               "kind": "text",
-              "text": " "
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -40822,6 +42894,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -40870,7 +42954,19 @@
             },
             {
               "kind": "text",
-              "text": " "
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -51918,6 +54014,74 @@
                     },
                     {
                       "kind": "text",
+                      "text": " Access "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</strong>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " Y "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</td>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "</tr>"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<tr>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<td>"
+                    },
+                    {
+                      "kind": "html-tag",
+                      "token": "<strong>"
+                    },
+                    {
+                      "kind": "text",
                       "text": " Excel "
                     },
                     {
@@ -52226,6 +54390,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -52294,6 +54470,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -52319,6 +54507,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -52430,6 +54630,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -52455,6 +54667,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -53134,7 +55358,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -53202,7 +55426,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -53270,7 +55494,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -53479,6 +55703,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -53547,6 +55783,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -53572,6 +55820,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -53683,6 +55943,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -53731,7 +56003,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " "
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -54111,66 +56395,10 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "text",
                   "text": " "
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<strong>"
-                },
-                {
-                  "kind": "text",
-                  "text": " PowerPoint "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</strong>"
-                },
-                {
-                  "kind": "html-tag",
                   "token": "</td>"
                 },
                 {
@@ -54191,19 +56419,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " Y "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": " Y "
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -54660,6 +56876,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -54728,6 +56956,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -54753,6 +56993,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -54864,6 +57116,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -54889,6 +57153,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -55145,6 +57421,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -55213,6 +57501,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -55238,6 +57538,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -55349,6 +57661,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -55374,6 +57698,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -56448,6 +58784,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -56473,6 +58821,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -56873,6 +59233,98 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<strong>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Access "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -56941,6 +59393,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -57006,6 +59474,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -57236,6 +59720,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -57285,6 +59781,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -57372,6 +59880,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -57437,6 +59961,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -57641,6 +60181,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -57666,6 +60218,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -57841,6 +60405,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -57890,6 +60466,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -57977,6 +60565,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -58042,6 +60646,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -58233,6 +60853,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -58282,6 +60914,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -58369,6 +61013,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -58434,6 +61094,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59083,6 +61759,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -59132,6 +61820,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -59219,6 +61919,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -59284,6 +62000,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59474,6 +62206,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -59523,6 +62267,18 @@
                 {
                   "kind": "text",
                   "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
                 },
                 {
                   "kind": "html-tag",
@@ -59610,6 +62366,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -59675,6 +62447,22 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -60555,6 +63343,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -60580,6 +63380,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -61155,6 +63967,18 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<th>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Office for Mac "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</th>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</tr>"
                 },
                 {
@@ -61180,6 +64004,18 @@
                 {
                   "kind": "html-tag",
                   "token": "</strong>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " Y "
                 },
                 {
                   "kind": "html-tag",
@@ -61834,6 +64670,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<th>"
+            },
+            {
+              "kind": "text",
+              "text": " Office for Mac "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</th>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -61902,6 +64750,18 @@
             },
             {
               "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
               "token": "</tr>"
             },
             {
@@ -61927,6 +64787,18 @@
             {
               "kind": "html-tag",
               "token": "</strong>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": " Y "
             },
             {
               "kind": "html-tag",
@@ -62099,7 +64971,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the taskpane supports pinning and was pinned by the user, it will be un-pinned."
+                  "text": "- Called from a task pane: The task pane will close. Any dialog opened by displayDialogAsync will also close. If the task pane supports pinning and was pinned by the user, it will be un-pinned."
                 },
                 {
                   "kind": "paragraph"

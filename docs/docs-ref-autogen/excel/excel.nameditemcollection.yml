@@ -46,34 +46,13 @@ items:
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
-              const headerRange = sheet.getRange("A1:E1");
+              const headerRange = sheet.getRange("A1:D1");
+
               sheet.names.add("ExpensesHeader", headerRange);
               const namedItems = sheet.names.load("name, type");
 
               await context.sync();
-
-              let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
-              for (let i = 0; i < namedItems.items.length; i++) {
-                  namedItemsList += JSON.stringify(namedItems.items[i]);
-              }
-              OfficeHelpers.UI.notify(namedItemsList);
-
-              await context.sync();
           });
-          ```
-          ```typescript
-          try {
-              await Excel.run(async (context) => {
-                  const sheet = context.workbook.worksheets.getItem("Sample");
-                  sheet.names.add("TotalAmount", "=SUM(ExpensesTable[AMOUNT])");
-                  sheet.getRange("D11").values = [["=TotalAmount"]];
-                  await context.sync();
-              });
-          }
-          catch (error) {
-              OfficeHelpers.UI.notify(error);
-              OfficeHelpers.Utilities.log(error);
-          }
           ```
       parameters:
         - id: name

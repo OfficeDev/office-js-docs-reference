@@ -236,11 +236,11 @@ items:
 
       // The following example sets the recurrence pattern of an appointment series.
 
-      var seriesTimeObject = new SeriesTime(); 
+      var seriesTimeObject = new Office.SeriesTime(); 
 
-      seriesTimeObject.setStartDate(2017,11,2);  
+      seriesTimeObject.setStartDate(2017,10,2);  
 
-      seriesTimeObject.setEndDate(2017,12,2); 
+      seriesTimeObject.setEndDate(2017,11,2); 
 
       seriesTimeObject.setStartTime(10,30); 
 
@@ -249,11 +249,18 @@ items:
 
       var pattern = {
           "seriesTime": seriesTimeObject,
-          "type": "weekly",
-          "properties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+          "recurrenceType": "weekly",
+          "recurrenceProperties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
+          "recurrenceTimeZone": {"name": "Pacific Standard Time"}};
 
-      Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
+      Office.context.mailbox.item.recurrence.setAsync(pattern, callback);
+
+
+      function callback(asyncResult)
+
+      {
+          console.log(JSON.stringify(asyncResult)); 
+      }
 
 
       //Result: This created a recurring event from November 2, 2017 to December 2, 2017
