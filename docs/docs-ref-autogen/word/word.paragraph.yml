@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - OfficeExtension.ClientObject
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Paragraph.alignment
@@ -589,10 +589,8 @@ items:
         type:
           - word.Word.InlinePictureCollection
   - uid: word.Word.Paragraph.insertBreak
-    summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -912,7 +910,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.Paragraph.insertParagraph
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -992,10 +990,8 @@ items:
           type:
             - Word.InsertLocation
   - uid: word.Word.Paragraph.insertTable
-    summary: >-
-      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a table with the specified number of rows and columns.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
