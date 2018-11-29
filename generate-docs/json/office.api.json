@@ -31749,10 +31749,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -31831,10 +31827,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -31917,10 +31909,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -31999,10 +31987,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59446,10 +59430,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -59528,10 +59508,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59933,10 +59909,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -60015,10 +59987,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -60618,10 +60586,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -60700,10 +60664,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -61066,10 +61026,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -61148,10 +61104,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -61972,10 +61924,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -62054,10 +62002,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -62419,10 +62363,6 @@
                   "token": "</td>"
                 },
                 {
-                  "kind": "text",
-                  "text": "<"
-                },
-                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -62501,10 +62441,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
