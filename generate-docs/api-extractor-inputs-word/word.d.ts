@@ -1759,7 +1759,7 @@ export declare namespace Word {
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1769,7 +1769,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1786,7 +1786,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a document at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1796,7 +1796,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a document at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1806,7 +1806,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts HTML at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1816,7 +1816,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts HTML at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1846,7 +1846,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         * Inserts OOXML at the specified location.  
          *
          * [Api set: WordApi 1.2]
          *
@@ -1856,7 +1856,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         * Inserts OOXML at the specified location.  
          *
          * [Api set: WordApi 1.2]
          *
@@ -1866,7 +1866,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1876,7 +1876,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1886,7 +1886,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts text at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -1896,7 +1896,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts text at the specified location. 
          *
          * [Api set: WordApi 1.2]
          *
@@ -2671,7 +2671,7 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -2681,7 +2681,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -2778,7 +2778,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -2788,7 +2788,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -2798,7 +2798,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -2810,7 +2810,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -3232,7 +3232,7 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -3242,7 +3242,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -3339,7 +3339,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -3349,7 +3349,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.1]
          *
@@ -3359,7 +3359,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -3371,7 +3371,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -4185,7 +4185,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -4195,7 +4195,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -4205,7 +4205,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *
@@ -4217,7 +4217,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a table with the specified number of rows and columns. 
          *
          * [Api set: WordApi 1.3]
          *

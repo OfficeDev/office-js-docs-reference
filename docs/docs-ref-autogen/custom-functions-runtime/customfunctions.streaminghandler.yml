@@ -12,7 +12,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - CancelableHandler
+      - custom-functions-runtime.CustomFunctions.CancelableHandler
     package: custom-functions-runtime
     children:
       - custom-functions-runtime.CustomFunctions.StreamingHandler.setResult

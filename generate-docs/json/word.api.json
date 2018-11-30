@@ -7820,7 +7820,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a break at the specified location in the main document."
                 },
                 {
                   "kind": "paragraph"
@@ -7907,7 +7907,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a document at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -7963,7 +7963,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts HTML at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -8075,7 +8075,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts OOXML at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -8131,7 +8131,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a paragraph at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -8187,7 +8187,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts text at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -21734,7 +21734,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a break at the specified location in the main document."
                 },
                 {
                   "kind": "paragraph"
@@ -22045,7 +22045,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a paragraph at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -22125,7 +22125,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a table with the specified number of rows and columns."
                 },
                 {
                   "kind": "paragraph"
@@ -24227,7 +24227,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a break at the specified location in the main document."
                 },
                 {
                   "kind": "paragraph"
@@ -24538,7 +24538,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a paragraph at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -24618,7 +24618,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a table with the specified number of rows and columns."
                 },
                 {
                   "kind": "paragraph"
@@ -29224,7 +29224,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a paragraph at the specified location."
                 },
                 {
                   "kind": "paragraph"
@@ -29304,7 +29304,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'."
+                  "text": "Inserts a table with the specified number of rows and columns."
                 },
                 {
                   "kind": "paragraph"

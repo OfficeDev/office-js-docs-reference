@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - OfficeExtension.ClientRequestContext
+      - office.OfficeExtension.ClientRequestContext
     package: onenote
     children:
       - onenote.OneNote.RequestContext.constructor

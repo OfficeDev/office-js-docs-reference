@@ -15,7 +15,7 @@ items:
       - typeScript
     type: class
     extends:
-      - OfficeExtension.ClientObject
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.ContentControlCollection.getById
