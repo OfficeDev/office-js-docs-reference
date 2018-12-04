@@ -9606,8 +9606,8 @@ Office.Recurrence.getAsync:
     }
 
     // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
-    // NOTE: In this example, the seriesTimeObject is a placeholder for the JSON representing the 
-    // recurrence.seriesTime property. You should use the SeriesTime object methods to get the 
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
     // recurrence date and time properties.
     Recurrence = {
         "recurrenceType": "weekly",
