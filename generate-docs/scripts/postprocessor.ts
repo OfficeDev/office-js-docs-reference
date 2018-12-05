@@ -263,7 +263,7 @@ tryCatch(async () => {
     });
 
     // add custom functions packages under excel
-    excelRoot.push(customFunctionsRoot);
+    excelRoot.unshift(customFunctionsRoot);
 
     // Get the logical order: Preview, 1.6, 1.5, etc.
     outlookRoot.items.reverse();

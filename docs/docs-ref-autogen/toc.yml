@@ -5,6 +5,25 @@ items:
       - name: Excel
         uid: excel
         items:
+          - name: Custom Functions (Preview)
+            uid: ''
+            items:
+              - name: Custom functions runtime
+                uid: custom-functions-runtime
+                items:
+                  - name: CancelableHandler
+                    uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+                  - name: StreamingHandler
+                    uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+              - name: Office runtime
+                uid: office-runtime
+                items:
+                  - name: AsyncStorage
+                    uid: office-runtime.OfficeRuntime.AsyncStorage
+                  - name: Dialog
+                    uid: office-runtime.OfficeRuntime.Dialog
+                  - name: DisplayWebDialogOptions
+                    uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
           - name: Enums
             uid: ''
             items:
@@ -434,25 +453,6 @@ items:
             uid: excel.Excel.WorksheetFreezePanes
           - name: WorksheetProtection
             uid: excel.Excel.WorksheetProtection
-          - name: Custom Functions (Preview)
-            uid: ''
-            items:
-              - name: Custom functions runtime
-                uid: custom-functions-runtime
-                items:
-                  - name: CancelableHandler
-                    uid: custom-functions-runtime.CustomFunctions.CancelableHandler
-                  - name: StreamingHandler
-                    uid: custom-functions-runtime.CustomFunctions.StreamingHandler
-              - name: Office runtime
-                uid: office-runtime
-                items:
-                  - name: AsyncStorage
-                    uid: office-runtime.OfficeRuntime.AsyncStorage
-                  - name: Dialog
-                    uid: office-runtime.OfficeRuntime.Dialog
-                  - name: DisplayWebDialogOptions
-                    uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
       - name: OneNote
         uid: onenote
         items:
