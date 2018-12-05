@@ -1832,7 +1832,29 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const largeRange = context.workbook.getSelectedRange();
+              largeRange.load(["rowCount", "columnCount"]);
+              await context.sync();
+
+              for (let i = 0; i < largeRange.rowCount; i++) {
+                  for (let j = 0; j < largeRange.columnCount; j++) {
+                      let cell = largeRange.getCell(i, j);
+                      cell.values = [[i *j]];
+
+                      // call untrack() to release the range from memory
+                      cell.untrack();
+                  }
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Range.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
