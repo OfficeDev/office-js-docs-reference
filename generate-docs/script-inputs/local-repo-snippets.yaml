@@ -1217,6 +1217,25 @@ Excel.Range.unmerge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.Range.untrack:
+  - |-
+    Excel.run(async (context) => {
+        const largeRange = context.workbook.getSelectedRange();
+        largeRange.load(["rowCount", "columnCount"]);
+        await context.sync();
+
+        for (let i = 0; i < largeRange.rowCount; i++) {
+            for (let j = 0; j < largeRange.columnCount; j++) {
+                let cell = largeRange.getCell(i, j);
+                cell.values = [[i *j]];
+
+                // call untrack() to release the range from memory
+                cell.untrack();
+            }
+        }
+
+        await context.sync();
+    });
 Excel.Range.load:
   - |-
     // Below example uses range address to get the range object.
