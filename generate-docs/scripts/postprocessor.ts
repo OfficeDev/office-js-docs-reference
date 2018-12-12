@@ -97,11 +97,13 @@ tryCatch(async () => {
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
+    let excelRoot;
     let excelEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let excelEnumFilter : string [] = ["AggregationFunction", "BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartColorScheme", "ChartDataLabelPosition", "ChartDisplayBlankAs", "ChartLegendPosition", "ChartLineStyle", "ChartMarkerStyle", "ChartPlotAreaPosition", "ChartPlotBy", "ChartSeriesBy", "ChartSplitSType", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTickLabelAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "DataChangeType", "DataValidationAlertStyle", "DataValidationOperator", "DataValidationType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "NamedItemScope", "NamedItemType", "PageOrientation", "PivotLayoutType", "ProtectionSelectionMode", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SheetVisibility", "ShowAsCalculation", "SortBy",  "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "SubtotalLocationType", "VerticalAlignment", "WorksheetPositionType"];
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     let excelInterfaceFilter : string [] = ["ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RunOptions", "SortField", "WorksheetProtectionOptions"];
+    let customFunctionsRoot = {"name": "Custom Functions (Preview)", "uid": "", "items": [] as any};
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -191,6 +193,8 @@ tryCatch(async () => {
                             "uid": packageItem.uid,
                             "items":  primaryList as any
                         });
+
+                        excelRoot = primaryList;
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
@@ -228,6 +232,18 @@ tryCatch(async () => {
                             "uid": packageItem.uid,
                             "items":  primaryList as any
                         });
+                    } else if (packageName.toLocaleLowerCase().includes('office runtime')) {
+                        customFunctionsRoot.items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  membersToMove.items as any
+                        });
+                    } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
+                        customFunctionsRoot.items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  membersToMove.items as any
+                        });
                     } else {
                         newToc.items[0].items.push({
                             "name": packageName,
@@ -245,6 +261,9 @@ tryCatch(async () => {
             }
         });
     });
+
+    // add custom functions packages under excel
+    excelRoot.unshift(customFunctionsRoot);
 
     // Get the logical order: Preview, 1.6, 1.5, etc.
     outlookRoot.items.reverse();
