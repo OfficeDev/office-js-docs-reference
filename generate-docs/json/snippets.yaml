@@ -1350,6 +1350,25 @@ Excel.Range.unmerge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.Range.untrack:
+  - |-
+    Excel.run(async (context) => {
+        const largeRange = context.workbook.getSelectedRange();
+        largeRange.load(["rowCount", "columnCount"]);
+        await context.sync();
+
+        for (let i = 0; i < largeRange.rowCount; i++) {
+            for (let j = 0; j < largeRange.columnCount; j++) {
+                let cell = largeRange.getCell(i, j);
+                cell.values = [[i *j]];
+
+                // call untrack() to release the range from memory
+                cell.untrack();
+            }
+        }
+
+        await context.sync();
+    });
 Excel.Range.load:
   - |-
     // Below example uses range address to get the range object.
@@ -10491,11 +10510,25 @@ Office.Recurrence.getAsync:
     function callback(asyncResult){
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
-        var endDate = recurrence.seriesTime.getEndDate();
+        if (recurrence == null) {
+            console.log("Non-recurring meeting");
+            return;
+        }
+
+        console.log(JSON.stringify(recurrence));
     }
 
 
-    // The following is an example of the results of the getAsync call.
+    // The following example shows the results of the getAsync call that
+    retrieves the recurrence for a series.
+
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON
+    representing the 
+
+    // recurrence.seriesTime property. You should use the SeriesTime object's
+    methods to get the 
+
+    // recurrence date and time properties.
 
     Recurrence = {
         "recurrenceType": "weekly",
@@ -10509,9 +10542,9 @@ Office.Recurrence.setAsync:
 
     var seriesTimeObject = new Office.SeriesTime(); 
 
-    seriesTimeObject.setStartDate(2017,10,2);  
+    seriesTimeObject.setStartDate(2019,10,2);  
 
-    seriesTimeObject.setEndDate(2017,11,2); 
+    seriesTimeObject.setEndDate(2019,11,2); 
 
     seriesTimeObject.setStartTime(10,30); 
 
@@ -10534,8 +10567,8 @@ Office.Recurrence.setAsync:
     }
 
 
-    //Result: This created a recurring event from November 2, 2017 to December
-    2, 2017
+    //Result: This created a recurring event from November 2, 2019 to December
+    2, 2019
 
     //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RoamingSettings:
@@ -16291,23 +16324,24 @@ Word.Paragraph.text:
         await context.sync();
         console.log(paragraph.text);
     });
-Word.Paragraph.getTextRanges:
+Word.Range.getTextRanges:
   - |-
     await Word.run(async (context) => {
-        // Gets the complete sentence  (as range) associated with the insertion point.
-        let sentences = context.document
-            .getSelection().getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        // Gets the complete sentence (as range) associated with the insertion point.
+        let sentences = context.document.getSelection().getTextRanges(
+            ["."] /* Using the "." as delimiter */,
+            false /*means without trimming spaces*/);
         sentences.load("$none");
-
         await context.sync();
 
         // Expands the range to the end of the paragraph to get all the complete sentences.
-        let sentencesToTheEndOfParagraph = sentences.items[0].getRange()
-            .expandTo(context.document.getSelection().paragraphs
-                .getFirst().getRange("End")).getTextRanges(["."], false /* Don't trim spaces*/);
+        let sentencesToTheEndOfParagraph = sentences.items[0].getRange().expandTo(
+            context.document.getSelection().paragraphs.getFirst().getRange("End")).getTextRanges(
+                ["."],
+                 false /* Don't trim spaces*/);
         sentencesToTheEndOfParagraph.load("text");
-
         await context.sync();
+        
         for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
             console.log(sentencesToTheEndOfParagraph.items[i].text);
         }
