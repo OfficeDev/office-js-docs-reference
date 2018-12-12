@@ -222,9 +222,9 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
                 parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex) + "-";
                 paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
             }
-            return relativePath + className.toLowerCase() + "#" + field.name + parameterLink;
+            return "/" + relativePath + className.toLowerCase() + "#" + field.name + parameterLink;
         default:
-            return relativePath + className.toLowerCase() + "#" + field.name;
+            return "/" + relativePath + className.toLowerCase() + "#" + field.name;
     }
 }
 
