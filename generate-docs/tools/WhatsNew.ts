@@ -85,30 +85,19 @@ class APISet {
         return found;
     }
 
-    public containsField(field: FieldStruct): boolean {
+    public containsField(clas: ClassStruct, field: FieldStruct): boolean {
         let found: boolean = false;
         this.api.forEach((element) => {
-            element.fields.forEach((thisField) => {
-                if (thisField.declarationString === field.declarationString) {
-                    found = true;
-                }
-            });
+            if (element.declarationString === clas.declarationString) {
+                element.fields.forEach((thisField) => {
+                    if (thisField.declarationString === field.declarationString) {
+                        found = true;
+                    }
+                });
+            }
         });
 
         return found;
-    }
-
-    // used to construct a partial class for the diff
-    public getParentClassShell(field: FieldStruct): ClassStruct {
-        let parent: ClassStruct = null;
-        this.api.forEach((element) => {
-            element.fields.forEach((thisField) => {
-                if (thisField.declarationString === field.declarationString) {
-                    parent = element.copyWithoutFields();
-                }
-            });
-        });
-        return parent;
     }
 
     // finds the new fields and classes
@@ -118,11 +107,12 @@ class APISet {
             if (other.containsClass(element)) {
                 let classShell: ClassStruct = null;
                 element.fields.forEach((field) => {
-                    if (!other.containsField(field)) {
+                    if (!other.containsField(element, field)) {
                         if (classShell === null) {
-                            classShell = this.getParentClassShell(field);
+                            classShell = element.copyWithoutFields();
                             diffAPI.addClass(classShell);
                         }
+
                         classShell.fields.push(field);
                     }
                 });
@@ -181,8 +171,6 @@ class APISet {
         });
         return output;
     }
-
-
 
     public sort(): void {
         this.api.forEach((element) => {
