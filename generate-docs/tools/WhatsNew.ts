@@ -163,7 +163,8 @@ class APISet {
                 const className = clas.getClassName();
                 output += "### [" + className + "](/"
                     + relativePath + className.toLowerCase() + ")\n\n";
-                output += "|What's new|Description|\n|:---|:---|\n";
+                output += extractFirstSentenceFromComment(clas.comment);
+                output += "\n\n|Fields|Description|\n|:---|:---|\n";
                 clas.fields.forEach((field) => {
                     // remove unnecessary parts of the declaration string
                     let newItemText = field.declarationString.replace(/;/g, "");
@@ -172,14 +173,7 @@ class APISet {
                     let tableLine = "|[" + newItemText + "]("
                         + buildFieldLink(relativePath, className, field) + ")|";
 
-                    const firstSentenceIndex = field.comment.indexOf("* ") + 2;
-                    let endIndex = field.comment.indexOf("\n", firstSentenceIndex);
-                    if (endIndex === -1) {
-                        // this is necessary if the comment is a single line (as in collections)
-                        endIndex = field.comment.indexOf("\*/");
-                    }
-
-                    tableLine += field.comment.substring(firstSentenceIndex, endIndex).trim();
+                    tableLine += extractFirstSentenceFromComment(field.comment);
                     output += tableLine + "|\n";
                 });
                 output += "\n";
@@ -187,6 +181,8 @@ class APISet {
         });
         return output;
     }
+
+
 
     public sort(): void {
         this.api.forEach((element) => {
@@ -201,6 +197,17 @@ class APISet {
             }
         });
     }
+}
+
+function extractFirstSentenceFromComment(commentText) {
+    const firstSentenceIndex = commentText.indexOf("* ") + 2;
+    let endIndex = commentText.indexOf("\n", firstSentenceIndex);
+    if (endIndex === -1) {
+        // this is necessary if the comment is a single line (as in collections)
+        endIndex = commentText.indexOf("\*/");
+    }
+
+    return commentText.substring(firstSentenceIndex, endIndex).trim();
 }
 
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
