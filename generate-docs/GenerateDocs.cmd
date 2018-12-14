@@ -2,6 +2,10 @@ IF EXIST "node_modules" (
     rmdir "node_modules" /s /q
 )
 
+IF EXIST "scripts\node_modules" (
+    rmdir "scripts\node_modules" /s /q
+)
+
 call npm install
 
 pushd scripts
