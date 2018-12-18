@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Appointment
+      - Appointment
     package: outlook
     children:
       - outlook.Office.AppointmentCompose.addFileAttachmentAsync
@@ -579,7 +579,7 @@ items:
       content: 'end: Time;'
       return:
         type:
-          - outlook.Office.Time
+          - Time
   - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync
     summary: |-
       Gets the item's attachments as an array.
@@ -898,7 +898,7 @@ items:
       content: 'location: Location;'
       return:
         type:
-          - outlook.Office.Location
+          - Location
   - uid: outlook.Office.AppointmentCompose.notificationMessages
     summary: |-
       Gets the notification messages for an item.
@@ -965,7 +965,7 @@ items:
       content: 'optionalAttendees: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.AppointmentCompose.organizer
     summary: >-
       Gets the organizer for the specified meeting.
@@ -1040,7 +1040,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -1229,7 +1229,7 @@ items:
       content: 'requiredAttendees: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.AppointmentCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
@@ -1515,7 +1515,7 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - outlook.Office.Time
+          - Time
   - uid: outlook.Office.AppointmentCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
@@ -1556,4 +1556,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
+          - Subject

@@ -839,6 +839,528 @@ items:
                 uid: outlook.Office.Time
               - name: UserProfile
                 uid: outlook.Office.UserProfile
+          - name: Outlook 1.7
+            uid: Outlook_1_7
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_7.Office.MailboxEnums.AttachmentType
+                  - name: Days
+                    uid: Outlook_1_7.Office.MailboxEnums.Days
+                  - name: EntityType
+                    uid: Outlook_1_7.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_7.Office.MailboxEnums.ItemType
+                  - name: Month
+                    uid: Outlook_1_7.Office.MailboxEnums.Month
+                  - name: OWAView
+                    uid: Outlook_1_7.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecipientType
+                  - name: RecurrenceTimeZone
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceTimeZone
+                  - name: RecurrenceType
+                    uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+                  - name: ResponseType
+                    uid: Outlook_1_7.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_7.Office.MailboxEnums.RestVersion
+                  - name: WeekNumber
+                    uid: Outlook_1_7.Office.MailboxEnums.WeekNumber
+              - name: AppointmentCompose
+                uid: Outlook_1_7.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_7.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_7.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_7.Office.Body
+              - name: Contact
+                uid: Outlook_1_7.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_7.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_7.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_7.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_7.Office.Entities
+              - name: From
+                uid: Outlook_1_7.Office.From
+              - name: Item
+                uid: Outlook_1_7.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_7.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_7.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_7.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_7.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_7.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_7.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_7.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_7.Office.NotificationMessages
+              - name: Organizer
+                uid: Outlook_1_7.Office.Organizer
+              - name: PhoneNumber
+                uid: Outlook_1_7.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_7.Office.Recipients
+              - name: Recurrence
+                uid: Outlook_1_7.Office.Recurrence
+              - name: RecurrenceProperties
+                uid: Outlook_1_7.Office.RecurrenceProperties
+              - name: RecurrenceTimeZone
+                uid: Outlook_1_7.Office.RecurrenceTimeZone
+              - name: RoamingSettings
+                uid: Outlook_1_7.Office.RoamingSettings
+              - name: SeriesTime
+                uid: Outlook_1_7.Office.SeriesTime
+              - name: SourceProperty
+                uid: Outlook_1_7.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_7.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_7.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_7.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_7.Office.UserProfile
+          - name: Outlook 1.6
+            uid: Outlook_1_6
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_6.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_6.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_6.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_6.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_6.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_6.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_6.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_6.Office.MailboxEnums.RestVersion
+              - name: AppointmentCompose
+                uid: Outlook_1_6.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_6.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_6.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_6.Office.Body
+              - name: Contact
+                uid: Outlook_1_6.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_6.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_6.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_6.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_6.Office.Entities
+              - name: Item
+                uid: Outlook_1_6.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_6.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_6.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_6.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_6.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_6.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_6.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_6.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_6.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: Outlook_1_6.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_6.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_6.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_6.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_6.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_6.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_6.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_6.Office.UserProfile
+          - name: Outlook 1.5
+            uid: Outlook_1_5
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_5.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_5.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_5.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_5.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_5.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_5.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_5.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_5.Office.MailboxEnums.RestVersion
+              - name: AppointmentCompose
+                uid: Outlook_1_5.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_5.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_5.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_5.Office.Body
+              - name: Contact
+                uid: Outlook_1_5.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_5.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_5.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_5.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_5.Office.Entities
+              - name: Item
+                uid: Outlook_1_5.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_5.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_5.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_5.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_5.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_5.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_5.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_5.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_5.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: Outlook_1_5.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_5.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_5.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_5.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_5.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_5.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_5.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_5.Office.UserProfile
+          - name: Outlook 1.4
+            uid: Outlook_1_4
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_4.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_4.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_4.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_4.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_4.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_4.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_4.Office.MailboxEnums.RestVersion
+              - name: AppointmentCompose
+                uid: Outlook_1_4.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_4.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_4.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_4.Office.Body
+              - name: Contact
+                uid: Outlook_1_4.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_4.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_4.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_4.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_4.Office.Entities
+              - name: Item
+                uid: Outlook_1_4.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_4.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_4.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_4.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_4.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_4.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_4.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_4.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_4.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: Outlook_1_4.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_4.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_4.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_4.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_4.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_4.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_4.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_4.Office.UserProfile
+          - name: Outlook 1.3
+            uid: Outlook_1_3
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_3.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_3.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: >-
+                      Outlook_1_3.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: Outlook_1_3.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_3.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_3.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_3.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: Outlook_1_3.Office.MailboxEnums.RestVersion
+              - name: AppointmentCompose
+                uid: Outlook_1_3.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_3.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_3.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_3.Office.Body
+              - name: Contact
+                uid: Outlook_1_3.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_3.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_3.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_3.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_3.Office.Entities
+              - name: Item
+                uid: Outlook_1_3.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_3.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_3.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_3.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_3.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_3.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_3.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: Outlook_1_3.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: Outlook_1_3.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: Outlook_1_3.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_3.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_3.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_3.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_3.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_3.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_3.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_3.Office.UserProfile
+          - name: Outlook 1.2
+            uid: Outlook_1_2
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_2.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_2.Office.MailboxEnums.EntityType
+                  - name: ItemType
+                    uid: Outlook_1_2.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_2.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_2.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_2.Office.MailboxEnums.ResponseType
+              - name: AppointmentCompose
+                uid: Outlook_1_2.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_2.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_2.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_2.Office.Body
+              - name: Contact
+                uid: Outlook_1_2.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_2.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_2.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_2.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_2.Office.Entities
+              - name: Item
+                uid: Outlook_1_2.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_2.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_2.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_2.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_2.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_2.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_2.Office.MessageRead
+              - name: PhoneNumber
+                uid: Outlook_1_2.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_2.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_2.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_2.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_2.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_2.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_2.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_2.Office.UserProfile
+          - name: Outlook 1.1
+            uid: Outlook_1_1
+            items:
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_1.Office.MailboxEnums.EntityType
+                  - name: ItemType
+                    uid: Outlook_1_1.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_1.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_1.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_1.Office.MailboxEnums.ResponseType
+              - name: AppointmentCompose
+                uid: Outlook_1_1.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: Outlook_1_1.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_1.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_1.Office.Body
+              - name: Contact
+                uid: Outlook_1_1.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_1.Office.CustomProperties
+              - name: EmailAddressDetails
+                uid: Outlook_1_1.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_1.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_1.Office.Entities
+              - name: Item
+                uid: Outlook_1_1.Office.Item
+              - name: LocalClientTime
+                uid: Outlook_1_1.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_1.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_1.Office.Mailbox
+              - name: MeetingSuggestion
+                uid: Outlook_1_1.Office.MeetingSuggestion
+              - name: MessageCompose
+                uid: Outlook_1_1.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_1.Office.MessageRead
+              - name: PhoneNumber
+                uid: Outlook_1_1.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_1.Office.Recipients
+              - name: RoamingSettings
+                uid: Outlook_1_1.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_1.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_1.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_1.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_1.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_1.Office.UserProfile
       - name: Visio
         uid: visio
         items:

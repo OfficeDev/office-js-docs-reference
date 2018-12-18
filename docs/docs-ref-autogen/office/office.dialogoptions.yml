@@ -12,7 +12,6 @@ items:
       - office.Office.DialogOptions.asyncContext
       - office.Office.DialogOptions.displayInIframe
       - office.Office.DialogOptions.height
-      - office.Office.DialogOptions.promptBeforeOpen
       - office.Office.DialogOptions.width
   - uid: office.Office.DialogOptions.asyncContext
     summary: >-
@@ -56,24 +55,6 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.DialogOptions.promptBeforeOpen
-    summary: >-
-      Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
-
-
-      `true` - The framework displays a pop-up to trigger the navigation and avoid the browser's pop-up blocker. `false`
-      - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to
-      trigger the navigation).
-    name: promptBeforeOpen
-    fullName: promptBeforeOpen
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'promptBeforeOpen?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: office.Office.DialogOptions.width
     summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     name: width

@@ -20161,48 +20161,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "promptBeforeOpen": {
-              "kind": "property",
-              "signature": "promptBeforeOpen?: boolean;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "boolean",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Determines if the pop-up blocker dialog will be shown to the user. Defaults to true."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "true",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - The framework displays a pop-up to trigger the navigation and avoid the browser's pop-up blocker. "
-                },
-                {
-                  "kind": "code",
-                  "text": "false",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to trigger the navigation)."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
             "width": {
               "kind": "property",
               "signature": "width?: number;",
@@ -31749,6 +31707,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -31827,6 +31789,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -31909,6 +31875,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -31987,6 +31957,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59430,6 +59404,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -59508,6 +59486,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -59909,6 +59891,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -59987,6 +59973,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -60586,6 +60576,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -60664,6 +60658,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -61026,6 +61024,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -61104,6 +61106,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -61924,6 +61930,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -62002,6 +62012,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",
@@ -62363,6 +62377,10 @@
                   "token": "</td>"
                 },
                 {
+                  "kind": "text",
+                  "text": "<"
+                },
+                {
                   "kind": "html-tag",
                   "token": "</tr>"
                 },
@@ -62441,6 +62459,10 @@
                 {
                   "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "<"
                 },
                 {
                   "kind": "html-tag",

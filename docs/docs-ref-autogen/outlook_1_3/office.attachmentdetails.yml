@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_3.Office.AttachmentDetails
+    summary: |-
+      Represents an attachment on an item from the server. Read mode only.
+
+      An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+    name: Office.AttachmentDetails
+    fullName: Office.AttachmentDetails
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_3
+    children:
+      - Outlook_1_3.Office.AttachmentDetails.attachmentType
+      - Outlook_1_3.Office.AttachmentDetails.contentType
+      - Outlook_1_3.Office.AttachmentDetails.id
+      - Outlook_1_3.Office.AttachmentDetails.isInline
+      - Outlook_1_3.Office.AttachmentDetails.name
+      - Outlook_1_3.Office.AttachmentDetails.size
+  - uid: Outlook_1_3.Office.AttachmentDetails.attachmentType
+    summary: Gets a value that indicates the type of an attachment.
+    name: attachmentType
+    fullName: attachmentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentType: Office.MailboxEnums.AttachmentType;'
+      return:
+        type:
+          - outlook.Office.MailboxEnums.AttachmentType
+  - uid: Outlook_1_3.Office.AttachmentDetails.contentType
+    summary: Gets the MIME content type of the attachment.
+    name: contentType
+    fullName: contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_3.Office.AttachmentDetails.id
+    summary: Gets the Exchange attachment ID of the attachment.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_3.Office.AttachmentDetails.isInline
+    summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
+    name: isInline
+    fullName: isInline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInline: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Outlook_1_3.Office.AttachmentDetails.name
+    summary: Gets the name of the attachment.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_3.Office.AttachmentDetails.size
+    summary: Gets the size of the attachment in bytes.
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
