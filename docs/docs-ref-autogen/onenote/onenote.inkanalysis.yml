@@ -14,27 +14,12 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.InkAnalysis.context
       - onenote.OneNote.InkAnalysis.id
       - onenote.OneNote.InkAnalysis.load
       - onenote.OneNote.InkAnalysis.page
       - onenote.OneNote.InkAnalysis.toJSON
       - onenote.OneNote.InkAnalysis.track
       - onenote.OneNote.InkAnalysis.untrack
-  - uid: onenote.OneNote.InkAnalysis.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.InkAnalysis.id
     summary: |-
       Gets the ID of the InkAnalysis object. Read-only.

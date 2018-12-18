@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.SectionCollection.context
       - onenote.OneNote.SectionCollection.count
       - onenote.OneNote.SectionCollection.getByName
       - onenote.OneNote.SectionCollection.getItem
@@ -24,20 +23,6 @@ items:
       - onenote.OneNote.SectionCollection.toJSON
       - onenote.OneNote.SectionCollection.track
       - onenote.OneNote.SectionCollection.untrack
-  - uid: onenote.OneNote.SectionCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.SectionCollection.count
     summary: |-
       Returns the number of sections in the collection. Read-only.

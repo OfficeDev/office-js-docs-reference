@@ -16,7 +16,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.Application.context
       - onenote.OneNote.Application.getActiveNotebook
       - onenote.OneNote.Application.getActiveNotebookOrNull
       - onenote.OneNote.Application.getActiveOutline
@@ -35,20 +34,6 @@ items:
       - onenote.OneNote.Application.navigateToPageWithClientUrl
       - onenote.OneNote.Application.notebooks
       - onenote.OneNote.Application.toJSON
-  - uid: onenote.OneNote.Application.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.Application.getActiveNotebook
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.

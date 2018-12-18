@@ -14,27 +14,12 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.InkStroke.context
       - onenote.OneNote.InkStroke.floatingInk
       - onenote.OneNote.InkStroke.id
       - onenote.OneNote.InkStroke.load
       - onenote.OneNote.InkStroke.toJSON
       - onenote.OneNote.InkStroke.track
       - onenote.OneNote.InkStroke.untrack
-  - uid: onenote.OneNote.InkStroke.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.InkStroke.floatingInk
     summary: |-
       Gets the ID of the InkStroke object. Read-only.

@@ -10,8 +10,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Application extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
@@ -138,8 +136,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysis extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the parent page object. Read-only.
@@ -191,8 +187,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisParagraph extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Reference to the parent InkAnalysisPage. Read-only.
@@ -251,8 +245,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisParagraphCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisParagraph[];
         /**
@@ -313,8 +305,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisLine extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Reference to the parent InkAnalysisParagraph. Read-only.
@@ -373,8 +363,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisLineCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisLine[];
         /**
@@ -435,8 +423,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisWord extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Reference to the parent InkAnalysisLine. Read-only.
@@ -509,8 +495,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkAnalysisWordCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkAnalysisWord[];
         /**
@@ -571,8 +555,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class FloatingInk extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the strokes of the FloatingInk object. Read-only.
@@ -630,8 +612,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkStroke extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the ID of the InkStroke object. Read-only.
@@ -682,8 +662,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkStrokeCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkStroke[];
         /**
@@ -744,8 +722,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkWord extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * The parent paragraph containing the ink word. Read-only.
@@ -810,8 +786,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class InkWordCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.InkWord[];
         /**
@@ -872,8 +846,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Notebook extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * The section groups in the notebook. Read only
@@ -984,8 +956,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class NotebookCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Notebook[];
         /**
@@ -1055,8 +1025,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class SectionGroup extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the notebook that contains the section group. Read-only.
@@ -1174,8 +1142,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class SectionGroupCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.SectionGroup[];
         /**
@@ -1245,8 +1211,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Section extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the notebook that contains the section. Read-only.
@@ -1407,8 +1371,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class SectionCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Section[];
         /**
@@ -1478,8 +1440,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Page extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * The collection of PageContent objects on the page. Read only
@@ -1552,7 +1512,7 @@ export declare namespace OneNote {
          *
          * @param left - The left position of the top, left corner of the Outline.
          * @param top - The top position of the top, left corner of the Outline.
-         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the Outline. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         addOutline(left: number, top: number, html: string): OneNote.Outline;
         /**
@@ -1657,8 +1617,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class PageCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Page[];
         /**
@@ -1728,8 +1686,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class PageContent extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
@@ -1830,8 +1786,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class PageContentCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.PageContent[];
         /**
@@ -1892,8 +1846,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Outline extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page. Read-only.
@@ -1921,7 +1873,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -1998,8 +1950,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Paragraph extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
@@ -2126,7 +2076,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;
         /**
@@ -2136,7 +2086,7 @@ export declare namespace OneNote {
          * [Api set: OneNoteApi 1.1]
          *
          * @param insertLocation - The location of new contents relative to the current Paragraph.
-         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
         /**
@@ -2243,8 +2193,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class ParagraphCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.Paragraph[];
         /**
@@ -2305,8 +2253,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class NoteTag extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Id of the NoteTag object. Read-only.
@@ -2364,8 +2310,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class RichText extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Paragraph object that contains the RichText object. Read-only.
@@ -2438,8 +2382,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Image extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page. Read-only.
@@ -2541,8 +2483,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class Table extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Paragraph object that contains the Table object. Read-only.
@@ -2685,8 +2625,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class TableRow extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the cells in the row. Read-only.
@@ -2793,8 +2731,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.TableRow[];
         /**
@@ -2855,8 +2791,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class TableCell extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the collection of Paragraph objects in the TableCell. Read-only.
@@ -2906,7 +2840,7 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
         appendHtml(html: string): void;
         /**
@@ -2983,8 +2917,6 @@ export declare namespace OneNote {
      * [Api set: OneNoteApi 1.1]
      */
     export class TableCellCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: OneNote.TableCell[];
         /**
@@ -3487,6 +3419,13 @@ export declare namespace OneNote {
             * [Api set: OneNoteApi 1.1]
             */
             page?: OneNote.Interfaces.PageData;
+            /**
+            *
+            * Gets the ink analysis paragraphs in this page. Read-only.
+            *
+            * [Api set: OneNoteApi 1.1]
+            */
+            paragraphs?: OneNote.Interfaces.InkAnalysisParagraphData[];
             /**
              *
              * Gets the ID of the InkAnalysis object. Read-only.
@@ -4367,6 +4306,7 @@ export declare namespace OneNote {
         export interface TableCellCollectionData {
             items?: OneNote.Interfaces.TableCellData[];
         }
+        
         /**
          *
          * Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active notebook, and the active section.
@@ -4618,17 +4558,24 @@ export declare namespace OneNote {
      */
     export function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**
-     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
-     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     */
-    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
-    /**
      * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
      * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
+    /**
+     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
+     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * 
+     * @remarks
+     * In addition to this signature, the method also has the following signatures:
+     * 
+     * `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
+     * 
+     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
+     */
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

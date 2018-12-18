@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.FloatingInk.context
       - onenote.OneNote.FloatingInk.id
       - onenote.OneNote.FloatingInk.inkStrokes
       - onenote.OneNote.FloatingInk.load
@@ -22,20 +21,6 @@ items:
       - onenote.OneNote.FloatingInk.toJSON
       - onenote.OneNote.FloatingInk.track
       - onenote.OneNote.FloatingInk.untrack
-  - uid: onenote.OneNote.FloatingInk.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.FloatingInk.id
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.

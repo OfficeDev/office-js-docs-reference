@@ -14621,8 +14621,6 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.7]
      */
     export class StyleCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Style[];
         /**
@@ -14659,10 +14657,6 @@ export declare namespace Excel {
          */
         load(option?: string | string[]): Excel.StyleCollection;
         load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
         toJSON(): Excel.Interfaces.StyleCollectionData;
     }
     /**

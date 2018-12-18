@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.InkWordCollection.context
       - onenote.OneNote.InkWordCollection.count
       - onenote.OneNote.InkWordCollection.getItem
       - onenote.OneNote.InkWordCollection.getItemAt
@@ -23,20 +22,6 @@ items:
       - onenote.OneNote.InkWordCollection.toJSON
       - onenote.OneNote.InkWordCollection.track
       - onenote.OneNote.InkWordCollection.untrack
-  - uid: onenote.OneNote.InkWordCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.InkWordCollection.count
     summary: |-
       Returns the number of InkWords in the page. Read-only.

@@ -17,7 +17,6 @@ items:
       - onenote.OneNote.SectionGroup.addSection
       - onenote.OneNote.SectionGroup.addSectionGroup
       - onenote.OneNote.SectionGroup.clientUrl
-      - onenote.OneNote.SectionGroup.context
       - onenote.OneNote.SectionGroup.getRestApiId
       - onenote.OneNote.SectionGroup.id
       - onenote.OneNote.SectionGroup.load
@@ -160,20 +159,6 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.SectionGroup.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.SectionGroup.getRestApiId
     summary: |-
       Gets the REST API ID.

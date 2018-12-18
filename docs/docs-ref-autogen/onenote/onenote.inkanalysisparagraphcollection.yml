@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.InkAnalysisParagraphCollection.context
       - onenote.OneNote.InkAnalysisParagraphCollection.count
       - onenote.OneNote.InkAnalysisParagraphCollection.getItem
       - onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
@@ -23,20 +22,6 @@ items:
       - onenote.OneNote.InkAnalysisParagraphCollection.toJSON
       - onenote.OneNote.InkAnalysisParagraphCollection.track
       - onenote.OneNote.InkAnalysisParagraphCollection.untrack
-  - uid: onenote.OneNote.InkAnalysisParagraphCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.count
     summary: |-
       Returns the number of InkAnalysisParagraphs in the page. Read-only.

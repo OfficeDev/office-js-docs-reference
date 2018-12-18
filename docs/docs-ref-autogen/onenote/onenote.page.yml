@@ -20,7 +20,6 @@ items:
       - onenote.OneNote.Page.classNotebookPageSource
       - onenote.OneNote.Page.clientUrl
       - onenote.OneNote.Page.contents
-      - onenote.OneNote.Page.context
       - onenote.OneNote.Page.copyToSection
       - onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
       - onenote.OneNote.Page.getRestApiId
@@ -102,8 +101,8 @@ items:
         - id: html
           description: >-
             An HTML string that describes the visual presentation of the Outline. See [Supported
-            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
+            the OneNote add-ins JavaScript API.
           type:
             - string
   - uid: onenote.OneNote.Page.analyzePage
@@ -188,20 +187,6 @@ items:
       return:
         type:
           - onenote.OneNote.PageContentCollection
-  - uid: onenote.OneNote.Page.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.Page.copyToSection
     summary: |-
       Copies this page to specified section.

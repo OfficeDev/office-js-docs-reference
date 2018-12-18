@@ -15,7 +15,6 @@ items:
     package: onenote
     children:
       - onenote.OneNote.Paragraph.addNoteTag
-      - onenote.OneNote.Paragraph.context
       - onenote.OneNote.Paragraph.delete
       - onenote.OneNote.Paragraph.getParagraphInfo
       - onenote.OneNote.Paragraph.id
@@ -63,20 +62,6 @@ items:
           description: The status of the NoteTag.
           type:
             - onenote.OneNote.NoteTagStatus
-  - uid: onenote.OneNote.Paragraph.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.Paragraph.delete
     summary: |-
       Deletes the paragraph
@@ -253,8 +238,8 @@ items:
         - id: html
           description: >-
             An HTML string that describes the visual presentation of the content. See [Supported
-            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
+            the OneNote add-ins JavaScript API.
           type:
             - string
   - uid: onenote.OneNote.Paragraph.insertImageAsSibling

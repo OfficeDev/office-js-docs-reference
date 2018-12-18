@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.RichText.context
       - onenote.OneNote.RichText.getHtml
       - onenote.OneNote.RichText.id
       - onenote.OneNote.RichText.languageId
@@ -24,20 +23,6 @@ items:
       - onenote.OneNote.RichText.toJSON
       - onenote.OneNote.RichText.track
       - onenote.OneNote.RichText.untrack
-  - uid: onenote.OneNote.RichText.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.RichText.getHtml
     summary: |-
       Get the HTML of the rich text

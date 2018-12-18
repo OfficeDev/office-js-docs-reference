@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.PageCollection.context
       - onenote.OneNote.PageCollection.count
       - onenote.OneNote.PageCollection.getByTitle
       - onenote.OneNote.PageCollection.getItem
@@ -24,20 +23,6 @@ items:
       - onenote.OneNote.PageCollection.toJSON
       - onenote.OneNote.PageCollection.track
       - onenote.OneNote.PageCollection.untrack
-  - uid: onenote.OneNote.PageCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.PageCollection.count
     summary: |-
       Returns the number of pages in the collection. Read-only.

@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
-      - onenote.OneNote.Image.context
       - onenote.OneNote.Image.description
       - onenote.OneNote.Image.getBase64Image
       - onenote.OneNote.Image.height
@@ -28,20 +27,6 @@ items:
       - onenote.OneNote.Image.track
       - onenote.OneNote.Image.untrack
       - onenote.OneNote.Image.width
-  - uid: onenote.OneNote.Image.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: onenote.OneNote.Image.description
     summary: |-
       Gets or sets the description of the Image.
