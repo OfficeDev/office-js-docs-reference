@@ -7,7 +7,7 @@ The JavaScript API for Office enables you to create web applications that intera
 - [Outlook](https://docs.microsoft.com/javascript/api/outlook?view=office-js)
 - [Visio](https://docs.microsoft.com/javascript/api/visio?view=office-js)
 - [Word](https://docs.microsoft.com/javascript/api/word?view=office-js)
-- [Shared API](https://docs.microsoft.com/javascript/api/office?view=office-js)
+- [Common API](https://docs.microsoft.com/javascript/api/office?view=office-js)
 
 ## See also
 
