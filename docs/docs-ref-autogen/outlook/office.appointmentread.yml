@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Appointment
+      - outlook.Office.Appointment
     package: outlook
     children:
       - outlook.Office.AppointmentRead.addHandlerAsync
@@ -561,7 +561,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Entities
+          - outlook.Office.Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getEntitiesByType
     summary: |-
@@ -884,7 +884,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Entities
+          - outlook.Office.Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getSelectedRegExMatches
     summary: >-
@@ -1292,7 +1292,7 @@ items:
       content: 'organizer: EmailAddressDetails;'
       return:
         type:
-          - EmailAddressDetails
+          - outlook.Office.EmailAddressDetails
   - uid: outlook.Office.AppointmentRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
@@ -1327,7 +1327,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.

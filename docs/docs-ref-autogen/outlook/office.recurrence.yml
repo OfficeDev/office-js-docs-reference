@@ -296,7 +296,7 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - Recurrence
+            - outlook.Office.Recurrence
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers

@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Item
+      - outlook.Office.Item
     package: outlook
     children:
       - outlook.Office.ItemCompose.addFileAttachmentAsync
@@ -666,4 +666,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Subject
+          - outlook.Office.Subject

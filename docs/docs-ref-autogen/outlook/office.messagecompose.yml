@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Message
+      - outlook.Office.Message
     package: outlook
     children:
       - outlook.Office.MessageCompose.addFileAttachmentAsync
@@ -477,7 +477,7 @@ items:
       content: 'bcc: Recipients;'
       return:
         type:
-          - Recipients
+          - outlook.Office.Recipients
   - uid: outlook.Office.MessageCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -545,7 +545,7 @@ items:
       content: 'cc: Recipients;'
       return:
         type:
-          - Recipients
+          - outlook.Office.Recipients
   - uid: outlook.Office.MessageCompose.close
     summary: >-
       Closes the current item that is being composed
@@ -1054,7 +1054,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.MessageCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -1462,7 +1462,7 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Subject
+          - outlook.Office.Subject
   - uid: outlook.Office.MessageCompose.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
@@ -1508,4 +1508,4 @@ items:
       content: 'to: Recipients;'
       return:
         type:
-          - Recipients
+          - outlook.Office.Recipients

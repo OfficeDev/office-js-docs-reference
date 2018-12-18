@@ -101,7 +101,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - outlook.Office.NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -313,7 +313,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - outlook.Office.NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
