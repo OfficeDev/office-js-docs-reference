@@ -57,14 +57,6 @@
             "redirect_url": "/javascript/api/office/officeextension.loadoption"
         },
         {
-            "source_path": "docs/docs-ref-autogen/word/word.setting.md",
-            "redirect_url": "/office/dev/add-ins/reference/openspec#new-word-javascript-apis"
-        },
-        {
-            "source_path": "docs/docs-ref-autogen/word/word.settingcollection.md",
-            "redirect_url": "/office/dev/add-ins/reference/openspec#new-word-javascript-apis"
-        },
-        {
             "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionsenumerations.md",
             "redirect_url": "//office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
         },
