@@ -41,6 +41,8 @@ items:
                 uid: excel.Excel.BuiltInStyle
               - name: CalculationMode
                 uid: excel.Excel.CalculationMode
+              - name: CalculationState
+                uid: excel.Excel.CalculationState
               - name: CalculationType
                 uid: excel.Excel.CalculationType
               - name: ChartAxisCategoryType
@@ -61,16 +63,36 @@ items:
                 uid: excel.Excel.ChartAxisTimeUnit
               - name: ChartAxisType
                 uid: excel.Excel.ChartAxisType
+              - name: ChartBinType
+                uid: excel.Excel.ChartBinType
+              - name: ChartBoxQuartileCalculation
+                uid: excel.Excel.ChartBoxQuartileCalculation
               - name: ChartColorScheme
                 uid: excel.Excel.ChartColorScheme
               - name: ChartDataLabelPosition
                 uid: excel.Excel.ChartDataLabelPosition
+              - name: ChartErrorBarsInclude
+                uid: excel.Excel.ChartErrorBarsInclude
+              - name: ChartErrorBarsType
+                uid: excel.Excel.ChartErrorBarsType
+              - name: ChartGradientStyle
+                uid: excel.Excel.ChartGradientStyle
+              - name: ChartGradientStyleType
+                uid: excel.Excel.ChartGradientStyleType
               - name: ChartLegendPosition
                 uid: excel.Excel.ChartLegendPosition
               - name: ChartLineStyle
                 uid: excel.Excel.ChartLineStyle
+              - name: ChartMapAreaLevel
+                uid: excel.Excel.ChartMapAreaLevel
+              - name: ChartMapLabelStrategy
+                uid: excel.Excel.ChartMapLabelStrategy
+              - name: ChartMapProjectionType
+                uid: excel.Excel.ChartMapProjectionType
               - name: ChartMarkerStyle
                 uid: excel.Excel.ChartMarkerStyle
+              - name: ChartParentLabelStrategy
+                uid: excel.Excel.ChartParentLabelStrategy
               - name: ChartPlotAreaPosition
                 uid: excel.Excel.ChartPlotAreaPosition
               - name: ChartPlotBy
@@ -123,6 +145,12 @@ items:
                 uid: excel.Excel.ConditionalTextOperator
               - name: ConditionalTopBottomCriterionType
                 uid: excel.Excel.ConditionalTopBottomCriterionType
+              - name: ContentType
+                uid: excel.Excel.ContentType
+              - name: CustomFunctionMetadataFormat
+                uid: excel.Excel.CustomFunctionMetadataFormat
+              - name: CustomFunctionType
+                uid: excel.Excel.CustomFunctionType
               - name: DataChangeType
                 uid: excel.Excel.DataChangeType
               - name: DataValidationAlertStyle
@@ -145,12 +173,18 @@ items:
                 uid: excel.Excel.EventSource
               - name: EventType
                 uid: excel.Excel.EventType
+              - name: FillPattern
+                uid: excel.Excel.FillPattern
               - name: FilterDatetimeSpecificity
                 uid: excel.Excel.FilterDatetimeSpecificity
               - name: FilterOn
                 uid: excel.Excel.FilterOn
               - name: FilterOperator
                 uid: excel.Excel.FilterOperator
+              - name: GeometricShapeType
+                uid: excel.Excel.GeometricShapeType
+              - name: HeaderFooterState
+                uid: excel.Excel.HeaderFooterState
               - name: HorizontalAlignment
                 uid: excel.Excel.HorizontalAlignment
               - name: IconSet
@@ -159,22 +193,74 @@ items:
                 uid: excel.Excel.ImageFittingMode
               - name: InsertShiftDirection
                 uid: excel.Excel.InsertShiftDirection
+              - name: LinkedDataTypeState
+                uid: excel.Excel.LinkedDataTypeState
               - name: NamedItemScope
                 uid: excel.Excel.NamedItemScope
               - name: NamedItemType
                 uid: excel.Excel.NamedItemType
               - name: PageOrientation
                 uid: excel.Excel.PageOrientation
+              - name: PaperType
+                uid: excel.Excel.PaperType
+              - name: PictureFormat
+                uid: excel.Excel.PictureFormat
+              - name: PivotAxis
+                uid: excel.Excel.PivotAxis
+              - name: PivotFilterTopBottomCriterion
+                uid: excel.Excel.PivotFilterTopBottomCriterion
               - name: PivotLayoutType
                 uid: excel.Excel.PivotLayoutType
+              - name: Placement
+                uid: excel.Excel.Placement
+              - name: PrintComments
+                uid: excel.Excel.PrintComments
+              - name: PrintErrorType
+                uid: excel.Excel.PrintErrorType
+              - name: PrintMarginUnit
+                uid: excel.Excel.PrintMarginUnit
+              - name: PrintOrder
+                uid: excel.Excel.PrintOrder
               - name: ProtectionSelectionMode
                 uid: excel.Excel.ProtectionSelectionMode
+              - name: RangeCopyType
+                uid: excel.Excel.RangeCopyType
               - name: RangeUnderlineStyle
                 uid: excel.Excel.RangeUnderlineStyle
               - name: RangeValueType
                 uid: excel.Excel.RangeValueType
               - name: ReadingOrder
                 uid: excel.Excel.ReadingOrder
+              - name: SaveBehavior
+                uid: excel.Excel.SaveBehavior
+              - name: SearchDirection
+                uid: excel.Excel.SearchDirection
+              - name: ShapeAutoSize
+                uid: excel.Excel.ShapeAutoSize
+              - name: ShapeFillType
+                uid: excel.Excel.ShapeFillType
+              - name: ShapeFontUnderlineStyle
+                uid: excel.Excel.ShapeFontUnderlineStyle
+              - name: ShapeScaleFrom
+                uid: excel.Excel.ShapeScaleFrom
+              - name: ShapeScaleType
+                uid: excel.Excel.ShapeScaleType
+              - name: ShapeTextHorizontalAlignType
+                uid: excel.Excel.ShapeTextHorizontalAlignType
+              - name: ShapeTextHorzOverflowType
+                uid: excel.Excel.ShapeTextHorzOverflowType
+              - name: ShapeTextOrientationType
+                uid: excel.Excel.ShapeTextOrientationType
+              - name: ShapeTextReadingOrder
+                uid: excel.Excel.ShapeTextReadingOrder
+              - name: ShapeTextVerticalAlignType
+                uid: excel.Excel.ShapeTextVerticalAlignType
+              - name: ShapeTextVertOverflowType
+                uid: excel.Excel.ShapeTextVertOverflowType
+              - name: ShapeType
+                uid: excel.Excel.ShapeType
+              - name: ShapeZOrder
+                uid: excel.Excel.ShapeZOrder
               - name: SheetVisibility
                 uid: excel.Excel.SheetVisibility
               - name: ShowAsCalculation
@@ -189,6 +275,10 @@ items:
                 uid: excel.Excel.SortOn
               - name: SortOrientation
                 uid: excel.Excel.SortOrientation
+              - name: SpecialCellType
+                uid: excel.Excel.SpecialCellType
+              - name: SpecialCellValueType
+                uid: excel.Excel.SpecialCellValueType
               - name: SubtotalLocationType
                 uid: excel.Excel.SubtotalLocationType
               - name: VerticalAlignment
@@ -205,8 +295,6 @@ items:
             uid: excel.Excel.Binding
           - name: BindingCollection
             uid: excel.Excel.BindingCollection
-          - name: CalculationState
-            uid: excel.Excel.CalculationState
           - name: CellValueConditionalFormat
             uid: excel.Excel.CellValueConditionalFormat
           - name: Chart
@@ -225,12 +313,8 @@ items:
             uid: excel.Excel.ChartAxisTitleFormat
           - name: ChartBinOptions
             uid: excel.Excel.ChartBinOptions
-          - name: ChartBinType
-            uid: excel.Excel.ChartBinType
           - name: ChartBorder
             uid: excel.Excel.ChartBorder
-          - name: ChartBoxQuartileCalculation
-            uid: excel.Excel.ChartBoxQuartileCalculation
           - name: ChartBoxwhiskerOptions
             uid: excel.Excel.ChartBoxwhiskerOptions
           - name: ChartCollection
@@ -247,20 +331,12 @@ items:
             uid: excel.Excel.ChartErrorBars
           - name: ChartErrorBarsFormat
             uid: excel.Excel.ChartErrorBarsFormat
-          - name: ChartErrorBarsInclude
-            uid: excel.Excel.ChartErrorBarsInclude
-          - name: ChartErrorBarsType
-            uid: excel.Excel.ChartErrorBarsType
           - name: ChartFill
             uid: excel.Excel.ChartFill
           - name: ChartFont
             uid: excel.Excel.ChartFont
           - name: ChartFormatString
             uid: excel.Excel.ChartFormatString
-          - name: ChartGradientStyle
-            uid: excel.Excel.ChartGradientStyle
-          - name: ChartGradientStyleType
-            uid: excel.Excel.ChartGradientStyleType
           - name: ChartGridlines
             uid: excel.Excel.ChartGridlines
           - name: ChartGridlinesFormat
@@ -275,16 +351,8 @@ items:
             uid: excel.Excel.ChartLegendFormat
           - name: ChartLineFormat
             uid: excel.Excel.ChartLineFormat
-          - name: ChartMapAreaLevel
-            uid: excel.Excel.ChartMapAreaLevel
-          - name: ChartMapLabelStrategy
-            uid: excel.Excel.ChartMapLabelStrategy
           - name: ChartMapOptions
             uid: excel.Excel.ChartMapOptions
-          - name: ChartMapProjectionType
-            uid: excel.Excel.ChartMapProjectionType
-          - name: ChartParentLabelStrategy
-            uid: excel.Excel.ChartParentLabelStrategy
           - name: ChartPivotOptions
             uid: excel.Excel.ChartPivotOptions
           - name: ChartPlotArea
@@ -351,18 +419,12 @@ items:
             uid: excel.Excel.ConditionalRangeFont
           - name: ConditionalRangeFormat
             uid: excel.Excel.ConditionalRangeFormat
-          - name: ContentType
-            uid: excel.Excel.ContentType
           - name: CustomConditionalFormat
             uid: excel.Excel.CustomConditionalFormat
           - name: CustomDataValidation
             uid: excel.Excel.CustomDataValidation
           - name: CustomFunctionEventArgs
             uid: excel.Excel.CustomFunctionEventArgs
-          - name: CustomFunctionMetadataFormat
-            uid: excel.Excel.CustomFunctionMetadataFormat
-          - name: CustomFunctionType
-            uid: excel.Excel.CustomFunctionType
           - name: CustomProperty
             uid: excel.Excel.CustomProperty
           - name: CustomPropertyCollection
@@ -393,8 +455,6 @@ items:
             uid: excel.Excel.DateTimeDataValidation
           - name: DocumentProperties
             uid: excel.Excel.DocumentProperties
-          - name: FillPattern
-            uid: excel.Excel.FillPattern
           - name: Filter
             uid: excel.Excel.Filter
           - name: FilterCriteria
@@ -411,24 +471,18 @@ items:
             uid: excel.Excel.Functions
           - name: GeometricShape
             uid: excel.Excel.GeometricShape
-          - name: GeometricShapeType
-            uid: excel.Excel.GeometricShapeType
           - name: GroupShapeCollection
             uid: excel.Excel.GroupShapeCollection
           - name: HeaderFooter
             uid: excel.Excel.HeaderFooter
           - name: HeaderFooterGroup
             uid: excel.Excel.HeaderFooterGroup
-          - name: HeaderFooterState
-            uid: excel.Excel.HeaderFooterState
           - name: IconSetConditionalFormat
             uid: excel.Excel.IconSetConditionalFormat
           - name: Image
             uid: excel.Excel.Image
           - name: IterativeCalculation
             uid: excel.Excel.IterativeCalculation
-          - name: LinkedDataTypeState
-            uid: excel.Excel.LinkedDataTypeState
           - name: ListDataValidation
             uid: excel.Excel.ListDataValidation
           - name: NamedItem
@@ -447,18 +501,10 @@ items:
             uid: excel.Excel.PageLayoutMarginOptions
           - name: PageLayoutZoomOptions
             uid: excel.Excel.PageLayoutZoomOptions
-          - name: PaperType
-            uid: excel.Excel.PaperType
-          - name: PictureFormat
-            uid: excel.Excel.PictureFormat
-          - name: PivotAxis
-            uid: excel.Excel.PivotAxis
           - name: PivotField
             uid: excel.Excel.PivotField
           - name: PivotFieldCollection
             uid: excel.Excel.PivotFieldCollection
-          - name: PivotFilterTopBottomCriterion
-            uid: excel.Excel.PivotFilterTopBottomCriterion
           - name: PivotHierarchy
             uid: excel.Excel.PivotHierarchy
           - name: PivotHierarchyCollection
@@ -473,18 +519,8 @@ items:
             uid: excel.Excel.PivotTable
           - name: PivotTableCollection
             uid: excel.Excel.PivotTableCollection
-          - name: Placement
-            uid: excel.Excel.Placement
           - name: PresetCriteriaConditionalFormat
             uid: excel.Excel.PresetCriteriaConditionalFormat
-          - name: PrintComments
-            uid: excel.Excel.PrintComments
-          - name: PrintErrorType
-            uid: excel.Excel.PrintErrorType
-          - name: PrintMarginUnit
-            uid: excel.Excel.PrintMarginUnit
-          - name: PrintOrder
-            uid: excel.Excel.PrintOrder
           - name: Range
             uid: excel.Excel.Range
           - name: RangeAreas
@@ -495,8 +531,6 @@ items:
             uid: excel.Excel.RangeBorderCollection
           - name: RangeCollection
             uid: excel.Excel.RangeCollection
-          - name: RangeCopyType
-            uid: excel.Excel.RangeCopyType
           - name: RangeFill
             uid: excel.Excel.RangeFill
           - name: RangeFont
@@ -521,12 +555,8 @@ items:
             uid: excel.Excel.RowColumnPivotHierarchyCollection
           - name: Runtime
             uid: excel.Excel.Runtime
-          - name: SaveBehavior
-            uid: excel.Excel.SaveBehavior
           - name: SearchCriteria
             uid: excel.Excel.SearchCriteria
-          - name: SearchDirection
-            uid: excel.Excel.SearchDirection
           - name: Session
             uid: excel.Excel.Session
           - name: Setting
@@ -537,48 +567,18 @@ items:
             uid: excel.Excel.Shape
           - name: ShapeActivatedEventArgs
             uid: excel.Excel.ShapeActivatedEventArgs
-          - name: ShapeAutoSize
-            uid: excel.Excel.ShapeAutoSize
           - name: ShapeCollection
             uid: excel.Excel.ShapeCollection
           - name: ShapeDeactivatedEventArgs
             uid: excel.Excel.ShapeDeactivatedEventArgs
           - name: ShapeFill
             uid: excel.Excel.ShapeFill
-          - name: ShapeFillType
-            uid: excel.Excel.ShapeFillType
           - name: ShapeFont
             uid: excel.Excel.ShapeFont
-          - name: ShapeFontUnderlineStyle
-            uid: excel.Excel.ShapeFontUnderlineStyle
           - name: ShapeGroup
             uid: excel.Excel.ShapeGroup
-          - name: ShapeScaleFrom
-            uid: excel.Excel.ShapeScaleFrom
-          - name: ShapeScaleType
-            uid: excel.Excel.ShapeScaleType
-          - name: ShapeTextHorizontalAlignType
-            uid: excel.Excel.ShapeTextHorizontalAlignType
-          - name: ShapeTextHorzOverflowType
-            uid: excel.Excel.ShapeTextHorzOverflowType
-          - name: ShapeTextOrientationType
-            uid: excel.Excel.ShapeTextOrientationType
-          - name: ShapeTextReadingOrder
-            uid: excel.Excel.ShapeTextReadingOrder
-          - name: ShapeTextVerticalAlignType
-            uid: excel.Excel.ShapeTextVerticalAlignType
-          - name: ShapeTextVertOverflowType
-            uid: excel.Excel.ShapeTextVertOverflowType
-          - name: ShapeType
-            uid: excel.Excel.ShapeType
-          - name: ShapeZOrder
-            uid: excel.Excel.ShapeZOrder
           - name: ShowAsRule
             uid: excel.Excel.ShowAsRule
-          - name: SpecialCellType
-            uid: excel.Excel.SpecialCellType
-          - name: SpecialCellValueType
-            uid: excel.Excel.SpecialCellValueType
           - name: Style
             uid: excel.Excel.Style
           - name: StyleCollection
