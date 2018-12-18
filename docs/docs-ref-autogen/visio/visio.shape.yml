@@ -40,7 +40,7 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
   - uid: visio.Visio.Shape.getBounds
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
@@ -95,9 +95,13 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available
@@ -155,7 +159,7 @@ items:
       content: 'load(option?: string | string[]): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
+          - Visio.Shape
         description: ''
       parameters:
         - id: option
@@ -221,7 +225,7 @@ items:
       content: 'readonly subShapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Shape.text
     summary: |-
       Shape's text. Read-only.
@@ -247,7 +251,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeData
+          - Visio.Interfaces.ShapeData
         description: ''
   - uid: visio.Visio.Shape.view
     summary: |-

@@ -20,6 +20,7 @@ items:
       - onenote.OneNote.TableCell.appendTable
       - onenote.OneNote.TableCell.cellIndex
       - onenote.OneNote.TableCell.clear
+      - onenote.OneNote.TableCell.context
       - onenote.OneNote.TableCell.id
       - onenote.OneNote.TableCell.load
       - onenote.OneNote.TableCell.paragraphs
@@ -83,8 +84,8 @@ items:
         - id: html
           description: >-
             The HTML string to append. See [Supported
-            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
-            the OneNote add-ins JavaScript API.
+            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            for the OneNote add-ins JavaScript API.
           type:
             - string
   - uid: onenote.OneNote.TableCell.appendImage
@@ -101,7 +102,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -232,6 +233,20 @@ items:
         type:
           - void
         description: ''
+  - uid: onenote.OneNote.TableCell.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.TableCell.id
     summary: |-
       Gets the ID of the cell. Read-only.

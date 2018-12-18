@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.NoteTag.context
       - onenote.OneNote.NoteTag.id
       - onenote.OneNote.NoteTag.load
       - onenote.OneNote.NoteTag.status
@@ -21,6 +22,20 @@ items:
       - onenote.OneNote.NoteTag.track
       - onenote.OneNote.NoteTag.type
       - onenote.OneNote.NoteTag.untrack
+  - uid: onenote.OneNote.NoteTag.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.NoteTag.id
     summary: |-
       Gets the Id of the NoteTag object. Read-only.

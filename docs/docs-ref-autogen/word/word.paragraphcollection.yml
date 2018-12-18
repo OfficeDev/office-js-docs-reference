@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.ParagraphCollection.context
       - word.Word.ParagraphCollection.getFirst
       - word.Word.ParagraphCollection.getFirstOrNullObject
       - word.Word.ParagraphCollection.getLast
@@ -23,6 +24,20 @@ items:
       - word.Word.ParagraphCollection.toJSON
       - word.Word.ParagraphCollection.track
       - word.Word.ParagraphCollection.untrack
+  - uid: word.Word.ParagraphCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ParagraphCollection.getFirst
     summary: |-
       Gets the first paragraph in this collection. Throws if the collection is empty.

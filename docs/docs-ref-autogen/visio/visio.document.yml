@@ -85,9 +85,13 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only
@@ -170,7 +174,7 @@ items:
     fullName: onDataRefreshComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
       return:
@@ -185,7 +189,7 @@ items:
     fullName: onDocumentLoadComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
       return:
@@ -200,7 +204,7 @@ items:
     fullName: onPageLoadComplete
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
       return:
@@ -215,7 +219,7 @@ items:
     fullName: onSelectionChanged
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;'
       return:
@@ -230,7 +234,7 @@ items:
     fullName: onShapeMouseEnter
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
       return:
@@ -245,7 +249,7 @@ items:
     fullName: onShapeMouseLeave
     langs:
       - typeScript
-    type: event
+    type: property
     syntax:
       content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
       return:

@@ -56,7 +56,7 @@ items:
       content: 'readonly allShapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Page.comments
     summary: |-
       Returns the Comments Collection. Read-only.
@@ -71,7 +71,7 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
   - uid: visio.Visio.Page.height
     summary: |-
       Returns the height of the page. Read-only.
@@ -125,9 +125,13 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on
@@ -180,7 +184,7 @@ items:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Page.toJSON
     name: toJSON()
     fullName: toJSON

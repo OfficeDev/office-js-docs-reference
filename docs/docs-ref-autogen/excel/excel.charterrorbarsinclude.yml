@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartErrorBarsInclude
+    summary: >-
+      Represents which error-bar parts to include.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ChartErrorBarsInclude
+    fullName: Excel.ChartErrorBarsInclude
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartErrorBarsInclude.both
+      - excel.Excel.ChartErrorBarsInclude.minusValues
+      - excel.Excel.ChartErrorBarsInclude.plusValues
+  - uid: excel.Excel.ChartErrorBarsInclude.both
+    isPreview: true
+    name: both
+    fullName: both
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Both"'
+  - uid: excel.Excel.ChartErrorBarsInclude.minusValues
+    isPreview: true
+    name: minusValues
+    fullName: minusValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MinusValues"'
+  - uid: excel.Excel.ChartErrorBarsInclude.plusValues
+    isPreview: true
+    name: plusValues
+    fullName: plusValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlusValues"'

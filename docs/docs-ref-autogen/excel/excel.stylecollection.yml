@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.StyleCollection
-    summary: |-
-      Represents a collection of all the styles.
+    summary: >-
+      Represents a collection of all the styles. WARNING: The StyleCollection items array has a known issue when loading
+      items from the collection. Do not use `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()`
+      method.
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.StyleCollection
@@ -15,6 +18,7 @@ items:
     package: excel
     children:
       - excel.Excel.StyleCollection.add
+      - excel.Excel.StyleCollection.context
       - excel.Excel.StyleCollection.getItem
       - excel.Excel.StyleCollection.items
       - excel.Excel.StyleCollection.load
@@ -65,6 +69,20 @@ items:
           description: Name of the style to be added.
           type:
             - string
+  - uid: excel.Excel.StyleCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.StyleCollection.getItem
     summary: |-
       Gets a style by name.
@@ -112,7 +130,9 @@ items:
           type:
             - string
   - uid: excel.Excel.StyleCollection.items
-    summary: Gets the loaded child items in this collection.
+    summary: >-
+      WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
+      `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: items
     fullName: items
     langs:
@@ -125,22 +145,8 @@ items:
           - 'Excel.Style[]'
   - uid: excel.Excel.StyleCollection.load
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
-      the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.StyleCollection` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+      WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
+      `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: load(option)
     fullName: load
     langs:
@@ -158,6 +164,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.StyleCollection.toJSON
+    summary: >-
+      WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
+      `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: toJSON()
     fullName: toJSON
     langs:

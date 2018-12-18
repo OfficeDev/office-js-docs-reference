@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SaveBehavior
+    summary: >-
+      Specifies the save behavior for workbook.save API.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.SaveBehavior
+    fullName: Excel.SaveBehavior
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SaveBehavior.prompt
+      - excel.Excel.SaveBehavior.save
+  - uid: excel.Excel.SaveBehavior.prompt
+    summary: >-
+      Prompts the saveas experience to the user if the workbook has not been saved, Ignored if the workbook was
+      previously saved.
+    isPreview: true
+    name: prompt
+    fullName: prompt
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Prompt"'
+  - uid: excel.Excel.SaveBehavior.save
+    summary: >-
+      Save the workbook without prompting the user. If file is not saved, it will save it with default name under
+      default location.
+    isPreview: true
+    name: save
+    fullName: save
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Save"'

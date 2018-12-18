@@ -15,6 +15,7 @@ tryCatch(async () => {
         message: `What is the source of the Office-js TypeScript definition file that should be used to generate the docs?`,
         choices: [
             { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
+            { name: "DefinitelyTyped (preview)", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts" },
             { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
             { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
             { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }

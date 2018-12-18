@@ -128,7 +128,7 @@ items:
         - id: Shape
           description: Shape to be checked.
           type:
-            - visio.Visio.Shape
+            - Visio.Shape
   - uid: visio.Visio.PageView.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -137,9 +137,13 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only

@@ -18,6 +18,7 @@ items:
       - onenote.OneNote.Outline.appendImage
       - onenote.OneNote.Outline.appendRichText
       - onenote.OneNote.Outline.appendTable
+      - onenote.OneNote.Outline.context
       - onenote.OneNote.Outline.id
       - onenote.OneNote.Outline.isTitle
       - onenote.OneNote.Outline.load
@@ -84,8 +85,8 @@ items:
         - id: html
           description: >-
             The HTML string to append. See [Supported
-            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
-            the OneNote add-ins JavaScript API.
+            HTML](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
+            for the OneNote add-ins JavaScript API.
           type:
             - string
   - uid: onenote.OneNote.Outline.appendImage
@@ -102,7 +103,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -204,6 +205,20 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: onenote.OneNote.Outline.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Outline.id
     summary: |-
       Gets the ID of the Outline object. Read-only.

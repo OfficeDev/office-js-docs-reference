@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.InkStrokeCollection.context
       - onenote.OneNote.InkStrokeCollection.count
       - onenote.OneNote.InkStrokeCollection.getItem
       - onenote.OneNote.InkStrokeCollection.getItemAt
@@ -22,6 +23,20 @@ items:
       - onenote.OneNote.InkStrokeCollection.toJSON
       - onenote.OneNote.InkStrokeCollection.track
       - onenote.OneNote.InkStrokeCollection.untrack
+  - uid: onenote.OneNote.InkStrokeCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.InkStrokeCollection.count
     summary: |-
       Returns the number of InkStrokes in the page. Read-only.

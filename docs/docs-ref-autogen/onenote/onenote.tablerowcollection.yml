@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.TableRowCollection.context
       - onenote.OneNote.TableRowCollection.count
       - onenote.OneNote.TableRowCollection.getItem
       - onenote.OneNote.TableRowCollection.getItemAt
@@ -22,6 +23,20 @@ items:
       - onenote.OneNote.TableRowCollection.toJSON
       - onenote.OneNote.TableRowCollection.track
       - onenote.OneNote.TableRowCollection.untrack
+  - uid: onenote.OneNote.TableRowCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.TableRowCollection.count
     summary: |-
       Returns the number of table rows in this collection. Read-only.

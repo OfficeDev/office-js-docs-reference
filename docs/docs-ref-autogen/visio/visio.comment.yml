@@ -57,9 +57,13 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
       `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available
@@ -105,7 +109,7 @@ items:
       content: 'load(option?: string | string[]): Visio.Comment;'
       return:
         type:
-          - visio.Visio.Comment
+          - Visio.Comment
         description: ''
       parameters:
         - id: option
@@ -137,5 +141,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentData;'
       return:
         type:
-          - visio.Visio.Interfaces.CommentData
+          - Visio.Interfaces.CommentData
         description: ''

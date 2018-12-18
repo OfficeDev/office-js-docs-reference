@@ -16,6 +16,7 @@ items:
     children:
       - onenote.OneNote.Section.addPage
       - onenote.OneNote.Section.clientUrl
+      - onenote.OneNote.Section.context
       - onenote.OneNote.Section.copyToNotebook
       - onenote.OneNote.Section.copyToSectionGroup
       - onenote.OneNote.Section.getRestApiId
@@ -99,6 +100,20 @@ items:
       return:
         type:
           - string
+  - uid: onenote.OneNote.Section.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Section.copyToNotebook
     summary: |-
       Copies this section to specified notebook.

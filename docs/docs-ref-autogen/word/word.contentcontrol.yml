@@ -23,6 +23,7 @@ items:
       - word.Word.ContentControl.clear
       - word.Word.ContentControl.color
       - word.Word.ContentControl.contentControls
+      - word.Word.ContentControl.context
       - word.Word.ContentControl.delete
       - word.Word.ContentControl.font
       - word.Word.ContentControl.getHtml
@@ -41,6 +42,9 @@ items:
       - word.Word.ContentControl.insertText
       - word.Word.ContentControl.lists
       - word.Word.ContentControl.load
+      - word.Word.ContentControl.onDataChanged
+      - word.Word.ContentControl.onDeleted
+      - word.Word.ContentControl.onSelectionChanged
       - word.Word.ContentControl.paragraphs
       - word.Word.ContentControl.parentBody
       - word.Word.ContentControl.parentContentControl
@@ -197,6 +201,20 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
+  - uid: word.Word.ContentControl.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ContentControl.delete
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
@@ -278,8 +296,13 @@ items:
         type:
           - word.Word.Font
   - uid: word.Word.ContentControl.getHtml
-    summary: |-
-      Gets the HTML representation of the content control object.
+    summary: >-
+      Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
+      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
+      return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you
+      need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML
+      to HTML.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
@@ -422,7 +445,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: endingMarks
@@ -1074,6 +1097,62 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.ContentControl.onDataChanged
+    summary: >-
+      Occurs when data within the content control are changed. To get the new text, load this content control in the
+      handler. To get the old text, do not load it.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: onDataChanged
+    fullName: onDataChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
+  - uid: word.Word.ContentControl.onDeleted
+    summary: >-
+      Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't
+      be able to get its original properties.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: onDeleted
+    fullName: onDeleted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
+  - uid: word.Word.ContentControl.onSelectionChanged
+    summary: >-
+      Occurs when selection within the content control is changed.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
   - uid: word.Word.ContentControl.paragraphs
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
@@ -1261,7 +1340,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -1357,7 +1436,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters

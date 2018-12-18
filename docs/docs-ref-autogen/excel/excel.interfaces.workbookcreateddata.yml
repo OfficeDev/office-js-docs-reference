@@ -8,20 +8,3 @@ items:
       - typeScript
     type: interface
     package: excel
-    children:
-      - excel.Excel.Interfaces.WorkbookCreatedData.id
-  - uid: excel.Excel.Interfaces.WorkbookCreatedData.id
-    summary: |-
-      Returns a value that uniquely identifies the WorkbookCreated object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'id?: string;'
-      return:
-        type:
-          - string

@@ -21,6 +21,7 @@ items:
     package: excel
     children:
       - excel.Excel.TableRowCollection.add
+      - excel.Excel.TableRowCollection.context
       - excel.Excel.TableRowCollection.count
       - excel.Excel.TableRowCollection.getCount
       - excel.Excel.TableRowCollection.getItemAt
@@ -82,6 +83,20 @@ items:
           description: Optional. A 2-dimensional array of unformatted values of the table row.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
+  - uid: excel.Excel.TableRowCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.
@@ -251,6 +266,12 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.TableRowCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

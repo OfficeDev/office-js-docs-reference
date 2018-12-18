@@ -34,6 +34,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getActiveNotebook": {
               "kind": "method",
               "signature": "getActiveNotebook(): OneNote.Notebook;",
@@ -652,6 +673,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -894,6 +936,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "description": {
               "kind": "property",
               "signature": "description: string;",
@@ -1388,6 +1451,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -1602,6 +1686,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -1844,6 +1949,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -2139,6 +2265,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -2381,6 +2528,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -2676,6 +2844,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -2974,6 +3163,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -3269,6 +3479,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "floatingInk": {
               "kind": "property",
               "signature": "readonly floatingInk: OneNote.FloatingInk;",
@@ -3483,6 +3714,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -3859,6 +4111,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -4129,6 +4402,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -5014,34 +5308,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the parent page object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "paragraphs": {
-                  "kind": "property",
-                  "signature": "paragraphs?: OneNote.Interfaces.InkAnalysisParagraphData[];",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.InkAnalysisParagraphData[]",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the ink analysis paragraphs in this page. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -9755,6 +10021,27 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getRestApiId": {
               "kind": "method",
               "signature": "getRestApiId(): OfficeExtension.ClientResult<string>;",
@@ -10084,6 +10371,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -10423,6 +10731,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -11381,7 +11710,7 @@
                           "text": "Supported HTML"
                         }
                       ],
-                      "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
+                      "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
                     },
                     {
                       "kind": "text",
@@ -11592,6 +11921,27 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -11916,7 +12266,7 @@
                           "text": "Supported HTML"
                         }
                       ],
-                      "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
+                      "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
                     },
                     {
                       "kind": "text",
@@ -12098,6 +12448,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -12634,6 +13005,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -12973,6 +13365,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "delete": {
               "kind": "method",
               "signature": "delete(): void;",
@@ -13386,6 +13799,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -13783,6 +14217,27 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "delete": {
               "kind": "method",
               "signature": "delete(): void;",
@@ -13967,7 +14422,7 @@
                           "text": "Supported HTML"
                         }
                       ],
-                      "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
+                      "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
                     },
                     {
                       "kind": "text",
@@ -14625,6 +15080,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -15180,6 +15656,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getHtml": {
               "kind": "method",
               "signature": "getHtml(): OfficeExtension.ClientResult<string>;",
@@ -15465,23 +15962,18 @@
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
           "returnValue": {
             "type": "Promise<T>",
             "description": []
           },
           "parameters": {
-            "object": {
-              "name": "object",
-              "description": [
-                {
-                  "kind": "text",
-                  "text": "A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\"."
-                }
-              ],
+            "objects": {
+              "name": "objects",
+              "description": [],
               "isOptional": false,
               "isSpread": false,
-              "type": "OfficeExtension.ClientObject"
+              "type": "OfficeExtension.ClientObject[]"
             },
             "batch": {
               "name": "batch",
@@ -15500,31 +15992,10 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object."
+              "text": "Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects."
             }
           ],
-          "remarks": [
-            {
-              "kind": "text",
-              "text": "In addition to this signature, the method also has the following signatures:"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "code",
-              "text": "run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
-              "highlighter": "plain"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "code",
-              "text": "run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
-              "highlighter": "plain"
-            }
-          ],
+          "remarks": [],
           "isBeta": false
         },
         "Section": {
@@ -15613,6 +16084,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -16207,6 +16699,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -16662,6 +17175,27 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getRestApiId": {
               "kind": "method",
               "signature": "getRestApiId(): OfficeExtension.ClientResult<string>;",
@@ -17047,6 +17581,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -17561,6 +18116,27 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getCell": {
               "kind": "method",
               "signature": "getCell(rowIndex: number, cellIndex: number): OneNote.TableCell;",
@@ -18064,7 +18640,7 @@
                           "text": "Supported HTML"
                         }
                       ],
-                      "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
+                      "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html"
                     },
                     {
                       "kind": "text",
@@ -18334,6 +18910,27 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -18633,6 +19230,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -19015,6 +19633,27 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -19352,6 +19991,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",

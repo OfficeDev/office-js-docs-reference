@@ -19,6 +19,7 @@ items:
       - onenote.OneNote.Table.borderVisible
       - onenote.OneNote.Table.clear
       - onenote.OneNote.Table.columnCount
+      - onenote.OneNote.Table.context
       - onenote.OneNote.Table.getCell
       - onenote.OneNote.Table.id
       - onenote.OneNote.Table.insertColumn
@@ -191,6 +192,20 @@ items:
       return:
         type:
           - number
+  - uid: onenote.OneNote.Table.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Table.getCell
     summary: |-
       Gets the table cell at a specified row and column.
