@@ -259,7 +259,7 @@ items:
         description: ''
       parameters:
         - id: attachmentId
-          description: The identifier of the attachment you want to get. The maximum length of the string is 100 characters.
+          description: The identifier of the attachment you want to get.
           type:
             - string
         - id: options
