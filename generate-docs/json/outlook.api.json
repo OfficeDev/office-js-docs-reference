@@ -3249,7 +3249,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3258,12 +3258,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -3451,7 +3451,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -3459,7 +3459,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -3467,7 +3467,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -16628,7 +16628,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment you want to get. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment you want to get."
                     }
                   ],
                   "isOptional": false,
@@ -19616,7 +19616,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19625,12 +19625,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -19818,7 +19818,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -19826,7 +19826,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -19834,7 +19834,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -35100,7 +35100,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35109,12 +35109,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -35302,7 +35302,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -35310,7 +35310,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -35318,7 +35318,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
