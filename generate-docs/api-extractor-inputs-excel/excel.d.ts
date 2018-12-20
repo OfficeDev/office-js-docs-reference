@@ -1073,7 +1073,7 @@ export declare namespace Excel {
      */
     export class Runtime extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Turn on/off JavaScript events in current taskpane or content add-in.
@@ -1081,7 +1081,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         enableEvents: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1089,7 +1089,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Runtime` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1115,7 +1115,7 @@ export declare namespace Excel {
      */
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the Iterative Calculation settings.
@@ -1149,7 +1149,7 @@ export declare namespace Excel {
          * @beta
          */
         readonly calculationState: Excel.CalculationState | "Done" | "Calculating" | "Pending";
-        
+
         /**
          *
          * Recalculate all currently opened workbooks in Excel.
@@ -1190,7 +1190,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1217,7 +1217,7 @@ export declare namespace Excel {
      */
     export class IterativeCalculation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * True if Excel will use iteration to resolve circular references.
@@ -1242,7 +1242,7 @@ export declare namespace Excel {
          * @beta
          */
         maxIteration: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1250,7 +1250,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.IterativeCalculation` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1276,7 +1276,7 @@ export declare namespace Excel {
      */
     export class Workbook extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the Excel application instance that contains this workbook. Read-only.
@@ -1449,7 +1449,7 @@ export declare namespace Excel {
          * @beta
          */
         usePrecisionAsDisplayed: boolean;
-        
+
         /**
          *
          * Close current workbook.
@@ -1542,7 +1542,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1587,7 +1587,7 @@ export declare namespace Excel {
      */
     export class WorkbookProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Indicates if the workbook is protected. Read-Only.
@@ -1620,7 +1620,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1646,7 +1646,7 @@ export declare namespace Excel {
      */
     export class WorkbookCreated extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1654,7 +1654,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorkbookCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -1681,7 +1681,7 @@ export declare namespace Excel {
      */
     export class Worksheet extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the AutoFilter object of the worksheet. Read-Only.
@@ -1841,7 +1841,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
          */
         visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
-        
+
         /**
          *
          * Activate the worksheet in the Excel UI.
@@ -2024,7 +2024,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -2115,7 +2115,7 @@ export declare namespace Excel {
      */
     export class WorksheetCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Worksheet[];
         /**
@@ -2213,7 +2213,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -2321,7 +2321,7 @@ export declare namespace Excel {
      */
     export class WorksheetProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Sheet protection options. Read-only.
@@ -2362,7 +2362,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -2491,7 +2491,7 @@ export declare namespace Excel {
      */
     export class WorksheetFreezePanes extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Sets the frozen cells in the active worksheet view.
@@ -2560,7 +2560,7 @@ export declare namespace Excel {
      */
     export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Collection of ConditionalFormats that intersect the range. Read-only.
@@ -2776,7 +2776,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
-        
+
         /**
          *
          * Calculates a range of cells on a worksheet.
@@ -3248,7 +3248,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -3334,7 +3334,7 @@ export declare namespace Excel {
      */
     export class RangeAreas extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a collection of rectangular ranges that comprise this RangeAreas object.
@@ -3433,7 +3433,7 @@ export declare namespace Excel {
          * @beta
          */
         style: string;
-        
+
         /**
          *
          * Calculates all cells in the RangeAreas.
@@ -3647,7 +3647,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeAreas` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -3764,7 +3764,7 @@ export declare namespace Excel {
      */
     export class RangeView extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents a collection of range views associated with the range. Read-only.
@@ -3849,7 +3849,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         values: any[][];
-        
+
         /**
          *
          * Gets the parent range associated with the current RangeView.
@@ -3864,7 +3864,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -3890,7 +3890,7 @@ export declare namespace Excel {
      */
     export class RangeViewCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.RangeView[];
         /**
@@ -3916,7 +3916,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeViewCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -3939,7 +3939,7 @@ export declare namespace Excel {
      */
     export class SettingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Setting[];
         /**
@@ -3984,7 +3984,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4016,7 +4016,7 @@ export declare namespace Excel {
      */
     export class Setting extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         private static DateJSONPrefix;
         private static DateJSONSuffix;
         private static replaceStringDateWithDate(value);
@@ -4034,7 +4034,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         value: any;
-        
+
         /**
          *
          * Deletes the setting.
@@ -4049,7 +4049,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4075,7 +4075,7 @@ export declare namespace Excel {
      */
     export class NamedItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.NamedItem[];
         /**
@@ -4134,7 +4134,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4157,7 +4157,7 @@ export declare namespace Excel {
      */
     export class NamedItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns an object containing values and types of the named item. Read-only.
@@ -4228,7 +4228,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         visible: boolean;
-        
+
         /**
          *
          * Deletes the given name.
@@ -4257,7 +4257,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4283,7 +4283,7 @@ export declare namespace Excel {
      */
     export class NamedItemArrayValues extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the types for each item in the named item array
@@ -4305,7 +4305,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4331,7 +4331,7 @@ export declare namespace Excel {
      */
     export class Binding extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents binding identifier. Read-only.
@@ -4381,7 +4381,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4425,7 +4425,7 @@ export declare namespace Excel {
      */
     export class BindingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Binding[];
         /**
@@ -4544,7 +4544,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4567,7 +4567,7 @@ export declare namespace Excel {
      */
     export class TableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Table[];
         /**
@@ -4628,7 +4628,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4691,7 +4691,7 @@ export declare namespace Excel {
      */
     export class TableScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Table[];
         /**
@@ -4727,7 +4727,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4750,7 +4750,7 @@ export declare namespace Excel {
      */
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the AutoFilter object of the table. Read-Only.
@@ -4864,7 +4864,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         style: string;
-        
+
         /**
          *
          * Clears all the filters currently applied on the table.
@@ -4936,7 +4936,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -4990,7 +4990,7 @@ export declare namespace Excel {
      */
     export class TableColumnCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.TableColumn[];
         /**
@@ -5052,7 +5052,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5075,7 +5075,7 @@ export declare namespace Excel {
      */
     export class TableColumn extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Retrieve the filter applied to the column. Read-only.
@@ -5111,7 +5111,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
-        
+
         /**
          *
          * Deletes the column from the table.
@@ -5154,7 +5154,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5175,7 +5175,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5185,7 +5185,7 @@ export declare namespace Excel {
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.TableRow[];
         /**
@@ -5198,7 +5198,7 @@ export declare namespace Excel {
         /**
          *
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5220,7 +5220,7 @@ export declare namespace Excel {
         /**
          *
          * Gets a row based on its position in the collection.
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5238,7 +5238,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5256,7 +5256,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a row in a table.
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5266,7 +5266,7 @@ export declare namespace Excel {
      */
     export class TableRow extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
@@ -5281,7 +5281,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
-        
+
         /**
          *
          * Deletes the row from the table.
@@ -5303,7 +5303,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5329,7 +5329,7 @@ export declare namespace Excel {
      */
     export class DataValidation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Error alert when user enters invalid data.
@@ -5374,7 +5374,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly valid: boolean;
-        
+
         /**
          *
          * Clears the data validation from the current range.
@@ -5405,7 +5405,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataValidation` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5489,7 +5489,7 @@ export declare namespace Excel {
      */
     export class RemoveDuplicatesResult extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Number of duplicated rows removed by the operation.
@@ -5513,7 +5513,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RemoveDuplicatesResult` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5708,7 +5708,7 @@ export declare namespace Excel {
      */
     export class RangeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Collection of border objects that apply to the overall range. Read-only.
@@ -5833,7 +5833,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         wrapText: boolean;
-        
+
         /**
          *
          * Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
@@ -5855,7 +5855,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5881,7 +5881,7 @@ export declare namespace Excel {
      */
     export class FormatProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -5896,7 +5896,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         locked: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -5904,7 +5904,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -5930,7 +5930,7 @@ export declare namespace Excel {
      */
     export class RangeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -5974,7 +5974,7 @@ export declare namespace Excel {
          * @beta
          */
         tintAndShade: number;
-        
+
         /**
          *
          * Resets the range background.
@@ -5989,7 +5989,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6015,7 +6015,7 @@ export declare namespace Excel {
      */
     export class RangeBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -6053,7 +6053,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         weight: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6061,7 +6061,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6087,7 +6087,7 @@ export declare namespace Excel {
      */
     export class RangeBorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.RangeBorder[];
         /**
@@ -6140,7 +6140,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6163,7 +6163,7 @@ export declare namespace Excel {
      */
     export class RangeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font.
@@ -6245,7 +6245,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         underline: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6253,7 +6253,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6279,7 +6279,7 @@ export declare namespace Excel {
      */
     export class ChartCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Chart[];
         /**
@@ -6353,7 +6353,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6412,7 +6412,7 @@ export declare namespace Excel {
      */
     export class Chart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart axes. Read-only.
@@ -6586,7 +6586,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         width: number;
-        
+
         /**
          *
          * Activate the chart in the Excel UI.
@@ -6663,7 +6663,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6708,7 +6708,7 @@ export declare namespace Excel {
      */
     export class ChartPivotOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents whether to display axis field buttons on a PivotChart.
@@ -6742,7 +6742,7 @@ export declare namespace Excel {
          * @beta
          */
         showValueFieldButtons: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6750,7 +6750,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPivotOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6776,7 +6776,7 @@ export declare namespace Excel {
      */
     export class ChartAreaFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
@@ -6814,7 +6814,7 @@ export declare namespace Excel {
          * @beta
          */
         roundedCorners: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6822,7 +6822,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6848,7 +6848,7 @@ export declare namespace Excel {
      */
     export class ChartSeriesCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartSeries[];
         /**
@@ -6891,7 +6891,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -6914,7 +6914,7 @@ export declare namespace Excel {
      */
     export class ChartSeries extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Encapsulates the bin options only for histogram chart and pareto chart. Read-only.
@@ -7260,7 +7260,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         varyByCategories: boolean;
-        
+
         /**
          *
          * Deletes the chart series.
@@ -7302,7 +7302,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7328,7 +7328,7 @@ export declare namespace Excel {
      */
     export class ChartSeriesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the fill format of a chart series, which includes background formating information. Read-only.
@@ -7343,7 +7343,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly line: Excel.ChartLineFormat;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -7351,7 +7351,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7377,7 +7377,7 @@ export declare namespace Excel {
      */
     export class ChartPointsCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartPoint[];
         /**
@@ -7410,7 +7410,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7433,7 +7433,7 @@ export declare namespace Excel {
      */
     export class ChartPoint extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the data label of a chart point. Read-only.
@@ -7490,7 +7490,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly value: any;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -7498,7 +7498,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7524,7 +7524,7 @@ export declare namespace Excel {
      */
     export class ChartPointFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format of a chart data point, which includes color, style, and weight information. Read-only.
@@ -7539,7 +7539,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -7547,7 +7547,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7573,7 +7573,7 @@ export declare namespace Excel {
      */
     export class ChartAxes extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the category axis in a chart. Read-only.
@@ -7595,7 +7595,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly valueAxis: Excel.ChartAxis;
-        
+
         /**
          *
          * Returns the specific axis identified by type and group.
@@ -7623,7 +7623,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7649,7 +7649,7 @@ export declare namespace Excel {
      */
     export class ChartAxis extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
@@ -7924,7 +7924,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly width: number;
-        
+
         /**
          *
          * Sets all the category names for the specified axis.
@@ -7959,7 +7959,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -7985,7 +7985,7 @@ export declare namespace Excel {
      */
     export class ChartAxisFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart fill formatting. Read-only.
@@ -8007,7 +8007,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly line: Excel.ChartLineFormat;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8015,7 +8015,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8041,7 +8041,7 @@ export declare namespace Excel {
      */
     export class ChartAxisTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of chart axis title. Read-only.
@@ -8063,7 +8063,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         visible: boolean;
-        
+
         /**
          *
          * A string value that represents the formula of chart axis title using A1-style notation.
@@ -8080,7 +8080,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8106,7 +8106,7 @@ export declare namespace Excel {
      */
     export class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format, which includes color, linestyle, and weight.
@@ -8128,7 +8128,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8136,7 +8136,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8162,7 +8162,7 @@ export declare namespace Excel {
      */
     export class ChartDataLabels extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
@@ -8271,7 +8271,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8279,7 +8279,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8305,7 +8305,7 @@ export declare namespace Excel {
      */
     export class ChartDataLabel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the format of chart data label.
@@ -8456,7 +8456,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8464,7 +8464,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8490,7 +8490,7 @@ export declare namespace Excel {
      */
     export class ChartDataLabelFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format, which includes color, linestyle, and weight. Read-only.
@@ -8512,7 +8512,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8520,7 +8520,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8547,7 +8547,7 @@ export declare namespace Excel {
      */
     export class ChartErrorBars extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of chart ErrorBars.
@@ -8588,7 +8588,7 @@ export declare namespace Excel {
          * @beta
          */
         visible: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8596,7 +8596,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartErrorBars` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8623,7 +8623,7 @@ export declare namespace Excel {
      */
     export class ChartErrorBarsFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart line formatting.
@@ -8632,7 +8632,7 @@ export declare namespace Excel {
          * @beta
          */
         readonly line: Excel.ChartLineFormat;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8640,7 +8640,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartErrorBarsFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8666,7 +8666,7 @@ export declare namespace Excel {
      */
     export class ChartGridlines extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of chart gridlines. Read-only.
@@ -8681,7 +8681,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         visible: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8689,7 +8689,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8715,7 +8715,7 @@ export declare namespace Excel {
      */
     export class ChartGridlinesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart line formatting. Read-only.
@@ -8723,7 +8723,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly line: Excel.ChartLineFormat;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8731,7 +8731,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8757,7 +8757,7 @@ export declare namespace Excel {
      */
     export class ChartLegend extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -8828,7 +8828,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8836,7 +8836,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8862,7 +8862,7 @@ export declare namespace Excel {
      */
     export class ChartLegendEntry extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the height of the legendEntry on the chart Legend.
@@ -8905,7 +8905,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -8913,7 +8913,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8939,7 +8939,7 @@ export declare namespace Excel {
      */
     export class ChartLegendEntryCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartLegendEntry[];
         /**
@@ -8965,7 +8965,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -8988,7 +8988,7 @@ export declare namespace Excel {
      */
     export class ChartLegendFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format, which includes color, linestyle, and weight. Read-only.
@@ -9010,7 +9010,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9018,7 +9018,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9045,7 +9045,7 @@ export declare namespace Excel {
      */
     export class ChartMapOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns or sets series map labels strategy of a region map chart. Read/Write.
@@ -9070,7 +9070,7 @@ export declare namespace Excel {
          * @beta
          */
         projectionType: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9078,7 +9078,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartMapOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9104,7 +9104,7 @@ export declare namespace Excel {
      */
     export class ChartTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
@@ -9196,7 +9196,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly width: number;
-        
+
         /**
          *
          * Get the substring of a chart title. Line break '\n' also counts one character.
@@ -9223,7 +9223,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9249,7 +9249,7 @@ export declare namespace Excel {
      */
     export class ChartFormatString extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
@@ -9257,7 +9257,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9265,7 +9265,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFormatString` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9291,7 +9291,7 @@ export declare namespace Excel {
      */
     export class ChartTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
@@ -9313,7 +9313,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9321,7 +9321,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9347,7 +9347,7 @@ export declare namespace Excel {
      */
     export class ChartFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
@@ -9384,7 +9384,7 @@ export declare namespace Excel {
      */
     export class ChartBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of borders in the chart.
@@ -9406,7 +9406,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         weight: number;
-        
+
         /**
          *
          * Clear the border format of a chart element.
@@ -9421,7 +9421,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9448,7 +9448,7 @@ export declare namespace Excel {
      */
     export class ChartBinOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
@@ -9505,7 +9505,7 @@ export declare namespace Excel {
          * @beta
          */
         width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9513,7 +9513,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBinOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9540,7 +9540,7 @@ export declare namespace Excel {
      */
     export class ChartBoxwhiskerOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns or sets quartile calculation type of a Box & whisker chart. Read/Write.
@@ -9581,7 +9581,7 @@ export declare namespace Excel {
          * @beta
          */
         showOutlierPoints: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9589,7 +9589,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBoxwhiskerOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9615,7 +9615,7 @@ export declare namespace Excel {
      */
     export class ChartLineFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of lines in the chart.
@@ -9637,7 +9637,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         weight: number;
-        
+
         /**
          *
          * Clear the line format of a chart element.
@@ -9652,7 +9652,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9678,7 +9678,7 @@ export declare namespace Excel {
      */
     export class ChartFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font.
@@ -9721,7 +9721,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         underline: Excel.ChartUnderlineStyle | "None" | "Single";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9729,7 +9729,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9755,7 +9755,7 @@ export declare namespace Excel {
      */
     export class ChartTrendline extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart trendline.
@@ -9833,7 +9833,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         type: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
-        
+
         /**
          *
          * Delete the trendline object.
@@ -9848,7 +9848,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9874,7 +9874,7 @@ export declare namespace Excel {
      */
     export class ChartTrendlineCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartTrendline[];
         /**
@@ -9918,7 +9918,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9941,7 +9941,7 @@ export declare namespace Excel {
      */
     export class ChartTrendlineFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart line formatting. Read-only.
@@ -9949,7 +9949,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly line: Excel.ChartLineFormat;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -9957,7 +9957,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -9983,7 +9983,7 @@ export declare namespace Excel {
      */
     export class ChartTrendlineLabel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the format of chart trendline label.
@@ -10078,7 +10078,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -10086,7 +10086,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10112,7 +10112,7 @@ export declare namespace Excel {
      */
     export class ChartTrendlineLabelFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border format, which includes color, linestyle, and weight.
@@ -10134,7 +10134,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly font: Excel.ChartFont;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -10142,7 +10142,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10168,7 +10168,7 @@ export declare namespace Excel {
      */
     export class ChartPlotArea extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart plotArea.
@@ -10239,7 +10239,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         width: number;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -10247,7 +10247,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPlotArea` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10273,7 +10273,7 @@ export declare namespace Excel {
      */
     export class ChartPlotAreaFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the border attributes of a chart plotArea.
@@ -10288,7 +10288,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly fill: Excel.ChartFill;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -10296,7 +10296,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10322,7 +10322,7 @@ export declare namespace Excel {
      */
     export class RangeSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Perform a sort operation.
@@ -10365,7 +10365,7 @@ export declare namespace Excel {
      */
     export class TableSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the current conditions used to last sort the table. Read-only.
@@ -10430,7 +10430,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10513,7 +10513,7 @@ export declare namespace Excel {
      */
     export class Filter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The currently applied filter on the given column. Read-only.
@@ -10656,7 +10656,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10692,7 +10692,7 @@ export declare namespace Excel {
          *
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
              For example ">50" for number greater than 50 or "=*s" for values ending in "s".
-            
+
              Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
@@ -10779,7 +10779,7 @@ export declare namespace Excel {
      */
     export class AutoFilter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Array that holds all filter criterias in an autofiltered range. Read-Only.
@@ -10864,7 +10864,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.AutoFilter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10914,7 +10914,7 @@ export declare namespace Excel {
      */
     export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.CustomXmlPart[];
         /**
@@ -10966,7 +10966,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -10989,7 +10989,7 @@ export declare namespace Excel {
      */
     export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.CustomXmlPart[];
         /**
@@ -11043,7 +11043,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11066,7 +11066,7 @@ export declare namespace Excel {
      */
     export class CustomXmlPart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The custom XML part's ID. Read-only.
@@ -11111,7 +11111,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11137,7 +11137,7 @@ export declare namespace Excel {
      */
     export class PivotTableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.PivotTable[];
         /**
@@ -11191,7 +11191,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11214,7 +11214,7 @@ export declare namespace Excel {
      */
     export class PivotTable extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The Column Pivot Hierarchies of the PivotTable.
@@ -11286,7 +11286,7 @@ export declare namespace Excel {
          * @beta
          */
         useCustomSortLists: boolean;
-        
+
         /**
          *
          * Deletes the PivotTable.
@@ -11308,7 +11308,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11334,7 +11334,7 @@ export declare namespace Excel {
      */
     export class PivotLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * True if the field list should be shown or hidden from the UI.
@@ -11371,7 +11371,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";
-        
+
         /**
          *
          * Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified dataHierarchy, rowItems, and columnItems.
@@ -11482,7 +11482,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotLayout` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11508,7 +11508,7 @@ export declare namespace Excel {
      */
     export class PivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.PivotHierarchy[];
         /**
@@ -11543,7 +11543,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11566,7 +11566,7 @@ export declare namespace Excel {
      */
     export class PivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the PivotFields associated with the PivotHierarchy.
@@ -11588,7 +11588,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         name: string;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -11596,7 +11596,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11622,7 +11622,7 @@ export declare namespace Excel {
      */
     export class RowColumnPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.RowColumnPivotHierarchy[];
         /**
@@ -11672,7 +11672,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11695,7 +11695,7 @@ export declare namespace Excel {
      */
     export class RowColumnPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the PivotFields associated with the RowColumnPivotHierarchy.
@@ -11724,7 +11724,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         position: number;
-        
+
         /**
          *
          * Reset the RowColumnPivotHierarchy back to its default values.
@@ -11739,7 +11739,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11765,7 +11765,7 @@ export declare namespace Excel {
      */
     export class FilterPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.FilterPivotHierarchy[];
         /**
@@ -11815,7 +11815,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11838,7 +11838,7 @@ export declare namespace Excel {
      */
     export class FilterPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the PivotFields associated with the FilterPivotHierarchy.
@@ -11874,7 +11874,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         position: number;
-        
+
         /**
          *
          * Reset the FilterPivotHierarchy back to its default values.
@@ -11889,7 +11889,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11915,7 +11915,7 @@ export declare namespace Excel {
      */
     export class DataPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.DataPivotHierarchy[];
         /**
@@ -11964,7 +11964,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -11987,7 +11987,7 @@ export declare namespace Excel {
      */
     export class DataPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the PivotFields associated with the DataPivotHierarchy.
@@ -12037,7 +12037,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         summarizeBy: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
-        
+
         /**
          *
          * Reset the DataPivotHierarchy back to its default values.
@@ -12052,7 +12052,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12104,7 +12104,7 @@ export declare namespace Excel {
      */
     export class PivotFieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.PivotField[];
         /**
@@ -12139,7 +12139,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotFieldCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12162,7 +12162,7 @@ export declare namespace Excel {
      */
     export class PivotField extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the PivotFields associated with the PivotField.
@@ -12198,7 +12198,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         subtotals: Excel.Subtotals;
-        
+
         /**
          *
          * Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
@@ -12246,7 +12246,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotField` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12272,7 +12272,7 @@ export declare namespace Excel {
      */
     export class PivotItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.PivotItem[];
         /**
@@ -12307,7 +12307,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12330,7 +12330,7 @@ export declare namespace Excel {
      */
     export class PivotItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Id of the PivotItem.
@@ -12359,7 +12359,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         visible: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -12367,7 +12367,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12685,7 +12685,7 @@ export declare namespace Excel {
      */
     export class DocumentProperties extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the collection of custom properties of the workbook. Read only.
@@ -12770,7 +12770,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         title: string;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -12778,7 +12778,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12804,7 +12804,7 @@ export declare namespace Excel {
      */
     export class CustomProperty extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the key of the custom property. Read only.
@@ -12826,7 +12826,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         value: any;
-        
+
         /**
          *
          * Deletes the custom property.
@@ -12841,7 +12841,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -12859,17 +12859,18 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.CustomPropertyData;
     }
+
     /**
      *
-     * Contains the collection of customProperty objects.
+     * Represents a collection of all the styles. WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use `StyleCollection.items`, any `load()` method, and the `toJSON()` method.
      *
      * [Api set: ExcelApi 1.7]
      */
-    export class CustomPropertyCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.CustomProperty[];
+    export class StyleCollection extends OfficeExtension.ClientObject {
+        /**
+         * WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use `StyleCollection.items`, any `load()` method, and the `toJSON()` method.
+         */
+        readonly items: Excel.Style[];
         /**
          *
          * Creates a new or sets an existing custom property.
@@ -12913,26 +12914,14 @@ export declare namespace Excel {
          */
         getItemOrNullObject(key: string): Excel.CustomProperty;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         * WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use `StyleCollection.items`, any `load()` method, and the `toJSON()` method.
          */
-        load(option?: string | string[]): Excel.CustomPropertyCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
+        load(option?: string | string[]): Excel.StyleCollection;
+        load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.CustomPropertyCollectionData;
+         * WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use `StyleCollection.items`, any `load()` method, and the `toJSON()` method.
+         */
+        toJSON(): Excel.Interfaces.StyleCollectionData;
     }
     /**
      *
@@ -12942,7 +12931,7 @@ export declare namespace Excel {
      */
     export class ConditionalFormatCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ConditionalFormat[];
         /**
@@ -13003,7 +12992,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13026,7 +13015,7 @@ export declare namespace Excel {
      */
     export class ConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
@@ -13178,7 +13167,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue";
-        
+
         /**
          *
          * Deletes this conditional format.
@@ -13215,7 +13204,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13241,7 +13230,7 @@ export declare namespace Excel {
      */
     export class DataBarConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Representation of all values to the left of the axis in an Excel data bar. Read-only.
@@ -13299,7 +13288,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         upperBoundRule: Excel.ConditionalDataBarRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13307,7 +13296,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13333,7 +13322,7 @@ export declare namespace Excel {
      */
     export class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -13356,7 +13345,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         gradientFill: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13364,7 +13353,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13390,7 +13379,7 @@ export declare namespace Excel {
      */
     export class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -13420,7 +13409,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         matchPositiveFillColor: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13428,7 +13417,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13476,7 +13465,7 @@ export declare namespace Excel {
      */
     export class CustomConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -13491,7 +13480,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         readonly rule: Excel.ConditionalFormatRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13499,7 +13488,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13525,7 +13514,7 @@ export declare namespace Excel {
      */
     export class ConditionalFormatRule extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
@@ -13547,7 +13536,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         formulaR1C1: string;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13555,7 +13544,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13581,7 +13570,7 @@ export declare namespace Excel {
      */
     export class IconSetConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
@@ -13610,7 +13599,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13618,7 +13607,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13680,7 +13669,7 @@ export declare namespace Excel {
      */
     export class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -13695,7 +13684,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         readonly threeColorScale: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13703,7 +13692,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13787,7 +13776,7 @@ export declare namespace Excel {
      */
     export class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -13802,7 +13791,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         rule: Excel.ConditionalTopBottomRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13810,7 +13799,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13858,7 +13847,7 @@ export declare namespace Excel {
      */
     export class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -13873,7 +13862,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         rule: Excel.ConditionalPresetCriteriaRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13881,7 +13870,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13922,7 +13911,7 @@ export declare namespace Excel {
      */
     export class TextConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -13937,7 +13926,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         rule: Excel.ConditionalTextComparisonRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13945,7 +13934,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -13993,7 +13982,7 @@ export declare namespace Excel {
      */
     export class CellValueConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14008,7 +13997,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         rule: Excel.ConditionalCellValueRule;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -14016,7 +14005,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14071,7 +14060,7 @@ export declare namespace Excel {
      */
     export class ConditionalRangeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Collection of border objects that apply to the overall conditional format range. Read-only.
@@ -14100,7 +14089,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         numberFormat: any;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -14108,7 +14097,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14134,7 +14123,7 @@ export declare namespace Excel {
      */
     export class ConditionalRangeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font.
@@ -14170,7 +14159,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         underline: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";
-        
+
         /**
          *
          * Resets the font formats.
@@ -14185,7 +14174,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14211,7 +14200,7 @@ export declare namespace Excel {
      */
     export class ConditionalRangeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14219,7 +14208,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         color: string;
-        
+
         /**
          *
          * Resets the fill.
@@ -14234,7 +14223,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14260,7 +14249,7 @@ export declare namespace Excel {
      */
     export class ConditionalRangeBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14282,7 +14271,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         style: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -14290,7 +14279,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14316,7 +14305,7 @@ export declare namespace Excel {
      */
     export class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the bottom border. Read-only.
@@ -14388,7 +14377,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14419,7 +14408,7 @@ export declare namespace Excel {
      */
     export class Style extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * A Border collection of four Border objects that represent the style of the four borders.
@@ -14581,7 +14570,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         wrapText: boolean;
-        
+
         /**
          *
          * Deletes this style.
@@ -14596,7 +14585,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14648,7 +14637,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -14665,7 +14654,7 @@ export declare namespace Excel {
      */
     export class PageLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Header and footer configuration for the worksheet.
@@ -14826,7 +14815,7 @@ export declare namespace Excel {
          * @beta
          */
         zoom: Excel.PageLayoutZoomOptions;
-        
+
         /**
          *
          * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, an ItemNotFound error will be thrown.
@@ -14934,7 +14923,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageLayout` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15048,7 +15037,7 @@ export declare namespace Excel {
      */
     export class HeaderFooter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets or sets the center footer of the worksheet.
@@ -15103,7 +15092,7 @@ export declare namespace Excel {
          * @beta
          */
         rightHeader: string;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -15111,7 +15100,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15135,7 +15124,7 @@ export declare namespace Excel {
      */
     export class HeaderFooterGroup extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The general header/footer, used for all pages unless even/odd or first page is specified.
@@ -15192,7 +15181,7 @@ export declare namespace Excel {
          * @beta
          */
         useSheetScale: boolean;
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -15200,7 +15189,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooterGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15224,7 +15213,7 @@ export declare namespace Excel {
      */
     export class PageBreak extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the column index for the page break
@@ -15264,7 +15253,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageBreak` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15288,7 +15277,7 @@ export declare namespace Excel {
      */
     export class PageBreakCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.PageBreak[];
         /**
@@ -15334,7 +15323,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageBreakCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15357,7 +15346,7 @@ export declare namespace Excel {
      */
     export class DataConnectionCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Refreshes all the Data Connections in the collection.
@@ -15379,7 +15368,7 @@ export declare namespace Excel {
      */
     export class RangeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Range[];
         /**
@@ -15407,7 +15396,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15431,7 +15420,7 @@ export declare namespace Excel {
      */
     export class CommentCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Comment[];
         /**
@@ -15469,7 +15458,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15493,7 +15482,7 @@ export declare namespace Excel {
      */
     export class Comment extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents a collection of reply objects associated with the comment. Read-only.
@@ -15525,7 +15514,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15552,7 +15541,7 @@ export declare namespace Excel {
      */
     export class CommentReplyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.CommentReply[];
         /**
@@ -15594,7 +15583,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentReplyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15618,7 +15607,7 @@ export declare namespace Excel {
      */
     export class CommentReply extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the comment reply identifier. Read-only.
@@ -15650,7 +15639,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentReply` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15677,7 +15666,7 @@ export declare namespace Excel {
      */
     export class ShapeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Shape[];
         /**
@@ -15773,7 +15762,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -15797,7 +15786,7 @@ export declare namespace Excel {
      */
     export class Shape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the fill formatting of the shape object. Read-only.
@@ -15962,7 +15951,7 @@ export declare namespace Excel {
          * @beta
          */
         readonly zorderPosition: number;
-        
+
         /**
          *
          * Deletes the Shape
@@ -16093,7 +16082,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16140,7 +16129,7 @@ export declare namespace Excel {
      */
     export class GeometricShape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the shape object for the geometric shape. Read-only.
@@ -16164,7 +16153,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.GeometricShape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16191,7 +16180,7 @@ export declare namespace Excel {
      */
     export class Image extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the shape object for the image. Read-only.
@@ -16223,7 +16212,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Image` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16250,7 +16239,7 @@ export declare namespace Excel {
      */
     export class ShapeGroup extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the shape object for the group. Read-only.
@@ -16290,7 +16279,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16317,7 +16306,7 @@ export declare namespace Excel {
      */
     export class GroupShapeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Shape[];
         /**
@@ -16345,7 +16334,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.GroupShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16369,7 +16358,7 @@ export declare namespace Excel {
      */
     export class ShapeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the shape fill fore color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -16394,7 +16383,7 @@ export declare namespace Excel {
          * @beta
          */
         readonly type: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed";
-        
+
         /**
          *
          * Clears the fill formatting of a shape object.
@@ -16420,7 +16409,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16447,7 +16436,7 @@ export declare namespace Excel {
      */
     export class TextFrame extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         readonly textRange: Excel.TextRange;
         /**
          *
@@ -16545,7 +16534,7 @@ export declare namespace Excel {
          * @beta
          */
         verticalOverflow: Excel.ShapeTextVertOverflowType | "Overflow" | "Ellipsis" | "Clip" | "ShapeTextVertOverflowType_MaxEnumIDs";
-        
+
         /**
          *
          * Deletes all the text in the textframe.
@@ -16561,7 +16550,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextFrame` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16585,7 +16574,7 @@ export declare namespace Excel {
      */
     export class TextRange extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
@@ -16602,7 +16591,7 @@ export declare namespace Excel {
          * @beta
          */
         text: string;
-        
+
         /**
          *
          * Returns a TextRange object for characters in the given range.
@@ -16621,7 +16610,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextRange` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -16648,7 +16637,7 @@ export declare namespace Excel {
      */
     export class ShapeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
@@ -16697,7 +16686,7 @@ export declare namespace Excel {
          * @beta
          */
         underline: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
-        
+
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -16705,7 +16694,7 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
@@ -19178,7 +19167,7 @@ export declare namespace Excel {
      */
     export class FunctionResult<T> extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -19226,7 +19215,7 @@ export declare namespace Excel {
      */
     export class Functions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the absolute value of a number, a number without its sign.
@@ -22993,7 +22982,7 @@ export declare namespace Excel {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        
+
         /** An interface for updating data on the Runtime object, for use in "runtime.set({ ... })". */
         export interface RuntimeUpdateData {
             /**
@@ -33119,14 +33108,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+
         /**
          *
          * Represents the Excel application that manages the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the Iterative Calculation settings.
@@ -33134,49 +33123,49 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the protection of a workbook object.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of worksheet objects that are part of the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the protection of a sheet object.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
@@ -33184,77 +33173,77 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * RangeView represents a set of visible cells of the parent range.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+
         /**
          *
          * Represents a collection of RangeView objects.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+
         /**
          *
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
          *
          * [Api set: ExcelApi 1.4]
          */
-        
+
         /**
          *
          * Setting represents a key-value pair of a setting persisted to the document (per file per add-in). These custom key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note that settings are persisted in the document and hence it is not a place to store any sensitive or protected information such as user information and password.
          *
          * [Api set: ExcelApi 1.4]
          */
-        
+
         /**
          *
          * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, or a reference to a range. This object can be used to obtain range object associated with names.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents an object containing values and types of a named item.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents an Office.js binding that is defined in the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the collection of all the binding objects that are part of the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and the tables are sorted top to bottom and then left to right.
@@ -33262,32 +33251,32 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents an Excel table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of all the columns that are part of the table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a column in a table.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of all the rows that are part of the table.
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -33295,11 +33284,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a row in a table.
-            
+
              Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
              a TableRow object represent the physical location of the table row, but not the data.
              That is, if the data is sorted or if new rows are added, a table row will continue
@@ -33307,14 +33296,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the data validation applied to the current range.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the results from the removeDuplicates method on range
@@ -33322,63 +33311,63 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * A format object encapsulating the range's font, fill, borders, alignment, and other properties.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the format protection of a range object.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+
         /**
          *
          * Represents the background of a range object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the border of an object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the border objects that make up the range border.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for an object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * A collection of all the chart objects on a worksheet.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a chart object in a workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Encapsulates the options for the pivot chart.
@@ -33386,112 +33375,112 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Encapsulates the format properties for the overall chart area.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of chart series.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a series in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Encapsulates the format properties for the chart series
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * A collection of all the chart points within a series inside a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a point of a series in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents formatting object for chart points.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the chart axes.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a single axis in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Encapsulates the format properties for the chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the title of a chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the chart axis title formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents a collection of all the data labels on a chart point.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the data label of a chart point.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Encapsulates the format properties for the chart data labels.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * This object represents the attributes for chart error bars object.
@@ -33499,7 +33488,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Encapsulates the format properties for chart error bars.
@@ -33507,49 +33496,49 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents major or minor gridlines on a chart axis.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Encapsulates the format properties for chart gridlines.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the legend in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the legendEntry in legendEntryCollection.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents a collection of legendEntries.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Encapsulates the format properties of a chart legend.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Encapsulates the properties for Map chart.
@@ -33557,35 +33546,35 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a chart title object of a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Provides access to the office art formatting for chart title.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * Represents the border formatting of a chart element.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Encapsulates the bon options only for histogram chart and pareto chart.
@@ -33593,7 +33582,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents the properties for Box & Whisker chart.
@@ -33601,84 +33590,84 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Encapsulates the formatting options for line elements.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
          *
          * [Api set: ExcelApi 1.1]
          */
-        
+
         /**
          *
          * This object represents the attributes for a chart trendline object.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents a collection of Chart Trendlines.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents the format properties for chart trendline.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * This object represents the attributes for a chart trendline lable object.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Encapsulates the format properties for the chart trendline label.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * This object represents the attributes for a chart plotArea object.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the format properties for chart plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Manages sorting operations on Table objects.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+
         /**
          *
          * Manages the filtering of a table's column.
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+
         /**
          *
          * Represents the AutoFilter object.
@@ -33686,7 +33675,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * A scoped collection of custom XML parts.
@@ -33695,317 +33684,317 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+
         /**
          *
          * A collection of custom XML parts.
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+
         /**
          *
          * Represents a custom XML part object in a workbook.
          *
          * [Api set: ExcelApi 1.5]
          */
-        
+
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+
         /**
          *
          * Represents an Excel PivotTable.
          *
          * [Api set: ExcelApi 1.3]
          */
-        
+
         /**
          *
          * Represents the visual layout of the PivotTable.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel PivotHierarchy.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel RowColumnPivotHierarchy.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel FilterPivotHierarchy.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of DataPivotHierarchy items associated with the PivotTable.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel DataPivotHierarchy.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel PivotField.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents a collection of all the Pivot Items related to their parent PivotField.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents the Excel PivotItem.
          *
          * [Api set: ExcelApi 1.8]
          */
-        
+
         /**
          *
          * Represents workbook properties.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents a custom property.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Contains the collection of customProperty objects.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents a collection of all the conditional formats that are overlap the range.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * An object encapsulating a conditional format's range, format, rule, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents an Excel Conditional Data Bar Type.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a conditional format DataBar Format for the positive side of the data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a conditional format DataBar Format for the negative side of the data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a custom conditional format type.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a rule, for all traditional rule/format pairings.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents an IconSet criteria for conditional formatting.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents an IconSet criteria for conditional formatting.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a Top/Bottom conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a specific text conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents a cell value conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * This object represents the font attributes (font style, color, etc.) for an object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents the background of a conditional range object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents the border of an object.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * Represents the border objects that make up range border.
          *
          * [Api set: ExcelApi 1.6]
          */
-        
+
         /**
          *
          * An object encapsulating a style's format and other properties.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          *
          * Represents a collection of all the styles.
          *
          * [Api set: ExcelApi 1.7]
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a collection of comment objects that are part of the workbook.
@@ -34013,7 +34002,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a cell comment object in the workbook.
@@ -34021,7 +34010,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a collection of comment reply objects that are part of the comment.
@@ -34029,7 +34018,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a cell comment reply object in the workbook.
@@ -34037,7 +34026,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents all the shapes in the worksheet.
@@ -34045,7 +34034,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a generic shape object in the worksheet.
@@ -34053,7 +34042,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a geometric shape object inside a worksheet. A geometric shape can be a line, rectangle, block arrow, equation, flowchart, start, banner, callout or basic shape in Excel.
@@ -34061,7 +34050,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents an image object in the worksheet.
@@ -34069,7 +34058,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a shape group object inside a worksheet.
@@ -34077,7 +34066,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents a shape collection inside a shape group.
@@ -34085,7 +34074,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents the fill formatting for a shape object.
@@ -34093,7 +34082,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * Represents the text frame for a shape object.
@@ -34101,12 +34090,12 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for a TextRange in the Shape.
@@ -34114,14 +34103,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+
         /**
          *
          * An object containing the result of a function-evaluation operation
          *
          * [Api set: ExcelApi 1.2]
          */
-        
+
     }
 }
 
