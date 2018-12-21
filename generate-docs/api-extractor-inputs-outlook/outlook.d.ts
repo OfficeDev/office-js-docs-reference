@@ -2897,19 +2897,19 @@ export declare namespace Office {
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
-         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * `removeAttachmentAsync(attachmentId: string): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+         * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+         * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -2929,9 +2929,9 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          */
-        removeAttachmentAsync(attachmentIndex: string): void;
+        removeAttachmentAsync(attachmentId: string): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -2951,11 +2951,11 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          */
-        removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -2976,12 +2976,12 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;
        /**
         * Removes an event handler for a supported event.
         * 
@@ -4223,7 +4223,7 @@ export declare namespace Office {
          * 
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          * 
-         * @param attachmentId - The identifier of the attachment you want to get. The maximum length of the string is 100 characters. 
+         * @param attachmentId - The identifier of the attachment you want to get. 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
@@ -4805,20 +4805,20 @@ export declare namespace Office {
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
-         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * `removeAttachmentAsync(attachmentId: string): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+         * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+         * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -4838,9 +4838,9 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          */
-        removeAttachmentAsync(attachmentIndex: string): void;
+        removeAttachmentAsync(attachmentId: string): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -4860,11 +4860,11 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          */
-        removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -4884,12 +4884,12 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type {@link Offfice.AsyncResult}. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;
 
         /**
          * Asynchronously saves an item.
@@ -6302,20 +6302,20 @@ export declare namespace Office {
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
-         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * `removeAttachmentAsync(attachmentId: string): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+         * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
          * 
-         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
+         * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -6335,9 +6335,9 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          */
-        removeAttachmentAsync(attachmentIndex: string): void;
+        removeAttachmentAsync(attachmentId: string): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -6357,11 +6357,11 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          */
-        removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -6381,12 +6381,12 @@ export declare namespace Office {
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          *
-         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param attachmentId - The identifier of the attachment to remove.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;
         /**
          * Removes an event handler for a supported event.
          * 
