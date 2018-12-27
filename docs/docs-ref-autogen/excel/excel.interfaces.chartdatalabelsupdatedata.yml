@@ -12,6 +12,7 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.horizontalAlignment
+      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.linkNumberFormat
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.separator
@@ -72,6 +73,25 @@ items:
       return:
         type:
           - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.linkNumberFormat
+    summary: >-
+      Represents whether the number format is linked to the cells (so that the number format changes in the labels when
+      it changes in the cells).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.numberFormat
     summary: |-
       Represents the format code for data labels.

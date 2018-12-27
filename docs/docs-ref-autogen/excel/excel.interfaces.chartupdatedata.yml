@@ -19,6 +19,7 @@ items:
       - excel.Excel.Interfaces.ChartUpdateData.left
       - excel.Excel.Interfaces.ChartUpdateData.legend
       - excel.Excel.Interfaces.ChartUpdateData.name
+      - excel.Excel.Interfaces.ChartUpdateData.pivotOptions
       - excel.Excel.Interfaces.ChartUpdateData.plotArea
       - excel.Excel.Interfaces.ChartUpdateData.plotBy
       - excel.Excel.Interfaces.ChartUpdateData.plotVisibleOnly
@@ -210,6 +211,24 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.ChartUpdateData.pivotOptions
+    summary: >-
+      Encapsulates the options for the pivot chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotOptions
+    fullName: pivotOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotOptions?: Excel.Interfaces.ChartPivotOptionsUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPivotOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartUpdateData.plotArea
     summary: |-
       Represents the plotArea for the chart.

@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.ListItem.context
       - word.Word.ListItem.getAncestor
       - word.Word.ListItem.getAncestorOrNullObject
       - word.Word.ListItem.getDescendants
@@ -24,6 +25,20 @@ items:
       - word.Word.ListItem.toJSON
       - word.Word.ListItem.track
       - word.Word.ListItem.untrack
+  - uid: word.Word.ListItem.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ListItem.getAncestor
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no

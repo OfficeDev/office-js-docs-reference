@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartBinType
+    summary: >-
+      Specifies the bins type of the Histogram chart series.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ChartBinType
+    fullName: Excel.ChartBinType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartBinType.auto
+      - excel.Excel.ChartBinType.binCount
+      - excel.Excel.ChartBinType.binWidth
+      - excel.Excel.ChartBinType.category
+  - uid: excel.Excel.ChartBinType.auto
+    isPreview: true
+    name: auto
+    fullName: auto
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Auto"'
+  - uid: excel.Excel.ChartBinType.binCount
+    isPreview: true
+    name: binCount
+    fullName: binCount
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BinCount"'
+  - uid: excel.Excel.ChartBinType.binWidth
+    isPreview: true
+    name: binWidth
+    fullName: binWidth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BinWidth"'
+  - uid: excel.Excel.ChartBinType.category
+    isPreview: true
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'

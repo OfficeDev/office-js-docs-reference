@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs
+    summary: >-
+      Provides information about the worksheet format change event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.WorksheetFormatChangedEventArgs
+    fullName: Excel.WorksheetFormatChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetFormatChangedEventArgs.address
+      - excel.Excel.WorksheetFormatChangedEventArgs.getRange
+      - excel.Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject
+      - excel.Excel.WorksheetFormatChangedEventArgs.source
+      - excel.Excel.WorksheetFormatChangedEventArgs.type
+      - excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.address
+    summary: >-
+      Gets the range address that represents the changed area of a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRange
+    summary: >-
+      Gets the range that represents the changed area of a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getRange(ctx)
+    fullName: getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(ctx: Excel.RequestContext): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: ctx
+          description: ''
+          type:
+            - excel.Excel.RequestContext
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject
+    summary: >-
+      Gets the range that represents the changed area of a specific worksheet. It might return null object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getRangeOrNullObject(ctx)
+    fullName: getRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: ctx
+          description: ''
+          type:
+            - excel.Excel.RequestContext
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.source
+    summary: >-
+      Gets the source of the event. See Excel.EventSource for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type:
+          - Excel.EventSource | "Local" | "Remote"
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.type
+    summary: >-
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetFormatChanged";'
+      return:
+        type:
+          - '"WorksheetFormatChanged"'
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
+    summary: >-
+      Gets the id of the worksheet in which the data changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

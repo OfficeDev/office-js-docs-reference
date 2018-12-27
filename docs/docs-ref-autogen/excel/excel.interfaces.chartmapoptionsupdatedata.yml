@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData
+    summary: 'An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set({ ... })".'
+    name: Excel.Interfaces.ChartMapOptionsUpdateData
+    fullName: Excel.Interfaces.ChartMapOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy
+      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.level
+      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
+  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy
+    summary: >-
+      Returns or sets series map labels strategy of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";'
+      return:
+        type:
+          - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.level
+    summary: >-
+      Returns or sets series map area of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" |
+        "Continent" | "World";
+      return:
+        type:
+          - >-
+            Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+            "World"
+  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
+    summary: >-
+      Returns or sets series projection type of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType?: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";'
+      return:
+        type:
+          - Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"

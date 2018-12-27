@@ -50,7 +50,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageData
+          - OneNote.Interfaces.ImageData
   - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.

@@ -10,6 +10,7 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.PivotTableUpdateData.name
+      - excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
   - uid: excel.Excel.Interfaces.PivotTableUpdateData.name
     summary: |-
       Name of the PivotTable.
@@ -25,3 +26,21 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
+    summary: >-
+      True if the PivotTable should use custom lists when sorting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists?: boolean;'
+      return:
+        type:
+          - boolean

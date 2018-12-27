@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.Binding.context
       - excel.Excel.Binding.delete
       - excel.Excel.Binding.getRange
       - excel.Excel.Binding.getTable
@@ -24,6 +25,20 @@ items:
       - excel.Excel.Binding.onSelectionChanged
       - excel.Excel.Binding.toJSON
       - excel.Excel.Binding.type
+  - uid: excel.Excel.Binding.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Binding.delete
     summary: |-
       Deletes the binding.
@@ -258,6 +273,12 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>
   - uid: excel.Excel.Binding.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -14,10 +14,25 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.FunctionResult.context
       - excel.Excel.FunctionResult.error
       - excel.Excel.FunctionResult.load
       - excel.Excel.FunctionResult.toJSON
       - excel.Excel.FunctionResult.value
+  - uid: excel.Excel.FunctionResult.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
@@ -74,6 +89,12 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.FunctionResult.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original FunctionResult<T> object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Interfaces.FunctionResultData<T>`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

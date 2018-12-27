@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.RangeCollection.context
       - word.Word.RangeCollection.getFirst
       - word.Word.RangeCollection.getFirstOrNullObject
       - word.Word.RangeCollection.items
@@ -21,6 +22,20 @@ items:
       - word.Word.RangeCollection.toJSON
       - word.Word.RangeCollection.track
       - word.Word.RangeCollection.untrack
+  - uid: word.Word.RangeCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.RangeCollection.getFirst
     summary: |-
       Gets the first range in this collection. Throws if this collection is empty.
@@ -92,7 +107,7 @@ items:
       content: 'load(option?: string | string[]): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: option
@@ -109,7 +124,7 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.RangeCollectionData
+          - Word.Interfaces.RangeCollectionData
         description: ''
   - uid: word.Word.RangeCollection.track
     summary: >-
@@ -127,7 +142,7 @@ items:
       content: 'track(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
   - uid: word.Word.RangeCollection.untrack
     summary: >-
@@ -144,5 +159,5 @@ items:
       content: 'untrack(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''

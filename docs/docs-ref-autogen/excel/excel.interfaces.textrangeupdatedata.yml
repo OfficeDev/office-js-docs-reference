@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TextRangeUpdateData
+    summary: 'An interface for updating data on the TextRange object, for use in "textRange.set({ ... })".'
+    name: Excel.Interfaces.TextRangeUpdateData
+    fullName: Excel.Interfaces.TextRangeUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TextRangeUpdateData.font
+      - excel.Excel.Interfaces.TextRangeUpdateData.text
+  - uid: excel.Excel.Interfaces.TextRangeUpdateData.font
+    summary: >-
+      Returns a ShapeFont object that represents the font attributes for the text range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ShapeFontUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFontUpdateData
+  - uid: excel.Excel.Interfaces.TextRangeUpdateData.text
+    summary: >-
+      Represents the plain text content of the text range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string

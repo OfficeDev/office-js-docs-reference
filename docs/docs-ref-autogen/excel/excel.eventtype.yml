@@ -23,6 +23,7 @@ items:
       - excel.Excel.EventType.tableSelectionChanged
       - excel.Excel.EventType.visualChange
       - excel.Excel.EventType.visualSelectionChanged
+      - excel.Excel.EventType.workbookAutoSaveSettingChanged
       - excel.Excel.EventType.worksheetActivated
       - excel.Excel.EventType.worksheetAdded
       - excel.Excel.EventType.worksheetCalculated
@@ -30,6 +31,7 @@ items:
       - excel.Excel.EventType.worksheetDeactivated
       - excel.Excel.EventType.worksheetDeleted
       - excel.Excel.EventType.worksheetFiltered
+      - excel.Excel.EventType.worksheetFormatChanged
       - excel.Excel.EventType.worksheetSelectionChanged
   - uid: excel.Excel.EventType.agaveVisualUpdate
     summary: >-
@@ -159,6 +161,16 @@ items:
       - typeScript
     type: field
     numericValue: '"VisualSelectionChanged"'
+  - uid: excel.Excel.EventType.workbookAutoSaveSettingChanged
+    summary: >-
+      WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an
+      auto save setting change.
+    name: workbookAutoSaveSettingChanged
+    fullName: workbookAutoSaveSettingChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorkbookAutoSaveSettingChanged"'
   - uid: excel.Excel.EventType.worksheetActivated
     summary: >-
       WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
@@ -229,6 +241,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetFiltered"'
+  - uid: excel.Excel.EventType.worksheetFormatChanged
+    summary: >-
+      WorksheetFormatChanged represents the type of event registered on worksheet, and occurs when there is a format
+      changed.
+    name: worksheetFormatChanged
+    fullName: worksheetFormatChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetFormatChanged"'
   - uid: excel.Excel.EventType.worksheetSelectionChanged
     summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged

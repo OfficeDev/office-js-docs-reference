@@ -19,6 +19,7 @@ items:
       - word.Word.Table.alignment
       - word.Word.Table.autoFitWindow
       - word.Word.Table.clear
+      - word.Word.Table.context
       - word.Word.Table.delete
       - word.Word.Table.deleteColumns
       - word.Word.Table.deleteRows
@@ -42,6 +43,7 @@ items:
       - word.Word.Table.insertTable
       - word.Word.Table.isUniform
       - word.Word.Table.load
+      - word.Word.Table.mergeCells
       - word.Word.Table.nestingLevel
       - word.Word.Table.parentBody
       - word.Word.Table.parentContentControl
@@ -179,6 +181,20 @@ items:
         type:
           - void
         description: ''
+  - uid: word.Word.Table.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Table.delete
     summary: |-
       Deletes the entire table.
@@ -549,7 +565,7 @@ items:
         description: ''
   - uid: word.Word.Table.insertParagraph
     summary: |-
-      Inserts a paragraph at the specified location.
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -573,8 +589,10 @@ items:
           type:
             - Word.InsertLocation
   - uid: word.Word.Table.insertTable
-    summary: |-
-      Inserts a table with the specified number of rows and columns.
+    summary: >-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
+      'After'.
+
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
@@ -656,6 +674,42 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.Table.mergeCells
+    summary: >-
+      Merges the cells bounded inclusively by a first and last cell.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: 'mergeCells(topRow, firstCell, bottomRow, lastCell)'
+    fullName: mergeCells
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'mergeCells(topRow: number, firstCell: number, bottomRow: number, lastCell: number): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+      parameters:
+        - id: topRow
+          description: Required. The row of the first cell
+          type:
+            - number
+        - id: firstCell
+          description: Required. The index of the first cell in its row
+          type:
+            - number
+        - id: bottomRow
+          description: Required. The row of the last cell
+          type:
+            - number
+        - id: lastCell
+          description: Required. The index of the last cell in its row
+          type:
+            - number
   - uid: word.Word.Table.nestingLevel
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.
@@ -835,7 +889,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
