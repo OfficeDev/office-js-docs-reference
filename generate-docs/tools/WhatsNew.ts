@@ -154,13 +154,13 @@ class APISet {
                 output += "### [" + className + "](/"
                     + relativePath + className.toLowerCase() + ")\n\n";
                 output += extractFirstSentenceFromComment(clas.comment);
-                output += "\n\n|Fields|Description|\n|:---|:---|\n";
+                output += "\n\n> [!div class=\"mx-tdCol0BreakAll\"]\n> |Fields|Description|\n> |:---|:---|\n";
                 clas.fields.forEach((field) => {
                     // remove unnecessary parts of the declaration string
                     let newItemText = field.declarationString.replace(/;/g, "");
                     newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
                     newItemText = newItemText.replace(/\|/g, "\\|");
-                    let tableLine = "|[" + newItemText + "]("
+                    let tableLine = "> |[" + newItemText + "]("
                         + buildFieldLink(relativePath, className, field) + ")|";
 
                     tableLine += extractFirstSentenceFromComment(field.comment);
