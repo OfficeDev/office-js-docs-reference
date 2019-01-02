@@ -7,8 +7,32 @@ items:
       - typeScript
     type: package
     children:
+      - custom-functions-runtime.CustomFunctions.associate
       - custom-functions-runtime.CustomFunctions.CancelableHandler
       - custom-functions-runtime.CustomFunctions.StreamingHandler
+  - uid: custom-functions-runtime.CustomFunctions.associate
+    summary: Ties together the function's JavaScript name with the JSON id property
+    isPreview: true
+    name: 'associate(id, functionObject)'
+    fullName: CustomFunctions.associate
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function associate(id: string, functionObject: Function): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+        - id: functionObject
+          description: ''
+          type:
+            - Function
 references:
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
     name: CustomFunctions.CancelableHandler
