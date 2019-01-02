@@ -146,27 +146,30 @@ class APISet {
     public getAsMarkdown(relativePath: string): string {
         this.sort();
         // table header
-        let output: string = "";
+        let output: string = "|Class|Fields|Description|\n|:---|:---|:---|\n";
         this.api.forEach((clas) => {
             // ignore enums
             if (clas.type !== ClassType.Enum) {
                 const className = clas.getClassName();
-                output += "### [" + className + "](/"
-                    + relativePath + className.toLowerCase() + ")\n\n";
-                output += extractFirstSentenceFromComment(clas.comment);
-                output += "\n\n> [!div class=\"mx-tdCol0BreakAll\"]\n> |Fields|Description|\n> |:---|:---|\n";
+                output += "|[" + className + "](/"
+                    + relativePath + className.toLowerCase() + ")|";
+                let first: boolean = true;
                 clas.fields.forEach((field) => {
+                    if (first) {
+                        first = false;
+                    } else {
+                        output += "||";
+                    }
+
                     // remove unnecessary parts of the declaration string
                     let newItemText = field.declarationString.replace(/;/g, "");
                     newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
                     newItemText = newItemText.replace(/\|/g, "\\|");
-                    let tableLine = "> |[" + newItemText + "]("
+                    let tableLine = "[" + newItemText + "]("
                         + buildFieldLink(relativePath, className, field) + ")|";
-
                     tableLine += extractFirstSentenceFromComment(field.comment);
                     output += tableLine + "|\n";
                 });
-                output += "\n";
             }
         });
         return output;
