@@ -202,21 +202,31 @@ function extractFirstSentenceFromComment(commentText) {
 }
 
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
+    let fieldLink: string;
     switch (field.type) {
         case FieldType.Method:
             let parameterLink: string = "";
             let paramIndex = field.declarationString.indexOf(":");
-            while (paramIndex > 0 && paramIndex < field.declarationString.indexOf(")")) {
+            while (paramIndex < field.declarationString.indexOf(")")) {
                 const wordStartIndex = Math.max(
                     field.declarationString.lastIndexOf("(", paramIndex),
                     field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
-                parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex) + "-";
+                parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "") + "-";
                 paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
             }
-            return "/" + relativePath + className.toLowerCase() + "#" + field.name + parameterLink;
+
+            if (parameterLink === "") {
+                parameterLink = "--";
+            }
+
+            fieldLink = "/" + relativePath + className + "#" + field.name + parameterLink;
+            break;
         default:
-            return "/" + relativePath + className.toLowerCase() + "#" + field.name;
+            fieldLink = "/" + relativePath + className + "#" + field.name;
+            break;
     }
+
+    return fieldLink.toLowerCase();
 }
 
 function fixDTS(definitions: string): string {
