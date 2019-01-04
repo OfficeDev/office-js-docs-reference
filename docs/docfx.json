@@ -54,7 +54,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "office-is-1.4",
+        "group": "outlook-is-1.4",
         "src": "docs-ref-autogen/outlook_1_4",
         "dest": "api"
       },
@@ -62,7 +62,7 @@
         "files": [
           "outlook_1_4.yml"
         ],
-        "group": "office-is-1.4",
+        "group": "outlook-is-1.4",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -71,7 +71,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "office-is-1.5",
+        "group": "outlook-is-1.5",
         "src": "docs-ref-autogen/outlook_1_5",
         "dest": "api"
       },
@@ -79,7 +79,7 @@
         "files": [
           "outlook_1_5.yml"
         ],
-        "group": "office-is-1.5",
+        "group": "outlook-is-1.5",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -118,13 +118,13 @@
       }
     ],
     "groups": {
-      "office-is-1.4": {
-        "dest": "office-is-1.4",
-        "moniker_range": "office-is-1.4"
+      "outlook-is-1.4": {
+        "dest": "outlook-is-1.4",
+        "moniker_range": "outlook-is-1.4"
       },
-      "office-is-1.5": {
-        "dest": "office-is-1.5",
-        "moniker_range": "office-is-1.5"
+      "outlook-is-1.5": {
+        "dest": "outlook-is-1.5",
+        "moniker_range": "outlook-is-1.5"
       }
     },
     "overwrite": [],
