@@ -164,7 +164,7 @@ class APISet {
                     // remove unnecessary parts of the declaration string
                     let newItemText = field.declarationString.replace(/;/g, "");
                     newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                    newItemText = newItemText.replace(/\|/g, "\\|");
+                    newItemText = newItemText.replace(/\|/g, "\\|").replace("?", "");
                     let tableLine = "[" + newItemText + "]("
                         + buildFieldLink(relativePath, className, field) + ")|";
                     tableLine += extractFirstSentenceFromComment(field.comment);
@@ -278,7 +278,7 @@ function parseDTS(node: ts.Node, allClasses: APISet): void {
                 // clean up spacing as best we can for the diffed d.ts
                 lastItem.comment = node.getText().replace(/    \*/g, "*");
                 if (lastItem.comment.indexOf("@eventproperty") >= 0) {
-                    // events are indistingushable from properties aside from this tag
+                    // events are indistinguishable from properties aside from this tag
                     lastItem.type = FieldType.Event;
                 }
             }
@@ -311,7 +311,7 @@ function parseDTSFieldItem(
     }
 }
 
-// capturing these because of eccentrities with the compiler ordering
+// capturing these because of eccentricities with the compiler ordering
 let topClass: ClassStruct = null;
 let lastItem: ClassStruct | FieldStruct = null;
 
