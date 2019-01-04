@@ -1,4 +1,4 @@
-{ 
+{
   "build": {
     "content": [
       {
@@ -7,8 +7,7 @@
           "**/toc.yml"
         ],
         "src": "docs-ref-autogen",
-        "dest": "api/office_ref_toc",
-        "version": "office-js"
+        "dest": "api/office_ref_toc"
       },
       {
         "files": [
@@ -17,7 +16,6 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "office",
-        "version": "office-js",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -36,8 +34,11 @@
         ],
         "src": "docs-ref-autogen",
         "dest": "api",
-        "version": "office-js",
         "exclude": [
+          "outlook_1_4/**",
+          "outlook_1_4.yml",
+          "outlook_1_5/**",
+          "outlook_1_5.yml",
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
@@ -50,20 +51,44 @@
       },
       {
         "files": [
-          "toc.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
-        "src": "breadcrumb",
-        "version": "office-js",
-        "dest": "office_js_breadcrumb"
+        "group": "office-is-1.4",
+        "src": "docs-ref-autogen/outlook_1_4",
+        "dest": "api"
       },
       {
         "files": [
-          "**/**.md",
-          "**/**.yml"
+          "outlook_1_4.yml"
         ],
-        "exclude": [
-          "**/obj/**"
-        ]
+        "group": "office-is-1.4",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "office-is-1.5",
+        "src": "docs-ref-autogen/outlook_1_5",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_5.yml"
+        ],
+        "group": "office-is-1.5",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
       }
     ],
     "resource": [
@@ -76,8 +101,7 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "dest": "api",
-        "version": "office-js"
+        "dest": "api"
       },
       {
         "files": [
@@ -90,13 +114,17 @@
           "**/includes/**"
         ],
         "src": "docs-ref-conceptual",
-        "version": "office-js",
         "dest": "office"
       }
     ],
-    "versions": {
-      "office-js": {
-        "dest": "office-js"
+    "groups": {
+      "office-is-1.4": {
+        "dest": "office-is-1.4",
+        "moniker_range": "office-is-1.4"
+      },
+      "office-is-1.5": {
+        "dest": "office-is-1.5",
+        "moniker_range": "office-is-1.5"
       }
     },
     "overwrite": [],
@@ -121,24 +149,13 @@
       "feedback_product_url": "https://officespdev.uservoice.com/"
     },
     "fileMetadata": {
-      "monikers": {
-        "docs-ref-autogen/**": [
-          "office-js"
-        ],
-        "docs-ref-conceptual/**": [
-          "office-js"
-        ],
-        "breadcrumb/**": [
-          "office-js"
-        ]
-      },
-      "feedback_system":{
+      "feedback_system": {
         "docs-ref-conceptual/**/*": "GitHub"
       },
-      "feedback_github_repo":{
+      "feedback_github_repo": {
         "docs-ref-conceptual/**/*": "OfficeDev/office-js-docs-reference"
       },
-      "feedback_product_url":{
+      "feedback_product_url": {
         "docs-ref-conceptual/**/*": "https://officespdev.uservoice.com/"
       },
       "product": {
