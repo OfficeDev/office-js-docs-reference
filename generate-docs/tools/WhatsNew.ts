@@ -164,7 +164,11 @@ class APISet {
                     // remove unnecessary parts of the declaration string
                     let newItemText = field.declarationString.replace(/;/g, "");
                     newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                    newItemText = newItemText.replace(/\|/g, "\\|").replace("?", "");
+                    newItemText = newItemText.replace(/\|/g, "\\|");
+                    if (field.type === FieldType.Property) {
+                        newItemText = newItemText.replace("?", "");
+                    }
+
                     let tableLine = "[" + newItemText + "]("
                         + buildFieldLink(relativePath, className, field) + ")|";
                     tableLine += extractFirstSentenceFromComment(field.comment);
