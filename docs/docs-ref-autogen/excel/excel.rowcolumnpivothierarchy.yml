@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.RowColumnPivotHierarchy.context
       - excel.Excel.RowColumnPivotHierarchy.fields
       - excel.Excel.RowColumnPivotHierarchy.id
       - excel.Excel.RowColumnPivotHierarchy.load
@@ -22,20 +21,6 @@ items:
       - excel.Excel.RowColumnPivotHierarchy.position
       - excel.Excel.RowColumnPivotHierarchy.setToDefault
       - excel.Excel.RowColumnPivotHierarchy.toJSON
-  - uid: excel.Excel.RowColumnPivotHierarchy.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.RowColumnPivotHierarchy.fields
     summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
@@ -147,12 +132,6 @@ items:
           - void
         description: ''
   - uid: excel.Excel.RowColumnPivotHierarchy.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

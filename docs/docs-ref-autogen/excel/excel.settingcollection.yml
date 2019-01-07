@@ -17,7 +17,6 @@ items:
     package: excel
     children:
       - excel.Excel.SettingCollection.add
-      - excel.Excel.SettingCollection.context
       - excel.Excel.SettingCollection.getCount
       - excel.Excel.SettingCollection.getItem
       - excel.Excel.SettingCollection.getItemOrNullObject
@@ -36,7 +35,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
+      content: 'add(key: string, value: string | number | boolean | Date | any[] | any): Excel.Setting;'
       return:
         type:
           - excel.Excel.Setting
@@ -61,21 +60,7 @@ items:
         - id: value
           description: The Value for the new setting.
           type:
-            - string | number | boolean | Date | Array<any> | any
-  - uid: excel.Excel.SettingCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
+            - 'string | number | boolean | Date | any[] | any'
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -230,12 +215,6 @@ items:
           });
           ```
   - uid: excel.Excel.SettingCollection.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
-      array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

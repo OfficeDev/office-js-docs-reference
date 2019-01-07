@@ -15,7 +15,6 @@ items:
     package: excel
     children:
       - excel.Excel.ConditionalRangeFormat.borders
-      - excel.Excel.ConditionalRangeFormat.context
       - excel.Excel.ConditionalRangeFormat.fill
       - excel.Excel.ConditionalRangeFormat.font
       - excel.Excel.ConditionalRangeFormat.load
@@ -36,20 +35,6 @@ items:
       return:
         type:
           - excel.Excel.ConditionalRangeBorderCollection
-  - uid: excel.Excel.ConditionalRangeFormat.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.ConditionalRangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.
@@ -130,12 +115,6 @@ items:
         type:
           - any
   - uid: excel.Excel.ConditionalRangeFormat.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
-      - word.Word.InlinePictureCollection.context
       - word.Word.InlinePictureCollection.getFirst
       - word.Word.InlinePictureCollection.getFirstOrNullObject
       - word.Word.InlinePictureCollection.items
@@ -22,20 +21,6 @@ items:
       - word.Word.InlinePictureCollection.toJSON
       - word.Word.InlinePictureCollection.track
       - word.Word.InlinePictureCollection.untrack
-  - uid: word.Word.InlinePictureCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: word.Word.InlinePictureCollection.getFirst
     summary: |-
       Gets the first inline image in this collection. Throws if this collection is empty.

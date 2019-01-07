@@ -11,7 +11,6 @@ items:
     children:
       - excel.Excel.Interfaces.RangeBorderUpdateData.color
       - excel.Excel.Interfaces.RangeBorderUpdateData.style
-      - excel.Excel.Interfaces.RangeBorderUpdateData.tintAndShade
       - excel.Excel.Interfaces.RangeBorderUpdateData.weight
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData.color
     summary: >-
@@ -51,26 +50,6 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.tintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
-      tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData.weight
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.

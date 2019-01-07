@@ -24310,7 +24310,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync<T>(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void): void;",
+              "signature": "getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24319,9 +24319,14 @@
                 "description": []
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The type of data structure to return. See the remarks section for each host's supported coercion types."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.CoercionType"

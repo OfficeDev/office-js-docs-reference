@@ -1671,22 +1671,22 @@ items:
       })();
 
       ```
-    name: 'getSelectedDataAsync(coerciontype, options, callback)'
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync<T>(coerciontype: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
+        getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
         AsyncResult<T>) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: The type of data structure to return. See the remarks section for each host's supported coercion types.
           type:
             - office.Office.CoercionType
         - id: options

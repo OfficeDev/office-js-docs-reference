@@ -21,12 +21,10 @@ items:
       - excel.Excel.Interfaces.RangeData.formulas
       - excel.Excel.Interfaces.RangeData.formulasLocal
       - excel.Excel.Interfaces.RangeData.formulasR1C1
-      - excel.Excel.Interfaces.RangeData.hasSpill
       - excel.Excel.Interfaces.RangeData.hidden
       - excel.Excel.Interfaces.RangeData.hyperlink
       - excel.Excel.Interfaces.RangeData.isEntireColumn
       - excel.Excel.Interfaces.RangeData.isEntireRow
-      - excel.Excel.Interfaces.RangeData.linkedDataTypeState
       - excel.Excel.Interfaces.RangeData.numberFormat
       - excel.Excel.Interfaces.RangeData.numberFormatLocal
       - excel.Excel.Interfaces.RangeData.rowCount
@@ -36,6 +34,7 @@ items:
       - excel.Excel.Interfaces.RangeData.text
       - excel.Excel.Interfaces.RangeData.values
       - excel.Excel.Interfaces.RangeData.valueTypes
+      - excel.Excel.Interfaces.RangeData.worksheet
   - uid: excel.Excel.Interfaces.RangeData.address
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
@@ -230,25 +229,6 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.hasSpill
-    summary: >-
-      Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
-      do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasSpill?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.RangeData.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -309,24 +289,6 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.linkedDataTypeState
-    summary: >-
-      Represents the data type state of each cell. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: linkedDataTypeState
-    fullName: linkedDataTypeState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'linkedDataTypeState?: Excel.LinkedDataTypeState[][];'
-      return:
-        type:
-          - 'Excel.LinkedDataTypeState[][]'
   - uid: excel.Excel.Interfaces.RangeData.numberFormat
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
@@ -477,3 +439,18 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
+  - uid: excel.Excel.Interfaces.RangeData.worksheet
+    summary: |-
+      The worksheet containing the current range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetData

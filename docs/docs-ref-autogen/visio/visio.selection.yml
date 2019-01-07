@@ -65,7 +65,7 @@ items:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type:
-          - Visio.ShapeCollection
+          - visio.Visio.ShapeCollection
   - uid: visio.Visio.Selection.toJSON
     name: toJSON()
     fullName: toJSON

@@ -16,25 +16,10 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.PresetCriteriaConditionalFormat.context
       - excel.Excel.PresetCriteriaConditionalFormat.format
       - excel.Excel.PresetCriteriaConditionalFormat.load
       - excel.Excel.PresetCriteriaConditionalFormat.rule
       - excel.Excel.PresetCriteriaConditionalFormat.toJSON
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.PresetCriteriaConditionalFormat.format
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -127,12 +112,6 @@ items:
           });
           ```
   - uid: excel.Excel.PresetCriteriaConditionalFormat.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`<!-- -->)
-      that contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

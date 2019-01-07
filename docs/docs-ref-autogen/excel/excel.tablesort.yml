@@ -16,7 +16,6 @@ items:
     children:
       - excel.Excel.TableSort.apply
       - excel.Excel.TableSort.clear
-      - excel.Excel.TableSort.context
       - excel.Excel.TableSort.fields
       - excel.Excel.TableSort.load
       - excel.Excel.TableSort.matchCase
@@ -91,20 +90,6 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.TableSort.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.TableSort.fields
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.
@@ -201,12 +186,6 @@ items:
           - void
         description: ''
   - uid: excel.Excel.TableSort.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.TableSortData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

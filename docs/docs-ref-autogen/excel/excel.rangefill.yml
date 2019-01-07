@@ -16,12 +16,7 @@ items:
     children:
       - excel.Excel.RangeFill.clear
       - excel.Excel.RangeFill.color
-      - excel.Excel.RangeFill.context
       - excel.Excel.RangeFill.load
-      - excel.Excel.RangeFill.pattern
-      - excel.Excel.RangeFill.patternColor
-      - excel.Excel.RangeFill.patternTintAndShade
-      - excel.Excel.RangeFill.tintAndShade
       - excel.Excel.RangeFill.toJSON
   - uid: excel.Excel.RangeFill.clear
     summary: |-
@@ -75,20 +70,6 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RangeFill.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.RangeFill.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -166,97 +147,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFill.pattern
-    summary: >-
-      Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
-      not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
-        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
-        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
-      return:
-        type:
-          - >-
-            Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
-            "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
-            "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-  - uid: excel.Excel.RangeFill.patternColor
-    summary: >-
-      Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
-      named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
-      \#RRGGBB (e.g. "FFA500").
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternColor: string;'
-      return:
-        type:
-          - string
-  - uid: excel.Excel.RangeFill.patternTintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
-      (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
-      will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternTintAndShade: number;'
-      return:
-        type:
-          - number
-  - uid: excel.Excel.RangeFill.tintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
-      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade: number;'
-      return:
-        type:
-          - number
   - uid: excel.Excel.RangeFill.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.RangeFillData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

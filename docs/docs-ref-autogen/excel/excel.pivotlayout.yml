@@ -14,90 +14,17 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.PivotLayout.context
-      - excel.Excel.PivotLayout.enableFieldList
-      - excel.Excel.PivotLayout.getCell
       - excel.Excel.PivotLayout.getColumnLabelRange
       - excel.Excel.PivotLayout.getDataBodyRange
-      - excel.Excel.PivotLayout.getDataHierarchy
       - excel.Excel.PivotLayout.getFilterAxisRange
-      - excel.Excel.PivotLayout.getPivotItems
       - excel.Excel.PivotLayout.getRange
       - excel.Excel.PivotLayout.getRowLabelRange
       - excel.Excel.PivotLayout.layoutType
       - excel.Excel.PivotLayout.load
-      - excel.Excel.PivotLayout.setAutosortOnCell
       - excel.Excel.PivotLayout.showColumnGrandTotals
       - excel.Excel.PivotLayout.showRowGrandTotals
       - excel.Excel.PivotLayout.subtotalLocation
       - excel.Excel.PivotLayout.toJSON
-  - uid: excel.Excel.PivotLayout.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
-  - uid: excel.Excel.PivotLayout.enableFieldList
-    summary: >-
-      True if the field list should be shown or hidden from the UI.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: enableFieldList
-    fullName: enableFieldList
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableFieldList: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: excel.Excel.PivotLayout.getCell
-    summary: >-
-      Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified
-      dataHierarchy, rowItems, and columnItems.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'getCell(dataHierarchy, rowItems, columnItems)'
-    fullName: getCell
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getCell(dataHierarchy: DataPivotHierarchy | string, rowItems: Array<PivotItem | string>, columnItems:
-        Array<PivotItem | string>): Excel.Range;
-      return:
-        type:
-          - excel.Excel.Range
-        description: A range specifying a single cell that contains the value specified.
-      parameters:
-        - id: dataHierarchy
-          description: The dataHierarchy that provides the data item to find.
-          type:
-            - DataPivotHierarchy | string
-        - id: rowItems
-          description: The PivotItems from the row axis that make up the value to find.
-          type:
-            - Array<PivotItem | string>
-        - id: columnItems
-          description: The PivotItems from the column axis that make up the value to find.
-          type:
-            - Array<PivotItem | string>
   - uid: excel.Excel.PivotLayout.getColumnLabelRange
     summary: |-
       Returns the range where the PivotTable's column labels reside.
@@ -151,30 +78,6 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.PivotLayout.getDataHierarchy
-    summary: >-
-      Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getDataHierarchy(cell)
-    fullName: getDataHierarchy
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataHierarchy(cell: Range | string): Excel.DataPivotHierarchy;'
-      return:
-        type:
-          - excel.Excel.DataPivotHierarchy
-        description: The DataPivotHierarchy object used to calculate the value in the specified cell.
-      parameters:
-        - id: cell
-          description: A single cell within the PivotTable data body to get the data hieararchy for.
-          type:
-            - Range | string
   - uid: excel.Excel.PivotLayout.getFilterAxisRange
     summary: |-
       Returns the range of the PivotTable's filter area.
@@ -191,34 +94,6 @@ items:
         type:
           - excel.Excel.Range
         description: ''
-  - uid: excel.Excel.PivotLayout.getPivotItems
-    summary: >-
-      Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'getPivotItems(axis, cell)'
-    fullName: getPivotItems
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;'
-      return:
-        type:
-          - 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
-        description: A collection of PivotItems that are used to calculate the values in the specified row.
-      parameters:
-        - id: axis
-          description: The axis to get the PivotItems from. Must be either "row" or "column."
-          type:
-            - excel.Excel.PivotAxis
-        - id: cell
-          description: A single cell within the PivotTable's data body to get the PivotItems for.
-          type:
-            - Range | string
   - uid: excel.Excel.PivotLayout.getRange
     summary: |-
       Returns the range the PivotTable exists on, excluding the filter area.
@@ -302,34 +177,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotLayout.setAutosortOnCell
-    summary: >-
-      Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'setAutosortOnCell(cell, sortby)'
-    fullName: setAutosortOnCell
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAutosortOnCell(cell: Range | string, sortby: Excel.SortBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: cell
-          description: A single cell to use get the criteria from for applying the autosort.
-          type:
-            - Range | string
-        - id: sortby
-          description: The direction of the sort.
-          type:
-            - excel.Excel.SortBy
   - uid: excel.Excel.PivotLayout.showColumnGrandTotals
     summary: |-
       True if the PivotTable report shows grand totals for columns.
@@ -378,12 +225,6 @@ items:
         type:
           - Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
   - uid: excel.Excel.PivotLayout.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

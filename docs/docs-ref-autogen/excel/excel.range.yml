@@ -5,6 +5,10 @@ items:
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) has detailed walkthroughs,
+      images, and code samples.
     name: Excel.Range
     fullName: Excel.Range
     langs:
@@ -23,14 +27,8 @@ items:
       - excel.Excel.Range.columnHidden
       - excel.Excel.Range.columnIndex
       - excel.Excel.Range.conditionalFormats
-      - excel.Excel.Range.context
-      - excel.Excel.Range.convertDataTypeToText
-      - excel.Excel.Range.convertToLinkedDataType
-      - excel.Excel.Range.copyFrom
       - excel.Excel.Range.dataValidation
       - excel.Excel.Range.delete
-      - excel.Excel.Range.find
-      - excel.Excel.Range.findOrNullObject
       - excel.Excel.Range.format
       - excel.Excel.Range.formulas
       - excel.Excel.Range.formulasLocal
@@ -54,33 +52,23 @@ items:
       - excel.Excel.Range.getRow
       - excel.Excel.Range.getRowsAbove
       - excel.Excel.Range.getRowsBelow
-      - excel.Excel.Range.getSpecialCells
-      - excel.Excel.Range.getSpecialCellsOrNullObject
-      - excel.Excel.Range.getSpillingToRange
-      - excel.Excel.Range.getSpillParent
       - excel.Excel.Range.getSurroundingRegion
-      - excel.Excel.Range.getTables
       - excel.Excel.Range.getUsedRange
       - excel.Excel.Range.getUsedRangeOrNullObject
       - excel.Excel.Range.getVisibleView
-      - excel.Excel.Range.hasSpill
       - excel.Excel.Range.hidden
       - excel.Excel.Range.hyperlink
       - excel.Excel.Range.insert
       - excel.Excel.Range.isEntireColumn
       - excel.Excel.Range.isEntireRow
-      - excel.Excel.Range.linkedDataTypeState
       - excel.Excel.Range.load
       - excel.Excel.Range.merge
       - excel.Excel.Range.numberFormat
       - excel.Excel.Range.numberFormatLocal
-      - excel.Excel.Range.removeDuplicates
-      - excel.Excel.Range.replaceAll
       - excel.Excel.Range.rowCount
       - excel.Excel.Range.rowHidden
       - excel.Excel.Range.rowIndex
       - excel.Excel.Range.select
-      - excel.Excel.Range.setDirty
       - excel.Excel.Range.showCard
       - excel.Excel.Range.sort
       - excel.Excel.Range.style
@@ -254,109 +242,6 @@ items:
       return:
         type:
           - excel.Excel.ConditionalFormatCollection
-  - uid: excel.Excel.Range.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
-  - uid: excel.Excel.Range.convertDataTypeToText
-    summary: >-
-      Converts the range cells with datatypes into text.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: excel.Excel.Range.convertToLinkedDataType
-    summary: >-
-      Converts the range cells into linked datatype in the worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: convertToLinkedDataType
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToLinkedDataType(serviceID: number, languageCulture: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: The Service ID which will be used to query the data.
-          type:
-            - number
-        - id: languageCulture
-          description: Language Culture to query the service for.
-          type:
-            - string
-  - uid: excel.Excel.Range.copyFrom
-    summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
-      be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
-      smaller than the source.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: copyFrom
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean,
-        transpose?: boolean): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
-            outline form which can be created by removing full rows or columns from a rectangular range.
-          type:
-            - Range | RangeAreas | string
-        - id: copyType
-          description: The type of cell data or formatting to copy over. Default is "All".
-          type:
-            - excel.Excel.RangeCopyType
-        - id: skipBlanks
-          description: True if to skip blank cells in the source range. Default is false.
-          type:
-            - boolean
-        - id: transpose
-          description: True if to transpose the cells in the destination range. Default is false.
-          type:
-            - boolean
   - uid: excel.Excel.Range.dataValidation
     summary: |-
       Returns a data validation object.
@@ -410,65 +295,6 @@ items:
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - excel.Excel.DeleteShiftDirection
-  - uid: excel.Excel.Range.find
-    summary: >-
-      Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
-      the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'find(text, criteria)'
-    fullName: find
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'find(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: The Range which matched the search criteria.
-      parameters:
-        - id: text
-          description: String to find.
-          type:
-            - string
-        - id: criteria
-          description: Additional Criteria.
-          type:
-            - excel.Excel.SearchCriteria
-  - uid: excel.Excel.Range.findOrNullObject
-    summary: >-
-      Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
-      the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
-      there are no matches, this function will return a null object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'findOrNullObject(text, criteria)'
-    fullName: findOrNullObject
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'findOrNullObject(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: The Range which matched the search criteria.
-      parameters:
-        - id: text
-          description: String to find.
-          type:
-            - string
-        - id: criteria
-          description: Additional Criteria.
-          type:
-            - excel.Excel.SearchCriteria
   - uid: excel.Excel.Range.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -1244,112 +1070,6 @@ items:
             range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getSpecialCells
-    summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match
-      the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: getSpecialCells
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;'
-      return:
-        type:
-          - excel.Excel.RangeAreas
-        description: ''
-      parameters:
-        - id: cellType
-          description: The type of cells to include.
-          type:
-            - excel.Excel.SpecialCellType
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - excel.Excel.SpecialCellValueType
-  - uid: excel.Excel.Range.getSpecialCellsOrNullObject
-    summary: >-
-      Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified
-      type and value. If no special cells are found, a null object will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    fullName: getSpecialCellsOrNullObject
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType):
-        Excel.RangeAreas;
-      return:
-        type:
-          - excel.Excel.RangeAreas
-        description: ''
-      parameters:
-        - id: cellType
-          description: The type of cells to include.
-          type:
-            - excel.Excel.SpecialCellType
-        - id: cellValueType
-          description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
-          type:
-            - excel.Excel.SpecialCellValueType
-  - uid: excel.Excel.Range.getSpillingToRange
-    summary: >-
-      Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with
-      more than one cell. Read only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getSpillingToRange()
-    fullName: getSpillingToRange
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillingToRange(): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: ''
-  - uid: excel.Excel.Range.getSpillParent
-    summary: >-
-      Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with
-      more than one cell. Read only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getSpillParent()
-    fullName: getSpillParent
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillParent(): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: ''
   - uid: excel.Excel.Range.getSurroundingRegion
     summary: >-
       Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding
@@ -1368,30 +1088,6 @@ items:
         type:
           - excel.Excel.Range
         description: ''
-  - uid: excel.Excel.Range.getTables
-    summary: >-
-      Gets a scoped collection of tables that overlap with the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getTables(fullyContained)
-    fullName: getTables
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
-      return:
-        type:
-          - excel.Excel.TableScopedCollection
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 'If true, returns only tables that are fully contained within the range bounds. The default value is false.'
-          type:
-            - boolean
   - uid: excel.Excel.Range.getUsedRange
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
@@ -1569,25 +1265,6 @@ items:
         type:
           - excel.Excel.RangeView
         description: ''
-  - uid: excel.Excel.Range.hasSpill
-    summary: >-
-      Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
-      do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly hasSpill: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Range.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -1719,24 +1396,6 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.linkedDataTypeState
-    summary: >-
-      Represents the data type state of each cell. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: linkedDataTypeState
-    fullName: linkedDataTypeState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];'
-      return:
-        type:
-          - 'Excel.LinkedDataTypeState[][]'
   - uid: excel.Excel.Range.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -1933,70 +1592,6 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.removeDuplicates
-    summary: >-
-      Removes duplicate values from the range specified by the columns.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'removeDuplicates(columns, includesHeader)'
-    fullName: removeDuplicates
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeDuplicates(columns: number[], includesHeader: boolean): Excel.RemoveDuplicatesResult;'
-      return:
-        type:
-          - excel.Excel.RemoveDuplicatesResult
-        description: The resulting object that contains the number of rows removed and the number of remaining unique rows.
-      parameters:
-        - id: columns
-          description: >-
-            The columns inside the range that may contain duplicates. At least one column needs to be specified.
-            Zero-indexed.
-          type:
-            - 'number[]'
-        - id: includesHeader
-          description: True if the input data contains header. Default is false.
-          type:
-            - boolean
-  - uid: excel.Excel.Range.replaceAll
-    summary: >-
-      Finds and replaces the given string based on the criteria specified within the current range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: replaceAll
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria):
-        OfficeExtension.ClientResult<number>;
-      return:
-        type:
-          - OfficeExtension.ClientResult<number>
-        description: The number of replacements performed.
-      parameters:
-        - id: text
-          description: String to find.
-          type:
-            - string
-        - id: replacement
-          description: String to replace the original with.
-          type:
-            - string
-        - id: criteria
-          description: Additional Replace Criteria.
-          type:
-            - excel.Excel.ReplaceCriteria
   - uid: excel.Excel.Range.rowCount
     summary: |-
       Returns the total number of rows in the range. Read-only.
@@ -2075,25 +1670,6 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.setDirty
-    summary: >-
-      Set a range to be recalculated when the next recalculation occurs.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: setDirty()
-    fullName: setDirty
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -2178,12 +1754,6 @@ items:
         type:
           - 'string[][]'
   - uid: excel.Excel.Range.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

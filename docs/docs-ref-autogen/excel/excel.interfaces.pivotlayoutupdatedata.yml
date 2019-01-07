@@ -9,29 +9,10 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.enableFieldList
       - excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
       - excel.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
       - excel.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
       - excel.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.enableFieldList
-    summary: >-
-      True if the field list should be shown or hidden from the UI.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: enableFieldList
-    fullName: enableFieldList
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableFieldList?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
