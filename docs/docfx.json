@@ -60,12 +60,21 @@
       },
       {
         "files": [
-          "outlook_1_4.yml"
+          "outlook_1_4.yml",
+          "toc.yml"
         ],
         "group": "outlook-is-1.4",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-is-1.4",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      }
       {
         "files": [
           "**/*.md",
@@ -77,12 +86,21 @@
       },
       {
         "files": [
-          "outlook_1_5.yml"
+          "outlook_1_5.yml",
+          "toc.yml"
         ],
         "group": "outlook-is-1.5",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-is-1.5",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      }
       {
         "files": [
           "toc.yml"
