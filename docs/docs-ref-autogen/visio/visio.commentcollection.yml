@@ -49,7 +49,7 @@ items:
       content: 'getItem(key: string): Visio.Comment;'
       return:
         type:
-          - Visio.Comment
+          - visio.Visio.Comment
         description: ''
       parameters:
         - id: key
@@ -124,7 +124,7 @@ items:
       content: 'load(option?: string | string[]): Visio.CommentCollection;'
       return:
         type:
-          - Visio.CommentCollection
+          - visio.Visio.CommentCollection
         description: ''
       parameters:
         - id: option
@@ -141,5 +141,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
       return:
         type:
-          - Visio.Interfaces.CommentCollectionData
+          - visio.Visio.Interfaces.CommentCollectionData
         description: ''

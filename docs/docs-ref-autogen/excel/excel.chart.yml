@@ -5,6 +5,10 @@ items:
       Represents a chart object in a workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      charts](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts) has detailed walkthroughs,
+      images, and code samples.
     name: Excel.Chart
     fullName: Excel.Chart
     langs:
@@ -14,11 +18,9 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.Chart.activate
       - excel.Excel.Chart.axes
       - excel.Excel.Chart.categoryLabelLevel
       - excel.Excel.Chart.chartType
-      - excel.Excel.Chart.context
       - excel.Excel.Chart.dataLabels
       - excel.Excel.Chart.delete
       - excel.Excel.Chart.displayBlanksAs
@@ -32,7 +34,6 @@ items:
       - excel.Excel.Chart.name
       - excel.Excel.Chart.onActivated
       - excel.Excel.Chart.onDeactivated
-      - excel.Excel.Chart.pivotOptions
       - excel.Excel.Chart.plotArea
       - excel.Excel.Chart.plotBy
       - excel.Excel.Chart.plotVisibleOnly
@@ -48,25 +49,6 @@ items:
       - excel.Excel.Chart.top
       - excel.Excel.Chart.width
       - excel.Excel.Chart.worksheet
-  - uid: excel.Excel.Chart.activate
-    summary: >-
-      Activate the chart in the Excel UI.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: activate()
-    fullName: activate
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
   - uid: excel.Excel.Chart.axes
     summary: |-
       Represents chart axes. Read-only.
@@ -143,20 +125,6 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Chart.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
       Represents the datalabels on the chart. Read-only.
@@ -466,24 +434,6 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
-  - uid: excel.Excel.Chart.pivotOptions
-    summary: >-
-      Encapsulates the options for the pivot chart. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: pivotOptions
-    fullName: pivotOptions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pivotOptions: Excel.ChartPivotOptions;'
-      return:
-        type:
-          - excel.Excel.ChartPivotOptions
   - uid: excel.Excel.Chart.plotArea
     summary: |-
       Represents the plotArea for the chart.
@@ -721,12 +671,6 @@ items:
         type:
           - excel.Excel.ChartTitle
   - uid: excel.Excel.Chart.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.ChartData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

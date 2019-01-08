@@ -15,7 +15,6 @@ items:
     package: word
     children:
       - word.Word.TableBorder.color
-      - word.Word.TableBorder.context
       - word.Word.TableBorder.load
       - word.Word.TableBorder.toJSON
       - word.Word.TableBorder.track
@@ -37,20 +36,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableBorder.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: word.Word.TableBorder.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

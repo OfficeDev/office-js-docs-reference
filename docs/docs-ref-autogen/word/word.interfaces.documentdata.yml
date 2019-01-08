@@ -9,13 +9,29 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.DocumentData.allowCloseOnUntitled
       - word.Word.Interfaces.DocumentData.body
       - word.Word.Interfaces.DocumentData.contentControls
-      - word.Word.Interfaces.DocumentData.customXmlParts
       - word.Word.Interfaces.DocumentData.properties
       - word.Word.Interfaces.DocumentData.saved
       - word.Word.Interfaces.DocumentData.sections
-      - word.Word.Interfaces.DocumentData.settings
+  - uid: word.Word.Interfaces.DocumentData.allowCloseOnUntitled
+    summary: >-
+      Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
+      document even if this document is untitled. True to close, false otherwise.
+
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: allowCloseOnUntitled
+    fullName: allowCloseOnUntitled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowCloseOnUntitled?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.DocumentData.body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
@@ -50,24 +66,6 @@ items:
       return:
         type:
           - 'Word.Interfaces.ContentControlData[]'
-  - uid: word.Word.Interfaces.DocumentData.customXmlParts
-    summary: >-
-      Gets the custom XML parts in the document. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
-      return:
-        type:
-          - 'Word.Interfaces.CustomXmlPartData[]'
   - uid: word.Word.Interfaces.DocumentData.properties
     summary: |-
       Gets the properties of the document. Read-only.
@@ -115,21 +113,3 @@ items:
       return:
         type:
           - 'Word.Interfaces.SectionData[]'
-  - uid: word.Word.Interfaces.DocumentData.settings
-    summary: >-
-      Gets the add-in's settings in the document. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: settings
-    fullName: settings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'settings?: Word.Interfaces.SettingData[];'
-      return:
-        type:
-          - 'Word.Interfaces.SettingData[]'

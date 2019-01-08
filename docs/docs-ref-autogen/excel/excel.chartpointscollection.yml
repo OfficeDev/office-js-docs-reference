@@ -14,27 +14,12 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.ChartPointsCollection.context
       - excel.Excel.ChartPointsCollection.count
       - excel.Excel.ChartPointsCollection.getCount
       - excel.Excel.ChartPointsCollection.getItemAt
       - excel.Excel.ChartPointsCollection.items
       - excel.Excel.ChartPointsCollection.load
       - excel.Excel.ChartPointsCollection.toJSON
-  - uid: excel.Excel.ChartPointsCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.ChartPointsCollection.count
     summary: |-
       Returns the number of chart points in the series. Read-only.
@@ -195,12 +180,6 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartPointsCollection.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

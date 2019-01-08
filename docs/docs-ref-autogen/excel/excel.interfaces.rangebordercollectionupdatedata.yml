@@ -12,7 +12,6 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.RangeBorderCollectionUpdateData.items
-      - excel.Excel.Interfaces.RangeBorderCollectionUpdateData.tintAndShade
   - uid: excel.Excel.Interfaces.RangeBorderCollectionUpdateData.items
     name: items
     fullName: items
@@ -24,23 +23,3 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RangeBorderData[]'
-  - uid: excel.Excel.Interfaces.RangeBorderCollectionUpdateData.tintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
-      uniform tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number

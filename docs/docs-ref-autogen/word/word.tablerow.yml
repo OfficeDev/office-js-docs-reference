@@ -17,7 +17,6 @@ items:
       - word.Word.TableRow.cellCount
       - word.Word.TableRow.cells
       - word.Word.TableRow.clear
-      - word.Word.TableRow.context
       - word.Word.TableRow.delete
       - word.Word.TableRow.font
       - word.Word.TableRow.getBorder
@@ -25,11 +24,9 @@ items:
       - word.Word.TableRow.getNext
       - word.Word.TableRow.getNextOrNullObject
       - word.Word.TableRow.horizontalAlignment
-      - word.Word.TableRow.insertContentControl
       - word.Word.TableRow.insertRows
       - word.Word.TableRow.isHeader
       - word.Word.TableRow.load
-      - word.Word.TableRow.merge
       - word.Word.TableRow.parentTable
       - word.Word.TableRow.preferredHeight
       - word.Word.TableRow.rowIndex
@@ -88,20 +85,6 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.TableRow.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: word.Word.TableRow.delete
     summary: |-
       Deletes the entire row.
@@ -224,25 +207,6 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.TableRow.insertContentControl
-    summary: >-
-      Inserts a content control on the row.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: insertContentControl()
-    fullName: insertContentControl
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
-      return:
-        type:
-          - word.Word.ContentControl
-        description: ''
   - uid: word.Word.TableRow.insertRows
     summary: |-
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
@@ -325,25 +289,6 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.TableRow.merge
-    summary: >-
-      Merges the row into one cell.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: merge()
-    fullName: merge
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'merge(): Word.TableCell;'
-      return:
-        type:
-          - Word.TableCell
-        description: ''
   - uid: word.Word.TableRow.parentTable
     summary: |-
       Gets parent table. Read-only.
@@ -414,7 +359,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: searchText

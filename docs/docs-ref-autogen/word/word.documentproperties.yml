@@ -19,7 +19,6 @@ items:
       - word.Word.DocumentProperties.category
       - word.Word.DocumentProperties.comments
       - word.Word.DocumentProperties.company
-      - word.Word.DocumentProperties.context
       - word.Word.DocumentProperties.creationDate
       - word.Word.DocumentProperties.customProperties
       - word.Word.DocumentProperties.format
@@ -112,20 +111,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: word.Word.DocumentProperties.creationDate
     summary: |-
       Gets the creation date of the document. Read only.

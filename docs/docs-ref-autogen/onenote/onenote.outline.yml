@@ -102,7 +102,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage

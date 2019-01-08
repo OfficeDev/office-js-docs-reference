@@ -105,7 +105,7 @@ items:
       content: 'load(option?: string | string[]): Visio.Comment;'
       return:
         type:
-          - Visio.Comment
+          - visio.Visio.Comment
         description: ''
       parameters:
         - id: option
@@ -137,5 +137,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentData;'
       return:
         type:
-          - Visio.Interfaces.CommentData
+          - visio.Visio.Interfaces.CommentData
         description: ''

@@ -300,7 +300,7 @@ items:
       content: 'load(option?: string | string[]): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
       parameters:
         - id: option
@@ -366,7 +366,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ImageData;'
       return:
         type:
-          - OneNote.Interfaces.ImageData
+          - onenote.OneNote.Interfaces.ImageData
         description: ''
   - uid: onenote.OneNote.Image.track
     summary: >-
@@ -384,7 +384,7 @@ items:
       content: 'track(): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
   - uid: onenote.OneNote.Image.untrack
     summary: >-
@@ -401,7 +401,7 @@ items:
       content: 'untrack(): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
   - uid: onenote.OneNote.Image.width
     summary: |-

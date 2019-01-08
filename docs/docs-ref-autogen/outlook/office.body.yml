@@ -53,7 +53,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
+      `getAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
 
       #### Examples
 
@@ -78,22 +78,22 @@ items:
       }
 
       ```
-    name: 'getAsync(coerciontype, options, callback)'
+    name: 'getAsync(coercionType, options, callback)'
     fullName: getAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getAsync(coerciontype: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
+        getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult<string>) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: The format for the returned body.
           type:
             - office.Office.CoercionType
         - id: options

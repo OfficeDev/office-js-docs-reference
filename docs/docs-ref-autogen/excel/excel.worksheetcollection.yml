@@ -15,8 +15,6 @@ items:
     package: excel
     children:
       - excel.Excel.WorksheetCollection.add
-      - excel.Excel.WorksheetCollection.addFromBase64
-      - excel.Excel.WorksheetCollection.context
       - excel.Excel.WorksheetCollection.getActiveWorksheet
       - excel.Excel.WorksheetCollection.getCount
       - excel.Excel.WorksheetCollection.getFirst
@@ -28,12 +26,8 @@ items:
       - excel.Excel.WorksheetCollection.onActivated
       - excel.Excel.WorksheetCollection.onAdded
       - excel.Excel.WorksheetCollection.onCalculated
-      - excel.Excel.WorksheetCollection.onChanged
       - excel.Excel.WorksheetCollection.onDeactivated
       - excel.Excel.WorksheetCollection.onDeleted
-      - excel.Excel.WorksheetCollection.onFiltered
-      - excel.Excel.WorksheetCollection.onFormatChanged
-      - excel.Excel.WorksheetCollection.onSelectionChanged
       - excel.Excel.WorksheetCollection.toJSON
   - uid: excel.Excel.WorksheetCollection.add
     summary: >-
@@ -78,62 +72,6 @@ items:
             Excel determines the name of the new worksheet.
           type:
             - string
-  - uid: excel.Excel.WorksheetCollection.addFromBase64
-    summary: >-
-      Inserts the specified worksheets of a workbook into the current workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: 'addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)'
-    fullName: addFromBase64
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType,
-        relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
-      return:
-        type:
-          - 'OfficeExtension.ClientResult<string[]>'
-        description: An array where each item represents the Id of the new inserted worksheet.
-      parameters:
-        - id: base64File
-          description: Required. Base64 string representing the source workbook.
-          type:
-            - string
-        - id: sheetNamesToInsert
-          description: >-
-            Optional. The speified worksheet names to insert. By default it will insert all worksheets from the source
-            workbook.
-          type:
-            - 'string[]'
-        - id: positionType
-          description: 'Optional. Insert position type, see Excel.WorksheetPositionType for details. Default is "Start".'
-          type:
-            - excel.Excel.WorksheetPositionType
-        - id: relativeTo
-          description: >-
-            Optional. The referencing worksheet object or worksheet name/id in the current workbook. Default is null and
-            based on the postionType parameter it will insert worksheets at the start or end of the current workbook.
-          type:
-            - Worksheet | string
-  - uid: excel.Excel.WorksheetCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.
@@ -471,24 +409,6 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
-  - uid: excel.Excel.WorksheetCollection.onChanged
-    summary: >-
-      Occurs when any worksheet in the workbook is changed.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onChanged
-    fullName: onChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onDeactivated
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.
@@ -532,67 +452,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
-  - uid: excel.Excel.WorksheetCollection.onFiltered
-    summary: >-
-      Occurs when any worksheet's filter is applied in the workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onFiltered
-    fullName: onFiltered
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
-  - uid: excel.Excel.WorksheetCollection.onFormatChanged
-    summary: >-
-      Occurs when any worksheet in the workbook has format changed.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onFormatChanged
-    fullName: onFormatChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-  - uid: excel.Excel.WorksheetCollection.onSelectionChanged
-    summary: >-
-      Occurs when the selection changes on any worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onSelectionChanged
-    fullName: onSelectionChanged
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

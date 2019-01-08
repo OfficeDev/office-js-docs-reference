@@ -11,11 +11,9 @@ items:
     children:
       - word.Word.Interfaces.DocumentCreatedData.body
       - word.Word.Interfaces.DocumentCreatedData.contentControls
-      - word.Word.Interfaces.DocumentCreatedData.customXmlParts
       - word.Word.Interfaces.DocumentCreatedData.properties
       - word.Word.Interfaces.DocumentCreatedData.saved
       - word.Word.Interfaces.DocumentCreatedData.sections
-      - word.Word.Interfaces.DocumentCreatedData.settings
   - uid: word.Word.Interfaces.DocumentCreatedData.body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
@@ -52,23 +50,6 @@ items:
       return:
         type:
           - 'Word.Interfaces.ContentControlData[]'
-  - uid: word.Word.Interfaces.DocumentCreatedData.customXmlParts
-    summary: >-
-      Gets the custom XML parts in the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
-      return:
-        type:
-          - 'Word.Interfaces.CustomXmlPartData[]'
   - uid: word.Word.Interfaces.DocumentCreatedData.properties
     summary: >-
       Gets the properties of the document. Read-only.
@@ -121,20 +102,3 @@ items:
       return:
         type:
           - 'Word.Interfaces.SectionData[]'
-  - uid: word.Word.Interfaces.DocumentCreatedData.settings
-    summary: >-
-      Gets the add-in's settings in the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
-    name: settings
-    fullName: settings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'settings?: Word.Interfaces.SettingData[];'
-      return:
-        type:
-          - 'Word.Interfaces.SettingData[]'

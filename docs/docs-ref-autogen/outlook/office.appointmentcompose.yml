@@ -748,22 +748,24 @@ items:
       }
 
       ```
-    name: 'getSelectedDataAsync(coerciontype, options, callback)'
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
+        getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result:
         AsyncResult<any>) => void): void;
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - office.Office.CoercionType
         - id: options

@@ -17,6 +17,8 @@ items:
       - excel.Excel.Interfaces.NamedItemData.type
       - excel.Excel.Interfaces.NamedItemData.value
       - excel.Excel.Interfaces.NamedItemData.visible
+      - excel.Excel.Interfaces.NamedItemData.worksheet
+      - excel.Excel.Interfaces.NamedItemData.worksheetOrNullObject
   - uid: excel.Excel.Interfaces.NamedItemData.arrayValues
     summary: |-
       Returns an object containing values and types of the named item. Read-only.
@@ -141,3 +143,37 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.NamedItemData.worksheet
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook
+      instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetData
+  - uid: excel.Excel.Interfaces.NamedItemData.worksheetOrNullObject
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
+      workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetOrNullObject
+    fullName: worksheetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetData

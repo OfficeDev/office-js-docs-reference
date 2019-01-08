@@ -14,27 +14,12 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.IconSetConditionalFormat.context
       - excel.Excel.IconSetConditionalFormat.criteria
       - excel.Excel.IconSetConditionalFormat.load
       - excel.Excel.IconSetConditionalFormat.reverseIconOrder
       - excel.Excel.IconSetConditionalFormat.showIconOnly
       - excel.Excel.IconSetConditionalFormat.style
       - excel.Excel.IconSetConditionalFormat.toJSON
-  - uid: excel.Excel.IconSetConditionalFormat.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.IconSetConditionalFormat.criteria
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
@@ -176,16 +161,14 @@ items:
         style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
         "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
         "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
-        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
-        "LinkedEntityMapIcon";
+        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type:
           - >-
             Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
             "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
             "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
-            "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
-            "LinkedEntityMapIcon"
+            "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes"
         description: |-
 
           #### Examples
@@ -231,12 +214,6 @@ items:
           });
           ```
   - uid: excel.Excel.IconSetConditionalFormat.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

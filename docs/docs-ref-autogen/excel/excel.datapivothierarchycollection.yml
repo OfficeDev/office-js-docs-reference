@@ -15,7 +15,6 @@ items:
     package: excel
     children:
       - excel.Excel.DataPivotHierarchyCollection.add
-      - excel.Excel.DataPivotHierarchyCollection.context
       - excel.Excel.DataPivotHierarchyCollection.getCount
       - excel.Excel.DataPivotHierarchyCollection.getItem
       - excel.Excel.DataPivotHierarchyCollection.getItemOrNullObject
@@ -44,20 +43,6 @@ items:
           description: ''
           type:
             - excel.Excel.PivotHierarchy
-  - uid: excel.Excel.DataPivotHierarchyCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.DataPivotHierarchyCollection.getCount
     summary: |-
       Gets the number of pivot hierarchies in the collection.
@@ -184,12 +169,6 @@ items:
           type:
             - excel.Excel.DataPivotHierarchy
   - uid: excel.Excel.DataPivotHierarchyCollection.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Excel.DataPivotHierarchyCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as `Excel.Interfaces.DataPivotHierarchyCollectionData`<!-- -->)
-      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -5,6 +5,10 @@ items:
       Represents an Excel table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      Our [how-to guide on working with
+      tables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables) has detailed walkthroughs,
+      images, and code samples.
     name: Excel.Table
     fullName: Excel.Table
     langs:
@@ -14,11 +18,8 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
-      - excel.Excel.Table.autoFilter
       - excel.Excel.Table.clearFilters
-      - excel.Excel.Table.clearStyle
       - excel.Excel.Table.columns
-      - excel.Excel.Table.context
       - excel.Excel.Table.convertToRange
       - excel.Excel.Table.delete
       - excel.Excel.Table.getDataBodyRange
@@ -32,7 +33,6 @@ items:
       - excel.Excel.Table.load
       - excel.Excel.Table.name
       - excel.Excel.Table.onChanged
-      - excel.Excel.Table.onFiltered
       - excel.Excel.Table.onSelectionChanged
       - excel.Excel.Table.reapplyFilters
       - excel.Excel.Table.rows
@@ -45,24 +45,6 @@ items:
       - excel.Excel.Table.style
       - excel.Excel.Table.toJSON
       - excel.Excel.Table.worksheet
-  - uid: excel.Excel.Table.autoFilter
-    summary: >-
-      Represents the AutoFilter object of the table. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly autoFilter: Excel.AutoFilter;'
-      return:
-        type:
-          - excel.Excel.AutoFilter
   - uid: excel.Excel.Table.clearFilters
     summary: |-
       Clears all the filters currently applied on the table.
@@ -75,25 +57,6 @@ items:
     type: method
     syntax:
       content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: excel.Excel.Table.clearStyle
-    summary: >-
-      Changes the table to use the default table style.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: clearStyle()
-    fullName: clearStyle
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearStyle(): void;'
       return:
         type:
           - void
@@ -113,20 +76,6 @@ items:
       return:
         type:
           - excel.Excel.TableColumnCollection
-  - uid: excel.Excel.Table.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: excel.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
@@ -536,24 +485,6 @@ items:
               console.log("A handler has been registered for the onChanged event");
           });
           ```
-  - uid: excel.Excel.Table.onFiltered
-    summary: >-
-      Occurs when filter is applied on a specific table.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onFiltered
-    fullName: onFiltered
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>
   - uid: excel.Excel.Table.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific table.
@@ -728,12 +659,6 @@ items:
         type:
           - string
   - uid: excel.Excel.Table.toJSON
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
-      properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:
