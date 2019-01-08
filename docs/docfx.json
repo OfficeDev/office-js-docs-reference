@@ -61,7 +61,6 @@
       {
         "files": [
           "outlook_1_4.yml",
-          "toc.yml"
         ],
         "group": "outlook-is-1.4",
         "src": "docs-ref-autogen",
@@ -87,7 +86,6 @@
       {
         "files": [
           "outlook_1_5.yml",
-          "toc.yml"
         ],
         "group": "outlook-is-1.5",
         "src": "docs-ref-autogen",
