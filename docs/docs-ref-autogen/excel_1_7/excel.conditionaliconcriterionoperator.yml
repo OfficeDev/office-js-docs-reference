@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.ConditionalIconCriterionOperator
+    summary: |-
+      Represents the operator for each icon criteria.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalIconCriterionOperator
+    fullName: Excel.ConditionalIconCriterionOperator
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.ConditionalIconCriterionOperator.greaterThan
+      - Excel_1_7.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
+      - Excel_1_7.Excel.ConditionalIconCriterionOperator.invalid
+  - uid: Excel_1_7.Excel.ConditionalIconCriterionOperator.greaterThan
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThan"'
+  - uid: Excel_1_7.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
+    name: greaterThanOrEqual
+    fullName: greaterThanOrEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThanOrEqual"'
+  - uid: Excel_1_7.Excel.ConditionalIconCriterionOperator.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'

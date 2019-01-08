@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_3.Excel.Interfaces.PresetCriteriaConditionalFormatData
+    summary: An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()".
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatData
+    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_3

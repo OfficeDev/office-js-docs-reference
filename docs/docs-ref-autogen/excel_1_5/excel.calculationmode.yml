@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.CalculationMode
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.CalculationMode
+    fullName: Excel.CalculationMode
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.CalculationMode.automatic
+      - Excel_1_5.Excel.CalculationMode.automaticExceptTables
+      - Excel_1_5.Excel.CalculationMode.manual
+  - uid: Excel_1_5.Excel.CalculationMode.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: Excel_1_5.Excel.CalculationMode.automaticExceptTables
+    name: automaticExceptTables
+    fullName: automaticExceptTables
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutomaticExceptTables"'
+  - uid: Excel_1_5.Excel.CalculationMode.manual
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'

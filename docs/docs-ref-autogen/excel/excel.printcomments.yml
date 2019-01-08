@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PrintComments
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.PrintComments
+    fullName: Excel.PrintComments
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.PrintComments.endSheet
+      - excel.Excel.PrintComments.inPlace
+      - excel.Excel.PrintComments.noComments
+  - uid: excel.Excel.PrintComments.endSheet
+    summary: Comments will be printed as end notes at the end of the worksheet.
+    isPreview: true
+    name: endSheet
+    fullName: endSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EndSheet"'
+  - uid: excel.Excel.PrintComments.inPlace
+    summary: Comments will be printed where they were inserted in the worksheet.
+    isPreview: true
+    name: inPlace
+    fullName: inPlace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InPlace"'
+  - uid: excel.Excel.PrintComments.noComments
+    summary: Comments will not be printed.
+    isPreview: true
+    name: noComments
+    fullName: noComments
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NoComments"'

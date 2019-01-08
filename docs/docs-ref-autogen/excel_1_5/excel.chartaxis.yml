@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.ChartAxis
+    summary: |-
+      Represents a single axis in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartAxis
+    fullName: Excel.ChartAxis
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.ChartAxis.context
+      - Excel_1_5.Excel.ChartAxis.format
+      - Excel_1_5.Excel.ChartAxis.load
+      - Excel_1_5.Excel.ChartAxis.majorGridlines
+      - Excel_1_5.Excel.ChartAxis.majorUnit
+      - Excel_1_5.Excel.ChartAxis.maximum
+      - Excel_1_5.Excel.ChartAxis.minimum
+      - Excel_1_5.Excel.ChartAxis.minorGridlines
+      - Excel_1_5.Excel.ChartAxis.minorUnit
+      - Excel_1_5.Excel.ChartAxis.title
+      - Excel_1_5.Excel.ChartAxis.toJSON
+  - uid: Excel_1_5.Excel.ChartAxis.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_5.Excel.ChartAxis.format
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartAxisFormat;'
+      return:
+        type:
+          - excel.Excel.ChartAxisFormat
+  - uid: Excel_1_5.Excel.ChartAxis.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartAxis;'
+      return:
+        type:
+          - excel.Excel.ChartAxis
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_5.Excel.ChartAxis.majorGridlines
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorGridlines
+    fullName: majorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly majorGridlines: Excel.ChartGridlines;'
+      return:
+        type:
+          - excel.Excel.ChartGridlines
+  - uid: Excel_1_5.Excel.ChartAxis.majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorUnit
+    fullName: majorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorUnit: any;'
+      return:
+        type:
+          - any
+  - uid: Excel_1_5.Excel.ChartAxis.maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: any;'
+      return:
+        type:
+          - any
+  - uid: Excel_1_5.Excel.ChartAxis.minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: any;'
+      return:
+        type:
+          - any
+  - uid: Excel_1_5.Excel.ChartAxis.minorGridlines
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorGridlines
+    fullName: minorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly minorGridlines: Excel.ChartGridlines;'
+      return:
+        type:
+          - excel.Excel.ChartGridlines
+  - uid: Excel_1_5.Excel.ChartAxis.minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorUnit
+    fullName: minorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorUnit: any;'
+      return:
+        type:
+          - any
+  - uid: Excel_1_5.Excel.ChartAxis.title
+    summary: |-
+      Represents the axis title. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly title: Excel.ChartAxisTitle;'
+      return:
+        type:
+          - excel.Excel.ChartAxisTitle
+  - uid: Excel_1_5.Excel.ChartAxis.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisData
+        description: ''

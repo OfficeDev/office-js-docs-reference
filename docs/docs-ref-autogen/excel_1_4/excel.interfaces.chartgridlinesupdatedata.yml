@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_4.Excel.Interfaces.ChartGridlinesUpdateData
+    summary: 'An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })".'
+    name: Excel.Interfaces.ChartGridlinesUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_4
+    children:
+      - Excel_1_4.Excel.Interfaces.ChartGridlinesUpdateData.format
+      - Excel_1_4.Excel.Interfaces.ChartGridlinesUpdateData.visible
+  - uid: Excel_1_4.Excel.Interfaces.ChartGridlinesUpdateData.format
+    summary: |-
+      Represents the formatting of chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
+  - uid: Excel_1_4.Excel.Interfaces.ChartGridlinesUpdateData.visible
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

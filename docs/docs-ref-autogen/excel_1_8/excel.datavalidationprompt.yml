@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.DataValidationPrompt
+    summary: |-
+      Represents the user prompt properties for the data validation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationPrompt
+    fullName: Excel.DataValidationPrompt
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.DataValidationPrompt.message
+      - Excel_1_8.Excel.DataValidationPrompt.showPrompt
+      - Excel_1_8.Excel.DataValidationPrompt.title
+  - uid: Excel_1_8.Excel.DataValidationPrompt.message
+    summary: |-
+      Represents the message of the prompt.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.DataValidationPrompt.showPrompt
+    summary: |-
+      It determines showing the prompt or not when user selects a cell with the data validation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPrompt
+    fullName: showPrompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPrompt: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.DataValidationPrompt.title
+    summary: |-
+      Represents the title for the prompt.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string

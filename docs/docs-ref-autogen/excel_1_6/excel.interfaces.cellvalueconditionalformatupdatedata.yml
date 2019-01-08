@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.CellValueConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the CellValueConditionalFormat object, for use in
+      "cellValueConditionalFormat.set({ ... })".
+    name: Excel.Interfaces.CellValueConditionalFormatUpdateData
+    fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.Interfaces.CellValueConditionalFormatUpdateData.format
+      - Excel_1_6.Excel.Interfaces.CellValueConditionalFormatUpdateData.rule
+  - uid: Excel_1_6.Excel.Interfaces.CellValueConditionalFormatUpdateData.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.CellValueConditionalFormatUpdateData.rule
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.ConditionalCellValueRule;'
+      return:
+        type:
+          - excel.Excel.ConditionalCellValueRule

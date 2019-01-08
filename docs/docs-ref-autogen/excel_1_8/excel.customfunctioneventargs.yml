@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.CustomFunctionEventArgs
+    summary: '\[ [API set: CustomFunctions 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: true
+    name: Excel.CustomFunctionEventArgs
+    fullName: Excel.CustomFunctionEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.CustomFunctionEventArgs.higherTicks
+      - Excel_1_8.Excel.CustomFunctionEventArgs.lowerTicks
+  - uid: Excel_1_8.Excel.CustomFunctionEventArgs.higherTicks
+    isPreview: true
+    name: higherTicks
+    fullName: higherTicks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'higherTicks: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_8.Excel.CustomFunctionEventArgs.lowerTicks
+    isPreview: true
+    name: lowerTicks
+    fullName: lowerTicks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerTicks: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.HeaderFooterGroupData
+    summary: An interface describing the data returned by calling "headerFooterGroup.toJSON()".
+    name: Excel.Interfaces.HeaderFooterGroupData
+    fullName: Excel.Interfaces.HeaderFooterGroupData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8

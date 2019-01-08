@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData
+    summary: 'An interface for updating data on the ChartFont object, for use in "chartFont.set({ ... })".'
+    name: Excel.Interfaces.ChartFontUpdateData
+    fullName: Excel.Interfaces.ChartFontUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.bold
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.color
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.italic
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.name
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.size
+      - Excel_1_7.Excel.Interfaces.ChartFontUpdateData.underline
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.bold
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.italic
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.name
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.size
+    summary: |-
+      Size of the font (e.g. 11)
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_7.Excel.Interfaces.ChartFontUpdateData.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: Excel.ChartUnderlineStyle | "None" | "Single";'
+      return:
+        type:
+          - Excel.ChartUnderlineStyle | "None" | "Single"

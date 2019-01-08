@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.FiveBoxesSet
+    name: Excel.FiveBoxesSet
+    fullName: Excel.FiveBoxesSet
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.FiveBoxesSet.__index
+      - Excel_1_2.Excel.FiveBoxesSet.fourFilledBoxes
+      - Excel_1_2.Excel.FiveBoxesSet.noFilledBoxes
+      - Excel_1_2.Excel.FiveBoxesSet.oneFilledBox
+      - Excel_1_2.Excel.FiveBoxesSet.threeFilledBoxes
+      - Excel_1_2.Excel.FiveBoxesSet.twoFilledBoxes
+  - uid: Excel_1_2.Excel.FiveBoxesSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: Excel_1_2.Excel.FiveBoxesSet.fourFilledBoxes
+    name: fourFilledBoxes
+    fullName: fourFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourFilledBoxes: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_2.Excel.FiveBoxesSet.noFilledBoxes
+    name: noFilledBoxes
+    fullName: noFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'noFilledBoxes: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_2.Excel.FiveBoxesSet.oneFilledBox
+    name: oneFilledBox
+    fullName: oneFilledBox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneFilledBox: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_2.Excel.FiveBoxesSet.threeFilledBoxes
+    name: threeFilledBoxes
+    fullName: threeFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeFilledBoxes: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_2.Excel.FiveBoxesSet.twoFilledBoxes
+    name: twoFilledBoxes
+    fullName: twoFilledBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoFilledBoxes: Icon;'
+      return:
+        type:
+          - Icon

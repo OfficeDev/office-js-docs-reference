@@ -15,6 +15,7 @@ items:
     package: word
     children:
       - word.Word.CustomPropertyCollection.add
+      - word.Word.CustomPropertyCollection.context
       - word.Word.CustomPropertyCollection.deleteAll
       - word.Word.CustomPropertyCollection.getCount
       - word.Word.CustomPropertyCollection.getItem
@@ -68,6 +69,20 @@ items:
           description: Required. The custom property's value.
           type:
             - any
+  - uid: word.Word.CustomPropertyCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.CustomPropertyCollection.deleteAll
     summary: |-
       Deletes all custom properties in this collection.

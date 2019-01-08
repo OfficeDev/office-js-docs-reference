@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.TextFrameUpdateData
+    summary: 'An interface for updating data on the TextFrame object, for use in "textFrame.set({ ... })".'
+    name: Excel.Interfaces.TextFrameUpdateData
+    fullName: Excel.Interfaces.TextFrameUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

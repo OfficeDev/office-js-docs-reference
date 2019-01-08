@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.PivotTableUpdateData
+    summary: 'An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })".'
+    name: Excel.Interfaces.PivotTableUpdateData
+    fullName: Excel.Interfaces.PivotTableUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

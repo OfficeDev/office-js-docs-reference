@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.DateTimeDataValidation
+    summary: |-
+      Represents the Date data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DateTimeDataValidation
+    fullName: Excel.DateTimeDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.DateTimeDataValidation.formula1
+      - Excel_1_8.Excel.DateTimeDataValidation.formula2
+      - Excel_1_8.Excel.DateTimeDataValidation.operator
+  - uid: Excel_1_8.Excel.DateTimeDataValidation.formula1
+    summary: >-
+      Gets or sets the Formula1, i.e. minimum value or value depending of the operator. When setting the value, it can
+      be passed in as a Date, a Range object, or a string formula (where the string is either a stringified date/time in
+      ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will
+      always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string | Date | Range;'
+      return:
+        type:
+          - string | Date | Range
+  - uid: Excel_1_8.Excel.DateTimeDataValidation.formula2
+    summary: >-
+      Gets or sets the Formula2, i.e. maximum value or value depending of the operator. When setting the value, it can
+      be passed in as a Date, a Range object, or a string (where the string is either a stringified date/time in ISO8601
+      format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always
+      be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string | Date | Range;'
+      return:
+        type:
+          - string | Date | Range
+  - uid: Excel_1_8.Excel.DateTimeDataValidation.operator
+    summary: |-
+      The operator to use for validating the data.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        operator: Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" |
+        "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
+      return:
+        type:
+          - >-
+            Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" |
+            "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"

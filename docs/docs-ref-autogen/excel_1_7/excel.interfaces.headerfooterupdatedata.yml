@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.HeaderFooterUpdateData
+    summary: 'An interface for updating data on the HeaderFooter object, for use in "headerFooter.set({ ... })".'
+    name: Excel.Interfaces.HeaderFooterUpdateData
+    fullName: Excel.Interfaces.HeaderFooterUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7

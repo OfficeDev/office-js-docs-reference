@@ -14,9 +14,24 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.Application.context
       - word.Word.Application.createDocument
       - word.Word.Application.newObject
       - word.Word.Application.toJSON
+  - uid: word.Word.Application.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Application.createDocument
     summary: |-
       Creates a new document by using an optional base64 encoded .docx file.

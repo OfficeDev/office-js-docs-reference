@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.Interfaces.TableColumnCollectionUpdateData
+    summary: >-
+      An interface for updating data on the TableColumnCollection object, for use in "tableColumnCollection.set({ ...
+      })".
+    name: Excel.Interfaces.TableColumnCollectionUpdateData
+    fullName: Excel.Interfaces.TableColumnCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.Interfaces.TableColumnCollectionUpdateData.items
+  - uid: Excel_1_5.Excel.Interfaces.TableColumnCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TableColumnData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TableColumnData[]'

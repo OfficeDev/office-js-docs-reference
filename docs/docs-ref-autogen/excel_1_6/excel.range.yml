@@ -1,0 +1,1086 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Range
+    summary: |-
+      Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Range
+    fullName: Excel.Range
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.Range.address
+      - Excel_1_6.Excel.Range.addressLocal
+      - Excel_1_6.Excel.Range.calculate
+      - Excel_1_6.Excel.Range.cellCount
+      - Excel_1_6.Excel.Range.clear
+      - Excel_1_6.Excel.Range.columnCount
+      - Excel_1_6.Excel.Range.columnHidden
+      - Excel_1_6.Excel.Range.columnIndex
+      - Excel_1_6.Excel.Range.conditionalFormats
+      - Excel_1_6.Excel.Range.context
+      - Excel_1_6.Excel.Range.delete
+      - Excel_1_6.Excel.Range.format
+      - Excel_1_6.Excel.Range.formulas
+      - Excel_1_6.Excel.Range.formulasLocal
+      - Excel_1_6.Excel.Range.formulasR1C1
+      - Excel_1_6.Excel.Range.getBoundingRect
+      - Excel_1_6.Excel.Range.getCell
+      - Excel_1_6.Excel.Range.getColumn
+      - Excel_1_6.Excel.Range.getColumnsAfter
+      - Excel_1_6.Excel.Range.getColumnsBefore
+      - Excel_1_6.Excel.Range.getEntireColumn
+      - Excel_1_6.Excel.Range.getEntireRow
+      - Excel_1_6.Excel.Range.getIntersection
+      - Excel_1_6.Excel.Range.getIntersectionOrNullObject
+      - Excel_1_6.Excel.Range.getLastCell
+      - Excel_1_6.Excel.Range.getLastColumn
+      - Excel_1_6.Excel.Range.getLastRow
+      - Excel_1_6.Excel.Range.getOffsetRange
+      - Excel_1_6.Excel.Range.getResizedRange
+      - Excel_1_6.Excel.Range.getRow
+      - Excel_1_6.Excel.Range.getRowsAbove
+      - Excel_1_6.Excel.Range.getRowsBelow
+      - Excel_1_6.Excel.Range.getUsedRange
+      - Excel_1_6.Excel.Range.getUsedRangeOrNullObject
+      - Excel_1_6.Excel.Range.getVisibleView
+      - Excel_1_6.Excel.Range.hidden
+      - Excel_1_6.Excel.Range.insert
+      - Excel_1_6.Excel.Range.load
+      - Excel_1_6.Excel.Range.merge
+      - Excel_1_6.Excel.Range.numberFormat
+      - Excel_1_6.Excel.Range.rowCount
+      - Excel_1_6.Excel.Range.rowHidden
+      - Excel_1_6.Excel.Range.rowIndex
+      - Excel_1_6.Excel.Range.select
+      - Excel_1_6.Excel.Range.sort
+      - Excel_1_6.Excel.Range.text
+      - Excel_1_6.Excel.Range.toJSON
+      - Excel_1_6.Excel.Range.track
+      - Excel_1_6.Excel.Range.unmerge
+      - Excel_1_6.Excel.Range.untrack
+      - Excel_1_6.Excel.Range.values
+      - Excel_1_6.Excel.Range.valueTypes
+      - Excel_1_6.Excel.Range.worksheet
+  - uid: Excel_1_6.Excel.Range.address
+    summary: >-
+      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_6.Excel.Range.addressLocal
+    summary: |-
+      Represents range reference for the specified range in the language of the user. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly addressLocal: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_6.Excel.Range.calculate
+    summary: |-
+      Calculates a range of cells on a worksheet.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculate()
+    fullName: calculate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Excel_1_6.Excel.Range.cellCount
+    summary: |-
+      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellCount: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Range.clear
+    summary: |-
+      Clear range values, format, fill, border, etc.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear(applyTo)
+    fullName: clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: applyTo
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+          type:
+            - excel.Excel.ClearApplyTo
+  - uid: Excel_1_6.Excel.Range.columnCount
+    summary: |-
+      Represents the total number of columns in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Range.columnHidden
+    summary: |-
+      Represents if all columns of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_6.Excel.Range.columnIndex
+    summary: |-
+      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnIndex: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Range.conditionalFormats
+    summary: |-
+      Collection of ConditionalFormats that intersect the range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
+      return:
+        type:
+          - excel.Excel.ConditionalFormatCollection
+  - uid: Excel_1_6.Excel.Range.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_6.Excel.Range.delete
+    summary: |-
+      Deletes the cells associated with the range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete(shift)
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(shift: Excel.DeleteShiftDirection): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+          type:
+            - excel.Excel.DeleteShiftDirection
+  - uid: Excel_1_6.Excel.Range.format
+    summary: >-
+      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.RangeFormat;'
+      return:
+        type:
+          - excel.Excel.RangeFormat
+  - uid: Excel_1_6.Excel.Range.formulas
+    summary: >-
+      Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
+      single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
+      cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulas: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: Excel_1_6.Excel.Range.formulasLocal
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
+      value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasLocal: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: Excel_1_6.Excel.Range.formulasR1C1
+    summary: >-
+      Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
+      a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
+      cells in the range.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasR1C1
+    fullName: formulasR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasR1C1: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: Excel_1_6.Excel.Range.getBoundingRect
+    summary: >-
+      Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
+      "D10:E15" is "B2:E15".
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getBoundingRect(anotherRange)
+    fullName: getBoundingRect
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: The range object or address or range name.
+          type:
+            - Range | string
+  - uid: Excel_1_6.Excel.Range.getCell
+    summary: >-
+      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
+      to the top left cell of the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getCell(row, column)'
+    fullName: getCell
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCell(row: number, column: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: row
+          description: Row number of the cell to be retrieved. Zero-indexed.
+          type:
+            - number
+        - id: column
+          description: Column number of the cell to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getColumn
+    summary: |-
+      Gets a column contained in the range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getColumn(column)
+    fullName: getColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumn(column: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: column
+          description: Column number of the range to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getColumnsAfter
+    summary: |-
+      Gets a certain number of columns to the right of the current Range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getColumnsAfter(count)
+    fullName: getColumnsAfter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnsAfter(count?: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getColumnsBefore
+    summary: |-
+      Gets a certain number of columns to the left of the current Range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getColumnsBefore(count)
+    fullName: getColumnsBefore
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnsBefore(count?: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getEntireColumn
+    summary: >-
+      Gets an object that represents the entire column of the range (for example, if the current range represents cells
+      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getEntireColumn()
+    fullName: getEntireColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireColumn(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.getEntireRow
+    summary: >-
+      Gets an object that represents the entire row of the range (for example, if the current range represents cells
+      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getEntireRow()
+    fullName: getEntireRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireRow(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.getIntersection
+    summary: |-
+      Gets the range object that represents the rectangular intersection of the given ranges.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getIntersection(anotherRange)
+    fullName: getIntersection
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: The range object or range address that will be used to determine the intersection of ranges.
+          type:
+            - Range | string
+  - uid: Excel_1_6.Excel.Range.getIntersectionOrNullObject
+    summary: >-
+      Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
+      found, will return a null object.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getIntersectionOrNullObject(anotherRange)
+    fullName: getIntersectionOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: The range object or range address that will be used to determine the intersection of ranges.
+          type:
+            - Range | string
+  - uid: Excel_1_6.Excel.Range.getLastCell
+    summary: |-
+      Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getLastCell()
+    fullName: getLastCell
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastCell(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.getLastColumn
+    summary: |-
+      Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getLastColumn()
+    fullName: getLastColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastColumn(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.getLastRow
+    summary: |-
+      Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getLastRow()
+    fullName: getLastRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastRow(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.getOffsetRange
+    summary: >-
+      Gets an object which represents a range that's offset from the specified range. The dimension of the returned
+      range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
+      will be thrown.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getOffsetRange(rowOffset, columnOffset)'
+    fullName: getOffsetRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: rowOffset
+          description: >-
+            The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset
+            downward, and negative values are offset upward.
+          type:
+            - number
+        - id: columnOffset
+          description: >-
+            The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are
+            offset to the right, and negative values are offset to the left.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getResizedRange
+    summary: >-
+      Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
+      by some number of rows and columns.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getResizedRange(deltaRows, deltaColumns)'
+    fullName: getResizedRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: deltaRows
+          description: >-
+            The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive
+            number to expand the range, or a negative number to decrease it.
+          type:
+            - number
+        - id: deltaColumns
+          description: >-
+            The number of columns by which to expand the bottom-right corner, relative to the current range. Use a
+            positive number to expand the range, or a negative number to decrease it.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getRow
+    summary: |-
+      Gets a row contained in the range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRow(row)
+    fullName: getRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRow(row: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: row
+          description: Row number of the range to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getRowsAbove
+    summary: |-
+      Gets a certain number of rows above the current Range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRowsAbove(count)
+    fullName: getRowsAbove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowsAbove(count?: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getRowsBelow
+    summary: |-
+      Gets a certain number of rows below the current Range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRowsBelow(count)
+    fullName: getRowsBelow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowsBelow(count?: number): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.Range.getUsedRange
+    summary: >-
+      Returns the used range of the given range object. If there are no used cells within the range, this function will
+      throw an ItemNotFound error.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getUsedRange(valuesOnly)
+    fullName: getUsedRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
+          type:
+            - boolean
+  - uid: Excel_1_6.Excel.Range.getUsedRangeOrNullObject
+    summary: >-
+      Returns the used range of the given range object. If there are no used cells within the range, this function will
+      return a null object.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getUsedRangeOrNullObject(valuesOnly)
+    fullName: getUsedRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: Considers only cells with values as used cells.
+          type:
+            - boolean
+  - uid: Excel_1_6.Excel.Range.getVisibleView
+    summary: |-
+      Represents the visible rows of the current range.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getVisibleView()
+    fullName: getVisibleView
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisibleView(): Excel.RangeView;'
+      return:
+        type:
+          - excel.Excel.RangeView
+        description: ''
+  - uid: Excel_1_6.Excel.Range.hidden
+    summary: |-
+      Represents if all cells of the current range are hidden. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_6.Excel.Range.insert
+    summary: >-
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new Range object at the now blank space.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insert(shift)
+    fullName: insert
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+          type:
+            - excel.Excel.InsertShiftDirection
+  - uid: Excel_1_6.Excel.Range.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_6.Excel.Range.merge
+    summary: |-
+      Merge the range cells into one region in the worksheet.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: merge(across)
+    fullName: merge
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'merge(across?: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: across
+          description: >-
+            Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default
+            value is false.
+          type:
+            - boolean
+  - uid: Excel_1_6.Excel.Range.numberFormat
+    summary: >-
+      Represents Excel's number format code for the given range. When setting number format to a range, the value
+      argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
+      will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: Excel_1_6.Excel.Range.rowCount
+    summary: |-
+      Returns the total number of rows in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Range.rowHidden
+    summary: |-
+      Represents if all rows of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_6.Excel.Range.rowIndex
+    summary: |-
+      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Range.select
+    summary: |-
+      Selects the specified range in the Excel UI.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: select()
+    fullName: select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Excel_1_6.Excel.Range.sort
+    summary: |-
+      Represents the range sort of the current range. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sort: Excel.RangeSort;'
+      return:
+        type:
+          - excel.Excel.RangeSort
+  - uid: Excel_1_6.Excel.Range.text
+    summary: >-
+      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
+      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string[][];'
+      return:
+        type:
+          - 'string[][]'
+  - uid: Excel_1_6.Excel.Range.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.RangeData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.RangeData
+        description: ''
+  - uid: Excel_1_6.Excel.Range.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.unmerge
+    summary: |-
+      Unmerge the range cells into separate cells.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: unmerge()
+    fullName: unmerge
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unmerge(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Excel_1_6.Excel.Range.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.Range.values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string. When setting values to a range, the value argument can
+      be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: Excel_1_6.Excel.Range.valueTypes
+    summary: |-
+      Represents the type of data of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueTypes
+    fullName: valueTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueTypes: Excel.RangeValueType[][];'
+      return:
+        type:
+          - 'Excel.RangeValueType[][]'
+  - uid: Excel_1_6.Excel.Range.worksheet
+    summary: |-
+      The worksheet containing the current range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type:
+          - excel.Excel.Worksheet

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.SettingData
+    summary: An interface describing the data returned by calling "setting.toJSON()".
+    name: Excel.Interfaces.SettingData
+    fullName: Excel.Interfaces.SettingData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2

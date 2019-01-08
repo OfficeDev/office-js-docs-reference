@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+    summary: >-
+      An interface for updating data on the FilterPivotHierarchyCollection object, for use in
+      "filterPivotHierarchyCollection.set({ ... })".
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+    fullName: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1
+    children:
+      - Excel_1_1.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items
+  - uid: Excel_1_1.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.FilterPivotHierarchyData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.FilterPivotHierarchyData[]'

@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.CustomFunctionType
+    summary: '\[ [API set: CustomFunctions 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: true
+    name: Excel.CustomFunctionType
+    fullName: Excel.CustomFunctionType
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.CustomFunctionType.invalid
+      - Excel_1_5.Excel.CustomFunctionType.script
+      - Excel_1_5.Excel.CustomFunctionType.webService
+  - uid: Excel_1_5.Excel.CustomFunctionType.invalid
+    isPreview: true
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: Excel_1_5.Excel.CustomFunctionType.script
+    isPreview: true
+    name: script
+    fullName: script
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Script"'
+  - uid: Excel_1_5.Excel.CustomFunctionType.webService
+    isPreview: true
+    name: webService
+    fullName: webService
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WebService"'

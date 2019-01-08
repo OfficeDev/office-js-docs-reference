@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.RangeValueType
+    summary: >-
+      \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
+      RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeValueType
+    fullName: Excel.RangeValueType
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.RangeValueType.boolean
+      - Excel_1_6.Excel.RangeValueType.double
+      - Excel_1_6.Excel.RangeValueType.empty
+      - Excel_1_6.Excel.RangeValueType.error
+      - Excel_1_6.Excel.RangeValueType.integer
+      - Excel_1_6.Excel.RangeValueType.richValue
+      - Excel_1_6.Excel.RangeValueType.string
+      - Excel_1_6.Excel.RangeValueType.unknown
+  - uid: Excel_1_6.Excel.RangeValueType.boolean
+    name: boolean
+    fullName: boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: Excel_1_6.Excel.RangeValueType.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: Excel_1_6.Excel.RangeValueType.empty
+    name: empty
+    fullName: empty
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Empty"'
+  - uid: Excel_1_6.Excel.RangeValueType.error
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Error"'
+  - uid: Excel_1_6.Excel.RangeValueType.integer
+    name: integer
+    fullName: integer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Integer"'
+  - uid: Excel_1_6.Excel.RangeValueType.richValue
+    name: richValue
+    fullName: richValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichValue"'
+  - uid: Excel_1_6.Excel.RangeValueType.string
+    name: string
+    fullName: string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'
+  - uid: Excel_1_6.Excel.RangeValueType.unknown
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

@@ -17,6 +17,7 @@ items:
     package: excel
     children:
       - excel.Excel.TableCollection.add
+      - excel.Excel.TableCollection.context
       - excel.Excel.TableCollection.count
       - excel.Excel.TableCollection.getCount
       - excel.Excel.TableCollection.getItem
@@ -24,7 +25,10 @@ items:
       - excel.Excel.TableCollection.getItemOrNullObject
       - excel.Excel.TableCollection.items
       - excel.Excel.TableCollection.load
+      - excel.Excel.TableCollection.onAdded
       - excel.Excel.TableCollection.onChanged
+      - excel.Excel.TableCollection.onDeleted
+      - excel.Excel.TableCollection.onFiltered
       - excel.Excel.TableCollection.toJSON
   - uid: excel.Excel.TableCollection.add
     summary: >-
@@ -78,6 +82,20 @@ items:
             the data down by one row.
           type:
             - boolean
+  - uid: excel.Excel.TableCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.
@@ -310,6 +328,24 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.TableCollection.onAdded
+    summary: >-
+      Occurs when new table is added in a workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onAdded
+    fullName: onAdded
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
   - uid: excel.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
@@ -338,7 +374,49 @@ items:
               console.log("A handler has been registered for the table collection onChanged event");
           });
           ```
+  - uid: excel.Excel.TableCollection.onDeleted
+    summary: >-
+      Occurs when the specified table is deleted in a workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onDeleted
+    fullName: onDeleted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
+  - uid: excel.Excel.TableCollection.onFiltered
+    summary: >-
+      Occurs when filter is applied on any table in a workbook, or a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onFiltered
+    fullName: onFiltered
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>
   - uid: excel.Excel.TableCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

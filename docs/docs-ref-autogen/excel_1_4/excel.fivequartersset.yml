@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_4.Excel.FiveQuartersSet
+    name: Excel.FiveQuartersSet
+    fullName: Excel.FiveQuartersSet
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_4
+    children:
+      - Excel_1_4.Excel.FiveQuartersSet.__index
+      - Excel_1_4.Excel.FiveQuartersSet.blackCircle
+      - Excel_1_4.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
+      - Excel_1_4.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
+      - Excel_1_4.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
+      - Excel_1_4.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
+  - uid: Excel_1_4.Excel.FiveQuartersSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: Excel_1_4.Excel.FiveQuartersSet.blackCircle
+    name: blackCircle
+    fullName: blackCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_4.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
+    name: circleWithOneWhiteQuarter
+    fullName: circleWithOneWhiteQuarter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'circleWithOneWhiteQuarter: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_4.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
+    name: circleWithThreeWhiteQuarters
+    fullName: circleWithThreeWhiteQuarters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'circleWithThreeWhiteQuarters: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_4.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
+    name: circleWithTwoWhiteQuarters
+    fullName: circleWithTwoWhiteQuarters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'circleWithTwoWhiteQuarters: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_4.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
+    name: whiteCircleAllWhiteQuarters
+    fullName: whiteCircleAllWhiteQuarters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'whiteCircleAllWhiteQuarters: Icon;'
+      return:
+        type:
+          - Icon

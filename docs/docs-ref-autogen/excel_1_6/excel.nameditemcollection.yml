@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.NamedItemCollection
+    summary: >-
+      A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.NamedItemCollection
+    fullName: Excel.NamedItemCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.NamedItemCollection.add
+      - Excel_1_6.Excel.NamedItemCollection.addFormulaLocal
+      - Excel_1_6.Excel.NamedItemCollection.context
+      - Excel_1_6.Excel.NamedItemCollection.getCount
+      - Excel_1_6.Excel.NamedItemCollection.getItem
+      - Excel_1_6.Excel.NamedItemCollection.getItemOrNullObject
+      - Excel_1_6.Excel.NamedItemCollection.items
+      - Excel_1_6.Excel.NamedItemCollection.load
+      - Excel_1_6.Excel.NamedItemCollection.toJSON
+  - uid: Excel_1_6.Excel.NamedItemCollection.add
+    summary: |-
+      Adds a new name to the collection of the given scope.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(name, reference, comment)'
+    fullName: add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, reference: Range | string, comment?: string): Excel.NamedItem;'
+      return:
+        type:
+          - excel.Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the named item.
+          type:
+            - string
+        - id: reference
+          description: The formula or the range that the name will refer to.
+          type:
+            - Range | string
+        - id: comment
+          description: Optional. The comment associated with the named item.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.NamedItemCollection.addFormulaLocal
+    summary: |-
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'addFormulaLocal(name, formula, comment)'
+    fullName: addFormulaLocal
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;'
+      return:
+        type:
+          - excel.Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: The "name" of the named item.
+          type:
+            - string
+        - id: formula
+          description: The formula in the user's locale that the name will refer to.
+          type:
+            - string
+        - id: comment
+          description: Optional. The comment associated with the named item.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.NamedItemCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_6.Excel.NamedItemCollection.getCount
+    summary: |-
+      Gets the number of named items in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: Excel_1_6.Excel.NamedItemCollection.getItem
+    summary: |-
+      Gets a NamedItem object using its name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(name)
+    fullName: getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.NamedItem;'
+      return:
+        type:
+          - excel.Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: Nameditem name.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.NamedItemCollection.getItemOrNullObject
+    summary: |-
+      Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.NamedItem;'
+      return:
+        type:
+          - excel.Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: Nameditem name.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.NamedItemCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.NamedItem[];'
+      return:
+        type:
+          - 'Excel.NamedItem[]'
+  - uid: Excel_1_6.Excel.NamedItemCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemCollection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.NamedItemCollection;'
+      return:
+        type:
+          - excel.Excel.NamedItemCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_6.Excel.NamedItemCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.NamedItemCollectionData
+        description: ''

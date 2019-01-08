@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.WorksheetDeactivatedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the Deactivated event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetDeactivatedEventArgs
+    fullName: Excel.WorksheetDeactivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.WorksheetDeactivatedEventArgs.type
+      - Excel_1_8.Excel.WorksheetDeactivatedEventArgs.worksheetId
+  - uid: Excel_1_8.Excel.WorksheetDeactivatedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetDeactivated";'
+      return:
+        type:
+          - '"WorksheetDeactivated"'
+  - uid: Excel_1_8.Excel.WorksheetDeactivatedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet that is deactivated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

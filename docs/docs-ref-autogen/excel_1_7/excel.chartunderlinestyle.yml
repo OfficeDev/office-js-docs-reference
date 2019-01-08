@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.ChartUnderlineStyle
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartUnderlineStyle
+    fullName: Excel.ChartUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.ChartUnderlineStyle.none
+      - Excel_1_7.Excel.ChartUnderlineStyle.single
+  - uid: Excel_1_7.Excel.ChartUnderlineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: Excel_1_7.Excel.ChartUnderlineStyle.single
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'

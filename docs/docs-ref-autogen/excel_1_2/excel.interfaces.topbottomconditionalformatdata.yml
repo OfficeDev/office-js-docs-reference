@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.TopBottomConditionalFormatData
+    summary: An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()".
+    name: Excel.Interfaces.TopBottomConditionalFormatData
+    fullName: Excel.Interfaces.TopBottomConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.PageLayoutData
+    summary: An interface describing the data returned by calling "pageLayout.toJSON()".
+    name: Excel.Interfaces.PageLayoutData
+    fullName: Excel.Interfaces.PageLayoutData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7

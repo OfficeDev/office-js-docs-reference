@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.ChartPivotOptionsData
+    summary: An interface describing the data returned by calling "chartPivotOptions.toJSON()".
+    name: Excel.Interfaces.ChartPivotOptionsData
+    fullName: Excel.Interfaces.ChartPivotOptionsData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6

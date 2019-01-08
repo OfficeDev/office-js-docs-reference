@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.PivotLayoutData
+    summary: An interface describing the data returned by calling "pivotLayout.toJSON()".
+    name: Excel.Interfaces.PivotLayoutData
+    fullName: Excel.Interfaces.PivotLayoutData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.PivotLayoutData.layoutType
+      - Excel_1_8.Excel.Interfaces.PivotLayoutData.showColumnGrandTotals
+      - Excel_1_8.Excel.Interfaces.PivotLayoutData.showRowGrandTotals
+      - Excel_1_8.Excel.Interfaces.PivotLayoutData.subtotalLocation
+  - uid: Excel_1_8.Excel.Interfaces.PivotLayoutData.layoutType
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+      return:
+        type:
+          - Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+  - uid: Excel_1_8.Excel.Interfaces.PivotLayoutData.showColumnGrandTotals
+    summary: |-
+      True if the PivotTable report shows grand totals for columns.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Interfaces.PivotLayoutData.showRowGrandTotals
+    summary: |-
+      True if the PivotTable report shows grand totals for rows.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Interfaces.PivotLayoutData.subtotalLocation
+    summary: >-
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      return:
+        type:
+          - Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"

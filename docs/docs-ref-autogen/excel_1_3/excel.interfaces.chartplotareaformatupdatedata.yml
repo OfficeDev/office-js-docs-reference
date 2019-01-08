@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_3.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    summary: 'An interface for updating data on the ChartPlotAreaFormat object, for use in "chartPlotAreaFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_3

@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.DataChangeType
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DataChangeType
+    fullName: Excel.DataChangeType
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.DataChangeType.cellDeleted
+      - Excel_1_7.Excel.DataChangeType.cellInserted
+      - Excel_1_7.Excel.DataChangeType.columnDeleted
+      - Excel_1_7.Excel.DataChangeType.columnInserted
+      - Excel_1_7.Excel.DataChangeType.rangeEdited
+      - Excel_1_7.Excel.DataChangeType.rowDeleted
+      - Excel_1_7.Excel.DataChangeType.rowInserted
+      - Excel_1_7.Excel.DataChangeType.unknown
+  - uid: Excel_1_7.Excel.DataChangeType.cellDeleted
+    summary: CellDeleted represents the data change event is triggered by deleting cells.
+    name: cellDeleted
+    fullName: cellDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CellDeleted"'
+  - uid: Excel_1_7.Excel.DataChangeType.cellInserted
+    summary: CellInserted represents the data change event is triggered by inserting new cells.
+    name: cellInserted
+    fullName: cellInserted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CellInserted"'
+  - uid: Excel_1_7.Excel.DataChangeType.columnDeleted
+    summary: ColumnDeleted represents the data change event is triggered by deleting columns.
+    name: columnDeleted
+    fullName: columnDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColumnDeleted"'
+  - uid: Excel_1_7.Excel.DataChangeType.columnInserted
+    summary: ColumnInserted represents the data change event is triggered by inserting new columns.
+    name: columnInserted
+    fullName: columnInserted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ColumnInserted"'
+  - uid: Excel_1_7.Excel.DataChangeType.rangeEdited
+    summary: RangeEdited represents the data change event is triggered by range being edited.
+    name: rangeEdited
+    fullName: rangeEdited
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RangeEdited"'
+  - uid: Excel_1_7.Excel.DataChangeType.rowDeleted
+    summary: RowDeleted represents the data change event is triggered by deleting rows.
+    name: rowDeleted
+    fullName: rowDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RowDeleted"'
+  - uid: Excel_1_7.Excel.DataChangeType.rowInserted
+    summary: RowInserted represents the data change event is triggered by inserting new rows.
+    name: rowInserted
+    fullName: rowInserted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RowInserted"'
+  - uid: Excel_1_7.Excel.DataChangeType.unknown
+    summary: Unknown represents the type of data change is not the listed types.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

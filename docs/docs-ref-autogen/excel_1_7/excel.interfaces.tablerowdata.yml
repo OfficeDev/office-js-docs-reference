@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.TableRowData
+    summary: An interface describing the data returned by calling "tableRow.toJSON()".
+    name: Excel.Interfaces.TableRowData
+    fullName: Excel.Interfaces.TableRowData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.TableRowData.index
+      - Excel_1_7.Excel.Interfaces.TableRowData.values
+  - uid: Excel_1_7.Excel.Interfaces.TableRowData.index
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_7.Excel.Interfaces.TableRowData.values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: any[][];'
+      return:
+        type:
+          - 'any[][]'

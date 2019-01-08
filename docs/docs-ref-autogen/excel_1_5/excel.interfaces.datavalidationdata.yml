@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.Interfaces.DataValidationData
+    summary: An interface describing the data returned by calling "dataValidation.toJSON()".
+    name: Excel.Interfaces.DataValidationData
+    fullName: Excel.Interfaces.DataValidationData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_5

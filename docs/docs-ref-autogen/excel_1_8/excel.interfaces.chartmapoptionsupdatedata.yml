@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.ChartMapOptionsUpdateData
+    summary: 'An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set({ ... })".'
+    name: Excel.Interfaces.ChartMapOptionsUpdateData
+    fullName: Excel.Interfaces.ChartMapOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8

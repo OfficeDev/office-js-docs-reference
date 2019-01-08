@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.FunctionResultData
+    summary: An interface describing the data returned by calling "functionResult.toJSON()".
+    name: Excel.Interfaces.FunctionResultData
+    fullName: Excel.Interfaces.FunctionResultData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

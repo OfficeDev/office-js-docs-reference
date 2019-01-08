@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.DocumentPropertyItem
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DocumentPropertyItem
+    fullName: Excel.DocumentPropertyItem
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.DocumentPropertyItem.appName
+      - Excel_1_7.Excel.DocumentPropertyItem.author
+      - Excel_1_7.Excel.DocumentPropertyItem.category
+      - Excel_1_7.Excel.DocumentPropertyItem.comments
+      - Excel_1_7.Excel.DocumentPropertyItem.company
+      - Excel_1_7.Excel.DocumentPropertyItem.creation
+      - Excel_1_7.Excel.DocumentPropertyItem.format
+      - Excel_1_7.Excel.DocumentPropertyItem.keywords
+      - Excel_1_7.Excel.DocumentPropertyItem.lastAuth
+      - Excel_1_7.Excel.DocumentPropertyItem.lastPrint
+      - Excel_1_7.Excel.DocumentPropertyItem.lastSave
+      - Excel_1_7.Excel.DocumentPropertyItem.manager
+      - Excel_1_7.Excel.DocumentPropertyItem.revision
+      - Excel_1_7.Excel.DocumentPropertyItem.subject
+      - Excel_1_7.Excel.DocumentPropertyItem.template
+      - Excel_1_7.Excel.DocumentPropertyItem.title
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.appName
+    name: appName
+    fullName: appName
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AppName"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.author
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Author"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.category
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.comments
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Comments"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.company
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Company"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.creation
+    name: creation
+    fullName: creation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Creation"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Format"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.keywords
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Keywords"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.lastAuth
+    name: lastAuth
+    fullName: lastAuth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastAuth"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.lastPrint
+    name: lastPrint
+    fullName: lastPrint
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastPrint"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.lastSave
+    name: lastSave
+    fullName: lastSave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastSave"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.manager
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manager"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.revision
+    name: revision
+    fullName: revision
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Revision"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.subject
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Subject"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.template
+    name: template
+    fullName: template
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Template"'
+  - uid: Excel_1_7.Excel.DocumentPropertyItem.title
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Title"'

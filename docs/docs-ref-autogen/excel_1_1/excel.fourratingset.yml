@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.FourRatingSet
+    name: Excel.FourRatingSet
+    fullName: Excel.FourRatingSet
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1
+    children:
+      - Excel_1_1.Excel.FourRatingSet.__index
+      - Excel_1_1.Excel.FourRatingSet.fourBars
+      - Excel_1_1.Excel.FourRatingSet.oneBar
+      - Excel_1_1.Excel.FourRatingSet.threeBars
+      - Excel_1_1.Excel.FourRatingSet.twoBars
+  - uid: Excel_1_1.Excel.FourRatingSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: Excel_1_1.Excel.FourRatingSet.fourBars
+    name: fourBars
+    fullName: fourBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_1.Excel.FourRatingSet.oneBar
+    name: oneBar
+    fullName: oneBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneBar: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_1.Excel.FourRatingSet.threeBars
+    name: threeBars
+    fullName: threeBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_1.Excel.FourRatingSet.twoBars
+    name: twoBars
+    fullName: twoBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoBars: Icon;'
+      return:
+        type:
+          - Icon

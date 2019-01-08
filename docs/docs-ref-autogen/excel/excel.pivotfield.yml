@@ -14,14 +14,30 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.PivotField.context
       - excel.Excel.PivotField.id
       - excel.Excel.PivotField.items
       - excel.Excel.PivotField.load
       - excel.Excel.PivotField.name
       - excel.Excel.PivotField.showAllItems
       - excel.Excel.PivotField.sortByLabels
+      - excel.Excel.PivotField.sortByValues
       - excel.Excel.PivotField.subtotals
       - excel.Excel.PivotField.toJSON
+  - uid: excel.Excel.PivotField.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.PivotField.id
     summary: |-
       Id of the PivotField.
@@ -129,7 +145,34 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'sortByLabels(sortby: Excel.SortBy): void;'
+      content: 'sortByLabels(sortby: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortby
+          description: Represents whether the sorting is done in an ascending or descending order.
+          type:
+            - SortBy
+  - uid: excel.Excel.PivotField.sortByValues
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
+    fullName: sortByValues
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        sortByValues(sortby: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
+        string>): void;
       return:
         type:
           - void
@@ -139,6 +182,18 @@ items:
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - excel.Excel.SortBy
+        - id: valuesHierarchy
+          description: Specifies the values to be used for sorting.
+          type:
+            - excel.Excel.DataPivotHierarchy
+        - id: pivotItemScope
+          description: >-
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
+          type:
+            - Array<PivotItem | string>
   - uid: excel.Excel.PivotField.subtotals
     summary: |-
       Subtotals of the PivotField.
@@ -155,6 +210,12 @@ items:
         type:
           - excel.Excel.Subtotals
   - uid: excel.Excel.PivotField.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

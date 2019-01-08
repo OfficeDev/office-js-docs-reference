@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.FormatProtectionUpdateData
+    summary: 'An interface for updating data on the FormatProtection object, for use in "formatProtection.set({ ... })".'
+    name: Excel.Interfaces.FormatProtectionUpdateData
+    fullName: Excel.Interfaces.FormatProtectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

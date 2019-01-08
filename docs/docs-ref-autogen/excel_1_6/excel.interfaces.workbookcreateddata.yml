@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.WorkbookCreatedData
+    summary: An interface describing the data returned by calling "workbookCreated.toJSON()".
+    name: Excel.Interfaces.WorkbookCreatedData
+    fullName: Excel.Interfaces.WorkbookCreatedData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6

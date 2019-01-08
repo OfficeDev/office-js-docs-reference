@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.ChartTrendlineFormatUpdateData
+    summary: 'An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartTrendlineFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.ChartTrendlineFormatUpdateData.line
+  - uid: Excel_1_8.Excel.Interfaces.ChartTrendlineFormatUpdateData.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatUpdateData

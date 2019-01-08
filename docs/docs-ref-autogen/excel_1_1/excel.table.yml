@@ -1,0 +1,287 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Table
+    summary: |-
+      Represents an Excel table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Table
+    fullName: Excel.Table
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_1
+    children:
+      - Excel_1_1.Excel.Table.columns
+      - Excel_1_1.Excel.Table.context
+      - Excel_1_1.Excel.Table.delete
+      - Excel_1_1.Excel.Table.getDataBodyRange
+      - Excel_1_1.Excel.Table.getHeaderRowRange
+      - Excel_1_1.Excel.Table.getRange
+      - Excel_1_1.Excel.Table.getTotalRowRange
+      - Excel_1_1.Excel.Table.id
+      - Excel_1_1.Excel.Table.load
+      - Excel_1_1.Excel.Table.name
+      - Excel_1_1.Excel.Table.rows
+      - Excel_1_1.Excel.Table.showHeaders
+      - Excel_1_1.Excel.Table.showTotals
+      - Excel_1_1.Excel.Table.style
+      - Excel_1_1.Excel.Table.toJSON
+  - uid: Excel_1_1.Excel.Table.columns
+    summary: |-
+      Represents a collection of all the columns in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columns: Excel.TableColumnCollection;'
+      return:
+        type:
+          - excel.Excel.TableColumnCollection
+  - uid: Excel_1_1.Excel.Table.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_1.Excel.Table.delete
+    summary: |-
+      Deletes the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Excel_1_1.Excel.Table.getDataBodyRange
+    summary: |-
+      Gets the range object associated with the data body of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getDataBodyRange()
+    fullName: getDataBodyRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_1.Excel.Table.getHeaderRowRange
+    summary: |-
+      Gets the range object associated with header row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_1.Excel.Table.getRange
+    summary: |-
+      Gets the range object associated with the entire table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_1.Excel.Table.getTotalRowRange
+    summary: |-
+      Gets the range object associated with totals row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getTotalRowRange()
+    fullName: getTotalRowRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_1.Excel.Table.id
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_1.Excel.Table.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.Table;'
+      return:
+        type:
+          - excel.Excel.Table
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_1.Excel.Table.name
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_1.Excel.Table.rows
+    summary: |-
+      Represents a collection of all the rows in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rows: Excel.TableRowCollection;'
+      return:
+        type:
+          - excel.Excel.TableRowCollection
+  - uid: Excel_1_1.Excel.Table.showHeaders
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_1.Excel.Table.showTotals
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_1.Excel.Table.style
+    summary: >-
+      Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
+      TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
+      style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_1.Excel.Table.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TableData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableData
+        description: ''

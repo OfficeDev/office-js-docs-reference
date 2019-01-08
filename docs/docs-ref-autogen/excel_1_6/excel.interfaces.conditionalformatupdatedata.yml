@@ -1,0 +1,318 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData
+    summary: 'An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })".'
+    name: Excel.Interfaces.ConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.cellValue
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.cellValueOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.colorScale
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.custom
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.customOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.dataBar
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.iconSet
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.preset
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.presetOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.priority
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.stopIfTrue
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.textComparison
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.topBottom
+      - Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.topBottomOrNullObject
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.cellValue
+    summary: >-
+      Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellValue
+    fullName: cellValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellValue?: Excel.Interfaces.CellValueConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.cellValueOrNullObject
+    summary: >-
+      Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellValueOrNullObject
+    fullName: cellValueOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.colorScale
+    summary: |-
+      Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScale
+    fullName: colorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'colorScale?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.colorScaleOrNullObject
+    summary: |-
+      Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScaleOrNullObject
+    fullName: colorScaleOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.custom
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: Excel.Interfaces.CustomConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.customOrNullObject
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customOrNullObject
+    fullName: customOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customOrNullObject?: Excel.Interfaces.CustomConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.dataBar
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataBar
+    fullName: dataBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataBar?: Excel.Interfaces.DataBarConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.dataBarOrNullObject
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataBarOrNullObject
+    fullName: dataBarOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.iconSet
+    summary: |-
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iconSet
+    fullName: iconSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconSet?: Excel.Interfaces.IconSetConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.iconSetOrNullObject
+    summary: |-
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iconSetOrNullObject
+    fullName: iconSetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.preset
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preset
+    fullName: preset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preset?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.presetOrNullObject
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: presetOrNullObject
+    fullName: presetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.priority
+    summary: >-
+      The priority (or index) within the conditional format collection that this conditional format currently exists in.
+      Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
+      negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
+      minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
+      object at that new priority location if you want to make further changes to it. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.stopIfTrue
+    summary: >-
+      If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+      Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: stopIfTrue
+    fullName: stopIfTrue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stopIfTrue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.textComparison
+    summary: >-
+      Returns the specific text conditional format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text".
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textComparison
+    fullName: textComparison
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textComparison?: Excel.Interfaces.TextConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TextConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.textComparisonOrNullObject
+    summary: >-
+      Returns the specific text conditional format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text".
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textComparisonOrNullObject
+    fullName: textComparisonOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TextConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.topBottom
+    summary: >-
+      Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topBottom
+    fullName: topBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topBottom?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+  - uid: Excel_1_6.Excel.Interfaces.ConditionalFormatUpdateData.topBottomOrNullObject
+    summary: >-
+      Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topBottomOrNullObject
+    fullName: topBottomOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData

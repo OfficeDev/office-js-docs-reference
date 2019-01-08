@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeArrowsSet.redDownArrow
     name: redDownArrow
     fullName: redDownArrow
@@ -50,7 +50,7 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeArrowsSet.yellowSideArrow
     name: yellowSideArrow
     fullName: yellowSideArrow
@@ -61,4 +61,4 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

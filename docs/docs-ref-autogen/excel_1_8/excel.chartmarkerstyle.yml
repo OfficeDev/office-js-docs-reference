@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.ChartMarkerStyle
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartMarkerStyle
+    fullName: Excel.ChartMarkerStyle
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.ChartMarkerStyle.automatic
+      - Excel_1_8.Excel.ChartMarkerStyle.circle
+      - Excel_1_8.Excel.ChartMarkerStyle.dash
+      - Excel_1_8.Excel.ChartMarkerStyle.diamond
+      - Excel_1_8.Excel.ChartMarkerStyle.dot
+      - Excel_1_8.Excel.ChartMarkerStyle.invalid
+      - Excel_1_8.Excel.ChartMarkerStyle.none
+      - Excel_1_8.Excel.ChartMarkerStyle.picture
+      - Excel_1_8.Excel.ChartMarkerStyle.plus
+      - Excel_1_8.Excel.ChartMarkerStyle.square
+      - Excel_1_8.Excel.ChartMarkerStyle.star
+      - Excel_1_8.Excel.ChartMarkerStyle.triangle
+      - Excel_1_8.Excel.ChartMarkerStyle.x
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.circle
+    name: circle
+    fullName: circle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Circle"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.diamond
+    name: diamond
+    fullName: diamond
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamond"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.dot
+    name: dot
+    fullName: dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.picture
+    name: picture
+    fullName: picture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Picture"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.plus
+    name: plus
+    fullName: plus
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Plus"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.square
+    name: square
+    fullName: square
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Square"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.star
+    name: star
+    fullName: star
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.triangle
+    name: triangle
+    fullName: triangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Triangle"'
+  - uid: Excel_1_8.Excel.ChartMarkerStyle.x
+    name: x
+    fullName: x
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"X"'

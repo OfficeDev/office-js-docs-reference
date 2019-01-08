@@ -1,0 +1,203 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData
+    summary: An interface describing the data returned by calling "documentProperties.toJSON()".
+    name: Excel.Interfaces.DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.author
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.category
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.comments
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.company
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.creationDate
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.custom
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.keywords
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.lastAuthor
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.manager
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.revisionNumber
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.subject
+      - Excel_1_8.Excel.Interfaces.DocumentPropertiesData.title
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.author
+    summary: |-
+      Gets or sets the author of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.category
+    summary: |-
+      Gets or sets the category of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.comments
+    summary: |-
+      Gets or sets the comments of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.company
+    summary: |-
+      Gets or sets the company of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.creationDate
+    summary: |-
+      Gets the creation date of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type:
+          - Date
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.custom
+    summary: |-
+      Gets the collection of custom properties of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: Excel.Interfaces.CustomPropertyData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CustomPropertyData[]'
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.keywords
+    summary: |-
+      Gets or sets the keywords of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.lastAuthor
+    summary: |-
+      Gets the last author of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lastAuthor
+    fullName: lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lastAuthor?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.manager
+    summary: |-
+      Gets or sets the manager of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.revisionNumber
+    summary: |-
+      Gets the revision number of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.subject
+    summary: |-
+      Gets or sets the subject of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.DocumentPropertiesData.title
+    summary: |-
+      Gets or sets the title of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the PresetCriteriaConditionalFormat object, for use in
+      "presetCriteriaConditionalFormat.set({ ... })".
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData
+    summary: 'An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartAreaFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData.border
+      - Excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData.font
+  - uid: Excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData.border
+    summary: |-
+      Represents the border format of chart area, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderUpdateData
+  - uid: Excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontUpdateData

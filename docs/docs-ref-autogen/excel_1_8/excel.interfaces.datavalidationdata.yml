@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData
+    summary: An interface describing the data returned by calling "dataValidation.toJSON()".
+    name: Excel.Interfaces.DataValidationData
+    fullName: Excel.Interfaces.DataValidationData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.DataValidationData.errorAlert
+      - Excel_1_8.Excel.Interfaces.DataValidationData.ignoreBlanks
+      - Excel_1_8.Excel.Interfaces.DataValidationData.prompt
+      - Excel_1_8.Excel.Interfaces.DataValidationData.rule
+      - Excel_1_8.Excel.Interfaces.DataValidationData.type
+      - Excel_1_8.Excel.Interfaces.DataValidationData.valid
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.errorAlert
+    summary: |-
+      Error alert when user enters invalid data.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: errorAlert
+    fullName: errorAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorAlert?: Excel.DataValidationErrorAlert;'
+      return:
+        type:
+          - excel.Excel.DataValidationErrorAlert
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.ignoreBlanks
+    summary: |-
+      Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: ignoreBlanks
+    fullName: ignoreBlanks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreBlanks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.prompt
+    summary: |-
+      Prompt when users select a cell.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: prompt
+    fullName: prompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'prompt?: Excel.DataValidationPrompt;'
+      return:
+        type:
+          - excel.Excel.DataValidationPrompt
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.rule
+    summary: |-
+      Data Validation rule that contains different type of data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.DataValidationRule;'
+      return:
+        type:
+          - excel.Excel.DataValidationRule
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.type
+    summary: |-
+      Type of the data validation, see Excel.DataValidationType for details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        type?: Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
+        "Custom" | "Inconsistent" | "MixedCriteria";
+      return:
+        type:
+          - >-
+            Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
+            "Custom" | "Inconsistent" | "MixedCriteria"
+  - uid: Excel_1_8.Excel.Interfaces.DataValidationData.valid
+    summary: >-
+      Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
+      are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
+      within the range.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valid
+    fullName: valid
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valid?: boolean;'
+      return:
+        type:
+          - boolean

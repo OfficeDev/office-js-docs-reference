@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet
+    name: Excel.FourTrafficLightsSet
+    fullName: Excel.FourTrafficLightsSet
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.FourTrafficLightsSet.__index
+      - Excel_1_6.Excel.FourTrafficLightsSet.blackCircleWithBorder
+      - Excel_1_6.Excel.FourTrafficLightsSet.greenCircle
+      - Excel_1_6.Excel.FourTrafficLightsSet.redCircleWithBorder
+      - Excel_1_6.Excel.FourTrafficLightsSet.yellowCircle
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet.blackCircleWithBorder
+    name: blackCircleWithBorder
+    fullName: blackCircleWithBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackCircleWithBorder: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet.greenCircle
+    name: greenCircle
+    fullName: greenCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet.redCircleWithBorder
+    name: redCircleWithBorder
+    fullName: redCircleWithBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCircleWithBorder: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_6.Excel.FourTrafficLightsSet.yellowCircle
+    name: yellowCircle
+    fullName: yellowCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowCircle: Icon;'
+      return:
+        type:
+          - Icon

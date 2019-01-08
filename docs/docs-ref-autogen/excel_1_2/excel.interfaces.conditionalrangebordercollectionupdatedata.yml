@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    summary: >-
+      An interface for updating data on the ConditionalRangeBorderCollection object, for use in
+      "conditionalRangeBorderCollection.set({ ... })".
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
+  - uid: Excel_1_2.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ConditionalRangeBorderData[]'

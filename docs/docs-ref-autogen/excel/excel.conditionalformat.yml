@@ -18,6 +18,7 @@ items:
       - excel.Excel.ConditionalFormat.cellValueOrNullObject
       - excel.Excel.ConditionalFormat.colorScale
       - excel.Excel.ConditionalFormat.colorScaleOrNullObject
+      - excel.Excel.ConditionalFormat.context
       - excel.Excel.ConditionalFormat.custom
       - excel.Excel.ConditionalFormat.customOrNullObject
       - excel.Excel.ConditionalFormat.dataBar
@@ -25,6 +26,7 @@ items:
       - excel.Excel.ConditionalFormat.delete
       - excel.Excel.ConditionalFormat.getRange
       - excel.Excel.ConditionalFormat.getRangeOrNullObject
+      - excel.Excel.ConditionalFormat.getRanges
       - excel.Excel.ConditionalFormat.iconSet
       - excel.Excel.ConditionalFormat.iconSetOrNullObject
       - excel.Excel.ConditionalFormat.id
@@ -143,6 +145,20 @@ items:
       return:
         type:
           - excel.Excel.ColorScaleConditionalFormat
+  - uid: excel.Excel.ConditionalFormat.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ConditionalFormat.custom
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
@@ -314,6 +330,25 @@ items:
       return:
         type:
           - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.ConditionalFormat.getRanges
+    summary: >-
+      Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getRanges()
+    fullName: getRanges
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
         description: ''
   - uid: excel.Excel.ConditionalFormat.iconSet
     summary: |-
@@ -572,6 +607,12 @@ items:
         type:
           - excel.Excel.TextConditionalFormat
   - uid: excel.Excel.ConditionalFormat.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

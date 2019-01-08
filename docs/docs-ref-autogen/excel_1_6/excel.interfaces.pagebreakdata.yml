@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.PageBreakData
+    summary: An interface describing the data returned by calling "pageBreak.toJSON()".
+    name: Excel.Interfaces.PageBreakData
+    fullName: Excel.Interfaces.PageBreakData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6

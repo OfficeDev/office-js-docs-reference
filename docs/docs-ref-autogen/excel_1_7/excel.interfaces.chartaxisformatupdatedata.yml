@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData
+    summary: 'An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartAxisFormatUpdateData
+    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData.font
+      - Excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData.line
+  - uid: Excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontUpdateData
+  - uid: Excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatUpdateData

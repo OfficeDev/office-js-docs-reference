@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.TextRangeUpdateData
+    summary: 'An interface for updating data on the TextRange object, for use in "textRange.set({ ... })".'
+    name: Excel.Interfaces.TextRangeUpdateData
+    fullName: Excel.Interfaces.TextRangeUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8

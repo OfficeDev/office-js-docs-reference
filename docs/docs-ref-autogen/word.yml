@@ -18,14 +18,19 @@ items:
       - word.Word.ContentControl
       - word.Word.ContentControlAppearance
       - word.Word.ContentControlCollection
+      - word.Word.ContentControlEventArgs
       - word.Word.ContentControlType
       - word.Word.CustomProperty
       - word.Word.CustomPropertyCollection
+      - word.Word.CustomXmlPart
+      - word.Word.CustomXmlPartCollection
+      - word.Word.CustomXmlPartScopedCollection
       - word.Word.Document
       - word.Word.DocumentCreated
       - word.Word.DocumentProperties
       - word.Word.DocumentPropertyType
       - word.Word.ErrorCodes
+      - word.Word.EventType
       - word.Word.FileContentFormat
       - word.Word.Font
       - word.Word.HeaderFooterType
@@ -43,6 +48,11 @@ items:
       - word.Word.Interfaces.CustomPropertyCollectionUpdateData
       - word.Word.Interfaces.CustomPropertyData
       - word.Word.Interfaces.CustomPropertyUpdateData
+      - word.Word.Interfaces.CustomXmlPartCollectionData
+      - word.Word.Interfaces.CustomXmlPartCollectionUpdateData
+      - word.Word.Interfaces.CustomXmlPartData
+      - word.Word.Interfaces.CustomXmlPartScopedCollectionData
+      - word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
       - word.Word.Interfaces.DocumentCreatedData
       - word.Word.Interfaces.DocumentCreatedUpdateData
       - word.Word.Interfaces.DocumentData
@@ -74,6 +84,10 @@ items:
       - word.Word.Interfaces.SectionCollectionUpdateData
       - word.Word.Interfaces.SectionData
       - word.Word.Interfaces.SectionUpdateData
+      - word.Word.Interfaces.SettingCollectionData
+      - word.Word.Interfaces.SettingCollectionUpdateData
+      - word.Word.Interfaces.SettingData
+      - word.Word.Interfaces.SettingUpdateData
       - word.Word.Interfaces.TableBorderData
       - word.Word.Interfaces.TableBorderUpdateData
       - word.Word.Interfaces.TableCellCollectionData
@@ -106,6 +120,8 @@ items:
       - word.Word.Section
       - word.Word.SectionCollection
       - word.Word.SelectionMode
+      - word.Word.Setting
+      - word.Word.SettingCollection
       - word.Word.Style
       - word.Word.Table
       - word.Word.TableBorder
@@ -119,29 +135,30 @@ items:
       - word.Word.VerticalAlignment
   - uid: word.Word.run
     summary: >-
-      Executes a batch script that performs actions on the Word object model, using the RequestContext of
-      previously-created API objects.
-    name: 'run(objects, batch)'
+      Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures, which allow you to resume using the
+      request context of previously created objects:
+
+
+      run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =&gt; Promise<T>): Promise<T>;
+
+
+      run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Word.RequestContext) =&gt; Promise<T>):
+      Promise<T>;
+    name: run(batch)
     fullName: Word.run
     langs:
       - typeScript
     type: function
     syntax:
-      content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
-        Promise<T>): Promise<T>;
+      content: 'export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;'
       return:
         type:
           - Promise<T>
         description: ''
       parameters:
-        - id: objects
-          description: >-
-            An array of previously-created API objects. The array will be validated to make sure that all of the objects
-            share the same context. The batch will use this shared RequestContext, which means that any changes applied
-            to these objects will be picked up by "context.sync()".
-          type:
-            - 'OfficeExtension.ClientObject[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -173,12 +190,20 @@ references:
     name: Word.ContentControlAppearance
   - uid: word.Word.ContentControlCollection
     name: Word.ContentControlCollection
+  - uid: word.Word.ContentControlEventArgs
+    name: Word.ContentControlEventArgs
   - uid: word.Word.ContentControlType
     name: Word.ContentControlType
   - uid: word.Word.CustomProperty
     name: Word.CustomProperty
   - uid: word.Word.CustomPropertyCollection
     name: Word.CustomPropertyCollection
+  - uid: word.Word.CustomXmlPart
+    name: Word.CustomXmlPart
+  - uid: word.Word.CustomXmlPartCollection
+    name: Word.CustomXmlPartCollection
+  - uid: word.Word.CustomXmlPartScopedCollection
+    name: Word.CustomXmlPartScopedCollection
   - uid: word.Word.Document
     name: Word.Document
   - uid: word.Word.DocumentCreated
@@ -189,6 +214,8 @@ references:
     name: Word.DocumentPropertyType
   - uid: word.Word.ErrorCodes
     name: Word.ErrorCodes
+  - uid: word.Word.EventType
+    name: Word.EventType
   - uid: word.Word.FileContentFormat
     name: Word.FileContentFormat
   - uid: word.Word.Font
@@ -223,6 +250,16 @@ references:
     name: Word.Interfaces.CustomPropertyData
   - uid: word.Word.Interfaces.CustomPropertyUpdateData
     name: Word.Interfaces.CustomPropertyUpdateData
+  - uid: word.Word.Interfaces.CustomXmlPartCollectionData
+    name: Word.Interfaces.CustomXmlPartCollectionData
+  - uid: word.Word.Interfaces.CustomXmlPartCollectionUpdateData
+    name: Word.Interfaces.CustomXmlPartCollectionUpdateData
+  - uid: word.Word.Interfaces.CustomXmlPartData
+    name: Word.Interfaces.CustomXmlPartData
+  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionData
+    name: Word.Interfaces.CustomXmlPartScopedCollectionData
+  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    name: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
   - uid: word.Word.Interfaces.DocumentCreatedData
     name: Word.Interfaces.DocumentCreatedData
   - uid: word.Word.Interfaces.DocumentCreatedUpdateData
@@ -285,6 +322,14 @@ references:
     name: Word.Interfaces.SectionData
   - uid: word.Word.Interfaces.SectionUpdateData
     name: Word.Interfaces.SectionUpdateData
+  - uid: word.Word.Interfaces.SettingCollectionData
+    name: Word.Interfaces.SettingCollectionData
+  - uid: word.Word.Interfaces.SettingCollectionUpdateData
+    name: Word.Interfaces.SettingCollectionUpdateData
+  - uid: word.Word.Interfaces.SettingData
+    name: Word.Interfaces.SettingData
+  - uid: word.Word.Interfaces.SettingUpdateData
+    name: Word.Interfaces.SettingUpdateData
   - uid: word.Word.Interfaces.TableBorderData
     name: Word.Interfaces.TableBorderData
   - uid: word.Word.Interfaces.TableBorderUpdateData
@@ -347,6 +392,10 @@ references:
     name: Word.SectionCollection
   - uid: word.Word.SelectionMode
     name: Word.SelectionMode
+  - uid: word.Word.Setting
+    name: Word.Setting
+  - uid: word.Word.SettingCollection
+    name: Word.SettingCollection
   - uid: word.Word.Style
     name: Word.Style
   - uid: word.Word.Table

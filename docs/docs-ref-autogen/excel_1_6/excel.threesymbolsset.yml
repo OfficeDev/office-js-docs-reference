@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.ThreeSymbolsSet
+    name: Excel.ThreeSymbolsSet
+    fullName: Excel.ThreeSymbolsSet
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.ThreeSymbolsSet.__index
+      - Excel_1_6.Excel.ThreeSymbolsSet.greenCheckSymbol
+      - Excel_1_6.Excel.ThreeSymbolsSet.redCrossSymbol
+      - Excel_1_6.Excel.ThreeSymbolsSet.yellowExclamationSymbol
+  - uid: Excel_1_6.Excel.ThreeSymbolsSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: Excel_1_6.Excel.ThreeSymbolsSet.greenCheckSymbol
+    name: greenCheckSymbol
+    fullName: greenCheckSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCheckSymbol: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_6.Excel.ThreeSymbolsSet.redCrossSymbol
+    name: redCrossSymbol
+    fullName: redCrossSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCrossSymbol: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: Excel_1_6.Excel.ThreeSymbolsSet.yellowExclamationSymbol
+    name: yellowExclamationSymbol
+    fullName: yellowExclamationSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowExclamationSymbol: Icon;'
+      return:
+        type:
+          - Icon

@@ -15,9 +15,14 @@ items:
     package: excel
     children:
       - excel.Excel.Application.calculate
+      - excel.Excel.Application.calculationEngineVersion
       - excel.Excel.Application.calculationMode
+      - excel.Excel.Application.calculationState
+      - excel.Excel.Application.context
+      - excel.Excel.Application.iterativeCalculation
       - excel.Excel.Application.load
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
+      - excel.Excel.Application.suspendScreenUpdatingUntilNextSync
       - excel.Excel.Application.toJSON
   - uid: excel.Excel.Application.calculate
     summary: |-
@@ -54,6 +59,25 @@ items:
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - excel.Excel.CalculationType
+  - uid: excel.Excel.Application.calculationEngineVersion
+    summary: >-
+      Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by.
+      Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Application.calculationMode
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
@@ -74,6 +98,58 @@ items:
       return:
         type:
           - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+  - uid: excel.Excel.Application.calculationState
+    summary: >-
+      Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for
+      details. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: calculationState
+    fullName: calculationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationState: Excel.CalculationState | "Done" | "Calculating" | "Pending";'
+      return:
+        type:
+          - Excel.CalculationState | "Done" | "Calculating" | "Pending"
+  - uid: excel.Excel.Application.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel.Excel.Application.iterativeCalculation
+    summary: >-
+      Returns the Iterative Calculation settings. On Excel for Windows and Excel for Mac, the settings will apply to the
+      Excel Application. On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iterativeCalculation: Excel.IterativeCalculation;'
+      return:
+        type:
+          - excel.Excel.IterativeCalculation
   - uid: excel.Excel.Application.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -146,7 +222,32 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.Application.suspendScreenUpdatingUntilNextSync
+    summary: >-
+      Suspends sceen updating until the next "context.sync()" is called.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: suspendScreenUpdatingUntilNextSync()
+    fullName: suspendScreenUpdatingUntilNextSync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendScreenUpdatingUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Application.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.TextConditionalFormatData
+    summary: An interface describing the data returned by calling "textConditionalFormat.toJSON()".
+    name: Excel.Interfaces.TextConditionalFormatData
+    fullName: Excel.Interfaces.TextConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.TextConditionalFormatData.format
+      - Excel_1_7.Excel.Interfaces.TextConditionalFormatData.rule
+  - uid: Excel_1_7.Excel.Interfaces.TextConditionalFormatData.format
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalRangeFormatData
+  - uid: Excel_1_7.Excel.Interfaces.TextConditionalFormatData.rule
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.ConditionalTextComparisonRule;'
+      return:
+        type:
+          - excel.Excel.ConditionalTextComparisonRule

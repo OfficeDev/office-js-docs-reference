@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.ChartSeriesBy
+    summary: >-
+      Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data
+      shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default
+      to "columns".
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartSeriesBy
+    fullName: Excel.ChartSeriesBy
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.ChartSeriesBy.auto
+      - Excel_1_5.Excel.ChartSeriesBy.columns
+      - Excel_1_5.Excel.ChartSeriesBy.rows
+  - uid: Excel_1_5.Excel.ChartSeriesBy.auto
+    summary: >-
+      On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by
+      rows or columns; on Excel Online, "auto" will simply default to "columns".
+    name: auto
+    fullName: auto
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Auto"'
+  - uid: Excel_1_5.Excel.ChartSeriesBy.columns
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Columns"'
+  - uid: Excel_1_5.Excel.ChartSeriesBy.rows
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Rows"'

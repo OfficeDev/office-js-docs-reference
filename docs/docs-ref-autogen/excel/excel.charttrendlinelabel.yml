@@ -15,11 +15,13 @@ items:
     package: excel
     children:
       - excel.Excel.ChartTrendlineLabel.autoText
+      - excel.Excel.ChartTrendlineLabel.context
       - excel.Excel.ChartTrendlineLabel.format
       - excel.Excel.ChartTrendlineLabel.formula
       - excel.Excel.ChartTrendlineLabel.height
       - excel.Excel.ChartTrendlineLabel.horizontalAlignment
       - excel.Excel.ChartTrendlineLabel.left
+      - excel.Excel.ChartTrendlineLabel.linkNumberFormat
       - excel.Excel.ChartTrendlineLabel.load
       - excel.Excel.ChartTrendlineLabel.numberFormat
       - excel.Excel.ChartTrendlineLabel.text
@@ -43,6 +45,20 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.ChartTrendlineLabel.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ChartTrendlineLabel.format
     summary: |-
       Represents the format of chart trendline label.
@@ -126,6 +142,25 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ChartTrendlineLabel.linkNumberFormat
+    summary: >-
+      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
+      labels when it changes in the cells).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartTrendlineLabel.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -208,6 +243,12 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartTrendlineLabel.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTrendlineLabel object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

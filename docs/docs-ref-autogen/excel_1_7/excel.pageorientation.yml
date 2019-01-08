@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.PageOrientation
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PageOrientation
+    fullName: Excel.PageOrientation
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.PageOrientation.landscape
+      - Excel_1_7.Excel.PageOrientation.portrait
+  - uid: Excel_1_7.Excel.PageOrientation.landscape
+    name: landscape
+    fullName: landscape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Landscape"'
+  - uid: Excel_1_7.Excel.PageOrientation.portrait
+    name: portrait
+    fullName: portrait
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Portrait"'

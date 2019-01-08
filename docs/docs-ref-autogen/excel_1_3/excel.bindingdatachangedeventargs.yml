@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_3.Excel.BindingDataChangedEventArgs
+    summary: |-
+      Provides information about the binding that raised the DataChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.BindingDataChangedEventArgs
+    fullName: Excel.BindingDataChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_3
+    children:
+      - Excel_1_3.Excel.BindingDataChangedEventArgs.binding
+  - uid: Excel_1_3.Excel.BindingDataChangedEventArgs.binding
+    summary: |-
+      Gets the Binding object that represents the binding that raised the DataChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: binding
+    fullName: binding
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'binding: Excel.Binding;'
+      return:
+        type:
+          - excel.Excel.Binding

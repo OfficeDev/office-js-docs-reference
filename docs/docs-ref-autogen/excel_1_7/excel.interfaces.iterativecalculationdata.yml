@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.IterativeCalculationData
+    summary: An interface describing the data returned by calling "iterativeCalculation.toJSON()".
+    name: Excel.Interfaces.IterativeCalculationData
+    fullName: Excel.Interfaces.IterativeCalculationData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7

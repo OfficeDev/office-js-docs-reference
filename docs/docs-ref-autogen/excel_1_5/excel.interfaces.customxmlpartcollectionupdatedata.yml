@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.Interfaces.CustomXmlPartCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({
+      ... })".
+    name: Excel.Interfaces.CustomXmlPartCollectionUpdateData
+    fullName: Excel.Interfaces.CustomXmlPartCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.Interfaces.CustomXmlPartCollectionUpdateData.items
+  - uid: Excel_1_5.Excel.Interfaces.CustomXmlPartCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.CustomXmlPartData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CustomXmlPartData[]'

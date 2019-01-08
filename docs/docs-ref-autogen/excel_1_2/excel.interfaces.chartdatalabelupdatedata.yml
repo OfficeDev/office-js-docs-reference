@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.ChartDataLabelUpdateData
+    summary: 'An interface for updating data on the ChartDataLabel object, for use in "chartDataLabel.set({ ... })".'
+    name: Excel.Interfaces.ChartDataLabelUpdateData
+    fullName: Excel.Interfaces.ChartDataLabelUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2

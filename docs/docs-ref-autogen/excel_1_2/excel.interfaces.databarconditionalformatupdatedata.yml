@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.DataBarConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the DataBarConditionalFormat object, for use in "dataBarConditionalFormat.set({
+      ... })".
+    name: Excel.Interfaces.DataBarConditionalFormatUpdateData
+    fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2

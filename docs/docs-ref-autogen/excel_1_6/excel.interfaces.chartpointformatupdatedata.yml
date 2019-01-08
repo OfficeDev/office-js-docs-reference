@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.Interfaces.ChartPointFormatUpdateData
+    summary: 'An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartPointFormatUpdateData
+    fullName: Excel.Interfaces.ChartPointFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_6

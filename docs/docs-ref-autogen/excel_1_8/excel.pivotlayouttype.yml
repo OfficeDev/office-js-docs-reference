@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.PivotLayoutType
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PivotLayoutType
+    fullName: Excel.PivotLayoutType
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.PivotLayoutType.compact
+      - Excel_1_8.Excel.PivotLayoutType.outline
+      - Excel_1_8.Excel.PivotLayoutType.tabular
+  - uid: Excel_1_8.Excel.PivotLayoutType.compact
+    summary: A horizontally compressed form with labels from the next field in the same column.
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Compact"'
+  - uid: Excel_1_8.Excel.PivotLayoutType.outline
+    summary: Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
+    name: outline
+    fullName: outline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outline"'
+  - uid: Excel_1_8.Excel.PivotLayoutType.tabular
+    summary: Inner fields' items are always on a new line relative to the outer fields' items.
+    name: tabular
+    fullName: tabular
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tabular"'

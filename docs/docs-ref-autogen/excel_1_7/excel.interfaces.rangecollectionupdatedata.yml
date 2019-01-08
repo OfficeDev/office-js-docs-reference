@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.RangeCollectionUpdateData
+    summary: 'An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })".'
+    name: Excel.Interfaces.RangeCollectionUpdateData
+    fullName: Excel.Interfaces.RangeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.RangeCollectionUpdateData.items
+  - uid: Excel_1_7.Excel.Interfaces.RangeCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.RangeData[]'

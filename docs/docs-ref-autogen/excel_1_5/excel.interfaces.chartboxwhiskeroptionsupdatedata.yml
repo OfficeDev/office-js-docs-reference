@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
+    summary: >-
+      An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set({ ...
+      })".
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_5

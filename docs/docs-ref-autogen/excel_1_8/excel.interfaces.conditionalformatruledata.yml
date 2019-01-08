@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData
+    summary: An interface describing the data returned by calling "conditionalFormatRule.toJSON()".
+    name: Excel.Interfaces.ConditionalFormatRuleData
+    fullName: Excel.Interfaces.ConditionalFormatRuleData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formula
+      - Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
+      - Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
+  - uid: Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formula
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in the user's language.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaLocal
+    fullName: formulaLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaLocal?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaR1C1
+    fullName: formulaR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaR1C1?: string;'
+      return:
+        type:
+          - string

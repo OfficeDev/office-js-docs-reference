@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.ChartSeriesFormatUpdateData
+    summary: 'An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartSeriesFormatUpdateData
+    fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.Interfaces.ChartSeriesFormatUpdateData.line
+  - uid: Excel_1_2.Excel.Interfaces.ChartSeriesFormatUpdateData.line
+    summary: |-
+      Represents line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatUpdateData

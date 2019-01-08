@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType
+    summary: |-
+      Represents the types of conditional format values.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormatIconRuleType
+    fullName: Excel.ConditionalFormatIconRuleType
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.ConditionalFormatIconRuleType.formula
+      - Excel_1_8.Excel.ConditionalFormatIconRuleType.invalid
+      - Excel_1_8.Excel.ConditionalFormatIconRuleType.number
+      - Excel_1_8.Excel.ConditionalFormatIconRuleType.percent
+      - Excel_1_8.Excel.ConditionalFormatIconRuleType.percentile
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType.formula
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formula"'
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType.number
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType.percent
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: Excel_1_8.Excel.ConditionalFormatIconRuleType.percentile
+    name: percentile
+    fullName: percentile
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentile"'

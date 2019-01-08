@@ -15,9 +15,11 @@ items:
     package: excel
     children:
       - excel.Excel.RangeBorder.color
+      - excel.Excel.RangeBorder.context
       - excel.Excel.RangeBorder.load
       - excel.Excel.RangeBorder.sideIndex
       - excel.Excel.RangeBorder.style
+      - excel.Excel.RangeBorder.tintAndShade
       - excel.Excel.RangeBorder.toJSON
       - excel.Excel.RangeBorder.weight
   - uid: excel.Excel.RangeBorder.color
@@ -37,6 +39,20 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.RangeBorder.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.RangeBorder.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -163,7 +179,33 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
+  - uid: excel.Excel.RangeBorder.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
+      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
+      tintAndShade setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.RangeBorder.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeBorderData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

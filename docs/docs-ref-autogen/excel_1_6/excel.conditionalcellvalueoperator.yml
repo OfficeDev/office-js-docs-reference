@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator
+    summary: |-
+      Represents the operator of the text conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalCellValueOperator
+    fullName: Excel.ConditionalCellValueOperator
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.ConditionalCellValueOperator.between
+      - Excel_1_6.Excel.ConditionalCellValueOperator.equalTo
+      - Excel_1_6.Excel.ConditionalCellValueOperator.greaterThan
+      - Excel_1_6.Excel.ConditionalCellValueOperator.greaterThanOrEqual
+      - Excel_1_6.Excel.ConditionalCellValueOperator.invalid
+      - Excel_1_6.Excel.ConditionalCellValueOperator.lessThan
+      - Excel_1_6.Excel.ConditionalCellValueOperator.lessThanOrEqual
+      - Excel_1_6.Excel.ConditionalCellValueOperator.notBetween
+      - Excel_1_6.Excel.ConditionalCellValueOperator.notEqualTo
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.between
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Between"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.equalTo
+    name: equalTo
+    fullName: equalTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EqualTo"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.greaterThan
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThan"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.greaterThanOrEqual
+    name: greaterThanOrEqual
+    fullName: greaterThanOrEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThanOrEqual"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.lessThan
+    name: lessThan
+    fullName: lessThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThan"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.lessThanOrEqual
+    name: lessThanOrEqual
+    fullName: lessThanOrEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThanOrEqual"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.notBetween
+    name: notBetween
+    fullName: notBetween
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotBetween"'
+  - uid: Excel_1_6.Excel.ConditionalCellValueOperator.notEqualTo
+    name: notEqualTo
+    fullName: notEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotEqualTo"'

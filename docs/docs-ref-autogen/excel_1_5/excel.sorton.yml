@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_5.Excel.SortOn
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SortOn
+    fullName: Excel.SortOn
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_5
+    children:
+      - Excel_1_5.Excel.SortOn.cellColor
+      - Excel_1_5.Excel.SortOn.fontColor
+      - Excel_1_5.Excel.SortOn.icon
+      - Excel_1_5.Excel.SortOn.value
+  - uid: Excel_1_5.Excel.SortOn.cellColor
+    name: cellColor
+    fullName: cellColor
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CellColor"'
+  - uid: Excel_1_5.Excel.SortOn.fontColor
+    name: fontColor
+    fullName: fontColor
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FontColor"'
+  - uid: Excel_1_5.Excel.SortOn.icon
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Icon"'
+  - uid: Excel_1_5.Excel.SortOn.value
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Value"'

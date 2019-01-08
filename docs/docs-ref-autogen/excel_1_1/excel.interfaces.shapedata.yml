@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.ShapeData
+    summary: An interface describing the data returned by calling "shape.toJSON()".
+    name: Excel.Interfaces.ShapeData
+    fullName: Excel.Interfaces.ShapeData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

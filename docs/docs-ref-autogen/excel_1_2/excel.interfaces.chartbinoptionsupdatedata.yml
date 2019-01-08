@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.ChartBinOptionsUpdateData
+    summary: 'An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set({ ... })".'
+    name: Excel.Interfaces.ChartBinOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBinOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2

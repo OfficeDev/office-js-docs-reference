@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.DataValidationRule
+    summary: >-
+      Data validation rule contains different types of data validation. You can only use one of them at a time according
+      the Excel.DataValidationType.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationRule
+    fullName: Excel.DataValidationRule
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.DataValidationRule.custom
+      - Excel_1_8.Excel.DataValidationRule.date
+      - Excel_1_8.Excel.DataValidationRule.decimal
+      - Excel_1_8.Excel.DataValidationRule.list
+      - Excel_1_8.Excel.DataValidationRule.textLength
+      - Excel_1_8.Excel.DataValidationRule.time
+      - Excel_1_8.Excel.DataValidationRule.wholeNumber
+  - uid: Excel_1_8.Excel.DataValidationRule.custom
+    summary: |-
+      Custom data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: Excel.CustomDataValidation;'
+      return:
+        type:
+          - excel.Excel.CustomDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.date
+    summary: |-
+      Date data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: Excel.DateTimeDataValidation;'
+      return:
+        type:
+          - excel.Excel.DateTimeDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.decimal
+    summary: |-
+      Decimal data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimal?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.list
+    summary: |-
+      List data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'list?: Excel.ListDataValidation;'
+      return:
+        type:
+          - excel.Excel.ListDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.textLength
+    summary: |-
+      TextLength data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textLength?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.time
+    summary: |-
+      Time data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'time?: Excel.DateTimeDataValidation;'
+      return:
+        type:
+          - excel.Excel.DateTimeDataValidation
+  - uid: Excel_1_8.Excel.DataValidationRule.wholeNumber
+    summary: |-
+      WholeNumber data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wholeNumber?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation

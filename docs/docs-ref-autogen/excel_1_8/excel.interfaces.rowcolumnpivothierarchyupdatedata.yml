@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    summary: >-
+      An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set({
+      ... })".
+    name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
+      - Excel_1_8.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
+  - uid: Excel_1_8.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
+    summary: |-
+      Name of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_8.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
+    summary: |-
+      Position of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.ChartPointsCollectionUpdateData
+    summary: >-
+      An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set({ ...
+      })".
+    name: Excel.Interfaces.ChartPointsCollectionUpdateData
+    fullName: Excel.Interfaces.ChartPointsCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.Interfaces.ChartPointsCollectionUpdateData.items
+  - uid: Excel_1_2.Excel.Interfaces.ChartPointsCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartPointData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartPointData[]'

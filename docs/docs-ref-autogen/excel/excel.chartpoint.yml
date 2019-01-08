@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartPoint.context
       - excel.Excel.ChartPoint.dataLabel
       - excel.Excel.ChartPoint.format
       - excel.Excel.ChartPoint.hasDataLabel
@@ -24,6 +25,20 @@ items:
       - excel.Excel.ChartPoint.markerStyle
       - excel.Excel.ChartPoint.toJSON
       - excel.Excel.ChartPoint.value
+  - uid: excel.Excel.ChartPoint.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ChartPoint.dataLabel
     summary: |-
       Returns the data label of a chart point. Read-only.
@@ -168,6 +183,12 @@ items:
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - uid: excel.Excel.ChartPoint.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartPointData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -1,0 +1,162 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Subtotals
+    summary: |-
+      Subtotals for the Pivot Field.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Subtotals
+    fullName: Excel.Subtotals
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Subtotals.automatic
+      - Excel_1_8.Excel.Subtotals.average
+      - Excel_1_8.Excel.Subtotals.count
+      - Excel_1_8.Excel.Subtotals.countNumbers
+      - Excel_1_8.Excel.Subtotals.max
+      - Excel_1_8.Excel.Subtotals.min
+      - Excel_1_8.Excel.Subtotals.product
+      - Excel_1_8.Excel.Subtotals.standardDeviation
+      - Excel_1_8.Excel.Subtotals.standardDeviationP
+      - Excel_1_8.Excel.Subtotals.sum
+      - Excel_1_8.Excel.Subtotals.variance
+      - Excel_1_8.Excel.Subtotals.varianceP
+  - uid: Excel_1_8.Excel.Subtotals.automatic
+    summary: |-
+      If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'automatic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.average
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'average?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.count
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.countNumbers
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'countNumbers?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.max
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'max?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.min
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'min?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.product
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'product?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.standardDeviation
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.standardDeviationP
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardDeviationP?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.sum
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sum?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.variance
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'variance?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_8.Excel.Subtotals.varianceP
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'varianceP?: boolean;'
+      return:
+        type:
+          - boolean

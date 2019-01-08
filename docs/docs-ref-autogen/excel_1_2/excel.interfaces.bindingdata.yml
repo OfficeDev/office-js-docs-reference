@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.BindingData
+    summary: An interface describing the data returned by calling "binding.toJSON()".
+    name: Excel.Interfaces.BindingData
+    fullName: Excel.Interfaces.BindingData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.Interfaces.BindingData.id
+      - Excel_1_2.Excel.Interfaces.BindingData.type
+  - uid: Excel_1_2.Excel.Interfaces.BindingData.id
+    summary: |-
+      Represents binding identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_2.Excel.Interfaces.BindingData.type
+    summary: |-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.BindingType | "Range" | "Table" | "Text";'
+      return:
+        type:
+          - Excel.BindingType | "Range" | "Table" | "Text"

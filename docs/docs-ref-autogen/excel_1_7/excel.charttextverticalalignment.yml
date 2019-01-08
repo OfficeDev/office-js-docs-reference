@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment
+    summary: |-
+      Represents the vertical alignment for the specified object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.ChartTextVerticalAlignment.bottom
+      - Excel_1_7.Excel.ChartTextVerticalAlignment.center
+      - Excel_1_7.Excel.ChartTextVerticalAlignment.distributed
+      - Excel_1_7.Excel.ChartTextVerticalAlignment.justify
+      - Excel_1_7.Excel.ChartTextVerticalAlignment.top
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment.bottom
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment.center
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment.distributed
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment.justify
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: Excel_1_7.Excel.ChartTextVerticalAlignment.top
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

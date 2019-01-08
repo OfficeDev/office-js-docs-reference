@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_4.Excel.ErrorCodes
+    name: Excel.ErrorCodes
+    fullName: Excel.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_4
+    children:
+      - Excel_1_4.Excel.ErrorCodes.accessDenied
+      - Excel_1_4.Excel.ErrorCodes.apiNotFound
+      - Excel_1_4.Excel.ErrorCodes.conflict
+      - Excel_1_4.Excel.ErrorCodes.generalException
+      - Excel_1_4.Excel.ErrorCodes.insertDeleteConflict
+      - Excel_1_4.Excel.ErrorCodes.invalidArgument
+      - Excel_1_4.Excel.ErrorCodes.invalidBinding
+      - Excel_1_4.Excel.ErrorCodes.invalidOperation
+      - Excel_1_4.Excel.ErrorCodes.invalidOperationInCellEditMode
+      - Excel_1_4.Excel.ErrorCodes.invalidReference
+      - Excel_1_4.Excel.ErrorCodes.invalidSelection
+      - Excel_1_4.Excel.ErrorCodes.itemAlreadyExists
+      - Excel_1_4.Excel.ErrorCodes.itemNotFound
+      - Excel_1_4.Excel.ErrorCodes.nonBlankCellOffSheet
+      - Excel_1_4.Excel.ErrorCodes.notImplemented
+      - Excel_1_4.Excel.ErrorCodes.unsupportedOperation
+  - uid: Excel_1_4.Excel.ErrorCodes.accessDenied
+    name: accessDenied
+    fullName: accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: Excel_1_4.Excel.ErrorCodes.apiNotFound
+    name: apiNotFound
+    fullName: apiNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ApiNotFound"'
+  - uid: Excel_1_4.Excel.ErrorCodes.conflict
+    name: conflict
+    fullName: conflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Conflict"'
+  - uid: Excel_1_4.Excel.ErrorCodes.generalException
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: Excel_1_4.Excel.ErrorCodes.insertDeleteConflict
+    name: insertDeleteConflict
+    fullName: insertDeleteConflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsertDeleteConflict"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidArgument
+    name: invalidArgument
+    fullName: invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidBinding
+    name: invalidBinding
+    fullName: invalidBinding
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidBinding"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidOperation
+    name: invalidOperation
+    fullName: invalidOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperation"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidOperationInCellEditMode
+    name: invalidOperationInCellEditMode
+    fullName: invalidOperationInCellEditMode
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperationInCellEditMode"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidReference
+    name: invalidReference
+    fullName: invalidReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidReference"'
+  - uid: Excel_1_4.Excel.ErrorCodes.invalidSelection
+    name: invalidSelection
+    fullName: invalidSelection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidSelection"'
+  - uid: Excel_1_4.Excel.ErrorCodes.itemAlreadyExists
+    name: itemAlreadyExists
+    fullName: itemAlreadyExists
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemAlreadyExists"'
+  - uid: Excel_1_4.Excel.ErrorCodes.itemNotFound
+    name: itemNotFound
+    fullName: itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: Excel_1_4.Excel.ErrorCodes.nonBlankCellOffSheet
+    name: nonBlankCellOffSheet
+    fullName: nonBlankCellOffSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonBlankCellOffSheet"'
+  - uid: Excel_1_4.Excel.ErrorCodes.notImplemented
+    name: notImplemented
+    fullName: notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'
+  - uid: Excel_1_4.Excel.ErrorCodes.unsupportedOperation
+    name: unsupportedOperation
+    fullName: unsupportedOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnsupportedOperation"'

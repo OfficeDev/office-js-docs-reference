@@ -161,7 +161,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
   - uid: onenote.OneNote.Paragraph.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
@@ -258,7 +258,7 @@ items:
         number): OneNote.Image;
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: |-
 
           #### Examples

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.PivotLayoutData
+    summary: An interface describing the data returned by calling "pivotLayout.toJSON()".
+    name: Excel.Interfaces.PivotLayoutData
+    fullName: Excel.Interfaces.PivotLayoutData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7

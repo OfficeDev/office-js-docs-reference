@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_4.Excel.Interfaces.ChartBorderData
+    summary: An interface describing the data returned by calling "chartBorder.toJSON()".
+    name: Excel.Interfaces.ChartBorderData
+    fullName: Excel.Interfaces.ChartBorderData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_4

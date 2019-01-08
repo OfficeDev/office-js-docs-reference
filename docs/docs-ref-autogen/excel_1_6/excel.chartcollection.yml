@@ -1,0 +1,231 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.ChartCollection
+    summary: |-
+      A collection of all the chart objects on a worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.ChartCollection.add
+      - Excel_1_6.Excel.ChartCollection.context
+      - Excel_1_6.Excel.ChartCollection.count
+      - Excel_1_6.Excel.ChartCollection.getCount
+      - Excel_1_6.Excel.ChartCollection.getItem
+      - Excel_1_6.Excel.ChartCollection.getItemAt
+      - Excel_1_6.Excel.ChartCollection.getItemOrNullObject
+      - Excel_1_6.Excel.ChartCollection.items
+      - Excel_1_6.Excel.ChartCollection.load
+      - Excel_1_6.Excel.ChartCollection.toJSON
+  - uid: Excel_1_6.Excel.ChartCollection.add
+    summary: |-
+      Creates a new chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: type
+          description: Represents the type of a chart. See Excel.ChartType for details.
+          type:
+            - excel.Excel.ChartType
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Range
+        - id: seriesBy
+          description: >-
+            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            for details.
+          type:
+            - excel.Excel.ChartSeriesBy
+  - uid: Excel_1_6.Excel.ChartCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_6.Excel.ChartCollection.count
+    summary: |-
+      Returns the number of charts in the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.ChartCollection.getCount
+    summary: |-
+      Returns the number of charts in the worksheet.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: Excel_1_6.Excel.ChartCollection.getItem
+    summary: |-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(name)
+    fullName: getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the chart to be retrieved.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.ChartCollection.getItemAt
+    summary: |-
+      Gets a chart based on its position in the collection.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: Excel_1_6.Excel.ChartCollection.getItemOrNullObject
+    summary: >-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
+      the chart does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the chart to be retrieved.
+          type:
+            - string
+  - uid: Excel_1_6.Excel.ChartCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Chart[];'
+      return:
+        type:
+          - 'Excel.Chart[]'
+  - uid: Excel_1_6.Excel.ChartCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartCollection;'
+      return:
+        type:
+          - excel.Excel.ChartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_6.Excel.ChartCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ChartCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartCollectionData
+        description: ''

@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.ChartAxisTimeUnit
+    summary: |-
+      Specifies the unit of time for chart axes and data series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartAxisTimeUnit
+    fullName: Excel.ChartAxisTimeUnit
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.ChartAxisTimeUnit.days
+      - Excel_1_8.Excel.ChartAxisTimeUnit.months
+      - Excel_1_8.Excel.ChartAxisTimeUnit.years
+  - uid: Excel_1_8.Excel.ChartAxisTimeUnit.days
+    name: days
+    fullName: days
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Days"'
+  - uid: Excel_1_8.Excel.ChartAxisTimeUnit.months
+    name: months
+    fullName: months
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Months"'
+  - uid: Excel_1_8.Excel.ChartAxisTimeUnit.years
+    name: years
+    fullName: years
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Years"'

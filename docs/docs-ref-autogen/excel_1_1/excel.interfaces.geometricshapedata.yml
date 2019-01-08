@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.GeometricShapeData
+    summary: An interface describing the data returned by calling "geometricShape.toJSON()".
+    name: Excel.Interfaces.GeometricShapeData
+    fullName: Excel.Interfaces.GeometricShapeData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1

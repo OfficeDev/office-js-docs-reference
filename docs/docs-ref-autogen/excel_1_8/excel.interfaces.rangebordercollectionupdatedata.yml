@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.Interfaces.RangeBorderCollectionUpdateData
+    summary: >-
+      An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set({ ...
+      })".
+    name: Excel.Interfaces.RangeBorderCollectionUpdateData
+    fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.Interfaces.RangeBorderCollectionUpdateData.items
+  - uid: Excel_1_8.Excel.Interfaces.RangeBorderCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeBorderData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.RangeBorderData[]'

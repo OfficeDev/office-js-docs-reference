@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.ChartLegendEntryCollectionData
+    summary: An interface describing the data returned by calling "chartLegendEntryCollection.toJSON()".
+    name: Excel.Interfaces.ChartLegendEntryCollectionData
+    fullName: Excel.Interfaces.ChartLegendEntryCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.ChartLegendEntryCollectionData.items
+  - uid: Excel_1_7.Excel.Interfaces.ChartLegendEntryCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartLegendEntryData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartLegendEntryData[]'

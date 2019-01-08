@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+    summary: >-
+      An interface for updating data on the DataPivotHierarchyCollection object, for use in
+      "dataPivotHierarchyCollection.set({ ... })".
+    name: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+    fullName: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1
+    children:
+      - Excel_1_1.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items
+  - uid: Excel_1_1.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.DataPivotHierarchyData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.DataPivotHierarchyData[]'

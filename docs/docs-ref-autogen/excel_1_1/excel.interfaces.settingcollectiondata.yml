@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_1.Excel.Interfaces.SettingCollectionData
+    summary: An interface describing the data returned by calling "settingCollection.toJSON()".
+    name: Excel.Interfaces.SettingCollectionData
+    fullName: Excel.Interfaces.SettingCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_1
+    children:
+      - Excel_1_1.Excel.Interfaces.SettingCollectionData.items
+  - uid: Excel_1_1.Excel.Interfaces.SettingCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.SettingData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SettingData[]'

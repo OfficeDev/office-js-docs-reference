@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_8.Excel.ReadingOrder
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ReadingOrder
+    fullName: Excel.ReadingOrder
+    langs:
+      - typeScript
+    type: enum
+    package: Excel_1_8
+    children:
+      - Excel_1_8.Excel.ReadingOrder.context
+      - Excel_1_8.Excel.ReadingOrder.leftToRight
+      - Excel_1_8.Excel.ReadingOrder.rightToLeft
+  - uid: Excel_1_8.Excel.ReadingOrder.context
+    summary: >-
+      Reading order is determined by the language of the first character entered. If a right-to-left language character
+      is entered first, reading order is right to left. If a left-to-right language character is entered first, reading
+      order is left to right.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Context"'
+  - uid: Excel_1_8.Excel.ReadingOrder.leftToRight
+    summary: Left to right reading order
+    name: leftToRight
+    fullName: leftToRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftToRight"'
+  - uid: Excel_1_8.Excel.ReadingOrder.rightToLeft
+    summary: Right to left reading order
+    name: rightToLeft
+    fullName: rightToLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightToLeft"'

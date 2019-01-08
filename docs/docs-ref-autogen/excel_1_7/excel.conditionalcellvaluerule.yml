@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.ConditionalCellValueRule
+    summary: |-
+      Represents a cell value conditional format rule.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.ConditionalCellValueRule.formula1
+      - Excel_1_7.Excel.ConditionalCellValueRule.formula2
+      - Excel_1_7.Excel.ConditionalCellValueRule.operator
+  - uid: Excel_1_7.Excel.ConditionalCellValueRule.formula1
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_7.Excel.ConditionalCellValueRule.formula2
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_7.Excel.ConditionalCellValueRule.operator
+    summary: |-
+      The operator of the text conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+        "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual";
+      return:
+        type:
+          - >-
+            Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+            "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"

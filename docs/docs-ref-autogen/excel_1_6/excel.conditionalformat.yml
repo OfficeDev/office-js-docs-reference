@@ -1,0 +1,487 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_6.Excel.ConditionalFormat
+    summary: |-
+      An object encapsulating a conditional format's range, format, rule, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormat
+    fullName: Excel.ConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Excel_1_6
+    children:
+      - Excel_1_6.Excel.ConditionalFormat.cellValue
+      - Excel_1_6.Excel.ConditionalFormat.cellValueOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.colorScale
+      - Excel_1_6.Excel.ConditionalFormat.colorScaleOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.context
+      - Excel_1_6.Excel.ConditionalFormat.custom
+      - Excel_1_6.Excel.ConditionalFormat.customOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.dataBar
+      - Excel_1_6.Excel.ConditionalFormat.dataBarOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.delete
+      - Excel_1_6.Excel.ConditionalFormat.getRange
+      - Excel_1_6.Excel.ConditionalFormat.getRangeOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.iconSet
+      - Excel_1_6.Excel.ConditionalFormat.iconSetOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.id
+      - Excel_1_6.Excel.ConditionalFormat.load
+      - Excel_1_6.Excel.ConditionalFormat.preset
+      - Excel_1_6.Excel.ConditionalFormat.presetOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.priority
+      - Excel_1_6.Excel.ConditionalFormat.stopIfTrue
+      - Excel_1_6.Excel.ConditionalFormat.textComparison
+      - Excel_1_6.Excel.ConditionalFormat.textComparisonOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.toJSON
+      - Excel_1_6.Excel.ConditionalFormat.topBottom
+      - Excel_1_6.Excel.ConditionalFormat.topBottomOrNullObject
+      - Excel_1_6.Excel.ConditionalFormat.type
+  - uid: Excel_1_6.Excel.ConditionalFormat.cellValue
+    summary: >-
+      Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellValue
+    fullName: cellValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValue: Excel.CellValueConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.CellValueConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.cellValueOrNullObject
+    summary: >-
+      Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
+      example to format all cells between 5 and 10. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellValueOrNullObject
+    fullName: cellValueOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.CellValueConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.colorScale
+    summary: >-
+      Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScale
+    fullName: colorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScale: Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ColorScaleConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.colorScaleOrNullObject
+    summary: >-
+      Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScaleOrNullObject
+    fullName: colorScaleOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ColorScaleConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Excel_1_6.Excel.ConditionalFormat.custom
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: Excel.CustomConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.CustomConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.customOrNullObject
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customOrNullObject
+    fullName: customOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customOrNullObject: Excel.CustomConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.CustomConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.dataBar
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataBar
+    fullName: dataBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBar: Excel.DataBarConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.DataBarConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.dataBarOrNullObject
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataBarOrNullObject
+    fullName: dataBarOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.DataBarConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.delete
+    summary: |-
+      Deletes this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Excel_1_6.Excel.ConditionalFormat.getRange
+    summary: >-
+      Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
+      multiple ranges. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.ConditionalFormat.getRangeOrNullObject
+    summary: >-
+      Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to
+      multiple ranges. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: Excel_1_6.Excel.ConditionalFormat.iconSet
+    summary: |-
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iconSet
+    fullName: iconSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSet: Excel.IconSetConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.IconSetConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.iconSetOrNullObject
+    summary: |-
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iconSetOrNullObject
+    fullName: iconSetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.IconSetConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.id
+    summary: |-
+      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_6.Excel.ConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormat` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Excel_1_6.Excel.ConditionalFormat.preset
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preset
+    fullName: preset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly preset: Excel.PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.PresetCriteriaConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.presetOrNullObject
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: presetOrNullObject
+    fullName: presetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.PresetCriteriaConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.priority
+    summary: >-
+      The priority (or index) within the conditional format collection that this conditional format currently exists in.
+      Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
+      negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
+      minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
+      object at that new priority location if you want to make further changes to it. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: priority
+    fullName: priority
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'priority: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_6.Excel.ConditionalFormat.stopIfTrue
+    summary: >-
+      If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+      Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: stopIfTrue
+    fullName: stopIfTrue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stopIfTrue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_6.Excel.ConditionalFormat.textComparison
+    summary: >-
+      Returns the specific text conditional format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text". Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textComparison
+    fullName: textComparison
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparison: Excel.TextConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.TextConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.textComparisonOrNullObject
+    summary: >-
+      Returns the specific text conditional format properties if the current conditional format is a text type. For
+      example to format cells matching the word "Text". Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textComparisonOrNullObject
+    fullName: textComparisonOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparisonOrNullObject: Excel.TextConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.TextConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalFormatData
+        description: ''
+  - uid: Excel_1_6.Excel.ConditionalFormat.topBottom
+    summary: >-
+      Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topBottom
+    fullName: topBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottom: Excel.TopBottomConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.TopBottomConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.topBottomOrNullObject
+    summary: >-
+      Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
+      example to format the top 10% or bottom 10 items. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topBottomOrNullObject
+    fullName: topBottomOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.TopBottomConditionalFormat
+  - uid: Excel_1_6.Excel.ConditionalFormat.type
+    summary: |-
+      A type of conditional format. Only one can be set at a time. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
+        "PresetCriteria" | "ContainsText" | "CellValue";
+      return:
+        type:
+          - >-
+            Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
+            "PresetCriteria" | "ContainsText" | "CellValue"

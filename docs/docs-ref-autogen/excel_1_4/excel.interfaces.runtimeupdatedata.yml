@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_4.Excel.Interfaces.RuntimeUpdateData
+    summary: 'An interface for updating data on the Runtime object, for use in "runtime.set({ ... })".'
+    name: Excel.Interfaces.RuntimeUpdateData
+    fullName: Excel.Interfaces.RuntimeUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_4

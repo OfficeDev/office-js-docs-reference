@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData
+    summary: An interface describing the data returned by calling "chartTrendline.toJSON()".
+    name: Excel.Interfaces.ChartTrendlineData
+    fullName: Excel.Interfaces.ChartTrendlineData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_7
+    children:
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.format
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.intercept
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.movingAveragePeriod
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.name
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.polynomialOrder
+      - Excel_1_7.Excel.Interfaces.ChartTrendlineData.type
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.format
+    summary: |-
+      Represents the formatting of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartTrendlineFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineFormatData
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.intercept
+    summary: >-
+      Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
+      values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: intercept
+    fullName: intercept
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'intercept?: any;'
+      return:
+        type:
+          - any
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.movingAveragePeriod
+    summary: |-
+      Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: movingAveragePeriod
+    fullName: movingAveragePeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'movingAveragePeriod?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.name
+    summary: >-
+      Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
+      automatic values. The returned value is always a string
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.polynomialOrder
+    summary: |-
+      Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: polynomialOrder
+    fullName: polynomialOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'polynomialOrder?: number;'
+      return:
+        type:
+          - number
+  - uid: Excel_1_7.Excel.Interfaces.ChartTrendlineData.type
+    summary: |-
+      Represents the type of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        type?: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
+        "Power";
+      return:
+        type:
+          - >-
+            Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
+            "Power"

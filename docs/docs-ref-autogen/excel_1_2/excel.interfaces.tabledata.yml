@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Excel_1_2.Excel.Interfaces.TableData
+    summary: An interface describing the data returned by calling "table.toJSON()".
+    name: Excel.Interfaces.TableData
+    fullName: Excel.Interfaces.TableData
+    langs:
+      - typeScript
+    type: interface
+    package: Excel_1_2
+    children:
+      - Excel_1_2.Excel.Interfaces.TableData.columns
+      - Excel_1_2.Excel.Interfaces.TableData.id
+      - Excel_1_2.Excel.Interfaces.TableData.name
+      - Excel_1_2.Excel.Interfaces.TableData.rows
+      - Excel_1_2.Excel.Interfaces.TableData.showHeaders
+      - Excel_1_2.Excel.Interfaces.TableData.showTotals
+      - Excel_1_2.Excel.Interfaces.TableData.sort
+      - Excel_1_2.Excel.Interfaces.TableData.style
+  - uid: Excel_1_2.Excel.Interfaces.TableData.columns
+    summary: |-
+      Represents a collection of all the columns in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columns?: Excel.Interfaces.TableColumnData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TableColumnData[]'
+  - uid: Excel_1_2.Excel.Interfaces.TableData.id
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_2.Excel.Interfaces.TableData.name
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: Excel_1_2.Excel.Interfaces.TableData.rows
+    summary: |-
+      Represents a collection of all the rows in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: Excel.Interfaces.TableRowData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TableRowData[]'
+  - uid: Excel_1_2.Excel.Interfaces.TableData.showHeaders
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_2.Excel.Interfaces.TableData.showTotals
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Excel_1_2.Excel.Interfaces.TableData.sort
+    summary: |-
+      Represents the sorting for the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sort?: Excel.Interfaces.TableSortData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableSortData
+  - uid: Excel_1_2.Excel.Interfaces.TableData.style
+    summary: >-
+      Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
+      TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
+      style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string
