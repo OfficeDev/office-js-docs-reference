@@ -64,6 +64,15 @@
       },
       {
         "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-is-1.4",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
           "outlook_1_4.yml"
         ],
         "group": "outlook-is-1.4",
@@ -85,6 +94,15 @@
         ],
         "group": "outlook-is-1.5",
         "src": "docs-ref-autogen/outlook_1_5",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-is-1.5",
+        "src": "docs-ref-autogen/office",
         "dest": "api"
       },
       {
