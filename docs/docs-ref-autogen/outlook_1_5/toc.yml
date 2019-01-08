@@ -74,7 +74,6 @@ items:
     - uid: Outlook_1_5.Office.UserProfile
       name: UserProfile
   - name: Common API
-    uid: office
     items:
       - name: Office
         items:
