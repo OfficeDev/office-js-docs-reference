@@ -6,6 +6,10 @@
           "**/toc.md",
           "**/toc.yml"
         ],
+        "exclude": [
+          "outlook-is-1.4/**",
+          "outlook-is-1.5/**"
+        ],
         "src": "docs-ref-autogen",
         "dest": "api/office_ref_toc"
       },
