@@ -7,8 +7,8 @@
           "**/toc.yml"
         ],
         "exclude": [
-          "outlook-is-1.4/**",
-          "outlook-is-1.5/**"
+          "outlook_1_4/**",
+          "outlook_1_5/**"
         ],
         "src": "docs-ref-autogen",
         "dest": "api/office_ref_toc"
