@@ -61,6 +61,14 @@
     {
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_4/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_5/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ],
   "notification_subscribers": [],
