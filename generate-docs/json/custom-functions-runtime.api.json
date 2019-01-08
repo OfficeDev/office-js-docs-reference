@@ -16,6 +16,39 @@
       "remarks": [],
       "isBeta": true,
       "exports": {
+        "associate": {
+          "kind": "function",
+          "signature": "export function associate(id: string, functionObject: Function): void;",
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {
+            "id": {
+              "name": "id",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            },
+            "functionObject": {
+              "name": "functionObject",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "Function"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Ties together the function's JavaScript name with the JSON id property"
+            }
+          ],
+          "remarks": [],
+          "isBeta": true
+        },
         "CancelableHandler": {
           "kind": "interface",
           "extends": "",

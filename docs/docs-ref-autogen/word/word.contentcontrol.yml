@@ -740,7 +740,7 @@ items:
   - uid: word.Word.ContentControl.insertParagraph
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'.
+      'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -1203,10 +1203,8 @@ items:
         type:
           - Word.Table
   - uid: word.Word.ContentControl.placeholderText
-    summary: >-
-      Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
-      is empty.
-
+    summary: |-
+      Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: placeholderText

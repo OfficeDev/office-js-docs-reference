@@ -9477,7 +9477,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")."
+                      "text": "HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")."
                     }
                   ],
                   "isOptional": false,
@@ -77899,7 +77899,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
+                      "text": "HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
                     },
                     {
                       "kind": "paragraph"
@@ -77945,7 +77945,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
+                      "text": "HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
                     },
                     {
                       "kind": "paragraph"
@@ -91662,7 +91662,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
+                  "text": "HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")"
                 },
                 {
                   "kind": "paragraph"
