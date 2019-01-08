@@ -77,5 +77,3 @@ items:
         name: Time
       - uid: Outlook_1_4.Office.UserProfile
         name: UserProfile
-metadata:
-  universal_conceptual_toc: /office/dev/add-ins/toc.json
