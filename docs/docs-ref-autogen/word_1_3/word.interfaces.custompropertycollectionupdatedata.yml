@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.Interfaces.CustomPropertyCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({
+      ... })".
+    name: Word.Interfaces.CustomPropertyCollectionUpdateData
+    fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.Interfaces.CustomPropertyCollectionUpdateData.items
+  - uid: Word_1_3.Word.Interfaces.CustomPropertyCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.CustomPropertyData[];'
+      return:
+        type:
+          - 'Word.Interfaces.CustomPropertyData[]'

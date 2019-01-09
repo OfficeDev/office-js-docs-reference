@@ -97,6 +97,10 @@ tryCatch(async () => {
     let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
     let excelRootPushed = false;
 
+    // create a root for all the Excel versions
+    let wordRoot = {"name": "Word", "uid": "", "items": [] as any};
+    let wordRootPushed = false;
+
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
@@ -114,7 +118,6 @@ tryCatch(async () => {
     let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
-    let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let wordEnumFilter : string [] = ["Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
 
     // create folders for common (shared) API subcategories
@@ -207,19 +210,36 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
+                        if (!wordRootPushed) { // add root in alphabetical order
+                            newToc.items[0].items.push(wordRoot);
+                            wordRootPushed = true;
+                        }
+
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
-                        wordEnumRoot.items = enumList;
+
+                        let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  primaryList as any
-                        });
+
+                        if (packageName === 'Word') { // The version without a suffix is the preview version
+                            wordRoot.items.push({
+                                "name": packageName + " - Preview",
+                                "uid": packageItem.uid,
+                                "items":  primaryList
+                            });
+                        }
+                        else {
+                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
+                            wordRoot.items.push({
+                                "name": packageNameVersionFormated,
+                                "uid": packageItem.uid,
+                                "items":  primaryList
+                            });
+                        }
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
@@ -272,14 +292,15 @@ tryCatch(async () => {
             }
         });
     });
-
-    // add custom functions packages under excel
-    excelRoot.items.reverse();
-    excelRoot.items.unshift(excelRoot.items.pop());
-
     // Get the logical order: Preview, 1.6, 1.5, etc.
     outlookRoot.items.reverse();
     outlookRoot.items.unshift(outlookRoot.items.pop());
+    excelRoot.items.reverse();
+    excelRoot.items.unshift(excelRoot.items.pop());
+    wordRoot.items.reverse();
+    wordRoot.items.unshift(wordRoot.items.pop());
+    // add custom functions packages under excel
+    excelRoot.items.unshift(customFunctionsRoot);
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {

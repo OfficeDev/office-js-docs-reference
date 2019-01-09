@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.Interfaces.TableBorderData
+    summary: An interface describing the data returned by calling "tableBorder.toJSON()".
+    name: Word.Interfaces.TableBorderData
+    fullName: Word.Interfaces.TableBorderData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_2

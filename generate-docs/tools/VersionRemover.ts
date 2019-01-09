@@ -6,7 +6,6 @@ while (indexOfApiSetTag >= 0) {
     let commentStart = wholeDTS.lastIndexOf("/**", indexOfApiSetTag);
     let commentEnd = wholeDTS.indexOf("*/", indexOfApiSetTag) + 1;
     let declarationString = wholeDTS.substring(commentEnd + 1, wholeDTS.indexOf("\n", commentEnd + 2));
-    console.log(declarationString);
     let endPosition;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
         endPosition = wholeDTS.indexOf("}\n", commentEnd);
@@ -17,7 +16,6 @@ while (indexOfApiSetTag >= 0) {
     if (endPosition === -1) {
         endPosition = commentEnd;
     }
-    console.log("Removing " + commentStart + " to " + (endPosition + 1));
     wholeDTS = wholeDTS.substring(0, commentStart) + wholeDTS.substring(endPosition + 1);
     indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
 }

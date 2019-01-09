@@ -1,0 +1,225 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData
+    summary: An interface describing the data returned by calling "inlinePicture.toJSON()".
+    name: Word.Interfaces.InlinePictureData
+    fullName: Word.Interfaces.InlinePictureData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.Interfaces.InlinePictureData.altTextDescription
+      - Word_1_3.Word.Interfaces.InlinePictureData.altTextTitle
+      - Word_1_3.Word.Interfaces.InlinePictureData.height
+      - Word_1_3.Word.Interfaces.InlinePictureData.hyperlink
+      - Word_1_3.Word.Interfaces.InlinePictureData.lockAspectRatio
+      - Word_1_3.Word.Interfaces.InlinePictureData.paragraph
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentContentControl
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentContentControlOrNullObject
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentTable
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentTableCell
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentTableCellOrNullObject
+      - Word_1_3.Word.Interfaces.InlinePictureData.parentTableOrNullObject
+      - Word_1_3.Word.Interfaces.InlinePictureData.width
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.altTextDescription
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.altTextTitle
+    summary: |-
+      Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.height
+    summary: |-
+      Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.hyperlink
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.lockAspectRatio
+    summary: |-
+      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.paragraph
+    summary: |-
+      Gets the parent paragraph that contains the inline image. Read-only.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraph
+    fullName: paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: Word.Interfaces.ParagraphData;'
+      return:
+        type:
+          - Word.Interfaces.ParagraphData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentContentControl
+    summary: >-
+      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
+      control. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentTable
+    summary: |-
+      Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableData;'
+      return:
+        type:
+          - Word.Interfaces.TableData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentTableCell
+    summary: |-
+      Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellData;'
+      return:
+        type:
+          - Word.Interfaces.TableCellData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentTableCellOrNullObject
+    summary: >-
+      Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellData;'
+      return:
+        type:
+          - Word.Interfaces.TableCellData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.parentTableOrNullObject
+    summary: |-
+      Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
+    fullName: parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableData;'
+      return:
+        type:
+          - Word.Interfaces.TableData
+  - uid: Word_1_3.Word.Interfaces.InlinePictureData.width
+    summary: |-
+      Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

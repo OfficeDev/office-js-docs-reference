@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_1.Word.Interfaces.DocumentData
+    summary: An interface describing the data returned by calling "document.toJSON()".
+    name: Word.Interfaces.DocumentData
+    fullName: Word.Interfaces.DocumentData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_1
+    children:
+      - Word_1_1.Word.Interfaces.DocumentData.body
+      - Word_1_1.Word.Interfaces.DocumentData.contentControls
+      - Word_1_1.Word.Interfaces.DocumentData.saved
+      - Word_1_1.Word.Interfaces.DocumentData.sections
+  - uid: Word_1_1.Word.Interfaces.DocumentData.body
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc.. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyData;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyData
+  - uid: Word_1_1.Word.Interfaces.DocumentData.contentControls
+    summary: >-
+      Gets the collection of content control objects in the document. This includes content controls in the body of the
+      document, headers, footers, textboxes, etc.. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
+      return:
+        type:
+          - 'Word.Interfaces.ContentControlData[]'
+  - uid: Word_1_1.Word.Interfaces.DocumentData.saved
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
+      changed since it was saved. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: saved
+    fullName: saved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'saved?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.DocumentData.sections
+    summary: |-
+      Gets the collection of section objects in the document. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: sections
+    fullName: sections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sections?: Word.Interfaces.SectionData[];'
+      return:
+        type:
+          - 'Word.Interfaces.SectionData[]'

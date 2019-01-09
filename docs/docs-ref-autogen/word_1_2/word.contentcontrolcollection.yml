@@ -1,0 +1,223 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.ContentControlCollection
+    summary: >-
+      Contains a collection of [Word.ContentControl](xref:Word_1_2.Word.ContentControl) objects. Content controls are
+      bounded and potentially labeled regions in a document that serve as containers for specific types of content.
+      Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
+      Currently, only rich text content controls are supported.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ContentControlCollection
+    fullName: Word.ContentControlCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.ContentControlCollection.context
+      - Word_1_2.Word.ContentControlCollection.getById
+      - Word_1_2.Word.ContentControlCollection.getByTag
+      - Word_1_2.Word.ContentControlCollection.getByTitle
+      - Word_1_2.Word.ContentControlCollection.getItem
+      - Word_1_2.Word.ContentControlCollection.items
+      - Word_1_2.Word.ContentControlCollection.load
+      - Word_1_2.Word.ContentControlCollection.toJSON
+      - Word_1_2.Word.ContentControlCollection.track
+      - Word_1_2.Word.ContentControlCollection.untrack
+  - uid: Word_1_2.Word.ContentControlCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Word_1_2.Word.ContentControlCollection.getById
+    summary: >-
+      Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
+      collection.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getById(id)
+    fullName: getById
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getById(id: number): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+      parameters:
+        - id: id
+          description: Required. A content control identifier.
+          type:
+            - number
+  - uid: Word_1_2.Word.ContentControlCollection.getByTag
+    summary: |-
+      Gets the content controls that have the specified tag.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getByTag(tag)
+    fullName: getByTag
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByTag(tag: string): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: tag
+          description: Required. A tag set on a content control.
+          type:
+            - string
+  - uid: Word_1_2.Word.ContentControlCollection.getByTitle
+    summary: |-
+      Gets the content controls that have the specified title.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getByTitle(title)
+    fullName: getByTitle
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByTitle(title: string): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: title
+          description: Required. The title of a content control.
+          type:
+            - string
+  - uid: Word_1_2.Word.ContentControlCollection.getItem
+    summary: |-
+      Gets a content control by its index in the collection.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+      parameters:
+        - id: index
+          description: The index.
+          type:
+            - number
+  - uid: Word_1_2.Word.ContentControlCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Word.ContentControl[];'
+      return:
+        type:
+          - 'Word.ContentControl[]'
+  - uid: Word_1_2.Word.ContentControlCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Word_1_2.Word.ContentControlCollection.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlCollectionData
+        description: ''
+  - uid: Word_1_2.Word.ContentControlCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+  - uid: Word_1_2.Word.ContentControlCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''

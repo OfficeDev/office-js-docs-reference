@@ -1,0 +1,585 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.Range
+    summary: |-
+      Represents a contiguous area in a document.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Range
+    fullName: Word.Range
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.Range.clear
+      - Word_1_2.Word.Range.contentControls
+      - Word_1_2.Word.Range.context
+      - Word_1_2.Word.Range.delete
+      - Word_1_2.Word.Range.font
+      - Word_1_2.Word.Range.getHtml
+      - Word_1_2.Word.Range.getOoxml
+      - Word_1_2.Word.Range.inlinePictures
+      - Word_1_2.Word.Range.insertBreak
+      - Word_1_2.Word.Range.insertContentControl
+      - Word_1_2.Word.Range.insertFileFromBase64
+      - Word_1_2.Word.Range.insertHtml
+      - Word_1_2.Word.Range.insertInlinePictureFromBase64
+      - Word_1_2.Word.Range.insertOoxml
+      - Word_1_2.Word.Range.insertParagraph
+      - Word_1_2.Word.Range.insertText
+      - Word_1_2.Word.Range.load
+      - Word_1_2.Word.Range.paragraphs
+      - Word_1_2.Word.Range.parentContentControl
+      - Word_1_2.Word.Range.search
+      - Word_1_2.Word.Range.select
+      - Word_1_2.Word.Range.style
+      - Word_1_2.Word.Range.text
+      - Word_1_2.Word.Range.toJSON
+      - Word_1_2.Word.Range.track
+      - Word_1_2.Word.Range.untrack
+  - uid: Word_1_2.Word.Range.clear
+    summary: |-
+      Clears the contents of the range object. The user can perform the undo operation on the cleared content.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: clear()
+    fullName: clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_2.Word.Range.contentControls
+    summary: |-
+      Gets the collection of content control objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentControls: Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+  - uid: Word_1_2.Word.Range.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Word_1_2.Word.Range.delete
+    summary: |-
+      Deletes the range and its content from the document.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: delete()
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_2.Word.Range.font
+    summary: >-
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+  - uid: Word_1_2.Word.Range.getHtml
+    summary: >-
+      Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will
+      be a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity,
+      or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHtml()
+    fullName: getHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_2.Word.Range.getOoxml
+    summary: |-
+      Gets the OOXML representation of the range object.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getOoxml()
+    fullName: getOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_2.Word.Range.inlinePictures
+    summary: |-
+      Gets the collection of inline picture objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inlinePictures: Word.InlinePictureCollection;'
+      return:
+        type:
+          - word.Word.InlinePictureCollection
+  - uid: Word_1_2.Word.Range.insertBreak
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: insertBreak
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: Required. The break type to add.
+          type:
+            - word.Word.BreakType
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertContentControl
+    summary: |-
+      Wraps the range object with a rich text content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: insertContentControl()
+    fullName: insertContentControl
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+  - uid: Word_1_2.Word.Range.insertFileFromBase64
+    summary: >-
+      Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
+      or 'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: insertFileFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertHtml
+    summary: >-
+      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
+      'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: insertHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertInlinePictureFromBase64
+    summary: >-
+      Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
+      or 'After'.
+
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: insertInlinePictureFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
+        Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertOoxml
+    summary: >-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
+      'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: insertOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertParagraph
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: insertParagraph
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.insertText
+    summary: >-
+      Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
+      'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: insertText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_2.Word.Range.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Word_1_2.Word.Range.paragraphs
+    summary: |-
+      Gets the collection of paragraph objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+  - uid: Word_1_2.Word.Range.parentContentControl
+    summary: |-
+      Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: Word_1_2.Word.Range.search
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
+      collection of range objects.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'search(searchText, searchOptions)'
+    fullName: search
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: searchText
+          description: Required. The search text.
+          type:
+            - string
+        - id: searchOptions
+          description: Optional. Options for the search.
+          type:
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
+  - uid: Word_1_2.Word.Range.select
+    summary: |-
+      Selects and navigates the Word UI to the range.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - Word.SelectionMode
+  - uid: Word_1_2.Word.Range.style
+    summary: >-
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_2.Word.Range.text
+    summary: |-
+      Gets the text of the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_2.Word.Range.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.RangeData;'
+      return:
+        type:
+          - Word.Interfaces.RangeData
+        description: ''
+  - uid: Word_1_2.Word.Range.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+  - uid: Word_1_2.Word.Range.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''

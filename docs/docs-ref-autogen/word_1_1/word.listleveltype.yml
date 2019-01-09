@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_1.Word.ListLevelType
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ListLevelType
+    fullName: Word.ListLevelType
+    langs:
+      - typeScript
+    type: enum
+    package: Word_1_1
+    children:
+      - Word_1_1.Word.ListLevelType.bullet
+      - Word_1_1.Word.ListLevelType.number
+      - Word_1_1.Word.ListLevelType.picture
+  - uid: Word_1_1.Word.ListLevelType.bullet
+    name: bullet
+    fullName: bullet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bullet"'
+  - uid: Word_1_1.Word.ListLevelType.number
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: Word_1_1.Word.ListLevelType.picture
+    name: picture
+    fullName: picture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Picture"'

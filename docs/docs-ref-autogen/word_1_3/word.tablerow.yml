@@ -1,0 +1,534 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.TableRow
+    summary: |-
+      Represents a row in a Word document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.TableRow
+    fullName: Word.TableRow
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.TableRow.cellCount
+      - Word_1_3.Word.TableRow.cells
+      - Word_1_3.Word.TableRow.clear
+      - Word_1_3.Word.TableRow.context
+      - Word_1_3.Word.TableRow.delete
+      - Word_1_3.Word.TableRow.font
+      - Word_1_3.Word.TableRow.getBorder
+      - Word_1_3.Word.TableRow.getCellPadding
+      - Word_1_3.Word.TableRow.getNext
+      - Word_1_3.Word.TableRow.getNextOrNullObject
+      - Word_1_3.Word.TableRow.horizontalAlignment
+      - Word_1_3.Word.TableRow.insertRows
+      - Word_1_3.Word.TableRow.isHeader
+      - Word_1_3.Word.TableRow.load
+      - Word_1_3.Word.TableRow.parentTable
+      - Word_1_3.Word.TableRow.preferredHeight
+      - Word_1_3.Word.TableRow.rowIndex
+      - Word_1_3.Word.TableRow.search
+      - Word_1_3.Word.TableRow.select
+      - Word_1_3.Word.TableRow.setCellPadding
+      - Word_1_3.Word.TableRow.shadingColor
+      - Word_1_3.Word.TableRow.toJSON
+      - Word_1_3.Word.TableRow.track
+      - Word_1_3.Word.TableRow.untrack
+      - Word_1_3.Word.TableRow.values
+      - Word_1_3.Word.TableRow.verticalAlignment
+  - uid: Word_1_3.Word.TableRow.cellCount
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellCount: number;'
+      return:
+        type:
+          - number
+  - uid: Word_1_3.Word.TableRow.cells
+    summary: |-
+      Gets cells. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cells
+    fullName: cells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cells: Word.TableCellCollection;'
+      return:
+        type:
+          - Word.TableCellCollection
+  - uid: Word_1_3.Word.TableRow.clear
+    summary: |-
+      Clears the contents of the row.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: clear()
+    fullName: clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_3.Word.TableRow.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Word_1_3.Word.TableRow.delete
+    summary: |-
+      Deletes the entire row.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: delete()
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_3.Word.TableRow.font
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+  - uid: Word_1_3.Word.TableRow.getBorder
+    summary: |-
+      Gets the border style of the cells in the row.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getBorder(borderLocation)
+    fullName: getBorder
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
+      return:
+        type:
+          - word.Word.TableBorder
+        description: ''
+      parameters:
+        - id: borderLocation
+          description: Required. The border location.
+          type:
+            - word.Word.BorderLocation
+  - uid: Word_1_3.Word.TableRow.getCellPadding
+    summary: |-
+      Gets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCellPadding(cellPaddingLocation)
+    fullName: getCellPadding
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: cellPaddingLocation
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - word.Word.CellPaddingLocation
+  - uid: Word_1_3.Word.TableRow.getNext
+    summary: |-
+      Gets the next row. Throws if this row is the last one.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getNext()
+    fullName: getNext
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: Word_1_3.Word.TableRow.getNextOrNullObject
+    summary: |-
+      Gets the next row. Returns a null object if this row is the last one.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getNextOrNullObject()
+    fullName: getNextOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextOrNullObject(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: Word_1_3.Word.TableRow.horizontalAlignment
+    summary: >-
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type:
+          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+  - uid: Word_1_3.Word.TableRow.insertRows
+    summary: |-
+      Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertRows(insertLocation, rowCount, values)'
+    fullName: insertRows
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
+          type:
+            - Word.InsertLocation
+        - id: rowCount
+          description: Required. Number of rows to add
+          type:
+            - number
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must
+            not exceed the number of cells in the existing row.
+          type:
+            - 'string[][]'
+  - uid: Word_1_3.Word.TableRow.isHeader
+    summary: >-
+      Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
+      Table object.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isHeader
+    fullName: isHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isHeader: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_3.Word.TableRow.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Word_1_3.Word.TableRow.parentTable
+    summary: |-
+      Gets parent table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTable: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: Word_1_3.Word.TableRow.preferredHeight
+    summary: |-
+      Gets and sets the preferred height of the row in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: preferredHeight
+    fullName: preferredHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preferredHeight: number;'
+      return:
+        type:
+          - number
+  - uid: Word_1_3.Word.TableRow.rowIndex
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: Word_1_3.Word.TableRow.search
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of
+      range objects.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'search(searchText, searchOptions)'
+    fullName: search
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: searchText
+          description: Required. The search text.
+          type:
+            - string
+        - id: searchOptions
+          description: Optional. Options for the search.
+          type:
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
+  - uid: Word_1_3.Word.TableRow.select
+    summary: |-
+      Selects the row and navigates the Word UI to it.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - Word.SelectionMode
+  - uid: Word_1_3.Word.TableRow.setCellPadding
+    summary: |-
+      Sets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    fullName: setCellPadding
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellPaddingLocation
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - word.Word.CellPaddingLocation
+        - id: cellPadding
+          description: Required. The cell padding.
+          type:
+            - number
+  - uid: Word_1_3.Word.TableRow.shadingColor
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.TableRow.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TableRowData;'
+      return:
+        type:
+          - Word.Interfaces.TableRowData
+        description: ''
+  - uid: Word_1_3.Word.TableRow.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: Word_1_3.Word.TableRow.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: Word_1_3.Word.TableRow.values
+    summary: |-
+      Gets and sets the text values in the row, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: string[][];'
+      return:
+        type:
+          - 'string[][]'
+  - uid: Word_1_3.Word.TableRow.verticalAlignment
+    summary: |-
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
+      return:
+        type:
+          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"

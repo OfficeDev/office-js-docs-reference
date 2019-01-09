@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData
+    summary: 'An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })".'
+    name: Word.Interfaces.SearchOptionsUpdateData
+    fullName: Word.Interfaces.SearchOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_1
+    children:
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.ignorePunct
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.ignoreSpace
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchCase
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchPrefix
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchSuffix
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchWholeWord
+      - Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchWildcards
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.ignorePunct
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
+      Ignore punctuation check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: ignorePunct
+    fullName: ignorePunct
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignorePunct?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.ignoreSpace
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
+      whitespace characters check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: ignoreSpace
+    fullName: ignoreSpace
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreSpace?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchCase
+    summary: >-
+      Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
+      check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchPrefix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
+      Match prefix check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: matchPrefix
+    fullName: matchPrefix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPrefix?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchSuffix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
+      Match suffix check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: matchSuffix
+    fullName: matchSuffix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchSuffix?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchWholeWord
+    summary: >-
+      Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
+      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: matchWholeWord
+    fullName: matchWholeWord
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchWholeWord?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_1.Word.Interfaces.SearchOptionsUpdateData.matchWildcards
+    summary: >-
+      Gets or sets a value that indicates whether the search will be performed using special search operators.
+      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: matchWildcards
+    fullName: matchWildcards
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchWildcards?: boolean;'
+      return:
+        type:
+          - boolean

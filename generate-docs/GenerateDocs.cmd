@@ -62,6 +62,20 @@ cd ..\api-extractor-inputs-word
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-word-legacy\Word_1_3
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Word_1_2
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Word_1_1
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..
+
 cd ..\api-extractor-inputs-onenote
 
 call ..\node_modules\.bin\api-extractor run

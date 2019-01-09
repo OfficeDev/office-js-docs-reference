@@ -1,0 +1,1207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.Style
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.Style
+    fullName: Word.Style
+    langs:
+      - typeScript
+    type: enum
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.Style.bibliography
+      - Word_1_2.Word.Style.bookTitle
+      - Word_1_2.Word.Style.caption
+      - Word_1_2.Word.Style.emphasis
+      - Word_1_2.Word.Style.endnoteReference
+      - Word_1_2.Word.Style.endnoteText
+      - Word_1_2.Word.Style.footer
+      - Word_1_2.Word.Style.footnoteReference
+      - Word_1_2.Word.Style.footnoteText
+      - Word_1_2.Word.Style.gridTable1Light
+      - Word_1_2.Word.Style.gridTable1Light_Accent1
+      - Word_1_2.Word.Style.gridTable1Light_Accent2
+      - Word_1_2.Word.Style.gridTable1Light_Accent3
+      - Word_1_2.Word.Style.gridTable1Light_Accent4
+      - Word_1_2.Word.Style.gridTable1Light_Accent5
+      - Word_1_2.Word.Style.gridTable1Light_Accent6
+      - Word_1_2.Word.Style.gridTable2
+      - Word_1_2.Word.Style.gridTable2_Accent1
+      - Word_1_2.Word.Style.gridTable2_Accent2
+      - Word_1_2.Word.Style.gridTable2_Accent3
+      - Word_1_2.Word.Style.gridTable2_Accent4
+      - Word_1_2.Word.Style.gridTable2_Accent5
+      - Word_1_2.Word.Style.gridTable2_Accent6
+      - Word_1_2.Word.Style.gridTable3
+      - Word_1_2.Word.Style.gridTable3_Accent1
+      - Word_1_2.Word.Style.gridTable3_Accent2
+      - Word_1_2.Word.Style.gridTable3_Accent3
+      - Word_1_2.Word.Style.gridTable3_Accent4
+      - Word_1_2.Word.Style.gridTable3_Accent5
+      - Word_1_2.Word.Style.gridTable3_Accent6
+      - Word_1_2.Word.Style.gridTable4
+      - Word_1_2.Word.Style.gridTable4_Accent1
+      - Word_1_2.Word.Style.gridTable4_Accent2
+      - Word_1_2.Word.Style.gridTable4_Accent3
+      - Word_1_2.Word.Style.gridTable4_Accent4
+      - Word_1_2.Word.Style.gridTable4_Accent5
+      - Word_1_2.Word.Style.gridTable4_Accent6
+      - Word_1_2.Word.Style.gridTable5Dark
+      - Word_1_2.Word.Style.gridTable5Dark_Accent1
+      - Word_1_2.Word.Style.gridTable5Dark_Accent2
+      - Word_1_2.Word.Style.gridTable5Dark_Accent3
+      - Word_1_2.Word.Style.gridTable5Dark_Accent4
+      - Word_1_2.Word.Style.gridTable5Dark_Accent5
+      - Word_1_2.Word.Style.gridTable5Dark_Accent6
+      - Word_1_2.Word.Style.gridTable6Colorful
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent1
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent2
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent3
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent4
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent5
+      - Word_1_2.Word.Style.gridTable6Colorful_Accent6
+      - Word_1_2.Word.Style.gridTable7Colorful
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent1
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent2
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent3
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent4
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent5
+      - Word_1_2.Word.Style.gridTable7Colorful_Accent6
+      - Word_1_2.Word.Style.header
+      - Word_1_2.Word.Style.heading1
+      - Word_1_2.Word.Style.heading2
+      - Word_1_2.Word.Style.heading3
+      - Word_1_2.Word.Style.heading4
+      - Word_1_2.Word.Style.heading5
+      - Word_1_2.Word.Style.heading6
+      - Word_1_2.Word.Style.heading7
+      - Word_1_2.Word.Style.heading8
+      - Word_1_2.Word.Style.heading9
+      - Word_1_2.Word.Style.hyperlink
+      - Word_1_2.Word.Style.intenseEmphasis
+      - Word_1_2.Word.Style.intenseQuote
+      - Word_1_2.Word.Style.intenseReference
+      - Word_1_2.Word.Style.listParagraph
+      - Word_1_2.Word.Style.listTable1Light
+      - Word_1_2.Word.Style.listTable1Light_Accent1
+      - Word_1_2.Word.Style.listTable1Light_Accent2
+      - Word_1_2.Word.Style.listTable1Light_Accent3
+      - Word_1_2.Word.Style.listTable1Light_Accent4
+      - Word_1_2.Word.Style.listTable1Light_Accent5
+      - Word_1_2.Word.Style.listTable1Light_Accent6
+      - Word_1_2.Word.Style.listTable2
+      - Word_1_2.Word.Style.listTable2_Accent1
+      - Word_1_2.Word.Style.listTable2_Accent2
+      - Word_1_2.Word.Style.listTable2_Accent3
+      - Word_1_2.Word.Style.listTable2_Accent4
+      - Word_1_2.Word.Style.listTable2_Accent5
+      - Word_1_2.Word.Style.listTable2_Accent6
+      - Word_1_2.Word.Style.listTable3
+      - Word_1_2.Word.Style.listTable3_Accent1
+      - Word_1_2.Word.Style.listTable3_Accent2
+      - Word_1_2.Word.Style.listTable3_Accent3
+      - Word_1_2.Word.Style.listTable3_Accent4
+      - Word_1_2.Word.Style.listTable3_Accent5
+      - Word_1_2.Word.Style.listTable3_Accent6
+      - Word_1_2.Word.Style.listTable4
+      - Word_1_2.Word.Style.listTable4_Accent1
+      - Word_1_2.Word.Style.listTable4_Accent2
+      - Word_1_2.Word.Style.listTable4_Accent3
+      - Word_1_2.Word.Style.listTable4_Accent4
+      - Word_1_2.Word.Style.listTable4_Accent5
+      - Word_1_2.Word.Style.listTable4_Accent6
+      - Word_1_2.Word.Style.listTable5Dark
+      - Word_1_2.Word.Style.listTable5Dark_Accent1
+      - Word_1_2.Word.Style.listTable5Dark_Accent2
+      - Word_1_2.Word.Style.listTable5Dark_Accent3
+      - Word_1_2.Word.Style.listTable5Dark_Accent4
+      - Word_1_2.Word.Style.listTable5Dark_Accent5
+      - Word_1_2.Word.Style.listTable5Dark_Accent6
+      - Word_1_2.Word.Style.listTable6Colorful
+      - Word_1_2.Word.Style.listTable6Colorful_Accent1
+      - Word_1_2.Word.Style.listTable6Colorful_Accent2
+      - Word_1_2.Word.Style.listTable6Colorful_Accent3
+      - Word_1_2.Word.Style.listTable6Colorful_Accent4
+      - Word_1_2.Word.Style.listTable6Colorful_Accent5
+      - Word_1_2.Word.Style.listTable6Colorful_Accent6
+      - Word_1_2.Word.Style.listTable7Colorful
+      - Word_1_2.Word.Style.listTable7Colorful_Accent1
+      - Word_1_2.Word.Style.listTable7Colorful_Accent2
+      - Word_1_2.Word.Style.listTable7Colorful_Accent3
+      - Word_1_2.Word.Style.listTable7Colorful_Accent4
+      - Word_1_2.Word.Style.listTable7Colorful_Accent5
+      - Word_1_2.Word.Style.listTable7Colorful_Accent6
+      - Word_1_2.Word.Style.normal
+      - Word_1_2.Word.Style.noSpacing
+      - Word_1_2.Word.Style.other
+      - Word_1_2.Word.Style.plainTable1
+      - Word_1_2.Word.Style.plainTable2
+      - Word_1_2.Word.Style.plainTable3
+      - Word_1_2.Word.Style.plainTable4
+      - Word_1_2.Word.Style.plainTable5
+      - Word_1_2.Word.Style.quote
+      - Word_1_2.Word.Style.strong
+      - Word_1_2.Word.Style.subtitle
+      - Word_1_2.Word.Style.subtleEmphasis
+      - Word_1_2.Word.Style.subtleReference
+      - Word_1_2.Word.Style.tableGrid
+      - Word_1_2.Word.Style.tableGridLight
+      - Word_1_2.Word.Style.title
+      - Word_1_2.Word.Style.toc1
+      - Word_1_2.Word.Style.toc2
+      - Word_1_2.Word.Style.toc3
+      - Word_1_2.Word.Style.toc4
+      - Word_1_2.Word.Style.toc5
+      - Word_1_2.Word.Style.toc6
+      - Word_1_2.Word.Style.toc7
+      - Word_1_2.Word.Style.toc8
+      - Word_1_2.Word.Style.toc9
+      - Word_1_2.Word.Style.tocHeading
+  - uid: Word_1_2.Word.Style.bibliography
+    name: bibliography
+    fullName: bibliography
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bibliography"'
+  - uid: Word_1_2.Word.Style.bookTitle
+    name: bookTitle
+    fullName: bookTitle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BookTitle"'
+  - uid: Word_1_2.Word.Style.caption
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Caption"'
+  - uid: Word_1_2.Word.Style.emphasis
+    name: emphasis
+    fullName: emphasis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emphasis"'
+  - uid: Word_1_2.Word.Style.endnoteReference
+    name: endnoteReference
+    fullName: endnoteReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EndnoteReference"'
+  - uid: Word_1_2.Word.Style.endnoteText
+    name: endnoteText
+    fullName: endnoteText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EndnoteText"'
+  - uid: Word_1_2.Word.Style.footer
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Footer"'
+  - uid: Word_1_2.Word.Style.footnoteReference
+    name: footnoteReference
+    fullName: footnoteReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FootnoteReference"'
+  - uid: Word_1_2.Word.Style.footnoteText
+    name: footnoteText
+    fullName: footnoteText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FootnoteText"'
+  - uid: Word_1_2.Word.Style.gridTable1Light
+    name: gridTable1Light
+    fullName: gridTable1Light
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent1
+    name: gridTable1Light_Accent1
+    fullName: gridTable1Light_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent2
+    name: gridTable1Light_Accent2
+    fullName: gridTable1Light_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent3
+    name: gridTable1Light_Accent3
+    fullName: gridTable1Light_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent4
+    name: gridTable1Light_Accent4
+    fullName: gridTable1Light_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent5
+    name: gridTable1Light_Accent5
+    fullName: gridTable1Light_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable1Light_Accent6
+    name: gridTable1Light_Accent6
+    fullName: gridTable1Light_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable1Light_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable2
+    name: gridTable2
+    fullName: gridTable2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent1
+    name: gridTable2_Accent1
+    fullName: gridTable2_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent2
+    name: gridTable2_Accent2
+    fullName: gridTable2_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent3
+    name: gridTable2_Accent3
+    fullName: gridTable2_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent4
+    name: gridTable2_Accent4
+    fullName: gridTable2_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent5
+    name: gridTable2_Accent5
+    fullName: gridTable2_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable2_Accent6
+    name: gridTable2_Accent6
+    fullName: gridTable2_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable2_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable3
+    name: gridTable3
+    fullName: gridTable3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent1
+    name: gridTable3_Accent1
+    fullName: gridTable3_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent2
+    name: gridTable3_Accent2
+    fullName: gridTable3_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent3
+    name: gridTable3_Accent3
+    fullName: gridTable3_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent4
+    name: gridTable3_Accent4
+    fullName: gridTable3_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent5
+    name: gridTable3_Accent5
+    fullName: gridTable3_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable3_Accent6
+    name: gridTable3_Accent6
+    fullName: gridTable3_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable3_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable4
+    name: gridTable4
+    fullName: gridTable4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent1
+    name: gridTable4_Accent1
+    fullName: gridTable4_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent2
+    name: gridTable4_Accent2
+    fullName: gridTable4_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent3
+    name: gridTable4_Accent3
+    fullName: gridTable4_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent4
+    name: gridTable4_Accent4
+    fullName: gridTable4_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent5
+    name: gridTable4_Accent5
+    fullName: gridTable4_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable4_Accent6
+    name: gridTable4_Accent6
+    fullName: gridTable4_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable4_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark
+    name: gridTable5Dark
+    fullName: gridTable5Dark
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent1
+    name: gridTable5Dark_Accent1
+    fullName: gridTable5Dark_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent2
+    name: gridTable5Dark_Accent2
+    fullName: gridTable5Dark_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent3
+    name: gridTable5Dark_Accent3
+    fullName: gridTable5Dark_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent4
+    name: gridTable5Dark_Accent4
+    fullName: gridTable5Dark_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent5
+    name: gridTable5Dark_Accent5
+    fullName: gridTable5Dark_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable5Dark_Accent6
+    name: gridTable5Dark_Accent6
+    fullName: gridTable5Dark_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable5Dark_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful
+    name: gridTable6Colorful
+    fullName: gridTable6Colorful
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent1
+    name: gridTable6Colorful_Accent1
+    fullName: gridTable6Colorful_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent2
+    name: gridTable6Colorful_Accent2
+    fullName: gridTable6Colorful_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent3
+    name: gridTable6Colorful_Accent3
+    fullName: gridTable6Colorful_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent4
+    name: gridTable6Colorful_Accent4
+    fullName: gridTable6Colorful_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent5
+    name: gridTable6Colorful_Accent5
+    fullName: gridTable6Colorful_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable6Colorful_Accent6
+    name: gridTable6Colorful_Accent6
+    fullName: gridTable6Colorful_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable6Colorful_Accent6"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful
+    name: gridTable7Colorful
+    fullName: gridTable7Colorful
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent1
+    name: gridTable7Colorful_Accent1
+    fullName: gridTable7Colorful_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent1"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent2
+    name: gridTable7Colorful_Accent2
+    fullName: gridTable7Colorful_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent2"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent3
+    name: gridTable7Colorful_Accent3
+    fullName: gridTable7Colorful_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent3"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent4
+    name: gridTable7Colorful_Accent4
+    fullName: gridTable7Colorful_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent4"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent5
+    name: gridTable7Colorful_Accent5
+    fullName: gridTable7Colorful_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent5"'
+  - uid: Word_1_2.Word.Style.gridTable7Colorful_Accent6
+    name: gridTable7Colorful_Accent6
+    fullName: gridTable7Colorful_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GridTable7Colorful_Accent6"'
+  - uid: Word_1_2.Word.Style.header
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Header"'
+  - uid: Word_1_2.Word.Style.heading1
+    name: heading1
+    fullName: heading1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading1"'
+  - uid: Word_1_2.Word.Style.heading2
+    name: heading2
+    fullName: heading2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading2"'
+  - uid: Word_1_2.Word.Style.heading3
+    name: heading3
+    fullName: heading3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading3"'
+  - uid: Word_1_2.Word.Style.heading4
+    name: heading4
+    fullName: heading4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading4"'
+  - uid: Word_1_2.Word.Style.heading5
+    name: heading5
+    fullName: heading5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading5"'
+  - uid: Word_1_2.Word.Style.heading6
+    name: heading6
+    fullName: heading6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading6"'
+  - uid: Word_1_2.Word.Style.heading7
+    name: heading7
+    fullName: heading7
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading7"'
+  - uid: Word_1_2.Word.Style.heading8
+    name: heading8
+    fullName: heading8
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading8"'
+  - uid: Word_1_2.Word.Style.heading9
+    name: heading9
+    fullName: heading9
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heading9"'
+  - uid: Word_1_2.Word.Style.hyperlink
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hyperlink"'
+  - uid: Word_1_2.Word.Style.intenseEmphasis
+    name: intenseEmphasis
+    fullName: intenseEmphasis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IntenseEmphasis"'
+  - uid: Word_1_2.Word.Style.intenseQuote
+    name: intenseQuote
+    fullName: intenseQuote
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IntenseQuote"'
+  - uid: Word_1_2.Word.Style.intenseReference
+    name: intenseReference
+    fullName: intenseReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IntenseReference"'
+  - uid: Word_1_2.Word.Style.listParagraph
+    name: listParagraph
+    fullName: listParagraph
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListParagraph"'
+  - uid: Word_1_2.Word.Style.listTable1Light
+    name: listTable1Light
+    fullName: listTable1Light
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent1
+    name: listTable1Light_Accent1
+    fullName: listTable1Light_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent2
+    name: listTable1Light_Accent2
+    fullName: listTable1Light_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent3
+    name: listTable1Light_Accent3
+    fullName: listTable1Light_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent4
+    name: listTable1Light_Accent4
+    fullName: listTable1Light_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent5
+    name: listTable1Light_Accent5
+    fullName: listTable1Light_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable1Light_Accent6
+    name: listTable1Light_Accent6
+    fullName: listTable1Light_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable1Light_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable2
+    name: listTable2
+    fullName: listTable2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent1
+    name: listTable2_Accent1
+    fullName: listTable2_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent2
+    name: listTable2_Accent2
+    fullName: listTable2_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent3
+    name: listTable2_Accent3
+    fullName: listTable2_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent4
+    name: listTable2_Accent4
+    fullName: listTable2_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent5
+    name: listTable2_Accent5
+    fullName: listTable2_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable2_Accent6
+    name: listTable2_Accent6
+    fullName: listTable2_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable2_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable3
+    name: listTable3
+    fullName: listTable3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent1
+    name: listTable3_Accent1
+    fullName: listTable3_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent2
+    name: listTable3_Accent2
+    fullName: listTable3_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent3
+    name: listTable3_Accent3
+    fullName: listTable3_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent4
+    name: listTable3_Accent4
+    fullName: listTable3_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent5
+    name: listTable3_Accent5
+    fullName: listTable3_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable3_Accent6
+    name: listTable3_Accent6
+    fullName: listTable3_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable3_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable4
+    name: listTable4
+    fullName: listTable4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent1
+    name: listTable4_Accent1
+    fullName: listTable4_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent2
+    name: listTable4_Accent2
+    fullName: listTable4_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent3
+    name: listTable4_Accent3
+    fullName: listTable4_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent4
+    name: listTable4_Accent4
+    fullName: listTable4_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent5
+    name: listTable4_Accent5
+    fullName: listTable4_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable4_Accent6
+    name: listTable4_Accent6
+    fullName: listTable4_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable4_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable5Dark
+    name: listTable5Dark
+    fullName: listTable5Dark
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent1
+    name: listTable5Dark_Accent1
+    fullName: listTable5Dark_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent2
+    name: listTable5Dark_Accent2
+    fullName: listTable5Dark_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent3
+    name: listTable5Dark_Accent3
+    fullName: listTable5Dark_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent4
+    name: listTable5Dark_Accent4
+    fullName: listTable5Dark_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent5
+    name: listTable5Dark_Accent5
+    fullName: listTable5Dark_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable5Dark_Accent6
+    name: listTable5Dark_Accent6
+    fullName: listTable5Dark_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable5Dark_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful
+    name: listTable6Colorful
+    fullName: listTable6Colorful
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent1
+    name: listTable6Colorful_Accent1
+    fullName: listTable6Colorful_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent2
+    name: listTable6Colorful_Accent2
+    fullName: listTable6Colorful_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent3
+    name: listTable6Colorful_Accent3
+    fullName: listTable6Colorful_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent4
+    name: listTable6Colorful_Accent4
+    fullName: listTable6Colorful_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent5
+    name: listTable6Colorful_Accent5
+    fullName: listTable6Colorful_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable6Colorful_Accent6
+    name: listTable6Colorful_Accent6
+    fullName: listTable6Colorful_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable6Colorful_Accent6"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful
+    name: listTable7Colorful
+    fullName: listTable7Colorful
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent1
+    name: listTable7Colorful_Accent1
+    fullName: listTable7Colorful_Accent1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent1"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent2
+    name: listTable7Colorful_Accent2
+    fullName: listTable7Colorful_Accent2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent2"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent3
+    name: listTable7Colorful_Accent3
+    fullName: listTable7Colorful_Accent3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent3"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent4
+    name: listTable7Colorful_Accent4
+    fullName: listTable7Colorful_Accent4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent4"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent5
+    name: listTable7Colorful_Accent5
+    fullName: listTable7Colorful_Accent5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent5"'
+  - uid: Word_1_2.Word.Style.listTable7Colorful_Accent6
+    name: listTable7Colorful_Accent6
+    fullName: listTable7Colorful_Accent6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ListTable7Colorful_Accent6"'
+  - uid: Word_1_2.Word.Style.normal
+    summary: Reset character and paragraph style to default.
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Normal"'
+  - uid: Word_1_2.Word.Style.noSpacing
+    name: noSpacing
+    fullName: noSpacing
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NoSpacing"'
+  - uid: Word_1_2.Word.Style.other
+    summary: Mixed styles or other style not in this list.
+    name: other
+    fullName: other
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Other"'
+  - uid: Word_1_2.Word.Style.plainTable1
+    name: plainTable1
+    fullName: plainTable1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTable1"'
+  - uid: Word_1_2.Word.Style.plainTable2
+    name: plainTable2
+    fullName: plainTable2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTable2"'
+  - uid: Word_1_2.Word.Style.plainTable3
+    name: plainTable3
+    fullName: plainTable3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTable3"'
+  - uid: Word_1_2.Word.Style.plainTable4
+    name: plainTable4
+    fullName: plainTable4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTable4"'
+  - uid: Word_1_2.Word.Style.plainTable5
+    name: plainTable5
+    fullName: plainTable5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTable5"'
+  - uid: Word_1_2.Word.Style.quote
+    name: quote
+    fullName: quote
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Quote"'
+  - uid: Word_1_2.Word.Style.strong
+    name: strong
+    fullName: strong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Strong"'
+  - uid: Word_1_2.Word.Style.subtitle
+    name: subtitle
+    fullName: subtitle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Subtitle"'
+  - uid: Word_1_2.Word.Style.subtleEmphasis
+    name: subtleEmphasis
+    fullName: subtleEmphasis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SubtleEmphasis"'
+  - uid: Word_1_2.Word.Style.subtleReference
+    name: subtleReference
+    fullName: subtleReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SubtleReference"'
+  - uid: Word_1_2.Word.Style.tableGrid
+    name: tableGrid
+    fullName: tableGrid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableGrid"'
+  - uid: Word_1_2.Word.Style.tableGridLight
+    name: tableGridLight
+    fullName: tableGridLight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableGridLight"'
+  - uid: Word_1_2.Word.Style.title
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Title"'
+  - uid: Word_1_2.Word.Style.toc1
+    summary: Table-of-content level 1.
+    name: toc1
+    fullName: toc1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc1"'
+  - uid: Word_1_2.Word.Style.toc2
+    summary: Table-of-content level 2.
+    name: toc2
+    fullName: toc2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc2"'
+  - uid: Word_1_2.Word.Style.toc3
+    summary: Table-of-content level 3.
+    name: toc3
+    fullName: toc3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc3"'
+  - uid: Word_1_2.Word.Style.toc4
+    summary: Table-of-content level 4.
+    name: toc4
+    fullName: toc4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc4"'
+  - uid: Word_1_2.Word.Style.toc5
+    summary: Table-of-content level 5.
+    name: toc5
+    fullName: toc5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc5"'
+  - uid: Word_1_2.Word.Style.toc6
+    summary: Table-of-content level 6.
+    name: toc6
+    fullName: toc6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc6"'
+  - uid: Word_1_2.Word.Style.toc7
+    summary: Table-of-content level 7.
+    name: toc7
+    fullName: toc7
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc7"'
+  - uid: Word_1_2.Word.Style.toc8
+    summary: Table-of-content level 8.
+    name: toc8
+    fullName: toc8
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc8"'
+  - uid: Word_1_2.Word.Style.toc9
+    summary: Table-of-content level 9.
+    name: toc9
+    fullName: toc9
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Toc9"'
+  - uid: Word_1_2.Word.Style.tocHeading
+    summary: Table-of-content heading.
+    name: tocHeading
+    fullName: tocHeading
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TocHeading"'

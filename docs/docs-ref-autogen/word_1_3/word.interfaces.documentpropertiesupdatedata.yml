@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData
+    summary: 'An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })".'
+    name: Word.Interfaces.DocumentPropertiesUpdateData
+    fullName: Word.Interfaces.DocumentPropertiesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.author
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.category
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.comments
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.company
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.format
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.keywords
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.manager
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.subject
+      - Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.title
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.author
+    summary: |-
+      Gets or sets the author of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.category
+    summary: |-
+      Gets or sets the category of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.comments
+    summary: |-
+      Gets or sets the comments of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.company
+    summary: |-
+      Gets or sets the company of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.format
+    summary: |-
+      Gets or sets the format of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.keywords
+    summary: |-
+      Gets or sets the keywords of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.manager
+    summary: |-
+      Gets or sets the manager of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.subject
+    summary: |-
+      Gets or sets the subject of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Interfaces.DocumentPropertiesUpdateData.title
+    summary: |-
+      Gets or sets the title of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string

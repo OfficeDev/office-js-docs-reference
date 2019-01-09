@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CustomXmlPartScopedCollection object, for use in
+      "customXmlPartScopedCollection.set({ ... })".
+    name: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    fullName: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+  - uid: Word_1_2.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.CustomXmlPartData[];'
+      return:
+        type:
+          - 'Word.Interfaces.CustomXmlPartData[]'

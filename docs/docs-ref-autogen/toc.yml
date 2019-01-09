@@ -5,6 +5,25 @@ items:
       - name: Excel
         uid: ''
         items:
+          - name: Custom Functions (Preview)
+            uid: ''
+            items:
+              - name: Custom functions runtime
+                uid: custom-functions-runtime
+                items:
+                  - name: CancelableHandler
+                    uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+                  - name: StreamingHandler
+                    uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+              - name: Office runtime
+                uid: office-runtime
+                items:
+                  - name: AsyncStorage
+                    uid: office-runtime.OfficeRuntime.AsyncStorage
+                  - name: Dialog
+                    uid: office-runtime.OfficeRuntime.Dialog
+                  - name: DisplayWebDialogOptions
+                    uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
           - name: Excel - Preview
             uid: excel
             items:
@@ -3409,133 +3428,418 @@ items:
           - name: ToolBarType
             uid: visio.Visio.ToolBarType
       - name: Word
-        uid: word
+        uid: ''
         items:
-          - name: Enums
-            uid: ''
+          - name: Word - Preview
+            uid: word
             items:
-              - name: Alignment
-                uid: word.Word.Alignment
-              - name: BodyType
-                uid: word.Word.BodyType
-              - name: BorderLocation
-                uid: word.Word.BorderLocation
-              - name: BorderType
-                uid: word.Word.BorderType
-              - name: BreakType
-                uid: word.Word.BreakType
-              - name: CellPaddingLocation
-                uid: word.Word.CellPaddingLocation
-              - name: ContentControlAppearance
-                uid: word.Word.ContentControlAppearance
-              - name: ContentControlType
-                uid: word.Word.ContentControlType
-              - name: DocumentPropertyType
-                uid: word.Word.DocumentPropertyType
-              - name: ErrorCodes
-                uid: word.Word.ErrorCodes
-              - name: FileContentFormat
-                uid: word.Word.FileContentFormat
-              - name: HeaderFooterType
-                uid: word.Word.HeaderFooterType
-              - name: ImageFormat
-                uid: word.Word.ImageFormat
-              - name: InsertLocation
-                uid: word.Word.InsertLocation
-              - name: ListBullet
-                uid: word.Word.ListBullet
-              - name: ListLevelType
-                uid: word.Word.ListLevelType
-              - name: ListNumbering
-                uid: word.Word.ListNumbering
-              - name: LocationRelation
-                uid: word.Word.LocationRelation
-              - name: RangeLocation
-                uid: word.Word.RangeLocation
-              - name: SelectionMode
-                uid: word.Word.SelectionMode
-              - name: Style
-                uid: word.Word.Style
-              - name: TapObjectType
-                uid: word.Word.TapObjectType
-              - name: UnderlineType
-                uid: word.Word.UnderlineType
-              - name: VerticalAlignment
-                uid: word.Word.VerticalAlignment
-          - name: Application
-            uid: word.Word.Application
-          - name: Body
-            uid: word.Word.Body
-          - name: ContentControl
-            uid: word.Word.ContentControl
-          - name: ContentControlCollection
-            uid: word.Word.ContentControlCollection
-          - name: ContentControlEventArgs
-            uid: word.Word.ContentControlEventArgs
-          - name: CustomProperty
-            uid: word.Word.CustomProperty
-          - name: CustomPropertyCollection
-            uid: word.Word.CustomPropertyCollection
-          - name: CustomXmlPart
-            uid: word.Word.CustomXmlPart
-          - name: CustomXmlPartCollection
-            uid: word.Word.CustomXmlPartCollection
-          - name: CustomXmlPartScopedCollection
-            uid: word.Word.CustomXmlPartScopedCollection
-          - name: Document
-            uid: word.Word.Document
-          - name: DocumentCreated
-            uid: word.Word.DocumentCreated
-          - name: DocumentProperties
-            uid: word.Word.DocumentProperties
-          - name: EventType
-            uid: word.Word.EventType
-          - name: Font
-            uid: word.Word.Font
-          - name: InlinePicture
-            uid: word.Word.InlinePicture
-          - name: InlinePictureCollection
-            uid: word.Word.InlinePictureCollection
-          - name: List
-            uid: word.Word.List
-          - name: ListCollection
-            uid: word.Word.ListCollection
-          - name: ListItem
-            uid: word.Word.ListItem
-          - name: Paragraph
-            uid: word.Word.Paragraph
-          - name: ParagraphCollection
-            uid: word.Word.ParagraphCollection
-          - name: Range
-            uid: word.Word.Range
-          - name: RangeCollection
-            uid: word.Word.RangeCollection
-          - name: RequestContext
-            uid: word.Word.RequestContext
-          - name: SearchOptions
-            uid: word.Word.SearchOptions
-          - name: Section
-            uid: word.Word.Section
-          - name: SectionCollection
-            uid: word.Word.SectionCollection
-          - name: Setting
-            uid: word.Word.Setting
-          - name: SettingCollection
-            uid: word.Word.SettingCollection
-          - name: Table
-            uid: word.Word.Table
-          - name: TableBorder
-            uid: word.Word.TableBorder
-          - name: TableCell
-            uid: word.Word.TableCell
-          - name: TableCellCollection
-            uid: word.Word.TableCellCollection
-          - name: TableCollection
-            uid: word.Word.TableCollection
-          - name: TableRow
-            uid: word.Word.TableRow
-          - name: TableRowCollection
-            uid: word.Word.TableRowCollection
+              - name: Enums
+                uid: ''
+                items:
+                  - name: Alignment
+                    uid: word.Word.Alignment
+                  - name: BodyType
+                    uid: word.Word.BodyType
+                  - name: BorderLocation
+                    uid: word.Word.BorderLocation
+                  - name: BorderType
+                    uid: word.Word.BorderType
+                  - name: BreakType
+                    uid: word.Word.BreakType
+                  - name: CellPaddingLocation
+                    uid: word.Word.CellPaddingLocation
+                  - name: ContentControlAppearance
+                    uid: word.Word.ContentControlAppearance
+                  - name: ContentControlType
+                    uid: word.Word.ContentControlType
+                  - name: DocumentPropertyType
+                    uid: word.Word.DocumentPropertyType
+                  - name: ErrorCodes
+                    uid: word.Word.ErrorCodes
+                  - name: FileContentFormat
+                    uid: word.Word.FileContentFormat
+                  - name: HeaderFooterType
+                    uid: word.Word.HeaderFooterType
+                  - name: ImageFormat
+                    uid: word.Word.ImageFormat
+                  - name: InsertLocation
+                    uid: word.Word.InsertLocation
+                  - name: ListBullet
+                    uid: word.Word.ListBullet
+                  - name: ListLevelType
+                    uid: word.Word.ListLevelType
+                  - name: ListNumbering
+                    uid: word.Word.ListNumbering
+                  - name: LocationRelation
+                    uid: word.Word.LocationRelation
+                  - name: RangeLocation
+                    uid: word.Word.RangeLocation
+                  - name: SelectionMode
+                    uid: word.Word.SelectionMode
+                  - name: Style
+                    uid: word.Word.Style
+                  - name: TapObjectType
+                    uid: word.Word.TapObjectType
+                  - name: UnderlineType
+                    uid: word.Word.UnderlineType
+                  - name: VerticalAlignment
+                    uid: word.Word.VerticalAlignment
+              - name: Application
+                uid: word.Word.Application
+              - name: Body
+                uid: word.Word.Body
+              - name: ContentControl
+                uid: word.Word.ContentControl
+              - name: ContentControlCollection
+                uid: word.Word.ContentControlCollection
+              - name: ContentControlEventArgs
+                uid: word.Word.ContentControlEventArgs
+              - name: CustomProperty
+                uid: word.Word.CustomProperty
+              - name: CustomPropertyCollection
+                uid: word.Word.CustomPropertyCollection
+              - name: CustomXmlPart
+                uid: word.Word.CustomXmlPart
+              - name: CustomXmlPartCollection
+                uid: word.Word.CustomXmlPartCollection
+              - name: CustomXmlPartScopedCollection
+                uid: word.Word.CustomXmlPartScopedCollection
+              - name: Document
+                uid: word.Word.Document
+              - name: DocumentCreated
+                uid: word.Word.DocumentCreated
+              - name: DocumentProperties
+                uid: word.Word.DocumentProperties
+              - name: EventType
+                uid: word.Word.EventType
+              - name: Font
+                uid: word.Word.Font
+              - name: InlinePicture
+                uid: word.Word.InlinePicture
+              - name: InlinePictureCollection
+                uid: word.Word.InlinePictureCollection
+              - name: List
+                uid: word.Word.List
+              - name: ListCollection
+                uid: word.Word.ListCollection
+              - name: ListItem
+                uid: word.Word.ListItem
+              - name: Paragraph
+                uid: word.Word.Paragraph
+              - name: ParagraphCollection
+                uid: word.Word.ParagraphCollection
+              - name: Range
+                uid: word.Word.Range
+              - name: RangeCollection
+                uid: word.Word.RangeCollection
+              - name: RequestContext
+                uid: word.Word.RequestContext
+              - name: SearchOptions
+                uid: word.Word.SearchOptions
+              - name: Section
+                uid: word.Word.Section
+              - name: SectionCollection
+                uid: word.Word.SectionCollection
+              - name: Setting
+                uid: word.Word.Setting
+              - name: SettingCollection
+                uid: word.Word.SettingCollection
+              - name: Table
+                uid: word.Word.Table
+              - name: TableBorder
+                uid: word.Word.TableBorder
+              - name: TableCell
+                uid: word.Word.TableCell
+              - name: TableCellCollection
+                uid: word.Word.TableCellCollection
+              - name: TableCollection
+                uid: word.Word.TableCollection
+              - name: TableRow
+                uid: word.Word.TableRow
+              - name: TableRowCollection
+                uid: word.Word.TableRowCollection
+          - name: Word 1.3
+            uid: Word_1_3
+            items:
+              - name: Enums
+                uid: ''
+                items:
+                  - name: Alignment
+                    uid: Word_1_3.Word.Alignment
+                  - name: BodyType
+                    uid: Word_1_3.Word.BodyType
+                  - name: BorderLocation
+                    uid: Word_1_3.Word.BorderLocation
+                  - name: BorderType
+                    uid: Word_1_3.Word.BorderType
+                  - name: BreakType
+                    uid: Word_1_3.Word.BreakType
+                  - name: CellPaddingLocation
+                    uid: Word_1_3.Word.CellPaddingLocation
+                  - name: ContentControlAppearance
+                    uid: Word_1_3.Word.ContentControlAppearance
+                  - name: ContentControlType
+                    uid: Word_1_3.Word.ContentControlType
+                  - name: DocumentPropertyType
+                    uid: Word_1_3.Word.DocumentPropertyType
+                  - name: ErrorCodes
+                    uid: Word_1_3.Word.ErrorCodes
+                  - name: FileContentFormat
+                    uid: Word_1_3.Word.FileContentFormat
+                  - name: HeaderFooterType
+                    uid: Word_1_3.Word.HeaderFooterType
+                  - name: ImageFormat
+                    uid: Word_1_3.Word.ImageFormat
+                  - name: InsertLocation
+                    uid: Word_1_3.Word.InsertLocation
+                  - name: ListBullet
+                    uid: Word_1_3.Word.ListBullet
+                  - name: ListLevelType
+                    uid: Word_1_3.Word.ListLevelType
+                  - name: ListNumbering
+                    uid: Word_1_3.Word.ListNumbering
+                  - name: LocationRelation
+                    uid: Word_1_3.Word.LocationRelation
+                  - name: RangeLocation
+                    uid: Word_1_3.Word.RangeLocation
+                  - name: SelectionMode
+                    uid: Word_1_3.Word.SelectionMode
+                  - name: Style
+                    uid: Word_1_3.Word.Style
+                  - name: TapObjectType
+                    uid: Word_1_3.Word.TapObjectType
+                  - name: UnderlineType
+                    uid: Word_1_3.Word.UnderlineType
+                  - name: VerticalAlignment
+                    uid: Word_1_3.Word.VerticalAlignment
+              - name: Application
+                uid: Word_1_3.Word.Application
+              - name: Body
+                uid: Word_1_3.Word.Body
+              - name: ContentControl
+                uid: Word_1_3.Word.ContentControl
+              - name: ContentControlCollection
+                uid: Word_1_3.Word.ContentControlCollection
+              - name: CustomProperty
+                uid: Word_1_3.Word.CustomProperty
+              - name: CustomPropertyCollection
+                uid: Word_1_3.Word.CustomPropertyCollection
+              - name: Document
+                uid: Word_1_3.Word.Document
+              - name: DocumentCreated
+                uid: Word_1_3.Word.DocumentCreated
+              - name: DocumentProperties
+                uid: Word_1_3.Word.DocumentProperties
+              - name: EventType
+                uid: Word_1_3.Word.EventType
+              - name: Font
+                uid: Word_1_3.Word.Font
+              - name: InlinePicture
+                uid: Word_1_3.Word.InlinePicture
+              - name: InlinePictureCollection
+                uid: Word_1_3.Word.InlinePictureCollection
+              - name: List
+                uid: Word_1_3.Word.List
+              - name: ListCollection
+                uid: Word_1_3.Word.ListCollection
+              - name: ListItem
+                uid: Word_1_3.Word.ListItem
+              - name: Paragraph
+                uid: Word_1_3.Word.Paragraph
+              - name: ParagraphCollection
+                uid: Word_1_3.Word.ParagraphCollection
+              - name: Range
+                uid: Word_1_3.Word.Range
+              - name: RangeCollection
+                uid: Word_1_3.Word.RangeCollection
+              - name: SearchOptions
+                uid: Word_1_3.Word.SearchOptions
+              - name: Section
+                uid: Word_1_3.Word.Section
+              - name: SectionCollection
+                uid: Word_1_3.Word.SectionCollection
+              - name: Table
+                uid: Word_1_3.Word.Table
+              - name: TableBorder
+                uid: Word_1_3.Word.TableBorder
+              - name: TableCell
+                uid: Word_1_3.Word.TableCell
+              - name: TableCellCollection
+                uid: Word_1_3.Word.TableCellCollection
+              - name: TableCollection
+                uid: Word_1_3.Word.TableCollection
+              - name: TableRow
+                uid: Word_1_3.Word.TableRow
+              - name: TableRowCollection
+                uid: Word_1_3.Word.TableRowCollection
+          - name: Word 1.2
+            uid: Word_1_2
+            items:
+              - name: Enums
+                uid: ''
+                items:
+                  - name: Alignment
+                    uid: Word_1_2.Word.Alignment
+                  - name: BodyType
+                    uid: Word_1_2.Word.BodyType
+                  - name: BorderLocation
+                    uid: Word_1_2.Word.BorderLocation
+                  - name: BorderType
+                    uid: Word_1_2.Word.BorderType
+                  - name: BreakType
+                    uid: Word_1_2.Word.BreakType
+                  - name: CellPaddingLocation
+                    uid: Word_1_2.Word.CellPaddingLocation
+                  - name: ContentControlAppearance
+                    uid: Word_1_2.Word.ContentControlAppearance
+                  - name: ContentControlType
+                    uid: Word_1_2.Word.ContentControlType
+                  - name: DocumentPropertyType
+                    uid: Word_1_2.Word.DocumentPropertyType
+                  - name: ErrorCodes
+                    uid: Word_1_2.Word.ErrorCodes
+                  - name: FileContentFormat
+                    uid: Word_1_2.Word.FileContentFormat
+                  - name: HeaderFooterType
+                    uid: Word_1_2.Word.HeaderFooterType
+                  - name: ImageFormat
+                    uid: Word_1_2.Word.ImageFormat
+                  - name: InsertLocation
+                    uid: Word_1_2.Word.InsertLocation
+                  - name: ListBullet
+                    uid: Word_1_2.Word.ListBullet
+                  - name: ListLevelType
+                    uid: Word_1_2.Word.ListLevelType
+                  - name: ListNumbering
+                    uid: Word_1_2.Word.ListNumbering
+                  - name: LocationRelation
+                    uid: Word_1_2.Word.LocationRelation
+                  - name: RangeLocation
+                    uid: Word_1_2.Word.RangeLocation
+                  - name: SelectionMode
+                    uid: Word_1_2.Word.SelectionMode
+                  - name: Style
+                    uid: Word_1_2.Word.Style
+                  - name: TapObjectType
+                    uid: Word_1_2.Word.TapObjectType
+                  - name: UnderlineType
+                    uid: Word_1_2.Word.UnderlineType
+                  - name: VerticalAlignment
+                    uid: Word_1_2.Word.VerticalAlignment
+              - name: Body
+                uid: Word_1_2.Word.Body
+              - name: ContentControl
+                uid: Word_1_2.Word.ContentControl
+              - name: ContentControlCollection
+                uid: Word_1_2.Word.ContentControlCollection
+              - name: Document
+                uid: Word_1_2.Word.Document
+              - name: EventType
+                uid: Word_1_2.Word.EventType
+              - name: Font
+                uid: Word_1_2.Word.Font
+              - name: InlinePicture
+                uid: Word_1_2.Word.InlinePicture
+              - name: InlinePictureCollection
+                uid: Word_1_2.Word.InlinePictureCollection
+              - name: Paragraph
+                uid: Word_1_2.Word.Paragraph
+              - name: ParagraphCollection
+                uid: Word_1_2.Word.ParagraphCollection
+              - name: Range
+                uid: Word_1_2.Word.Range
+              - name: RangeCollection
+                uid: Word_1_2.Word.RangeCollection
+              - name: SearchOptions
+                uid: Word_1_2.Word.SearchOptions
+              - name: Section
+                uid: Word_1_2.Word.Section
+              - name: SectionCollection
+                uid: Word_1_2.Word.SectionCollection
+          - name: Word 1.1
+            uid: Word_1_1
+            items:
+              - name: Enums
+                uid: ''
+                items:
+                  - name: Alignment
+                    uid: Word_1_1.Word.Alignment
+                  - name: BodyType
+                    uid: Word_1_1.Word.BodyType
+                  - name: BorderLocation
+                    uid: Word_1_1.Word.BorderLocation
+                  - name: BorderType
+                    uid: Word_1_1.Word.BorderType
+                  - name: BreakType
+                    uid: Word_1_1.Word.BreakType
+                  - name: CellPaddingLocation
+                    uid: Word_1_1.Word.CellPaddingLocation
+                  - name: ContentControlAppearance
+                    uid: Word_1_1.Word.ContentControlAppearance
+                  - name: ContentControlType
+                    uid: Word_1_1.Word.ContentControlType
+                  - name: DocumentPropertyType
+                    uid: Word_1_1.Word.DocumentPropertyType
+                  - name: ErrorCodes
+                    uid: Word_1_1.Word.ErrorCodes
+                  - name: FileContentFormat
+                    uid: Word_1_1.Word.FileContentFormat
+                  - name: HeaderFooterType
+                    uid: Word_1_1.Word.HeaderFooterType
+                  - name: ImageFormat
+                    uid: Word_1_1.Word.ImageFormat
+                  - name: InsertLocation
+                    uid: Word_1_1.Word.InsertLocation
+                  - name: ListBullet
+                    uid: Word_1_1.Word.ListBullet
+                  - name: ListLevelType
+                    uid: Word_1_1.Word.ListLevelType
+                  - name: ListNumbering
+                    uid: Word_1_1.Word.ListNumbering
+                  - name: LocationRelation
+                    uid: Word_1_1.Word.LocationRelation
+                  - name: RangeLocation
+                    uid: Word_1_1.Word.RangeLocation
+                  - name: SelectionMode
+                    uid: Word_1_1.Word.SelectionMode
+                  - name: Style
+                    uid: Word_1_1.Word.Style
+                  - name: TapObjectType
+                    uid: Word_1_1.Word.TapObjectType
+                  - name: UnderlineType
+                    uid: Word_1_1.Word.UnderlineType
+                  - name: VerticalAlignment
+                    uid: Word_1_1.Word.VerticalAlignment
+              - name: Body
+                uid: Word_1_1.Word.Body
+              - name: ContentControl
+                uid: Word_1_1.Word.ContentControl
+              - name: ContentControlCollection
+                uid: Word_1_1.Word.ContentControlCollection
+              - name: Document
+                uid: Word_1_1.Word.Document
+              - name: EventType
+                uid: Word_1_1.Word.EventType
+              - name: Font
+                uid: Word_1_1.Word.Font
+              - name: InlinePicture
+                uid: Word_1_1.Word.InlinePicture
+              - name: InlinePictureCollection
+                uid: Word_1_1.Word.InlinePictureCollection
+              - name: Paragraph
+                uid: Word_1_1.Word.Paragraph
+              - name: ParagraphCollection
+                uid: Word_1_1.Word.ParagraphCollection
+              - name: Range
+                uid: Word_1_1.Word.Range
+              - name: RangeCollection
+                uid: Word_1_1.Word.RangeCollection
+              - name: SearchOptions
+                uid: Word_1_1.Word.SearchOptions
+              - name: Section
+                uid: Word_1_1.Word.Section
+              - name: SectionCollection
+                uid: Word_1_1.Word.SectionCollection
       - name: Common API
         uid: office
         items:

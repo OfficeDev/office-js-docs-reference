@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.Interfaces.TableCellCollectionUpdateData
+    summary: 'An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set({ ... })".'
+    name: Word.Interfaces.TableCellCollectionUpdateData
+    fullName: Word.Interfaces.TableCellCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.Interfaces.TableCellCollectionUpdateData.items
+  - uid: Word_1_2.Word.Interfaces.TableCellCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.TableCellData[];'
+      return:
+        type:
+          - 'Word.Interfaces.TableCellData[]'

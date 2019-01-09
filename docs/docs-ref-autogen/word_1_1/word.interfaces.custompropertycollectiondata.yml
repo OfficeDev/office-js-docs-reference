@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_1.Word.Interfaces.CustomPropertyCollectionData
+    summary: An interface describing the data returned by calling "customPropertyCollection.toJSON()".
+    name: Word.Interfaces.CustomPropertyCollectionData
+    fullName: Word.Interfaces.CustomPropertyCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_1
+    children:
+      - Word_1_1.Word.Interfaces.CustomPropertyCollectionData.items
+  - uid: Word_1_1.Word.Interfaces.CustomPropertyCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.CustomPropertyData[];'
+      return:
+        type:
+          - 'Word.Interfaces.CustomPropertyData[]'

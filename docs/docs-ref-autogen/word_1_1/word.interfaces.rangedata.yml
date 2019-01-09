@@ -1,0 +1,111 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_1.Word.Interfaces.RangeData
+    summary: An interface describing the data returned by calling "range.toJSON()".
+    name: Word.Interfaces.RangeData
+    fullName: Word.Interfaces.RangeData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_1
+    children:
+      - Word_1_1.Word.Interfaces.RangeData.contentControls
+      - Word_1_1.Word.Interfaces.RangeData.font
+      - Word_1_1.Word.Interfaces.RangeData.paragraphs
+      - Word_1_1.Word.Interfaces.RangeData.parentContentControl
+      - Word_1_1.Word.Interfaces.RangeData.style
+      - Word_1_1.Word.Interfaces.RangeData.text
+  - uid: Word_1_1.Word.Interfaces.RangeData.contentControls
+    summary: |-
+      Gets the collection of content control objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
+      return:
+        type:
+          - 'Word.Interfaces.ContentControlData[]'
+  - uid: Word_1_1.Word.Interfaces.RangeData.font
+    summary: >-
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type:
+          - word.Word.Interfaces.FontData
+  - uid: Word_1_1.Word.Interfaces.RangeData.paragraphs
+    summary: |-
+      Gets the collection of paragraph objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
+      return:
+        type:
+          - 'Word.Interfaces.ParagraphData[]'
+  - uid: Word_1_1.Word.Interfaces.RangeData.parentContentControl
+    summary: |-
+      Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlData
+  - uid: Word_1_1.Word.Interfaces.RangeData.style
+    summary: >-
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_1.Word.Interfaces.RangeData.text
+    summary: |-
+      Gets the text of the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string

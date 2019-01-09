@@ -1,0 +1,834 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.Body
+    summary: |-
+      Represents the body of a document or a section.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Body
+    fullName: Word.Body
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.Body.clear
+      - Word_1_3.Word.Body.contentControls
+      - Word_1_3.Word.Body.context
+      - Word_1_3.Word.Body.font
+      - Word_1_3.Word.Body.getHtml
+      - Word_1_3.Word.Body.getOoxml
+      - Word_1_3.Word.Body.getRange
+      - Word_1_3.Word.Body.inlinePictures
+      - Word_1_3.Word.Body.insertBreak
+      - Word_1_3.Word.Body.insertContentControl
+      - Word_1_3.Word.Body.insertFileFromBase64
+      - Word_1_3.Word.Body.insertHtml
+      - Word_1_3.Word.Body.insertInlinePictureFromBase64
+      - Word_1_3.Word.Body.insertOoxml
+      - Word_1_3.Word.Body.insertParagraph
+      - Word_1_3.Word.Body.insertTable
+      - Word_1_3.Word.Body.insertText
+      - Word_1_3.Word.Body.lists
+      - Word_1_3.Word.Body.load
+      - Word_1_3.Word.Body.paragraphs
+      - Word_1_3.Word.Body.parentBody
+      - Word_1_3.Word.Body.parentBodyOrNullObject
+      - Word_1_3.Word.Body.parentContentControl
+      - Word_1_3.Word.Body.parentContentControlOrNullObject
+      - Word_1_3.Word.Body.parentSection
+      - Word_1_3.Word.Body.parentSectionOrNullObject
+      - Word_1_3.Word.Body.search
+      - Word_1_3.Word.Body.select
+      - Word_1_3.Word.Body.style
+      - Word_1_3.Word.Body.styleBuiltIn
+      - Word_1_3.Word.Body.tables
+      - Word_1_3.Word.Body.text
+      - Word_1_3.Word.Body.toJSON
+      - Word_1_3.Word.Body.track
+      - Word_1_3.Word.Body.type
+      - Word_1_3.Word.Body.untrack
+  - uid: Word_1_3.Word.Body.clear
+    summary: |-
+      Clears the contents of the body object. The user can perform the undo operation on the cleared content.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: clear()
+    fullName: clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_3.Word.Body.contentControls
+    summary: |-
+      Gets the collection of rich text content control objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentControls: Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+  - uid: Word_1_3.Word.Body.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Word_1_3.Word.Body.font
+    summary: |-
+      Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+  - uid: Word_1_3.Word.Body.getHtml
+    summary: >-
+      Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
+      a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity,
+      or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHtml()
+    fullName: getHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_3.Word.Body.getOoxml
+    summary: |-
+      Gets the OOXML (Office Open XML) representation of the body object.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getOoxml()
+    fullName: getOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_3.Word.Body.getRange
+    summary: |-
+      Gets the whole body, or the starting or ending point of the body, as a range.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocation)
+    fullName: getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          type:
+            - word.Word.RangeLocation
+  - uid: Word_1_3.Word.Body.inlinePictures
+    summary: >-
+      Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inlinePictures: Word.InlinePictureCollection;'
+      return:
+        type:
+          - word.Word.InlinePictureCollection
+  - uid: Word_1_3.Word.Body.insertBreak
+    summary: |-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: insertBreak
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: Required. The break type to add to the body.
+          type:
+            - word.Word.BreakType
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertContentControl
+    summary: |-
+      Wraps the body object with a Rich Text content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: insertContentControl()
+    fullName: insertContentControl
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+  - uid: Word_1_3.Word.Body.insertFileFromBase64
+    summary: >-
+      Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: insertFileFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertHtml
+    summary: |-
+      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: insertHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted in the document.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertInlinePictureFromBase64
+    summary: |-
+      Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: insertInlinePictureFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
+        Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted in the body.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertOoxml
+    summary: |-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: insertOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertParagraph
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: insertParagraph
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.insertTable
+    summary: |-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: insertTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]):
+        Word.Table;
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - Word.InsertLocation
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: Word_1_3.Word.Body.insertText
+    summary: >-
+      Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: insertText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.Body.lists
+    summary: |-
+      Gets the collection of list objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lists
+    fullName: lists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lists: Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+  - uid: Word_1_3.Word.Body.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Word_1_3.Word.Body.paragraphs
+    summary: |-
+      Gets the collection of paragraph objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+  - uid: Word_1_3.Word.Body.parentBody
+    summary: >-
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
+      isn't a parent body. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentBody: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: Word_1_3.Word.Body.parentBodyOrNullObject
+    summary: >-
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
+      object if there isn't a parent body. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBodyOrNullObject
+    fullName: parentBodyOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentBodyOrNullObject: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: Word_1_3.Word.Body.parentContentControl
+    summary: |-
+      Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: Word_1_3.Word.Body.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: Word_1_3.Word.Body.parentSection
+    summary: |-
+      Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentSection
+    fullName: parentSection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentSection: Word.Section;'
+      return:
+        type:
+          - Word.Section
+  - uid: Word_1_3.Word.Body.parentSectionOrNullObject
+    summary: |-
+      Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentSectionOrNullObject
+    fullName: parentSectionOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentSectionOrNullObject: Word.Section;'
+      return:
+        type:
+          - Word.Section
+  - uid: Word_1_3.Word.Body.search
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the body object. The search results are a
+      collection of range objects.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'search(searchText, searchOptions)'
+    fullName: search
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: searchText
+          description: Required. The search text. Can be a maximum of 255 characters.
+          type:
+            - string
+        - id: searchOptions
+          description: Optional. Options for the search.
+          type:
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
+  - uid: Word_1_3.Word.Body.select
+    summary: |-
+      Selects the body and navigates the Word UI to it.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - Word.SelectionMode
+  - uid: Word_1_3.Word.Body.style
+    summary: >-
+      Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Body.styleBuiltIn
+    summary: >-
+      Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between
+      locales. To use custom styles or localized style names, see the "style" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+        "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7"
+        | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference"
+        | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+        "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+        "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+        "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+        "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+        "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+        "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+      return:
+        type:
+          - >-
+            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
+            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
+            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
+            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
+            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
+            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
+            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
+            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
+            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
+            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+  - uid: Word_1_3.Word.Body.tables
+    summary: |-
+      Gets the collection of table objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+  - uid: Word_1_3.Word.Body.text
+    summary: |-
+      Gets the text of the body. Use the insertText method to insert text. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.Body.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.BodyData;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyData
+        description: ''
+  - uid: Word_1_3.Word.Body.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: ''
+  - uid: Word_1_3.Word.Body.type
+    summary: |-
+      Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";'
+      return:
+        type:
+          - Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
+  - uid: Word_1_3.Word.Body.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: ''

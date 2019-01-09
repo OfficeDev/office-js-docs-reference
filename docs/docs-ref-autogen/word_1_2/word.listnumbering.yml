@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_2.Word.ListNumbering
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ListNumbering
+    fullName: Word.ListNumbering
+    langs:
+      - typeScript
+    type: enum
+    package: Word_1_2
+    children:
+      - Word_1_2.Word.ListNumbering.arabic
+      - Word_1_2.Word.ListNumbering.lowerLetter
+      - Word_1_2.Word.ListNumbering.lowerRoman
+      - Word_1_2.Word.ListNumbering.none
+      - Word_1_2.Word.ListNumbering.upperLetter
+      - Word_1_2.Word.ListNumbering.upperRoman
+  - uid: Word_1_2.Word.ListNumbering.arabic
+    name: arabic
+    fullName: arabic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arabic"'
+  - uid: Word_1_2.Word.ListNumbering.lowerLetter
+    name: lowerLetter
+    fullName: lowerLetter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowerLetter"'
+  - uid: Word_1_2.Word.ListNumbering.lowerRoman
+    name: lowerRoman
+    fullName: lowerRoman
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowerRoman"'
+  - uid: Word_1_2.Word.ListNumbering.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: Word_1_2.Word.ListNumbering.upperLetter
+    name: upperLetter
+    fullName: upperLetter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpperLetter"'
+  - uid: Word_1_2.Word.ListNumbering.upperRoman
+    name: upperRoman
+    fullName: upperRoman
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpperRoman"'

@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.Interfaces.RangeCollectionUpdateData
+    summary: 'An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })".'
+    name: Word.Interfaces.RangeCollectionUpdateData
+    fullName: Word.Interfaces.RangeCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.Interfaces.RangeCollectionUpdateData.items
+  - uid: Word_1_3.Word.Interfaces.RangeCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.RangeData[];'
+      return:
+        type:
+          - 'Word.Interfaces.RangeData[]'

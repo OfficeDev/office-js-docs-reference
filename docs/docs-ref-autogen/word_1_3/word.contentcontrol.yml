@@ -1,0 +1,1146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Word_1_3.Word.ContentControl
+    summary: >-
+      Represents a content control. Content controls are bounded and potentially labeled regions in a document that
+      serve as containers for specific types of content. Individual content controls may contain contents such as
+      images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ContentControl
+    fullName: Word.ContentControl
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: Word_1_3
+    children:
+      - Word_1_3.Word.ContentControl.appearance
+      - Word_1_3.Word.ContentControl.cannotDelete
+      - Word_1_3.Word.ContentControl.cannotEdit
+      - Word_1_3.Word.ContentControl.clear
+      - Word_1_3.Word.ContentControl.color
+      - Word_1_3.Word.ContentControl.contentControls
+      - Word_1_3.Word.ContentControl.context
+      - Word_1_3.Word.ContentControl.delete
+      - Word_1_3.Word.ContentControl.font
+      - Word_1_3.Word.ContentControl.getHtml
+      - Word_1_3.Word.ContentControl.getOoxml
+      - Word_1_3.Word.ContentControl.getRange
+      - Word_1_3.Word.ContentControl.getTextRanges
+      - Word_1_3.Word.ContentControl.id
+      - Word_1_3.Word.ContentControl.inlinePictures
+      - Word_1_3.Word.ContentControl.insertBreak
+      - Word_1_3.Word.ContentControl.insertFileFromBase64
+      - Word_1_3.Word.ContentControl.insertHtml
+      - Word_1_3.Word.ContentControl.insertInlinePictureFromBase64
+      - Word_1_3.Word.ContentControl.insertOoxml
+      - Word_1_3.Word.ContentControl.insertParagraph
+      - Word_1_3.Word.ContentControl.insertTable
+      - Word_1_3.Word.ContentControl.insertText
+      - Word_1_3.Word.ContentControl.lists
+      - Word_1_3.Word.ContentControl.load
+      - Word_1_3.Word.ContentControl.paragraphs
+      - Word_1_3.Word.ContentControl.parentBody
+      - Word_1_3.Word.ContentControl.parentContentControl
+      - Word_1_3.Word.ContentControl.parentContentControlOrNullObject
+      - Word_1_3.Word.ContentControl.parentTable
+      - Word_1_3.Word.ContentControl.parentTableCell
+      - Word_1_3.Word.ContentControl.parentTableCellOrNullObject
+      - Word_1_3.Word.ContentControl.parentTableOrNullObject
+      - Word_1_3.Word.ContentControl.placeholderText
+      - Word_1_3.Word.ContentControl.removeWhenEdited
+      - Word_1_3.Word.ContentControl.search
+      - Word_1_3.Word.ContentControl.select
+      - Word_1_3.Word.ContentControl.split
+      - Word_1_3.Word.ContentControl.style
+      - Word_1_3.Word.ContentControl.styleBuiltIn
+      - Word_1_3.Word.ContentControl.subtype
+      - Word_1_3.Word.ContentControl.tables
+      - Word_1_3.Word.ContentControl.tag
+      - Word_1_3.Word.ContentControl.text
+      - Word_1_3.Word.ContentControl.title
+      - Word_1_3.Word.ContentControl.toJSON
+      - Word_1_3.Word.ContentControl.track
+      - Word_1_3.Word.ContentControl.type
+      - Word_1_3.Word.ContentControl.untrack
+  - uid: Word_1_3.Word.ContentControl.appearance
+    summary: |-
+      Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: appearance
+    fullName: appearance
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";'
+      return:
+        type:
+          - Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
+  - uid: Word_1_3.Word.ContentControl.cannotDelete
+    summary: >-
+      Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
+      removeWhenEdited.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cannotDelete
+    fullName: cannotDelete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cannotDelete: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_3.Word.ContentControl.cannotEdit
+    summary: |-
+      Gets or sets a value that indicates whether the user can edit the contents of the content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cannotEdit
+    fullName: cannotEdit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cannotEdit: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_3.Word.ContentControl.clear
+    summary: |-
+      Clears the contents of the content control. The user can perform the undo operation on the cleared content.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: clear()
+    fullName: clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Word_1_3.Word.ContentControl.color
+    summary: |-
+      Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.contentControls
+    summary: |-
+      Gets the collection of content control objects in the content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentControls: Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+  - uid: Word_1_3.Word.ContentControl.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: Word_1_3.Word.ContentControl.delete
+    summary: |-
+      Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: delete(keepContent)
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(keepContent: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: keepContent
+          description: >-
+            Required. Indicates whether the content should be deleted with the content control. If keepContent is set to
+            true, the content is not deleted.
+          type:
+            - boolean
+  - uid: Word_1_3.Word.ContentControl.font
+    summary: >-
+      Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+  - uid: Word_1_3.Word.ContentControl.getHtml
+    summary: >-
+      Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
+      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
+      return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you
+      need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML
+      to HTML.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHtml()
+    fullName: getHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_3.Word.ContentControl.getOoxml
+    summary: |-
+      Gets the Office Open XML (OOXML) representation of the content control object.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getOoxml()
+    fullName: getOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: Word_1_3.Word.ContentControl.getRange
+    summary: |-
+      Gets the whole content control, or the starting or ending point of the content control, as a range.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocation)
+    fullName: getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
+          type:
+            - word.Word.RangeLocation
+  - uid: Word_1_3.Word.ContentControl.getTextRanges
+    summary: |-
+      Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'getTextRanges(endingMarks, trimSpacing)'
+    fullName: getTextRanges
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: endingMarks
+          description: Required. The punctuation marks and/or other ending marks as an array of strings.
+          type:
+            - 'string[]'
+        - id: trimSpacing
+          description: >-
+            Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end
+            marks) from the start and end of the ranges returned in the range collection. Default is false which
+            indicates that spacing characters at the start and end of the ranges are included in the range collection.
+          type:
+            - boolean
+  - uid: Word_1_3.Word.ContentControl.id
+    summary: |-
+      Gets an integer that represents the content control identifier. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type:
+          - number
+  - uid: Word_1_3.Word.ContentControl.inlinePictures
+    summary: >-
+      Gets the collection of inlinePicture objects in the content control. The collection does not include floating
+      images. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inlinePictures: Word.InlinePictureCollection;'
+      return:
+        type:
+          - word.Word.InlinePictureCollection
+  - uid: Word_1_3.Word.ContentControl.insertBreak
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
+      'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell'
+      content controls.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: insertBreak
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: Required. Type of break.
+          type:
+            - word.Word.BreakType
+        - id: insertLocation
+          description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertFileFromBase64
+    summary: >-
+      Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: insertFileFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            'RichTextTableRow' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertHtml
+    summary: >-
+      Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: insertHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted in to the content control.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            'RichTextTableRow' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertInlinePictureFromBase64
+    summary: >-
+      Inserts an inline picture into the content control at the specified location. The insertLocation value can be
+      'Replace', 'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: insertInlinePictureFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
+        Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted in the content control.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            'RichTextTableRow' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertOoxml
+    summary: >-
+      Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: insertOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted in to the content control.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            'RichTextTableRow' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertParagraph
+    summary: >-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
+      'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: insertParagraph
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.insertTable
+    summary: >-
+      Inserts a table with the specified number of rows and columns into, or next to, a content control. The
+      insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: insertTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]):
+        Word.Table;
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+          type:
+            - Word.InsertLocation
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: Word_1_3.Word.ContentControl.insertText
+    summary: >-
+      Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: insertText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. The text to be inserted in to the content control.
+          type:
+            - string
+        - id: insertLocation
+          description: >-
+            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            'RichTextTableRow' content controls.
+          type:
+            - Word.InsertLocation
+  - uid: Word_1_3.Word.ContentControl.lists
+    summary: |-
+      Gets the collection of list objects in the content control. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lists
+    fullName: lists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lists: Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+  - uid: Word_1_3.Word.ContentControl.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: Word_1_3.Word.ContentControl.paragraphs
+    summary: |-
+      Get the collection of paragraph objects in the content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+  - uid: Word_1_3.Word.ContentControl.parentBody
+    summary: |-
+      Gets the parent body of the content control. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentBody: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: Word_1_3.Word.ContentControl.parentContentControl
+    summary: >-
+      Gets the content control that contains the content control. Throws if there isn't a parent content control.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: Word_1_3.Word.ContentControl.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the content control. Returns a null object if there isn't a parent content
+      control. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: Word_1_3.Word.ContentControl.parentTable
+    summary: |-
+      Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTable: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: Word_1_3.Word.ContentControl.parentTableCell
+    summary: |-
+      Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTableCell: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: Word_1_3.Word.ContentControl.parentTableCellOrNullObject
+    summary: >-
+      Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
+      cell. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: Word_1_3.Word.ContentControl.parentTableOrNullObject
+    summary: >-
+      Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
+    fullName: parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentTableOrNullObject: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: Word_1_3.Word.ContentControl.placeholderText
+    summary: |-
+      Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: placeholderText
+    fullName: placeholderText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placeholderText: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.removeWhenEdited
+    summary: >-
+      Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
+      with cannotDelete.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: removeWhenEdited
+    fullName: removeWhenEdited
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'removeWhenEdited: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: Word_1_3.Word.ContentControl.search
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the content control object. The search results
+      are a collection of range objects.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'search(searchText, searchOptions)'
+    fullName: search
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: searchText
+          description: Required. The search text.
+          type:
+            - string
+        - id: searchOptions
+          description: Optional. Options for the search.
+          type:
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
+  - uid: Word_1_3.Word.ContentControl.select
+    summary: |-
+      Selects the content control. This causes Word to scroll to the selection.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - Word.SelectionMode
+  - uid: Word_1_3.Word.ContentControl.split
+    summary: |-
+      Splits the content control into child ranges by using delimiters.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
+    fullName: split
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean):
+        Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: delimiters
+          description: Required. The delimiters as an array of strings.
+          type:
+            - 'string[]'
+        - id: multiParagraphs
+          description: >-
+            Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which
+            indicates that the paragraph boundaries are also used as delimiters.
+          type:
+            - boolean
+        - id: trimDelimiters
+          description: >-
+            Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false
+            which indicates that the delimiters are included in the ranges returned in the range collection.
+          type:
+            - boolean
+        - id: trimSpacing
+          description: >-
+            Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end
+            marks) from the start and end of the ranges returned in the range collection. Default is false which
+            indicates that spacing characters at the start and end of the ranges are included in the range collection.
+          type:
+            - boolean
+  - uid: Word_1_3.Word.ContentControl.style
+    summary: >-
+      Gets or sets the style name for the content control. Use this property for custom styles and localized style
+      names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.styleBuiltIn
+    summary: >-
+      Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
+      portable between locales. To use custom styles or localized style names, see the "style" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+        "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7"
+        | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference"
+        | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+        "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+        "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+        "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+        "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+        "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+        "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+      return:
+        type:
+          - >-
+            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
+            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
+            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
+            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
+            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
+            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
+            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
+            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
+            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
+            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+  - uid: Word_1_3.Word.ContentControl.subtype
+    summary: >-
+      Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
+      'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: subtype
+    fullName: subtype
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        readonly subtype: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+        "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+        "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+        "RepeatingSection" | "RichText" | "PlainText";
+      return:
+        type:
+          - >-
+            Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
+            "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
+            "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
+            "RichText" | "PlainText"
+  - uid: Word_1_3.Word.ContentControl.tables
+    summary: |-
+      Gets the collection of table objects in the content control. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+  - uid: Word_1_3.Word.ContentControl.tag
+    summary: |-
+      Gets or sets a tag to identify a content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tag
+    fullName: tag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tag: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.text
+    summary: |-
+      Gets the text of the content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.title
+    summary: |-
+      Gets or sets the title for a content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+  - uid: Word_1_3.Word.ContentControl.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.ContentControlData;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlData
+        description: ''
+  - uid: Word_1_3.Word.ContentControl.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+  - uid: Word_1_3.Word.ContentControl.type
+    summary: |-
+      Gets the content control type. Only rich text content controls are supported currently. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" |
+        "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" |
+        "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" |
+        "RepeatingSection" | "RichText" | "PlainText";
+      return:
+        type:
+          - >-
+            Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |
+            "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
+            "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
+            "RichText" | "PlainText"
+  - uid: Word_1_3.Word.ContentControl.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
