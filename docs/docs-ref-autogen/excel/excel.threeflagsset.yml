@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'greenFlag: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeFlagsSet.redFlag
     name: redFlag
     fullName: redFlag
@@ -50,7 +50,7 @@ items:
       content: 'redFlag: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeFlagsSet.yellowFlag
     name: yellowFlag
     fullName: yellowFlag
@@ -61,4 +61,4 @@ items:
       content: 'yellowFlag: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon

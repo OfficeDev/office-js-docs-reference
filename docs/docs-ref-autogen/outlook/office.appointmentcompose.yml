@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Appointment
+      - outlook.Office.Appointment
     package: outlook
     children:
       - outlook.Office.AppointmentCompose.addFileAttachmentAsync
@@ -563,7 +563,7 @@ items:
       content: 'end: Time;'
       return:
         type:
-          - Time
+          - outlook.Office.Time
   - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync
     summary: >-
       Gets the item's attachments as an array. \[ [API set: Mailbox
@@ -873,7 +873,7 @@ items:
       content: 'location: Location;'
       return:
         type:
-          - Location
+          - outlook.Office.Location
   - uid: outlook.Office.AppointmentCompose.notificationMessages
     summary: >-
       Gets the notification messages for an item. \[ [API set: Mailbox
@@ -937,7 +937,7 @@ items:
       content: 'optionalAttendees: Recipients;'
       return:
         type:
-          - Recipients
+          - outlook.Office.Recipients
   - uid: outlook.Office.AppointmentCompose.organizer
     summary: >-
       Gets the organizer for the specified meeting.
@@ -1008,7 +1008,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -1191,7 +1191,7 @@ items:
       content: 'requiredAttendees: Recipients;'
       return:
         type:
-          - Recipients
+          - outlook.Office.Recipients
   - uid: outlook.Office.AppointmentCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
@@ -1468,7 +1468,7 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - Time
+          - outlook.Office.Time
   - uid: outlook.Office.AppointmentCompose.subject
     summary: >-
       Gets or sets the description that appears in the subject field of an item.
@@ -1510,4 +1510,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Subject
+          - outlook.Office.Subject

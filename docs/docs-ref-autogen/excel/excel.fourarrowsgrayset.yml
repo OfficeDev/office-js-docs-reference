@@ -23,7 +23,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -40,7 +40,7 @@ items:
       content: 'grayDownArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayDownInclineArrow
     name: grayDownInclineArrow
     fullName: grayDownInclineArrow
@@ -51,7 +51,7 @@ items:
       content: 'grayDownInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayUpArrow
     name: grayUpArrow
     fullName: grayUpArrow
@@ -62,7 +62,7 @@ items:
       content: 'grayUpArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FourArrowsGraySet.grayUpInclineArrow
     name: grayUpInclineArrow
     fullName: grayUpInclineArrow
@@ -73,4 +73,4 @@ items:
       content: 'grayUpInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon

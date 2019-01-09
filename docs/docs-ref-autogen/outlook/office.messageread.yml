@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Message
+      - outlook.Office.Message
     package: outlook
     children:
       - outlook.Office.MessageRead.addHandlerAsync
@@ -601,7 +601,7 @@ items:
       content: 'from: EmailAddressDetails;'
       return:
         type:
-          - EmailAddressDetails
+          - outlook.Office.EmailAddressDetails
   - uid: outlook.Office.MessageRead.getEntities
     summary: >-
       Gets the entities found in the selected item's body.
@@ -625,7 +625,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Entities
+          - outlook.Office.Entities
         description: ''
   - uid: outlook.Office.MessageRead.getEntitiesByType
     summary: >-
@@ -938,7 +938,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Entities
+          - outlook.Office.Entities
         description: ''
   - uid: outlook.Office.MessageRead.getSelectedRegExMatches
     summary: >-
@@ -1293,7 +1293,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.MessageRead.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.
@@ -1390,7 +1390,7 @@ items:
       content: 'sender: EmailAddressDetails;'
       return:
         type:
-          - EmailAddressDetails
+          - outlook.Office.EmailAddressDetails
   - uid: outlook.Office.MessageRead.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

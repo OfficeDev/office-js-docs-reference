@@ -206,7 +206,7 @@ items:
       content: 'convertToLocalClientTime(timeValue: Date): LocalClientTime;'
       return:
         type:
-          - LocalClientTime
+          - outlook.Office.LocalClientTime
         description: ''
       parameters:
         - id: timeValue
@@ -300,7 +300,7 @@ items:
         - id: input
           description: The local time value to convert.
           type:
-            - LocalClientTime
+            - outlook.Office.LocalClientTime
   - uid: outlook.Office.Mailbox.diagnostics
     summary: >-
       Provides diagnostic information to an Outlook add-in.
@@ -515,7 +515,7 @@ items:
         - id: parameters
           description: An AppointmentForm describing the new appointment. All properties are optional.
           type:
-            - AppointmentForm
+            - outlook.Office.AppointmentForm
   - uid: outlook.Office.Mailbox.displayNewMessageForm
     summary: >-
       Displays a form for creating a new message.

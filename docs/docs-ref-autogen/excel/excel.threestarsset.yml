@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'goldStar: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeStarsSet.halfGoldStar
     name: halfGoldStar
     fullName: halfGoldStar
@@ -50,7 +50,7 @@ items:
       content: 'halfGoldStar: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeStarsSet.silverStar
     name: silverStar
     fullName: silverStar
@@ -61,4 +61,4 @@ items:
       content: 'silverStar: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
